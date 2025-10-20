@@ -66,15 +66,24 @@
 
     /* Hero container for consistent aspect ratio */
     .hero {
-      margin: 0 auto 16px;
-      width: 90vw;
-      max-width: 360px;
+      margin: 0 0 16px 0;
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
     }
     @media (min-width: 768px) {
       .hero {
         margin: 0 auto 20px;
         width: 520px;
         max-width: 80vw;
+        position: static;
+        left: auto;
+        right: auto;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
     .hero-frame {
