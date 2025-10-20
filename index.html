@@ -82,9 +82,14 @@
     .hero-frame {
       position: relative;
       width: 100%;
-      aspect-ratio: 16 / 7;
+      aspect-ratio: 16 / 8;
       overflow: hidden;
       border-radius: 0;
+    }
+    @media (min-width: 768px) {
+      .hero-frame {
+        aspect-ratio: 16 / 7;
+      }
     }
     .hero img {
       position: absolute;
