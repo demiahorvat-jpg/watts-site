@@ -125,13 +125,12 @@
       display: flex;
       align-items: stretch;
       justify-content: space-between;
-      width: 100vw;
-      margin-left: -20px;
-      margin-right: -20px;
+      width: 90vw;
+      max-width: 380px;
+      margin-left: auto;
+      margin-right: auto;
       height: 52px;
       border: 2.5px solid var(--border);
-      border-left: none;
-      border-right: none;
       background: transparent;
       color: var(--fg);
       font: 600 16px "Geologica", sans-serif;
@@ -142,12 +141,9 @@
     @media (min-width: 768px) {
       .gate {
         width: min(480px, 88vw);
-        margin-left: auto;
-        margin-right: auto;
+        max-width: none;
         height: 43px;
         font-size: 17px;
-        border-left: 2.5px solid var(--border);
-        border-right: 2.5px solid var(--border);
       }
     }
     .gate-text { padding: 0 20px 0 14px; text-align: left; flex: 1 1 auto; display: flex; align-items: center; }
