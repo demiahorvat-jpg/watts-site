@@ -120,14 +120,28 @@
       width: 100%;
     }
 
-    /* Collapsed CTA bar */
+    /* Dual CTA buttons container */
+    .cta-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .cta-buttons {
+        flex-direction: column;
+        gap: 12px;
+        width: min(480px, 88vw);
+      }
+    }
+
+    /* Individual CTA button */
     .gate {
       display: flex;
       align-items: stretch;
       justify-content: space-between;
       width: 100%;
-      margin-left: auto;
-      margin-right: auto;
       height: 52px;
       border: 2.5px solid var(--border);
       background: transparent;
@@ -139,8 +153,7 @@
     }
     @media (min-width: 768px) {
       .gate {
-        width: min(480px, 88vw);
-        height: 43px;
+        height: 52px;
         font-size: 17px;
       }
     }
@@ -168,53 +181,107 @@
     /* Expanded form */
     .form {
       display: none;
-      width: min(480px, 88vw);
+      width: 100%;
       border: 2.5px solid var(--border);
-      padding: 12px;
+      padding: 20px;
       border-radius: 0;
       background: transparent;
-      margin-top: 10px;
+      margin-top: 16px;
       box-sizing: border-box;
     }
-
-    .form .row {
-      display: flex;
-      gap: 12px;
-      align-items: stretch;
+    @media (min-width: 768px) {
+      .form {
+        width: min(480px, 88vw);
+        padding: 24px;
+      }
     }
 
-    .form input {
-      flex: 1 1 0;
-      min-width: 0;
-      height: 52px;
+    .form input,
+    .form textarea {
+      width: 100%;
       padding: 0 16px;
       border: 2px solid var(--border);
       border-radius: 0;
       background: transparent;
       color: var(--fg);
-      font: 500 17px "Geologica", sans-serif;
-      line-height: 1;
+      font: 500 16px "Geologica", sans-serif;
       outline: none;
+      box-sizing: border-box;
     }
 
-    .form input:focus {
+    .form input {
+      height: 48px;
+    }
+    @media (min-width: 768px) {
+      .form input {
+        height: 52px;
+      }
+    }
+
+    .form textarea {
+      min-height: 100px;
+      padding: 14px 16px;
+      resize: vertical;
+      line-height: 1.4;
+      font-size: 16px;
+    }
+
+    .form input:focus,
+    .form textarea:focus {
       box-shadow: inset 0 0 0 3px rgba(25,25,25,.15);
     }
 
-    .submit {
-      aspect-ratio: 1 / 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0;
-      border: none;
-      border-left: 3px solid var(--border);
+    .form .field-group {
+      margin-bottom: 12px;
+    }
+
+    .form .field-group:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .submit-btn {
+      width: 100%;
+      height: 52px;
+      margin-top: 16px;
+      border: 2.5px solid var(--border);
       border-radius: 0;
       background: transparent;
       color: var(--fg);
-      font-size: 20px;
-      line-height: 1;
+      font: 600 16px "Geologica", sans-serif;
       cursor: pointer;
+      transition: background 0.15s;
+    }
+    .submit-btn:hover {
+      background: rgba(0,0,0,.035);
+    }
+    @media (min-width: 768px) {
+      .submit-btn {
+        font-size: 17px;
+      }
+    }
+
+    /* Star rating */
+    .star-rating {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .star {
+      font-size: 32px;
+      cursor: pointer;
+      user-select: none;
+      color: #d0d0d0;
+      transition: color 0.15s;
+    }
+
+    .star.filled {
+      color: var(--fg);
+    }
+
+    .star:hover,
+    .star.hover {
+      color: var(--fg);
     }
 
     .small {
@@ -222,6 +289,19 @@
       text-align: left;
       font-size: 12px;
       color: var(--muted);
+    }
+
+    .thanks {
+      margin-top: 16px;
+      padding: 20px;
+      border: 2.5px solid var(--border);
+      font: 500 17px "Geologica", sans-serif;
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      .thanks {
+        width: min(600px, 88vw);
+      }
     }
 
     .foot {
@@ -265,27 +345,77 @@
     <p class="tagline">The life-expanding dog treat – coming soon.</p>
 
     <section class="signup" id="signup">
-      <!-- Collapsed state -->
-      <button class="gate" id="gate" aria-expanded="false" aria-controls="form">
-        <span class="gate-text">Get on board</span>
-        <span class="gate-arrow" aria-hidden="true">→</span>
-      </button>
+      <!-- Dual CTA buttons -->
+      <div class="cta-buttons" id="cta-buttons">
+        <button class="gate" id="gate-launch" aria-expanded="false" aria-controls="form-launch">
+          <span class="gate-text">Notify me at launch</span>
+          <span class="gate-arrow" aria-hidden="true">→</span>
+        </button>
 
-      <!-- Expanded state -->
-      <form id="form" class="form" action="https://formspree.io/f/your-id" method="POST" novalidate>
-        <div class="row">
-          <label class="sr-only" for="name">Name</label>
-          <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+        <button class="gate" id="gate-review" aria-expanded="false" aria-controls="form-review">
+          <span class="gate-text">Leave a review</span>
+          <span class="gate-arrow" aria-hidden="true">→</span>
+        </button>
+      </div>
 
-          <label class="sr-only" for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="Your email" autocomplete="email" required>
-
-          <button type="submit" class="submit" aria-label="Submit">→</button>
+      <!-- Early access form -->
+      <form id="form-launch" class="form" action="https://formspree.io/f/mjkalgwj" method="POST" novalidate>
+        <div class="field-group">
+          <label class="sr-only" for="launch-name">Name</label>
+          <input id="launch-name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
         </div>
-        <p class="small">No spam. Just the latest about Watts.</p>
+        <div class="field-group">
+          <label class="sr-only" for="launch-email">Email</label>
+          <input id="launch-email" name="email" type="email" placeholder="Your email" autocomplete="email" required>
+        </div>
+        <div class="field-group">
+          <label class="sr-only" for="launch-dog">Dog's name (optional)</label>
+          <input id="launch-dog" name="dog_name" type="text" placeholder="Dog's name (optional)" autocomplete="off">
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+        <p class="small">We'll send you a promo code when we launch.</p>
       </form>
 
-      <p id="thanks" class="thanks" role="status" hidden>Thanks! You’re on the list ✅</p>
+      <!-- Review form -->
+      <form id="form-review" class="form" action="https://formspree.io/f/mnngylvv" method="POST" novalidate>
+        <div class="field-group">
+          <div class="star-rating" id="star-rating" role="radiogroup" aria-label="Rating">
+            <span class="star" data-value="1" role="radio" aria-checked="false" tabindex="0">★</span>
+            <span class="star" data-value="2" role="radio" aria-checked="false" tabindex="0">★</span>
+            <span class="star" data-value="3" role="radio" aria-checked="false" tabindex="0">★</span>
+            <span class="star" data-value="4" role="radio" aria-checked="false" tabindex="0">★</span>
+            <span class="star" data-value="5" role="radio" aria-checked="false" tabindex="0">★</span>
+          </div>
+          <input type="hidden" id="rating-value" name="rating" value="" required>
+        </div>
+
+        <div class="field-group">
+          <label class="sr-only" for="review-text">Your review</label>
+          <textarea id="review-text" name="review" placeholder="Your review" required></textarea>
+        </div>
+
+        <div class="field-group">
+          <label class="sr-only" for="review-name">Name</label>
+          <input id="review-name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+        </div>
+
+        <div class="field-group">
+          <label class="sr-only" for="review-email">Email</label>
+          <input id="review-email" name="email" type="email" placeholder="Your email" autocomplete="email" required>
+        </div>
+
+        <div class="field-group">
+          <label class="sr-only" for="review-dog">Dog's name (optional)</label>
+          <input id="review-dog" name="dog_name" type="text" placeholder="Dog's name (optional)" autocomplete="off">
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+        <p class="small">Tell us what you think.</p>
+      </form>
+
+      <!-- Success messages -->
+      <p id="thanks-launch" class="thanks" role="status" hidden>Thanks! You're on the list ✅</p>
+      <p id="thanks-review" class="thanks" role="status" hidden>Thanks for your review! We'll publish it soon ✅</p>
     </section>
   </main>
 
@@ -295,35 +425,138 @@
     // Update year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Toggle form visibility
-    const gate = document.getElementById('gate');
-    const form = document.getElementById('form');
-    const thanks = document.getElementById('thanks');
+    // Elements
+    const ctaButtons = document.getElementById('cta-buttons');
+    const gateLaunch = document.getElementById('gate-launch');
+    const gateReview = document.getElementById('gate-review');
+    const formLaunch = document.getElementById('form-launch');
+    const formReview = document.getElementById('form-review');
+    const thanksLaunch = document.getElementById('thanks-launch');
+    const thanksReview = document.getElementById('thanks-review');
 
-    gate.addEventListener('click', () => {
-      gate.remove();
-      form.style.display = 'block';
-      document.getElementById('name').focus();
+    // Toggle form visibility
+    gateLaunch.addEventListener('click', () => {
+      ctaButtons.style.display = 'none';
+      formReview.style.display = 'none';
+      formLaunch.style.display = 'block';
+      document.getElementById('launch-name').focus();
     });
 
-    // Handle Formspree submission
-    form.addEventListener('submit', async (e) => {
+    gateReview.addEventListener('click', () => {
+      ctaButtons.style.display = 'none';
+      formLaunch.style.display = 'none';
+      formReview.style.display = 'block';
+      // Focus on first star for keyboard accessibility
+      document.querySelector('.star').focus();
+    });
+
+    // Star rating functionality
+    const stars = document.querySelectorAll('.star');
+    const ratingInput = document.getElementById('rating-value');
+    let selectedRating = 0;
+
+    stars.forEach((star, index) => {
+      // Click to select
+      star.addEventListener('click', () => {
+        selectedRating = parseInt(star.dataset.value);
+        ratingInput.value = selectedRating;
+        updateStars(selectedRating);
+      });
+
+      // Hover effect
+      star.addEventListener('mouseenter', () => {
+        const hoverValue = parseInt(star.dataset.value);
+        stars.forEach((s, i) => {
+          if (i < hoverValue) {
+            s.classList.add('hover');
+          } else {
+            s.classList.remove('hover');
+          }
+        });
+      });
+
+      // Keyboard navigation
+      star.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          star.click();
+        }
+        if (e.key === 'ArrowRight' && index < stars.length - 1) {
+          e.preventDefault();
+          stars[index + 1].focus();
+        }
+        if (e.key === 'ArrowLeft' && index > 0) {
+          e.preventDefault();
+          stars[index - 1].focus();
+        }
+      });
+    });
+
+    // Reset hover on mouse leave
+    document.getElementById('star-rating').addEventListener('mouseleave', () => {
+      stars.forEach(s => s.classList.remove('hover'));
+    });
+
+    function updateStars(rating) {
+      stars.forEach((star, index) => {
+        if (index < rating) {
+          star.classList.add('filled');
+          star.setAttribute('aria-checked', 'true');
+        } else {
+          star.classList.remove('filled');
+          star.setAttribute('aria-checked', 'false');
+        }
+      });
+    }
+
+    // Handle Formspree submission for launch form
+    formLaunch.addEventListener('submit', async (e) => {
       e.preventDefault();
       try {
-        const res = await fetch(form.action, {
+        const res = await fetch(formLaunch.action, {
           method: 'POST',
           headers: { 'Accept': 'application/json' },
-          body: new FormData(form)
+          body: new FormData(formLaunch)
         });
         if (res.ok) {
-          form.reset();
-          form.style.display = 'none';
-          thanks.hidden = false;
+          formLaunch.reset();
+          formLaunch.style.display = 'none';
+          thanksLaunch.hidden = false;
         } else {
-          form.submit();
+          formLaunch.submit();
         }
       } catch {
-        form.submit();
+        formLaunch.submit();
+      }
+    });
+
+    // Handle Formspree submission for review form
+    formReview.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      // Validate star rating
+      if (!ratingInput.value) {
+        alert('Please select a star rating');
+        return;
+      }
+
+      try {
+        const res = await fetch(formReview.action, {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: new FormData(formReview)
+        });
+        if (res.ok) {
+          formReview.reset();
+          selectedRating = 0;
+          updateStars(0);
+          formReview.style.display = 'none';
+          thanksReview.hidden = false;
+        } else {
+          formReview.submit();
+        }
+      } catch {
+        formReview.submit();
       }
     });
   </script>
