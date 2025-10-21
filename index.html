@@ -102,15 +102,38 @@
       font-weight: 700;
       color: #111111;
       text-align: center;
-      margin: 0 auto 40px;
+      margin: 0 auto 32px;
       max-width: 280px;
     }
     @media (min-width: 768px) {
       .tagline {
         font-size: 23px;
         line-height: 1.25;
-        margin: 0 auto 56px;
+        margin: 0 auto 48px;
         max-width: none;
+      }
+    }
+
+    .learn-more {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .learn-more a {
+      color: var(--fg);
+      text-decoration: underline;
+      font-size: 15px;
+      font-weight: 500;
+      text-decoration-thickness: 1.5px;
+      text-underline-offset: 3px;
+      transition: opacity 0.15s;
+    }
+    .learn-more a:hover {
+      opacity: 0.7;
+    }
+    @media (min-width: 768px) {
+      .learn-more a {
+        font-size: 16px;
       }
     }
 
@@ -417,9 +440,9 @@
       <p id="thanks-launch" class="thanks" role="status" hidden>Thanks! You're on the list ✅</p>
       <p id="thanks-review" class="thanks" role="status" hidden>Thanks for your review! We'll publish it soon ✅</p>
     </section>
-  </main>
 
-  <footer class="foot">© <span id="year"></span> Watts Pet</footer>
+    <p class="learn-more"><a href="/product.html">Learn more →</a></p>
+  </main>
 
   <script>
     // Update year
