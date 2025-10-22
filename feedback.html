@@ -828,54 +828,59 @@
         <h2>Product Perception</h2>
 
         <div class="field-group">
-          <label>Rank what mattered most to you about this treat (drag to reorder, most important at top)</label>
-          <div class="rank-list" id="rank-list">
-            <div class="rank-item" draggable="true" data-value="Real-food / clean ingredients">
-              <span class="rank-number">1</span>
-              <span class="rank-label">Real-food / clean ingredients (no fillers, artificial stuff)</span>
-              <span class="drag-handle">⋮⋮</span>
-            </div>
-            <div class="rank-item" draggable="true" data-value="Meat-first / high-protein recipe">
-              <span class="rank-number">2</span>
-              <span class="rank-label">Meat-first / high-protein recipe</span>
-              <span class="drag-handle">⋮⋮</span>
-            </div>
-            <div class="rank-item" draggable="true" data-value="Functional health benefits">
-              <span class="rank-number">3</span>
-              <span class="rank-label">Functional health benefits (gut / joints / skin / calming)</span>
-              <span class="drag-handle">⋮⋮</span>
-            </div>
-            <div class="rank-item" draggable="true" data-value="My dog loved the taste">
-              <span class="rank-number">4</span>
-              <span class="rank-label">My dog loved the taste (palatability)</span>
-              <span class="drag-handle">⋮⋮</span>
-            </div>
-            <div class="rank-item" draggable="true" data-value="Gentle on stomach / no stool issues">
-              <span class="rank-number">5</span>
-              <span class="rank-label">Gentle on stomach / no stool issues</span>
-              <span class="drag-handle">⋮⋮</span>
-            </div>
-            <div class="rank-item" draggable="true" data-value="Easy to give">
-              <span class="rank-number">6</span>
-              <span class="rank-label">Easy to give (breaks easily, not greasy/crumbly)</span>
-              <span class="drag-handle">⋮⋮</span>
-            </div>
-            <div class="rank-item" draggable="true" data-value="Trust & safety">
-              <span class="rank-number">7</span>
-              <span class="rank-label">Trust & safety (made in USA, transparent sourcing, testing)</span>
-              <span class="drag-handle">⋮⋮</span>
-            </div>
-            <div class="rank-item" draggable="true" data-value="Brand values / look & feel">
-              <span class="rank-number">8</span>
-              <span class="rank-label">Brand values / look & feel</span>
-              <span class="drag-handle">⋮⋮</span>
-            </div>
-          </div>
-          <input type="hidden" id="matters-ranked" name="matters_ranked">
+          <label>What mattered most to you about this treat? (Select your top 3)</label>
 
-          <div class="other-input active" style="margin-top: 16px;">
-            <label for="matters-other">Other (please specify):</label>
-            <input type="text" id="matters-other" name="matters_other">
+          <div style="margin-bottom: 16px;">
+            <label for="top-1">Most important:</label>
+            <select id="top-1" name="top_1" required style="width: 100%; padding: 14px 16px; border: 2px solid var(--border); background: transparent; color: var(--fg); font: 500 16px 'Geologica', sans-serif; outline: none;">
+              <option value="">Select...</option>
+              <option value="Real-food / clean ingredients">Real-food / clean ingredients (no fillers, artificial stuff)</option>
+              <option value="Meat-first / high-protein recipe">Meat-first / high-protein recipe</option>
+              <option value="Functional health benefits">Functional health benefits (gut / joints / skin / calming)</option>
+              <option value="My dog loved the taste">My dog loved the taste (palatability)</option>
+              <option value="Gentle on stomach / no stool issues">Gentle on stomach / no stool issues</option>
+              <option value="Easy to give">Easy to give (breaks easily, not greasy/crumbly)</option>
+              <option value="Trust & safety">Trust & safety (made in USA, transparent sourcing, testing)</option>
+              <option value="Brand values / look & feel">Brand values / look & feel</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div style="margin-bottom: 16px;">
+            <label for="top-2">Second most important:</label>
+            <select id="top-2" name="top_2" required style="width: 100%; padding: 14px 16px; border: 2px solid var(--border); background: transparent; color: var(--fg); font: 500 16px 'Geologica', sans-serif; outline: none;">
+              <option value="">Select...</option>
+              <option value="Real-food / clean ingredients">Real-food / clean ingredients (no fillers, artificial stuff)</option>
+              <option value="Meat-first / high-protein recipe">Meat-first / high-protein recipe</option>
+              <option value="Functional health benefits">Functional health benefits (gut / joints / skin / calming)</option>
+              <option value="My dog loved the taste">My dog loved the taste (palatability)</option>
+              <option value="Gentle on stomach / no stool issues">Gentle on stomach / no stool issues</option>
+              <option value="Easy to give">Easy to give (breaks easily, not greasy/crumbly)</option>
+              <option value="Trust & safety">Trust & safety (made in USA, transparent sourcing, testing)</option>
+              <option value="Brand values / look & feel">Brand values / look & feel</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div style="margin-bottom: 16px;">
+            <label for="top-3">Third most important:</label>
+            <select id="top-3" name="top_3" required style="width: 100%; padding: 14px 16px; border: 2px solid var(--border); background: transparent; color: var(--fg); font: 500 16px 'Geologica', sans-serif; outline: none;">
+              <option value="">Select...</option>
+              <option value="Real-food / clean ingredients">Real-food / clean ingredients (no fillers, artificial stuff)</option>
+              <option value="Meat-first / high-protein recipe">Meat-first / high-protein recipe</option>
+              <option value="Functional health benefits">Functional health benefits (gut / joints / skin / calming)</option>
+              <option value="My dog loved the taste">My dog loved the taste (palatability)</option>
+              <option value="Gentle on stomach / no stool issues">Gentle on stomach / no stool issues</option>
+              <option value="Easy to give">Easy to give (breaks easily, not greasy/crumbly)</option>
+              <option value="Trust & safety">Trust & safety (made in USA, transparent sourcing, testing)</option>
+              <option value="Brand values / look & feel">Brand values / look & feel</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="other-input" id="top-other-input">
+            <label for="top-other">Please specify:</label>
+            <input type="text" id="top-other" name="top_other">
           </div>
         </div>
 
@@ -1147,121 +1152,22 @@
       });
     });
 
-    // Drag and drop ranking
-    let draggedItem = null;
-    const rankList = document.getElementById('rank-list');
-    const rankItems = document.querySelectorAll('.rank-item');
+    // Show "Other" text field when "Other" is selected in any dropdown
+    const topSelects = [document.getElementById('top-1'), document.getElementById('top-2'), document.getElementById('top-3')];
+    const topOtherInput = document.getElementById('top-other-input');
 
-    rankItems.forEach(item => {
-      // Drag start
-      item.addEventListener('dragstart', (e) => {
-        draggedItem = item;
-        item.classList.add('dragging');
-        e.dataTransfer.effectAllowed = 'move';
-      });
-
-      // Drag end
-      item.addEventListener('dragend', () => {
-        item.classList.remove('dragging');
-        updateRankNumbers();
-        updateRankedValue();
-      });
-
-      // Drag over
-      item.addEventListener('dragover', (e) => {
-        e.preventDefault();
-        item.classList.add('drag-over');
-      });
-
-      // Drag leave
-      item.addEventListener('dragleave', () => {
-        item.classList.remove('drag-over');
-      });
-
-      // Drop
-      item.addEventListener('drop', (e) => {
-        e.preventDefault();
-        item.classList.remove('drag-over');
-
-        if (draggedItem !== item) {
-          const allItems = [...rankList.querySelectorAll('.rank-item')];
-          const draggedIndex = allItems.indexOf(draggedItem);
-          const targetIndex = allItems.indexOf(item);
-
-          if (draggedIndex < targetIndex) {
-            item.parentNode.insertBefore(draggedItem, item.nextSibling);
-          } else {
-            item.parentNode.insertBefore(draggedItem, item);
-          }
+    topSelects.forEach(select => {
+      select.addEventListener('change', () => {
+        const anyOtherSelected = topSelects.some(s => s.value === 'Other');
+        if (anyOtherSelected) {
+          topOtherInput.classList.add('active');
+          document.getElementById('top-other').required = true;
+        } else {
+          topOtherInput.classList.remove('active');
+          document.getElementById('top-other').required = false;
         }
-      });
-
-      // Touch support for mobile
-      let touchStartY = 0;
-      let touchCurrentY = 0;
-
-      item.addEventListener('touchstart', (e) => {
-        draggedItem = item;
-        touchStartY = e.touches[0].clientY;
-        item.style.opacity = '0.5';
-      });
-
-      item.addEventListener('touchmove', (e) => {
-        e.preventDefault();
-        touchCurrentY = e.touches[0].clientY;
-        const offset = touchCurrentY - touchStartY;
-        item.style.transform = `translateY(${offset}px)`;
-      });
-
-      item.addEventListener('touchend', (e) => {
-        item.style.opacity = '1';
-        item.style.transform = '';
-
-        // Find the item at the touch position
-        const allItems = [...rankList.querySelectorAll('.rank-item')];
-        const touchY = e.changedTouches[0].clientY;
-
-        let targetItem = null;
-        allItems.forEach(otherItem => {
-          if (otherItem !== item) {
-            const rect = otherItem.getBoundingClientRect();
-            if (touchY >= rect.top && touchY <= rect.bottom) {
-              targetItem = otherItem;
-            }
-          }
-        });
-
-        if (targetItem) {
-          const draggedIndex = allItems.indexOf(item);
-          const targetIndex = allItems.indexOf(targetItem);
-
-          if (draggedIndex < targetIndex) {
-            targetItem.parentNode.insertBefore(item, targetItem.nextSibling);
-          } else {
-            targetItem.parentNode.insertBefore(item, targetItem);
-          }
-        }
-
-        updateRankNumbers();
-        updateRankedValue();
       });
     });
-
-    function updateRankNumbers() {
-      const items = rankList.querySelectorAll('.rank-item');
-      items.forEach((item, index) => {
-        item.querySelector('.rank-number').textContent = index + 1;
-      });
-    }
-
-    function updateRankedValue() {
-      const items = rankList.querySelectorAll('.rank-item');
-      const rankedValues = Array.from(items).map(item => item.dataset.value);
-      document.getElementById('matters-ranked').value = rankedValues.join(' > ');
-    }
-
-    // Initialize ranked value
-    updateRankedValue();
 
     // Show email input for launch notification (low rating)
     document.querySelectorAll('input[name="notify_launch"]').forEach(radio => {
