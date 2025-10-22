@@ -1,0 +1,1391 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Watts Feedback Survey</title>
+  <meta name="description" content="Help us improve Watts with your feedback.">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #F1ECE9;
+      --fg: #191919;
+      --muted: #3a3a3a;
+      --border: #191919;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body { height: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Header */
+    header {
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2.5px solid var(--border);
+    }
+    @media (min-width: 768px) {
+      header {
+        padding: 24px;
+      }
+    }
+
+    .logo {
+      display: inline-block;
+      margin: 0;
+    }
+    .logo img {
+      width: 160px;
+      height: auto;
+    }
+    @media (min-width: 768px) {
+      .logo img {
+        width: 200px;
+      }
+    }
+
+    /* Main content */
+    main {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+    @media (min-width: 768px) {
+      main {
+        padding: 60px 40px 80px;
+      }
+    }
+
+    /* Progress bar */
+    .progress-container {
+      margin-bottom: 32px;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 6px;
+      background: rgba(25, 25, 25, 0.1);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--fg);
+      transition: width 0.3s ease;
+      width: 0%;
+    }
+
+    .progress-text {
+      margin-top: 8px;
+      font-size: 13px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    /* Form sections */
+    .form-section {
+      display: none;
+    }
+
+    .form-section.active {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 28px;
+      }
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      line-height: 1.3;
+    }
+    @media (min-width: 768px) {
+      h2 {
+        font-size: 22px;
+      }
+    }
+
+    .section-intro {
+      font-size: 15px;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+
+    /* Form fields */
+    .field-group {
+      margin-bottom: 28px;
+    }
+
+    label {
+      display: block;
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 14px 16px;
+      border: 2px solid var(--border);
+      border-radius: 0;
+      background: transparent;
+      color: var(--fg);
+      font: 500 16px "Geologica", sans-serif;
+      outline: none;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      box-shadow: inset 0 0 0 3px rgba(25,25,25,.15);
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+      line-height: 1.5;
+    }
+
+    /* Radio buttons */
+    .radio-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .radio-option {
+      display: flex;
+      align-items: center;
+      padding: 14px 16px;
+      border: 2px solid var(--border);
+      cursor: pointer;
+      transition: background 0.15s;
+      position: relative;
+    }
+
+    .radio-option:hover {
+      background: rgba(0,0,0,.025);
+    }
+
+    .radio-option input[type="radio"] {
+      margin-right: 12px;
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      pointer-events: none;
+    }
+
+    .radio-option label {
+      margin: 0;
+      cursor: pointer;
+      flex: 1;
+      font-weight: 400;
+      pointer-events: none;
+    }
+
+    /* Checkboxes */
+    .checkbox-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .checkbox-option {
+      display: flex;
+      align-items: flex-start;
+      padding: 14px 16px;
+      border: 2px solid var(--border);
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .checkbox-option:hover {
+      background: rgba(0,0,0,.025);
+    }
+
+    .checkbox-option input[type="checkbox"] {
+      margin-right: 12px;
+      margin-top: 3px;
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .checkbox-option label {
+      margin: 0;
+      cursor: pointer;
+      flex: 1;
+      font-weight: 400;
+    }
+
+    /* Drag to rank */
+    .rank-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .rank-item {
+      display: flex;
+      align-items: center;
+      padding: 14px 16px;
+      border: 2.5px solid var(--border);
+      background: var(--bg);
+      cursor: move;
+      cursor: grab;
+      transition: all 0.2s;
+      user-select: none;
+    }
+
+    .rank-item:active {
+      cursor: grabbing;
+    }
+
+    .rank-item.dragging {
+      opacity: 0.5;
+      transform: scale(0.95);
+    }
+
+    .rank-item.drag-over {
+      border-style: dashed;
+      background: rgba(0,0,0,.025);
+    }
+
+    .rank-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border: 2px solid var(--border);
+      background: var(--bg);
+      font-weight: 700;
+      font-size: 14px;
+      margin-right: 12px;
+      flex-shrink: 0;
+    }
+
+    .rank-label {
+      flex: 1;
+      font-size: 16px;
+    }
+
+    .drag-handle {
+      margin-left: 12px;
+      color: var(--muted);
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    /* Likert scale */
+    .likert-scale {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      margin-top: 16px;
+    }
+    @media (min-width: 768px) {
+      .likert-scale {
+        gap: 16px;
+      }
+    }
+
+    .likert-option {
+      aspect-ratio: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 2.5px solid var(--border);
+      cursor: pointer;
+      transition: all 0.2s;
+      position: relative;
+      min-height: 60px;
+    }
+    @media (min-width: 768px) {
+      .likert-option {
+        min-height: 70px;
+      }
+    }
+
+    .likert-option input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .likert-option:hover {
+      background: rgba(0,0,0,.035);
+      transform: translateY(-2px);
+    }
+
+    .likert-option input[type="radio"]:checked + .likert-label {
+      background: var(--fg);
+      color: var(--bg);
+    }
+
+    .likert-label {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: 700;
+      cursor: pointer;
+      pointer-events: none;
+    }
+    @media (min-width: 768px) {
+      .likert-label {
+        font-size: 28px;
+      }
+    }
+
+    .likert-labels {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 500;
+      position: relative;
+    }
+    @media (min-width: 768px) {
+      .likert-labels {
+        font-size: 14px;
+        margin-bottom: 16px;
+      }
+    }
+
+    .likert-labels::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      height: 2px;
+      background: linear-gradient(to right, var(--border) 0%, var(--border) 100%);
+      opacity: 0.2;
+      z-index: -1;
+    }
+
+    .likert-labels span {
+      background: var(--bg);
+      padding: 0 8px;
+    }
+
+    /* NPS scale (0-10) */
+    .nps-scale {
+      display: grid;
+      grid-template-columns: repeat(11, 1fr);
+      gap: 6px;
+      margin-top: 16px;
+    }
+    @media (min-width: 768px) {
+      .nps-scale {
+        gap: 8px;
+      }
+    }
+
+    .nps-option {
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2.5px solid var(--border);
+      cursor: pointer;
+      transition: all 0.2s;
+      position: relative;
+      font-size: 13px;
+      font-weight: 700;
+      min-height: 48px;
+    }
+    @media (min-width: 768px) {
+      .nps-option {
+        font-size: 16px;
+        min-height: 52px;
+      }
+    }
+
+    .nps-option input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .nps-option:hover {
+      background: rgba(0,0,0,.035);
+      transform: translateY(-2px);
+    }
+
+    .nps-option input[type="radio"]:checked + .nps-label {
+      background: var(--fg);
+      color: var(--bg);
+    }
+
+    .nps-label {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      pointer-events: none;
+    }
+
+    .nps-labels {
+      display: grid;
+      grid-template-columns: repeat(11, 1fr);
+      gap: 6px;
+      margin-bottom: 12px;
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 500;
+      position: relative;
+    }
+    @media (min-width: 768px) {
+      .nps-labels {
+        font-size: 14px;
+        margin-bottom: 16px;
+        gap: 8px;
+      }
+    }
+
+    .nps-labels::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      height: 2px;
+      background: linear-gradient(to right, var(--border) 0%, var(--border) 100%);
+      opacity: 0.2;
+      z-index: -1;
+    }
+
+    .nps-labels span {
+      background: var(--bg);
+      padding: 0 8px;
+    }
+
+    .nps-labels span:first-child {
+      grid-column: 1;
+      text-align: left;
+    }
+
+    .nps-labels span:nth-child(2) {
+      grid-column: 6;
+      text-align: center;
+    }
+
+    .nps-labels span:last-child {
+      grid-column: 11;
+      text-align: right;
+    }
+
+    /* Star rating */
+    .star-rating {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    @media (min-width: 768px) {
+      .star-rating {
+        gap: 12px;
+      }
+    }
+
+    .star {
+      font-size: 40px;
+      cursor: pointer;
+      user-select: none;
+      color: #d0d0d0;
+      transition: color 0.15s;
+    }
+    @media (min-width: 768px) {
+      .star {
+        font-size: 48px;
+      }
+    }
+
+    .star.filled {
+      color: var(--fg);
+    }
+
+    .star:hover,
+    .star.hover {
+      color: var(--fg);
+    }
+
+    /* Other input field */
+    .other-input {
+      margin-top: 12px;
+      display: none;
+    }
+
+    .other-input.active {
+      display: block;
+    }
+
+    /* Navigation buttons */
+    .nav-buttons {
+      display: flex;
+      gap: 12px;
+      margin-top: 32px;
+    }
+
+    .btn {
+      flex: 1;
+      height: 52px;
+      border: 2.5px solid var(--border);
+      background: transparent;
+      color: var(--fg);
+      font: 600 16px "Geologica", sans-serif;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    @media (min-width: 768px) {
+      .btn {
+        font-size: 17px;
+      }
+    }
+
+    .btn:hover:not(:disabled) {
+      background: rgba(0,0,0,.035);
+    }
+
+    .btn:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+
+    .btn-primary {
+      background: var(--fg);
+      color: var(--bg);
+    }
+
+    .btn-primary:hover:not(:disabled) {
+      background: #2a2a2a;
+    }
+
+    /* Thank you message */
+    .thank-you {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .thank-you h1 {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+
+    .thank-you p {
+      font-size: 17px;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+
+    .thank-you .btn {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 class="logo"><a href="/"><img src="assets/file.svg" alt="watts"></a></h1>
+  </header>
+
+  <main>
+    <!-- Progress indicator -->
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+      <p class="progress-text" id="progress-text">Step 1 of 5</p>
+    </div>
+
+    <form id="feedback-form">
+      <!-- Section 1: About Your Dog -->
+      <div class="form-section active" data-section="1">
+        <h2>About Your Dog</h2>
+
+        <div class="field-group">
+          <label for="dog-name">What is your dog's name?</label>
+          <input type="text" id="dog-name" name="dog_name" required>
+        </div>
+
+        <div class="field-group">
+          <label>Size</label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="size-small" name="size" value="Small (<20 lbs)" required>
+              <label for="size-small">Small (&lt;20 lbs)</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="size-medium" name="size" value="Medium (20-50 lbs)">
+              <label for="size-medium">Medium (20–50 lbs)</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="size-large" name="size" value="Large (50-90 lbs)">
+              <label for="size-large">Large (50–90 lbs)</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="size-giant" name="size" value="Giant (90+ lbs)">
+              <label for="size-giant">Giant (90+ lbs)</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label>Age</label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="age-puppy" name="age" value="Puppy (<1 year)" required>
+              <label for="age-puppy">Puppy (&lt;1 year)</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="age-adult" name="age" value="Adult (1-7)">
+              <label for="age-adult">Adult (1–7)</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="age-senior" name="age" value="Senior (7+)">
+              <label for="age-senior">Senior (7+)</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label>What type of eater is your dog normally?</label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="eater-picky" name="eater_type" value="Very picky" required>
+              <label for="eater-picky">Very picky</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="eater-occasionally" name="eater_type" value="Occasionally picky">
+              <label for="eater-occasionally">Occasionally picky</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="eater-average" name="eater_type" value="Average">
+              <label for="eater-average">Average</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="eater-anything" name="eater_type" value="Eats anything">
+              <label for="eater-anything">Eats anything</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2: First Impressions -->
+      <div class="form-section" data-section="2">
+        <h2>First Impressions</h2>
+
+        <div class="field-group">
+          <label>How did your dog respond to the treat?</label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="response-excited" name="response" value="Ate immediately, excited" required>
+              <label for="response-excited">Ate immediately, excited</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="response-mildly" name="response" value="Ate it, mildly interested">
+              <label for="response-mildly">Ate it, mildly interested</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="response-hesitant" name="response" value="Hesitant but ate it">
+              <label for="response-hesitant">Hesitant but ate it</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="response-didnt" name="response" value="Didn't eat it">
+              <label for="response-didnt">Didn't eat it</label>
+            </div>
+          </div>
+          <div class="other-input" id="response-detail">
+            <label for="response-text">Any additional details? (optional)</label>
+            <textarea id="response-text" name="response_detail" rows="3"></textarea>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label>How would you rate the treat's appeal to your dog?</label>
+          <div class="likert-labels">
+            <span>Not appealing</span>
+            <span>→</span>
+            <span>Loved it</span>
+          </div>
+          <div class="likert-scale">
+            <div class="likert-option">
+              <input type="radio" id="appeal-1" name="appeal" value="1" required>
+              <label for="appeal-1" class="likert-label">1</label>
+            </div>
+            <div class="likert-option">
+              <input type="radio" id="appeal-2" name="appeal" value="2">
+              <label for="appeal-2" class="likert-label">2</label>
+            </div>
+            <div class="likert-option">
+              <input type="radio" id="appeal-3" name="appeal" value="3">
+              <label for="appeal-3" class="likert-label">3</label>
+            </div>
+            <div class="likert-option">
+              <input type="radio" id="appeal-4" name="appeal" value="4">
+              <label for="appeal-4" class="likert-label">4</label>
+            </div>
+            <div class="likert-option">
+              <input type="radio" id="appeal-5" name="appeal" value="5">
+              <label for="appeal-5" class="likert-label">5</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label>Did you notice any changes in digestion or stool after giving the treats?</label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="digestion-no" name="digestion" value="No change">
+              <label for="digestion-no">No change</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="digestion-improved" name="digestion" value="Improved">
+              <label for="digestion-improved">Improved</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="digestion-slightly" name="digestion" value="Slightly worse">
+              <label for="digestion-slightly">Slightly worse</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="digestion-significantly" name="digestion" value="Significantly worse">
+              <label for="digestion-significantly">Significantly worse</label>
+            </div>
+          </div>
+          <div class="other-input" id="digestion-detail">
+            <label for="digestion-text">Please elaborate (optional)</label>
+            <textarea id="digestion-text" name="digestion_detail" rows="3"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: Perception -->
+      <div class="form-section" data-section="3">
+        <h2>Product Perception</h2>
+
+        <div class="field-group">
+          <label>Rank what mattered most to you about this treat (drag to reorder, most important at top)</label>
+          <div class="rank-list" id="rank-list">
+            <div class="rank-item" draggable="true" data-value="Clean ingredients">
+              <span class="rank-number">1</span>
+              <span class="rank-label">Clean ingredients</span>
+              <span class="drag-handle">⋮⋮</span>
+            </div>
+            <div class="rank-item" draggable="true" data-value="Health function">
+              <span class="rank-number">2</span>
+              <span class="rank-label">Health function (e.g., gut / joints / skin)</span>
+              <span class="drag-handle">⋮⋮</span>
+            </div>
+            <div class="rank-item" draggable="true" data-value="Taste/palatability">
+              <span class="rank-number">3</span>
+              <span class="rank-label">Taste/palatability</span>
+              <span class="drag-handle">⋮⋮</span>
+            </div>
+            <div class="rank-item" draggable="true" data-value="Brand story">
+              <span class="rank-number">4</span>
+              <span class="rank-label">Brand story</span>
+              <span class="drag-handle">⋮⋮</span>
+            </div>
+            <div class="rank-item" draggable="true" data-value="Texture/form factor">
+              <span class="rank-number">5</span>
+              <span class="rank-label">Texture/form factor</span>
+              <span class="drag-handle">⋮⋮</span>
+            </div>
+            <div class="rank-item" draggable="true" data-value="Sustainability">
+              <span class="rank-number">6</span>
+              <span class="rank-label">Sustainability</span>
+              <span class="drag-handle">⋮⋮</span>
+            </div>
+          </div>
+          <input type="hidden" id="matters-ranked" name="matters_ranked">
+        </div>
+
+        <div class="field-group">
+          <label>Based on your experience, how likely are you to buy this product?</label>
+          <div class="nps-labels">
+            <span>Would not buy</span>
+            <span>→</span>
+            <span>Definitely buying</span>
+          </div>
+          <div class="nps-scale">
+            <div class="nps-option">
+              <input type="radio" id="nps-0" name="nps" value="0" required>
+              <label for="nps-0" class="nps-label">0</label>
+            </div>
+            <div class="nps-option">
+              <input type="radio" id="nps-1" name="nps" value="1">
+              <label for="nps-1" class="nps-label">1</label>
+            </div>
+            <div class="nps-option">
+              <input type="radio" id="nps-2" name="nps" value="2">
+              <label for="nps-2" class="nps-label">2</label>
+            </div>
+            <div class="nps-option">
+              <input type="radio" id="nps-3" name="nps" value="3">
+              <label for="nps-3" class="nps-label">3</label>
+            </div>
+            <div class="nps-option">
+              <input type="radio" id="nps-4" name="nps" value="4">
+              <label for="nps-4" class="nps-label">4</label>
+            </div>
+            <div class="nps-option">
+              <input type="radio" id="nps-5" name="nps" value="5">
+              <label for="nps-5" class="nps-label">5</label>
+            </div>
+            <div class="nps-option">
+              <input type="radio" id="nps-6" name="nps" value="6">
+              <label for="nps-6" class="nps-label">6</label>
+            </div>
+            <div class="nps-option">
+              <input type="radio" id="nps-7" name="nps" value="7">
+              <label for="nps-7" class="nps-label">7</label>
+            </div>
+            <div class="nps-option">
+              <input type="radio" id="nps-8" name="nps" value="8">
+              <label for="nps-8" class="nps-label">8</label>
+            </div>
+            <div class="nps-option">
+              <input type="radio" id="nps-9" name="nps" value="9">
+              <label for="nps-9" class="nps-label">9</label>
+            </div>
+            <div class="nps-option">
+              <input type="radio" id="nps-10" name="nps" value="10">
+              <label for="nps-10" class="nps-label">10</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 4: Overall Rating -->
+      <div class="form-section" data-section="4">
+        <h2>Overall Rating</h2>
+
+        <div class="field-group">
+          <label>How would you rate the product overall?</label>
+          <div class="star-rating" id="star-rating">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+          </div>
+          <input type="hidden" id="rating-value" name="rating" required>
+        </div>
+      </div>
+
+      <!-- Section 5A: For 1-4 Stars -->
+      <div class="form-section" data-section="5a">
+        <h2>Help Us Improve</h2>
+
+        <div class="field-group">
+          <label for="improvement">What could we improve?</label>
+          <textarea id="improvement" name="improvement" rows="4" required></textarea>
+        </div>
+
+        <div class="field-group">
+          <label>Do you want to be notified when we launch?</label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="notify-yes-low" name="notify_launch" value="yes" required>
+              <label for="notify-yes-low">Yes</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="notify-no-low" name="notify_launch" value="no">
+              <label for="notify-no-low">No</label>
+            </div>
+          </div>
+          <div class="other-input" id="email-low-input">
+            <label for="email-low">Email</label>
+            <input type="email" id="email-low" name="email">
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 5B: For 5 Stars -->
+      <div class="form-section" data-section="5b">
+        <h2>Share Your Experience</h2>
+
+        <div class="field-group">
+          <label for="testimonial">We'd love a short testimonial. What would you tell another dog parent about your experience?</label>
+          <textarea id="testimonial" name="testimonial" rows="5" required></textarea>
+        </div>
+
+        <div class="field-group">
+          <label>Can we use your review on our site/social?</label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="use-yes" name="can_use_review" value="yes" required>
+              <label for="use-yes">Yes</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="use-no" name="can_use_review" value="no">
+              <label for="use-no">No</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label>Do you want to be notified when we launch?</label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="notify-yes-high" name="notify_launch" value="yes" required>
+              <label for="notify-yes-high">Yes</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="notify-no-high" name="notify_launch" value="no">
+              <label for="notify-no-high">No</label>
+            </div>
+          </div>
+          <div class="other-input" id="email-high-input">
+            <label for="email-high">Email</label>
+            <input type="email" id="email-high" name="email">
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- Thank you message -->
+    <div class="thank-you hidden" id="thank-you">
+      <h1>Thank you!</h1>
+      <p>Your feedback helps us make Watts better for every dog.</p>
+      <a href="/" class="btn">Back to home</a>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-buttons" id="nav-buttons">
+      <button type="button" class="btn" id="prev-btn" disabled>Previous</button>
+      <button type="button" class="btn btn-primary" id="next-btn">Next</button>
+    </div>
+  </main>
+
+  <script>
+    let currentSection = 1;
+    let totalSections = 5;
+    let selectedRating = 0;
+    let finalSection = null; // Will be 5a or 5b based on rating
+
+    const form = document.getElementById('feedback-form');
+    const sections = document.querySelectorAll('.form-section');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const progressFill = document.getElementById('progress-fill');
+    const progressText = document.getElementById('progress-text');
+    const navButtons = document.getElementById('nav-buttons');
+    const thankYou = document.getElementById('thank-you');
+
+    // Star rating
+    const stars = document.querySelectorAll('.star');
+    const ratingInput = document.getElementById('rating-value');
+
+    stars.forEach((star) => {
+      star.addEventListener('click', () => {
+        selectedRating = parseInt(star.dataset.value);
+        ratingInput.value = selectedRating;
+        updateStars(selectedRating);
+      });
+
+      star.addEventListener('mouseenter', () => {
+        const hoverValue = parseInt(star.dataset.value);
+        stars.forEach((s, i) => {
+          if (i < hoverValue) {
+            s.classList.add('hover');
+          } else {
+            s.classList.remove('hover');
+          }
+        });
+      });
+    });
+
+    document.getElementById('star-rating').addEventListener('mouseleave', () => {
+      stars.forEach(s => s.classList.remove('hover'));
+    });
+
+    function updateStars(rating) {
+      stars.forEach((star, index) => {
+        if (index < rating) {
+          star.classList.add('filled');
+        } else {
+          star.classList.remove('filled');
+        }
+      });
+    }
+
+    // Make radio option boxes clickable
+    document.querySelectorAll('.radio-option').forEach(option => {
+      option.addEventListener('click', (e) => {
+        const radio = option.querySelector('input[type="radio"]');
+        if (radio) {
+          radio.checked = true;
+          radio.dispatchEvent(new Event('change'));
+        }
+      });
+    });
+
+    // Make checkbox option boxes clickable
+    document.querySelectorAll('.checkbox-option').forEach(option => {
+      option.addEventListener('click', (e) => {
+        const checkbox = option.querySelector('input[type="checkbox"]');
+        if (checkbox) {
+          checkbox.checked = !checkbox.checked;
+          checkbox.dispatchEvent(new Event('change'));
+        }
+      });
+    });
+
+    // Make Likert scale boxes clickable
+    document.querySelectorAll('.likert-option').forEach(option => {
+      option.addEventListener('click', (e) => {
+        const radio = option.querySelector('input[type="radio"]');
+        if (radio) {
+          radio.checked = true;
+          radio.dispatchEvent(new Event('change'));
+        }
+      });
+    });
+
+    // Make NPS scale boxes clickable
+    document.querySelectorAll('.nps-option').forEach(option => {
+      option.addEventListener('click', (e) => {
+        const radio = option.querySelector('input[type="radio"]');
+        if (radio) {
+          radio.checked = true;
+          radio.dispatchEvent(new Event('change'));
+        }
+      });
+    });
+
+    // Show response detail textarea when any option selected
+    document.querySelectorAll('input[name="response"]').forEach(radio => {
+      radio.addEventListener('change', () => {
+        document.getElementById('response-detail').classList.add('active');
+      });
+    });
+
+    // Show digestion detail textarea when radio selected
+    document.querySelectorAll('input[name="digestion"]').forEach(radio => {
+      radio.addEventListener('change', () => {
+        document.getElementById('digestion-detail').classList.add('active');
+      });
+    });
+
+    // Drag and drop ranking
+    let draggedItem = null;
+    const rankList = document.getElementById('rank-list');
+    const rankItems = document.querySelectorAll('.rank-item');
+
+    rankItems.forEach(item => {
+      // Drag start
+      item.addEventListener('dragstart', (e) => {
+        draggedItem = item;
+        item.classList.add('dragging');
+        e.dataTransfer.effectAllowed = 'move';
+      });
+
+      // Drag end
+      item.addEventListener('dragend', () => {
+        item.classList.remove('dragging');
+        updateRankNumbers();
+        updateRankedValue();
+      });
+
+      // Drag over
+      item.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        item.classList.add('drag-over');
+      });
+
+      // Drag leave
+      item.addEventListener('dragleave', () => {
+        item.classList.remove('drag-over');
+      });
+
+      // Drop
+      item.addEventListener('drop', (e) => {
+        e.preventDefault();
+        item.classList.remove('drag-over');
+
+        if (draggedItem !== item) {
+          const allItems = [...rankList.querySelectorAll('.rank-item')];
+          const draggedIndex = allItems.indexOf(draggedItem);
+          const targetIndex = allItems.indexOf(item);
+
+          if (draggedIndex < targetIndex) {
+            item.parentNode.insertBefore(draggedItem, item.nextSibling);
+          } else {
+            item.parentNode.insertBefore(draggedItem, item);
+          }
+        }
+      });
+
+      // Touch support for mobile
+      let touchStartY = 0;
+      let touchCurrentY = 0;
+
+      item.addEventListener('touchstart', (e) => {
+        draggedItem = item;
+        touchStartY = e.touches[0].clientY;
+        item.style.opacity = '0.5';
+      });
+
+      item.addEventListener('touchmove', (e) => {
+        e.preventDefault();
+        touchCurrentY = e.touches[0].clientY;
+        const offset = touchCurrentY - touchStartY;
+        item.style.transform = `translateY(${offset}px)`;
+      });
+
+      item.addEventListener('touchend', (e) => {
+        item.style.opacity = '1';
+        item.style.transform = '';
+
+        // Find the item at the touch position
+        const allItems = [...rankList.querySelectorAll('.rank-item')];
+        const touchY = e.changedTouches[0].clientY;
+
+        let targetItem = null;
+        allItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            const rect = otherItem.getBoundingClientRect();
+            if (touchY >= rect.top && touchY <= rect.bottom) {
+              targetItem = otherItem;
+            }
+          }
+        });
+
+        if (targetItem) {
+          const draggedIndex = allItems.indexOf(item);
+          const targetIndex = allItems.indexOf(targetItem);
+
+          if (draggedIndex < targetIndex) {
+            targetItem.parentNode.insertBefore(item, targetItem.nextSibling);
+          } else {
+            targetItem.parentNode.insertBefore(item, targetItem);
+          }
+        }
+
+        updateRankNumbers();
+        updateRankedValue();
+      });
+    });
+
+    function updateRankNumbers() {
+      const items = rankList.querySelectorAll('.rank-item');
+      items.forEach((item, index) => {
+        item.querySelector('.rank-number').textContent = index + 1;
+      });
+    }
+
+    function updateRankedValue() {
+      const items = rankList.querySelectorAll('.rank-item');
+      const rankedValues = Array.from(items).map(item => item.dataset.value);
+      document.getElementById('matters-ranked').value = rankedValues.join(' > ');
+    }
+
+    // Initialize ranked value
+    updateRankedValue();
+
+    // Show email input for launch notification (low rating)
+    document.querySelectorAll('input[name="notify_launch"]').forEach(radio => {
+      radio.addEventListener('change', (e) => {
+        if (e.target.value === 'yes') {
+          if (e.target.id.includes('low')) {
+            document.getElementById('email-low-input').classList.add('active');
+            document.getElementById('email-low').required = true;
+          } else {
+            document.getElementById('email-high-input').classList.add('active');
+            document.getElementById('email-high').required = true;
+          }
+        } else {
+          if (e.target.id.includes('low')) {
+            document.getElementById('email-low-input').classList.remove('active');
+            document.getElementById('email-low').required = false;
+          } else {
+            document.getElementById('email-high-input').classList.remove('active');
+            document.getElementById('email-high').required = false;
+          }
+        }
+      });
+    });
+
+    // Navigation
+    function updateProgress() {
+      const progress = (currentSection / totalSections) * 100;
+      progressFill.style.width = progress + '%';
+      progressText.textContent = `Step ${currentSection} of ${totalSections}`;
+    }
+
+    function showSection(sectionNum) {
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+
+      let sectionToShow;
+      if (sectionNum === 5) {
+        // Show 5a or 5b based on rating
+        sectionToShow = document.querySelector(`[data-section="${finalSection}"]`);
+      } else {
+        sectionToShow = document.querySelector(`[data-section="${sectionNum}"]`);
+      }
+
+      if (sectionToShow) {
+        sectionToShow.classList.add('active');
+      }
+
+      // Update buttons
+      prevBtn.disabled = currentSection === 1;
+
+      if (currentSection === totalSections) {
+        nextBtn.textContent = 'Submit';
+        nextBtn.classList.add('btn-primary');
+      } else {
+        nextBtn.textContent = 'Next';
+      }
+
+      updateProgress();
+    }
+
+    function validateSection(sectionNum) {
+      const section = document.querySelector(`[data-section="${sectionNum}"]`);
+      if (!section) return true;
+
+      const requiredInputs = section.querySelectorAll('[required]');
+      let isValid = true;
+
+      requiredInputs.forEach(input => {
+        if (input.type === 'radio') {
+          const radioGroup = section.querySelectorAll(`[name="${input.name}"]`);
+          const isChecked = Array.from(radioGroup).some(radio => radio.checked);
+          if (!isChecked) isValid = false;
+        } else if (input.type === 'checkbox') {
+          // For checkbox groups, at least one should be checked
+          const checkboxGroup = section.querySelectorAll(`[name="${input.name}"]`);
+          const isChecked = Array.from(checkboxGroup).some(checkbox => checkbox.checked);
+          if (!isChecked) isValid = false;
+        } else if (!input.value.trim()) {
+          isValid = false;
+        }
+      });
+
+      return isValid;
+    }
+
+    nextBtn.addEventListener('click', async () => {
+      // Validate current section
+      const sectionToValidate = currentSection === 5 ? finalSection : currentSection;
+      if (!validateSection(sectionToValidate)) {
+        alert('Please complete all required fields.');
+        return;
+      }
+
+      // If on section 4 (rating), determine next section
+      if (currentSection === 4) {
+        if (!selectedRating) {
+          alert('Please select a star rating.');
+          return;
+        }
+        finalSection = selectedRating === 5 ? '5b' : '5a';
+      }
+
+      if (currentSection < totalSections) {
+        currentSection++;
+        showSection(currentSection);
+      } else {
+        // Submit form
+        await submitForm();
+      }
+    });
+
+    prevBtn.addEventListener('click', () => {
+      if (currentSection > 1) {
+        currentSection--;
+        showSection(currentSection);
+      }
+    });
+
+    async function submitForm() {
+      const formData = new FormData(form);
+
+      try {
+        const res = await fetch('https://formspree.io/f/xpwygyav', {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: formData
+        });
+
+        if (res.ok) {
+          // Show thank you message
+          form.classList.add('hidden');
+          navButtons.classList.add('hidden');
+          document.querySelector('.progress-container').classList.add('hidden');
+          thankYou.classList.remove('hidden');
+        } else {
+          alert('There was an error submitting your feedback. Please try again.');
+        }
+      } catch {
+        alert('There was an error submitting your feedback. Please try again.');
+      }
+    }
+
+    // Initialize
+    showSection(1);
+  </script>
+</body>
+</html>
