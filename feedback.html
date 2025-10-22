@@ -1150,6 +1150,18 @@
 
     topSelects.forEach((select, index) => {
       select.addEventListener('change', () => {
+        const currentValue = select.value;
+
+        // Check if this value is already selected in another dropdown
+        const otherSelects = topSelects.filter((s, i) => i !== index);
+        const isDuplicate = otherSelects.some(s => s.value && s.value === currentValue);
+
+        if (isDuplicate && currentValue !== '') {
+          alert('Please select three different options. This option is already selected.');
+          select.value = '';
+          return;
+        }
+
         // Check for "Other" selection
         const anyOtherSelected = topSelects.some(s => s.value === 'Other');
         if (anyOtherSelected) {
@@ -1158,15 +1170,6 @@
         } else {
           topOtherInput.classList.remove('active');
           document.getElementById('top-other').required = false;
-        }
-
-        // Prevent duplicate selections
-        const selectedValues = topSelects.map(s => s.value).filter(v => v !== '');
-        const hasDuplicates = selectedValues.length !== new Set(selectedValues).size;
-
-        if (hasDuplicates) {
-          alert('Please select three different options.');
-          select.value = '';
         }
       });
     });
