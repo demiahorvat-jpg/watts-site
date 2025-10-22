@@ -809,7 +809,7 @@
           <label>Did you notice any changes in digestion or stool after giving the functional treats?</label>
           <div class="radio-group">
             <div class="radio-option">
-              <input type="radio" id="digestion-no" name="digestion" value="No change">
+              <input type="radio" id="digestion-no" name="digestion" value="No change" required>
               <label for="digestion-no">No change</label>
             </div>
             <div class="radio-option">
@@ -1148,8 +1148,9 @@
     const topSelects = [document.getElementById('top-1'), document.getElementById('top-2'), document.getElementById('top-3')];
     const topOtherInput = document.getElementById('top-other-input');
 
-    topSelects.forEach(select => {
+    topSelects.forEach((select, index) => {
       select.addEventListener('change', () => {
+        // Check for "Other" selection
         const anyOtherSelected = topSelects.some(s => s.value === 'Other');
         if (anyOtherSelected) {
           topOtherInput.classList.add('active');
@@ -1157,6 +1158,15 @@
         } else {
           topOtherInput.classList.remove('active');
           document.getElementById('top-other').required = false;
+        }
+
+        // Prevent duplicate selections
+        const selectedValues = topSelects.map(s => s.value).filter(v => v !== '');
+        const hasDuplicates = selectedValues.length !== new Set(selectedValues).size;
+
+        if (hasDuplicates) {
+          alert('Please select three different options.');
+          select.value = '';
         }
       });
     });
