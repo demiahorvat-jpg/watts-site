@@ -408,119 +408,97 @@
       padding: 0 8px;
     }
 
-    /* NPS scale (0-10) */
-    .nps-scale {
-      display: grid;
-      grid-template-columns: repeat(11, 1fr);
-      gap: 4px;
+    /* NPS slider */
+    .nps-slider-container {
       margin-top: 16px;
-      max-width: 400px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    @media (min-width: 768px) {
-      .nps-scale {
-        gap: 6px;
-      }
     }
 
-    .nps-option {
-      aspect-ratio: 1;
+    .nps-slider-labels {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 2.5px solid var(--border);
-      cursor: pointer;
-      transition: all 0.2s;
-      position: relative;
-      font-size: 13px;
-      font-weight: 700;
-      min-height: 48px;
-    }
-    @media (min-width: 768px) {
-      .nps-option {
-        font-size: 16px;
-        min-height: 52px;
-      }
-    }
-
-    .nps-option input[type="radio"] {
-      position: absolute;
-      opacity: 0;
-      pointer-events: none;
-    }
-
-    .nps-option:hover {
-      background: rgba(0,0,0,.035);
-      transform: translateY(-2px);
-    }
-
-    .nps-option input[type="radio"]:checked + .nps-label {
-      background: var(--fg);
-      color: var(--bg);
-    }
-
-    .nps-label {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      pointer-events: none;
-    }
-
-    .nps-labels {
-      display: grid;
-      grid-template-columns: repeat(11, 1fr);
-      gap: 4px;
-      margin-bottom: 12px;
-      font-size: 13px;
+      justify-content: space-between;
+      margin-bottom: 24px;
+      font-size: 14px;
       color: var(--muted);
       font-weight: 500;
+    }
+
+    .nps-slider-wrapper {
       position: relative;
-      max-width: 400px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    @media (min-width: 768px) {
-      .nps-labels {
-        font-size: 14px;
-        margin-bottom: 16px;
-        gap: 6px;
-      }
+      margin-bottom: 12px;
     }
 
-    .nps-labels::after {
-      content: '';
+    .nps-slider {
+      width: 100%;
+      height: 8px;
+      -webkit-appearance: none;
+      appearance: none;
+      background: transparent;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .nps-slider::-webkit-slider-track {
+      width: 100%;
+      height: 8px;
+      background: var(--border);
+      border: 2px solid var(--border);
+    }
+
+    .nps-slider::-moz-range-track {
+      width: 100%;
+      height: 8px;
+      background: var(--border);
+      border: 2px solid var(--border);
+    }
+
+    .nps-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 32px;
+      height: 32px;
+      background: var(--fg);
+      cursor: pointer;
+      border: 3px solid var(--bg);
+      box-shadow: 0 0 0 2px var(--border);
+    }
+
+    .nps-slider::-moz-range-thumb {
+      width: 32px;
+      height: 32px;
+      background: var(--fg);
+      cursor: pointer;
+      border: 3px solid var(--bg);
+      box-shadow: 0 0 0 2px var(--border);
+      border-radius: 0;
+    }
+
+    .nps-value-display {
       position: absolute;
-      left: 0;
-      right: 0;
-      top: 50%;
-      height: 2px;
-      background: linear-gradient(to right, var(--border) 0%, var(--border) 100%);
-      opacity: 0.2;
-      z-index: -1;
-    }
-
-    .nps-labels span {
-      background: var(--bg);
-      padding: 0 8px;
-    }
-
-    .nps-labels span:first-child {
-      grid-column: 1;
-      text-align: left;
-    }
-
-    .nps-labels span:nth-child(2) {
-      grid-column: 6;
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--fg);
+      color: var(--bg);
+      padding: 6px 12px;
+      font-weight: 700;
+      font-size: 18px;
+      min-width: 40px;
       text-align: center;
+      pointer-events: none;
     }
 
-    .nps-labels span:last-child {
-      grid-column: 11;
-      text-align: right;
+    .nps-slider-numbers {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 500;
+      margin-top: 8px;
+    }
+
+    .nps-slider-numbers span {
+      flex: 1;
+      text-align: center;
     }
 
     /* Star rating */
@@ -886,55 +864,27 @@
 
         <div class="field-group">
           <label>Based on your experience, how likely are you to buy this product?</label>
-          <div class="nps-labels">
-            <span>Would not buy</span>
-            <span>→</span>
-            <span>Definitely buying</span>
-          </div>
-          <div class="nps-scale">
-            <div class="nps-option">
-              <input type="radio" id="nps-0" name="nps" value="0" required>
-              <label for="nps-0" class="nps-label">0</label>
+          <div class="nps-slider-container">
+            <div class="nps-slider-labels">
+              <span>Would not buy</span>
+              <span>Definitely buying</span>
             </div>
-            <div class="nps-option">
-              <input type="radio" id="nps-1" name="nps" value="1">
-              <label for="nps-1" class="nps-label">1</label>
+            <div class="nps-slider-wrapper">
+              <input type="range" id="nps-slider" name="nps" min="0" max="10" value="5" required class="nps-slider">
+              <div class="nps-value-display" id="nps-value">5</div>
             </div>
-            <div class="nps-option">
-              <input type="radio" id="nps-2" name="nps" value="2">
-              <label for="nps-2" class="nps-label">2</label>
-            </div>
-            <div class="nps-option">
-              <input type="radio" id="nps-3" name="nps" value="3">
-              <label for="nps-3" class="nps-label">3</label>
-            </div>
-            <div class="nps-option">
-              <input type="radio" id="nps-4" name="nps" value="4">
-              <label for="nps-4" class="nps-label">4</label>
-            </div>
-            <div class="nps-option">
-              <input type="radio" id="nps-5" name="nps" value="5">
-              <label for="nps-5" class="nps-label">5</label>
-            </div>
-            <div class="nps-option">
-              <input type="radio" id="nps-6" name="nps" value="6">
-              <label for="nps-6" class="nps-label">6</label>
-            </div>
-            <div class="nps-option">
-              <input type="radio" id="nps-7" name="nps" value="7">
-              <label for="nps-7" class="nps-label">7</label>
-            </div>
-            <div class="nps-option">
-              <input type="radio" id="nps-8" name="nps" value="8">
-              <label for="nps-8" class="nps-label">8</label>
-            </div>
-            <div class="nps-option">
-              <input type="radio" id="nps-9" name="nps" value="9">
-              <label for="nps-9" class="nps-label">9</label>
-            </div>
-            <div class="nps-option">
-              <input type="radio" id="nps-10" name="nps" value="10">
-              <label for="nps-10" class="nps-label">10</label>
+            <div class="nps-slider-numbers">
+              <span>0</span>
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+              <span>6</span>
+              <span>7</span>
+              <span>8</span>
+              <span>9</span>
+              <span>10</span>
             </div>
           </div>
         </div>
@@ -1127,16 +1077,20 @@
       });
     });
 
-    // Make NPS scale boxes clickable
-    document.querySelectorAll('.nps-option').forEach(option => {
-      option.addEventListener('click', (e) => {
-        const radio = option.querySelector('input[type="radio"]');
-        if (radio) {
-          radio.checked = true;
-          radio.dispatchEvent(new Event('change'));
-        }
-      });
+    // NPS slider value display
+    const npsSlider = document.getElementById('nps-slider');
+    const npsValueDisplay = document.getElementById('nps-value');
+
+    npsSlider.addEventListener('input', (e) => {
+      npsValueDisplay.textContent = e.target.value;
+      // Position the value display above the thumb
+      const percent = (e.target.value / 10) * 100;
+      npsValueDisplay.style.left = `calc(${percent}% + ${16 - (percent * 0.32)}px)`;
     });
+
+    // Initialize position
+    const initialPercent = (npsSlider.value / 10) * 100;
+    npsValueDisplay.style.left = `calc(${initialPercent}% + ${16 - (initialPercent * 0.32)}px)`;
 
     // Show response detail textarea when any option selected
     document.querySelectorAll('input[name="response"]').forEach(radio => {
