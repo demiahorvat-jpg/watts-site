@@ -1280,6 +1280,16 @@
     });
 
     async function submitForm() {
+      // Disable fields from the non-active section (5a or 5b) before submission
+      const inactiveSection = finalSection === '5a' ? '5b' : '5a';
+      const inactiveSectionEl = document.querySelector(`[data-section="${inactiveSection}"]`);
+      const inactiveInputs = inactiveSectionEl.querySelectorAll('input, textarea, select');
+
+      // Temporarily disable inactive section fields so they don't get submitted
+      inactiveInputs.forEach(input => {
+        input.disabled = true;
+      });
+
       const formData = new FormData(form);
 
       try {
@@ -1297,13 +1307,60 @@
           thankYou.classList.remove('hidden');
         } else {
           alert('There was an error submitting your feedback. Please try again.');
+          // Re-enable fields if submission failed
+          inactiveInputs.forEach(input => {
+            input.disabled = false;
+          });
         }
       } catch {
         alert('There was an error submitting your feedback. Please try again.');
+        // Re-enable fields if submission failed
+        inactiveInputs.forEach(input => {
+          input.disabled = false;
+        });
       }
     }
 
+    // Randomize dropdown options to reduce order bias
+    function randomizeSelectOptions() {
+      const options = [
+        { value: "Real-food / clean ingredients", text: "Real-food / clean ingredients (no fillers, artificial stuff)" },
+        { value: "Meat-first / high-protein recipe", text: "Meat-first / high-protein recipe" },
+        { value: "Functional health benefits", text: "Functional health benefits (gut / joints / skin / calming)" },
+        { value: "My dog loved the taste", text: "My dog loved the taste (palatability)" },
+        { value: "Gentle on stomach / no stool issues", text: "Gentle on stomach / no stool issues" },
+        { value: "Easy to give", text: "Easy to give (breaks easily, not greasy/crumbly)" },
+        { value: "Trust & safety", text: "Trust & safety (made in USA, transparent sourcing, testing)" },
+        { value: "Brand values / look & feel", text: "Brand values / look & feel" },
+        { value: "Other", text: "Other" }
+      ];
+
+      // Fisher-Yates shuffle
+      for (let i = options.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [options[i], options[j]] = [options[j], options[i]];
+      }
+
+      // Update all three dropdowns with the same randomized order
+      topSelects.forEach(select => {
+        // Keep the first "Select..." option
+        const firstOption = select.options[0];
+        // Remove all other options
+        while (select.options.length > 1) {
+          select.remove(1);
+        }
+        // Add randomized options
+        options.forEach(opt => {
+          const option = document.createElement('option');
+          option.value = opt.value;
+          option.textContent = opt.text;
+          select.appendChild(option);
+        });
+      });
+    }
+
     // Initialize
+    randomizeSelectOptions();
     showSection(1);
   </script>
 </body>
