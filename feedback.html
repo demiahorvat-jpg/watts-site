@@ -742,6 +742,63 @@
             </div>
           </div>
         </div>
+
+        <div class="field-group">
+          <label>What type of food do you currently feed your dog?</label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="food-kibble" name="food_type" value="Kibble" required>
+              <label for="food-kibble">Kibble</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="food-fresh" name="food_type" value="Fresh / cooked">
+              <label for="food-fresh">Fresh / cooked</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="food-raw" name="food_type" value="Raw">
+              <label for="food-raw">Raw</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="food-wet" name="food_type" value="Wet / canned">
+              <label for="food-wet">Wet / canned</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="food-mixed" name="food_type" value="Mixed (combination)">
+              <label for="food-mixed">Mixed (combination)</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="food-other" name="food_type" value="Other">
+              <label for="food-other">Other</label>
+            </div>
+          </div>
+          <div class="other-input" id="food-other-input">
+            <label for="food-other-text">Please specify:</label>
+            <input type="text" id="food-other-text" name="food_type_other">
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="food-brand">What brand(s) do you feed? (optional)</label>
+          <input type="text" id="food-brand" name="food_brand" placeholder="e.g., Purina, Royal Canin, The Farmer's Dog">
+        </div>
+
+        <div class="field-group">
+          <label>Do you currently give your dog supplements?</label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="supplements-yes" name="supplements" value="Yes" required>
+              <label for="supplements-yes">Yes</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="supplements-no" name="supplements" value="No">
+              <label for="supplements-no">No</label>
+            </div>
+          </div>
+          <div class="other-input" id="supplements-input">
+            <label for="supplements-which">Which supplements?</label>
+            <textarea id="supplements-which" name="supplements_which" rows="2" placeholder="e.g., Probiotic, joint support, omega-3"></textarea>
+          </div>
+        </div>
       </div>
 
       <!-- Section 2: First Impressions -->
@@ -1141,6 +1198,36 @@
     document.querySelectorAll('input[name="digestion"]').forEach(radio => {
       radio.addEventListener('change', () => {
         document.getElementById('digestion-detail').classList.add('active');
+      });
+    });
+
+    // Show food type "Other" text field
+    document.querySelectorAll('input[name="food_type"]').forEach(radio => {
+      radio.addEventListener('change', (e) => {
+        const foodOtherInput = document.getElementById('food-other-input');
+        const foodOtherText = document.getElementById('food-other-text');
+        if (e.target.value === 'Other') {
+          foodOtherInput.classList.add('active');
+          foodOtherText.required = true;
+        } else {
+          foodOtherInput.classList.remove('active');
+          foodOtherText.required = false;
+        }
+      });
+    });
+
+    // Show supplements text field when "Yes" is selected
+    document.querySelectorAll('input[name="supplements"]').forEach(radio => {
+      radio.addEventListener('change', (e) => {
+        const supplementsInput = document.getElementById('supplements-input');
+        const supplementsWhich = document.getElementById('supplements-which');
+        if (e.target.value === 'Yes') {
+          supplementsInput.classList.add('active');
+          supplementsWhich.required = true;
+        } else {
+          supplementsInput.classList.remove('active');
+          supplementsWhich.required = false;
+        }
       });
     });
 
