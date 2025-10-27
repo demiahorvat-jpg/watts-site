@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About Watts — Real nutrition for a longer, better life</title>
+  <meta name="description" content="Learn about Watts and our mission to extend dog healthspan through real food nutrition.">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #F1ECE9;
+      --fg: #191919;
+      --muted: #3a3a3a;
+      --border: #191919;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body { height: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Navigation */
+    nav.nav {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 20px 20px;
+      border-bottom: 2.5px solid var(--border);
+    }
+    @media (min-width: 768px) {
+      nav.nav {
+        padding: 24px 20px;
+      }
+    }
+    nav.nav ul {
+      list-style: none;
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+    @media (min-width: 768px) {
+      nav.nav ul {
+        gap: 32px;
+      }
+    }
+    nav.nav a {
+      color: var(--fg);
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      transition: opacity 0.15s;
+      position: relative;
+    }
+    @media (min-width: 768px) {
+      nav.nav a {
+        font-size: 16px;
+      }
+    }
+    nav.nav a:hover {
+      opacity: 0.7;
+    }
+    nav.nav a.active::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--fg);
+    }
+
+    /* Main content */
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+    @media (min-width: 768px) {
+      main {
+        padding: 60px 40px 80px;
+      }
+    }
+
+    /* Typography */
+    h1 {
+      font-family: "Geologica", sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+    }
+
+    h2 {
+      font-family: "Geologica", sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin: 48px 0 16px;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+    }
+    @media (min-width: 768px) {
+      h2 {
+        font-size: 15px;
+        margin: 56px 0 20px;
+      }
+    }
+
+    h2:first-child {
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 16px;
+      color: var(--fg);
+    }
+    @media (min-width: 768px) {
+      p {
+        font-size: 18px;
+        margin-bottom: 18px;
+      }
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .lead {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+    @media (min-width: 768px) {
+      .lead {
+        font-size: 23px;
+        margin-bottom: 28px;
+      }
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 40px;
+    }
+    @media (min-width: 768px) {
+      section {
+        margin-bottom: 48px;
+      }
+    }
+
+    /* Lists */
+    main ul {
+      list-style: none;
+      margin: 20px 0;
+    }
+
+    main li {
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 12px;
+      padding-left: 24px;
+      position: relative;
+    }
+    @media (min-width: 768px) {
+      main li {
+        font-size: 18px;
+      }
+    }
+
+    main li:before {
+      content: "•";
+      position: absolute;
+      left: 8px;
+      font-weight: 700;
+    }
+
+    /* CTA */
+    .cta-section {
+      text-align: center;
+      margin: 56px 0 0;
+      padding: 40px 0 0;
+      border-top: 2.5px solid var(--border);
+    }
+    @media (min-width: 768px) {
+      .cta-section {
+        margin: 64px 0 0;
+        padding: 48px 0 0;
+      }
+    }
+
+    .signup {
+      display: grid;
+      place-items: center;
+      width: 100%;
+    }
+
+    /* CTA button */
+    .gate {
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      width: 100%;
+      height: 52px;
+      border: 2.5px solid var(--border);
+      background: transparent;
+      color: var(--fg);
+      font: 600 16px "Geologica", sans-serif;
+      padding: 0;
+      border-radius: 0;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    @media (min-width: 768px) {
+      .gate {
+        width: min(480px, 88vw);
+        height: 52px;
+        font-size: 17px;
+      }
+    }
+    .gate-text { padding: 0 20px 0 14px; text-align: left; flex: 1 1 auto; display: flex; align-items: center; }
+    @media (min-width: 768px) {
+      .gate-text { padding: 0 20px 0 16px; }
+    }
+    .gate-arrow {
+      display: grid;
+      place-items: center;
+      width: 52px;
+      border-left: 2.5px solid var(--border);
+      font-size: 18px;
+      line-height: 1;
+      user-select: none;
+    }
+    @media (min-width: 768px) {
+      .gate-arrow {
+        width: 43px;
+        font-size: 20px;
+      }
+    }
+    .gate:hover { background: rgba(0,0,0,.035); }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 400;
+      border-top: 2.5px solid var(--border);
+    }
+    @media (min-width: 768px) {
+      footer {
+        padding: 24px;
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html" class="active">About</a></li>
+      <li><a href="/blog/">Blog</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h1>About Watts</h1>
+      <p class="lead">Real nutrition for a longer, better life.</p>
+      <p>We believe the habits that extend human healthspan apply to dogs too: small, consistent choices, compounded over time. Watts was created to give dogs a daily ritual rooted in whole-food nutrition—not synthetics, fillers, or shortcuts.</p>
+    </section>
+
+    <section>
+      <h2>The Problem We're Solving</h2>
+      <p><strong>Most dog supplements aren't actually built for a dog's body.</strong></p>
+      <p>They're made from:</p>
+      <ul>
+        <li>Synthetic vitamins the body barely absorbs</li>
+        <li>60–80% fillers and additives</li>
+        <li>Artificial flavors to make them palatable</li>
+        <li>Nutrient profiles that omit essential building blocks dogs actually need</li>
+      </ul>
+      <p>Dog parents think they're doing the right thing. But the category is built for shelf stability, margin, and taste—not long-term vitality.</p>
+    </section>
+
+    <section>
+      <h2>Our Core Insight</h2>
+      <p class="lead">Real food delivers real results.</p>
+      <p>Dogs evolved to absorb nutrients from meat and organs—not lab-made powders. Natural, animal-based nutrition is simply more usable by their bodies, leading to 3–10x greater bioavailability and more meaningful health benefits over time.</p>
+    </section>
+
+    <section>
+      <h2>Our Approach</h2>
+      <p>Watts is a premium dog treat made from grass-fed beef and organs, air-dried to preserve maximum nutrition. Every bite delivers:</p>
+      <ul>
+        <li>Natural, bioactive nutrients your dog's body can actually use</li>
+        <li>Heme iron, taurine, Vitamin A, zinc, K2, and carnitine</li>
+        <li>Zero fillers, synthetics, or artificial ingredients</li>
+        <li>The kind of nutrition that compounds over time into better energy, immunity, and vitality</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Our Standard</h2>
+      <p>Transparency, simplicity, integrity—all the way down to the label.</p>
+      <p>We use only real, whole-food ingredients. No synthetic vitamins. No seed oils. No fillers, binders, or artificial flavors. No by-products, wheat, corn, or soy.</p>
+      <p>Just real nutrition your dog can feel.</p>
+    </section>
+
+    <section class="cta-section">
+      <p class="lead">Ready to join us?</p>
+      <p style="margin-bottom: 32px;">Get notified when Watts launches.</p>
+
+      <div class="signup">
+        <a href="/" class="gate">
+          <span class="gate-text">Notify me at launch</span>
+          <span class="gate-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Watts Pet</footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
