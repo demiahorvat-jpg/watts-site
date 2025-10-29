@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>How to Read a Dog Supplement Label (And What to Ignore) | Watts</title>
+  <meta name="description" content="Learn how to decode dog supplement labels, spot marketing fluff, and identify what actually matters for your dog's health and nutrient absorption.">
+  <meta name="keywords" content="how to read dog supplement labels, dog supplement ingredients, what to look for in dog supplements, dog supplement quality, dog vitamin labels, NASC certified dog supplements, proprietary blend supplements">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="How to Read a Dog Supplement Label (And What to Ignore)">
+  <meta property="og:description" content="Learn how to decode dog supplement labels, spot marketing fluff, and identify what actually matters for your dog's health and nutrient absorption.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.wattspet.com/blog/how-to-read-dog-supplement-labels.html">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #F1ECE9;
+      --fg: #191919;
+      --muted: #3a3a3a;
+      --border: #191919;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body { min-height: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Navigation */
+    nav.nav {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 20px 20px;
+      border-bottom: 2.5px solid var(--border);
+    }
+    @media (min-width: 768px) {
+      nav.nav {
+        padding: 24px 20px;
+      }
+    }
+    nav.nav ul {
+      list-style: none;
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+    @media (min-width: 768px) {
+      nav.nav ul {
+        gap: 32px;
+      }
+    }
+    nav.nav a {
+      color: var(--fg);
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      transition: opacity 0.15s;
+      position: relative;
+    }
+    @media (min-width: 768px) {
+      nav.nav a {
+        font-size: 16px;
+      }
+    }
+    nav.nav a:hover {
+      opacity: 0.7;
+    }
+    nav.nav a.active::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--fg);
+    }
+
+    /* Breadcrumbs */
+    .breadcrumbs {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px 20px 0;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    @media (min-width: 768px) {
+      .breadcrumbs {
+        padding: 24px 40px 0;
+        font-size: 15px;
+      }
+    }
+    .breadcrumbs a {
+      color: var(--muted);
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    .breadcrumbs a:hover {
+      opacity: 0.7;
+    }
+    .breadcrumbs span {
+      margin: 0 8px;
+    }
+
+    /* Article */
+    article {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+    @media (min-width: 768px) {
+      article {
+        padding: 48px 40px 80px;
+      }
+    }
+
+    /* Article meta */
+    .article-meta {
+      margin-bottom: 24px;
+      font-size: 14px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    @media (min-width: 768px) {
+      .article-meta {
+        margin-bottom: 28px;
+        font-size: 15px;
+      }
+    }
+
+    /* Typography */
+    h1 {
+      font-family: "Geologica", sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 38px;
+        margin-bottom: 20px;
+      }
+    }
+
+    h2 {
+      font-family: "Geologica", sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin: 48px 0 20px;
+      letter-spacing: -0.01em;
+    }
+    @media (min-width: 768px) {
+      h2 {
+        font-size: 26px;
+        margin: 56px 0 24px;
+      }
+    }
+
+    h2:first-of-type {
+      margin-top: 32px;
+    }
+
+    h3 {
+      font-family: "Geologica", sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.4;
+      margin: 32px 0 16px;
+    }
+    @media (min-width: 768px) {
+      h3 {
+        font-size: 20px;
+        margin: 40px 0 18px;
+      }
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 16px;
+      color: var(--fg);
+    }
+    @media (min-width: 768px) {
+      p {
+        font-size: 18px;
+        margin-bottom: 18px;
+        line-height: 1.75;
+      }
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--fg);
+      text-decoration: underline;
+      text-decoration-thickness: 1.5px;
+      text-underline-offset: 2px;
+    }
+
+    a:hover {
+      opacity: 0.7;
+    }
+
+    /* Lists */
+    article ul, article ol {
+      margin: 20px 0;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    article li {
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 16px;
+      padding-left: 28px;
+      position: relative;
+    }
+    @media (min-width: 768px) {
+      article li {
+        font-size: 18px;
+        margin-bottom: 18px;
+      }
+    }
+
+    article ul li:before {
+      content: "•";
+      position: absolute;
+      left: 10px;
+      font-weight: 700;
+    }
+
+    /* Callout Box */
+    .callout {
+      border: 2.5px solid var(--border);
+      padding: 20px;
+      margin: 32px 0;
+      background: rgba(0,0,0,.01);
+    }
+    @media (min-width: 768px) {
+      .callout {
+        padding: 28px;
+        margin: 40px 0;
+      }
+    }
+
+    /* FAQ Section */
+    .faq-section {
+      margin-top: 56px;
+      padding-top: 40px;
+      border-top: 2.5px solid var(--border);
+    }
+    @media (min-width: 768px) {
+      .faq-section {
+        margin-top: 64px;
+        padding-top: 48px;
+      }
+    }
+
+    .faq-item {
+      margin-bottom: 32px;
+    }
+    @media (min-width: 768px) {
+      .faq-item {
+        margin-bottom: 40px;
+      }
+    }
+
+    .faq-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .faq-question {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    @media (min-width: 768px) {
+      .faq-question {
+        font-size: 20px;
+        margin-bottom: 14px;
+      }
+    }
+
+    .faq-answer {
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--fg);
+    }
+    @media (min-width: 768px) {
+      .faq-answer {
+        font-size: 18px;
+      }
+    }
+
+    /* CTA */
+    .cta-section {
+      text-align: center;
+      margin: 56px 0 0;
+      padding: 40px 0 0;
+      border-top: 2.5px solid var(--border);
+    }
+    @media (min-width: 768px) {
+      .cta-section {
+        margin: 64px 0 0;
+        padding: 48px 0 0;
+      }
+    }
+
+    .cta-section p {
+      margin-bottom: 24px;
+    }
+
+    .gate {
+      display: inline-flex;
+      align-items: stretch;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 480px;
+      height: 52px;
+      border: 2.5px solid var(--border);
+      background: transparent;
+      color: var(--fg);
+      font: 600 16px "Geologica", sans-serif;
+      padding: 0;
+      border-radius: 0;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    @media (min-width: 768px) {
+      .gate {
+        font-size: 17px;
+      }
+    }
+    .gate-text { padding: 0 20px 0 14px; text-align: left; flex: 1 1 auto; display: flex; align-items: center; }
+    @media (min-width: 768px) {
+      .gate-text { padding: 0 20px 0 16px; }
+    }
+    .gate-arrow {
+      display: grid;
+      place-items: center;
+      width: 52px;
+      border-left: 2.5px solid var(--border);
+      font-size: 18px;
+      line-height: 1;
+      user-select: none;
+    }
+    @media (min-width: 768px) {
+      .gate-arrow {
+        width: 43px;
+        font-size: 20px;
+      }
+    }
+    .gate:hover { background: rgba(0,0,0,.035); }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 400;
+      border-top: 2.5px solid var(--border);
+    }
+    @media (min-width: 768px) {
+      footer {
+        padding: 24px;
+        font-size: 13px;
+      }
+    }
+  </style>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.wattspet.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://www.wattspet.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "How to Read Dog Supplement Labels",
+        "item": "https://www.wattspet.com/blog/how-to-read-dog-supplement-labels.html"
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does NASC certified mean for dog supplements?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "NASC (National Animal Supplement Council) certification means the supplement manufacturer follows quality control standards, undergoes independent audits, and maintains proper labeling. While it's not required by law, NASC certification is a good indicator that a company takes quality seriously."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a proprietary blend on a dog supplement label?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A proprietary blend is a group of ingredients listed together without individual amounts. The label shows the total blend weight but doesn't disclose how much of each ingredient is included. This makes it impossible to know if your dog is getting effective doses of each nutrient."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I look for organic dog supplements?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Organic certification matters more for whole-food ingredients than isolated vitamins. If you're choosing supplements made from real food sources (like organ meats), organic or grass-fed sourcing is meaningful. For synthetic vitamins, organic certification doesn't significantly impact quality or absorption."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I know if a dog supplement has high-quality ingredients?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Look for: whole-food sources listed first (like beef liver, not vitamin A palmitate), transparent dosing without proprietary blends, minimal fillers or flow agents, third-party testing mentioned, and sourcing information (grass-fed, wild-caught, etc.). The fewer synthetic isolates and the more recognizable ingredients, the better."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are inactive ingredients in dog supplements?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Inactive ingredients don't provide nutritional value—they're used for manufacturing, texture, or shelf life. Common ones include magnesium stearate (flow agent), silicon dioxide (anti-caking), and cellulose (filler). While not harmful in small amounts, high-quality supplements minimize these in favor of active, beneficial ingredients."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How to Read a Dog Supplement Label (And What to Ignore)",
+    "description": "Learn how to decode dog supplement labels, spot marketing fluff, and identify what actually matters for your dog's health and nutrient absorption.",
+    "author": {
+      "@type": "Organization",
+      "name": "Watts Pet"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Watts Pet",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.wattspet.com/assets/file.svg"
+      }
+    },
+    "datePublished": "2025-02-10",
+    "dateModified": "2025-02-10",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.wattspet.com/blog/how-to-read-dog-supplement-labels.html"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <nav class="nav">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/blog/" class="active">Blog</a></li>
+    </ul>
+  </nav>
+
+  <div class="breadcrumbs">
+    <a href="/">Home</a>
+    <span>→</span>
+    <a href="/blog/">Blog</a>
+    <span>→</span>
+    <span>How to Read Dog Supplement Labels</span>
+  </div>
+
+  <article>
+    <div class="article-meta">February 10, 2025</div>
+
+    <h1>How to Read a Dog Supplement Label (And What to Ignore)</h1>
+
+    <p>Walk into any pet store and you'll see shelves filled with dog supplements making bold promises: "Maximum Strength," "Advanced Formula," "Veterinarian Recommended." But flip the bottle around and the ingredient list looks like a chemistry exam.</p>
+
+    <p>Most dog supplement labels are designed to sell, not to inform. Marketing claims dominate the front, while the actual ingredient quality is buried in fine print. Learning to read a supplement label—and knowing what to ignore—helps you separate real nutrition from expensive filler.</p>
+
+    <h2>What Actually Matters on a Dog Supplement Label</h2>
+
+    <h3>1. The Ingredient List (Not the Marketing Claims)</h3>
+
+    <p>Ingredients are listed by weight, from highest to lowest. The first 3-5 ingredients make up the majority of what's in the product.</p>
+
+    <p><strong>What to look for:</strong></p>
+
+    <ul>
+      <li><strong>Whole-food ingredients at the top</strong> — "Beef liver," "wild-caught salmon," "egg yolk" instead of synthetic isolates</li>
+      <li><strong>Recognizable sources</strong> — If you can picture the food, it's a good sign</li>
+      <li><strong>Minimal fillers</strong> — Rice flour, cellulose, and maltodextrin add bulk but no nutrition</li>
+    </ul>
+
+    <p><strong>Red flags:</strong></p>
+
+    <ul>
+      <li>Long lists of synthetic vitamins (Vitamin A Palmitate, Thiamine Mononitrate, Pyridoxine Hydrochloride)</li>
+      <li>Fillers or flow agents listed in the first five ingredients</li>
+      <li>"Proprietary blend" without individual ingredient amounts (more on this below)</li>
+    </ul>
+
+    <p>If the ingredient list reads like a chemistry textbook, you're likely looking at synthetic vitamins that your dog's body may not absorb well. Learn more about <a href="/blog/whole-food-vs-synthetic-nutrients.html">why bioavailability matters for dog supplements</a>.</p>
+
+    <h3>2. Guaranteed Analysis vs Supplement Facts</h3>
+
+    <p>Dog supplements typically show a <strong>Guaranteed Analysis</strong>, which is different from the Supplement Facts panel you see on human vitamins.</p>
+
+    <p><strong>Guaranteed Analysis</strong> lists:</p>
+
+    <ul>
+      <li>Crude protein (minimum %)</li>
+      <li>Crude fat (minimum %)</li>
+      <li>Crude fiber (maximum %)</li>
+      <li>Moisture (maximum %)</li>
+    </ul>
+
+    <p>This tells you general macronutrient content but <strong>doesn't show specific vitamin or mineral amounts</strong>. Some companies voluntarily include a more detailed breakdown, which is a sign of transparency.</p>
+
+    <p><strong>What to look for:</strong> Brands that list exact amounts of key nutrients (mg or IU per serving) rather than hiding behind vague percentages.</p>
+
+    <h3>3. Sourcing Information</h3>
+
+    <p>Where ingredients come from matters—especially for animal-based supplements.</p>
+
+    <p><strong>Good sourcing indicators:</strong></p>
+
+    <ul>
+      <li><strong>Grass-fed beef</strong> (higher in omega-3s and vitamins A, D, E)</li>
+      <li><strong>Wild-caught fish</strong> (cleaner, fewer contaminants than farmed)</li>
+      <li><strong>Pasture-raised poultry</strong> (better nutrient profile than conventional)</li>
+      <li><strong>Country of origin</strong> (U.S., New Zealand, and Australia tend to have stricter quality standards)</li>
+    </ul>
+
+    <p>If the label doesn't mention sourcing, it's often because the ingredients come from the cheapest available supplier—which usually means lower quality. <a href="/blog/beef-liver-for-dogs.html">Grass-fed beef liver</a>, for example, delivers measurably more nutrition than conventional liver.</p>
+
+    <h3>4. Processing Method</h3>
+
+    <p>How a supplement is made affects how well your dog absorbs it.</p>
+
+    <p><strong>Processing methods that preserve nutrients:</strong></p>
+
+    <ul>
+      <li><strong>Air-dried</strong> — Gentle drying that preserves vitamins and enzymes</li>
+      <li><strong>Freeze-dried</strong> — Removes water while maintaining some nutrient integrity</li>
+      <li><strong>Cold-pressed</strong> — No heat exposure, retains maximum nutrition</li>
+    </ul>
+
+    <p><strong>Processing that degrades nutrients:</strong></p>
+
+    <ul>
+      <li><strong>High-heat processing</strong> — Destroys heat-sensitive vitamins (B, C, some enzymes)</li>
+      <li><strong>Chemical extraction</strong> — Isolates nutrients but strips away co-factors that aid absorption</li>
+    </ul>
+
+    <p>If the label doesn't mention processing, assume heat was used. Transparency here is a good sign.</p>
+
+    <h3>5. Third-Party Testing and Certifications</h3>
+
+    <p>Legitimate certifications indicate quality control. Marketing buzzwords do not.</p>
+
+    <p><strong>Certifications that matter:</strong></p>
+
+    <ul>
+      <li><strong>NASC (National Animal Supplement Council)</strong> — Independent quality audits and labeling standards</li>
+      <li><strong>GMP (Good Manufacturing Practices)</strong> — Ensures consistent production quality</li>
+      <li><strong>Third-party tested</strong> — Independent lab verification of purity and potency</li>
+    </ul>
+
+    <p><strong>Marketing terms that don't:</strong></p>
+
+    <ul>
+      <li>"Veterinarian formulated" (doesn't mean tested or proven)</li>
+      <li>"Premium" or "Advanced Formula" (no regulatory meaning)</li>
+      <li>"Clinically proven" (unless a study is cited, it's just marketing)</li>
+    </ul>
+
+    <h2>What to Ignore (Marketing Fluff)</h2>
+
+    <h3>1. "Proprietary Blend"</h3>
+
+    <p>This phrase should immediately raise questions. A proprietary blend lists multiple ingredients under one total weight—without disclosing individual amounts.</p>
+
+    <p><strong>Example:</strong></p>
+
+    <p><em>"Proprietary Immune Blend: 500mg (turmeric, ginger, echinacea, astragalus)"</em></p>
+
+    <p>You have no idea if there's 400mg of turmeric and 25mg each of the others, or vice versa. This makes it impossible to know if your dog is getting effective doses.</p>
+
+    <p><strong>Why companies use it:</strong> To hide low doses of expensive ingredients or to prevent competitors from copying their formula.</p>
+
+    <p><strong>What you should do:</strong> Look for brands that list exact amounts of each ingredient. Transparency = confidence in dosing.</p>
+
+    <h3>2. Mega-Dose Claims</h3>
+
+    <p>"1000% Daily Value!" sounds impressive. But dogs don't need—and often can't utilize—megadoses of synthetic vitamins.</p>
+
+    <p>More isn't better. <a href="/blog/dog-vs-human-nutrition.html">Dogs absorb nutrients differently than humans</a>, and their shorter digestive tracts mean they need highly bioavailable nutrition in moderate, consistent amounts—not massive one-time doses.</p>
+
+    <p>Excessive amounts of fat-soluble vitamins (A, D, E, K) can even be harmful over time, as they accumulate in the body rather than being excreted.</p>
+
+    <h3>3. "All-Natural" Without Context</h3>
+
+    <p>"All-natural" is an unregulated term. Arsenic is natural. So is lead. The word alone doesn't tell you anything about quality, sourcing, or bioavailability.</p>
+
+    <p><strong>Better questions to ask:</strong></p>
+
+    <ul>
+      <li>Is it whole-food based or synthetic?</li>
+      <li>Where do the ingredients come from?</li>
+      <li>How is it processed?</li>
+    </ul>
+
+    <h3>4. "Veterinarian Recommended"</h3>
+
+    <p>This phrase is almost meaningless. It could mean:</p>
+
+    <ul>
+      <li>One vet somewhere recommended it once</li>
+      <li>The company paid a vet to endorse it</li>
+      <li>The company employs a vet on their team</li>
+    </ul>
+
+    <p>Unless the product has published research or clinical trials backing its efficacy, "veterinarian recommended" is just marketing.</p>
+
+    <h3>5. Ingredient Count as a Selling Point</h3>
+
+    <p>"50+ Vitamins and Minerals!" sounds comprehensive. But quality > quantity.</p>
+
+    <p>A supplement with 50 ingredients at ineffective doses is worse than a supplement with 5 ingredients at optimal, bioavailable levels. Long ingredient lists often include:</p>
+
+    <ul>
+      <li>Trace amounts of nutrients that sound good but do nothing</li>
+      <li>Synthetic isolates that dogs can't absorb well</li>
+      <li>Fillers to bulk up the capsule or powder</li>
+    </ul>
+
+    <p>Simplicity and transparency usually win. <a href="/blog/organ-based-nutrition-for-dogs.html">Organ-based supplements</a>, for example, deliver concentrated nutrition from just a few whole-food ingredients—no need for 50+ synthetics.</p>
+
+    <h2>How to Evaluate Inactive Ingredients</h2>
+
+    <p>Inactive ingredients don't provide nutrition—they're used for manufacturing, binding, or shelf stability.</p>
+
+    <p><strong>Common inactive ingredients (and what they do):</strong></p>
+
+    <ul>
+      <li><strong>Magnesium stearate</strong> — Flow agent (helps ingredients move through machinery)</li>
+      <li><strong>Silicon dioxide</strong> — Anti-caking agent</li>
+      <li><strong>Cellulose</strong> — Filler/binder</li>
+      <li><strong>Gelatin</strong> — Capsule material</li>
+      <li><strong>Glycerin</strong> — Moisture retention</li>
+    </ul>
+
+    <p>While these aren't inherently harmful, a high-quality supplement minimizes them. If inactive ingredients outnumber active ones, you're paying for filler.</p>
+
+    <h2>Red Flags That Should Make You Walk Away</h2>
+
+    <ul>
+      <li><strong>No ingredient sourcing information</strong> — If they won't tell you where it comes from, assume the cheapest option</li>
+      <li><strong>Proprietary blends</strong> — Lack of transparency = lack of confidence in dosing</li>
+      <li><strong>Synthetic isolates as primary ingredients</strong> — Low bioavailability for dogs</li>
+      <li><strong>No third-party testing mentioned</strong> — No independent verification of quality or purity</li>
+      <li><strong>Vague or exaggerated health claims</strong> — "Cures all ailments" or "Boosts immunity 500%" without evidence</li>
+      <li><strong>No contact information or company transparency</strong> — Reputable brands are easy to reach and open about their processes</li>
+    </ul>
+
+    <h2>What a Good Dog Supplement Label Looks Like</h2>
+
+    <div class="callout">
+      <h3 style="margin-top: 0; font-size: 18px;">Signs of a High-Quality Dog Supplement</h3>
+      <div style="margin-top: 12px;">
+        <div style="margin-bottom: 8px;"><strong>Whole-food ingredients listed first</strong> (beef liver, salmon, egg yolk—not synthetic isolates)</div>
+        <div style="margin-bottom: 8px;"><strong>Transparent dosing</strong> (exact mg or IU per serving, no proprietary blends)</div>
+        <div style="margin-bottom: 8px;"><strong>Sourcing information</strong> (grass-fed, wild-caught, country of origin)</div>
+        <div style="margin-bottom: 8px;"><strong>Processing method disclosed</strong> (air-dried, freeze-dried, cold-pressed)</div>
+        <div style="margin-bottom: 8px;"><strong>Third-party testing or certifications</strong> (NASC, GMP, or independent lab results)</div>
+        <div><strong>Minimal inactive ingredients</strong> (prioritizes active nutrition over fillers)</div>
+      </div>
+    </div>
+
+    <p>At Watts, we use grass-fed beef liver, heart, and kidney—air-dried to preserve maximum nutrient density. Every ingredient is listed with full transparency, no proprietary blends, and no synthetic fillers. What you see is what your dog gets.</p>
+
+    <h2>The Bottom Line</h2>
+
+    <p>Reading a dog supplement label isn't about memorizing ingredient names—it's about knowing what questions to ask. Look past the marketing and focus on:</p>
+
+    <ul>
+      <li>Whole-food ingredients over synthetic isolates</li>
+      <li>Transparent dosing over proprietary blends</li>
+      <li>Sourcing and processing information</li>
+      <li>Third-party verification</li>
+    </ul>
+
+    <p>The best supplements don't need flashy claims. They let their ingredients and transparency speak for themselves.</p>
+
+    <!-- FAQ Section -->
+    <div class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <div class="faq-question">What does NASC certified mean for dog supplements?</div>
+        <div class="faq-answer">NASC (National Animal Supplement Council) certification means the supplement manufacturer follows quality control standards, undergoes independent audits, and maintains proper labeling. While it's not required by law, NASC certification is a good indicator that a company takes quality seriously.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">What is a proprietary blend on a dog supplement label?</div>
+        <div class="faq-answer">A proprietary blend is a group of ingredients listed together without individual amounts. The label shows the total blend weight but doesn't disclose how much of each ingredient is included. This makes it impossible to know if your dog is getting effective doses of each nutrient.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Should I look for organic dog supplements?</div>
+        <div class="faq-answer">Organic certification matters more for whole-food ingredients than isolated vitamins. If you're choosing supplements made from real food sources (like organ meats), organic or grass-fed sourcing is meaningful. For synthetic vitamins, organic certification doesn't significantly impact quality or absorption.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">How do I know if a dog supplement has high-quality ingredients?</div>
+        <div class="faq-answer">Look for: whole-food sources listed first (like beef liver, not vitamin A palmitate), transparent dosing without proprietary blends, minimal fillers or flow agents, third-party testing mentioned, and sourcing information (grass-fed, wild-caught, etc.). The fewer synthetic isolates and the more recognizable ingredients, the better.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">What are inactive ingredients in dog supplements?</div>
+        <div class="faq-answer">Inactive ingredients don't provide nutritional value—they're used for manufacturing, texture, or shelf life. Common ones include magnesium stearate (flow agent), silicon dioxide (anti-caking), and cellulose (filler). While not harmful in small amounts, high-quality supplements minimize these in favor of active, beneficial ingredients.</div>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="cta-section">
+      <p><strong>Transparency you can trust. Ingredients you can pronounce.</strong></p>
+      <p>Join the waitlist for Watts — whole-food nutrition with nothing to hide.</p>
+
+      <a href="/" class="gate">
+        <span class="gate-text">Notify me at launch</span>
+        <span class="gate-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </article>
+
+  <footer>© <span id="year"></span> Watts Pet</footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
