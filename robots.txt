@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://www.watts.pet/sitemap.xml
+Sitemap: https://www.wattspet.com/sitemap.xml
