@@ -7,6 +7,9 @@
   <meta name="description" content="Learn about Watts and our mission to extend dog healthspan through real food nutrition.">
   <link rel="canonical" href="https://wattspet.com/about.html">
 
+  <!-- Ahrefs Analytics -->
+  <script src="https://analytics.ahrefs.com/analytics.js" data-key="22KmtuYXO77ED5o6fe6z1w" async></script>
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
@@ -202,6 +205,111 @@
       font-weight: 700;
     }
 
+    /* Comparison table */
+    .comparison {
+      margin: 32px 0;
+      border: 2.5px solid var(--border);
+      overflow: hidden;
+    }
+
+    .comparison table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .comparison th,
+    .comparison td {
+      padding: 16px;
+      text-align: left;
+      border-bottom: 2px solid var(--border);
+      font-size: 15px;
+    }
+    @media (min-width: 768px) {
+      .comparison th,
+      .comparison td {
+        padding: 18px 20px;
+        font-size: 16px;
+      }
+    }
+
+    .comparison thead th {
+      background: var(--fg);
+      color: var(--bg);
+      font-weight: 700;
+      font-size: 16px;
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      .comparison thead th {
+        font-size: 17px;
+      }
+    }
+
+    .comparison tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .comparison td:first-child {
+      font-weight: 500;
+      width: 35%;
+    }
+
+    .comparison td:nth-child(2),
+    .comparison td:nth-child(3) {
+      text-align: center;
+      width: 32.5%;
+    }
+
+    /* Ingredient grid */
+    .ingredient-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      margin: 24px 0;
+    }
+    @media (min-width: 768px) {
+      .ingredient-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+      }
+    }
+
+    .ingredient-box {
+      border: 2.5px solid var(--border);
+      padding: 20px;
+    }
+    @media (min-width: 768px) {
+      .ingredient-box {
+        padding: 24px;
+      }
+    }
+
+    .ingredient-box h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .ingredient-box ul {
+      margin: 0;
+    }
+
+    .ingredient-box li {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    @media (min-width: 768px) {
+      .ingredient-box li {
+        font-size: 17px;
+      }
+    }
+
+    .ingredient-box li:last-child {
+      margin-bottom: 0;
+    }
+
     /* CTA */
     .cta-section {
       text-align: center;
@@ -320,21 +428,81 @@
     </section>
 
     <section>
-      <h2>Our Approach</h2>
-      <p>Watts is a premium dog treat made from grass-fed beef and organs, air-dried to preserve maximum nutrition. Every bite delivers:</p>
+      <h2>What Makes Watts Different</h2>
+      <div class="comparison">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Watts</th>
+              <th>Typical Supplement</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ingredients</td>
+              <td>Real meat + organs</td>
+              <td>Synthetic powders</td>
+            </tr>
+            <tr>
+              <td>Nutrient form</td>
+              <td>Natural, bioactive</td>
+              <td>Low-absorption forms</td>
+            </tr>
+            <tr>
+              <td>Fillers</td>
+              <td>Zero fillers</td>
+              <td>60–80% fillers</td>
+            </tr>
+            <tr>
+              <td>Essential nutrients</td>
+              <td>Heme iron, taurine, Vitamin A, zinc, K2, carnitine</td>
+              <td>Missing foundational nutrients</td>
+            </tr>
+            <tr>
+              <td>Palatability</td>
+              <td>Dogs love it (it is food)</td>
+              <td>Artificial flavoring needed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>The Science That Matters</h2>
+      <p class="lead">Bioavailability = results.</p>
+      <p>When nutrients come from real muscle and organs, the body can recognize, absorb, and use them. That means your dog gets more nutrition per bite and more meaningful support for:</p>
       <ul>
-        <li>Natural, bioactive nutrients your dog's body can actually use</li>
-        <li>Heme iron, taurine, Vitamin A, zinc, K2, and carnitine</li>
-        <li>Zero fillers, synthetics, or artificial ingredients</li>
-        <li>The kind of nutrition that compounds over time into better energy, immunity, and vitality</li>
+        <li>Heart & cellular energy (taurine, carnitine, heme iron)</li>
+        <li>Immune strength (Vitamin A, zinc)</li>
+        <li>Skin & coat health (natural fatty acids)</li>
+        <li>Long-term vitality driven by daily nourishment, not quick fixes</li>
       </ul>
     </section>
 
     <section>
-      <h2>Our Standard</h2>
+      <h2>Our Ingredient Standard</h2>
+      <div class="ingredient-grid">
+        <div class="ingredient-box">
+          <h3>What you'll always find:</h3>
+          <ul>
+            <li>Grass-fed beef and organs</li>
+            <li>Air-dried nutrients for maximum retention</li>
+            <li>Naturally-occurring vitamins, minerals, and amino acids</li>
+          </ul>
+        </div>
+        <div class="ingredient-box">
+          <h3>What you'll never find:</h3>
+          <ul>
+            <li>Synthetic vitamins</li>
+            <li>Seed oils</li>
+            <li>Fillers, binders, or artificial flavors</li>
+            <li>By-products, wheat, corn, or soy</li>
+          </ul>
+        </div>
+      </div>
       <p>Transparency, simplicity, integrity—all the way down to the label.</p>
-      <p>We use only real, whole-food ingredients. No synthetic vitamins. No seed oils. No fillers, binders, or artificial flavors. No by-products, wheat, corn, or soy.</p>
-      <p>Just real nutrition your dog can feel.</p>
     </section>
 
     <section class="cta-section">
