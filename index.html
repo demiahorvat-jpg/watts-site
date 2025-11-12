@@ -38,7 +38,7 @@
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
-    html, body { height: 100%; }
+    html { height: 100%; }
     body {
       background: var(--bg);
       color: var(--fg);
@@ -48,6 +48,7 @@
       flex-direction: column;
       align-items: center;
       overflow-x: hidden;
+      min-height: 100%;
     }
 
     main.wrap {
@@ -335,6 +336,32 @@
       }
     }
 
+    footer {
+      width: 100%;
+      padding: 32px 20px 24px;
+      text-align: center;
+      border-top: 1px solid rgba(25, 25, 25, 0.1);
+    }
+    @media (min-width: 768px) {
+      footer {
+        padding: 40px 20px 32px;
+      }
+    }
+    footer p {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 400;
+      margin: 0;
+    }
+    footer a {
+      color: var(--fg);
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    footer a:hover {
+      opacity: 0.7;
+    }
+
     .sr-only {
       position: absolute;
       width: 1px;
@@ -495,5 +522,9 @@
       }
     });
   </script>
+
+  <footer>
+    <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+  </footer>
 </body>
 </html>

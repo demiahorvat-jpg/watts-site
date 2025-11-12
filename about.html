@@ -390,18 +390,29 @@
 
     /* Footer */
     footer {
+      width: 100%;
+      padding: 32px 20px 24px;
       text-align: center;
-      padding: 20px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 400;
-      border-top: 2.5px solid var(--border);
+      border-top: 1px solid rgba(25, 25, 25, 0.1);
     }
     @media (min-width: 768px) {
       footer {
-        padding: 24px;
-        font-size: 13px;
+        padding: 40px 20px 32px;
       }
+    }
+    footer p {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 400;
+      margin: 0;
+    }
+    footer a {
+      color: var(--fg);
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    footer a:hover {
+      opacity: 0.7;
     }
   </style>
 </head>
@@ -532,7 +543,10 @@
     </section>
   </main>
 
-  <footer>© <span id="year"></span> Watts Pet</footer>
+  <footer>
+    <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+    <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet</p>
+  </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();

@@ -672,6 +672,32 @@
     .hidden {
       display: none;
     }
+
+    footer {
+      width: 100%;
+      padding: 32px 20px 24px;
+      text-align: center;
+      border-top: 1px solid rgba(25, 25, 25, 0.1);
+    }
+    @media (min-width: 768px) {
+      footer {
+        padding: 40px 20px 32px;
+      }
+    }
+    footer p {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 400;
+      margin: 0;
+    }
+    footer a {
+      color: var(--fg);
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    footer a:hover {
+      opacity: 0.7;
+    }
   </style>
 </head>
 
@@ -1483,5 +1509,9 @@
     randomizeSelectOptions();
     showSection(1);
   </script>
+
+  <footer>
+    <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+  </footer>
 </body>
 </html>
