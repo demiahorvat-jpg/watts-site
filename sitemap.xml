@@ -168,4 +168,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://wattspet.com/blog/chicken-by-products-dog-food.html</loc>
+    <lastmod>2026-01-13T10:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
