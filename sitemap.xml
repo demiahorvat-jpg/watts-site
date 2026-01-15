@@ -204,4 +204,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://wattspet.com/blog/gut-health-for-dogs.html</loc>
+    <lastmod>2026-01-14T10:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
