@@ -306,6 +306,28 @@
         font-size: 13px;
       }
     }
+
+    /* Table styling */
+    article table thead tr {
+      border-bottom: 2.5px solid var(--border);
+      background: rgba(25,25,25,0.02);
+    }
+    article table thead th {
+      text-align: left;
+      padding: 14px 12px;
+      font-weight: 700;
+      font-size: 15px;
+    }
+    article table tbody tr {
+      border-bottom: 1.5px solid rgba(25,25,25,0.1);
+    }
+    article table tbody tr:last-child {
+      border-bottom: none;
+    }
+    article table tbody td {
+      padding: 14px 12px;
+      font-size: 16px;
+    }
   </style>
 
     <script type="application/ld+json">
@@ -444,7 +466,7 @@
 <article>
 <h1>Best Calming Supplements for Dogs: Natural Anxiety Relief That Works</h1>
 
-<div class="quick-facts">
+<div class="callout">
     <h3>Quick Facts:</h3>
     <ul>
         <li><strong>Most effective nutrients:</strong> B vitamins, magnesium, omega-3s, tryptophan</li>
@@ -577,7 +599,7 @@
 
 <p>Many calming supplements include botanical ingredients. Some have solid research in dogs, others don't. Here's what the evidence shows:</p>
 
-<table>
+<table style="width: 100%; border-collapse: collapse; margin: 32px 0; border: 2.5px solid var(--border);">
     <thead>
         <tr>
             <th>Ingredient</th>
@@ -763,7 +785,7 @@
 
 <p>If you choose a commercial product, look for:</p>
 
-<table>
+<table style="width: 100%; border-collapse: collapse; margin: 32px 0; border: 2.5px solid var(--border);">
     <thead>
         <tr>
             <th>Quality Indicator</th>

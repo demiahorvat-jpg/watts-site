@@ -306,6 +306,28 @@
         font-size: 13px;
       }
     }
+
+    /* Table styling */
+    article table thead tr {
+      border-bottom: 2.5px solid var(--border);
+      background: rgba(25,25,25,0.02);
+    }
+    article table thead th {
+      text-align: left;
+      padding: 14px 12px;
+      font-weight: 700;
+      font-size: 15px;
+    }
+    article table tbody tr {
+      border-bottom: 1.5px solid rgba(25,25,25,0.1);
+    }
+    article table tbody tr:last-child {
+      border-bottom: none;
+    }
+    article table tbody td {
+      padding: 14px 12px;
+      font-size: 16px;
+    }
   </style>
 
     <script type="application/ld+json">
@@ -444,7 +466,7 @@
 <article>
 <h1>Best Dog Supplements for Healthy Skin & Shiny Coat</h1>
 
-<div class="quick-facts">
+<div class="callout">
     <h3>Quick Facts:</h3>
     <ul>
         <li><strong>Most effective nutrients:</strong> Omega-3s (EPA/DHA), biotin, zinc, vitamin A, vitamin E</li>
@@ -486,7 +508,7 @@
 
 <p><strong>Best whole-food source:</strong> Beef liver—contains <strong>1,500 mcg biotin per 100g</strong>, compared to 10-30 mcg/kg in most commercial dog foods.</p>
 
-<table>
+<table style="width: 100%; border-collapse: collapse; margin: 32px 0; border: 2.5px solid var(--border);">
     <thead>
         <tr>
             <th>Food Source</th>
@@ -643,7 +665,7 @@
 
 <p>If you choose a commercial supplement, look for:</p>
 
-<table>
+<table style="width: 100%; border-collapse: collapse; margin: 32px 0; border: 2.5px solid var(--border);">
     <thead>
         <tr>
             <th>Quality Indicator</th>
@@ -759,7 +781,7 @@
 
 <p><strong>Cost comparison (monthly for 50 lb dog):</strong></p>
 
-<table>
+<table style="width: 100%; border-collapse: collapse; margin: 32px 0; border: 2.5px solid var(--border);">
     <thead>
         <tr>
             <th>Approach</th>
