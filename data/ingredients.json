@@ -1,0 +1,3100 @@
+{
+  "ingredients": [
+    {
+      "name": "Chicken Meal",
+      "aliases": ["chicken by-product meal", "dehydrated chicken", "chicken protein"],
+      "category": "protein",
+      "whatItIs": "Rendered chicken with moisture and fat removed, creating a concentrated protein source (60-65% protein by weight).",
+      "whyUsed": [
+        "Higher protein density than fresh chicken (65% vs 18%)",
+        "Shelf-stable without refrigeration",
+        "Cost-effective concentrated protein"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Quality depends on source. 'Chicken meal' from named source is good; 'poultry meal' or 'meat meal' can include low-quality parts.",
+      "wattsPosition": "good",
+      "wattsTake": "High-quality protein source when from a named animal source. We prefer chicken meal over generic 'poultry meal' or unspecified 'meat meal.'",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Beef Meal",
+      "aliases": ["beef by-product meal", "dehydrated beef"],
+      "category": "protein",
+      "whatItIs": "Rendered beef with moisture removed, concentrated protein source similar to chicken meal.",
+      "whyUsed": [
+        "Concentrated protein (60-65% protein)",
+        "Alternative protein for dogs sensitive to chicken",
+        "Rich in iron and B vitamins"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Quality protein when from named source. Avoid generic 'meat meal' which can be any mammal.",
+      "wattsPosition": "good",
+      "wattsTake": "Quality protein source for dogs who tolerate beef. Look for 'beef meal' specifically, not generic 'meat meal.'",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Salmon Meal",
+      "aliases": ["fish meal", "dehydrated salmon"],
+      "category": "protein",
+      "whatItIs": "Rendered salmon with moisture removed. Provides concentrated protein plus omega-3 fatty acids.",
+      "whyUsed": [
+        "High-quality protein (60%+ protein)",
+        "Natural source of omega-3s (EPA/DHA)",
+        "Novel protein for dogs with poultry allergies"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Excellent protein source. Provides both protein and beneficial omega-3 fatty acids.",
+      "wattsPosition": "good",
+      "wattsTake": "One of the best protein sources for dogs. Combines quality protein with anti-inflammatory omega-3s naturally.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Meat By-Products",
+      "aliases": ["poultry by-products", "animal by-products", "by-product meal"],
+      "category": "protein",
+      "whatItIs": "Non-rendered parts from slaughtered animals—organs, blood, bone, fatty tissue. Excludes meat, hide, hooves, hair, horns.",
+      "whyUsed": [
+        "Cheap protein source using slaughter waste",
+        "Can include nutrient-rich organs (liver, kidney)",
+        "Highly variable quality and composition"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Extremely variable quality. Can range from nutrient-rich organs to low-quality waste. No transparency on source or quality.",
+      "wattsPosition": "caution",
+      "wattsTake": "We avoid by-products due to lack of transparency and quality consistency. While organs are nutritious, 'by-products' doesn't guarantee you're getting liver vs low-value waste.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Rice Flour",
+      "aliases": ["ground rice", "rice powder", "white rice flour"],
+      "category": "carbohydrate",
+      "whatItIs": "Finely ground white or brown rice. Easily digestible carbohydrate source.",
+      "whyUsed": [
+        "Easily digestible carbohydrate",
+        "Hypoallergenic (rarely causes food sensitivities)",
+        "Binds ingredients in treats and kibble"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Brown rice flour retains more fiber and nutrients than white. Generally well-tolerated carb source.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable carbohydrate source. Not nutrient-dense, but digestible and rarely problematic. We prefer whole food carb sources when possible.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Pea Starch",
+      "aliases": ["pea flour", "yellow pea flour"],
+      "category": "carbohydrate",
+      "whatItIs": "Starch extracted from peas. Used as grain-free carbohydrate and binder.",
+      "whyUsed": [
+        "Grain-free carbohydrate alternative",
+        "Binds ingredients in grain-free kibble",
+        "Cheap filler in 'grain-free' formulas"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Isolated starch with minimal nutrition. Whole peas are nutritious; pea starch is just the extracted carbohydrate.",
+      "wattsPosition": "caution",
+      "wattsTake": "Common filler in grain-free foods. Provides bulk but minimal nutrition. Whole peas would be better; pea starch is just cheap carbohydrate.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Potato Starch",
+      "aliases": ["tapioca starch", "modified potato starch"],
+      "category": "carbohydrate",
+      "whatItIs": "Extracted starch from potatoes. Pure carbohydrate with no fiber or micronutrients.",
+      "whyUsed": [
+        "Grain-free binder",
+        "Creates desired kibble texture",
+        "Cheap bulk ingredient"
+      ],
+      "nutritionValue": "none",
+      "qualityNote": "Pure refined starch. Spikes blood sugar. Zero nutritional value beyond calories.",
+      "wattsPosition": "avoid",
+      "wattsTake": "We avoid refined starches. They're used to bulk up grain-free formulas cheaply but provide no nutritional benefit.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Tapioca",
+      "aliases": ["tapioca starch", "cassava starch", "manioc"],
+      "category": "carbohydrate",
+      "whatItIs": "Starch extracted from cassava root. Pure carbohydrate used as grain-free binder.",
+      "whyUsed": [
+        "Grain-free alternative binder",
+        "Creates chewy texture in treats",
+        "Hypoallergenic carb source"
+      ],
+      "nutritionValue": "none",
+      "qualityNote": "Pure refined starch with no fiber or micronutrients. Rapidly digested carbohydrate.",
+      "wattsPosition": "avoid",
+      "wattsTake": "Another refined starch we avoid. Used to replace grains in 'grain-free' products but offers no nutritional advantage.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Cellulose",
+      "aliases": ["powdered cellulose", "cellulose fiber", "plant fiber"],
+      "category": "fiber",
+      "whatItIs": "Insoluble fiber from plant cell walls, often from wood pulp. Indigestible bulking agent.",
+      "whyUsed": [
+        "Adds bulk to increase product volume",
+        "Fiber source in weight management formulas",
+        "Binds water in soft chews"
+      ],
+      "nutritionValue": "none",
+      "qualityNote": "Completely indigestible. Passes through unchanged. Basically sawdust.",
+      "wattsPosition": "avoid",
+      "wattsTake": "We don't use cellulose. While it's 'safe,' it's filler with zero nutritional value. Whole-food fiber sources are vastly superior.",
+      "citations": [
+        {"title": "FDA Generally Recognized as Safe", "url": "https://www.fda.gov/", "publisher": "FDA"}
+      ]
+    },
+    {
+      "name": "Beet Pulp",
+      "aliases": ["dried beet pulp", "sugar beet pulp"],
+      "category": "fiber",
+      "whatItIs": "Fibrous residue left after extracting sugar from sugar beets. Moderately fermentable fiber.",
+      "whyUsed": [
+        "Inexpensive fiber source",
+        "Helps regulate stool consistency",
+        "Moderately fermentable (feeds gut bacteria)"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Decent fiber source despite being a byproduct. Helps maintain healthy stools and feeds beneficial bacteria.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable fiber source. While it's a sugar byproduct, it provides functional fiber. Not our first choice, but not problematic in moderate amounts.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Chicory Root",
+      "aliases": ["chicory inulin", "inulin", "chicory root fiber", "dried chicory root"],
+      "category": "fiber",
+      "whatItIs": "Root vegetable rich in inulin, a prebiotic fiber that feeds beneficial gut bacteria.",
+      "whyUsed": [
+        "Prebiotic fiber source",
+        "Feeds beneficial gut bacteria",
+        "Supports digestive health"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Excellent prebiotic fiber. Actually beneficial for gut health, not just filler.",
+      "wattsPosition": "good",
+      "wattsTake": "One of the best fiber sources. Chicory root inulin feeds beneficial bacteria and supports gut health.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Chicken Fat",
+      "aliases": ["poultry fat", "chicken oil"],
+      "category": "fat",
+      "whatItIs": "Fat rendered from chicken tissue. Primary fat source in many dog foods.",
+      "whyUsed": [
+        "Palatable fat source (dogs love it)",
+        "Provides essential fatty acids",
+        "Energy-dense nutrient"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Quality fat source when preserved with natural antioxidants (mixed tocopherols). Check preservation method.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent fat source for dogs. Look for 'preserved with mixed tocopherols' rather than synthetic preservatives (BHA/BHT).",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Fish Oil",
+      "aliases": ["salmon oil", "omega-3 oil", "marine oil"],
+      "category": "fat",
+      "whatItIs": "Oil extracted from fatty fish. Rich in omega-3 fatty acids (EPA and DHA).",
+      "whyUsed": [
+        "Provides anti-inflammatory omega-3s",
+        "Supports skin, coat, joint, and brain health",
+        "Essential fatty acids dogs need"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "One of the most beneficial ingredients. Quality matters—look for molecular distillation and antioxidant preservation.",
+      "wattsPosition": "good",
+      "wattsTake": "Highly beneficial ingredient. Omega-3s from fish oil support inflammation reduction, joint health, and cognitive function.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Maltodextrin",
+      "aliases": ["modified food starch", "corn maltodextrin"],
+      "category": "additive",
+      "whatItIs": "Highly processed starch derived from corn, rice, or potato. Used as filler and binder in soft chews and supplements.",
+      "whyUsed": [
+        "Cheap filler to add bulk",
+        "Binds ingredients in soft chews",
+        "Improves palatability and texture"
+      ],
+      "nutritionValue": "none",
+      "qualityNote": "Refined carbohydrate with zero nutritional value. Spikes blood sugar. Pure filler.",
+      "wattsPosition": "avoid",
+      "wattsTake": "We never use maltodextrin. It's a refined carb with no nutritional benefit, used to bulk up products cheaply. Whole food alternatives exist.",
+      "citations": [
+        {"title": "FDA GRAS", "url": "https://www.fda.gov/", "publisher": "FDA"}
+      ]
+    },
+    {
+      "name": "Magnesium Stearate",
+      "aliases": ["vegetable stearate", "stearic acid"],
+      "category": "additive",
+      "whatItIs": "Flow agent used in supplement manufacturing to prevent ingredients from sticking to equipment.",
+      "whyUsed": [
+        "Prevents ingredients from clumping",
+        "Allows faster manufacturing",
+        "Reduces equipment cleaning time"
+      ],
+      "nutritionValue": "none",
+      "qualityNote": "Manufacturing convenience ingredient with no benefit to the dog. Generally recognized as safe but unnecessary.",
+      "wattsPosition": "avoid",
+      "wattsTake": "We avoid magnesium stearate. It's added for manufacturing convenience, not for your dog's benefit.",
+      "citations": [
+        {"title": "FDA GRAS", "url": "https://www.fda.gov/", "publisher": "FDA"}
+      ]
+    },
+    {
+      "name": "Carrageenan",
+      "aliases": ["irish moss extract", "seaweed extract"],
+      "category": "additive",
+      "whatItIs": "Thickening agent extracted from red seaweed. Used to create gel texture in wet foods and treats.",
+      "whyUsed": [
+        "Creates gel-like texture in wet food",
+        "Binds water in soft chews",
+        "Improves product consistency"
+      ],
+      "nutritionValue": "none",
+      "qualityNote": "Some research suggests degraded carrageenan may cause inflammation. Food-grade carrageenan is considered safe by FDA but debated.",
+      "wattsPosition": "caution",
+      "wattsTake": "We avoid carrageenan due to potential inflammatory effects. While deemed safe by regulators, research suggests concerns.",
+      "citations": [
+        {"title": "FDA GRAS", "url": "https://www.fda.gov/", "publisher": "FDA"}
+      ]
+    },
+    {
+      "name": "Xanthan Gum",
+      "aliases": ["corn sugar gum"],
+      "category": "additive",
+      "whatItIs": "Polysaccharide created by bacterial fermentation. Used as thickener and stabilizer.",
+      "whyUsed": [
+        "Thickens and stabilizes products",
+        "Prevents ingredient separation",
+        "Creates desired texture"
+      ],
+      "nutritionValue": "none",
+      "qualityNote": "Generally safe but provides no nutrition. Some dogs may experience digestive upset at high doses.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable in small amounts as a stabilizer. Not nutritious but not harmful in typical doses.",
+      "citations": [
+        {"title": "FDA GRAS", "url": "https://www.fda.gov/", "publisher": "FDA"}
+      ]
+    },
+    {
+      "name": "Guar Gum",
+      "aliases": ["guar flour"],
+      "category": "additive",
+      "whatItIs": "Fiber from guar beans used as thickener and binder.",
+      "whyUsed": [
+        "Natural thickening agent",
+        "Binds water in wet foods",
+        "Provides some soluble fiber"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Natural source, provides some fiber benefit. Generally well-tolerated.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable natural thickener. Provides minor fiber benefit unlike synthetic alternatives.",
+      "citations": [
+        {"title": "FDA GRAS", "url": "https://www.fda.gov/", "publisher": "FDA"}
+      ]
+    },
+    {
+      "name": "Mixed Tocopherols",
+      "aliases": ["vitamin E", "natural preservatives", "tocopherols"],
+      "category": "preservative",
+      "whatItIs": "Natural form of vitamin E used as antioxidant preservative to prevent fat rancidity.",
+      "whyUsed": [
+        "Natural preservative for fats",
+        "Provides vitamin E",
+        "Prevents rancidity and oxidation"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Excellent natural preservative that also provides nutritional benefit (vitamin E).",
+      "wattsPosition": "good",
+      "wattsTake": "Our preferred preservative. It's natural, effective, and provides antioxidant benefit. Always look for this over synthetic preservatives.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "BHA",
+      "aliases": ["butylated hydroxyanisole"],
+      "category": "preservative",
+      "whatItIs": "Synthetic antioxidant preservative used to prevent fat rancidity.",
+      "whyUsed": [
+        "Effective synthetic preservative",
+        "Cheaper than natural alternatives",
+        "Long shelf life extension"
+      ],
+      "nutritionValue": "none",
+      "qualityNote": "Synthetic preservative with potential health concerns. Classified as 'reasonably anticipated to be a human carcinogen' by National Toxicology Program.",
+      "wattsPosition": "avoid",
+      "wattsTake": "We never use BHA. Natural preservatives like mixed tocopherols are safer and just as effective.",
+      "citations": [
+        {"title": "National Toxicology Program", "url": "https://ntp.niehs.nih.gov/", "publisher": "NTP"}
+      ]
+    },
+    {
+      "name": "BHT",
+      "aliases": ["butylated hydroxytoluene"],
+      "category": "preservative",
+      "whatItIs": "Synthetic antioxidant preservative chemically similar to BHA.",
+      "whyUsed": [
+        "Prevents fat oxidation",
+        "Extends shelf life",
+        "Cheaper than natural options"
+      ],
+      "nutritionValue": "none",
+      "qualityNote": "Synthetic preservative with potential health concerns similar to BHA.",
+      "wattsPosition": "avoid",
+      "wattsTake": "We avoid BHT. Natural alternatives exist and are preferable.",
+      "citations": [
+        {"title": "FDA GRAS", "url": "https://www.fda.gov/", "publisher": "FDA"}
+      ]
+    },
+    {
+      "name": "Rosemary Extract",
+      "aliases": ["rosemary oil", "natural preservative"],
+      "category": "preservative",
+      "whatItIs": "Natural antioxidant extract from rosemary plant used to preserve fats.",
+      "whyUsed": [
+        "Natural preservative alternative",
+        "Antioxidant properties",
+        "Consumer preference for natural ingredients"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Effective natural preservative with antioxidant benefits. Safe and well-tolerated.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent natural preservative option. We use rosemary extract as a safe, effective alternative to synthetic preservatives.",
+      "citations": [
+        {"title": "FDA GRAS", "url": "https://www.fda.gov/", "publisher": "FDA"}
+      ]
+    },
+    {
+      "name": "Glucosamine",
+      "aliases": ["glucosamine HCl", "glucosamine sulfate", "glucosamine hydrochloride"],
+      "category": "active",
+      "whatItIs": "Amino sugar naturally found in cartilage. Supplemented for joint health support.",
+      "whyUsed": [
+        "Joint health support",
+        "May slow cartilage breakdown",
+        "Popular in senior dog formulas"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Evidence for effectiveness is mixed in dogs. Some studies show benefit after 10+ weeks, others show minimal improvement over placebo.",
+      "wattsPosition": "neutral",
+      "wattsTake": "We prefer whole-food sources like green-lipped mussel, which provides natural glucosamine plus omega-3s and other compounds. Isolated glucosamine has mixed evidence.",
+      "citations": [
+        {"title": "Efficacy of nutraceuticals for canine osteoarthritis", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9929184/", "publisher": "NIH"}
+      ]
+    },
+    {
+      "name": "Chondroitin",
+      "aliases": ["chondroitin sulfate"],
+      "category": "active",
+      "whatItIs": "Structural component of cartilage. Supplemented for joint health, often paired with glucosamine.",
+      "whyUsed": [
+        "Joint and cartilage support",
+        "May reduce cartilage breakdown",
+        "Common in joint supplements"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Works best with glucosamine and omega-3s. Evidence is mixed; requires 10+ weeks to assess effectiveness.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Like glucosamine, we prefer whole-food sources. Green-lipped mussel provides natural chondroitin plus synergistic compounds.",
+      "citations": [
+        {"title": "Efficacy of nutraceuticals for canine osteoarthritis", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9929184/", "publisher": "NIH"}
+      ]
+    },
+    {
+      "name": "MSM",
+      "aliases": ["methylsulfonylmethane", "dimethyl sulfone"],
+      "category": "active",
+      "whatItIs": "Organic sulfur compound used for joint support and inflammation reduction.",
+      "whyUsed": [
+        "Joint health support",
+        "Anti-inflammatory properties",
+        "Provides sulfur for cartilage"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Limited research in dogs specifically. Generally safe, but evidence for effectiveness is moderate.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Safe supplement with plausible mechanism, but limited dog-specific research. Not our first choice for joint support.",
+      "citations": [
+        {"title": "FDA GRAS", "url": "https://www.fda.gov/", "publisher": "FDA"}
+      ]
+    },
+    {
+      "name": "Turmeric",
+      "aliases": ["curcumin", "turmeric extract", "curcuma longa"],
+      "category": "active",
+      "whatItIs": "Spice containing curcumin, a compound with anti-inflammatory properties.",
+      "whyUsed": [
+        "Anti-inflammatory effects",
+        "Antioxidant properties",
+        "Popular natural supplement"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Poor absorption (less than 1% bioavailability). Needs black pepper (piperine) and fat for meaningful absorption. Often under-dosed in supplements.",
+      "wattsPosition": "caution",
+      "wattsTake": "Turmeric alone has poor absorption. If using it, must be paired with black pepper and fat at therapeutic doses. We prefer more bioavailable options.",
+      "citations": [
+        {"title": "FDA GRAS", "url": "https://www.fda.gov/", "publisher": "FDA"}
+      ]
+    },
+    {
+      "name": "Probiotics",
+      "aliases": ["live cultures", "beneficial bacteria", "lactobacillus", "bifidobacterium"],
+      "category": "active",
+      "whatItIs": "Live beneficial bacteria that support gut health and digestion.",
+      "whyUsed": [
+        "Support digestive health",
+        "Beneficial bacteria for gut microbiome",
+        "Help during/after antibiotics"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Effectiveness depends on strain, viability, and dose. Many commercial products don't contain live bacteria by the time consumed. Refrigeration often required.",
+      "wattsPosition": "good",
+      "wattsTake": "Beneficial for gut health when properly formulated. Look for specific strains, guaranteed CFU counts, and proper storage requirements.",
+      "citations": [
+        {"title": "Probiotics in companion animals", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7166405/", "publisher": "NIH"}
+      ]
+    },
+    {
+      "name": "Brewers Dried Yeast",
+      "aliases": ["brewers yeast", "dried yeast", "nutritional yeast"],
+      "category": "active",
+      "whatItIs": "Deactivated yeast cells rich in B vitamins and protein.",
+      "whyUsed": [
+        "B vitamin supplementation",
+        "Palatability enhancer (dogs like the taste)",
+        "Protein source"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Good source of B vitamins and protein. Different from active yeast or yeast fermentate.",
+      "wattsPosition": "good",
+      "wattsTake": "Beneficial ingredient rich in B vitamins. Different from yeast fermentate, which provides additional postbiotic benefits.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Beef Liver",
+      "aliases": ["liver", "desiccated liver", "liver powder", "grass fed beef liver", "grass-fed beef liver"],
+      "category": "active",
+      "whatItIs": "Organ meat extremely rich in vitamins A, B12, iron, and other nutrients.",
+      "whyUsed": [
+        "Nutrient-dense whole food",
+        "Natural source of B vitamins",
+        "High palatability"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "One of the most nutrient-dense foods available. Provides bioavailable vitamins and minerals in natural forms.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent whole-food nutrient source. We use beef liver as a nutritious ingredient, not just flavoring.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Natural Flavor",
+      "aliases": ["natural flavoring", "chicken flavor", "beef flavor"],
+      "category": "additive",
+      "whatItIs": "Undefined flavor enhancer derived from animal or plant sources. Composition not disclosed.",
+      "whyUsed": [
+        "Improves palatability",
+        "Makes low-quality food appealing",
+        "Proprietary flavoring"
+      ],
+      "nutritionValue": "none",
+      "qualityNote": "Vague ingredient with no nutritional value. Used to mask poor base ingredient quality. Source and processing unknown.",
+      "wattsPosition": "avoid",
+      "wattsTake": "We don't use 'natural flavor.' If a product needs flavoring to be palatable, the base ingredients probably aren't high quality.",
+      "citations": [
+        {"title": "FDA Labeling Requirements", "url": "https://www.fda.gov/", "publisher": "FDA"}
+      ]
+    },
+    {
+      "name": "Chicken",
+      "aliases": ["fresh chicken", "deboned chicken", "whole chicken"],
+      "category": "protein",
+      "whatItIs": "Fresh chicken meat including water content. Contains about 70% water, 18% protein.",
+      "whyUsed": [
+        "High-quality whole food protein source",
+        "Marketing appeal ('real chicken' on label)",
+        "Palatability"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Quality protein but heavy water content means it drops down ingredient list after cooking. Fresh chicken listed first may not be primary protein after processing.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent protein when actually used in meaningful amounts. Check for meal/dry protein sources too—fresh chicken alone can be misleading due to water weight.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Beef",
+      "aliases": ["fresh beef", "deboned beef", "whole beef", "grass fed beef", "grass-fed beef", "grass fed beef muscle", "grass-fed beef muscle", "beef muscle"],
+      "category": "protein",
+      "whatItIs": "Fresh beef muscle meat with natural water content (approximately 70% water).",
+      "whyUsed": [
+        "Quality whole food protein",
+        "Rich in iron and B vitamins",
+        "Alternative to poultry proteins"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "High-quality protein but consider water content when evaluating amount in formula.",
+      "wattsPosition": "good",
+      "wattsTake": "Great protein source. Like all fresh meats, much of the weight is water that cooks off.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Lamb",
+      "aliases": ["fresh lamb", "deboned lamb"],
+      "category": "protein",
+      "whatItIs": "Fresh lamb muscle meat. Novel protein option for dogs with common protein sensitivities.",
+      "whyUsed": [
+        "Novel protein for allergies",
+        "High-quality meat source",
+        "Rich in zinc and B vitamins"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Excellent protein source, especially for dogs sensitive to chicken or beef.",
+      "wattsPosition": "good",
+      "wattsTake": "Quality protein, particularly valuable for dogs with food sensitivities.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Turkey",
+      "aliases": ["fresh turkey", "deboned turkey"],
+      "category": "protein",
+      "whatItIs": "Fresh turkey meat. Lean protein source similar to chicken.",
+      "whyUsed": [
+        "Lean protein source",
+        "Alternative to chicken",
+        "Rich in tryptophan and B vitamins"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Quality lean protein, though water content similar to other fresh meats.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent protein option, especially for dogs who tolerate poultry well.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Salmon",
+      "aliases": ["fresh salmon", "deboned salmon", "whole salmon"],
+      "category": "protein",
+      "whatItIs": "Fresh salmon meat. Provides protein plus natural omega-3 fatty acids.",
+      "whyUsed": [
+        "High-quality protein with omega-3s",
+        "Novel protein option",
+        "Rich in EPA and DHA"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "One of the best protein sources—combines quality protein with anti-inflammatory omega-3s.",
+      "wattsPosition": "good",
+      "wattsTake": "Top-tier protein source. Natural omega-3 content is a significant bonus.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Duck",
+      "aliases": ["fresh duck", "deboned duck"],
+      "category": "protein",
+      "whatItIs": "Fresh duck meat. Novel protein higher in fat than chicken or turkey.",
+      "whyUsed": [
+        "Novel protein for allergies",
+        "Higher fat content for energy",
+        "Palatability"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Quality protein with naturally higher fat content. Good for active dogs or those with poultry allergies.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent novel protein. Higher natural fat makes it energy-dense.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Pork",
+      "aliases": ["fresh pork", "deboned pork"],
+      "category": "protein",
+      "whatItIs": "Fresh pork muscle meat. Less common in dog food but quality protein source.",
+      "whyUsed": [
+        "Alternative protein source",
+        "Rich in thiamine and selenium",
+        "Palatability"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Quality protein, less common so can be novel for some dogs.",
+      "wattsPosition": "good",
+      "wattsTake": "Good protein source when properly sourced and processed.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Whitefish",
+      "aliases": ["white fish", "ocean whitefish"],
+      "category": "protein",
+      "whatItIs": "Generic term for white-fleshed fish like cod, haddock, or pollock.",
+      "whyUsed": [
+        "Lean protein source",
+        "Contains omega-3 fatty acids",
+        "Novel protein option"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Quality protein but 'whitefish' is vague—specific species would be better transparency.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Good protein but we prefer named fish species for transparency.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Lamb Meal",
+      "aliases": ["lamb by-product meal", "dehydrated lamb"],
+      "category": "protein",
+      "whatItIs": "Rendered lamb with moisture removed. Concentrated protein source (60%+ protein).",
+      "whyUsed": [
+        "Concentrated protein source",
+        "Novel protein for sensitivities",
+        "Shelf-stable"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Excellent concentrated protein, especially valuable for dogs with chicken/beef sensitivities.",
+      "wattsPosition": "good",
+      "wattsTake": "High-quality protein meal. Great option for limited ingredient or novel protein diets.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Fish Meal",
+      "aliases": ["white fish meal", "ocean fish meal"],
+      "category": "protein",
+      "whatItIs": "Rendered fish (species unspecified) with moisture removed. Concentrated protein with omega-3s.",
+      "whyUsed": [
+        "Concentrated protein (60%+ protein)",
+        "Contains omega-3 fatty acids",
+        "Cost-effective fish protein"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Good protein but generic term. Specific fish species (salmon meal, menhaden meal) preferred for transparency.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Quality protein but we prefer named fish species for ingredient transparency.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Meat and Bone Meal",
+      "aliases": ["meat meal", "bone meal"],
+      "category": "protein",
+      "whatItIs": "Rendered product from mammalian tissue including bone. Source animal not specified.",
+      "whyUsed": [
+        "Cheap protein source",
+        "Uses rendering byproducts",
+        "Provides calcium from bone"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Very low transparency—could be any mammal. High ash content from bone. Quality highly variable.",
+      "wattsPosition": "avoid",
+      "wattsTake": "We avoid generic meat meals. No way to know source or quality. Named animal meals only.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Poultry By-Product Meal",
+      "aliases": ["poultry meal", "chicken by-product meal"],
+      "category": "protein",
+      "whatItIs": "Rendered poultry parts excluding feathers, heads, feet, intestines. Can include necks, organs, undeveloped eggs.",
+      "whyUsed": [
+        "Cheaper than chicken meal",
+        "Uses slaughter byproducts",
+        "Concentrated protein source"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Variable quality. May contain nutritious organs or low-value waste. Less transparency than named meals.",
+      "wattsPosition": "caution",
+      "wattsTake": "We prefer named meat meals (chicken meal, turkey meal) over generic by-product meals for quality consistency.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Chicken Liver",
+      "aliases": ["poultry liver", "liver"],
+      "category": "protein",
+      "whatItIs": "Chicken liver organ meat. Extremely nutrient-dense, rich in vitamin A, B vitamins, iron, and other minerals.",
+      "whyUsed": [
+        "Nutrient powerhouse",
+        "High palatability",
+        "Natural vitamin and mineral source"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "One of the most nutrient-dense ingredients available. Provides bioavailable vitamins and minerals.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent whole-food nutrient source. We use liver as nutrition, not just flavoring.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Heart",
+      "aliases": ["beef heart", "chicken heart", "pork heart", "grass fed beef heart", "grass-fed beef heart"],
+      "category": "protein",
+      "whatItIs": "Heart muscle tissue. Rich in taurine, CoQ10, and B vitamins.",
+      "whyUsed": [
+        "Nutrient-dense organ meat",
+        "Natural taurine source",
+        "High-quality protein"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Excellent organ meat. Particularly valuable for taurine content important for heart health.",
+      "wattsPosition": "good",
+      "wattsTake": "Top-tier organ meat. Natural taurine source is particularly valuable.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Lung",
+      "aliases": ["beef lung", "pork lung"],
+      "category": "protein",
+      "whatItIs": "Lung tissue from mammals. Lower protein density than muscle meat but still nutritious organ meat.",
+      "whyUsed": [
+        "Organ meat variety",
+        "Cost-effective protein",
+        "Rich in vitamins and minerals"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Acceptable organ meat though less nutrient-dense than liver or heart.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Decent organ meat for variety, though not as nutrient-dense as liver or heart.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Tripe",
+      "aliases": ["beef tripe", "green tripe"],
+      "category": "protein",
+      "whatItIs": "Stomach lining of ruminant animals. Unbleached 'green tripe' contains digestive enzymes and probiotics.",
+      "whyUsed": [
+        "Digestive enzymes and probiotics",
+        "High palatability",
+        "Rich in nutrients"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Green (unbleached) tripe is highly nutritious with beneficial enzymes. Bleached tripe has less value.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent ingredient when unbleached. Contains natural probiotics and enzymes.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Egg Product",
+      "aliases": ["dried egg", "whole egg", "egg powder", "dehydrated egg"],
+      "category": "protein",
+      "whatItIs": "Dried whole eggs. Complete protein with all essential amino acids.",
+      "whyUsed": [
+        "Complete amino acid profile",
+        "Highly digestible protein",
+        "Binds ingredients"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "One of the most complete and digestible proteins available.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent protein source with complete amino acid profile. Highly bioavailable.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Dried Plasma",
+      "aliases": ["animal plasma", "spray dried plasma"],
+      "category": "protein",
+      "whatItIs": "Spray-dried blood plasma. Rich in immunoglobulins and highly digestible protein.",
+      "whyUsed": [
+        "Immune support (immunoglobulins)",
+        "Highly digestible protein",
+        "Palatability enhancer"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Nutrient-rich ingredient with immune-supporting properties. Well-researched in livestock nutrition.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Quality ingredient with immune benefits, though expensive. Most beneficial for puppies or stressed dogs.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Animal Digest",
+      "aliases": ["chicken digest", "poultry digest", "digest"],
+      "category": "additive",
+      "whatItIs": "Material from clean animal tissue broken down by chemical or enzymatic hydrolysis. Used as palatability enhancer.",
+      "whyUsed": [
+        "Improves palatability",
+        "Makes food more appealing",
+        "Cost-effective flavoring"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Vague ingredient used for flavor. Source and quality unclear unless specified (e.g., 'chicken digest').",
+      "wattsPosition": "caution",
+      "wattsTake": "We prefer named digests (chicken digest) over generic. Used to mask poor base palatability.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Corn",
+      "aliases": ["whole corn", "ground corn", "whole grain corn"],
+      "category": "carbohydrate",
+      "whatItIs": "Whole corn kernels, ground or whole. Common carbohydrate source in budget dog foods.",
+      "whyUsed": [
+        "Inexpensive carbohydrate source",
+        "Readily available",
+        "Provides energy"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Digestible carbohydrate but less nutrient-dense than sweet potato or oats. Common allergen for some dogs.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Not our preferred carb source. Whole corn is better than corn by-products, but better options exist.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Corn Meal",
+      "aliases": ["yellow corn meal", "corn flour"],
+      "category": "carbohydrate",
+      "whatItIs": "Ground corn. Carbohydrate source and binder in kibble.",
+      "whyUsed": [
+        "Cheap carbohydrate",
+        "Kibble binder",
+        "Energy source"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Refined carbohydrate with limited nutritional value beyond calories.",
+      "wattsPosition": "caution",
+      "wattsTake": "We avoid corn-based ingredients. Better carbohydrate sources available.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Corn Gluten Meal",
+      "aliases": ["corn gluten", "corn protein meal"],
+      "category": "protein",
+      "whatItIs": "Protein-rich byproduct of corn processing. 60%+ protein but low biological value for dogs.",
+      "whyUsed": [
+        "Cheap protein source",
+        "Boosts protein percentage on label",
+        "Byproduct utilization"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Plant protein with poor amino acid profile for dogs. Used to inflate protein numbers cheaply.",
+      "wattsPosition": "avoid",
+      "wattsTake": "We never use corn gluten meal. It's used to boost protein numbers without providing quality animal protein.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Rice",
+      "aliases": ["whole grain rice", "white rice"],
+      "category": "carbohydrate",
+      "whatItIs": "Whole rice grains. Easily digestible, hypoallergenic carbohydrate.",
+      "whyUsed": [
+        "Easily digestible",
+        "Hypoallergenic",
+        "Gentle on stomach"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Well-tolerated carbohydrate. White rice more digestible, brown rice more fiber and nutrients.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable carbohydrate. Not nutrient-dense but rarely problematic.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Brown Rice",
+      "aliases": ["whole grain brown rice"],
+      "category": "carbohydrate",
+      "whatItIs": "Whole grain rice with bran layer intact. More fiber and nutrients than white rice.",
+      "whyUsed": [
+        "Whole grain nutrition",
+        "More fiber than white rice",
+        "Hypoallergenic carbohydrate"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Better nutritional profile than white rice. Good fiber content.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Decent whole grain option. More nutritious than white rice.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Brewers Rice",
+      "aliases": ["brewer's rice", "broken rice"],
+      "category": "carbohydrate",
+      "whatItIs": "Small fragments of rice kernels separated from whole grains during milling. Lower quality than whole rice.",
+      "whyUsed": [
+        "Cheap carbohydrate (byproduct)",
+        "Easily digestible",
+        "Binds ingredients"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Lower quality than whole rice. Byproduct with less nutritional value.",
+      "wattsPosition": "caution",
+      "wattsTake": "We avoid brewers rice. It's broken rice fragments—the leftovers from milling whole rice.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Wheat",
+      "aliases": ["whole wheat", "wheat grain", "whole grain wheat"],
+      "category": "carbohydrate",
+      "whatItIs": "Whole wheat grains. Common grain allergen for dogs.",
+      "whyUsed": [
+        "Carbohydrate source",
+        "Fiber content",
+        "Cheap and available"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Moderate nutrition but common allergen. Many dogs sensitive to wheat.",
+      "wattsPosition": "caution",
+      "wattsTake": "We avoid wheat due to sensitivity concerns. Better grain options available.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Wheat Flour",
+      "aliases": ["enriched wheat flour", "white flour"],
+      "category": "carbohydrate",
+      "whatItIs": "Refined wheat flour. Binding agent in treats and kibble.",
+      "whyUsed": [
+        "Binds ingredients in kibble",
+        "Creates texture in treats",
+        "Cheap carbohydrate"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Refined grain with minimal nutrition. Common allergen.",
+      "wattsPosition": "avoid",
+      "wattsTake": "We don't use wheat flour. Refined grain that's a common allergen with little nutritional value.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Barley",
+      "aliases": ["whole grain barley", "pearled barley"],
+      "category": "carbohydrate",
+      "whatItIs": "Whole grain barley. Good source of fiber and nutrients.",
+      "whyUsed": [
+        "Whole grain nutrition",
+        "Soluble and insoluble fiber",
+        "Slow-release energy"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Good whole grain option with beneficial fiber content.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable grain choice. Provides good fiber and is less likely to cause sensitivities than wheat.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Oats",
+      "aliases": ["whole oats", "rolled oats", "oatmeal", "whole grain oats"],
+      "category": "carbohydrate",
+      "whatItIs": "Whole grain oats. Nutrient-dense grain with soluble fiber (beta-glucans).",
+      "whyUsed": [
+        "Whole grain nutrition",
+        "Soluble fiber benefits",
+        "Skin and coat support"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "One of the best grain options. Rich in beta-glucans and B vitamins.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent grain choice. Nutrient-dense with beneficial soluble fiber.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Oat Groats",
+      "aliases": ["whole oat kernels"],
+      "category": "carbohydrate",
+      "whatItIs": "Whole, unprocessed oat kernels. Most nutrient-dense form of oats.",
+      "whyUsed": [
+        "Whole grain nutrition",
+        "Maximum nutrient retention",
+        "High-quality carbohydrate"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "The most nutritious form of oats. Minimal processing preserves nutrients.",
+      "wattsPosition": "good",
+      "wattsTake": "Top-tier grain ingredient. Whole, unprocessed oats with maximum nutrition.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Sorghum",
+      "aliases": ["milo", "sorghum grain", "whole grain sorghum"],
+      "category": "carbohydrate",
+      "whatItIs": "Whole grain sorghum. Gluten-free alternative grain.",
+      "whyUsed": [
+        "Gluten-free grain option",
+        "Digestible carbohydrate",
+        "Antioxidant content"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Decent grain alternative with antioxidants. Less common in dog food.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable grain alternative. Less research in dogs than other grains.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Millet",
+      "aliases": ["millet grain"],
+      "category": "carbohydrate",
+      "whatItIs": "Small-seeded grass grain. Gluten-free, easily digestible carbohydrate.",
+      "whyUsed": [
+        "Gluten-free grain",
+        "Easily digestible",
+        "Alkaline-forming grain"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Good grain alternative, easily digestible and nutrient-rich.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Decent grain option. Less common but nutritious and well-tolerated.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Potatoes",
+      "aliases": ["whole potatoes", "white potatoes"],
+      "category": "carbohydrate",
+      "whatItIs": "Whole white potatoes. Grain-free carbohydrate source.",
+      "whyUsed": [
+        "Grain-free carbohydrate",
+        "Potassium source",
+        "Digestible energy"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Decent whole-food carbohydrate but high glycemic. Whole potatoes better than potato starch.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable in moderation. Whole potatoes are better than isolated potato starch.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Sweet Potatoes",
+      "aliases": ["sweet potato", "yams"],
+      "category": "carbohydrate",
+      "whatItIs": "Whole sweet potatoes. Nutrient-dense, fiber-rich carbohydrate.",
+      "whyUsed": [
+        "Nutrient-dense carbohydrate",
+        "Rich in fiber and beta-carotene",
+        "Lower glycemic than white potato"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Excellent carbohydrate choice. Rich in fiber, vitamins, and antioxidants.",
+      "wattsPosition": "good",
+      "wattsTake": "One of our preferred carbohydrate sources. Nutrient-dense whole food.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Pea Flour",
+      "aliases": ["yellow pea flour", "green pea flour"],
+      "category": "carbohydrate",
+      "whatItIs": "Ground whole peas. Provides both protein and carbohydrate in grain-free formulas.",
+      "whyUsed": [
+        "Grain-free protein and carb source",
+        "Binds grain-free kibble",
+        "Boosts protein content"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Better than isolated pea starch. Whole peas provide protein, fiber, and nutrients.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Better than pea starch but can be over-used in grain-free foods. Moderation is key.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Lentils",
+      "aliases": ["red lentils", "green lentils"],
+      "category": "carbohydrate",
+      "whatItIs": "Legumes rich in protein, fiber, and nutrients. Common in grain-free formulas.",
+      "whyUsed": [
+        "Grain-free protein and carb source",
+        "High fiber content",
+        "Rich in folate and iron"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Nutrient-dense legume. Good source of plant protein and fiber.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Quality legume in moderation. Be aware of potential link to DCM in grain-free diets heavy in legumes.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Chickpeas",
+      "aliases": ["garbanzo beans", "chickpea flour"],
+      "category": "carbohydrate",
+      "whatItIs": "Legumes providing protein, fiber, and complex carbohydrates.",
+      "whyUsed": [
+        "Grain-free carbohydrate",
+        "Protein and fiber source",
+        "Nutrient-rich legume"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Nutrient-dense legume with good protein and fiber content.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Quality ingredient in moderation. Monitor total legume content in grain-free formulas.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Peanut Hulls",
+      "aliases": ["peanut shells", "groundnut hulls"],
+      "category": "fiber",
+      "whatItIs": "Outer shells of peanuts. Indigestible fiber used as cheap filler.",
+      "whyUsed": [
+        "Cheap bulk filler",
+        "Insoluble fiber source",
+        "Waste product utilization"
+      ],
+      "nutritionValue": "none",
+      "qualityNote": "Indigestible filler with no nutritional value. Used to add bulk cheaply.",
+      "wattsPosition": "avoid",
+      "wattsTake": "We never use peanut hulls. It's essentially ground-up peanut shells—indigestible filler.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Soy Hulls",
+      "aliases": ["soybean hulls"],
+      "category": "fiber",
+      "whatItIs": "Outer covering of soybeans. Low-quality fiber source.",
+      "whyUsed": [
+        "Cheap fiber source",
+        "Byproduct utilization",
+        "Adds bulk"
+      ],
+      "nutritionValue": "none",
+      "qualityNote": "Agricultural waste product with minimal nutrition. Used as cheap filler.",
+      "wattsPosition": "avoid",
+      "wattsTake": "We avoid soy hulls. Whole-food fiber sources are vastly superior.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Oat Fiber",
+      "aliases": ["oat hull fiber", "oat bran fiber"],
+      "category": "fiber",
+      "whatItIs": "Fiber extracted from oat hulls. Primarily insoluble fiber.",
+      "whyUsed": [
+        "Fiber source for weight management",
+        "Adds bulk without calories",
+        "Regulates stool consistency"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Isolated fiber, less nutritious than whole oats but better than cellulose.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable fiber source, though whole oats would be better. Useful in weight management.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Rice Bran",
+      "aliases": ["stabilized rice bran"],
+      "category": "fiber",
+      "whatItIs": "Outer layer of brown rice. Rich in fiber, vitamins, and healthy fats.",
+      "whyUsed": [
+        "Nutrient-dense fiber source",
+        "Rich in B vitamins and antioxidants",
+        "Provides healthy fats"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Excellent fiber source with significant nutritional value beyond just fiber.",
+      "wattsPosition": "good",
+      "wattsTake": "Quality ingredient. Rice bran provides beneficial fiber plus vitamins and antioxidants.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Wheat Bran",
+      "aliases": ["miller's bran"],
+      "category": "fiber",
+      "whatItIs": "Outer layer of wheat grain. High in insoluble fiber.",
+      "whyUsed": [
+        "Fiber source",
+        "Aids digestion",
+        "Regulates stool consistency"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Good fiber source but wheat can be allergenic for some dogs.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Decent fiber source if dog tolerates wheat. We prefer non-wheat options.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Inulin",
+      "aliases": ["chicory inulin", "fructooligosaccharides"],
+      "category": "fiber",
+      "whatItIs": "Soluble prebiotic fiber, often extracted from chicory root.",
+      "whyUsed": [
+        "Prebiotic fiber",
+        "Feeds beneficial gut bacteria",
+        "Supports digestive health"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Excellent prebiotic fiber that selectively feeds beneficial bacteria.",
+      "wattsPosition": "good",
+      "wattsTake": "Top-tier prebiotic fiber. Supports gut microbiome health.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Psyllium Husk",
+      "aliases": ["psyllium", "psyllium fiber"],
+      "category": "fiber",
+      "whatItIs": "Soluble fiber from psyllium seed husks. Forms gel in digestive tract.",
+      "whyUsed": [
+        "Digestive health support",
+        "Regulates stool consistency",
+        "Soluble fiber source"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Effective fiber for digestive regulation. Particularly useful for diarrhea or constipation.",
+      "wattsPosition": "good",
+      "wattsTake": "Beneficial fiber source, especially for dogs with digestive issues.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Beef Fat",
+      "aliases": ["tallow", "beef tallow"],
+      "category": "fat",
+      "whatItIs": "Rendered beef fat. Energy-dense fat source.",
+      "whyUsed": [
+        "Concentrated energy source",
+        "Palatability",
+        "Essential fatty acids"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Good fat source when preserved naturally. Higher in saturated fat than poultry fat.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable fat source. We prefer poultry fat or fish oil for fatty acid profile.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Pork Fat",
+      "aliases": ["lard", "pork lard"],
+      "category": "fat",
+      "whatItIs": "Rendered pork fat. Highly palatable fat source.",
+      "whyUsed": [
+        "High palatability",
+        "Energy-dense",
+        "Good fatty acid profile"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Palatable fat source with decent fatty acid balance.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable fat source. Ensure proper preservation with natural antioxidants.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Salmon Oil",
+      "aliases": ["wild salmon oil"],
+      "category": "fat",
+      "whatItIs": "Oil from salmon. Rich in omega-3 fatty acids EPA and DHA.",
+      "whyUsed": [
+        "High omega-3 content",
+        "Anti-inflammatory benefits",
+        "Skin and coat health"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Premium omega-3 source. Higher quality and more sustainable than generic fish oil.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent omega-3 source. We prefer named fish oils like salmon over generic fish oil.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Menhaden Oil",
+      "aliases": ["menhaden fish oil"],
+      "category": "fat",
+      "whatItIs": "Oil from menhaden fish. Rich source of EPA and DHA omega-3s.",
+      "whyUsed": [
+        "Concentrated omega-3 source",
+        "Anti-inflammatory benefits",
+        "Cost-effective fish oil"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "High-quality omega-3 source from specific fish species.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent omega-3 source. Named fish species provides transparency.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Flaxseed",
+      "aliases": ["flax seed", "linseed", "ground flaxseed"],
+      "category": "fat",
+      "whatItIs": "Seeds rich in plant-based omega-3 (ALA), fiber, and lignans.",
+      "whyUsed": [
+        "Plant-based omega-3 source",
+        "Fiber content",
+        "Antioxidant lignans"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Good plant omega-3 but dogs poorly convert ALA to EPA/DHA. Best used alongside animal omega-3s.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Decent ingredient but shouldn't be sole omega-3 source. Fish oil is superior for dogs.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Canola Oil",
+      "aliases": ["rapeseed oil"],
+      "category": "fat",
+      "whatItIs": "Plant oil with balanced omega-6 to omega-3 ratio.",
+      "whyUsed": [
+        "Affordable fat source",
+        "Better omega ratio than most plant oils",
+        "Neutral flavor"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Decent plant oil but highly processed. Better options exist.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable in small amounts but not our preferred fat source.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Sunflower Oil",
+      "aliases": ["sunflower seed oil"],
+      "category": "fat",
+      "whatItIs": "Plant oil high in omega-6 fatty acids and vitamin E.",
+      "whyUsed": [
+        "Vitamin E source",
+        "Plant-based fat",
+        "Skin and coat support"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "High in omega-6. Should be balanced with omega-3 sources.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable in moderation if balanced with omega-3s from fish oil.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Soybean Oil",
+      "aliases": ["soy oil"],
+      "category": "fat",
+      "whatItIs": "Highly processed plant oil high in omega-6 fatty acids.",
+      "whyUsed": [
+        "Cheap fat source",
+        "Widely available",
+        "Provides essential fatty acids"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Highly processed with poor omega-6 to omega-3 ratio.",
+      "wattsPosition": "avoid",
+      "wattsTake": "We avoid soybean oil. Better fat sources available with superior fatty acid profiles.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Coconut Oil",
+      "aliases": ["mct oil", "medium chain triglycerides"],
+      "category": "fat",
+      "whatItIs": "Tropical oil rich in medium-chain fatty acids.",
+      "whyUsed": [
+        "Easily digestible fat source",
+        "Antimicrobial properties",
+        "Quick energy source"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Unique fat source with some benefits but shouldn't replace omega-3 rich oils.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Beneficial in moderation but not a replacement for fish oil.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Vitamin A Supplement",
+      "aliases": ["retinyl acetate", "vitamin A"],
+      "category": "vitamin",
+      "whatItIs": "Supplemental vitamin A for vision, immune function, and cell growth.",
+      "whyUsed": [
+        "Essential vitamin supplementation",
+        "Vision and immune support",
+        "Required nutrient"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential nutrient. Properly formulated foods include adequate vitamin A.",
+      "wattsPosition": "good",
+      "wattsTake": "Necessary vitamin supplementation in complete foods.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Vitamin D3 Supplement",
+      "aliases": ["cholecalciferol", "vitamin D"],
+      "category": "vitamin",
+      "whatItIs": "Supplemental vitamin D for calcium absorption and bone health.",
+      "whyUsed": [
+        "Calcium and phosphorus regulation",
+        "Bone health",
+        "Essential nutrient"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Critical vitamin for dogs (they can't synthesize from sunlight like humans).",
+      "wattsPosition": "good",
+      "wattsTake": "Essential supplementation in dog food. Dogs require dietary vitamin D.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Vitamin E Supplement",
+      "aliases": ["alpha-tocopherol", "dl-alpha tocopherol"],
+      "category": "vitamin",
+      "whatItIs": "Supplemental vitamin E for antioxidant protection.",
+      "whyUsed": [
+        "Antioxidant protection",
+        "Cell membrane integrity",
+        "Immune support"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Important antioxidant vitamin. Natural forms (mixed tocopherols) preferred over synthetic.",
+      "wattsPosition": "good",
+      "wattsTake": "Essential antioxidant. Natural vitamin E is superior to synthetic forms.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Thiamine Mononitrate",
+      "aliases": ["vitamin B1", "thiamine"],
+      "category": "vitamin",
+      "whatItIs": "Supplemental B1 for energy metabolism and nervous system function.",
+      "whyUsed": [
+        "Energy metabolism",
+        "Nervous system health",
+        "Essential B vitamin"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential B vitamin. Processing can destroy natural thiamine, requiring supplementation.",
+      "wattsPosition": "good",
+      "wattsTake": "Necessary supplementation in processed foods.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Riboflavin Supplement",
+      "aliases": ["vitamin B2", "riboflavin"],
+      "category": "vitamin",
+      "whatItIs": "Supplemental B2 for energy production and cell function.",
+      "whyUsed": [
+        "Energy metabolism",
+        "Cell growth and function",
+        "Essential B vitamin"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential B vitamin for multiple metabolic processes.",
+      "wattsPosition": "good",
+      "wattsTake": "Necessary B vitamin supplementation.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Niacin Supplement",
+      "aliases": ["vitamin B3", "nicotinic acid", "niacinamide"],
+      "category": "vitamin",
+      "whatItIs": "Supplemental B3 for energy metabolism and enzyme function.",
+      "whyUsed": [
+        "Energy metabolism",
+        "Enzyme cofactor",
+        "Skin and coat health"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential B vitamin involved in hundreds of metabolic processes.",
+      "wattsPosition": "good",
+      "wattsTake": "Critical B vitamin supplementation.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Pyridoxine Hydrochloride",
+      "aliases": ["vitamin B6", "pyridoxine"],
+      "category": "vitamin",
+      "whatItIs": "Supplemental B6 for protein metabolism and neurotransmitter synthesis.",
+      "whyUsed": [
+        "Protein metabolism",
+        "Red blood cell formation",
+        "Neurotransmitter production"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential B vitamin particularly important for protein metabolism.",
+      "wattsPosition": "good",
+      "wattsTake": "Necessary B6 supplementation.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Folic Acid",
+      "aliases": ["folate", "vitamin B9"],
+      "category": "vitamin",
+      "whatItIs": "Supplemental B9 for DNA synthesis and cell division.",
+      "whyUsed": [
+        "DNA synthesis",
+        "Cell division",
+        "Red blood cell formation"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential for cell growth and reproduction.",
+      "wattsPosition": "good",
+      "wattsTake": "Critical B vitamin supplementation.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Biotin",
+      "aliases": ["vitamin B7", "vitamin H"],
+      "category": "vitamin",
+      "whatItIs": "Supplemental B7 for skin, coat, and metabolic health.",
+      "whyUsed": [
+        "Skin and coat health",
+        "Energy metabolism",
+        "Fat and protein metabolism"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Important B vitamin for skin and coat quality.",
+      "wattsPosition": "good",
+      "wattsTake": "Beneficial B vitamin particularly for skin and coat.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Vitamin B12 Supplement",
+      "aliases": ["cobalamin", "cyanocobalamin"],
+      "category": "vitamin",
+      "whatItIs": "Supplemental B12 for red blood cell formation and nervous system function.",
+      "whyUsed": [
+        "Red blood cell formation",
+        "Nervous system function",
+        "DNA synthesis"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential vitamin only found in animal products.",
+      "wattsPosition": "good",
+      "wattsTake": "Critical B vitamin supplementation.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Ascorbic Acid",
+      "aliases": ["vitamin C"],
+      "category": "vitamin",
+      "whatItIs": "Supplemental vitamin C. Dogs can synthesize their own but supplementation may provide additional antioxidant benefits.",
+      "whyUsed": [
+        "Antioxidant support",
+        "Immune function",
+        "Collagen synthesis"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Not essential (dogs produce their own) but may provide extra antioxidant support.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Optional supplementation. Dogs synthesize vitamin C naturally.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Calcium Carbonate",
+      "aliases": ["limestone", "calcium supplement"],
+      "category": "mineral",
+      "whatItIs": "Supplemental calcium source for bones, teeth, and muscle function.",
+      "whyUsed": [
+        "Bone and teeth health",
+        "Muscle contraction",
+        "Nerve transmission"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential mineral. Proper calcium-phosphorus ratio critical.",
+      "wattsPosition": "good",
+      "wattsTake": "Necessary calcium supplementation when formulated correctly.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Dicalcium Phosphate",
+      "aliases": ["calcium phosphate"],
+      "category": "mineral",
+      "whatItIs": "Supplemental source of both calcium and phosphorus.",
+      "whyUsed": [
+        "Calcium and phosphorus supplementation",
+        "Bone health",
+        "Mineral balance"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Efficient way to supplement both calcium and phosphorus in proper ratio.",
+      "wattsPosition": "good",
+      "wattsTake": "Effective mineral supplementation.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Tricalcium Phosphate",
+      "aliases": ["calcium phosphate tribasic"],
+      "category": "mineral",
+      "whatItIs": "Calcium and phosphorus supplement, also used as anti-caking agent.",
+      "whyUsed": [
+        "Calcium and phosphorus source",
+        "Anti-caking agent",
+        "Mineral supplementation"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Dual purpose: mineral supplementation and processing aid.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable mineral source when used for nutrition, not just as processing aid.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Zinc Sulfate",
+      "aliases": ["zinc supplement"],
+      "category": "mineral",
+      "whatItIs": "Inorganic zinc supplement for immune function, skin health, and enzyme activity.",
+      "whyUsed": [
+        "Zinc supplementation",
+        "Immune support",
+        "Skin and coat health"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential mineral. Less bioavailable than chelated zinc (proteinate).",
+      "wattsPosition": "neutral",
+      "wattsTake": "Adequate zinc source, though chelated forms are better absorbed.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Zinc Proteinate",
+      "aliases": ["chelated zinc", "zinc amino acid complex"],
+      "category": "mineral",
+      "whatItIs": "Zinc bound to amino acids for enhanced absorption.",
+      "whyUsed": [
+        "Highly bioavailable zinc",
+        "Better absorption than inorganic forms",
+        "Immune and skin support"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Superior form of zinc with better bioavailability than zinc sulfate.",
+      "wattsPosition": "good",
+      "wattsTake": "Preferred form of zinc supplementation due to superior absorption.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Iron Sulfate",
+      "aliases": ["ferrous sulfate", "iron supplement"],
+      "category": "mineral",
+      "whatItIs": "Inorganic iron supplement for red blood cell formation.",
+      "whyUsed": [
+        "Iron supplementation",
+        "Red blood cell production",
+        "Oxygen transport"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential mineral. Less bioavailable than chelated forms.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Adequate iron source, though chelated forms preferred.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Iron Proteinate",
+      "aliases": ["chelated iron", "iron amino acid complex"],
+      "category": "mineral",
+      "whatItIs": "Iron bound to amino acids for better absorption.",
+      "whyUsed": [
+        "Highly bioavailable iron",
+        "Better absorption",
+        "Red blood cell support"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Superior iron form with better bioavailability.",
+      "wattsPosition": "good",
+      "wattsTake": "Preferred iron supplementation form.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Copper Sulfate",
+      "aliases": ["copper supplement"],
+      "category": "mineral",
+      "whatItIs": "Inorganic copper supplement for enzyme function and iron metabolism.",
+      "whyUsed": [
+        "Copper supplementation",
+        "Enzyme cofactor",
+        "Iron absorption support"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential mineral. Chelated forms better absorbed.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Adequate copper source, chelated forms preferred.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Copper Proteinate",
+      "aliases": ["chelated copper", "copper amino acid complex"],
+      "category": "mineral",
+      "whatItIs": "Copper bound to amino acids for enhanced absorption.",
+      "whyUsed": [
+        "Highly bioavailable copper",
+        "Better absorption",
+        "Enzyme and metabolic support"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Superior copper form with better bioavailability.",
+      "wattsPosition": "good",
+      "wattsTake": "Preferred copper supplementation form.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Manganese Sulfate",
+      "aliases": ["manganese supplement"],
+      "category": "mineral",
+      "whatItIs": "Supplemental manganese for bone development and enzyme function.",
+      "whyUsed": [
+        "Manganese supplementation",
+        "Bone development",
+        "Enzyme cofactor"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential trace mineral for multiple metabolic processes.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Necessary mineral supplementation.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Selenium Yeast",
+      "aliases": ["selenium", "organic selenium"],
+      "category": "mineral",
+      "whatItIs": "Organic selenium from yeast. Antioxidant mineral for immune function.",
+      "whyUsed": [
+        "Antioxidant protection",
+        "Immune support",
+        "Thyroid function"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential trace mineral. Organic forms better absorbed than sodium selenite.",
+      "wattsPosition": "good",
+      "wattsTake": "Preferred selenium form due to better bioavailability.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Sodium Chloride",
+      "aliases": ["salt", "table salt", "sea salt", "iodized salt"],
+      "category": "mineral",
+      "whatItIs": "Common salt. Provides sodium and chloride for fluid balance and nerve function.",
+      "whyUsed": [
+        "Sodium and chloride supplementation",
+        "Electrolyte balance",
+        "Palatability"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential minerals in appropriate amounts. Excess can be harmful.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Necessary in correct amounts. Should be balanced in formulation.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Potassium Chloride",
+      "aliases": ["potassium supplement"],
+      "category": "mineral",
+      "whatItIs": "Supplemental potassium for muscle function and electrolyte balance.",
+      "whyUsed": [
+        "Potassium supplementation",
+        "Electrolyte balance",
+        "Muscle and nerve function"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential mineral for proper body function.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Necessary mineral supplementation.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Citric Acid",
+      "aliases": ["citrate"],
+      "category": "preservative",
+      "whatItIs": "Natural acid used as preservative and pH regulator.",
+      "whyUsed": [
+        "Natural preservative",
+        "Antioxidant synergist",
+        "pH adjustment"
+      ],
+      "nutritionValue": "none",
+      "qualityNote": "Safe natural preservative that enhances effectiveness of other antioxidants.",
+      "wattsPosition": "good",
+      "wattsTake": "Safe natural preservative. Works synergistically with tocopherols.",
+      "citations": [
+        {"title": "FDA GRAS", "url": "https://www.fda.gov/", "publisher": "FDA"}
+      ]
+    },
+    {
+      "name": "White Distilled Vinegar",
+      "aliases": ["distilled vinegar", "buffered white distilled vinegar", "vinegar"],
+      "category": "preservative",
+      "whatItIs": "Acetic acid solution used as natural preservative and pH regulator in pet food.",
+      "whyUsed": [
+        "Natural preservative",
+        "pH control and stabilization",
+        "Antimicrobial properties"
+      ],
+      "nutritionValue": "none",
+      "qualityNote": "Safe natural preservative with mild antimicrobial properties. Buffered versions are pH-adjusted for stability.",
+      "wattsPosition": "good",
+      "wattsTake": "Safe natural preservative. We prefer natural acidifiers like vinegar over synthetic preservatives.",
+      "citations": [
+        {"title": "FDA GRAS", "url": "https://www.fda.gov/", "publisher": "FDA"}
+      ]
+    },
+    {
+      "name": "Apple Cider Vinegar",
+      "aliases": ["ACV", "raw apple cider vinegar"],
+      "category": "preservative",
+      "whatItIs": "Vinegar made from fermented apples. Contains acetic acid plus trace nutrients and enzymes.",
+      "whyUsed": [
+        "Natural preservative",
+        "pH regulation",
+        "Digestive support"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Natural preservative with some beneficial enzymes and nutrients. Raw, unfiltered versions contain 'mother' with probiotics.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent natural preservative. More nutritious than white vinegar with beneficial enzymes.",
+      "citations": [
+        {"title": "FDA GRAS", "url": "https://www.fda.gov/", "publisher": "FDA"}
+      ]
+    },
+    {
+      "name": "Ethoxyquin",
+      "aliases": [],
+      "category": "preservative",
+      "whatItIs": "Synthetic antioxidant preservative, also used as pesticide.",
+      "whyUsed": [
+        "Preserves fats from rancidity",
+        "Very effective and cheap",
+        "Long shelf life"
+      ],
+      "nutritionValue": "none",
+      "qualityNote": "Controversial synthetic preservative with safety concerns. Banned in human food in many countries.",
+      "wattsPosition": "avoid",
+      "wattsTake": "We never use ethoxyquin. Natural alternatives are safer.",
+      "citations": [
+        {"title": "FDA GRAS", "url": "https://www.fda.gov/", "publisher": "FDA"}
+      ]
+    },
+    {
+      "name": "Artificial Flavor",
+      "aliases": ["artificial flavoring"],
+      "category": "additive",
+      "whatItIs": "Synthetic flavoring agents to enhance palatability.",
+      "whyUsed": [
+        "Improves palatability",
+        "Masks poor ingredient quality",
+        "Cheap flavoring"
+      ],
+      "nutritionValue": "none",
+      "qualityNote": "Synthetic flavoring with no nutritional value. Sign of poor base ingredients.",
+      "wattsPosition": "avoid",
+      "wattsTake": "We never use artificial flavors. Quality ingredients should be naturally palatable.",
+      "citations": [
+        {"title": "FDA Labeling Requirements", "url": "https://www.fda.gov/", "publisher": "FDA"}
+      ]
+    },
+    {
+      "name": "Smoke Flavor",
+      "aliases": ["natural smoke flavor", "smoke flavoring", "natural hickory smoke flavor", "hickory smoke flavor"],
+      "category": "additive",
+      "whatItIs": "Flavoring derived from smoke condensate.",
+      "whyUsed": [
+        "Adds smoky flavor",
+        "Palatability enhancement",
+        "Marketing appeal"
+      ],
+      "nutritionValue": "none",
+      "qualityNote": "Flavor additive with no nutrition. Natural but unnecessary.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Harmless but unnecessary. Quality meat doesn't need smoke flavoring.",
+      "citations": [
+        {"title": "FDA GRAS", "url": "https://www.fda.gov/", "publisher": "FDA"}
+      ]
+    },
+    {
+      "name": "Dried Yeast",
+      "aliases": ["bakers yeast"],
+      "category": "active",
+      "whatItIs": "Deactivated yeast cells. Source of B vitamins and protein.",
+      "whyUsed": [
+        "B vitamin source",
+        "Palatability enhancer",
+        "Protein content"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Similar to brewers yeast. Good B vitamin source.",
+      "wattsPosition": "good",
+      "wattsTake": "Beneficial ingredient for B vitamins and palatability.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Autolyzed Yeast",
+      "aliases": ["yeast extract"],
+      "category": "active",
+      "whatItIs": "Yeast cells broken down by their own enzymes. Rich in nucleotides and amino acids.",
+      "whyUsed": [
+        "Palatability enhancer",
+        "Nucleotide source",
+        "Natural flavor source"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "More processed than brewers yeast but provides beneficial compounds.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable ingredient. Provides nucleotides and palatability.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Hydrolyzed Poultry Liver",
+      "aliases": ["hydrolyzed liver", "liver hydrolysate"],
+      "category": "additive",
+      "whatItIs": "Liver broken down into smaller peptides through enzymatic hydrolysis.",
+      "whyUsed": [
+        "Highly palatable flavoring",
+        "Easily digestible protein",
+        "Rich in nutrients"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Nutritious palatability enhancer from quality organ meat.",
+      "wattsPosition": "good",
+      "wattsTake": "Quality flavoring from nutritious source. Better than generic 'natural flavor.'",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Glycerin",
+      "aliases": ["glycerol", "vegetable glycerin", "coconut glycerin"],
+      "category": "additive",
+      "whatItIs": "Humectant used to maintain moisture in soft chews and semi-moist foods.",
+      "whyUsed": [
+        "Retains moisture in products",
+        "Creates soft texture",
+        "Prevents drying out"
+      ],
+      "nutritionValue": "none",
+      "qualityNote": "Generally safe humectant but provides calories without nutrition.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable in moderation for texture. Necessary for soft chews.",
+      "citations": [
+        {"title": "FDA GRAS", "url": "https://www.fda.gov/", "publisher": "FDA"}
+      ]
+    },
+    {
+      "name": "Silicon Dioxide",
+      "aliases": ["silica", "silicon"],
+      "category": "additive",
+      "whatItIs": "Anti-caking agent to prevent clumping in powdered supplements.",
+      "whyUsed": [
+        "Prevents ingredient clumping",
+        "Improves powder flow",
+        "Manufacturing convenience"
+      ],
+      "nutritionValue": "none",
+      "qualityNote": "Generally safe but provides no nutritional benefit. Processing aid.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable in small amounts as anti-caking agent.",
+      "citations": [
+        {"title": "FDA GRAS", "url": "https://www.fda.gov/", "publisher": "FDA"}
+      ]
+    },
+    {
+      "name": "Lecithin",
+      "aliases": ["soy lecithin", "sunflower lecithin"],
+      "category": "additive",
+      "whatItIs": "Emulsifier from soybeans or sunflower. Helps mix fat and water.",
+      "whyUsed": [
+        "Emulsifies fats and water",
+        "Improves texture",
+        "Contains phospholipids"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Natural emulsifier with some nutritional components. Generally safe.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable emulsifier. Sunflower lecithin preferred over soy.",
+      "citations": [
+        {"title": "FDA GRAS", "url": "https://www.fda.gov/", "publisher": "FDA"}
+      ]
+    },
+    {
+      "name": "Modified Food Starch",
+      "aliases": ["modified starch"],
+      "category": "additive",
+      "whatItIs": "Chemically or physically altered starch used as thickener and binder.",
+      "whyUsed": [
+        "Thickens wet food",
+        "Binds ingredients",
+        "Improves texture"
+      ],
+      "nutritionValue": "none",
+      "qualityNote": "Processed starch with no nutritional value beyond empty calories.",
+      "wattsPosition": "caution",
+      "wattsTake": "We avoid modified starches. Whole food alternatives are better.",
+      "citations": [
+        {"title": "FDA GRAS", "url": "https://www.fda.gov/", "publisher": "FDA"}
+      ]
+    },
+    {
+      "name": "Gelatin",
+      "aliases": ["animal gelatin"],
+      "category": "additive",
+      "whatItIs": "Protein derived from collagen in animal bones and connective tissue.",
+      "whyUsed": [
+        "Gelling agent in soft chews",
+        "Collagen source",
+        "Binds moisture"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Natural protein source though lacking essential amino acids.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable ingredient. Provides some collagen protein.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Glucosamine Hydrochloride",
+      "aliases": ["glucosamine HCl"],
+      "category": "active",
+      "whatItIs": "Form of glucosamine for joint support. More concentrated than glucosamine sulfate.",
+      "whyUsed": [
+        "Joint health support",
+        "Cartilage maintenance",
+        "Common in senior formulas"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "More concentrated than sulfate form. Evidence mixed for effectiveness.",
+      "wattsPosition": "neutral",
+      "wattsTake": "We prefer whole-food sources like green-lipped mussel over isolated glucosamine.",
+      "citations": [
+        {"title": "Efficacy of nutraceuticals for canine osteoarthritis", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9929184/", "publisher": "NIH"}
+      ]
+    },
+    {
+      "name": "Chondroitin Sulfate",
+      "aliases": ["chondroitin"],
+      "category": "active",
+      "whatItIs": "Cartilage component used for joint support.",
+      "whyUsed": [
+        "Joint and cartilage health",
+        "Often paired with glucosamine",
+        "Anti-inflammatory properties"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Some evidence for joint support when combined with glucosamine and omega-3s.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Whole-food sources like green-lipped mussel preferred over isolated supplements.",
+      "citations": [
+        {"title": "Efficacy of nutraceuticals for canine osteoarthritis", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9929184/", "publisher": "NIH"}
+      ]
+    },
+    {
+      "name": "Methylsulfonylmethane",
+      "aliases": ["MSM"],
+      "category": "active",
+      "whatItIs": "Organic sulfur compound for joint and inflammation support.",
+      "whyUsed": [
+        "Joint health",
+        "Anti-inflammatory effects",
+        "Sulfur source"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Limited dog-specific research. Generally safe.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Safe but limited evidence. Not our first choice for joint support.",
+      "citations": [
+        {"title": "FDA GRAS", "url": "https://www.fda.gov/", "publisher": "FDA"}
+      ]
+    },
+    {
+      "name": "Green-Lipped Mussel",
+      "aliases": ["green lipped mussel", "perna canaliculus"],
+      "category": "active",
+      "whatItIs": "New Zealand shellfish naturally rich in glucosamine, chondroitin, omega-3s, and anti-inflammatory compounds.",
+      "whyUsed": [
+        "Natural joint support",
+        "Anti-inflammatory omega-3s",
+        "Whole-food glucosamine source"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Excellent whole-food joint supplement with natural synergistic compounds.",
+      "wattsPosition": "good",
+      "wattsTake": "Our preferred joint support ingredient. Whole-food source with multiple beneficial compounds.",
+      "citations": [
+        {"title": "Efficacy of nutraceuticals for canine osteoarthritis", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9929184/", "publisher": "NIH"}
+      ]
+    },
+    {
+      "name": "Collagen",
+      "aliases": ["hydrolyzed collagen", "collagen peptides", "collagen casing"],
+      "category": "active",
+      "whatItIs": "Protein from connective tissue. Supports joint, skin, and gut health.",
+      "whyUsed": [
+        "Joint and skin support",
+        "Gut health benefits",
+        "Protein source"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Beneficial protein for connective tissue. Not a complete protein (lacks tryptophan).",
+      "wattsPosition": "good",
+      "wattsTake": "Quality supplemental ingredient for joint and skin health.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Omega-3 Fatty Acids",
+      "aliases": ["omega-3s", "omega 3"],
+      "category": "active",
+      "whatItIs": "Generic term for EPA and DHA fatty acids, usually from fish oil.",
+      "whyUsed": [
+        "Anti-inflammatory benefits",
+        "Skin, coat, joint, brain health",
+        "Essential fatty acids"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Look for specific source (fish oil, salmon oil) rather than generic listing.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent when from quality marine sources. Specific source (salmon oil) preferred over generic.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Docosahexaenoic Acid",
+      "aliases": ["DHA"],
+      "category": "active",
+      "whatItIs": "Omega-3 fatty acid from marine sources. Critical for brain and eye development.",
+      "whyUsed": [
+        "Brain and eye development",
+        "Cognitive function",
+        "Anti-inflammatory"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential omega-3 for puppies. Beneficial for all life stages.",
+      "wattsPosition": "good",
+      "wattsTake": "Critical nutrient, especially for puppies. Should come from marine sources.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Eicosapentaenoic Acid",
+      "aliases": ["EPA"],
+      "category": "active",
+      "whatItIs": "Omega-3 fatty acid from marine sources. Powerful anti-inflammatory.",
+      "whyUsed": [
+        "Anti-inflammatory effects",
+        "Joint health support",
+        "Skin and coat health"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Potent anti-inflammatory omega-3. Best from marine sources.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent anti-inflammatory nutrient from fish oil.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Lactobacillus Acidophilus",
+      "aliases": ["L. acidophilus", "acidophilus"],
+      "category": "active",
+      "whatItIs": "Beneficial probiotic bacteria for digestive health.",
+      "whyUsed": [
+        "Digestive health support",
+        "Gut microbiome balance",
+        "Immune support"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Beneficial probiotic if viable when consumed. Requires proper storage.",
+      "wattsPosition": "good",
+      "wattsTake": "Quality probiotic strain when properly formulated and stored.",
+      "citations": [
+        {"title": "Probiotics in companion animals", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7166405/", "publisher": "NIH"}
+      ]
+    },
+    {
+      "name": "Bifidobacterium Animalis",
+      "aliases": ["B. animalis", "bifidobacterium"],
+      "category": "active",
+      "whatItIs": "Probiotic bacteria that supports gut health and immune function.",
+      "whyUsed": [
+        "Gut health support",
+        "Immune system support",
+        "Digestive balance"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Well-researched probiotic strain for dogs.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent probiotic strain with good research backing.",
+      "citations": [
+        {"title": "Probiotics in companion animals", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7166405/", "publisher": "NIH"}
+      ]
+    },
+    {
+      "name": "Enterococcus Faecium",
+      "aliases": ["E. faecium"],
+      "category": "active",
+      "whatItIs": "Probiotic bacteria commonly used in pet supplements.",
+      "whyUsed": [
+        "Digestive health",
+        "Diarrhea management",
+        "Gut microbiome support"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Commonly used probiotic with evidence for digestive support.",
+      "wattsPosition": "good",
+      "wattsTake": "Effective probiotic strain for digestive health.",
+      "citations": [
+        {"title": "Probiotics in companion animals", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7166405/", "publisher": "NIH"}
+      ]
+    },
+    {
+      "name": "Fructooligosaccharides",
+      "aliases": ["FOS", "fructo-oligosaccharides"],
+      "category": "active",
+      "whatItIs": "Prebiotic fiber that feeds beneficial gut bacteria.",
+      "whyUsed": [
+        "Prebiotic support",
+        "Feeds beneficial bacteria",
+        "Gut health"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Effective prebiotic fiber. Often combined with probiotics.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent prebiotic that selectively feeds beneficial bacteria.",
+      "citations": [
+        {"title": "Probiotics in companion animals", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7166405/", "publisher": "NIH"}
+      ]
+    },
+    {
+      "name": "Yeast Beta-Glucans",
+      "aliases": ["beta-glucans", "yeast beta glucans"],
+      "category": "active",
+      "whatItIs": "Polysaccharides from yeast cell walls with immune-supporting properties.",
+      "whyUsed": [
+        "Immune system support",
+        "Prebiotic effects",
+        "Anti-inflammatory properties"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Well-researched immune support compound.",
+      "wattsPosition": "good",
+      "wattsTake": "Quality immune-supporting ingredient with good research.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Yeast Fermentate",
+      "aliases": ["postbiotic", "fermentation product"],
+      "category": "active",
+      "whatItIs": "Product of yeast fermentation containing beneficial metabolites and compounds.",
+      "whyUsed": [
+        "Immune support",
+        "Digestive health",
+        "Postbiotic benefits"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Provides postbiotic benefits—compounds produced by beneficial microbes.",
+      "wattsPosition": "good",
+      "wattsTake": "Quality ingredient providing postbiotic benefits beyond simple nutrients.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "L-Theanine",
+      "aliases": ["theanine"],
+      "category": "active",
+      "whatItIs": "Amino acid from tea with calming properties.",
+      "whyUsed": [
+        "Anxiety and stress reduction",
+        "Promotes calmness",
+        "Behavioral support"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Evidence for calming effects in dogs. Generally safe.",
+      "wattsPosition": "good",
+      "wattsTake": "Beneficial for anxious dogs. Evidence-backed calming supplement.",
+      "citations": [
+        {"title": "L-theanine for dogs", "url": "https://www.ncbi.nlm.nih.gov/", "publisher": "NIH"}
+      ]
+    },
+    {
+      "name": "Tryptophan",
+      "aliases": ["L-tryptophan"],
+      "category": "active",
+      "whatItIs": "Essential amino acid and precursor to serotonin.",
+      "whyUsed": [
+        "Calming and anxiety support",
+        "Serotonin production",
+        "Sleep support"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential amino acid with calming properties. Well-researched.",
+      "wattsPosition": "good",
+      "wattsTake": "Quality calming supplement with solid research backing.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Chamomile",
+      "aliases": ["chamomile extract", "german chamomile"],
+      "category": "active",
+      "whatItIs": "Herb with mild calming and digestive support properties.",
+      "whyUsed": [
+        "Calming support",
+        "Digestive health",
+        "Anti-inflammatory"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Mild calming herb. Generally safe in appropriate doses.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Gentle calming herb. More research needed for optimal dosing in dogs.",
+      "citations": [
+        {"title": "Herbal supplements for pets", "url": "https://www.ncbi.nlm.nih.gov/", "publisher": "NIH"}
+      ]
+    },
+    {
+      "name": "Valerian Root",
+      "aliases": ["valerian"],
+      "category": "active",
+      "whatItIs": "Herb used for calming and anxiety reduction.",
+      "whyUsed": [
+        "Anxiety and stress relief",
+        "Calming support",
+        "Sleep aid"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Traditional calming herb. Limited research in dogs specifically.",
+      "wattsPosition": "neutral",
+      "wattsTake": "May help with anxiety but more research needed. Use cautiously.",
+      "citations": [
+        {"title": "Herbal supplements for pets", "url": "https://www.ncbi.nlm.nih.gov/", "publisher": "NIH"}
+      ]
+    },
+    {
+      "name": "Melatonin",
+      "aliases": [],
+      "category": "active",
+      "whatItIs": "Hormone that regulates sleep-wake cycles.",
+      "whyUsed": [
+        "Sleep support",
+        "Anxiety reduction",
+        "Calming during stressful events"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Effective for some anxiety and sleep issues. Consult vet for appropriate dosing.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Can be helpful but should be used under veterinary guidance.",
+      "citations": [
+        {"title": "Melatonin use in dogs", "url": "https://www.ncbi.nlm.nih.gov/", "publisher": "NIH"}
+      ]
+    },
+    {
+      "name": "Carrots",
+      "aliases": ["carrot", "dried carrots"],
+      "category": "produce",
+      "whatItIs": "Root vegetable rich in beta-carotene, fiber, and vitamins.",
+      "whyUsed": [
+        "Natural source of beta-carotene",
+        "Fiber content",
+        "Whole food nutrition"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Nutrient-dense vegetable with beneficial fiber and antioxidants.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent whole-food ingredient. Provides vitamins and beneficial fiber.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Blueberries",
+      "aliases": ["blueberry", "dried blueberries"],
+      "category": "produce",
+      "whatItIs": "Berries extremely rich in antioxidants and phytonutrients.",
+      "whyUsed": [
+        "Antioxidant support",
+        "Cognitive health",
+        "Natural whole food"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Superfood with exceptional antioxidant content.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent whole-food antioxidant source. Particularly good for senior dogs.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Cranberries",
+      "aliases": ["cranberry", "dried cranberries"],
+      "category": "produce",
+      "whatItIs": "Berries known for urinary tract health support.",
+      "whyUsed": [
+        "Urinary tract health",
+        "Antioxidants",
+        "Prevents bacteria adhesion"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Beneficial for urinary tract health and antioxidant support.",
+      "wattsPosition": "good",
+      "wattsTake": "Quality ingredient for urinary health and antioxidants.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Spinach",
+      "aliases": ["dried spinach"],
+      "category": "produce",
+      "whatItIs": "Leafy green rich in iron, vitamins, and antioxidants.",
+      "whyUsed": [
+        "Nutrient-dense vegetable",
+        "Vitamins A, C, K source",
+        "Antioxidants"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Very nutrient-dense. Use in moderation due to oxalate content.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent nutrient source in appropriate amounts.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Kale",
+      "aliases": ["dried kale"],
+      "category": "produce",
+      "whatItIs": "Nutrient-dense cruciferous vegetable rich in vitamins and minerals.",
+      "whyUsed": [
+        "Nutrient powerhouse",
+        "Vitamins A, C, K",
+        "Antioxidants"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Very nutrient-dense. Use in moderation.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent whole-food nutrient source.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Pumpkin",
+      "aliases": ["pumpkin puree", "dried pumpkin"],
+      "category": "produce",
+      "whatItIs": "Squash rich in fiber, beta-carotene, and nutrients.",
+      "whyUsed": [
+        "Digestive health support",
+        "Soluble and insoluble fiber",
+        "Nutrient-rich"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Excellent for digestive regulation. Helps with both diarrhea and constipation.",
+      "wattsPosition": "good",
+      "wattsTake": "One of our favorite whole-food ingredients. Exceptional for digestive health.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Apples",
+      "aliases": ["apple", "dried apples"],
+      "category": "produce",
+      "whatItIs": "Fruit providing fiber, vitamin C, and antioxidants.",
+      "whyUsed": [
+        "Fiber source",
+        "Natural sweetness",
+        "Vitamins and antioxidants"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Healthy fruit in moderation. Seeds should be removed (contain cyanide precursors).",
+      "wattsPosition": "good",
+      "wattsTake": "Quality whole-food ingredient. Good fiber and vitamin source.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Peas",
+      "aliases": ["green peas", "garden peas"],
+      "category": "produce",
+      "whatItIs": "Whole peas providing protein, fiber, and nutrients.",
+      "whyUsed": [
+        "Plant protein and carbohydrate",
+        "Fiber content",
+        "Vitamins and minerals"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Nutrient-dense legume. Whole peas better than isolated pea protein or starch.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Quality ingredient in moderation. Monitor total legume content in grain-free diets.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Tomatoes",
+      "aliases": ["tomato", "dried tomatoes"],
+      "category": "produce",
+      "whatItIs": "Fruit rich in lycopene and other antioxidants.",
+      "whyUsed": [
+        "Lycopene antioxidant",
+        "Vitamins A and C",
+        "Phytonutrients"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Beneficial antioxidants but avoid green parts and stems (toxic).",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable in ripe fruit form. Good lycopene source.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Broccoli",
+      "aliases": ["dried broccoli"],
+      "category": "produce",
+      "whatItIs": "Cruciferous vegetable rich in vitamins, fiber, and antioxidants.",
+      "whyUsed": [
+        "Nutrient-dense vegetable",
+        "Vitamins C and K",
+        "Cancer-fighting compounds"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Very nutritious. Use in moderation (can cause gas, isothiocyanates in large amounts).",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent whole-food ingredient in appropriate amounts.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Ginger",
+      "aliases": ["ginger root", "dried ginger"],
+      "category": "active",
+      "whatItIs": "Root with anti-nausea and anti-inflammatory properties.",
+      "whyUsed": [
+        "Digestive support",
+        "Anti-nausea",
+        "Anti-inflammatory"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Beneficial for digestion and nausea. Use in appropriate amounts.",
+      "wattsPosition": "good",
+      "wattsTake": "Quality ingredient for digestive health and inflammation.",
+      "citations": [
+        {"title": "Herbal supplements for pets", "url": "https://www.ncbi.nlm.nih.gov/", "publisher": "NIH"}
+      ]
+    },
+    {
+      "name": "Parsley",
+      "aliases": ["dried parsley"],
+      "category": "produce",
+      "whatItIs": "Herb rich in vitamins and known for breath-freshening properties.",
+      "whyUsed": [
+        "Breath freshening",
+        "Vitamins A, C, K",
+        "Antioxidants"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Beneficial herb for fresh breath and nutrition. Safe in food amounts.",
+      "wattsPosition": "good",
+      "wattsTake": "Quality herb for fresh breath and vitamins.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Spirulina",
+      "aliases": ["blue-green algae", "dried spirulina"],
+      "category": "active",
+      "whatItIs": "Blue-green algae extremely rich in protein, vitamins, minerals, and antioxidants.",
+      "whyUsed": [
+        "Nutrient-dense superfood",
+        "Complete protein source",
+        "Antioxidants and phytonutrients"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Exceptional nutrient density. Contains complete protein, B vitamins, iron, and powerful antioxidants like phycocyanin.",
+      "wattsPosition": "good",
+      "wattsTake": "Superfood ingredient with exceptional nutrient profile. Rich in protein, vitamins, minerals, and antioxidants.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Canola Meal",
+      "aliases": ["rapeseed meal"],
+      "category": "protein",
+      "whatItIs": "Byproduct of canola oil production. Protein-rich meal used as plant protein source.",
+      "whyUsed": [
+        "Plant protein source",
+        "Byproduct utilization",
+        "Cost-effective protein"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Decent plant protein source though lower biological value than animal proteins.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable plant protein in moderation. Animal proteins are preferred for dogs.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Oat Meal",
+      "aliases": ["oatmeal", "ground oats"],
+      "category": "carbohydrate",
+      "whatItIs": "Ground whole oats. Nutrient-dense grain with beta-glucan fiber.",
+      "whyUsed": [
+        "Whole grain nutrition",
+        "Soluble fiber (beta-glucans)",
+        "Easily digestible carbohydrate"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Excellent grain choice with beneficial soluble fiber and B vitamins.",
+      "wattsPosition": "good",
+      "wattsTake": "Top-quality grain ingredient. Ground oats provide excellent nutrition.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "L-Lysine Monohydrochloride",
+      "aliases": ["L-lysine", "lysine", "lysine HCl"],
+      "category": "active",
+      "whatItIs": "Essential amino acid supplement. Important for protein synthesis and immune function.",
+      "whyUsed": [
+        "Essential amino acid supplementation",
+        "Immune system support",
+        "Protein synthesis"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential amino acid that dogs require. Often supplemented in plant-heavy diets.",
+      "wattsPosition": "good",
+      "wattsTake": "Necessary amino acid supplementation, especially in diets with plant proteins.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Taurine",
+      "aliases": ["taurine supplement"],
+      "category": "active",
+      "whatItIs": "Amino sulfonic acid critical for heart health, vision, and reproduction. Essential for cats, conditionally essential for dogs.",
+      "whyUsed": [
+        "Heart health support",
+        "Vision and retinal health",
+        "Prevention of DCM (dilated cardiomyopathy)"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Critical nutrient for heart health. Particularly important in grain-free diets and for certain breeds prone to DCM.",
+      "wattsPosition": "good",
+      "wattsTake": "Essential supplementation, especially in grain-free formulas. Heart health is critical.",
+      "citations": [
+        {"title": "FDA DCM Update", "url": "https://www.fda.gov/", "publisher": "FDA"}
+      ]
+    },
+    {
+      "name": "Calcium Pantothenate",
+      "aliases": ["vitamin B-5", "vitamin B5", "pantothenic acid"],
+      "category": "vitamin",
+      "whatItIs": "Supplemental vitamin B5 for energy metabolism and hormone synthesis.",
+      "whyUsed": [
+        "Energy metabolism",
+        "Hormone and neurotransmitter synthesis",
+        "Essential B vitamin"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential B vitamin involved in energy production and fat metabolism.",
+      "wattsPosition": "good",
+      "wattsTake": "Necessary B vitamin supplementation.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Menadione Sodium Bisulfite Complex",
+      "aliases": ["vitamin K", "vitamin K3", "menadione"],
+      "category": "vitamin",
+      "whatItIs": "Synthetic form of vitamin K for blood clotting and bone health.",
+      "whyUsed": [
+        "Blood clotting support",
+        "Bone health",
+        "Vitamin K supplementation"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Synthetic vitamin K. Natural K1 (phylloquinone) or K2 (menaquinone) forms preferred but menadione is approved.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable vitamin K source though natural forms (K1, K2) would be preferred.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Dl-Methionine",
+      "aliases": ["methionine", "DL-methionine"],
+      "category": "active",
+      "whatItIs": "Essential amino acid supplement. Contains sulfur and supports liver function.",
+      "whyUsed": [
+        "Essential amino acid supplementation",
+        "Liver detoxification support",
+        "Urinary pH regulation"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential sulfur-containing amino acid. Important for protein synthesis and metabolism.",
+      "wattsPosition": "good",
+      "wattsTake": "Necessary amino acid supplementation, particularly important for proper protein balance.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Choline Chloride",
+      "aliases": ["choline"],
+      "category": "vitamin",
+      "whatItIs": "Essential nutrient for liver function, brain development, and fat metabolism.",
+      "whyUsed": [
+        "Liver health support",
+        "Brain and nervous system function",
+        "Fat metabolism"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential nutrient, especially important for liver function and fat metabolism.",
+      "wattsPosition": "good",
+      "wattsTake": "Critical nutrient for liver and brain health. Necessary supplementation.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Calcium Iodate",
+      "aliases": ["iodine supplement"],
+      "category": "mineral",
+      "whatItIs": "Iodine supplement for thyroid function.",
+      "whyUsed": [
+        "Iodine supplementation",
+        "Thyroid hormone production",
+        "Metabolic regulation"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential mineral for thyroid health and metabolic function.",
+      "wattsPosition": "good",
+      "wattsTake": "Necessary iodine supplementation for thyroid health.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Sodium Selenite",
+      "aliases": ["selenium supplement"],
+      "category": "mineral",
+      "whatItIs": "Inorganic selenium supplement. Antioxidant mineral for immune and thyroid function.",
+      "whyUsed": [
+        "Selenium supplementation",
+        "Antioxidant protection",
+        "Thyroid and immune support"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential trace mineral. Organic forms (selenium yeast) have better bioavailability.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Adequate selenium source, though organic selenium (selenium yeast) is better absorbed.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "L-Ascorbyl-2-Polyphosphate",
+      "aliases": ["vitamin C polyphosphate", "stable vitamin C"],
+      "category": "vitamin",
+      "whatItIs": "Stabilized form of vitamin C. More stable than ascorbic acid in pet food processing.",
+      "whyUsed": [
+        "Antioxidant support",
+        "More stable in processing than ascorbic acid",
+        "Immune function"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Stable vitamin C form. Not essential for dogs (they synthesize their own) but may provide extra antioxidant support.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Optional vitamin C supplementation. More stable form than ascorbic acid.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Soybean Meal",
+      "aliases": ["soy meal", "soya meal"],
+      "category": "protein",
+      "whatItIs": "Byproduct of soybean oil production. Plant protein source with moderate protein content.",
+      "whyUsed": [
+        "Plant protein source",
+        "Cheap protein supplementation",
+        "Byproduct utilization"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Plant protein with incomplete amino acid profile for dogs. Common allergen.",
+      "wattsPosition": "caution",
+      "wattsTake": "We avoid soy ingredients. Lower biological value than animal proteins and common allergen.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Chicken Liver Flavor",
+      "aliases": ["liver flavor"],
+      "category": "additive",
+      "whatItIs": "Flavor derived from chicken liver. More transparent than generic 'natural flavor.'",
+      "whyUsed": [
+        "Palatability enhancement",
+        "Adds liver flavor",
+        "Named flavor source"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Named flavor source is more transparent than generic flavors. Minimal nutritional contribution.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Better than generic 'natural flavor' since source is disclosed. Still just flavoring.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Pork Liver Flavor",
+      "aliases": ["pork flavor"],
+      "category": "additive",
+      "whatItIs": "Flavor derived from pork liver. Named flavor source for palatability.",
+      "whyUsed": [
+        "Palatability enhancement",
+        "Adds pork flavor",
+        "Named flavor source"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Named flavor source provides more transparency than generic flavors.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Better than generic flavors due to named source. Still primarily for palatability.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Lactic Acid",
+      "aliases": ["lactate"],
+      "category": "preservative",
+      "whatItIs": "Natural acid used as preservative and pH regulator. Produced by fermentation.",
+      "whyUsed": [
+        "Natural preservative",
+        "pH regulation",
+        "Antimicrobial properties"
+      ],
+      "nutritionValue": "none",
+      "qualityNote": "Safe natural preservative with antimicrobial properties.",
+      "wattsPosition": "good",
+      "wattsTake": "Safe natural preservative. Preferred over synthetic preservatives.",
+      "citations": [
+        {"title": "FDA GRAS", "url": "https://www.fda.gov/", "publisher": "FDA"}
+      ]
+    },
+    {
+      "name": "Zinc Oxide",
+      "aliases": ["zinc supplement"],
+      "category": "mineral",
+      "whatItIs": "Inorganic zinc supplement for immune function and skin health.",
+      "whyUsed": [
+        "Zinc supplementation",
+        "Immune support",
+        "Skin and coat health"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential mineral. Less bioavailable than chelated zinc forms (proteinate).",
+      "wattsPosition": "neutral",
+      "wattsTake": "Adequate zinc source, though chelated forms have better absorption.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Manganous Oxide",
+      "aliases": ["manganese oxide", "manganese supplement"],
+      "category": "mineral",
+      "whatItIs": "Inorganic manganese supplement for bone development and enzyme function.",
+      "whyUsed": [
+        "Manganese supplementation",
+        "Bone development",
+        "Enzyme cofactor"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential trace mineral. Inorganic form with moderate bioavailability.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Necessary mineral supplementation. Adequate manganese source.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "L-Carnitine",
+      "aliases": ["carnitine", "L carnitine"],
+      "category": "active",
+      "whatItIs": "Amino acid derivative that transports fatty acids for energy production.",
+      "whyUsed": [
+        "Fat metabolism support",
+        "Weight management",
+        "Energy production"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Beneficial for fat metabolism and weight management. Particularly useful in weight loss formulas.",
+      "wattsPosition": "good",
+      "wattsTake": "Quality supplement for fat metabolism and weight management support.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    },
+    {
+      "name": "Beta-Carotene",
+      "aliases": ["beta carotene", "provitamin A"],
+      "category": "vitamin",
+      "whatItIs": "Orange pigment and antioxidant. Converts to vitamin A in the body.",
+      "whyUsed": [
+        "Vitamin A precursor",
+        "Antioxidant support",
+        "Vision and immune health"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Excellent antioxidant and vitamin A precursor. Safe as dogs can regulate conversion to vitamin A.",
+      "wattsPosition": "good",
+      "wattsTake": "Beneficial antioxidant and vitamin A source. Safer than high-dose vitamin A.",
+      "citations": [
+        {"title": "AAFCO Official Publication", "url": "https://www.aafco.org/", "publisher": "AAFCO"}
+      ]
+    }
+  ]
+}
