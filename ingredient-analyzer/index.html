@@ -690,6 +690,7 @@
   <script>
     // Load ingredients database
     let ingredientsDB = [];
+    let ingredientSlugs = {};
     let currentFilter = 'all'; // Current active filter
     let allResults = []; // Store all results for filtering
 
@@ -704,8 +705,19 @@
       }
     }
 
-    // Load database on page load
+    async function loadIngredientSlugs() {
+      try {
+        const response = await fetch('ingredient-slugs.json');
+        ingredientSlugs = await response.json();
+        console.log('Loaded ingredient slugs:', Object.keys(ingredientSlugs).length, 'slugs');
+      } catch (error) {
+        console.error('Error loading ingredient slugs:', error);
+      }
+    }
+
+    // Load database and slugs on page load
     loadIngredientsDB();
+    loadIngredientSlugs();
 
     // Parse ingredient list
     function parseIngredients(text) {
@@ -851,10 +863,17 @@
         'none': 'No nutritional value'
       };
 
+      // Get the slug for linking to the ingredient page
+      const slug = ingredientSlugs[data.name];
+      const ingredientLink = slug ? `/ingredient-analyzer/ingredients/${slug}/` : '#';
+      const ingredientNameHTML = slug
+        ? `<a href="${ingredientLink}" style="color: inherit; text-decoration: underline; text-decoration-color: rgba(25, 25, 25, 0.3); text-underline-offset: 3px; transition: text-decoration-color 0.15s;" onmouseover="this.style.textDecorationColor='var(--fg)'" onmouseout="this.style.textDecorationColor='rgba(25, 25, 25, 0.3)'">${data.name}</a>`
+        : data.name;
+
       return `
         <div class="ingredient-card" data-filter-matched="matched" data-filter-position="${data.wattsPosition}">
           <div class="ingredient-header">
-            <div class="ingredient-name"><span style="color: var(--muted); font-weight: 500; margin-right: 8px;">#${position}</span>${data.name}</div>
+            <div class="ingredient-name"><span style="color: var(--muted); font-weight: 500; margin-right: 8px;">#${position}</span>${ingredientNameHTML}</div>
             <div class="ingredient-badge ${getBadgeClass(data.wattsPosition)}">${capitalizeBadge(data.wattsPosition)}</div>
           </div>
           <div class="ingredient-category">${capitalizeIngredient(data.category)} • ${nutritionText[data.nutritionValue]}</div>
