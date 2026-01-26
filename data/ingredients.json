@@ -25,6 +25,32 @@
       ]
     },
     {
+      "name": "Amylase",
+      "aliases": [
+        "alpha-amylase",
+        "digestive enzyme amylase"
+      ],
+      "category": "active",
+      "whatItIs": "A digestive enzyme that breaks down starches and carbohydrates into simpler sugars. Added to supplements to aid carbohydrate digestion.",
+      "whyUsed": [
+        "Helps break down complex carbohydrates",
+        "May improve nutrient absorption from grain-containing foods",
+        "Supports digestive function, especially in dogs with pancreatic insufficiency",
+        "Can reduce gas and bloating from carbohydrate fermentation"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Dogs naturally produce amylase in saliva and pancreas, but supplemental amylase may benefit dogs with digestive issues or those eating high-carbohydrate diets. Effectiveness depends on enzyme activity units, not just quantity.",
+      "wattsPosition": "good",
+      "wattsTake": "Beneficial digestive enzyme, particularly for dogs eating kibble or grain-heavy diets. Look for products listing enzyme activity units (DU - Dextrinizing Units) to ensure potency.",
+      "citations": [
+        {
+          "title": "Digestive Enzymes in Pet Nutrition",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
       "name": "Animal Digest",
       "aliases": [
         "chicken digest",
@@ -777,6 +803,31 @@
       ]
     },
     {
+      "name": "Cellulase",
+      "aliases": [
+        "cellulose enzyme"
+      ],
+      "category": "active",
+      "whatItIs": "A digestive enzyme that breaks down cellulose (plant fiber) into simpler sugars. Dogs cannot naturally produce cellulase.",
+      "whyUsed": [
+        "Helps break down plant cell walls to release nutrients",
+        "May improve digestibility of vegetables and fruits",
+        "Reduces gas from undigested plant matter",
+        "Particularly beneficial in grain-free or vegetable-rich diets"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Dogs lack natural cellulase production, so supplementation can theoretically improve plant nutrient absorption. However, whole-food sources of nutrients are generally preferable to relying on enzyme supplementation for plant-based ingredients.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Potentially helpful for diets heavy in vegetables, but we prefer animal-based nutrition that dogs are designed to digest naturally. If using vegetable-rich foods, cellulase may improve nutrient availability.",
+      "citations": [
+        {
+          "title": "Enzyme Supplementation in Pet Foods",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
       "name": "Cellulose",
       "aliases": [
         "powdered cellulose",
@@ -1149,6 +1200,32 @@
           "title": "AAFCO Official Publication",
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Colostrum",
+      "aliases": [
+        "bovine colostrum",
+        "first milk"
+      ],
+      "category": "active",
+      "whatItIs": "The first milk produced by mammals after giving birth, rich in antibodies, growth factors, and immune-supporting compounds. Bovine colostrum is commonly used in dog supplements.",
+      "whyUsed": [
+        "Contains immunoglobulins (antibodies) that support immune function",
+        "Provides growth factors that may support gut health and tissue repair",
+        "Rich in lactoferrin with antimicrobial properties",
+        "May help maintain healthy gut barrier function"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Quality varies significantly based on collection time (first 24-48 hours), processing method, and source. Look for colostrum collected within the first 6-12 hours and minimally processed (low heat) to preserve bioactive compounds.",
+      "wattsPosition": "good",
+      "wattsTake": "Promising ingredient for immune and gut health support, especially for puppies, senior dogs, or dogs with compromised immunity. Best when sourced from grass-fed cattle and processed at low temperatures to preserve antibodies and growth factors.",
+      "citations": [
+        {
+          "title": "Bovine Colostrum in Animal Nutrition",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
         }
       ]
     },
@@ -3219,6 +3296,32 @@
       ]
     },
     {
+      "name": "Palm Fruit Oil",
+      "aliases": [
+        "red palm oil",
+        "palm oil"
+      ],
+      "category": "fat",
+      "whatItIs": "Oil extracted from the fruit of oil palm trees, rich in saturated fats, vitamin E (tocotrienols), and beta-carotene. Different from palm kernel oil.",
+      "whyUsed": [
+        "High in natural vitamin E (tocotrienols)",
+        "Rich in beta-carotene (gives red color)",
+        "Provides concentrated energy from fat",
+        "Highly palatable"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Palm fruit oil (red palm oil) has better nutritional profile than refined palm oil, with significant vitamin E and carotenoids. However, it's high in saturated fat. Sustainability concerns exist around palm oil production - look for RSPO-certified sustainable sources.",
+      "wattsPosition": "caution",
+      "wattsTake": "Nutritionally acceptable fat source with vitamin E and beta-carotene benefits, but environmental concerns around palm oil production make us cautious. We prefer sustainably sourced oils like fish oil, chicken fat, or flaxseed. If using palm oil, ensure it's RSPO-certified sustainable.",
+      "citations": [
+        {
+          "title": "Palm Oil in Pet Food",
+          "url": "https://www.petfoodindustry.com/",
+          "publisher": "Pet Food Industry"
+        }
+      ]
+    },
+    {
       "name": "Parsley",
       "aliases": [
         "dried parsley"
@@ -3543,6 +3646,32 @@
       ]
     },
     {
+      "name": "Protease",
+      "aliases": [
+        "proteolytic enzyme",
+        "protein-digesting enzyme"
+      ],
+      "category": "active",
+      "whatItIs": "A digestive enzyme that breaks down proteins into amino acids and smaller peptides for absorption. Commonly added to digestive supplements.",
+      "whyUsed": [
+        "Helps break down dietary proteins",
+        "May reduce protein-related digestive upset",
+        "Supports nutrient absorption",
+        "Can benefit dogs with exocrine pancreatic insufficiency (EPI)"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Dogs naturally produce proteases (trypsin, pepsin), but supplementation may help dogs with digestive disorders or those transitioning to higher-protein diets. Quality depends on enzyme activity units (HUT - Hemoglobin Unit Tyrosine).",
+      "wattsPosition": "good",
+      "wattsTake": "Valuable digestive enzyme for dogs with protein digestion issues or pancreatic conditions. Most beneficial when combined with other digestive enzymes in a full-spectrum formula.",
+      "citations": [
+        {
+          "title": "Digestive Enzymes in Pet Nutrition",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
       "name": "Psyllium Husk",
       "aliases": [
         "psyllium",
@@ -3614,6 +3743,32 @@
           "title": "AAFCO Official Publication",
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Quercetin",
+      "aliases": [
+        "flavonoid quercetin",
+        "plant flavonoid"
+      ],
+      "category": "active",
+      "whatItIs": "A plant-derived flavonoid (antioxidant) found naturally in apples, berries, and leafy greens. Used in supplements for its anti-inflammatory and antihistamine properties.",
+      "whyUsed": [
+        "Natural antihistamine that may reduce allergic reactions",
+        "Powerful antioxidant that combats free radicals",
+        "May reduce inflammation",
+        "Supports cardiovascular health"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Quercetin is generally recognized as safe but has low bioavailability when consumed orally. Some supplements combine it with bromelain to improve absorption. Evidence for effectiveness in dogs is limited but promising for allergies and inflammation.",
+      "wattsPosition": "good",
+      "wattsTake": "Promising natural alternative to pharmaceutical antihistamines for dogs with allergies. Most effective when combined with absorption enhancers like bromelain or vitamin C. Generally safe with few side effects reported.",
+      "citations": [
+        {
+          "title": "Quercetin in Veterinary Medicine",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
         }
       ]
     },
