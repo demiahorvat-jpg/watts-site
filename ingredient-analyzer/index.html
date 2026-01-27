@@ -250,6 +250,38 @@
         display: inline-block;
       }
 
+      /* Browse link */
+      .browse-link-box {
+        background: white;
+        border: 2.5px solid var(--border);
+        padding: 20px 24px;
+        margin: 32px 0;
+        text-align: center;
+      }
+
+      .browse-link-box p {
+        margin: 0 0 12px 0;
+        color: var(--muted);
+        font-size: 16px;
+      }
+
+      .browse-link-box a {
+        display: inline-block;
+        background: var(--fg);
+        color: var(--bg);
+        padding: 12px 28px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 16px;
+        border: 2.5px solid var(--fg);
+        transition: all 0.15s;
+      }
+
+      .browse-link-box a:hover {
+        background: transparent;
+        color: var(--fg);
+      }
+
       /* Results */
       #results {
         margin-top: 40px;
@@ -592,6 +624,11 @@
     <h1>Dog Food & Treat Ingredient Analyzer</h1>
 
     <p class="intro">Paste the ingredient list from your dog's food, treats, or supplements below. We'll explain what each ingredient is, why it's used, and whether it provides real nutrition or just cheap filler—in plain English, with no marketing hype.</p>
+
+    <div class="browse-link-box">
+      <p>Or browse our encyclopedia of 200+ ingredients</p>
+      <a href="/ingredient-analyzer/ingredients/">View All Ingredients →</a>
+    </div>
 
     <div class="tool-container">
       <label for="ingredientInput">Paste Ingredient List:</label>
