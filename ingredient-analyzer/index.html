@@ -634,7 +634,7 @@
       <label for="ingredientInput">Paste Ingredient List:</label>
       <textarea
         id="ingredientInput"
-        placeholder="Example: Chicken meal, brown rice, chicken fat (preserved with mixed tocopherols), dried beet pulp, natural flavor, fish oil..."
+        placeholder="Example: Chicken, chicken liver, sweet potato, chicken fat (preserved with mixed tocopherols), fish oil, pumpkin..."
       ></textarea>
       <div class="button-group">
         <button id="analyzeBtn">Analyze Ingredients</button>
@@ -673,16 +673,16 @@
       <li><strong>Cellulose</strong> — Wood pulp. Technically safe, but completely indigestible filler</li>
       <li><strong>Meat by-products</strong> — Vague term for slaughter waste with no quality transparency</li>
       <li><strong>BHA/BHT</strong> — Synthetic preservatives with potential health concerns</li>
-      <li><strong>Natural flavor</strong> — Undefined flavor enhancer that masks poor ingredient quality</li>
+      <li><strong>Corn, wheat, soy</strong> — Cheap filler grains and common allergens with poor nutritional value</li>
     </ul>
 
-    <h3>Ingredients We Like</h3>
+    <h3>Ingredients We Love</h3>
     <ul>
-      <li><strong>Named meat meals</strong> (chicken meal, beef meal, salmon meal) — Concentrated, quality protein</li>
-      <li><strong>Fish oil</strong> — Provides anti-inflammatory omega-3 fatty acids</li>
-      <li><strong>Chicory root</strong> — Prebiotic fiber that actually supports gut health</li>
-      <li><strong>Mixed tocopherols</strong> — Natural preservative that provides vitamin E</li>
-      <li><strong>Beef liver</strong> — Nutrient-dense organ meat rich in vitamins and minerals</li>
+      <li><strong>Whole meats</strong> (chicken, beef, turkey, lamb) — Real, identifiable meat as primary protein</li>
+      <li><strong>Organ meats</strong> (beef liver, chicken liver, heart) — Nutrient-dense superfoods rich in vitamins and minerals</li>
+      <li><strong>Fish oil</strong> — Provides anti-inflammatory omega-3 fatty acids for joint and brain health</li>
+      <li><strong>Whole vegetables</strong> (sweet potato, pumpkin, carrots) — Real food sources of fiber and nutrients</li>
+      <li><strong>Mixed tocopherols</strong> — Natural preservative (vitamin E) instead of synthetic chemicals</li>
     </ul>
 
     <div class="faq">
@@ -1103,7 +1103,7 @@
 
     // Load example
     function loadExample() {
-      const example = "Chicken meal, brown rice, chicken fat (preserved with mixed tocopherols), dried beet pulp, natural flavor, fish oil, maltodextrin, cellulose, BHA (preservative)";
+      const example = "Chicken, chicken liver, sweet potato, chicken fat (preserved with mixed tocopherols), fish oil, pumpkin, brown rice, flaxseed, dried kelp, mixed tocopherols, corn, wheat, meat by-products";
       document.getElementById('ingredientInput').value = example;
     }
 
