@@ -788,6 +788,37 @@
         // Remove trailing periods
         cleaned = cleaned.replace(/\.$/, '').trim();
 
+        // Remove quantities and measurements (e.g., "10mg", "5%", "2.5g")
+        // This handles patterns like: chondroitin 10mg, vitamin c 500mg, etc.
+        // Pattern explanation:
+        // - \s+ = requires at least one space before the number (preserves "B12", "D3", "omega-3")
+        // - [\d,.]+\s* = numbers with optional decimals/commas, optional trailing spaces
+        // - (mg|mcg|µg|g|kg|lb|oz|iu|i\.u\.|%|ppm|ppb) = common units
+        // - \b = word boundary to avoid matching partial words
+        cleaned = cleaned.replace(/\s+[\d,.]+\s*(mg|mcg|µg|g|kg|lb|oz|iu|i\.u\.|%|percent|ppm|ppb)\b/gi, '').trim();
+
+        // Remove compound units like mg/kg, iu/g, etc. (require preceding space)
+        cleaned = cleaned.replace(/\s+[\d,.]+\s*(mg|mcg|µg|g|kg|iu)\s*\/\s*(kg|g|lb|serving)\b/gi, '').trim();
+
+        // Remove standalone numbers at the end, but only if they're large (>= 3 digits)
+        // This preserves things like "B12" or "D3" while removing "500" or "1000"
+        cleaned = cleaned.replace(/\s+\d{3,}[\d,.]*\s*$/g, '').trim();
+
+        // Remove min/max qualifiers
+        cleaned = cleaned.replace(/\s*(min|max|minimum|maximum)\b/gi, '').trim();
+
+        // Remove "not less than" / "not more than" / "at least" phrases
+        cleaned = cleaned.replace(/\s*(not\s+)?(less|more)\s+than\s*/gi, '').trim();
+        cleaned = cleaned.replace(/\s*at\s+least\s*/gi, '').trim();
+
+        // Remove "each", "per serving", "per treat" etc
+        cleaned = cleaned.replace(/\s*(each|per\s+(serving|treat|tablet|capsule|scoop|cup))\b/gi, '').trim();
+
+        // Remove source/form indicators like (as ascorbic acid), (from fish oil)
+        // This is already handled by the parentheses removal above, but let's be explicit
+        // about also catching "as X" or "from X" that might not be in parens
+        cleaned = cleaned.replace(/\s*\b(as|from|source of|derived from)\s+[a-z\s]+$/gi, '').trim();
+
         return {
           original: ing,
           cleaned: cleaned
