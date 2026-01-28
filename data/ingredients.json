@@ -65,9 +65,9 @@
         "Cost-effective flavoring"
       ],
       "nutritionValue": "low",
-      "qualityNote": "Vague ingredient used for flavor. Source and quality unclear unless specified (e.g., 'chicken digest').",
-      "wattsPosition": "caution",
-      "wattsTake": "We prefer named digests (chicken digest) over generic. Used to mask poor base palatability.",
+      "qualityNote": "Highly ambiguous palatability enhancer with unknown animal sources. Created by chemical/enzymatic breakdown of unspecified animal tissue. If a food needs this to be palatable, question the base ingredients. Named sources (chicken digest) are far preferable.",
+      "wattsPosition": "avoid",
+      "wattsTake": "Vague, unspecified ingredient made from boiled-down animal tissue. Quality and source unknown—could be anything. Used to mask poor palatability of low-quality base ingredients. Major red flag for quality.",
       "citations": [
         {
           "title": "AAFCO Official Publication",
@@ -1318,9 +1318,9 @@
         "Provides energy"
       ],
       "nutritionValue": "moderate",
-      "qualityNote": "Digestible carbohydrate but less nutrient-dense than sweet potato or oats. Common allergen for some dogs.",
-      "wattsPosition": "neutral",
-      "wattsTake": "Not our preferred carb source. Whole corn is better than corn by-products, but better options exist.",
+      "qualityNote": "Inexpensive filler grain with low nutritional value for dogs. Common allergen. Often appears high in ingredient lists of budget foods. Better grain options include oats, brown rice, or grain-free alternatives.",
+      "wattsPosition": "caution",
+      "wattsTake": "Cheap filler ingredient and common allergen. While whole corn has some nutrients, it's primarily used to bulk up food inexpensively. Dogs don't digest corn well. Many better carbohydrate sources available (sweet potato, oats).",
       "citations": [
         {
           "title": "AAFCO Official Publication",
@@ -1368,9 +1368,9 @@
         "Energy source"
       ],
       "nutritionValue": "low",
-      "qualityNote": "Refined carbohydrate with limited nutritional value beyond calories.",
-      "wattsPosition": "caution",
-      "wattsTake": "We avoid corn-based ingredients. Better carbohydrate sources available.",
+      "qualityNote": "Ground corn product used as cheap filler. Poor digestibility and nutritional value. Common allergen. When listed high in ingredients, indicates a budget food prioritizing cost over nutrition.",
+      "wattsPosition": "avoid",
+      "wattsTake": "Cheap corn by-product filler with minimal nutritional value. Common allergen. Used primarily to bulk up food inexpensively rather than provide nutrition. Avoid foods with corn meal in top ingredients.",
       "citations": [
         {
           "title": "AAFCO Official Publication",
@@ -2811,9 +2811,9 @@
         "Highly variable quality and composition"
       ],
       "nutritionValue": "moderate",
-      "qualityNote": "Extremely variable quality. Can range from nutrient-rich organs to low-quality waste. No transparency on source or quality.",
-      "wattsPosition": "caution",
-      "wattsTake": "We avoid by-products due to lack of transparency and quality consistency. While organs are nutritious, 'by-products' doesn't guarantee you're getting liver vs low-value waste.",
+      "qualityNote": "Vague rendered animal parts of unknown quality and consistency. May include nutritious organs or low-value waste—you can't know. Definition allows feathers, heads, feet, intestines. Named meat sources (chicken, beef liver) are far superior.",
+      "wattsPosition": "avoid",
+      "wattsTake": "Ambiguous, low-quality meat source that can include non-nutritive parts like feathers, heads, feet, and intestines. Quality is unpredictable and inconsistent. While organs are nutritious, 'by-products' offers no guarantee of quality. Major red flag.",
       "citations": [
         {
           "title": "AAFCO Official Publication",
@@ -3608,9 +3608,9 @@
         "Concentrated protein source"
       ],
       "nutritionValue": "moderate",
-      "qualityNote": "Variable quality. May contain nutritious organs or low-value waste. Less transparency than named meals.",
-      "wattsPosition": "caution",
-      "wattsTake": "We prefer named meat meals (chicken meal, turkey meal) over generic by-product meals for quality consistency.",
+      "qualityNote": "Rendered poultry parts from unspecified birds with unknown quality. May contain nutritious organs or low-value waste. Generic by-product meals are hallmarks of budget foods cutting corners on protein quality.",
+      "wattsPosition": "avoid",
+      "wattsTake": "Ambiguous poultry parts of inconsistent quality. Can include necks, feet, undeveloped eggs, intestines—non-nutritive components. Named poultry meals (chicken meal, turkey meal) provide quality transparency. This does not.",
       "citations": [
         {
           "title": "AAFCO Official Publication",
@@ -4214,9 +4214,9 @@
         "Byproduct utilization"
       ],
       "nutritionValue": "moderate",
-      "qualityNote": "Plant protein with incomplete amino acid profile for dogs. Common allergen.",
-      "wattsPosition": "caution",
-      "wattsTake": "We avoid soy ingredients. Lower biological value than animal proteins and common allergen.",
+      "qualityNote": "Low-quality plant protein used to inflate protein percentages cheaply. Common allergen with inferior amino acid profile compared to meat. Contains anti-nutrients that can interfere with digestion. Sign of a low-quality formula.",
+      "wattsPosition": "avoid",
+      "wattsTake": "Cheap plant protein filler and common allergen. Contains phytoestrogens and anti-nutritional factors. Far inferior to animal proteins for dogs. Heavy reliance on soy indicates a budget formula cutting corners on quality protein.",
       "citations": [
         {
           "title": "AAFCO Official Publication",
@@ -4735,9 +4735,9 @@
         "Cheap and available"
       ],
       "nutritionValue": "moderate",
-      "qualityNote": "Moderate nutrition but common allergen. Many dogs sensitive to wheat.",
-      "wattsPosition": "caution",
-      "wattsTake": "We avoid wheat due to sensitivity concerns. Better grain options available.",
+      "qualityNote": "Major allergen and cheap filler. Wheat provides minimal nutritional value to carnivores like dogs. Often causes skin issues, ear infections, and digestive problems. Indicator of a budget formula prioritizing cost over nutrition.",
+      "wattsPosition": "avoid",
+      "wattsTake": "One of the most common dog food allergens. Cheap filler with poor nutritional value compared to meat-based proteins. Used primarily to reduce costs. We strongly recommend avoiding wheat-heavy foods.",
       "citations": [
         {
           "title": "AAFCO Official Publication",
@@ -4759,9 +4759,9 @@
         "Regulates stool consistency"
       ],
       "nutritionValue": "moderate",
-      "qualityNote": "Good fiber source but wheat can be allergenic for some dogs.",
-      "wattsPosition": "neutral",
-      "wattsTake": "Decent fiber source if dog tolerates wheat. We prefer non-wheat options.",
+      "qualityNote": "Wheat milling by-product used as inexpensive fiber. Contains wheat allergens that affect sensitive dogs. Better fiber sources available that don't carry allergen risk.",
+      "wattsPosition": "caution",
+      "wattsTake": "Wheat by-product used as cheap fiber source. Carries wheat allergy risks. Better fiber sources exist (pumpkin, sweet potato, beet pulp). Often indicates cost-cutting in formula.",
       "citations": [
         {
           "title": "AAFCO Official Publication",
