@@ -5042,6 +5042,1192 @@
           "publisher": "AAFCO"
         }
       ]
+    },
+    {
+      "name": "Cod Liver Oil",
+      "aliases": [
+        "cod oil",
+        "fish liver oil"
+      ],
+      "category": "fat",
+      "whatItIs": "Oil extracted from the livers of cod fish, rich in omega-3 fatty acids (EPA and DHA) and naturally high in vitamins A and D.",
+      "whyUsed": [
+        "Excellent source of omega-3 fatty acids for heart, brain, and joint health",
+        "Natural source of vitamin D for bone health and immune function",
+        "Provides vitamin A for vision, skin, and immune support",
+        "Supports healthy skin and coat",
+        "Anti-inflammatory properties for joint health"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Premium omega-3 source with added vitamin benefits. Quality varies based on sourcing, processing, and freshness. Look for products tested for heavy metals and contaminants. Can become rancid if not properly preserved.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent whole-food omega-3 source with natural vitamins A and D. Superior to basic fish oil for overall nutritional value, though ensure proper dosing to avoid vitamin A/D toxicity with long-term use.",
+      "citations": [
+        {
+          "title": "Omega-3 Fatty Acids in Pet Nutrition",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Chia Seed",
+      "aliases": [
+        "chia seeds",
+        "salvia hispanica"
+      ],
+      "category": "fiber",
+      "whatItIs": "Small seeds from the Salvia hispanica plant, rich in omega-3 ALA, fiber, protein, and minerals.",
+      "whyUsed": [
+        "Plant-based omega-3 fatty acids (ALA)",
+        "High in soluble and insoluble fiber for digestive health",
+        "Source of complete protein with all essential amino acids",
+        "Provides calcium, phosphorus, and magnesium",
+        "Promotes satiety and healthy weight management"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Nutrient-dense superfood ingredient. Note that omega-3 ALA from chia must be converted to EPA/DHA, which dogs do inefficiently. Best used alongside marine omega-3 sources. High fiber content can cause digestive upset if introduced too quickly.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent whole-food ingredient packed with fiber, minerals, and plant omega-3s. Great for digestive health and satiety, but shouldn't be the sole omega-3 source—dogs need direct EPA/DHA from fish.",
+      "citations": [
+        {
+          "title": "Plant-Based Nutrients in Pet Foods",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Boswellia",
+      "aliases": [
+        "boswellia serrata",
+        "indian frankincense",
+        "boswellic acid"
+      ],
+      "category": "active",
+      "whatItIs": "Herbal extract from the Boswellia serrata tree, containing boswellic acids with anti-inflammatory properties.",
+      "whyUsed": [
+        "Natural anti-inflammatory for joint pain and arthritis",
+        "May reduce inflammation without gastric side effects of NSAIDs",
+        "Supports mobility and joint health in senior dogs",
+        "May help with inflammatory bowel conditions"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Quality depends on boswellic acid concentration and extraction method. Clinical studies show promise for joint health. Effects are typically milder than prescription anti-inflammatories but may benefit dogs with chronic low-grade inflammation.",
+      "wattsPosition": "good",
+      "wattsTake": "Well-researched natural anti-inflammatory, particularly beneficial for senior dogs with joint issues. Look for standardized extracts with documented boswellic acid content (typically 60-65% boswellic acids).",
+      "citations": [
+        {
+          "title": "Herbal Supplements in Veterinary Medicine",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Hyaluronic Acid",
+      "aliases": [
+        "hyaluronan",
+        "HA",
+        "sodium hyaluronate"
+      ],
+      "category": "active",
+      "whatItIs": "Naturally occurring substance found in connective tissues, synovial fluid, and skin. Acts as a lubricant and shock absorber in joints.",
+      "whyUsed": [
+        "Supports joint health and mobility",
+        "Lubricates joints and cushions cartilage",
+        "Promotes skin hydration and elasticity",
+        "May reduce joint pain and inflammation",
+        "Supports healthy synovial fluid"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Beneficial for joint health, especially when combined with glucosamine and chondroitin. Molecular weight affects absorption—lower molecular weight HA may be better absorbed orally. Injectable forms are more effective but require veterinary administration.",
+      "wattsPosition": "good",
+      "wattsTake": "Valuable joint support ingredient, particularly for senior dogs or active breeds. Works best as part of a comprehensive joint formula rather than standalone. Quality varies by molecular weight and source.",
+      "citations": [
+        {
+          "title": "Joint Health Supplements for Dogs",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Eggshell Membrane",
+      "aliases": [
+        "egg membrane",
+        "NEM",
+        "natural eggshell membrane"
+      ],
+      "category": "active",
+      "whatItIs": "The thin membrane between the eggshell and egg white, naturally containing glucosamine, chondroitin, hyaluronic acid, and collagen.",
+      "whyUsed": [
+        "Natural source of joint-supporting compounds",
+        "Contains glucosamine, chondroitin, and hyaluronic acid in whole-food form",
+        "Provides collagen and elastin for connective tissue",
+        "Supports joint health and flexibility",
+        "May reduce joint pain and stiffness"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Unique whole-food source combining multiple joint-supporting nutrients. Clinical studies show benefits for joint health in both humans and dogs. More bioavailable than synthetic supplements for some nutrients.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent natural joint support ingredient. Provides a synergistic blend of joint nutrients in their natural form. Premium ingredient that justifies higher product cost for senior or active dogs.",
+      "citations": [
+        {
+          "title": "Natural Joint Support Ingredients",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Papaya",
+      "aliases": [
+        "papaya fruit",
+        "carica papaya"
+      ],
+      "category": "produce",
+      "whatItIs": "Tropical fruit rich in digestive enzymes (papain), vitamins A and C, and fiber.",
+      "whyUsed": [
+        "Natural source of papain enzyme for protein digestion",
+        "Provides vitamin A for immune and eye health",
+        "Rich in vitamin C as antioxidant",
+        "Contains fiber for digestive health",
+        "Adds natural sweetness and palatability"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Nutritious whole-food ingredient when used in meaningful amounts. Papain enzyme content varies by ripeness and processing. Typically used in small quantities in pet foods. Fresh or freeze-dried forms retain more enzymes than heavily processed versions.",
+      "wattsPosition": "good",
+      "wattsTake": "Beneficial whole-food ingredient that adds digestive enzymes and vitamins. Most valuable when listed in first half of ingredients. Often more of a marketing ingredient than nutritional powerhouse in typical quantities used.",
+      "citations": [
+        {
+          "title": "Fruits and Vegetables in Pet Foods",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Pineapple",
+      "aliases": [
+        "pineapple fruit",
+        "ananas"
+      ],
+      "category": "produce",
+      "whatItIs": "Tropical fruit containing bromelain enzyme, vitamin C, manganese, and natural sugars.",
+      "whyUsed": [
+        "Natural source of bromelain for protein digestion",
+        "Rich in vitamin C for immune support",
+        "Provides manganese for bone health",
+        "May help reduce coprophagia (stool eating)",
+        "Adds natural flavor and sweetness"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Nutritious fruit ingredient with digestive enzyme benefits. Bromelain content is highest in fresh pineapple core. Sugar content means it should be used in moderation. Actual amounts in dog treats are typically small.",
+      "wattsPosition": "good",
+      "wattsTake": "Good whole-food ingredient that provides bromelain enzyme and vitamin C. Best in moderate amounts due to natural sugar content. Fresh or freeze-dried forms retain more beneficial enzymes than canned or heavily processed.",
+      "citations": [
+        {
+          "title": "Fruits in Pet Nutrition",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Passionflower",
+      "aliases": [
+        "passiflora incarnata",
+        "maypop",
+        "passion flower extract"
+      ],
+      "category": "active",
+      "whatItIs": "Herbal extract from the passionflower plant, traditionally used for its calming and anxiety-reducing properties.",
+      "whyUsed": [
+        "Natural calming agent for anxiety and stress",
+        "Promotes relaxation without sedation",
+        "May help with separation anxiety and noise phobias",
+        "Supports restful sleep",
+        "Non-habit forming alternative to prescription anxiolytics"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Research-supported calming herb with GABAergic activity. Effects are typically mild to moderate. Quality depends on extraction method and standardization. Works best as part of multi-ingredient calming formula.",
+      "wattsPosition": "good",
+      "wattsTake": "Well-researched natural calming ingredient, gentler than prescription medications. Good choice for dogs with mild to moderate anxiety. Effects build over time with consistent use rather than providing immediate sedation.",
+      "citations": [
+        {
+          "title": "Herbal Calming Agents in Veterinary Medicine",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Nutritional Yeast",
+      "aliases": [
+        "inactive yeast",
+        "deactivated yeast",
+        "savory yeast"
+      ],
+      "category": "additive",
+      "whatItIs": "Deactivated yeast (Saccharomyces cerevisiae) grown on molasses, rich in B-vitamins, protein, and minerals.",
+      "whyUsed": [
+        "Excellent source of B-complex vitamins",
+        "Provides complete protein with all essential amino acids",
+        "Rich in trace minerals including selenium and zinc",
+        "Adds umami/savory flavor for palatability",
+        "May support immune function via beta-glucans"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Nutrient-dense ingredient, especially for B-vitamins. Different from brewer's yeast (brewing byproduct). Some dogs may be sensitive to yeast products. Quality nutritional yeast is fortified with B12, which is not naturally present in high amounts.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent whole-food source of B-vitamins and protein. More nutritious than brewer's yeast. Great for dogs needing B-vitamin support, though some dogs with yeast sensitivities may need to avoid it.",
+      "citations": [
+        {
+          "title": "Yeast Products in Animal Nutrition",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Astragalus",
+      "aliases": [
+        "astragalus root",
+        "huang qi",
+        "milk vetch"
+      ],
+      "category": "active",
+      "whatItIs": "Root extract from Astragalus membranaceus plant, used in traditional Chinese medicine for immune support.",
+      "whyUsed": [
+        "Supports immune system function",
+        "May enhance white blood cell activity",
+        "Adaptogenic properties for stress resilience",
+        "Antioxidant support",
+        "May benefit senior dogs and those with chronic illness"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Traditional immune-supporting herb with some research backing. Quality varies by source and extraction method. Effects are typically gradual and supportive rather than therapeutic. Best used as preventive or adjunct support.",
+      "wattsPosition": "good",
+      "wattsTake": "Well-regarded immune support herb with long traditional use and growing research support. Valuable for senior dogs or those needing immune system support. Quality and standardization matter for effectiveness.",
+      "citations": [
+        {
+          "title": "Herbal Immune Support in Veterinary Medicine",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Milk Thistle",
+      "aliases": [
+        "silymarin",
+        "silybum marianum",
+        "milk thistle extract"
+      ],
+      "category": "active",
+      "whatItIs": "Herbal extract from milk thistle plant, containing silymarin compounds that support liver health and detoxification.",
+      "whyUsed": [
+        "Supports liver function and detoxification",
+        "Protects liver cells from damage",
+        "May help regenerate liver tissue",
+        "Antioxidant support",
+        "Beneficial for dogs on long-term medications or with liver issues"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Well-researched liver support supplement with strong evidence for hepatoprotective effects. Quality depends on silymarin content (standardized to 70-80% silymarin is ideal). Particularly valuable for dogs with liver disease or on hepatotoxic medications.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent evidence-based liver support supplement. One of the most researched and effective herbal liver protectants. Essential for dogs with liver issues or taking medications that stress the liver. Look for standardized extracts.",
+      "citations": [
+        {
+          "title": "Liver Support Supplements in Veterinary Medicine",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Dandelion Root",
+      "aliases": [
+        "taraxacum officinale",
+        "dandelion",
+        "dandelion extract"
+      ],
+      "category": "active",
+      "whatItIs": "Root of the common dandelion plant, traditionally used for liver and digestive support.",
+      "whyUsed": [
+        "Supports liver function and bile production",
+        "Mild diuretic properties",
+        "Digestive aid and appetite stimulant",
+        "Rich in vitamins A, C, K and minerals",
+        "Prebiotic fiber for gut health"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Traditional liver and digestive support herb with nutritional value. Effects are gentle and supportive rather than therapeutic. Contains inulin (prebiotic fiber). Quality depends on growing conditions and processing. Diuretic effects are mild.",
+      "wattsPosition": "good",
+      "wattsTake": "Gentle, multi-purpose herb with liver support, digestive benefits, and nutritional value. Safe long-term use. Not a replacement for medical treatment but valuable supportive ingredient for liver and digestive health.",
+      "citations": [
+        {
+          "title": "Herbal Digestive Support in Pet Nutrition",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Coenzyme Q10",
+      "aliases": [
+        "CoQ10",
+        "ubiquinone",
+        "ubiquinol"
+      ],
+      "category": "active",
+      "whatItIs": "Naturally occurring antioxidant compound essential for cellular energy production, particularly important for heart, brain, and muscle function.",
+      "whyUsed": [
+        "Supports heart health and cardiovascular function",
+        "Powerful antioxidant for cellular protection",
+        "Enhances cellular energy production",
+        "May benefit senior dogs and those with heart disease",
+        "Supports brain health and cognitive function"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential nutrient for heart health with strong research support. Ubiquinol form is more bioavailable than ubiquinone, especially for senior dogs. Particularly important for dogs on statin medications or with heart conditions. Quality and form matter significantly for absorption.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent, research-backed supplement especially crucial for senior dogs and those with heart disease. Premium ingredient that justifies higher cost. Look for ubiquinol form for better absorption, particularly in older dogs.",
+      "citations": [
+        {
+          "title": "CoQ10 in Veterinary Cardiology",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Glutamine",
+      "aliases": [
+        "L-glutamine",
+        "glutamic acid"
+      ],
+      "category": "active",
+      "whatItIs": "Amino acid that serves as fuel for intestinal cells and immune system, supporting gut health and recovery from stress or illness.",
+      "whyUsed": [
+        "Supports intestinal health and gut barrier function",
+        "Fuels rapidly dividing cells (gut lining, immune cells)",
+        "Aids recovery from stress, illness, or intense exercise",
+        "May reduce intestinal inflammation and leaky gut",
+        "Supports immune system function"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Conditionally essential amino acid—dogs produce it but may need supplementation during stress, illness, or GI issues. Particularly valuable for dogs with inflammatory bowel disease, food sensitivities, or recovering from illness. Quality L-glutamine is well-absorbed.",
+      "wattsPosition": "good",
+      "wattsTake": "Highly beneficial for gut health and recovery support. Especially valuable for dogs with digestive issues, food sensitivities, or during recovery from illness or surgery. One of the best-researched gut health supplements.",
+      "citations": [
+        {
+          "title": "Amino Acids in Pet Nutrition",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Lipase",
+      "aliases": [
+        "digestive lipase",
+        "pancreatic lipase"
+      ],
+      "category": "active",
+      "whatItIs": "Digestive enzyme that breaks down dietary fats into fatty acids and glycerol for absorption.",
+      "whyUsed": [
+        "Aids in fat digestion and absorption",
+        "Supports dogs with pancreatic insufficiency",
+        "Helps dogs with fat malabsorption issues",
+        "May reduce digestive upset from high-fat foods",
+        "Supports nutrient absorption from fat-soluble vitamins"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Important digestive enzyme, especially for dogs with pancreatic issues or fat malabsorption. Effectiveness depends on lipase activity units (LU), not just quantity. Dogs naturally produce lipase but supplementation helps some individuals. Particularly beneficial for dogs with exocrine pancreatic insufficiency.",
+      "wattsPosition": "good",
+      "wattsTake": "Valuable digestive enzyme especially for dogs with pancreatic issues or eating high-fat diets. Look for products listing lipase activity units (LU) to ensure potency. Part of a comprehensive digestive enzyme blend is ideal.",
+      "citations": [
+        {
+          "title": "Digestive Enzymes in Veterinary Medicine",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Bromelain",
+      "aliases": [
+        "pineapple enzyme",
+        "bromelain extract"
+      ],
+      "category": "active",
+      "whatItIs": "Proteolytic enzyme derived from pineapple stem and fruit, used for protein digestion and anti-inflammatory effects.",
+      "whyUsed": [
+        "Aids protein digestion and breakdown",
+        "Natural anti-inflammatory properties",
+        "May reduce swelling and pain from injuries",
+        "Supports joint health and mobility",
+        "Enhances absorption of other nutrients"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Well-researched digestive and anti-inflammatory enzyme. Effectiveness depends on activity units (GDU or MCU), not just quantity. Most potent from pineapple stem. Anti-inflammatory effects are mild to moderate. Best taken between meals for inflammation, with meals for digestion.",
+      "wattsPosition": "good",
+      "wattsTake": "Effective multi-purpose enzyme with both digestive and anti-inflammatory benefits. Particularly valuable for senior dogs or those with joint issues. Quality and potency vary—look for standardized extracts with stated activity units.",
+      "citations": [
+        {
+          "title": "Proteolytic Enzymes in Pet Health",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Papain",
+      "aliases": [
+        "papaya enzyme",
+        "papaya proteinase"
+      ],
+      "category": "active",
+      "whatItIs": "Proteolytic enzyme extracted from papaya fruit, used to break down proteins and support digestion.",
+      "whyUsed": [
+        "Aids protein digestion and breakdown",
+        "Supports digestive health",
+        "May reduce bloating and gas",
+        "Helps dogs with protein malabsorption",
+        "Natural alternative to animal-derived digestive enzymes"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Effective plant-based protein-digesting enzyme. Quality depends on activity units (PU - Papain Units). Works in a wider pH range than some digestive enzymes. Often combined with other enzymes for comprehensive digestive support. Derived from unripe papaya fruit.",
+      "wattsPosition": "good",
+      "wattsTake": "Reliable digestive enzyme particularly useful for protein-heavy diets. Plant-based and works effectively across different pH levels in the digestive tract. Look for products with stated activity units for quality assurance.",
+      "citations": [
+        {
+          "title": "Plant-Based Digestive Enzymes",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Pea Protein",
+      "aliases": [
+        "pea protein isolate",
+        "pea protein concentrate",
+        "yellow pea protein"
+      ],
+      "category": "protein",
+      "whatItIs": "Concentrated protein extracted from yellow split peas, containing about 80-90% protein by weight.",
+      "whyUsed": [
+        "High-protein plant-based ingredient",
+        "Hypoallergenic alternative to common animal proteins",
+        "Rich in branched-chain amino acids",
+        "Binding agent in treats and chews",
+        "Cost-effective protein source"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Concentrated plant protein but not a complete amino acid profile compared to animal proteins. Lacks some essential amino acids dogs need. Best used to supplement animal proteins, not replace them. Can contribute to DCM risk if used as primary protein in grain-free diets. Processing may affect digestibility.",
+      "wattsPosition": "caution",
+      "wattsTake": "Useful as a supplementary protein but concerning as a primary protein source. FDA investigation into grain-free, legume-heavy diets and DCM includes pea protein. Dogs are carnivores and thrive on animal proteins—pea protein should enhance, not replace them.",
+      "citations": [
+        {
+          "title": "Plant Proteins in Dog Food",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Oat Flour",
+      "aliases": [
+        "ground oats",
+        "oat powder"
+      ],
+      "category": "carbohydrate",
+      "whatItIs": "Finely ground oats providing carbohydrates, fiber (beta-glucan), B vitamins, and minerals.",
+      "whyUsed": [
+        "Digestible grain-inclusive carbohydrate source",
+        "Provides soluble fiber (beta-glucan) for heart and gut health",
+        "Rich in B vitamins and minerals",
+        "Binding agent in treats and kibble",
+        "Hypoallergenic grain alternative to wheat or corn"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Nutritious, easily digestible grain that's less likely to cause allergies than wheat or corn. Beta-glucan fiber supports cholesterol and gut health. Whole oat flour (with bran) is more nutritious than refined versions. Good grain option but still a carbohydrate filler in high amounts.",
+      "wattsPosition": "neutral",
+      "wattsTake": "One of the better grain options for dogs—nutritious, digestible, and less allergenic than wheat/corn. Beta-glucan fiber is beneficial. Still a carbohydrate source, so placement in ingredients matters. Prefer whole oat flour over refined.",
+      "citations": [
+        {
+          "title": "Grains in Dog Food",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Pea Fiber",
+      "aliases": [
+        "pea hull fiber",
+        "yellow pea fiber"
+      ],
+      "category": "fiber",
+      "whatItIs": "Insoluble fiber extracted from the outer hull of peas, used as a fiber source and bulking agent.",
+      "whyUsed": [
+        "Adds dietary fiber for digestive health",
+        "Promotes healthy stool formation",
+        "Low-calorie bulking agent for weight management foods",
+        "May help with anal gland expression",
+        "Grain-free fiber alternative"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Primarily insoluble fiber with minimal nutritional value beyond bulk. Helps stool formation and can aid weight management by adding fullness without calories. Excessive fiber can reduce nutrient absorption. Common in grain-free foods as a fiber replacement for grain bran.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Functional fiber ingredient that serves a purpose in weight management and digestive health. Not harmful but adds bulk without much nutrition. Typical of grain-free formulas replacing traditional fiber sources. Moderate amounts are fine; excessive amounts reduce food's nutritional density.",
+      "citations": [
+        {
+          "title": "Fiber in Pet Foods",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Coconut Glycerin",
+      "aliases": [
+        "vegetable glycerin from coconut",
+        "coconut-derived glycerin"
+      ],
+      "category": "additive",
+      "whatItIs": "Vegetable glycerin derived from coconut oil, used as a humectant, preservative, and sweetener in treats and chews.",
+      "whyUsed": [
+        "Keeps treats soft and chewy",
+        "Natural preservative by reducing water activity",
+        "Adds slight sweetness for palatability",
+        "Prevents products from drying out",
+        "Plant-based alternative to animal glycerin"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Safe, plant-based glycerin that serves functional purposes in treats. Provides calories (about 4 calories per gram) but no significant nutrition. Better than propylene glycol. Can cause digestive upset or diarrhea in large amounts. Commonly used in soft treats and dental chews.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Safe, functional ingredient for soft treats. Coconut-derived is a premium choice compared to other glycerin sources. Adds calories without nutrition, so best in moderation. Fine as a preservative and texture agent, but treats heavy in glycerin shouldn't be daily staples.",
+      "citations": [
+        {
+          "title": "GRAS Ingredients in Pet Foods",
+          "url": "https://www.fda.gov/",
+          "publisher": "FDA"
+        }
+      ]
+    },
+    {
+      "name": "Molasses",
+      "aliases": [
+        "cane molasses",
+        "blackstrap molasses"
+      ],
+      "category": "additive",
+      "whatItIs": "Thick syrup byproduct of sugar refining, containing residual sugars plus iron, calcium, and B vitamins.",
+      "whyUsed": [
+        "Natural sweetener for palatability",
+        "Binding agent in treats and kibble",
+        "Source of iron and trace minerals",
+        "Adds moisture to dry products",
+        "Improves texture and consistency"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Contains some minerals (especially blackstrap molasses) but primarily adds sugar and calories. Used for taste, color, and binding rather than nutrition. Small amounts are fine; large amounts add unnecessary sugar. Dogs don't need added sugars—used more for human appeal and manufacturing.",
+      "wattsPosition": "caution",
+      "wattsTake": "Adds unnecessary sugar to dog food. While it contains some minerals, it's primarily a sweetener and binder used to improve palatability of low-quality ingredients. Blackstrap molasses has more nutrients than lighter versions, but dogs don't need sugar. Prefer foods without added sweeteners.",
+      "citations": [
+        {
+          "title": "Sweeteners in Pet Food",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Honey",
+      "aliases": [
+        "raw honey",
+        "natural honey"
+      ],
+      "category": "additive",
+      "whatItIs": "Natural sweet substance made by bees from flower nectar, containing sugars, enzymes, antioxidants, and trace nutrients.",
+      "whyUsed": [
+        "Natural sweetener for palatability",
+        "Antioxidant and antimicrobial properties",
+        "Small amounts of vitamins and minerals",
+        "May support wound healing (topical or internal)",
+        "Adds moisture and binding to treats"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Contains beneficial enzymes and antioxidants, especially raw honey, but primarily delivers sugar and calories. Antimicrobial properties are real but mild. Small amounts are safe; large amounts add unnecessary sugar. Some dogs with allergies may benefit from local honey, though evidence is anecdotal.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Better than refined sugar due to enzymes and antioxidants, but still primarily a sweetener. Dogs don't need added sugars. Small amounts in treats are fine, but it's not a nutritional powerhouse. Raw honey has more benefits than processed. Use sparingly.",
+      "citations": [
+        {
+          "title": "Natural Sweeteners in Pet Products",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Dried Whey",
+      "aliases": [
+        "whey powder",
+        "dehydrated whey"
+      ],
+      "category": "protein",
+      "whatItIs": "Byproduct of cheese production, containing milk proteins (primarily whey protein), lactose, vitamins, and minerals in dried form.",
+      "whyUsed": [
+        "Source of easily digestible milk protein",
+        "Rich in branched-chain amino acids",
+        "Adds palatability and flavor",
+        "Provides calcium and B vitamins",
+        "Binding agent in treats and kibble"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Quality protein source with good amino acid profile, but many dogs are lactose intolerant and may experience digestive upset. Contains less protein per weight than whey protein concentrate or isolate. Primarily used for flavor and binding rather than as primary protein source.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Decent supplementary protein with good palatability, but watch for lactose intolerance in sensitive dogs. Best in small amounts. If your dog tolerates dairy, it's a beneficial ingredient. Not suitable as a primary protein source.",
+      "citations": [
+        {
+          "title": "Dairy Ingredients in Pet Food",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Whey Powder",
+      "aliases": [
+        "dried whey",
+        "whey protein powder"
+      ],
+      "category": "protein",
+      "whatItIs": "Dried form of whey, the liquid byproduct of cheese making, containing milk proteins, lactose, vitamins, and minerals.",
+      "whyUsed": [
+        "Easily digestible protein source",
+        "Rich in essential amino acids",
+        "Enhances palatability",
+        "Provides calcium and B vitamins",
+        "Binder and texture enhancer in treats"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Same as dried whey—quality protein but can cause digestive issues in lactose-intolerant dogs. Protein content varies depending on processing (concentrate vs. isolate vs. basic whey powder). Most effective as supplementary protein, not primary source.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Good supplementary protein if your dog tolerates dairy. Many dogs are lactose intolerant, so watch for gas, diarrhea, or upset stomach. Better than plant proteins but not as appropriate as animal meat proteins for dogs.",
+      "citations": [
+        {
+          "title": "Milk-Based Ingredients in Pet Nutrition",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Cultured Dextrose",
+      "aliases": [
+        "fermented dextrose",
+        "cultured sugar"
+      ],
+      "category": "preservative",
+      "whatItIs": "Natural preservative produced by fermenting dextrose (corn sugar) with Propionibacterium freudenreichii bacteria, creating propionic acid and other antimicrobial compounds.",
+      "whyUsed": [
+        "Natural antimicrobial preservative",
+        "Inhibits mold, yeast, and bacterial growth",
+        "Clean label alternative to synthetic preservatives",
+        "Generally recognized as safe",
+        "Extends shelf life without artificial additives"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Effective natural preservative with good safety profile. Considered clean label and consumer-friendly. More expensive than synthetic preservatives but appeals to consumers seeking natural products. Well-researched and widely used in human and pet food.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent natural preservative choice. Safe, effective, and truly natural—not just 'natural-sounding.' Significantly better than synthetic preservatives like BHA/BHT. Good indicator of a quality brand prioritizing natural ingredients.",
+      "citations": [
+        {
+          "title": "Natural Preservatives in Pet Food",
+          "url": "https://www.fda.gov/",
+          "publisher": "FDA"
+        }
+      ]
+    },
+    {
+      "name": "Calcium Ascorbate",
+      "aliases": [
+        "calcium vitamin C",
+        "buffered vitamin C"
+      ],
+      "category": "vitamin",
+      "whatItIs": "Buffered, non-acidic form of vitamin C (ascorbic acid) combined with calcium, used as both an antioxidant and vitamin supplement.",
+      "whyUsed": [
+        "Natural antioxidant and preservative",
+        "Provides vitamin C for immune support",
+        "Less acidic than ascorbic acid, gentler on stomach",
+        "Dual benefit: vitamin C plus calcium",
+        "Supports collagen production and joint health"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Dogs synthesize their own vitamin C, so supplementation is not essential like in humans. However, additional vitamin C may benefit senior dogs, those with joint issues, or during stress/illness. Calcium ascorbate is gentler than ascorbic acid and provides calcium bonus. Primarily used as preservative in pet food.",
+      "wattsPosition": "good",
+      "wattsTake": "Good natural preservative with antioxidant benefits. While dogs make their own vitamin C, supplementation can support joint health and immune function in certain cases. Buffered form is easier on digestion than straight ascorbic acid.",
+      "citations": [
+        {
+          "title": "Vitamin C in Pet Nutrition",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Reishi",
+      "aliases": [
+        "reishi mushroom",
+        "ganoderma lucidum",
+        "lingzhi"
+      ],
+      "category": "active",
+      "whatItIs": "Medicinal mushroom (Ganoderma lucidum) used for immune support, containing polysaccharides, beta-glucans, and triterpenes.",
+      "whyUsed": [
+        "Immune system modulation and support",
+        "Antioxidant and anti-inflammatory properties",
+        "May support liver health and detoxification",
+        "Adaptogenic properties for stress resilience",
+        "Traditional medicine use for longevity and vitality"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Well-researched medicinal mushroom with immune-modulating properties. Quality varies significantly based on growing conditions, extraction method, and beta-glucan content. Hot water extraction is necessary to access beneficial polysaccharides. Look for products with stated beta-glucan percentages.",
+      "wattsPosition": "good",
+      "wattsTake": "Premium immune support ingredient with strong traditional use and growing research backing. Particularly valuable for senior dogs or those with immune challenges. Quality and extraction method matter greatly—mycelium-on-grain is inferior to fruiting body extracts.",
+      "citations": [
+        {
+          "title": "Medicinal Mushrooms in Veterinary Medicine",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Lion's Mane",
+      "aliases": [
+        "lion's mane mushroom",
+        "hericium erinaceus",
+        "bearded tooth mushroom"
+      ],
+      "category": "active",
+      "whatItIs": "Medicinal mushroom (Hericium erinaceus) known for supporting cognitive function and nerve health through compounds like hericenones and erinacines.",
+      "whyUsed": [
+        "Cognitive support and brain health",
+        "May support nerve regeneration and neuroplasticity",
+        "Neuroprotective properties for senior dogs",
+        "Digestive health benefits",
+        "Immune system support through beta-glucans"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Unique mushroom with specific benefits for brain and nervous system health. Research shows promise for cognitive function, particularly in aging. Quality depends on fruiting body vs. mycelium and extraction method. Hot water and alcohol dual extraction captures both water-soluble and fat-soluble compounds.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent choice for senior dogs showing signs of cognitive decline or dogs with neurological issues. One of the few natural ingredients with real cognitive support research. Premium ingredient—look for dual-extracted fruiting body products with documented compound levels.",
+      "citations": [
+        {
+          "title": "Lion's Mane for Cognitive Health",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Chaga",
+      "aliases": [
+        "chaga mushroom",
+        "inonotus obliquus",
+        "black mass"
+      ],
+      "category": "active",
+      "whatItIs": "Medicinal mushroom (Inonotus obliquus) growing on birch trees, extremely rich in antioxidants, particularly melanin and betulinic acid.",
+      "whyUsed": [
+        "Potent antioxidant support (highest ORAC score of mushrooms)",
+        "Immune system modulation",
+        "Anti-inflammatory properties",
+        "May support healthy skin and coat through melanin",
+        "Supports digestive health and gut lining"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "One of the most antioxidant-rich natural substances. Wild-harvested from birch trees is traditional and preferred over cultivated. Quality varies significantly—look for products from cold climates (Siberia, Canada, Northern US) where beneficial compounds are highest. Dual extraction recommended.",
+      "wattsPosition": "good",
+      "wattsTake": "Powerhouse antioxidant mushroom with broad health benefits. Particularly valuable for dogs with inflammatory conditions or oxidative stress. Premium ingredient—wild-harvested from birch in cold climates is superior. One of the best natural antioxidants available.",
+      "citations": [
+        {
+          "title": "Medicinal Mushrooms and Antioxidants",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Maitake",
+      "aliases": [
+        "maitake mushroom",
+        "grifola frondosa",
+        "hen of the woods"
+      ],
+      "category": "active",
+      "whatItIs": "Medicinal mushroom (Grifola frondosa) known for immune support and blood sugar regulation, containing D-fraction beta-glucans.",
+      "whyUsed": [
+        "Powerful immune system support",
+        "May help regulate blood sugar levels",
+        "Supports healthy weight management",
+        "Antioxidant and anti-inflammatory properties",
+        "May enhance cancer treatment effectiveness (in research)"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Well-researched immune-supporting mushroom with particular interest in cancer research. D-fraction (specific beta-glucan) is the most studied component. Quality depends on beta-glucan content and extraction method. Fruiting body extracts are superior to mycelium products.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent immune support mushroom with strong research backing. Particularly interesting for dogs with metabolic issues or those needing immune support. Look for products standardized for D-fraction beta-glucan content. Premium ingredient in therapeutic formulas.",
+      "citations": [
+        {
+          "title": "Maitake Mushroom in Veterinary Medicine",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Shiitake",
+      "aliases": [
+        "shiitake mushroom",
+        "lentinula edodes",
+        "black forest mushroom"
+      ],
+      "category": "active",
+      "whatItIs": "Medicinal and culinary mushroom (Lentinula edodes) containing lentinan (beta-glucan) and eritadenine, known for immune and cardiovascular support.",
+      "whyUsed": [
+        "Immune system support through lentinan",
+        "May support cardiovascular health",
+        "Rich in B vitamins and minerals",
+        "Antiviral and antibacterial properties",
+        "Digestive health benefits"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Well-researched both as food and medicine. Lentinan (specific beta-glucan) has strong immune-supporting research. Contains eritadenine which may support healthy cholesterol levels. Both whole mushroom and extract forms have benefits. Look for products specifying lentinan content.",
+      "wattsPosition": "good",
+      "wattsTake": "Versatile mushroom with both nutritional and medicinal properties. One of the most researched mushrooms for immune health. Can be included as whole food ingredient or concentrated extract. Widely available and well-tolerated.",
+      "citations": [
+        {
+          "title": "Shiitake Mushroom Health Benefits",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Cordyceps",
+      "aliases": [
+        "cordyceps mushroom",
+        "cordyceps sinensis",
+        "cordyceps militaris",
+        "caterpillar fungus"
+      ],
+      "category": "active",
+      "whatItIs": "Medicinal mushroom/fungus known for energy, stamina, and respiratory support, containing cordycepin and polysaccharides.",
+      "whyUsed": [
+        "Energy and athletic performance support",
+        "Respiratory health and oxygen utilization",
+        "Kidney and liver support",
+        "Immune system modulation",
+        "Antioxidant properties"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Traditionally wild-harvested Cordyceps sinensis is extremely expensive; most products use cultivated Cordyceps militaris which contains higher cordycepin levels. Quality varies dramatically. Look for products stating species and cordycepin content. Particularly beneficial for active/working dogs and those with respiratory issues.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent performance and respiratory support mushroom. Particularly valuable for active, working, or sporting dogs. Cordyceps militaris is more affordable and higher in active compounds than wild C. sinensis. Premium ingredient for energy and endurance.",
+      "citations": [
+        {
+          "title": "Cordyceps for Performance and Health",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Paractin",
+      "aliases": [
+        "Paractin™",
+        "andrographis paniculata extract",
+        "andrographis"
+      ],
+      "category": "active",
+      "whatItIs": "Proprietary standardized extract of Andrographis paniculata herb, containing andrographolides with anti-inflammatory and immune-supporting properties.",
+      "whyUsed": [
+        "Natural anti-inflammatory for joint health",
+        "Immune system support",
+        "May reduce pain and inflammation",
+        "Antioxidant properties",
+        "Clinically studied branded ingredient"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Branded, researched ingredient with clinical studies in both humans and animals. Standardized for andrographolide content (typically 30%). More reliable than generic andrographis due to standardization and quality control. Used in premium joint and immune supplements.",
+      "wattsPosition": "good",
+      "wattsTake": "Premium branded ingredient with solid research backing for inflammation and immune support. Standardization ensures consistent potency. More expensive than generic herbs but quality and efficacy are verified. Good choice for joint supplements and immune formulas.",
+      "citations": [
+        {
+          "title": "Andrographis Paniculata Research",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Bioperine",
+      "aliases": [
+        "Bioperine™",
+        "piperine",
+        "black pepper extract"
+      ],
+      "category": "active",
+      "whatItIs": "Proprietary standardized extract of black pepper (Piper nigrum) containing 95% piperine, clinically proven to enhance nutrient absorption.",
+      "whyUsed": [
+        "Enhances absorption of other nutrients and supplements",
+        "Increases bioavailability of curcumin, CoQ10, and other compounds",
+        "Supports metabolism",
+        "Thermogenic properties",
+        "Clinically studied absorption enhancer"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Well-researched branded ingredient that significantly increases absorption of many nutrients, particularly curcumin (up to 2000% increase). Small amounts needed for effect (typically 5-10mg). Quality-conscious brands include it to maximize efficacy of primary ingredients. Not nutritionally significant itself but enhances overall formula.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent functional ingredient that maximizes absorption of other nutrients. Small investment that significantly boosts formula effectiveness. Particularly important in joint supplements containing curcumin/turmeric. Indicator of a well-formulated, premium product.",
+      "citations": [
+        {
+          "title": "Piperine and Nutrient Bioavailability",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Coconut Flour",
+      "aliases": [
+        "coconut powder",
+        "ground coconut"
+      ],
+      "category": "carbohydrate",
+      "whatItIs": "Fine powder made from dried, defatted coconut meat, high in fiber and naturally grain-free.",
+      "whyUsed": [
+        "Grain-free carbohydrate and fiber source",
+        "High in dietary fiber for digestive health",
+        "Hypoallergenic alternative to grain flours",
+        "Provides medium-chain triglycerides (MCTs) in small amounts",
+        "Binding agent in grain-free treats and foods"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Nutrient-dense, grain-free flour with very high fiber content (58% fiber vs. 3% for wheat flour). Low glycemic index. High fiber means a little goes a long way—excessive amounts can cause digestive upset. Quality depends on processing method and whether organic. Naturally gluten-free.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent grain-free flour option with impressive fiber content and nutritional profile. Much more nutritious than typical grain-free starches (potato, tapioca). High fiber is beneficial but means it should be used in moderation. Good choice for grain-free or limited ingredient diets.",
+      "citations": [
+        {
+          "title": "Alternative Flours in Pet Food",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Dried Bacon Fat",
+      "aliases": [
+        "bacon fat",
+        "rendered bacon fat",
+        "pork fat from bacon"
+      ],
+      "category": "fat",
+      "whatItIs": "Rendered and dried fat from bacon, used as a highly palatable flavoring agent and fat source.",
+      "whyUsed": [
+        "Extremely palatable flavoring",
+        "Energy-dense fat source",
+        "Enhances taste and aroma",
+        "Provides essential fatty acids",
+        "Improves food acceptance in picky eaters"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "While highly palatable, bacon fat is concerning due to high salt content in bacon curing process and potential preservatives (nitrates/nitrites). Quality varies significantly—some may contain concerning additives. Often used to mask poor base palatability. Not a premium fat choice compared to named oils.",
+      "wattsPosition": "caution",
+      "wattsTake": "Used primarily for palatability rather than nutrition. Raises concerns about sodium content and potential nitrates/nitrites from bacon curing. If your dog's food needs bacon fat to be eaten, question the base quality of the formula. Better fat sources exist (fish oil, chicken fat, etc.).",
+      "citations": [
+        {
+          "title": "Fat Sources in Pet Food",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Sea Buckthorn",
+      "aliases": [
+        "sea buckthorn berry",
+        "hippophae rhamnoides",
+        "seaberry"
+      ],
+      "category": "produce",
+      "whatItIs": "Bright orange berry from sea buckthorn shrub, exceptionally rich in omega-7 fatty acids, vitamin C, antioxidants, and nutrients.",
+      "whyUsed": [
+        "Rare source of omega-7 (palmitoleic acid) for skin and mucous membrane health",
+        "Extremely high in vitamin C and antioxidants",
+        "Supports skin, coat, and digestive health",
+        "Anti-inflammatory properties",
+        "Omega-3, 6, 7, and 9 fatty acids in one source"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Superfood ingredient with exceptional nutritional profile. One of the only plant sources of omega-7 fatty acids. Particularly beneficial for skin, coat, and digestive tract lining. Quality varies by berry vs. seed oil and extraction method. Premium ingredient that justifies higher cost.",
+      "wattsPosition": "good",
+      "wattsTake": "Exceptional whole-food ingredient with unique omega-7 content and impressive nutrient density. Particularly valuable for dogs with skin issues or digestive sensitivities. Premium ingredient that indicates a thoughtfully formulated product. More than just marketing—real nutritional benefits.",
+      "citations": [
+        {
+          "title": "Sea Buckthorn Nutritional Benefits",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Withania Somnifera",
+      "aliases": [
+        "ashwagandha",
+        "Indian ginseng",
+        "winter cherry"
+      ],
+      "category": "active",
+      "whatItIs": "Adaptogenic herb (ashwagandha) used in Ayurvedic medicine, containing withanolides that support stress resilience and overall vitality.",
+      "whyUsed": [
+        "Adaptogenic stress support and anxiety reduction",
+        "Supports healthy cortisol levels",
+        "May improve cognitive function and focus",
+        "Anti-inflammatory and antioxidant properties",
+        "Supports thyroid function and metabolism"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Well-researched adaptogen with strong clinical backing in humans and growing veterinary interest. Quality depends on withanolide content (standardized to 5-10% is ideal) and root vs. leaf extract. Root extract is traditional and preferred. Particularly beneficial for anxious or stressed dogs.",
+      "wattsPosition": "good",
+      "wattsTake": "Premium adaptogenic herb with solid research for stress, anxiety, and vitality. Particularly valuable for anxious dogs or those with chronic stress. Look for standardized root extracts with stated withanolide content. Quality varies significantly—cheap products may be ineffective.",
+      "citations": [
+        {
+          "title": "Ashwagandha in Veterinary Medicine",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Camellia Sinensis",
+      "aliases": [
+        "green tea plant",
+        "tea plant",
+        "tea leaf"
+      ],
+      "category": "active",
+      "whatItIs": "The tea plant from which green, black, white, and oolong teas are made. In pet products, typically refers to green tea leaves rich in catechins and EGCG.",
+      "whyUsed": [
+        "Powerful antioxidant support from catechins",
+        "Natural source of EGCG for cellular health",
+        "May support weight management and metabolism",
+        "Dental health benefits (reduces bacteria)",
+        "Anti-inflammatory properties"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Rich in beneficial polyphenols, particularly EGCG. Caffeine content is a concern—decaffeinated extracts are safer for dogs. Quality varies by growing conditions and processing. Standardized extracts ensure consistent polyphenol content. Green tea is preferred over black tea for higher antioxidant levels.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent antioxidant source if properly processed and decaffeinated. EGCG has strong research for cellular health and metabolism. Ensure products use decaffeinated extracts or whole leaf in appropriate amounts. Premium ingredient in weight management and antioxidant formulas.",
+      "citations": [
+        {
+          "title": "Green Tea Polyphenols in Pet Health",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Green Tea Extract",
+      "aliases": [
+        "green tea polyphenols",
+        "EGCG",
+        "green tea catechins"
+      ],
+      "category": "active",
+      "whatItIs": "Concentrated extract from green tea leaves (Camellia sinensis), standardized for catechins and EGCG (epigallocatechin gallate).",
+      "whyUsed": [
+        "Concentrated antioxidant and anti-inflammatory support",
+        "Supports healthy weight management and metabolism",
+        "EGCG for cellular health and protection",
+        "May support cognitive function",
+        "Natural preservative properties"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Highly concentrated source of beneficial polyphenols. Should be decaffeinated for pet safety. Quality indicated by standardization to catechins (typically 50-98%) and EGCG content. Water extraction is gentler; alcohol extraction may be more concentrated. Excessive amounts can cause liver stress—dosage matters.",
+      "wattsPosition": "good",
+      "wattsTake": "Powerful antioxidant when properly standardized and decaffeinated. EGCG research is compelling for cellular health and metabolism. Must be used at appropriate doses—more is not better with green tea extract. Look for decaffeinated, standardized extracts in well-formulated products.",
+      "citations": [
+        {
+          "title": "Green Tea Extract Safety and Efficacy",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Euphausia Superba",
+      "aliases": [
+        "antarctic krill",
+        "krill",
+        "euphausiid"
+      ],
+      "category": "protein",
+      "whatItIs": "Antarctic krill species (Euphausia superba), small crustaceans rich in omega-3s (EPA/DHA), astaxanthin, and highly digestible protein.",
+      "whyUsed": [
+        "Superior omega-3 source (phospholipid-bound for better absorption)",
+        "Natural source of astaxanthin (powerful antioxidant)",
+        "Highly digestible marine protein",
+        "Supports joint, brain, heart, and skin health",
+        "Sustainable marine ingredient"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Premium omega-3 source with superior bioavailability compared to fish oil due to phospholipid form. Astaxanthin provides additional antioxidant benefits. Sustainability is good when MSC-certified. More expensive than fish oil but offers unique benefits. Whole krill includes shells (chitin) providing additional fiber.",
+      "wattsPosition": "good",
+      "wattsTake": "Premium marine ingredient superior to standard fish oil in many ways. Phospholipid omega-3s are better absorbed, and natural astaxanthin adds antioxidant power. Justifies higher cost for targeted joint, brain, and inflammatory support. Look for sustainably sourced, MSC-certified krill.",
+      "citations": [
+        {
+          "title": "Krill Oil in Pet Nutrition",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Whole Antarctic Krill Meal",
+      "aliases": [
+        "krill meal",
+        "whole krill",
+        "antarctic krill meal"
+      ],
+      "category": "protein",
+      "whatItIs": "Dried and ground whole Antarctic krill (Euphausia superba), providing omega-3s, protein, astaxanthin, and marine nutrients in whole-food form.",
+      "whyUsed": [
+        "Whole-food source of phospholipid omega-3s",
+        "Natural astaxanthin for antioxidant support",
+        "Complete protein with all essential amino acids",
+        "Highly palatable marine ingredient",
+        "Supports skin, coat, joint, and cognitive health"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Excellent whole-food marine ingredient combining protein, omega-3s, and antioxidants. 'Meal' indicates it's been dried and ground, concentrating nutrients. Includes beneficial shell material (chitin). More complete nutrition than isolated krill oil. Premium ingredient indicating a high-quality formula.",
+      "wattsPosition": "good",
+      "wattsTake": "Outstanding whole-food marine ingredient with comprehensive nutritional benefits. Superior to fish meal in many ways due to phospholipid omega-3s and natural astaxanthin. Premium ingredient that justifies higher product cost. Particularly valuable for dogs needing joint, cognitive, or inflammatory support.",
+      "citations": [
+        {
+          "title": "Marine Proteins in Pet Food",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
     }
   ]
 }
