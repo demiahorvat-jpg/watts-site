@@ -6725,6 +6725,769 @@
           "publisher": "AAFCO"
         }
       ]
+    },
+    {
+      "name": "Anchovy Meal",
+      "aliases": [
+        "anchovy fish meal"
+      ],
+      "category": "protein",
+      "whatItIs": "Rendered anchovy fish meal providing concentrated protein and omega-3 fatty acids from whole anchovies.",
+      "whyUsed": [
+        "High-quality fish protein",
+        "Rich in omega-3s (EPA/DHA)",
+        "Sustainable small fish source",
+        "Novel protein for allergies"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Premium fish meal from small fish with low contaminant risk. Anchovies are sustainable and naturally high in omega-3s. Whole fish meal provides calcium from bones. Quality depends on freshness and processing temperature.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent fish-based protein with built-in omega-3s. Anchovies are small, sustainable fish lower on food chain with less mercury risk. Named source provides transparency. Premium ingredient for fish-based formulas.",
+      "citations": [
+        {
+          "title": "Fish Proteins in Pet Nutrition",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Turkey Heart",
+      "aliases": [
+        "fresh turkey heart"
+      ],
+      "category": "protein",
+      "whatItIs": "Fresh turkey heart organ, rich in CoQ10, taurine, B vitamins, iron, and highly digestible protein.",
+      "whyUsed": [
+        "Nutrient-dense organ meat",
+        "Natural CoQ10 for heart health",
+        "Rich in taurine for heart/eyes",
+        "High-quality lean protein"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Excellent organ meat - heart is muscle tissue, very protein-dense. Naturally high in CoQ10, taurine, B vitamins, and iron. Premium ingredient showing whole-prey nutrition approach. More nutritious than muscle meat.",
+      "wattsPosition": "good",
+      "wattsTake": "Outstanding nutrient-dense ingredient. Heart is one of the best organs - rich in CoQ10, taurine, and lean protein. Shows formula uses whole-animal nutrition. Premium ingredient indicating exceptional quality.",
+      "citations": [
+        {
+          "title": "Organ Meats Nutrition",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Beef Kidney",
+      "aliases": [
+        "fresh beef kidney"
+      ],
+      "category": "protein",
+      "whatItIs": "Fresh beef kidney organ, extremely rich in B vitamins (especially B12), selenium, and high-quality protein.",
+      "whyUsed": [
+        "Nutrient-dense organ superfood",
+        "Extremely high in B12 and selenium",
+        "Rich in iron and zinc",
+        "Complete amino acid profile"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Nutrient powerhouse - kidneys are among the most vitamin/mineral-dense foods. Exceptionally high in B12, selenium, riboflavin. Premium ingredient showing commitment to whole-prey nutrition.",
+      "wattsPosition": "good",
+      "wattsTake": "Exceptional organ meat - kidney is nutritionally superior to muscle meat. Extremely high in B12, selenium, and other micronutrients. Premium ingredient indicating high-quality, biologically appropriate formula.",
+      "citations": [
+        {
+          "title": "Organ Meats in Pet Nutrition",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Beef Spleen",
+      "aliases": [
+        "fresh beef spleen"
+      ],
+      "category": "protein",
+      "whatItIs": "Fresh beef spleen organ, rich in iron, protein, and immune-supporting nutrients.",
+      "whyUsed": [
+        "Very high iron content",
+        "Immune system support",
+        "Complete protein source",
+        "Whole-prey nutrition"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Nutrient-rich organ meat with exceptionally high iron content. Contains immune-supporting factors. Less common than liver/heart but equally nutritious. Indicates premium whole-animal utilization.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent organ meat especially valuable for iron content. Spleen is less commonly used, indicating a premium formula using whole-animal nutrition. Shows quality commitment beyond standard organs.",
+      "citations": [
+        {
+          "title": "Organ Meats Nutrition",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Duck Liver",
+      "aliases": [
+        "fresh duck liver"
+      ],
+      "category": "protein",
+      "whatItIs": "Fresh duck liver organ, extremely nutrient-dense with high levels of vitamins A, B12, folate, and iron.",
+      "whyUsed": [
+        "Nutrient superfood",
+        "Novel protein for allergies",
+        "Rich in vitamins A, B12, iron",
+        "Highly palatable"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Premium organ meat from novel protein source. Duck liver is as nutritious as chicken/beef liver but less likely to cause allergies. Indicates premium limited ingredient or novel protein formula.",
+      "wattsPosition": "good",
+      "wattsTake": "Exceptional ingredient combining nutrient density of liver with novel protein benefits of duck. Perfect for allergic dogs. Premium ingredient showing quality and thoughtfulness in formula design.",
+      "citations": [
+        {
+          "title": "Novel Proteins in Pet Food",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Pork Meal",
+      "aliases": [
+        "pork protein meal"
+      ],
+      "category": "protein",
+      "whatItIs": "Rendered pork product providing concentrated protein from pork tissue and bone.",
+      "whyUsed": [
+        "Alternative protein source",
+        "Concentrated protein (60-65%)",
+        "Novel protein for some dogs",
+        "Named meat source"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Named protein meal providing transparency. Pork is less common in dog food, making it useful for allergies to chicken/beef. Quality depends on rendering process and source consistency. Better than pork by-product meal.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable named protein meal. Pork is less common, making it useful for allergic dogs. Named source (pork) is far better than generic 'meat meal' or 'by-products.' Quality varies by manufacturer.",
+      "citations": [
+        {
+          "title": "AAFCO Official Publication",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Lamb Fat",
+      "aliases": [
+        "rendered lamb fat"
+      ],
+      "category": "fat",
+      "whatItIs": "Fat rendered from lamb tissue, providing energy and essential fatty acids.",
+      "whyUsed": [
+        "Novel fat source for allergies",
+        "Concentrated energy",
+        "Palatability enhancer",
+        "Named fat source"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Named fat source providing transparency. Less common than chicken/beef fat, making it useful in limited ingredient diets. Quality depends on preservation method - mixed tocopherols preferred over synthetic preservatives.",
+      "wattsPosition": "good",
+      "wattsTake": "Good named fat source, especially valuable in limited ingredient or novel protein formulas. Lamb fat is less allergenic than common fats. Check preservation method - natural preservatives (mixed tocopherols) are ideal.",
+      "citations": [
+        {
+          "title": "Fat Sources in Pet Food",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Algal Oil",
+      "aliases": [
+        "algae oil",
+        "DHA from algae"
+      ],
+      "category": "fat",
+      "whatItIs": "Oil derived from marine algae, rich in DHA omega-3 fatty acids. Sustainable, plant-based omega-3 source.",
+      "whyUsed": [
+        "Sustainable DHA source",
+        "Plant-based omega-3",
+        "Brain and eye development",
+        "Lower contamination than fish oil"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Premium sustainable omega-3 source. Algae is where fish get their omega-3s. High in DHA (less EPA than fish oil). Particularly beneficial for puppies (brain development). No fishy taste. Low contamination risk.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent sustainable omega-3 source. Algal oil provides DHA without fish - cleaner, more sustainable. Especially good for puppies needing DHA for brain development. Premium ingredient showing environmental consciousness.",
+      "citations": [
+        {
+          "title": "Algal Omega-3 in Pet Nutrition",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Safflower Oil",
+      "aliases": [
+        "high-oleic safflower oil"
+      ],
+      "category": "fat",
+      "whatItIs": "Plant oil from safflower seeds, high in omega-6 fatty acids (linoleic acid) or omega-9 (oleic acid) depending on variety.",
+      "whyUsed": [
+        "Plant-based fat source",
+        "Skin and coat support",
+        "Provides essential fatty acids",
+        "Cost-effective oil"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Acceptable plant oil but not ideal for dogs. High in omega-6 (already abundant in most diets) unless high-oleic variety. Dogs need more omega-3s relative to omega-6s. Fish oil or flaxseed provide better fatty acid profiles.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable but not optimal. Safflower oil is high in omega-6 (which dogs get plenty of) unless it's high-oleic variety. Fish oil provides better omega-3/omega-6 balance. Not harmful but not premium.",
+      "citations": [
+        {
+          "title": "Plant Oils in Pet Food",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Beef Tallow",
+      "aliases": [
+        "rendered beef fat"
+      ],
+      "category": "fat",
+      "whatItIs": "Rendered fat from beef tissue, providing concentrated energy and palatability.",
+      "whyUsed": [
+        "High-energy fat source",
+        "Improves palatability",
+        "Named fat for transparency",
+        "Stable at high temperatures"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Named fat source providing transparency. High in saturated fats. Quality depends on source cattle and rendering process. Preservation method matters - mixed tocopherols preferred over synthetic preservatives.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable named fat source. Beef tallow is clear about source (better than 'animal fat'). High in saturated fats, less omega-3s than fish oil. Check preservation method - natural preservatives preferred.",
+      "citations": [
+        {
+          "title": "Fat Sources in Pet Food",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Duck Fat",
+      "aliases": [
+        "rendered duck fat"
+      ],
+      "category": "fat",
+      "whatItIs": "Rendered fat from duck, providing concentrated energy, palatability, and novel fat source for allergies.",
+      "whyUsed": [
+        "Novel fat for allergic dogs",
+        "Highly palatable",
+        "Named fat source",
+        "Rich flavor"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Premium named fat, especially valuable in limited ingredient diets. Duck fat is less common, making it useful for dogs with chicken/beef sensitivities. Quality depends on preservation - natural preservatives preferred.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent named fat source, particularly for limited ingredient or novel protein formulas. Duck fat is less allergenic than common fats. Shows formula commitment to consistent novel protein sourcing. Check preservation method.",
+      "citations": [
+        {
+          "title": "Novel Ingredients in Pet Food",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "White Rice",
+      "aliases": [
+        "polished rice",
+        "refined rice"
+      ],
+      "category": "carbohydrate",
+      "whatItIs": "Refined rice with hull, bran, and germ removed. Easily digestible but nutritionally inferior to brown rice.",
+      "whyUsed": [
+        "Easily digestible carbohydrate",
+        "Low fiber for sensitive stomachs",
+        "Bland diet staple",
+        "Inexpensive filler"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Highly digestible but nutritionally stripped. Refining removes fiber, vitamins, minerals found in brown rice. Useful for GI upset short-term but not ideal long-term. Better than corn/wheat but inferior to whole grains.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable but not optimal. White rice is easily digested (good for upset stomachs) but nutritionally inferior to brown rice. Better than corn or wheat but loses vitamins/minerals in refining. Better options exist.",
+      "citations": [
+        {
+          "title": "Grains in Pet Food",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Tapioca Starch",
+      "aliases": [
+        "cassava starch",
+        "tapioca flour"
+      ],
+      "category": "carbohydrate",
+      "whatItIs": "Refined starch extracted from cassava root. Pure carbohydrate with minimal nutritional value.",
+      "whyUsed": [
+        "Grain-free binding agent",
+        "Hypoallergenic carbohydrate",
+        "Creates kibble structure",
+        "Cost-effective filler"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Grain-free starch with minimal nutrition beyond calories. High glycemic index can spike blood sugar. Used heavily in grain-free foods for binding. Better than corn starch but still empty calories. Overuse linked to DCM concerns.",
+      "wattsPosition": "caution",
+      "wattsTake": "Grain-free filler with minimal nutrition. Tapioca starch is pure refined carbohydrate - empty calories. Heavy use in grain-free foods tied to DCM concerns. Better than corn starch but still a filler. Avoid as primary carb source.",
+      "citations": [
+        {
+          "title": "FDA DCM Investigation",
+          "url": "https://www.fda.gov/",
+          "publisher": "FDA"
+        }
+      ]
+    },
+    {
+      "name": "Soy Protein Concentrate",
+      "aliases": [
+        "soy concentrate"
+      ],
+      "category": "protein",
+      "whatItIs": "Processed soy protein (65-72% protein) used to boost protein percentages. Common allergen and inferior to meat.",
+      "whyUsed": [
+        "Cheap protein source",
+        "Increases protein percentage",
+        "Plant-based protein",
+        "Cost reduction"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Processed plant protein with inferior amino acid profile. Common allergen. Contains anti-nutritional factors. Used to inflate protein numbers without meat. Less processed than soy protein isolate but still concerning.",
+      "wattsPosition": "avoid",
+      "wattsTake": "Red flag - cheap plant protein used instead of meat. Common allergen with incomplete amino acids and anti-nutrients. Used to hit protein targets without expensive meat. Avoid foods listing this prominently.",
+      "citations": [
+        {
+          "title": "Soy in Pet Foods",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Bifidobacterium Lactis",
+      "aliases": [
+        "B. lactis",
+        "bifidobacterium animalis subsp. lactis"
+      ],
+      "category": "active",
+      "whatItIs": "Probiotic bacteria that supports digestive health, immune function, and gut barrier integrity.",
+      "whyUsed": [
+        "Digestive health and regularity",
+        "Immune system support",
+        "Gut barrier function",
+        "Reduces digestive upset"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Well-researched probiotic with clinical evidence for digestive and immune benefits. Stability in kibble varies - spore-forming probiotics (Bacillus) survive better. Look for products listing CFU count and best-by dates.",
+      "wattsPosition": "good",
+      "wattsTake": "Beneficial probiotic with solid research for digestive and immune health. Less heat-stable than Bacillus coagulans, so more effective in refrigerated or wet foods. Look for minimum 100 million CFUs per serving.",
+      "citations": [
+        {
+          "title": "Probiotics in Pet Nutrition",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Astaxanthin",
+      "aliases": [
+        "astaxanthin from haematococcus pluvialis"
+      ],
+      "category": "active",
+      "whatItIs": "Powerful red carotenoid antioxidant derived from algae, providing oxidative stress protection and anti-inflammatory benefits.",
+      "whyUsed": [
+        "Potent antioxidant (stronger than vitamin E)",
+        "Anti-inflammatory properties",
+        "Supports eye health",
+        "Skin and coat health",
+        "Joint support"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Premium antioxidant with strong research backing. Naturally red/pink (gives salmon its color). Crosses blood-brain and blood-retinal barriers. Sourced from algae (Haematococcus pluvialis). Quality depends on concentration and stability.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent premium antioxidant - one of the most powerful known. Supports eyes, brain, joints, and skin. Natural red pigment from algae. Premium ingredient indicating quality focus. Small amounts needed for effectiveness.",
+      "citations": [
+        {
+          "title": "Astaxanthin Health Benefits",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Lutein",
+      "aliases": [
+        "lutein from marigold"
+      ],
+      "category": "active",
+      "whatItIs": "Yellow carotenoid antioxidant that accumulates in eye tissue, supporting vision and eye health.",
+      "whyUsed": [
+        "Eye health and vision support",
+        "Antioxidant protection for retina",
+        "Cognitive function in aging dogs",
+        "Skin health"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Beneficial eye-health nutrient with research support. Concentrates in retina and macula. Often derived from marigold flowers. Particularly valuable for senior dogs. Quality depends on source and stabilization.",
+      "wattsPosition": "good",
+      "wattsTake": "Valuable eye health supplement, especially for aging dogs. Lutein protects retina from oxidative damage. Good indicator of a formula designed for senior or vision-support needs. Premium functional ingredient.",
+      "citations": [
+        {
+          "title": "Carotenoids in Pet Nutrition",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Slippery Elm Bark",
+      "aliases": [
+        "slippery elm",
+        "ulmus rubra"
+      ],
+      "category": "active",
+      "whatItIs": "Inner bark of slippery elm tree, containing mucilage that soothes and coats digestive tract.",
+      "whyUsed": [
+        "Soothes digestive tract irritation",
+        "Supports gut lining health",
+        "Reduces diarrhea and constipation",
+        "Natural mucilage coating"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Traditional digestive remedy with mucilage that coats and soothes GI tract. Clinically used for IBD, colitis, digestive upset. Quality depends on bark sourcing and processing. Most effective as powder or extract.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent digestive support herb with real clinical use. Slippery elm's mucilage soothes inflamed gut lining. Particularly beneficial for dogs with IBD, colitis, or chronic digestive issues. Quality ingredient in therapeutic formulas.",
+      "citations": [
+        {
+          "title": "Herbal Digestive Support",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Marshmallow Root",
+      "aliases": [
+        "althaea officinalis",
+        "marshmallow herb"
+      ],
+      "category": "active",
+      "whatItIs": "Root of marshmallow plant containing mucilage that soothes mucous membranes and supports digestive and urinary health.",
+      "whyUsed": [
+        "Soothes digestive tract",
+        "Supports urinary tract health",
+        "Natural mucilage coating",
+        "Reduces inflammation"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Traditional herb with mucilage similar to slippery elm. Soothes GI tract and urinary system. Research supports use for digestive and urinary inflammation. Quality depends on root source and extraction.",
+      "wattsPosition": "good",
+      "wattsTake": "Beneficial soothing herb for digestive and urinary health. Marshmallow root's mucilage coats and protects inflamed tissues. Good in formulas for sensitive stomachs or urinary support. Quality therapeutic ingredient.",
+      "citations": [
+        {
+          "title": "Herbal Support in Pet Health",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Ginkgo Biloba",
+      "aliases": [
+        "ginkgo",
+        "ginkgo extract"
+      ],
+      "category": "active",
+      "whatItIs": "Extract from ginkgo tree leaves, used for cognitive support and circulation enhancement.",
+      "whyUsed": [
+        "Cognitive support for senior dogs",
+        "Improves blood circulation",
+        "Antioxidant properties",
+        "May slow cognitive decline"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Well-studied herb for cognitive function and circulation. Research shows benefits for canine cognitive dysfunction. Quality depends on standardization (24% ginkgo flavone glycosides, 6% terpene lactones). Proper dosing matters.",
+      "wattsPosition": "good",
+      "wattsTake": "Good cognitive support ingredient for senior dogs. Ginkgo has research backing for memory and mental clarity. Look for standardized extracts with documented potencies. Beneficial in senior formulas targeting brain health.",
+      "citations": [
+        {
+          "title": "Ginkgo for Cognitive Function",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Montmorillonite Clay",
+      "aliases": [
+        "bentonite clay",
+        "calcium montmorillonite"
+      ],
+      "category": "active",
+      "whatItIs": "Natural clay mineral that binds toxins and supports digestive health through its absorption properties.",
+      "whyUsed": [
+        "Binds toxins and heavy metals",
+        "Supports digestive health",
+        "Natural detoxification",
+        "Anti-diarrheal properties"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Natural clay with toxin-binding properties. Used in human and animal digestive health. Can bind both toxins AND nutrients, so timing with meals matters. Quality depends on purity and source. Small amounts are beneficial.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Beneficial detox ingredient in appropriate amounts. Montmorillonite clay binds toxins but can also bind nutrients if overused. Good in small amounts for digestive support. Quality and sourcing matter for purity.",
+      "citations": [
+        {
+          "title": "Clay Minerals in Pet Health",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "MOS",
+      "aliases": [
+        "mannan-oligosaccharides",
+        "mannan oligosaccharide"
+      ],
+      "category": "fiber",
+      "whatItIs": "Prebiotic fiber derived from yeast cell walls that supports immune function and blocks pathogen binding in the gut.",
+      "whyUsed": [
+        "Prebiotic for beneficial bacteria",
+        "Blocks pathogen binding to gut wall",
+        "Immune system support",
+        "Gut health"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Well-researched prebiotic with immune benefits. Binds pathogens like E. coli and Salmonella, preventing colonization. Derived from yeast (Saccharomyces cerevisiae) cell walls. Quality depends on extraction and concentration.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent functional prebiotic with dual benefits - feeds good bacteria AND blocks bad bacteria. MOS has strong research for gut and immune health. Premium ingredient indicating attention to digestive wellness.",
+      "citations": [
+        {
+          "title": "Prebiotics in Pet Nutrition",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "GOS",
+      "aliases": [
+        "galacto-oligosaccharides",
+        "galactooligosaccharide"
+      ],
+      "category": "fiber",
+      "whatItIs": "Prebiotic fiber that selectively feeds beneficial gut bacteria, particularly Bifidobacteria.",
+      "whyUsed": [
+        "Prebiotic for beneficial bacteria",
+        "Supports Bifidobacteria growth",
+        "Improves stool quality",
+        "Gut health support"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Effective prebiotic with good research for gut health. Selectively feeds beneficial bacteria without feeding pathogens. Well-tolerated with minimal gas compared to some prebiotics. Quality depends on purity and chain length.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent prebiotic for gut health. GOS specifically feeds beneficial bacteria like Bifidobacteria. Well-researched and well-tolerated. Good indicator of a formula prioritizing digestive wellness.",
+      "citations": [
+        {
+          "title": "Prebiotics in Pet Food",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Pectin",
+      "aliases": [
+        "apple pectin",
+        "citrus pectin"
+      ],
+      "category": "fiber",
+      "whatItIs": "Soluble fiber from fruit (apples, citrus) that supports digestive health and stool quality.",
+      "whyUsed": [
+        "Soluble fiber for gut health",
+        "Improves stool firmness",
+        "Prebiotic properties",
+        "Natural gelling agent"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Natural soluble fiber with prebiotic benefits. Helps firm loose stools and feeds beneficial bacteria. Derived from fruit sources (apple, citrus). Safe and well-tolerated. Quality depends on source and processing.",
+      "wattsPosition": "good",
+      "wattsTake": "Beneficial soluble fiber with digestive benefits. Pectin helps regulate bowel function and supports good bacteria. Natural, safe ingredient. Good in formulas for digestive health or stool quality.",
+      "citations": [
+        {
+          "title": "Fiber in Pet Foods",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Sodium Benzoate",
+      "aliases": [
+        "benzoate of soda"
+      ],
+      "category": "preservative",
+      "whatItIs": "Preservative that inhibits mold, yeast, and bacteria growth, particularly in wet foods and treats.",
+      "whyUsed": [
+        "Prevents mold and bacterial growth",
+        "Extends shelf life",
+        "Generally recognized as safe"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Common preservative with good safety record in appropriate amounts. Most effective in acidic foods. Can form benzene in certain conditions (with vitamin C + heat), though risk is very low in pet food applications. Natural alternatives preferred.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable preservative - safer than BHA/BHT but not ideal. Sodium benzoate has decent safety record. Natural preservatives (mixed tocopherols, rosemary extract) still preferred. Not a red flag but not premium.",
+      "citations": [
+        {
+          "title": "FDA GRAS Substances",
+          "url": "https://www.fda.gov/",
+          "publisher": "FDA"
+        }
+      ]
+    },
+    {
+      "name": "Locust Bean Gum",
+      "aliases": [
+        "carob gum",
+        "locust bean"
+      ],
+      "category": "additive",
+      "whatItIs": "Natural thickening agent derived from carob tree seeds, used to improve texture in wet foods.",
+      "whyUsed": [
+        "Natural thickening and stabilizing",
+        "Improves texture in wet foods",
+        "Prevents separation",
+        "Binds water"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Natural plant-based thickener with good safety record. Contains some soluble fiber. Better than synthetic thickeners. Well-tolerated by most dogs. Quality depends on processing and purity.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable natural thickener for wet foods. Locust bean gum is plant-derived and safe. Provides some fiber. Not nutritionally significant but serves functional purpose. Better than synthetic alternatives.",
+      "citations": [
+        {
+          "title": "Gums in Pet Food",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Sunflower Lecithin",
+      "aliases": [
+        "lecithin from sunflower"
+      ],
+      "category": "additive",
+      "whatItIs": "Natural emulsifier derived from sunflower seeds, helping mix fats and water in food production.",
+      "whyUsed": [
+        "Natural emulsifier",
+        "Improves texture and consistency",
+        "Source of phospholipids",
+        "Soy-free alternative to soy lecithin"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Natural emulsifier that's a good alternative to soy lecithin for allergic dogs. Contains beneficial phospholipids. Non-GMO and allergen-friendly. Serves functional purpose without concerns. Quality ingredient in small amounts.",
+      "wattsPosition": "good",
+      "wattsTake": "Good natural emulsifier - soy-free alternative to soy lecithin. Sunflower lecithin is non-allergenic and provides phospholipids. Functional ingredient without concerns. Shows attention to allergen-sensitive formulation.",
+      "citations": [
+        {
+          "title": "Emulsifiers in Pet Food",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Poultry Digest",
+      "aliases": [
+        "hydrolyzed poultry"
+      ],
+      "category": "additive",
+      "whatItIs": "Material from poultry tissue broken down by enzymes, used as palatability enhancer. More specific than 'animal digest' but less than 'chicken digest.'",
+      "whyUsed": [
+        "Improves palatability",
+        "Flavor enhancement",
+        "Makes food more appealing"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Palatability enhancer with some transparency (poultry source specified). Better than generic 'animal digest' but inferior to 'chicken digest' (specific bird). Indicates base formula needs flavor masking.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Middle-ground palatability enhancer. 'Poultry digest' is better than vague 'animal digest' since bird source is specified, but not as transparent as 'chicken digest.' If food needs digest, question base ingredient quality.",
+      "citations": [
+        {
+          "title": "AAFCO Official Publication",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Vitamin K1",
+      "aliases": [
+        "phylloquinone",
+        "vitamin K1 supplement"
+      ],
+      "category": "vitamin",
+      "whatItIs": "Essential vitamin for blood clotting and bone health. Dogs synthesize some but supplementation ensures adequate levels.",
+      "whyUsed": [
+        "Blood clotting function",
+        "Bone health support",
+        "Prevents deficiency",
+        "Complete nutrition"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Essential vitamin that must be in complete dog foods. Dogs produce some via gut bacteria but dietary supplementation ensures adequacy. Critical for blood clotting. Quality depends on stability and bioavailability.",
+      "wattsPosition": "good",
+      "wattsTake": "Essential vitamin properly included in complete formulas. Vitamin K1 is necessary for blood clotting and bone health. Its presence indicates proper vitamin fortification. Quality formulas specify vitamin forms used.",
+      "citations": [
+        {
+          "title": "Vitamins in Pet Nutrition",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Manganese Proteinate",
+      "aliases": [
+        "chelated manganese",
+        "manganese amino acid chelate"
+      ],
+      "category": "mineral",
+      "whatItIs": "Chelated manganese bound to protein for enhanced absorption. More bioavailable than inorganic manganese sulfate.",
+      "whyUsed": [
+        "Bone and joint health",
+        "Better absorption than sulfates",
+        "Enzyme cofactor",
+        "Cartilage formation"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Premium chelated mineral with superior bioavailability compared to inorganic forms (manganese sulfate). Chelation to protein improves absorption. Indicates quality formula using bioavailable mineral forms.",
+      "wattsPosition": "good",
+      "wattsTake": "Premium mineral form showing quality. Manganese proteinate is chelated for better absorption than cheap sulfate forms. Indicates formula prioritizes bioavailability. Good sign of quality manufacturing.",
+      "citations": [
+        {
+          "title": "Mineral Bioavailability",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
     }
   ]
 }
