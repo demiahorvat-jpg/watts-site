@@ -7488,6 +7488,527 @@
           "publisher": "NCBI"
         }
       ]
+    },
+    {
+      "name": "Green Peas",
+      "aliases": [
+        "garden peas",
+        "english peas"
+      ],
+      "category": "vegetable",
+      "whatItIs": "Whole green peas are the edible seeds of Pisum sativum, a legume commonly used as a carbohydrate and protein source in pet foods.",
+      "whyUsed": [
+        "Provides plant-based protein (approximately 5-8g per 100g cooked)",
+        "Contains digestible carbohydrates for energy",
+        "Supplies dietary fiber for digestive health",
+        "Rich in vitamins K, C, and B vitamins",
+        "Source of minerals including iron and manganese"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Whole green peas are a moderate-quality ingredient providing both protein and carbohydrates. They're more nutritious than pea fractions (like pea fiber or pea starch) since they contain the complete seed. However, they're lower in protein than animal sources and contain anti-nutritional factors like lectins that can interfere with nutrient absorption. Generally well-tolerated but can cause gas in some dogs.",
+      "wattsPosition": "neutral",
+      "wattsTake": "We view whole green peas as an acceptable plant-based ingredient when used in moderation. They provide some protein and fiber along with nutrients like vitamin K. However, we prefer animal proteins as primary protein sources since dogs are carnivores. Peas should be a complementary ingredient, not a main protein source. Watch for 'pea stacking' where brands split peas into multiple forms (peas, pea protein, pea fiber) to disguise the total pea content.",
+      "citations": []
+    },
+    {
+      "name": "Yellow Peas",
+      "aliases": [
+        "field peas",
+        "split yellow peas"
+      ],
+      "category": "vegetable",
+      "whatItIs": "Yellow peas are a variety of Pisum sativum with yellow-colored seeds, commonly used in pet foods as a source of plant protein and carbohydrates.",
+      "whyUsed": [
+        "Provides plant-based protein (similar to green peas)",
+        "Grain-free carbohydrate source",
+        "Contains dietary fiber",
+        "Supplies B vitamins and minerals",
+        "Cost-effective alternative to animal proteins"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Yellow peas are nutritionally similar to green peas, offering moderate protein and fiber content. They're often used in grain-free formulas as a carbohydrate replacement for grains. While they provide some nutrients, they're less bioavailable than animal proteins and contain anti-nutrients. The protein quality is inferior to meat-based proteins with a less complete amino acid profile for dogs.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Yellow peas serve as a reasonable grain alternative in limited quantities. They provide some protein and carbohydrates, though we'd always choose animal proteins first. Be cautious of foods where yellow peas appear high in the ingredient list or where peas are split into multiple ingredients (yellow peas, pea protein, pea fiber) to artificially lower their position on the label while still being a primary ingredient.",
+      "citations": []
+    },
+    {
+      "name": "Split Peas",
+      "aliases": [
+        "dried split peas"
+      ],
+      "category": "vegetable",
+      "whatItIs": "Split peas are field peas that have been dried, peeled, and split in half, commonly used as a plant-based protein and carbohydrate source in pet foods.",
+      "whyUsed": [
+        "Concentrated source of plant protein",
+        "Provides complex carbohydrates",
+        "High in dietary fiber",
+        "Contains B vitamins and minerals",
+        "Longer shelf life than whole peas"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Split peas are essentially processed field peas with the outer skin removed and split for faster cooking. They provide moderate protein (around 25g per 100g dry) and significant fiber. However, like all legumes, they contain lectins and phytic acid which can interfere with mineral absorption. The protein is incomplete for canine nutrition and less digestible than animal proteins.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Split peas can be part of a balanced dog food but should never be the primary protein source. They're often used in grain-free foods as a carbohydrate base. While they're not inherently bad, we prefer whole food ingredients and animal proteins. If split peas are in the top 5 ingredients along with other pea derivatives, it's a red flag that plant proteins are being overused as cheap fillers.",
+      "citations": []
+    },
+    {
+      "name": "Pumpkin Seed",
+      "aliases": [
+        "pepitas",
+        "pumpkin kernels"
+      ],
+      "category": "seed",
+      "whatItIs": "Pumpkin seeds are the edible seeds from pumpkins, valued for their nutrient density and potential health benefits in pet foods.",
+      "whyUsed": [
+        "Rich in zinc and magnesium",
+        "Contains healthy fats including omega-6 fatty acids",
+        "Source of antioxidants like vitamin E",
+        "Provides plant-based protein",
+        "Traditional use for supporting urinary and prostate health"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Pumpkin seeds are a nutrient-dense superfood ingredient. They're exceptionally high in zinc, magnesium, and healthy fats. They contain cucurbitacin compounds that have been traditionally used for parasite control, though evidence is limited. The seeds provide quality plant protein and beneficial fatty acids. Generally well-tolerated with minimal downsides when used in appropriate amounts.",
+      "wattsPosition": "good",
+      "wattsTake": "We love seeing pumpkin seeds in dog food and supplements. They're one of the best plant-based ingredients, packed with minerals and healthy fats. The zinc content supports skin and coat health, while magnesium aids muscle and nerve function. Unlike cheap fillers, pumpkin seeds add genuine nutritional value. They're especially beneficial for senior dogs or those needing urinary support. A small, mighty ingredient worth celebrating.",
+      "citations": []
+    },
+    {
+      "name": "Beetroot",
+      "aliases": [
+        "beet root",
+        "red beet",
+        "table beet"
+      ],
+      "category": "vegetable",
+      "whatItIs": "Beetroot is the taproot portion of the beet plant (Beta vulgaris), used in pet foods for fiber, color, and nutritional value.",
+      "whyUsed": [
+        "Provides dietary fiber for digestive health",
+        "Natural source of folate and manganese",
+        "Contains antioxidants like betalains",
+        "Adds natural red color to food",
+        "Low-calorie vegetable addition"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Beetroot is a moderately nutritious vegetable offering fiber, folate, and unique antioxidants called betalains. It provides some vitamins and minerals along with beneficial plant compounds. However, it's relatively high in sugar compared to other vegetables and offers limited protein. The fiber is beneficial for stool quality, but excessive amounts can cause loose stools. Generally safe and well-tolerated.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Beetroot is a reasonable vegetable inclusion in moderate amounts. It adds fiber and some antioxidants without being a problematic filler. We appreciate that it's a whole food rather than a processed fraction. However, it's not a nutritional powerhouse compared to nutrient-dense options like organ meats or certain vegetables. It's fine as a minor ingredient but shouldn't be emphasized as a major selling point. Watch that it's not used primarily as a cheap colorant.",
+      "citations": []
+    },
+    {
+      "name": "Zucchini",
+      "aliases": [
+        "courgette",
+        "summer squash"
+      ],
+      "category": "vegetable",
+      "whatItIs": "Zucchini is a summer squash (Cucurbita pepo) used in pet foods as a low-calorie source of vitamins, minerals, and moisture.",
+      "whyUsed": [
+        "Low-calorie vegetable for weight management formulas",
+        "Provides moisture and fiber",
+        "Contains vitamin C and potassium",
+        "Adds bulk without excessive calories",
+        "Generally well-tolerated and digestible"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Zucchini is a very low-calorie, high-moisture vegetable (about 95% water). It provides minimal protein, fat, or concentrated nutrients but does offer some vitamin C, potassium, and fiber. It's essentially a mild, non-offensive vegetable that adds volume and moisture without contributing many calories or nutrients. Rarely causes digestive issues and is highly digestible.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Zucchini is harmless but nutritionally unremarkable. It's fine as a minor vegetable inclusion, especially in weight management formulas where low-calorie bulk is desired. However, it's mostly water and doesn't add significant nutritional value. We'd rather see more nutrient-dense vegetables like sweet potato or pumpkin, or better yet, organ meats. Zucchini is the definition of neutral—not harmful, not particularly helpful.",
+      "citations": []
+    },
+    {
+      "name": "Cucumber",
+      "aliases": [
+        "garden cucumber"
+      ],
+      "category": "vegetable",
+      "whatItIs": "Cucumber (Cucumis sativus) is a high-moisture vegetable occasionally used in fresh or frozen pet foods for hydration and low-calorie bulk.",
+      "whyUsed": [
+        "Extremely low in calories",
+        "Provides hydration (96% water)",
+        "Contains small amounts of vitamin K and potassium",
+        "Adds bulk and texture",
+        "Refreshing and palatable for most dogs"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Cucumber is nutritionally minimal—essentially water with a small amount of fiber and trace vitamins. It provides virtually no protein, fat, or concentrated nutrients. It's extremely low-calorie and hydrating, making it useful for weight control but not for nutritional density. Safe and digestible but offers little beyond hydration and bulk.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Cucumber is harmless but nearly nutritionally empty. It's acceptable in fresh or frozen foods where moisture content is a feature, but it adds almost nothing from a nutritional standpoint. We prefer ingredients that contribute meaningful nutrients. Cucumber is like iceberg lettuce—safe, crunchy, and mostly water. It's not bad, just not particularly valuable in a food designed for complete nutrition.",
+      "citations": []
+    },
+    {
+      "name": "Celery",
+      "aliases": [
+        "celery stalk"
+      ],
+      "category": "vegetable",
+      "whatItIs": "Celery (Apium graveolens) is a crunchy, fibrous vegetable occasionally included in pet foods for fiber, vitamins, and low-calorie bulk.",
+      "whyUsed": [
+        "Low-calorie vegetable for weight management",
+        "Provides dietary fiber",
+        "Contains vitamin K, vitamin C, and potassium",
+        "Adds crunchy texture",
+        "Natural breath freshener (claimed)"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Celery is a low-calorie, high-water vegetable (about 95% water) with minimal nutritional density. It provides some vitamin K, vitamin C, and fiber, but protein and fat content are negligible. The fiber is beneficial for digestion, and celery contains antioxidants like apigenin. However, it's mostly water and fiber with limited concentrated nutrients. Generally very safe and digestible.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Celery is fine but unremarkable. It adds some fiber and crunch without many calories, which can be useful in weight management foods. However, it's not nutritionally dense and mostly contributes water and fiber. We'd prefer to see more nutrient-rich vegetables or animal-based ingredients. Celery is harmless, but it's not adding much value beyond texture and bulk. Safe but forgettable.",
+      "citations": []
+    },
+    {
+      "name": "Shrimp",
+      "aliases": [
+        "whole shrimp",
+        "fresh shrimp"
+      ],
+      "category": "protein",
+      "whatItIs": "Whole shrimp are crustaceans used in pet foods as a high-quality, novel protein source rich in omega-3 fatty acids and minerals.",
+      "whyUsed": [
+        "Novel protein for dogs with food sensitivities",
+        "Excellent source of complete animal protein",
+        "Rich in omega-3 fatty acids (EPA and DHA)",
+        "High in minerals like selenium, zinc, and iodine",
+        "Provides vitamin B12 and astaxanthin"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Whole shrimp is a premium protein source offering complete amino acids, beneficial omega-3s, and high levels of selenium and other minerals. The protein is highly digestible and bioavailable. Shrimp also contains astaxanthin, a powerful antioxidant. Because it's a novel protein, it's useful for elimination diets. The main considerations are cost and potential shellfish allergies (though rare in dogs).",
+      "wattsPosition": "good",
+      "wattsTake": "We love seeing whole shrimp in dog food. It's a complete, high-quality protein that brings omega-3s, selenium, and unique nutrients like astaxanthin. As a novel protein, it's excellent for dogs with chicken or beef sensitivities. The fact that it's whole shrimp (not just shrimp meal) means better moisture and nutrient retention. This is a premium ingredient that adds real value. Our only caution: watch for shellfish allergies, though they're uncommon in dogs.",
+      "citations": []
+    },
+    {
+      "name": "Shrimp Meal",
+      "aliases": [
+        "dried shrimp meal"
+      ],
+      "category": "protein",
+      "whatItIs": "Shrimp meal is rendered, dried shrimp ground into a protein-rich powder, offering concentrated nutrition from crustacean sources.",
+      "whyUsed": [
+        "Concentrated protein source (typically 60-70% protein)",
+        "Novel protein alternative for sensitive dogs",
+        "Rich in omega-3 fatty acids",
+        "High in minerals like selenium and iodine",
+        "Long shelf life and storage stability"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Shrimp meal is a concentrated form of shrimp protein with most moisture removed, resulting in very high protein content. It retains the beneficial amino acids, minerals, and some omega-3s from whole shrimp. As a rendered product, it's shelf-stable and nutrient-dense. Quality can vary based on processing methods, but named shrimp meal is generally a high-quality ingredient. It's a novel protein useful for dogs with common protein allergies.",
+      "wattsPosition": "good",
+      "wattsTake": "Shrimp meal is an excellent concentrated protein source. While we generally prefer whole proteins, shrimp meal offers concentrated nutrition and is particularly valuable as a novel protein for sensitive dogs. The high protein concentration (60-70%) means a little goes a long way. It brings quality amino acids, omega-3s, and minerals like selenium. For dogs who can't tolerate common proteins, this is a premium alternative. We'd choose shrimp meal over cheap poultry by-products any day.",
+      "citations": []
+    },
+    {
+      "name": "Crab Meal",
+      "aliases": [
+        "dried crab meal",
+        "crab by-product meal"
+      ],
+      "category": "protein",
+      "whatItIs": "Crab meal is rendered, dried crab (including shell and meat) ground into a protein-rich meal used as a novel protein source in pet foods.",
+      "whyUsed": [
+        "Novel protein source for elimination diets",
+        "Concentrated protein content",
+        "Contains chitin from shells (fiber and glucosamine)",
+        "Rich in minerals like calcium, selenium, and zinc",
+        "Provides omega-3 fatty acids"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Crab meal is a concentrated protein source that includes both meat and shell material. The shell contributes chitin (a type of fiber) and glucosamine, while the meat provides protein and minerals. The inclusion of shells means lower meat protein compared to whole meat, but adds beneficial compounds. Quality varies depending on the ratio of meat to shell. It's a novel protein useful for dogs with common protein allergies. The chitin is indigestible but may offer prebiotic benefits.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Crab meal is a decent novel protein option with some unique benefits from the shell material (glucosamine, chitin). However, because it includes shells, you're getting less actual meat protein and more indigestible material compared to shrimp meal or fish meal. It's acceptable as a secondary protein or novel protein source, but we'd prefer named fish meals or whole proteins as primary sources. The glucosamine content is a bonus. Overall, it's fine but not exceptional.",
+      "citations": []
+    },
+    {
+      "name": "Rice Starch",
+      "aliases": [
+        "modified rice starch"
+      ],
+      "category": "carbohydrate",
+      "whatItIs": "Rice starch is the extracted starch component from rice, used as a highly digestible carbohydrate and thickening agent in pet foods.",
+      "whyUsed": [
+        "Highly digestible carbohydrate source",
+        "Gentle on sensitive stomachs",
+        "Gluten-free carbohydrate option",
+        "Provides binding and texture in wet foods",
+        "Bland and hypoallergenic"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Rice starch is a refined carbohydrate consisting primarily of isolated starch with minimal protein, fiber, vitamins, or minerals. It's extremely digestible and gentle, making it useful for sensitive stomachs or bland diets. However, it's nutritionally empty—just simple carbohydrates for energy. It has a high glycemic index and provides no meaningful micronutrients. It's a processed fraction of rice, not a whole food.",
+      "wattsPosition": "caution",
+      "wattsTake": "Rice starch is nutritionally empty filler. While it's digestible and useful for dogs with severe digestive issues, it's stripped of all the beneficial components of whole rice (fiber, protein, vitamins). It's essentially pure carbs with no nutritional value. We prefer whole food carbohydrates like sweet potato or even whole rice. Rice starch is acceptable in small amounts for texture in wet foods or for dogs with GI distress, but in dry foods, it's a sign of low-quality filler ingredients.",
+      "citations": []
+    },
+    {
+      "name": "Cassava",
+      "aliases": [
+        "yuca",
+        "manioc"
+      ],
+      "category": "carbohydrate",
+      "whatItIs": "Cassava is a starchy root vegetable (Manihot esculenta) used in grain-free pet foods as an alternative carbohydrate source.",
+      "whyUsed": [
+        "Grain-free carbohydrate alternative",
+        "Highly digestible starch source",
+        "Provides energy from complex carbohydrates",
+        "Gluten-free and hypoallergenic",
+        "Cost-effective compared to other grain-free options"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Cassava root is almost entirely starch with minimal protein, fat, vitamins, or minerals. It's highly digestible and provides quick energy, but nutritionally it's quite empty. It contains some vitamin C and folate but in small amounts. Raw cassava contains cyanogenic glycosides (compounds that can release cyanide), but proper processing removes these. In pet food, it's used as a cheap, grain-free carbohydrate filler.",
+      "wattsPosition": "caution",
+      "wattsTake": "Cassava is a low-quality filler ingredient masquerading as a grain-free option. While it's digestible and doesn't contain gluten, it's nutritionally barren—just empty carbs. It's often used because it's cheap, not because it's nutritious. We'd much prefer sweet potato, pumpkin, or even whole grains like oats. Cassava root is better than corn or wheat flour, but that's a low bar. If it's high on the ingredient list, it's a sign of a budget formula prioritizing cost over nutrition.",
+      "citations": []
+    },
+    {
+      "name": "Cassava Flour",
+      "aliases": [
+        "cassava meal",
+        "manioc flour"
+      ],
+      "category": "carbohydrate",
+      "whatItIs": "Cassava flour is ground cassava root used as a grain-free, gluten-free carbohydrate and binding agent in pet foods.",
+      "whyUsed": [
+        "Grain-free alternative to wheat flour",
+        "Provides binding and structure in kibble",
+        "Gluten-free and low allergen potential",
+        "Highly digestible carbohydrate source",
+        "Cost-effective grain-free option"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Cassava flour is essentially ground cassava root—almost pure starch with minimal nutritional value. It's digestible and hypoallergenic but offers virtually no protein, fat, vitamins, or minerals. It's used primarily as a cheap binding agent in grain-free foods. While it doesn't contain gluten or grains, it's still a processed, nutritionally empty filler. Better than wheat flour for dogs with grain sensitivities, but not inherently nutritious.",
+      "wattsPosition": "caution",
+      "wattsTake": "Cassava flour is a low-quality grain-free filler. It's used because it's cheap and binds kibble together, not because it adds nutrition. We see it as a sign that manufacturers are prioritizing cost savings over quality ingredients. While it's fine for dogs with grain allergies, it's still empty calories. We'd prefer nutrient-dense carbohydrates like sweet potato or whole food options. If cassava flour is high on the ingredient list, it's a red flag for a budget formula.",
+      "citations": []
+    },
+    {
+      "name": "Beet Fiber",
+      "aliases": [
+        "beet pulp fiber",
+        "dried beet pulp"
+      ],
+      "category": "fiber",
+      "whatItIs": "Beet fiber is the fibrous residue left after sugar extraction from sugar beets, commonly used as a fiber source in pet foods.",
+      "whyUsed": [
+        "Moderately fermentable fiber for digestive health",
+        "Promotes firm, consistent stools",
+        "Supports beneficial gut bacteria",
+        "Adds bulk without excessive calories",
+        "Helps regulate bowel movements"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Beet fiber (or beet pulp) is primarily a fiber source with minimal nutritional value beyond its fiber content. It contains both soluble and insoluble fiber, which can benefit digestive health and stool quality. It's moderately fermentable, meaning gut bacteria can partially break it down, producing beneficial short-chain fatty acids. However, it's a processed by-product of sugar production with no significant protein, fat, or micronutrients. Some low-quality versions may contain residual sugar.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Beet fiber is a functional ingredient that serves a purpose—regulating digestion and stool quality. While it's a processed by-product, it's not inherently harmful and can be beneficial for dogs with digestive issues. However, it shouldn't be a primary ingredient or used to bulk up low-quality food. We prefer whole food fiber sources like pumpkin or sweet potato, but we recognize beet fiber has legitimate uses. It's neutral—neither great nor terrible, depending on context and amount.",
+      "citations": []
+    },
+    {
+      "name": "Pea Hull Fiber",
+      "aliases": [
+        "pea fiber",
+        "pea hull"
+      ],
+      "category": "fiber",
+      "whatItIs": "Pea hull fiber is the outer covering of peas, used as an inexpensive, insoluble fiber source in pet foods.",
+      "whyUsed": [
+        "Inexpensive source of dietary fiber",
+        "Adds bulk to food",
+        "Promotes satiety in weight management formulas",
+        "Helps regulate bowel movements",
+        "Increases stool volume"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Pea hull fiber is largely indigestible roughage with minimal nutritional value. It's the outer shell of peas—essentially waste material from pea processing. It provides insoluble fiber that adds bulk and can help with constipation, but it's not particularly nutritious or fermentable. In excess, it can reduce the digestibility and nutrient density of food. It's primarily used as cheap filler to increase volume and fiber content without adding calories or cost.",
+      "wattsPosition": "caution",
+      "wattsTake": "Pea hull fiber is cheap, low-quality filler. While some fiber is beneficial, this is the least nutritious part of the pea—just the hull that would otherwise be discarded. It's used to bulk up food and create the illusion of satiety in weight management formulas without adding actual nutrition. We'd much prefer whole vegetables or whole peas for fiber. If pea hull fiber appears high on the ingredient list, it's a sign of a low-quality formula using cheap fillers to pad out the recipe.",
+      "citations": []
+    },
+    {
+      "name": "L-Glutamine",
+      "aliases": [
+        "glutamine",
+        "L-glutamic acid amide"
+      ],
+      "category": "supplement",
+      "whatItIs": "L-glutamine is an amino acid added to pet foods and supplements to support gut health, immune function, and muscle recovery.",
+      "whyUsed": [
+        "Supports intestinal health and gut barrier function",
+        "Fuel source for rapidly dividing cells (intestinal lining)",
+        "May reduce intestinal permeability (leaky gut)",
+        "Supports immune system function",
+        "Aids in muscle recovery and protein synthesis"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "L-glutamine is the most abundant amino acid in the body and plays critical roles in gut health and immune function. While dogs can synthesize glutamine, supplementation may be beneficial during stress, illness, or digestive issues. Research supports its role in maintaining intestinal barrier integrity and supporting immune cells. However, for healthy dogs eating adequate protein, supplementation may not be necessary. Generally safe with minimal side effects.",
+      "wattsPosition": "good",
+      "wattsTake": "We view L-glutamine as a valuable supplement, especially for dogs with digestive issues, stress, or inflammatory conditions. It supports the intestinal lining, which is crucial for nutrient absorption and immune health. While healthy dogs get sufficient glutamine from protein sources, supplementation can be beneficial during recovery from illness, surgery, or GI distress. It's a targeted, functional ingredient rather than filler. We appreciate seeing it in therapeutic diets or supplements for gut health.",
+      "citations": []
+    },
+    {
+      "name": "Selenium",
+      "aliases": [
+        "sodium selenite",
+        "selenium yeast"
+      ],
+      "category": "mineral",
+      "whatItIs": "Selenium is an essential trace mineral added to pet foods for antioxidant function, immune support, and thyroid health.",
+      "whyUsed": [
+        "Essential component of antioxidant enzymes (glutathione peroxidase)",
+        "Supports immune system function",
+        "Necessary for thyroid hormone metabolism",
+        "Protects cells from oxidative damage",
+        "Supports reproductive health"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Selenium is an essential trace mineral that dogs cannot produce and must obtain from diet. It's critical for antioxidant defense systems, immune function, and thyroid health. Deficiency can cause muscle weakness, immune dysfunction, and reproductive issues. However, selenium has a narrow safety margin—too much can be toxic. Organic forms (selenium yeast) are generally better absorbed than inorganic forms (sodium selenite). Required by AAFCO standards for complete and balanced pet foods.",
+      "wattsPosition": "good",
+      "wattsTake": "Selenium is an essential nutrient that must be included in dog food. It's critical for antioxidant protection and overall health. We prefer organic selenium sources (like selenium yeast) over inorganic forms (sodium selenite) for better absorption and safety. Quality foods should list selenium supplementation to meet AAFCO requirements. The presence of selenium indicates the food is formulated to be nutritionally complete. This is a necessary and beneficial ingredient when used appropriately.",
+      "citations": []
+    },
+    {
+      "name": "Zinc Methionine Complex",
+      "aliases": [
+        "zinc methionine",
+        "zinc amino acid complex"
+      ],
+      "category": "mineral",
+      "whatItIs": "Zinc methionine complex is an organic form of zinc bound to the amino acid methionine, providing highly bioavailable zinc supplementation.",
+      "whyUsed": [
+        "Superior bioavailability compared to inorganic zinc sources",
+        "Essential for skin and coat health",
+        "Supports immune system function",
+        "Necessary for wound healing and protein synthesis",
+        "Easier on the digestive system than zinc oxide or sulfate"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Zinc methionine complex is a chelated mineral, meaning the zinc is bound to methionine for enhanced absorption and utilization. This organic form is significantly more bioavailable than inorganic forms like zinc oxide or zinc sulfate. It's better tolerated by the digestive system and more efficiently utilized by the body. Zinc is essential for skin health, immune function, and hundreds of enzymatic processes. This is a premium form of zinc supplementation.",
+      "wattsPosition": "good",
+      "wattsTake": "We love seeing chelated minerals like zinc methionine complex. This is a sign of quality formulation—manufacturers using premium, bioavailable mineral sources rather than cheap oxides or sulfates. Zinc is critical for skin and coat health, and the chelated form ensures dogs actually absorb and use it. This is the kind of detail that separates premium foods from budget options. If you see chelated minerals (methionine, proteinate, glycinate), it indicates attention to bioavailability and quality.",
+      "citations": []
+    },
+    {
+      "name": "Copper Chelate",
+      "aliases": [
+        "copper proteinate",
+        "copper amino acid chelate"
+      ],
+      "category": "mineral",
+      "whatItIs": "Copper chelate is an organic form of copper bound to amino acids or protein, providing highly bioavailable copper supplementation in pet foods.",
+      "whyUsed": [
+        "Enhanced bioavailability compared to inorganic copper sources",
+        "Essential for iron metabolism and red blood cell formation",
+        "Supports connective tissue formation (collagen and elastin)",
+        "Necessary for nervous system function",
+        "Supports pigmentation and coat color"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Copper chelate is an organic, highly bioavailable form of copper that's better absorbed and utilized than inorganic forms like copper sulfate or copper oxide. Copper is an essential trace mineral required for iron absorption, connective tissue formation, and numerous enzymatic processes. Chelated forms are gentler on the digestive system and more efficiently absorbed. This is a premium mineral source indicating quality formulation.",
+      "wattsPosition": "good",
+      "wattsTake": "Copper chelate signals quality formulation. Instead of using cheap copper sulfate, manufacturers using chelated copper are investing in bioavailable, digestible mineral sources. Copper is essential for iron absorption, connective tissue health, and enzyme function. The chelated form ensures better absorption and utilization. We view chelated minerals as a hallmark of premium foods that prioritize bioavailability over cost savings. This is the kind of ingredient detail that matters for actual nutrition.",
+      "citations": []
+    },
+    {
+      "name": "Vitamin A Acetate",
+      "aliases": [
+        "retinyl acetate",
+        "vitamin A supplement"
+      ],
+      "category": "vitamin",
+      "whatItIs": "Vitamin A acetate is a synthetic form of vitamin A added to pet foods to meet essential vitamin A requirements for vision, immune function, and growth.",
+      "whyUsed": [
+        "Essential for vision and eye health",
+        "Supports immune system function",
+        "Necessary for skin and coat health",
+        "Critical for growth and reproduction",
+        "More stable in kibble than natural vitamin A"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Vitamin A acetate is a stable, synthetic form of vitamin A that's commonly used in pet foods because it withstands processing and storage better than natural sources. While natural vitamin A (from liver, fish oils) is ideal, vitamin A acetate is a reliable way to ensure adequate vitamin A content in processed foods. Vitamin A is essential for dogs and must be obtained from diet. Supplementation is necessary in most commercial foods to meet AAFCO requirements.",
+      "wattsPosition": "good",
+      "wattsTake": "Vitamin A acetate is a necessary and appropriate vitamin supplement in dog food. While we prefer natural vitamin A sources from ingredients like liver, the acetate form is more stable in kibble and ensures consistent vitamin A levels. This is required for nutritional adequacy and is a sign of proper formulation. We have no concerns with synthetic vitamin A acetate when used to fortify foods appropriately. It's a functional, necessary ingredient in complete and balanced foods.",
+      "citations": []
+    },
+    {
+      "name": "Vitamin D2 Supplement",
+      "aliases": [
+        "ergocalciferol",
+        "vitamin D2"
+      ],
+      "category": "vitamin",
+      "whatItIs": "Vitamin D2 (ergocalciferol) is a plant-derived form of vitamin D used to supplement pet foods for calcium regulation and bone health.",
+      "whyUsed": [
+        "Essential for calcium and phosphorus metabolism",
+        "Supports bone health and development",
+        "Necessary for muscle function",
+        "Aids in immune system regulation",
+        "Prevents rickets and bone deformities"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Vitamin D2 is a plant-derived form of vitamin D (from yeast or fungi) used to fortify pet foods. While vitamin D3 (cholecalciferol, from animal sources) is generally considered more potent and bioavailable for dogs, vitamin D2 can still fulfill vitamin D requirements. Dogs cannot produce sufficient vitamin D from sunlight like humans, so dietary supplementation is essential. Both D2 and D3 forms are converted to the active form in the body, though D3 is preferred.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Vitamin D2 is an acceptable but not ideal form of vitamin D. While it meets the technical requirement for vitamin D supplementation, we prefer vitamin D3 (cholecalciferol) for dogs since it's more bioavailable and better utilized. D2 is typically used in plant-based or vegan formulations. For most dogs, D3 from animal sources is superior. That said, D2 will still provide vitamin D function—it's just not our first choice. We view it as adequate but not optimal.",
+      "citations": []
+    },
+    {
+      "name": "Thiamine Hydrochloride",
+      "aliases": [
+        "thiamine HCl",
+        "vitamin B1"
+      ],
+      "category": "vitamin",
+      "whatItIs": "Thiamine hydrochloride is a synthetic form of vitamin B1 added to pet foods for energy metabolism and nervous system function.",
+      "whyUsed": [
+        "Essential for carbohydrate metabolism and energy production",
+        "Supports nervous system function",
+        "Necessary for proper muscle function including heart",
+        "Prevents thiamine deficiency (beriberi)",
+        "Heat-stable form suitable for kibble processing"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Thiamine hydrochloride is a stable, synthetic form of vitamin B1 that's essential for dogs. Thiamine is required for carbohydrate metabolism and nerve function. Because it's water-soluble and can be destroyed by heat processing, supplementation is necessary in most commercial pet foods. Thiamine deficiency can cause serious neurological issues, so adequate supplementation is critical. The hydrochloride form is more stable during processing than natural thiamine.",
+      "wattsPosition": "good",
+      "wattsTake": "Thiamine hydrochloride is a necessary and appropriate B vitamin supplement. Since thiamine is heat-sensitive and processing can destroy natural thiamine in ingredients, supplementation ensures adequate levels. This is required for nutritional completeness and is a sign of proper formulation. Thiamine deficiency is serious, causing neurological problems and heart issues. We have no concerns with synthetic thiamine supplementation—it's functional and necessary. A properly formulated food should include thiamine.",
+      "citations": []
+    },
+    {
+      "name": "Liver Digest",
+      "aliases": [
+        "liver hydrolysate",
+        "hydrolyzed liver"
+      ],
+      "category": "additive",
+      "whatItIs": "Liver digest is liver tissue that has been chemically or enzymatically broken down into a liquid or powder, used as a palatability enhancer in pet foods.",
+      "whyUsed": [
+        "Highly palatable flavoring agent",
+        "Increases food acceptance and appetite",
+        "Provides concentrated liver flavor without bulk",
+        "Contains some amino acids and nutrients from liver",
+        "Effective at low inclusion rates"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Liver digest is produced by breaking down liver tissue using enzymes or acids, creating a concentrated flavor compound. Unlike whole liver, it's used primarily for flavor rather than nutrition. The digestion process breaks proteins into peptides and amino acids, creating an intensely savory taste that dogs find appealing. It retains some nutritional value from liver but is used in small amounts primarily for palatability. Quality depends on the source and processing method.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Liver digest is a palatability enhancer that's a step up from generic 'animal digest' because it's from a named source (liver). While it's used primarily to make food taste better, at least it's from an identifiable, nutritious organ meat. We prefer whole liver as an ingredient, but liver digest is acceptable in small amounts to improve palatability of otherwise nutritious foods. It's not a red flag like vague 'digest' or 'palatant,' but it's also not adding significant nutrition. Functional but not exceptional.",
+      "citations": []
+    },
+    {
+      "name": "Agar Agar",
+      "aliases": [
+        "agar",
+        "agar-agar"
+      ],
+      "category": "additive",
+      "whatItIs": "Agar agar is a gelatinous substance derived from red algae, used as a natural thickening and gelling agent in wet pet foods.",
+      "whyUsed": [
+        "Natural plant-based gelling agent",
+        "Creates firm texture in wet foods and gravies",
+        "Provides structure without animal-derived gelatin",
+        "Source of soluble fiber",
+        "Stable across wide temperature ranges"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Agar agar is a natural, seaweed-derived gelling agent with minimal nutritional value. It's primarily soluble fiber with no protein, fat, or significant vitamins or minerals. It's not digestible by dogs but can provide some prebiotic fiber benefits in small amounts. It's used in very small quantities to create texture and firmness in wet foods, gravies, and some supplements. Generally regarded as safe with no known adverse effects at typical inclusion levels.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Agar agar is a functional ingredient that serves a legitimate purpose—creating appropriate texture in wet foods. It's plant-based, natural, and free from the concerns associated with synthetic gums or binders. While it doesn't add nutrition, it's not harmful and is used in tiny amounts. We appreciate that it's a clearly named, natural ingredient rather than a vague 'gum' or synthetic thickener. It's neutral—neither adding nor detracting from food quality when used appropriately for texture.",
+      "citations": []
     }
   ]
 }
