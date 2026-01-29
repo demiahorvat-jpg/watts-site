@@ -767,10 +767,33 @@
       // Remove common label prefixes at the start (case-insensitive)
       cleanedText = cleanedText.replace(/^(ingredients?|active ingredients?|inactive ingredients?|guaranteed analysis|minerals?|vitamins?|other ingredients?):\s*/gi, '');
 
+      // SPECIAL HANDLING: Expand grouped vitamins/minerals sections
+      // Pattern: "vitamins (Vitamin E Supplement, Vitamin D3, ...)" or "minerals (Zinc Oxide, ...)"
+      // Replace with just the contents so they get parsed individually
+      cleanedText = cleanedText.replace(/\b(vitamins?|minerals?)\s*\(/gi, function(match, label, offset) {
+        // Find the matching closing parenthesis
+        let depth = 1;
+        let i = offset + match.length;
+        let startContent = i;
+
+        while (i < cleanedText.length && depth > 0) {
+          if (cleanedText[i] === '(') depth++;
+          if (cleanedText[i] === ')') depth--;
+          i++;
+        }
+
+        // Extract the content between the parentheses
+        const content = cleanedText.substring(startContent, i - 1);
+
+        // Return just the content (without the "vitamins" or "minerals" label)
+        // Add a comma before to separate from previous ingredient
+        return ', ' + content;
+      });
+
       // Split by comma, semicolon, or newline
       let rawIngredients = cleanedText.split(/[,;\n]/).map(ing => ing.trim()).filter(ing => ing.length > 0);
 
-      // Filter out section headers (words ending with colon that are standalone)
+      // Filter out section headers and generic labels
       const sectionHeaders = /^(ingredients?|active ingredients?|inactive ingredients?|minerals?|vitamins?|other ingredients?|guaranteed analysis):?$/gi;
       rawIngredients = rawIngredients.filter(ing => !sectionHeaders.test(ing));
 
