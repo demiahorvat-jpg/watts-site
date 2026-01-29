@@ -13,6 +13,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/acacia-gum/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/agar-agar/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -26,6 +32,12 @@
   </url>
   <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/algal-oil/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/alginic-acid/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -103,6 +115,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/banana/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/barley/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -110,6 +128,18 @@
   </url>
   <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/barley-grass/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/barley-malt-extract/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/bean-flour/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -283,13 +313,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/calcium-citrate/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/calcium-d-pantothenate/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/calcium-iodate/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/calcium-iodide/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/calcium-pantothenate/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/calcium-propionate/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -367,6 +421,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/champignon-mushroom-extract/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/chia-seed/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -409,6 +469,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/chickpea-flour/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/chickpeas/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -439,6 +505,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/chromium-picolinate/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/citric-acid/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -458,6 +530,12 @@
   </url>
   <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/coconut-oil/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/coconut-sugar/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -523,6 +601,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/corn-bran/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/corn-gluten-feed/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/corn-gluten-meal/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -542,6 +632,12 @@
   </url>
   <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/crab-meal/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/cracked-pearled-barley/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -757,6 +853,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/garbanzo-beans/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/gelatin/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -829,6 +931,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/guar-fiber/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/guar-gum/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -842,6 +950,12 @@
   </url>
   <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/herring-meal/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/hickory-smoke-flavor/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -866,6 +980,12 @@
   </url>
   <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/inulin/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/iodized-salt/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -973,7 +1093,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/lentil-flour/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/lentils/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/lignocellulose/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1015,6 +1147,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/magnesium-citrate/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/magnesium-stearate/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -1027,6 +1165,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/malic-acid/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/maltodextrin/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -1034,6 +1178,12 @@
   </url>
   <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/manganese-amino-acid-chelate/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/manganese-gluconate/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1052,6 +1202,12 @@
   </url>
   <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/manganous-oxide/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/mango/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1094,6 +1250,12 @@
   </url>
   <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/methylsulfonylmethane/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/microcrystalline-cellulose/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1159,6 +1321,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/navy-beans/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/niacin/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -1195,6 +1363,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/oat-hulls/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/oat-meal/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -1226,6 +1400,12 @@
   </url>
   <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/omega-3-fatty-acids/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/palatant/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1309,6 +1489,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/pear/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/peas/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -1321,7 +1507,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/phosphoric-acid/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/pineapple/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/pinto-beans/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1363,6 +1561,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/potassium-citrate/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/potassium-iodide/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/potassium-sorbate/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -1394,6 +1604,12 @@
   </url>
   <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/poultry-fat/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/powdered-cellulose/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1447,6 +1663,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/resistant-starch/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/riboflavin/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -1477,6 +1699,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/rice-hulls/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/rice-starch/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -1484,6 +1712,12 @@
   </url>
   <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/rosemary-extract/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/rye-meal/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1579,6 +1813,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/sodium-acid-pyrophosphate/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/sodium-alginate/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/sodium-benzoate/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -1591,13 +1837,43 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/sodium-hexametaphosphate/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/sodium-propionate/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/sodium-selenite/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/sodium-tripolyphosphate/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/sorbic-acid/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/sorghum/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/sorghum-flour/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1658,6 +1934,12 @@
   </url>
   <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/sunflower-oil/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/sweet-potato-fiber/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1795,6 +2077,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/vitamin-e-acetate/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/vitamin-e-succinate/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/vitamin-e-supplement/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -1802,6 +2096,18 @@
   </url>
   <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/vitamin-k1/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/vitamin-k1-supplement/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/watermelon/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1820,6 +2126,12 @@
   </url>
   <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/wheat-flour/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/wheat-germ-meal/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1898,6 +2210,12 @@
   </url>
   <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/zinc-amino-acid-chelate/</loc>
+    <lastmod>2026-01-29T09:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wattspet.com/ingredient-analyzer/ingredients/zinc-chelate/</loc>
     <lastmod>2026-01-29T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
