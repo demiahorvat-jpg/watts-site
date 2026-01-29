@@ -9114,6 +9114,48 @@
       "wattsPosition": "caution",
       "wattsTake": "Coconut sugar is still sugar - dogs don't need added sweeteners. While it's better than refined sugar or corn syrup, it's still unnecessary empty calories used to make food more palatable. Quality food should taste good from real ingredients, not added sugars. We view any added sugar cautiously, even 'natural' ones. If it's in treats in small amounts, it's tolerable, but we'd prefer treats sweetened with fruit or nothing at all. Caution - it's sugar, period.",
       "citations": []
+    },
+    {
+      "name": "Vegetable Oil",
+      "aliases": [
+        "mixed vegetable oil",
+        "vegetable fat"
+      ],
+      "category": "fat",
+      "whatItIs": "Vegetable oil is a generic term for oils extracted from various plant sources, commonly including soybean, corn, canola, or a blend of multiple oils.",
+      "whyUsed": [
+        "Inexpensive source of dietary fat and calories",
+        "Provides omega-6 fatty acids",
+        "Enhances palatability and texture",
+        "Improves kibble coating and appearance",
+        "Helps with fat-soluble vitamin absorption"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "The term 'vegetable oil' is problematic because it lacks transparency - it doesn't specify which plant sources are used, and the blend can vary between batches. Most commonly it's soybean or corn oil, which are high in omega-6 fatty acids and prone to oxidation. The vague naming suggests manufacturers are using whatever is cheapest at the time. Unlike named oils (chicken fat, fish oil, flaxseed oil), you don't know what you're getting. Quality can vary significantly, and some vegetable oils may be highly processed or contain inflammatory omega-6s without balancing omega-3s.",
+      "wattsPosition": "caution",
+      "wattsTake": "We're skeptical of generic 'vegetable oil' because it's a transparency issue. Quality foods specify their fat sources - chicken fat, fish oil, flaxseed oil. When labels just say 'vegetable oil,' it usually means the cheapest available option (often soybean or corn oil), and the source can change batch to batch. We prefer named fat sources where you know exactly what you're getting. If you see vegetable oil, ask: why won't they tell you which vegetables? Usually it's because they're using whatever's cheapest. Red flag for lack of transparency and potentially low-quality, high-omega-6 oils.",
+      "citations": []
+    },
+    {
+      "name": "Hydrolyzed Yeast",
+      "aliases": [
+        "yeast extract",
+        "hydrolyzed yeast extract"
+      ],
+      "category": "additive",
+      "whatItIs": "Hydrolyzed yeast is yeast that has been broken down through enzymatic or chemical processes, creating a savory flavoring agent rich in free amino acids and glutamates.",
+      "whyUsed": [
+        "Natural source of savory, umami flavor",
+        "Enhances palatability without artificial flavors",
+        "Provides B vitamins and amino acids",
+        "Improves food acceptance in picky eaters",
+        "Source of nucleotides and glutamic acid"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Hydrolyzed yeast is produced by breaking down yeast cells into their component amino acids and nucleotides, creating a concentrated savory flavor similar to MSG (monosodium glutamate). While it's a natural ingredient, it's used primarily for flavoring rather than nutrition. It does provide some B vitamins and beneficial compounds, making it more functional than pure flavor additives. The hydrolysis process creates free glutamic acid, which provides the savory taste dogs find appealing. Generally safe and better than artificial flavors, though primarily used to make food taste better rather than add significant nutrition.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Hydrolyzed yeast is a natural palatability enhancer that's better than artificial flavors but still mainly about taste rather than nutrition. It's essentially natural MSG - breaks down into free glutamates that create savory flavor dogs love. On the positive side, it provides some B vitamins and is from a natural source. On the other hand, if food needs flavor enhancers, it raises questions about the base ingredient quality. We're neutral - it's acceptable as a natural flavoring, and it does provide some nutritional value, but we'd prefer foods that are palatable from quality meat content alone. Better than 'natural flavors' or synthetic additives.",
+      "citations": []
     }
   ]
 }
