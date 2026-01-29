@@ -6228,6 +6228,503 @@
           "publisher": "NCBI"
         }
       ]
+    },
+    {
+      "name": "Turkey Meal",
+      "aliases": [
+        "turkey by-product meal"
+      ],
+      "category": "protein",
+      "whatItIs": "Rendered turkey product consisting of turkey flesh and skin with or without bone, exclusive of feathers, heads, feet, and entrails.",
+      "whyUsed": [
+        "Concentrated protein source (65-70% protein)",
+        "Named poultry meal for transparency",
+        "More protein-dense than fresh turkey",
+        "Long shelf life"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Quality named meal - specific source (turkey) provides transparency. Higher protein concentration than fresh turkey due to moisture removal. Look for 'turkey meal' over generic 'poultry meal' for better quality assurance.",
+      "wattsPosition": "good",
+      "wattsTake": "Quality named protein meal. Turkey meal is protein-rich and digestible. Named source (turkey) is far superior to vague 'poultry meal' or 'meat meal.' Good primary or secondary protein in quality formulas.",
+      "citations": [
+        {
+          "title": "AAFCO Official Publication",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Duck Meal",
+      "aliases": [
+        "duck by-product meal"
+      ],
+      "category": "protein",
+      "whatItIs": "Rendered duck product consisting of duck flesh and skin with or without bone, exclusive of feathers, heads, feet, and entrails.",
+      "whyUsed": [
+        "Novel protein source for allergies",
+        "Concentrated protein (60-70%)",
+        "Rich in B vitamins and minerals",
+        "Named source for quality"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Premium named protein meal. Duck is a novel protein less likely to cause allergies. Higher protein and nutrient density than fresh duck. Quality depends on rendering process and freshness of source material.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent named protein meal, especially for dogs with chicken or beef sensitivities. Duck meal provides concentrated, digestible protein with named source transparency. Premium ingredient in limited ingredient diets.",
+      "citations": [
+        {
+          "title": "AAFCO Official Publication",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Herring Meal",
+      "aliases": [
+        "herring fish meal"
+      ],
+      "category": "protein",
+      "whatItIs": "Rendered herring fish meal providing concentrated protein and omega-3 fatty acids (EPA/DHA) from whole herring.",
+      "whyUsed": [
+        "High-quality fish protein source",
+        "Rich in omega-3 fatty acids",
+        "Novel protein for allergies",
+        "Sustainable fish source"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Premium fish meal with excellent omega-3 content. Whole herring provides complete nutrition including bones (calcium). Quality depends on freshness and processing temperature. Cold-processed is superior.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent fish-based protein with built-in omega-3s. Herring meal is nutrient-dense and hypoallergenic. Superior to generic 'fish meal' due to named source. Great for fish-based or limited ingredient formulas.",
+      "citations": [
+        {
+          "title": "Fish Meals in Pet Nutrition",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Chicken Breast",
+      "aliases": [
+        "boneless chicken breast",
+        "chicken breast meat"
+      ],
+      "category": "protein",
+      "whatItIs": "Fresh, whole chicken breast muscle meat without bones, skin, or organs.",
+      "whyUsed": [
+        "Lean, high-quality protein source",
+        "Highly palatable and digestible",
+        "Identifiable whole meat",
+        "Premium ingredient for marketing"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Premium lean protein but 70-75% water by weight. While high quality, it significantly reduces in volume after cooking, meaning less actual protein than position in ingredient list suggests. Chicken meal provides more protein per pound.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent quality protein when fresh. However, high water content means it's less protein-dense than chicken meal after cooking. Best when combined with a meal source for protein consistency. Premium ingredient indicating quality focus.",
+      "citations": [
+        {
+          "title": "AAFCO Official Publication",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Turkey Liver",
+      "aliases": [
+        "fresh turkey liver"
+      ],
+      "category": "protein",
+      "whatItIs": "Fresh turkey liver organ meat, extremely rich in vitamins A, B12, folate, iron, and other nutrients.",
+      "whyUsed": [
+        "Nutrient-dense organ meat superfood",
+        "Rich in vitamins A, B12, iron, folate",
+        "Highly palatable",
+        "Natural vitamin source"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Nutrient powerhouse - organ meats are among the most nutritious ingredients possible. Contains more vitamins and minerals per gram than muscle meat. Quality indicator of a thoughtfully formulated food.",
+      "wattsPosition": "good",
+      "wattsTake": "Exceptional nutrient-dense ingredient. Organ meats like liver are nutritional gold - far more vitamins and minerals than muscle meat. Premium ingredient that shows formula prioritizes nutrition over cost. Excellent for all life stages.",
+      "citations": [
+        {
+          "title": "Organ Meats in Pet Nutrition",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Beef Heart",
+      "aliases": [
+        "fresh beef heart"
+      ],
+      "category": "protein",
+      "whatItIs": "Fresh beef heart muscle organ, rich in CoQ10, taurine, B vitamins, and highly digestible protein.",
+      "whyUsed": [
+        "Nutrient-dense organ meat",
+        "Natural source of CoQ10 and taurine",
+        "High-quality protein",
+        "Rich in B vitamins"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Excellent organ meat - heart is actually muscle tissue, very protein-rich. Naturally high in CoQ10 (heart health), taurine (heart and eye health), and B vitamins. Premium ingredient in quality formulas.",
+      "wattsPosition": "good",
+      "wattsTake": "Outstanding ingredient - heart is one of the best organ meats. Rich in CoQ10, taurine, and highly digestible protein. Shows formula uses whole-prey model nutrition. Premium ingredient indicating exceptional quality.",
+      "citations": [
+        {
+          "title": "Organ Meats Nutrition",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Bone Broth",
+      "aliases": [
+        "chicken bone broth",
+        "beef bone broth"
+      ],
+      "category": "additive",
+      "whatItIs": "Liquid made from simmering animal bones and connective tissue, rich in collagen, glycine, and minerals.",
+      "whyUsed": [
+        "Natural source of collagen and glycine",
+        "Provides minerals (calcium, phosphorus)",
+        "Supports joint and gut health",
+        "Adds palatability and moisture"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Trending ingredient with real nutritional benefits when used in meaningful amounts. Contains collagen, gelatin, amino acids (glycine, proline), and minerals. However, amounts in dry food are typically small. Most beneficial in wet foods or as toppers.",
+      "wattsPosition": "good",
+      "wattsTake": "Beneficial whole-food ingredient rich in collagen and joint-supporting nutrients. While trendy, bone broth has legitimate nutritional value. Most effective in wet foods where amounts are substantial. In dry foods, often more marketing than meaningful nutrition.",
+      "citations": [
+        {
+          "title": "Bone Broth Nutrition",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Pork By-Product Meal",
+      "aliases": [
+        "pork by-products"
+      ],
+      "category": "protein",
+      "whatItIs": "Rendered pork parts including organs, bones, and tissue, excluding hair, hooves, horns, and hide. Ambiguous quality and consistency.",
+      "whyUsed": [
+        "Inexpensive protein source",
+        "Utilizes pork processing waste",
+        "Protein content filler"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Ambiguous ingredient with inconsistent quality. May contain nutritious organs or low-value waste - impossible to know. Named pork products (pork meal, pork liver) provide transparency. By-product meals are hallmarks of budget foods.",
+      "wattsPosition": "avoid",
+      "wattsTake": "Vague, low-quality protein source. Could include anything from nutrient-rich organs to nutritionally empty waste. Named pork sources (pork, pork liver, pork meal) offer quality transparency. By-product meals = cost-cutting.",
+      "citations": [
+        {
+          "title": "AAFCO Official Publication",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Poultry Fat",
+      "aliases": [
+        "chicken fat",
+        "turkey fat"
+      ],
+      "category": "fat",
+      "whatItIs": "Fat obtained from poultry (chicken, turkey, or unspecified birds) during rendering. Source ambiguity varies.",
+      "whyUsed": [
+        "Concentrated energy source",
+        "Improves palatability",
+        "Provides essential fatty acids",
+        "Cost-effective fat source"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Quality depends on specific source. 'Chicken fat' is superior to generic 'poultry fat' (which could be from any bird). Quality also depends on preservation method - mixed tocopherols preferred over synthetic preservatives.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable fat source if preserved naturally, but 'poultry fat' is more ambiguous than named sources like 'chicken fat.' Check how it's preserved - mixed tocopherols (vitamin E) is ideal. If source and preservation are clear, it's fine.",
+      "citations": [
+        {
+          "title": "Fat Sources in Pet Food",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Animal Fat",
+      "aliases": [
+        "generic animal fat"
+      ],
+      "category": "fat",
+      "whatItIs": "Fat from unspecified animal sources - could be from any mammal or blend. Highly ambiguous ingredient.",
+      "whyUsed": [
+        "Cheap energy source",
+        "Palatability enhancer",
+        "Cost reduction"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Extremely vague ingredient with zero transparency. Source unknown - could change batch to batch. Named fats (chicken fat, beef tallow, fish oil) provide quality assurance. Animal fat signals budget formula.",
+      "wattsPosition": "avoid",
+      "wattsTake": "Major red flag - completely ambiguous fat source. Could be from any animal(s). Quality brands use named fats (chicken fat, beef tallow). 'Animal fat' indicates cost-cutting and lack of quality control. Avoid.",
+      "citations": [
+        {
+          "title": "Fat Sources in Pet Food",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Olive Oil",
+      "aliases": [
+        "extra virgin olive oil"
+      ],
+      "category": "fat",
+      "whatItIs": "Oil extracted from olives, rich in monounsaturated fats (oleic acid) and antioxidants (polyphenols).",
+      "whyUsed": [
+        "Heart-healthy monounsaturated fats",
+        "Antioxidant polyphenols",
+        "Anti-inflammatory properties",
+        "Premium ingredient for marketing"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Healthy fat source for humans, but not ideal for dogs who need higher omega-3s than olive oil provides. Better than cheap vegetable oils but not as beneficial as fish oil or chicken fat for canine nutrition. Small amounts are fine.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Healthy but not optimal for dogs. Olive oil is rich in omega-9s (good) but low in omega-3s (which dogs need more). Fish oil or flaxseed provide better fatty acid profiles for dogs. Small amounts are fine, but shouldn't be primary fat source.",
+      "citations": [
+        {
+          "title": "Fats in Pet Nutrition",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Sardine Oil",
+      "aliases": [
+        "sardine fish oil"
+      ],
+      "category": "fat",
+      "whatItIs": "Oil extracted from sardines, extremely rich in omega-3 fatty acids (EPA and DHA) and naturally low in contaminants.",
+      "whyUsed": [
+        "Premium omega-3 source (EPA/DHA)",
+        "Lower in heavy metals than larger fish",
+        "Supports joint, heart, brain, and skin health",
+        "Anti-inflammatory properties"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Premium omega-3 source - sardines are small fish lower on food chain, meaning less mercury/toxin accumulation than larger fish oils. Excellent EPA/DHA ratio. Quality depends on processing and freshness.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent omega-3 source - one of the best fish oils available. Sardines are small fish with less contamination risk than larger species. Rich in EPA/DHA for joint, brain, and heart health. Premium ingredient worth the cost.",
+      "citations": [
+        {
+          "title": "Omega-3 in Pet Nutrition",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Ground Corn",
+      "aliases": [
+        "corn flour",
+        "milled corn"
+      ],
+      "category": "carbohydrate",
+      "whatItIs": "Entire corn kernel ground into flour, including hull, germ, and starch. Cheap carbohydrate filler.",
+      "whyUsed": [
+        "Inexpensive carbohydrate filler",
+        "Adds bulk to formula",
+        "Increases profit margin"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Cheap filler with poor nutritional value for dogs. Common allergen. Poor digestibility compared to quality carb sources. When high in ingredient list, indicates budget formula prioritizing cost over nutrition.",
+      "wattsPosition": "avoid",
+      "wattsTake": "Cheap filler and common allergen. Ground corn is used to bulk up food inexpensively, not to provide nutrition. Causes allergies and digestive issues in many dogs. Far better carbohydrate sources available (sweet potato, oats). Avoid.",
+      "citations": [
+        {
+          "title": "AAFCO Official Publication",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Corn Starch",
+      "aliases": [
+        "modified corn starch"
+      ],
+      "category": "carbohydrate",
+      "whatItIs": "Refined starch extracted from corn, pure carbohydrate with zero nutritional value beyond calories.",
+      "whyUsed": [
+        "Cheap binding and thickening agent",
+        "Adds calories without nutrition",
+        "Cost reduction"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Empty-calorie filler with no vitamins, minerals, or protein. Used purely for binding and bulk. High glycemic index can spike blood sugar. Sign of budget formula when listed prominently.",
+      "wattsPosition": "avoid",
+      "wattsTake": "Nutritionally empty filler - pure refined starch with zero vitamins, minerals, or protein. Used only to thicken and bulk up food cheaply. High glycemic index. Avoid foods with corn starch high in ingredients.",
+      "citations": [
+        {
+          "title": "Starches in Pet Food",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Wheat Gluten",
+      "aliases": [
+        "vital wheat gluten"
+      ],
+      "category": "protein",
+      "whatItIs": "Isolated protein from wheat used to artificially boost protein percentages. Major allergen and cheap filler.",
+      "whyUsed": [
+        "Cheap way to increase protein percentage",
+        "Binding agent in wet foods",
+        "Cost reduction"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Isolated plant protein used to inflate protein numbers cheaply. Incomplete amino acid profile compared to meat. Major allergen for dogs. Used in low-quality foods to hit protein targets without meat. Red flag ingredient.",
+      "wattsPosition": "avoid",
+      "wattsTake": "Major red flag - used to fake protein numbers. Wheat gluten is isolated wheat protein used to meet protein minimums without expensive meat. Major allergen. Incomplete amino acids. Indicator of low-quality formula cutting corners.",
+      "citations": [
+        {
+          "title": "Plant Proteins in Pet Food",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Pea Protein Concentrate",
+      "aliases": [
+        "pea protein isolate",
+        "yellow pea protein"
+      ],
+      "category": "protein",
+      "whatItIs": "Isolated protein from peas (80-85% protein), used to boost protein percentages in grain-free foods.",
+      "whyUsed": [
+        "Boosts protein without meat",
+        "Grain-free protein source",
+        "Cheaper than animal protein"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Concerning in grain-free diets - linked to DCM (heart disease) when used heavily. Incomplete amino acid profile compared to meat. Used to inflate protein numbers without animal protein. Better than wheat gluten but still inferior to meat.",
+      "wattsPosition": "caution",
+      "wattsTake": "Concerning plant protein tied to grain-free DCM cases. Used to boost protein cheaply in grain-free formulas without adding meat. Incomplete amino acids. Dogs need animal protein primarily. Acceptable as supplement, problematic as primary protein.",
+      "citations": [
+        {
+          "title": "FDA DCM Investigation",
+          "url": "https://www.fda.gov/",
+          "publisher": "FDA"
+        }
+      ]
+    },
+    {
+      "name": "Soy Protein Isolate",
+      "aliases": [
+        "isolated soy protein"
+      ],
+      "category": "protein",
+      "whatItIs": "Highly processed soy protein (90%+ protein) used to artificially boost protein percentages. Common allergen.",
+      "whyUsed": [
+        "Cheapest way to increase protein",
+        "Plant-based protein source",
+        "Cost reduction"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Highly processed, isolated plant protein with inferior amino acid profile. Common allergen. Contains anti-nutritional factors and phytoestrogens. Used in low-quality foods to hit protein targets without meat. Major red flag.",
+      "wattsPosition": "avoid",
+      "wattsTake": "Major red flag - cheapest way to fake protein numbers. Highly processed soy protein used instead of real meat. Common allergen with anti-nutrients and phytoestrogens. Incomplete amino acids. Avoid foods listing this prominently.",
+      "citations": [
+        {
+          "title": "Soy in Pet Foods",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
+    },
+    {
+      "name": "Bacillus Coagulans",
+      "aliases": [
+        "bacillus coagulans GBI-30 6086",
+        "probiotic bacteria"
+      ],
+      "category": "active",
+      "whatItIs": "Spore-forming probiotic bacteria highly resistant to heat, making it ideal for pet food processing.",
+      "whyUsed": [
+        "Digestive health and gut balance",
+        "Survives manufacturing heat better than other probiotics",
+        "Immune system support",
+        "Reduces digestive upset"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Effective probiotic that survives kibble manufacturing better than Lactobacillus strains. Forms protective spores that activate in the gut. Clinical studies show benefits for diarrhea and IBS. Quality depends on CFU count.",
+      "wattsPosition": "good",
+      "wattsTake": "Excellent probiotic choice for dry food - heat-stable spores survive manufacturing. Clinically proven for digestive health. Look for products listing CFU (colony forming units) count - minimum 100 million CFUs per serving is effective.",
+      "citations": [
+        {
+          "title": "Probiotics in Pet Food",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ]
+    },
+    {
+      "name": "Potassium Sorbate",
+      "aliases": [
+        "sorbic acid potassium salt"
+      ],
+      "category": "preservative",
+      "whatItIs": "Preservative used to inhibit mold and yeast growth, particularly common in wet foods and treats.",
+      "whyUsed": [
+        "Prevents mold and yeast growth",
+        "Extends shelf life",
+        "Generally recognized as safe (GRAS)"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Considered one of the safer synthetic preservatives with good safety record. Most effective against molds and yeasts. Less controversial than BHA/BHT. Natural alternatives (mixed tocopherols, vitamin E) still preferred when possible.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Acceptable preservative - safer than BHA/BHT. While natural preservatives are ideal (mixed tocopherols, rosemary extract), potassium sorbate has good safety record and is necessary in some wet food applications. Not a red flag.",
+      "citations": [
+        {
+          "title": "FDA GRAS Substances",
+          "url": "https://www.fda.gov/",
+          "publisher": "FDA"
+        }
+      ]
+    },
+    {
+      "name": "Fish Digest",
+      "aliases": [
+        "hydrolyzed fish"
+      ],
+      "category": "additive",
+      "whatItIs": "Material from fish tissue broken down by enzymes or acids into smaller components, used as palatability enhancer.",
+      "whyUsed": [
+        "Improves palatability and flavor",
+        "Masks poor ingredient quality",
+        "Makes food more appealing to picky eaters"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Palatability enhancer made from broken-down fish tissue. Better than unspecified 'animal digest' due to named source (fish), but still indicates base formula needs flavor masking. Quality depends on fish source and processing method.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Better than generic 'animal digest' since fish is specified, but still a palatability crutch. If food needs digest to be eaten, question the base ingredient quality. Named sources (salmon digest) are preferable to generic 'fish digest.'",
+      "citations": [
+        {
+          "title": "AAFCO Official Publication",
+          "url": "https://www.aafco.org/",
+          "publisher": "AAFCO"
+        }
+      ]
     }
   ]
 }
