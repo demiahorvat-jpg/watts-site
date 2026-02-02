@@ -1994,9 +1994,9 @@
         "Provides energy"
       ],
       "nutritionValue": "moderate",
-      "qualityNote": "Inexpensive filler grain with low nutritional value for dogs. Common allergen. Often appears high in ingredient lists of budget foods. Better grain options include oats, brown rice, or grain-free alternatives.",
+      "qualityNote": "Corn is digestible for dogs (85-95% when properly cooked), but it's used primarily as an inexpensive filler in budget formulas. Better carbohydrate sources exist that provide more nutritional value per calorie.",
       "wattsPosition": "caution",
-      "wattsTake": "Cheap filler ingredient and common allergen. While whole corn has some nutrients, it's primarily used to bulk up food inexpensively. Dogs don't digest corn well. Many better carbohydrate sources available (sweet potato, oats).",
+      "wattsTake": "Corn isn't inherently harmful - the myth that dogs can't digest it is false. However, it's primarily used to reduce costs rather than for nutritional value. We prefer animal proteins and premium carbohydrates like sweet potatoes or oats over corn-heavy formulas.",
       "citations": [
         {
           "title": "AAFCO Official Publication",
@@ -2169,9 +2169,9 @@
         "Byproduct utilization"
       ],
       "nutritionValue": "low",
-      "qualityNote": "Plant protein with poor amino acid profile for dogs. Used to inflate protein numbers cheaply.",
+      "qualityNote": "Corn gluten meal contains 60-70% protein but with incomplete amino acids and low biological value (60-70% vs 85-90% for animal proteins). It's used to inflate protein percentages while cutting costs - a practice we consider deceptive.",
       "wattsPosition": "avoid",
-      "wattsTake": "We never use corn gluten meal. It's used to boost protein numbers without providing quality animal protein.",
+      "wattsTake": "This is one of the worst common ingredients. It allows manufacturers to claim high protein percentages while providing poor-quality plant protein that dogs can barely utilize. We never use corn gluten meal - quality animal proteins are always superior.",
       "citations": [
         {
           "title": "AAFCO Official Publication",
@@ -5861,9 +5861,9 @@
         "Cheap and available"
       ],
       "nutritionValue": "moderate",
-      "qualityNote": "Major allergen and cheap filler. Wheat provides minimal nutritional value to carnivores like dogs. Often causes skin issues, ear infections, and digestive problems. Indicator of a budget formula prioritizing cost over nutrition.",
+      "qualityNote": "Wheat is one of the most common food allergens in dogs and appears primarily in budget formulas. It contains gluten that can trigger sensitivities and provides less nutritional value than animal proteins or alternative carbohydrates.",
       "wattsPosition": "avoid",
-      "wattsTake": "One of the most common dog food allergens. Cheap filler with poor nutritional value compared to meat-based proteins. Used primarily to reduce costs. We strongly recommend avoiding wheat-heavy foods.",
+      "wattsTake": "Unlike corn (which is just overused), wheat has legitimate concerns - it's a common allergen causing skin issues, ear infections, and digestive problems. Combined with its use as a cheap filler, we recommend avoiding wheat-heavy foods in favor of better alternatives.",
       "citations": [
         {
           "title": "AAFCO Official Publication",
