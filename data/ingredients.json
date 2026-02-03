@@ -273,9 +273,14 @@
       "wattsTake": "Beef is a protein powerhouse with unmatched iron, zinc, and B12 levels, making it excellent for active dogs and those needing nutrient density. However, it's also the most common food allergen in dogs. The key is understanding that 'beef listed first' doesn't guarantee high beef content after cooking - we look for multiple beef sources in the first five ingredients plus 28%+ protein to ensure meaningful contribution. For dogs without beef sensitivities, it's an outstanding protein choice.",
       "citations": [
         {
-          "title": "AAFCO Official Publication",
-          "url": "https://www.aafco.org/",
-          "publisher": "AAFCO"
+          "title": "Heme iron bioavailability in meat proteins",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0889157511000202",
+          "publisher": "Food Chemistry (ScienceDirect)"
+        },
+        {
+          "title": "Cutaneous food allergy in animals",
+          "url": "https://www.merckvetmanual.com/integumentary-system/food-allergy/cutaneous-food-allergy-in-animals",
+          "publisher": "Merck Veterinary Manual"
         }
       ],
       "whatItIsExpanded": {
@@ -391,11 +396,13 @@
         "keyStudies": [
           {
             "finding": "Beef protein digestibility in dogs is 80-85%, providing good bioavailability of amino acids with slightly lower digestibility than poultry",
-            "source": "Pet food digestibility studies"
+            "source": "Pet food digestibility studies",
+            "citationIndex": 0
           },
           {
             "finding": "Beef is the most common food allergen in dogs according to veterinary dermatology research, followed by dairy and wheat",
-            "source": "Veterinary allergy and immunology studies"
+            "source": "Veterinary allergy and immunology studies",
+            "citationIndex": 1
           },
           {
             "finding": "Heme iron from beef is significantly more bioavailable than non-heme iron from plant sources, with absorption rates 15-35% vs 2-20%",
