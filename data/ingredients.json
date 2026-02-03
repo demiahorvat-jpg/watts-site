@@ -391,18 +391,15 @@
         "keyStudies": [
           {
             "finding": "Beef protein digestibility in dogs is 80-85%, providing good bioavailability of amino acids with slightly lower digestibility than poultry",
-            "source": "Pet food digestibility studies",
-            "citationIndex": 0
+            "source": "Pet food digestibility studies"
           },
           {
             "finding": "Beef is the most common food allergen in dogs according to veterinary dermatology research, followed by dairy and wheat",
-            "source": "Veterinary allergy and immunology studies",
-            "citationIndex": 0
+            "source": "Veterinary allergy and immunology studies"
           },
           {
             "finding": "Heme iron from beef is significantly more bioavailable than non-heme iron from plant sources, with absorption rates 15-35% vs 2-20%",
-            "source": "Nutritional bioavailability research",
-            "citationIndex": 0
+            "source": "Nutritional bioavailability research"
           }
         ],
         "evidenceLevel": "Extensively studied with decades of safe use. Well-established as a high-quality, nutrient-dense protein source for dogs, though with documented allergy potential in susceptible individuals."
@@ -809,13 +806,11 @@
         "keyStudies": [
           {
             "finding": "AAFCO defines beef meal as 'the rendered product from beef tissues, exclusive of any added blood, hair, hoof, horn, hide trimmings, manure, stomach and rumen contents'",
-            "source": "AAFCO Official Publication",
-            "citationIndex": 0
+            "source": "AAFCO Official Publication"
           },
           {
             "finding": "Beef meal protein digestibility in dogs typically ranges from 80-85%, providing excellent bioavailability",
-            "source": "Pet food industry studies",
-            "citationIndex": 0
+            "source": "Pet food industry studies"
           }
         ],
         "evidenceLevel": "Well-established ingredient with decades of safe use. AAFCO-defined and regulated."
@@ -1505,13 +1500,11 @@
         "keyStudies": [
           {
             "finding": "Chicken protein digestibility in dogs is 85-90%, providing excellent bioavailability of amino acids",
-            "source": "Pet food digestibility studies",
-            "citationIndex": 0
+            "source": "Pet food digestibility studies"
           },
           {
             "finding": "Chicken allergies in dogs are less common than beef, dairy, and wheat allergies according to veterinary dermatology research",
-            "source": "Veterinary allergy studies",
-            "citationIndex": 0
+            "source": "Veterinary allergy studies"
           }
         ],
         "evidenceLevel": "Extensively studied with decades of safe use. Well-established as a high-quality, highly digestible protein source for dogs."
@@ -1946,13 +1939,11 @@
         "keyStudies": [
           {
             "finding": "Protein digestibility of chicken meal in dogs ranges from 85-90%, comparable to fresh chicken",
-            "source": "Multiple pet food industry studies",
-            "citationIndex": 0
+            "source": "Multiple pet food industry studies"
           },
           {
             "finding": "AAFCO defines chicken meal as 'the dry rendered product from a combination of chicken flesh and skin with or without accompanying bone'",
-            "source": "AAFCO Official Publication",
-            "citationIndex": 0
+            "source": "AAFCO Official Publication"
           }
         ],
         "evidenceLevel": "Well-established ingredient with decades of safe use in commercial dog food. AAFCO-defined and regulated."
@@ -2559,13 +2550,11 @@
         "keyStudies": [
           {
             "finding": "Cooked corn has 85-95% digestibility in dogs when properly processed",
-            "source": "Pet food digestibility studies",
-            "citationIndex": 0
+            "source": "Pet food digestibility studies"
           },
           {
             "finding": "Corn allergies in dogs are less common than beef, dairy, chicken, wheat, and lamb allergies",
-            "source": "Veterinary dermatology research",
-            "citationIndex": 0
+            "source": "Veterinary dermatology research"
           }
         ],
         "evidenceLevel": "Well-studied ingredient with decades of safe use, though nutritional value is debated among pet nutritionists."
@@ -2731,18 +2720,15 @@
         "keyStudies": [
           {
             "finding": "Corn gluten meal has biological value of 60-70% compared to 85-90% for animal proteins like chicken meal",
-            "source": "Canine protein utilization studies",
-            "citationIndex": 0
+            "source": "Canine protein utilization studies"
           },
           {
             "finding": "Corn gluten meal is deficient in lysine, tryptophan, and methionine—essential amino acids dogs must obtain from diet",
-            "source": "Amino acid composition analysis",
-            "citationIndex": 0
+            "source": "Amino acid composition analysis"
           },
           {
             "finding": "AAFCO defines corn gluten meal as 'the dried residue from corn after removal of starch, germ, and bran'—a processing byproduct",
-            "source": "AAFCO Official Publication",
-            "citationIndex": 0
+            "source": "AAFCO Official Publication"
           }
         ],
         "evidenceLevel": "Well-established as an inferior protein source for carnivores. Scientific consensus supports animal proteins over plant proteins for dogs."
@@ -3401,13 +3387,11 @@
         "keyStudies": [
           {
             "finding": "AAFCO defines fish meal as 'the clean, dried, ground tissue of undecomposed whole fish or fish cuttings, with or without the oil extracted'",
-            "source": "AAFCO Official Publication",
-            "citationIndex": 0
+            "source": "AAFCO Official Publication"
           },
           {
             "finding": "Fish meal provides EPA and DHA omega-3 fatty acids in forms directly usable by dogs, supporting skin, coat, joint, and cognitive health",
-            "source": "Veterinary nutritional research",
-            "citationIndex": 0
+            "source": "Veterinary nutritional research"
           }
         ],
         "evidenceLevel": "Well-established ingredient with extensive research supporting its nutritional value in canine diets."
@@ -3563,18 +3547,15 @@
         "keyStudies": [
           {
             "finding": "Omega-3 fatty acids from fish oil reduce skin inflammation and itching in dogs with atopic dermatitis, with 50-70% showing improvement after 8-12 weeks",
-            "source": "Veterinary dermatology research and clinical trials",
-            "citationIndex": 0
+            "source": "Veterinary dermatology research and clinical trials"
           },
           {
             "finding": "EPA and DHA supplementation reduces joint inflammation and improves mobility in dogs with osteoarthritis, with effects comparable to NSAIDs in some studies",
-            "source": "Veterinary orthopedics and nutrition studies",
-            "citationIndex": 0
+            "source": "Veterinary orthopedics and nutrition studies"
           },
           {
             "finding": "DHA supports cognitive function in senior dogs and brain development in puppies, with supplemented dogs showing better learning and memory",
-            "source": "Canine neurology and nutrition research",
-            "citationIndex": 0
+            "source": "Canine neurology and nutrition research"
           }
         ],
         "evidenceLevel": "Strong evidence with consistent positive results across multiple health areas. Fish oil omega-3s are among the best-supported nutritional supplements for dogs, with decades of research demonstrating benefits."
@@ -4318,18 +4299,15 @@
         "keyStudies": [
           {
             "finding": "L-carnitine supplementation combined with calorie restriction enhances weight loss and helps preserve lean body mass in obese dogs, though effects are modest",
-            "source": "Veterinary nutrition and obesity research",
-            "citationIndex": 0
+            "source": "Veterinary nutrition and obesity research"
           },
           {
             "finding": "Some Boxers and Dobermans with dilated cardiomyopathy have myocardial L-carnitine deficiency, and high-dose supplementation may improve cardiac function in these specific cases",
-            "source": "Veterinary cardiology case series and trials",
-            "citationIndex": 0
+            "source": "Veterinary cardiology case series and trials"
           },
           {
             "finding": "L-carnitine alone without calorie restriction produces minimal weight loss in dogs - effectiveness requires combination with diet and exercise",
-            "source": "Weight management studies",
-            "citationIndex": 0
+            "source": "Weight management studies"
           }
         ],
         "evidenceLevel": "Moderate evidence for modest benefits in weight management and breed-specific cardiac conditions. Weak evidence for performance enhancement. Generally safe with minimal side effects even at high doses."
@@ -4651,18 +4629,15 @@
         "keyStudies": [
           {
             "finding": "Lamb protein digestibility in dogs is 80-85%, providing very good bioavailability of amino acids comparable to beef",
-            "source": "Pet food digestibility studies",
-            "citationIndex": 0
+            "source": "Pet food digestibility studies"
           },
           {
             "finding": "Lamb is an effective novel protein for elimination diets in dogs with suspected food allergies, with lower sensitization rates due to limited prior exposure",
-            "source": "Veterinary dermatology and allergy research",
-            "citationIndex": 0
+            "source": "Veterinary dermatology and allergy research"
           },
           {
             "finding": "Grass-fed lamb contains higher omega-3 fatty acids and CLA compared to grain-finished lamb, offering superior fatty acid profiles",
-            "source": "Nutritional composition studies",
-            "citationIndex": 0
+            "source": "Nutritional composition studies"
           }
         ],
         "evidenceLevel": "Well-studied with decades of safe use. Established as a high-quality, nutrient-dense protein particularly valuable for dogs with food allergies or sensitivities to more common proteins."
@@ -6358,18 +6333,15 @@
         "keyStudies": [
           {
             "finding": "Omega-3 fatty acids (EPA and DHA) from fish like salmon reduce inflammation, improve skin and coat quality, and support joint health in dogs",
-            "source": "Veterinary dermatology and nutrition studies",
-            "citationIndex": 0
+            "source": "Veterinary dermatology and nutrition studies"
           },
           {
             "finding": "DHA from salmon supports cognitive development in puppies and may slow cognitive decline in senior dogs",
-            "source": "Canine neurology and nutrition research",
-            "citationIndex": 0
+            "source": "Canine neurology and nutrition research"
           },
           {
             "finding": "Fish protein including salmon demonstrates digestibility of 85-90% in dogs, providing excellent bioavailability of amino acids",
-            "source": "Pet food digestibility studies",
-            "citationIndex": 0
+            "source": "Pet food digestibility studies"
           }
         ],
         "evidenceLevel": "Extensively studied with strong evidence for health benefits beyond basic nutrition. Omega-3 fatty acids from salmon have robust clinical evidence supporting their use for various health conditions in dogs."
@@ -7244,18 +7216,15 @@
         "keyStudies": [
           {
             "finding": "Turkey protein digestibility in dogs is 85-90%, providing excellent bioavailability of amino acids comparable to chicken",
-            "source": "Pet food digestibility studies",
-            "citationIndex": 0
+            "source": "Pet food digestibility studies"
           },
           {
             "finding": "Poultry proteins (chicken and turkey) show lower allergy rates than beef and dairy in dogs, though cross-reactivity between chicken and turkey exists",
-            "source": "Veterinary dermatology and allergy research",
-            "citationIndex": 0
+            "source": "Veterinary dermatology and allergy research"
           },
           {
             "finding": "Lean proteins like turkey support weight management in dogs by providing satiety with fewer calories compared to higher-fat proteins",
-            "source": "Veterinary nutrition and obesity studies",
-            "citationIndex": 0
+            "source": "Veterinary nutrition and obesity studies"
           }
         ],
         "evidenceLevel": "Well-studied with decades of safe use. Established as a high-quality, highly digestible, lean protein source for dogs, nutritionally similar to chicken with specific benefits for weight management."
@@ -7603,13 +7572,11 @@
         "keyStudies": [
           {
             "finding": "Wheat is one of the top 5 most common food allergens in dogs, along with beef, dairy, chicken, and lamb",
-            "source": "Veterinary dermatology and allergy research",
-            "citationIndex": 0
+            "source": "Veterinary dermatology and allergy research"
           },
           {
             "finding": "Dogs have evolved to digest carbohydrates but do not require grain-based sources; animal proteins are more biologically appropriate",
-            "source": "Canine nutrition studies",
-            "citationIndex": 0
+            "source": "Canine nutrition studies"
           }
         ],
         "evidenceLevel": "Well-studied ingredient with consistent evidence showing high allergenicity and low biological value compared to animal proteins."
