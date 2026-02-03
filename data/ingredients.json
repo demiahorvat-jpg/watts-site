@@ -281,6 +281,11 @@
           "title": "Cutaneous food allergy in animals",
           "url": "https://www.merckvetmanual.com/integumentary-system/food-allergy/cutaneous-food-allergy-in-animals",
           "publisher": "Merck Veterinary Manual"
+        },
+        {
+          "title": "Beef digestibility and metabolizable energy in dogs",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11816250/",
+          "publisher": "NIH/PubMed Central"
         }
       ],
       "whatItIsExpanded": {
@@ -406,7 +411,8 @@
           },
           {
             "finding": "Heme iron from beef is significantly more bioavailable than non-heme iron from plant sources, with absorption rates 15-35% vs 2-20%",
-            "source": "Nutritional bioavailability research"
+            "source": "Nutritional bioavailability research",
+            "citationIndex": 2
           }
         ],
         "evidenceLevel": "Extensively studied with decades of safe use. Well-established as a high-quality, nutrient-dense protein source for dogs, though with documented allergy potential in susceptible individuals."
