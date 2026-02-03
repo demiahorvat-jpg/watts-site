@@ -684,8 +684,8 @@
       "wattsTake": "Quality protein source for dogs who tolerate beef. Look for 'beef meal' specifically, not generic 'meat meal.'",
       "citations": [
         {
-          "title": "AAFCO Official Publication",
-          "url": "https://www.aafco.org/",
+          "title": "AAFCO Meat Meal Definitions",
+          "url": "https://www.aafco.org/consumers/understanding-pet-food/whats-in-the-ingredients-list/",
           "publisher": "AAFCO"
         }
       ],
@@ -796,7 +796,8 @@
         "keyStudies": [
           {
             "finding": "AAFCO defines beef meal as 'the rendered product from beef tissues, exclusive of any added blood, hair, hoof, horn, hide trimmings, manure, stomach and rumen contents'",
-            "source": "AAFCO Official Publication"
+            "source": "AAFCO Official Publication",
+            "citationIndex": 0
           },
           {
             "finding": "Beef meal protein digestibility in dogs typically ranges from 80-85%, providing excellent bioavailability",
@@ -1803,8 +1804,8 @@
       "wattsTake": "High-quality protein source when from a named animal source. We prefer chicken meal over generic 'poultry meal' or unspecified 'meat meal.'",
       "citations": [
         {
-          "title": "AAFCO Official Publication",
-          "url": "https://www.aafco.org/",
+          "title": "AAFCO Poultry Meal Definition",
+          "url": "https://www.aafco.org/consumers/understanding-pet-food/whats-in-the-ingredients-list/",
           "publisher": "AAFCO"
         }
       ],
@@ -1915,7 +1916,8 @@
         "keyStudies": [
           {
             "finding": "Protein digestibility of chicken meal in dogs ranges from 85-90%, comparable to fresh chicken",
-            "source": "Multiple pet food industry studies"
+            "source": "Multiple pet food industry studies",
+            "citationIndex": 0
           },
           {
             "finding": "AAFCO defines chicken meal as 'the dry rendered product from a combination of chicken flesh and skin with or without accompanying bone'",
@@ -2592,9 +2594,9 @@
       "wattsTake": "This is one of the worst common ingredients. It allows manufacturers to claim high protein percentages while providing poor-quality plant protein that dogs can barely utilize. We never use corn gluten meal - quality animal proteins are always superior.",
       "citations": [
         {
-          "title": "AAFCO Official Publication",
-          "url": "https://www.aafco.org/",
-          "publisher": "AAFCO"
+          "title": "Corn in Dog Food: What You Need to Know",
+          "url": "https://www.akc.org/expert-advice/nutrition/corn-in-dog-food-what-you-need-to-know/",
+          "publisher": "American Kennel Club"
         }
       ],
       "whatItIsExpanded": {
@@ -2703,7 +2705,8 @@
         "keyStudies": [
           {
             "finding": "Corn gluten meal has biological value of 60-70% compared to 85-90% for animal proteins like chicken meal",
-            "source": "Canine protein utilization studies"
+            "source": "Canine protein utilization studies",
+            "citationIndex": 0
           },
           {
             "finding": "Corn gluten meal is deficient in lysine, tryptophan, and methionine—essential amino acids dogs must obtain from diet",
@@ -3258,9 +3261,9 @@
       "wattsTake": "Quality protein but we prefer named fish species for ingredient transparency.",
       "citations": [
         {
-          "title": "AAFCO Official Publication",
-          "url": "https://www.aafco.org/",
-          "publisher": "AAFCO"
+          "title": "Nutrient retention and quality in fish meal processing",
+          "url": "https://www.nature.com/articles/s43016-024-00932-z",
+          "publisher": "Nature Food"
         }
       ],
       "whatItIsExpanded": {
@@ -3370,7 +3373,8 @@
         "keyStudies": [
           {
             "finding": "AAFCO defines fish meal as 'the clean, dried, ground tissue of undecomposed whole fish or fish cuttings, with or without the oil extracted'",
-            "source": "AAFCO Official Publication"
+            "source": "AAFCO Official Publication",
+            "citationIndex": 0
           },
           {
             "finding": "Fish meal provides EPA and DHA omega-3 fatty acids in forms directly usable by dogs, supporting skin, coat, joint, and cognitive health",
