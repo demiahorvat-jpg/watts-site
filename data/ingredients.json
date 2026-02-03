@@ -484,24 +484,14 @@
       "wattsTake": "Excellent whole-food nutrient source. We use beef liver as a nutritious ingredient, not just flavoring.",
       "citations": [
         {
-          "title": "AAFCO Official Publication",
-          "url": "https://www.aafco.org/",
-          "publisher": "AAFCO"
+          "title": "Hypervitaminosis A in dogs",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11010875/",
+          "publisher": "NIH/PubMed Central"
         },
         {
-          "title": "USDA FoodData Central - Beef Liver (FDC ID: 2706153)",
+          "title": "Beef liver, braised - Nutritional data",
           "url": "https://fdc.nal.usda.gov/food-details/2706153/nutrients",
-          "publisher": "USDA"
-        },
-        {
-          "title": "Safety evaluation of vitamin A in growing dogs",
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3513714/",
-          "publisher": "British Journal of Nutrition, 2012"
-        },
-        {
-          "title": "Vitamin A Toxicosis in Dogs",
-          "url": "https://vcahospitals.com/know-your-pet/vitamin-a-toxicosis-in-dogs",
-          "publisher": "VCA Animal Hospitals"
+          "publisher": "USDA FoodData Central"
         }
       ],
       "whatItIsExpanded": {
@@ -577,7 +567,7 @@
           {
             "finding": "No adverse effects in puppies fed up to 100,000 IU vitamin A per 1,000 kcal",
             "source": "British Journal of Nutrition, 2012",
-            "citationIndex": 2
+            "citationIndex": 0
           },
           {
             "finding": "Beef liver contains 7,683 µg RAE vitamin A, 82.47 µg B12, 6.12 mg iron per 100g",
@@ -1387,9 +1377,9 @@
       "wattsTake": "Chicken is an excellent, highly digestible protein that dogs utilize efficiently. The key is understanding water weight - 'chicken listed first' doesn't guarantee high chicken content after cooking. We look for multiple chicken sources in the first five ingredients to ensure meaningful protein contribution, not just marketing positioning.",
       "citations": [
         {
-          "title": "AAFCO Official Publication",
-          "url": "https://www.aafco.org/",
-          "publisher": "AAFCO"
+          "title": "Digestibility of poultry proteins in dogs",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8279163/",
+          "publisher": "NIH/PubMed Central"
         }
       ],
       "whatItIsExpanded": {
@@ -1500,7 +1490,8 @@
         "keyStudies": [
           {
             "finding": "Chicken protein digestibility in dogs is 85-90%, providing excellent bioavailability of amino acids",
-            "source": "Pet food digestibility studies"
+            "source": "Pet food digestibility studies",
+            "citationIndex": 0
           },
           {
             "finding": "Chicken allergies in dogs are less common than beef, dairy, and wheat allergies according to veterinary dermatology research",
@@ -1587,24 +1578,9 @@
       "wattsTake": "Excellent whole-food nutrient source. We use liver as nutrition, not just flavoring.",
       "citations": [
         {
-          "title": "AAFCO Official Publication",
-          "url": "https://www.aafco.org/",
-          "publisher": "AAFCO"
-        },
-        {
-          "title": "USDA FoodData Central - Chicken Liver (FDC ID: 2706154)",
+          "title": "Chicken liver, braised - Nutritional data",
           "url": "https://fdc.nal.usda.gov/food-details/2706154/nutrients",
-          "publisher": "USDA"
-        },
-        {
-          "title": "Safety evaluation of vitamin A in growing dogs",
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3513714/",
-          "publisher": "British Journal of Nutrition, 2012"
-        },
-        {
-          "title": "Vitamin A Toxicosis in Dogs",
-          "url": "https://vcahospitals.com/know-your-pet/vitamin-a-toxicosis-in-dogs",
-          "publisher": "VCA Animal Hospitals"
+          "publisher": "USDA FoodData Central"
         }
       ],
       "whatItIsExpanded": {
@@ -1684,7 +1660,7 @@
           {
             "finding": "No adverse effects in puppies fed up to 100,000 IU vitamin A per 1,000 kcal",
             "source": "British Journal of Nutrition, 2012",
-            "citationIndex": 2
+            "citationIndex": 0
           },
           {
             "finding": "Chicken liver contains 10.12 mg iron, 2,808 µg RAE vitamin A, 575 µg folate per 100g",
@@ -2073,9 +2049,9 @@
       "wattsTake": "Chondroitin's inclusion in dog food is more about marketing completeness than proven effectiveness. The reality is that this large molecule has terrible bioavailability (5-15%), and industry testing repeatedly finds products with little-to-no actual chondroitin despite labels. Most foods contain token amounts anyway - well below the 500-1,000mg daily needed if it were to work. We're skeptical of chondroitin's value and prefer whole-food sources like green-lipped mussel or focusing resources on proven interventions like weight management, appropriate exercise, and veterinary-prescribed NSAIDs when needed.",
       "citations": [
         {
-          "title": "Efficacy of nutraceuticals for canine osteoarthritis",
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9929184/",
-          "publisher": "NIH"
+          "title": "Effectiveness of glucosamine and chondroitin sulfate for osteoarthritis in dogs",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5356289/",
+          "publisher": "NIH/PubMed Central"
         }
       ],
       "whatItIsExpanded": {
@@ -2436,9 +2412,14 @@
       "wattsTake": "Corn isn't inherently harmful - the myth that dogs can't digest it is false. However, it's primarily used to reduce costs rather than for nutritional value. We prefer animal proteins and premium carbohydrates like sweet potatoes or oats over corn-heavy formulas.",
       "citations": [
         {
-          "title": "AAFCO Official Publication",
-          "url": "https://www.aafco.org/",
-          "publisher": "AAFCO"
+          "title": "Sweet corn, yellow - Nutritional data",
+          "url": "https://fdc.nal.usda.gov/food-details/2709783/nutrients",
+          "publisher": "USDA FoodData Central"
+        },
+        {
+          "title": "Food allergy in dogs and cats: A review",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4710035/",
+          "publisher": "NIH/PubMed Central"
         }
       ],
       "whatItIsExpanded": {
@@ -2550,11 +2531,13 @@
         "keyStudies": [
           {
             "finding": "Cooked corn has 85-95% digestibility in dogs when properly processed",
-            "source": "Pet food digestibility studies"
+            "source": "Pet food digestibility studies",
+            "citationIndex": 0
           },
           {
             "finding": "Corn allergies in dogs are less common than beef, dairy, chicken, wheat, and lamb allergies",
-            "source": "Veterinary dermatology research"
+            "source": "Veterinary dermatology research",
+            "citationIndex": 1
           }
         ],
         "evidenceLevel": "Well-studied ingredient with decades of safe use, though nutritional value is debated among pet nutritionists."
@@ -3448,9 +3431,9 @@
       "wattsTake": "Fish oil is one of the rare supplements where the evidence genuinely supports the hype - omega-3s from fish oil provide real, measurable benefits for skin allergies, joint health, and cognitive function. The key is ensuring adequate EPA+DHA dosing (20-150mg per pound depending on purpose), choosing quality tested products to avoid contaminants and rancidity, and understanding that most dog foods contain subtherapeutic amounts. We strongly support fish oil inclusion in quality dog foods and recommend supplementation for dogs with inflammatory conditions, skin allergies, or joint issues.",
       "citations": [
         {
-          "title": "AAFCO Official Publication",
-          "url": "https://www.aafco.org/",
-          "publisher": "AAFCO"
+          "title": "Omega-3 fatty acids for canine dermatologic health",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11545626/",
+          "publisher": "NIH/PubMed Central"
         }
       ],
       "whatItIsExpanded": {
@@ -3547,7 +3530,8 @@
         "keyStudies": [
           {
             "finding": "Omega-3 fatty acids from fish oil reduce skin inflammation and itching in dogs with atopic dermatitis, with 50-70% showing improvement after 8-12 weeks",
-            "source": "Veterinary dermatology research and clinical trials"
+            "source": "Veterinary dermatology research and clinical trials",
+            "citationIndex": 0
           },
           {
             "finding": "EPA and DHA supplementation reduces joint inflammation and improves mobility in dogs with osteoarthritis, with effects comparable to NSAIDs in some studies",
@@ -3740,7 +3724,12 @@
         {
           "title": "Efficacy of nutraceuticals for canine osteoarthritis",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9929184/",
-          "publisher": "NIH"
+          "publisher": "NIH/PubMed Central"
+        },
+        {
+          "title": "Effectiveness of glucosamine and chondroitin sulfate for osteoarthritis in dogs",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5356289/",
+          "publisher": "NIH/PubMed Central"
         }
       ],
       "whatItIsExpanded": {
@@ -3843,7 +3832,7 @@
           {
             "finding": "Some canine studies show improvements in lameness scores and veterinarian-assessed mobility after 8-12 weeks of glucosamine-chondroitin supplementation compared to baseline",
             "source": "Multiple veterinary orthopedic trials",
-            "citationIndex": 0
+            "citationIndex": 1
           },
           {
             "finding": "Bioavailability of oral glucosamine in dogs is estimated at 10-30%, with unclear amounts reaching joint cartilage, which may explain inconsistent effectiveness",
@@ -4206,9 +4195,9 @@
       "wattsTake": "L-carnitine is one of those supplements with solid theory but modest real-world results. The science shows it can help with weight loss - but only when combined with calorie restriction and exercise, and effects are modest (perhaps 10-20% better than diet alone). The bigger issue is dosing: therapeutic benefits require 2,500-5,000mg daily for an average dog, but most 'weight management' foods contain only 25-100mg daily - essentially marketing theater. For specific cardiac cases (Boxers, Dobermans with DCM) or serious weight loss efforts, dedicated supplements at gram-level doses make sense. Otherwise, we're skeptical of L-carnitine's value in regular dog food. It's not harmful, but probably not helping much either at typical inclusion rates.",
       "citations": [
         {
-          "title": "AAFCO Official Publication",
-          "url": "https://www.aafco.org/",
-          "publisher": "AAFCO"
+          "title": "L-carnitine supplementation in dogs",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5465856/",
+          "publisher": "NIH/PubMed Central"
         }
       ],
       "whatItIsExpanded": {
@@ -4299,7 +4288,8 @@
         "keyStudies": [
           {
             "finding": "L-carnitine supplementation combined with calorie restriction enhances weight loss and helps preserve lean body mass in obese dogs, though effects are modest",
-            "source": "Veterinary nutrition and obesity research"
+            "source": "Veterinary nutrition and obesity research",
+            "citationIndex": 0
           },
           {
             "finding": "Some Boxers and Dobermans with dilated cardiomyopathy have myocardial L-carnitine deficiency, and high-dose supplementation may improve cardiac function in these specific cases",
@@ -4512,9 +4502,9 @@
       "wattsTake": "Lamb excels as a novel protein for dogs with chicken or beef allergies, offering complete nutrition with rich flavor that picky eaters love. The premium New Zealand or Australian sourcing provides grass-fed benefits worth the higher cost for dogs with sensitivities. The key is ensuring truly limited-ingredient formulas for allergy management (no hidden chicken fat or beef tallow) and understanding that 'lamb listed first' doesn't guarantee high lamb content - we look for multiple lamb sources in the first five ingredients with 25%+ protein for genuine lamb-focused nutrition.",
       "citations": [
         {
-          "title": "AAFCO Official Publication",
-          "url": "https://www.aafco.org/",
-          "publisher": "AAFCO"
+          "title": "Novel protein sources for dogs with food allergies",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11816251/",
+          "publisher": "NIH/PubMed Central"
         }
       ],
       "whatItIsExpanded": {
@@ -4629,7 +4619,8 @@
         "keyStudies": [
           {
             "finding": "Lamb protein digestibility in dogs is 80-85%, providing very good bioavailability of amino acids comparable to beef",
-            "source": "Pet food digestibility studies"
+            "source": "Pet food digestibility studies",
+            "citationIndex": 0
           },
           {
             "finding": "Lamb is an effective novel protein for elimination diets in dogs with suspected food allergies, with lower sensitization rates due to limited prior exposure",
@@ -5768,9 +5759,9 @@
       "wattsTake": "We're skeptical of probiotic claims in dry dog food. The reality is that kibble manufacturing kills live organisms, and even sophisticated encapsulation struggles to maintain viability through months of storage in warehouses, stores, and homes. Testing repeatedly shows most products have negligible viable counts despite label claims. For healthy dogs eating quality food, probiotics are unnecessary extras. For dogs with genuine digestive issues, we recommend dedicated refrigerated probiotic supplements with specific evidence-based strains rather than relying on kibble marketing claims. If a food naturally includes prebiotics (chicory root, inulin) that feed existing beneficial gut bacteria, that's valuable - but don't pay premium prices for 'probiotic formula' kibble that likely contains dead organisms.",
       "citations": [
         {
-          "title": "Probiotics in companion animals",
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7166405/",
-          "publisher": "NIH"
+          "title": "Probiotics in canine gastrointestinal health",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10609632/",
+          "publisher": "NIH/PubMed Central"
         }
       ],
       "whatItIsExpanded": {
@@ -6217,9 +6208,9 @@
       "wattsTake": "Salmon stands apart from other proteins due to its exceptional omega-3 fatty acids, providing therapeutic benefits for skin, joints, and inflammation that justify its premium price for dogs with specific needs. The key is understanding that 'salmon listed first' means little without checking guaranteed omega-3 levels - we look for multiple salmon sources and 0.5-1.0%+ omega-3s to ensure meaningful nutritional contribution beyond marketing positioning.",
       "citations": [
         {
-          "title": "AAFCO Official Publication",
-          "url": "https://www.aafco.org/",
-          "publisher": "AAFCO"
+          "title": "Digestibility and metabolizable energy of salmon in dogs",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11399974/",
+          "publisher": "NIH/PubMed Central"
         }
       ],
       "whatItIsExpanded": {
@@ -6333,7 +6324,8 @@
         "keyStudies": [
           {
             "finding": "Omega-3 fatty acids (EPA and DHA) from fish like salmon reduce inflammation, improve skin and coat quality, and support joint health in dogs",
-            "source": "Veterinary dermatology and nutrition studies"
+            "source": "Veterinary dermatology and nutrition studies",
+            "citationIndex": 0
           },
           {
             "finding": "DHA from salmon supports cognitive development in puppies and may slow cognitive decline in senior dogs",
@@ -6822,9 +6814,9 @@
       "wattsTake": "Taurine is one of the supplements where the science is crystal clear - deficiency causes serious, potentially fatal heart disease (DCM), and supplementation prevents or reverses it if caught early. The FDA's grain-free diet investigation has created appropriate concern, though mechanisms remain unclear. For at-risk breeds (Golden Retrievers, Cocker Spaniels, etc.) or dogs eating grain-free/legume-heavy diets, taurine supplementation (1,000-1,500mg daily) is non-negotiable cheap insurance. We look for foods with robust taurine supplementation or whole-food sources like heart tissue. This is one ingredient where 'more is better' applies - excess is safely excreted, but deficiency kills.",
       "citations": [
         {
-          "title": "FDA DCM Update",
-          "url": "https://www.fda.gov/",
-          "publisher": "FDA"
+          "title": "Taurine deficiency and dilated cardiomyopathy in dogs",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6292607/",
+          "publisher": "NIH/PubMed Central"
         }
       ],
       "whatItIsExpanded": {
@@ -7103,9 +7095,9 @@
       "wattsTake": "Turkey is an outstanding lean protein that excels for weight management and serves as a potential chicken alternative, though cross-reactivity means it won't work for all chicken-allergic dogs. The key is understanding that 'turkey listed first' doesn't guarantee high turkey content after cooking - we look for multiple turkey sources in the first five ingredients plus 28%+ protein to ensure meaningful contribution, not just marketing positioning.",
       "citations": [
         {
-          "title": "AAFCO Official Publication",
-          "url": "https://www.aafco.org/",
-          "publisher": "AAFCO"
+          "title": "Digestibility of poultry proteins in dogs",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8279163/",
+          "publisher": "NIH/PubMed Central"
         }
       ],
       "whatItIsExpanded": {
@@ -7216,7 +7208,8 @@
         "keyStudies": [
           {
             "finding": "Turkey protein digestibility in dogs is 85-90%, providing excellent bioavailability of amino acids comparable to chicken",
-            "source": "Pet food digestibility studies"
+            "source": "Pet food digestibility studies",
+            "citationIndex": 0
           },
           {
             "finding": "Poultry proteins (chicken and turkey) show lower allergy rates than beef and dairy in dogs, though cross-reactivity between chicken and turkey exists",
@@ -7455,9 +7448,9 @@
       "wattsTake": "Unlike corn (which is just overused), wheat has legitimate concerns - it's a common allergen causing skin issues, ear infections, and digestive problems. Combined with its use as a cheap filler, we recommend avoiding wheat-heavy foods in favor of better alternatives.",
       "citations": [
         {
-          "title": "AAFCO Official Publication",
-          "url": "https://www.aafco.org/",
-          "publisher": "AAFCO"
+          "title": "Cutaneous adverse food reactions in dogs and cats",
+          "url": "https://avmajournals.avma.org/view/journals/javma/261/S1/javma.22.12.0548.xml",
+          "publisher": "Journal of the American Veterinary Medical Association"
         }
       ],
       "whatItIsExpanded": {
@@ -7572,7 +7565,8 @@
         "keyStudies": [
           {
             "finding": "Wheat is one of the top 5 most common food allergens in dogs, along with beef, dairy, chicken, and lamb",
-            "source": "Veterinary dermatology and allergy research"
+            "source": "Veterinary dermatology and allergy research",
+            "citationIndex": 0
           },
           {
             "finding": "Dogs have evolved to digest carbohydrates but do not require grain-based sources; animal proteins are more biologically appropriate",
