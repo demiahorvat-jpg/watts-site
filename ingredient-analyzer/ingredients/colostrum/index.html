@@ -137,6 +137,38 @@
         color: var(--muted);
       }
 
+      .table-of-contents {
+        background: white;
+        border: 2.5px solid var(--border);
+        padding: 24px;
+        margin: 32px 0;
+      }
+
+      .table-of-contents h2 {
+        font-size: 20px;
+        margin: 0 0 16px 0;
+      }
+
+      .table-of-contents ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .table-of-contents li {
+        margin-bottom: 8px;
+      }
+
+      .table-of-contents a {
+        color: var(--fg);
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .table-of-contents a:hover {
+        text-decoration: underline;
+      }
+
       .quick-summary {
         background: white;
         border: 2.5px solid var(--border);
@@ -206,6 +238,15 @@
         margin-bottom: 20px;
         font-size: 18px;
         line-height: 1.7;
+      }
+
+      a {
+        color: var(--fg);
+        text-decoration: underline;
+      }
+
+      a:hover {
+        opacity: 0.7;
       }
 
       ul {
@@ -401,18 +442,50 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is colostrum safe for dogs?",
+      "name": "What does colostrum do for dogs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, colostrum is safe for dogs when used appropriately. Promising ingredient for immune and gut health support, especially for puppies, senior dogs, or dogs with compromised immunity. Best when sourced from grass-fed cattle and processed at low temperatures to preserve antibodies and growth factors. However, individual dogs may have sensitivities, so monitor for any adverse reactions."
+        "text": "Colostrum provides immune support, gut health benefits, and recovery assistance. The immunoglobulins (antibodies) in colostrum help fight pathogens and support the immune system—especially valuable for puppies, senior dogs, or dogs recovering from illness. Growth factors in colostrum (like IGF-1) help repair and maintain the gut lining, which is critical for nutrient absorption and preventing 'leaky gut.' Lactoferrin provides antimicrobial protection. Colostrum is commonly used for dogs with digestive issues, weakened immunity, or high stress (boarding, travel, competition)."
       }
     },
     {
       "@type": "Question",
-      "name": "What does colostrum do in dog products?",
+      "name": "How much colostrum should I give my dog?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The first milk produced by mammals after giving birth, rich in antibodies, growth factors, and immune-supporting compounds. Bovine colostrum is commonly used in dog supplements. It's used because: Contains immunoglobulins (antibodies) that support immune function, and Provides growth factors that may support gut health and tissue repair. Quality varies significantly based on collection time (first 24-48 hours), processing method, and source. Look for colostrum collected within the first 6-12 hours and minimally processed (low heat) to preserve bioactive compounds."
+        "text": "Typical colostrum dosing for dogs ranges from 100-500 mg per 10 lbs of body weight daily, depending on the product's potency (IgG content) and the purpose. For general immune support, 100-200 mg per 10 lbs is common. For acute digestive issues or illness recovery, doses may increase to 300-500 mg per 10 lbs. Always follow the manufacturer's dosing guidelines and consult your vet, especially for puppies, senior dogs, or dogs with health conditions. Start with a lower dose and increase gradually to assess tolerance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is colostrum safe for dogs long-term?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, colostrum is generally safe for long-term use in dogs. It's a natural food substance (milk-derived) with a long history of use in livestock and human nutrition. Most dogs tolerate colostrum well without side effects. However, as with any supplement, it's wise to periodically reassess whether it's still needed. For dogs using colostrum for acute issues (illness recovery, digestive upset), you may be able to reduce or discontinue once symptoms improve. For ongoing immune or gut support, long-term use is generally considered safe."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can puppies take colostrum?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes—in fact, puppies are one of the primary beneficiaries of colostrum supplementation. Puppies naturally receive colostrum from their mother in the first hours of life, which provides critical immune protection (maternal antibodies) until their own immune system matures. Supplemental bovine colostrum can provide additional immune support for puppies who were orphaned, weaned early, or experiencing illness or stress. It's especially useful during the transition period when maternal immunity wanes (around 6-12 weeks) and the puppy's immune system is still developing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I look for in a colostrum supplement?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Prioritize colostrum products with the following: (1) Standardized IgG content of at least 20-30%, (2) Low-temperature processing (freeze-dried or low-heat spray dried) to preserve bioactivity, (3) Collected within the first 6-12 hours after calving (maximum potency), (4) Sourced from grass-fed, pasture-raised cattle, and (5) Third-party tested for purity and potency. Avoid generic 'colostrum powder' with no details on IgG content or sourcing—these are often low-quality and ineffective."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can dogs with dairy allergies take colostrum?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the severity of the allergy. Colostrum is a dairy-derived product and contains milk proteins (casein, whey) and lactose, which are potential allergens. Most dogs with mild lactose intolerance can tolerate colostrum in supplement amounts, especially if introduced gradually. However, dogs with true dairy allergies (protein allergies) may react to colostrum. If your dog has a known severe dairy allergy, consult your vet before trying colostrum. Some manufacturers offer defatted colostrum with reduced allergen potential, though this may also reduce bioactivity."
       }
     }
   ]
@@ -450,7 +523,24 @@
       <p style="color: var(--muted); font-size: 16px; margin-top: 12px;">Last updated: January 25, 2026</p>
     </div>
 
-    <div class="quick-summary">
+    <div class="table-of-contents">
+      <h2>Table of Contents</h2>
+      <ul>
+        <li><a href="#quick-summary">Quick Summary</a></li>
+        <li><a href="#what-it-is">What It Is</a></li>
+        <li><a href="#why-used">Why It's Used</a></li>
+        <li><a href="#nutritional-profile">Nutritional Profile</a></li>
+        <li><a href="#key-considerations">Quality Considerations</a></li>
+        <li><a href="#concerns">Potential Concerns</a></li>
+        <li><a href="#scientific-evidence">Scientific Evidence</a></li>
+        <li><a href="#label-guidance">How to Spot on Labels</a></li>
+        <li><a href="#watts-take">Watts' Take</a></li>
+        <li><a href="#faqs">Frequently Asked Questions</a></li>
+        <li><a href="#related">Related Ingredients</a></li>
+      </ul>
+    </div>
+
+    <div class="quick-summary" id="quick-summary">
       <h2>Quick Summary</h2>
       <p><strong>Colostrum</strong> The first milk produced by mammals after giving birth, rich in antibodies, growth factors, and immune-supporting compounds. Bovine colostrum is commonly used in dog supplements.</p>
     </div>
@@ -474,10 +564,17 @@
       </div>
     </div>
 
-    <h2>What It Is</h2>
-    <p>The first milk produced by mammals after giving birth, rich in antibodies, growth factors, and immune-supporting compounds. Bovine colostrum is commonly used in dog supplements.</p>
+    <h2 id="what-it-is">What It Is</h2>
+    <p>Colostrum is the first milk produced by mammals (including cows, goats, and dogs) in the first 24-72 hours after giving birth. It's substantially different from regular milk—thicker, yellowish, and packed with antibodies (immunoglobulins), growth factors, vitamins, minerals, and antimicrobial compounds. In nature, colostrum provides newborns with passive immunity and jumpstarts their immune system development. Bovine colostrum (from cows) is the most common form used in dog supplements and functional foods because cows produce large quantities, and bovine colostrum contains many of the same bioactive compounds that benefit dogs. The key components include IgG antibodies (for immune support), lactoferrin (antimicrobial), growth factors like IGF-1 (for gut repair and tissue growth), and proline-rich polypeptides (for immune modulation). Quality colostrum is collected within the first 6-12 hours after calving and processed at low temperatures to preserve the delicate antibodies and growth factors. It's used in dog food and supplements primarily for immune support, gut health, and recovery from illness or stress.</p>
+    
+    <h3>Compare to Similar Ingredients</h3>
+    <ul>
+      <li><strong>vs. <a href="/ingredient-analyzer/ingredients/egg-product/">egg product</a></strong>: Both colostrum and eggs contain antibodies and bioactive compounds, but colostrum is far richer in immunoglobulins (IgG) and growth factors. Egg products provide high-quality protein and some immune support (from egg yolk antibodies), but colostrum is specifically designed by nature to deliver concentrated immune factors. Colostrum is targeted immune support; eggs are nutritious protein.</li>
+      <li><strong>vs. <a href="/ingredient-analyzer/ingredients/probiotics/">probiotics</a></strong>: Probiotics introduce live beneficial bacteria to support gut health, while colostrum provides immune factors, growth factors, and antimicrobial compounds that help maintain gut barrier integrity. Colostrum doesn't contain live bacteria—it supports the environment where beneficial bacteria thrive. They work synergistically: colostrum repairs the gut lining, while probiotics populate it with beneficial microbes.</li>
+      <li><strong>vs. <a href="/ingredient-analyzer/ingredients/dried-plasma/">dried plasma</a></strong>: Both are blood-derived immune-supporting ingredients. Dried plasma (spray-dried animal blood) contains immunoglobulins and is used for immune support, particularly in young or stressed animals. Colostrum is milk-derived and contains not only antibodies but also growth factors, lactoferrin, and other bioactives not found in plasma. Colostrum is generally considered more 'natural' and complete as an immune support ingredient.</li>
+    </ul>
 
-    <h2>Why It's Used in Dog Products</h2>
+    <h2 id="why-used">Why It's Used in Dog Products</h2>
     <p>Manufacturers include colostrum in dog food, treats, and supplements for several reasons:</p>
     <ul>
       <li>Contains immunoglobulins (antibodies) that support immune function</li>
@@ -486,36 +583,114 @@
       <li>May help maintain healthy gut barrier function</li>
     </ul>
 
-    <h2>Key Considerations</h2>
+    
+    <h2 id="nutritional-profile">Nutritional Profile</h2>
+    <h3>Macronutrients</h3>
+    <ul>
+      <li><strong>Protein:</strong> Approximately 15-20% protein (highly bioavailable)</li>
+      <li><strong>Fat:</strong> 6-8% fat (including fat-soluble vitamins)</li>
+      <li><strong>Moisture:</strong> undefined</li>
+    </ul>
+    <h3>Key Micronutrients</h3>
+    <ul>
+      <li><strong>Vitamins:</strong> Rich in fat-soluble vitamins A, D, E, and K, plus B-complex vitamins</li>
+      <li><strong>Minerals:</strong> Contains calcium, phosphorus, magnesium, zinc, and selenium</li>
+      <li><strong>Bioactives:</strong> Lactoferrin (antimicrobial), growth factors (IGF-1, TGF-β), proline-rich polypeptides (immune modulation), cytokines, oligosaccharides (prebiotic effect)</li>
+    </ul>
+    <p><strong>Bioavailability:</strong> High bioavailability for intact absorption of immunoglobulins and growth factors, particularly when colostrum is minimally processed (low-heat drying). Antibodies and bioactive compounds can survive stomach acid and reach the intestinal lining where they exert their protective effects.</p>
+
+    <h2 id="key-considerations">Quality Considerations</h2>
     <p>When evaluating colostrum in dog products, it's important to understand clinical evidence, appropriate dosing, and targeted health benefits. This ingredient's quality and appropriateness can vary significantly based on sourcing, processing, and the specific formula it's used in.</p>
+
+    
+    <h3>Red Flags</h3>
+    <ul>
+      <li>No mention of IgG content or standardization (suggests low-quality or heavily processed colostrum)</li>
+      <li>Collected after 24-48 hours (significantly reduced antibody levels)</li>
+      <li>High-heat processing (destroys bioactive compounds)</li>
+      <li>Source from factory-farmed or grain-fed cattle (lower nutritional quality)</li>
+      <li>Very cheap colostrum products (likely diluted or low-potency)</li>
+    </ul>
+
+    
+    <h3>Green Flags</h3>
+    <ul>
+      <li>Collected within first 6-12 hours (maximum potency)</li>
+      <li>Standardized to at least 20-30% IgG content</li>
+      <li>Low-temperature processed (freeze-dried or low-heat spray dried)</li>
+      <li>Sourced from grass-fed, pasture-raised cattle</li>
+      <li>Third-party tested for purity and potency</li>
+      <li>Clear labeling of collection time and processing method</li>
+    </ul>
 
     <div class="quality-note-box">
       <div class="quality-note-label">Quality Note</div>
       <p style="margin: 0;">Quality varies significantly based on collection time (first 24-48 hours), processing method, and source. Look for colostrum collected within the first 6-12 hours and minimally processed (low heat) to preserve bioactive compounds.</p>
     </div>
 
-    <h2>Potential Concerns</h2>
+    <h2 id="concerns">Potential Concerns</h2>
     <p>While colostrum can be appropriate in dog nutrition, pet owners should be aware of efficacy, quality of source material, and potential interactions with medications. Individual dogs may respond differently to the same ingredient based on their health status, age, and sensitivities.</p>
 
-    <div class="watts-take-box">
+    
+
+    
+
+    
+    <h2 id="scientific-evidence">Scientific Evidence</h2>
+    <p>undefined</p>
+    <h3>Key Research Findings</h3>
+    <ul>
+      <li><strong>Bovine colostrum contains high concentrations of immunoglobulins (primarily IgG), which provide passive immunity and help protect against pathogens in the gastrointestinal tract.</strong> (undefined) <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7107473/" target="_blank" rel="noopener">[Source]</a></li>
+      <li><strong>Growth factors in colostrum (including IGF-1 and TGF-β) support gut barrier function, promote intestinal healing, and enhance nutrient absorption—benefits observed across multiple species.</strong> (undefined)</li>
+      <li><strong>Lactoferrin, a bioactive protein in colostrum, has demonstrated antimicrobial, antiviral, and anti-inflammatory properties in vitro and in animal studies.</strong> (undefined)</li>
+      <li><strong>Clinical observations in dogs suggest colostrum supplementation may support immune function during stress, illness, or recovery, though large-scale controlled trials in dogs are limited.</strong> (undefined)</li>
+    </ul>
+
+    
+    <h2 id="label-guidance">How to Spot on Labels</h2>
+    <p>Reading ingredient labels can be confusing. Here's how to identify and evaluate this ingredient:</p>
+
+    <div class="watts-take-box" id="watts-take">
       <div class="watts-take-label">Watts' Take</div>
       <p style="margin: 0; font-size: 18px;">Promising ingredient for immune and gut health support, especially for puppies, senior dogs, or dogs with compromised immunity. Best when sourced from grass-fed cattle and processed at low temperatures to preserve antibodies and growth factors.</p>
     </div>
 
-    <h2>Frequently Asked Questions</h2>
+    <h2 id="faqs">Frequently Asked Questions</h2>
 
     <div class="faq-item">
-      <h3>Is colostrum safe for dogs?</h3>
-      <p>Yes, colostrum is safe for dogs when used appropriately. Promising ingredient for immune and gut health support, especially for puppies, senior dogs, or dogs with compromised immunity. Best when sourced from grass-fed cattle and processed at low temperatures to preserve antibodies and growth factors. However, individual dogs may have sensitivities, so monitor for any adverse reactions.</p>
+      <h3>What does colostrum do for dogs?</h3>
+      <p>Colostrum provides immune support, gut health benefits, and recovery assistance. The immunoglobulins (antibodies) in colostrum help fight pathogens and support the immune system—especially valuable for puppies, senior dogs, or dogs recovering from illness. Growth factors in colostrum (like IGF-1) help repair and maintain the gut lining, which is critical for nutrient absorption and preventing 'leaky gut.' Lactoferrin provides antimicrobial protection. Colostrum is commonly used for dogs with digestive issues, weakened immunity, or high stress (boarding, travel, competition).</p>
     </div>
 
     <div class="faq-item">
-      <h3>What does colostrum do in dog products?</h3>
-      <p>The first milk produced by mammals after giving birth, rich in antibodies, growth factors, and immune-supporting compounds. Bovine colostrum is commonly used in dog supplements. It's used because: Contains immunoglobulins (antibodies) that support immune function, and Provides growth factors that may support gut health and tissue repair. Quality varies significantly based on collection time (first 24-48 hours), processing method, and source. Look for colostrum collected within the first 6-12 hours and minimally processed (low heat) to preserve bioactive compounds.</p>
+      <h3>How much colostrum should I give my dog?</h3>
+      <p>Typical colostrum dosing for dogs ranges from 100-500 mg per 10 lbs of body weight daily, depending on the product's potency (IgG content) and the purpose. For general immune support, 100-200 mg per 10 lbs is common. For acute digestive issues or illness recovery, doses may increase to 300-500 mg per 10 lbs. Always follow the manufacturer's dosing guidelines and consult your vet, especially for puppies, senior dogs, or dogs with health conditions. Start with a lower dose and increase gradually to assess tolerance.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Is colostrum safe for dogs long-term?</h3>
+      <p>Yes, colostrum is generally safe for long-term use in dogs. It's a natural food substance (milk-derived) with a long history of use in livestock and human nutrition. Most dogs tolerate colostrum well without side effects. However, as with any supplement, it's wise to periodically reassess whether it's still needed. For dogs using colostrum for acute issues (illness recovery, digestive upset), you may be able to reduce or discontinue once symptoms improve. For ongoing immune or gut support, long-term use is generally considered safe.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can puppies take colostrum?</h3>
+      <p>Yes—in fact, puppies are one of the primary beneficiaries of colostrum supplementation. Puppies naturally receive colostrum from their mother in the first hours of life, which provides critical immune protection (maternal antibodies) until their own immune system matures. Supplemental bovine colostrum can provide additional immune support for puppies who were orphaned, weaned early, or experiencing illness or stress. It's especially useful during the transition period when maternal immunity wanes (around 6-12 weeks) and the puppy's immune system is still developing.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What should I look for in a colostrum supplement?</h3>
+      <p>Prioritize colostrum products with the following: (1) Standardized IgG content of at least 20-30%, (2) Low-temperature processing (freeze-dried or low-heat spray dried) to preserve bioactivity, (3) Collected within the first 6-12 hours after calving (maximum potency), (4) Sourced from grass-fed, pasture-raised cattle, and (5) Third-party tested for purity and potency. Avoid generic 'colostrum powder' with no details on IgG content or sourcing—these are often low-quality and ineffective.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can dogs with dairy allergies take colostrum?</h3>
+      <p>It depends on the severity of the allergy. Colostrum is a dairy-derived product and contains milk proteins (casein, whey) and lactose, which are potential allergens. Most dogs with mild lactose intolerance can tolerate colostrum in supplement amounts, especially if introduced gradually. However, dogs with true dairy allergies (protein allergies) may react to colostrum. If your dog has a known severe dairy allergy, consult your vet before trying colostrum. Some manufacturers offer defatted colostrum with reduced allergen potential, though this may also reduce bioactivity.</p>
     </div>
 
 
-    <h2>Related Ingredients</h2>
+    
+
+    <h2 id="related">Related Ingredients</h2>
     <div class="related-grid">
       <a href="/ingredient-analyzer/ingredients/amylase/" class="related-card">
         <h3>Amylase</h3>

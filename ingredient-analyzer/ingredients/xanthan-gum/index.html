@@ -137,6 +137,38 @@
         color: var(--muted);
       }
 
+      .table-of-contents {
+        background: white;
+        border: 2.5px solid var(--border);
+        padding: 24px;
+        margin: 32px 0;
+      }
+
+      .table-of-contents h2 {
+        font-size: 20px;
+        margin: 0 0 16px 0;
+      }
+
+      .table-of-contents ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .table-of-contents li {
+        margin-bottom: 8px;
+      }
+
+      .table-of-contents a {
+        color: var(--fg);
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .table-of-contents a:hover {
+        text-decoration: underline;
+      }
+
       .quick-summary {
         background: white;
         border: 2.5px solid var(--border);
@@ -206,6 +238,15 @@
         margin-bottom: 20px;
         font-size: 18px;
         line-height: 1.7;
+      }
+
+      a {
+        color: var(--fg);
+        text-decoration: underline;
+      }
+
+      a:hover {
+        opacity: 0.7;
       }
 
       ul {
@@ -404,31 +445,47 @@
       "name": "Is xanthan gum safe for dogs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, xanthan gum is safe for dogs when used appropriately. Acceptable in small amounts as a stabilizer. Not nutritious but not harmful in typical doses. However, individual dogs may have sensitivities, so monitor for any adverse reactions."
+        "text": "Yes, xanthan gum is generally recognized as safe for dogs when used in typical amounts (usually 0.1-1% of the formula). It's approved by the FDA for use in both human and pet foods. However, some dogs with sensitive stomachs may experience mild digestive upset (gas, loose stools) when consuming foods with higher xanthan gum content. If your dog has a history of food sensitivities or gastrointestinal issues, monitor their response when introducing foods containing xanthan gum."
       }
     },
     {
       "@type": "Question",
-      "name": "What does xanthan gum do in dog products?",
+      "name": "Why is xanthan gum used in dog food?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Polysaccharide created by bacterial fermentation. Used as thickener and stabilizer. It's used because: Thickens and stabilizes products, and Prevents ingredient separation. Generally safe but provides no nutrition. Some dogs may experience digestive upset at high doses."
+        "text": "Xanthan gum serves as a thickener, stabilizer, and emulsifier—particularly in wet dog foods, gravies, and soft treats. It prevents ingredient separation (water separating from solids), creates a smooth, appealing texture, and helps bind moisture. It's especially useful in grain-free wet foods where traditional starchy thickeners (like rice or wheat flour) aren't used. While it provides no nutrition, it does serve a functional purpose in maintaining product consistency and shelf stability."
       }
     },
     {
       "@type": "Question",
-      "name": "Why is xanthan gum added to dog food?",
+      "name": "Can xanthan gum cause diarrhea in dogs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Thickens and stabilizes products While some additives serve important functional purposes (preservation, texture, stability), others are primarily for human appeal. Acceptable in small amounts as a stabilizer. Not nutritious but not harmful in typical doses."
+        "text": "In some cases, yes—particularly when xanthan gum is used in higher concentrations or when a dog has a sensitive digestive system. Xanthan gum is a soluble fiber that forms a gel-like substance in the gut. While this is generally harmless, some dogs may experience loose stools, gas, or mild GI upset. If xanthan gum appears in the first 5-7 ingredients (indicating higher usage), it's more likely to cause issues in sensitive dogs. Most dogs tolerate trace amounts without problems."
       }
     },
     {
       "@type": "Question",
-      "name": "Are there natural alternatives to xanthan gum?",
+      "name": "Is xanthan gum just filler?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Many modern dog foods use natural alternatives like mixed tocopherols (vitamin E), rosemary extract, or citric acid instead of synthetic additives. Check ingredient labels for \"preserved with...\" statements to see which preservatives are used."
+        "text": "Xanthan gum is not a 'filler' in the traditional sense (like corn or cellulose used to add bulk), but it is a non-nutritive additive. It serves a functional purpose—thickening and stabilizing wet foods—rather than adding volume. However, it provides zero nutritional value, so its presence does mean slightly less room for nutritious ingredients. In high-quality foods, xanthan gum should appear near the end of the ingredient list, indicating minimal usage purely for texture and stability."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there better alternatives to xanthan gum in dog food?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some whole-food ingredients can provide natural thickening and stabilization without relying on processed additives. Examples include ground flaxseed (adds omega-3s while thickening), chia seed (provides fiber and protein), pureed vegetables (like pumpkin or sweet potato), or agar-agar (seaweed-derived thickener with some fiber). However, xanthan gum is more effective at lower concentrations and cheaper to use, which is why many manufacturers prefer it. In wet foods, some thickening agent is usually necessary—xanthan gum is one of the more benign options."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I avoid dog food with xanthan gum?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. Xanthan gum in small amounts (typically near the end of the ingredient list) is generally safe and serves a functional purpose in wet foods. However, if your dog has a sensitive stomach, food allergies, or chronic digestive issues, you may want to try foods without xanthan gum to see if their symptoms improve. Also consider avoiding foods where xanthan gum appears early in the ingredient list, as this suggests higher concentrations. For most healthy dogs, trace amounts of xanthan gum are not a concern."
       }
     }
   ]
@@ -466,7 +523,24 @@
       <p style="color: var(--muted); font-size: 16px; margin-top: 12px;">Last updated: January 25, 2026</p>
     </div>
 
-    <div class="quick-summary">
+    <div class="table-of-contents">
+      <h2>Table of Contents</h2>
+      <ul>
+        <li><a href="#quick-summary">Quick Summary</a></li>
+        <li><a href="#what-it-is">What It Is</a></li>
+        <li><a href="#why-used">Why It's Used</a></li>
+        <li><a href="#nutritional-profile">Nutritional Profile</a></li>
+        <li><a href="#key-considerations">Quality Considerations</a></li>
+        <li><a href="#concerns">Potential Concerns</a></li>
+        <li><a href="#scientific-evidence">Scientific Evidence</a></li>
+        <li><a href="#label-guidance">How to Spot on Labels</a></li>
+        <li><a href="#watts-take">Watts' Take</a></li>
+        <li><a href="#faqs">Frequently Asked Questions</a></li>
+        <li><a href="#related">Related Ingredients</a></li>
+      </ul>
+    </div>
+
+    <div class="quick-summary" id="quick-summary">
       <h2>Quick Summary</h2>
       <p><strong>Xanthan Gum</strong> Polysaccharide created by bacterial fermentation. Used as thickener and stabilizer.</p>
     </div>
@@ -490,10 +564,17 @@
       </div>
     </div>
 
-    <h2>What It Is</h2>
-    <p>Polysaccharide created by bacterial fermentation. Used as thickener and stabilizer.</p>
+    <h2 id="what-it-is">What It Is</h2>
+    <p>Xanthan gum is a polysaccharide (complex carbohydrate) produced through bacterial fermentation of simple sugars, typically from corn, wheat, or soy. The bacterium Xanthomonas campestris ferments the sugars and produces a sticky, viscous substance that is then dried and ground into a fine powder. In dog food, xanthan gum serves as a thickening agent, stabilizer, and emulsifier—particularly in wet foods, gravies, and soft treats. It prevents ingredient separation, creates smooth textures, and helps bind water. While it's derived from natural fermentation, the end product is a highly processed additive with no nutritional value. Xanthan gum is also widely used in human foods (salad dressings, sauces, ice cream) and is generally recognized as safe by the FDA. However, its presence in dog food raises questions about digestibility and necessity.</p>
+    
+    <h3>Compare to Similar Ingredients</h3>
+    <ul>
+      <li><strong>vs. <a href="/ingredient-analyzer/ingredients/guar-gum/">guar gum</a></strong>: Guar gum is derived from guar beans (a legume), while xanthan gum is produced through bacterial fermentation. Both serve similar thickening functions, but guar gum is more 'natural' in origin. Xanthan gum is more effective at lower concentrations and works across a wider range of pH levels and temperatures.</li>
+      <li><strong>vs. <a href="/ingredient-analyzer/ingredients/carrageenan/">carrageenan</a></strong>: Carrageenan is extracted from red seaweed and has raised more significant health concerns in some studies (potential inflammation). Xanthan gum is considered safer and less controversial, though both are non-nutritive thickeners.</li>
+      <li><strong>vs. <a href="/ingredient-analyzer/ingredients/cellulose/">cellulose</a></strong>: Cellulose is an insoluble fiber (bulking agent) that passes through the digestive system unchanged. Xanthan gum is a soluble fiber that forms a gel-like substance when mixed with liquid. Both provide essentially zero nutrition, but xanthan gum has more impact on texture and viscosity.</li>
+    </ul>
 
-    <h2>Why It's Used in Dog Products</h2>
+    <h2 id="why-used">Why It's Used in Dog Products</h2>
     <p>Manufacturers include xanthan gum in dog food, treats, and supplements for several reasons:</p>
     <ul>
       <li>Thickens and stabilizes products</li>
@@ -501,46 +582,109 @@
       <li>Creates desired texture</li>
     </ul>
 
-    <h2>Key Considerations</h2>
+    
+    <h2 id="nutritional-profile">Nutritional Profile</h2>
+    <h3>Macronutrients</h3>
+    <ul>
+      <li><strong>Protein:</strong> 0%</li>
+      <li><strong>Fat:</strong> 0%</li>
+      <li><strong>Moisture:</strong> undefined</li>
+    </ul>
+    <h3>Key Micronutrients</h3>
+    <ul>
+      <li><strong>Vitamins:</strong> None</li>
+      <li><strong>Minerals:</strong> None</li>
+    </ul>
+    <p><strong>Bioavailability:</strong> Not absorbed or metabolized by dogs. Passes through the digestive system largely intact. May bind to some nutrients in the gut, potentially reducing their absorption if used in excessive amounts.</p>
+
+    <h2 id="key-considerations">Quality Considerations</h2>
     <p>When evaluating xanthan gum in dog products, it's important to understand functional purpose, safety testing, and nutritional contribution. This ingredient's quality and appropriateness can vary significantly based on sourcing, processing, and the specific formula it's used in.</p>
+
+    
+    <h3>Red Flags</h3>
+    <ul>
+      <li>Listed in the first 5 ingredients (suggests excessive use as a cheap filler or texture enhancer)</li>
+      <li>Used in dry kibble (less necessary; mainly needed in wet foods for texture)</li>
+      <li>Multiple gums or thickeners in one formula (guar gum + xanthan gum + carrageenan suggests over-reliance on texture additives)</li>
+      <li>No clear functional purpose (some low-quality foods use it to create a 'premium' texture cheaply)</li>
+    </ul>
+
+    
+    <h3>Green Flags</h3>
+    <ul>
+      <li>Listed near the end of the ingredient list (indicates minimal usage)</li>
+      <li>Used only in wet food or gravy formulas where it serves a clear stabilizing function</li>
+      <li>Non-GMO or organic sourcing (though this doesn't add nutritional value)</li>
+      <li>Part of an otherwise whole-food ingredient list (shows it's used for function, not as a crutch)</li>
+    </ul>
 
     <div class="quality-note-box">
       <div class="quality-note-label">Quality Note</div>
       <p style="margin: 0;">Generally safe but provides no nutrition. Some dogs may experience digestive upset at high doses.</p>
     </div>
 
-    <h2>Potential Concerns</h2>
+    <h2 id="concerns">Potential Concerns</h2>
     <p>While xanthan gum can be appropriate in dog nutrition, pet owners should be aware of necessity, potential sensitivities, and whether it serves dogs or just appeals to humans. Individual dogs may respond differently to the same ingredient based on their health status, age, and sensitivities.</p>
 
-    <div class="watts-take-box">
+    
+
+    
+
+    
+    <h2 id="scientific-evidence">Scientific Evidence</h2>
+    <p>undefined</p>
+    <h3>Key Research Findings</h3>
+    <ul>
+      <li><strong>Xanthan gum is fermented from simple sugars using Xanthomonas campestris bacteria and is classified as generally recognized as safe (GRAS) for use in food products.</strong> (undefined) <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12181745/" target="_blank" rel="noopener">[Source]</a></li>
+      <li><strong>As a soluble fiber, xanthan gum forms viscous gels in the gastrointestinal tract but is not digested or absorbed. It passes through largely intact with minimal impact on nutrient absorption at low inclusion rates.</strong> (undefined) <a href="https://www.fda.gov/food/food-additives-petitions/food-additive-status-list" target="_blank" rel="noopener">[Source]</a></li>
+      <li><strong>Some individuals (human and animal) may experience gastrointestinal symptoms (gas, bloating, loose stools) when consuming larger amounts of xanthan gum, likely due to its fermentation by gut bacteria.</strong> (undefined)</li>
+    </ul>
+
+    
+    <h2 id="label-guidance">How to Spot on Labels</h2>
+    <p>Reading ingredient labels can be confusing. Here's how to identify and evaluate this ingredient:</p>
+
+    <div class="watts-take-box" id="watts-take">
       <div class="watts-take-label">Watts' Take</div>
       <p style="margin: 0; font-size: 18px;">Acceptable in small amounts as a stabilizer. Not nutritious but not harmful in typical doses.</p>
     </div>
 
-    <h2>Frequently Asked Questions</h2>
+    <h2 id="faqs">Frequently Asked Questions</h2>
 
     <div class="faq-item">
       <h3>Is xanthan gum safe for dogs?</h3>
-      <p>Yes, xanthan gum is safe for dogs when used appropriately. Acceptable in small amounts as a stabilizer. Not nutritious but not harmful in typical doses. However, individual dogs may have sensitivities, so monitor for any adverse reactions.</p>
+      <p>Yes, xanthan gum is generally recognized as safe for dogs when used in typical amounts (usually 0.1-1% of the formula). It's approved by the FDA for use in both human and pet foods. However, some dogs with sensitive stomachs may experience mild digestive upset (gas, loose stools) when consuming foods with higher xanthan gum content. If your dog has a history of food sensitivities or gastrointestinal issues, monitor their response when introducing foods containing xanthan gum.</p>
     </div>
 
     <div class="faq-item">
-      <h3>What does xanthan gum do in dog products?</h3>
-      <p>Polysaccharide created by bacterial fermentation. Used as thickener and stabilizer. It's used because: Thickens and stabilizes products, and Prevents ingredient separation. Generally safe but provides no nutrition. Some dogs may experience digestive upset at high doses.</p>
+      <h3>Why is xanthan gum used in dog food?</h3>
+      <p>Xanthan gum serves as a thickener, stabilizer, and emulsifier—particularly in wet dog foods, gravies, and soft treats. It prevents ingredient separation (water separating from solids), creates a smooth, appealing texture, and helps bind moisture. It's especially useful in grain-free wet foods where traditional starchy thickeners (like rice or wheat flour) aren't used. While it provides no nutrition, it does serve a functional purpose in maintaining product consistency and shelf stability.</p>
     </div>
 
     <div class="faq-item">
-      <h3>Why is xanthan gum added to dog food?</h3>
-      <p>Thickens and stabilizes products While some additives serve important functional purposes (preservation, texture, stability), others are primarily for human appeal. Acceptable in small amounts as a stabilizer. Not nutritious but not harmful in typical doses.</p>
+      <h3>Can xanthan gum cause diarrhea in dogs?</h3>
+      <p>In some cases, yes—particularly when xanthan gum is used in higher concentrations or when a dog has a sensitive digestive system. Xanthan gum is a soluble fiber that forms a gel-like substance in the gut. While this is generally harmless, some dogs may experience loose stools, gas, or mild GI upset. If xanthan gum appears in the first 5-7 ingredients (indicating higher usage), it's more likely to cause issues in sensitive dogs. Most dogs tolerate trace amounts without problems.</p>
     </div>
 
     <div class="faq-item">
-      <h3>Are there natural alternatives to xanthan gum?</h3>
-      <p>Many modern dog foods use natural alternatives like mixed tocopherols (vitamin E), rosemary extract, or citric acid instead of synthetic additives. Check ingredient labels for "preserved with..." statements to see which preservatives are used.</p>
+      <h3>Is xanthan gum just filler?</h3>
+      <p>Xanthan gum is not a 'filler' in the traditional sense (like corn or cellulose used to add bulk), but it is a non-nutritive additive. It serves a functional purpose—thickening and stabilizing wet foods—rather than adding volume. However, it provides zero nutritional value, so its presence does mean slightly less room for nutritious ingredients. In high-quality foods, xanthan gum should appear near the end of the ingredient list, indicating minimal usage purely for texture and stability.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Are there better alternatives to xanthan gum in dog food?</h3>
+      <p>Some whole-food ingredients can provide natural thickening and stabilization without relying on processed additives. Examples include ground flaxseed (adds omega-3s while thickening), chia seed (provides fiber and protein), pureed vegetables (like pumpkin or sweet potato), or agar-agar (seaweed-derived thickener with some fiber). However, xanthan gum is more effective at lower concentrations and cheaper to use, which is why many manufacturers prefer it. In wet foods, some thickening agent is usually necessary—xanthan gum is one of the more benign options.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Should I avoid dog food with xanthan gum?</h3>
+      <p>Not necessarily. Xanthan gum in small amounts (typically near the end of the ingredient list) is generally safe and serves a functional purpose in wet foods. However, if your dog has a sensitive stomach, food allergies, or chronic digestive issues, you may want to try foods without xanthan gum to see if their symptoms improve. Also consider avoiding foods where xanthan gum appears early in the ingredient list, as this suggests higher concentrations. For most healthy dogs, trace amounts of xanthan gum are not a concern.</p>
     </div>
 
 
-    <h2>Related Ingredients</h2>
+    
+
+    <h2 id="related">Related Ingredients</h2>
     <div class="related-grid">
       <a href="/ingredient-analyzer/ingredients/alfalfa-nutrient-concentrate/" class="related-card">
         <h3>Alfalfa Nutrient Concentrate</h3>

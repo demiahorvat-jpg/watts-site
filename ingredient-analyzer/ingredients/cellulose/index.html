@@ -137,6 +137,38 @@
         color: var(--muted);
       }
 
+      .table-of-contents {
+        background: white;
+        border: 2.5px solid var(--border);
+        padding: 24px;
+        margin: 32px 0;
+      }
+
+      .table-of-contents h2 {
+        font-size: 20px;
+        margin: 0 0 16px 0;
+      }
+
+      .table-of-contents ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .table-of-contents li {
+        margin-bottom: 8px;
+      }
+
+      .table-of-contents a {
+        color: var(--fg);
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .table-of-contents a:hover {
+        text-decoration: underline;
+      }
+
       .quick-summary {
         background: white;
         border: 2.5px solid var(--border);
@@ -206,6 +238,15 @@
         margin-bottom: 20px;
         font-size: 18px;
         line-height: 1.7;
+      }
+
+      a {
+        color: var(--fg);
+        text-decoration: underline;
+      }
+
+      a:hover {
+        opacity: 0.7;
       }
 
       ul {
@@ -401,18 +442,50 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is cellulose safe for dogs?",
+      "name": "Is microcrystalline cellulose safe for dogs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Cellulose should be used with caution or avoided. Completely indigestible. Passes through unchanged. Basically sawdust. We don't use cellulose. While it's 'safe,' it's filler with zero nutritional value. Whole-food fiber sources are vastly superior."
+        "text": "Yes, microcrystalline cellulose is considered safe for dogs. It's a highly refined form of cellulose (insoluble plant fiber) that's processed into ultra-fine particles. Like regular cellulose, it's non-toxic and passes through the digestive system without being absorbed or metabolized. The FDA recognizes cellulose as generally recognized as safe (GRAS) for use in food. However, 'safe' doesn't mean 'beneficial.' Microcrystalline cellulose provides zero nutritional value—it's purely a filler and bulking agent. While it won't harm your dog, it's a marker of a low-quality, cost-cutting formula. Whole-food fiber sources (like pumpkin, sweet potato, or beet pulp) are vastly superior."
       }
     },
     {
       "@type": "Question",
-      "name": "What does cellulose do in dog products?",
+      "name": "Why do dog food manufacturers use cellulose?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Insoluble fiber from plant cell walls, often from wood pulp. Indigestible bulking agent. It's used because: Adds bulk to increase product volume, and Fiber source in weight management formulas. Completely indigestible. Passes through unchanged. Basically sawdust."
+        "text": "Manufacturers use cellulose because it's extremely cheap and serves several cost-saving purposes: (1) It adds bulk and volume to the product without expensive ingredients, (2) It provides 'fiber' on the guaranteed analysis without contributing calories (useful for weight-management claims), (3) It helps bind and stabilize kibble or soft chews, and (4) It creates a feeling of fullness in dogs, potentially reducing the perception that the food is unsatisfying. Essentially, cellulose allows manufacturers to fill bags and meet fiber targets at minimal cost. High-quality brands don't need cellulose—they use whole-food fiber sources."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between cellulose, powdered cellulose, and microcrystalline cellulose?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "These are all forms of the same basic ingredient—insoluble plant fiber, usually from wood pulp. The difference is primarily in particle size and level of refinement: (1) Cellulose: Basic form, coarse particles; (2) Powdered cellulose: Finely ground cellulose; (3) Microcrystalline cellulose: Most highly processed, acid-treated to create ultra-fine crystalline particles. All three provide zero nutrition and serve the same purpose (filler, bulking, binding). If you see multiple forms of cellulose in one food formula, that's a major red flag—the manufacturer is using excessive amounts of cheap filler."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can cellulose cause digestive problems in dogs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In most dogs, cellulose at typical inclusion levels (1-3% of the formula) is well-tolerated without obvious digestive issues. However, some dogs—particularly those with sensitive stomachs—may experience constipation, gas, or changes in stool consistency when consuming foods with significant cellulose content. Excessive cellulose can also reduce palatability and nutrient density, potentially leading to inadequate calorie intake. If your dog has chronic digestive issues and their food contains cellulose (especially high in the ingredient list), consider switching to a whole-food formula without fillers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is cellulose better than other fillers like corn or wheat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not really—it's arguably worse. While corn and wheat are often criticized as low-quality fillers, at least they provide some nutrition: digestible carbohydrates for energy, some protein, and trace vitamins/minerals. Cellulose provides literally nothing—zero calories, zero protein, zero vitamins, zero minerals. It's completely indigestible. Corn and wheat are imperfect ingredients often overused in budget foods, but they're still food. Cellulose is industrial filler. The best choice is to avoid foods with significant amounts of any filler—choose formulas built on whole meats, fish, and vegetables."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I avoid dog foods with cellulose?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ideally, yes. While cellulose won't harm your dog in the short term, its presence—especially high in the ingredient list—indicates a low-quality, cost-cutting formula. You're essentially paying for wood pulp when you could be feeding your dog actual nutrition. If cellulose appears near the end of the ingredient list in a specialized weight-management food, it's less concerning (though still not ideal). But if cellulose is in the first 10-15 ingredients, or if multiple forms appear, look for a better food. Your dog deserves whole-food fiber sources like pumpkin, sweet potatoes, or vegetables—not sawdust."
       }
     }
   ]
@@ -450,7 +523,24 @@
       <p style="color: var(--muted); font-size: 16px; margin-top: 12px;">Last updated: January 25, 2026</p>
     </div>
 
-    <div class="quick-summary">
+    <div class="table-of-contents">
+      <h2>Table of Contents</h2>
+      <ul>
+        <li><a href="#quick-summary">Quick Summary</a></li>
+        <li><a href="#what-it-is">What It Is</a></li>
+        <li><a href="#why-used">Why It's Used</a></li>
+        <li><a href="#nutritional-profile">Nutritional Profile</a></li>
+        <li><a href="#key-considerations">Quality Considerations</a></li>
+        <li><a href="#concerns">Potential Concerns</a></li>
+        <li><a href="#scientific-evidence">Scientific Evidence</a></li>
+        <li><a href="#label-guidance">How to Spot on Labels</a></li>
+        <li><a href="#watts-take">Watts' Take</a></li>
+        <li><a href="#faqs">Frequently Asked Questions</a></li>
+        <li><a href="#related">Related Ingredients</a></li>
+      </ul>
+    </div>
+
+    <div class="quick-summary" id="quick-summary">
       <h2>Quick Summary</h2>
       <p><strong>Cellulose</strong> Insoluble fiber from plant cell walls, often from wood pulp. Indigestible bulking agent.</p>
     </div>
@@ -466,7 +556,7 @@
       </div>
       <div class="fact-item">
         <div class="fact-label">Also Known As</div>
-        <div class="fact-value">powdered cellulose, cellulose fiber</div>
+        <div class="fact-value">powdered cellulose, cellulose fiber, plant fiber</div>
       </div>
       <div class="fact-item">
         <div class="fact-label">Watts Rating</div>
@@ -474,10 +564,17 @@
       </div>
     </div>
 
-    <h2>What It Is</h2>
-    <p>Insoluble fiber from plant cell walls, often from wood pulp. Indigestible bulking agent.</p>
+    <h2 id="what-it-is">What It Is</h2>
+    <p>Cellulose is an insoluble fiber derived from plant cell walls—most commonly sourced from wood pulp, cotton, or agricultural byproducts like wheat or rice hulls. It's the structural component that gives plants their rigidity. In dog food, cellulose serves as a non-nutritive bulking agent and fiber source. Dogs cannot digest cellulose because they lack the enzyme (cellulase) needed to break down its complex molecular structure. It passes through the digestive system essentially unchanged, adding bulk to stool and potentially aiding in weight management by creating a feeling of fullness without adding calories. Cellulose appears in various forms in dog food: powdered cellulose (finely ground), cellulose fiber, microcrystalline cellulose (highly refined, smaller particles), and sometimes under vague terms like 'plant fiber.' While cellulose is technically 'safe' and non-toxic, it provides zero nutritional value—no vitamins, minerals, protein, or usable energy. It's essentially edible sawdust used to fill space in the formula at minimal cost.</p>
+    
+    <h3>Compare to Similar Ingredients</h3>
+    <ul>
+      <li><strong>vs. <a href="/ingredient-analyzer/ingredients/beet-pulp/">beet pulp</a></strong>: Beet pulp is the fibrous residue left after sugar extraction from sugar beets. Unlike cellulose (purely insoluble fiber), beet pulp contains a mix of soluble and insoluble fiber and provides some fermentable fiber that gut bacteria can use to produce beneficial short-chain fatty acids. Beet pulp offers modest nutritional benefit; cellulose offers none. Beet pulp is a step above cellulose but still a byproduct.</li>
+      <li><strong>vs. <a href="/ingredient-analyzer/ingredients/pumpkin/">pumpkin</a></strong>: Pumpkin is a whole-food fiber source containing soluble and insoluble fiber, plus vitamins (A, C, E), minerals (potassium, iron), and antioxidants. It provides digestive benefits similar to cellulose (bulk, stool regulation) but with actual nutrition. Pumpkin is what you'd use if you prioritized whole-food ingredients; cellulose is what you'd use if you prioritized cost savings.</li>
+      <li><strong>vs. <a href="/ingredient-analyzer/ingredients/chickpeas/">chickpeas</a></strong>: Chickpeas are a legume providing protein (20-25%), complex carbohydrates, fiber (both soluble and insoluble), vitamins, and minerals. They deliver fiber for digestive health while also contributing significant nutrition. Cellulose is fiber-only with zero nutritional contribution. Chickpeas are a nutritious ingredient that happens to provide fiber; cellulose is non-nutritious filler.</li>
+    </ul>
 
-    <h2>Why It's Used in Dog Products</h2>
+    <h2 id="why-used">Why It's Used in Dog Products</h2>
     <p>Manufacturers include cellulose in dog food, treats, and supplements for several reasons:</p>
     <ul>
       <li>Adds bulk to increase product volume</li>
@@ -485,36 +582,106 @@
       <li>Binds water in soft chews</li>
     </ul>
 
-    <h2>Key Considerations</h2>
+    
+    <h2 id="nutritional-profile">Nutritional Profile</h2>
+    <h3>Macronutrients</h3>
+    <ul>
+      <li><strong>Protein:</strong> 0%</li>
+      <li><strong>Fat:</strong> 0%</li>
+      <li><strong>Moisture:</strong> undefined</li>
+    </ul>
+    <h3>Key Micronutrients</h3>
+    <ul>
+      <li><strong>Vitamins:</strong> None</li>
+      <li><strong>Minerals:</strong> Trace amounts depending on source (wood pulp vs plant-based), but negligible and not bioavailable</li>
+    </ul>
+    <p><strong>Bioavailability:</strong> Zero. Cellulose is not digested, absorbed, or metabolized by dogs. It passes through the GI tract unchanged.</p>
+
+    <h2 id="key-considerations">Quality Considerations</h2>
     <p>When evaluating cellulose in dog products, it's important to understand soluble versus insoluble fiber, digestive health benefits, and stool quality. This ingredient's quality and appropriateness can vary significantly based on sourcing, processing, and the specific formula it's used in.</p>
+
+    
+    <h3>Red Flags</h3>
+    <ul>
+      <li>Listed in the first 10 ingredients (indicates significant use as cheap filler)</li>
+      <li>Multiple forms of cellulose in one formula (cellulose + powdered cellulose + microcrystalline cellulose = over-reliance on non-nutritive fillers)</li>
+      <li>Used in puppy or performance formulas (high-energy dogs need nutrient-dense calories, not inert filler)</li>
+      <li>Vague labeling like 'plant fiber' without specifying source (could be cellulose masquerading under a more natural-sounding name)</li>
+    </ul>
+
+    
+    <h3>Green Flags</h3>
+    <ul>
+      <li>Honestly, there are no 'green flags' for cellulose. Its presence is never a positive—only a matter of degree. The best-case scenario is that it appears at the very end of the ingredient list in a weight-management formula where its bulk-adding properties serve a specific purpose. Even then, whole-food fiber sources would be preferable.</li>
+    </ul>
 
     <div class="quality-note-box">
       <div class="quality-note-label">Quality Note</div>
       <p style="margin: 0;">Completely indigestible. Passes through unchanged. Basically sawdust.</p>
     </div>
 
-    <h2>Potential Concerns</h2>
+    <h2 id="concerns">Potential Concerns</h2>
     <p>While cellulose can be appropriate in dog nutrition, pet owners should be aware of excessive fiber reducing nutrient absorption and causing digestive upset. Individual dogs may respond differently to the same ingredient based on their health status, age, and sensitivities.</p>
 
-    <div class="watts-take-box">
+    
+
+    
+
+    
+    <h2 id="scientific-evidence">Scientific Evidence</h2>
+    <p>undefined</p>
+    <h3>Key Research Findings</h3>
+    <ul>
+      <li><strong>Cellulose is classified as generally recognized as safe (GRAS) by the FDA for use as a food additive, bulking agent, and anticaking agent. It's non-toxic and does not pose health risks at typical dietary inclusion levels.</strong> (undefined) <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6776306/" target="_blank" rel="noopener">[Source]</a></li>
+      <li><strong>Dogs lack the enzyme cellulase needed to break down cellulose, meaning it passes through the gastrointestinal tract undigested and unabsorbed. It provides bulk but contributes no calories or nutrients.</strong> (undefined) <a href="https://www.fda.gov/food/food-additives-petitions/food-additive-status-list" target="_blank" rel="noopener">[Source]</a></li>
+      <li><strong>Insoluble fiber like cellulose can aid in stool formation and may help with weight management by creating a sense of fullness without adding calories. However, whole-food fiber sources provide these same benefits plus additional nutrition.</strong> (undefined)</li>
+    </ul>
+
+    
+    <h2 id="label-guidance">How to Spot on Labels</h2>
+    <p>Reading ingredient labels can be confusing. Here's how to identify and evaluate this ingredient:</p>
+
+    <div class="watts-take-box" id="watts-take">
       <div class="watts-take-label">Watts' Take</div>
       <p style="margin: 0; font-size: 18px;">We don't use cellulose. While it's 'safe,' it's filler with zero nutritional value. Whole-food fiber sources are vastly superior.</p>
     </div>
 
-    <h2>Frequently Asked Questions</h2>
+    <h2 id="faqs">Frequently Asked Questions</h2>
 
     <div class="faq-item">
-      <h3>Is cellulose safe for dogs?</h3>
-      <p>Cellulose should be used with caution or avoided. Completely indigestible. Passes through unchanged. Basically sawdust. We don't use cellulose. While it's 'safe,' it's filler with zero nutritional value. Whole-food fiber sources are vastly superior.</p>
+      <h3>Is microcrystalline cellulose safe for dogs?</h3>
+      <p>Yes, microcrystalline cellulose is considered safe for dogs. It's a highly refined form of cellulose (insoluble plant fiber) that's processed into ultra-fine particles. Like regular cellulose, it's non-toxic and passes through the digestive system without being absorbed or metabolized. The FDA recognizes cellulose as generally recognized as safe (GRAS) for use in food. However, 'safe' doesn't mean 'beneficial.' Microcrystalline cellulose provides zero nutritional value—it's purely a filler and bulking agent. While it won't harm your dog, it's a marker of a low-quality, cost-cutting formula. Whole-food fiber sources (like pumpkin, sweet potato, or beet pulp) are vastly superior.</p>
     </div>
 
     <div class="faq-item">
-      <h3>What does cellulose do in dog products?</h3>
-      <p>Insoluble fiber from plant cell walls, often from wood pulp. Indigestible bulking agent. It's used because: Adds bulk to increase product volume, and Fiber source in weight management formulas. Completely indigestible. Passes through unchanged. Basically sawdust.</p>
+      <h3>Why do dog food manufacturers use cellulose?</h3>
+      <p>Manufacturers use cellulose because it's extremely cheap and serves several cost-saving purposes: (1) It adds bulk and volume to the product without expensive ingredients, (2) It provides 'fiber' on the guaranteed analysis without contributing calories (useful for weight-management claims), (3) It helps bind and stabilize kibble or soft chews, and (4) It creates a feeling of fullness in dogs, potentially reducing the perception that the food is unsatisfying. Essentially, cellulose allows manufacturers to fill bags and meet fiber targets at minimal cost. High-quality brands don't need cellulose—they use whole-food fiber sources.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What's the difference between cellulose, powdered cellulose, and microcrystalline cellulose?</h3>
+      <p>These are all forms of the same basic ingredient—insoluble plant fiber, usually from wood pulp. The difference is primarily in particle size and level of refinement: (1) Cellulose: Basic form, coarse particles; (2) Powdered cellulose: Finely ground cellulose; (3) Microcrystalline cellulose: Most highly processed, acid-treated to create ultra-fine crystalline particles. All three provide zero nutrition and serve the same purpose (filler, bulking, binding). If you see multiple forms of cellulose in one food formula, that's a major red flag—the manufacturer is using excessive amounts of cheap filler.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can cellulose cause digestive problems in dogs?</h3>
+      <p>In most dogs, cellulose at typical inclusion levels (1-3% of the formula) is well-tolerated without obvious digestive issues. However, some dogs—particularly those with sensitive stomachs—may experience constipation, gas, or changes in stool consistency when consuming foods with significant cellulose content. Excessive cellulose can also reduce palatability and nutrient density, potentially leading to inadequate calorie intake. If your dog has chronic digestive issues and their food contains cellulose (especially high in the ingredient list), consider switching to a whole-food formula without fillers.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Is cellulose better than other fillers like corn or wheat?</h3>
+      <p>Not really—it's arguably worse. While corn and wheat are often criticized as low-quality fillers, at least they provide some nutrition: digestible carbohydrates for energy, some protein, and trace vitamins/minerals. Cellulose provides literally nothing—zero calories, zero protein, zero vitamins, zero minerals. It's completely indigestible. Corn and wheat are imperfect ingredients often overused in budget foods, but they're still food. Cellulose is industrial filler. The best choice is to avoid foods with significant amounts of any filler—choose formulas built on whole meats, fish, and vegetables.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Should I avoid dog foods with cellulose?</h3>
+      <p>Ideally, yes. While cellulose won't harm your dog in the short term, its presence—especially high in the ingredient list—indicates a low-quality, cost-cutting formula. You're essentially paying for wood pulp when you could be feeding your dog actual nutrition. If cellulose appears near the end of the ingredient list in a specialized weight-management food, it's less concerning (though still not ideal). But if cellulose is in the first 10-15 ingredients, or if multiple forms appear, look for a better food. Your dog deserves whole-food fiber sources like pumpkin, sweet potatoes, or vegetables—not sawdust.</p>
     </div>
 
 
-    <h2>Related Ingredients</h2>
+    
+
+    <h2 id="related">Related Ingredients</h2>
     <div class="related-grid">
       <a href="/ingredient-analyzer/ingredients/beet-pulp/" class="related-card">
         <h3>Beet Pulp</h3>
