@@ -137,6 +137,38 @@
         color: var(--muted);
       }
 
+      .table-of-contents {
+        background: white;
+        border: 2.5px solid var(--border);
+        padding: 24px;
+        margin: 32px 0;
+      }
+
+      .table-of-contents h2 {
+        font-size: 20px;
+        margin: 0 0 16px 0;
+      }
+
+      .table-of-contents ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .table-of-contents li {
+        margin-bottom: 8px;
+      }
+
+      .table-of-contents a {
+        color: var(--fg);
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .table-of-contents a:hover {
+        text-decoration: underline;
+      }
+
       .quick-summary {
         background: white;
         border: 2.5px solid var(--border);
@@ -206,6 +238,15 @@
         margin-bottom: 20px;
         font-size: 18px;
         line-height: 1.7;
+      }
+
+      a {
+        color: var(--fg);
+        text-decoration: underline;
+      }
+
+      a:hover {
+        opacity: 0.7;
       }
 
       ul {
@@ -401,34 +442,50 @@
   "mainEntity": [
     {
       "@type": "Question",
+      "name": "What is animal digest in dog food?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Animal digest is a flavor enhancer made by chemically or enzymatically breaking down animal tissue (muscle, organs, bones, connective tissue) into a concentrated liquid or powder. It's sprayed onto kibble or mixed into food to make it more palatable. According to AAFCO, it's created from 'clean and undecomposed animal tissue,' but the term doesn't specify which animal (chicken, beef, pork, fish, etc.) or which parts were used. It's one of the vaguest, least transparent ingredients in pet food. While not inherently dangerous, its presence signals that the base food wasn't appealing on its own—a red flag for ingredient quality."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Is animal digest safe for dogs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Animal Digest should be used with caution or avoided. Highly ambiguous palatability enhancer with unknown animal sources. Created by chemical/enzymatic breakdown of unspecified animal tissue. If a food needs this to be palatable, question the base ingredients. Named sources (chicken digest) are far preferable. Vague, unspecified ingredient made from boiled-down animal tissue. Quality and source unknown—could be anything. Used to mask poor palatability of low-quality base ingredients. Major red flag for quality."
+        "text": "Yes, animal digest is considered safe for dogs when produced according to AAFCO and FDA standards. It's not toxic and doesn't pose direct health risks. However, 'safe' doesn't mean 'high quality.' The concern with animal digest is transparency—you have no idea what animal source or tissues were used. For dogs with food allergies, this ambiguity can be problematic. Additionally, the presence of animal digest often indicates that the base food is low quality and needs heavy flavoring to be palatable. While it won't harm your dog in the short term, it's a marker of a subpar formula."
       }
     },
     {
       "@type": "Question",
-      "name": "What does animal digest do in dog products?",
+      "name": "Why do dog food companies use animal digest?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Material from clean animal tissue broken down by chemical or enzymatic hydrolysis. Used as palatability enhancer. It's used because: Improves palatability, and Makes food more appealing. Highly ambiguous palatability enhancer with unknown animal sources. Created by chemical/enzymatic breakdown of unspecified animal tissue. If a food needs this to be palatable, question the base ingredients. Named sources (chicken digest) are far preferable."
+        "text": "Dog food companies use animal digest because it's an inexpensive and highly effective way to make bland or unpalatable food taste appealing. Foods made with low-quality proteins, excessive fillers (corn, wheat, cellulose), or over-processed ingredients often lack natural flavor. Animal digest acts as a 'flavor bomb' that masks these deficiencies. It's also flexible for manufacturers—by using a vague term like 'animal digest,' they can source whatever animal tissues are cheapest at any given time without reformulating. High-quality foods made with real meat and whole ingredients don't need animal digest because they're naturally palatable."
       }
     },
     {
       "@type": "Question",
-      "name": "Why is animal digest added to dog food?",
+      "name": "What's the difference between animal digest and chicken digest?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Improves palatability While some additives serve important functional purposes (preservation, texture, stability), others are primarily for human appeal. Vague, unspecified ingredient made from boiled-down animal tissue. Quality and source unknown—could be anything. Used to mask poor palatability of low-quality base ingredients. Major red flag for quality."
+        "text": "The difference is specificity. 'Animal digest' is made from unspecified animal tissue—it could be chicken, beef, pork, fish, or a mix, and you'll never know. 'Chicken digest' specifies that it's made from chicken tissue, which gives you at least some transparency about the protein source. While chicken digest still doesn't tell you which parts of the chicken were used (liver, feet, organs, etc.), it's a step up from generic 'animal digest.' If a food must contain digest, named sources like chicken digest, beef digest, or salmon digest are far preferable to the ambiguous 'animal digest.'"
       }
     },
     {
       "@type": "Question",
-      "name": "Are there natural alternatives to animal digest?",
+      "name": "Should I avoid dog food with animal digest?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Many modern dog foods use natural alternatives like mixed tocopherols (vitamin E), rosemary extract, or citric acid instead of synthetic additives. Check ingredient labels for \"preserved with...\" statements to see which preservatives are used."
+        "text": "Ideally, yes—especially if animal digest appears early in the ingredient list or if the food is priced as 'premium.' Animal digest is a strong indicator of low-quality base ingredients that needed heavy flavoring to be palatable. High-quality dog foods made with real meat, organs, and whole-food ingredients are naturally appealing and don't require digest. If you see animal digest, look for a better food. The exception: if a food has named digest (like 'chicken digest') at the very end of the ingredient list in an otherwise high-quality formula, it's less concerning—but still not ideal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can dogs with food allergies eat animal digest?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is risky and generally not recommended. Because 'animal digest' doesn't specify the animal source, it could contain proteins from any animal—chicken, beef, pork, fish, lamb, etc. If your dog is allergic to chicken and the digest happens to contain chicken tissue, they'll react. For dogs with known food allergies or sensitivities, always avoid foods with generic 'animal digest.' Even named digests (like 'chicken digest') should be approached cautiously if your dog has sensitivities, since you still don't know which tissues were used. Stick to limited-ingredient or hypoallergenic diets with full transparency."
       }
     }
   ]
@@ -466,7 +523,24 @@
       <p style="color: var(--muted); font-size: 16px; margin-top: 12px;">Last updated: January 25, 2026</p>
     </div>
 
-    <div class="quick-summary">
+    <div class="table-of-contents">
+      <h2>Table of Contents</h2>
+      <ul>
+        <li><a href="#quick-summary">Quick Summary</a></li>
+        <li><a href="#what-it-is">What It Is</a></li>
+        <li><a href="#why-used">Why It's Used</a></li>
+        <li><a href="#nutritional-profile">Nutritional Profile</a></li>
+        <li><a href="#key-considerations">Quality Considerations</a></li>
+        <li><a href="#concerns">Potential Concerns</a></li>
+        <li><a href="#scientific-evidence">Scientific Evidence</a></li>
+        <li><a href="#label-guidance">How to Spot on Labels</a></li>
+        <li><a href="#watts-take">Watts' Take</a></li>
+        <li><a href="#faqs">Frequently Asked Questions</a></li>
+        <li><a href="#related">Related Ingredients</a></li>
+      </ul>
+    </div>
+
+    <div class="quick-summary" id="quick-summary">
       <h2>Quick Summary</h2>
       <p><strong>Animal Digest</strong> Material from clean animal tissue broken down by chemical or enzymatic hydrolysis. Used as palatability enhancer.</p>
     </div>
@@ -482,7 +556,7 @@
       </div>
       <div class="fact-item">
         <div class="fact-label">Also Known As</div>
-        <div class="fact-value">chicken digest, poultry digest</div>
+        <div class="fact-value">chicken digest, poultry digest, digest</div>
       </div>
       <div class="fact-item">
         <div class="fact-label">Watts Rating</div>
@@ -490,10 +564,17 @@
       </div>
     </div>
 
-    <h2>What It Is</h2>
-    <p>Material from clean animal tissue broken down by chemical or enzymatic hydrolysis. Used as palatability enhancer.</p>
+    <h2 id="what-it-is">What It Is</h2>
+    <p>Animal digest is a palatability enhancer created by chemically or enzymatically breaking down animal tissue into a liquid or powder form that's then sprayed onto dry kibble or mixed into wet food. According to AAFCO, animal digest is 'material which results from chemical and/or enzymatic hydrolysis of clean and un-decomposed animal tissue.' In plain terms: unspecified animal parts (muscle, organs, bones, connective tissue—but not hair, hooves, horns, or teeth) are heated and treated with acids, enzymes, or both to break down proteins into smaller peptides and amino acids. This creates a concentrated, meaty-flavored coating that makes otherwise bland or unpalatable food taste appealing to dogs. The problem is the term 'animal digest' provides zero transparency about the source animal (chicken, beef, pork, fish, or a mix), the specific tissues used (liver vs. feet vs. lungs), or the quality of those tissues. It's one of the most ambiguous ingredients allowed in pet food. Higher-quality foods use named digests like 'chicken digest' or 'salmon digest,' which at least specify the animal source—though they still don't tell you which parts were used. Animal digest is not inherently toxic or dangerous, but its presence signals that the base food wasn't palatable enough on its own, which raises questions about ingredient quality.</p>
+    
+    <h3>Compare to Similar Ingredients</h3>
+    <ul>
+      <li><strong>vs. <a href="/ingredient-analyzer/ingredients/chicken-liver-flavor/">chicken liver flavor</a></strong>: Chicken liver flavor is derived specifically from chicken livers using a gentler extraction process that preserves the natural flavor compounds. It's a named, specific ingredient. Animal digest is made from unspecified animal tissues using chemical/enzymatic breakdown—far less transparent and potentially lower quality. Named flavors are preferable.</li>
+      <li><strong>vs. <a href="/ingredient-analyzer/ingredients/natural-flavor/">natural flavor</a></strong>: Natural flavor is a broad term for any flavor derived from plant or animal sources (could include digests, extracts, essences, etc.). Animal digest is a specific type of flavor made by breaking down animal tissue. Both are vague, but animal digest specifically indicates animal-sourced flavoring via hydrolysis. Neither is ideal for transparency.</li>
+      <li><strong>vs. <a href="/ingredient-analyzer/ingredients/hydrolyzed-poultry-liver/">hydrolyzed poultry liver</a></strong>: Hydrolyzed poultry liver specifies both the animal source (poultry) and the tissue (liver), making it more transparent than generic 'animal digest.' Both use hydrolysis (enzymatic or chemical breakdown), but hydrolyzed poultry liver is a step up in quality and clarity. It's what animal digest should be—specific and named.</li>
+    </ul>
 
-    <h2>Why It's Used in Dog Products</h2>
+    <h2 id="why-used">Why It's Used in Dog Products</h2>
     <p>Manufacturers include animal digest in dog food, treats, and supplements for several reasons:</p>
     <ul>
       <li>Improves palatability</li>
@@ -501,46 +582,109 @@
       <li>Cost-effective flavoring</li>
     </ul>
 
-    <h2>Key Considerations</h2>
+    
+    <h2 id="nutritional-profile">Nutritional Profile</h2>
+    <h3>Macronutrients</h3>
+    <ul>
+      <li><strong>Protein:</strong> Hydrolyzed proteins (broken-down amino acids and peptides), but used in such small amounts (typically 1-3% of formula) that contribution to total protein is minimal</li>
+      <li><strong>Fat:</strong> Trace amounts from tissue lipids</li>
+      <li><strong>Moisture:</strong> undefined</li>
+    </ul>
+    <h3>Key Micronutrients</h3>
+    <ul>
+      <li><strong>Vitamins:</strong> Trace B-vitamins may be present depending on source tissue, but destroyed during harsh hydrolysis process</li>
+      <li><strong>Minerals:</strong> Trace minerals (iron, zinc, phosphorus) depending on tissue source, but not nutritionally significant at typical usage levels</li>
+    </ul>
+    <p><strong>Bioavailability:</strong> High bioavailability for the hydrolyzed proteins (small peptides and amino acids are easily absorbed), but the quantity used is too small to contribute meaningful nutrition. Animal digest is used for flavor, not nutrition.</p>
+
+    <h2 id="key-considerations">Quality Considerations</h2>
     <p>When evaluating animal digest in dog products, it's important to understand functional purpose, safety testing, and nutritional contribution. This ingredient's quality and appropriateness can vary significantly based on sourcing, processing, and the specific formula it's used in.</p>
+
+    
+    <h3>Red Flags</h3>
+    <ul>
+      <li>Generic 'animal digest' without specifying the animal source (worst-case scenario)</li>
+      <li>Listed in the first 10 ingredients (suggests the base food is so unpalatable that significant flavoring is needed)</li>
+      <li>Present in multiple forms (animal digest + chicken digest = masking poor palatability)</li>
+      <li>Used in premium-priced foods (premium foods shouldn't need digest to be palatable)</li>
+      <li>Combined with vague meat ingredients like 'meat by-products' or 'meat and bone meal' (signals low transparency across the board)</li>
+    </ul>
+
+    
+    <h3>Green Flags</h3>
+    <ul>
+      <li>Named digest like 'chicken digest,' 'salmon digest,' or 'beef digest' (at least you know the animal source)</li>
+      <li>Appears at the end of the ingredient list (indicates minimal usage purely for flavor enhancement)</li>
+      <li>Used in otherwise high-quality whole-food formulas (shows it's being used sparingly for palatability, not as a crutch)</li>
+    </ul>
 
     <div class="quality-note-box">
       <div class="quality-note-label">Quality Note</div>
       <p style="margin: 0;">Highly ambiguous palatability enhancer with unknown animal sources. Created by chemical/enzymatic breakdown of unspecified animal tissue. If a food needs this to be palatable, question the base ingredients. Named sources (chicken digest) are far preferable.</p>
     </div>
 
-    <h2>Potential Concerns</h2>
+    <h2 id="concerns">Potential Concerns</h2>
     <p>While animal digest can be appropriate in dog nutrition, pet owners should be aware of necessity, potential sensitivities, and whether it serves dogs or just appeals to humans. Individual dogs may respond differently to the same ingredient based on their health status, age, and sensitivities.</p>
 
-    <div class="watts-take-box">
+    
+
+    
+
+    
+    <h2 id="scientific-evidence">Scientific Evidence</h2>
+    <p>undefined</p>
+    <h3>Key Research Findings</h3>
+    <ul>
+      <li><strong>Animal digest is defined by AAFCO as 'material which results from chemical and/or enzymatic hydrolysis of clean and undecomposed animal tissue.' It's approved for use as a flavor enhancer in pet foods.</strong> (undefined) <a href="https://www.aafco.org/wp-content/uploads/2025/04/2024_OP_Chapter_6_enc.pdf" target="_blank" rel="noopener">[Source]</a></li>
+      <li><strong>Hydrolysis breaks down proteins into smaller peptides and amino acids, creating concentrated umami and meaty flavors that are highly palatable to dogs. This process is effective at improving food acceptance in otherwise unpalatable diets.</strong> (undefined)</li>
+      <li><strong>The source animal and tissue quality of animal digest can vary widely depending on the manufacturer's sourcing practices. Without named sources, there is no guarantee of consistency or quality.</strong> (undefined)</li>
+    </ul>
+
+    
+    <h2 id="label-guidance">How to Spot on Labels</h2>
+    <p>Reading ingredient labels can be confusing. Here's how to identify and evaluate this ingredient:</p>
+
+    <div class="watts-take-box" id="watts-take">
       <div class="watts-take-label">Watts' Take</div>
       <p style="margin: 0; font-size: 18px;">Vague, unspecified ingredient made from boiled-down animal tissue. Quality and source unknown—could be anything. Used to mask poor palatability of low-quality base ingredients. Major red flag for quality.</p>
     </div>
 
-    <h2>Frequently Asked Questions</h2>
+    <h2 id="faqs">Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h3>What is animal digest in dog food?</h3>
+      <p>Animal digest is a flavor enhancer made by chemically or enzymatically breaking down animal tissue (muscle, organs, bones, connective tissue) into a concentrated liquid or powder. It's sprayed onto kibble or mixed into food to make it more palatable. According to AAFCO, it's created from 'clean and undecomposed animal tissue,' but the term doesn't specify which animal (chicken, beef, pork, fish, etc.) or which parts were used. It's one of the vaguest, least transparent ingredients in pet food. While not inherently dangerous, its presence signals that the base food wasn't appealing on its own—a red flag for ingredient quality.</p>
+    </div>
 
     <div class="faq-item">
       <h3>Is animal digest safe for dogs?</h3>
-      <p>Animal Digest should be used with caution or avoided. Highly ambiguous palatability enhancer with unknown animal sources. Created by chemical/enzymatic breakdown of unspecified animal tissue. If a food needs this to be palatable, question the base ingredients. Named sources (chicken digest) are far preferable. Vague, unspecified ingredient made from boiled-down animal tissue. Quality and source unknown—could be anything. Used to mask poor palatability of low-quality base ingredients. Major red flag for quality.</p>
+      <p>Yes, animal digest is considered safe for dogs when produced according to AAFCO and FDA standards. It's not toxic and doesn't pose direct health risks. However, 'safe' doesn't mean 'high quality.' The concern with animal digest is transparency—you have no idea what animal source or tissues were used. For dogs with food allergies, this ambiguity can be problematic. Additionally, the presence of animal digest often indicates that the base food is low quality and needs heavy flavoring to be palatable. While it won't harm your dog in the short term, it's a marker of a subpar formula.</p>
     </div>
 
     <div class="faq-item">
-      <h3>What does animal digest do in dog products?</h3>
-      <p>Material from clean animal tissue broken down by chemical or enzymatic hydrolysis. Used as palatability enhancer. It's used because: Improves palatability, and Makes food more appealing. Highly ambiguous palatability enhancer with unknown animal sources. Created by chemical/enzymatic breakdown of unspecified animal tissue. If a food needs this to be palatable, question the base ingredients. Named sources (chicken digest) are far preferable.</p>
+      <h3>Why do dog food companies use animal digest?</h3>
+      <p>Dog food companies use animal digest because it's an inexpensive and highly effective way to make bland or unpalatable food taste appealing. Foods made with low-quality proteins, excessive fillers (corn, wheat, cellulose), or over-processed ingredients often lack natural flavor. Animal digest acts as a 'flavor bomb' that masks these deficiencies. It's also flexible for manufacturers—by using a vague term like 'animal digest,' they can source whatever animal tissues are cheapest at any given time without reformulating. High-quality foods made with real meat and whole ingredients don't need animal digest because they're naturally palatable.</p>
     </div>
 
     <div class="faq-item">
-      <h3>Why is animal digest added to dog food?</h3>
-      <p>Improves palatability While some additives serve important functional purposes (preservation, texture, stability), others are primarily for human appeal. Vague, unspecified ingredient made from boiled-down animal tissue. Quality and source unknown—could be anything. Used to mask poor palatability of low-quality base ingredients. Major red flag for quality.</p>
+      <h3>What's the difference between animal digest and chicken digest?</h3>
+      <p>The difference is specificity. 'Animal digest' is made from unspecified animal tissue—it could be chicken, beef, pork, fish, or a mix, and you'll never know. 'Chicken digest' specifies that it's made from chicken tissue, which gives you at least some transparency about the protein source. While chicken digest still doesn't tell you which parts of the chicken were used (liver, feet, organs, etc.), it's a step up from generic 'animal digest.' If a food must contain digest, named sources like chicken digest, beef digest, or salmon digest are far preferable to the ambiguous 'animal digest.'</p>
     </div>
 
     <div class="faq-item">
-      <h3>Are there natural alternatives to animal digest?</h3>
-      <p>Many modern dog foods use natural alternatives like mixed tocopherols (vitamin E), rosemary extract, or citric acid instead of synthetic additives. Check ingredient labels for "preserved with..." statements to see which preservatives are used.</p>
+      <h3>Should I avoid dog food with animal digest?</h3>
+      <p>Ideally, yes—especially if animal digest appears early in the ingredient list or if the food is priced as 'premium.' Animal digest is a strong indicator of low-quality base ingredients that needed heavy flavoring to be palatable. High-quality dog foods made with real meat, organs, and whole-food ingredients are naturally appealing and don't require digest. If you see animal digest, look for a better food. The exception: if a food has named digest (like 'chicken digest') at the very end of the ingredient list in an otherwise high-quality formula, it's less concerning—but still not ideal.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can dogs with food allergies eat animal digest?</h3>
+      <p>This is risky and generally not recommended. Because 'animal digest' doesn't specify the animal source, it could contain proteins from any animal—chicken, beef, pork, fish, lamb, etc. If your dog is allergic to chicken and the digest happens to contain chicken tissue, they'll react. For dogs with known food allergies or sensitivities, always avoid foods with generic 'animal digest.' Even named digests (like 'chicken digest') should be approached cautiously if your dog has sensitivities, since you still don't know which tissues were used. Stick to limited-ingredient or hypoallergenic diets with full transparency.</p>
     </div>
 
 
-    <h2>Related Ingredients</h2>
+    
+
+    <h2 id="related">Related Ingredients</h2>
     <div class="related-grid">
       <a href="/ingredient-analyzer/ingredients/alfalfa-nutrient-concentrate/" class="related-card">
         <h3>Alfalfa Nutrient Concentrate</h3>

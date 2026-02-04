@@ -137,6 +137,38 @@
         color: var(--muted);
       }
 
+      .table-of-contents {
+        background: white;
+        border: 2.5px solid var(--border);
+        padding: 24px;
+        margin: 32px 0;
+      }
+
+      .table-of-contents h2 {
+        font-size: 20px;
+        margin: 0 0 16px 0;
+      }
+
+      .table-of-contents ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .table-of-contents li {
+        margin-bottom: 8px;
+      }
+
+      .table-of-contents a {
+        color: var(--fg);
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .table-of-contents a:hover {
+        text-decoration: underline;
+      }
+
       .quick-summary {
         background: white;
         border: 2.5px solid var(--border);
@@ -206,6 +238,15 @@
         margin-bottom: 20px;
         font-size: 18px;
         line-height: 1.7;
+      }
+
+      a {
+        color: var(--fg);
+        text-decoration: underline;
+      }
+
+      a:hover {
+        opacity: 0.7;
       }
 
       ul {
@@ -401,18 +442,50 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is chicory root safe for dogs?",
+      "name": "Is chicory root good for dogs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, chicory root is safe for dogs when used appropriately. One of the best fiber sources. Chicory root inulin feeds beneficial bacteria and supports gut health. However, individual dogs may have sensitivities, so monitor for any adverse reactions."
+        "text": "Yes, chicory root is excellent for dogs. It's one of the best prebiotic fiber sources in dog food because it's rich in inulin—a soluble fiber that feeds beneficial gut bacteria (like Bifidobacteria and Lactobacilli). These bacteria ferment inulin into short-chain fatty acids (SCFAs) that support colon health, reduce inflammation, enhance immune function, and improve nutrient absorption. Chicory root is far superior to generic fillers like cellulose or corn fiber. Most dogs tolerate it well, though sensitive dogs may experience temporary gas or loose stools during the adjustment period. Overall, chicory root is a high-quality, functional ingredient."
       }
     },
     {
       "@type": "Question",
-      "name": "What does chicory root do in dog products?",
+      "name": "Can dogs be allergic to chicory root?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Root vegetable rich in inulin, a prebiotic fiber that feeds beneficial gut bacteria. It's used because: Prebiotic fiber source, and Feeds beneficial gut bacteria. Excellent prebiotic fiber. Actually beneficial for gut health, not just filler."
+        "text": "True allergies to chicory root are rare in dogs, but they can occur. Dogs with known sensitivities to plants in the Asteraceae (daisy) family—such as ragweed, dandelion, or marigold—may have cross-reactive allergies to chicory root. Symptoms could include itching, hives, ear infections, or digestive upset. Additionally, some dogs with very sensitive stomachs may experience gas, bloating, or loose stools from chicory root's highly fermentable inulin, though this is typically a tolerance issue rather than a true allergy. If you suspect your dog is reacting to chicory root, consult your vet and consider switching to a food without it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does chicory root do for dogs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chicory root provides prebiotic fiber (inulin) that supports gut health by feeding beneficial bacteria in the colon. These bacteria ferment inulin into short-chain fatty acids (SCFAs) like butyrate, which provide energy for colon cells, reduce inflammation, strengthen the gut barrier, and enhance immune function. Chicory root also helps regulate bowel movements (by adding bulk and moisture to stool), may improve mineral absorption (calcium, magnesium), and provides trace amounts of vitamins (C, B6) and antioxidants. It's a functional ingredient that actively supports the microbiome, not just empty filler."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can chicory root cause diarrhea in dogs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In some cases, yes—especially if chicory root is introduced suddenly or used in high amounts. Chicory root's inulin is highly fermentable, which means gut bacteria break it down rapidly. This fermentation produces gas and can draw water into the colon (osmotic effect), leading to softer stools or diarrhea in sensitive dogs. Most dogs adjust within a few days to a week as their gut microbiome adapts. To minimize issues, introduce chicory-containing foods gradually and ensure your dog stays well-hydrated. If diarrhea persists, reduce the amount or switch to a food with less fermentable fiber."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much chicory root is safe for dogs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In commercial dog food, chicory root is typically included at 0.5-3% of the formula, which is safe and effective for most dogs. At these levels, it provides prebiotic benefits without causing digestive upset. Higher amounts (3-5%+) may lead to gas, bloating, or loose stools, especially in dogs not accustomed to prebiotic fiber. If you're adding chicory root as a supplement (like pure inulin powder), start with small amounts—around 1/4 to 1/2 teaspoon per day for a medium-sized dog—and increase gradually while monitoring stool quality. Always consult your vet before supplementing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is chicory root better than beet pulp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chicory root is generally superior to beet pulp for targeted gut health and prebiotic support. Chicory root contains 40-70% inulin, a highly fermentable prebiotic fiber that effectively feeds beneficial gut bacteria. Beet pulp is a mix of soluble and insoluble fiber with moderate prebiotic effects—it's good for adding bulk and regulating stool consistency but less potent for microbiome support. That said, beet pulp is still a quality fiber source and is often better tolerated than chicory root in dogs with very sensitive stomachs. Ideally, a food would include both or use chicory root in a diverse fiber profile."
       }
     }
   ]
@@ -450,7 +523,24 @@
       <p style="color: var(--muted); font-size: 16px; margin-top: 12px;">Last updated: January 25, 2026</p>
     </div>
 
-    <div class="quick-summary">
+    <div class="table-of-contents">
+      <h2>Table of Contents</h2>
+      <ul>
+        <li><a href="#quick-summary">Quick Summary</a></li>
+        <li><a href="#what-it-is">What It Is</a></li>
+        <li><a href="#why-used">Why It's Used</a></li>
+        <li><a href="#nutritional-profile">Nutritional Profile</a></li>
+        <li><a href="#key-considerations">Quality Considerations</a></li>
+        <li><a href="#concerns">Potential Concerns</a></li>
+        <li><a href="#scientific-evidence">Scientific Evidence</a></li>
+        <li><a href="#label-guidance">How to Spot on Labels</a></li>
+        <li><a href="#watts-take">Watts' Take</a></li>
+        <li><a href="#faqs">Frequently Asked Questions</a></li>
+        <li><a href="#related">Related Ingredients</a></li>
+      </ul>
+    </div>
+
+    <div class="quick-summary" id="quick-summary">
       <h2>Quick Summary</h2>
       <p><strong>Chicory Root</strong> Root vegetable rich in inulin, a prebiotic fiber that feeds beneficial gut bacteria.</p>
     </div>
@@ -466,7 +556,7 @@
       </div>
       <div class="fact-item">
         <div class="fact-label">Also Known As</div>
-        <div class="fact-value">chicory inulin, inulin</div>
+        <div class="fact-value">chicory inulin, inulin, chicory root fiber, dried chicory root</div>
       </div>
       <div class="fact-item">
         <div class="fact-label">Watts Rating</div>
@@ -474,10 +564,17 @@
       </div>
     </div>
 
-    <h2>What It Is</h2>
-    <p>Root vegetable rich in inulin, a prebiotic fiber that feeds beneficial gut bacteria.</p>
+    <h2 id="what-it-is">What It Is</h2>
+    <p>Chicory root is derived from the Cichorium intybus plant—a perennial herb native to Europe but now cultivated worldwide. The root is harvested, dried, and ground into a powder or extract for use in dog food. Chicory root's value comes from its high concentration of inulin, a type of soluble prebiotic fiber that human and canine digestive enzymes cannot break down. Instead, inulin passes through the stomach and small intestine intact and reaches the colon, where beneficial bacteria (like Bifidobacteria and Lactobacilli) ferment it into short-chain fatty acids (SCFAs) such as butyrate, acetate, and propionate. These SCFAs provide energy for colon cells, reduce inflammation, support immune function, and help maintain a healthy gut barrier. Chicory root is considered one of the most effective prebiotic ingredients in pet food—superior to generic 'cellulose' or 'beet pulp' for gut health support. It's not just empty fiber; it actively feeds the beneficial microbiome. Chicory root may appear on ingredient lists as 'chicory root,' 'dried chicory root,' 'chicory root fiber,' or simply 'inulin.' Beyond its prebiotic benefits, chicory root provides a small amount of vitamins (C, B6), minerals (potassium, manganese), and antioxidant compounds. It's generally well-tolerated, though some dogs with sensitive stomachs may experience gas or loose stools during the initial adjustment period.</p>
+    
+    <h3>Compare to Similar Ingredients</h3>
+    <ul>
+      <li><strong>vs. <a href="/ingredient-analyzer/ingredients/beet-pulp/">beet pulp</a></strong>: Beet pulp is the fibrous residue left after sugar extraction from sugar beets. It contains a mix of soluble and insoluble fiber and provides moderate prebiotic effects through fermentation. Chicory root is richer in inulin—a highly fermentable prebiotic fiber—making it more effective at supporting beneficial gut bacteria. Beet pulp is still a good fiber source, but chicory root is superior for targeted gut health.</li>
+      <li><strong>vs. <a href="/ingredient-analyzer/ingredients/pumpkin/">pumpkin</a></strong>: Pumpkin is a whole-food fiber source containing soluble and insoluble fiber, plus vitamins (A, C, E) and minerals. It's excellent for regulating digestion (firming up diarrhea or softening constipation). Chicory root is more concentrated in prebiotic inulin and specifically feeds beneficial bacteria, whereas pumpkin provides broader nutritional benefits. Both are beneficial, but chicory root is more targeted for microbiome support.</li>
+      <li><strong>vs. <a href="/ingredient-analyzer/ingredients/fructooligosaccharides/">fructooligosaccharides</a></strong>: Fructooligosaccharides (FOS) are short-chain prebiotics similar in function to inulin (which is a long-chain fructan). Both feed beneficial gut bacteria and support digestive health. Chicory root naturally contains inulin and some FOS, making it a natural source of both. Pure FOS supplements are more concentrated but lack the whole-food benefits of chicory root (vitamins, minerals, antioxidants). They're functionally similar.</li>
+    </ul>
 
-    <h2>Why It's Used in Dog Products</h2>
+    <h2 id="why-used">Why It's Used in Dog Products</h2>
     <p>Manufacturers include chicory root in dog food, treats, and supplements for several reasons:</p>
     <ul>
       <li>Prebiotic fiber source</li>
@@ -485,36 +582,110 @@
       <li>Supports digestive health</li>
     </ul>
 
-    <h2>Key Considerations</h2>
+    
+    <h2 id="nutritional-profile">Nutritional Profile</h2>
+    <h3>Macronutrients</h3>
+    <ul>
+      <li><strong>Protein:</strong> 2-4%</li>
+      <li><strong>Fat:</strong> Less than 1%</li>
+      <li><strong>Moisture:</strong> undefined</li>
+    </ul>
+    <h3>Key Micronutrients</h3>
+    <ul>
+      <li><strong>Vitamins:</strong> Vitamin C, B6, folate (in moderate amounts)</li>
+      <li><strong>Minerals:</strong> Potassium, manganese, phosphorus</li>
+      <li><strong>Bioactives:</strong> Antioxidant compounds including polyphenols and flavonoids</li>
+    </ul>
+    <p><strong>Bioavailability:</strong> Inulin itself is not absorbed—it reaches the colon intact where it's fermented by beneficial bacteria. The resulting SCFAs (butyrate, acetate, propionate) are absorbed by colon cells and provide energy, anti-inflammatory effects, and immune support.</p>
+
+    <h2 id="key-considerations">Quality Considerations</h2>
     <p>When evaluating chicory root in dog products, it's important to understand soluble versus insoluble fiber, digestive health benefits, and stool quality. This ingredient's quality and appropriateness can vary significantly based on sourcing, processing, and the specific formula it's used in.</p>
+
+    
+    <h3>Red Flags</h3>
+    <ul>
+      <li>Generic 'inulin' without specifying chicory root as the source (could be from other plants like Jerusalem artichoke, though chicory is most common)</li>
+      <li>Excessive amounts (more than 3-5% of formula) without gradual introduction (can cause gas, bloating, or loose stools in sensitive dogs)</li>
+      <li>Used as the sole fiber source in low-quality foods (prebiotic fiber should complement, not replace, whole-food fiber from vegetables or fruits)</li>
+    </ul>
+
+    
+    <h3>Green Flags</h3>
+    <ul>
+      <li>Listed as 'chicory root' or 'dried chicory root' for transparency</li>
+      <li>Moderate inclusion (0.5-3% of formula) for effective prebiotic support without digestive upset</li>
+      <li>Organically sourced</li>
+      <li>Part of a diverse fiber profile (combined with whole vegetables, fruits, or other fiber sources)</li>
+      <li>Specified inulin content (40%+ inulin indicates quality chicory root)</li>
+    </ul>
 
     <div class="quality-note-box">
       <div class="quality-note-label">Quality Note</div>
       <p style="margin: 0;">Excellent prebiotic fiber. Actually beneficial for gut health, not just filler.</p>
     </div>
 
-    <h2>Potential Concerns</h2>
+    <h2 id="concerns">Potential Concerns</h2>
     <p>While chicory root can be appropriate in dog nutrition, pet owners should be aware of excessive fiber reducing nutrient absorption and causing digestive upset. Individual dogs may respond differently to the same ingredient based on their health status, age, and sensitivities.</p>
 
-    <div class="watts-take-box">
+    
+
+    
+
+    
+    <h2 id="scientific-evidence">Scientific Evidence</h2>
+    <p>undefined</p>
+    <h3>Key Research Findings</h3>
+    <ul>
+      <li><strong>Inulin from chicory root is selectively fermented by beneficial bacteria (Bifidobacteria, Lactobacilli) in the colon, leading to increased populations of these beneficial species and production of short-chain fatty acids (SCFAs).</strong> (undefined) <a href="https://doi.org/10.1016/j.bcdf.2024.100414" target="_blank" rel="noopener">[Source]</a></li>
+      <li><strong>Short-chain fatty acids produced from inulin fermentation—particularly butyrate—provide energy for colonocytes, reduce inflammation, strengthen gut barrier function, and modulate immune responses.</strong> (undefined)</li>
+      <li><strong>Prebiotic fibers like chicory root inulin have been shown to improve stool quality, enhance mineral absorption (calcium, magnesium), and support overall digestive health in dogs.</strong> (undefined)</li>
+    </ul>
+
+    
+    <h2 id="label-guidance">How to Spot on Labels</h2>
+    <p>Reading ingredient labels can be confusing. Here's how to identify and evaluate this ingredient:</p>
+
+    <div class="watts-take-box" id="watts-take">
       <div class="watts-take-label">Watts' Take</div>
       <p style="margin: 0; font-size: 18px;">One of the best fiber sources. Chicory root inulin feeds beneficial bacteria and supports gut health.</p>
     </div>
 
-    <h2>Frequently Asked Questions</h2>
+    <h2 id="faqs">Frequently Asked Questions</h2>
 
     <div class="faq-item">
-      <h3>Is chicory root safe for dogs?</h3>
-      <p>Yes, chicory root is safe for dogs when used appropriately. One of the best fiber sources. Chicory root inulin feeds beneficial bacteria and supports gut health. However, individual dogs may have sensitivities, so monitor for any adverse reactions.</p>
+      <h3>Is chicory root good for dogs?</h3>
+      <p>Yes, chicory root is excellent for dogs. It's one of the best prebiotic fiber sources in dog food because it's rich in inulin—a soluble fiber that feeds beneficial gut bacteria (like Bifidobacteria and Lactobacilli). These bacteria ferment inulin into short-chain fatty acids (SCFAs) that support colon health, reduce inflammation, enhance immune function, and improve nutrient absorption. Chicory root is far superior to generic fillers like cellulose or corn fiber. Most dogs tolerate it well, though sensitive dogs may experience temporary gas or loose stools during the adjustment period. Overall, chicory root is a high-quality, functional ingredient.</p>
     </div>
 
     <div class="faq-item">
-      <h3>What does chicory root do in dog products?</h3>
-      <p>Root vegetable rich in inulin, a prebiotic fiber that feeds beneficial gut bacteria. It's used because: Prebiotic fiber source, and Feeds beneficial gut bacteria. Excellent prebiotic fiber. Actually beneficial for gut health, not just filler.</p>
+      <h3>Can dogs be allergic to chicory root?</h3>
+      <p>True allergies to chicory root are rare in dogs, but they can occur. Dogs with known sensitivities to plants in the Asteraceae (daisy) family—such as ragweed, dandelion, or marigold—may have cross-reactive allergies to chicory root. Symptoms could include itching, hives, ear infections, or digestive upset. Additionally, some dogs with very sensitive stomachs may experience gas, bloating, or loose stools from chicory root's highly fermentable inulin, though this is typically a tolerance issue rather than a true allergy. If you suspect your dog is reacting to chicory root, consult your vet and consider switching to a food without it.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What does chicory root do for dogs?</h3>
+      <p>Chicory root provides prebiotic fiber (inulin) that supports gut health by feeding beneficial bacteria in the colon. These bacteria ferment inulin into short-chain fatty acids (SCFAs) like butyrate, which provide energy for colon cells, reduce inflammation, strengthen the gut barrier, and enhance immune function. Chicory root also helps regulate bowel movements (by adding bulk and moisture to stool), may improve mineral absorption (calcium, magnesium), and provides trace amounts of vitamins (C, B6) and antioxidants. It's a functional ingredient that actively supports the microbiome, not just empty filler.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can chicory root cause diarrhea in dogs?</h3>
+      <p>In some cases, yes—especially if chicory root is introduced suddenly or used in high amounts. Chicory root's inulin is highly fermentable, which means gut bacteria break it down rapidly. This fermentation produces gas and can draw water into the colon (osmotic effect), leading to softer stools or diarrhea in sensitive dogs. Most dogs adjust within a few days to a week as their gut microbiome adapts. To minimize issues, introduce chicory-containing foods gradually and ensure your dog stays well-hydrated. If diarrhea persists, reduce the amount or switch to a food with less fermentable fiber.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How much chicory root is safe for dogs?</h3>
+      <p>In commercial dog food, chicory root is typically included at 0.5-3% of the formula, which is safe and effective for most dogs. At these levels, it provides prebiotic benefits without causing digestive upset. Higher amounts (3-5%+) may lead to gas, bloating, or loose stools, especially in dogs not accustomed to prebiotic fiber. If you're adding chicory root as a supplement (like pure inulin powder), start with small amounts—around 1/4 to 1/2 teaspoon per day for a medium-sized dog—and increase gradually while monitoring stool quality. Always consult your vet before supplementing.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Is chicory root better than beet pulp?</h3>
+      <p>Chicory root is generally superior to beet pulp for targeted gut health and prebiotic support. Chicory root contains 40-70% inulin, a highly fermentable prebiotic fiber that effectively feeds beneficial gut bacteria. Beet pulp is a mix of soluble and insoluble fiber with moderate prebiotic effects—it's good for adding bulk and regulating stool consistency but less potent for microbiome support. That said, beet pulp is still a quality fiber source and is often better tolerated than chicory root in dogs with very sensitive stomachs. Ideally, a food would include both or use chicory root in a diverse fiber profile.</p>
     </div>
 
 
-    <h2>Related Ingredients</h2>
+    
+
+    <h2 id="related">Related Ingredients</h2>
     <div class="related-grid">
       <a href="/ingredient-analyzer/ingredients/beet-pulp/" class="related-card">
         <h3>Beet Pulp</h3>
