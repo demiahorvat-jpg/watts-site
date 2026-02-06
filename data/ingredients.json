@@ -249,7 +249,44 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Apples (Malus domestica) are nutrient-dense fruits providing fiber, vitamins, and antioxidants in dog food. Fresh apples contain approximately 86% moisture, 14g carbohydrate, 0.3g protein, 0.2g fat, and 2.4g fiber per 100g. Apples provide both soluble fiber (pectin—beneficial for gut health) and insoluble fiber. They're rich in vitamin C, various antioxidants including quercetin (anti-inflammatory), and beneficial plant compounds. Apples are low-calorie, crunchy, and highly palatable. In dog food, apples appear dried, fresh, or as apple pomace (fiber-rich byproduct). IMPORTANT: Apple seeds contain cyanide compounds—commercial dog food removes seeds. Never feed whole apple cores with seeds to dogs.",
+        "compareToSimilar": [
+          {
+            "ingredient": "blueberries",
+            "difference": "Both are fruits with fiber and antioxidants. Apples provide more fiber (particularly pectin); blueberries provide more concentrated antioxidants (anthocyanins). Apples are crunchy; blueberries are soft. Both nutritious—apples for fiber/crunch, blueberries for antioxidants."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Apples appear in dog food for soluble fiber (pectin supporting gut health), vitamin C, antioxidants, and low-calorie nutrition. Crunchy texture adds variety. Naturally sweet and highly palatable. Apples are whole-food ingredients signaling quality formulation. Premium brands include apples for genuine nutritional benefits. Apple pomace (fiber-rich byproduct) is economical fiber source.",
+      "nutritionalProfile": {
+        "fiber": "2.4g per 100g with valuable pectin soluble fiber",
+        "vitaminC": "Good source",
+        "antioxidants": "Quercetin and other beneficial compounds"
+      },
+      "concernsExpanded": {
+        "detailed": "Apples are very safe when seeds are removed—apple seeds contain cyanogenic glycosides that release cyanide when chewed. Commercial dog food removes seeds. Plain apple flesh is safe. Excessive amounts could cause digestive upset or diarrhea (from fiber/sugar), but normal food amounts are completely safe. Avoid feeding whole apple cores with seeds.",
+        "contraindications": [
+          "Never feed apple seeds or cores—contain cyanide compounds"
+        ]
+      },
+      "faqs": [
+        {
+          "question": "Are apples safe for dogs?",
+          "answer": "Yes, apples are safe and beneficial for dogs when seeds are removed. Apple flesh provides fiber (including pectin for gut health), vitamin C, antioxidants, and low-calorie nutrition. Crunchy and highly palatable. Commercial dog food removes seeds, making apples safe ingredients. However, never feed whole apple cores with seeds to dogs as snacks—apple seeds contain cyanogenic compounds that release cyanide when chewed/digested. Plain apple slices (no seeds) make excellent treats. In dog food, apples provide genuine nutritional value and are very safe.",
+          "answerShort": "Safe when seeds removed. Good fiber (pectin), vitamin C, antioxidants. Commercial food removes seeds—safe. Never feed apple cores with seeds.",
+          "priority": 1
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "apples dog food",
+        "secondaryKeywords": [
+          "are apples safe for dogs",
+          "apple seeds dogs"
+        ],
+        "metaDescription": "Apples in dog food: Fiber (pectin) benefits, vitamin C, antioxidants, safety when seeds removed, crunchy low-calorie nutrition."
+      }
     },
     {
       "name": "Artificial Flavor",
@@ -609,7 +646,50 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Barley (Hordeum vulgare) is a whole grain cereal providing complex carbohydrates, fiber, and B vitamins in dog food. It contains approximately 60-65% carbohydrates (primarily starch), 10-12% protein, 2-3% fat, and 15-20% fiber (mix of soluble and insoluble). Barley is notable for high beta-glucan soluble fiber content (similar to oats), which supports gut health, regulates blood sugar, and provides prebiotic benefits. However, barley contains gluten, making it unsuitable for dogs with wheat/gluten sensitivities. Barley has moderate glycemic index (28-45, varying by processing), lower than wheat or corn. It's less expensive than oats or brown rice, positioning it in mid-tier dog foods. Pearl barley (hull removed) is most common in pet food; hulled barley (hull intact) is more nutritious but less common.",
+        "compareToSimilar": [
+          {
+            "ingredient": "oatmeal",
+            "difference": "Oatmeal and barley are similar whole grains with comparable beta-glucan fiber. Oatmeal has slightly higher protein (13-17% vs 10-12%) and is gluten-free; barley contains gluten. Oatmeal has lower glycemic index. Both are quality grains—oatmeal is preferable for gluten-sensitive dogs and nutritionally edges out barley slightly."
+          },
+          {
+            "ingredient": "brown-rice",
+            "difference": "Brown rice and barley are both quality whole grains. Barley has more fiber (15-20% vs 3-4%) and lower glycemic index (28-45 vs 55-65). Brown rice is hypoallergenic and gluten-free; barley contains gluten. Barley is slightly cheaper. For dogs without gluten issues, barley provides superior fiber; for gluten-sensitive dogs, brown rice is safer."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Barley appears in dog food as economical whole grain providing complex carbohydrates, exceptional fiber (particularly beta-glucan soluble fiber), and B vitamins. It's cheaper than oatmeal or brown rice while offering similar nutrition. Barley's high fiber supports digestive health and regulates blood sugar. Its lower glycemic index makes it suitable for weight management. However, gluten content limits its use in grain-sensitive formulas. Barley signals mid-tier quality—better than corn or wheat, but less premium than oatmeal or sweet potatoes.",
+      "nutritionalProfile": {
+        "carbohydrates": "60-65g per 100g",
+        "protein": "10-12g (incomplete for dogs)",
+        "fiber": "15-20g including beta-glucan soluble fiber",
+        "micronutrients": "B vitamins (thiamine, niacin, B6), manganese, selenium, iron, magnesium"
+      },
+      "concernsExpanded": {
+        "detailed": "Barley contains gluten, unsuitable for dogs with wheat/gluten sensitivities. Rare but real concern. High fiber benefits most dogs but could cause gas or loose stools in sensitive dogs. Phytic acid binds minerals, slightly reducing absorption. Otherwise safe.",
+        "contraindications": [
+          "Dogs with gluten sensitivities or celiac disease",
+          "Dogs with very sensitive digestion may need lower fiber"
+        ]
+      },
+      "faqs": [
+        {
+          "question": "Is barley good for dogs?",
+          "answer": "Yes, barley is a quality whole grain for dogs without gluten sensitivities. It provides complex carbohydrates, exceptional fiber (including beta-glucan), B vitamins, and minerals. Barley has lower glycemic index than many grains, supporting steady blood sugar. The high fiber (15-20%) promotes digestive health and satiety. However, barley contains gluten—dogs with wheat/gluten sensitivities should avoid it. For dogs tolerating gluten, barley is nutritious, economical grain choice. Not as premium as oatmeal but significantly better than corn or refined wheat.",
+          "answerShort": "Yes, for dogs without gluten issues. Quality whole grain with excellent fiber, lower glycemic. Contains gluten—avoid if sensitive.",
+          "priority": 1
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "barley dog food",
+        "secondaryKeywords": [
+          "is barley good for dogs",
+          "barley gluten dogs"
+        ],
+        "metaDescription": "Barley in dog food: Whole grain with beta-glucan fiber, gluten concerns, lower glycemic index, comparison to oats and rice."
+      }
     },
     {
       "name": "Barley Grass",
@@ -1519,7 +1599,49 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Blueberries (Vaccinium corymbosum) are nutrient-dense berries valued in dog food for exceptional antioxidants, vitamins, and cognitive health benefits. Fresh blueberries contain approximately 84% moisture, 14g carbohydrate, 0.7g protein, 0.3g fat, and 2.4g fiber per 100g. Blueberries are exceptionally rich in anthocyanins—powerful antioxidants giving blueberries their blue color and providing anti-inflammatory, cognitive, and health benefits. They provide vitamin C, vitamin K, manganese, and various beneficial plant compounds. Research shows blueberries may support cognitive function in aging dogs. Low-calorie, highly palatable, and safe. Often called 'superfood' due to antioxidant density.",
+        "compareToSimilar": [
+          {
+            "ingredient": "cranberries",
+            "difference": "Both are berries with antioxidants. Cranberries focus on urinary health (PACs); blueberries focus on cognitive/antioxidant benefits (anthocyanins). Cranberries are tart; blueberries are sweet. Both nutritious for different purposes."
+          },
+          {
+            "ingredient": "apples",
+            "difference": "Both are fruits with fiber and antioxidants. Blueberries have more concentrated antioxidants (anthocyanins); apples provide more fiber. Both low-calorie and beneficial. Blueberries are softer; apples are crunchy."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Blueberries appear in dog food for exceptional antioxidant content (anthocyanins), cognitive health support (particularly for senior dogs), vitamin C, and overall health benefits. Marketing appeal—'with blueberries' suggests premium, health-focused formulation. Research backs cognitive benefits. Premium brands include blueberries for genuine health advantages, not just marketing.",
+      "nutritionalProfile": {
+        "anthocyanins": "Exceptional antioxidants for cognitive health and anti-inflammatory benefits",
+        "vitaminC": "Good source",
+        "vitaminK": "Good source",
+        "manganese": "Good source"
+      },
+      "concernsExpanded": {
+        "detailed": "Blueberries are remarkably safe with minimal concerns. Excessive amounts could cause digestive upset or diarrhea (from fiber/sugar), but normal food amounts are completely safe. One of the safest, most beneficial fruits for dogs. No significant contraindications.",
+        "contraindications": [
+          "None for most dogs"
+        ]
+      },
+      "faqs": [
+        {
+          "question": "Are blueberries good for dogs?",
+          "answer": "Yes, blueberries are excellent for dogs. They're nutrient-dense with exceptional antioxidants (anthocyanins) providing anti-inflammatory and cognitive health benefits. Research shows blueberries may support brain function in aging dogs. They provide vitamin C, vitamin K, manganese, and fiber. Low-calorie, highly palatable, and very safe. Often called 'superfood' due to antioxidant density. Fresh or frozen blueberries make excellent training treats. In dog food, blueberries signal premium quality and provide genuine health benefits. One of the most beneficial fruits for dogs.",
+          "answerShort": "Excellent. Exceptional antioxidants (anthocyanins) for cognitive/anti-inflammatory benefits. Vitamins, low-calorie. Very safe. Superfood for dogs.",
+          "priority": 1
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "blueberries dog food",
+        "secondaryKeywords": [
+          "are blueberries good for dogs",
+          "blueberries cognitive dogs"
+        ],
+        "metaDescription": "Blueberries in dog food: Exceptional antioxidants (anthocyanins), cognitive health benefits, vitamins, superfood status for dogs."
+      }
     },
     {
       "name": "Brewers Dried Yeast",
@@ -2004,7 +2126,48 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Carrots (Daucus carota) are nutrient-dense root vegetables providing beta-carotene, fiber, and vitamins in dog food. Fresh carrots contain approximately 88% moisture, 10g carbohydrate, 1g protein, 0.2g fat, and 3g fiber per 100g. Carrots are exceptionally rich in beta-carotene (orange pigment dogs convert to vitamin A), supporting vision, immune function, and skin health. They provide both soluble and insoluble fiber. Whole raw carrots are crunchy, providing dental benefits as dogs chew. In dog food, carrots appear fresh, dried, or as carrot pomace (fiber-rich byproduct). Carrots are hypoallergenic, low-calorie, and highly palatable. They're one of the most nutritionally beneficial vegetable additions to dog food.",
+        "compareToSimilar": [
+          {
+            "ingredient": "pumpkin",
+            "difference": "Both are orange vegetables rich in beta-carotene. Pumpkin has more specialized digestive health benefits due to ideal fiber balance. Carrots are crunchy when whole (dental benefits) and provide slightly more diverse micronutrients. Both are excellent—pumpkin for digestive support, carrots for overall nutrition."
+          },
+          {
+            "ingredient": "sweet-potatoes",
+            "difference": "Both provide beta-carotene and fiber. Sweet potatoes are starchier with more calories; carrots are lower-calorie with more water. Sweet potatoes provide sustained energy; carrots provide low-calorie nutrition. Both excellent depending on formula goals."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Carrots appear in dog food for exceptional beta-carotene content, fiber, vitamins, and low-calorie nutrition. They add natural sweetness dogs enjoy. Crunchy raw carrots provide dental benefits. Carrots are whole-food ingredients signaling quality formulation. Hypoallergenic and nutritious. Premium brands include carrots for genuine nutritional value.",
+      "nutritionalProfile": {
+        "betaCarotene": "Exceptionally high—among best plant sources",
+        "fiber": "3g per 100g, both soluble and insoluble",
+        "micronutrients": "Vitamin K1, potassium, vitamin C, vitamin B6"
+      },
+      "concernsExpanded": {
+        "detailed": "Carrots are very safe. Excessive amounts could cause orange-tinged stools (beta-carotene) or loose stools (fiber), but normal amounts are completely safe. No significant concerns—one of safest, most beneficial vegetables.",
+        "contraindications": [
+          "None for most dogs"
+        ]
+      },
+      "faqs": [
+        {
+          "question": "Are carrots good for dogs?",
+          "answer": "Yes, carrots are excellent for dogs. They're nutrient-dense with exceptional beta-carotene for vitamin A (vision, immune function, skin health), fiber for digestive health, and various vitamins and minerals. Low-calorie and hypoallergenic. Crunchy raw carrots provide dental benefits. Highly palatable—most dogs love carrots. Safe for all life stages. One of the most beneficial vegetable ingredients in dog food. Carrots signal quality whole-food nutrition.",
+          "answerShort": "Excellent. High beta-carotene, fiber, vitamins. Low-calorie, hypoallergenic. Crunchy when whole (dental benefits). Very beneficial vegetable.",
+          "priority": 1
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "carrots dog food",
+        "secondaryKeywords": [
+          "are carrots good for dogs",
+          "carrot beta carotene dogs"
+        ],
+        "metaDescription": "Carrots in dog food: Exceptional beta-carotene for vitamin A, fiber, dental benefits, low-calorie nutrition, and safety for dogs."
+      }
     },
     {
       "name": "Cellulase",
@@ -4296,7 +4459,44 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Cranberries (Vaccinium macrocarpon) are tart berries valued in dog food for urinary tract health benefits, antioxidants, and vitamins. Fresh cranberries contain approximately 87% moisture, 12g carbohydrate, minimal protein/fat, and 5g fiber per 100g. Cranberries are rich in proanthocyanidins (PACs)—unique antioxidant compounds that prevent bacteria (particularly E. coli) from adhering to urinary tract walls, potentially reducing UTI risk. They provide vitamin C, manganese, and various beneficial plant compounds. Cranberries are tart, so dried sweetened cranberries are common in treats, though unsweetened dried cranberries are preferable in food. In small amounts, cranberries provide legitimate health benefits.",
+        "compareToSimilar": [
+          {
+            "ingredient": "blueberries",
+            "difference": "Both are berries with antioxidants and vitamins. Cranberries have unique PACs for urinary health; blueberries have anthocyanins for cognitive/antioxidant benefits. Cranberries are tart; blueberries are sweet. Both are nutritious—cranberries for urinary support, blueberries for antioxidants."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Cranberries appear in dog food for urinary tract health support—PACs help prevent UTIs. They provide antioxidants and vitamins. Marketing appeal—'with cranberries' suggests health benefits and premium quality. While amounts in kibble are small, cranberries do provide measurable benefits unlike purely cosmetic additives.",
+      "nutritionalProfile": {
+        "PACs": "Proanthocyanidins prevent bacterial adhesion in urinary tract",
+        "vitaminC": "Good source",
+        "antioxidants": "Various beneficial compounds"
+      },
+      "concernsExpanded": {
+        "detailed": "Cranberries are very safe in moderate amounts. Excessive amounts could cause digestive upset or increased oxalate (kidney stone concern in predisposed dogs), but normal food amounts are safe. Avoid sweetened dried cranberries with excessive sugar. Otherwise minimal concerns.",
+        "contraindications": [
+          "Dogs prone to calcium oxalate kidney stones should have oxalate-containing foods monitored"
+        ]
+      },
+      "faqs": [
+        {
+          "question": "Are cranberries good for dogs?",
+          "answer": "Yes, cranberries are beneficial for dogs, particularly for urinary tract health. Cranberries contain proanthocyanidins (PACs) that prevent bacteria from adhering to urinary tract walls, potentially reducing UTI risk. They provide vitamin C, antioxidants, and fiber. Small amounts in dog food provide legitimate health benefits. Veterinarians sometimes recommend cranberry supplements for dogs with recurrent UTIs. Use unsweetened cranberries; avoid products with excessive sugar. Safe and beneficial in moderation.",
+          "answerShort": "Yes, beneficial. PACs support urinary tract health and may prevent UTIs. Antioxidants, vitamin C. Safe in moderation—avoid excessive sugar.",
+          "priority": 1
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "cranberries dog food",
+        "secondaryKeywords": [
+          "are cranberries good for dogs",
+          "cranberries urinary health dogs"
+        ],
+        "metaDescription": "Cranberries in dog food: Urinary tract health benefits, PACs prevent UTIs, antioxidants, safety considerations for dogs."
+      }
     },
     {
       "name": "Deboned Chicken",
@@ -7943,7 +8143,83 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Potatoes (Solanum tuberosum) are starchy tuber vegetables used as grain-free carbohydrate source in dog food. Whole potatoes contain approximately 75-80% moisture, 15-20% starch, 2% protein, minimal fat, and 1-2% fiber. Once cooked and dried during kibble processing, they become concentrated starch providing digestible energy. Potatoes are nightshade family vegetables alongside tomatoes and eggplants. While nutritionally acceptable, potatoes have high glycemic index (85-95), causing rapid blood sugar spikes compared to sweet potatoes (60-70) or legumes (30-40). This makes them less ideal for weight management or diabetic dogs. Potatoes provide potassium and some vitamin C, but are otherwise nutritionally sparse compared to alternatives like sweet potatoes. They became popular during the grain-free trend as replacement for rice and wheat, though they're not nutritionally superior to quality grains. Whole potatoes are preferable to potato starch or potato protein isolate, which are processed fractions lacking whole-food nutrition.",
+        "compareToSimilar": [
+          {
+            "ingredient": "sweet-potatoes",
+            "difference": "Sweet potatoes are nutritionally superior to white potatoes. Sweet potatoes have lower glycemic index (60-70 vs 85-95), more fiber (3-4g vs 1-2g per 100g), and vastly more micronutrients including exceptional beta-carotene, vitamin C, manganese, and potassium. White potatoes provide primarily starch calories with minimal vitamins. Sweet potatoes are premium carb choice; white potatoes are acceptable grain-free alternative but not as nutrient-dense."
+          },
+          {
+            "ingredient": "brown-rice",
+            "difference": "Brown rice and potatoes are both digestible carbohydrate sources, but brown rice has lower glycemic index (55-65 vs 85-95 for potatoes), more fiber, and better B vitamin content. Potatoes provide more potassium; brown rice provides more sustained energy. Potatoes are grain-free; brown rice is a grain. Neither is inherently superior—potatoes suit grain-free formulas, brown rice suits grain-inclusive. For most dogs, brown rice provides steadier blood sugar."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Potatoes appear in dog food primarily for grain-free positioning. During the grain-free trend, potatoes replaced rice and wheat as carbohydrate source. They're whole-food ingredients providing digestible starch for energy. Potatoes are hypoallergenic—potato sensitivities are extremely rare, making them suitable for dogs with grain allergies. They're readily available, affordable (though more expensive than corn or wheat), and well-tolerated by most dogs. Potatoes help bind kibble during extrusion. However, their high glycemic index and sparse nutrient profile make them nutritionally inferior to sweet potatoes. They're acceptable but not optimal.",
+      "nutritionalProfile": {
+        "macros": "Approximately 17-20g carbohydrate per 100g fresh (75-80g per 100g dried), 2g protein, minimal fat, 1-2g fiber, 75-80% moisture in fresh potatoes",
+        "micronutrients": "Potassium (excellent source, 420mg per 100g), vitamin C (moderate, 20mg per 100g), vitamin B6 (present), minimal other vitamins or minerals",
+        "glycemicImpact": "High glycemic index (85-95), causing rapid blood sugar spikes. Not ideal for diabetic dogs or weight management.",
+        "bioavailability": "Cooked potato starch is highly digestible (85-90%), providing excellent calorie availability but rapid glucose release"
+      },
+      "qualityConsiderations": {
+        "expanded": "Whole potatoes are acceptable quality in grain-free formulas. Position matters—potatoes after quality proteins (positions 4-8) indicate balanced formulation. Potatoes as first ingredient suggest carb-heavy formula. Distinguish whole potatoes from potato starch or potato protein (processed fractions lacking nutrition). Organic potatoes reduce pesticide exposure. Green potatoes contain solanine (toxin)—quality manufacturers avoid these. Overall, potatoes are acceptable but not premium—sweet potatoes are superior.",
+        "redFlags": [
+          "Potatoes as first ingredient without concentrated protein following",
+          "Potato starch or potato protein isolate (processed fractions)",
+          "Multiple potato forms (potatoes + potato starch + potato protein = manipulation)"
+        ],
+        "greenFlags": [
+          "Whole potatoes after quality proteins",
+          "Organic potatoes specified",
+          "Potatoes as sole starchy carb in grain-free formula"
+        ]
+      },
+      "concernsExpanded": {
+        "detailed": "Potatoes' main concern is high glycemic index causing blood sugar spikes—problematic for diabetic dogs or weight management. Green potatoes contain solanine (glycoalkaloid toxin) causing digestive upset or toxicity, but commercial food manufacturers avoid green potatoes. Nightshade sensitivity exists but is extremely rare. Potatoes provide less nutrition per calorie than sweet potatoes. They're not harmful but represent functional carbs rather than nutrient-dense ingredients.",
+        "contraindications": [
+          "Diabetic dogs should have high-glycemic carbs monitored",
+          "Overweight dogs benefit from lower-glycemic alternatives",
+          "Rare nightshade sensitivities"
+        ],
+        "lifeStageConsiderations": "Appropriate for all life stages as digestible carb source, though sweet potatoes provide better nutrition for puppies and seniors."
+      },
+      "scientificEvidence": {
+        "summary": "Potatoes provide digestible carbohydrate energy with high glycemic index. Research shows 85-90% digestibility. Lower nutrient density than sweet potatoes. Safe and functional but not optimal.",
+        "keyStudies": [],
+        "evidenceLevel": "Strong regarding digestibility and safety. Moderate regarding glycemic concerns."
+      },
+      "faqs": [
+        {
+          "question": "Are potatoes good for dogs?",
+          "answer": "Potatoes are acceptable for dogs but not optimal. They're digestible whole-food carbohydrates providing energy and potassium. However, potatoes have high glycemic index (85-95) causing rapid blood sugar spikes, and they're nutritionally sparse compared to sweet potatoes. Potatoes are hypoallergenic and suitable for grain-free diets. They won't harm dogs but represent functional carbs rather than nutrient-dense ingredients. Sweet potatoes are superior choice for better nutrition and lower glycemic impact. Potatoes are acceptable in balanced formulas but not as beneficial as alternatives.",
+          "answerShort": "Acceptable but not optimal. High glycemic, less nutritious than sweet potatoes. Digestible and hypoallergenic. Functional carb rather than nutrient-dense.",
+          "priority": 1
+        },
+        {
+          "question": "Are potatoes better than sweet potatoes for dogs?",
+          "answer": "No, sweet potatoes are nutritionally superior to white potatoes for dogs. Sweet potatoes have lower glycemic index (60-70 vs 85-95), more fiber (3-4g vs 1-2g), and vastly more micronutrients including exceptional beta-carotene, vitamin C, manganese, and potassium. White potatoes provide primarily starch with minimal vitamins. Both are hypoallergenic and digestible, but sweet potatoes deliver more nutrition per calorie and better blood sugar control. The only advantage of potatoes is slightly lower cost. If choosing between two foods, select sweet potatoes over white potatoes for better nutritional value.",
+          "answerShort": "No. Sweet potatoes superior—lower glycemic, more fiber, far better vitamins/minerals. White potatoes = functional carbs; sweet potatoes = nutrient-dense.",
+          "priority": 2
+        },
+        {
+          "question": "Can diabetic dogs eat potatoes?",
+          "answer": "Potatoes are not ideal for diabetic dogs due to high glycemic index (85-95) causing rapid blood sugar spikes. Diabetic dogs benefit from lower-glycemic carbohydrates like sweet potatoes (60-70), legumes (30-40), or quality grains. If a diabetic dog's food contains potatoes, monitor blood glucose levels carefully and consult your veterinarian about whether the formula is appropriate. Optimal diabetic diets are typically higher in protein and fat with controlled, low-glycemic carbohydrates. Potatoes can be part of diabetic management if portions are controlled and overall diet is balanced, but lower-glycemic alternatives are preferable. Always work with your vet for diabetic diet management.",
+          "answerShort": "Not ideal—high glycemic (85-95) causes blood sugar spikes. Diabetic dogs better with sweet potatoes, legumes, or low-glycemic grains. Consult vet for diabetic diet.",
+          "priority": 3
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "potatoes dog food",
+        "secondaryKeywords": [
+          "are potatoes good for dogs",
+          "potatoes vs sweet potatoes dogs",
+          "diabetic dogs potatoes"
+        ],
+        "metaDescription": "Potatoes in dog food: Grain-free carbohydrate with high glycemic index, comparison to sweet potatoes, digestibility, and diabetic dog considerations."
+      }
     },
     {
       "name": "Poultry By-Product Meal",
@@ -8358,7 +8634,48 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Pumpkin is a nutrient-dense winter squash (Cucurbita pepo) valued in dog food for fiber, beta-carotene, and digestive health benefits. It contains approximately 90% moisture when fresh, with 7-8g carbohydrate, 1g protein, and 0.5g fiber per 100g fresh (concentrated when dried). Pumpkin is exceptional fiber source—both soluble fiber (absorbs water, firms stools) and insoluble fiber (adds bulk). This dual fiber action helps both diarrhea (absorbing excess water) and constipation (adding bulk). Pumpkin is rich in beta-carotene (orange pigment dogs convert to vitamin A), supporting vision, immune function, and skin health. It's low-calorie, highly palatable, and hypoallergenic. Pumpkin puree and dried pumpkin are common in pet food; avoid pumpkin pie filling (contains sugar and spices).",
+        "compareToSimilar": [
+          {
+            "ingredient": "sweet-potatoes",
+            "difference": "Both are orange vegetables rich in beta-carotene and fiber. Sweet potatoes have more carbohydrates and calories; pumpkin is lower-calorie with more water content. Both excellent—pumpkin is particularly valued for digestive health due to ideal fiber balance. Sweet potatoes provide more sustained energy; pumpkin provides digestive support."
+          },
+          {
+            "ingredient": "carrots",
+            "difference": "Both are orange vegetables with beta-carotene. Pumpkin has more fiber and is particularly effective for digestive issues. Carrots are crunchy and provide some dental benefits when whole. Both are nutritious—pumpkin is fiber powerhouse, carrots are crunchy nutrient source."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Pumpkin appears in dog food for digestive health support—its unique fiber balance helps both diarrhea and constipation. It's rich in beta-carotene for vitamin A. Low-calorie and nutritious, suitable for weight management. Highly palatable and hypoallergenic. Veterinarians often recommend pumpkin for digestive upset. Premium brands include pumpkin for genuine health benefits, not just filler.",
+      "nutritionalProfile": {
+        "fiber": "Excellent source with ideal soluble/insoluble balance",
+        "betaCarotene": "Very high—dogs convert to vitamin A",
+        "micronutrients": "Vitamin C, potassium, iron, folate"
+      },
+      "concernsExpanded": {
+        "detailed": "Pumpkin is remarkably safe. Excessive amounts could cause orange-tinged stools (from beta-carotene) or loose stools (from fiber), but normal food amounts are completely safe. Avoid pumpkin pie filling (has sugar/spices). Otherwise minimal concerns—one of safest, most beneficial ingredients.",
+        "contraindications": [
+          "None for most dogs. Avoid pumpkin pie filling with sugar/spices."
+        ]
+      },
+      "faqs": [
+        {
+          "question": "Is pumpkin good for dogs?",
+          "answer": "Yes, pumpkin is excellent for dogs. It's nutrient-dense with exceptional fiber (both soluble and insoluble) supporting digestive health—helps both diarrhea and constipation. Rich in beta-carotene for vitamin A (vision, immune function). Low-calorie, hypoallergenic, highly palatable. Veterinarians often recommend pumpkin for digestive upset. Safe for all life stages. Use plain pumpkin puree or dried pumpkin, not pumpkin pie filling. One of most beneficial ingredients in dog food.",
+          "answerShort": "Excellent. Exceptional fiber for digestive health, rich in beta-carotene, low-calorie. Helps both diarrhea and constipation. Very safe and beneficial.",
+          "priority": 1
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "pumpkin dog food",
+        "secondaryKeywords": [
+          "is pumpkin good for dogs",
+          "pumpkin fiber dogs"
+        ],
+        "metaDescription": "Pumpkin in dog food: Exceptional digestive health benefits, fiber for diarrhea and constipation, beta-carotene, low-calorie nutrition."
+      }
     },
     {
       "name": "Pyridoxine Hydrochloride",
@@ -9473,7 +9790,45 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Spinach (Spinacia oleracea) is a nutrient-dense leafy green vegetable providing vitamins, minerals, and antioxidants in dog food. Fresh spinach contains approximately 91% moisture, 4g carbohydrate, 3g protein, 0.4g fat, and 2g fiber per 100g. Spinach is exceptionally rich in vitamins (A, C, K1, folate, B vitamins), minerals (iron, calcium, magnesium, manganese), and beneficial plant compounds including lutein and zeaxanthin (eye health). However, spinach is high in oxalates—compounds that bind calcium and can contribute to kidney stone formation in predisposed dogs. In moderation (small amounts in dog food), spinach is beneficial. Large amounts are concerning. Cooked spinach has lower oxalate bioavailability than raw.",
+        "compareToSimilar": [
+          {
+            "ingredient": "kale",
+            "difference": "Both are nutrient-dense leafy greens. Kale and spinach provide similar vitamins and minerals. Spinach has slightly more iron; kale has slightly more vitamin C. Both contain oxalates, though spinach is higher. Both are nutritious in moderation."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Spinach appears in dog food for exceptional micronutrient density—vitamins A, C, K, folate, iron, calcium. It provides antioxidants and signals premium whole-food ingredients. Marketing appeal—'with spinach' suggests health-conscious formulation. In small amounts typically used in dog food, spinach provides genuine nutritional benefits. Amounts are kept moderate due to oxalate concerns.",
+      "nutritionalProfile": {
+        "vitamins": "Exceptional—vitamins A, C, K1, folate, B vitamins",
+        "minerals": "Iron (though less bioavailable from plants), calcium, magnesium, manganese",
+        "oxalates": "High—concern in large amounts"
+      },
+      "concernsExpanded": {
+        "detailed": "Spinach's main concern is high oxalate content. Oxalates bind calcium and can contribute to calcium oxalate kidney stones in predisposed dogs. In small amounts used in dog food, this is minimal concern. Large amounts (feeding plain spinach as significant meal portion) could be problematic. Dogs with kidney stone history should have oxalate-containing foods monitored. Otherwise, spinach in dog food amounts is safe and beneficial.",
+        "contraindications": [
+          "Dogs with calcium oxalate kidney stone history should have oxalates monitored",
+          "Very large amounts of spinach should be avoided"
+        ]
+      },
+      "faqs": [
+        {
+          "question": "Is spinach safe for dogs?",
+          "answer": "Yes, spinach is safe for dogs in moderation, like the small amounts used in dog food. Spinach is nutrient-dense with exceptional vitamins (A, C, K, folate), minerals (iron, calcium, magnesium), and antioxidants. However, spinach is high in oxalates—compounds that can contribute to kidney stones in predisposed dogs if consumed in large amounts. The small amounts in commercial dog food are safe and beneficial. Avoid feeding large amounts of plain spinach as meal replacement. For dogs with kidney stone history, monitor oxalate intake. In dog food formulas, spinach provides genuine nutritional value without significant risk.",
+          "answerShort": "Safe in moderation (like dog food amounts). Nutrient-dense but high in oxalates. Small amounts beneficial; large amounts concerning for kidney stone-prone dogs.",
+          "priority": 1
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "spinach dog food",
+        "secondaryKeywords": [
+          "is spinach safe for dogs",
+          "spinach oxalates dogs"
+        ],
+        "metaDescription": "Spinach in dog food: Nutrient-dense with vitamins and minerals, oxalate concerns, safety in moderation, kidney stone considerations."
+      }
     },
     {
       "name": "Spirulina",
