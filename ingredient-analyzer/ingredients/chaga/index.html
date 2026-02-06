@@ -137,6 +137,38 @@
         color: var(--muted);
       }
 
+      .table-of-contents {
+        background: white;
+        border: 2.5px solid var(--border);
+        padding: 24px;
+        margin: 32px 0;
+      }
+
+      .table-of-contents h2 {
+        font-size: 20px;
+        margin: 0 0 16px 0;
+      }
+
+      .table-of-contents ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .table-of-contents li {
+        margin-bottom: 8px;
+      }
+
+      .table-of-contents a {
+        color: var(--fg);
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .table-of-contents a:hover {
+        text-decoration: underline;
+      }
+
       .quick-summary {
         background: white;
         border: 2.5px solid var(--border);
@@ -206,6 +238,15 @@
         margin-bottom: 20px;
         font-size: 18px;
         line-height: 1.7;
+      }
+
+      a {
+        color: var(--fg);
+        text-decoration: underline;
+      }
+
+      a:hover {
+        opacity: 0.7;
       }
 
       ul {
@@ -450,7 +491,21 @@
       <p style="color: var(--muted); font-size: 16px; margin-top: 12px;">Last updated: January 25, 2026</p>
     </div>
 
-    <div class="quick-summary">
+    <div class="table-of-contents">
+      <h2>Table of Contents</h2>
+      <ul>
+        <li><a href="#quick-summary">Quick Summary</a></li>
+        <li><a href="#what-it-is">What It Is</a></li>
+        <li><a href="#why-used">Why It's Used</a></li>
+        <li><a href="#key-considerations">Quality Considerations</a></li>
+        <li><a href="#concerns">Potential Concerns</a></li>
+        <li><a href="#watts-take">Watts' Take</a></li>
+        <li><a href="#faqs">Frequently Asked Questions</a></li>
+        <li><a href="#related">Related Ingredients</a></li>
+      </ul>
+    </div>
+
+    <div class="quick-summary" id="quick-summary">
       <h2>Quick Summary</h2>
       <p><strong>Chaga</strong> Medicinal mushroom (Inonotus obliquus) growing on birch trees, extremely rich in antioxidants, particularly melanin and betulinic acid.</p>
     </div>
@@ -466,7 +521,7 @@
       </div>
       <div class="fact-item">
         <div class="fact-label">Also Known As</div>
-        <div class="fact-value">chaga mushroom, inonotus obliquus</div>
+        <div class="fact-value">chaga mushroom, inonotus obliquus, black mass</div>
       </div>
       <div class="fact-item">
         <div class="fact-label">Watts Rating</div>
@@ -474,10 +529,11 @@
       </div>
     </div>
 
-    <h2>What It Is</h2>
+    <h2 id="what-it-is">What It Is</h2>
     <p>Medicinal mushroom (Inonotus obliquus) growing on birch trees, extremely rich in antioxidants, particularly melanin and betulinic acid.</p>
+    
 
-    <h2>Why It's Used in Dog Products</h2>
+    <h2 id="why-used">Why It's Used in Dog Products</h2>
     <p>Manufacturers include chaga in dog food, treats, and supplements for several reasons:</p>
     <ul>
       <li>Potent antioxidant support (highest ORAC score of mushrooms)</li>
@@ -487,23 +543,37 @@
       <li>Supports digestive health and gut lining</li>
     </ul>
 
-    <h2>Key Considerations</h2>
+    
+
+    <h2 id="key-considerations">Quality Considerations</h2>
     <p>When evaluating chaga in dog products, it's important to understand clinical evidence, appropriate dosing, and targeted health benefits. This ingredient's quality and appropriateness can vary significantly based on sourcing, processing, and the specific formula it's used in.</p>
+
+    
+
+    
 
     <div class="quality-note-box">
       <div class="quality-note-label">Quality Note</div>
       <p style="margin: 0;">One of the most antioxidant-rich natural substances. Wild-harvested from birch trees is traditional and preferred over cultivated. Quality varies significantly—look for products from cold climates (Siberia, Canada, Northern US) where beneficial compounds are highest. Dual extraction recommended.</p>
     </div>
 
-    <h2>Potential Concerns</h2>
+    <h2 id="concerns">Potential Concerns</h2>
     <p>While chaga can be appropriate in dog nutrition, pet owners should be aware of efficacy, quality of source material, and potential interactions with medications. Individual dogs may respond differently to the same ingredient based on their health status, age, and sensitivities.</p>
 
-    <div class="watts-take-box">
+    
+
+    
+
+    
+
+    
+
+    <div class="watts-take-box" id="watts-take">
       <div class="watts-take-label">Watts' Take</div>
       <p style="margin: 0; font-size: 18px;">Powerhouse antioxidant mushroom with broad health benefits. Particularly valuable for dogs with inflammatory conditions or oxidative stress. Premium ingredient—wild-harvested from birch in cold climates is superior. One of the best natural antioxidants available.</p>
     </div>
 
-    <h2>Frequently Asked Questions</h2>
+    <h2 id="faqs">Frequently Asked Questions</h2>
 
     <div class="faq-item">
       <h3>Is chaga safe for dogs?</h3>
@@ -516,7 +586,9 @@
     </div>
 
 
-    <h2>Related Ingredients</h2>
+    
+
+    <h2 id="related">Related Ingredients</h2>
     <div class="related-grid">
       <a href="/ingredient-analyzer/ingredients/amylase/" class="related-card">
         <h3>Amylase</h3>

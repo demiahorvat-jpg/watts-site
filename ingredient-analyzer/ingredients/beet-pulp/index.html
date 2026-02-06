@@ -137,6 +137,38 @@
         color: var(--muted);
       }
 
+      .table-of-contents {
+        background: white;
+        border: 2.5px solid var(--border);
+        padding: 24px;
+        margin: 32px 0;
+      }
+
+      .table-of-contents h2 {
+        font-size: 20px;
+        margin: 0 0 16px 0;
+      }
+
+      .table-of-contents ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .table-of-contents li {
+        margin-bottom: 8px;
+      }
+
+      .table-of-contents a {
+        color: var(--fg);
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .table-of-contents a:hover {
+        text-decoration: underline;
+      }
+
       .quick-summary {
         background: white;
         border: 2.5px solid var(--border);
@@ -206,6 +238,15 @@
         margin-bottom: 20px;
         font-size: 18px;
         line-height: 1.7;
+      }
+
+      a {
+        color: var(--fg);
+        text-decoration: underline;
+      }
+
+      a:hover {
+        opacity: 0.7;
       }
 
       ul {
@@ -450,7 +491,21 @@
       <p style="color: var(--muted); font-size: 16px; margin-top: 12px;">Last updated: January 25, 2026</p>
     </div>
 
-    <div class="quick-summary">
+    <div class="table-of-contents">
+      <h2>Table of Contents</h2>
+      <ul>
+        <li><a href="#quick-summary">Quick Summary</a></li>
+        <li><a href="#what-it-is">What It Is</a></li>
+        <li><a href="#why-used">Why It's Used</a></li>
+        <li><a href="#key-considerations">Quality Considerations</a></li>
+        <li><a href="#concerns">Potential Concerns</a></li>
+        <li><a href="#watts-take">Watts' Take</a></li>
+        <li><a href="#faqs">Frequently Asked Questions</a></li>
+        <li><a href="#related">Related Ingredients</a></li>
+      </ul>
+    </div>
+
+    <div class="quick-summary" id="quick-summary">
       <h2>Quick Summary</h2>
       <p><strong>Beet Pulp</strong> Fibrous residue left after extracting sugar from sugar beets. Moderately fermentable fiber.</p>
     </div>
@@ -474,10 +529,11 @@
       </div>
     </div>
 
-    <h2>What It Is</h2>
+    <h2 id="what-it-is">What It Is</h2>
     <p>Fibrous residue left after extracting sugar from sugar beets. Moderately fermentable fiber.</p>
+    
 
-    <h2>Why It's Used in Dog Products</h2>
+    <h2 id="why-used">Why It's Used in Dog Products</h2>
     <p>Manufacturers include beet pulp in dog food, treats, and supplements for several reasons:</p>
     <ul>
       <li>Inexpensive fiber source</li>
@@ -485,23 +541,37 @@
       <li>Moderately fermentable (feeds gut bacteria)</li>
     </ul>
 
-    <h2>Key Considerations</h2>
+    
+
+    <h2 id="key-considerations">Quality Considerations</h2>
     <p>When evaluating beet pulp in dog products, it's important to understand soluble versus insoluble fiber, digestive health benefits, and stool quality. This ingredient's quality and appropriateness can vary significantly based on sourcing, processing, and the specific formula it's used in.</p>
+
+    
+
+    
 
     <div class="quality-note-box">
       <div class="quality-note-label">Quality Note</div>
       <p style="margin: 0;">Decent fiber source despite being a byproduct. Helps maintain healthy stools and feeds beneficial bacteria.</p>
     </div>
 
-    <h2>Potential Concerns</h2>
+    <h2 id="concerns">Potential Concerns</h2>
     <p>While beet pulp can be appropriate in dog nutrition, pet owners should be aware of excessive fiber reducing nutrient absorption and causing digestive upset. Individual dogs may respond differently to the same ingredient based on their health status, age, and sensitivities.</p>
 
-    <div class="watts-take-box">
+    
+
+    
+
+    
+
+    
+
+    <div class="watts-take-box" id="watts-take">
       <div class="watts-take-label">Watts' Take</div>
       <p style="margin: 0; font-size: 18px;">Acceptable fiber source. While it's a sugar byproduct, it provides functional fiber. Not our first choice, but not problematic in moderate amounts.</p>
     </div>
 
-    <h2>Frequently Asked Questions</h2>
+    <h2 id="faqs">Frequently Asked Questions</h2>
 
     <div class="faq-item">
       <h3>Is beet pulp safe for dogs?</h3>
@@ -514,7 +584,9 @@
     </div>
 
 
-    <h2>Related Ingredients</h2>
+    
+
+    <h2 id="related">Related Ingredients</h2>
     <div class="related-grid">
       <a href="/ingredient-analyzer/ingredients/cellulose/" class="related-card">
         <h3>Cellulose</h3>
