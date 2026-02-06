@@ -662,10 +662,20 @@
       },
       "whyUsedExpanded": "Barley appears in dog food as economical whole grain providing complex carbohydrates, exceptional fiber (particularly beta-glucan soluble fiber), and B vitamins. It's cheaper than oatmeal or brown rice while offering similar nutrition. Barley's high fiber supports digestive health and regulates blood sugar. Its lower glycemic index makes it suitable for weight management. However, gluten content limits its use in grain-sensitive formulas. Barley signals mid-tier quality—better than corn or wheat, but less premium than oatmeal or sweet potatoes.",
       "nutritionalProfile": {
-        "carbohydrates": "60-65g per 100g",
-        "protein": "10-12g (incomplete for dogs)",
-        "fiber": "15-20g including beta-glucan soluble fiber",
-        "micronutrients": "B vitamins (thiamine, niacin, B6), manganese, selenium, iron, magnesium"
+        "macros": {
+          "carbohydrates": "60-65g per 100g",
+          "protein": "10-12g (incomplete for dogs)",
+          "fiber": "15-20g including beta-glucan soluble fiber",
+          "fat": "2-3g",
+          "moisture": "10-12%"
+        },
+        "micronutrients": {
+          "bVitamins": "Thiamine, niacin, B6",
+          "manganese": "Good source",
+          "selenium": "Present",
+          "iron": "Moderate levels",
+          "magnesium": "Present"
+        }
       },
       "concernsExpanded": {
         "detailed": "Barley contains gluten, unsuitable for dogs with wheat/gluten sensitivities. Rare but real concern. High fiber benefits most dogs but could cause gas or loose stools in sensitive dogs. Phytic acid binds minerals, slightly reducing absorption. Otherwise safe.",
@@ -2144,7 +2154,12 @@
       "nutritionalProfile": {
         "betaCarotene": "Exceptionally high—among best plant sources",
         "fiber": "3g per 100g, both soluble and insoluble",
-        "micronutrients": "Vitamin K1, potassium, vitamin C, vitamin B6"
+        "micronutrients": {
+          "vitaminK1": "Good source",
+          "potassium": "Present",
+          "vitaminC": "Present",
+          "vitaminB6": "Present"
+        }
       },
       "concernsExpanded": {
         "detailed": "Carrots are very safe. Excessive amounts could cause orange-tinged stools (beta-carotene) or loose stools (fiber), but normal amounts are completely safe. No significant concerns—one of safest, most beneficial vegetables.",
@@ -3285,8 +3300,21 @@
       },
       "whyUsedExpanded": "Chickpeas appear in dog food for plant protein content (20-22%), low-glycemic carbohydrates, good fiber (12-14%), and grain-free positioning. They provide protein boost while maintaining steady blood sugar. Rich in folate, iron, and minerals. Chickpeas' firm texture helps bind kibble and adds variety. More expensive than peas, chickpeas signal premium grain-free formulas. They're well-tolerated by most dogs and hypoallergenic.",
       "nutritionalProfile": {
-        "macros": "60-65g carbohydrate per 100g (including 12-14g fiber), 20-22g protein (incomplete for dogs), 5-6g fat, 10-12% moisture",
-        "micronutrients": "Excellent folate, good iron (non-heme), phosphorus, manganese, zinc, magnesium, B vitamins",
+        "macros": {
+          "carbohydrates": "60-65g per 100g (including 12-14g fiber)",
+          "protein": "20-22g (incomplete for dogs)",
+          "fat": "5-6g",
+          "moisture": "10-12%"
+        },
+        "micronutrients": {
+          "folate": "Excellent source",
+          "iron": "Good (non-heme)",
+          "phosphorus": "Present",
+          "manganese": "Good source",
+          "zinc": "Present",
+          "magnesium": "Present",
+          "bVitamins": "Good source"
+        },
         "glycemicImpact": "Low-to-moderate glycemic index (35-45), good for blood sugar control",
         "proteinQuality": "Incomplete plant protein lacking optimal amino acids for dogs. Useful protein boost but not replacement for animal protein"
       },
@@ -6877,8 +6905,20 @@
       },
       "whyUsedExpanded": "Lentils appear in dog food for high plant protein content (24-26%), low glycemic carbohydrates, exceptional fiber (15-16%), and grain-free positioning. They provide more protein per weight than most plant ingredients while maintaining low glycemic index for steady blood sugar. Rich in B vitamins, iron, and minerals. Lentils help bind kibble during extrusion and add textural variety. They're more expensive than peas but signal premium quality. Grain-free formulas use lentils as both protein boost and carbohydrate source.",
       "nutritionalProfile": {
-        "macros": "60g carbohydrate per 100g (including 15-16g fiber), 24-26g protein (incomplete for dogs), 1-2g fat, 10-12% moisture",
-        "micronutrients": "Excellent B vitamins (folate, thiamine, B6), iron (non-heme, less bioavailable), magnesium, zinc, potassium, manganese",
+        "macros": {
+          "carbohydrates": "60g per 100g (including 15-16g fiber)",
+          "protein": "24-26g (incomplete for dogs)",
+          "fat": "1-2g",
+          "moisture": "10-12%"
+        },
+        "micronutrients": {
+          "bVitamins": "Excellent—folate, thiamine, B6",
+          "iron": "Non-heme, less bioavailable",
+          "magnesium": "Good source",
+          "zinc": "Present",
+          "potassium": "Good source",
+          "manganese": "Present"
+        },
         "glycemicImpact": "Low glycemic index (30-35), excellent for blood sugar control and weight management",
         "proteinQuality": "Incomplete plant protein lacking methionine, taurine, and optimal amino acid profile for dogs. Useful protein boost but not replacement for animal protein"
       },
@@ -8355,8 +8395,19 @@
       },
       "whyUsedExpanded": "Potatoes appear in dog food primarily for grain-free positioning. During the grain-free trend, potatoes replaced rice and wheat as carbohydrate source. They're whole-food ingredients providing digestible starch for energy. Potatoes are hypoallergenic—potato sensitivities are extremely rare, making them suitable for dogs with grain allergies. They're readily available, affordable (though more expensive than corn or wheat), and well-tolerated by most dogs. Potatoes help bind kibble during extrusion. However, their high glycemic index and sparse nutrient profile make them nutritionally inferior to sweet potatoes. They're acceptable but not optimal.",
       "nutritionalProfile": {
-        "macros": "Approximately 17-20g carbohydrate per 100g fresh (75-80g per 100g dried), 2g protein, minimal fat, 1-2g fiber, 75-80% moisture in fresh potatoes",
-        "micronutrients": "Potassium (excellent source, 420mg per 100g), vitamin C (moderate, 20mg per 100g), vitamin B6 (present), minimal other vitamins or minerals",
+        "macros": {
+          "carbohydrates": "17-20g per 100g fresh (75-80g per 100g dried)",
+          "protein": "2g (incomplete for dogs)",
+          "fat": "Minimal",
+          "fiber": "1-2g",
+          "moisture": "75-80% in fresh potatoes"
+        },
+        "micronutrients": {
+          "potassium": "420mg per 100g (excellent source)",
+          "vitaminC": "20mg per 100g (moderate)",
+          "vitaminB6": "Present",
+          "otherVitamins": "Minimal"
+        },
         "glycemicImpact": "High glycemic index (85-95), causing rapid blood sugar spikes. Not ideal for diabetic dogs or weight management.",
         "bioavailability": "Cooked potato starch is highly digestible (85-90%), providing excellent calorie availability but rapid glucose release"
       },
@@ -8848,7 +8899,12 @@
       "nutritionalProfile": {
         "fiber": "Excellent source with ideal soluble/insoluble balance",
         "betaCarotene": "Very high—dogs convert to vitamin A",
-        "micronutrients": "Vitamin C, potassium, iron, folate"
+        "micronutrients": {
+          "vitaminC": "Present",
+          "potassium": "Good source",
+          "iron": "Present",
+          "folate": "Present"
+        }
       },
       "concernsExpanded": {
         "detailed": "Pumpkin is remarkably safe. Excessive amounts could cause orange-tinged stools (from beta-carotene) or loose stools (from fiber), but normal food amounts are completely safe. Avoid pumpkin pie filling (has sugar/spices). Otherwise minimal concerns—one of safest, most beneficial ingredients.",
@@ -9012,8 +9068,20 @@
       },
       "whyUsedExpanded": "Rice appears in dog food for exceptional digestibility (85-95%), hypoallergenic properties (rice allergies extremely rare), and steady carbohydrate energy. It's the gold standard for sensitive stomachs and elimination diets. Rice is gluten-free, suitable for wheat-sensitive dogs. Brown/whole grain rice provides B vitamins and minerals; refined white rice provides pure digestible energy. Rice has long, proven safety record. Mid-tier ingredient—less expensive than premium carbs like sweet potatoes but significantly better than corn or wheat in digestibility and hypoallergenicity.",
       "nutritionalProfile": {
-        "macros": "77g carbohydrate per 100g (3-4g fiber for brown, less for white), 7-8g protein (incomplete), 2-3g fat, 12% moisture",
-        "micronutrients": "Whole grain rice: B vitamins (thiamine, niacin, B6), manganese, magnesium, selenium, iron. White rice: minimal micronutrients",
+        "macros": {
+          "carbohydrates": "77g per 100g (3-4g fiber for brown, less for white)",
+          "protein": "7-8g (incomplete)",
+          "fat": "2-3g",
+          "moisture": "12%"
+        },
+        "micronutrients": {
+          "bVitamins": "Thiamine, niacin, B6 (whole grain rice)",
+          "manganese": "Good source (whole grain)",
+          "magnesium": "Present (whole grain)",
+          "selenium": "Present",
+          "iron": "Present (whole grain)",
+          "whiteRiceNote": "White rice has minimal micronutrients"
+        },
         "glycemicImpact": "Brown/whole rice: moderate glycemic (55-65). White rice: higher glycemic (70-85)",
         "digestibility": "Exceptional 85-95% digestibility, best among common grains"
       },
@@ -10353,8 +10421,15 @@
       },
       "whyUsedExpanded": "Tapioca appears in dog food primarily as inexpensive grain-free binder and filler. It's hypoallergenic, easily digestible, and provides texture during kibble extrusion. Tapioca helps bind grain-free formulas lacking gluten structure. However, tapioca is nutritionally empty—pure starch without vitamins, minerals, or fiber. Used because it's cheap and functional, not because it provides nutrition. Tapioca signals economy grain-free formula—brands focused on nutrition use sweet potatoes, legumes, or whole grains instead. Tapioca acceptable in small amounts (positions 8-12), but concerning as primary carbohydrate.",
       "nutritionalProfile": {
-        "macros": "88g carbohydrate per 100g (almost entirely starch, 0.1-0.2g fiber), negligible protein and fat, 12% moisture",
-        "micronutrients": "Virtually none—trace amounts of iron and calcium only",
+        "macros": {
+          "carbohydrates": "88g per 100g (almost entirely starch, 0.1-0.2g fiber)",
+          "protein": "Negligible",
+          "fat": "Negligible",
+          "moisture": "12%"
+        },
+        "micronutrients": {
+          "note": "Virtually none—trace amounts of iron and calcium only"
+        },
         "glycemicImpact": "Very high glycemic index (85-95), causing rapid blood sugar spikes. Problematic for diabetic dogs and weight management.",
         "nutritionalValue": "Essentially zero—pure empty calories"
       },
@@ -11335,7 +11410,13 @@
         "protein": "18-22g per 100g fresh (higher in whitefish meal), complete with all essential amino acids",
         "fat": "2-5g per 100g—lean fish with lower omega-3s than salmon/herring",
         "omega3": "Present but lower than oily fish—provides some EPA/DHA but not exceptional",
-        "micronutrients": "Vitamin D, B vitamins (B12, niacin), selenium, phosphorus, iodine",
+        "micronutrients": {
+          "vitaminD": "Good source",
+          "bVitamins": "B12, niacin",
+          "selenium": "Present",
+          "phosphorus": "Present",
+          "iodine": "Present"
+        },
         "bioavailability": "Excellent—animal protein with optimal amino acid profile"
       },
       "qualityConsiderations": {
@@ -13324,7 +13405,13 @@
         "protein": "70-75g per 100g, complete with all essential amino acids",
         "fat": "8-12g per 100g including exceptional EPA and DHA omega-3 fatty acids",
         "omega3": "Herring are oily fish providing high EPA and DHA—supports heart, brain, joints, and coat",
-        "minerals": "Calcium, phosphorus (from bones), selenium, iodine, magnesium",
+        "minerals": {
+          "calcium": "From bones",
+          "phosphorus": "From bones",
+          "selenium": "Good source",
+          "iodine": "Present",
+          "magnesium": "Present"
+        },
         "bioavailability": "Excellent—animal protein with optimal amino acid profile for dogs"
       },
       "qualityConsiderations": {
@@ -14652,8 +14739,17 @@
       },
       "whyUsedExpanded": "White rice appears in dog food for exceptional digestibility (90-98%), making it ideal for sensitive stomachs, digestive upset, and bland diets. Veterinarians routinely recommend white rice for diarrhea or vomiting. It's hypoallergenic and gluten-free. However, white rice is nutritionally sparse compared to brown rice—used for digestibility rather than nutrition. In regular dog food, white rice provides quick energy but lacks fiber and micronutrients. Less expensive than brown rice. White rice suits dogs with chronic digestive issues or temporary upset, but brown rice preferable for everyday feeding in healthy dogs.",
       "nutritionalProfile": {
-        "macros": "78g carbohydrate per 100g (0.5-1g fiber), 7g protein (incomplete), less than 1g fat, 12% moisture",
-        "micronutrients": "Minimal—refining removes most vitamins and minerals. Trace amounts of thiamine and niacin.",
+        "macros": {
+          "carbohydrates": "78g per 100g (0.5-1g fiber)",
+          "protein": "7g (incomplete)",
+          "fat": "Less than 1g",
+          "moisture": "12%"
+        },
+        "micronutrients": {
+          "note": "Minimal—refining removes most vitamins and minerals",
+          "thiamine": "Trace amounts",
+          "niacin": "Trace amounts"
+        },
         "glycemicImpact": "High glycemic index (70-85), causing rapid blood sugar spikes. Not ideal for diabetic dogs or weight management.",
         "digestibility": "Exceptional 90-98% digestibility, highest among common grains"
       },
