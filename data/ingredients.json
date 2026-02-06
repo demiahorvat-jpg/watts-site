@@ -3269,7 +3269,77 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Chickpeas (Cicer arietinum), also called garbanzo beans, are protein-rich legumes providing complex carbohydrates, fiber, and plant-based nutrition in dog food. Whole dried chickpeas contain approximately 10-12% moisture, 60-65% carbohydrates (including 12-14% fiber), 20-22% protein, and 5-6% fat. Chickpeas provide substantial plant protein (higher than most grains at 8-12%), though incomplete for dogs lacking essential amino acids. They're rich in folate, iron, phosphorus, manganese, and zinc. Chickpeas have low-to-moderate glycemic index (35-45), supporting steady blood sugar. Larger and firmer than lentils or peas, chickpeas add textural variety to kibble. They became popular during grain-free trend as wheat and corn replacement. Available as whole chickpeas or chickpea flour. Whole chickpeas are preferable to processed fractions like chickpea protein isolate.",
+        "compareToSimilar": [
+          {
+            "ingredient": "lentils",
+            "difference": "Chickpeas and lentils are both protein-rich legumes. Chickpeas have slightly less protein (20-22% vs 24-26%) and fiber (12-14% vs 15-16%). Chickpeas are larger and firmer; lentils are smaller and softer. Both have low glycemic index. Lentils edge out chickpeas nutritionally, but chickpeas provide better texture in kibble and are equally nutritious overall."
+          },
+          {
+            "ingredient": "peas",
+            "difference": "Chickpeas and peas are similar legumes. Chickpeas have comparable protein (20-22% vs 21-23% for peas) but lower glycemic index (35-45 vs 40-50). Chickpeas are larger and firmer than peas. Both are quality legumes—chickpeas are more expensive but signal premium quality. Either works well as grain-free carbohydrate source."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Chickpeas appear in dog food for plant protein content (20-22%), low-glycemic carbohydrates, good fiber (12-14%), and grain-free positioning. They provide protein boost while maintaining steady blood sugar. Rich in folate, iron, and minerals. Chickpeas' firm texture helps bind kibble and adds variety. More expensive than peas, chickpeas signal premium grain-free formulas. They're well-tolerated by most dogs and hypoallergenic.",
+      "nutritionalProfile": {
+        "macros": "60-65g carbohydrate per 100g (including 12-14g fiber), 20-22g protein (incomplete for dogs), 5-6g fat, 10-12% moisture",
+        "micronutrients": "Excellent folate, good iron (non-heme), phosphorus, manganese, zinc, magnesium, B vitamins",
+        "glycemicImpact": "Low-to-moderate glycemic index (35-45), good for blood sugar control",
+        "proteinQuality": "Incomplete plant protein lacking optimal amino acids for dogs. Useful protein boost but not replacement for animal protein"
+      },
+      "qualityConsiderations": {
+        "expanded": "Whole chickpeas are quality ingredients in grain-free formulas when positioned after animal proteins (positions 4-8). Chickpeas as top 3 ingredients without adequate meat signal protein inadequacy. Distinguish whole chickpeas from chickpea flour or chickpea protein isolate (processed fractions). Multiple chickpea forms (chickpeas + chickpea flour + chickpea protein) inflate protein artificially—red flag. Whole chickpeas after quality animal proteins indicate proper grain-free formulation.",
+        "redFlags": [
+          "Chickpeas in top 3 positions without sufficient meat protein",
+          "Multiple chickpea forms (whole + flour + protein isolate = manipulation)",
+          "Chickpea protein isolate as primary protein"
+        ],
+        "greenFlags": [
+          "Whole chickpeas after named animal proteins",
+          "Single chickpea form indicating transparent formulation",
+          "Chickpeas combined with quality meat meals"
+        ]
+      },
+      "concernsExpanded": {
+        "detailed": "Chickpeas are generally safe with similar considerations to other legumes. Primary concern: incomplete plant protein cannot replace animal protein—dogs need meat-based amino acids for optimal health. Chickpeas lack taurine (critical for heart), methionine, and ideal ratios. Legume-heavy diets investigated for potential DCM connection (not definitively proven), particularly when replacing animal protein. Chickpeas contain lectins and phytic acid (anti-nutrients), reduced by cooking. Some dogs develop legume sensitivities causing digestive upset—rare but possible. Chickpeas are safe as carbohydrate/fiber source in balanced formulas with adequate meat.",
+        "contraindications": [
+          "Dogs with legume sensitivities should avoid",
+          "Formulas using chickpeas as primary protein without adequate meat may risk nutritional deficiencies—choose meat-first formulas",
+          "Dogs with sensitive digestion may not tolerate high-legume diets"
+        ],
+        "lifeStageConsiderations": "Appropriate for all life stages when combined with adequate animal protein. Growing puppies and pregnant/nursing dogs need high-quality meat protein—chickpeas cannot meet these requirements alone."
+      },
+      "scientificEvidence": {
+        "summary": "Chickpeas provide digestible carbohydrates (80-85% digestibility), quality fiber, and plant protein. Low-moderate glycemic index supports blood sugar control. Plant protein incomplete for dogs. FDA investigated grain-free legume diets for DCM connection (inconclusive, ongoing). Chickpeas safe in balanced formulas with meat protein.",
+        "keyStudies": [],
+        "evidenceLevel": "Strong regarding digestibility and nutritional value. Moderate regarding DCM concerns (ongoing research, not definitive)."
+      },
+      "faqs": [
+        {
+          "question": "Are chickpeas safe for dogs?",
+          "answer": "Yes, chickpeas are safe and nutritious for dogs when used appropriately in balanced formulas. They provide plant protein (20-22%), low-glycemic carbohydrates, good fiber (12-14%), and rich folate, iron, and minerals. Chickpeas support digestive health and blood sugar control. However, chickpeas provide incomplete protein for dogs—they lack essential amino acids like taurine and methionine. Chickpeas should complement, not replace, animal protein. Choose formulas with named meat as first ingredient followed by chickpeas for carbohydrate/fiber contribution. In grain-free diets with adequate meat protein, chickpeas are quality ingredients.",
+          "answerShort": "Yes, when paired with meat. Good plant protein, low-glycemic, decent fiber. Incomplete protein—needs animal protein. Safe in balanced formulas.",
+          "priority": 1
+        },
+        {
+          "question": "Are chickpeas better than peas for dogs?",
+          "answer": "Chickpeas and peas are nutritionally similar with minor differences. Both provide comparable protein (chickpeas 20-22%, peas 21-23%) and fiber. Chickpeas have slightly lower glycemic index (35-45 vs 40-50 for peas), making them marginally better for blood sugar control. Chickpeas are larger and firmer, providing better texture in kibble. Peas are more common and less expensive; chickpeas signal premium positioning. Neither is dramatically superior—both are quality legumes in grain-free formulas. Choose based on overall formula quality and your dog's individual tolerance. Dogs sensitive to peas may tolerate chickpeas better or vice versa.",
+          "answerShort": "Similar nutrition. Chickpeas slightly lower glycemic, better texture. Peas more economical. Both quality legumes. Neither dramatically better.",
+          "priority": 2
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "chickpeas dog food",
+        "secondaryKeywords": [
+          "are chickpeas safe for dogs",
+          "chickpeas vs peas dogs",
+          "garbanzo beans dogs"
+        ],
+        "metaDescription": "Chickpeas (garbanzo beans) in dog food: Plant protein, low-glycemic carbs, fiber benefits, safety, comparison to peas and lentils."
+      }
     },
     {
       "name": "Chicory Root",
@@ -5991,7 +6061,57 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Kale (Brassica oleracea) is a nutrient-dense leafy green vegetable providing vitamins, minerals, and antioxidants in dog food. Fresh kale contains approximately 84% moisture, 9g carbohydrate, 4g protein, 1g fat, and 2g fiber per 100g. Kale is exceptionally rich in vitamins K1 (over 600% daily value for humans per 100g), A (from beta-carotene), and C, along with minerals including calcium, potassium, manganese, and iron. It provides powerful antioxidants including quercetin and kaempferol (anti-inflammatory, heart health). Kale is a cruciferous vegetable alongside broccoli, cauliflower, and Brussels sprouts. Like spinach, kale contains oxalates—compounds that can contribute to kidney stones in predisposed dogs if consumed in large amounts. In dog food amounts (small quantities), kale is safe and beneficial. Often marketed as 'superfood' due to nutrient density.",
+        "compareToSimilar": [
+          {
+            "ingredient": "spinach",
+            "difference": "Kale and spinach are both nutrient-dense leafy greens. Kale has more vitamin C and calcium; spinach has more iron and folate. Both contain oxalates (kale slightly lower than spinach). Both are 'superfoods' providing similar health benefits. Kale is slightly hardier and has more textural variety. Both nutritious in dog food amounts—choose formulas with either for micronutrient boost."
+          },
+          {
+            "ingredient": "broccoli",
+            "difference": "Kale and broccoli are both cruciferous vegetables. Broccoli provides more sulforaphane (cancer-protective compound); kale provides more vitamins K, A, and C. Kale has oxalates; broccoli has isothiocyanates (safe in moderation, concerning in large amounts). Both are nutrient-dense vegetables signaling quality formulation. Both safe and beneficial in dog food amounts."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Kale appears in dog food for exceptional micronutrient density—vitamins K, A, C, along with calcium, iron, and antioxidants (quercetin, kaempferol). It signals premium whole-food ingredients and health-conscious formulation. Marketing appeal—'with kale' suggests superfood quality. In small amounts typically used, kale provides genuine nutritional benefits. Premium brands include kale for vitamins and antioxidants, not just marketing.",
+      "nutritionalProfile": {
+        "vitamins": "Exceptional—vitamin K1 (extremely high), vitamin A (from beta-carotene), vitamin C, folate, B vitamins",
+        "minerals": "Calcium, potassium, magnesium, manganese, iron",
+        "antioxidants": "Quercetin (anti-inflammatory), kaempferol, various carotenoids",
+        "oxalates": "Present but lower than spinach—concern in very large amounts only"
+      },
+      "concernsExpanded": {
+        "detailed": "Kale's main consideration is oxalate content, though lower than spinach. Oxalates bind calcium and can contribute to calcium oxalate kidney stones in predisposed dogs if consumed in large amounts. In small amounts used in dog food, this is minimal concern. Large amounts of plain kale fed as meal replacement could be problematic. Dogs with kidney stone history should have oxalate intake monitored. Kale is a cruciferous vegetable—excessive amounts could potentially affect thyroid function (goitrogenic), but dog food amounts are completely safe. Otherwise, kale is safe and highly beneficial.",
+        "contraindications": [
+          "Dogs with calcium oxalate kidney stone history should have oxalates monitored",
+          "Very large amounts of kale should be avoided (not an issue in dog food)"
+        ]
+      },
+      "faqs": [
+        {
+          "question": "Is kale safe for dogs?",
+          "answer": "Yes, kale is safe and highly beneficial for dogs in moderation, like the small amounts used in dog food. Kale is exceptionally nutrient-dense with vitamins K, A, C, calcium, iron, and powerful antioxidants (quercetin, kaempferol). It supports immune function, bone health, and provides anti-inflammatory benefits. However, kale contains oxalates—compounds that can contribute to kidney stones in predisposed dogs if consumed in large amounts. The small amounts in commercial dog food are safe and beneficial. Avoid feeding large amounts of plain kale as meal replacement. For dogs with kidney stone history, monitor oxalate intake. In dog food formulas, kale provides excellent nutritional value without significant risk.",
+          "answerShort": "Safe in moderation (like dog food amounts). Exceptionally nutrient-dense with vitamins, minerals, antioxidants. Contains oxalates—small amounts beneficial, large amounts concerning for kidney stone-prone dogs.",
+          "priority": 1
+        },
+        {
+          "question": "Is kale better than spinach for dogs?",
+          "answer": "Kale and spinach are similarly nutritious with minor differences. Kale has more vitamin C and calcium; spinach has more iron and folate. Kale has lower oxalates than spinach (though both contain them), making kale slightly safer for dogs prone to kidney stones. Both are 'superfoods' providing exceptional micronutrients and antioxidants. Both are safe in dog food amounts. Neither is dramatically superior—both signal premium quality ingredients. Choose based on overall formula quality rather than choosing between kale vs spinach. Dogs can benefit from either vegetable in their food.",
+          "answerShort": "Similar nutrition. Kale has lower oxalates, more vitamin C. Spinach has more iron. Both safe in dog food amounts. Neither dramatically better—both quality superfoods.",
+          "priority": 2
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "kale dog food",
+        "secondaryKeywords": [
+          "is kale safe for dogs",
+          "kale vs spinach dogs",
+          "kale oxalates dogs"
+        ],
+        "metaDescription": "Kale in dog food: Superfood with exceptional vitamins and minerals, antioxidant benefits, oxalate considerations, safety in moderation."
+      }
     },
     {
       "name": "L-Ascorbyl-2-Polyphosphate",
@@ -6741,7 +6861,83 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Lentils (Lens culinaris) are protein-rich legumes providing complex carbohydrates, fiber, and plant-based nutrition in dog food. Whole dried lentils contain approximately 10-12% moisture, 60% carbohydrates (including 15-16% fiber), 24-26% protein, and 1-2% fat. Lentils are notable for high protein content among plant ingredients (24-26% vs most grains at 8-12%), though this protein is incomplete for dogs, lacking essential amino acids like methionine and taurine. They're rich in B vitamins, iron, magnesium, zinc, and potassium. Lentils have low glycemic index (30-35), making them excellent for blood sugar control. They became popular during grain-free trend as replacement for wheat and corn. Unlike peas, lentils are lower in anti-nutritional factors and better tolerated by most dogs. Available as whole lentils, lentil flour, or split into red/green/brown varieties. Whole lentils are preferable to processed fractions.",
+        "compareToSimilar": [
+          {
+            "ingredient": "chickpeas",
+            "difference": "Lentils and chickpeas are both protein-rich legumes. Lentils have slightly more protein (24-26% vs 20-22%) and fiber (15-16% vs 12-14%). Chickpeas are larger and firmer; lentils are smaller and cook faster. Both have low glycemic index and similar micronutrients. Lentils are slightly better for protein content; chickpeas provide more sustained texture in kibble."
+          },
+          {
+            "ingredient": "peas",
+            "difference": "Lentils and peas are both legumes but lentils are nutritionally superior. Lentils have more protein (24-26% vs 21-23%) and lower glycemic index (30-35 vs 40-50). Lentils have fewer concerns about anti-nutritional factors. Peas are more common (cheaper); lentils signal higher quality. For dogs without legume sensitivities, lentils are the better legume choice."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Lentils appear in dog food for high plant protein content (24-26%), low glycemic carbohydrates, exceptional fiber (15-16%), and grain-free positioning. They provide more protein per weight than most plant ingredients while maintaining low glycemic index for steady blood sugar. Rich in B vitamins, iron, and minerals. Lentils help bind kibble during extrusion and add textural variety. They're more expensive than peas but signal premium quality. Grain-free formulas use lentils as both protein boost and carbohydrate source.",
+      "nutritionalProfile": {
+        "macros": "60g carbohydrate per 100g (including 15-16g fiber), 24-26g protein (incomplete for dogs), 1-2g fat, 10-12% moisture",
+        "micronutrients": "Excellent B vitamins (folate, thiamine, B6), iron (non-heme, less bioavailable), magnesium, zinc, potassium, manganese",
+        "glycemicImpact": "Low glycemic index (30-35), excellent for blood sugar control and weight management",
+        "proteinQuality": "Incomplete plant protein lacking methionine, taurine, and optimal amino acid profile for dogs. Useful protein boost but not replacement for animal protein"
+      },
+      "qualityConsiderations": {
+        "expanded": "Whole lentils are quality ingredients in grain-free formulas. Position after animal proteins (positions 4-8) indicates proper use as carb/fiber source. Lentils as primary protein source (top 3 positions without meat) signal inadequate animal protein. Distinguish whole lentils from lentil flour or lentil protein isolate (processed fractions). Multiple lentil forms (lentils + lentil flour + lentil protein) inflate apparent protein artificially—red flag for protein manipulation. Green, red, brown lentils are nutritionally similar. Organic lentils reduce pesticide exposure.",
+        "redFlags": [
+          "Lentils in top 3 positions without sufficient meat protein",
+          "Multiple lentil forms (lentils + lentil flour + lentil protein isolate = manipulation)",
+          "Lentil protein isolate as primary protein source"
+        ],
+        "greenFlags": [
+          "Whole lentils after quality animal proteins",
+          "Single lentil form indicating transparent formulation",
+          "Organic lentils specified"
+        ]
+      },
+      "concernsExpanded": {
+        "detailed": "Lentils are generally safe but have several considerations. Primary concern: incomplete plant protein cannot replace animal protein—dogs need meat-based amino acids. Lentils lack methionine, taurine (critical for heart health), and optimal ratios. Legume-heavy diets have been investigated (not definitively proven) for potential DCM (dilated cardiomyopathy) connection, particularly when replacing animal protein. Lentils contain lectins and phytic acid (anti-nutrients binding minerals), though cooking reduces these. Some dogs develop legume sensitivities causing gas, loose stools, or digestive upset—rare but real. Lentils are safe as carbohydrate/fiber source in balanced formulas with adequate animal protein.",
+        "contraindications": [
+          "Dogs with legume sensitivities should avoid",
+          "Formulas using lentils as primary protein without adequate meat may risk DCM—choose formulas with named meat as first ingredient",
+          "Dogs with chronic digestive issues may not tolerate high-legume formulas"
+        ],
+        "lifeStageConsiderations": "Appropriate for all life stages when paired with adequate animal protein. Puppies and pregnant/nursing dogs especially need high-quality meat protein—lentils alone insufficient."
+      },
+      "scientificEvidence": {
+        "summary": "Lentils provide digestible carbohydrates (85-90% digestibility), quality fiber, and plant protein boost. Low glycemic index proven beneficial for blood sugar control. However, plant protein incomplete for dogs. FDA investigated grain-free/legume-heavy diets for DCM link (inconclusive, ongoing research). Lentils safe in balanced formulas.",
+        "keyStudies": [],
+        "evidenceLevel": "Strong regarding digestibility and nutritional content. Moderate regarding DCM concerns (ongoing research, not definitive)."
+      },
+      "faqs": [
+        {
+          "question": "Are lentils good for dogs?",
+          "answer": "Yes, lentils are beneficial for dogs when used appropriately in balanced formulas. They provide high plant protein (24-26%), low glycemic carbohydrates, exceptional fiber (15-16%), and rich B vitamins and minerals. Lentils help control blood sugar and support digestive health. However, lentils provide incomplete protein for dogs—they lack essential amino acids like methionine and taurine. Lentils should complement, not replace, animal protein. Choose formulas with named meat as first ingredient followed by lentils for carbohydrate/fiber. In grain-free diets with adequate meat protein, lentils are quality ingredients providing genuine nutritional value.",
+          "answerShort": "Yes, when paired with meat protein. High plant protein, low glycemic, excellent fiber. Incomplete protein—cannot replace animal protein. Quality ingredient in balanced formulas.",
+          "priority": 1
+        },
+        {
+          "question": "Can lentils cause DCM in dogs?",
+          "answer": "The connection between lentils and DCM (dilated cardiomyopathy) is under investigation but not definitively proven. The FDA studied grain-free diets containing legumes like lentils, peas, and potatoes after reports of DCM cases. Research suggests the issue may relate to formulas using legumes as primary protein source instead of meat, potentially causing taurine deficiency or amino acid imbalances. Lentils themselves are not toxic or inherently dangerous. The concern is inadequate meat protein in legume-heavy formulas. To minimize risk, choose foods with named animal protein as first ingredient, adequate meat meals in top 5, and lentils as carbohydrate source (not protein replacement). Consult your veterinarian about DCM risks, especially for predisposed breeds.",
+          "answerShort": "Not proven definitively. FDA investigated grain-free legume diets for DCM link. Concern is inadequate meat protein, not lentils specifically. Choose meat-first formulas.",
+          "priority": 2
+        },
+        {
+          "question": "Are lentils better than grains for dogs?",
+          "answer": "Lentils are not inherently better than quality grains—both have nutritional value in different ways. Lentils provide more protein (24-26% vs 8-12% for grains), more fiber, and lower glycemic index than most grains. Excellent for blood sugar control and satiety. However, lentils provide incomplete plant protein while grains like brown rice offer steady energy and hypoallergenic nutrition. Quality grains (brown rice, oatmeal, barley) are scientifically proven safe with long feeding history. Grain-free with lentils is not automatically better—dogs evolved eating varied diets. Best choice depends on individual dog's needs: lentils for weight management and blood sugar control, grains for sustained energy and digestibility. Neither is universally superior.",
+          "answerShort": "Not inherently better—different benefits. Lentils: more protein/fiber, lower glycemic. Grains: proven safety, sustained energy. Both valuable. Choose based on dog's needs.",
+          "priority": 3
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "lentils dog food",
+        "secondaryKeywords": [
+          "are lentils good for dogs",
+          "lentils DCM dogs",
+          "lentils vs grains dogs"
+        ],
+        "metaDescription": "Lentils in dog food: High plant protein, low glycemic carbs, fiber benefits, DCM concerns, comparison to grains and peas."
+      }
     },
     {
       "name": "Lung",
@@ -8800,7 +8996,82 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Rice is a cereal grain providing easily digestible carbohydrates in dog food. The term 'rice' without specification typically refers to whole grain rice (brown rice) or milled rice, depending on manufacturer. Whole grain brown rice contains approximately 12% moisture, 77% carbohydrates (including 3-4% fiber), 7-8% protein, and 2-3% fat. Rice is exceptionally digestible (85-95%), hypoallergenic (rice allergies extremely rare), and provides steady energy. It has moderate glycemic index (55-65 for brown rice, higher for white rice). Rice is gluten-free, making it suitable for dogs with wheat or grain sensitivities. Brown rice provides B vitamins, magnesium, manganese, and selenium. White/refined rice is more digestible but nutritionally sparse. Rice has centuries-long safe feeding history and remains gold standard for digestibility and hypoallergenicity in dog food.",
+        "compareToSimilar": [
+          {
+            "ingredient": "brown-rice",
+            "difference": "Generic 'rice' and 'brown rice' are often the same ingredient—whole grain rice with bran intact. Brown rice is more specific terminology. Both provide 55-65 glycemic index, 3-4% fiber, and good B vitamins. If label says just 'rice,' check manufacturer to determine if whole or refined. Brown rice is clearer labeling indicating quality whole grain."
+          },
+          {
+            "ingredient": "white-rice",
+            "difference": "Whole rice (brown rice) is nutritionally superior to white rice. Whole rice has lower glycemic index (55-65 vs 70-85), more fiber (3-4% vs 0.5-1%), and vastly more micronutrients (B vitamins, magnesium, manganese). White rice is more digestible and used for sensitive stomachs, but whole rice provides better nutrition for healthy dogs. Whole rice is preferable unless dog has digestive issues requiring bland diet."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Rice appears in dog food for exceptional digestibility (85-95%), hypoallergenic properties (rice allergies extremely rare), and steady carbohydrate energy. It's the gold standard for sensitive stomachs and elimination diets. Rice is gluten-free, suitable for wheat-sensitive dogs. Brown/whole grain rice provides B vitamins and minerals; refined white rice provides pure digestible energy. Rice has long, proven safety record. Mid-tier ingredient—less expensive than premium carbs like sweet potatoes but significantly better than corn or wheat in digestibility and hypoallergenicity.",
+      "nutritionalProfile": {
+        "macros": "77g carbohydrate per 100g (3-4g fiber for brown, less for white), 7-8g protein (incomplete), 2-3g fat, 12% moisture",
+        "micronutrients": "Whole grain rice: B vitamins (thiamine, niacin, B6), manganese, magnesium, selenium, iron. White rice: minimal micronutrients",
+        "glycemicImpact": "Brown/whole rice: moderate glycemic (55-65). White rice: higher glycemic (70-85)",
+        "digestibility": "Exceptional 85-95% digestibility, best among common grains"
+      },
+      "qualityConsiderations": {
+        "expanded": "The term 'rice' on labels can be ambiguous—it may mean brown rice (whole grain, nutritious) or white rice (refined, less nutritious). Quality brands specify 'brown rice' or 'whole grain rice' for transparency. Generic 'rice' after quality proteins indicates reasonable formulation, though 'brown rice' is clearer. Organic rice reduces arsenic exposure (rice accumulates arsenic from soil/water). Rice in positions 4-8 after animal proteins is acceptable. Rice as first ingredient signals carb-heavy formula—less ideal.",
+        "redFlags": [
+          "Rice as first ingredient without concentrated protein following",
+          "Ambiguous 'rice' without clarification (brown vs white)",
+          "Multiple rice forms (rice + rice flour + rice bran = manipulation)"
+        ],
+        "greenFlags": [
+          "Brown rice or whole grain rice specified",
+          "Organic rice reducing arsenic exposure",
+          "Rice after quality animal proteins"
+        ]
+      },
+      "concernsExpanded": {
+        "detailed": "Rice is remarkably safe with minimal concerns. Primary consideration: arsenic accumulation—rice absorbs arsenic from soil/water more than other grains. Levels in pet food are generally safe, but organic rice or varied grain sources reduce exposure. Brown rice has slightly more arsenic than white (concentrated in bran), but nutritional benefits outweigh minimal risk for most dogs. Rice allergies are extremely rare—rice is hypoallergenic. High glycemic white rice may not be ideal for diabetic dogs or weight management (brown rice preferable). Otherwise, rice is one of safest, most beneficial grains.",
+        "contraindications": [
+          "Diabetic dogs better with brown rice (lower glycemic) than white rice",
+          "Dogs with rare rice allergies (extremely uncommon)"
+        ],
+        "lifeStageConsiderations": "Appropriate for all life stages. Excellent for puppies (digestible), adults (steady energy), and seniors (gentle on digestion). Often recommended for dogs with sensitive stomachs."
+      },
+      "scientificEvidence": {
+        "summary": "Rice has extensive scientific validation as highly digestible (85-95%), hypoallergenic carbohydrate source. Decades of safe feeding history. Veterinarians commonly recommend rice for digestive upset. Arsenic levels monitored and generally safe in commercial dog food.",
+        "keyStudies": [],
+        "evidenceLevel": "Very strong regarding safety, digestibility, and hypoallergenicity. Moderate regarding arsenic (present but minimal risk at food levels)."
+      },
+      "faqs": [
+        {
+          "question": "Is rice good for dogs?",
+          "answer": "Yes, rice is excellent for dogs. It's highly digestible (85-95%), hypoallergenic (rice allergies extremely rare), and provides steady carbohydrate energy. Rice is gluten-free and suitable for dogs with wheat or grain sensitivities. Brown/whole grain rice provides B vitamins, magnesium, manganese, and moderate glycemic index (55-65) for blood sugar control. White rice is more digestible and often used for upset stomachs, though less nutritious. Rice has centuries of safe feeding history and is gold standard for digestibility. Veterinarians commonly recommend rice for sensitive stomachs and elimination diets. One of the safest, most beneficial grains in dog food.",
+          "answerShort": "Excellent. Highly digestible, hypoallergenic, steady energy. Brown rice more nutritious; white rice more digestible. Gold standard grain for dogs.",
+          "priority": 1
+        },
+        {
+          "question": "Is brown rice or white rice better for dogs?",
+          "answer": "Brown rice is nutritionally superior for healthy dogs, while white rice is better for sensitive digestion. Brown rice has lower glycemic index (55-65 vs 70-85), more fiber (3-4% vs 0.5-1%), and rich B vitamins, magnesium, and manganese. Better for weight management and blood sugar control. White rice is highly digestible and gentler on upset stomachs—veterinarians often recommend white rice for dogs with diarrhea or digestive issues. For everyday feeding in healthy dogs, brown rice provides better nutrition. For dogs with chronic digestive sensitivity, white rice may be preferable. Both are safe and beneficial—choose based on your dog's health status.",
+          "answerShort": "Brown rice better nutrition (lower glycemic, more fiber/vitamins). White rice better for sensitive stomachs. Brown rice for healthy dogs; white rice for digestive issues.",
+          "priority": 2
+        },
+        {
+          "question": "Does rice in dog food contain arsenic?",
+          "answer": "Yes, rice naturally accumulates arsenic from soil and water, but levels in commercial dog food are generally safe. Brown rice has slightly more arsenic than white rice (concentrated in bran), though still within safe limits. The FDA monitors arsenic in pet food. To minimize exposure: choose organic rice (lower arsenic), look for brands testing for heavy metals, or select foods with varied grain sources (not exclusively rice). The arsenic concern is real but minor—rice's nutritional benefits and digestibility typically outweigh minimal risk. For most dogs, rice in commercial food is safe. Dogs eating exclusively rice-based food for years should have varied diet.",
+          "answerShort": "Yes, but generally safe levels. Brown rice slightly more than white. Organic rice and varied grains reduce exposure. Benefits outweigh minimal risk for most dogs.",
+          "priority": 3
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "rice dog food",
+        "secondaryKeywords": [
+          "is rice good for dogs",
+          "brown rice vs white rice dogs",
+          "rice arsenic dogs"
+        ],
+        "metaDescription": "Rice in dog food: Digestibility benefits, brown vs white rice comparison, arsenic concerns, hypoallergenic properties, safety for dogs."
+      }
     },
     {
       "name": "Rice Bran",
@@ -10066,7 +10337,76 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Tapioca is a starchy extract from cassava root (Manihot esculenta) providing grain-free carbohydrates in dog food. Pure tapioca starch contains approximately 12% moisture, 88% carbohydrates (almost entirely starch with minimal fiber 0.1-0.2%), negligible protein, and negligible fat. Tapioca is essentially pure starch—nutritionally empty calories providing quick energy but virtually no vitamins, minerals, or fiber. It has very high glycemic index (85-95), similar to white potatoes, causing rapid blood sugar spikes. Tapioca is hypoallergenic (cassava allergies extremely rare) and easily digestible. It became popular during grain-free trend as binder/filler replacing wheat and corn. However, tapioca is nutritionally inferior to virtually all alternatives—it's functional starch providing texture and binding without nutritional contribution. Commonly appears as tapioca starch or tapioca flour. Whole cassava root is more nutritious, but dog food uses extracted starch.",
+        "compareToSimilar": [
+          {
+            "ingredient": "potatoes",
+            "difference": "Tapioca and potatoes are both high-glycemic starches used in grain-free formulas. Potatoes provide more nutrition—potassium, vitamin C, and some B vitamins. Tapioca provides essentially zero nutrition—pure empty carbohydrates. Potatoes have glycemic 85-95; tapioca similar 85-95. Neither is nutritionally impressive, but potatoes edge out tapioca. Both are acceptable grain-free options, though sweet potatoes or legumes far superior."
+          },
+          {
+            "ingredient": "sweet-potatoes",
+            "difference": "Sweet potatoes are vastly superior to tapioca. Sweet potatoes provide lower glycemic index (60-70 vs 85-95), fiber (3-4% vs 0.1%), and exceptional vitamins (beta-carotene, C, manganese, potassium). Tapioca provides pure empty starch. Sweet potatoes are nutrient-dense; tapioca is nutrient-void filler. In grain-free formulas, sweet potatoes signal quality nutrition; tapioca signals cost-cutting. Choose sweet potato-based foods over tapioca-based."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Tapioca appears in dog food primarily as inexpensive grain-free binder and filler. It's hypoallergenic, easily digestible, and provides texture during kibble extrusion. Tapioca helps bind grain-free formulas lacking gluten structure. However, tapioca is nutritionally empty—pure starch without vitamins, minerals, or fiber. Used because it's cheap and functional, not because it provides nutrition. Tapioca signals economy grain-free formula—brands focused on nutrition use sweet potatoes, legumes, or whole grains instead. Tapioca acceptable in small amounts (positions 8-12), but concerning as primary carbohydrate.",
+      "nutritionalProfile": {
+        "macros": "88g carbohydrate per 100g (almost entirely starch, 0.1-0.2g fiber), negligible protein and fat, 12% moisture",
+        "micronutrients": "Virtually none—trace amounts of iron and calcium only",
+        "glycemicImpact": "Very high glycemic index (85-95), causing rapid blood sugar spikes. Problematic for diabetic dogs and weight management.",
+        "nutritionalValue": "Essentially zero—pure empty calories"
+      },
+      "qualityConsiderations": {
+        "expanded": "Tapioca signals lower quality in dog food. It's the nutritional equivalent of white flour—pure starch filler. In premium grain-free formulas, sweet potatoes, legumes, or whole grains provide carbohydrates with actual nutrition. Tapioca in lower positions (10-15) as minor binder is acceptable. Tapioca in top 5 ingredients signals carb-heavy, nutrient-poor formula relying on cheap filler. Multiple tapioca forms (tapioca + tapioca starch + tapioca flour) is red flag. Look for formulas prioritizing nutrient-dense carbs over tapioca.",
+        "redFlags": [
+          "Tapioca as first ingredient or top 3 positions",
+          "Multiple tapioca forms (tapioca + tapioca starch + tapioca flour)",
+          "Tapioca as primary carbohydrate without nutrient-dense alternatives"
+        ],
+        "greenFlags": [
+          "Tapioca in lower positions (10-15) as minor binder",
+          "Nutrient-dense carbs (sweet potatoes, legumes) listed before tapioca",
+          "Minimal tapioca in overall formula"
+        ]
+      },
+      "concernsExpanded": {
+        "detailed": "Tapioca's main concern is nutritional inadequacy—it provides empty calories without vitamins, minerals, or fiber. High glycemic index (85-95) causes blood sugar spikes, problematic for diabetic dogs and weight management. Long-term diets heavy in tapioca without balancing nutrient-dense ingredients could contribute to nutritional deficiencies (though complete dog food formulas compensate with vitamins/minerals). Tapioca is not harmful or toxic—it's just nutritionally worthless filler. Dogs don't benefit from tapioca beyond digestible calories. Cassava allergies extremely rare—tapioca is hypoallergenic.",
+        "contraindications": [
+          "Diabetic dogs should avoid high-tapioca formulas due to high glycemic impact",
+          "Overweight dogs better served by nutrient-dense, lower-glycemic carbohydrates"
+        ],
+        "lifeStageConsiderations": "While safe for all life stages in balanced formulas, puppies and active dogs benefit more from nutrient-dense carbohydrates. Tapioca provides calories without developmental nutrition."
+      },
+      "scientificEvidence": {
+        "summary": "Tapioca provides highly digestible pure starch with high glycemic index. No significant nutritional benefits beyond calories. Safe but not beneficial. Better alternatives exist.",
+        "keyStudies": [],
+        "evidenceLevel": "Strong regarding digestibility and glycemic impact. Strong regarding lack of nutritional value."
+      },
+      "faqs": [
+        {
+          "question": "Is tapioca bad for dogs?",
+          "answer": "Tapioca is not bad or harmful, but it's nutritionally poor—essentially empty calories. Tapioca provides pure starch without vitamins, minerals, or fiber. It has very high glycemic index (85-95) causing blood sugar spikes. Tapioca is hypoallergenic and digestible, but offers no nutritional benefits beyond energy. In balanced dog food formulas supplemented with vitamins/minerals, tapioca won't harm your dog. However, tapioca-heavy formulas signal lower quality—better alternatives include sweet potatoes, legumes, or whole grains providing actual nutrition. Tapioca as minor ingredient (positions 10-15) is acceptable filler. Tapioca as primary carbohydrate (top 5) suggests nutrient-poor formula. Not toxic, just nutritionally empty.",
+          "answerShort": "Not harmful but nutritionally empty. Pure starch, high glycemic, zero vitamins/minerals/fiber. Acceptable as minor ingredient; concerning as primary carb. Better alternatives exist.",
+          "priority": 1
+        },
+        {
+          "question": "Is tapioca better than potatoes for dogs?",
+          "answer": "No, potatoes are slightly better than tapioca, though neither is optimal. Potatoes provide potassium, vitamin C, and some B vitamins; tapioca provides virtually zero nutrition. Both have similar high glycemic index (85-95) causing blood sugar spikes. Both are grain-free starches used as filler. Potatoes are marginally more nutritious. However, sweet potatoes are far superior to both—lower glycemic (60-70), rich vitamins/minerals, and quality nutrition. If comparing foods, prefer potatoes over tapioca, but prioritize sweet potatoes or legumes over both. Neither potatoes nor tapioca should be primary carbohydrate in quality formulas.",
+          "answerShort": "Potatoes slightly better—provide some vitamins. Tapioca essentially empty. Both high glycemic. Sweet potatoes far superior to both. Prefer sweet potato-based foods.",
+          "priority": 2
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "tapioca dog food",
+        "secondaryKeywords": [
+          "is tapioca bad for dogs",
+          "tapioca vs potatoes dogs",
+          "tapioca starch dogs"
+        ],
+        "metaDescription": "Tapioca in dog food: Empty carbohydrate filler, high glycemic index, lack of nutritional value, comparison to potatoes and sweet potatoes."
+      }
     },
     {
       "name": "Taurine",
@@ -10976,7 +11316,76 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Whitefish refers to mild-flavored, white-fleshed fish species used as protein source in dog food, typically including species like cod, haddock, pollock, or lake whitefish. Fresh whitefish contains approximately 70-75% moisture, 18-22% protein, 2-5% fat (lean fish with lower omega-3s than oily fish like salmon or herring), and minimal carbohydrates. Whitefish provides complete protein with all essential amino acids, highly digestible and hypoallergenic. Unlike oily fish (salmon, herring), whitefish is leaner with lower omega-3 content but still quality protein. As fresh ingredient, whitefish contains 70-75% water—it loses significant weight during processing, moving lower on ingredient list post-cooking. Whitefish meal (rendered/dried) provides more concentrated protein. 'Whitefish' as catch-all term can include various species—less specific than 'salmon' or 'herring,' but generally refers to quality white-fleshed fish.",
+        "compareToSimilar": [
+          {
+            "ingredient": "salmon",
+            "difference": "Salmon and whitefish are both quality fish proteins. Salmon is oily fish with high omega-3s (EPA/DHA); whitefish is lean with lower omega-3s. Salmon provides more nutritional benefits (omega-3s for heart, brain, joints); whitefish provides lean protein. Salmon has more fat (8-13%); whitefish is leaner (2-5% fat). Both are complete proteins with excellent amino acids. Salmon is more expensive and nutritionally superior; whitefish is economical quality protein."
+          },
+          {
+            "ingredient": "fish-meal",
+            "difference": "Fresh whitefish provides lean protein with moisture; fish meal provides concentrated protein without moisture. 'Whitefish' specifies white-fleshed fish species; generic 'fish meal' can be mixed species of unknown quality. Fresh whitefish is preferable for specificity, though fish meal provides more protein per weight. Look for 'whitefish meal' (named, specific) rather than generic 'fish meal' for quality assurance."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Whitefish appears in dog food as lean, complete protein source with high digestibility and hypoallergenicity. Fish allergies are less common than chicken/beef, making whitefish suitable for novel protein or elimination diets. Whitefish is mild-flavored and palatable. As lean fish, whitefish provides quality protein without excess fat—suitable for weight management. Less expensive than premium fish like salmon while still providing quality nutrition. Whitefish signals mid-tier quality—better than generic meat meals, but not as premium as salmon or herring.",
+      "nutritionalProfile": {
+        "protein": "18-22g per 100g fresh (higher in whitefish meal), complete with all essential amino acids",
+        "fat": "2-5g per 100g—lean fish with lower omega-3s than salmon/herring",
+        "omega3": "Present but lower than oily fish—provides some EPA/DHA but not exceptional",
+        "micronutrients": "Vitamin D, B vitamins (B12, niacin), selenium, phosphorus, iodine",
+        "bioavailability": "Excellent—animal protein with optimal amino acid profile"
+      },
+      "qualityConsiderations": {
+        "expanded": "Fresh whitefish is quality ingredient, though 'whitefish' is less specific than named species (cod, haddock). As fresh ingredient with 70-75% moisture, whitefish moves lower on list after cooking. 'Whitefish meal' provides more concentrated protein and better position on ingredient list. Whitefish in top 5 indicates protein focus, though salmon or herring would be more premium. Look for sustainably sourced whitefish. Whitefish is acceptable quality protein—not top-tier like salmon, but significantly better than generic 'meat meal' or by-products.",
+        "redFlags": [
+          "Generic 'fish' without specification (at least 'whitefish' indicates white-fleshed species)",
+          "Whitefish as sole protein without variety"
+        ],
+        "greenFlags": [
+          "Whitefish or whitefish meal in top 5 ingredients",
+          "Sustainably sourced or specific species mentioned (cod, pollock)",
+          "Whitefish combined with other quality proteins for variety"
+        ]
+      },
+      "concernsExpanded": {
+        "detailed": "Whitefish is very safe with minimal concerns. Potential fish allergies exist but are less common than chicken/beef—whitefish is often used in hypoallergenic formulas. Whitefish typically refers to ocean or lake species—some whitefish species (like cod) have been overfished, though sustainable sources exist. Mercury concern is minimal for most whitefish (small to medium fish, lower food chain), though larger species could accumulate more. Quality brands ensure fresh, safe whitefish. Overall, whitefish is safe, digestible, and beneficial protein source.",
+        "contraindications": [
+          "Dogs with rare fish allergies should avoid",
+          "Ensure sustainably sourced whitefish to support ocean health"
+        ],
+        "lifeStageConsiderations": "Appropriate for all life stages. Lean protein suitable for weight management in overweight dogs. While lower in omega-3s than salmon, whitefish still provides quality complete protein."
+      },
+      "scientificEvidence": {
+        "summary": "Whitefish provides complete, highly digestible protein with good amino acid profile. Lower omega-3 content than oily fish but still quality nutrition. Hypoallergenic and safe. Extensive use in dog food with proven safety record.",
+        "keyStudies": [],
+        "evidenceLevel": "Strong regarding protein quality, digestibility, and safety. Moderate regarding omega-3 benefits (present but not exceptional)."
+      },
+      "faqs": [
+        {
+          "question": "Is whitefish good for dogs?",
+          "answer": "Yes, whitefish is good for dogs. It provides complete protein (18-22% fresh, higher in meal form) with all essential amino acids, highly digestible and hypoallergenic. Whitefish is lean (2-5% fat) making it suitable for weight management and dogs requiring lower-fat diets. Fish allergies are less common than chicken/beef, so whitefish works well in novel protein or elimination diets. Mild-flavored and palatable. While lower in omega-3s than salmon or herring, whitefish still provides some EPA/DHA benefits. Mid-tier quality protein—better than generic meat meals, not as premium as salmon. Overall, whitefish is safe, digestible, and beneficial protein source.",
+          "answerShort": "Yes, good quality protein. Complete amino acids, lean (2-5% fat), hypoallergenic, digestible. Lower omega-3s than salmon but still beneficial. Mid-tier quality.",
+          "priority": 1
+        },
+        {
+          "question": "Is whitefish better than chicken for dogs?",
+          "answer": "Whitefish and chicken are both quality proteins with different advantages. Whitefish is more hypoallergenic—fish allergies less common than chicken allergies. Whitefish is leaner (2-5% fat vs 9-12% for chicken) and provides some omega-3s; chicken provides more fat and different nutrient profile. Both provide complete protein with excellent amino acids and digestibility. Chicken is less expensive and more common; whitefish is premium alternative. For dogs with chicken sensitivities, whitefish is excellent substitute. For healthy dogs without allergies, both are quality options. Neither is universally better—choose based on your dog's individual needs and sensitivities.",
+          "answerShort": "Different benefits. Whitefish more hypoallergenic, leaner, omega-3s. Chicken more economical, higher fat. Both quality proteins. Choose based on dog's needs/sensitivities.",
+          "priority": 2
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "whitefish dog food",
+        "secondaryKeywords": [
+          "is whitefish good for dogs",
+          "whitefish vs chicken dogs",
+          "whitefish hypoallergenic dogs"
+        ],
+        "metaDescription": "Whitefish in dog food: Lean protein benefits, hypoallergenic properties, comparison to salmon and chicken, digestibility for dogs."
+      }
     },
     {
       "name": "Xanthan Gum",
@@ -12896,7 +13305,76 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Herring meal is a concentrated protein ingredient made by cooking and drying herring fish (Clupea harengus), then grinding into protein-rich powder. Herring meal contains approximately 70-75% protein, 8-12% fat (including beneficial omega-3 fatty acids EPA and DHA), 5-10% moisture, and 15-20% ash. As rendered meal, herring meal provides 3-4 times more protein per weight than fresh herring (which is 70-75% water). Herring are small, oily fish rich in omega-3s—herring meal provides exceptional EPA and DHA for heart health, brain function, joint health, and coat quality. Herring are lower on food chain than large fish like tuna, resulting in lower mercury accumulation. Herring meal is premium fish ingredient signaling quality marine protein. More expensive than generic 'fish meal' but provides superior omega-3 profile and traceable protein source.",
+        "compareToSimilar": [
+          {
+            "ingredient": "fish-meal",
+            "difference": "Herring meal is specific, named fish meal; generic 'fish meal' can be mixed species with unknown quality. Herring meal provides known omega-3 profile, lower mercury, and premium quality. Fish meal varies by source—could be quality fish or low-grade byproducts. Herring meal is more expensive but more transparent and higher quality. Always prefer named fish meals (herring, salmon, whitefish) over generic 'fish meal.'"
+          },
+          {
+            "ingredient": "salmon-meal",
+            "difference": "Herring meal and salmon meal are both premium named fish meals with exceptional omega-3s. Salmon meal has slightly more EPA/DHA; herring meal is less expensive. Both provide high-quality marine protein with complete amino acids. Both are excellent—herring meal is value premium option, salmon meal is top-tier. Either signals quality formulation."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Herring meal appears in dog food for concentrated marine protein (70-75%), complete amino acid profile, and exceptional omega-3 fatty acids (EPA and DHA). It provides 3-4x more protein than fresh herring due to water removal. Herring's omega-3s support heart health, cognitive function, joint health, anti-inflammatory benefits, and coat quality. Named fish meal signals quality and traceability. Herring are sustainable, lower mercury than large fish, and nutrient-dense. Premium brands use herring meal for superior nutrition and omega-3 benefits.",
+      "nutritionalProfile": {
+        "protein": "70-75g per 100g, complete with all essential amino acids",
+        "fat": "8-12g per 100g including exceptional EPA and DHA omega-3 fatty acids",
+        "omega3": "Herring are oily fish providing high EPA and DHA—supports heart, brain, joints, and coat",
+        "minerals": "Calcium, phosphorus (from bones), selenium, iodine, magnesium",
+        "bioavailability": "Excellent—animal protein with optimal amino acid profile for dogs"
+      },
+      "qualityConsiderations": {
+        "expanded": "Herring meal is premium ingredient signaling quality formulation. Named fish meal indicates transparency and known protein source. Herring meal in top 5 ingredients demonstrates protein commitment. Look for 'herring meal' (not just 'fish meal') for quality assurance. Sustainable sourced herring is preferable. Preserved with mixed tocopherols (vitamin E) rather than ethoxyquin is ideal. Herring meal provides concentrated protein and omega-3s—one of best fish-based ingredients available.",
+        "redFlags": [
+          "Generic 'fish meal' without species specification",
+          "Herring meal preserved with ethoxyquin (controversial preservative, though FDA-approved)"
+        ],
+        "greenFlags": [
+          "Named herring meal in top 5 ingredients",
+          "Sustainably sourced herring specified",
+          "Preserved with natural tocopherols (vitamin E)"
+        ]
+      },
+      "concernsExpanded": {
+        "detailed": "Herring meal is remarkably safe with minimal concerns. Potential fish allergies exist but are less common than chicken/beef. Herring are lower-mercury fish due to small size and position on food chain—mercury is minimal concern. Quality control important—reputable brands ensure fresh, human-grade herring. Excessive omega-3s could theoretically affect blood clotting, but amounts in dog food are completely safe. Herring meal provides balanced omega-3/omega-6 ratio. One of safest, most beneficial protein sources.",
+        "contraindications": [
+          "Dogs with rare fish allergies should avoid",
+          "Dogs on blood thinners should have high omega-3 intake monitored (though food amounts are safe)"
+        ],
+        "lifeStageConsiderations": "Excellent for all life stages. Puppies benefit from omega-3s for brain development. Adults benefit for heart/joint health. Seniors benefit for anti-inflammatory and cognitive support."
+      },
+      "scientificEvidence": {
+        "summary": "Herring meal provides complete protein and exceptional omega-3 fatty acids. Extensive research validates EPA/DHA benefits for heart health, cognitive function, joint health, and anti-inflammatory effects. Lower mercury than large fish. Highly digestible and bioavailable.",
+        "keyStudies": [],
+        "evidenceLevel": "Very strong regarding protein quality, omega-3 benefits, and safety."
+      },
+      "faqs": [
+        {
+          "question": "Is herring meal good for dogs?",
+          "answer": "Yes, herring meal is excellent for dogs. It provides concentrated marine protein (70-75%), complete amino acids, and exceptional omega-3 fatty acids (EPA and DHA). Herring meal delivers 3-4 times more protein per weight than fresh herring due to water removal. The omega-3s support heart health, brain function, joint health, reduce inflammation, and improve coat quality. Herring are lower-mercury fish (small, lower food chain position) and sustainable. Named herring meal signals premium quality and transparency—superior to generic 'fish meal.' One of the best fish-based protein sources in dog food. Highly digestible and nutritionally complete.",
+          "answerShort": "Excellent. Concentrated protein (70-75%), complete amino acids, exceptional omega-3s (EPA/DHA). Supports heart, brain, joints, coat. Premium named fish meal.",
+          "priority": 1
+        },
+        {
+          "question": "Is herring meal better than salmon meal?",
+          "answer": "Herring meal and salmon meal are both premium fish meals with minor differences. Salmon meal has slightly more omega-3s (EPA/DHA); herring meal is less expensive while still providing excellent omega-3s. Both provide high-quality complete protein (70-75%), all essential amino acids, and marine nutrients. Both are lower-mercury named fish meals signaling quality. Salmon meal is top-tier premium; herring meal is value premium option. Neither is dramatically superior—both are excellent choices. Choose based on overall formula quality and price point. Dogs benefit equally from either ingredient.",
+          "answerShort": "Both excellent. Salmon meal slightly higher omega-3s; herring meal more economical. Both premium protein with complete amino acids. Neither dramatically better.",
+          "priority": 2
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "herring meal dog food",
+        "secondaryKeywords": [
+          "is herring meal good for dogs",
+          "herring meal vs salmon meal",
+          "herring meal omega 3"
+        ],
+        "metaDescription": "Herring meal in dog food: Concentrated protein, exceptional omega-3 benefits, comparison to salmon meal, lower mercury, premium quality."
+      }
     },
     {
       "name": "Chicken Breast",
@@ -14158,7 +14636,82 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "White rice is refined rice with hull, bran, and germ removed, providing highly digestible carbohydrates in dog food. White rice contains approximately 12% moisture, 78% carbohydrates (minimal fiber 0.5-1%), 7% protein, and less than 1% fat. It's the most digestible grain (90-98%), making it ideal for sensitive stomachs and digestive upset. However, refining removes nutrients—white rice lacks the B vitamins, fiber, and minerals found in brown rice. White rice has high glycemic index (70-85), causing rapid blood sugar spikes. Veterinarians commonly recommend white rice for dogs with diarrhea, vomiting, or digestive issues due to exceptional digestibility and blandness. White rice is hypoallergenic (rice allergies extremely rare) and gluten-free. While nutritionally inferior to brown rice for everyday feeding, white rice serves specific purposes for digestive health and bland diets.",
+        "compareToSimilar": [
+          {
+            "ingredient": "brown-rice",
+            "difference": "Brown rice is nutritionally superior to white rice. Brown rice has lower glycemic index (55-65 vs 70-85), more fiber (3-4% vs 0.5-1%), and rich B vitamins, magnesium, manganese, and minerals. White rice is more digestible (90-98% vs 85-90%) and gentler on upset stomachs. For healthy dogs, brown rice provides better everyday nutrition. For dogs with digestive sensitivity, white rice is preferable. White rice is often temporary bland diet ingredient; brown rice is sustainable long-term grain."
+          },
+          {
+            "ingredient": "brewers-rice",
+            "difference": "Brewers rice is rice fragments/broken pieces left from milling white rice. Both are refined and nutritionally similar—high glycemic, minimal fiber, limited vitamins. Whole white rice has slightly better texture and is more expensive. Brewers rice is economy ingredient (leftover byproduct). Both are highly digestible but nutritionally sparse. White rice signals slightly higher quality than brewers rice, though neither provides the nutrition of brown rice."
+          }
+        ]
+      },
+      "whyUsedExpanded": "White rice appears in dog food for exceptional digestibility (90-98%), making it ideal for sensitive stomachs, digestive upset, and bland diets. Veterinarians routinely recommend white rice for diarrhea or vomiting. It's hypoallergenic and gluten-free. However, white rice is nutritionally sparse compared to brown rice—used for digestibility rather than nutrition. In regular dog food, white rice provides quick energy but lacks fiber and micronutrients. Less expensive than brown rice. White rice suits dogs with chronic digestive issues or temporary upset, but brown rice preferable for everyday feeding in healthy dogs.",
+      "nutritionalProfile": {
+        "macros": "78g carbohydrate per 100g (0.5-1g fiber), 7g protein (incomplete), less than 1g fat, 12% moisture",
+        "micronutrients": "Minimal—refining removes most vitamins and minerals. Trace amounts of thiamine and niacin.",
+        "glycemicImpact": "High glycemic index (70-85), causing rapid blood sugar spikes. Not ideal for diabetic dogs or weight management.",
+        "digestibility": "Exceptional 90-98% digestibility, highest among common grains"
+      },
+      "qualityConsiderations": {
+        "expanded": "White rice is acceptable for specific purposes (sensitive stomachs) but signals lower quality than brown rice for everyday feeding. In premium foods, brown rice or whole grains are preferable. White rice in sensitive stomach/limited ingredient formulas is appropriate. White rice as primary carb in regular food suggests emphasis on cost/digestibility over nutrition. Position matters—white rice in positions 8-12 is acceptable filler; white rice in top 5 signals carb-heavy formula. Organic white rice reduces pesticide exposure.",
+        "redFlags": [
+          "White rice as first ingredient in regular (not sensitive stomach) formula",
+          "White rice in top 5 without whole grains elsewhere",
+          "Multiple rice forms (white rice + rice flour + brewers rice = cheap filler)"
+        ],
+        "greenFlags": [
+          "White rice in sensitive stomach or limited ingredient formulas",
+          "White rice in lower positions (8-12) as minor ingredient",
+          "White rice combined with whole grains (brown rice, oatmeal) elsewhere in formula"
+        ]
+      },
+      "concernsExpanded": {
+        "detailed": "White rice is very safe but nutritionally limited. Main concern: high glycemic index (70-85) causing blood sugar spikes—problematic for diabetic dogs or weight management. Nutritional deficiency—white rice provides calories without fiber, vitamins, or minerals. Long-term exclusive white rice diet would lack essential nutrients (though complete dog food balances this with other ingredients). White rice suitable for temporary digestive upset or chronic sensitivity, but healthy dogs benefit more from brown rice. Rice allergies extremely rare. White rice accumulates less arsenic than brown (removed with bran), though arsenic minimal concern at food levels.",
+        "contraindications": [
+          "Diabetic dogs should avoid high-glycemic white rice—brown rice or lower-glycemic grains preferable",
+          "Dogs requiring weight management better served by brown rice or high-fiber grains"
+        ],
+        "lifeStageConsiderations": "Appropriate for all life stages in balanced formulas, though puppies and active adults benefit more from nutrient-dense brown rice. Seniors with sensitive digestion may prefer white rice."
+      },
+      "scientificEvidence": {
+        "summary": "White rice extensively validated as highly digestible (90-98%) and hypoallergenic. Veterinarians routinely recommend for digestive upset. However, high glycemic and nutritionally sparse compared to whole grains. Safe but not optimal for everyday feeding.",
+        "keyStudies": [],
+        "evidenceLevel": "Very strong regarding digestibility and safety. Strong regarding nutritional limitations and high glycemic impact."
+      },
+      "faqs": [
+        {
+          "question": "Is white rice good for dogs?",
+          "answer": "White rice is excellent for dogs with digestive issues but not optimal for everyday feeding in healthy dogs. White rice is exceptionally digestible (90-98%), making it ideal for sensitive stomachs, diarrhea, or vomiting. Hypoallergenic and bland. Veterinarians commonly recommend white rice for digestive upset. However, white rice is nutritionally sparse—refining removes fiber, B vitamins, and minerals. It has high glycemic index (70-85) causing blood sugar spikes. For temporary digestive support or dogs with chronic sensitivity, white rice is beneficial. For everyday feeding in healthy dogs, brown rice provides better nutrition. White rice serves specific purpose but isn't optimal long-term carbohydrate.",
+          "answerShort": "Good for digestive issues, not optimal for everyday. Highly digestible, ideal for upset stomachs. Nutritionally sparse, high glycemic. Brown rice better for healthy dogs.",
+          "priority": 1
+        },
+        {
+          "question": "Should I feed my dog white rice or brown rice?",
+          "answer": "Brown rice is better for healthy dogs; white rice is better for digestive issues. Brown rice provides lower glycemic index (55-65 vs 70-85), more fiber (3-4% vs 0.5-1%), and rich vitamins and minerals. Better for weight management, blood sugar control, and overall nutrition. White rice is more digestible (90-98% vs 85-90%) and gentler on upset stomachs—use white rice when your dog has diarrhea, vomiting, or chronic digestive sensitivity. For everyday feeding, choose dog food with brown rice. For bland diet or sensitive stomach formula, choose white rice. Both are safe—brown rice for nutrition, white rice for digestibility.",
+          "answerShort": "Brown rice for healthy dogs (better nutrition). White rice for digestive issues (more digestible). Both safe—choose based on dog's health status.",
+          "priority": 2
+        },
+        {
+          "question": "Can white rice help dogs with diarrhea?",
+          "answer": "Yes, white rice is commonly recommended by veterinarians for dogs with diarrhea. White rice is exceptionally digestible (90-98%), bland, and helps firm stools. The typical bland diet is boiled white rice mixed with plain boiled chicken or lean meat (ratio of 3:1 or 2:1 rice to meat). White rice provides easily absorbed energy without irritating sensitive digestive systems. Feed small, frequent meals for 24-48 hours. If diarrhea persists beyond 2-3 days, consult your veterinarian. White rice is temporary digestive support, not long-term diet. Once stools normalize, gradually transition back to regular dog food. White rice is safe and effective first-line home treatment for mild diarrhea.",
+          "answerShort": "Yes, excellent for diarrhea. Highly digestible, bland, firms stools. Mix with plain chicken (3:1 ratio). Temporary support—consult vet if persists beyond 2-3 days.",
+          "priority": 3
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "white rice dog food",
+        "secondaryKeywords": [
+          "is white rice good for dogs",
+          "white rice vs brown rice dogs",
+          "white rice dogs diarrhea"
+        ],
+        "metaDescription": "White rice in dog food: Digestibility benefits for sensitive stomachs, nutritional limitations, comparison to brown rice, diarrhea treatment."
+      }
     },
     {
       "name": "Tapioca Starch",
