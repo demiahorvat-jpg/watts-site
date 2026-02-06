@@ -11278,7 +11278,166 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Duck meal is the dry, rendered product from a combination of clean duck flesh and skin with or without accompanying bone, derived from parts or whole carcasses of duck, exclusive of feathers, heads, feet, and entrails. The rendering process involves cooking duck at high temperatures (typically 240-290°F) to destroy pathogens, denature proteins, and separate fat from solids. The cooked material is then pressed to remove moisture and excess fat, dried further, and ground into a uniform meal powder. This creates a highly concentrated protein source—typically 60-70% protein by weight. Raw duck contains approximately 70-75% moisture, while duck meal has only 6-10% moisture, making it about 3-4 times more protein-dense than fresh duck per pound. Duck meal is particularly valued in limited ingredient diets and novel protein formulations because duck is less commonly fed than chicken, beef, or turkey, making it useful for dogs with food sensitivities to more common proteins. The quality of duck meal varies based on the source (farm-raised vs. wild, specific cuts vs. whole carcass), freshness before rendering, and the specific rendering process used.",
+        "compareToSimilar": [
+          {
+            "ingredient": "duck",
+            "difference": "Fresh duck contains approximately 70-75% moisture, while duck meal has ~6-10% moisture. This means duck meal is approximately 3-4 times more concentrated in protein and nutrients per pound. Fresh duck lists higher on ingredient panels due to water weight but delivers less actual protein after the food is cooked. Both are excellent—fresh duck adds palatability and moisture, while duck meal adds concentrated nutrition."
+          },
+          {
+            "ingredient": "chicken-meal",
+            "difference": "Both are quality poultry meals with similar protein concentrations (60-70%). The main difference is the bird source. Duck meal is often used as a novel protein for dogs with chicken sensitivities, though true poultry allergies can sometimes cross-react. Duck is naturally fattier than chicken, so duck meal may have slightly higher fat content. Both are excellent protein sources—duck meal is typically more expensive due to duck being a pricier raw material."
+          },
+          {
+            "ingredient": "turkey-meal",
+            "difference": "Duck meal and turkey meal are both named poultry meals with comparable protein concentrations. Duck is less commonly used than turkey, making it more novel for elimination diets. Duck tends to be fattier than turkey naturally. Both are high-quality protein sources—the choice often comes down to novelty for allergies or price (duck is typically more expensive)."
+          },
+          {
+            "ingredient": "duck-by-product-meal",
+            "difference": "Duck meal is primarily rendered flesh and skin with or without bone, while duck by-product meal includes rendered organs, blood, and other parts beyond muscle meat. Duck meal is generally considered higher quality and more consistent in composition. However, some duck by-products like heart and liver are actually very nutritious organs. Both are safe, rendered protein sources, but duck meal is preferable for transparency."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Duck meal serves several important functions in dog food: (1) Novel protein option—duck is less commonly fed than chicken, turkey, or beef, making it valuable for dogs with food sensitivities to more common proteins. It's a cornerstone ingredient in limited ingredient diets and elimination diets used to identify food allergies. (2) Concentrated protein source—with 60-70% protein content, it efficiently delivers the complete amino acid profile dogs need for muscle maintenance, enzyme production, and immune function without adding bulk or moisture to kibble formulas. (3) Palatability—duck is highly palatable to most dogs, with a rich, savory flavor. Many picky eaters accept duck-based foods readily. (4) Higher fat content—duck is naturally fattier than chicken or turkey, which can be beneficial for active dogs or underweight dogs needing calorie-dense nutrition. (5) Named transparency—'duck meal' specifically identifies the protein source as duck, unlike generic 'poultry meal' which could be any combination of poultry species. (6) Nutrient profile—duck provides B vitamins, iron, zinc, and selenium. (7) Premium positioning—duck meal signals a premium formula because duck is more expensive than chicken, indicating the manufacturer invested in quality ingredients.",
+      "nutritionalProfile": {
+        "macros": {
+          "protein": "60-70g per 100g (typical range for quality duck meal)",
+          "fat": "14-20g per 100g (duck is naturally fattier than chicken or turkey)",
+          "moisture": "6-10g per 100g",
+          "ash": "10-18g per 100g (mineral content, higher when bone is included)"
+        },
+        "micronutrients": {
+          "vitaminB12": "Present from source duck (duck is rich in B12)",
+          "niacin": "Present from source duck (B3)",
+          "riboflavin": "Present from source duck (B2)",
+          "iron": "Present from red meat poultry source",
+          "zinc": "Present and bioavailable from animal source",
+          "selenium": "Present from source duck",
+          "phosphorus": "High, especially when bone is included"
+        },
+        "aminoAcids": [
+          "Complete amino acid profile from animal protein source",
+          "All essential amino acids present in biologically appropriate ratios for dogs",
+          "Rich in leucine, lysine, and arginine for muscle maintenance"
+        ],
+        "bioavailability": "Duck meal is highly digestible for dogs, with protein digestibility typically in the 80-90% range. The rendering process breaks down connective tissues and makes proteins more accessible to digestive enzymes."
+      },
+      "qualityConsiderations": {
+        "expanded": "Quality duck meal varies based on several factors. Named species is critical—'duck meal' specifically identifies the protein source, providing transparency and traceability. Generic 'poultry meal' could include any combination of poultry species and is less desirable. Source material quality matters: duck meal made from whole duck carcasses or identified cuts is preferable to unspecified duck parts. Farm-raised duck is most common in pet food, though wild duck would be premium (rarely used due to cost and availability). Freshness before rendering is important—higher-quality meals are made from fresh duck rendered shortly after processing, while lower-quality meals may use material that has been frozen/thawed multiple times. Protein percentage is an indicator: quality duck meal typically contains 60-70% protein. Lower protein percentages may indicate more bone content or lower-quality source material. Fat content varies: duck is naturally fattier than chicken, so duck meal typically has higher fat than chicken meal (14-20% vs 12-16%). This isn't bad—it's natural variation. Preservation method matters—modern duck meals use natural preservatives like mixed tocopherols (vitamin E) rather than synthetic preservatives. Country of origin can be relevant: Chinese duck is common and economical, while North American or European duck may be marketed as premium.",
+        "redFlags": [
+          "Generic 'poultry meal' without species specification",
+          "Very low protein content (<55%) may indicate excessive bone or poor quality",
+          "No information about preservation method",
+          "'Duck by-product meal' is lower quality than 'duck meal'",
+          "Extremely low cost duck meal relative to market prices"
+        ],
+        "greenFlags": [
+          "'Duck meal' specifically named (not generic 'poultry meal')",
+          "Protein content in the 60-70% range",
+          "Natural preservation specified (mixed tocopherols, vitamin E)",
+          "Transparency about sourcing when provided",
+          "Listed in first 3-5 ingredients for meaningful protein contribution"
+        ],
+        "howToIdentifyQuality": "Look for species-specific naming ('duck meal' not 'poultry meal'), positioning in the first several ingredients, natural preservation methods, and manufacturer transparency about sourcing. Higher-quality brands often provide information about where their duck meal is sourced and how it's processed."
+      },
+      "concernsExpanded": {
+        "detailed": "Duck meal is generally very safe for dogs when used in complete and balanced foods. However, there are considerations to keep in mind. Food sensitivities: While duck is often used as a novel protein for dogs with chicken or beef allergies, some dogs with severe poultry allergies may react to duck as well due to protein similarities between poultry species. True cross-reactivity is less common than individual reactions, but it can occur. If your dog has confirmed severe chicken allergy, introduce duck carefully under veterinary supervision. Fat content considerations: Duck is naturally fattier than chicken or turkey, and duck meal reflects this with typically 14-20% fat content. For most dogs, this is beneficial—providing energy and palatability. However, dogs prone to pancreatitis or with fat-sensitive digestive systems may need to monitor fat intake. Phosphorus content: Because duck meal often includes bone, it can be relatively high in phosphorus. For healthy dogs, this is not an issue. However, dogs with chronic kidney disease should have phosphorus intake monitored under veterinary guidance. Cost considerations: Duck meal is typically significantly more expensive than chicken meal because duck is a pricier raw material. This makes duck-based foods premium-priced, which may be prohibitive for some budgets despite the nutritional quality. Novelty factor timing: If using duck meal specifically for food allergy elimination diets, ensure your dog hasn't been exposed to duck previously, as novelty requires the protein be truly new to the dog's diet.",
+        "contraindications": [
+          "Dogs with confirmed duck allergies should avoid duck meal",
+          "Dogs with severe poultry allergies may need veterinary guidance before trying duck",
+          "Dogs prone to pancreatitis may need to monitor total fat intake",
+          "Dogs with advanced kidney disease should have phosphorus monitored (consult veterinarian)"
+        ],
+        "lifeStageConsiderations": "Duck meal is appropriate for all life stages. Puppies benefit from the concentrated, highly digestible protein and naturally higher fat content for growth and development. Adult dogs benefit from the complete amino acid profile for maintenance and the novelty for rotation feeding. Senior dogs benefit from the digestible protein and can use the higher fat for maintaining body condition if they're underweight. Active and working dogs benefit from the calorie-dense fat content."
+      },
+      "scientificEvidence": {
+        "summary": "Duck meal is a concentrated protein source created through rendering, which removes moisture and concentrates nutrients. Raw duck typically contains 60-70% moisture and 18-22% protein depending on the cut, while duck meal contains 60-70% protein after moisture removal. The rendering process generally preserves protein quality and amino acid profiles while making the product shelf-stable and highly digestible. Research on poultry meals indicates crude protein digestibility typically in the 80-90% range for dogs. Duck provides a complete amino acid profile appropriate for canine nutritional requirements. Duck is naturally higher in fat than chicken or turkey, providing more calories per gram and contributing to palatability. As a novel protein, duck is valuable in elimination diets for dogs with food allergies—research shows that using truly novel proteins can help identify food sensitivities through systematic elimination and reintroduction.",
+        "keyStudies": [],
+        "evidenceLevel": "Moderate—duck meal follows the same nutritional principles as other poultry meals with strong research backing."
+      },
+      "labelGuidance": {
+        "howToSpot": [
+          "Look for 'Duck Meal' specifically named (not 'poultry meal')",
+          "Species-specific naming provides transparency and traceability",
+          "Position in first 3-5 ingredients suggests meaningful protein contribution",
+          "Duck meal in premium or limited ingredient diets signals quality focus",
+          "Check for natural preservation methods mentioned (mixed tocopherols)"
+        ],
+        "synonymsToKnow": [
+          "Dried duck",
+          "Dehydrated duck"
+        ],
+        "typicalPosition": "In duck-based foods: typically appears in the first 2-4 ingredients as a primary protein source. In multi-protein formulas: may appear in positions 3-7 as a novel protein alongside chicken meal or fish meal."
+      },
+      "relationships": {
+        "betterAlternatives": [],
+        "oftenPairedWith": [
+          "duck",
+          "sweet-potato",
+          "peas",
+          "lentils",
+          "duck-fat"
+        ],
+        "relatedBlogPosts": [
+          "protein-for-dogs"
+        ]
+      },
+      "faqs": [
+        {
+          "question": "Is duck meal better than fresh duck in dog food?",
+          "answer": "Both are excellent, but they serve different purposes. Fresh duck contains approximately 70-75% moisture, while duck meal has ~6-10% moisture. This means duck meal is about 3-4 times more concentrated in protein and nutrients per pound. On an ingredient panel, duck meal contributes more actual protein than fresh duck in the same position because the moisture is removed before weighing. Fresh duck adds palatability and moisture to the food, while duck meal provides concentrated protein without adding bulk. Many high-quality duck-based foods use both—fresh duck for taste and moisture, duck meal for protein concentration. Neither is inherently better; they're complementary ingredients.",
+          "answerShort": "Duck meal is more concentrated (3-4x more protein). Fresh duck adds moisture and flavor. Both are excellent and often used together.",
+          "searchIntent": "comparison",
+          "priority": 1
+        },
+        {
+          "question": "Is duck meal good for dogs with chicken allergies?",
+          "answer": "Duck meal is commonly used as a novel protein for dogs with chicken sensitivities and is often effective. However, it's important to understand that some dogs with severe chicken allergies may also react to duck because both are poultry and share some protein similarities. True cross-reactivity is less common than individual reactions to each protein. Many dogs with chicken sensitivities tolerate duck well because the proteins, while similar, are not identical. The best approach: if your dog has a confirmed chicken allergy, introduce duck meal under veterinary guidance as part of an elimination diet. Monitor for symptoms (itching, digestive upset, ear infections). If your dog tolerates duck, it can be an excellent alternative protein. For severe multi-poultry allergies, consider non-poultry options like fish, lamb, or rabbit instead.",
+          "answerShort": "Often yes—many chicken-sensitive dogs tolerate duck. But some with severe poultry allergies may react. Introduce carefully under vet guidance.",
+          "searchIntent": "allergy",
+          "priority": 2
+        },
+        {
+          "question": "Why is duck meal more expensive than chicken meal?",
+          "answer": "Duck meal is typically 30-50% more expensive than chicken meal because duck is a more expensive raw material. Duck production is less industrialized than chicken production, duck takes longer to raise to market weight, and duck yields less meat per bird than chicken. Additionally, duck is considered a specialty or premium protein in the pet food industry, not a commodity like chicken. The higher raw material cost is passed on to pet food manufacturers, who then pass it on to consumers. This makes duck-based dog foods generally more expensive than comparable chicken-based foods. Despite the higher cost, duck meal provides similar nutritional value to chicken meal—the price difference reflects production economics, not superior nutrition. The benefit of duck meal is novelty for allergies and premium positioning, not dramatically better nutrition.",
+          "answerShort": "Duck production is more expensive—less industrialized, longer raising time, lower yield per bird. Premium protein vs commodity chicken.",
+          "searchIntent": "cost",
+          "priority": 3
+        },
+        {
+          "question": "Can puppies eat duck meal?",
+          "answer": "Yes, duck meal is excellent for puppies when included in a complete and balanced puppy formula that meets AAFCO standards for growth. Duck meal provides highly digestible protein and all essential amino acids that puppies need for muscle development, organ growth, and immune function. The concentrated protein (60-70%) and naturally higher fat content in duck meal support the high energy and protein requirements of growing puppies. Duck meal also provides bioavailable minerals like zinc and iron that support development. The key is that the overall food is formulated for puppies, not just that it contains duck meal. Look for foods labeled 'complete and balanced for growth' or 'all life stages' that meet AAFCO nutritional standards. Duck-based puppy foods are often marketed as limited ingredient or novel protein options, which can be beneficial for puppies with known sensitivities.",
+          "answerShort": "Yes, excellent for puppies when part of a complete and balanced puppy formula meeting AAFCO growth standards.",
+          "searchIntent": "life stage",
+          "priority": 4
+        },
+        {
+          "question": "Is duck meal the same as duck by-product meal?",
+          "answer": "No, they are different ingredients with different regulatory definitions. Duck meal is the rendered product from clean duck flesh and skin with or without bone, exclusive of feathers, heads, feet, and entrails. It's primarily muscle meat and skin. Duck by-product meal, on the other hand, consists of rendered parts beyond muscle meat, including organs (liver, kidneys, heart, lungs), blood, and other tissues. Duck meal is generally considered higher quality and more consistent in composition. However, it's worth noting that some duck by-products like heart and liver are actually very nutritious organs rich in vitamins and minerals. Both are safe, rendered protein sources, but duck meal is more transparent about what's included and is the preferable choice in premium foods.",
+          "answerShort": "No. Duck meal is primarily flesh and skin. Duck by-product meal includes organs and other parts. Duck meal is higher quality.",
+          "searchIntent": "comparison",
+          "priority": 5
+        },
+        {
+          "question": "Does duck meal help with skin allergies?",
+          "answer": "Duck meal can help with skin allergies if the allergies are caused by food sensitivities to more common proteins like chicken or beef. Food allergies in dogs typically manifest as skin symptoms—chronic itching, ear infections, skin inflammation, and hot spots. If your dog's skin issues are food-related and caused by chicken, beef, or other common proteins, switching to a duck meal-based limited ingredient diet may provide relief. Results typically take 8-12 weeks of strict elimination diet to see improvement. However, duck meal won't help with environmental allergies (pollen, dust mites, mold) or non-food-related skin conditions. The omega-3 fatty acids in fish oil supplements are more directly beneficial for skin inflammation than protein source changes. If you suspect food allergies, work with your veterinarian on a proper elimination diet protocol using duck meal as the novel protein source, then systematically reintroduce other proteins to identify triggers.",
+          "answerShort": "Can help if skin allergies are food-related to chicken/beef. Takes 8-12 weeks. Won't help environmental allergies. Work with vet on elimination diet.",
+          "searchIntent": "health condition",
+          "priority": 6
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "duck meal dog food",
+        "secondaryKeywords": [
+          "duck meal vs chicken meal",
+          "is duck meal good for allergies",
+          "duck meal protein content",
+          "duck meal for dogs"
+        ],
+        "metaDescription": "Duck meal in dog food: Novel protein for allergies, protein content (60-70%), comparison to chicken meal, quality indicators, and allergy considerations. Expert guide."
+      }
     },
     {
       "name": "Herring Meal",
@@ -12167,7 +12326,118 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Pork meal is the rendered product from clean pork tissue—primarily muscle meat and skin, with or without accompanying bone. The rendering process involves cooking pork at high temperatures to destroy pathogens, denature proteins, and separate fat from solids. The cooked material is pressed to remove moisture, dried, and ground into meal. This creates a concentrated protein source—typically 60-68% protein by weight. Raw pork contains approximately 60-75% moisture depending on the cut, while pork meal has only 6-10% moisture, making it about 3-4 times more protein-dense than fresh pork per pound. Pork meal is less common in dog food than chicken or beef, making it useful as a novel protein for dogs with food sensitivities to more common proteins. Quality varies based on source material, freshness before rendering, and processing methods.",
+        "compareToSimilar": [
+          {
+            "ingredient": "pork",
+            "difference": "Fresh pork contains 60-75% moisture, while pork meal has ~6-10% moisture, making pork meal approximately 3-4 times more concentrated in protein per pound. Fresh pork contributes moisture and palatability, while pork meal provides concentrated protein without bulk."
+          },
+          {
+            "ingredient": "chicken-meal",
+            "difference": "Both are quality named protein meals with similar protein concentrations (60-68%). Pork is less commonly used than chicken, making it more novel for elimination diets. Pork tends to be slightly fattier than chicken. Both are excellent—pork is typically more expensive."
+          },
+          {
+            "ingredient": "beef-meal",
+            "difference": "Pork meal and beef meal are both red meat protein sources with similar concentrations. The main difference is animal source. Pork is less commonly used than beef, making it somewhat novel. Both are quality protein sources—choice depends on novelty needs or sensitivities."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Pork meal serves multiple functions: (1) Novel protein option—pork is less commonly fed than chicken or beef, useful for dogs with food sensitivities. (2) Concentrated protein—60-68% protein efficiently delivers complete amino acids. (3) Palatability—dogs find pork highly palatable. (4) Named transparency—'pork meal' identifies the source, unlike generic 'meat meal.' (5) Cost-effectiveness—pork meal is typically less expensive than more novel proteins like duck or venison while still providing novelty vs. chicken/beef.",
+      "nutritionalProfile": {
+        "macros": {
+          "protein": "60-68g per 100g",
+          "fat": "12-18g per 100g",
+          "moisture": "6-10g per 100g",
+          "ash": "10-18g per 100g"
+        },
+        "micronutrients": {
+          "vitaminB12": "Present from source pork",
+          "thiamine": "Present from source pork (pork is rich in B1)",
+          "niacin": "Present from source pork",
+          "zinc": "Present and bioavailable",
+          "iron": "Present from red meat source",
+          "selenium": "Present from source pork",
+          "phosphorus": "High when bone is included"
+        },
+        "aminoAcids": [
+          "Complete amino acid profile from animal protein",
+          "All essential amino acids in appropriate ratios"
+        ],
+        "bioavailability": "Pork meal is highly digestible, with protein digestibility typically 80-90%. Rendering makes proteins accessible to digestive enzymes."
+      },
+      "qualityConsiderations": {
+        "expanded": "Quality pork meal depends on named species ('pork meal' vs generic 'meat meal'), source material quality, freshness before rendering, protein percentage (60-68% typical), preservation method (natural tocopherols preferable), and manufacturer transparency.",
+        "redFlags": [
+          "Generic 'meat meal' without species",
+          "Very low protein (<55%)",
+          "No preservation method listed",
+          "'Pork by-product meal' lower quality"
+        ],
+        "greenFlags": [
+          "'Pork meal' specifically named",
+          "Protein 60-68%",
+          "Natural preservation",
+          "Transparency about sourcing"
+        ],
+        "howToIdentifyQuality": "Look for species-specific naming, positioning in first several ingredients, natural preservation, and protein content in the 60-68% range."
+      },
+      "concernsExpanded": {
+        "detailed": "Pork meal is generally safe. Considerations: Food sensitivities—some dogs may react to pork, though it's less common than chicken/beef allergies. Phosphorus content—can be high when bone is included; monitor for dogs with kidney disease. Religious/cultural considerations—some owners avoid pork for cultural or religious reasons. Fat content—pork is moderately fatty; generally beneficial but monitor for pancreatitis-prone dogs.",
+        "contraindications": [
+          "Dogs with confirmed pork allergies",
+          "Dogs with advanced kidney disease (monitor phosphorus)"
+        ],
+        "lifeStageConsiderations": "Appropriate for all life stages. Puppies benefit from concentrated protein. Adults benefit from novelty for rotation. Seniors benefit from digestible protein."
+      },
+      "scientificEvidence": {
+        "summary": "Pork meal concentrates nutrients through rendering. Raw pork is 60-75% moisture with 18-25% protein; pork meal is 60-68% protein. Rendering preserves protein quality and amino acid profiles while making it shelf-stable. Poultry and pork meals show 80-90% protein digestibility in dogs. Pork provides complete amino acids appropriate for canine nutrition.",
+        "keyStudies": [],
+        "evidenceLevel": "Moderate"
+      },
+      "labelGuidance": {
+        "howToSpot": [
+          "'Pork Meal' specifically named",
+          "First 3-5 ingredients for meaningful contribution",
+          "Natural preservation methods"
+        ],
+        "synonymsToKnow": [
+          "Dried pork",
+          "Dehydrated pork"
+        ],
+        "typicalPosition": "First 2-4 ingredients in pork-based foods, positions 3-7 as secondary protein"
+      },
+      "faqs": [
+        {
+          "question": "Is pork meal good for dogs?",
+          "answer": "Yes, pork meal is a quality protein source providing concentrated nutrition (60-68% protein) with complete amino acids. It's less common than chicken or beef, making it useful for dogs with sensitivities to those proteins. Pork meal is highly digestible and provides B vitamins, zinc, and iron. Quality depends on sourcing and processing—named 'pork meal' is far superior to generic 'meat meal.' Pork is highly palatable to most dogs.",
+          "answerShort": "Yes—quality concentrated protein (60-68%), good for allergies to chicken/beef, highly digestible and palatable.",
+          "priority": 1
+        },
+        {
+          "question": "Is pork meal better than chicken meal?",
+          "answer": "Neither is inherently better—both are quality protein sources with similar concentrations (60-68%). The main difference is novelty: pork is less commonly fed than chicken, making it useful for dogs with chicken sensitivities. Pork is slightly fattier than chicken naturally. Chicken meal is more widely available and typically less expensive. For dogs without sensitivities, chicken meal is excellent and economical. For dogs needing a chicken alternative, pork meal is effective.",
+          "answerShort": "Not better, just different. Pork is more novel (good for chicken-sensitive dogs). Both are quality proteins with similar nutrition.",
+          "priority": 2
+        },
+        {
+          "question": "Can dogs with allergies eat pork meal?",
+          "answer": "Pork meal can be good for dogs with chicken or beef allergies, as pork is less commonly fed and can serve as a novel protein. However, some dogs may be allergic to pork itself—any protein can cause allergies. If using pork meal for an elimination diet, ensure your dog hasn't been exposed to pork previously (novelty requires new protein). Introduce under veterinary guidance and monitor for symptoms (itching, digestive issues, ear infections). If your dog tolerates pork, it can be an excellent alternative to common proteins.",
+          "answerShort": "Good for chicken/beef allergies as novel protein. But some dogs allergic to pork itself. Introduce carefully under vet guidance.",
+          "priority": 3
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "pork meal dog food",
+        "secondaryKeywords": [
+          "is pork meal good for dogs",
+          "pork meal vs chicken meal",
+          "pork meal protein",
+          "pork meal for allergies"
+        ],
+        "metaDescription": "Pork meal in dog food: Novel protein alternative, protein content (60-68%), comparison to chicken meal, allergy benefits, quality indicators."
+      }
     },
     {
       "name": "Lamb Fat",
