@@ -1461,7 +1461,59 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Beet pulp is the fibrous material remaining after sugar is extracted from sugar beets (Beta vulgaris). It contains approximately 8-10% moisture (dried), 60-70% carbohydrates (mostly fiber), 8-10% protein, minimal fat, and 15-20% fiber. Beet pulp is primarily used as prebiotic fiber source—it's moderately fermentable, meaning beneficial gut bacteria ferment it to produce short-chain fatty acids (SCFAs) supporting colon health. Beet pulp has excellent stool-firming properties, helping both diarrhea (absorbing excess water) and constipation (adding bulk). Despite coming from sugar beets, beet pulp contains minimal sugar (less than 10%, usually 3-7%) after extraction. It has low glycemic index and doesn't cause blood sugar spikes. Beet pulp is controversial in dog food community due to misconceptions (sugar content, 'filler' reputation), though research supports its fiber benefits.",
+        "compareToSimilar": [
+          {
+            "ingredient": "pumpkin",
+            "difference": "Beet pulp and pumpkin are both fiber sources. Pumpkin has more vitamins (beta-carotene, vitamin A); beet pulp provides more prebiotic fermentable fiber for gut bacteria. Both help stool consistency. Pumpkin is whole food; beet pulp is byproduct. Pumpkin is premium positioning; beet pulp is functional fiber."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Beet pulp appears in dog food as economical prebiotic fiber source supporting digestive health and stool quality. It's moderately fermentable, producing SCFAs that nourish colon cells and support beneficial gut bacteria. Beet pulp firms stools, reduces flatulence, and supports consistent digestion. It's less expensive than other fiber sources (chicory root, pumpkin). Veterinary therapeutic diets often include beet pulp for fiber management. Despite byproduct status, beet pulp provides genuine functional benefits backed by research.",
+      "nutritionalProfile": {
+        "fiber": "15-20g per 100g, moderately fermentable prebiotic fiber",
+        "carbohydrates": "60-70g per 100g (mostly fiber, minimal sugar 3-10%)",
+        "protein": "8-10g (incomplete)",
+        "sugar": "Minimal after extraction—typically 3-7%, not 'high sugar'",
+        "SCFAs": "Fermentation produces short-chain fatty acids supporting colon health"
+      },
+      "qualityConsiderations": {
+        "expanded": "Beet pulp is functional ingredient rather than quality indicator. It signals fiber focus—appropriate in moderate amounts for digestive health. Beet pulp in positions 8-15 is normal for fiber management. Beet pulp as primary ingredient (top 5) without quality proteins signals low-quality carb-heavy formula. Dried beet pulp preferable to beet pulp (already dried). Despite byproduct status and controversies, research supports beet pulp's fiber benefits.",
+        "redFlags": [
+          "Beet pulp in top 5 ingredients without quality proteins",
+          "Excessive beet pulp (very high fiber could cause issues)"
+        ],
+        "greenFlags": [
+          "Beet pulp in moderate amounts (positions 8-15) for fiber",
+          "Dried beet pulp specified",
+          "Beet pulp in formulas emphasizing digestive health"
+        ]
+      },
+      "concernsExpanded": {
+        "detailed": "Beet pulp is very safe despite misconceptions. Main misconception: 'high sugar'—false, sugar is extracted, leaving only 3-7%. Beet pulp has low glycemic index. Some dogs may experience gas during adjustment (fermentable fiber), though this typically resolves. Excessive fiber could cause loose stools, though normal food amounts are safe. Beet pulp is not allergen or toxin. It's well-researched functional fiber with genuine benefits.",
+        "contraindications": [
+          "Dogs with very sensitive digestion may need gradual introduction",
+          "Excessive fiber could cause loose stools (not issue in normal food amounts)"
+        ]
+      },
+      "faqs": [
+        {
+          "question": "Is beet pulp bad for dogs?",
+          "answer": "No, beet pulp is safe and beneficial for dogs despite misconceptions. Beet pulp is fibrous material remaining after sugar extraction from sugar beets. It provides prebiotic fiber (15-20%) supporting digestive health, stool firmness, and beneficial gut bacteria. Common misconception: 'high sugar'—false, sugar is extracted, leaving only 3-7% residual sugar. Beet pulp has low glycemic index. Research supports beet pulp's fiber benefits. Veterinary diets often include beet pulp for digestive management. It's economical functional fiber, not filler. While byproduct, beet pulp provides genuine health benefits. Safe and beneficial in moderate amounts.",
+          "answerShort": "No, beneficial fiber source. Supports digestive health, firms stools. Low sugar (3-7%, not 'high'). Research-backed benefits. Common misconceptions unfounded.",
+          "priority": 1
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "beet pulp dog food",
+        "secondaryKeywords": [
+          "is beet pulp bad for dogs",
+          "beet pulp sugar dogs"
+        ],
+        "metaDescription": "Beet pulp in dog food: Prebiotic fiber benefits, sugar misconceptions, digestive health support, stool quality, research-backed safety."
+      }
     },
     {
       "name": "Beta-Carotene",
@@ -1702,7 +1754,77 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Brewers rice consists of small fragments and broken pieces of rice kernels separated from whole grains during milling. It's essentially rice byproduct—the leftover broken pieces after whole rice is polished. Brewers rice contains approximately 12% moisture, 75-80% carbohydrates (minimal fiber 0.5-1%), 7-8% protein (incomplete), and less than 1% fat. Nutritionally similar to white rice but lower quality—both are refined carbohydrates. Brewers rice has high glycemic index (75-85), slightly lower than white rice but still causing blood sugar spikes. It's the most economical rice ingredient—significantly cheaper than whole rice, brown rice, or white rice. Highly digestible but nutritionally sparse. Common in budget dog foods as inexpensive filler. Signals lower quality than whole grains.",
+        "compareToSimilar": [
+          {
+            "ingredient": "white-rice",
+            "difference": "Brewers rice and white rice are both refined with minimal nutrition. Whole white rice is intact kernels; brewers rice is broken fragments. Both have similar nutritional value (high glycemic, low fiber, minimal vitamins). White rice is slightly higher quality and more expensive. Brewers rice signals budget formulation."
+          },
+          {
+            "ingredient": "brown-rice",
+            "difference": "Brown rice is vastly superior to brewers rice. Brown rice has lower glycemic index (55-65 vs 75-85), more fiber (3-4% vs 0.5-1%), and rich B vitamins, manganese, magnesium. Brewers rice is byproduct filler; brown rice is whole grain nutrition. Choose brown rice over brewers rice whenever possible."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Brewers rice appears in dog food primarily as inexpensive filler and economical carbohydrate source. It's highly digestible (85-90%), making it suitable for sensitive stomachs despite low nutritional value. Brewers rice is significantly cheaper than whole rice or brown rice—budget brands use it to reduce cost. It provides quick energy but minimal vitamins, minerals, or fiber. Brewers rice signals economy formulation prioritizing cost over nutrition. Acceptable in small amounts (positions 10-15); concerning as primary carbohydrate.",
+      "nutritionalProfile": {
+        "macros": {
+          "carbohydrates": "75-80g per 100g (minimal fiber 0.5-1g)",
+          "protein": "7-8g (incomplete)",
+          "fat": "Less than 1g",
+          "moisture": "12%"
+        },
+        "micronutrients": {
+          "note": "Minimal—refining removes most nutrients",
+          "bVitamins": "Trace amounts only"
+        },
+        "glycemicImpact": "High glycemic index (75-85), causing blood sugar spikes. Not ideal for diabetic dogs or weight management.",
+        "digestibility": "Highly digestible (85-90%) suitable for sensitive stomachs"
+      },
+      "qualityConsiderations": {
+        "expanded": "Brewers rice signals budget formulation. It's the lowest-quality rice ingredient—byproduct of rice milling. In premium foods, whole grains (brown rice, oatmeal) replace brewers rice. Brewers rice in lower positions (10-15) as minor ingredient is acceptable filler. Brewers rice in top 5 ingredients signals carb-heavy, budget formula prioritizing cost over nutrition. Multiple rice forms (brewers rice + rice flour + rice bran) inflate rice content. Look for whole grains instead.",
+        "redFlags": [
+          "Brewers rice in top 5 ingredients",
+          "Brewers rice as primary carbohydrate without whole grains",
+          "Multiple rice forms (brewers rice + rice flour = cheap filler manipulation)"
+        ],
+        "greenFlags": [
+          "Brewers rice in lower positions (10-15) as minor ingredient",
+          "Whole grains (brown rice, oatmeal, barley) listed before brewers rice",
+          "Limited use of brewers rice in overall formula"
+        ]
+      },
+      "concernsExpanded": {
+        "detailed": "Brewers rice is safe but nutritionally poor. Main concern: lack of nutrition—pure refined carbohydrates without vitamins, minerals, or fiber. High glycemic index (75-85) problematic for diabetic dogs or weight management. Long-term diets heavy in brewers rice without balancing nutrition could contribute to deficiencies (though complete dog food compensates with added vitamins/minerals). Brewers rice isn't harmful—just nutritionally empty filler. Better alternatives exist.",
+        "contraindications": [
+          "Diabetic dogs should avoid high-glycemic brewers rice",
+          "Overweight dogs better served by nutrient-dense, lower-glycemic carbohydrates"
+        ],
+        "lifeStageConsiderations": "While safe for all life stages, puppies and active dogs benefit more from nutrient-dense whole grains."
+      },
+      "scientificEvidence": {
+        "summary": "Brewers rice provides highly digestible carbohydrates with high glycemic index. Nutritionally sparse. Safe but not beneficial. Better alternatives available.",
+        "keyStudies": [],
+        "evidenceLevel": "Strong regarding digestibility and glycemic impact. Strong regarding lack of nutritional value."
+      },
+      "faqs": [
+        {
+          "question": "Is brewers rice bad for dogs?",
+          "answer": "Brewers rice isn't harmful but signals lower quality. It's rice byproduct (broken fragments) providing refined carbohydrates without nutrition. Highly digestible (85-90%) and suitable for sensitive stomachs, but offers minimal vitamins, minerals, or fiber. High glycemic index (75-85) causes blood sugar spikes. In balanced dog food supplemented with vitamins/minerals, brewers rice won't harm your dog. However, brewers rice as primary carbohydrate (top 5 ingredients) signals budget formula prioritizing cost over nutrition. Better alternatives include brown rice, oatmeal, or sweet potatoes providing actual nutrients. Brewers rice is economical filler—not toxic, just nutritionally empty.",
+          "answerShort": "Not harmful but low quality. Rice byproduct, refined carbs, high glycemic, minimal nutrition. Digestible for sensitive stomachs. Signals budget formulation. Better alternatives exist.",
+          "priority": 1
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "brewers rice dog food",
+        "secondaryKeywords": [
+          "is brewers rice bad for dogs",
+          "brewers rice vs brown rice"
+        ],
+        "metaDescription": "Brewers rice in dog food: Rice byproduct filler, high glycemic, minimal nutrition, digestibility benefits, budget ingredient considerations."
+      }
     },
     {
       "name": "Broccoli",
@@ -1726,7 +1848,46 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Broccoli (Brassica oleracea var. italica) is a cruciferous vegetable providing vitamins, minerals, fiber, and antioxidants in dog food. Fresh broccoli contains approximately 89% moisture, 7g carbohydrate, 3g protein, minimal fat, and 2.6g fiber per 100g. Broccoli is exceptionally rich in vitamins C and K, folate, and minerals including potassium and manganese. It provides sulforaphane—a powerful compound with anti-cancer, anti-inflammatory, and antioxidant properties. Broccoli is a cruciferous vegetable alongside kale, cauliflower, and Brussels sprouts. However, broccoli contains isothiocyanates—compounds that are safe in small amounts but can cause gastric irritation if consumed in large quantities. In dog food amounts (small quantities), broccoli is safe and beneficial.",
+        "compareToSimilar": [
+          {
+            "ingredient": "kale",
+            "difference": "Broccoli and kale are both cruciferous vegetables. Broccoli provides more sulforaphane (cancer-protective); kale provides more vitamins K and A. Broccoli has isothiocyanates (concern in large amounts); kale has oxalates (concern in large amounts). Both are nutrient-dense 'superfoods.' Both safe and beneficial in dog food amounts."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Broccoli appears in dog food for exceptional micronutrient density—vitamins C, K, folate, and minerals. Sulforaphane provides potential anti-cancer and anti-inflammatory benefits. Signals premium whole-food ingredients and health-conscious formulation. Marketing appeal—'with broccoli' suggests superfood quality. In small amounts typically used, broccoli provides genuine nutritional benefits. Premium brands include broccoli for vitamins and antioxidants.",
+      "nutritionalProfile": {
+        "vitamins": "Exceptional—vitamin C (very high), vitamin K (very high), folate, vitamin A",
+        "minerals": "Potassium, manganese, calcium, iron",
+        "sulforaphane": "Powerful compound with anti-cancer, anti-inflammatory, and antioxidant properties",
+        "isothiocyanates": "Present—safe in small amounts, concerning in large quantities"
+      },
+      "concernsExpanded": {
+        "detailed": "Broccoli's main consideration is isothiocyanates—compounds that can cause gastric irritation if consumed in large amounts (more than 25% of diet). In small amounts used in dog food, this is minimal concern. Large amounts of plain broccoli fed as meal replacement could cause digestive upset. Dogs should not receive more than 10% of diet as broccoli. Broccoli florets safer than stems (stems have more isothiocyanates). Otherwise, broccoli is safe and highly beneficial in food amounts.",
+        "contraindications": [
+          "Broccoli should not exceed 10% of diet",
+          "Very large amounts of broccoli could cause gastric irritation"
+        ]
+      },
+      "faqs": [
+        {
+          "question": "Is broccoli safe for dogs?",
+          "answer": "Yes, broccoli is safe and highly beneficial for dogs in moderation, like the small amounts used in dog food. Broccoli is exceptionally nutrient-dense with vitamins C, K, folate, minerals, and sulforaphane (anti-cancer, anti-inflammatory compound). However, broccoli contains isothiocyanates that can cause gastric irritation if consumed in large amounts (more than 10-25% of diet). The small amounts in commercial dog food are completely safe and beneficial. Avoid feeding large amounts of plain broccoli as meal replacement. Broccoli florets are safer than stems. In dog food formulas, broccoli provides excellent nutritional value without significant risk.",
+          "answerShort": "Safe in moderation (like dog food amounts). Exceptionally nutrient-dense with vitamins, sulforaphane. Isothiocyanates concerning in large amounts (over 10% diet). Small amounts very beneficial.",
+          "priority": 1
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "broccoli dog food",
+        "secondaryKeywords": [
+          "is broccoli safe for dogs",
+          "broccoli sulforaphane dogs"
+        ],
+        "metaDescription": "Broccoli in dog food: Superfood with exceptional vitamins, sulforaphane benefits, isothiocyanate concerns, safety in moderation for dogs."
+      }
     },
     {
       "name": "Brown Rice",
@@ -4916,7 +5077,96 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Duck is fresh poultry meat from ducks (Anas platyrhynchos and other species) providing complete protein in dog food. Fresh duck contains approximately 70-72% moisture, 18-21% protein, 10-18% fat (higher than chicken or turkey), and complete amino acids. Duck is considered premium novel protein—less common than chicken, making it suitable for dogs with poultry sensitivities (though some chicken-allergic dogs also react to duck). Duck has rich, gamey flavor most dogs find highly palatable. It provides B vitamins (especially B3/niacin), iron, zinc, selenium, and phosphorus. Duck is fattier than chicken or turkey, providing more calories and omega-6 fatty acids. As fresh ingredient with 70-72% moisture, duck loses significant weight during processing and moves lower on ingredient list. Duck meal (rendered/dried) provides more concentrated protein.",
+        "compareToSimilar": [
+          {
+            "ingredient": "chicken",
+            "difference": "Duck and chicken are both poultry but nutritionally distinct. Duck has significantly more fat (10-18% vs 9-12%) and calories, richer flavor, and more iron. Chicken is leaner and less expensive. Duck is novel protein (less common), potentially suitable for chicken-allergic dogs (though cross-reactivity possible). Chicken is more economical everyday protein; duck is premium alternative with higher palatability and fat content."
+          },
+          {
+            "ingredient": "turkey",
+            "difference": "Duck and turkey are both poultry. Duck is fattier (10-18% fat vs 7-10% for turkey) and richer. Turkey is leaner and often used in weight management formulas. Duck is more palatable due to fat content and gamey flavor. Both provide complete protein. Turkey is economy poultry; duck is premium high-fat option."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Duck appears in dog food as premium protein source with exceptional palatability, complete amino acids, and novel protein positioning. Duck's higher fat content (10-18%) makes it energy-dense and flavorful—ideal for active dogs, underweight dogs, or picky eaters. Less common than chicken, duck suits novel protein and limited ingredient diets for dogs with chicken sensitivities (though cross-reactivity possible between poultry). Duck signals premium positioning and gourmet quality. Provides B vitamins, iron, zinc. More expensive than chicken or turkey, limiting widespread use to premium brands.",
+      "nutritionalProfile": {
+        "macros": {
+          "protein": "18-21g per 100g fresh, complete with all essential amino acids",
+          "fat": "10-18g per 100g (significantly higher than chicken or turkey)",
+          "moisture": "70-72%"
+        },
+        "micronutrients": {
+          "niacin": "Exceptional (vitamin B3) for energy metabolism",
+          "iron": "Higher than chicken or turkey",
+          "zinc": "Good source for immune function and skin health",
+          "selenium": "Good source",
+          "phosphorus": "Present",
+          "bVitamins": "B6, B12, riboflavin"
+        },
+        "fattyAcids": "Higher omega-6 content from fat. Some duck formulas include duck fat for additional calories.",
+        "bioavailability": "Excellent—animal protein with optimal amino acid profile. Highly digestible (85-90%)."
+      },
+      "qualityConsiderations": {
+        "expanded": "Fresh duck is premium ingredient signaling gourmet quality and novel protein positioning. As fresh ingredient with 70-72% moisture, duck moves lower on list after cooking. Duck meal provides more concentrated protein and better positioning. Named duck (not generic 'poultry') indicates transparency and quality. Duck in top 5 demonstrates premium protein commitment. Duck suitable for novel protein, limited ingredient, or high-calorie formulas. Quality duck-based foods often marketed for active dogs or dogs with sensitivities. Duck is more expensive, limiting use to premium brands.",
+        "redFlags": [
+          "Generic 'poultry' without specification (should be 'duck')",
+          "Duck by-products without other quality protein sources",
+          "Duck as sole protein for chicken-allergic dogs without confirming tolerance (some cross-reactivity)"
+        ],
+        "greenFlags": [
+          "Named duck or duck meal in top 5 ingredients",
+          "Duck in novel protein or limited ingredient formulas",
+          "Duck combined with non-poultry proteins for variety",
+          "Duck fat specified as additional ingredient (premium positioning)"
+        ]
+      },
+      "concernsExpanded": {
+        "detailed": "Duck is very safe with minimal concerns. Primary consideration: cross-reactivity with chicken—some chicken-allergic dogs also react to duck (both are poultry). Novel protein trials should confirm duck tolerance before committing. Duck's high fat content (10-18%) benefits active dogs but could cause digestive upset (diarrhea, pancreatitis) in dogs unaccustomed to rich food or those prone to pancreatitis. Introduce duck gradually. Duck allergies are rare but possible. Otherwise, duck is safe, highly digestible, and beneficial premium protein.",
+        "contraindications": [
+          "Dogs with confirmed duck allergies should avoid",
+          "Dogs with pancreatitis or fat-sensitive digestion should avoid high-fat duck (leaner proteins preferable)",
+          "Chicken-allergic dogs may cross-react with duck—confirm tolerance before long-term feeding",
+          "Overweight dogs on calorie restriction should have high-fat duck monitored"
+        ],
+        "lifeStageConsiderations": "Appropriate for all life stages. Duck's high fat and calories benefit puppies (growth), active adults (energy), and underweight dogs. May not be ideal for overweight dogs or seniors with reduced activity unless portion-controlled."
+      },
+      "scientificEvidence": {
+        "summary": "Duck provides complete, highly digestible protein (85-90%) with excellent amino acid profile. Higher fat content provides energy-dense nutrition. Suitable novel protein for some allergic dogs (confirm tolerance). Safe and nutritious premium protein.",
+        "keyStudies": [],
+        "evidenceLevel": "Strong regarding protein quality, digestibility, and nutritional composition. Moderate regarding novel protein suitability (cross-reactivity with chicken possible)."
+      },
+      "faqs": [
+        {
+          "question": "Is duck good for dogs?",
+          "answer": "Yes, duck is excellent for dogs. It provides complete protein with all essential amino acids, highly digestible (85-90%), and exceptionally palatable due to rich, gamey flavor. Duck has higher fat content (10-18%) than chicken or turkey, making it energy-dense and ideal for active dogs, underweight dogs, or picky eaters. Duck is less common than chicken, making it useful for novel protein diets—some chicken-allergic dogs tolerate duck (though cross-reactivity possible). Duck provides excellent B vitamins (especially niacin), iron, zinc, and selenium. Premium quality protein signaling gourmet formulation. Safe and nutritious for dogs when fed appropriately.",
+          "answerShort": "Excellent. Complete protein, highly digestible, exceptionally palatable. Higher fat (10-18%)—ideal for active dogs. Novel protein option. Premium quality.",
+          "priority": 1
+        },
+        {
+          "question": "Can dogs with chicken allergies eat duck?",
+          "answer": "Maybe—some chicken-allergic dogs tolerate duck, but cross-reactivity is possible since both are poultry. Duck is less common than chicken, making it reasonable novel protein trial. However, dogs allergic to chicken may also react to duck if the allergy involves proteins shared between poultry species. Before committing to duck-based food, conduct novel protein trial: feed pure duck (limited ingredient formula) for 8-12 weeks while monitoring for allergy symptoms (itching, digestive upset, ear infections). If symptoms resolve, duck is suitable. If symptoms persist, try non-poultry novel proteins (fish, venison, kangaroo). Consult your veterinarian for elimination diet guidance.",
+          "answerShort": "Maybe. Some chicken-allergic dogs tolerate duck; others cross-react (both poultry). Conduct 8-12 week trial with vet guidance. Non-poultry options safer.",
+          "priority": 2
+        },
+        {
+          "question": "Is duck too fatty for dogs?",
+          "answer": "Duck's fat content (10-18%) is higher than chicken or turkey, but this isn't inherently bad—it depends on your dog's needs. Duck's fat benefits active dogs, underweight dogs, puppies, and dogs needing calorie-dense food. However, duck may be problematic for: dogs prone to pancreatitis (high fat triggers attacks), overweight dogs on calorie restriction, dogs with fat-sensitive digestion causing diarrhea, and sedentary seniors. For these dogs, leaner proteins (turkey, whitefish, venison) are preferable. For healthy, active dogs, duck's fat provides valuable energy and palatability. Feed appropriate portions based on your dog's activity level and weight. Gradually introduce duck to avoid digestive upset from sudden fat increase.",
+          "answerShort": "Not inherently—depends on dog's needs. Duck's fat (10-18%) benefits active dogs. Problematic for pancreatitis-prone, overweight, or sedentary dogs. Choose based on activity level.",
+          "priority": 3
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "duck dog food",
+        "secondaryKeywords": [
+          "is duck good for dogs",
+          "duck chicken allergy dogs",
+          "duck too fatty dogs"
+        ],
+        "metaDescription": "Duck in dog food: Premium protein benefits, high fat content, novel protein for allergies, palatability, comparison to chicken and turkey."
+      }
     },
     {
       "name": "Egg Product",
@@ -4943,7 +5193,76 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Egg product is dried whole eggs providing complete protein in dog food. Whole eggs (before drying) contain approximately 75% moisture, 13g protein, 11g fat, minimal carbohydrates per 100g. Once dried during processing, egg product becomes concentrated protein source with approximately 45-50% protein, 40-45% fat. Eggs provide the most complete and bioavailable protein available—containing all essential amino acids in optimal ratios (biological value of 100, the gold standard). Eggs are rich in vitamins A, D, E, B-complex (especially B12, riboflavin, folate), minerals (iron, selenium, zinc), choline (brain health), and lutein/zeaxanthin (eye health). Highly digestible (95%+) and hypoallergenic (egg allergies rare). Egg product is premium ingredient signaling quality formulation.",
+        "compareToSimilar": [
+          {
+            "ingredient": "chicken-meal",
+            "difference": "Egg product and chicken meal are both complete animal proteins. Eggs have higher biological value (100 vs 85-90) and more balanced amino acids. Chicken meal provides more protein per weight (60-65% vs 45-50%). Eggs are more expensive and provide more fat. Both are excellent—eggs are gold standard protein; chicken meal is economical complete protein."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Egg product appears in dog food as premium complete protein with highest biological value. It provides all essential amino acids in optimal ratios. Eggs are highly digestible (95%+), hypoallergenic, and nutrient-dense with vitamins, minerals, and choline. Premium positioning ingredient—signals quality and completeness. Eggs support muscle maintenance, cognitive function, eye health, and overall nutrition. More expensive than most proteins, limiting use to premium formulas. Often combined with meat proteins for variety.",
+      "nutritionalProfile": {
+        "protein": "45-50g per 100g dried (13g per 100g whole egg), complete with optimal amino acid ratios",
+        "fat": "40-45g per 100g dried (11g per 100g whole egg)",
+        "biologicalValue": "100—gold standard, most complete protein available",
+        "micronutrients": {
+          "vitaminA": "Excellent source",
+          "vitaminD": "Good source",
+          "vitaminE": "Present",
+          "bVitamins": "Exceptional—B12, riboflavin, folate, biotin",
+          "choline": "Excellent for brain health",
+          "selenium": "Good source",
+          "iron": "Present",
+          "zinc": "Present",
+          "lutein": "Eye health"
+        },
+        "bioavailability": "Exceptional—highest digestibility (95%+) and biological value among proteins"
+      },
+      "qualityConsiderations": {
+        "expanded": "Egg product is premium quality ingredient signaling high-grade formulation. Eggs in top 10 ingredients indicate protein quality focus. As dried ingredient, egg product already concentrated—doesn't lose weight like fresh meat. Dried whole eggs preferable to egg whites (yolks contain valuable nutrients and fat). Egg product combined with meat proteins provides excellent amino acid diversity. More expensive than most proteins—presence indicates premium positioning.",
+        "redFlags": [
+          "None significant—egg product is quality ingredient"
+        ],
+        "greenFlags": [
+          "Egg product in top 10 ingredients",
+          "Dried whole eggs specified (not just egg whites)",
+          "Egg product combined with meat proteins for diversity",
+          "Presence indicates premium quality formulation"
+        ]
+      },
+      "concernsExpanded": {
+        "detailed": "Egg product is remarkably safe. Egg allergies exist but are rare in dogs compared to chicken, beef, or dairy. Some dogs with chicken allergies tolerate eggs (different proteins), though cross-reactivity possible. High fat content (40-45% dried) benefits most dogs but could concern dogs prone to pancreatitis or requiring very low-fat diets. Otherwise, eggs are one of the safest, most beneficial proteins. Highly digestible and hypoallergenic.",
+        "contraindications": [
+          "Dogs with rare egg allergies should avoid",
+          "Dogs prone to pancreatitis may need high-fat ingredients monitored (though food amounts typically safe)"
+        ],
+        "lifeStageConsiderations": "Exceptional for all life stages. Puppies benefit from complete amino acids for growth. Adults benefit for muscle maintenance. Seniors benefit for digestibility and choline (cognitive support)."
+      },
+      "scientificEvidence": {
+        "summary": "Eggs provide the most complete, bioavailable protein (biological value 100). Exceptional digestibility (95%+). Rich micronutrient profile. Safe and hypoallergenic. Extensive research validates eggs as gold standard protein.",
+        "keyStudies": [],
+        "evidenceLevel": "Very strong regarding protein quality, bioavailability, digestibility, and nutritional completeness."
+      },
+      "faqs": [
+        {
+          "question": "Are eggs good for dogs?",
+          "answer": "Yes, eggs are excellent for dogs—arguably the best protein available. Egg product (dried whole eggs) provides complete protein with biological value of 100 (gold standard), containing all essential amino acids in optimal ratios. Eggs are exceptionally digestible (95%+), hypoallergenic (egg allergies rare), and nutrient-dense with vitamins A, D, E, B-complex, choline, selenium, and lutein. Support muscle maintenance, brain health, eye health, and overall nutrition. Premium quality ingredient signaling high-grade formulation. Safe for all life stages. One of the most beneficial protein sources in dog food.",
+          "answerShort": "Excellent—best protein available. Complete amino acids (biological value 100), exceptionally digestible (95%+), hypoallergenic. Nutrient-dense with vitamins, choline. Premium quality.",
+          "priority": 1
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "egg product dog food",
+        "secondaryKeywords": [
+          "are eggs good for dogs",
+          "dried eggs dog food",
+          "egg protein dogs"
+        ],
+        "metaDescription": "Egg product in dog food: Gold standard complete protein, highest biological value, exceptional digestibility, nutrient density for dogs."
+      }
     },
     {
       "name": "Eicosapentaenoic Acid",
@@ -8256,7 +8575,92 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Pork is fresh muscle meat from pigs (Sus scrofa domesticus) providing complete protein in dog food. Fresh pork contains approximately 70-75% moisture, 18-22% protein, 8-15% fat (varying by cut), and complete amino acids essential for dogs. Pork provides B vitamins (especially thiamine/B1, more than most meats), zinc, selenium, phosphorus, and iron. Less common than chicken, beef, or turkey in dog food but equally nutritious. Pork has reputation concerns (trichinosis, religious restrictions, marketing perception), though these are outdated or irrelevant for pets. Commercial pork is safe—trichinosis is virtually eliminated in modern farming, and cooking during kibble processing ensures complete safety. As fresh ingredient with 70-75% water, pork loses significant weight during processing and moves lower on ingredient list. Pork meal (rendered/dried) provides more concentrated protein.",
+        "compareToSimilar": [
+          {
+            "ingredient": "chicken",
+            "difference": "Pork and chicken are both quality proteins with complete amino acids. Pork has slightly more fat (8-15% vs 9-12% depending on cuts) and significantly more thiamine (vitamin B1). Chicken is less expensive and more common. Pork is less allergenic (chicken allergies more common). Both are excellent—pork is premium novel protein alternative; chicken is economical standard."
+          },
+          {
+            "ingredient": "beef",
+            "difference": "Pork and beef are both red meat proteins. Pork is leaner than many beef cuts and has more thiamine. Beef has more iron and zinc. Both provide complete protein. Beef is more common in dog food and has stronger \"meaty\" flavor dogs prefer. Pork is novel protein option. Both are quality—beef is traditional choice, pork is alternative."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Pork appears in dog food as complete protein source with all essential amino acids. It's highly palatable and digestible. Pork provides exceptional thiamine (vitamin B1), more than most meats, supporting metabolism and nerve function. Less common than chicken/beef, making pork suitable for novel protein diets or dogs with chicken/beef sensitivities. Pork is premium positioning ingredient—signals quality and variety. However, pork is more expensive and less widely used due to marketing perception (some owners avoid pork) and religious/cultural considerations affecting some consumers.",
+      "nutritionalProfile": {
+        "macros": {
+          "protein": "18-22g per 100g fresh, complete with all essential amino acids",
+          "fat": "8-15g per 100g depending on cut (leaner cuts like loin 8-10%, fattier cuts 12-15%)",
+          "moisture": "70-75%"
+        },
+        "micronutrients": {
+          "thiamine": "Exceptional—highest among common meats, supports metabolism and nervous system",
+          "bVitamins": "B6, B12, niacin, riboflavin",
+          "zinc": "Good source",
+          "selenium": "Good source",
+          "phosphorus": "Present",
+          "iron": "Moderate (less than beef)"
+        },
+        "bioavailability": "Excellent—animal protein with optimal amino acid profile for dogs. Highly digestible (85-90%)."
+      },
+      "qualityConsiderations": {
+        "expanded": "Fresh pork is quality ingredient signaling premium formulation and variety. As fresh ingredient with 70-75% moisture, pork moves lower on list after cooking—'pork' in position 5 may have been position 2 pre-cooking. Pork meal provides more concentrated protein and better positioning. Named pork (not generic 'meat' or 'animal protein') indicates transparency. Pork in top 5 demonstrates protein commitment. Pork suitable for novel protein diets. Quality consideration: some consumers avoid pork (religious, cultural, or perception reasons), limiting market appeal despite nutritional quality.",
+        "redFlags": [
+          "Generic 'meat' without specification (should be 'pork')",
+          "Pork by-products without other quality protein sources"
+        ],
+        "greenFlags": [
+          "Named pork or pork meal in top 5 ingredients",
+          "Pork in novel protein or limited ingredient formulas",
+          "Pork combined with other quality proteins for variety"
+        ]
+      },
+      "concernsExpanded": {
+        "detailed": "Pork is very safe for dogs. Historical trichinosis concern (parasitic worm) is obsolete—modern farming virtually eliminated trichinosis, and kibble processing temperatures kill any parasites. Raw pork should still be fed cautiously (freeze first, source from trusted suppliers), but commercial dog food with cooked pork is completely safe. Pork allergies exist but are less common than chicken or beef allergies—pork often used in novel protein diets. Some dogs may experience digestive upset from high-fat pork, though leaner cuts minimize this. Religious/cultural considerations (Islam, Judaism) make some owners avoid pork for pets, though pets have no religious restrictions.",
+        "contraindications": [
+          "Dogs with rare pork allergies should avoid",
+          "Dogs requiring very low-fat diets should avoid fattier pork cuts",
+          "Raw pork should be frozen and sourced carefully (commercial cooked pork is safe)"
+        ],
+        "lifeStageConsiderations": "Appropriate for all life stages. Pork's high thiamine benefits active dogs and supports metabolic function. Lean pork cuts suitable for weight management; fattier cuts for active dogs needing calories."
+      },
+      "scientificEvidence": {
+        "summary": "Pork provides complete, highly digestible protein (85-90%) with excellent amino acid profile. Exceptional thiamine content. Trichinosis concern is outdated—modern pork is safe. Suitable novel protein for allergic dogs.",
+        "keyStudies": [],
+        "evidenceLevel": "Strong regarding protein quality, digestibility, safety, and thiamine content."
+      },
+      "faqs": [
+        {
+          "question": "Is pork safe for dogs?",
+          "answer": "Yes, pork is completely safe for dogs when cooked. Commercial dog food with pork undergoes cooking/processing that ensures safety. The historical concern about trichinosis (parasitic infection) is outdated—modern farming practices virtually eliminated trichinosis in pork. Pork provides complete protein with all essential amino acids, exceptional thiamine (vitamin B1), and high digestibility (85-90%). Pork allergies are less common than chicken or beef allergies, making pork useful for novel protein diets. Raw pork should be frozen and sourced carefully, but cooked pork in commercial food is completely safe. One of the most nutritious and safe meats for dogs.",
+          "answerShort": "Yes, completely safe when cooked. Complete protein, exceptional thiamine, highly digestible. Trichinosis concern outdated. Less allergenic than chicken/beef.",
+          "priority": 1
+        },
+        {
+          "question": "Why isn't pork more common in dog food?",
+          "answer": "Pork is less common in dog food primarily due to cost and marketing perception, not nutritional quality. Pork is more expensive than chicken and has lower market appeal—some consumers avoid pork due to religious restrictions (Islam, Judaism), cultural preferences, or outdated safety perceptions (trichinosis). Dog food brands prioritize widely acceptable proteins like chicken, beef, and fish. However, pork is equally nutritious—complete protein, exceptional thiamine, highly digestible. Premium and novel protein formulas increasingly use pork. Dogs have no religious restrictions and benefit nutritionally from pork. Less common doesn't mean lower quality—pork is excellent protein often used in limited ingredient diets for allergic dogs.",
+          "answerShort": "Cost and marketing perception, not nutrition. More expensive than chicken; some consumers avoid pork (religion, culture). Equally nutritious—premium brands use pork.",
+          "priority": 2
+        },
+        {
+          "question": "Is pork better than chicken for dogs?",
+          "answer": "Pork and chicken are both excellent proteins with minor differences. Pork has more thiamine (vitamin B1) supporting metabolism; chicken has slightly more niacin. Both provide complete amino acids and high digestibility. Pork is less allergenic—chicken allergies are more common. Chicken is less expensive and more palatable (dogs often prefer chicken flavor). For healthy dogs without allergies, both are quality choices—chicken is economical standard, pork is premium alternative. For dogs with chicken allergies, pork is excellent substitute. Neither is universally better—choose based on your dog's allergies, preferences, and budget. Both are highly nutritious.",
+          "answerShort": "Both excellent. Pork has more thiamine, less allergenic. Chicken more economical, often more palatable. Choose based on dog's allergies and preferences—both quality.",
+          "priority": 3
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "pork dog food",
+        "secondaryKeywords": [
+          "is pork safe for dogs",
+          "pork vs chicken dogs",
+          "pork allergies dogs"
+        ],
+        "metaDescription": "Pork in dog food: Complete protein, exceptional thiamine, safety facts, trichinosis myths, comparison to chicken, novel protein benefits."
+      }
     },
     {
       "name": "Pork Fat",
@@ -12284,7 +12688,60 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Pea protein is concentrated plant protein extracted from yellow split peas, containing approximately 80-90% protein. It's produced by removing starch and fiber from peas, leaving protein isolate. Pea protein provides incomplete protein for dogs—lacking essential amino acids like methionine, taurine, and optimal ratios. It became extremely popular during grain-free trend as protein booster, allowing brands to inflate protein percentage without using expensive meat. Pea protein is significantly cheaper than meat protein. However, pea protein has been investigated (not definitively proven) for potential DCM connection in grain-free diets, particularly when used as primary protein instead of meat. Pea protein signals protein manipulation and economical protein boost rather than quality nutrition.",
+        "compareToSimilar": [
+          {
+            "ingredient": "chicken-meal",
+            "difference": "Chicken meal is vastly superior to pea protein. Chicken meal provides complete animal protein (60-65%) with all essential amino acids, highly bioavailable. Pea protein provides incomplete plant protein (80-90%) lacking methionine, taurine. Chicken meal supports dog nutrition; pea protein is economical filler inflating protein numbers without providing optimal nutrition."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Pea protein appears in dog food primarily to boost crude protein percentage economically without using expensive meat. It's significantly cheaper than animal protein while inflating protein numbers on guaranteed analysis. Grain-free brands use pea protein to achieve 25-30%+ protein claims. However, pea protein is incomplete for dogs and doesn't replace animal protein nutritionally. Signals economical protein manipulation. Formulas using pea protein as primary protein (top 5) instead of meat are concerning for nutritional adequacy and potential DCM risk.",
+      "nutritionalProfile": {
+        "protein": "80-90g per 100g (incomplete plant protein)",
+        "bioavailability": "Lower than animal protein—plant proteins less bioavailable for dogs",
+        "functionalValue": "Inflates protein percentage without providing complete nutrition"
+      },
+      "qualityConsiderations": {
+        "expanded": "Pea protein signals economical formulation and protein manipulation. It's major red flag when used as primary protein (top 5 ingredients) instead of meat. Pea protein in lower positions (8-12) as supplementary boost is acceptable with adequate meat protein. Multiple legume forms (green peas + pea protein + pea fiber + pea starch) is severe red flag for legume overload and protein manipulation. Quality brands prioritize animal protein; budget grain-free brands rely on pea protein. Avoid pea protein-heavy formulas.",
+        "redFlags": [
+          "Pea protein in top 5 ingredients without sufficient meat protein",
+          "Multiple legume forms (green peas + pea protein + pea fiber + pea starch = manipulation)",
+          "Pea protein as primary or secondary protein source",
+          "High protein claims (28-32%) achieved primarily through pea protein"
+        ],
+        "greenFlags": [
+          "Pea protein in lower positions (10+) after multiple meat sources",
+          "Limited pea protein with named meat meals as primary proteins",
+          "Single legume form rather than multiple pea ingredients"
+        ]
+      },
+      "concernsExpanded": {
+        "detailed": "Primary concern: pea protein provides incomplete plant protein that cannot replace animal protein nutritionally. Dogs need methionine, taurine (critical for heart health), and complete amino acids from meat. FDA investigated grain-free diets heavy in legumes (including pea protein) for potential DCM connection. While not definitively proven, concern is inadequate animal protein in pea protein-heavy formulas causing nutritional deficiencies. Pea protein is not toxic—it's simply inadequate as primary protein. Choose formulas with meat as first ingredient and meat meals in top 5.",
+        "contraindications": [
+          "Formulas using pea protein as primary protein may risk nutritional deficiencies or DCM—choose meat-first formulas",
+          "Dogs with legume sensitivities should avoid",
+          "Puppies, pregnant/nursing dogs especially need adequate meat protein—pea protein insufficient"
+        ]
+      },
+      "faqs": [
+        {
+          "question": "Is pea protein bad for dogs?",
+          "answer": "Pea protein is not inherently toxic but signals protein manipulation and potential nutritional inadequacy. It's concentrated plant protein (80-90%) extracted from peas—incomplete for dogs, lacking methionine, taurine, and optimal amino acids. Pea protein is used to boost crude protein percentage economically without expensive meat. The FDA investigated legume-heavy grain-free diets for potential DCM connection—concern is inadequate animal protein, not pea protein specifically. However, formulas using pea protein as primary protein (top 5 ingredients) instead of meat are concerning. Pea protein in lower positions (10+) with adequate meat is acceptable. Always choose foods with named meat as first ingredient and meat meals in top 5. Avoid multiple legume forms (peas + pea protein + pea fiber).",
+          "answerShort": "Not toxic but signals protein manipulation. Incomplete plant protein, cannot replace meat. Concerning as primary protein (DCM risk). Acceptable in lower positions with adequate meat.",
+          "priority": 1
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "pea protein dog food",
+        "secondaryKeywords": [
+          "is pea protein bad for dogs",
+          "pea protein DCM dogs"
+        ],
+        "metaDescription": "Pea protein in dog food: Protein manipulation concerns, incomplete plant protein, DCM considerations, comparison to animal protein."
+      }
     },
     {
       "name": "Oat Flour",
@@ -15289,7 +15746,84 @@
       "qualityNote": "Whole green peas are a moderate-quality ingredient providing both protein and carbohydrates. They're more nutritious than pea fractions (like pea fiber or pea starch) since they contain the complete seed. However, they're lower in protein than animal sources and contain anti-nutritional factors like lectins that can interfere with nutrient absorption. Generally well-tolerated but can cause gas in some dogs.",
       "wattsPosition": "neutral",
       "wattsTake": "We view whole green peas as an acceptable plant-based ingredient when used in moderation. They provide some protein and fiber along with nutrients like vitamin K. However, we prefer animal proteins as primary protein sources since dogs are carnivores. Peas should be a complementary ingredient, not a main protein source. Watch for 'pea stacking' where brands split peas into multiple forms (peas, pea protein, pea fiber) to disguise the total pea content.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "overview": "Green peas (Pisum sativum) are legume vegetables providing protein, fiber, and complex carbohydrates in dog food. Whole green peas contain approximately 78% moisture when fresh, 14g carbohydrate (5g fiber), 5g protein, 0.4g fat per 100g fresh (concentrated when dried). Peas provide more plant protein (21-23% dried) than most vegetables, though incomplete for dogs. They're rich in vitamins A, K, C, B vitamins, and minerals including iron, zinc, manganese. Peas have moderate glycemic index (40-50), lower than potatoes but higher than lentils. Became extremely popular during grain-free trend. However, peas contain anti-nutritional factors (lectins, phytic acid) and have been investigated (not proven definitively) for potential DCM connection in legume-heavy diets. Green peas different from yellow split peas (mature, dried, split legumes).",
+        "compareToSimilar": [
+          {
+            "ingredient": "lentils",
+            "difference": "Lentils and peas are both legumes. Lentils have more protein (24-26% vs 21-23%) and lower glycemic index (30-35 vs 40-50). Lentils have fewer anti-nutritional factors. Lentils are nutritionally superior; peas are more economical and common."
+          },
+          {
+            "ingredient": "chickpeas",
+            "difference": "Peas and chickpeas are similar legumes. Peas have slightly more protein (21-23% vs 20-22%) but higher glycemic index (40-50 vs 35-45). Chickpeas are firmer and more premium. Both are quality legumes—chickpeas signal premium, peas are economical standard."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Green peas appear in dog food for plant protein content (21-23% dried), fiber (5g per 100g fresh), complex carbohydrates, and grain-free positioning. Peas are less expensive than lentils or chickpeas, making them common grain-free filler. They provide vitamins A, K, C. However, peas are primarily used for economical plant protein boost and carbohydrate binding rather than optimal nutrition. Pea-heavy formulas have raised concerns about legume content and DCM. Moderate amounts acceptable; excessive amounts concerning.",
+      "nutritionalProfile": {
+        "macros": {
+          "protein": "21-23g per 100g dried (5g per 100g fresh), incomplete for dogs",
+          "carbohydrates": "14g per 100g fresh, 60g per 100g dried (including fiber)",
+          "fiber": "5g per 100g fresh, concentrated when dried",
+          "fat": "0.4g per 100g fresh, minimal",
+          "moisture": "78% fresh"
+        },
+        "micronutrients": {
+          "vitaminA": "Good source",
+          "vitaminK": "Excellent source",
+          "vitaminC": "Good source",
+          "bVitamins": "Folate, thiamine, B6",
+          "iron": "Moderate (non-heme)",
+          "zinc": "Present",
+          "manganese": "Good source"
+        },
+        "glycemicImpact": "Moderate glycemic index (40-50), higher than lentils but lower than potatoes",
+        "proteinQuality": "Incomplete plant protein lacking essential amino acids. Cannot replace animal protein."
+      },
+      "qualityConsiderations": {
+        "expanded": "Green peas are acceptable economical ingredient but signal lower quality than lentils or chickpeas. Peas in positions 4-8 after animal proteins indicate grain-free formulation. Peas in top 3 positions signal inadequate meat protein or pea-heavy formula—concerning. Multiple pea forms (green peas + pea protein + pea fiber + pea starch) is major red flag for protein manipulation and legume overload. Peas acceptable in moderation; excessive pea content problematic.",
+        "redFlags": [
+          "Peas in top 3 positions without sufficient meat",
+          "Multiple pea forms (green peas + pea protein + pea fiber + pea starch = manipulation and legume overload)",
+          "Pea protein isolate as primary protein"
+        ],
+        "greenFlags": [
+          "Green peas in positions 6-10 after quality meat proteins",
+          "Single pea form (just green peas) without protein isolates",
+          "Peas combined with whole grains for variety"
+        ]
+      },
+      "concernsExpanded": {
+        "detailed": "Primary concern: peas contain anti-nutritional factors (lectins, phytic acid) binding minerals and potentially causing digestive issues. Legume-heavy diets have been investigated for potential DCM connection, particularly when legumes replace meat protein. Pea-heavy formulas may lack adequate taurine or amino acids. Green peas in moderate amounts with adequate meat protein are safe. Excessive pea content (multiple pea forms, peas as primary ingredient) is concerning. Some dogs develop legume sensitivities causing gas, digestive upset.",
+        "contraindications": [
+          "Dogs with legume sensitivities should avoid",
+          "Formulas with excessive pea content (multiple forms) may risk DCM—choose meat-first formulas",
+          "Dogs with digestive sensitivities may not tolerate high-pea diets"
+        ],
+        "lifeStageConsiderations": "Appropriate for all life stages when paired with adequate animal protein. Puppies and pregnant dogs need high-quality meat—peas cannot provide sufficient nutrition alone."
+      },
+      "scientificEvidence": {
+        "summary": "Peas provide digestible plant protein and fiber. FDA investigated grain-free legume diets for DCM connection (inconclusive). Peas safe in moderation with adequate meat protein.",
+        "keyStudies": [],
+        "evidenceLevel": "Strong regarding nutritional content. Moderate regarding DCM concerns (ongoing research)."
+      },
+      "faqs": [
+        {
+          "question": "Are green peas safe for dogs?",
+          "answer": "Yes, green peas are safe for dogs in moderation, like the amounts used in balanced dog food with adequate meat protein. Peas provide plant protein (21-23% dried), fiber, vitamins A, K, C, and minerals. However, peas provide incomplete protein and contain anti-nutritional factors. The FDA investigated legume-heavy diets for potential DCM connection—concern is inadequate meat protein, not peas specifically. In moderate amounts (positions 6-10) with named meat as first ingredient, peas are safe. Avoid formulas with multiple pea forms (green peas + pea protein + pea fiber + pea starch) signaling protein manipulation and legume overload. Choose meat-first formulas with peas as supplementary ingredient.",
+          "answerShort": "Safe in moderation with meat protein. Incomplete plant protein, anti-nutritional factors. Avoid excessive pea content (multiple forms). Choose meat-first formulas.",
+          "priority": 1
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "green peas dog food",
+        "secondaryKeywords": [
+          "are green peas safe for dogs",
+          "peas DCM dogs"
+        ],
+        "metaDescription": "Green peas in dog food: Plant protein, fiber, DCM concerns, safety in moderation, comparison to lentils, grain-free considerations."
+      }
     },
     {
       "name": "Yellow Peas",
