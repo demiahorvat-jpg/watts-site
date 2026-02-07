@@ -464,12 +464,26 @@ function generateIngredientPage(ingredient, allIngredients) {
   const metaDescription = ingredient.seoMetadata?.metaDescription
     || `Complete guide to ${ingredient.name.toLowerCase()} in dog food, treats, and supplements. Learn what it is, nutritional benefits, quality considerations, and expert analysis.`;
 
+  // Generate SEO-optimized title (50-60 chars ideal)
+  let pageTitle;
+  const nameLength = ingredient.name.length;
+  if (nameLength <= 20) {
+    // Short names: use full descriptive title
+    pageTitle = `${ingredient.name} in Dog Food: Are They Safe? | Watts`;
+  } else if (nameLength <= 28) {
+    // Medium names: slightly shorter version
+    pageTitle = `${ingredient.name} in Dog Food: Safe? | Watts`;
+  } else {
+    // Long names: minimal version to stay under 60 chars
+    pageTitle = `${ingredient.name} in Dog Food | Watts`;
+  }
+
   const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${ingredient.name} in Dog Food, Treats & Supplements: Complete Guide | Watts Pet</title>
+    <title>${pageTitle}</title>
     <meta name="description" content="${metaDescription}">
     <link rel="canonical" href="https://wattspet.com/ingredient-analyzer/ingredients/${slug}/">
 
@@ -849,7 +863,7 @@ function generateIngredientPage(ingredient, allIngredients) {
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "${ingredient.name} in Dog Food, Treats & Supplements: Complete Guide",
+      "headline": "${ingredient.name} in Dog Food: Is It Safe for Dogs?",
       "description": "${ingredient.whatItIs.replace(/"/g, '\\"')}",
       "author": {
         "@type": "Organization",

@@ -4928,7 +4928,75 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Dried egg product is dehydrated whole eggs providing complete protein in dog food, identical in nutrition to 'egg product.' Whole eggs (before drying) contain approximately 75% moisture, 13g protein, 11g fat per 100g. Once dried, egg product becomes concentrated with approximately 45-50% protein, 40-45% fat. Eggs provide the most complete and bioavailable protein available—biological value of 100 (gold standard), containing all essential amino acids in optimal ratios. Rich in vitamins A, D, E, B-complex (especially B12, riboflavin, folate, biotin), minerals (iron, selenium, zinc), choline (brain health), and lutein/zeaxanthin (eye health). Highly digestible (95%+) and hypoallergenic (egg allergies rare). Premium ingredient signaling quality.",
+        "compareToSimilar": [
+          {
+            "ingredient": "egg-product",
+            "difference": "Dried egg product and egg product are identical—both are dried whole eggs with same nutrition (45-50% protein, 40-45% fat, biological value 100). 'Dried egg product' specifies drying process; 'egg product' assumes drying (eggs always dried in kibble). Both are premium complete protein. No nutritional difference."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Dried egg product appears in dog food as premium complete protein with highest biological value. Provides all essential amino acids in optimal ratios. Highly digestible (95%+), hypoallergenic, and nutrient-dense with vitamins, minerals, and choline. Premium positioning ingredient signaling quality and completeness. Supports muscle maintenance, cognitive function, eye health. More expensive than most proteins, limiting use to premium formulas. Often combined with meat proteins for variety.",
+      "nutritionalProfile": {
+        "protein": "45-50g per 100g dried, complete with optimal amino acid ratios",
+        "fat": "40-45g per 100g dried",
+        "biologicalValue": "100—gold standard, most complete protein available",
+        "micronutrients": {
+          "vitaminA": "Excellent source",
+          "vitaminD": "Good source",
+          "vitaminE": "Present",
+          "bVitamins": "Exceptional—B12, riboflavin, folate, biotin",
+          "choline": "Excellent for brain health",
+          "selenium": "Good source",
+          "iron": "Present",
+          "zinc": "Present",
+          "lutein": "Eye health support"
+        },
+        "bioavailability": "Exceptional—highest digestibility (95%+) and biological value among proteins"
+      },
+      "qualityConsiderations": {
+        "expanded": "Dried egg product is premium quality ingredient signaling high-grade formulation. Eggs in top 10 ingredients indicate protein quality focus. As dried ingredient, already concentrated—doesn't lose weight like fresh meat. Dried whole eggs preferable to egg whites (yolks contain valuable nutrients and fat). Combined with meat proteins provides excellent amino acid diversity. More expensive than most proteins—presence indicates premium positioning.",
+        "redFlags": [
+          "None significant—dried egg product is quality ingredient"
+        ],
+        "greenFlags": [
+          "Dried egg product in top 10 ingredients",
+          "Whole eggs specified (not just whites)",
+          "Combined with meat proteins for diversity",
+          "Indicates premium quality formulation"
+        ]
+      },
+      "concernsExpanded": {
+        "detailed": "Dried egg product is remarkably safe. Egg allergies exist but are rare in dogs compared to chicken, beef, or dairy. Some dogs with chicken allergies tolerate eggs (different proteins), though cross-reactivity possible. High fat content (40-45% dried) benefits most dogs but could concern dogs prone to pancreatitis or requiring very low-fat diets. Otherwise, eggs are one of safest, most beneficial proteins. Highly digestible and hypoallergenic.",
+        "contraindications": [
+          "Dogs with rare egg allergies should avoid",
+          "Dogs prone to pancreatitis may need high-fat ingredients monitored (though food amounts typically safe)"
+        ],
+        "lifeStageConsiderations": "Exceptional for all life stages. Puppies benefit from complete amino acids for growth. Adults benefit for muscle maintenance. Seniors benefit for digestibility and choline (cognitive support)."
+      },
+      "scientificEvidence": {
+        "summary": "Eggs provide the most complete, bioavailable protein (biological value 100). Exceptional digestibility (95%+). Rich micronutrient profile. Safe and hypoallergenic.",
+        "keyStudies": [],
+        "evidenceLevel": "Very strong regarding protein quality, bioavailability, digestibility, and nutritional completeness."
+      },
+      "faqs": [
+        {
+          "question": "Is dried egg product the same as egg product?",
+          "answer": "Yes, dried egg product and egg product are nutritionally identical—both are dried whole eggs. The terms are used interchangeably in dog food. All eggs in kibble are dried during processing, whether labeled 'dried egg product' or simply 'egg product.' Both provide complete protein with biological value of 100 (gold standard), approximately 45-50% protein and 40-45% fat when dried, exceptional digestibility (95%+), and rich vitamins, minerals, and choline. 'Dried egg product' simply specifies the drying process more explicitly. Either indicates premium quality complete protein in dog food.",
+          "answerShort": "Yes, identical. Both are dried whole eggs with same nutrition (biological value 100, 45-50% protein). Terms used interchangeably. Premium complete protein.",
+          "priority": 1
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "dried egg product dog food",
+        "secondaryKeywords": [
+          "dried egg product vs egg product",
+          "dried eggs dog food"
+        ],
+        "metaDescription": "Dried egg product in dog food: Gold standard complete protein, biological value 100, exceptional digestibility, premium quality nutrition."
+      }
     },
     {
       "name": "Dried Kelp",
@@ -5934,7 +6002,65 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Gelatin is a protein derived from collagen found in animal bones, skin, and connective tissue (typically from cattle or pigs). It's produced by boiling animal tissues to extract collagen, then processing into dried powder or sheets. Gelatin contains approximately 85-90% protein, 1-2% minerals, minimal fat and carbohydrates. However, gelatin is incomplete protein—it lacks tryptophan and is low in several essential amino acids, making it nutritionally inferior to muscle meat proteins. Gelatin is rich in specific amino acids: glycine, proline, and hydroxyproline, which support joint health, skin health, and gut lining. Used in dog food as binder (creates gel texture in wet foods), source of collagen-derived amino acids, and joint support ingredient. Appears primarily in wet/canned foods, treats, and supplements.",
+        "compareToSimilar": [
+          {
+            "ingredient": "collagen",
+            "difference": "Gelatin is processed form of collagen—collagen is the raw protein in connective tissue; gelatin is extracted and processed version. Both provide similar amino acids (glycine, proline, hydroxyproline) for joint and skin health. Gelatin forms gel when hydrated; collagen powder doesn't gel. Nutritionally similar for joint support. Both incomplete proteins lacking tryptophan."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Gelatin appears in dog food for: 1) Binding and texture (creates gel in wet foods, holds shape in treats), 2) Joint support (provides collagen-derived amino acids glycine, proline, hydroxyproline), 3) Protein boost (85-90% protein, though incomplete), 4) Gut health (may support gut lining), 5) Palatability (dogs often enjoy gelatinous texture). Common in wet foods, gravies, treats, and joint support supplements. Gelatin is not primary protein source—incomplete and lacking essential amino acids.",
+      "nutritionalProfile": {
+        "protein": "85-90% protein (incomplete—lacks tryptophan)",
+        "minerals": "1-2% (trace amounts from source material)",
+        "proteinQuality": "Incomplete protein unsuitable as primary protein source. Useful for joint support, not muscle maintenance."
+      },
+      "qualityConsiderations": {
+        "expanded": "Gelatin is functional ingredient rather than quality protein. Appropriate in wet foods for texture, treats for binding, or supplements for joint support. Gelatin should not replace quality muscle meat proteins—it's incomplete. Gelatin in lower positions (10-20) in wet foods is normal for texture. Gelatin higher on list may signal inadequate muscle meat. Source matters: beef gelatin or pork gelatin (specified) preferable to generic gelatin.",
+        "redFlags": [
+          "Gelatin as primary protein source (top 3) without muscle meats",
+          "Gelatin replacing quality proteins in formula",
+          "Generic gelatin without source specification"
+        ],
+        "greenFlags": [
+          "Gelatin in wet foods for texture binding (normal use)",
+          "Specified source (beef gelatin, pork gelatin)",
+          "Gelatin in joint support supplements or treats",
+          "Gelatin as supplementary ingredient with quality muscle proteins"
+        ]
+      },
+      "concernsExpanded": {
+        "detailed": "Gelatin is safe with specific limitations. Primary concern: incomplete protein—lacks tryptophan and low in several essential amino acids. Cannot replace complete proteins. Gelatin as primary protein causes nutritional deficiencies. However, gelatin as supplementary ingredient is safe and beneficial for joint support. Some dogs may have allergies to source animal (beef or pork gelatin), though rare. Otherwise, gelatin provides genuine joint and gut health benefits when combined with complete proteins.",
+        "contraindications": [
+          "Gelatin should not be primary protein source—incomplete",
+          "Dogs with beef or pork allergies should avoid corresponding gelatin sources"
+        ],
+        "lifeStageConsiderations": "Appropriate for all life stages as supplementary ingredient. Particularly beneficial for seniors with joint issues (collagen support). Puppies need complete proteins—gelatin alone insufficient."
+      },
+      "scientificEvidence": {
+        "summary": "Gelatin provides collagen-derived amino acids supporting joint health, skin health, and potentially gut lining. However, incomplete protein unsuitable as primary source. Safe and beneficial as supplementary ingredient.",
+        "keyStudies": [],
+        "evidenceLevel": "Moderate regarding joint support benefits. Strong regarding incomplete protein status."
+      },
+      "faqs": [
+        {
+          "question": "Is gelatin good for dogs?",
+          "answer": "Yes, gelatin is beneficial for dogs as supplementary ingredient, but not as primary protein. Gelatin (derived from animal collagen) provides specific amino acids—glycine, proline, hydroxyproline—supporting joint health, skin health, and gut lining. Common in wet foods for texture, treats for binding, and joint supplements. However, gelatin is incomplete protein lacking tryptophan and low in essential amino acids—cannot replace muscle meat. Safe and beneficial when combined with quality complete proteins. Particularly helpful for senior dogs with joint issues. Choose formulas with gelatin as supplementary ingredient alongside named muscle meats.",
+          "answerShort": "Good as supplement, not primary protein. Supports joints, skin, gut. Incomplete protein—needs muscle meat. Beneficial in wet foods, treats, joint supplements.",
+          "priority": 1
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "gelatin dog food",
+        "secondaryKeywords": [
+          "is gelatin good for dogs",
+          "gelatin joint health dogs"
+        ],
+        "metaDescription": "Gelatin in dog food: Joint support benefits, incomplete protein considerations, collagen-derived amino acids, safety for dogs."
+      }
     },
     {
       "name": "Ginger",
@@ -7761,7 +7887,87 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Millet is an ancient cereal grain (Panicum miliaceum and related species) providing complex carbohydrates, protein, and minerals in dog food. Whole millet contains approximately 10-12% moisture, 72-75% carbohydrates (including 8-9% fiber), 11-12% protein (incomplete for dogs), and 4-5% fat. Millet is naturally gluten-free, making it suitable for dogs with wheat or gluten sensitivities. It provides B vitamins (especially niacin, thiamine, B6), minerals (magnesium, phosphorus, manganese, iron), and antioxidants. Millet has moderate glycemic index (50-70 depending on processing), lower than white rice but higher than legumes. It's highly digestible (80-85%) and hypoallergenic. Millet is ancient grain used in grain-free and whole grain formulas. Less common than rice or oats but signals quality whole grain nutrition.",
+        "compareToSimilar": [
+          {
+            "ingredient": "brown-rice",
+            "difference": "Millet and brown rice are both whole grains. Millet is gluten-free (like rice) with higher fiber (8-9% vs 3-4%) and more magnesium. Brown rice has lower glycemic index (55-65 vs 50-70 for millet) and is more digestible. Both provide quality nutrition—brown rice is more common and economical; millet is premium ancient grain alternative."
+          },
+          {
+            "ingredient": "oatmeal",
+            "difference": "Millet and oatmeal are both quality whole grains. Oatmeal has more protein (13-17% vs 11-12%), beta-glucan fiber, and lower glycemic index. Millet has more magnesium and is ancient grain. Both are gluten-free and digestible. Oatmeal is nutritionally superior; millet is premium alternative signaling variety."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Millet appears in dog food as gluten-free ancient grain providing whole grain nutrition, hypoallergenic carbohydrates, and minerals. It signals premium quality and grain variety—less common than rice or oats. Millet's high magnesium content (twice that of rice) supports bone health, muscle function, and metabolism. Easily digestible and suitable for sensitive stomachs. Ancient grain status appeals to health-conscious consumers. Millet is more expensive than rice or corn, limiting use to premium and grain-free formulas.",
+      "nutritionalProfile": {
+        "macros": {
+          "carbohydrates": "72-75g per 100g (including 8-9g fiber)",
+          "protein": "11-12g (incomplete for dogs)",
+          "fat": "4-5g",
+          "moisture": "10-12%"
+        },
+        "micronutrients": {
+          "magnesium": "Exceptional—supports bone, muscle, metabolism",
+          "phosphorus": "Good source for bones and energy",
+          "manganese": "Good source",
+          "iron": "Present",
+          "bVitamins": "Niacin (B3), thiamine (B1), B6",
+          "antioxidants": "Various beneficial compounds"
+        },
+        "glycemicImpact": "Moderate glycemic index (50-70), depends on processing",
+        "digestibility": "Highly digestible (80-85%), suitable for sensitive stomachs"
+      },
+      "qualityConsiderations": {
+        "expanded": "Millet is quality ancient grain signaling premium formulation and grain variety. Millet in positions 4-8 after proteins indicates whole grain nutrition focus. Less common than rice or oats, millet signals thoughtful ingredient selection. Whole millet preferable to millet flour. Organic millet reduces pesticide exposure. Millet suitable for grain-free (actually not grain-free since millet is grain) and gluten-free formulas. Premium positioning ingredient.",
+        "redFlags": [
+          "Millet as first ingredient without concentrated protein",
+          "Millet flour rather than whole millet (processing removes nutrients)"
+        ],
+        "greenFlags": [
+          "Whole millet in top 10 ingredients",
+          "Organic millet specified",
+          "Millet combined with other quality grains for variety",
+          "Millet in ancient grain or premium formulas"
+        ]
+      },
+      "concernsExpanded": {
+        "detailed": "Millet is very safe with minimal concerns. Hypoallergenic—millet allergies extremely rare. Gluten-free and suitable for wheat-sensitive dogs. Goitrogens: raw millet contains compounds that could theoretically affect thyroid function if consumed in massive amounts, but cooking during kibble processing eliminates concern. Normal dog food amounts completely safe. Millet is one of safest, most beneficial ancient grains.",
+        "contraindications": [
+          "None for most dogs—millet is hypoallergenic and safe"
+        ],
+        "lifeStageConsiderations": "Appropriate for all life stages. Millet's magnesium supports puppies (bone development), adults (muscle function), and seniors (metabolism)."
+      },
+      "scientificEvidence": {
+        "summary": "Millet provides digestible whole grain nutrition with exceptional magnesium content. Gluten-free, hypoallergenic, and safe. Ancient grain with long history of safe consumption.",
+        "keyStudies": [],
+        "evidenceLevel": "Strong regarding nutritional content, digestibility, and safety."
+      },
+      "faqs": [
+        {
+          "question": "Is millet good for dogs?",
+          "answer": "Yes, millet is excellent for dogs. It's an ancient whole grain providing complex carbohydrates, fiber (8-9%), protein (11-12%), and exceptional magnesium (supports bones, muscles, metabolism). Millet is gluten-free, hypoallergenic (millet allergies rare), and highly digestible (80-85%). Suitable for dogs with wheat or grain sensitivities. Provides B vitamins, phosphorus, manganese, and antioxidants. Moderate glycemic index (50-70). Less common than rice or oats, millet signals premium quality and grain variety. Safe for all life stages. One of the most beneficial ancient grains in dog food.",
+          "answerShort": "Excellent. Ancient whole grain, gluten-free, hypoallergenic. Exceptional magnesium, good fiber, digestible. Premium quality ancient grain.",
+          "priority": 1
+        },
+        {
+          "question": "Is millet better than rice for dogs?",
+          "answer": "Millet and rice are both quality grains with different strengths. Millet has more fiber (8-9% vs 3-4% for brown rice), more magnesium (twice rice), and is ancient grain. Brown rice has lower glycemic index (55-65 vs 50-70 for millet) and is more digestible (85-95% vs 80-85%). Both are gluten-free and hypoallergenic. Brown rice is more economical and common; millet is premium ancient grain signaling variety. Neither is universally better—brown rice for budget-friendly nutrition, millet for premium ancient grain benefits. Both excellent choices depending on formula goals.",
+          "answerShort": "Different strengths. Millet: more fiber, more magnesium, ancient grain. Rice: lower glycemic, more digestible, economical. Both quality gluten-free grains.",
+          "priority": 2
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "millet dog food",
+        "secondaryKeywords": [
+          "is millet good for dogs",
+          "millet vs rice dogs",
+          "millet gluten free dogs"
+        ],
+        "metaDescription": "Millet in dog food: Ancient grain benefits, gluten-free, exceptional magnesium, comparison to rice, hypoallergenic whole grain nutrition."
+      }
     },
     {
       "name": "Miscanthus Grass",
@@ -7888,7 +8094,70 @@
           "url": "https://www.fda.gov/",
           "publisher": "FDA"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Natural flavor is a palatability enhancer derived from natural sources (animal or plant materials) used to make dog food more appealing. Per FDA definition, natural flavors must be derived from spices, fruits, vegetables, herbs, bark, roots, meat, seafood, poultry, eggs, dairy, or fermentation products—not created synthetically. However, 'natural' doesn't mean unprocessed—natural flavors undergo significant processing (heating, enzymatic breakdown, distillation) to concentrate flavor compounds. In dog food, natural flavors typically come from meat or poultry byproducts, yeast extracts, or vegetable sources. They appear in small amounts (less than 1% of formula) but significantly increase palatability. Natural flavor is vague ingredient—manufacturers not required to specify source. It provides zero nutritional value, serving only to enhance taste.",
+        "compareToSimilar": [
+          {
+            "ingredient": "artificial-flavor",
+            "difference": "Natural flavor must be derived from natural sources (meat, plants); artificial flavor is synthetically created. Both are highly processed and serve only palatability—zero nutrition. Natural flavor is marketing preference ('natural' label appeal) rather than nutritional superiority. Both are safe in dog food amounts. Natural flavor is preferable for transparency and avoiding synthetic chemicals, though functionally similar."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Natural flavor appears in dog food purely for palatability—making food taste better to encourage eating. Dogs are picky eaters; natural flavor helps mask unappetizing ingredients or enhance appeal of lower-quality proteins. Common in dry kibble (extrusion process destroys natural flavors requiring flavor enhancement). Natural flavor allows manufacturers to use less expensive proteins while maintaining palatability. Also compensates for nutrient loss during processing. Signals lower-quality formula if high on ingredient list—premium foods rely on quality meat ingredients for flavor rather than added flavor enhancers.",
+      "nutritionalProfile": {
+        "nutritionalValue": "Zero—natural flavor provides no protein, vitamins, minerals, or calories",
+        "functionalRole": "Palatability enhancement only",
+        "amount": "Typically less than 1% of formula"
+      },
+      "qualityConsiderations": {
+        "expanded": "Natural flavor signals palatability concerns—premium brands rely on quality meat ingredients for natural flavor rather than added enhancers. Natural flavor in positions 8-15 is normal and acceptable. Natural flavor in top 5-7 ingredients suggests formula needs flavor enhancement (lower-quality proteins or processing issues). Vague ingredient—manufacturers not required to specify source (could be meat, yeast, vegetable). More transparent brands specify 'chicken flavor' or 'beef flavor' instead of generic 'natural flavor.' Natural flavor is not red flag alone but signals less premium formulation.",
+        "redFlags": [
+          "Natural flavor in top 5-7 ingredients (should be much lower)",
+          "Multiple flavor enhancers (natural flavor + liver digest + palatant = heavy manipulation)",
+          "Generic 'natural flavor' without source specification in premium-priced food"
+        ],
+        "greenFlags": [
+          "Natural flavor in lower positions (10+) in small amounts",
+          "Specific flavor source mentioned (chicken flavor, beef flavor)",
+          "Minimal or no added flavors in premium formulas relying on quality meat"
+        ]
+      },
+      "concernsExpanded": {
+        "detailed": "Natural flavor is safe but nutritionally meaningless. Main concern: vagueness—'natural flavor' could be anything from quality meat broth to rendered byproducts to yeast extracts. Lack of transparency prevents informed choices. Some dogs may be sensitive to certain flavor sources (though rare). Natural flavor is not harmful or toxic—it's just additive providing zero nutrition while enhancing palatability. Presence suggests formula needs flavor help, possibly due to lower-quality proteins or heavy processing.",
+        "contraindications": [
+          "None for most dogs—natural flavor is safe additive",
+          "Dogs with specific allergies may react if flavor source matches allergen (e.g., chicken flavor for chicken-allergic dog)"
+        ],
+        "lifeStageConsiderations": "Safe for all life stages as palatability enhancer."
+      },
+      "scientificEvidence": {
+        "summary": "Natural flavor is safe palatability enhancer with zero nutritional value. Significantly increases food acceptance. Vague ingredient lacking transparency.",
+        "keyStudies": [],
+        "evidenceLevel": "Strong regarding safety. Limited regarding specific sourcing and composition."
+      },
+      "faqs": [
+        {
+          "question": "Is natural flavor bad for dogs?",
+          "answer": "Natural flavor is not harmful but provides zero nutritional value—it's purely palatability enhancer. Derived from natural sources (meat, plants, yeast), natural flavor makes food taste better to dogs. Safe in amounts used in dog food (less than 1%). However, natural flavor signals formula may need flavor enhancement due to lower-quality proteins or processing. Premium brands rely on quality meat ingredients for flavor rather than added enhancers. Natural flavor is vague ingredient—manufacturers not required to specify source. It's not red flag alone but signals less premium formulation. Look for foods with natural flavor in lower positions (10+) or specific flavor sources (chicken flavor, beef flavor) for transparency.",
+          "answerShort": "Not harmful but zero nutrition. Palatability enhancer only. Signals potential formula quality concerns. Safe but indicates less premium formulation.",
+          "priority": 1
+        },
+        {
+          "question": "What is natural flavor made from in dog food?",
+          "answer": "Natural flavor in dog food is typically derived from meat/poultry byproducts, yeast extracts, or vegetable sources, though manufacturers aren't required to specify. Per FDA definition, natural flavors must come from natural sources (animal or plant materials), not synthetically created. Common sources include rendered meat/poultry broth, hydrolyzed proteins, autolyzed yeast, or vegetable extracts. These undergo significant processing (heating, enzymatic breakdown, distillation) to concentrate flavor compounds. The vagueness is intentional—'natural flavor' protects proprietary formulations. More transparent brands specify sources like 'chicken flavor' or 'beef flavor.' Without specification, you can't know exact source, which limits transparency for allergic dogs.",
+          "answerShort": "Typically meat/poultry byproducts, yeast extracts, or vegetables. Manufacturers not required to specify source. Vague ingredient lacking transparency.",
+          "priority": 2
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "natural flavor dog food",
+        "secondaryKeywords": [
+          "is natural flavor bad for dogs",
+          "what is natural flavor dog food"
+        ],
+        "metaDescription": "Natural flavor in dog food: Palatability enhancer, zero nutrition, safety, vagueness concerns, quality considerations for dogs."
+      }
     },
     {
       "name": "Niacin",
@@ -8685,7 +8954,71 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Pork fat is rendered fat from pigs providing concentrated energy, essential fatty acids, and palatability in dog food. Pork fat contains approximately 99-100% fat (minimal moisture or protein), providing 9 calories per gram—more than twice the calories of protein or carbohydrates (4 cal/g). It's rich in monounsaturated fats (especially oleic acid), some polyunsaturated fats (linoleic acid—omega-6), and saturated fats. Pork fat provides essential fatty acids dogs cannot synthesize. Fat is crucial for energy, cell membranes, vitamin absorption (fat-soluble vitamins A, D, E, K), hormone production, and palatability. Pork fat is less common than chicken fat or beef tallow but equally nutritious. Preserved with mixed tocopherols (vitamin E) or other antioxidants to prevent rancidity.",
+        "compareToSimilar": [
+          {
+            "ingredient": "chicken-fat",
+            "difference": "Pork fat and chicken fat are both quality animal fats. Chicken fat has slightly more linoleic acid (omega-6); pork fat has more oleic acid (monounsaturated). Both provide concentrated energy and palatability. Chicken fat is more common and economical; pork fat is alternative signaling variety. Nutritionally similar—both excellent fat sources."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Pork fat appears in dog food for: 1) Concentrated energy (9 cal/g)—ideal for active dogs or calorie-dense formulas, 2) Essential fatty acids (linoleic acid—omega-6), 3) Exceptional palatability (dogs love fat), 4) Fat-soluble vitamin absorption, 5) Texture and moisture in kibble. Named animal fats (pork fat, chicken fat) are preferable to generic 'animal fat.' Pork fat signals quality fat source. Less common than chicken fat, pork fat suits formulas with pork protein or variety fat sources.",
+      "nutritionalProfile": {
+        "fat": "99-100% fat content",
+        "caloriesPerGram": "9 calories—most energy-dense macronutrient",
+        "fattyAcids": {
+          "monounsaturated": "High oleic acid content (heart-healthy)",
+          "omega6": "Linoleic acid (essential fatty acid)",
+          "saturated": "Present in moderate amounts"
+        },
+        "essentialFattyAcids": "Provides linoleic acid dogs cannot synthesize",
+        "preservation": "Typically preserved with mixed tocopherols (vitamin E) or natural antioxidants"
+      },
+      "qualityConsiderations": {
+        "expanded": "Pork fat is quality ingredient when named (not generic 'animal fat'). Named fats indicate transparency and known source. Pork fat preserved with natural tocopherols preferable to synthetic preservatives (BHA, BHT, ethoxyquin). Position varies—fat appears lower on list due to small amounts needed (5-15% of formula). Pork fat in formulas with pork protein signals consistency. Quality fat source for active dogs needing calories.",
+        "redFlags": [
+          "Generic 'animal fat' without specification (could be mixed sources)",
+          "Pork fat preserved with ethoxyquin or synthetic preservatives (though FDA-approved)"
+        ],
+        "greenFlags": [
+          "Named pork fat indicating transparency",
+          "Preserved with natural tocopherols (vitamin E)",
+          "Pork fat in formulas with pork protein for consistency",
+          "Specified preservation method"
+        ]
+      },
+      "concernsExpanded": {
+        "detailed": "Pork fat is safe with minimal concerns. Main consideration: high calorie density—9 cal/g means small amounts provide significant calories. Overfeeding high-fat foods causes weight gain. Dogs prone to pancreatitis should have fat monitored (though moderate fat in balanced food typically safe). Rancidity concern: fat can oxidize and spoil—quality brands preserve with natural antioxidants. Pork fat allergies extremely rare. Otherwise, pork fat is safe, beneficial energy and palatability source.",
+        "contraindications": [
+          "Dogs prone to pancreatitis may need fat intake monitored",
+          "Overweight dogs should have calorie-dense foods portion-controlled",
+          "Rare pork allergies (extremely uncommon)"
+        ],
+        "lifeStageConsiderations": "Appropriate for all life stages. Benefits active dogs, puppies (growth), underweight dogs (calories). May need portion control for sedentary or overweight dogs."
+      },
+      "scientificEvidence": {
+        "summary": "Animal fats provide concentrated energy, essential fatty acids, and enhance palatability. Pork fat nutritionally equivalent to other quality animal fats. Safe and beneficial.",
+        "keyStudies": [],
+        "evidenceLevel": "Strong regarding fat quality, essential fatty acids, and safety."
+      },
+      "faqs": [
+        {
+          "question": "Is pork fat good for dogs?",
+          "answer": "Yes, pork fat is excellent for dogs. It provides concentrated energy (9 calories/gram), essential fatty acids (linoleic acid—omega-6), exceptional palatability, and supports fat-soluble vitamin absorption. Named animal fats like pork fat are quality ingredients indicating transparency. Pork fat is nutritionally equivalent to chicken fat or beef tallow. Benefits active dogs, puppies, and underweight dogs needing calories. Concerns only for dogs prone to pancreatitis (monitor fat intake) or overweight dogs (portion control high-calorie foods). Pork fat allergies extremely rare. In balanced amounts (5-15% of formula), pork fat is safe and beneficial for healthy dogs.",
+          "answerShort": "Excellent. Concentrated energy, essential fatty acids, palatability. Quality named fat source. Safe for healthy dogs. Monitor for pancreatitis-prone or overweight dogs.",
+          "priority": 1
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "pork fat dog food",
+        "secondaryKeywords": [
+          "is pork fat good for dogs",
+          "pork fat vs chicken fat"
+        ],
+        "metaDescription": "Pork fat in dog food: Concentrated energy source, essential fatty acids, palatability benefits, safety considerations for dogs."
+      }
     },
     {
       "name": "Pork Liver Flavor",
@@ -10210,7 +10543,72 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Salt (sodium chloride, NaCl) is a mineral additive providing essential sodium and chloride in dog food. Dogs require sodium for fluid balance, nerve function, muscle contraction, and cellular processes. Sodium is essential nutrient—deficiency causes serious health problems. However, sodium needs are moderate—AAFCO minimum is 0.3% for adult dogs, 0.4% for puppies (dry matter basis). Salt appears in dog food to ensure adequate sodium levels, enhance palatability, and act as preservative. Most quality proteins naturally contain sodium, but plant-heavy or heavily processed formulas may need supplemental salt. Added salt typically represents less than 1% of formula. Salt is safe in appropriate amounts but concerning in excess—dogs with heart or kidney disease should have sodium monitored.",
+        "compareToSimilar": [
+          {
+            "ingredient": "sodium-chloride",
+            "difference": "Salt and sodium chloride are identical—same chemical compound (NaCl). 'Sodium chloride' is scientific name; 'salt' is common name. Both provide identical nutrition and function. Either indicates added sodium source in formula."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Salt appears in dog food to: 1) Ensure adequate sodium levels (AAFCO requires 0.3-0.4% minimum), 2) Enhance palatability (dogs evolved to seek sodium), 3) Act as preservative (inhibits bacterial growth), 4) Balance plant-heavy formulas (plants naturally low in sodium). Quality animal proteins naturally provide sodium, so meat-first formulas need less added salt. Plant-heavy or grain-free formulas often need supplemental salt. Salt in lower positions (15-25) is normal. Salt higher on list may signal heavy plant content or palatability enhancement.",
+      "nutritionalProfile": {
+        "sodium": "Salt provides essential sodium for fluid balance, nerve function, muscle contraction",
+        "chloride": "Provides essential chloride for digestion and cellular processes",
+        "AAFCORequirement": "Minimum 0.3% sodium for adults, 0.4% for puppies (dry matter basis)",
+        "typicalAmount": "Less than 1% of formula"
+      },
+      "qualityConsiderations": {
+        "expanded": "Salt in positions 15-25 is normal—indicates proper sodium supplementation. Salt in positions 5-12 may signal heavy plant content (plants low in natural sodium) or palatability enhancement. Very high salt for palatability (rather than nutrition) is concern. Quality consideration: meat-first formulas naturally contain sodium, requiring less added salt. Plant-heavy formulas need more supplemental salt. Salt position indicates protein source quality indirectly.",
+        "redFlags": [
+          "Salt in top 10 ingredients (may indicate heavy plant content or excessive palatability enhancement)",
+          "Very high sodium levels (over 1%) without therapeutic purpose"
+        ],
+        "greenFlags": [
+          "Salt in lower positions (15-25) indicating proper supplementation",
+          "Sodium levels within AAFCO guidelines (0.3-0.8%)",
+          "Meat-first formulas with minimal added salt (natural sodium from meat)"
+        ]
+      },
+      "concernsExpanded": {
+        "detailed": "Salt is safe and essential in appropriate amounts (0.3-0.8% of diet). Excessive sodium is concerning for dogs with heart disease, kidney disease, or hypertension—these dogs benefit from low-sodium diets. For healthy dogs, salt in dog food amounts is completely safe and necessary. Sodium deficiency is more dangerous than moderate excess in healthy dogs. Very high sodium (over 1%) could cause excessive thirst, urination, or sodium ion poisoning (extremely rare in commercial food). Normal food amounts are safe.",
+        "contraindications": [
+          "Dogs with heart disease benefit from low-sodium diets—consult vet",
+          "Dogs with kidney disease should have sodium monitored",
+          "Dogs with hypertension may need sodium restriction"
+        ],
+        "lifeStageConsiderations": "All life stages require sodium. Puppies need slightly more (0.4% minimum vs 0.3% for adults). Seniors with heart or kidney issues may need low-sodium diets."
+      },
+      "scientificEvidence": {
+        "summary": "Sodium is essential nutrient for dogs. AAFCO requires minimum 0.3-0.4%. Normal food amounts completely safe. Excessive sodium concerns dogs with heart/kidney disease.",
+        "keyStudies": [],
+        "evidenceLevel": "Very strong regarding sodium requirements and safety in healthy dogs."
+      },
+      "faqs": [
+        {
+          "question": "Is salt bad for dogs in dog food?",
+          "answer": "No, salt is essential and safe in appropriate amounts. Dogs require sodium (from salt) for fluid balance, nerve function, and muscle contraction. AAFCO requires minimum 0.3% sodium for adults, 0.4% for puppies. Salt in commercial dog food (typically less than 1% of formula) is completely safe for healthy dogs and necessary for proper nutrition. Salt only becomes concerning for dogs with heart disease, kidney disease, or hypertension—these dogs benefit from low-sodium diets prescribed by veterinarians. For healthy dogs, salt in dog food is not only safe but essential. Sodium deficiency is more dangerous than moderate sodium in healthy dogs.",
+          "answerShort": "Not bad—essential and safe for healthy dogs. Required minimum 0.3-0.4%. Concerning only for dogs with heart/kidney disease. Normal food amounts safe and necessary.",
+          "priority": 1
+        },
+        {
+          "question": "How much salt is too much for dogs?",
+          "answer": "For healthy dogs, sodium levels of 0.3-0.8% (dry matter basis) in dog food are safe and appropriate. AAFCO requires minimum 0.3% for adults, 0.4% for puppies. Most commercial dog food contains 0.4-0.7% sodium. Excessive sodium (over 1%) could cause increased thirst and urination but is rare in commercial food. Acute sodium toxicity (sodium ion poisoning) requires massive amounts—over 2-3g sodium per kg body weight (extremely rare in dog food). For dogs with heart disease, kidney disease, or hypertension, veterinarians may prescribe low-sodium diets (around 0.3%). Healthy dogs tolerate moderate sodium well. Concern is primarily for dogs with specific health conditions requiring sodium restriction.",
+          "answerShort": "0.3-0.8% safe for healthy dogs. Over 1% excessive. AAFCO requires 0.3-0.4% minimum. Dogs with heart/kidney disease need low-sodium (consult vet).",
+          "priority": 2
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "salt dog food",
+        "secondaryKeywords": [
+          "is salt bad for dogs",
+          "how much salt dogs",
+          "sodium dog food"
+        ],
+        "metaDescription": "Salt in dog food: Essential sodium requirements, safety for healthy dogs, concerns for heart/kidney disease, AAFCO guidelines."
+      }
     },
     {
       "name": "Selenium Yeast",
@@ -11092,7 +11490,48 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "overview": "Tomatoes (Solanum lycopersicum) are fruits (botanically) providing vitamins, minerals, fiber, and antioxidants in dog food. Fresh tomatoes contain approximately 95% moisture, 4g carbohydrate, 1g protein, minimal fat, and 1.2g fiber per 100g. Tomatoes are exceptionally rich in lycopene—powerful antioxidant giving tomatoes red color and providing anti-cancer, heart health, and anti-inflammatory benefits. They provide vitamins C, K, potassium, folate, and beta-carotene. Tomatoes are nightshade family vegetables alongside potatoes and eggplants. IMPORTANT: Ripe red tomatoes are safe; green tomatoes and tomato plants (leaves, stems) contain solanine and tomatine—toxic compounds. Commercial dog food uses ripe tomatoes only. In dog food amounts (small quantities), tomatoes are safe and beneficial.",
+        "compareToSimilar": [
+          {
+            "ingredient": "tomato-pomace",
+            "difference": "Whole tomatoes provide full nutrition (lycopene, vitamins, moisture); tomato pomace is dried byproduct (skins, pulp, seeds after juice extraction). Pomace has concentrated fiber but less lycopene and vitamins. Whole tomatoes are premium; pomace is economical fiber source. Both safe, but whole tomatoes more nutritious."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Tomatoes appear in dog food for exceptional lycopene content (antioxidant), vitamins C and K, fiber, and whole-food nutrition. They signal premium ingredients and health-conscious formulation. Marketing appeal—'with tomatoes' suggests fresh produce. In small amounts typically used, tomatoes provide genuine antioxidant benefits. Premium brands include tomatoes for lycopene and vitamins, not just marketing.",
+      "nutritionalProfile": {
+        "lycopene": "Exceptional—powerful antioxidant for heart health, anti-cancer, anti-inflammatory",
+        "vitamins": "Vitamin C (good source), vitamin K, vitamin A (from beta-carotene)",
+        "minerals": "Potassium (good source), folate",
+        "fiber": "1.2g per 100g fresh"
+      },
+      "concernsExpanded": {
+        "detailed": "Ripe red tomatoes are safe for dogs in moderation. Main concern: green tomatoes, tomato leaves, and stems contain solanine and tomatine—toxic compounds causing digestive upset, lethargy, or toxicity in large amounts. Commercial dog food uses only ripe red tomatoes (safe). Tomatoes are acidic—excessive amounts could cause digestive upset in sensitive dogs, though dog food amounts are minimal and safe. Tomato allergies are rare but possible. Otherwise, ripe tomatoes in food amounts are safe and beneficial.",
+        "contraindications": [
+          "NEVER feed green tomatoes or tomato plants (leaves, stems)—contain toxic solanine/tomatine",
+          "Dogs with sensitive digestion may not tolerate acidic foods in large amounts (food amounts safe)",
+          "Rare tomato allergies"
+        ]
+      },
+      "faqs": [
+        {
+          "question": "Are tomatoes safe for dogs?",
+          "answer": "Yes, ripe red tomatoes are safe and beneficial for dogs in moderation, like the small amounts used in dog food. Ripe tomatoes provide exceptional lycopene (antioxidant for heart health, anti-cancer benefits), vitamins C and K, potassium, and fiber. However, green tomatoes and tomato plants (leaves, stems) contain solanine and tomatine—toxic compounds causing digestive upset or toxicity. Commercial dog food uses only ripe red tomatoes, which are completely safe. Small amounts of ripe tomatoes provide genuine health benefits. Avoid feeding green tomatoes or allowing dogs to eat tomato plants. In dog food formulas, ripe tomatoes are safe and nutritious.",
+          "answerShort": "Ripe red tomatoes safe. Exceptional lycopene, vitamins C/K. Green tomatoes and plants toxic (solanine). Food amounts completely safe and beneficial.",
+          "priority": 1
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "tomatoes dog food",
+        "secondaryKeywords": [
+          "are tomatoes safe for dogs",
+          "tomatoes lycopene dogs",
+          "green tomatoes toxic dogs"
+        ],
+        "metaDescription": "Tomatoes in dog food: Lycopene antioxidant benefits, ripe vs green tomato safety, vitamins and minerals, toxicity concerns for dogs."
+      }
     },
     {
       "name": "Tricalcium Phosphate",
@@ -15864,7 +16303,88 @@
       "qualityNote": "Split peas are essentially processed field peas with the outer skin removed and split for faster cooking. They provide moderate protein (around 25g per 100g dry) and significant fiber. However, like all legumes, they contain lectins and phytic acid which can interfere with mineral absorption. The protein is incomplete for canine nutrition and less digestible than animal proteins.",
       "wattsPosition": "neutral",
       "wattsTake": "Split peas can be part of a balanced dog food but should never be the primary protein source. They're often used in grain-free foods as a carbohydrate base. While they're not inherently bad, we prefer whole food ingredients and animal proteins. If split peas are in the top 5 ingredients along with other pea derivatives, it's a red flag that plant proteins are being overused as cheap fillers.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "overview": "Split peas are mature, dried field peas (Pisum sativum) that have been split along the natural seam, providing protein, fiber, and complex carbohydrates in dog food. Yellow and green split peas are most common. Dried split peas contain approximately 8-10% moisture, 60-62% carbohydrates (including 16-17% fiber), 24-25% protein (incomplete for dogs), and 1-2% fat. Split peas are essentially dried, mature versions of fresh green peas—higher in protein and fiber concentration. They provide B vitamins (folate, thiamine), minerals (iron, zinc, manganese, potassium), and have low-to-moderate glycemic index (32-38), lower than green peas. Split peas became common during grain-free trend. However, like other legumes, split peas have been investigated for potential DCM connection in legume-heavy diets and contain anti-nutritional factors.",
+        "compareToSimilar": [
+          {
+            "ingredient": "green-peas",
+            "difference": "Split peas are mature, dried versions of field peas; green peas are fresh, immature peas. Split peas have more concentrated protein (24-25% vs 21-23% dried green peas) and fiber (16-17% vs ~14%). Split peas have lower glycemic index (32-38 vs 40-50). Both are legumes with similar concerns. Split peas are slightly more nutritious; green peas are more common in dog food."
+          },
+          {
+            "ingredient": "lentils",
+            "difference": "Split peas and lentils are similar legumes with comparable nutrition. Lentils have slightly more protein (24-26% vs 24-25%) and similar fiber. Both have low glycemic index (split peas 32-38, lentils 30-35). Lentils have fewer anti-nutritional factors. Both are quality legumes—lentils slightly superior, split peas economical alternative."
+          }
+        ]
+      },
+      "whyUsedExpanded": "Split peas appear in dog food for plant protein (24-25%), high fiber (16-17%), low glycemic carbohydrates (32-38), and grain-free positioning. They provide more concentrated nutrition than fresh green peas. Split peas are less expensive than lentils or chickpeas while offering similar protein and fiber. Rich in B vitamins and minerals. However, split peas are primarily used for economical protein boost rather than optimal nutrition. Moderate amounts acceptable; excessive legume content concerning.",
+      "nutritionalProfile": {
+        "macros": {
+          "protein": "24-25g per 100g (incomplete for dogs)",
+          "carbohydrates": "60-62g per 100g (including 16-17g fiber)",
+          "fat": "1-2g",
+          "moisture": "8-10%"
+        },
+        "micronutrients": {
+          "folate": "Excellent source",
+          "thiamine": "Good source (vitamin B1)",
+          "iron": "Moderate (non-heme)",
+          "zinc": "Present",
+          "manganese": "Good source",
+          "potassium": "Good source"
+        },
+        "glycemicImpact": "Low-to-moderate glycemic index (32-38), excellent for blood sugar control",
+        "proteinQuality": "Incomplete plant protein lacking essential amino acids. Cannot replace animal protein."
+      },
+      "qualityConsiderations": {
+        "expanded": "Split peas are acceptable economical legume but signal lower quality than lentils. Split peas in positions 5-9 after animal proteins indicate grain-free formulation. Split peas in top 3 positions signal inadequate meat protein—concerning. Multiple legume forms (split peas + green peas + pea protein + pea fiber) is major red flag for protein manipulation and legume overload. Split peas acceptable in moderation with adequate meat.",
+        "redFlags": [
+          "Split peas in top 3 positions without sufficient meat",
+          "Multiple legume/pea forms (split peas + green peas + pea protein = manipulation)",
+          "Split peas as primary protein source"
+        ],
+        "greenFlags": [
+          "Split peas in positions 6-10 after quality meat proteins",
+          "Single legume form without protein isolates",
+          "Split peas combined with whole grains for variety"
+        ]
+      },
+      "concernsExpanded": {
+        "detailed": "Split peas share concerns with other legumes: anti-nutritional factors (lectins, phytic acid) binding minerals, and incomplete plant protein. Legume-heavy diets investigated for potential DCM connection—particularly when legumes replace meat protein. Split peas in moderate amounts with adequate animal protein are safe. Excessive legume content (multiple forms, legumes as primary ingredient) is concerning. Some dogs develop legume sensitivities causing digestive upset.",
+        "contraindications": [
+          "Dogs with legume sensitivities should avoid",
+          "Formulas with excessive legume content may risk nutritional deficiencies—choose meat-first formulas",
+          "Dogs with digestive sensitivities may not tolerate high-legume diets"
+        ],
+        "lifeStageConsiderations": "Appropriate for all life stages when paired with adequate animal protein. Puppies and pregnant dogs need high-quality meat protein—split peas cannot provide sufficient nutrition alone."
+      },
+      "scientificEvidence": {
+        "summary": "Split peas provide digestible plant protein, fiber, and low glycemic carbohydrates. FDA investigated legume diets for DCM connection (inconclusive). Split peas safe in moderation with adequate meat protein.",
+        "keyStudies": [],
+        "evidenceLevel": "Strong regarding nutritional content. Moderate regarding DCM concerns (ongoing research)."
+      },
+      "faqs": [
+        {
+          "question": "Are split peas good for dogs?",
+          "answer": "Yes, split peas are beneficial for dogs in moderation when paired with adequate meat protein. Split peas provide plant protein (24-25%), high fiber (16-17%), low glycemic carbohydrates (32-38), and B vitamins. However, split peas provide incomplete protein and contain anti-nutritional factors. The FDA investigated legume-heavy diets for potential DCM connection—concern is inadequate meat protein, not split peas specifically. In moderate amounts (positions 6-10) with named meat as first ingredient, split peas are safe and nutritious. Avoid formulas with multiple legume forms (split peas + pea protein + green peas) signaling protein manipulation. Choose meat-first formulas with split peas as supplementary ingredient.",
+          "answerShort": "Good in moderation with meat protein. High protein/fiber, low glycemic. Incomplete plant protein. Avoid excessive legume content. Choose meat-first formulas.",
+          "priority": 1
+        },
+        {
+          "question": "Are split peas better than green peas for dogs?",
+          "answer": "Split peas are slightly more nutritious than green peas. Split peas are mature, dried field peas with more concentrated protein (24-25% vs 21-23%) and fiber (16-17% vs ~14%), plus lower glycemic index (32-38 vs 40-50). Both are legumes with similar concerns about incomplete protein and legume content in grain-free diets. Neither is dramatically superior—split peas provide marginally better nutrition, green peas are more common in dog food. Both are acceptable in moderation with adequate meat protein. Choose based on overall formula quality rather than split peas vs green peas specifically. Either works well as supplementary legume in meat-first formulas.",
+          "answerShort": "Split peas slightly more nutritious—higher protein/fiber, lower glycemic. Both acceptable legumes. Choose meat-first formulas regardless of pea type.",
+          "priority": 2
+        }
+      ],
+      "seoMetadata": {
+        "focusKeyword": "split peas dog food",
+        "secondaryKeywords": [
+          "are split peas good for dogs",
+          "split peas vs green peas dogs"
+        ],
+        "metaDescription": "Split peas in dog food: Plant protein, high fiber, low glycemic, DCM considerations, comparison to green peas and lentils."
+      }
     },
     {
       "name": "Pumpkin Seed",
