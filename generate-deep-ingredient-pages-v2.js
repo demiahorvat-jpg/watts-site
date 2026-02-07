@@ -460,9 +460,9 @@ function generateIngredientPage(ingredient, allIngredients) {
     }))
   };
 
-  // Generate meta description
+  // Generate meta description (155-160 chars optimal for SEO)
   const metaDescription = ingredient.seoMetadata?.metaDescription
-    || `Complete guide to ${ingredient.name.toLowerCase()} in dog food, treats, and supplements. Learn what it is, nutritional benefits, quality considerations, and expert analysis.`;
+    || `Is ${ingredient.name.toLowerCase()} safe for dogs? Learn about nutritional benefits, safety considerations, quality indicators & expert analysis. Complete guide.`;
 
   // Generate SEO-optimized title (50-60 chars ideal)
   let pageTitle;
