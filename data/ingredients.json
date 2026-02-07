@@ -48,7 +48,15 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "cellulase",
+            "difference": "Amylase breaks down starches into sugars, while cellulase breaks down plant fiber (cellulose). Dogs produce amylase naturally but not cellulase."
+          }
+        ]
+      }
     },
     {
       "name": "Animal Digest",
@@ -256,6 +264,10 @@
           {
             "ingredient": "blueberries",
             "difference": "Both are fruits with fiber and antioxidants. Apples provide more fiber (particularly pectin); blueberries provide more concentrated antioxidants (anthocyanins). Apples are crunchy; blueberries are soft. Both nutritious—apples for fiber/crunch, blueberries for antioxidants."
+          },
+          {
+            "ingredient": "banana",
+            "difference": "Apples provide fiber (pectin) and vitamin C with lower sugar than bananas. Bananas are higher in potassium and natural sugars. Both are safe fruit additions."
           }
         ]
       },
@@ -657,6 +669,10 @@
           {
             "ingredient": "brown-rice",
             "difference": "Brown rice and barley are both quality whole grains. Barley has more fiber (15-20% vs 3-4%) and lower glycemic index (28-45 vs 55-65). Brown rice is hypoallergenic and gluten-free; barley contains gluten. Barley is slightly cheaper. For dogs without gluten issues, barley provides superior fiber; for gluten-sensitive dogs, brown rice is safer."
+          },
+          {
+            "ingredient": "barley-malt-extract",
+            "difference": "Barley is a whole grain with fiber and nutrients, while barley malt extract is a concentrated sweetener made from sprouted barley. Extract is more processed."
           }
         ]
       },
@@ -780,6 +796,10 @@
           {
             "ingredient": "lamb",
             "difference": "Both are red meats with similar fat content and rich flavor profiles. Lamb is often used as a novel protein for dogs with beef sensitivities. Lamb contains slightly more fat and a distinctive gamey flavor. Beef is more readily available and affordable. Nutritionally they're very similar - both high in B12, iron, and zinc. For dogs without allergies, beef is the economical choice; for dogs with beef sensitivities, lamb is an excellent alternative."
+          },
+          {
+            "ingredient": "bone-broth",
+            "difference": "Beef provides complete protein and nutrients, while bone broth is a liquid extract from simmered bones (collagen, minerals, flavor). Broth is less nutrient-dense than meat."
           }
         ]
       },
@@ -964,6 +984,10 @@
           {
             "ingredient": "fish-oil",
             "difference": "Fish oil is significantly higher in omega-3 fatty acids (EPA and DHA) than beef fat, making it valuable for anti-inflammatory benefits. Beef fat is higher in saturated and monounsaturated fats and provides more concentrated energy. Most premium foods use both: beef fat as primary fat for energy, fish oil for omega-3 benefits. They're complementary rather than competitive."
+          },
+          {
+            "ingredient": "beef-tallow",
+            "difference": "Beef fat is the raw form, while beef tallow is rendered (melted down and purified) beef fat. Both provide the same fatty acid profile and palatability benefits."
           }
         ]
       },
@@ -1105,6 +1129,10 @@
           {
             "ingredient": "beef",
             "difference": "Beef liver contains substantially higher concentrations of vitamin A, vitamin B12, and iron compared to beef muscle meat. However, muscle meat provides higher total protein content by weight."
+          },
+          {
+            "ingredient": "beef-spleen",
+            "difference": "Beef liver is the most nutrient-dense organ (vitamin A, iron, B vitamins), while beef spleen provides iron and immune factors. Liver is more valuable nutritionally."
           }
         ]
       },
@@ -1468,6 +1496,10 @@
           {
             "ingredient": "pumpkin",
             "difference": "Beet pulp and pumpkin are both fiber sources. Pumpkin has more vitamins (beta-carotene, vitamin A); beet pulp provides more prebiotic fermentable fiber for gut bacteria. Both help stool consistency. Pumpkin is whole food; beet pulp is byproduct. Pumpkin is premium positioning; beet pulp is functional fiber."
+          },
+          {
+            "ingredient": "beet-fiber",
+            "difference": "Beet pulp is the fibrous byproduct of sugar beet processing, while \"beet fiber\" is the same ingredient with marketing emphasis on fiber content. Functionally identical."
           }
         ]
       },
@@ -1538,7 +1570,15 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "astaxanthin",
+            "difference": "Beta carotene is a vitamin A precursor and antioxidant found in orange vegetables, while astaxanthin is a more powerful antioxidant from algae that doesn't convert to vitamin A."
+          }
+        ]
+      }
     },
     {
       "name": "BHA",
@@ -2073,7 +2113,15 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "calcium-citrate",
+            "difference": "Calcium carbonate is the cheapest calcium source but harder to absorb, while calcium citrate is more bioavailable and gentle on the stomach. Both supplement calcium."
+          }
+        ]
+      }
     },
     {
       "name": "Calcium Iodate",
@@ -2097,7 +2145,15 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "calcium-iodide",
+            "difference": "Calcium iodate is a stable iodine source commonly used in pet food, while calcium iodide is less stable and rarely used. Both provide iodine for thyroid health."
+          }
+        ]
+      }
     },
     {
       "name": "Calcium Pantothenate",
@@ -2123,7 +2179,15 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "calcium-d-pantothenate",
+            "difference": "Calcium pantothenate and calcium D-pantothenate are identical—both are the calcium salt form of vitamin B5. Used interchangeably in pet food formulations."
+          }
+        ]
+      }
     },
     {
       "name": "Canola Meal",
@@ -2272,7 +2336,15 @@
           "url": "https://www.fda.gov/",
           "publisher": "FDA"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "agar-agar",
+            "difference": "Carrageenan is a seaweed thickener with inflammatory concerns (especially degraded form), while agar agar is a safer alternative gelling agent from red algae."
+          }
+        ]
+      }
     },
     {
       "name": "Carrots",
@@ -2308,6 +2380,10 @@
           {
             "ingredient": "sweet-potatoes",
             "difference": "Both provide beta-carotene and fiber. Sweet potatoes are starchier with more calories; carrots are lower-calorie with more water. Sweet potatoes provide sustained energy; carrots provide low-calorie nutrition. Both excellent depending on formula goals."
+          },
+          {
+            "ingredient": "celery",
+            "difference": "Carrots are rich in beta-carotene (vitamin A) and fiber, while celery is mostly water and fiber with minimal nutrients. Carrots are far more nutritious."
           }
         ]
       },
@@ -2368,7 +2444,19 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "amylase",
+            "difference": "Cellulase breaks down cellulose (plant fiber), while amylase breaks down starches. Both are digestive enzymes, but cellulase targets fiber that dogs can't naturally digest."
+          },
+          {
+            "ingredient": "bromelain",
+            "difference": "Cellulase breaks down plant fiber (cellulose), while bromelain is a protease that breaks down protein. Both aid digestion but target different nutrients."
+          }
+        ]
+      }
     },
     {
       "name": "Cellulose",
@@ -2545,7 +2633,15 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NIH"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "astragalus",
+            "difference": "Chamomile is a calming herb with anti-inflammatory properties, while astragalus is an immune-supporting adaptogen. Both are botanicals but serve different functions."
+          }
+        ]
+      }
     },
     {
       "name": "Chicken",
@@ -2586,6 +2682,10 @@
           {
             "ingredient": "beef",
             "difference": "Chicken provides leaner protein with less fat than beef. Beef contains more iron, zinc, and B12, while chicken has more niacin. Chicken is less likely to trigger food sensitivities than beef (beef is a more common allergen). Both provide complete amino acids, but chicken is generally more digestible (85-90% vs 80-85% for beef) and more cost-effective."
+          },
+          {
+            "ingredient": "chicken-breast",
+            "difference": "Chicken (generic term) could include various parts (muscle, skin, bones), while chicken breast is specifically the lean breast muscle. Chicken breast is leaner."
           }
         ]
       },
@@ -2763,6 +2863,10 @@
           {
             "ingredient": "poultry-fat",
             "difference": "Chicken fat is species-specific (from chickens only), while generic 'poultry fat' can come from any combination of poultry species (chicken, turkey, duck, etc.). Chicken fat is more transparent and traceable. For dogs with specific poultry sensitivities, knowing the exact source matters. Always prefer named fats like 'chicken fat' over generic 'poultry fat' for better quality assurance and transparency."
+          },
+          {
+            "ingredient": "animal-fat",
+            "difference": "Chicken fat is specifically from chickens with a known fatty acid profile, while \"animal fat\" is vague and could come from any animal source. Named fats are preferable."
           }
         ]
       },
@@ -3456,6 +3560,10 @@
           {
             "ingredient": "peas",
             "difference": "Chickpeas and peas are similar legumes. Chickpeas have comparable protein (20-22% vs 21-23% for peas) but lower glycemic index (35-45 vs 40-50). Chickpeas are larger and firmer than peas. Both are quality legumes—chickpeas are more expensive but signal premium quality. Either works well as grain-free carbohydrate source."
+          },
+          {
+            "ingredient": "chickpea-flour",
+            "difference": "Whole chickpeas retain more texture and moisture compared to chickpea flour. The flour form is more concentrated and often used as a binder or to boost plant protein."
           }
         ]
       },
@@ -3742,6 +3850,14 @@
           {
             "ingredient": "hyaluronic-acid",
             "difference": "Hyaluronic acid (HA) is another glycosaminoglycan (like chondroitin) that helps lubricate joints and maintain cartilage hydration. HA is smaller and may have better bioavailability than chondroitin. Both work by maintaining joint fluid and supporting cartilage, but HA focuses more on lubrication while chondroitin focuses on cartilage structure. HA is less common in dog food than chondroitin but appears in some premium joint supplements."
+          },
+          {
+            "ingredient": "collagen",
+            "difference": "Chondroitin is a component of cartilage that may support joint health (questionable bioavailability), while collagen provides building blocks (amino acids) for connective tissue."
+          },
+          {
+            "ingredient": "chondroitin-sulfate",
+            "difference": "Chondroitin and chondroitin sulfate are the same compound. \"Sulfate\" just specifies the molecular form. Both are used for joint health with questionable effectiveness."
           }
         ]
       },
@@ -3889,7 +4005,15 @@
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9929184/",
           "publisher": "NIH"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "chondroitin",
+            "difference": "Chondroitin sulfate is the full chemical name for chondroitin. They're the same ingredient. Sulfate refers to the molecular structure—chondroitin is always in sulfate form."
+          }
+        ]
+      }
     },
     {
       "name": "Citric Acid",
@@ -3938,7 +4062,19 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "coconut-flour",
+            "difference": "Coconut oil is the fat extracted from coconut meat, while coconut flour is the dried, ground meat after oil removal. The oil provides MCTs; the flour provides fiber."
+          },
+          {
+            "ingredient": "coconut-glycerin",
+            "difference": "Coconut oil provides MCT fats for energy, while coconut glycerin is a moisture-retaining agent derived from coconut. Glycerin is used for texture, not nutrition."
+          }
+        ]
+      }
     },
     {
       "name": "Collagen",
@@ -3964,7 +4100,19 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "gelatin",
+            "difference": "Collagen and gelatin are nearly identical—gelatin is cooked collagen. Both provide amino acids (glycine, proline) for joint health. Collagen is often marketed as more bioavailable."
+          },
+          {
+            "ingredient": "chondroitin",
+            "difference": "Collagen provides amino acids (glycine, proline) for connective tissue, while chondroitin is a specific compound that may support cartilage. Both target joint health."
+          }
+        ]
+      }
     },
     {
       "name": "Colostrum",
@@ -4005,6 +4153,10 @@
           {
             "ingredient": "dried-plasma",
             "difference": "Both are blood-derived immune-supporting ingredients. Dried plasma (spray-dried animal blood) contains immunoglobulins and is used for immune support, particularly in young or stressed animals. Colostrum is milk-derived and contains not only antibodies but also growth factors, lactoferrin, and other bioactives not found in plasma. Colostrum is generally considered more 'natural' and complete as an immune support ingredient."
+          },
+          {
+            "ingredient": "dried-whey",
+            "difference": "Both are dairy products. Colostrum is the first milk produced (rich in antibodies and immune factors), while whey is a byproduct of cheese-making (mostly protein and lactose)."
           }
         ]
       },
@@ -5464,6 +5616,10 @@
           {
             "ingredient": "fish-oil",
             "difference": "Fish oil is the fat extracted from fish, providing concentrated omega-3s but little protein. Fish meal is the protein-rich remainder after oil extraction, still containing some omega-3s but primarily valued for protein. Many premium foods include both fish meal (for protein) and additional fish oil (for supplemental omega-3s)."
+          },
+          {
+            "ingredient": "anchovy-meal",
+            "difference": "Fish meal is a generic term (could be any fish species), while anchovy meal specifies anchovies. Named sources like anchovy meal are more transparent and preferable."
           }
         ]
       },
@@ -5638,6 +5794,14 @@
           {
             "ingredient": "krill-oil",
             "difference": "Krill oil (from Antarctic krill) provides EPA and DHA like fish oil, plus astaxanthin (an antioxidant). Some claim krill oil has superior bioavailability due to omega-3s being in phospholipid form rather than triglyceride form, though evidence is mixed. Krill oil is significantly more expensive (2-3x fish oil cost) and raises sustainability concerns about Antarctic ecosystem disruption. For most dogs, quality fish oil provides excellent omega-3s at better value. Krill oil is a reasonable alternative if sustainability-certified and budget allows, but not dramatically superior to quality fish oil."
+          },
+          {
+            "ingredient": "cod-liver-oil",
+            "difference": "Fish oil comes from fish bodies (muscle tissue), while cod liver oil is specifically from cod livers. Cod liver oil has added vitamin A & D but may contain contaminants."
+          },
+          {
+            "ingredient": "algal-oil",
+            "difference": "Fish oil provides EPA/DHA omega-3s from fish, while algal oil is a vegan alternative from algae. Fish oil is more established; algal oil offers sustainability benefits."
           }
         ]
       },
@@ -5808,6 +5972,10 @@
           {
             "ingredient": "sunflower-oil",
             "difference": "Sunflower oil provides omega-6 fatty acids, not omega-3s, making it fundamentally different from flaxseed nutritionally. Sunflower oil can contribute to inflammatory omega-6 excess in dog diets; flaxseed provides anti-inflammatory omega-3 precursor (ALA) plus fiber and lignans. Flaxseed is nutritionally superior to sunflower oil for most purposes. However, the ideal fat source for dogs is animal fat (chicken fat, beef fat) plus fish oil for omega-3s, rather than plant oils. Flaxseed is acceptable supplemental fat; sunflower oil signals budget formulation prioritizing cheap fat over quality."
+          },
+          {
+            "ingredient": "chia-seed",
+            "difference": "Flaxseed and chia seeds both provide ALA omega-3 and fiber. Flaxseed needs grinding for absorption, while chia seeds absorb water and form a gel. Both have poor EPA/DHA conversion."
           }
         ]
       },
@@ -6357,7 +6525,15 @@
           "url": "https://www.fda.gov/",
           "publisher": "FDA"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "acacia-gum",
+            "difference": "Guar gum is from guar beans and creates a thicker texture, while acacia gum is from acacia tree sap and acts as a prebiotic fiber. Acacia is gentler on digestion."
+          }
+        ]
+      }
     },
     {
       "name": "Heart",
@@ -9410,6 +9586,14 @@
           {
             "ingredient": "digestive-enzymes",
             "difference": "Digestive enzymes (protease, amylase, lipase) break down proteins, carbohydrates, and fats, while probiotics are living organisms that support gut health through various mechanisms including enzyme production. Enzymes work immediately upon contact with food, while probiotics colonize the gut (temporarily) and provide ongoing benefits. Both support digestion but through different pathways - enzymes directly break down food, probiotics maintain healthy gut environment. Many digestive supplements combine both."
+          },
+          {
+            "ingredient": "bacillus-coagulans",
+            "difference": "Bacillus coagulans is a spore-forming probiotic strain that's more heat-stable than typical probiotics. It survives kibble processing better than Lactobacillus strains."
+          },
+          {
+            "ingredient": "bifidobacterium-lactis",
+            "difference": "Bifidobacterium lactis is a common probiotic strain, but it's less heat-stable than spore-forming strains like Bacillus coagulans. Viability after processing is a concern."
           }
         ]
       },
@@ -11218,6 +11402,10 @@
           {
             "ingredient": "sweet-potatoes",
             "difference": "Sweet potatoes are vastly superior to tapioca. Sweet potatoes provide lower glycemic index (60-70 vs 85-95), fiber (3-4% vs 0.1%), and exceptional vitamins (beta-carotene, C, manganese, potassium). Tapioca provides pure empty starch. Sweet potatoes are nutrient-dense; tapioca is nutrient-void filler. In grain-free formulas, sweet potatoes signal quality nutrition; tapioca signals cost-cutting. Choose sweet potato-based foods over tapioca-based."
+          },
+          {
+            "ingredient": "cassava-flour",
+            "difference": "Tapioca is the pure starch extracted from cassava root, while cassava flour includes the entire root (more fiber and nutrients). Cassava flour is less refined."
           }
         ]
       },
@@ -11807,7 +11995,19 @@
           "url": "https://www.fda.gov/",
           "publisher": "FDA"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "boswellia",
+            "difference": "Turmeric contains curcumin for anti-inflammatory effects, while boswellia provides boswellic acids. Both support joint health and are often combined in supplements."
+          },
+          {
+            "ingredient": "bioperine",
+            "difference": "Turmeric provides curcumin for anti-inflammatory benefits, while bioperine (black pepper extract) enhances curcumin absorption by up to 2000%. Often used together."
+          }
+        ]
+      }
     },
     {
       "name": "Valerian Root",
@@ -12659,7 +12859,15 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "fish-oil",
+            "difference": "Cod liver oil is specifically from cod livers and contains vitamins A & D plus omega-3s, while generic fish oil is from fish body (muscle) and primarily provides omega-3s."
+          }
+        ]
+      }
     },
     {
       "name": "Chia Seed",
@@ -12686,7 +12894,15 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "flaxseed",
+            "difference": "Both are plant seeds high in omega-3 ALA and fiber. Chia seeds absorb more water (gel-like texture), while flaxseed should be ground for absorption. Neither provides much EPA/DHA."
+          }
+        ]
+      }
     },
     {
       "name": "Boswellia",
@@ -12713,7 +12929,15 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "turmeric",
+            "difference": "Both are anti-inflammatory herbs for joint health. Boswellia (frankincense) targets joint pain and inflammation, similar to turmeric (curcumin). Often used together."
+          }
+        ]
+      }
     },
     {
       "name": "Hyaluronic Acid",
@@ -12907,7 +13131,15 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "chamomile",
+            "difference": "Both are herbs used for health benefits. Astragalus is an adaptogen used to support immune function, while chamomile is calming and anti-inflammatory. Different purposes."
+          }
+        ]
+      }
     },
     {
       "name": "Milk Thistle",
@@ -12991,7 +13223,15 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "astaxanthin",
+            "difference": "Both are antioxidants. CoQ10 supports cellular energy and heart health, while astaxanthin (from algae) is a powerful antioxidant for skin, eyes, and joints. Different mechanisms."
+          }
+        ]
+      }
     },
     {
       "name": "Glutamine",
@@ -13072,7 +13312,15 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "cellulase",
+            "difference": "Bromelain is a protease enzyme (breaks down protein) from pineapple, while cellulase breaks down plant fiber. Both are digestive enzymes with different functions."
+          }
+        ]
+      }
     },
     {
       "name": "Papain",
@@ -13261,7 +13509,15 @@
           "url": "https://www.fda.gov/",
           "publisher": "FDA"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "coconut-oil",
+            "difference": "Coconut glycerin is a humectant (keeps treats moist) derived from coconut oil, while coconut oil is the pure fat. Glycerin provides moisture retention, not nutrition."
+          }
+        ]
+      }
     },
     {
       "name": "Molasses",
@@ -13315,7 +13571,15 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "coconut-sugar",
+            "difference": "Honey is a bee-produced sweetener with antimicrobial properties, while coconut sugar is from coconut palm sap. Both are unnecessary sugars used for palatability."
+          }
+        ]
+      }
     },
     {
       "name": "Dried Whey",
@@ -13342,7 +13606,15 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "colostrum",
+            "difference": "Dried whey is a cheese byproduct used as a protein source and binder, while colostrum is first milk with immune-supporting antibodies. Colostrum is more functional."
+          }
+        ]
+      }
     },
     {
       "name": "Whey Powder",
@@ -13451,7 +13723,15 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "chaga",
+            "difference": "Reishi is an adaptogenic mushroom used for immune support and stress reduction, while chaga is a potent antioxidant mushroom. Both are medicinal mushrooms with overlapping benefits."
+          }
+        ]
+      }
     },
     {
       "name": "Lion's Mane",
@@ -13479,7 +13759,15 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "champignon-mushroom-extract",
+            "difference": "Lion's mane supports cognitive function and nerve health, while champignon mushroom extract (button mushrooms) reduces stool odor. Both are mushrooms but serve different roles."
+          }
+        ]
+      }
     },
     {
       "name": "Chaga",
@@ -13507,7 +13795,19 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "reishi",
+            "difference": "Both are medicinal mushrooms with immune-supporting properties. Chaga grows on birch trees and has strong antioxidant benefits, while reishi is known as the \"mushroom of immortality.\""
+          },
+          {
+            "ingredient": "cordyceps",
+            "difference": "Chaga is primarily an antioxidant and immune-supporting mushroom, while cordyceps is used for energy, stamina, and athletic performance. Both are adaptogenic mushrooms."
+          }
+        ]
+      }
     },
     {
       "name": "Maitake",
@@ -13592,7 +13892,15 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "chaga",
+            "difference": "Both are medicinal mushrooms. Cordyceps supports energy and endurance (athletic performance), while chaga is a powerful antioxidant and immune booster. Different primary benefits."
+          }
+        ]
+      }
     },
     {
       "name": "Paractin",
@@ -13648,7 +13956,15 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "turmeric",
+            "difference": "Bioperine is black pepper extract that enhances nutrient absorption (especially curcumin from turmeric). Often paired together—bioperine increases turmeric's bioavailability."
+          }
+        ]
+      }
     },
     {
       "name": "Coconut Flour",
@@ -13675,7 +13991,15 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "coconut-oil",
+            "difference": "Coconut flour is made from dried coconut meat after oil extraction. The flour is high in fiber but lacks the fat content of coconut oil. Both are used differently in formulations."
+          }
+        ]
+      }
     },
     {
       "name": "Dried Bacon Fat",
@@ -13787,7 +14111,15 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "green-tea-extract",
+            "difference": "Camellia sinensis is the tea plant. Green tea extract is made from its leaves. Same source—green tea extract is just the concentrated form of camellia sinensis."
+          }
+        ]
+      }
     },
     {
       "name": "Green Tea Extract",
@@ -13815,7 +14147,15 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "camellia-sinensis",
+            "difference": "Green tea extract is the concentrated form of camellia sinensis (tea plant) leaves. Same plant, just concentrated for antioxidant benefits (EGCG catechins)."
+          }
+        ]
+      }
     },
     {
       "name": "Euphausia Superba",
@@ -14293,6 +14633,10 @@
           {
             "ingredient": "salmon-meal",
             "difference": "Herring meal and salmon meal are both premium named fish meals with exceptional omega-3s. Salmon meal has slightly more EPA/DHA; herring meal is less expensive. Both provide high-quality marine protein with complete amino acids. Both are excellent—herring meal is value premium option, salmon meal is top-tier. Either signals quality formulation."
+          },
+          {
+            "ingredient": "anchovy-meal",
+            "difference": "Herring meal and anchovy meal are both from small, oily fish with high omega-3 and low mercury. Both are transparent, high-quality fish meal sources."
           }
         ]
       },
@@ -14383,7 +14727,15 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "chicken",
+            "difference": "Chicken breast is the specific lean muscle from chicken, while \"chicken\" could include various parts. Chicken breast is leaner (less fat) than whole chicken."
+          }
+        ]
+      }
     },
     {
       "name": "Turkey Liver",
@@ -14459,7 +14811,15 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "beef",
+            "difference": "Bone broth is made by simmering beef bones (and sometimes meat) to extract collagen, minerals, and flavor. It adds moisture and palatability but less protein than whole beef."
+          }
+        ]
+      }
     },
     {
       "name": "Pork By-Product Meal",
@@ -14668,7 +15028,15 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "chicken-fat",
+            "difference": "Animal fat is an unspecified fat source (could be from any animal), while chicken fat is specifically from chickens. Named fats like chicken fat are far more transparent."
+          }
+        ]
+      }
     },
     {
       "name": "Olive Oil",
@@ -15158,7 +15526,19 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "probiotics",
+            "difference": "Bacillus coagulans is a specific probiotic strain that forms spores, making it more stable in kibble than typical Lactobacillus strains. Often used in shelf-stable products."
+          },
+          {
+            "ingredient": "bifidobacterium-lactis",
+            "difference": "Bacillus coagulans is spore-forming and survives heat processing, while Bifidobacterium lactis is non-spore-forming and more sensitive to heat. B. coagulans is more stable in kibble."
+          }
+        ]
+      }
     },
     {
       "name": "Potassium Sorbate",
@@ -15182,7 +15562,15 @@
           "url": "https://www.fda.gov/",
           "publisher": "FDA"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "calcium-propionate",
+            "difference": "Potassium sorbate prevents yeast and mold growth, while calcium propionate primarily prevents mold in baked products. Both are safe preservatives used in pet food."
+          }
+        ]
+      }
     },
     {
       "name": "Fish Digest",
@@ -15231,7 +15619,19 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "fish-meal",
+            "difference": "Anchovy meal is fish meal specifically from anchovies—more transparent than generic \"fish meal.\" Anchovies are small fish with lower mercury concerns."
+          },
+          {
+            "ingredient": "herring-meal",
+            "difference": "Both are named fish meals from small, oily fish. Anchovies and herring have similar omega-3 profiles and low mercury risk. Both are superior to generic \"fish meal.\""
+          }
+        ]
+      }
     },
     {
       "name": "Turkey Heart",
@@ -15306,7 +15706,15 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "beef-liver",
+            "difference": "Both are organ meats. Beef liver is more nutrient-dense (vitamin A, iron, copper), while beef spleen provides iron and immune-supporting compounds. Liver is superior nutritionally."
+          }
+        ]
+      }
     },
     {
       "name": "Duck Liver",
@@ -15518,7 +15926,15 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "fish-oil",
+            "difference": "Algal oil is omega-3 from algae (vegan, sustainable source of DHA/EPA), while fish oil is from fish. Algal oil avoids heavy metal concerns but may be less bioavailable."
+          }
+        ]
+      }
     },
     {
       "name": "Safflower Oil",
@@ -15568,7 +15984,15 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "beef-fat",
+            "difference": "Beef tallow is rendered (cooked down) beef fat that's solid at room temperature. It's the same ingredient as beef fat, just processed into a more shelf-stable form."
+          }
+        ]
+      }
     },
     {
       "name": "Duck Fat",
@@ -15780,7 +16204,19 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "probiotics",
+            "difference": "Bifidobacterium lactis is a specific probiotic strain that supports digestive health. Less heat-stable than Bacillus coagulans, so viability in kibble is questionable."
+          },
+          {
+            "ingredient": "bacillus-coagulans",
+            "difference": "Bifidobacterium lactis is a traditional probiotic strain that may not survive kibble processing, while Bacillus coagulans forms protective spores and is more heat-stable."
+          }
+        ]
+      }
     },
     {
       "name": "Astaxanthin",
@@ -15806,7 +16242,19 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "beta-carotene",
+            "difference": "Both are carotenoid antioxidants. Astaxanthin (from algae) is a more potent antioxidant than beta carotene and doesn't convert to vitamin A. Beta carotene is a vitamin A precursor."
+          },
+          {
+            "ingredient": "coenzyme-q10",
+            "difference": "Astaxanthin is a potent carotenoid antioxidant from algae, while CoQ10 supports cellular energy production and heart health. Both are antioxidants with different benefits."
+          }
+        ]
+      }
     },
     {
       "name": "Lutein",
@@ -16489,7 +16937,15 @@
       "qualityNote": "Celery is a low-calorie, high-water vegetable (about 95% water) with minimal nutritional density. It provides some vitamin K, vitamin C, and fiber, but protein and fat content are negligible. The fiber is beneficial for digestion, and celery contains antioxidants like apigenin. However, it's mostly water and fiber with limited concentrated nutrients. Generally very safe and digestible.",
       "wattsPosition": "neutral",
       "wattsTake": "Celery is fine but unremarkable. It adds some fiber and crunch without many calories, which can be useful in weight management foods. However, it's not nutritionally dense and mostly contributes water and fiber. We'd prefer to see more nutrient-rich vegetables or animal-based ingredients. Celery is harmless, but it's not adding much value beyond texture and bulk. Safe but forgettable.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "carrots",
+            "difference": "Both are low-calorie vegetables. Celery is high in water and fiber (minimal nutrition), while carrots provide beta-carotene for vitamin A. Carrots are more nutrient-dense."
+          }
+        ]
+      }
     },
     {
       "name": "Shrimp",
@@ -16592,7 +17048,15 @@
       "qualityNote": "Cassava root is almost entirely starch with minimal protein, fat, vitamins, or minerals. It's highly digestible and provides quick energy, but nutritionally it's quite empty. It contains some vitamin C and folate but in small amounts. Raw cassava contains cyanogenic glycosides (compounds that can release cyanide), but proper processing removes these. In pet food, it's used as a cheap, grain-free carbohydrate filler.",
       "wattsPosition": "caution",
       "wattsTake": "Cassava is a low-quality filler ingredient masquerading as a grain-free option. While it's digestible and doesn't contain gluten, it's nutritionally barren—just empty carbs. It's often used because it's cheap, not because it's nutritious. We'd much prefer sweet potato, pumpkin, or even whole grains like oats. Cassava root is better than corn or wheat flour, but that's a low bar. If it's high on the ingredient list, it's a sign of a budget formula prioritizing cost over nutrition.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "cassava-flour",
+            "difference": "Whole cassava root contains more moisture and less concentrated starch than cassava flour. The flour is the dried, powdered form used as a grain-free binder."
+          }
+        ]
+      }
     },
     {
       "name": "Cassava Flour",
@@ -16613,7 +17077,19 @@
       "qualityNote": "Cassava flour is essentially ground cassava root—almost pure starch with minimal nutritional value. It's digestible and hypoallergenic but offers virtually no protein, fat, vitamins, or minerals. It's used primarily as a cheap binding agent in grain-free foods. While it doesn't contain gluten or grains, it's still a processed, nutritionally empty filler. Better than wheat flour for dogs with grain sensitivities, but not inherently nutritious.",
       "wattsPosition": "caution",
       "wattsTake": "Cassava flour is a low-quality grain-free filler. It's used because it's cheap and binds kibble together, not because it adds nutrition. We see it as a sign that manufacturers are prioritizing cost savings over quality ingredients. While it's fine for dogs with grain allergies, it's still empty calories. We'd prefer nutrient-dense carbohydrates like sweet potato or whole food options. If cassava flour is high on the ingredient list, it's a red flag for a budget formula.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "cassava",
+            "difference": "Cassava flour is the dried, ground form of cassava root. It provides more concentrated starch and carbohydrates compared to fresh cassava, which contains more moisture."
+          },
+          {
+            "ingredient": "tapioca",
+            "difference": "Both come from cassava root. Cassava flour uses the whole root (more fiber), while tapioca is extracted pure starch. Tapioca is more refined and has less nutritional value."
+          }
+        ]
+      }
     },
     {
       "name": "Beet Fiber",
@@ -16634,7 +17110,15 @@
       "qualityNote": "Beet fiber (or beet pulp) is primarily a fiber source with minimal nutritional value beyond its fiber content. It contains both soluble and insoluble fiber, which can benefit digestive health and stool quality. It's moderately fermentable, meaning gut bacteria can partially break it down, producing beneficial short-chain fatty acids. However, it's a processed by-product of sugar production with no significant protein, fat, or micronutrients. Some low-quality versions may contain residual sugar.",
       "wattsPosition": "neutral",
       "wattsTake": "Beet fiber is a functional ingredient that serves a purpose—regulating digestion and stool quality. While it's a processed by-product, it's not inherently harmful and can be beneficial for dogs with digestive issues. However, it shouldn't be a primary ingredient or used to bulk up low-quality food. We prefer whole food fiber sources like pumpkin or sweet potato, but we recognize beet fiber has legitimate uses. It's neutral—neither great nor terrible, depending on context and amount.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "beet-pulp",
+            "difference": "Beet fiber and beet pulp are nearly identical—both are the fibrous residue after sugar extraction from beets. \"Fiber\" emphasizes the fiber content; \"pulp\" is the general term."
+          }
+        ]
+      }
     },
     {
       "name": "Pea Hull Fiber",
@@ -16844,7 +17328,19 @@
       "qualityNote": "Agar agar is a natural, seaweed-derived gelling agent with minimal nutritional value. It's primarily soluble fiber with no protein, fat, or significant vitamins or minerals. It's not digestible by dogs but can provide some prebiotic fiber benefits in small amounts. It's used in very small quantities to create texture and firmness in wet foods, gravies, and some supplements. Generally regarded as safe with no known adverse effects at typical inclusion levels.",
       "wattsPosition": "neutral",
       "wattsTake": "Agar agar is a functional ingredient that serves a legitimate purpose—creating appropriate texture in wet foods. It's plant-based, natural, and free from the concerns associated with synthetic gums or binders. While it doesn't add nutrition, it's not harmful and is used in tiny amounts. We appreciate that it's a clearly named, natural ingredient rather than a vague 'gum' or synthetic thickener. It's neutral—neither adding nor detracting from food quality when used appropriately for texture.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "carrageenan",
+            "difference": "Both are seaweed-derived gelling agents. Agar agar is from red algae and considered safer with no inflammatory concerns, unlike carrageenan which is controversial."
+          },
+          {
+            "ingredient": "alginic-acid",
+            "difference": "Agar agar is a gelling agent from red algae, while alginic acid is a stabilizer from brown algae (kelp). Both are natural seaweed-based thickeners."
+          }
+        ]
+      }
     },
     {
       "name": "Cracked Pearled Barley",
@@ -16948,7 +17444,15 @@
       "qualityNote": "Barley malt extract is essentially a concentrated sugar syrup with minimal nutritional value. While it's natural and contains trace B vitamins and minerals, it's primarily simple sugars (maltose). It's used to make food taste better and achieve desired color/texture. Unlike refined white sugar, it does contain some nutrients, but it's still fundamentally added sugar. Generally safe in small amounts but adds empty calories.",
       "wattsPosition": "caution",
       "wattsTake": "Barley malt extract is added sugar disguised with a natural-sounding name. While it's better than high fructose corn syrup, it's still unnecessary sweetener that adds empty calories. Dogs don't need sweeteners in their food - this is added to make food more palatable, often to mask low-quality ingredients. We prefer foods that are palatable due to quality meat content, not added sugars. If it's low on the ingredient list, it's acceptable, but it's not an ingredient we celebrate.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "barley",
+            "difference": "Barley malt extract is made by sprouting and drying barley, then extracting the concentrated sweetness. It's sweeter and more processed than whole barley grain."
+          }
+        ]
+      }
     },
     {
       "name": "Rye Meal",
@@ -17074,7 +17578,19 @@
       "qualityNote": "Chickpea flour is a moderately nutritious legume flour offering protein, fiber, and micronutrients. It's more nutrient-dense than grain flours and provides complex carbohydrates along with plant protein. Like other legumes, it contains anti-nutritional factors that can reduce mineral absorption. The protein quality is inferior to animal sources with an incomplete amino acid profile. It's a decent grain-free option when used in moderation alongside quality animal proteins.",
       "wattsPosition": "neutral",
       "wattsTake": "Chickpea flour is an acceptable grain-free ingredient that contributes some protein and nutrients. It's better than corn or wheat flour and works well in grain-free formulas. However, we always want to see animal proteins as primary protein sources. Chickpeas should be supporting players, not stars. Be cautious if chickpea flour appears alongside multiple other legume ingredients (peas, lentils, beans) - that's a sign plant proteins are being overused.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "chickpeas",
+            "difference": "Chickpea flour is the ground form of whole chickpeas. It provides more concentrated protein and carbohydrates but loses some of the texture whole chickpeas provide in dog food."
+          },
+          {
+            "ingredient": "bean-flour",
+            "difference": "Chickpea flour is specifically from chickpeas (garbanzo beans), while bean flour could be from various legumes. Chickpea flour is more specific and transparent."
+          }
+        ]
+      }
     },
     {
       "name": "Garbanzo Beans",
@@ -17157,7 +17673,15 @@
       "qualityNote": "Bean flour can be made from various beans (navy, pinto, black, etc.) or a mixture. It provides moderate plant protein and fiber along with some micronutrients. The quality varies depending on the bean source. Like all legume flours, it's more nutritious than grain flours but contains anti-nutrients and incomplete protein. The vague name 'bean flour' without specifying the bean type is less transparent than named bean flours.",
       "wattsPosition": "neutral",
       "wattsTake": "Bean flour is an acceptable grain-free ingredient, though we prefer when manufacturers specify which beans (e.g., 'chickpea flour' vs. generic 'bean flour'). It's better than corn or wheat flour but shouldn't be a primary protein contributor. We appreciate its use in grain-free formulas as long as animal proteins remain primary. The lack of specificity (which beans?) is slightly concerning but not a deal-breaker.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "chickpea-flour",
+            "difference": "Bean flour is a generic term for ground legumes (could be navy beans, black beans, etc.), while chickpea flour is specifically from garbanzo beans. Both boost plant protein."
+          }
+        ]
+      }
     },
     {
       "name": "Powdered Cellulose",
@@ -17262,7 +17786,15 @@
       "qualityNote": "Acacia gum is a natural, soluble fiber with prebiotic properties. Research shows it supports beneficial gut bacteria and produces short-chain fatty acids. It's highly fermentable and generally very well-tolerated, even by dogs with sensitive stomachs. Unlike synthetic gums or wood pulp fibers, acacia gum is a natural tree exudate with documented health benefits. It's a quality prebiotic fiber ingredient.",
       "wattsPosition": "good",
       "wattsTake": "We like acacia gum as a functional prebiotic ingredient. It's natural, well-researched, and supports gut health by feeding beneficial bacteria. Unlike cheap cellulose fillers, acacia gum provides genuine functional benefits. It's particularly good for dogs with digestive sensitivities. While it's not a nutritional powerhouse, it's a targeted ingredient that adds value. We appreciate seeing it in foods focused on digestive health and gut microbiome support.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "guar-gum",
+            "difference": "Both are plant-based fiber thickeners. Acacia gum (from acacia tree sap) is a prebiotic fiber that's gentle on digestion, while guar gum (from guar beans) is a stronger thickener."
+          }
+        ]
+      }
     },
     {
       "name": "Champignon Mushroom Extract",
@@ -17283,7 +17815,15 @@
       "qualityNote": "Champignon mushroom extract is primarily used for its odor-reducing properties. Research shows it can significantly reduce stool and gas odor by inhibiting bacterial enzymes that produce ammonia and other odorous compounds. While it's not particularly nutritious (it's used in small amounts), it serves a legitimate functional purpose. Some studies suggest mild prebiotic and antioxidant benefits. Generally safe and well-tolerated.",
       "wattsPosition": "neutral",
       "wattsTake": "Champignon mushroom extract is a functional ingredient with a specific purpose - reducing stool odor. While it's not adding significant nutrition, it's not filler either. It's targeted for a specific outcome (odor control) and research supports its effectiveness. We're neutral on it - it's fine as a functional additive but not something we'd highlight as a major benefit. If you have a particularly odorous dog, it might be worth looking for, but it's not essential.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "lion's-mane",
+            "difference": "Champignon is button mushroom extract used to reduce stool odor, while lion's mane is a medicinal mushroom for cognitive function. Different mushrooms, different purposes."
+          }
+        ]
+      }
     },
     {
       "name": "Hickory Smoke Flavor",
@@ -17368,7 +17908,15 @@
       "qualityNote": "Alginic acid is functionally similar to sodium alginate - both are derived from brown seaweed and serve as thickening agents. It provides minimal nutritional value (some soluble fiber) and is used in very small quantities for texture and stability. It's safe and natural with no known adverse effects. Like other gums, it's a functional ingredient rather than a nutritious one.",
       "wattsPosition": "neutral",
       "wattsTake": "Alginic acid is a harmless, natural texturizer used in small amounts to create appropriate consistency in wet pet foods. It's not adding nutrition, but it's not problematic either. We view it as a necessary processing ingredient that serves a legitimate function. We appreciate that it's from a natural, clearly identified source (brown algae). It's neutral - neither impressive nor concerning.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "agar-agar",
+            "difference": "Both are seaweed-derived thickeners. Alginic acid comes from brown algae (kelp) and is used as a stabilizer, while agar agar is from red algae and used as a gelling agent."
+          }
+        ]
+      }
     },
     {
       "name": "Guar Fiber",
@@ -17451,7 +17999,15 @@
       "qualityNote": "Calcium D-pantothenate is a stable, bioavailable form of vitamin B5, an essential B vitamin required for metabolism. It's necessary for converting food into energy and synthesizing fatty acids, cholesterol, and hormones. Deficiency is rare but can cause growth issues and skin problems. As a water-soluble B vitamin, excess is excreted, making toxicity unlikely. Required for nutritionally complete pet foods.",
       "wattsPosition": "good",
       "wattsTake": "Calcium D-pantothenate is a necessary B vitamin supplement for nutritionally complete dog food. It's essential for metabolism and overall health. We have no concerns with B vitamin supplementation - it's required to meet AAFCO standards and ensure dogs get adequate nutrition. This is a standard, appropriate ingredient in properly formulated foods. Its presence indicates the food is fortified to be nutritionally complete.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "calcium-pantothenate",
+            "difference": "These are the same ingredient—calcium D-pantothenate and calcium pantothenate both provide vitamin B5 (pantothenic acid). The \"D\" just specifies the molecular form."
+          }
+        ]
+      }
     },
     {
       "name": "Calcium Citrate",
@@ -17471,7 +18027,15 @@
       "qualityNote": "Calcium citrate is a highly bioavailable form of calcium, better absorbed than calcium carbonate especially in lower acid conditions. Calcium is essential for skeletal health, muscle contraction, nerve function, and blood clotting. The citrate form is gentle on the stomach and efficiently utilized. It's a premium calcium source indicating attention to bioavailability over cost. Required for nutritionally adequate pet foods.",
       "wattsPosition": "good",
       "wattsTake": "Calcium citrate is an excellent, bioavailable form of essential calcium. We appreciate when manufacturers choose citrate over cheaper carbonate forms - it shows investment in absorption and efficacy. Calcium is critical for bone health and numerous body functions. The citrate form ensures dogs actually absorb and use the calcium. This is quality formulation that indicates attention to nutritional bioavailability rather than just checking boxes cheaply.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "calcium-carbonate",
+            "difference": "Both are calcium supplements. Calcium citrate is more bioavailable and easier to digest, while calcium carbonate is cheaper but requires more stomach acid to absorb."
+          }
+        ]
+      }
     },
     {
       "name": "Magnesium Citrate",
@@ -17594,7 +18158,15 @@
       "qualityNote": "Calcium iodide is a bioavailable form of iodine, an essential trace mineral required for thyroid hormone production. Iodine deficiency causes thyroid dysfunction (goiter, hypothyroidism), while excess can also cause thyroid issues. Proper iodine supplementation is critical for metabolic health. Calcium iodide is less commonly used than potassium iodide but equally effective. Required in complete and balanced pet foods.",
       "wattsPosition": "good",
       "wattsTake": "Calcium iodide is an essential mineral supplement providing necessary iodine for thyroid function. Iodine is critical for metabolism and overall health, and supplementation ensures adequate intake. We have no concerns with appropriate iodine supplementation - it's required for nutritional completeness. The calcium iodide form is bioavailable and effective. This indicates proper mineral fortification in the food.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "calcium-iodate",
+            "difference": "Both provide iodine and calcium. Calcium iodide is less stable and rarely used, while calcium iodate is more shelf-stable. Iodine is essential for thyroid function."
+          }
+        ]
+      }
     },
     {
       "name": "Potassium Iodide",
@@ -17677,7 +18249,15 @@
       "qualityNote": "Calcium propionate is a mold inhibitor commonly used in baked goods and dry pet treats. While propionic acid occurs naturally in some foods, commercial calcium propionate is synthesized. It's considered safe by regulatory agencies but provides no meaningful nutritional value (despite containing calcium, the amounts are negligible). Some people report behavioral effects in sensitive individuals, though evidence is limited. Better than some preservatives, not as good as natural options.",
       "wattsPosition": "neutral",
       "wattsTake": "Calcium propionate is an acceptable preservative for baked goods where mold prevention is important. While we'd prefer natural preservation methods, calcium propionate is relatively safe and effective for its purpose. It's commonly used in human foods as well. We're neutral - it serves a function and isn't particularly harmful, but we'd slightly favor natural preservatives like mixed tocopherols when feasible. It's fine in treats and baked products.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "potassium-sorbate",
+            "difference": "Both are preservatives. Calcium propionate prevents mold growth (especially in baked goods), while potassium sorbate inhibits yeast and mold. Both are considered safe."
+          }
+        ]
+      }
     },
     {
       "name": "Sodium Propionate",
@@ -17846,7 +18426,15 @@
       "qualityNote": "Bananas are nutrient-dense fruits offering potassium, vitamin B6, vitamin C, and fiber. They're naturally sweet and palatable to most dogs. However, they're relatively high in sugar and calories compared to vegetables. The fiber aids digestion, and potassium supports heart and muscle function. Generally safe and well-tolerated in moderation. Better than many fruit options due to potassium content, but should be a minor ingredient due to sugar.",
       "wattsPosition": "neutral",
       "wattsTake": "Banana is a decent whole food fruit that brings potassium and some vitamins. We appreciate whole food ingredients over synthetic additives. However, bananas are relatively high in sugar, so they should be used in moderation. They're fine as a minor ingredient or occasional treat, but we wouldn't want them high on the ingredient list. Better than processed sugars, not as good as low-sugar vegetables. Neutral overall - good in moderation.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "apples",
+            "difference": "Both are fruits used in dog treats. Bananas are higher in sugar and potassium, while apples provide more fiber (pectin) and vitamin C. Both are safe in moderation."
+          }
+        ]
+      }
     },
     {
       "name": "Mango",
@@ -17949,7 +18537,15 @@
       "qualityNote": "Coconut sugar is essentially sugar - about 70-80% sucrose with trace minerals like iron, zinc, and calcium. While it's minimally processed and has a slightly lower glycemic index than white sugar, it's still fundamentally added sugar with minimal nutritional value. The mineral content is negligible. It's better than refined white sugar or artificial sweeteners, but it's still empty calories that dogs don't need.",
       "wattsPosition": "caution",
       "wattsTake": "Coconut sugar is still sugar - dogs don't need added sweeteners. While it's better than refined sugar or corn syrup, it's still unnecessary empty calories used to make food more palatable. Quality food should taste good from real ingredients, not added sugars. We view any added sugar cautiously, even 'natural' ones. If it's in treats in small amounts, it's tolerable, but we'd prefer treats sweetened with fruit or nothing at all. Caution - it's sugar, period.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "honey",
+            "difference": "Both are natural sweeteners. Coconut sugar is from coconut palm sap (slightly lower glycemic), while honey is from bees. Neither is necessary in dog food—used for palatability."
+          }
+        ]
+      }
     },
     {
       "name": "Vegetable Oil",
