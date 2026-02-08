@@ -6816,7 +6816,43 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "nutritionalProfile": {
+        "function": "Seaweed (brown algae) rich in iodine, minerals, and trace elements",
+        "macros": {
+          "protein": "5-10% (low quality, incomplete)",
+          "carbohydrates": "40-60% (mostly indigestible polysaccharides and fiber)",
+          "fat": "1-3% (minimal)",
+          "fiber": "High—aids digestion but largely indigestible"
+        },
+        "micronutrients": {
+          "iodine": "VERY HIGH—100-200x higher than most foods. This is both benefit and risk.",
+          "iron": "Good source of bioavailable iron",
+          "magnesium": "Moderate amounts",
+          "calcium": "Moderate—though bioavailability may be limited",
+          "potassium": "Good source",
+          "traceElements": "Contains zinc, copper, selenium, manganese"
+        },
+        "bioactiveCompounds": {
+          "alginates": "Soluble fiber that may help with satiety and gut health",
+          "fucoidan": "Polysaccharide with immune-supporting properties (limited evidence)",
+          "phlorotannins": "Antioxidants unique to brown algae"
+        },
+        "benefits": [
+          "Natural iodine source for thyroid function",
+          "Trace mineral supplementation (especially in homemade diets)",
+          "Potential immune support and antioxidant properties",
+          "Dental health (anecdotal—may reduce plaque)"
+        ],
+        "iodineRisk": "PRIMARY CONCERN—Kelp's iodine content varies wildly (50-8000 mcg/g depending on species, location, season). Excessive iodine causes hyperthyroidism or hypothyroidism. Use only in products with controlled kelp amounts.",
+        "typicalUse": "0.1-0.5% of diet in commercial foods. Small amounts provide trace minerals without iodine overdose.",
+        "contaminationRisk": "Seaweed can accumulate heavy metals (arsenic, lead, cadmium) from ocean water. Quality suppliers test for contaminants.",
+        "qualityNote": "Inclusion signals whole-food, natural approach. Ensure manufacturer controls iodine levels and tests for heavy metals."
+      },
+      "seoMetadata": {
+        "focusKeyword": "dried kelp dog food",
+        "metaDescription": "Is dried kelp safe for dogs? Learn high iodine benefits & risks, trace mineral content, thyroid function, heavy metal concerns & proper dosing."
+      }
     },
     {
       "name": "Dried Plasma",
@@ -8140,7 +8176,37 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "nutritionalProfile": {
+        "function": "B-vitamin (B9) essential for DNA synthesis, cell division, and red blood cell formation",
+        "forms": {
+          "folicAcid": "Synthetic, oxidized form used in supplements (must be converted to active form)",
+          "folate": "Natural form found in foods (liver, leafy greens)",
+          "5-MTHF": "Active, methylated form (premium supplements)"
+        },
+        "bioavailability": {
+          "synthetic": "Folic acid requires enzymatic conversion to active form. Most dogs convert efficiently, but genetic variations exist.",
+          "natural": "Folate from whole foods is readily absorbed and utilized"
+        },
+        "functions": [
+          "DNA synthesis and cell division",
+          "Red blood cell formation (prevents anemia)",
+          "Amino acid metabolism (especially methionine and homocysteine)",
+          "Fetal development (critical for pregnant dogs)",
+          "Nervous system function"
+        ],
+        "AAFCOminimums": {
+          "puppyGrowth": "0.216 mg/kg",
+          "adultMaintenance": "0.216 mg/kg",
+          "reproduction": "Higher requirements during pregnancy and lactation"
+        },
+        "deficiency": "Rare in dogs eating complete dog food. Causes megaloblastic anemia, poor growth, immune dysfunction. More common in pregnant/lactating dogs with inadequate supplementation.",
+        "stability": "Heat-stable—survives kibble processing well. Light-sensitive—store in opaque containers."
+      },
+      "seoMetadata": {
+        "focusKeyword": "folic acid dog food",
+        "metaDescription": "Is folic acid important for dogs? Learn B9 vitamin functions, folic acid vs folate forms, DNA synthesis, anemia prevention & pregnancy requirements."
+      }
     },
     {
       "name": "Fructooligosaccharides",
@@ -14426,7 +14492,31 @@
           "url": "https://www.fda.gov/",
           "publisher": "FDA"
         }
-      ]
+      ],
+      "nutritionalProfile": {
+        "function": "Natural antioxidant and preservative derived from rosemary herb",
+        "activeCompounds": {
+          "carnosicAcid": "Primary antioxidant—inhibits fat oxidation (rancidity)",
+          "rosmarinicAcid": "Anti-inflammatory and antimicrobial properties",
+          "carnosol": "Antioxidant and anticancer properties (in vitro studies)"
+        },
+        "uses": [
+          "Natural preservative to prevent fat rancidity (replaces synthetic BHA/BHT)",
+          "Antioxidant protection for fats and oils in kibble",
+          "May provide mild anti-inflammatory benefits (secondary to preservation)"
+        ],
+        "effectiveness": {
+          "asPreservative": "Effective but less potent than synthetic preservatives. Often combined with mixed tocopherols (vitamin E) for synergistic effect.",
+          "shelfLife": "Products with rosemary extract may have shorter shelf life than those with synthetic preservatives—check expiration dates"
+        },
+        "nutritionalBenefit": "Minimal—used in small amounts (0.02-0.1%) for preservation, not nutrition. Any antioxidant or anti-inflammatory benefits are secondary.",
+        "safety": "Generally recognized as safe (GRAS). Well-tolerated by most dogs. Some anecdotal reports of digestive upset in sensitive dogs at high doses.",
+        "qualityIndicator": "Presence of rosemary extract signals natural, whole-food approach. Premium brands prefer it over BHA/BHT."
+      },
+      "seoMetadata": {
+        "focusKeyword": "rosemary extract dog food",
+        "metaDescription": "Is rosemary extract safe for dogs? Learn natural preservative benefits, carnosic acid for fat protection, vs BHA/BHT, and antioxidant properties."
+      }
     },
     {
       "name": "Rye Meal",
@@ -16129,7 +16219,39 @@
       "qualityNote": "Sweet potato fiber is extracted from sweet potatoes, providing concentrated fiber without the full nutritional profile of whole sweet potato. While whole sweet potato is excellent (fiber, vitamins A and C, minerals), the fiber fraction is primarily just fiber. However, it's still better than wood pulp or synthetic fibers because it's from a nutritious source and retains some beneficial compounds. It has legitimate prebiotic benefits for gut health.",
       "wattsPosition": "neutral",
       "wattsTake": "Sweet potato fiber is better than cheap cellulose or hull fibers because it comes from a nutritious whole food source. While we always prefer whole sweet potato, the fiber fraction still offers legitimate digestive benefits. It's functional fiber from a quality source. We're neutral - it's acceptable as a fiber source, especially in weight management formulas, but whole sweet potato would be better. Better than most isolated fibers, not as good as the whole vegetable.",
-      "citations": []
+      "citations": [],
+      "nutritionalProfile": {
+        "function": "Extracted fiber from sweet potatoes—primarily used as fiber source, not carbohydrate",
+        "composition": {
+          "fiber": "75-85% dietary fiber (mix of soluble and insoluble)",
+          "carbohydrates": "10-15% (mostly resistant starch)",
+          "protein": "3-5% (minimal)",
+          "moisture": "5-10%"
+        },
+        "fiberTypes": {
+          "solubleFiber": "20-30%—fermented by gut bacteria to produce short-chain fatty acids (butyrate). Prebiotic effect.",
+          "insolubleFiber": "50-65%—adds bulk to stool, improves motility, prevents constipation"
+        },
+        "vsWholeSweetPotato": "Sweet potato fiber is the extracted fibrous portion after starch removal. It's much higher in fiber (80% vs 3-4% in whole sweet potato) but lacks the vitamins, minerals, and beta-carotene. Not equivalent to whole sweet potato.",
+        "uses": [
+          "Bulk and fiber in weight management formulas (low calorie, high satiety)",
+          "Digestive health support (regulates bowel movements)",
+          "Prebiotic effect (feeds beneficial gut bacteria)",
+          "Binding agent in canned/wet foods"
+        ],
+        "benefits": {
+          "digestive": "Helps with both diarrhea (absorbs water) and constipation (adds bulk). Gentle fiber source.",
+          "weightManagement": "High fiber = low calorie density. Increases satiety without calories.",
+          "bloodSugar": "Lower glycemic impact than whole sweet potato (starch is removed). Good for diabetic dogs.",
+          "prebiotics": "Soluble fiber ferments to support healthy gut microbiome"
+        },
+        "nutritionalValue": "Lower than whole sweet potato—it's primarily fiber without the vitamins (A, C), minerals, and beta-carotene. Serves a functional (fiber) rather than nutritional purpose.",
+        "qualityNote": "Presence of sweet potato fiber in moderate amounts (2-5%) signals focus on digestive health and satiety. High amounts (>5%) may indicate filler to reduce cost while maintaining volume."
+      },
+      "seoMetadata": {
+        "focusKeyword": "sweet potato fiber dog food",
+        "metaDescription": "Is sweet potato fiber good for dogs? Learn 80% fiber content, vs whole sweet potato, digestive benefits, weight management & prebiotic effects."
+      }
     },
     {
       "name": "Sweet Potatoes",
@@ -17446,7 +17568,36 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "nutritionalProfile": {
+        "function": "Essential fat-soluble vitamin for calcium absorption and bone health",
+        "forms": {
+          "d3": "Cholecalciferol (animal-derived, most bioavailable)",
+          "d2": "Ergocalciferol (plant-derived, less effective for dogs)"
+        },
+        "sources": {
+          "supplement": "D3 is typically derived from lanolin (sheep wool) or fish oil",
+          "naturalFood": "Fatty fish, egg yolks, liver—but insufficient amounts for dogs"
+        },
+        "bioavailability": "Dogs cannot synthesize vitamin D from sunlight like humans—must get it from diet. D3 is 3-5x more effective than D2 for dogs.",
+        "functions": [
+          "Calcium and phosphorus absorption from intestines",
+          "Bone mineralization and skeletal health",
+          "Immune system regulation",
+          "Muscle function",
+          "Cell growth regulation"
+        ],
+        "AAFCOminimums": {
+          "puppyGrowth": "500 IU/kg (minimum), 3000 IU/kg (maximum)",
+          "adultMaintenance": "500 IU/kg (minimum), 3000 IU/kg (maximum)"
+        },
+        "toxicity": "Fat-soluble—excess is stored and can accumulate to toxic levels. Over-supplementation causes hypercalcemia (calcium deposits in soft tissues, kidney damage). Stay within AAFCO limits.",
+        "note": "Unlike humans, dogs MUST get vitamin D from food—they cannot produce it from sunlight. Supplementation is essential in commercial dog food."
+      },
+      "seoMetadata": {
+        "focusKeyword": "vitamin d3 supplement dog food",
+        "metaDescription": "Is vitamin D3 safe for dogs? Learn why dogs can't make it from sunlight, D3 vs D2 effectiveness, calcium absorption, AAFCO limits & toxicity risks."
+      }
     },
     {
       "name": "Vitamin E Acetate",
@@ -17513,7 +17664,33 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "nutritionalProfile": {
+        "function": "Fat-soluble antioxidant that protects cells from oxidative damage",
+        "forms": {
+          "natural": "d-alpha-tocopherol (most bioavailable)",
+          "synthetic": "dl-alpha-tocopherol (50% less bioavailable than natural)",
+          "mixed": "Mixed tocopherols (alpha, beta, gamma, delta) from vegetable oils"
+        },
+        "bioavailability": {
+          "natural": "Higher absorption and retention in tissues",
+          "synthetic": "Lower bioavailability—requires 2x dose for equivalent effect",
+          "note": "Natural sources preferred but significantly more expensive"
+        },
+        "functions": [
+          "Antioxidant protection for cell membranes and fats",
+          "Immune system support",
+          "Skin and coat health",
+          "Cardiovascular health",
+          "Eye health (reduces oxidative stress in retina)"
+        ],
+        "typicalContent": "Most dog foods supplement to meet AAFCO minimums (50 IU/kg for growth, 50 IU/kg for maintenance)",
+        "deficiencyRisks": "Rare—most foods are supplemented. Deficiency can cause muscle weakness, reproductive issues, and immune dysfunction"
+      },
+      "seoMetadata": {
+        "focusKeyword": "vitamin e supplement dog food",
+        "metaDescription": "Is vitamin E supplement good for dogs? Learn natural vs synthetic forms (d-alpha vs dl-alpha), bioavailability differences, antioxidant benefits & dosing."
+      }
     },
     {
       "name": "Vitamin K1",
@@ -18743,7 +18920,32 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "nutritionalProfile": {
+        "function": "Desert plant extract used primarily to reduce stool odor",
+        "activeCompounds": {
+          "saponins": "Glycosides that reduce ammonia production in intestines—primary mechanism for odor reduction",
+          "polyphenols": "Antioxidants with mild anti-inflammatory properties",
+          "resveratrol": "Polyphenol with potential health benefits (limited evidence in dogs)"
+        },
+        "primaryUse": "Stool odor control—reduces ammonia, hydrogen sulfide, and other volatile compounds that cause fecal smell",
+        "mechanism": "Saponins bind ammonia in the intestines before it's absorbed or excreted. They also modify gut microbiome to reduce odor-causing bacteria.",
+        "effectiveness": {
+          "odorReduction": "Moderate evidence—many owners report noticeable reduction in stool odor. Works best with consistent daily intake.",
+          "studyResults": "Studies show 20-50% reduction in fecal ammonia and odor compounds with 125-250 mg/kg of food"
+        },
+        "secondaryBenefits": {
+          "jointHealth": "Anecdotal reports of anti-inflammatory benefits for arthritis. Limited scientific evidence in dogs.",
+          "digestiveHealth": "May reduce intestinal inflammation. More research needed."
+        },
+        "typicalDose": "125-500 ppm (parts per million) in dog food, equivalent to 0.0125-0.05% of diet",
+        "safety": "Generally safe at recommended doses. High doses may cause digestive upset (saponins are natural detergents). Stick to food-formulated amounts.",
+        "qualityNote": "Inclusion signals premium formulation—manufacturers committed to odor control and potential health benefits beyond basic nutrition."
+      },
+      "seoMetadata": {
+        "focusKeyword": "yucca schidigera extract dog food",
+        "metaDescription": "Does yucca schidigera work for dogs? Learn stool odor reduction mechanism, saponins that bind ammonia, joint health claims & safety at proper doses."
+      }
     },
     {
       "name": "Zeaxanthin",
@@ -18859,7 +19061,40 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "nutritionalProfile": {
+        "function": "Inorganic zinc source for immune function, skin health, and enzyme activity",
+        "bioavailability": "LOW—zinc oxide is poorly absorbed (15-30%) compared to organic forms like zinc proteinate or zinc amino acid chelate (50-60% absorption)",
+        "forms": {
+          "zincOxide": "Inorganic, cheapest, poorly absorbed",
+          "zincProteinate": "Organic, chelated to protein, much better absorption",
+          "zincAminoAcidChelate": "Organic, chelated to amino acids, best absorption"
+        },
+        "whyUsed": "Cost—zinc oxide is the cheapest zinc source. Budget foods use it; premium foods use organic chelates.",
+        "functions": [
+          "Immune system function (T-cell production)",
+          "Skin and coat health (wound healing, reduces dermatitis)",
+          "Protein synthesis and enzyme activity (300+ enzymes require zinc)",
+          "DNA synthesis and cell division",
+          "Sense of smell and taste",
+          "Reproductive health"
+        ],
+        "AAFCOminimums": {
+          "puppyGrowth": "100 mg/kg (minimum), 1000 mg/kg (maximum)",
+          "adultMaintenance": "80 mg/kg (minimum), 1000 mg/kg (maximum)"
+        },
+        "interactionsInterference": {
+          "calcium": "High calcium inhibits zinc absorption",
+          "phytates": "Plant-based diets with phytates reduce zinc absorption",
+          "copper": "High zinc interferes with copper absorption (and vice versa)—balance is critical"
+        },
+        "deficiency": "Causes skin lesions, poor coat, immune dysfunction, slow wound healing, growth retardation. Arctic breeds (Huskies, Malamutes) are genetically prone to zinc deficiency.",
+        "qualityNote": "Look for organic zinc sources (proteinate, chelate) for better absorption and lower required doses. Zinc oxide works but is less efficient."
+      },
+      "seoMetadata": {
+        "focusKeyword": "zinc oxide dog food",
+        "metaDescription": "Is zinc oxide good for dogs? Learn low bioavailability concerns, zinc oxide vs proteinate vs chelate, immune & skin benefits, AAFCO requirements."
+      }
     },
     {
       "name": "Zinc Proteinate",
