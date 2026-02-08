@@ -3625,7 +3625,9 @@
       "aliases": [
         "powdered cellulose",
         "cellulose fiber",
-        "plant fiber"
+        "plant fiber",
+        "cellulose powder",
+        "microcellulose"
       ],
       "category": "fiber",
       "whatItIs": "Insoluble fiber from plant cell walls, often from wood pulp. Indigestible bulking agent.",
@@ -3914,7 +3916,8 @@
       "aliases": [
         "fresh chicken",
         "deboned chicken",
-        "whole chicken"
+        "whole chicken",
+        "chicken meat"
       ],
       "category": "protein",
       "whatItIs": "Fresh chicken meat including water content. Contains about 70% water, 18% protein.",
@@ -4890,7 +4893,8 @@
       "name": "Chickpeas",
       "aliases": [
         "garbanzo beans",
-        "chickpea flour"
+        "chickpea flour",
+        "whole chickpeas"
       ],
       "category": "carbohydrate",
       "whatItIs": "Legumes providing protein, fiber, and complex carbohydrates.",
@@ -4996,157 +5000,6 @@
           "garbanzo beans dogs"
         ],
         "metaDescription": "Are chickpeas safe for dogs? Learn about plant-based protein benefits, low-glycemic carbohydrates, fiber advantages, safety considerations & comparison to peas."
-      }
-    },
-    {
-      "name": "Chicory Root",
-      "aliases": [
-        "chicory inulin",
-        "inulin",
-        "chicory root fiber",
-        "dried chicory root"
-      ],
-      "category": "fiber",
-      "whatItIs": "Root vegetable rich in inulin, a prebiotic fiber that feeds beneficial gut bacteria.",
-      "whyUsed": [
-        "Prebiotic fiber source",
-        "Feeds beneficial gut bacteria",
-        "Supports digestive health"
-      ],
-      "nutritionValue": "high",
-      "qualityNote": "Excellent prebiotic fiber. Actually beneficial for gut health, not just filler.",
-      "wattsPosition": "good",
-      "wattsTake": "One of the best fiber sources. Chicory root inulin feeds beneficial bacteria and supports gut health.",
-      "citations": [
-        {
-          "title": "Chicory root powder included as a prebiotic in different cereal-based diets for dogs: Influences on gut health, metabolic and immunological status",
-          "url": "https://doi.org/10.1016/j.bcdf.2024.100414",
-          "publisher": "Bioactive Carbohydrates and Dietary Fibre"
-        }
-      ],
-      "whatItIsExpanded": {
-        "overview": "Chicory root is derived from the Cichorium intybus plant—a perennial herb native to Europe but now cultivated worldwide. The root is harvested, dried, and ground into a powder or extract for use in dog food. Chicory root's value comes from its high concentration of inulin, a type of soluble prebiotic fiber that human and canine digestive enzymes cannot break down. Instead, inulin passes through the stomach and small intestine intact and reaches the colon, where beneficial bacteria (like Bifidobacteria and Lactobacilli) ferment it into short-chain fatty acids (SCFAs) such as butyrate, acetate, and propionate. These SCFAs provide energy for colon cells, reduce inflammation, support immune function, and help maintain a healthy gut barrier. Chicory root is considered one of the most effective prebiotic ingredients in pet food—superior to generic 'cellulose' or 'beet pulp' for gut health support. It's not just empty fiber; it actively feeds the beneficial microbiome. Chicory root may appear on ingredient lists as 'chicory root,' 'dried chicory root,' 'chicory root fiber,' or simply 'inulin.' Beyond its prebiotic benefits, chicory root provides a small amount of vitamins (C, B6), minerals (potassium, manganese), and antioxidant compounds. It's generally well-tolerated, though some dogs with sensitive stomachs may experience gas or loose stools during the initial adjustment period.",
-        "compareToSimilar": [
-          {
-            "ingredient": "beet-pulp",
-            "difference": "Beet pulp is the fibrous residue left after sugar extraction from sugar beets. It contains a mix of soluble and insoluble fiber and provides moderate prebiotic effects through fermentation. Chicory root is richer in inulin—a highly fermentable prebiotic fiber—making it more effective at supporting beneficial gut bacteria. Beet pulp is still a good fiber source, but chicory root is superior for targeted gut health."
-          },
-          {
-            "ingredient": "pumpkin",
-            "difference": "Pumpkin is a whole-food fiber source containing soluble and insoluble fiber, plus vitamins (A, C, E) and minerals. It's excellent for regulating digestion (firming up diarrhea or softening constipation). Chicory root is more concentrated in prebiotic inulin and specifically feeds beneficial bacteria, whereas pumpkin provides broader nutritional benefits. Both are beneficial, but chicory root is more targeted for microbiome support."
-          },
-          {
-            "ingredient": "fructooligosaccharides",
-            "difference": "Fructooligosaccharides (FOS) are short-chain prebiotics similar in function to inulin (which is a long-chain fructan). Both feed beneficial gut bacteria and support digestive health. Chicory root naturally contains inulin and some FOS, making it a natural source of both. Pure FOS supplements are more concentrated but lack the whole-food benefits of chicory root (vitamins, minerals, antioxidants). They're functionally similar."
-          }
-        ]
-      },
-      "nutritionalProfile": {
-        "macros": {
-          "fiber": "40-70% inulin (soluble prebiotic fiber) depending on extraction method",
-          "carbohydrates": "Remaining carbohydrates are primarily other polysaccharides and sugars",
-          "protein": "2-4%",
-          "fat": "Less than 1%"
-        },
-        "micronutrients": {
-          "vitamins": "Vitamin C, B6, folate (in moderate amounts)",
-          "minerals": "Potassium, manganese, phosphorus",
-          "bioactives": "Antioxidant compounds including polyphenols and flavonoids"
-        },
-        "bioavailability": "Inulin itself is not absorbed—it reaches the colon intact where it's fermented by beneficial bacteria. The resulting SCFAs (butyrate, acetate, propionate) are absorbed by colon cells and provide energy, anti-inflammatory effects, and immune support."
-      },
-      "qualityConsiderations": {
-        "sourcing": "Chicory root is typically sourced from European farms (France, Belgium, Netherlands) or North American producers. Quality depends on the growing conditions, harvest timing, and processing methods. Organically grown chicory root avoids pesticide residues and is preferable for premium foods. Look for manufacturers who specify the inulin content (should be at least 40% for effective prebiotic action).",
-        "processing": "Chicory root is harvested, cleaned, dried, and ground into powder. Some manufacturers extract and concentrate the inulin to create 'chicory root fiber' or 'inulin powder,' which has higher prebiotic potency. Gentle drying methods preserve more of the beneficial compounds. Harsh heat processing can degrade some bioactive components.",
-        "redFlags": [
-          "Generic 'inulin' without specifying chicory root as the source (could be from other plants like Jerusalem artichoke, though chicory is most common)",
-          "Excessive amounts (more than 3-5% of formula) without gradual introduction (can cause gas, bloating, or loose stools in sensitive dogs)",
-          "Used as the sole fiber source in low-quality foods (prebiotic fiber should complement, not replace, whole-food fiber from vegetables or fruits)"
-        ],
-        "greenFlags": [
-          "Listed as 'chicory root' or 'dried chicory root' for transparency",
-          "Moderate inclusion (0.5-3% of formula) for effective prebiotic support without digestive upset",
-          "Organically sourced",
-          "Part of a diverse fiber profile (combined with whole vegetables, fruits, or other fiber sources)",
-          "Specified inulin content (40%+ inulin indicates quality chicory root)"
-        ]
-      },
-      "concernsExpanded": {
-        "primaryConcerns": [
-          {
-            "title": "Potential for Gas and Digestive Upset in Sensitive Dogs",
-            "description": "Chicory root's inulin is highly fermentable, which means gut bacteria break it down and produce gas (hydrogen, carbon dioxide, methane) as a byproduct. For most dogs, this is not problematic—the gas is either absorbed or expelled as flatulence. However, dogs with sensitive stomachs, irritable bowel syndrome (IBS), or those not accustomed to prebiotic fiber may experience excessive gas, bloating, or even loose stools during the adjustment period. This is especially true if chicory root is introduced suddenly or used in high amounts. Gradual introduction (starting with small amounts) allows the gut microbiome to adapt."
-          },
-          {
-            "title": "Rare Allergic Reactions and Cross-Reactivity",
-            "description": "True allergies to chicory root are rare in dogs, but they can occur. Dogs with known allergies to plants in the Asteraceae (daisy) family—such as ragweed, dandelion, or marigold—may have cross-reactive sensitivities to chicory. Symptoms of chicory allergy could include itching, hives, digestive upset, or ear infections. If your dog has a history of plant allergies, monitor them when introducing chicory root. Most dogs tolerate it without issue."
-          },
-          {
-            "title": "Not Suitable for All Medical Conditions",
-            "description": "While chicory root is beneficial for most dogs, it may not be appropriate for dogs with certain health conditions. For example, dogs with inflammatory bowel disease (IBD) or severe food sensitivities may react poorly to highly fermentable fibers. Additionally, chicory root's inulin can affect blood sugar levels (it slows glucose absorption), which may impact diabetic dogs on insulin therapy. Always consult your vet before adding chicory-rich foods if your dog has a diagnosed medical condition."
-          }
-        ],
-        "researchStatus": "Chicory root and its inulin content have been extensively studied in human and animal nutrition. Research consistently demonstrates prebiotic benefits, including increased populations of beneficial gut bacteria, improved stool quality, enhanced mineral absorption, and immune support. Studies specific to dogs are growing and show similar positive effects."
-      },
-      "faqs": [
-        {
-          "question": "Is chicory root good for dogs?",
-          "answer": "Yes, chicory root is excellent for dogs. It's one of the best prebiotic fiber sources in dog food because it's rich in inulin—a soluble fiber that feeds beneficial gut bacteria (like Bifidobacteria and Lactobacilli). These bacteria ferment inulin into short-chain fatty acids (SCFAs) that support colon health, reduce inflammation, enhance immune function, and improve nutrient absorption. Chicory root is far superior to generic fillers like cellulose or corn fiber. Most dogs tolerate it well, though sensitive dogs may experience temporary gas or loose stools during the adjustment period. Overall, chicory root is a high-quality, functional ingredient.",
-          "priority": 1
-        },
-        {
-          "question": "Can dogs be allergic to chicory root?",
-          "answer": "True allergies to chicory root are rare in dogs, but they can occur. Dogs with known sensitivities to plants in the Asteraceae (daisy) family—such as ragweed, dandelion, or marigold—may have cross-reactive allergies to chicory root. Symptoms could include itching, hives, ear infections, or digestive upset. Additionally, some dogs with very sensitive stomachs may experience gas, bloating, or loose stools from chicory root's highly fermentable inulin, though this is typically a tolerance issue rather than a true allergy. If you suspect your dog is reacting to chicory root, consult your vet and consider switching to a food without it.",
-          "priority": 2
-        },
-        {
-          "question": "What does chicory root do for dogs?",
-          "answer": "Chicory root provides prebiotic fiber (inulin) that supports gut health by feeding beneficial bacteria in the colon. These bacteria ferment inulin into short-chain fatty acids (SCFAs) like butyrate, which provide energy for colon cells, reduce inflammation, strengthen the gut barrier, and enhance immune function. Chicory root also helps regulate bowel movements (by adding bulk and moisture to stool), may improve mineral absorption (calcium, magnesium), and provides trace amounts of vitamins (C, B6) and antioxidants. It's a functional ingredient that actively supports the microbiome, not just empty filler.",
-          "priority": 3
-        },
-        {
-          "question": "Can chicory root cause diarrhea in dogs?",
-          "answer": "In some cases, yes—especially if chicory root is introduced suddenly or used in high amounts. Chicory root's inulin is highly fermentable, which means gut bacteria break it down rapidly. This fermentation produces gas and can draw water into the colon (osmotic effect), leading to softer stools or diarrhea in sensitive dogs. Most dogs adjust within a few days to a week as their gut microbiome adapts. To minimize issues, introduce chicory-containing foods gradually and ensure your dog stays well-hydrated. If diarrhea persists, reduce the amount or switch to a food with less fermentable fiber.",
-          "priority": 4
-        },
-        {
-          "question": "How much chicory root is safe for dogs?",
-          "answer": "In commercial dog food, chicory root is typically included at 0.5-3% of the formula, which is safe and effective for most dogs. At these levels, it provides prebiotic benefits without causing digestive upset. Higher amounts (3-5%+) may lead to gas, bloating, or loose stools, especially in dogs not accustomed to prebiotic fiber. If you're adding chicory root as a supplement (like pure inulin powder), start with small amounts—around 1/4 to 1/2 teaspoon per day for a medium-sized dog—and increase gradually while monitoring stool quality. Always consult your vet before supplementing.",
-          "priority": 5
-        },
-        {
-          "question": "Is chicory root better than beet pulp?",
-          "answer": "Chicory root is generally superior to beet pulp for targeted gut health and prebiotic support. Chicory root contains 40-70% inulin, a highly fermentable prebiotic fiber that effectively feeds beneficial gut bacteria. Beet pulp is a mix of soluble and insoluble fiber with moderate prebiotic effects—it's good for adding bulk and regulating stool consistency but less potent for microbiome support. That said, beet pulp is still a quality fiber source and is often better tolerated than chicory root in dogs with very sensitive stomachs. Ideally, a food would include both or use chicory root in a diverse fiber profile.",
-          "priority": 6
-        }
-      ],
-      "scientificEvidence": {
-        "overview": "Chicory root inulin is one of the most extensively researched prebiotic fibers in both human and animal nutrition. Studies consistently demonstrate benefits for gut health, microbiome diversity, and immune function.",
-        "keyStudies": [
-          {
-            "finding": "Inulin from chicory root is selectively fermented by beneficial bacteria (Bifidobacteria, Lactobacilli) in the colon, leading to increased populations of these beneficial species and production of short-chain fatty acids (SCFAs).",
-            "studyType": "Microbiome Study",
-            "citationIndex": 0
-          },
-          {
-            "finding": "Short-chain fatty acids produced from inulin fermentation—particularly butyrate—provide energy for colonocytes, reduce inflammation, strengthen gut barrier function, and modulate immune responses.",
-            "studyType": "Metabolic and Immune Study"
-          },
-          {
-            "finding": "Prebiotic fibers like chicory root inulin have been shown to improve stool quality, enhance mineral absorption (calcium, magnesium), and support overall digestive health in dogs.",
-            "studyType": "Canine Clinical Study"
-          }
-        ]
-      },
-      "labelGuidance": {
-        "whatToLookFor": "Look for 'chicory root,' 'dried chicory root,' or 'chicory root fiber' in the ingredient list. It typically appears in the middle to end of the list, indicating moderate inclusion. Check if it's part of a diverse fiber profile (combined with vegetables, fruits, or other fiber sources). Avoid foods where chicory root is the only fiber source or appears very early (indicating excessive amounts that may cause digestive upset). Moderate inclusion (0.5-3% of formula) is ideal.",
-        "alternativeNames": [
-          "Dried chicory root",
-          "Chicory root fiber",
-          "Inulin (when derived from chicory)",
-          "Chicory inulin"
-        ],
-        "typicalPlacement": "Usually appears in the middle to latter part of the ingredient list (10th-25th position), often alongside other fiber sources or functional ingredients."
       }
     },
     {
@@ -5368,38 +5221,6 @@
         ]
       },
       "lastUpdated": "2026-02-03"
-    },
-    {
-      "name": "Chondroitin Sulfate",
-      "aliases": [
-        "chondroitin"
-      ],
-      "category": "active",
-      "whatItIs": "Cartilage component used for joint support.",
-      "whyUsed": [
-        "Joint and cartilage health",
-        "Often paired with glucosamine",
-        "Anti-inflammatory properties"
-      ],
-      "nutritionValue": "high",
-      "qualityNote": "Some evidence for joint support when combined with glucosamine and omega-3s.",
-      "wattsPosition": "neutral",
-      "wattsTake": "Whole-food sources like green-lipped mussel preferred over isolated supplements.",
-      "citations": [
-        {
-          "title": "Efficacy of nutraceuticals for canine osteoarthritis",
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9929184/",
-          "publisher": "NIH"
-        }
-      ],
-      "whatItIsExpanded": {
-        "compareToSimilar": [
-          {
-            "ingredient": "chondroitin",
-            "difference": "Chondroitin sulfate is the full chemical name for chondroitin. They're the same ingredient. Sulfate refers to the molecular structure—chondroitin is always in sulfate form."
-          }
-        ]
-      }
     },
     {
       "name": "Chromium Picolinate",
@@ -6726,31 +6547,6 @@
       ]
     },
     {
-      "name": "Deboned Chicken",
-      "aliases": [
-        "fresh chicken",
-        "chicken meat"
-      ],
-      "category": "protein",
-      "whatItIs": "Fresh chicken meat with bones removed, providing whole-muscle protein before processing.",
-      "whyUsed": [
-        "High-quality whole muscle meat protein",
-        "More palatable than rendered meals",
-        "Contains natural moisture"
-      ],
-      "nutritionValue": "high",
-      "qualityNote": "Fresh chicken is ~80% water, so it appears high on ingredient lists but provides less protein per pound than chicken meal after cooking.",
-      "wattsPosition": "good",
-      "wattsTake": "Excellent protein source. While it looks impressive at the top of ingredient lists, remember it's mostly water weight before cooking.",
-      "citations": [
-        {
-          "title": "AAFCO Official Publication",
-          "url": "https://www.aafco.org/",
-          "publisher": "AAFCO"
-        }
-      ]
-    },
-    {
       "name": "Dicalcium Phosphate",
       "aliases": [
         "calcium phosphate"
@@ -6880,7 +6676,10 @@
       "name": "Dried Chicory Root",
       "aliases": [
         "chicory root",
-        "dehydrated chicory"
+        "dehydrated chicory",
+        "chicory inulin",
+        "inulin",
+        "chicory root fiber"
       ],
       "category": "fiber",
       "whatItIs": "Dried root of the chicory plant, a natural source of inulin (prebiotic fiber).",
@@ -8369,27 +8168,6 @@
       ]
     },
     {
-      "name": "Garbanzo Beans",
-      "aliases": [
-        "chickpeas",
-        "whole chickpeas"
-      ],
-      "category": "vegetable",
-      "whatItIs": "Whole garbanzo beans (chickpeas) are legumes used in pet foods as a source of plant protein, fiber, and complex carbohydrates.",
-      "whyUsed": [
-        "Grain-free protein and carbohydrate source",
-        "Provides plant protein and fiber",
-        "Rich in vitamins and minerals",
-        "Supports digestive health",
-        "Gluten-free whole food ingredient"
-      ],
-      "nutritionValue": "moderate",
-      "qualityNote": "Whole garbanzo beans are more nutritious than chickpea flour since they retain all components of the whole legume. They provide moderate plant protein, significant fiber, and nutrients like folate, iron, and magnesium. Like all legumes, they contain lectins and phytic acid. The protein is incomplete for dogs. They're more digestible when properly cooked. Better than grain alternatives but inferior to animal protein sources.",
-      "wattsPosition": "neutral",
-      "wattsTake": "Whole garbanzo beans are a decent whole food legume - better than processed fractions. They bring protein, fiber, and nutrients to grain-free formulas. However, they shouldn't be a primary protein source. We appreciate when foods use whole ingredients rather than processed meals and flours, but we still prefer animal proteins first. Garbanzo beans are acceptable as complementary ingredients in balanced formulas.",
-      "citations": []
-    },
-    {
       "name": "Gelatin",
       "aliases": [
         "animal gelatin"
@@ -8696,30 +8474,6 @@
       "lastUpdated": "2026-02-03"
     },
     {
-      "name": "Glucosamine Hydrochloride",
-      "aliases": [
-        "glucosamine HCl"
-      ],
-      "category": "active",
-      "whatItIs": "Form of glucosamine for joint support. More concentrated than glucosamine sulfate.",
-      "whyUsed": [
-        "Joint health support",
-        "Cartilage maintenance",
-        "Common in senior formulas"
-      ],
-      "nutritionValue": "high",
-      "qualityNote": "More concentrated than sulfate form. Evidence mixed for effectiveness.",
-      "wattsPosition": "neutral",
-      "wattsTake": "We prefer whole-food sources like green-lipped mussel over isolated glucosamine.",
-      "citations": [
-        {
-          "title": "Efficacy of nutraceuticals for canine osteoarthritis",
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9929184/",
-          "publisher": "NIH"
-        }
-      ]
-    },
-    {
       "name": "Glutamine",
       "aliases": [
         "L-glutamine",
@@ -8823,104 +8577,6 @@
           "publisher": "NCBI"
         }
       ]
-    },
-    {
-      "name": "Green Peas",
-      "aliases": [
-        "garden peas",
-        "english peas"
-      ],
-      "category": "vegetable",
-      "whatItIs": "Whole green peas are the edible seeds of Pisum sativum, a legume commonly used as a carbohydrate and protein source in pet foods.",
-      "whyUsed": [
-        "Provides plant-based protein (approximately 5-8g per 100g cooked)",
-        "Contains digestible carbohydrates for energy",
-        "Supplies dietary fiber for digestive health",
-        "Rich in vitamins K, C, and B vitamins",
-        "Source of minerals including iron and manganese"
-      ],
-      "nutritionValue": "moderate",
-      "qualityNote": "Whole green peas are a moderate-quality ingredient providing both protein and carbohydrates. They're more nutritious than pea fractions (like pea fiber or pea starch) since they contain the complete seed. However, they're lower in protein than animal sources and contain anti-nutritional factors like lectins that can interfere with nutrient absorption. Generally well-tolerated but can cause gas in some dogs.",
-      "wattsPosition": "neutral",
-      "wattsTake": "We view whole green peas as an acceptable plant-based ingredient when used in moderation. They provide some protein and fiber along with nutrients like vitamin K. However, we prefer animal proteins as primary protein sources since dogs are carnivores. Peas should be a complementary ingredient, not a main protein source. Watch for 'pea stacking' where brands split peas into multiple forms (peas, pea protein, pea fiber) to disguise the total pea content.",
-      "citations": [],
-      "whatItIsExpanded": {
-        "overview": "Green peas (Pisum sativum) are legume vegetables providing protein, fiber, and complex carbohydrates in dog food. Whole green peas contain approximately 78% moisture when fresh, 14g carbohydrate (5g fiber), 5g protein, 0.4g fat per 100g fresh (concentrated when dried). Peas provide more plant protein (21-23% dried) than most vegetables, though incomplete for dogs. They're rich in vitamins A, K, C, B vitamins, and minerals including iron, zinc, manganese. Peas have moderate glycemic index (40-50), lower than potatoes but higher than lentils. Became extremely popular during grain-free trend. However, peas contain anti-nutritional factors (lectins, phytic acid) and have been investigated (not proven definitively) for potential DCM connection in legume-heavy diets. Green peas different from yellow split peas (mature, dried, split legumes).",
-        "compareToSimilar": [
-          {
-            "ingredient": "lentils",
-            "difference": "Lentils and peas are both legumes. Lentils have more protein (24-26% vs 21-23%) and lower glycemic index (30-35 vs 40-50). Lentils have fewer anti-nutritional factors. Lentils are nutritionally superior; peas are more economical and common."
-          },
-          {
-            "ingredient": "chickpeas",
-            "difference": "Peas and chickpeas are similar legumes. Peas have slightly more protein (21-23% vs 20-22%) but higher glycemic index (40-50 vs 35-45). Chickpeas are firmer and more premium. Both are quality legumes—chickpeas signal premium, peas are economical standard."
-          }
-        ]
-      },
-      "whyUsedExpanded": "Green peas appear in dog food for plant protein content (21-23% dried), fiber (5g per 100g fresh), complex carbohydrates, and grain-free positioning. Peas are less expensive than lentils or chickpeas, making them common grain-free filler. They provide vitamins A, K, C. However, peas are primarily used for economical plant protein boost and carbohydrate binding rather than optimal nutrition. Pea-heavy formulas have raised concerns about legume content and DCM. Moderate amounts acceptable; excessive amounts concerning.",
-      "nutritionalProfile": {
-        "macros": {
-          "protein": "21-23g per 100g dried (5g per 100g fresh), incomplete for dogs",
-          "carbohydrates": "14g per 100g fresh, 60g per 100g dried (including fiber)",
-          "fiber": "5g per 100g fresh, concentrated when dried",
-          "fat": "0.4g per 100g fresh, minimal",
-          "moisture": "78% fresh"
-        },
-        "micronutrients": {
-          "vitaminA": "Good source",
-          "vitaminK": "Excellent source",
-          "vitaminC": "Good source",
-          "bVitamins": "Folate, thiamine, B6",
-          "iron": "Moderate (non-heme)",
-          "zinc": "Present",
-          "manganese": "Good source"
-        },
-        "glycemicImpact": "Moderate glycemic index (40-50), higher than lentils but lower than potatoes",
-        "proteinQuality": "Incomplete plant protein lacking essential amino acids. Cannot replace animal protein."
-      },
-      "qualityConsiderations": {
-        "expanded": "Green peas are acceptable economical ingredient but signal lower quality than lentils or chickpeas. Peas in positions 4-8 after animal proteins indicate grain-free formulation. Peas in top 3 positions signal inadequate meat protein or pea-heavy formula—concerning. Multiple pea forms (green peas + pea protein + pea fiber + pea starch) is major red flag for protein manipulation and legume overload. Peas acceptable in moderation; excessive pea content problematic.",
-        "redFlags": [
-          "Peas in top 3 positions without sufficient meat",
-          "Multiple pea forms (green peas + pea protein + pea fiber + pea starch = manipulation and legume overload)",
-          "Pea protein isolate as primary protein"
-        ],
-        "greenFlags": [
-          "Green peas in positions 6-10 after quality meat proteins",
-          "Single pea form (just green peas) without protein isolates",
-          "Peas combined with whole grains for variety"
-        ]
-      },
-      "concernsExpanded": {
-        "detailed": "Primary concern: peas contain anti-nutritional factors (lectins, phytic acid) binding minerals and potentially causing digestive issues. Legume-heavy diets have been investigated for potential DCM connection, particularly when legumes replace meat protein. Pea-heavy formulas may lack adequate taurine or amino acids. Green peas in moderate amounts with adequate meat protein are safe. Excessive pea content (multiple pea forms, peas as primary ingredient) is concerning. Some dogs develop legume sensitivities causing gas, digestive upset.",
-        "contraindications": [
-          "Dogs with legume sensitivities should avoid",
-          "Formulas with excessive pea content (multiple forms) may risk DCM—choose meat-first formulas",
-          "Dogs with digestive sensitivities may not tolerate high-pea diets"
-        ],
-        "lifeStageConsiderations": "Appropriate for all life stages when paired with adequate animal protein. Puppies and pregnant dogs need high-quality meat—peas cannot provide sufficient nutrition alone."
-      },
-      "scientificEvidence": {
-        "summary": "Peas provide digestible plant protein and fiber. FDA investigated grain-free legume diets for DCM connection (inconclusive). Peas safe in moderation with adequate meat protein.",
-        "keyStudies": [],
-        "evidenceLevel": "Strong regarding nutritional content. Moderate regarding DCM concerns (ongoing research)."
-      },
-      "faqs": [
-        {
-          "question": "Are green peas safe for dogs?",
-          "answer": "Yes, green peas are safe for dogs in moderation, like the amounts used in balanced dog food with adequate meat protein. Peas provide plant protein (21-23% dried), fiber, vitamins A, K, C, and minerals. However, peas provide incomplete protein and contain anti-nutritional factors. The FDA investigated legume-heavy diets for potential DCM connection—concern is inadequate meat protein, not peas specifically. In moderate amounts (positions 6-10) with named meat as first ingredient, peas are safe. Avoid formulas with multiple pea forms (green peas + pea protein + pea fiber + pea starch) signaling protein manipulation and legume overload. Choose meat-first formulas with peas as supplementary ingredient.",
-          "answerShort": "Safe in moderation with meat protein. Incomplete plant protein, anti-nutritional factors. Avoid excessive pea content (multiple forms). Choose meat-first formulas.",
-          "priority": 1
-        }
-      ],
-      "seoMetadata": {
-        "focusKeyword": "green peas dog food",
-        "secondaryKeywords": [
-          "are green peas safe for dogs",
-          "peas DCM dogs"
-        ],
-        "metaDescription": "Are green peas safe for dogs? Discover plant protein content, fiber benefits, DCM concerns, safety limits in diet & comparison to lentils. Expert veterinary guide."
-      }
     },
     {
       "name": "Green Tea Extract",
@@ -9482,27 +9138,6 @@
           "publisher": "AAFCO"
         }
       ]
-    },
-    {
-      "name": "Iodized Salt",
-      "aliases": [
-        "table salt with iodine",
-        "sodium chloride with iodide"
-      ],
-      "category": "mineral",
-      "whatItIs": "Iodized salt is regular salt (sodium chloride) fortified with iodine, used to provide both sodium and iodine in pet foods.",
-      "whyUsed": [
-        "Provides essential sodium and chloride",
-        "Supplies iodine for thyroid function",
-        "Enhances palatability",
-        "Electrolyte balance",
-        "Dual mineral supplementation"
-      ],
-      "nutritionValue": "moderate",
-      "qualityNote": "Iodized salt provides two essential nutrients - sodium (and chloride) for electrolyte balance, and iodine for thyroid function. While both are necessary, the amounts must be carefully controlled. Too much sodium can stress kidneys and heart, while excess iodine can cause thyroid dysfunction. In appropriate amounts, iodized salt is an efficient way to provide two minerals. Most quality foods use separate iodine and sodium sources for better control.",
-      "wattsPosition": "neutral",
-      "wattsTake": "Iodized salt is an acceptable ingredient providing necessary sodium and iodine. While we slightly prefer foods that use separate, controlled sources for these minerals, iodized salt is efficient and effective. The key is appropriate amounts - too much salt is concerning for health. If iodized salt is low on the ingredient list in moderate amounts, it's fine. We're neutral - it serves necessary functions when used appropriately.",
-      "citations": []
     },
     {
       "name": "Iron Amino Acid Chelate",
@@ -11345,30 +10980,6 @@
       ]
     },
     {
-      "name": "Methylsulfonylmethane",
-      "aliases": [
-        "MSM"
-      ],
-      "category": "active",
-      "whatItIs": "Organic sulfur compound for joint and inflammation support.",
-      "whyUsed": [
-        "Joint health",
-        "Anti-inflammatory effects",
-        "Sulfur source"
-      ],
-      "nutritionValue": "moderate",
-      "qualityNote": "Limited dog-specific research. Generally safe.",
-      "wattsPosition": "neutral",
-      "wattsTake": "Safe but limited evidence. Not our first choice for joint support.",
-      "citations": [
-        {
-          "title": "FDA GRAS",
-          "url": "https://www.fda.gov/",
-          "publisher": "FDA"
-        }
-      ]
-    },
-    {
       "name": "Microcrystalline Cellulose",
       "aliases": [
         "MCC",
@@ -11988,35 +11599,12 @@
       "citations": []
     },
     {
-      "name": "Oat Meal",
-      "aliases": [
-        "oatmeal",
-        "ground oats"
-      ],
-      "category": "carbohydrate",
-      "whatItIs": "Ground whole oats. Nutrient-dense grain with beta-glucan fiber.",
-      "whyUsed": [
-        "Whole grain nutrition",
-        "Soluble fiber (beta-glucans)",
-        "Easily digestible carbohydrate"
-      ],
-      "nutritionValue": "high",
-      "qualityNote": "Excellent grain choice with beneficial soluble fiber and B vitamins.",
-      "wattsPosition": "good",
-      "wattsTake": "Top-quality grain ingredient. Ground oats provide excellent nutrition.",
-      "citations": [
-        {
-          "title": "AAFCO Official Publication",
-          "url": "https://www.aafco.org/",
-          "publisher": "AAFCO"
-        }
-      ]
-    },
-    {
       "name": "Oatmeal",
       "aliases": [
         "rolled oats",
-        "oat flakes"
+        "oat flakes",
+        "oat meal",
+        "ground oats"
       ],
       "category": "carbohydrate",
       "whatItIs": "Oat groats that have been steamed and rolled flat into flakes.",
@@ -12745,7 +12333,8 @@
       "name": "Peas",
       "aliases": [
         "green peas",
-        "garden peas"
+        "garden peas",
+        "english peas"
       ],
       "category": "produce",
       "whatItIs": "Whole peas providing protein, fiber, and nutrients.",
@@ -13971,27 +13560,6 @@
       ]
     },
     {
-      "name": "Powdered Cellulose",
-      "aliases": [
-        "cellulose powder",
-        "microcellulose"
-      ],
-      "category": "fiber",
-      "whatItIs": "Powdered cellulose is refined plant fiber (wood pulp) used as an inexpensive, indigestible fiber source and anti-caking agent.",
-      "whyUsed": [
-        "Extremely cheap fiber source",
-        "Adds bulk without calories",
-        "Prevents caking in dry foods",
-        "Weight management formulas",
-        "Increases stool volume"
-      ],
-      "nutritionValue": "low",
-      "qualityNote": "Powdered cellulose is essentially purified wood pulp - completely indigestible plant fiber with zero nutritional value. Dogs cannot break down cellulose, so it passes through unchanged, adding bulk and fiber but no nutrients. It's used because it's incredibly cheap and adds volume without calories. While some fiber is beneficial, this is the absolute lowest quality fiber - nutritionally equivalent to sawdust.",
-      "wattsPosition": "avoid",
-      "wattsTake": "Powdered cellulose is wood pulp filler with zero nutritional value. While technically safe, it's the definition of empty filler - used solely to bulk up food cheaply. We strongly prefer whole food fiber sources like vegetables, fruits, or even whole grains. Seeing powdered cellulose in dog food tells us the manufacturer prioritizes cost over quality. This is a red flag ingredient. There are countless better fiber sources available.",
-      "citations": []
-    },
-    {
       "name": "Probiotics",
       "aliases": [
         "live cultures",
@@ -14635,7 +14203,9 @@
       "name": "Rice",
       "aliases": [
         "whole grain rice",
-        "white rice"
+        "white rice",
+        "polished rice",
+        "refined rice"
       ],
       "category": "carbohydrate",
       "whatItIs": "Whole rice grains. Easily digestible, hypoallergenic carbohydrate.",
@@ -15475,7 +15045,10 @@
       "name": "Salt",
       "aliases": [
         "sodium chloride",
-        "table salt"
+        "table salt",
+        "iodized salt",
+        "table salt with iodine",
+        "sodium chloride with iodide"
       ],
       "category": "mineral",
       "whatItIs": "Sodium chloride, an essential mineral that provides sodium and chloride for normal body function.",
@@ -18490,116 +18063,6 @@
           "publisher": "FDA"
         }
       ]
-    },
-    {
-      "name": "White Rice",
-      "aliases": [
-        "polished rice",
-        "refined rice"
-      ],
-      "category": "carbohydrate",
-      "whatItIs": "Refined rice with hull, bran, and germ removed. Easily digestible but nutritionally inferior to brown rice.",
-      "whyUsed": [
-        "Easily digestible carbohydrate",
-        "Low fiber for sensitive stomachs",
-        "Bland diet staple",
-        "Inexpensive filler"
-      ],
-      "nutritionValue": "low",
-      "qualityNote": "Highly digestible but nutritionally stripped. Refining removes fiber, vitamins, minerals found in brown rice. Useful for GI upset short-term but not ideal long-term. Better than corn/wheat but inferior to whole grains.",
-      "wattsPosition": "neutral",
-      "wattsTake": "Acceptable but not optimal. White rice is easily digested (good for upset stomachs) but nutritionally inferior to brown rice. Better than corn or wheat but loses vitamins/minerals in refining. Better options exist.",
-      "citations": [
-        {
-          "title": "Grains in Pet Food",
-          "url": "https://www.aafco.org/",
-          "publisher": "AAFCO"
-        }
-      ],
-      "whatItIsExpanded": {
-        "overview": "White rice is refined rice with hull, bran, and germ removed, providing highly digestible carbohydrates in dog food. White rice contains approximately 12% moisture, 78% carbohydrates (minimal fiber 0.5-1%), 7% protein, and less than 1% fat. It's the most digestible grain (90-98%), making it ideal for sensitive stomachs and digestive upset. However, refining removes nutrients—white rice lacks the B vitamins, fiber, and minerals found in brown rice. White rice has high glycemic index (70-85), causing rapid blood sugar spikes. Veterinarians commonly recommend white rice for dogs with diarrhea, vomiting, or digestive issues due to exceptional digestibility and blandness. White rice is hypoallergenic (rice allergies extremely rare) and gluten-free. While nutritionally inferior to brown rice for everyday feeding, white rice serves specific purposes for digestive health and bland diets.",
-        "compareToSimilar": [
-          {
-            "ingredient": "brown-rice",
-            "difference": "Brown rice is nutritionally superior to white rice. Brown rice has lower glycemic index (55-65 vs 70-85), more fiber (3-4% vs 0.5-1%), and rich B vitamins, magnesium, manganese, and minerals. White rice is more digestible (90-98% vs 85-90%) and gentler on upset stomachs. For healthy dogs, brown rice provides better everyday nutrition. For dogs with digestive sensitivity, white rice is preferable. White rice is often temporary bland diet ingredient; brown rice is sustainable long-term grain."
-          },
-          {
-            "ingredient": "brewers-rice",
-            "difference": "Brewers rice is rice fragments/broken pieces left from milling white rice. Both are refined and nutritionally similar—high glycemic, minimal fiber, limited vitamins. Whole white rice has slightly better texture and is more expensive. Brewers rice is economy ingredient (leftover byproduct). Both are highly digestible but nutritionally sparse. White rice signals slightly higher quality than brewers rice, though neither provides the nutrition of brown rice."
-          }
-        ]
-      },
-      "whyUsedExpanded": "White rice appears in dog food for exceptional digestibility (90-98%), making it ideal for sensitive stomachs, digestive upset, and bland diets. Veterinarians routinely recommend white rice for diarrhea or vomiting. It's hypoallergenic and gluten-free. However, white rice is nutritionally sparse compared to brown rice—used for digestibility rather than nutrition. In regular dog food, white rice provides quick energy but lacks fiber and micronutrients. Less expensive than brown rice. White rice suits dogs with chronic digestive issues or temporary upset, but brown rice preferable for everyday feeding in healthy dogs.",
-      "nutritionalProfile": {
-        "macros": {
-          "carbohydrates": "78g per 100g (0.5-1g fiber)",
-          "protein": "7g (incomplete)",
-          "fat": "Less than 1g",
-          "moisture": "12%"
-        },
-        "micronutrients": {
-          "note": "Minimal—refining removes most vitamins and minerals",
-          "thiamine": "Trace amounts",
-          "niacin": "Trace amounts"
-        },
-        "glycemicImpact": "High glycemic index (70-85), causing rapid blood sugar spikes. Not ideal for diabetic dogs or weight management.",
-        "digestibility": "Exceptional 90-98% digestibility, highest among common grains"
-      },
-      "qualityConsiderations": {
-        "expanded": "White rice is acceptable for specific purposes (sensitive stomachs) but signals lower quality than brown rice for everyday feeding. In premium foods, brown rice or whole grains are preferable. White rice in sensitive stomach/limited ingredient formulas is appropriate. White rice as primary carb in regular food suggests emphasis on cost/digestibility over nutrition. Position matters—white rice in positions 8-12 is acceptable filler; white rice in top 5 signals carb-heavy formula. Organic white rice reduces pesticide exposure.",
-        "redFlags": [
-          "White rice as first ingredient in regular (not sensitive stomach) formula",
-          "White rice in top 5 without whole grains elsewhere",
-          "Multiple rice forms (white rice + rice flour + brewers rice = cheap filler)"
-        ],
-        "greenFlags": [
-          "White rice in sensitive stomach or limited ingredient formulas",
-          "White rice in lower positions (8-12) as minor ingredient",
-          "White rice combined with whole grains (brown rice, oatmeal) elsewhere in formula"
-        ]
-      },
-      "concernsExpanded": {
-        "detailed": "White rice is very safe but nutritionally limited. Main concern: high glycemic index (70-85) causing blood sugar spikes—problematic for diabetic dogs or weight management. Nutritional deficiency—white rice provides calories without fiber, vitamins, or minerals. Long-term exclusive white rice diet would lack essential nutrients (though complete dog food balances this with other ingredients). White rice suitable for temporary digestive upset or chronic sensitivity, but healthy dogs benefit more from brown rice. Rice allergies extremely rare. White rice accumulates less arsenic than brown (removed with bran), though arsenic minimal concern at food levels.",
-        "contraindications": [
-          "Diabetic dogs should avoid high-glycemic white rice—brown rice or lower-glycemic grains preferable",
-          "Dogs requiring weight management better served by brown rice or high-fiber grains"
-        ],
-        "lifeStageConsiderations": "Appropriate for all life stages in balanced formulas, though puppies and active adults benefit more from nutrient-dense brown rice. Seniors with sensitive digestion may prefer white rice."
-      },
-      "scientificEvidence": {
-        "summary": "White rice extensively validated as highly digestible (90-98%) and hypoallergenic. Veterinarians routinely recommend for digestive upset. However, high glycemic and nutritionally sparse compared to whole grains. Safe but not optimal for everyday feeding.",
-        "keyStudies": [],
-        "evidenceLevel": "Very strong regarding digestibility and safety. Strong regarding nutritional limitations and high glycemic impact."
-      },
-      "faqs": [
-        {
-          "question": "Is white rice good for dogs?",
-          "answer": "White rice is excellent for dogs with digestive issues but not optimal for everyday feeding in healthy dogs. White rice is exceptionally digestible (90-98%), making it ideal for sensitive stomachs, diarrhea, or vomiting. Hypoallergenic and bland. Veterinarians commonly recommend white rice for digestive upset. However, white rice is nutritionally sparse—refining removes fiber, B vitamins, and minerals. It has high glycemic index (70-85) causing blood sugar spikes. For temporary digestive support or dogs with chronic sensitivity, white rice is beneficial. For everyday feeding in healthy dogs, brown rice provides better nutrition. White rice serves specific purpose but isn't optimal long-term carbohydrate.",
-          "answerShort": "Good for digestive issues, not optimal for everyday. Highly digestible, ideal for upset stomachs. Nutritionally sparse, high glycemic. Brown rice better for healthy dogs.",
-          "priority": 1
-        },
-        {
-          "question": "Should I feed my dog white rice or brown rice?",
-          "answer": "Brown rice is better for healthy dogs; white rice is better for digestive issues. Brown rice provides lower glycemic index (55-65 vs 70-85), more fiber (3-4% vs 0.5-1%), and rich vitamins and minerals. Better for weight management, blood sugar control, and overall nutrition. White rice is more digestible (90-98% vs 85-90%) and gentler on upset stomachs—use white rice when your dog has diarrhea, vomiting, or chronic digestive sensitivity. For everyday feeding, choose dog food with brown rice. For bland diet or sensitive stomach formula, choose white rice. Both are safe—brown rice for nutrition, white rice for digestibility.",
-          "answerShort": "Brown rice for healthy dogs (better nutrition). White rice for digestive issues (more digestible). Both safe—choose based on dog's health status.",
-          "priority": 2
-        },
-        {
-          "question": "Can white rice help dogs with diarrhea?",
-          "answer": "Yes, white rice is commonly recommended by veterinarians for dogs with diarrhea. White rice is exceptionally digestible (90-98%), bland, and helps firm stools. The typical bland diet is boiled white rice mixed with plain boiled chicken or lean meat (ratio of 3:1 or 2:1 rice to meat). White rice provides easily absorbed energy without irritating sensitive digestive systems. Feed small, frequent meals for 24-48 hours. If diarrhea persists beyond 2-3 days, consult your veterinarian. White rice is temporary digestive support, not long-term diet. Once stools normalize, gradually transition back to regular dog food. White rice is safe and effective first-line home treatment for mild diarrhea.",
-          "answerShort": "Yes, excellent for diarrhea. Highly digestible, bland, firms stools. Mix with plain chicken (3:1 ratio). Temporary support—consult vet if persists beyond 2-3 days.",
-          "priority": 3
-        }
-      ],
-      "seoMetadata": {
-        "focusKeyword": "white rice dog food",
-        "secondaryKeywords": [
-          "is white rice good for dogs",
-          "white rice vs brown rice dogs",
-          "white rice dogs diarrhea"
-        ],
-        "metaDescription": "Is white rice good for dogs? Discover digestibility benefits for sensitive stomachs, nutritional limitations, comparison to brown rice & uses for diarrhea treatment."
-      }
     },
     {
       "name": "Whitefish",
