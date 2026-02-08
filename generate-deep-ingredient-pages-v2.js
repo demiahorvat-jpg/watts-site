@@ -464,12 +464,51 @@ function generateIngredientPage(ingredient, allIngredients) {
   const metaDescription = ingredient.seoMetadata?.metaDescription
     || `Is ${ingredient.name.toLowerCase()} safe for dogs? Learn about nutritional benefits, safety considerations, quality indicators & expert analysis. Complete guide.`;
 
+  // Helper function to detect if ingredient name is plural
+  const isPlural = (name) => {
+    const lower = name.toLowerCase();
+
+    // Singular exceptions (ends in 's' but is singular)
+    const singularExceptions = [
+      'asparagus', 'citrus', 'grass', 'yeast', 'rice', 'moss',
+      'acidophilus', 'faecium', 'coagulans', 'animalis', 'lactis',
+      'lupus', 'status', 'virus', 'focus', 'mucus', 'phosphorus'
+    ];
+
+    // Plural exceptions (doesn't end in 's' but is plural)
+    const pluralExceptions = ['poultry'];
+
+    // Check plural exceptions first
+    if (pluralExceptions.some(word => lower.includes(word))) return true;
+
+    // Check singular exceptions
+    if (singularExceptions.some(word => lower.endsWith(word))) return false;
+
+    // Not plural if ends in these patterns
+    if (lower.endsWith('ness') || lower.endsWith('ous') || lower.endsWith('us')) return false;
+    if (lower.endsWith('oil') || lower.endsWith('meal') || lower.endsWith('flour')) return false;
+    if (lower.endsWith('extract') || lower.endsWith('digest') || lower.endsWith('concentrate')) return false;
+
+    // Common plural patterns
+    if (lower.endsWith('berries') || lower.endsWith('cherries')) return true;
+    if (lower.endsWith('ies') && !lower.endsWith('calories')) return true;
+    if (lower.endsWith('oes') || lower.endsWith('ses') || lower.endsWith('ves')) return true;
+
+    // Ends in 's' and is likely plural
+    if (lower.endsWith('s')) return true;
+
+    return false;
+  };
+
   // Generate SEO-optimized title (50-60 chars ideal)
   let pageTitle;
   const nameLength = ingredient.name.length;
+  const plural = isPlural(ingredient.name);
+
   if (nameLength <= 20) {
-    // Short names: use full descriptive title
-    pageTitle = `${ingredient.name} in Dog Food: Are They Safe? | Watts`;
+    // Short names: use full descriptive title with correct grammar
+    const safetyQuestion = plural ? 'Are They Safe?' : 'Is It Safe?';
+    pageTitle = `${ingredient.name} in Dog Food: ${safetyQuestion} | Watts`;
   } else if (nameLength <= 28) {
     // Medium names: slightly shorter version
     pageTitle = `${ingredient.name} in Dog Food: Safe? | Watts`;
