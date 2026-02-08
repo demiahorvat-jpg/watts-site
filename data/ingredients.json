@@ -2368,6 +2368,18 @@
           {
             "ingredient": "spirulina-color",
             "difference": "Spirulina is natural blue-green coloring from spirulina algae. While still primarily cosmetic, spirulina is real food with nutrients (protein, vitamins). Blue 2 is petroleum-derived synthetic with zero benefits. Spirulina is vastly preferable if blue color is desired, though neither is necessary for dogs."
+          },
+          {
+            "ingredient": "yellow-5",
+            "difference": "Blue 2 is a blue synthetic dye (indigo-based), while Yellow 5 is a yellow azo dye. Both are petroleum-derived with no nutritional benefits. Blue 2 has concerning animal study results (brain tumors); Yellow 5 is highly allergenic. Both are unnecessary cosmetic additives that should be avoided."
+          },
+          {
+            "ingredient": "yellow-6",
+            "difference": "Blue 2 is a blue synthetic dye, while Yellow 6 is an orange-yellow azo dye. Both are petroleum-derived with zero nutritional value. Blue 2 has brain tumor concerns from animal studies; Yellow 6 has hypersensitivity risks. Both are unnecessary and should be avoided."
+          },
+          {
+            "ingredient": "red-40",
+            "difference": "Blue 2 is a blue synthetic dye with brain tumor concerns from animal studies, while Red 40 is the most common red synthetic dye linked to behavioral issues. Both are petroleum-derived with no benefits. Both should be avoided entirely."
           }
         ]
       },
@@ -14411,6 +14423,18 @@
           {
             "ingredient": "beet-juice-color",
             "difference": "Beet juice color is natural red/pink coloring extracted from beets. While still primarily cosmetic, it's at least derived from real food rather than petroleum. Beet juice is vastly preferable to Red 40, though neither is necessary—dogs don't need colored food."
+          },
+          {
+            "ingredient": "blue-2",
+            "difference": "Red 40 (Allura Red) is the most common synthetic red dye, while Blue 2 (Indigotine) is a blue indigo dye. Both are petroleum-derived with zero nutrition. Red 40 is linked to behavioral concerns; Blue 2 has brain tumor links in animal studies. Both are purely cosmetic additives that should be avoided entirely."
+          },
+          {
+            "ingredient": "yellow-5",
+            "difference": "Both are azo dyes derived from petroleum—Red 40 provides red color, Yellow 5 provides yellow. Red 40 is linked to behavioral concerns; Yellow 5 is the most allergenic synthetic dye with aspirin cross-reactivity. Both provide zero nutrition and should be avoided. Often combined to create orange colors."
+          },
+          {
+            "ingredient": "yellow-6",
+            "difference": "Both are azo dyes derived from petroleum—Red 40 provides red-orange, Yellow 6 provides orange-yellow. Both are linked to hypersensitivity and behavioral concerns. Both provide zero nutrition. Often combined to create specific orange/red shades. Both should be avoided entirely."
           }
         ]
       },
@@ -18962,6 +18986,14 @@
           {
             "ingredient": "turmeric",
             "difference": "Turmeric is natural yellow coloring from turmeric root, providing curcumin (anti-inflammatory compound) along with color. Yellow 5 is petroleum-derived synthetic with zero benefits. Turmeric is natural, potentially beneficial ingredient; Yellow 5 is unnecessary chemical. If yellow color is desired, turmeric is infinitely superior, though neither is necessary for dogs."
+          },
+          {
+            "ingredient": "blue-2",
+            "difference": "Yellow 5 (Tartrazine) is a yellow azo dye, while Blue 2 (Indigotine) is a blue indigo dye. Both are petroleum-derived synthetic dyes with zero nutritional value. Yellow 5 is the most allergenic synthetic dye; Blue 2 has brain tumor links in animal studies. Both should be avoided entirely."
+          },
+          {
+            "ingredient": "red-40",
+            "difference": "Both are azo dyes from petroleum with similar chemical structures. Yellow 5 is highly allergenic; Red 40 is linked to behavioral concerns. Both provide zero nutritional value. Sometimes combined in formulations to create orange shades. Both should be avoided entirely."
           }
         ]
       },
@@ -19081,6 +19113,14 @@
           {
             "ingredient": "natural-color",
             "difference": "Natural colors are derived from plant, animal, or mineral sources (turmeric, beet juice, caramel). While also primarily cosmetic, natural colors at least come from real food sources rather than petroleum. Natural colors are vastly preferable to synthetic dyes, though neither is necessary—dogs don't need colorful food."
+          },
+          {
+            "ingredient": "blue-2",
+            "difference": "Yellow 6 (Sunset Yellow) is an orange-yellow azo dye, while Blue 2 (Indigotine) is a blue indigo dye. Both are petroleum-derived synthetic dyes providing zero nutrition. Yellow 6 has hypersensitivity concerns; Blue 2 has brain tumor links in animal studies. Both are purely cosmetic and should be avoided."
+          },
+          {
+            "ingredient": "red-40",
+            "difference": "Both are petroleum-derived azo dyes with similar concerns. Yellow 6 provides orange-yellow; Red 40 provides red. Both have hypersensitivity and behavioral concerns. Both are purely cosmetic with zero benefits. Sometimes combined for color blending. Both should be avoided."
           }
         ]
       },
