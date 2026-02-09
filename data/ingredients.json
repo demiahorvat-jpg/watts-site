@@ -2659,7 +2659,7 @@
         "overview": "Brewers rice consists of small fragments and broken pieces of rice kernels separated from whole grains during milling. It's essentially rice byproduct—the leftover broken pieces after whole rice is polished. Brewers rice contains approximately 12% moisture, 75-80% carbohydrates (minimal fiber 0.5-1%), 7-8% protein (incomplete), and less than 1% fat. Nutritionally similar to white rice but lower quality—both are refined carbohydrates. Brewers rice has high glycemic index (75-85), slightly lower than white rice but still causing blood sugar spikes. It's the most economical rice ingredient—significantly cheaper than whole rice, brown rice, or white rice. Highly digestible but nutritionally sparse. Common in budget dog foods as inexpensive filler. Signals lower quality than whole grains.",
         "compareToSimilar": [
           {
-            "ingredient": "white-rice",
+            "ingredient": "rice",
             "difference": "Brewers rice and white rice are both refined with minimal nutrition. Whole white rice is intact kernels; brewers rice is broken fragments. Both have similar nutritional value (high glycemic, low fiber, minimal vitamins). White rice is slightly higher quality and more expensive. Brewers rice signals budget formulation."
           },
           {
@@ -2851,7 +2851,7 @@
         "overview": "Brown rice is whole grain rice (Oryza sativa) that retains the bran layer, germ, and endosperm after harvesting, unlike white rice which has the bran and germ removed through milling. The bran layer gives brown rice its characteristic tan color and provides fiber, B vitamins, minerals, and beneficial plant compounds that white rice lacks. Brown rice is approximately 75-80% carbohydrate (primarily starch), 7-8% protein, 2-3% fat, and 3-4% fiber. It's a moderately glycemic carbohydrate source—lower than white rice or corn but higher than sweet potato or legumes. Brown rice is widely used in mid-tier to premium dog foods as a digestible, relatively hypoallergenic carbohydrate source. It's generally well-tolerated by most dogs and rarely causes food sensitivities, making it suitable for dogs with allergies to wheat or corn. The rice must be cooked before inclusion in dog food to gelatinize the starch and make it digestible—raw rice is indigestible for dogs. In kibble production, rice is typically pre-cooked or cooked during the extrusion process. Brown rice provides sustained energy release compared to simple carbohydrates like corn, though it's still primarily a carbohydrate filler rather than a nutrient powerhouse. Quality varies based on sourcing (domestic vs imported), arsenic levels (rice naturally accumulates arsenic from soil), and processing freshness.",
         "compareToSimilar": [
           {
-            "ingredient": "white-rice",
+            "ingredient": "rice",
             "difference": "White rice is brown rice with the bran and germ removed, leaving only the starchy endosperm. This makes white rice approximately 90% carbohydrate with minimal fiber (0.5-1%), vitamins, or minerals—essentially pure starch. Brown rice retains the bran and germ, providing 3-4% fiber, B vitamins (thiamine, niacin, B6), minerals (magnesium, phosphorus, manganese), and beneficial phytochemicals. Brown rice has a lower glycemic index than white rice, causing slower blood sugar increases. Brown rice is nutritionally superior to white rice in every meaningful way. The only advantage of white rice is slightly higher digestibility for dogs with extremely sensitive stomachs or inflammatory bowel disease. For healthy dogs, brown rice is the better choice."
           },
           {
@@ -2859,7 +2859,7 @@
             "difference": "Oats and brown rice are both whole grain carbohydrates, but oats offer superior nutritional benefits. Oats provide soluble fiber (beta-glucan) that supports gut health and regulates blood sugar, while brown rice provides primarily insoluble fiber. Oats have higher protein content (13-17% vs 7-8% for brown rice) and better amino acid profiles. Oats contain beneficial compounds like avenanthramides (anti-inflammatory antioxidants) not found in rice. Brown rice is hypoallergenic and less likely to cause sensitivities than oats (some dogs react to grains). Both are good carbohydrate sources—oats are nutritionally superior, brown rice is safer for allergic dogs."
           },
           {
-            "ingredient": "sweet-potato",
+            "ingredient": "dried-sweet-potatoes",
             "difference": "Sweet potato is generally considered superior to brown rice as a carbohydrate source in dog food. Sweet potato provides complex carbohydrates with lower glycemic impact than brown rice, significantly more fiber (both soluble and insoluble), and vastly superior micronutrient content including beta-carotene (vitamin A precursor), vitamin C, manganese, and potassium. Sweet potato is more nutrient-dense per calorie than brown rice. Brown rice is less expensive than sweet potato, which explains its prevalence in mid-tier foods. Brown rice is acceptable but sweet potato is optimal. Premium formulas prefer sweet potato; mid-tier formulas use brown rice for cost balance between quality and affordability."
           },
           {
@@ -4715,7 +4715,7 @@
             "difference": "Fresh chicken contains approximately 70% water and 18-20% protein, while chicken meal contains only 10% moisture and 60-65% protein. When you see chicken listed first and chicken meal listed fifth, the meal may actually contribute more total protein to the formula due to its concentration. One pound of chicken meal roughly equals 3-4 pounds of fresh chicken in terms of protein content."
           },
           {
-            "ingredient": "chicken-by-product-meal",
+            "ingredient": "chicken-meal",
             "difference": "Chicken meal is made from chicken flesh and skin (with or without bone), while chicken by-product meal includes organ meats (liver, heart, kidneys) and other parts not included in chicken meal. By-product meal is not necessarily lower quality—it often contains highly nutritious organs. However, 'chicken meal' provides more transparency about what's included."
           },
           {
@@ -5095,7 +5095,7 @@
             "difference": "Chondroitin is a component of cartilage that may support joint health (questionable bioavailability), while collagen provides building blocks (amino acids) for connective tissue."
           },
           {
-            "ingredient": "chondroitin-sulfate",
+            "ingredient": "chondroitin",
             "difference": "Chondroitin and chondroitin sulfate are the same compound. \"Sulfate\" just specifies the molecular form. Both are used for joint health with questionable effectiveness."
           }
         ]
@@ -7191,7 +7191,7 @@
             "difference": "Duck meal and turkey meal are both named poultry meals with comparable protein concentrations. Duck is less commonly used than turkey, making it more novel for elimination diets. Duck tends to be fattier than turkey naturally. Both are high-quality protein sources—the choice often comes down to novelty for allergies or price (duck is typically more expensive)."
           },
           {
-            "ingredient": "duck-by-product-meal",
+            "ingredient": "duck-meal",
             "difference": "Duck meal is primarily rendered flesh and skin with or without bone, while duck by-product meal includes rendered organs, blood, and other parts beyond muscle meat. Duck meal is generally considered higher quality and more consistent in composition. However, some duck by-products like heart and liver are actually very nutritious organs. Both are safe, rendered protein sources, but duck meal is preferable for transparency."
           }
         ]
@@ -8014,7 +8014,7 @@
             "difference": "This is the critical comparison. Fish oil provides EPA and DHA omega-3s directly in bioavailable form, while flaxseed provides ALA that dogs must convert (inefficiently) to EPA and DHA. Research consistently shows fish oil produces measurable health benefits—reduced inflammation, improved skin/coat, joint support—while flaxseed shows minimal effects in dogs due to poor ALA conversion. For anti-inflammatory omega-3 benefits, fish oil is dramatically superior to flaxseed. Flaxseed costs less and is shelf-stable, making it attractive for manufacturers, but it's nutritionally inferior for omega-3 purposes. If a food lists flaxseed as its only omega-3 source, expect minimal actual omega-3 benefits. Foods should include fish oil for genuine omega-3 support."
           },
           {
-            "ingredient": "chia-seeds",
+            "ingredient": "chia-seed",
             "difference": "Chia seeds and flaxseed are both plant-based omega-3 sources providing ALA (not EPA/DHA). Chia has slightly less ALA than flaxseed (30-35% of fat vs 50-60%) but higher fiber content. Both suffer the same fundamental limitation: dogs convert ALA poorly, making neither effective omega-3 sources compared to fish oil. Chia is trendy and marketed as superfood, but for dogs, it offers no meaningful advantages over flaxseed. Both provide fiber and plant compounds; neither provides substantial omega-3 benefits. If choosing between chia and flaxseed, flaxseed has slightly more ALA, but both are poor omega-3 sources for dogs. Fish oil is the real answer."
           },
           {
@@ -8736,7 +8736,7 @@
             "difference": "Corn gluten meal is the protein fraction extracted during corn processing—it's approximately 60-70% protein, making it useful for boosting crude protein percentages cheaply without adding meat. Ground corn is the whole kernel with only 8-10% protein and primarily carbohydrate. Corn gluten meal is used as a protein filler; ground corn is a carbohydrate filler. Both are budget ingredients, but corn gluten meal at least contributes protein (though of poor quality for dogs). Neither is ideal."
           },
           {
-            "ingredient": "sweet-potato",
+            "ingredient": "dried-sweet-potatoes",
             "difference": "Sweet potato is a vastly superior carbohydrate source compared to ground corn. Sweet potato provides complex carbohydrates with lower glycemic impact, significantly more fiber (soluble and insoluble), and meaningful micronutrients including beta-carotene, vitamin C, manganese, and potassium. Ground corn provides mostly empty starch calories with minimal vitamins or minerals. Sweet potato is more digestible and less likely to cause allergies or sensitivities. Ground corn is cheaper—that's its only advantage. Premium dog foods use sweet potato; budget foods use ground corn."
           },
           {
@@ -9435,7 +9435,7 @@
             "difference": "Both support cellular energy production. L-carnitine transports fuel (fatty acids) into mitochondria, while CoQ10 is a component of the electron transport chain that converts that fuel into ATP (cellular energy). They work sequentially in energy metabolism - L-carnitine delivers the fuel, CoQ10 helps burn it. Both support cardiac health since heart muscle has high energy demands. They're synergistic and often combined in heart health supplements."
           },
           {
-            "ingredient": "lysine",
+            "ingredient": "l-lysine",
             "difference": "Lysine is an essential amino acid that serves as a precursor for L-carnitine synthesis. Dogs with adequate dietary lysine (from quality protein sources) and sufficient vitamin C, B6, and iron can synthesize L-carnitine endogenously. Supplemental lysine supports L-carnitine production, while supplemental L-carnitine provides the end product directly. Quality meat-based diets typically provide both adequate lysine and some preformed L-carnitine."
           }
         ]
@@ -9972,7 +9972,7 @@
             "difference": "Both are quality concentrated protein meals, but from different animal sources. Chicken meal is from poultry, lamb meal from red meat (sheep). Lamb meal is typically higher in fat and provides a different amino acid profile, though both offer complete proteins. Lamb is commonly used for dogs with poultry sensitivities. Lamb meal tends to be more expensive than chicken meal due to the higher cost of lamb as a raw material."
           },
           {
-            "ingredient": "lamb-by-product-meal",
+            "ingredient": "lamb-meal",
             "difference": "Lamb meal is primarily rendered flesh and skin with or without bone, while lamb by-product meal includes rendered organs, blood, and other parts beyond muscle meat. Lamb meal is generally considered higher quality and more transparent about composition. However, some lamb by-products like heart, liver, and kidneys are actually very nutritious organs. Both are safe, rendered protein sources."
           }
         ]
@@ -12426,7 +12426,7 @@
             "difference": "Chickpeas (garbanzo beans) and peas are both legumes used in grain-free formulas. Chickpeas have slightly higher protein (20-22%) and carbohydrate content compared to peas, with comparable fiber. Nutritionally, they're similar—both provide plant protein, B vitamins, and minerals. Chickpeas are implicated in DCM concerns like peas when grain-free formulas overuse legumes. Neither is superior; both are quality ingredients in moderation. The choice is primarily manufacturing and palatability preference—dogs generally accept both well."
           },
           {
-            "ingredient": "sweet-potato",
+            "ingredient": "dried-sweet-potatoes",
             "difference": "Sweet potato and peas serve different primary functions. Sweet potato is primarily a carbohydrate source (80-85% carb, 2-3% protein) with exceptional micronutrient content (beta-carotene, vitamin C, potassium). Peas provide both carbohydrate and plant protein (60-65% carb, 20-25% protein) with good but less exceptional micronutrients. Sweet potato is not implicated in DCM concerns; peas are when overused in grain-free diets. For carbohydrate nutrition alone, sweet potato is superior. Peas serve dual roles, making them appealing to grain-free manufacturers needing protein boosting. In balanced formulas, both are quality ingredients—sweet potato for carbs, peas for carbs plus supplemental plant protein."
           }
         ]
@@ -14281,7 +14281,7 @@
             "difference": "Generic 'rice' and 'brown rice' are often the same ingredient—whole grain rice with bran intact. Brown rice is more specific terminology. Both provide 55-65 glycemic index, 3-4% fiber, and good B vitamins. If label says just 'rice,' check manufacturer to determine if whole or refined. Brown rice is clearer labeling indicating quality whole grain."
           },
           {
-            "ingredient": "white-rice",
+            "ingredient": "rice",
             "difference": "Whole rice (brown rice) is nutritionally superior to white rice. Whole rice has lower glycemic index (55-65 vs 70-85), more fiber (3-4% vs 0.5-1%), and vastly more micronutrients (B vitamins, magnesium, manganese). White rice is more digestible and used for sensitive stomachs, but whole rice provides better nutrition for healthy dogs. Whole rice is preferable unless dog has digestive issues requiring bland diet."
           }
         ]
@@ -16056,7 +16056,7 @@
         "overview": "Split peas are mature, dried field peas (Pisum sativum) that have been split along the natural seam, providing protein, fiber, and complex carbohydrates in dog food. Yellow and green split peas are most common. Dried split peas contain approximately 8-10% moisture, 60-62% carbohydrates (including 16-17% fiber), 24-25% protein (incomplete for dogs), and 1-2% fat. Split peas are essentially dried, mature versions of fresh green peas—higher in protein and fiber concentration. They provide B vitamins (folate, thiamine), minerals (iron, zinc, manganese, potassium), and have low-to-moderate glycemic index (32-38), lower than green peas. Split peas became common during grain-free trend. However, like other legumes, split peas have been investigated for potential DCM connection in legume-heavy diets and contain anti-nutritional factors.",
         "compareToSimilar": [
           {
-            "ingredient": "green-peas",
+            "ingredient": "peas",
             "difference": "Split peas are mature, dried versions of field peas; green peas are fresh, immature peas. Split peas have more concentrated protein (24-25% vs 21-23% dried green peas) and fiber (16-17% vs ~14%). Split peas have lower glycemic index (32-38 vs 40-50). Both are legumes with similar concerns. Split peas are slightly more nutritious; green peas are more common in dog food."
           },
           {
@@ -16561,7 +16561,7 @@
             "difference": "Both taurine and L-carnitine support heart health but through different mechanisms. Taurine is crucial for heart muscle contractility, calcium regulation, and electrical signaling. L-carnitine transports fatty acids into mitochondria for energy production, supporting metabolism and cardiac function through fuel delivery. Taurine deficiency causes dilated cardiomyopathy (enlarged, weak heart), while L-carnitine supports energy metabolism. Both are synthesized by dogs but may require supplementation in certain circumstances. They're often combined in cardiac support supplements."
           },
           {
-            "ingredient": "methionine",
+            "ingredient": "dl-methionine",
             "difference": "Methionine is an essential amino acid that serves as a precursor for taurine synthesis. Dogs convert methionine (and cysteine) into taurine through multiple enzymatic steps. Adequate dietary methionine supports endogenous taurine production, but some breeds or dietary factors may impair this conversion, requiring direct taurine supplementation. Methionine comes from dietary protein (meat), while taurine can come from diet or be synthesized from methionine."
           },
           {
@@ -16758,7 +16758,7 @@
         "overview": "Tomatoes (Solanum lycopersicum) are fruits (botanically) providing vitamins, minerals, fiber, and antioxidants in dog food. Fresh tomatoes contain approximately 95% moisture, 4g carbohydrate, 1g protein, minimal fat, and 1.2g fiber per 100g. Tomatoes are exceptionally rich in lycopene—powerful antioxidant giving tomatoes red color and providing anti-cancer, heart health, and anti-inflammatory benefits. They provide vitamins C, K, potassium, folate, and beta-carotene. Tomatoes are nightshade family vegetables alongside potatoes and eggplants. IMPORTANT: Ripe red tomatoes are safe; green tomatoes and tomato plants (leaves, stems) contain solanine and tomatine—toxic compounds. Commercial dog food uses ripe tomatoes only. In dog food amounts (small quantities), tomatoes are safe and beneficial.",
         "compareToSimilar": [
           {
-            "ingredient": "tomato-pomace",
+            "ingredient": "dried-tomato-pomace",
             "difference": "Whole tomatoes provide full nutrition (lycopene, vitamins, moisture); tomato pomace is dried byproduct (skins, pulp, seeds after juice extraction). Pomace has concentrated fiber but less lycopene and vitamins. Whole tomatoes are premium; pomace is economical fiber source. Both safe, but whole tomatoes more nutritious."
           }
         ]
@@ -17163,11 +17163,11 @@
             "difference": "Turkey meal and chicken meal are both high-quality named poultry meals with similar protein concentrations (65-70%). The main difference is the source bird. Turkey is sometimes used as a novel protein for dogs with chicken sensitivities, though true poultry allergies are relatively uncommon. Both are excellent protein sources—the choice often comes down to the dog's individual tolerance or preference."
           },
           {
-            "ingredient": "poultry-meal",
+            "ingredient": "poultry-by-product-meal",
             "difference": "Generic 'poultry meal' can include any combination of poultry species (chicken, turkey, duck, etc.) without specification. Turkey meal is species-specific, using only turkey. Turkey meal provides better transparency and traceability. For dogs with sensitivities to specific poultry types, named meals like turkey meal are essential for identifying the protein source."
           },
           {
-            "ingredient": "turkey-by-product-meal",
+            "ingredient": "turkey-meal",
             "difference": "Turkey by-product meal consists of rendered parts of turkey carcasses such as necks, feet, undeveloped eggs, and intestines (according to AAFCO), while turkey meal is primarily flesh and skin with or without bone. Both are rendered and protein-dense. Turkey meal is generally considered higher quality because it's primarily muscle meat and skin rather than organ meats and other parts. However, some by-products like hearts and gizzards are nutritious organs."
           }
         ]
