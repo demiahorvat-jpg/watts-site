@@ -175,12 +175,15 @@ function generateNutritionalProfile(profile) {
     </ul>`;
   }
 
-  if (profile.aminoAcids) {
+  if (profile.aminoAcids && Array.isArray(profile.aminoAcids)) {
     html += `
     <h3>Amino Acids</h3>
     <ul>
 ${profile.aminoAcids.map(aa => `      <li>${aa}</li>`).join('\n')}
     </ul>`;
+  } else if (profile.aminoAcids && typeof profile.aminoAcids === 'string') {
+    html += `
+    <p><strong>Amino Acids:</strong> ${profile.aminoAcids}</p>`;
   }
 
   if (profile.bioavailability) {

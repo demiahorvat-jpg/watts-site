@@ -27,6 +27,20 @@
             "difference": "Both are plant-based fiber thickeners. Acacia gum (from acacia tree sap) is a prebiotic fiber that's gentle on digestion, while guar gum (from guar beans) is a stronger thickener."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Soluble prebiotic fiber from acacia tree sap that feeds beneficial gut bacteria and promotes digestive health",
+        "fiberType": "100% soluble fiber that ferments in the colon to produce beneficial short-chain fatty acids",
+        "prebioticBenefits": "Selectively feeds beneficial Bifidobacteria and Lactobacilli while increasing gut bacteria diversity",
+        "digestiveTolerance": "Very well tolerated - gentle on sensitive stomachs with minimal gas or bloating compared to FOS or inulin",
+        "typicalInclusion": "0.5-3% of diet provides significant prebiotic benefit",
+        "research": "Studies show acacia gum increases beneficial gut bacteria by 2-10x and improves stool quality",
+        "safety": "GRAS status - no toxicity even at high doses",
+        "qualityNote": "Natural, well-researched prebiotic with strong evidence. Superior to cheap cellulose fillers."
+      },
+      "seoMetadata": {
+        "focusKeyword": "acacia gum dog food",
+        "metaDescription": "Is acacia gum safe for dogs? Learn prebiotic fiber benefits, gut bacteria support, SCFA production, digestive health & comparison to inulin/FOS."
       }
     },
     {
@@ -60,6 +74,20 @@
             "difference": "Agar agar is a gelling agent from red algae, while alginic acid is a stabilizer from brown algae (kelp). Both are natural seaweed-based thickeners."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Natural gelling agent from red algae used to create firm texture in wet foods",
+        "source": "Extracted from red seaweed - vegetarian alternative to animal gelatin",
+        "nutritionalValue": "Minimal - primarily soluble fiber with no protein, fat, or significant micronutrients",
+        "fiberContent": "80-90% soluble, non-digestible fiber",
+        "typicalInclusion": "0.1-1% of wet food creates desired gel texture",
+        "functionalRole": "Creates firm texture, holds moisture, prevents separation in gravies and pates",
+        "safety": "Very safe - used in human food for centuries with no known toxicity",
+        "qualityNote": "Functional ingredient for texture, not nutrition. Neutral - neither good nor bad. Natural and safe."
+      },
+      "seoMetadata": {
+        "focusKeyword": "agar agar dog food",
+        "metaDescription": "Is agar agar safe for dogs? Learn natural gelling agent from seaweed, wet food texture, vs gelatin/carrageenan, minimal nutrition & safety profile."
       }
     },
     {
@@ -84,7 +112,20 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "nutritionalProfile": {
+        "function": "Concentrated extract from alfalfa providing phytonutrients, vitamins (especially K), and minerals",
+        "whatIsIt": "Alfalfa juice extracted and spray-dried - more nutrient-dense than whole alfalfa",
+        "vitaminK": "VERY HIGH - alfalfa is one of richest plant sources of vitamin K1 for blood clotting and bone health",
+        "micronutrients": "Contains vitamins A, E, B-complex, plus calcium, magnesium, potassium, iron, zinc",
+        "phytonutrients": "Chlorophyll, saponins, flavonoids, carotenoids provide antioxidant and anti-inflammatory benefits",
+        "typicalInclusion": "0.1-1% of diet for nutrient enhancement",
+        "qualityNote": "Provides genuine micronutrient value beyond basic meat/grain nutrition. Natural source of hard-to-get vitamin K."
+      },
+      "seoMetadata": {
+        "focusKeyword": "alfalfa dog food",
+        "metaDescription": "Is alfalfa safe for dogs? Learn vitamin K benefits, phytonutrient content, vs whole alfalfa, chlorophyll/antioxidants, micronutrients & typical usage."
+      }
     },
     {
       "name": "Algal Oil",
@@ -118,6 +159,20 @@
             "difference": "Algal oil is omega-3 from algae (vegan, sustainable source of DHA/EPA), while fish oil is from fish. Algal oil avoids heavy metal concerns but may be less bioavailable."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Plant-based omega-3 oil from microalgae providing EPA and DHA without fish",
+        "omega3Content": "High in DHA (200-400mg per gram), critical for brain, eye, and heart health",
+        "uniqueAdvantage": "Only plant-based source of EPA/DHA - all other plant omega-3s (flax, chia) are ALA only",
+        "bioavailability": "EPA/DHA from algae are as bioavailable as fish oil",
+        "sustainability": "No fish harvesting, zero mercury/PCBs, renewable algae grown in controlled tanks",
+        "benefits": "Brain and cognitive function, eye health, heart health, joint health, skin and coat",
+        "comparedToFishOil": "No fishy smell, no mercury, sustainable, but more expensive. Equal bioavailability.",
+        "qualityNote": "Premium omega-3 source - more sustainable and cleaner than fish oil. Ideal for fish-sensitive dogs or vegan formulas."
+      },
+      "seoMetadata": {
+        "focusKeyword": "algal oil dog food",
+        "metaDescription": "Is algal oil good for dogs? Learn plant-based EPA/DHA omega-3, vs fish oil, mercury-free, brain/eye benefits, sustainability & bioavailability."
       }
     },
     {
@@ -147,6 +202,20 @@
             "difference": "Both are seaweed-derived thickeners. Alginic acid comes from brown algae (kelp) and is used as a stabilizer, while agar agar is from red algae and used as a gelling agent."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Natural polysaccharide from brown seaweed used as thickener and stabilizer",
+        "source": "Extracted from brown algae (kelp) cell walls",
+        "functionalRole": "Thickens and stabilizes wet foods, prevents separation, creates smooth texture",
+        "nutritionalValue": "Minimal - primarily soluble fiber with no significant nutrients",
+        "fiberContent": "80-90% soluble fiber, may provide mild prebiotic benefits",
+        "typicalInclusion": "0.1-0.5% of wet food for functional benefits",
+        "safety": "Generally safe - used in human and pet foods for decades with no known toxicity",
+        "qualityNote": "Functional ingredient for texture, not nutrition. Natural seaweed source preferable to synthetic thickeners. Neutral ingredient."
+      },
+      "seoMetadata": {
+        "focusKeyword": "alginic acid dog food",
+        "metaDescription": "Is alginic acid safe for dogs? Learn natural seaweed thickener, gelling agent, vs agar/carrageenan, wet food texture, minimal nutrition & safety."
       }
     },
     {
@@ -181,6 +250,20 @@
             "difference": "Amylase breaks down starches into sugars, while cellulase breaks down plant fiber (cellulose). Dogs produce amylase naturally but not cellulase."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Digestive enzyme that breaks down starches into simple sugars for absorption",
+        "naturalProduction": "Dogs produce amylase in pancreas and saliva, though minimal compared to humans",
+        "whySupplemented": "Supports digestion in dogs with pancreatic insufficiency, age-related enzyme decline, or digestive sensitivities",
+        "whatItDoes": "Breaks down starch from rice, potato, oats into maltose and glucose, improving carbohydrate digestibility",
+        "whoNeedsIt": "Dogs with EPI need it. Aging or sensitive dogs may benefit. Healthy dogs produce sufficient enzymes naturally.",
+        "typicalInclusion": "Measured in activity units (DU), typically 500-5,000 DU per serving",
+        "safety": "Very safe - excess enzymes are excreted with no toxicity",
+        "qualityNote": "Valuable for dogs with diagnosed pancreatic insufficiency. For healthy dogs, unnecessary. Signals therapeutic formula."
+      },
+      "seoMetadata": {
+        "focusKeyword": "amylase dog food",
+        "metaDescription": "Is amylase good for dogs? Learn starch digestion enzyme, pancreatic insufficiency support, vs natural production, aging dogs & digestive benefits."
       }
     },
     {
@@ -218,6 +301,21 @@
             "difference": "Both are named fish meals from small, oily fish. Anchovies and herring have similar omega-3 profiles and low mercury risk. Both are superior to generic \"fish meal.\""
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Rendered and dried anchovy protein concentrate with high protein, omega-3s, and minerals",
+        "renderingProcess": "Whole anchovies (bones, organs, heads) cooked, pressed, dried, and ground",
+        "proteinContent": "60-70% protein (highly concentrated)",
+        "omega3s": "Even higher per gram than fresh anchovies due to moisture removal",
+        "calciumPhosphorus": "4-8% calcium, 3-5% phosphorus from ground bones - excellent Ca:P ratio",
+        "micronutrients": "Vitamin D, B12, selenium, iodine, iron, zinc concentrated from whole fish",
+        "lowMercury": "Anchovies are small, short-lived - one of safest fish for long-term feeding",
+        "transparency": "Named fish meal (anchovy meal) FAR superior to generic fish meal - consistent quality",
+        "qualityNote": "Premium named fish meal. High protein, rich omega-3s, low mercury, transparent sourcing. Excellent ingredient."
+      },
+      "seoMetadata": {
+        "focusKeyword": "anchovy meal dog food",
+        "metaDescription": "Is anchovy meal good for dogs? Learn concentrated protein, omega-3 EPA/DHA, vs fish meal/fresh fish, calcium from bones, low mercury & quality."
       }
     },
     {
@@ -19426,7 +19524,22 @@
       "nutritionValue": "high",
       "qualityNote": "Anchovies are an excellent protein source for dogs. As small, short-lived fish low on the food chain, they accumulate far less mercury and toxins than large predatory fish like tuna. They're naturally high in omega-3s, especially EPA and DHA, which support heart, joint, brain, and skin health. Anchovy meal includes ground whole fish (bones, organs, meat), providing calcium and complete amino acid profile. Wild-caught and sustainably harvested. Premium ingredient.",
       "wattsPosition": "excellent",
-      "wattsTake": "Anchovies are one of the best fish-based proteins available. Small, oily fish low on the food chain with minimal mercury risk, naturally packed with omega-3s, and sustainably harvested—it checks all the boxes. We love seeing named fish sources like anchovies instead of generic \"fish meal.\" The omega-3 profile is built-in, reducing the need for separate fish oil. Whether listed as fresh anchovies or anchovy meal, this is a premium, species-specific protein that adds significant nutritional value."
+      "wattsTake": "Anchovies are one of the best fish-based proteins available. Small, oily fish low on the food chain with minimal mercury risk, naturally packed with omega-3s, and sustainably harvested—it checks all the boxes. We love seeing named fish sources like anchovies instead of generic \"fish meal.\" The omega-3 profile is built-in, reducing the need for separate fish oil. Whether listed as fresh anchovies or anchovy meal, this is a premium, species-specific protein that adds significant nutritional value.",
+      "nutritionalProfile": {
+        "function": "Small oily fish providing high-quality protein and exceptional omega-3 content",
+        "proteinContent": "~20% in fresh, 60-70% in meal",
+        "omega3Profile": "Very high EPA (300-600mg) and DHA (500-1000mg) per 100g - rivals salmon and herring",
+        "lowMercury": "Small, short-lived fish low on food chain = minimal mercury and heavy metal accumulation",
+        "micronutrients": "Excellent vitamin D, B12, niacin, selenium. Calcium if bones included.",
+        "aminoAcids": "Complete protein with all essential amino acids, particularly high in lysine, leucine, arginine",
+        "digestibility": "85-90% highly digestible - top bioavailability",
+        "sustainability": "Wild-caught, abundant, sustainably managed in most fisheries",
+        "qualityNote": "Premium fish protein - superior to generic fish meal. Named source, omega-3-rich, low mercury, sustainable."
+      },
+      "seoMetadata": {
+        "focusKeyword": "anchovies dog food",
+        "metaDescription": "Are anchovies good for dogs? Learn omega-3 benefits, low mercury risk, vs salmon/herring, sustainability, protein quality & calcium from bones."
+      }
     },
     {
       "name": "Spirulina Color",
