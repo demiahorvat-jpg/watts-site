@@ -1,121 +1,113 @@
-#!/usr/bin/env node
-
-/**
- * IndexNow Submission Script for Watts (Static Site)
- * Usage: node submit-indexnow.js <url1> <url2> ...
- * Or: node submit-indexnow.js --all (submits all URLs from sitemap)
- */
-
-const https = require('https');
 const fs = require('fs');
+const https = require('https');
 const path = require('path');
 
-const API_KEY = 'a99c025d21926980b88e55240282cb49e80bb1ee86676fdc36f5589d4c969c41';
-const SITE_URL = 'https://www.wattspet.com';
+console.log('Submitting URLs to IndexNow...\n');
 
-/**
- * Submit URLs to IndexNow
- */
-function submitToIndexNow(urls) {
-  const data = JSON.stringify({
-    host: 'www.wattspet.com',
-    key: API_KEY,
-    keyLocation: `${SITE_URL}/${API_KEY}.txt`,
-    urlList: urls,
+// Read sitemap and extract URLs
+const sitemapPath = path.join(__dirname, 'sitemap.xml');
+const sitemap = fs.readFileSync(sitemapPath, 'utf8');
+
+// Extract all <loc> URLs from sitemap
+const urlMatches = sitemap.match(/<loc>(.*?)<\/loc>/g);
+const urls = urlMatches.map(match => match.replace(/<\/?loc>/g, ''));
+
+console.log(`Found ${urls.length} URLs in sitemap`);
+
+// IndexNow API configuration
+const host = 'wattspet.com';
+const key = 'c3d5e8f1a4b7c9d2e5f8a1b4c7d9e2f5';
+const keyLocation = `https://${host}/${key}.txt`;
+
+// Function to check if key file is accessible
+function checkKeyFile() {
+  return new Promise((resolve) => {
+    https.get(keyLocation, (res) => {
+      if (res.statusCode === 200) {
+        console.log('✓ Key file is accessible\n');
+        resolve(true);
+      } else {
+        console.log(`⚠️  Key file not yet accessible (Status: ${res.statusCode})`);
+        console.log('   Waiting for GitHub Pages deployment...\n');
+        resolve(false);
+      }
+    }).on('error', () => {
+      console.log('⚠️  Key file not yet accessible');
+      console.log('   Waiting for GitHub Pages deployment...\n');
+      resolve(false);
+    });
   });
+}
 
-  const options = {
-    hostname: 'api.indexnow.org',
-    path: '/indexnow',
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Content-Length': data.length,
-    },
-  };
-
+// Function to submit URLs
+function submitToIndexNow(urlList) {
   return new Promise((resolve, reject) => {
+    const payload = JSON.stringify({
+      host: host,
+      key: key,
+      keyLocation: keyLocation,
+      urlList: urlList
+    });
+
+    const options = {
+      hostname: 'api.indexnow.org',
+      port: 443,
+      path: '/indexnow',
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Content-Length': payload.length
+      }
+    };
+
     const req = https.request(options, (res) => {
-      let body = '';
-      res.on('data', (chunk) => body += chunk);
+      let data = '';
+
+      res.on('data', (chunk) => {
+        data += chunk;
+      });
+
       res.on('end', () => {
         if (res.statusCode === 200 || res.statusCode === 202) {
-          resolve({ success: true, status: res.statusCode });
+          console.log(`✅ Successfully submitted ${urlList.length} URLs to IndexNow`);
+          console.log(`   Status: ${res.statusCode}`);
+          resolve();
         } else {
-          reject(new Error(`HTTP ${res.statusCode}: ${body}`));
+          console.log(`⚠️  IndexNow returned status ${res.statusCode}`);
+          console.log(`   Response: ${data}`);
+          reject(new Error(`Status ${res.statusCode}`));
         }
       });
     });
 
-    req.on('error', reject);
-    req.write(data);
+    req.on('error', (error) => {
+      console.error(`✗ Error submitting to IndexNow: ${error.message}`);
+      reject(error);
+    });
+
+    req.write(payload);
     req.end();
   });
 }
 
-/**
- * Extract URLs from sitemap.xml
- */
-function extractUrlsFromSitemap() {
-  try {
-    const sitemap = fs.readFileSync(path.join(__dirname, 'sitemap.xml'), 'utf8');
-    const urlMatches = sitemap.match(/<loc>(.*?)<\/loc>/g);
-    if (!urlMatches) return [];
-
-    return urlMatches.map(match =>
-      match.replace('<loc>', '').replace('</loc>', '').trim()
-    );
-  } catch (error) {
-    console.error('Error reading sitemap:', error.message);
-    return [];
-  }
-}
-
-/**
- * Main function
- */
+// Main execution
 async function main() {
-  const args = process.argv.slice(2);
+  // Check if key file is accessible
+  const keyFileAccessible = await checkKeyFile();
 
-  if (args.length === 0) {
-    console.log('Usage:');
-    console.log('  node submit-indexnow.js <url1> <url2> ...');
-    console.log('  node submit-indexnow.js --all');
-    console.log('');
-    console.log('Examples:');
-    console.log('  node submit-indexnow.js https://www.wattspet.com/');
-    console.log('  node submit-indexnow.js https://www.wattspet.com/blog/beef-liver-for-dogs.html');
-    console.log('  node submit-indexnow.js --all');
-    process.exit(1);
+  if (!keyFileAccessible) {
+    console.log('Please wait a few minutes for GitHub Pages to deploy, then run this script again.\n');
+    return;
   }
 
-  let urls;
-
-  if (args[0] === '--all') {
-    console.log('📖 Reading URLs from sitemap.xml...');
-    urls = extractUrlsFromSitemap();
-    if (urls.length === 0) {
-      console.error('❌ No URLs found in sitemap.xml');
-      process.exit(1);
-    }
-    console.log(`📝 Found ${urls.length} URLs`);
-  } else {
-    urls = args;
-  }
-
-  console.log('\n🚀 Submitting to IndexNow...');
-  console.log('URLs:', urls.join('\n      '));
-
+  // Submit to IndexNow
   try {
-    const result = await submitToIndexNow(urls);
-    console.log('\n✅ Successfully submitted to IndexNow!');
-    console.log(`📊 Status: ${result.status}`);
-    console.log('🔍 Bing and other search engines will be notified.');
+    await submitToIndexNow(urls);
+    console.log('\n✅ IndexNow submission complete!');
+    console.log('   Search engines have been notified of your updates.');
   } catch (error) {
-    console.error('\n❌ Error submitting to IndexNow:');
-    console.error(error.message);
-    process.exit(1);
+    console.log('\n⚠️  IndexNow submission failed. You can try again later or search engines will eventually crawl your sitemap.');
   }
 }
 
-main();
+main().catch(console.error);
