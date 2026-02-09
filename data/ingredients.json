@@ -5442,7 +5442,8 @@
       "aliases": [
         "CoQ10",
         "ubiquinone",
-        "ubiquinol"
+        "ubiquinol",
+        "coq10"
       ],
       "category": "active",
       "whatItIs": "Naturally occurring antioxidant compound essential for cellular energy production, particularly important for heart, brain, and muscle function.",
@@ -11228,7 +11229,8 @@
       "aliases": [
         "vitamin E",
         "natural preservatives",
-        "tocopherols"
+        "tocopherols",
+        "vitamin e"
       ],
       "category": "preservative",
       "whatItIs": "Natural form of vitamin E used as antioxidant preservative to prevent fat rancidity.",
@@ -17478,7 +17480,8 @@
       "name": "Vitamin A Supplement",
       "aliases": [
         "retinyl acetate",
-        "vitamin A"
+        "vitamin A",
+        "vitamin a"
       ],
       "category": "vitamin",
       "whatItIs": "Supplemental vitamin A for vision, immune function, and cell growth.",
@@ -19165,6 +19168,218 @@
       "wattsPosition": "neutral",
       "wattsTake": "Zucchini is harmless but nutritionally unremarkable. It's fine as a minor vegetable inclusion, especially in weight management formulas where low-calorie bulk is desired. However, it's mostly water and doesn't add significant nutritional value. We'd rather see more nutrient-dense vegetables like sweet potato or pumpkin, or better yet, organ meats. Zucchini is the definition of neutral—not harmful, not particularly helpful.",
       "citations": []
+    },
+    {
+      "name": "Digestive Enzymes",
+      "category": "supplement",
+      "whatItIs": "Digestive enzymes are protein-based catalysts (protease, amylase, lipase) that help break down proteins, carbohydrates, and fats in the digestive tract.",
+      "whyUsed": [
+        "Supports digestion in dogs with pancreatic insufficiency",
+        "Helps break down nutrients for better absorption",
+        "May reduce gas and bloating",
+        "Assists aging dogs with declining enzyme production",
+        "Supports dogs with sensitive stomachs"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Digestive enzymes can be beneficial for dogs with specific digestive issues, especially exocrine pancreatic insufficiency (EPI) or age-related enzyme decline. However, most healthy dogs produce adequate enzymes naturally. Plant-based enzymes (papain, bromelain) and animal-based enzymes (pancreatin) are both used. Quality depends on enzyme activity levels and proper storage. Generally safe, but should be used based on need rather than as a routine addition for healthy dogs.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Digestive enzymes are targeted supplements for specific health conditions, not routine nutritional enhancers. For dogs with diagnosed pancreatic insufficiency or chronic digestive issues, they can be life-changing. But for healthy dogs eating appropriate food, they're unnecessary—the body produces what it needs. We appreciate seeing them in therapeutic formulas for digestive support, but they don't add value to everyday maintenance diets for healthy dogs."
+    },
+    {
+      "name": "Krill Oil",
+      "category": "supplement",
+      "whatItIs": "Krill oil is extracted from tiny crustaceans (Antarctic krill) and provides omega-3 fatty acids (EPA and DHA) in phospholipid form, plus astaxanthin antioxidant.",
+      "whyUsed": [
+        "Rich source of EPA and DHA omega-3 fatty acids",
+        "Phospholipid-bound omega-3s (better absorption than fish oil triglycerides)",
+        "Contains astaxanthin (powerful antioxidant)",
+        "Supports joint, heart, and brain health",
+        "Less fishy taste than traditional fish oil"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Krill oil is a premium omega-3 source with superior bioavailability compared to standard fish oil. The phospholipid structure allows better absorption, and astaxanthin adds antioxidant protection. Sustainability is a concern—Antarctic krill are a keystone species in the food chain. Quality krill oil should be sustainably harvested and tested for purity. More expensive than fish oil but may be more effective at lower doses.",
+      "wattsPosition": "good",
+      "wattsTake": "Krill oil is an excellent omega-3 source with advantages over standard fish oil—better absorption, built-in antioxidants, and less oxidation risk. The phospholipid form means dogs absorb more with less. However, sustainability is a real concern, and krill are critical to Antarctic ecosystems. We like seeing krill oil in premium formulas as long as it's from responsible sources (MSC-certified). For most dogs, sustainably sourced fish oil works great too, but krill oil is a top-tier option."
+    },
+    {
+      "name": "Prebiotics",
+      "category": "supplement",
+      "whatItIs": "Prebiotics are non-digestible fibers that feed beneficial gut bacteria, promoting a healthy intestinal microbiome. Common types include inulin, chicory root, and fructooligosaccharides (FOS).",
+      "whyUsed": [
+        "Feeds beneficial intestinal bacteria",
+        "Supports healthy gut microbiome",
+        "Produces short-chain fatty acids (butyrate) for colon health",
+        "May improve immune function",
+        "Helps with digestive regularity"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Prebiotics are scientifically validated for gut health support. Unlike probiotics (live bacteria), prebiotics are stable and don't require refrigeration. They selectively feed beneficial bacteria while starving harmful strains. Common sources like chicory root and beet pulp are natural and well-tolerated. However, too much can cause gas and loose stools. Quality formulas include moderate amounts (1-3% of diet) rather than excessive levels.",
+      "wattsPosition": "good",
+      "wattsTake": "We strongly support prebiotics in dog food. They're one of the most evidence-based functional ingredients for digestive and immune health. Unlike trendy additives, prebiotics have robust research showing they improve gut bacteria balance and produce beneficial metabolites. Natural sources like chicory root, beet pulp, and pumpkin are preferred over synthetic FOS. Used appropriately, they add genuine health value beyond basic nutrition."
+    },
+    {
+      "name": "Blue 1",
+      "category": "colorant",
+      "whatItIs": "Blue 1 (Brilliant Blue FCF) is a synthetic petroleum-derived dye used to create blue and green colors in pet food.",
+      "whyUsed": [
+        "Creates visually appealing blue or green color",
+        "Makes food look more appealing to humans",
+        "Provides color consistency across batches",
+        "Masks ingredient variations",
+        "No nutritional or functional benefit for dogs"
+      ],
+      "nutritionValue": "none",
+      "qualityNote": "Blue 1 provides zero nutritional value and serves only cosmetic purposes for human perception. Dogs don't care about food color. While FDA-approved, synthetic dyes have raised health concerns including allergic reactions and potential carcinogenic contaminants. Several studies have linked Blue 1 to hypersensitivity reactions. EU requires warning labels on foods with synthetic dyes. There is no legitimate reason to include synthetic dyes in dog food.",
+      "wattsPosition": "bad",
+      "wattsTake": "Blue 1 is completely unnecessary and potentially harmful. It's added solely to make food look appealing to humans—dogs don't care if their food is blue. Like all synthetic dyes, it comes with health concerns including allergies and contamination risks. Quality brands avoid all synthetic colorants. If a food contains Blue 1 or any FD&C dyes, it signals the manufacturer prioritizes marketing over health. Choose foods with no artificial colors or, if color is used, natural sources like spirulina or turmeric."
+    },
+    {
+      "name": "Beet Juice Color",
+      "category": "colorant",
+      "whatItIs": "Beet juice color is a natural red/pink colorant extracted from beets (Beta vulgaris), used to make pet food visually appealing.",
+      "whyUsed": [
+        "Provides natural red or pink coloring",
+        "Makes food look more like \"real meat\" to humans",
+        "Natural alternative to synthetic dyes",
+        "Provides color consistency",
+        "Contains some betacyanin antioxidants"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Beet juice color is a natural colorant that's far safer than synthetic dyes like Red 40. It provides minimal nutrition—trace antioxidants but no significant vitamins or minerals at the tiny amounts used for coloring. Dogs don't care about food color, so it serves human perception only. However, if color is going to be added, natural sources like beet juice are preferable to petroleum-derived synthetic dyes. Generally regarded as safe with no known toxicity.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Beet juice color is unnecessary but not harmful. Dogs don't care what color their food is, so any colorant is purely cosmetic for human buyers. That said, if a manufacturer chooses to add color, we much prefer natural beet juice over synthetic Red 40 or other petroleum-based dyes. It's safe, plant-based, and doesn't carry the health concerns of artificial dyes. Not a value-add, but not a red flag either—it's a neutral cosmetic choice."
+    },
+    {
+      "name": "Fermented Ingredients",
+      "category": "supplement",
+      "whatItIs": "Fermented ingredients are foods processed through controlled microbial fermentation, which can increase nutrient availability, produce beneficial compounds, and add probiotics.",
+      "whyUsed": [
+        "Increases bioavailability of nutrients",
+        "Produces beneficial enzymes and organic acids",
+        "May provide probiotic bacteria",
+        "Breaks down anti-nutritional factors (phytates)",
+        "Can improve digestibility of plant proteins",
+        "Produces vitamin K2 and B vitamins"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Fermented ingredients represent an emerging area of pet nutrition with promising benefits. Fermentation can increase protein digestibility, reduce anti-nutrients, and produce beneficial compounds like short-chain fatty acids and vitamins. Examples include fermented soy (tempeh), fermented vegetables, and fermented grains. Quality depends on fermentation method and which ingredients are fermented. Generally safe and may offer genuine nutritional advantages, especially for plant-based proteins.",
+      "wattsPosition": "good",
+      "wattsTake": "We're intrigued by fermented ingredients and the science looks promising. Fermentation is an ancient preservation and enhancement method that can genuinely improve nutrition—breaking down hard-to-digest compounds, increasing bioavailability, and adding beneficial bacteria and enzymes. Fermented soy, vegetables, and even grains show improved digestibility. We appreciate innovation in this space. However, vague \"fermented ingredients\" without specifics is less informative than \"fermented chickpeas\" or \"tempeh.\" When clearly identified, fermented ingredients add functional value."
+    },
+    {
+      "name": "Natural Color",
+      "category": "colorant",
+      "whatItIs": "Natural color is a broad term for colorants derived from plant, mineral, or animal sources rather than synthetic petroleum-based dyes.",
+      "whyUsed": [
+        "Provides visual appeal to humans",
+        "Makes food look more consistent or \"natural\"",
+        "Alternative to synthetic dyes",
+        "May come from turmeric, annatto, paprika, caramel, etc.",
+        "No nutritional benefit for dogs"
+      ],
+      "nutritionValue": "none",
+      "qualityNote": "Natural color is an umbrella term that can include many different plant-based colorants—turmeric (yellow), annatto (orange), beet juice (red/pink), spirulina (blue-green), caramel color (brown), etc. While safer than synthetic dyes, color serves only cosmetic purposes—dogs are not influenced by food color. The specific source matters: turmeric and spirulina have antioxidant properties, while caramel color (especially Type III/IV) has potential health concerns. \"Natural color\" without specifics lacks transparency.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Natural color is unnecessary but generally harmless. If a manufacturer is going to add color (which is for humans, not dogs), natural sources are far preferable to synthetic FD&C dyes. However, the vague term \"natural color\" is less transparent than naming the actual source—\"turmeric extract\" or \"beet juice\" is more informative. We appreciate when brands skip colorants entirely or use clearly named natural sources. It's a neutral ingredient that signals marketing-focused formulation but not necessarily poor quality."
+    },
+    {
+      "name": "Anchovies",
+      "category": "protein",
+      "whatItIs": "Anchovies are small, oily fish (Engraulidae family) used whole or as meal in dog food, providing high-quality protein and omega-3 fatty acids.",
+      "whyUsed": [
+        "High-quality, highly digestible protein",
+        "Rich in omega-3 fatty acids (EPA and DHA)",
+        "Low on food chain (less mercury and contaminant accumulation)",
+        "Sustainable fish source",
+        "Provides calcium (if bones included)",
+        "Natural source of vitamins D and B12"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Anchovies are an excellent protein source for dogs. As small, short-lived fish low on the food chain, they accumulate far less mercury and toxins than large predatory fish like tuna. They're naturally high in omega-3s, especially EPA and DHA, which support heart, joint, brain, and skin health. Anchovy meal includes ground whole fish (bones, organs, meat), providing calcium and complete amino acid profile. Wild-caught and sustainably harvested. Premium ingredient.",
+      "wattsPosition": "excellent",
+      "wattsTake": "Anchovies are one of the best fish-based proteins available. Small, oily fish low on the food chain with minimal mercury risk, naturally packed with omega-3s, and sustainably harvested—it checks all the boxes. We love seeing named fish sources like anchovies instead of generic \"fish meal.\" The omega-3 profile is built-in, reducing the need for separate fish oil. Whether listed as fresh anchovies or anchovy meal, this is a premium, species-specific protein that adds significant nutritional value."
+    },
+    {
+      "name": "Spirulina Color",
+      "category": "colorant",
+      "whatItIs": "Spirulina color is a blue-green natural colorant extracted from spirulina algae (Arthrospira platensis), used to create blue or green hues in pet food.",
+      "whyUsed": [
+        "Provides natural blue-green coloring",
+        "Alternative to synthetic Blue 1 or Blue 2 dyes",
+        "Contains phycocyanin (blue pigment with antioxidant properties)",
+        "Natural source with minimal processing",
+        "Provides trace nutrients (protein, vitamins) in tiny amounts"
+      ],
+      "nutritionValue": "low",
+      "qualityNote": "Spirulina color is extracted from spirulina algae and is one of the safer natural colorants. The blue-green pigment (phycocyanin) has antioxidant and anti-inflammatory properties, though amounts used for coloring are too small to provide significant health benefits. Unlike synthetic dyes, spirulina color comes with some nutritional value and no known health concerns. Dogs don't care about color, but if color is added, spirulina is among the best natural options.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Spirulina color is unnecessary (dogs don't care about blue-green kibble), but it's one of the better colorant choices. If a brand is going to add color, spirulina is a natural source with actual nutritional components and antioxidant properties, unlike synthetic Blue 1 or Blue 2. It's safe, natural, and comes from a nutrient-dense algae. We'd prefer no color at all, but spirulina color is a reasonable choice if cosmetic appeal matters to consumers."
+    },
+    {
+      "name": "Herring",
+      "category": "protein",
+      "whatItIs": "Herring is a small, oily fish (Clupea harengus) used fresh or as meal in dog food, providing high-quality protein and omega-3 fatty acids.",
+      "whyUsed": [
+        "High-quality, highly digestible protein source",
+        "Exceptionally rich in omega-3 fatty acids (EPA and DHA)",
+        "Low mercury risk (small fish, low on food chain)",
+        "Sustainable and abundant wild-caught source",
+        "Contains vitamin D, B12, and selenium",
+        "Natural anti-inflammatory benefits"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Herring is an outstanding protein source for dogs. As a small, oily fish, it provides exceptional omega-3 content naturally—among the highest of any fish. Low on the food chain means minimal mercury and contaminant accumulation. Wild-caught herring is abundant and sustainably managed in most regions. Whether used as fresh herring or herring meal, it delivers complete protein, omega-3s, and micronutrients. Premium, species-specific ingredient.",
+      "wattsPosition": "excellent",
+      "wattsTake": "Herring is one of the absolute best fish-based proteins available. It rivals or exceeds salmon in omega-3 content, with the added benefit of being a smaller fish with lower contaminant risk. The built-in EPA and DHA support heart, brain, joint, and skin health without requiring additional fish oil. Wild-caught, sustainable, and named—everything we want in a fish protein. Whether listed as herring, herring meal, or dehydrated herring, this is a top-tier ingredient that adds serious nutritional value."
+    },
+    {
+      "name": "Whitefish Meal",
+      "category": "protein",
+      "whatItIs": "Whitefish meal is rendered and dried fish protein from various white-fleshed fish species (not specified), providing concentrated protein.",
+      "whyUsed": [
+        "Concentrated protein source (~60-70% protein)",
+        "Provides essential amino acids",
+        "Contains omega-3 fatty acids (though less than oily fish like salmon)",
+        "Shelf-stable and economical",
+        "Provides some calcium from ground bones"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Whitefish meal is a generic term that lacks transparency—it doesn't specify which fish species are used. This can include tilapia, cod, pollock, haddock, or any white-fleshed fish. Quality varies significantly depending on source fish and processing. While it provides concentrated protein, whitefish is naturally lower in omega-3s compared to oily fish like salmon, herring, or anchovies. Lacks the nutritional punch and transparency of named fish meals (salmon meal, anchovy meal). Acceptable but not premium.",
+      "wattsPosition": "neutral",
+      "wattsTake": "Whitefish meal is a vague ingredient that makes transparency impossible. We strongly prefer named fish sources—salmon meal, herring meal, anchovy meal—so you know exactly what your dog is eating. \"Whitefish\" could be anything from high-quality cod to low-value tilapia. It provides protein, but without omega-3 richness of oily fish. For a single-protein meal source, it's fine. But generic fish meals are a missed opportunity for nutritional optimization and transparency. Not a red flag, but not a premium choice."
+    },
+    {
+      "name": "Bananas",
+      "category": "fruit",
+      "whatItIs": "Bananas are a tropical fruit (Musa species) used in dog food to provide natural sugars, fiber, and potassium.",
+      "whyUsed": [
+        "Source of dietary fiber (pectin)",
+        "Provides potassium for heart and muscle function",
+        "Contains vitamin B6 and vitamin C",
+        "Natural sweetness makes food more palatable",
+        "Prebiotics feed beneficial gut bacteria",
+        "Easily digestible carbohydrate source"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Bananas are a safe, nutritious fruit addition to dog food. They provide soluble fiber (pectin), potassium, B vitamins, and natural sweetness. The high sugar content means they should be used in moderation—too much can contribute to weight gain or blood sugar spikes. Dried or banana powder is more common in kibble than fresh bananas. Generally well-tolerated and nutritionally beneficial in appropriate amounts (typically <5% of diet).",
+      "wattsPosition": "good",
+      "wattsTake": "We like bananas as an occasional ingredient in dog food. They offer real nutritional benefits—potassium, fiber, vitamin B6—and natural sweetness that improves palatability without artificial flavors. The prebiotic fiber supports gut health. However, sugar content means moderation is key. Bananas work well in limited amounts as part of a diverse ingredient panel, but shouldn't be a primary carbohydrate source. A nice addition for variety and specific nutrients, especially in grain-free formulas looking for novel carbs."
+    },
+    {
+      "name": "Red 3",
+      "category": "colorant",
+      "whatItIs": "Red 3 (Erythrosine) is a synthetic cherry-red dye derived from petroleum, used to create red color in pet food and treats.",
+      "whyUsed": [
+        "Creates bright red color to appeal to humans",
+        "Makes food look more \"meaty\" or appealing",
+        "Provides color consistency across batches",
+        "Masks ingredient variations",
+        "No nutritional or functional benefit for dogs"
+      ],
+      "nutritionValue": "none",
+      "qualityNote": "Red 3 provides zero nutritional value and serves only cosmetic purposes for human perception. Dogs are not influenced by food color. Red 3 is the most controversial synthetic dye—it was banned in cosmetics in 1990 due to cancer concerns from animal studies showing thyroid tumors. However, it remains FDA-approved for food use. Several studies link it to behavioral changes and thyroid dysfunction. There is absolutely no legitimate reason to include Red 3 in dog food.",
+      "wattsPosition": "bad",
+      "wattsTake": "Red 3 is one of the worst ingredients you can find in dog food. Banned in cosmetics for cancer concerns but still allowed in food—that alone should raise red flags. Synthetic dyes serve zero purpose for dogs and exist only to fool human buyers. Red 3 specifically has concerning research on thyroid effects and behavioral changes. Any food containing Red 3 or other FD&C dyes signals a manufacturer prioritizing marketing over health. Avoid entirely and choose brands with no artificial colors or natural colorants like beet juice."
     }
   ]
 }
