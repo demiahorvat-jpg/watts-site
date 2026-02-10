@@ -1211,6 +1211,30 @@
             "difference": "Bacillus coagulans is spore-forming and survives heat processing, while Bifidobacterium lactis is non-spore-forming and more sensitive to heat. B. coagulans is more stable in kibble."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Spore-forming probiotic bacteria supporting digestive and immune health",
+        "strain": "Bacillus coagulans (formerly Lactobacillus sporogenes) - unique heat-stable probiotic",
+        "sporeFormingAdvantage": "Unlike most probiotics, forms protective spores that survive kibble manufacturing heat, stomach acid, and shelf storage without refrigeration",
+        "survivalRate": "Significantly better survival through kibble processing and GI tract compared to Lactobacillus or Bifidobacterium strains",
+        "digestiveBenefits": [
+          "Supports healthy gut microbiome balance",
+          "Produces lactic acid (creates acidic environment hostile to pathogens)",
+          "Reduces digestive upset, gas, and bloating",
+          "Improves stool consistency",
+          "Enhances nutrient absorption",
+          "Supports dogs with IBD or sensitive stomachs"
+        ],
+        "immuneSupport": "Enhances immune function by stimulating immune cells in gut lining (70% of immune system is in the gut)",
+        "CFUcount": "Typically 100 million to 1 billion CFU (colony forming units) per serving in dog food",
+        "shelfStability": "Remains viable at room temperature for 2+ years - no refrigeration needed",
+        "research": "Well-studied probiotic with proven efficacy in humans and animals for digestive and immune support",
+        "safety": "Very safe - GRAS status. No known adverse effects at typical doses.",
+        "qualityNote": "Bacillus coagulans is a premium, scientifically-backed probiotic. Superior shelf stability makes it ideal for kibble. Signals gut-health focus."
+      },
+      "seoMetadata": {
+        "focusKeyword": "bacillus coagulans dog food",
+        "metaDescription": "Is bacillus coagulans good for dogs? Learn spore-forming probiotic benefits, heat stability, vs lactobacillus, digestive/immune support & CFU dosing."
       }
     },
     {
@@ -1240,6 +1264,33 @@
             "difference": "Both are fruits used in dog treats. Bananas are higher in sugar and potassium, while apples provide more fiber (pectin) and vitamin C. Both are safe in moderation."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Tropical fruit providing natural sugars, prebiotic fiber, potassium, and vitamins",
+        "macronutrients": {
+          "carbohydrates": "~23% (mostly natural sugars and starch)",
+          "fiber": "2.6% (mix of soluble pectin and resistant starch)",
+          "protein": "1.1% (minimal)",
+          "fat": "0.3% (negligible)"
+        },
+        "potassium": "Excellent source (358mg per 100g) - supports heart health, muscle function, and electrolyte balance",
+        "vitamins": [
+          "Vitamin B6 (supports brain function, red blood cell formation)",
+          "Vitamin C (antioxidant, immune support)",
+          "Folate (cell division, DNA synthesis)"
+        ],
+        "prebioticFiber": "Pectin and resistant starch feed beneficial gut bacteria and improve digestive health",
+        "glycemicIndex": "Medium GI (51-62) - provides steady energy without major blood sugar spikes",
+        "digestibility": "Easily digestible carbohydrate source - gentle on sensitive stomachs",
+        "ripeness": "Ripe bananas (yellow with spots) have higher sugar and easier digestion. Green bananas have more resistant starch.",
+        "typicalInclusion": "1-5% of diet as dried banana or banana powder",
+        "palatability": "Natural sweetness improves food acceptance",
+        "moderationNote": "High sugar content means moderation is key - too much can contribute to weight gain",
+        "qualityNote": "Bananas provide real nutritional benefits - potassium, fiber, vitamins. Good addition for variety and natural sweetness in appropriate amounts."
+      },
+      "seoMetadata": {
+        "focusKeyword": "banana dog food",
+        "metaDescription": "Are bananas safe for dogs? Learn potassium benefits, prebiotic fiber, vitamin B6/C, natural sugars, digestibility, glycemic index & moderation."
       }
     },
     {
@@ -1347,7 +1398,31 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "nutritionalProfile": {
+        "function": "Young barley shoots (before grain forms) providing concentrated vitamins, minerals, chlorophyll, and antioxidants",
+        "whatIsIt": "Young barley plant harvested at 10-14 days before grain develops - nutrient-dense green superfood",
+        "nutrientConcentration": "More vitamins and minerals per gram than mature grain - peak nutritional content in young shoots",
+        "micronutrients": [
+          "Vitamin K (blood clotting, bone health)",
+          "Vitamin C (antioxidant, immune support)",
+          "Vitamin A (vision, immune, skin health)",
+          "B vitamins (energy metabolism)",
+          "Iron, calcium, magnesium, zinc"
+        ],
+        "chlorophyll": "Very high chlorophyll content - supports detoxification, wound healing, and has antioxidant properties",
+        "antioxidants": "Rich in SOD (superoxide dismutase), flavonoids, and other antioxidants that reduce oxidative stress",
+        "enzymes": "Contains digestive enzymes that may support nutrient absorption",
+        "alkalizing": "Has alkalizing effect on body despite initial acidity",
+        "typicalInclusion": "0.5-2% of diet as dried powder or juice",
+        "vsBarleyGrain": "Barley grass is the young plant (high in vitamins/minerals), barley grain is the seed (high in carbs/fiber). Different nutritional profiles.",
+        "detoxSupport": "May support liver detoxification and heavy metal elimination",
+        "qualityNote": "Barley grass is a concentrated green superfood with genuine nutritional density. Signals health-focused, whole food approach."
+      },
+      "seoMetadata": {
+        "focusKeyword": "barley grass dog food",
+        "metaDescription": "Is barley grass good for dogs? Learn young shoots vs grain, vitamin/mineral density, chlorophyll, antioxidants, alkalizing effects & detox support."
+      }
     },
     {
       "name": "Barley Malt Extract",
@@ -1376,6 +1451,29 @@
             "difference": "Barley malt extract is made by sprouting and drying barley, then extracting the concentrated sweetness. It's sweeter and more processed than whole barley grain."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Sweetener and flavor enhancer from sprouted barley providing maltose, enzymes, and B vitamins",
+        "whatIsIt": "Barley grains are sprouted (malted), then concentrated into syrup or dried powder",
+        "maltingProcess": "Sprouting activates enzymes that convert starches to maltose (malt sugar), creating sweet flavor and brown color",
+        "sweetness": "Natural sweetener with malty, caramel-like flavor - about 30-50% as sweet as sugar",
+        "maltose": "Primary carbohydrate is maltose (malt sugar) - two glucose molecules linked together",
+        "enzymes": "Contains diastase enzymes from sprouting that may aid starch digestion",
+        "bVitamins": "Good source of B vitamins (niacin, thiamine, riboflavin) from sprouted grain",
+        "minerals": "Contains iron, magnesium, phosphorus, and potassium",
+        "typicalInclusion": "0.5-2% for flavor enhancement and binding in treats/biscuits",
+        "functionalBenefits": [
+          "Natural sweetness improves palatability",
+          "Provides binding properties in baked treats",
+          "Adds brown color and malty flavor",
+          "May support digestive enzyme activity"
+        ],
+        "glycemicImpact": "Moderate glycemic index - causes blood sugar rise (though less than pure glucose)",
+        "qualityNote": "Barley malt extract is a natural sweetener with some nutritional value (B vitamins, minerals). Better than corn syrup but still a sugar source - moderation matters."
+      },
+      "seoMetadata": {
+        "focusKeyword": "barley malt extract dog food",
+        "metaDescription": "Is barley malt extract safe for dogs? Learn natural sweetener, malting process, maltose sugar, B vitamins, enzymes, glycemic impact & palatability."
       }
     },
     {
@@ -1405,6 +1503,30 @@
             "difference": "Bean flour is a generic term for ground legumes (could be navy beans, black beans, etc.), while chickpea flour is specifically from garbanzo beans. Both boost plant protein."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Ground dried beans (various legumes) providing plant protein, fiber, and carbohydrates",
+        "commonSources": "Can include garbanzo bean flour, pea flour, lentil flour, navy bean flour, or mixed legume flours",
+        "lackOfTransparency": "Generic \"bean flour\" without specifying type lacks transparency - quality and nutrition vary by bean type",
+        "macronutrients": {
+          "protein": "20-25% plant protein (incomplete for dogs)",
+          "carbohydrates": "55-65% (complex carbs with low-medium glycemic index)",
+          "fiber": "10-15% (mostly soluble fiber)",
+          "fat": "2-5% (minimal)"
+        },
+        "proteinQuality": "Incomplete protein - low in methionine, taurine, and other essential amino acids. Must be combined with animal protein.",
+        "digestibility": "Moderate digestibility (70-80%) - lower than animal proteins",
+        "antiNutrients": "Contains phytates, lectins, and enzyme inhibitors that can reduce nutrient absorption. Cooking reduces these.",
+        "fiberBenefits": "High fiber supports digestive health and helps with satiety for weight management",
+        "glycemicIndex": "Low to medium GI - provides sustained energy without major blood sugar spikes",
+        "DCMconcerns": "Legume-heavy diets (with insufficient meat) may contribute to DCM risk - ensure adequate taurine and animal protein",
+        "typicalInclusion": "5-15% in grain-free formulas as carbohydrate and protein source",
+        "betterAlternatives": "Named legume flours (chickpea flour, lentil flour) provide more transparency than generic bean flour",
+        "qualityNote": "Bean flour provides plant protein and fiber but lacks transparency. Acceptable in moderation with substantial animal protein. Named legume flours are preferable."
+      },
+      "seoMetadata": {
+        "focusKeyword": "bean flour dog food",
+        "metaDescription": "Is bean flour safe for dogs? Learn plant protein limits, vs named legumes, fiber benefits, DCM concerns, antinutrients, digestibility & transparency issues."
       }
     },
     {
@@ -1773,7 +1895,36 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "nutritionalProfile": {
+        "function": "Nutrient-dense organ meat (cardiac muscle) providing high-quality protein, CoQ10, taurine, and B vitamins",
+        "organMeatBenefits": "Organ meats are 10-100x more nutrient-dense than muscle meat - concentrated vitamins and minerals",
+        "proteinContent": "~17% protein in raw beef heart with complete amino acid profile",
+        "fatContent": "~5% fat (lean for organ meat) - mostly healthy unsaturated fats",
+        "taurine": "EXCELLENT source of taurine (65-150mg per 100g) - critical for heart health and DCM prevention",
+        "coQ10": "Very high CoQ10 content - supports energy production, heart function, and acts as powerful antioxidant",
+        "bVitamins": [
+          "Vitamin B12 (abundant - supports nerve function, red blood cells)",
+          "Riboflavin (B2 - energy metabolism)",
+          "Niacin (B3 - skin, digestion, nervous system)",
+          "Pantothenic acid (B5 - hormone production)",
+          "Vitamin B6 (brain function, immune health)"
+        ],
+        "minerals": [
+          "Iron (highly bioavailable heme iron - prevents anemia)",
+          "Zinc (immune function, skin health)",
+          "Selenium (antioxidant, thyroid function)",
+          "Phosphorus (bone health, energy)"
+        ],
+        "digestibility": "85-90% highly digestible - excellent bioavailability",
+        "cardiacSupport": "Traditional \"like supports like\" principle - heart meat supports heart function with taurine, CoQ10, and B vitamins",
+        "tasteProfile": "Rich, meaty flavor - highly palatable to most dogs",
+        "qualityNote": "Beef heart is a premium organ meat - nutrient powerhouse with taurine and CoQ10. Excellent addition for heart health and complete nutrition."
+      },
+      "seoMetadata": {
+        "focusKeyword": "beef heart dog food",
+        "metaDescription": "Is beef heart good for dogs? Learn organ meat benefits, taurine for DCM prevention, CoQ10, B vitamins, iron, digestibility & cardiac support."
+      }
     },
     {
       "name": "Beef Kidney",
@@ -1798,7 +1949,37 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "nutritionalProfile": {
+        "function": "Nutrient-dense organ meat providing concentrated vitamins, minerals, and high-quality protein",
+        "organMeatAdvantage": "Kidneys are filtering organs packed with nutrients - 10-50x more vitamins/minerals than muscle meat",
+        "proteinContent": "~15-17% protein in raw kidney with complete amino acid profile",
+        "fatContent": "~3-4% fat (very lean organ meat)",
+        "vitaminA": "Exceptionally high vitamin A (12,000-15,000 IU per 100g) - supports vision, immune function, skin health",
+        "bVitamins": [
+          "Vitamin B12 (extremely high - 300%+ of human DV per 100g)",
+          "Riboflavin (B2 - energy production)",
+          "Niacin (B3)",
+          "Pantothenic acid (B5)",
+          "Folate (cell division, DNA synthesis)"
+        ],
+        "minerals": [
+          "Iron (highly bioavailable heme iron)",
+          "Selenium (powerful antioxidant, thyroid support)",
+          "Zinc (immune function)",
+          "Copper (red blood cell formation)",
+          "Phosphorus (bone health)"
+        ],
+        "digestibility": "85-90% highly digestible",
+        "tasteProfile": "Strong, distinctive flavor - some dogs love it, others may need gradual introduction",
+        "moderationNote": "Very high vitamin A means moderation is important - too much can cause vitamin A toxicity. Best used as 5-10% of diet.",
+        "detoxConcern": "Kidneys filter toxins but do NOT store them (liver does). Properly processed kidney from healthy animals is safe.",
+        "qualityNote": "Beef kidney is a vitamin/mineral powerhouse. Excellent for B12, selenium, and iron. Use in moderation due to high vitamin A."
+      },
+      "seoMetadata": {
+        "focusKeyword": "beef kidney dog food",
+        "metaDescription": "Is beef kidney safe for dogs? Learn organ meat benefits, vitamin A/B12, selenium, iron, digestibility, moderation needs & detox myths."
+      }
     },
     {
       "name": "Beef Liver",
@@ -2212,6 +2393,35 @@
             "difference": "Both are organ meats. Beef liver is more nutrient-dense (vitamin A, iron, copper), while beef spleen provides iron and immune-supporting compounds. Liver is superior nutritionally."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Nutrient-dense organ meat rich in heme iron, B vitamins, and immune-supporting compounds",
+        "organRole": "Spleen filters blood, stores red blood cells, and supports immune function - results in unique nutritional profile",
+        "proteinContent": "~18-20% protein in raw spleen with complete amino acid profile",
+        "fatContent": "~3% fat (very lean)",
+        "ironContent": "EXCEPTIONALLY HIGH heme iron (35-45mg per 100g) - one of richest iron sources available. Prevents anemia.",
+        "hemeVsNonHeme": "Heme iron from organs is 2-3x more bioavailable than non-heme plant iron - dogs absorb 15-35% vs 5-12%",
+        "bVitamins": [
+          "Vitamin B12 (very high)",
+          "Riboflavin (B2)",
+          "Niacin (B3)",
+          "Pantothenic acid (B5)"
+        ],
+        "minerals": [
+          "Zinc (immune function, wound healing)",
+          "Selenium (antioxidant)",
+          "Copper (red blood cell formation)",
+          "Phosphorus (energy, bone health)"
+        ],
+        "immuneCompounds": "Contains immune-supporting compounds from spleen tissue (though research in dogs is limited)",
+        "digestibility": "85-90% highly digestible",
+        "tasteProfile": "Rich, slightly metallic flavor from high iron content - most dogs find it palatable",
+        "anemiaPrevention": "Excellent for dogs with anemia, blood loss, or iron deficiency",
+        "qualityNote": "Beef spleen is an iron powerhouse - exceptional for preventing anemia. Lean, nutrient-dense organ meat. Great addition for complete nutrition."
+      },
+      "seoMetadata": {
+        "focusKeyword": "beef spleen dog food",
+        "metaDescription": "Is beef spleen good for dogs? Learn organ meat benefits, exceptional heme iron, anemia prevention, B vitamins, immune support & digestibility."
       }
     },
     {
