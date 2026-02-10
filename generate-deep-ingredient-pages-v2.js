@@ -280,22 +280,111 @@ function generateLegacyFAQs(ingredient) {
   const category = ingredient.category;
   const position = ingredient.wattsPosition;
 
+  // Helper function to create smooth FAQ answers from nutritionalProfile
+  const createSafetyAnswer = () => {
+    const profile = ingredient.nutritionalProfile || {};
+
+    if (position === 'avoid') {
+      return `${name} should be used with caution or avoided. ${ingredient.qualityNote || ingredient.wattsTake}`;
+    }
+
+    if (position === 'caution') {
+      return `${name} is generally recognized as safe but has some concerns. ${ingredient.qualityNote || ''} Monitor your dog for any adverse reactions when first introducing products containing this ingredient.`;
+    }
+
+    // For "good" or "neutral" positions - create flowing answer
+    let answer = `Yes, ${name.toLowerCase()} is safe for dogs when used appropriately in properly formulated dog food.`;
+
+    // Add safety info from profile if available
+    if (profile.safety) {
+      answer += ` ${profile.safety}`;
+    }
+
+    // Add context-appropriate closing
+    answer += ` As with any ingredient, individual dogs may have sensitivities, so monitor for any adverse reactions when first introducing products containing this ingredient.`;
+
+    return answer;
+  };
+
+  const createFunctionAnswer = () => {
+    const profile = ingredient.nutritionalProfile || {};
+    const primaryFunction = profile.function || ingredient.whatItIs;
+    const whyUsedReasons = ingredient.whyUsed?.slice(0, 2) || [];
+
+    // Ensure primary function ends with a period
+    let answer = primaryFunction;
+    if (answer && !answer.endsWith('.')) {
+      answer += '.';
+    }
+
+    // Add why it's used with proper grammar
+    if (whyUsedReasons.length > 0) {
+      // Convert reasons to infinitive form
+      const reasons = whyUsedReasons.map(r => {
+        const lower = r.toLowerCase();
+        // If it starts with a verb like "provides", "improves", etc., convert to "provide", "improve"
+        if (lower.startsWith('provides ')) return lower.replace('provides ', 'provide ');
+        if (lower.startsWith('improves ')) return lower.replace('improves ', 'improve ');
+        if (lower.startsWith('adds ')) return lower.replace('adds ', 'add ');
+        if (lower.startsWith('supports ')) return lower.replace('supports ', 'support ');
+        if (lower.startsWith('enhances ')) return lower.replace('enhances ', 'enhance ');
+        // If it's a noun phrase like "high-energy fat source", add "provide" before it
+        if (!lower.match(/^(provide|improve|add|support|enhance|serve)/)) {
+          return `provide ${lower}`;
+        }
+        return lower;
+      });
+      answer += ` Dog food manufacturers include this ingredient to ${reasons.join(' and ')}.`;
+    }
+
+    return answer;
+  };
+
   const faqs = [
     {
       question: `Is ${name.toLowerCase()} safe for dogs?`,
-      answer: position === 'avoid'
-        ? `${name} should be used with caution or avoided. ${ingredient.qualityNote} ${ingredient.wattsTake}`
-        : position === 'caution'
-        ? `${name} is generally recognized as safe but has some concerns. ${ingredient.qualityNote} Monitor your dog for any adverse reactions when first introducing products containing this ingredient.`
-        : `Yes, ${name.toLowerCase()} is safe for dogs when used appropriately. ${ingredient.wattsTake} However, individual dogs may have sensitivities, so monitor for any adverse reactions.`
+      answer: createSafetyAnswer()
     },
     {
       question: `What does ${name.toLowerCase()} do in dog ${category === 'protein' ? 'food' : 'products'}?`,
-      answer: `${ingredient.whatItIs} It's used because: ${ingredient.whyUsed.slice(0, 2).join(', and ')}. ${ingredient.qualityNote}`
+      answer: createFunctionAnswer()
     }
   ];
 
   // Category-specific questions
+  if (category === 'fat') {
+    const profile = ingredient.nutritionalProfile || {};
+    const isNamedFat = !name.toLowerCase().includes('animal fat') && !name.toLowerCase().includes('poultry fat');
+
+    faqs.push({
+      question: `Is ${name.toLowerCase()} better than other fats in dog food?`,
+      answer: isNamedFat
+        ? `Named fat sources like ${name.toLowerCase()} are generally superior to generic "animal fat" because they provide transparency about the source and consistent quality. The quality of any fat depends on its fatty acid profile, omega-6 to omega-3 ratio, preservation method, and source animal health. ${name} offers traceability that generic fats cannot match.`
+        : `The quality of any fat depends on its fatty acid profile, omega-6 to omega-3 ratio, and preservation method. Named fat sources (like chicken fat or beef tallow) are generally preferred because they provide transparency about the source and consistent quality.`
+    });
+
+    faqs.push({
+      question: `How should ${name.toLowerCase()} be preserved in dog food?`,
+      answer: `Fats and oils in dog food must be preserved to prevent rancidity and oxidation. Natural preservatives like mixed tocopherols (vitamin E) and rosemary extract are preferred over synthetic preservatives like BHA and BHT. Check the ingredient label for "preserved with" statements to identify which preservatives are used.`
+    });
+
+    if (profile.omega6toOmega3 || profile.fattyAcidProfile) {
+      const hasHighOmega6 = profile.omega6toOmega3 && (profile.omega6toOmega3.includes('high') || profile.omega6toOmega3.includes('20:1') || profile.omega6toOmega3.includes('10:1'));
+
+      faqs.push({
+        question: `Does ${name.toLowerCase()} provide omega-3 fatty acids?`,
+        answer: hasHighOmega6
+          ? `${name} has a high omega-6 to omega-3 ratio, which means it provides minimal omega-3 fatty acids. For optimal nutrition and to support anti-inflammatory benefits, dog foods containing ${name.toLowerCase()} should be supplemented with omega-3 sources like fish oil, algal oil, or flaxseed oil to balance the fatty acid profile.`
+          : `Like most fats, ${name.toLowerCase()} provides fatty acids that support energy, palatability, and nutrient absorption. Check the guaranteed analysis to see the omega-3 content, as land animal fats are typically lower in omega-3s compared to fish-based fats like salmon oil or menhaden oil.`
+      });
+    }
+
+    faqs.push({
+      question: `How much fat should be in dog food?`,
+      answer: `Adult dog foods typically contain 12-18% fat, while puppy and performance formulas may have 18-25% fat or more. The AAFCO minimum is 5.5% for adult maintenance and 8.5% for growth and reproduction. The optimal amount depends on your dog's age, activity level, and individual metabolism.`
+    });
+  }
+
   if (category === 'protein') {
     faqs.push({
       question: `Can ${name.toLowerCase()} cause allergies in dogs?`,
