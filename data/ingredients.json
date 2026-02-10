@@ -1336,20 +1336,31 @@
       },
       "whyUsedExpanded": "Barley appears in dog food as economical whole grain providing complex carbohydrates, exceptional fiber (particularly beta-glucan soluble fiber), and B vitamins. It's cheaper than oatmeal or brown rice while offering similar nutrition. Barley's high fiber supports digestive health and regulates blood sugar. Its lower glycemic index makes it suitable for weight management. However, gluten content limits its use in grain-sensitive formulas. Barley signals mid-tier quality—better than corn or wheat, but less premium than oatmeal or sweet potatoes.",
       "nutritionalProfile": {
-        "macros": {
-          "carbohydrates": "60-65g per 100g",
-          "protein": "10-12g (incomplete for dogs)",
-          "fiber": "15-20g including beta-glucan soluble fiber",
-          "fat": "2-3g",
-          "moisture": "10-12%"
+        "function": "Whole grain cereal providing complex carbohydrates, fiber, vitamins, and minerals",
+        "grainType": "Whole grain barley contains bran, germ, and endosperm - more nutritious than pearled barley (which has bran removed)",
+        "macronutrients": {
+          "carbohydrates": "~73% (mostly starch with some fiber)",
+          "protein": "~12% plant protein (incomplete for dogs)",
+          "fiber": "~17% (high in soluble beta-glucan fiber)",
+          "fat": "~2% (minimal)"
         },
-        "micronutrients": {
-          "bVitamins": "Thiamine, niacin, B6",
-          "manganese": "Good source",
-          "selenium": "Present",
-          "iron": "Moderate levels",
-          "magnesium": "Present"
-        }
+        "betaGlucan": "Rich in beta-glucan soluble fiber (5-11%) which supports heart health, cholesterol reduction, and blood sugar control",
+        "glycemicIndex": "Low to medium GI (28-35 for intact barley, higher for pearled) - provides sustained energy",
+        "micronutrients": [
+          "Manganese (supports bone health, metabolism)",
+          "Selenium (antioxidant, thyroid function)",
+          "B vitamins (thiamine, niacin, B6)",
+          "Phosphorus (bone health, energy)",
+          "Copper (red blood cell formation)",
+          "Magnesium (muscle, nerve function)"
+        ],
+        "digestibility": "70-80% digestibility for dogs - lower than rice but still good",
+        "prebioticBenefits": "Beta-glucan acts as prebiotic, feeding beneficial gut bacteria",
+        "proteinQuality": "Incomplete plant protein - low in lysine and other essential amino acids. Must be combined with animal protein.",
+        "wholeVsPearled": "Whole barley retains nutrient-rich bran and germ. Pearled barley has bran removed - lower fiber and nutrients but more digestible.",
+        "grainFreeDebate": "Traditional grain used for centuries in dog food. Not associated with DCM concerns unlike legumes.",
+        "typicalInclusion": "10-40% in grain-inclusive formulas as primary carbohydrate source",
+        "qualityNote": "Barley is a nutritious whole grain with beneficial beta-glucan fiber. Whole barley is superior to pearled. Good grain choice for dogs without sensitivities."
       },
       "concernsExpanded": {
         "detailed": "Barley contains gluten, unsuitable for dogs with wheat/gluten sensitivities. Rare but real concern. High fiber benefits most dogs but could cause gas or loose stools in sensitive dogs. Phytic acid binds minerals, slightly reducing absorption. Otherwise safe.",
@@ -1368,11 +1379,7 @@
       ],
       "seoMetadata": {
         "focusKeyword": "barley dog food",
-        "secondaryKeywords": [
-          "is barley good for dogs",
-          "barley gluten dogs"
-        ],
-        "metaDescription": "Is barley good for dogs? Learn about whole grain benefits with beta-glucan fiber, gluten concerns, lower glycemic index & comparison to oats and rice. Expert guide."
+        "metaDescription": "Is barley good for dogs? Learn whole vs pearled grain, beta-glucan fiber benefits, glycemic index, vs rice/oats, digestibility & nutrition profile."
       }
     },
     {
@@ -2455,6 +2462,31 @@
             "difference": "Beef tallow is rendered (cooked down) beef fat that's solid at room temperature. It's the same ingredient as beef fat, just processed into a more shelf-stable form."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Rendered beef fat providing concentrated energy, palatability, and fat-soluble vitamins",
+        "whatIsIt": "Pure beef fat rendered (melted and strained) from beef suet or trimmings - cooking removes impurities",
+        "fatContent": "99-100% fat - pure energy source at 9 calories per gram",
+        "fattyAcidProfile": {
+          "saturated": "~50% (primarily stearic and palmitic acid)",
+          "monounsaturated": "~42% (mostly oleic acid - same as olive oil)",
+          "polyunsaturated": "~4% (minimal omega-3, some omega-6)"
+        },
+        "stearicAcid": "High stearic acid content (15-20%) - a saturated fat that does NOT raise cholesterol and may have neutral or beneficial effects",
+        "omega6toOmega3": "High omega-6:omega-3 ratio (20:1 or higher) - should be balanced with omega-3 sources (fish oil, algal oil)",
+        "conjugatedLinoleicAcid": "Contains small amounts of CLA (conjugated linoleic acid) - may have anti-inflammatory and metabolic benefits",
+        "fatSolubleVitamins": "Natural source of vitamins A, D, E, K (amounts vary by source)",
+        "shelfStability": "Very stable - high saturated fat content resists oxidation and rancidity better than chicken fat or fish oil",
+        "preservationNeeded": "Still requires antioxidant preservation (mixed tocopherols, rosemary extract) for long shelf life",
+        "palatability": "Highly palatable - beef flavor improves food acceptance",
+        "transparency": "Named fat (beef tallow) is FAR superior to generic \"animal fat\" - consistent quality and traceability",
+        "grassFedVsConventional": "Grass-fed beef tallow has better omega-6:omega-3 ratio and higher CLA, but most pet food uses conventional",
+        "typicalInclusion": "5-15% of diet for energy and palatability",
+        "qualityNote": "Beef tallow is a high-quality named fat with excellent stability. Better than generic animal fat. Needs omega-3 balance for optimal nutrition."
+      },
+      "seoMetadata": {
+        "focusKeyword": "beef tallow dog food",
+        "metaDescription": "Is beef tallow good for dogs? Learn named fat benefits, vs animal fat, fatty acid profile, omega-6/omega-3, stability, palatability & CLA content."
       }
     },
     {
@@ -2484,6 +2516,29 @@
             "difference": "Beet fiber and beet pulp are nearly identical—both are the fibrous residue after sugar extraction from beets. \"Fiber\" emphasizes the fiber content; \"pulp\" is the general term."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Insoluble fiber from sugar beet pulp supporting digestive health and stool quality",
+        "whatIsIt": "Dried sugar beet pulp after sugar extraction - primarily insoluble fiber with some soluble pectin",
+        "fiberComposition": {
+          "totalFiber": "~60-70% fiber",
+          "insoluble": "~70% (cellulose, hemicellulose - adds bulk)",
+          "soluble": "~30% (pectin - prebiotic benefits)"
+        },
+        "digestiveRole": "Insoluble fiber adds bulk to stool, speeds transit time, and promotes regular bowel movements",
+        "prebioticBenefits": "Soluble pectin feeds beneficial gut bacteria and produces short-chain fatty acids",
+        "stoolQuality": "Improves stool consistency and firmness - helps with both diarrhea (adds bulk) and constipation (adds moisture)",
+        "fermentability": "Moderately fermentable - ferments slowly in colon without excessive gas",
+        "bloodSugarControl": "Soluble fiber helps moderate blood sugar spikes after meals",
+        "nutrientDilution": "High fiber dilutes nutrient density - excessive amounts can reduce nutrient absorption",
+        "typicalInclusion": "1-5% of diet for digestive support. Higher amounts in weight management formulas (10-15%).",
+        "controversies": "Some criticize beet pulp as cheap filler, but research shows genuine digestive benefits in appropriate amounts",
+        "vsOtherFibers": "Better than cellulose (pure filler). Similar to pumpkin and psyllium but less expensive.",
+        "qualityNote": "Beet fiber is a functional ingredient with genuine digestive benefits. Not nutrient-dense but helps stool quality. Neutral to positive in appropriate amounts."
+      },
+      "seoMetadata": {
+        "focusKeyword": "beet fiber dog food",
+        "metaDescription": "Is beet fiber good for dogs? Learn sugar beet pulp benefits, stool quality, prebiotic effects, vs cellulose/pumpkin, nutrient dilution & typical usage."
       }
     },
     {
@@ -2588,7 +2643,36 @@
       "qualityNote": "Beetroot is a moderately nutritious vegetable offering fiber, folate, and unique antioxidants called betalains. It provides some vitamins and minerals along with beneficial plant compounds. However, it's relatively high in sugar compared to other vegetables and offers limited protein. The fiber is beneficial for stool quality, but excessive amounts can cause loose stools. Generally safe and well-tolerated.",
       "wattsPosition": "neutral",
       "wattsTake": "Beetroot is a reasonable vegetable inclusion in moderate amounts. It adds fiber and some antioxidants without being a problematic filler. We appreciate that it's a whole food rather than a processed fraction. However, it's not a nutritional powerhouse compared to nutrient-dense options like organ meats or certain vegetables. It's fine as a minor ingredient but shouldn't be emphasized as a major selling point. Watch that it's not used primarily as a cheap colorant.",
-      "citations": []
+      "citations": [],
+      "nutritionalProfile": {
+        "function": "Root vegetable providing natural sugars, fiber, nitrates, vitamins, and antioxidants",
+        "macronutrients": {
+          "carbohydrates": "~10% (mix of sugars and fiber)",
+          "fiber": "~3% (mix of soluble and insoluble)",
+          "protein": "~2% (minimal)",
+          "fat": "~0.2% (negligible)"
+        },
+        "naturalSugars": "Contains natural sugars (sucrose, glucose, fructose) - provides palatability and energy",
+        "nitrateContent": "High in dietary nitrates which convert to nitric oxide - may improve blood flow, oxygen delivery, and exercise performance",
+        "betalains": "Contains betalain pigments (betacyanins, betaxanthins) - powerful antioxidants with anti-inflammatory properties",
+        "micronutrients": [
+          "Folate (cell division, DNA synthesis)",
+          "Manganese (bone health, metabolism)",
+          "Potassium (heart, muscle, electrolyte balance)",
+          "Vitamin C (antioxidant, immune support)",
+          "Iron (oxygen transport)"
+        ],
+        "antioxidants": "Rich in antioxidants including betalains, vitamin C, and polyphenols - reduce oxidative stress",
+        "liverSupport": "Traditionally used for liver detoxification - betaine supports liver function and methylation",
+        "typicalInclusion": "1-5% of diet as dried beetroot or beetroot powder",
+        "colorEffect": "Natural red color - may tint food or stool pink/red (harmless)",
+        "glycemicIndex": "Medium GI (64) - moderate blood sugar impact",
+        "qualityNote": "Beetroot provides genuine antioxidants, nitrates, and micronutrients. More functional than generic vegetable filler. Good addition for variety."
+      },
+      "seoMetadata": {
+        "focusKeyword": "beetroot dog food",
+        "metaDescription": "Is beetroot safe for dogs? Learn nitrate benefits, betalain antioxidants, liver support, folate/potassium, exercise performance & color effects."
+      }
     },
     {
       "name": "Beta-Carotene",
@@ -2621,6 +2705,30 @@
             "difference": "Beta carotene is a vitamin A precursor and antioxidant found in orange vegetables, while astaxanthin is a more powerful antioxidant from algae that doesn't convert to vitamin A."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Orange plant pigment and provitamin A carotenoid supporting vision, immune function, and antioxidant protection",
+        "provitaminA": "Dogs convert beta-carotene to vitamin A in the intestines as needed - safe alternative to preformed vitamin A (retinol)",
+        "conversionEfficiency": "Dogs are less efficient than humans at converting beta-carotene to vitamin A - require about 2x more beta-carotene per unit vitamin A",
+        "antioxidantRole": "Beyond vitamin A conversion, beta-carotene itself acts as powerful antioxidant - neutralizes free radicals",
+        "healthBenefits": [
+          "Vision support (especially night vision and retinal health)",
+          "Immune system enhancement (supports immune cell function)",
+          "Skin and coat health (epithelial cell maintenance)",
+          "Antioxidant protection (reduces oxidative stress)",
+          "Cancer prevention (may reduce cancer risk)",
+          "Cognitive health (protects brain from oxidation)"
+        ],
+        "naturalSources": "Carrots, sweet potato, pumpkin, kale, spinach - whole food sources preferred",
+        "syntheticVsNatural": "Synthetic beta-carotene is chemically identical to natural and equally effective. Natural sources provide additional phytonutrients.",
+        "fatSoluble": "Fat-soluble nutrient - absorbed best when consumed with dietary fat",
+        "safety": "Very safe - excess is NOT converted to vitamin A and is simply excreted. Cannot cause vitamin A toxicity.",
+        "typicalInclusion": "Added to ensure adequate vitamin A precursor. Amounts vary but typically 5-20mg per kg of food.",
+        "qualityNote": "Beta-carotene is a safe vitamin A source with antioxidant benefits. Whole food sources (carrots, sweet potato) are ideal but synthetic supplementation is also effective."
+      },
+      "seoMetadata": {
+        "focusKeyword": "beta carotene dog food",
+        "metaDescription": "Is beta-carotene safe for dogs? Learn vitamin A conversion, vs retinol, antioxidant benefits, vision/immune support, natural sources & safety profile."
       }
     },
     {
@@ -2742,7 +2850,33 @@
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7166405/",
           "publisher": "NIH"
         }
-      ]
+      ],
+      "nutritionalProfile": {
+        "function": "Probiotic bacteria species supporting digestive and immune health in dogs",
+        "probioticType": "Bifidobacterium animalis (especially subspecies lactis) - naturally occurring in mammalian intestines",
+        "colonization": "Colonizes the large intestine (colon) where it ferments fiber and produces beneficial compounds",
+        "beneficialEffects": [
+          "Improves digestive health and reduces diarrhea",
+          "Enhances immune function (stimulates immune cells)",
+          "Produces vitamins (B vitamins, vitamin K)",
+          "Competes with harmful bacteria for resources",
+          "Reduces inflammation in gut lining",
+          "Improves nutrient absorption",
+          "Supports dogs with IBD or sensitive stomachs"
+        ],
+        "shortChainFattyAcids": "Ferments fiber to produce SCFAs (acetate, propionate, butyrate) which fuel colon cells and reduce inflammation",
+        "survivalChallenges": "Must survive kibble manufacturing heat, stomach acid, and shelf storage - often requires microencapsulation",
+        "CFUcount": "Typically 100 million to 1 billion CFU (colony forming units) per serving",
+        "shelfStability": "Requires careful handling and often refrigeration for maximum viability - less stable than spore-forming probiotics",
+        "research": "Well-researched probiotic with proven benefits in humans and animals",
+        "subspeciesLactis": "B. animalis subsp. lactis is the most commonly used strain in pet foods - highly studied and effective",
+        "safety": "Very safe - no known adverse effects at typical doses",
+        "qualityNote": "Bifidobacterium animalis is a premium, well-researched probiotic. Signals gut-health focus. Effectiveness depends on viable CFU count at feeding."
+      },
+      "seoMetadata": {
+        "focusKeyword": "bifidobacterium animalis dog food",
+        "metaDescription": "Is bifidobacterium animalis good for dogs? Learn probiotic benefits, digestive/immune support, SCFA production, vs lactis strain, CFU dosing & research."
+      }
     },
     {
       "name": "Bifidobacterium Lactis",
@@ -2780,6 +2914,34 @@
             "difference": "Bifidobacterium lactis is a traditional probiotic strain that may not survive kibble processing, while Bacillus coagulans forms protective spores and is more heat-stable."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Probiotic bacteria (subspecies of B. animalis) supporting digestive health, immunity, and gut barrier function",
+        "taxonomicNote": "Bifidobacterium lactis is actually Bifidobacterium animalis subsp. lactis - same species, different naming",
+        "whatIsIt": "Beneficial bacteria naturally found in mammalian intestines - commonly used probiotic in human and pet foods",
+        "colonization": "Colonizes the large intestine where it supports gut microbiome balance",
+        "digestiveBenefits": [
+          "Reduces digestive upset, bloating, and gas",
+          "Improves stool consistency",
+          "Alleviates diarrhea and constipation",
+          "Supports lactose digestion",
+          "Enhances nutrient absorption",
+          "Helps dogs with IBS, IBD, or food sensitivities"
+        ],
+        "immuneSupport": "Enhances immune function by stimulating IgA production and immune cells in gut-associated lymphoid tissue",
+        "gutBarrier": "Strengthens intestinal barrier function - reduces \"leaky gut\" and prevents pathogen invasion",
+        "antiInflammatory": "Produces anti-inflammatory compounds that reduce chronic gut inflammation",
+        "commonStrains": "BB-12, HN019, Bi-07 are well-studied commercial strains with proven efficacy",
+        "CFUcount": "Typically 100 million to 1 billion CFU per serving for therapeutic effect",
+        "survivalRate": "Better survival through stomach acid than some Lactobacillus strains, but still sensitive to heat and moisture",
+        "shelfStability": "Moderate stability - benefits from refrigeration or microencapsulation for maximum viability",
+        "research": "Extensively researched - hundreds of studies show digestive and immune benefits",
+        "safety": "Very safe - GRAS status with no known toxicity",
+        "qualityNote": "B. lactis is a premium, scientifically-validated probiotic. Signals health-focused formulation. Look for guaranteed CFU count at end of shelf life."
+      },
+      "seoMetadata": {
+        "focusKeyword": "bifidobacterium lactis dog food",
+        "metaDescription": "Is bifidobacterium lactis safe for dogs? Learn probiotic benefits, vs B. animalis, immune/digestive support, BB-12 strain, CFU dosing & research."
       }
     },
     {
@@ -2816,6 +2978,30 @@
             "difference": "Bioperine is black pepper extract that enhances nutrient absorption (especially curcumin from turmeric). Often paired together—bioperine increases turmeric's bioavailability."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Patented black pepper extract (95-98% piperine) enhancing nutrient absorption and bioavailability",
+        "whatIsIt": "Standardized extract from black pepper (Piper nigrum) containing concentrated piperine - the active alkaloid",
+        "primaryFunction": "Bioenhancer - increases absorption and bioavailability of nutrients, especially fat-soluble vitamins and curcumin",
+        "mechanismOfAction": "Inhibits enzymes that break down nutrients, increases intestinal absorption, and enhances thermogenesis",
+        "absorptionBoost": [
+          "Curcumin (from turmeric): 2000% increased absorption",
+          "CoQ10: 30% increased absorption",
+          "Beta-carotene: 60% increased absorption",
+          "Resveratrol, quercetin, and other polyphenols",
+          "B vitamins and amino acids"
+        ],
+        "synergisticPairing": "Often paired with turmeric in joint supplements - makes curcumin far more bioavailable and effective",
+        "typicalInclusion": "Very small amounts (5-20mg per serving) - a little goes a long way",
+        "thermogenicEffect": "Mild thermogenic properties - may slightly increase metabolism and energy expenditure",
+        "safety": "Generally safe at low doses used in pet foods. High doses may cause digestive upset.",
+        "patentyStatus": "Bioperine is a patented, standardized extract - quality controlled for consistent piperine content",
+        "vsBlackPepper": "Standardized Bioperine provides consistent piperine levels. Regular black pepper varies widely (1-9% piperine).",
+        "qualityNote": "Bioperine is a premium bioenhancer that significantly improves nutrient absorption. Most valuable when paired with turmeric or other poorly absorbed nutrients."
+      },
+      "seoMetadata": {
+        "focusKeyword": "bioperine dog food",
+        "metaDescription": "Is bioperine safe for dogs? Learn black pepper extract benefits, curcumin absorption boost, bioavailability enhancer, vs piperine, dosing & safety."
       }
     },
     {
