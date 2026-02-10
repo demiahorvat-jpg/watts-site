@@ -7,208 +7,611 @@
     <meta name="description" content="Most dogs don't need digestive enzyme supplements—their pancreas produces enough. Learn when enzymes actually help (EPI, pancreatitis recovery, senior dogs), whole-food sources, and how they differ from probiotics.">
     <link rel="canonical" href="https://wattspet.com/blog/digestive-enzymes-for-dogs.html">
 
-  <style>
-    :root {
-      --bg: #F1ECE9;
-      --fg: #191919;
-      --muted: #3a3a3a;
-      --border: #191919;
-    }
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body { min-height: 100%; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      font-weight: 400;
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    /* Navigation */
-    nav.nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px 20px;
-      border-bottom: 2.5px solid var(--border);
-    }
-    @media (min-width: 768px) {
-      nav.nav {
-        padding: 24px 20px;
+    <!-- Degular Font -->
+    <style>
+      @font-face {
+        font-family: 'Degular';
+        src: url('/fonts/Degular-Regular.woff2') format('woff2');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
       }
-    }
-    nav.nav ul {
-      list-style: none;
-      display: flex;
-      gap: 24px;
-      align-items: center;
-    }
-    @media (min-width: 768px) {
-      nav.nav ul {
-        gap: 32px;
+      @font-face {
+        font-family: 'Degular';
+        src: url('/fonts/Degular-Medium.woff2') format('woff2');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
       }
-    }
-    nav.nav a {
-      color: var(--fg);
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: 500;
-      white-space: nowrap;
-    }
-    @media (min-width: 768px) {
-      nav.nav a {
+      @font-face {
+        font-family: 'Degular';
+        src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Degular';
+        src: url('/fonts/Degular-Bold.woff2') format('woff2');
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      :root {
+        --brand-orange: #c03800;
+        --bg-light: #f1f1f1;
+        --text-dark: #191919;
+        --white: #ffffff;
+        --text-muted: #666666;
+        --border-light: rgba(25, 25, 25, 0.1);
+        --accent-navy: #1e3a5f;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html, body {
+        min-height: 100%;
+      }
+
+      body {
+        background: #191919;
+        color: var(--text-dark);
+        font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-weight: 500;
+        line-height: 1.6;
+      }
+
+      /* HEADER WRAPPER - Black background */
+      .header-wrapper {
+        background: #191919;
+        padding: 12px 12px 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      /* ORANGE HEADER - Rounded like Shopify site */
+      header {
+        background: var(--brand-orange);
+        padding: 7px 20px;
+        border-radius: 16px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      }
+
+      .header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        min-height: 40px;
+      }
+
+      /* Nav on the LEFT */
+      nav {
+        order: -1;
+        display: flex;
+        align-items: center;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+      @media (min-width: 768px) {
+        nav ul { gap: 24px; }
+      }
+
+      nav li {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav a {
+        color: var(--white);
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        transition: opacity 0.2s ease;
+        line-height: 1;
+        padding: 0;
+        margin: 0;
+      }
+      @media (min-width: 768px) {
+        nav a { font-size: 15px; }
+      }
+      nav a:hover {
+        opacity: 0.8;
+      }
+
+      /* Logo CENTERED */
+      .logo-container {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .logo {
+        height: 32px;
+      }
+      @media (min-width: 768px) {
+        .logo { height: 40px; }
+      }
+
+      /* MAIN CONTENT */
+      main {
+        max-width: 900px;
+        margin: 16px auto 40px;
+        padding: 0 20px;
+        background: var(--bg-light);
+      }
+      @media (min-width: 768px) {
+        main {
+          margin: 20px auto 60px;
+          padding: 0 40px;
+        }
+      }
+
+      article {
+        background: var(--white);
+        padding: 40px 24px;
+        border-radius: 12px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      }
+      @media (min-width: 768px) {
+        article {
+          padding: 60px 50px;
+        }
+      }
+
+      .article-header {
+        margin-bottom: 48px;
+        padding-bottom: 32px;
+        border-bottom: 2px solid var(--border-light);
+      }
+
+      h1 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 16px;
+        letter-spacing: -0.02em;
+        color: var(--text-dark);
+      }
+      @media (min-width: 768px) {
+        h1 {
+          font-size: 48px;
+          margin-bottom: 20px;
+        }
+      }
+
+      .article-meta {
+        color: var(--text-muted);
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 24px;
+      }
+
+      .article-intro {
+        font-size: 19px;
+        font-weight: 500;
+        line-height: 1.6;
+        color: var(--text-muted);
+        margin-bottom: 0;
+      }
+      @media (min-width: 768px) {
+        .article-intro {
+          font-size: 21px;
+        }
+      }
+
+      .article-intro a {
+        color: var(--accent-navy);
+        text-decoration: none;
+        font-weight: 600;
+        border-bottom: 1px solid var(--accent-navy);
+        transition: opacity 0.2s ease;
+      }
+      .article-intro a:hover {
+        opacity: 0.7;
+      }
+
+      /* LAYERED CALLOUT BOX - Pointed base with rounded content card */
+      .quick-facts {
+        position: relative;
+        background: var(--brand-orange);
+        border-radius: 4px;
+        padding: 8px;
+        margin: 48px 0;
+      }
+
+      .quick-facts-content {
+        background: var(--white);
+        color: var(--text-dark);
+        border-radius: 12px;
+        padding: 24px 28px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      }
+      @media (min-width: 768px) {
+        .quick-facts-content {
+          padding: 28px 36px;
+        }
+      }
+
+      .quick-facts h3 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 4px;
+        margin-bottom: 20px;
+        color: var(--text-dark);
+      }
+      @media (min-width: 768px) {
+        .quick-facts h3 {
+          font-size: 28px;
+        }
+      }
+
+      .quick-facts p {
+        font-size: 16px;
+        line-height: 1.65;
+        color: var(--text-dark);
+        margin-bottom: 12px;
+      }
+      @media (min-width: 768px) {
+        .quick-facts p {
+          font-size: 17px;
+        }
+      }
+
+      .quick-facts p:last-child {
+        margin-bottom: 0;
+      }
+
+      .quick-facts a {
+        color: var(--accent-navy);
+        text-decoration: none;
+        font-weight: 600;
+        border-bottom: 1px solid var(--accent-navy);
+        transition: opacity 0.2s ease;
+      }
+      .quick-facts a:hover {
+        opacity: 0.7;
+      }
+
+      /* Article content styles */
+      .article-content h2 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.3;
+        margin: 56px 0 24px;
+        color: var(--text-dark);
+        letter-spacing: -0.01em;
+      }
+      @media (min-width: 768px) {
+        .article-content h2 {
+          font-size: 32px;
+        }
+      }
+
+      .article-content h2:first-of-type {
+        margin-top: 0;
+      }
+
+      .article-content h3 {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 1.4;
+        margin: 40px 0 18px;
+        color: var(--text-dark);
+      }
+      @media (min-width: 768px) {
+        .article-content h3 {
+          font-size: 24px;
+        }
+      }
+
+      .article-content h4 {
+        font-size: 19px;
+        font-weight: 600;
+        margin: 32px 0 16px;
+        color: var(--text-dark);
+      }
+      @media (min-width: 768px) {
+        .article-content h4 {
+          font-size: 20px;
+        }
+      }
+
+      .article-content p {
         font-size: 17px;
+        line-height: 1.7;
+        margin-bottom: 18px;
+        color: var(--text-dark);
       }
-    }
-    nav.nav a:hover {
-      text-decoration: underline;
-    }
-
-    .article-header {
-      max-width: 800px;
-      margin: 48px auto;
-      padding: 0 20px;
-    }
-
-    .article-header h1 {
-      font-size: 36px;
-      line-height: 1.2;
-      margin-bottom: 24px;
-      font-weight: 600;
-    }
-
-    @media (min-width: 768px) {
-      .article-header h1 {
-        font-size: 48px;
+      @media (min-width: 768px) {
+        .article-content p {
+          font-size: 18px;
+          line-height: 1.75;
+        }
       }
-    }
 
-    .article-meta {
-      color: var(--muted);
-      font-size: 15px;
-      margin-bottom: 32px;
-    }
+      .article-content ul, .article-content ol {
+        margin: 20px 0;
+        padding-left: 28px;
+      }
 
-    .callout {
-      background: rgba(25, 25, 25, 0.05);
-      border-left: 4px solid var(--border);
-      padding: 20px 24px;
-      margin: 32px 0;
-    }
+      .article-content li {
+        font-size: 17px;
+        line-height: 1.7;
+        margin-bottom: 12px;
+        color: var(--text-dark);
+      }
+      @media (min-width: 768px) {
+        .article-content li {
+          font-size: 18px;
+          margin-bottom: 14px;
+        }
+      }
 
-    .callout p:first-of-type {
-      margin-top: 0;
-    }
+      .article-content a {
+        color: var(--accent-navy);
+        text-decoration: none;
+        font-weight: 600;
+        border-bottom: 1px solid var(--accent-navy);
+        transition: opacity 0.2s ease;
+      }
 
-    .callout p:last-child {
-      margin-bottom: 0;
-    }
+      .article-content a:hover {
+        opacity: 0.7;
+      }
 
-    .warning {
-      background: rgba(255, 100, 100, 0.1);
-      border-left: 4px solid #ff6464;
-      padding: 20px 24px;
-      margin: 32px 0;
-    }
+      .article-content strong {
+        font-weight: 700;
+      }
 
-    .article-content {
-      max-width: 800px;
-      margin: 0 auto 80px;
-      padding: 0 20px;
-    }
+      /* Warning box */
+      .warning-box {
+        position: relative;
+        background: #191919;
+        border-radius: 4px;
+        padding: 8px;
+        margin: 48px 0;
+      }
 
-    .article-content h2 {
-      font-size: 32px;
-      margin: 48px 0 24px 0;
-      font-weight: 600;
-      line-height: 1.3;
-    }
+      .warning-content {
+        background: var(--white);
+        color: var(--text-dark);
+        border-radius: 12px;
+        padding: 24px 28px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      }
+      @media (min-width: 768px) {
+        .warning-content {
+          padding: 28px 36px;
+        }
+      }
 
-    .article-content h3 {
-      font-size: 24px;
-      margin: 36px 0 16px 0;
-      font-weight: 600;
-    }
+      .warning-content p {
+        font-size: 16px;
+        line-height: 1.65;
+        color: var(--text-dark);
+        margin-bottom: 0;
+      }
+      @media (min-width: 768px) {
+        .warning-content p {
+          font-size: 17px;
+        }
+      }
 
-    .article-content h4 {
-      font-size: 20px;
-      margin: 24px 0 12px 0;
-      font-weight: 600;
-    }
-
-    .article-content p {
-      margin: 16px 0;
-      font-size: 17px;
-      line-height: 1.7;
-    }
-
-    .article-content ul, .article-content ol {
-      margin: 16px 0;
-      padding-left: 24px;
-    }
-
-    .article-content li {
-      margin: 8px 0;
-      font-size: 17px;
-      line-height: 1.7;
-    }
-
-    .article-content a {
-      color: var(--fg);
-      text-decoration: underline;
-    }
-
-    .article-content a:hover {
-      text-decoration: none;
-    }
-
-    .article-content strong {
-      font-weight: 600;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 24px 0;
-      font-size: 16px;
-    }
-
-    @media (min-width: 768px) {
+      /* Table styles */
       table {
-        font-size: 17px;
+        width: 100%;
+        border-collapse: collapse;
+        margin: 32px 0;
+        border: 2px solid var(--border-light);
+        background: var(--white);
       }
-    }
 
-    th, td {
-      text-align: left;
-      padding: 12px 16px;
-      border: 2px solid var(--border);
-    }
+      thead {
+        background: var(--text-dark);
+        color: var(--white);
+      }
 
-    th {
-      background: rgba(25, 25, 25, 0.05);
-      font-weight: 600;
-    }
+      th {
+        text-align: left;
+        padding: 16px 20px;
+        font-weight: 700;
+        font-size: 15px;
+      }
+      @media (min-width: 768px) {
+        th {
+          font-size: 16px;
+        }
+      }
 
-    tr:nth-child(even) {
-      background: rgba(25, 25, 25, 0.02);
-    }
+      td {
+        padding: 16px 20px;
+        border-bottom: 1px solid var(--border-light);
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      @media (min-width: 768px) {
+        td {
+          font-size: 17px;
+        }
+      }
 
-    footer {
-      border-top: 2.5px solid var(--border);
-      padding: 32px 20px;
-      text-align: center;
-      color: var(--muted);
-      font-size: 15px;
-    }
-  </style>
+      tbody tr:last-child td {
+        border-bottom: none;
+      }
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600&display=swap" rel="stylesheet">
+      tbody tr:nth-child(even) {
+        background: rgba(0, 0, 0, 0.02);
+      }
+
+      /* Related Articles Section */
+      .related-section {
+        margin-top: 56px;
+        padding-top: 40px;
+        border-top: 2px solid var(--border-light);
+      }
+      @media (min-width: 768px) {
+        .related-section {
+          margin-top: 64px;
+          padding-top: 48px;
+        }
+      }
+
+      .related-section h2 {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 24px;
+        color: var(--text-dark);
+      }
+      @media (min-width: 768px) {
+        .related-section h2 {
+          font-size: 32px;
+          margin-bottom: 28px;
+        }
+      }
+
+      .related-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-bottom: 56px;
+      }
+
+      .related-card {
+        display: block;
+        padding: 16px 20px;
+        border: 3px solid var(--brand-orange);
+        background: var(--white);
+        border-radius: 12px;
+        text-decoration: none;
+        color: var(--text-dark);
+        transition: background 0.15s;
+      }
+
+      .related-card:hover {
+        background: rgba(192, 56, 0, 0.03);
+      }
+
+      .related-card h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0 0 8px 0;
+        color: var(--text-dark);
+      }
+
+      .related-card p {
+        font-size: 15px;
+        color: var(--text-muted);
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      /* Footer wrapper */
+      .footer-wrapper {
+        background: #191919;
+        padding: 0 12px 12px;
+        margin-top: 80px;
+      }
+
+      /* FOOTER - Orange with asymmetric rounded shape like Shopify */
+      footer {
+        background: var(--brand-orange);
+        color: var(--white);
+        padding: 45px 40px 20px;
+        border-radius: 200px 16px 16px 200px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        min-height: 144px;
+      }
+      @media (min-width: 768px) {
+        footer {
+          padding: 63px 60px 24px;
+          min-height: 207px;
+          border-radius: 300px 16px 16px 300px;
+        }
+      }
+
+      .footer-content {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .footer-left {
+        flex: 0;
+      }
+
+      .footer-right {
+        display: flex;
+        align-items: flex-end;
+        gap: 20px;
+      }
+      @media (min-width: 768px) {
+        .footer-right {
+          gap: 32px;
+        }
+      }
+
+      .footer-right-text {
+        text-align: right;
+      }
+
+      .footer-right-text p {
+        font-size: 13px;
+        font-weight: 500;
+        margin: 0;
+        line-height: 1.6;
+      }
+      @media (min-width: 768px) {
+        .footer-right-text p {
+          font-size: 14px;
+        }
+      }
+
+      .footer-right-text a {
+        color: var(--white);
+        text-decoration: none;
+        transition: opacity 0.2s ease;
+      }
+
+      .footer-right-text a:hover {
+        opacity: 0.8;
+      }
+
+      .footer-logo {
+        height: 28px;
+        width: auto;
+      }
+      @media (min-width: 768px) {
+        .footer-logo {
+          height: 36px;
+        }
+      }
+    </style>
 
     <script type="application/ld+json">
     {
@@ -351,350 +754,404 @@
     </script>
 </head>
 <body>
-  <nav class="nav">
-    <ul>
-      <li><a href="https://wattspet.com/">Home</a></li>
-      <li><a href="https://wattspet.com/blog/">Blog</a></li>
-      <li><a href="https://wattspet.com/about.html">About</a></li>
-      <li><a href="https://wattspet.com/feedback.html">Feedback</a></li>
-    </ul>
-  </nav>
-
-  <div class="article-header">
-    <h1>Digestive Enzymes for Dogs: When They Help vs Marketing Hype</h1>
-    <div class="article-meta">Published January 22, 2026</div>
-
-    <div class="callout">
-      <p style="margin: 0; font-size: 18px;"><strong>💊 Quick Answer:</strong></p>
-      <p style="margin-top: 12px; margin-bottom: 0;"><strong>Most dogs don't need digestive enzyme supplements</strong>—their pancreas produces all the enzymes required for digestion. Enzymes are only necessary for dogs with <strong>exocrine pancreatic insufficiency (EPI)</strong>, chronic pancreatitis, or severe inflammatory bowel disease. If your dog has healthy stools and maintains weight, they don't need enzymes. Focus on <a href="https://wattspet.com/blog/probiotics-for-dogs.html">probiotics</a> and <a href="https://wattspet.com/blog/gut-health-for-dogs.html">gut health</a> instead.</p>
-    </div>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+        </div>
+      </div>
+    </header>
   </div>
 
-  <div class="article-content">
+  <main>
+    <article>
+      <div class="article-header">
+        <h1>Digestive Enzymes for Dogs: When They Help vs Marketing Hype</h1>
+        <div class="article-meta">Published January 22, 2026</div>
+
+        <div class="quick-facts">
+          <div class="quick-facts-content">
+            <p style="margin: 0; font-size: 18px; font-weight: 600;">💊 Quick Answer:</p>
+            <p style="margin-top: 12px; margin-bottom: 0;"><strong>Most dogs don't need digestive enzyme supplements</strong>—their pancreas produces all the enzymes required for digestion. Enzymes are only necessary for dogs with <strong>exocrine pancreatic insufficiency (EPI)</strong>, chronic pancreatitis, or severe inflammatory bowel disease. If your dog has healthy stools and maintains weight, they don't need enzymes. Focus on <a href="https://wattspet.com/blog/probiotics-for-dogs.html">probiotics</a> and <a href="https://wattspet.com/blog/gut-health-for-dogs.html">gut health</a> instead.</p>
+          </div>
+        </div>
+      </div>
 
-    <h2>What Are Digestive Enzymes?</h2>
+      <div class="article-content">
 
-    <p>Digestive enzymes are proteins that break down food into molecules small enough to be absorbed through the intestinal wall. In healthy dogs, the <strong>pancreas</strong> produces these enzymes and releases them into the small intestine during digestion.</p>
+        <h2>What Are Digestive Enzymes?</h2>
 
-    <p><strong>The three main digestive enzymes:</strong></p>
+        <p>Digestive enzymes are proteins that break down food into molecules small enough to be absorbed through the intestinal wall. In healthy dogs, the <strong>pancreas</strong> produces these enzymes and releases them into the small intestine during digestion.</p>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Enzyme</th>
-          <th>What It Breaks Down</th>
-          <th>Into What</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Amylase</strong></td>
-          <td>Carbohydrates (starches, sugars)</td>
-          <td>Simple sugars (glucose)</td>
-        </tr>
-        <tr>
-          <td><strong>Protease (Trypsin, Chymotrypsin)</strong></td>
-          <td>Proteins</td>
-          <td>Amino acids and small peptides</td>
-        </tr>
-        <tr>
-          <td><strong>Lipase</strong></td>
-          <td>Fats</td>
-          <td>Fatty acids and glycerol</td>
-        </tr>
-      </tbody>
-    </table>
+        <p><strong>The three main digestive enzymes:</strong></p>
 
-    <p><strong>Additional enzymes:</strong></p>
-    <ul>
-      <li><strong><a href="/ingredient-analyzer/ingredients/cellulase/">Cellulase</a></strong> — Breaks down cellulose (plant fiber). Dogs produce little to none; gut bacteria ferment fiber instead</li>
-      <li><strong>Lactase</strong> — Breaks down lactose (milk sugar). Most adult dogs have low lactase, causing dairy intolerance</li>
-      <li><strong><a href="/ingredient-analyzer/ingredients/bromelain/">Bromelain</a></strong> (from pineapple) and <strong><a href="/ingredient-analyzer/ingredients/papain/">papain</a></strong> (from papaya) — Plant-based proteases sometimes added to supplements</li>
-    </ul>
+        <table>
+          <thead>
+            <tr>
+              <th>Enzyme</th>
+              <th>What It Breaks Down</th>
+              <th>Into What</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Amylase</strong></td>
+              <td>Carbohydrates (starches, sugars)</td>
+              <td>Simple sugars (glucose)</td>
+            </tr>
+            <tr>
+              <td><strong>Protease (Trypsin, Chymotrypsin)</strong></td>
+              <td>Proteins</td>
+              <td>Amino acids and small peptides</td>
+            </tr>
+            <tr>
+              <td><strong>Lipase</strong></td>
+              <td>Fats</td>
+              <td>Fatty acids and glycerol</td>
+            </tr>
+          </tbody>
+        </table>
 
-    <p>In healthy dogs, the pancreas produces <strong>more than enough enzymes</strong> to fully digest all nutrients. Supplemental enzymes are unnecessary unless the pancreas is damaged or diseased.</p>
+        <p><strong>Additional enzymes:</strong></p>
+        <ul>
+          <li><strong><a href="/ingredient-analyzer/ingredients/cellulase/">Cellulase</a></strong> — Breaks down cellulose (plant fiber). Dogs produce little to none; gut bacteria ferment fiber instead</li>
+          <li><strong>Lactase</strong> — Breaks down lactose (milk sugar). Most adult dogs have low lactase, causing dairy intolerance</li>
+          <li><strong><a href="/ingredient-analyzer/ingredients/bromelain/">Bromelain</a></strong> (from pineapple) and <strong><a href="/ingredient-analyzer/ingredients/papain/">papain</a></strong> (from papaya) — Plant-based proteases sometimes added to supplements</li>
+        </ul>
 
-    <h2>When Dogs Actually Need Digestive Enzymes</h2>
+        <p>In healthy dogs, the pancreas produces <strong>more than enough enzymes</strong> to fully digest all nutrients. Supplemental enzymes are unnecessary unless the pancreas is damaged or diseased.</p>
 
-    <p>Digestive enzyme supplements are only medically necessary for a small percentage of dogs with specific pancreatic conditions:</p>
+        <h2>When Dogs Actually Need Digestive Enzymes</h2>
 
-    <h3>1. Exocrine Pancreatic Insufficiency (EPI)</h3>
+        <p>Digestive enzyme supplements are only medically necessary for a small percentage of dogs with specific pancreatic conditions:</p>
 
-    <p><strong>What it is:</strong> <a href="https://www.merckvetmanual.com/digestive-system/the-exocrine-pancreas/exocrine-pancreatic-insufficiency-in-dogs-and-cats" target="_blank" rel="noopener">A condition where the pancreas cannot produce sufficient digestive enzymes</a>. The exocrine portion of the pancreas (responsible for enzyme production) is damaged or atrophied, often due to genetic factors or chronic pancreatitis.</p>
+        <h3>1. Exocrine Pancreatic Insufficiency (EPI)</h3>
 
-    <p><strong>Breeds at higher risk:</strong> German Shepherds, Rough Collies, Chow Chows (genetic predisposition to pancreatic acinar atrophy).</p>
+        <p><strong>What it is:</strong> <a href="https://www.merckvetmanual.com/digestive-system/the-exocrine-pancreas/exocrine-pancreatic-insufficiency-in-dogs-and-cats" target="_blank" rel="noopener">A condition where the pancreas cannot produce sufficient digestive enzymes</a>. The exocrine portion of the pancreas (responsible for enzyme production) is damaged or atrophied, often due to genetic factors or chronic pancreatitis.</p>
+
+        <p><strong>Breeds at higher risk:</strong> German Shepherds, Rough Collies, Chow Chows (genetic predisposition to pancreatic acinar atrophy).</p>
+
+        <p><strong>Symptoms of EPI:</strong></p>
+        <ul>
+          <li><strong>Chronic diarrhea</strong> — Large volume, greasy, pale, foul-smelling stools (steatorrhea)</li>
+          <li><strong>Weight loss despite ravenous appetite</strong> — Dog eats enormous amounts but cannot digest food, essentially starving</li>
+          <li><strong>Coprophagia</strong> — Eating feces (attempting to recover nutrients)</li>
+          <li><strong>Gas and bloating</strong> — Undigested food ferments in the intestines</li>
+          <li><strong>Poor coat condition</strong> — Dull, dry, greasy coat; skin problems</li>
+          <li><strong>Muscle wasting</strong> — Loss of muscle mass despite normal or increased food intake</li>
+        </ul>
+
+        <p><strong>Diagnosis:</strong> Blood test measuring <strong>TLI (trypsin-like immunoreactivity)</strong>. Low TLI confirms EPI.</p>
+
+        <p><strong>Treatment:</strong> Lifelong pancreatic enzyme replacement therapy—raw pancreas or pancreatic enzyme powder mixed with every meal, plus highly digestible diet and vitamin B12 supplementation (dogs with EPI often develop B12 deficiency).</p>
+
+        <div class="quick-facts">
+          <div class="quick-facts-content">
+            <h3 style="margin-top: 0; font-size: 18px; font-weight: 600;">EPI Is Manageable with Treatment</h3>
+            <p style="margin-top: 12px; margin-bottom: 0;">While EPI is not curable, it's highly treatable. Dogs diagnosed with EPI can live normal, healthy lives with proper enzyme replacement and diet management. Without treatment, EPI is fatal—dogs starve despite eating. If your dog shows symptoms, seek veterinary diagnosis immediately.</p>
+          </div>
+        </div>
+
+        <h3>2. Chronic Pancreatitis</h3>
+
+        <p><strong>What it is:</strong> Long-term inflammation of the pancreas that can damage the enzyme-producing cells over time. Severe or repeated pancreatitis episodes may lead to reduced enzyme production.</p>
+
+        <p><strong>When enzymes help:</strong> Dogs with chronic pancreatitis who develop secondary enzyme insufficiency may benefit from enzyme supplementation during recovery or long-term if pancreatic function doesn't fully recover.</p>
+
+        <h3>3. Inflammatory Bowel Disease (IBD) – Sometimes</h3>
+
+        <p><strong>What it is:</strong> Chronic inflammation of the intestinal lining that can impair nutrient absorption and sometimes affect pancreatic function.</p>
+
+        <p><strong>When enzymes help:</strong> Some dogs with severe IBD benefit from enzymes if the intestinal damage prevents proper digestion. However, <strong>most IBD dogs need probiotics, easily digestible proteins, and anti-inflammatory diets</strong>—not enzymes. Only add enzymes if recommended by your vet for specific IBD cases.</p>
+
+        <h3>4. Senior Dogs with Reduced Pancreatic Function (Rare)</h3>
+
+        <p><strong>What it is:</strong> Some very old dogs may develop reduced enzyme production as pancreatic function declines with age.</p>
+
+        <p><strong>When enzymes help:</strong> Only if the senior dog shows signs of maldigestion (weight loss despite eating, greasy stools, poor nutrient absorption). Most senior dogs maintain adequate pancreatic function throughout their lives and don't need enzyme supplements.</p>
+
+        <h2>When Dogs Do NOT Need Digestive Enzymes</h2>
+
+        <p>Despite aggressive marketing, digestive enzymes are <strong>unnecessary and unhelpful</strong> for the vast majority of dogs:</p>
+
+        <h3>Healthy Dogs Eating Kibble</h3>
 
-    <p><strong>Symptoms of EPI:</strong></p>
-    <ul>
-      <li><strong>Chronic diarrhea</strong> — Large volume, greasy, pale, foul-smelling stools (steatorrhea)</li>
-      <li><strong>Weight loss despite ravenous appetite</strong> — Dog eats enormous amounts but cannot digest food, essentially starving</li>
-      <li><strong>Coprophagia</strong> — Eating feces (attempting to recover nutrients)</li>
-      <li><strong>Gas and bloating</strong> — Undigested food ferments in the intestines</li>
-      <li><strong>Poor coat condition</strong> — Dull, dry, greasy coat; skin problems</li>
-      <li><strong>Muscle wasting</strong> — Loss of muscle mass despite normal or increased food intake</li>
-    </ul>
-
-    <p><strong>Diagnosis:</strong> Blood test measuring <strong>TLI (trypsin-like immunoreactivity)</strong>. Low TLI confirms EPI.</p>
-
-    <p><strong>Treatment:</strong> Lifelong pancreatic enzyme replacement therapy—raw pancreas or pancreatic enzyme powder mixed with every meal, plus highly digestible diet and vitamin B12 supplementation (dogs with EPI often develop B12 deficiency).</p>
-
-    <div class="callout">
-      <h3 style="margin-top: 0; font-size: 18px;">EPI Is Manageable with Treatment</h3>
-      <p style="margin-top: 12px; margin-bottom: 0;">While EPI is not curable, it's highly treatable. Dogs diagnosed with EPI can live normal, healthy lives with proper enzyme replacement and diet management. Without treatment, EPI is fatal—dogs starve despite eating. If your dog shows symptoms, seek veterinary diagnosis immediately.</p>
-    </div>
-
-    <h3>2. Chronic Pancreatitis</h3>
-
-    <p><strong>What it is:</strong> Long-term inflammation of the pancreas that can damage the enzyme-producing cells over time. Severe or repeated pancreatitis episodes may lead to reduced enzyme production.</p>
-
-    <p><strong>When enzymes help:</strong> Dogs with chronic pancreatitis who develop secondary enzyme insufficiency may benefit from enzyme supplementation during recovery or long-term if pancreatic function doesn't fully recover.</p>
-
-    <h3>3. Inflammatory Bowel Disease (IBD) – Sometimes</h3>
+        <p>Kibble is highly processed and easy to digest. Healthy dogs produce more than enough enzymes to break down kibble completely. Adding enzymes does nothing—the pancreas already handled it.</p>
 
-    <p><strong>What it is:</strong> Chronic inflammation of the intestinal lining that can impair nutrient absorption and sometimes affect pancreatic function.</p>
-
-    <p><strong>When enzymes help:</strong> Some dogs with severe IBD benefit from enzymes if the intestinal damage prevents proper digestion. However, <strong>most IBD dogs need probiotics, easily digestible proteins, and anti-inflammatory diets</strong>—not enzymes. Only add enzymes if recommended by your vet for specific IBD cases.</p>
-
-    <h3>4. Senior Dogs with Reduced Pancreatic Function (Rare)</h3>
-
-    <p><strong>What it is:</strong> Some very old dogs may develop reduced enzyme production as pancreatic function declines with age.</p>
-
-    <p><strong>When enzymes help:</strong> Only if the senior dog shows signs of maldigestion (weight loss despite eating, greasy stools, poor nutrient absorption). Most senior dogs maintain adequate pancreatic function throughout their lives and don't need enzyme supplements.</p>
-
-    <h2>When Dogs Do NOT Need Digestive Enzymes</h2>
+        <h3>Dogs on Raw or Fresh Food Diets</h3>
 
-    <p>Despite aggressive marketing, digestive enzymes are <strong>unnecessary and unhelpful</strong> for the vast majority of dogs:</p>
+        <p>While raw food contains some natural enzymes, these are destroyed by stomach acid and don't contribute meaningfully to digestion. Your dog's pancreas still does the work. Healthy dogs on raw diets don't need supplemental enzymes.</p>
 
-    <h3>Healthy Dogs Eating Kibble</h3>
+        <h3>Dogs with Occasional Loose Stools or Gas</h3>
 
-    <p>Kibble is highly processed and easy to digest. Healthy dogs produce more than enough enzymes to break down kibble completely. Adding enzymes does nothing—the pancreas already handled it.</p>
+        <p>Occasional digestive upset is almost always caused by:</p>
+        <ul>
+          <li><strong>Diet changes or food intolerances</strong> — Switching proteins, adding dairy, feeding high-fat treats</li>
+          <li><strong>Eating too quickly</strong> — Swallowing air causes bloating and gas</li>
+          <li><strong>Gut dysbiosis</strong> — Imbalanced gut bacteria from antibiotics, stress, or poor diet</li>
+          <li><strong>Parasites or infections</strong> — Giardia, worms, bacterial overgrowth</li>
+        </ul>
 
-    <h3>Dogs on Raw or Fresh Food Diets</h3>
+        <p>None of these issues are resolved by adding digestive enzymes. <strong>Probiotics, slower feeding methods, diet adjustments, and parasite treatment</strong> are the appropriate interventions.</p>
 
-    <p>While raw food contains some natural enzymes, these are destroyed by stomach acid and don't contribute meaningfully to digestion. Your dog's pancreas still does the work. Healthy dogs on raw diets don't need supplemental enzymes.</p>
-
-    <h3>Dogs with Occasional Loose Stools or Gas</h3>
-
-    <p>Occasional digestive upset is almost always caused by:</p>
-    <ul>
-      <li><strong>Diet changes or food intolerances</strong> — Switching proteins, adding dairy, feeding high-fat treats</li>
-      <li><strong>Eating too quickly</strong> — Swallowing air causes bloating and gas</li>
-      <li><strong>Gut dysbiosis</strong> — Imbalanced gut bacteria from antibiotics, stress, or poor diet</li>
-      <li><strong>Parasites or infections</strong> — Giardia, worms, bacterial overgrowth</li>
-    </ul>
-
-    <p>None of these issues are resolved by adding digestive enzymes. <strong>Probiotics, slower feeding methods, diet adjustments, and parasite treatment</strong> are the appropriate interventions.</p>
-
-    <h3>Dogs Marketed as "Needing Help Digesting Their Food"</h3>
-
-    <p>This is marketing hype. Healthy dogs digest their food perfectly well without supplements. If your dog has normal stools, maintains weight, and has good energy, their digestive system is working correctly.</p>
-
-    <div class="warning">
-      <strong>⚠️ Don't Assume Digestive Problems = Enzyme Deficiency</strong><br><br>
-      If your dog has chronic diarrhea, gas, bloating, or weight loss, <strong>do not self-diagnose enzyme deficiency</strong>. These symptoms can be caused by dozens of conditions: food intolerances, IBD, parasites, bacterial overgrowth, liver disease, kidney disease, or cancer. See your veterinarian for proper diagnosis before adding any supplements.
-    </div>
-
-    <h2>Digestive Enzymes vs Probiotics: What's the Difference?</h2>
-
-    <p>Many people confuse digestive enzymes with probiotics because both are marketed for "digestive health." They are completely different and serve distinct functions:</p>
+        <h3>Dogs Marketed as "Needing Help Digesting Their Food"</h3>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Feature</th>
-          <th>Digestive Enzymes</th>
-          <th>Probiotics</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>What They Are</strong></td>
-          <td>Proteins that break down food molecules</td>
-          <td>Live beneficial bacteria</td>
-        </tr>
-        <tr>
-          <td><strong>Where They Work</strong></td>
-          <td>Small intestine (site of nutrient absorption)</td>
-          <td>Large intestine (colon)</td>
-        </tr>
-        <tr>
-          <td><strong>What They Do</strong></td>
-          <td>Break proteins into amino acids, fats into fatty acids, carbs into sugars</td>
-          <td>Support immune function, produce vitamins, prevent harmful bacteria, reduce inflammation</td>
-        </tr>
-        <tr>
-          <td><strong>Produced By</strong></td>
-          <td>Pancreas (in healthy dogs)</td>
-          <td>Colonize naturally from environment and diet; replenished through fermented foods</td>
-        </tr>
-        <tr>
-          <td><strong>Who Needs Them</strong></td>
-          <td>Only dogs with pancreatic insufficiency or disease</td>
-          <td>Most dogs benefit, especially during/after antibiotics, stress, diet changes, or digestive upset</td>
-        </tr>
-      </tbody>
-    </table>
+        <p>This is marketing hype. Healthy dogs digest their food perfectly well without supplements. If your dog has normal stools, maintains weight, and has good energy, their digestive system is working correctly.</p>
 
-    <p><strong>Which one does your dog need?</strong></p>
-    <ul>
-      <li>If your dog has chronic diarrhea with greasy, pale stools and weight loss despite eating: <strong>possibly enzymes</strong> (requires vet diagnosis)</li>
-      <li>If your dog has loose stools, gas, or digestive upset after antibiotics, diet changes, or stress: <strong>probiotics</strong></li>
-      <li>If your dog has normal digestion: <strong>probiotics for general gut health; enzymes are unnecessary</strong></li>
-    </ul>
+        <div class="warning-box">
+          <div class="warning-content">
+            <p><strong>⚠️ Don't Assume Digestive Problems = Enzyme Deficiency</strong><br><br>
+            If your dog has chronic diarrhea, gas, bloating, or weight loss, <strong>do not self-diagnose enzyme deficiency</strong>. These symptoms can be caused by dozens of conditions: food intolerances, IBD, parasites, bacterial overgrowth, liver disease, kidney disease, or cancer. See your veterinarian for proper diagnosis before adding any supplements.</p>
+          </div>
+        </div>
 
-    <p>Learn more: <a href="https://wattspet.com/blog/probiotics-for-dogs.html">Probiotics for Dogs</a> | <a href="https://wattspet.com/blog/gut-health-for-dogs.html">Gut Health for Dogs</a></p>
+        <h2>Digestive Enzymes vs Probiotics: What's the Difference?</h2>
 
-    <h2>Whole-Food Sources of Digestive Enzymes</h2>
+        <p>Many people confuse digestive enzymes with probiotics because both are marketed for "digestive health." They are completely different and serve distinct functions:</p>
 
-    <p>If your dog has been diagnosed with enzyme deficiency (EPI) or benefits from enzyme support, whole-food sources are often superior to synthetic supplements:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Digestive Enzymes</th>
+              <th>Probiotics</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>What They Are</strong></td>
+              <td>Proteins that break down food molecules</td>
+              <td>Live beneficial bacteria</td>
+            </tr>
+            <tr>
+              <td><strong>Where They Work</strong></td>
+              <td>Small intestine (site of nutrient absorption)</td>
+              <td>Large intestine (colon)</td>
+            </tr>
+            <tr>
+              <td><strong>What They Do</strong></td>
+              <td>Break proteins into amino acids, fats into fatty acids, carbs into sugars</td>
+              <td>Support immune function, produce vitamins, prevent harmful bacteria, reduce inflammation</td>
+            </tr>
+            <tr>
+              <td><strong>Produced By</strong></td>
+              <td>Pancreas (in healthy dogs)</td>
+              <td>Colonize naturally from environment and diet; replenished through fermented foods</td>
+            </tr>
+            <tr>
+              <td><strong>Who Needs Them</strong></td>
+              <td>Only dogs with pancreatic insufficiency or disease</td>
+              <td>Most dogs benefit, especially during/after antibiotics, stress, diet changes, or digestive upset</td>
+            </tr>
+          </tbody>
+        </table>
 
-    <h3>1. Raw Green Tripe (Best Whole-Food Source)</h3>
+        <p><strong>Which one does your dog need?</strong></p>
+        <ul>
+          <li>If your dog has chronic diarrhea with greasy, pale stools and weight loss despite eating: <strong>possibly enzymes</strong> (requires vet diagnosis)</li>
+          <li>If your dog has loose stools, gas, or digestive upset after antibiotics, diet changes, or stress: <strong>probiotics</strong></li>
+          <li>If your dog has normal digestion: <strong>probiotics for general gut health; enzymes are unnecessary</strong></li>
+        </ul>
 
-    <p><strong>What it is:</strong> The raw, unbleached stomach lining of grazing animals (cows, sheep, goats). The stomach contains:</p>
-    <ul>
-      <li><strong>Naturally occurring digestive enzymes</strong> from the animal's digestive system</li>
-      <li><strong>Probiotics and beneficial bacteria</strong> from fermented plant matter</li>
-      <li><strong>Digestive acids</strong> that aid in breaking down food</li>
-      <li><strong>Amino acids</strong> and easily digestible protein</li>
-    </ul>
+        <p>Learn more: <a href="https://wattspet.com/blog/probiotics-for-dogs.html">Probiotics for Dogs</a> | <a href="https://wattspet.com/blog/gut-health-for-dogs.html">Gut Health for Dogs</a></p>
 
-    <p><strong>How to use:</strong> Feed raw or freeze-dried green tripe. Cooking destroys enzymes. For dogs with EPI: 10-20% of daily food intake. For general digestive support: 2-3 times per week.</p>
+        <h2>Whole-Food Sources of Digestive Enzymes</h2>
 
-    <p><strong>Warning:</strong> Raw green tripe smells extremely strong (fermented plant matter). It's normal. Dogs love it; humans do not.</p>
+        <p>If your dog has been diagnosed with enzyme deficiency (EPI) or benefits from enzyme support, whole-food sources are often superior to synthetic supplements:</p>
 
-    <h3>2. Raw Animal Pancreas (Gold Standard for EPI)</h3>
+        <h3>1. Raw Green Tripe (Best Whole-Food Source)</h3>
 
-    <p><strong>What it is:</strong> Fresh or frozen pancreas from beef, pork, or lamb. Contains the highest concentration of natural pancreatic enzymes (pancreatin)—the same enzymes the dog's pancreas should produce.</p>
+        <p><strong>What it is:</strong> The raw, unbleached stomach lining of grazing animals (cows, sheep, goats). The stomach contains:</p>
+        <ul>
+          <li><strong>Naturally occurring digestive enzymes</strong> from the animal's digestive system</li>
+          <li><strong>Probiotics and beneficial bacteria</strong> from fermented plant matter</li>
+          <li><strong>Digestive acids</strong> that aid in breaking down food</li>
+          <li><strong>Amino acids</strong> and easily digestible protein</li>
+        </ul>
 
-    <p><strong>How to use:</strong> For dogs with EPI: Mix raw, finely chopped pancreas with food and let sit for 20-30 minutes before feeding (pre-digests the food). Typical dose: 1-2 oz per meal for a 50 lb dog with EPI.</p>
+        <p><strong>How to use:</strong> Feed raw or freeze-dried green tripe. Cooking destroys enzymes. For dogs with EPI: 10-20% of daily food intake. For general digestive support: 2-3 times per week.</p>
 
-    <p><strong>Where to get it:</strong> Local butcher, ethnic grocery stores, or raw feeding suppliers. Must be fresh or frozen (not cooked).</p>
+        <p><strong>Warning:</strong> Raw green tripe smells extremely strong (fermented plant matter). It's normal. Dogs love it; humans do not.</p>
 
-    <h3>3. Fermented Foods (Enzymes + Probiotics)</h3>
+        <h3>2. Raw Animal Pancreas (Gold Standard for EPI)</h3>
 
-    <p><strong>What they provide:</strong> The fermentation process produces enzymes (proteases, amylases, lipases) created by beneficial bacteria. Also provides probiotics for gut health.</p>
+        <p><strong>What it is:</strong> Fresh or frozen pancreas from beef, pork, or lamb. Contains the highest concentration of natural pancreatic enzymes (pancreatin)—the same enzymes the dog's pancreas should produce.</p>
 
-    <p><strong>Best options for dogs:</strong></p>
-    <ul>
-      <li><strong>Plain kefir</strong> (fermented milk; small amounts for dogs that tolerate dairy)</li>
-      <li><strong>Sauerkraut juice</strong> (fermented cabbage juice; 1-2 teaspoons per meal)</li>
-      <li><strong>Fermented vegetables</strong> (small amounts mixed into food)</li>
-    </ul>
+        <p><strong>How to use:</strong> For dogs with EPI: Mix raw, finely chopped pancreas with food and let sit for 20-30 minutes before feeding (pre-digests the food). Typical dose: 1-2 oz per meal for a 50 lb dog with EPI.</p>
 
-    <p><strong>How to use:</strong> 1-2 tablespoons daily for a 50 lb dog. Introduce gradually to avoid digestive upset.</p>
+        <p><strong>Where to get it:</strong> Local butcher, ethnic grocery stores, or raw feeding suppliers. Must be fresh or frozen (not cooked).</p>
 
-    <h3>4. Fresh Pineapple and Papaya (Plant Enzymes)</h3>
+        <h3>3. Fermented Foods (Enzymes + Probiotics)</h3>
 
-    <p><strong>What they provide:</strong></p>
-    <ul>
-      <li><strong>Bromelain</strong> (from fresh pineapple) — Protease enzyme that breaks down proteins</li>
-      <li><strong>Papain</strong> (from fresh papaya) — Another protease enzyme</li>
-    </ul>
+        <p><strong>What they provide:</strong> The fermentation process produces enzymes (proteases, amylases, lipases) created by beneficial bacteria. Also provides probiotics for gut health.</p>
 
-    <p><strong>Effectiveness:</strong> These plant enzymes work in the acidic environment of the stomach but are less effective than pancreatic enzymes for complete digestion. Best used as complementary support, not primary treatment for EPI.</p>
+        <p><strong>Best options for dogs:</strong></p>
+        <ul>
+          <li><strong>Plain kefir</strong> (fermented milk; small amounts for dogs that tolerate dairy)</li>
+          <li><strong>Sauerkraut juice</strong> (fermented cabbage juice; 1-2 teaspoons per meal)</li>
+          <li><strong>Fermented vegetables</strong> (small amounts mixed into food)</li>
+        </ul>
 
-    <p><strong>How to use:</strong> Feed small amounts of fresh (not canned) pineapple or papaya as a treat or mixed into food. 1-2 tablespoons for a 50 lb dog. Avoid large amounts (high sugar content).</p>
+        <p><strong>How to use:</strong> 1-2 tablespoons daily for a 50 lb dog. Introduce gradually to avoid digestive upset.</p>
 
-    <h3>5. Raw Honey (Contains Amylase and Protease)</h3>
+        <h3>4. Fresh Pineapple and Papaya (Plant Enzymes)</h3>
 
-    <p><strong>What it provides:</strong> Raw, unfiltered honey contains small amounts of amylase, protease, and other enzymes produced by bees.</p>
+        <p><strong>What they provide:</strong></p>
+        <ul>
+          <li><strong>Bromelain</strong> (from fresh pineapple) — Protease enzyme that breaks down proteins</li>
+          <li><strong>Papain</strong> (from fresh papaya) — Another protease enzyme</li>
+        </ul>
 
-    <p><strong>Effectiveness:</strong> Very mild enzyme support; not sufficient for treating EPI. Can be used as a complementary food for general digestive health.</p>
+        <p><strong>Effectiveness:</strong> These plant enzymes work in the acidic environment of the stomach but are less effective than pancreatic enzymes for complete digestion. Best used as complementary support, not primary treatment for EPI.</p>
 
-    <p><strong>How to use:</strong> 1/2 to 1 teaspoon daily for a 50 lb dog. Raw honey only—processed honey has enzymes destroyed by heat.</p>
+        <p><strong>How to use:</strong> Feed small amounts of fresh (not canned) pineapple or papaya as a treat or mixed into food. 1-2 tablespoons for a 50 lb dog. Avoid large amounts (high sugar content).</p>
 
-    <h2>When to Consider Digestive Enzyme Supplements</h2>
+        <h3>5. Raw Honey (Contains Amylase and Protease)</h3>
 
-    <p>If your veterinarian has diagnosed EPI or confirmed enzyme deficiency, you have two supplement options:</p>
+        <p><strong>What it provides:</strong> Raw, unfiltered honey contains small amounts of amylase, protease, and other enzymes produced by bees.</p>
 
-    <h3>1. Pancreatic Enzyme Powder</h3>
+        <p><strong>Effectiveness:</strong> Very mild enzyme support; not sufficient for treating EPI. Can be used as a complementary food for general digestive health.</p>
 
-    <p><strong>What it is:</strong> Concentrated enzymes extracted from animal pancreas (usually pork). Contains lipase, protease, and amylase in therapeutic doses.</p>
+        <p><strong>How to use:</strong> 1/2 to 1 teaspoon daily for a 50 lb dog. Raw honey only—processed honey has enzymes destroyed by heat.</p>
 
-    <p><strong>How to use:</strong> Mix powder into food and let sit for 20-30 minutes before feeding (allows enzymes to pre-digest the food). Typical dose: 1-2 teaspoons per meal for a 50 lb dog with EPI, but follow veterinary guidance.</p>
+        <h2>When to Consider Digestive Enzyme Supplements</h2>
 
-    <p><strong>Best products:</strong> Look for high lipase content (10,000+ USP units per dose). Common brands: Viokase, Pancrezyme.</p>
+        <p>If your veterinarian has diagnosed EPI or confirmed enzyme deficiency, you have two supplement options:</p>
 
-    <h3>2. Plant-Based Enzyme Supplements</h3>
+        <h3>1. Pancreatic Enzyme Powder</h3>
 
-    <p><strong>What they contain:</strong> Amylase, protease, lipase, cellulase, and sometimes bromelain or papain derived from plant or fungal sources (Aspergillus).</p>
+        <p><strong>What it is:</strong> Concentrated enzymes extracted from animal pancreas (usually pork). Contains lipase, protease, and amylase in therapeutic doses.</p>
 
-    <p><strong>Effectiveness:</strong> May help mild digestive issues or dogs who cannot tolerate animal-based enzymes. However, they are <strong>not sufficient for treating EPI</strong>—dogs with EPI need pancreatic enzymes from animal sources.</p>
+        <p><strong>How to use:</strong> Mix powder into food and let sit for 20-30 minutes before feeding (allows enzymes to pre-digest the food). Typical dose: 1-2 teaspoons per meal for a 50 lb dog with EPI, but follow veterinary guidance.</p>
 
-    <p><strong>When to use:</strong> Only if recommended by your vet for mild digestive support, not for diagnosed pancreatic insufficiency.</p>
+        <p><strong>Best products:</strong> Look for high lipase content (10,000+ USP units per dose). Common brands: Viokase, Pancrezyme.</p>
 
-    <h2>How to Tell If Digestive Enzymes Are Working</h2>
+        <h3>2. Plant-Based Enzyme Supplements</h3>
 
-    <p>If your dog truly has enzyme deficiency, you should see clear improvements within <strong>3-7 days</strong> of starting enzyme therapy:</p>
+        <p><strong>What they contain:</strong> Amylase, protease, lipase, cellulase, and sometimes bromelain or papain derived from plant or fungal sources (Aspergillus).</p>
 
-    <ul>
-      <li><strong>Firmer, more formed stools</strong> — Less greasy, pale color improves to normal brown</li>
-      <li><strong>Reduced stool volume</strong> — Properly digested food produces less waste</li>
-      <li><strong>Less gas and bloating</strong> — Food is fully digested instead of fermenting in the gut</li>
-      <li><strong>Gradual weight gain</strong> — Nutrients are absorbed; muscle mass returns</li>
-      <li><strong>Improved coat condition</strong> — Shinier, healthier coat as fat-soluble vitamins are absorbed</li>
-      <li><strong>Normalized appetite</strong> — Dog feels satisfied after meals instead of ravenous</li>
-    </ul>
+        <p><strong>Effectiveness:</strong> May help mild digestive issues or dogs who cannot tolerate animal-based enzymes. However, they are <strong>not sufficient for treating EPI</strong>—dogs with EPI need pancreatic enzymes from animal sources.</p>
 
-    <p><strong>If you see NO improvement after 2-3 weeks:</strong></p>
-    <ul>
-      <li>Your dog likely doesn't have an enzyme deficiency</li>
-      <li>The problem is more likely food intolerances, gut dysbiosis, parasites, or IBD</li>
-      <li>Return to your vet for further testing and diagnosis</li>
-    </ul>
+        <p><strong>When to use:</strong> Only if recommended by your vet for mild digestive support, not for diagnosed pancreatic insufficiency.</p>
 
-    <h2>Can Digestive Enzymes Cause Problems?</h2>
+        <h2>How to Tell If Digestive Enzymes Are Working</h2>
 
-    <p>Digestive enzymes are generally safe when used appropriately. However, there are potential concerns:</p>
+        <p>If your dog truly has enzyme deficiency, you should see clear improvements within <strong>3-7 days</strong> of starting enzyme therapy:</p>
 
-    <h3>1. Pancreatic "Laziness" (Theoretical Risk)</h3>
+        <ul>
+          <li><strong>Firmer, more formed stools</strong> — Less greasy, pale color improves to normal brown</li>
+          <li><strong>Reduced stool volume</strong> — Properly digested food produces less waste</li>
+          <li><strong>Less gas and bloating</strong> — Food is fully digested instead of fermenting in the gut</li>
+          <li><strong>Gradual weight gain</strong> — Nutrients are absorbed; muscle mass returns</li>
+          <li><strong>Improved coat condition</strong> — Shinier, healthier coat as fat-soluble vitamins are absorbed</li>
+          <li><strong>Normalized appetite</strong> — Dog feels satisfied after meals instead of ravenous</li>
+        </ul>
 
-    <p><strong>Theory:</strong> If a healthy pancreas is constantly supplemented with external enzymes, it may reduce its own production over time ("use it or lose it").</p>
+        <p><strong>If you see NO improvement after 2-3 weeks:</strong></p>
+        <ul>
+          <li>Your dog likely doesn't have an enzyme deficiency</li>
+          <li>The problem is more likely food intolerances, gut dysbiosis, parasites, or IBD</li>
+          <li>Return to your vet for further testing and diagnosis</li>
+        </ul>
 
-    <p><strong>Evidence:</strong> Limited research in dogs. This is why enzymes should <strong>only be used when medically necessary</strong>, not routinely in healthy dogs.</p>
+        <h2>Can Digestive Enzymes Cause Problems?</h2>
 
-    <h3>2. Stomach Irritation from High-Dose Plant Enzymes</h3>
+        <p>Digestive enzymes are generally safe when used appropriately. However, there are potential concerns:</p>
 
-    <p><strong>Issue:</strong> Very high doses of bromelain or papain can irritate the stomach lining, causing nausea or discomfort.</p>
+        <h3>1. Pancreatic "Laziness" (Theoretical Risk)</h3>
 
-    <p><strong>Solution:</strong> Use moderate doses; stick to whole-food sources (fresh pineapple, papaya) rather than concentrated supplements.</p>
+        <p><strong>Theory:</strong> If a healthy pancreas is constantly supplemented with external enzymes, it may reduce its own production over time ("use it or lose it").</p>
 
-    <h3>3. Mouth Sores from Dry Enzyme Powder</h3>
+        <p><strong>Evidence:</strong> Limited research in dogs. This is why enzymes should <strong>only be used when medically necessary</strong>, not routinely in healthy dogs.</p>
 
-    <p><strong>Issue:</strong> Dry pancreatic enzyme powder can cause mouth sores if dogs lick it directly before it's mixed into food.</p>
+        <h3>2. Stomach Irritation from High-Dose Plant Enzymes</h3>
 
-    <p><strong>Solution:</strong> Always mix enzyme powder thoroughly into moistened food. Never give dry powder directly.</p>
+        <p><strong>Issue:</strong> Very high doses of bromelain or papain can irritate the stomach lining, causing nausea or discomfort.</p>
 
-    <h2>The Bottom Line</h2>
+        <p><strong>Solution:</strong> Use moderate doses; stick to whole-food sources (fresh pineapple, papaya) rather than concentrated supplements.</p>
 
-    <p><strong>Most dogs do not need digestive enzyme supplements.</strong> Healthy dogs produce all the enzymes they need for complete digestion. The pancreas is highly efficient at this job.</p>
+        <h3>3. Mouth Sores from Dry Enzyme Powder</h3>
 
-    <p>Digestive enzymes are <strong>only medically necessary</strong> for dogs with:</p>
-    <ul>
-      <li><strong>Exocrine pancreatic insufficiency (EPI)</strong> — Confirmed by TLI blood test</li>
-      <li><strong>Chronic pancreatitis with secondary enzyme deficiency</strong></li>
-      <li><strong>Severe IBD with maldigestion</strong> (uncommon)</li>
-      <li><strong>Rare cases of age-related pancreatic decline</strong> in very old dogs</li>
-    </ul>
+        <p><strong>Issue:</strong> Dry pancreatic enzyme powder can cause mouth sores if dogs lick it directly before it's mixed into food.</p>
 
-    <p>If your dog has normal stools, maintains weight, and has good energy, they <strong>do not need enzyme supplements</strong>. Focus on:</p>
-    <ul>
-      <li><strong>Probiotics</strong> for gut health (most dogs benefit)</li>
-      <li><strong>Easily digestible whole foods</strong></li>
-      <li><strong>Addressing food intolerances</strong> if digestive upset occurs</li>
-      <li><strong>Proper diagnosis</strong> if chronic symptoms develop</li>
-    </ul>
+        <p><strong>Solution:</strong> Always mix enzyme powder thoroughly into moistened food. Never give dry powder directly.</p>
 
-    <p>The best whole-food sources of enzymes are <strong>raw green tripe</strong> (for general digestive support) and <strong>raw animal pancreas</strong> (gold standard for EPI treatment). Fermented foods provide both enzymes and probiotics.</p>
+        <h2>The Bottom Line</h2>
 
-    <p>If you suspect your dog has an enzyme deficiency, <strong>seek veterinary diagnosis before supplementing</strong>. Chronic diarrhea, weight loss, and digestive symptoms have many causes—don't assume enzymes are the answer without proper testing.</p>
+        <p><strong>Most dogs do not need digestive enzyme supplements.</strong> Healthy dogs produce all the enzymes they need for complete digestion. The pancreas is highly efficient at this job.</p>
 
-    <p><strong>Related:</strong> <a href="https://wattspet.com/blog/probiotics-for-dogs.html">Probiotics for Dogs</a> | <a href="https://wattspet.com/blog/gut-health-for-dogs.html">Gut Health for Dogs</a> | <a href="https://wattspet.com/blog/protein-for-dogs.html">Protein for Dogs</a></p>
+        <p>Digestive enzymes are <strong>only medically necessary</strong> for dogs with:</p>
+        <ul>
+          <li><strong>Exocrine pancreatic insufficiency (EPI)</strong> — Confirmed by TLI blood test</li>
+          <li><strong>Chronic pancreatitis with secondary enzyme deficiency</strong></li>
+          <li><strong>Severe IBD with maldigestion</strong> (uncommon)</li>
+          <li><strong>Rare cases of age-related pancreatic decline</strong> in very old dogs</li>
+        </ul>
 
+        <p>If your dog has normal stools, maintains weight, and has good energy, they <strong>do not need enzyme supplements</strong>. Focus on:</p>
+        <ul>
+          <li><strong>Probiotics</strong> for gut health (most dogs benefit)</li>
+          <li><strong>Easily digestible whole foods</strong></li>
+          <li><strong>Addressing food intolerances</strong> if digestive upset occurs</li>
+          <li><strong>Proper diagnosis</strong> if chronic symptoms develop</li>
+        </ul>
+
+        <p>The best whole-food sources of enzymes are <strong>raw green tripe</strong> (for general digestive support) and <strong>raw animal pancreas</strong> (gold standard for EPI treatment). Fermented foods provide both enzymes and probiotics.</p>
+
+        <p>If you suspect your dog has an enzyme deficiency, <strong>seek veterinary diagnosis before supplementing</strong>. Chronic diarrhea, weight loss, and digestive symptoms have many causes—don't assume enzymes are the answer without proper testing.</p>
+
+        <div class="related-section">
+          <h2>Related Articles</h2>
+
+          <div class="related-grid">
+            <a href="/blog/probiotics-for-dogs.html" class="related-card">
+              <h3>Probiotics for Dogs</h3>
+              <p>Learn the difference between enzymes and probiotics for digestive health</p>
+            </a>
+
+            <a href="/blog/gut-health-for-dogs.html" class="related-card">
+              <h3>Gut Health for Dogs</h3>
+              <p>Understanding the microbiome and digestive system function</p>
+            </a>
+
+            <a href="/blog/protein-for-dogs.html" class="related-card">
+              <h3>Protein for Dogs</h3>
+              <p>How dogs digest and utilize protein from different sources</p>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </article>
+  </main>
+
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
+      </div>
+    </footer>
   </div>
 
-  <footer>
-    © 2026 Watts Pet. All rights reserved.
-  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

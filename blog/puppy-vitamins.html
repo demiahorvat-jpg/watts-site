@@ -32,198 +32,268 @@
   <meta property="og:site_name" content="Watts Pet">
   <meta property="og:image" content="https://wattspet.com/assets/hero.jpg">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
-
+  <!-- Degular Font -->
   <style>
-    :root {
-      --bg: #F1ECE9;
-      --fg: #191919;
-      --muted: #3a3a3a;
-      --border: #191919;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body { min-height: 100%; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Regular.woff2') format('woff2');
       font-weight: 400;
-      line-height: 1.6;
-      overflow-x: hidden;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
     }
 
-    /* Navigation */
-    nav.nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px 20px;
-      border-bottom: 2.5px solid var(--border);
+    :root {
+      --brand-orange: #c03800;
+      --bg-light: #f1f1f1;
+      --text-dark: #191919;
+      --white: #ffffff;
+      --text-muted: #666666;
+      --border-light: rgba(25, 25, 25, 0.1);
+      --accent-navy: #1e3a5f;
     }
-    @media (min-width: 768px) {
-      nav.nav {
-        padding: 24px 20px;
-      }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    nav.nav ul {
-      list-style: none;
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      background: #191919;
+      color: var(--text-dark);
+      font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* HEADER WRAPPER - Black background */
+    .header-wrapper {
+      background: #191919;
+      padding: 12px 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    /* ORANGE HEADER - Rounded like Shopify site */
+    header {
+      background: var(--brand-orange);
+      padding: 7px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
-      gap: 24px;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-height: 40px;
+    }
+
+    /* Nav on the LEFT */
+    nav {
+      order: -1;
+      display: flex;
       align-items: center;
     }
-    @media (min-width: 768px) {
-      nav.nav ul {
-        gap: 32px;
-      }
-    }
-    nav.nav a {
-      color: var(--fg);
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 500;
-      transition: opacity 0.15s;
-      position: relative;
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
     }
     @media (min-width: 768px) {
-      nav.nav a {
-        font-size: 16px;
-      }
-    }
-    nav.nav a:hover {
-      opacity: 0.7;
-    }
-    nav.nav a.active::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: var(--fg);
+      nav ul { gap: 24px; }
     }
 
-    /* Breadcrumbs */
-    .breadcrumbs {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px 20px 0;
+    nav li {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
       font-size: 14px;
-      color: var(--muted);
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
     }
     @media (min-width: 768px) {
-      .breadcrumbs {
-        padding: 24px 40px 0;
-        font-size: 15px;
-      }
+      nav a { font-size: 15px; }
     }
-    .breadcrumbs a {
-      color: var(--muted);
-      text-decoration: none;
-      transition: opacity 0.15s;
-    }
-    .breadcrumbs a:hover {
-      opacity: 0.7;
-    }
-    .breadcrumbs span {
-      margin: 0 8px;
+    nav a:hover {
+      opacity: 0.8;
     }
 
-    /* Article */
+    /* Logo CENTERED */
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo {
+      height: 32px;
+    }
+    @media (min-width: 768px) {
+      .logo { height: 40px; }
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 900px;
+      margin: 16px auto 40px;
+      padding: 0 20px;
+      background: var(--bg-light);
+    }
+    @media (min-width: 768px) {
+      main {
+        margin: 20px auto 60px;
+        padding: 0 40px;
+      }
+    }
+
     article {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 32px 20px 60px;
+      background: var(--white);
+      padding: 40px 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
       article {
-        padding: 48px 40px 80px;
+        padding: 60px 50px;
       }
     }
 
-    /* Article meta */
-    .article-meta {
-      margin-bottom: 24px;
-      font-size: 14px;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    @media (min-width: 768px) {
-      .article-meta {
-        margin-bottom: 28px;
-        font-size: 15px;
-      }
+    .article-header {
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--border-light);
     }
 
-    /* Typography */
     h1 {
-      font-family: "Geologica", sans-serif;
-      font-size: 28px;
+      font-size: 32px;
       font-weight: 700;
       line-height: 1.2;
       margin-bottom: 16px;
       letter-spacing: -0.02em;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       h1 {
-        font-size: 38px;
+        font-size: 48px;
         margin-bottom: 20px;
       }
     }
 
-    h2 {
-      font-family: "Geologica", sans-serif;
-      font-size: 22px;
-      font-weight: 700;
-      line-height: 1.3;
-      margin: 48px 0 20px;
-      letter-spacing: -0.01em;
+    .article-meta {
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      font-weight: 500;
+      line-height: 1.6;
+      color: var(--text-muted);
+      margin-bottom: 0;
     }
     @media (min-width: 768px) {
-      h2 {
-        font-size: 26px;
-        margin: 56px 0 24px;
+      .article-intro {
+        font-size: 21px;
       }
     }
 
-    h2:first-of-type {
-      margin-top: 32px;
+    .article-intro a {
+      color: var(--accent-navy);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    .article-intro a:hover {
+      opacity: 0.7;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 56px 0 24px;
+      letter-spacing: -0.01em;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h2 {
+        font-size: 36px;
+        margin: 64px 0 28px;
+      }
     }
 
     h3 {
-      font-family: "Geologica", sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 1.4;
-      margin: 32px 0 16px;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 40px 0 16px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       h3 {
-        font-size: 20px;
-        margin: 40px 0 18px;
+        font-size: 28px;
+        margin: 48px 0 20px;
       }
     }
 
     p {
       font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
-      margin-bottom: 16px;
-      color: var(--fg);
+      margin-bottom: 20px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       p {
         font-size: 18px;
-        margin-bottom: 18px;
-        line-height: 1.75;
+        margin-bottom: 24px;
       }
-    }
-
-    p:last-child {
-      margin-bottom: 0;
     }
 
     strong {
@@ -231,174 +301,136 @@
     }
 
     a {
-      color: var(--fg);
-      text-decoration: underline;
-      text-decoration-thickness: 1.5px;
-      text-underline-offset: 2px;
+      color: var(--accent-navy);
+      transition: opacity 0.2s ease;
     }
-
     a:hover {
       opacity: 0.7;
     }
 
-    /* Lists */
-    article ul, article ol {
-      margin: 20px 0;
-      padding-left: 0;
-      list-style: none;
-    }
-
-    article li {
-      font-size: 17px;
-      line-height: 1.7;
-      margin-bottom: 16px;
+    ul, ol {
+      margin: 24px 0;
       padding-left: 28px;
-      position: relative;
+    }
+
+    li {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.7;
+      margin-bottom: 12px;
     }
     @media (min-width: 768px) {
-      article li {
+      li {
         font-size: 18px;
-        margin-bottom: 18px;
       }
     }
 
-    article ul li:before {
-      content: "•";
-      position: absolute;
-      left: 10px;
-      font-weight: 700;
-    }
-
-    /* Table */
-    .vitamin-table {
-      margin: 32px 0;
-      overflow-x: auto;
-    }
-    @media (min-width: 768px) {
-      .vitamin-table {
-        margin: 40px 0;
-      }
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      border: 2.5px solid var(--border);
-      font-size: 15px;
-    }
-    @media (min-width: 768px) {
-      table {
-        font-size: 16px;
-      }
-    }
-
-    th, td {
-      padding: 16px;
-      text-align: left;
-      border: 2.5px solid var(--border);
-    }
-    @media (min-width: 768px) {
-      th, td {
-        padding: 20px;
-      }
-    }
-
-    th {
-      background: rgba(0,0,0,.02);
-      font-weight: 700;
-      font-size: 15px;
-    }
-    @media (min-width: 768px) {
-      th {
-        font-size: 16px;
-      }
-    }
-
-    td {
-      vertical-align: top;
-      line-height: 1.6;
-    }
-
-    /* Callout Box */
+    /* LIGHT CALLOUT BOX */
     .callout {
-      border: 2.5px solid var(--border);
-      padding: 20px;
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
+      padding: 24px 28px;
       margin: 32px 0;
-      background: rgba(0,0,0,.01);
     }
     @media (min-width: 768px) {
       .callout {
-        padding: 28px;
-        margin: 40px 0;
+        padding: 28px 32px;
       }
     }
 
-    /* FAQ Section */
-    .faq-section {
-      margin-top: 56px;
-      padding-top: 40px;
-      border-top: 2.5px solid var(--border);
+    .callout p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* TABLE */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 32px 0;
+      font-size: 16px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
     @media (min-width: 768px) {
-      .faq-section {
-        margin-top: 64px;
-        padding-top: 48px;
+      table {
+        font-size: 17px;
       }
+    }
+
+    thead {
+      background: var(--brand-orange);
+      color: var(--white);
+      font-weight: 700;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+      border-bottom: 1px solid var(--border-light);
+    }
+    @media (min-width: 768px) {
+      th, td {
+        padding: 18px 20px;
+      }
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    tbody tr {
+      background: var(--white);
+      transition: background 0.2s ease;
+    }
+
+    tbody tr:hover {
+      background: rgba(192, 56, 0, 0.02);
+    }
+
+    /* FAQ SECTION */
+    .faq-section {
+      margin-top: 64px;
+      padding-top: 56px;
+      border-top: 3px solid var(--border-light);
     }
 
     .faq-item {
       margin-bottom: 32px;
+      padding: 28px;
+      background: var(--bg-light);
+      border-radius: 12px;
+      border-left: 4px solid var(--brand-orange);
+    }
+
+    .faq-item h3 {
+      font-size: 20px;
+      margin: 0 0 16px 0;
+      color: var(--brand-orange);
     }
     @media (min-width: 768px) {
-      .faq-item {
-        margin-bottom: 40px;
+      .faq-item h3 {
+        font-size: 23px;
       }
     }
 
-    .faq-item:last-child {
+    .faq-item p {
       margin-bottom: 0;
     }
 
-    .faq-question {
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 12px;
-      line-height: 1.4;
-    }
-    @media (min-width: 768px) {
-      .faq-question {
-        font-size: 20px;
-        margin-bottom: 14px;
-      }
-    }
-
-    .faq-answer {
-      font-size: 17px;
-      line-height: 1.7;
-      color: var(--fg);
-    }
-    @media (min-width: 768px) {
-      .faq-answer {
-        font-size: 18px;
-      }
-    }
-
-    /* CTA */
+    /* CTA Section */
     .cta-section {
+      margin-top: 64px;
+      padding: 28px;
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
       text-align: center;
-      margin: 56px 0 0;
-      padding: 40px 0 0;
-      border-top: 2.5px solid var(--border);
-    }
-    @media (min-width: 768px) {
-      .cta-section {
-        margin: 64px 0 0;
-        padding: 48px 0 0;
-      }
     }
 
     .cta-section p {
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
 
     .gate {
@@ -408,10 +440,10 @@
       width: 100%;
       max-width: 480px;
       height: 52px;
-      border: 2.5px solid var(--border);
+      border: 2.5px solid var(--text-dark);
       background: transparent;
-      color: var(--fg);
-      font: 600 16px "Geologica", sans-serif;
+      color: var(--text-dark);
+      font: 600 16px "Degular", sans-serif;
       padding: 0;
       border-radius: 0;
       cursor: pointer;
@@ -430,7 +462,7 @@
       display: grid;
       place-items: center;
       width: 52px;
-      border-left: 2.5px solid var(--border);
+      border-left: 2.5px solid var(--text-dark);
       font-size: 18px;
       line-height: 1;
       user-select: none;
@@ -443,20 +475,126 @@
     }
     .gate:hover { background: rgba(0,0,0,.035); }
 
-    /* Footer */
+    /* Related Articles */
+    .related-articles {
+      margin-top: 64px;
+      padding: 16px 20px;
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
+    }
+
+    .related-articles h3 {
+      font-size: 20px;
+      margin: 0 0 8px 0;
+      color: var(--brand-orange);
+    }
+    @media (min-width: 768px) {
+      .related-articles h3 {
+        font-size: 23px;
+      }
+    }
+
+    .related-articles ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .related-articles li {
+      margin-bottom: 12px;
+      padding-left: 0;
+    }
+
+    .related-articles a {
+      color: var(--accent-navy);
+      text-decoration: underline;
+      font-size: 16px;
+    }
+
+    /* FOOTER WRAPPER - Black background */
+    .footer-wrapper {
+      background: #191919;
+      padding: 0 12px 12px;
+      margin-top: 80px;
+    }
+
+    /* FOOTER - Orange with asymmetric rounded shape like Shopify */
     footer {
-      text-align: center;
-      padding: 20px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 400;
-      border-top: 2.5px solid var(--border);
+      background: var(--brand-orange);
+      color: var(--white);
+      padding: 45px 40px 20px;
+      border-radius: 200px 16px 16px 200px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 144px;
     }
     @media (min-width: 768px) {
       footer {
-        padding: 24px;
-        font-size: 13px;
+        padding: 63px 60px 24px;
+        min-height: 207px;
+        border-radius: 300px 16px 16px 300px;
       }
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      flex: 1;
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 24px;
+      flex: 1;
+    }
+    @media (min-width: 768px) {
+      .footer-right {
+        gap: 32px;
+      }
+    }
+
+    .footer-right-text {
+      text-align: right;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-top: 128px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .footer-logo {
+        height: 160px;
+        margin-top: 160px;
+        margin-bottom: 0;
+      }
+    }
+
+    footer p {
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    footer a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 
@@ -568,56 +706,58 @@
 </head>
 
 <body>
-  <nav class="nav">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/blog/" class="active">Blog</a></li>
-      <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
-    </ul>
-  </nav>
-
-  <div class="breadcrumbs">
-    <a href="/">Home</a>
-    <span>→</span>
-    <a href="/blog/">Blog</a>
-    <span>→</span>
-    <span>Puppy Vitamins</span>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+        </div>
+      </div>
+    </header>
   </div>
 
-  <article>
-    <div class="article-meta">January 15, 2025</div>
+  <main>
+    <article>
+    <div class="article-header">
+      <div class="article-meta">January 15, 2025</div>
+      <h1>Best Vitamins for Puppies: Supporting Healthy Growth & Development</h1>
+      <p class="article-intro">Your puppy will grow more in their first year than at any other time in their life. Bones lengthen. Muscles develop. The brain matures. The immune system learns how to function. And all of this happens fast—sometimes in just a matter of months.</p>
+    </div>
 
-    <h1>Best Vitamins for Puppies: Supporting Healthy Growth & Development</h1>
+    <div class="article-content">
+      <p>Nutrition plays a central role in how well these systems form. The vitamins a puppy receives during this window don't just support immediate growth—they help build the foundation for long-term health, mobility, and resilience.</p>
 
-    <p>Your puppy will grow more in their first year than at any other time in their life. Bones lengthen. Muscles develop. The brain matures. The immune system learns how to function. And all of this happens fast—sometimes in just a matter of months.</p>
+      <p>This isn't about adding "more." It's about supplying the right nutrients, in the right amounts, at the right stages of development.</p>
 
-    <p>Nutrition plays a central role in how well these systems form. The vitamins a puppy receives during this window don't just support immediate growth—they help build the foundation for long-term health, mobility, and resilience.</p>
+      <h2>Why Puppies Have Different Vitamin Needs Than Adult Dogs</h2>
 
-    <p>This isn't about adding "more." It's about supplying the right nutrients, in the right amounts, at the right stages of development.</p>
+      <p>An adult dog's nutritional needs are about maintenance. A puppy's needs are about construction.</p>
 
-    <h2>Why Puppies Have Different Vitamin Needs Than Adult Dogs</h2>
+      <p>During their growth phase, puppies use vitamins and minerals at a faster rate because they are simultaneously:</p>
 
-    <p>An adult dog's nutritional needs are about maintenance. A puppy's needs are about construction.</p>
+      <ul>
+        <li>Building bone, connective tissue, and muscle</li>
+        <li>Developing their brain and central nervous system</li>
+        <li>Establishing immune defenses</li>
+        <li>Learning to digest and absorb nutrients efficiently</li>
+      </ul>
 
-    <p>During their growth phase, puppies use vitamins and minerals at a faster rate because they are simultaneously:</p>
+      <p>At the same time, a puppy's digestive system is still maturing. That means absorption isn't always optimal, which makes the quality and <a href="/blog/whole-food-vs-synthetic-nutrients.html">bioavailability of vitamins</a> especially important during this stage.</p>
 
-    <ul>
-      <li>Building bone, connective tissue, and muscle</li>
-      <li>Developing their brain and central nervous system</li>
-      <li>Establishing immune defenses</li>
-      <li>Learning to digest and absorb nutrients efficiently</li>
-    </ul>
+      <p>Early nutritional support has a compounding effect: the habits and nutrition you establish in the first year can influence mobility, coat quality, immune resilience, and longevity years down the line.</p>
 
-    <p>At the same time, a puppy's digestive system is still maturing. That means absorption isn't always optimal, which makes the quality and <a href="/blog/whole-food-vs-synthetic-nutrients.html">bioavailability of vitamins</a> especially important during this stage.</p>
+      <h2>The Key Vitamins Puppies Need for Healthy Development</h2>
 
-    <p>Early nutritional support has a compounding effect: the habits and nutrition you establish in the first year can influence mobility, coat quality, immune resilience, and longevity years down the line.</p>
+      <p>The vitamins below play outsized roles in a puppy's development. When supported properly, they contribute to stronger structure, sharper cognition, and a more resilient foundation for adulthood.</p>
 
-    <h2>The Key Vitamins Puppies Need for Healthy Development</h2>
-
-    <p>The vitamins below play outsized roles in a puppy's development. When supported properly, they contribute to stronger structure, sharper cognition, and a more resilient foundation for adulthood.</p>
-
-    <div class="vitamin-table">
       <table>
         <thead>
           <tr>
@@ -659,74 +799,72 @@
           </tr>
         </tbody>
       </table>
+
+      <p>Puppies don't need excessive doses—they need vitamins delivered in forms their bodies can actually recognize and use throughout each phase of growth. This is one of the key reasons <a href="/blog/why-dogs-need-supplements.html">targeted supplementation can support development even with balanced puppy food</a>.</p>
+
+      <h2>What to Look for in Puppy Vitamin Support</h2>
+
+      <p>When choosing vitamin support for a growing dog, prioritize quality and biological compatibility over quantity. The best puppy vitamins are:</p>
+
+      <ul>
+        <li><strong>Whole-food or food-based</strong> — not synthetic isolates in a capsule</li>
+        <li><strong>Formulated specifically for growth</strong> — not adult maintenance formulas</li>
+        <li><strong>Thoughtfully balanced</strong> — not a "kitchen sink" approach with 40+ ingredients</li>
+        <li><strong>Designed for daily use</strong> — consistent, moderate support beats sporadic megadoses</li>
+      </ul>
+
+      <p>Avoid broad multivitamins with long lists of synthetics. More is not better for a developing system. The goal is steady, moderate, biologically compatible nutrition—not overload.</p>
+
+      <h2>The Long-Term Impact of Early Nutrition</h2>
+
+      <p>The vitamins that support bone mineralization, cognitive development, immune strength, and metabolic function in a puppy's first year are the same factors that influence joint comfort, resilience, and longevity later in life.</p>
+
+      <p>Small, intentional nutrition choices now can support:</p>
+
+      <ul>
+        <li>Smoother, more comfortable movement in adulthood</li>
+        <li>A healthier baseline for skin and coat quality</li>
+        <li>A more resilient immune foundation</li>
+        <li>Better weight stability and metabolic health over time</li>
+        <li>A clearer path to graceful aging</li>
+      </ul>
+
+      <p>Puppies grow quickly, but their bodies remember the foundation you build. <a href="/blog/organ-based-nutrition-for-dogs.html">Whole-food, nutrient-dense ingredients like organ meats</a> provide the kind of nutrition that supports not just growth, but thriving.</p>
+
+      <h2>The Bottom Line</h2>
+
+      <p>Puppies don't need complexity—just the right vitamin support during their most important window of development. When dog owners focus on quality, consistency, and thoughtful formulation, they give their dogs a strong start that supports both immediate growth and long-term wellbeing.</p>
     </div>
 
-    <p>Puppies don't need excessive doses—they need vitamins delivered in forms their bodies can actually recognize and use throughout each phase of growth. This is one of the key reasons <a href="/blog/why-dogs-need-supplements.html">targeted supplementation can support development even with balanced puppy food</a>.</p>
-
-    <h2>What to Look for in Puppy Vitamin Support</h2>
-
-    <p>When choosing vitamin support for a growing dog, prioritize quality and biological compatibility over quantity. The best puppy vitamins are:</p>
-
-    <ul>
-      <li><strong>Whole-food or food-based</strong> — not synthetic isolates in a capsule</li>
-      <li><strong>Formulated specifically for growth</strong> — not adult maintenance formulas</li>
-      <li><strong>Thoughtfully balanced</strong> — not a "kitchen sink" approach with 40+ ingredients</li>
-      <li><strong>Designed for daily use</strong> — consistent, moderate support beats sporadic megadoses</li>
-    </ul>
-
-    <p>Avoid broad multivitamins with long lists of synthetics. More is not better for a developing system. The goal is steady, moderate, biologically compatible nutrition—not overload.</p>
-
-    <h2>The Long-Term Impact of Early Nutrition</h2>
-
-    <p>The vitamins that support bone mineralization, cognitive development, immune strength, and metabolic function in a puppy's first year are the same factors that influence joint comfort, resilience, and longevity later in life.</p>
-
-    <p>Small, intentional nutrition choices now can support:</p>
-
-    <ul>
-      <li>Smoother, more comfortable movement in adulthood</li>
-      <li>A healthier baseline for skin and coat quality</li>
-      <li>A more resilient immune foundation</li>
-      <li>Better weight stability and metabolic health over time</li>
-      <li>A clearer path to graceful aging</li>
-    </ul>
-
-    <p>Puppies grow quickly, but their bodies remember the foundation you build. <a href="/blog/organ-based-nutrition-for-dogs.html">Whole-food, nutrient-dense ingredients like organ meats</a> provide the kind of nutrition that supports not just growth, but thriving.</p>
-
-    <h2>The Bottom Line</h2>
-
-    <p>Puppies don't need complexity—just the right vitamin support during their most important window of development. When dog owners focus on quality, consistency, and thoughtful formulation, they give their dogs a strong start that supports both immediate growth and long-term wellbeing.</p>
-
-    <!-- FAQ Section -->
     <div class="faq-section">
       <h2>Frequently Asked Questions</h2>
 
       <div class="faq-item">
-        <div class="faq-question">When should I start giving my puppy vitamins?</div>
-        <div class="faq-answer">You can begin supplementing once your puppy is weaned and eating solid food, typically around 8 weeks. Focus on whole-food sources and formulations designed specifically for growth, not adult maintenance. Always introduce new supplements gradually and monitor your puppy's response.</div>
+        <h3>When should I start giving my puppy vitamins?</h3>
+        <p>You can begin supplementing once your puppy is weaned and eating solid food, typically around 8 weeks. Focus on whole-food sources and formulations designed specifically for growth, not adult maintenance. Always introduce new supplements gradually and monitor your puppy's response.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Can puppies have the same vitamins as adult dogs?</div>
-        <div class="faq-answer">No. Puppies have different nutritional needs during growth. They require specific ratios of calcium to phosphorus for bone development, higher levels of DHA for brain development, and carefully balanced vitamin D. Adult dog vitamins may not provide appropriate amounts for growing dogs.</div>
+        <h3>Can puppies have the same vitamins as adult dogs?</h3>
+        <p>No. Puppies have different nutritional needs during growth. They require specific ratios of calcium to phosphorus for bone development, higher levels of DHA for brain development, and carefully balanced vitamin D. Adult dog vitamins may not provide appropriate amounts for growing dogs.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">What's the difference between puppy vitamins and adult dog vitamins?</div>
-        <div class="faq-answer">Puppy vitamins are formulated to support rapid development: stronger bone mineralization support, higher DHA for cognitive development, balanced calcium and phosphorus ratios, and nutrients in forms that developing digestive systems can absorb efficiently. Adult vitamins focus on maintenance rather than construction.</div>
+        <h3>What's the difference between puppy vitamins and adult dog vitamins?</h3>
+        <p>Puppy vitamins are formulated to support rapid development: stronger bone mineralization support, higher DHA for cognitive development, balanced calcium and phosphorus ratios, and nutrients in forms that developing digestive systems can absorb efficiently. Adult vitamins focus on maintenance rather than construction.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Are whole-food vitamins better than synthetic vitamins for puppies?</div>
-        <div class="faq-answer">Whole-food vitamins are generally more bioavailable, meaning a puppy's developing digestive system can recognize and absorb them more efficiently. They also come with cofactors and enzymes that support absorption. Synthetic vitamins can work, but may not be utilized as effectively during critical growth phases.</div>
+        <h3>Are whole-food vitamins better than synthetic vitamins for puppies?</h3>
+        <p>Whole-food vitamins are generally more bioavailable, meaning a puppy's developing digestive system can recognize and absorb them more efficiently. They also come with cofactors and enzymes that support absorption. Synthetic vitamins can work, but may not be utilized as effectively during critical growth phases.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">How long should puppies take puppy-specific vitamins?</div>
-        <div class="faq-answer">Most dogs benefit from puppy-specific formulations through their primary growth phase—typically 12-18 months for most breeds, and up to 24 months for large and giant breeds. After skeletal maturity, you can transition to adult maintenance nutrition.</div>
+        <h3>How long should puppies take puppy-specific vitamins?</h3>
+        <p>Most dogs benefit from puppy-specific formulations through their primary growth phase—typically 12-18 months for most breeds, and up to 24 months for large and giant breeds. After skeletal maturity, you can transition to adult maintenance nutrition.</p>
       </div>
     </div>
 
-    <!-- CTA Section -->
     <div class="cta-section">
       <p><strong>Give your puppy the foundation they deserve.</strong></p>
       <p>Join the waitlist for Watts — whole-food nutrition designed to support healthy growth and long-term vitality.</p>
@@ -736,9 +874,24 @@
         <span class="gate-arrow" aria-hidden="true">→</span>
       </a>
     </div>
-  </article>
+    </article>
+  </main>
 
-  <footer>© <span id="year"></span> Watts Pet</footer>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
+      </div>
+    </footer>
+  </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();

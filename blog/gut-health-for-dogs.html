@@ -29,77 +29,179 @@
     gtag('config', 'G-C6KV5WBGK5');
   </script>
 
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+  <!-- Degular Font -->
   <style>
-    :root {
-      --bg: #F1ECE9;
-      --fg: #191919;
-      --muted: #3a3a3a;
-      --border: #191919;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body { min-height: 100%; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Regular.woff2') format('woff2');
       font-weight: 400;
-      line-height: 1.6;
-      overflow-x: hidden;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
     }
 
-    nav.nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px 20px;
-      border-bottom: 2.5px solid var(--border);
+    :root {
+      --brand-orange: #c03800;
+      --bg-light: #f1f1f1;
+      --text-dark: #191919;
+      --white: #ffffff;
+      --text-muted: #666666;
+      --border-light: rgba(25, 25, 25, 0.1);
+      --accent-navy: #1e3a5f;
     }
-    @media (min-width: 768px) {
-      nav.nav { padding: 24px 20px; }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    nav.nav ul {
-      list-style: none;
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      background: #191919;
+      color: var(--text-dark);
+      font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* HEADER WRAPPER - Black background */
+    .header-wrapper {
+      background: #191919;
+      padding: 12px 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    /* ORANGE HEADER - Rounded like Shopify site */
+    header {
+      background: var(--brand-orange);
+      padding: 7px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
-      gap: 24px;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-height: 40px;
+    }
+
+    /* Nav on the LEFT */
+    nav {
+      order: -1;
+      display: flex;
       align-items: center;
     }
-    @media (min-width: 768px) {
-      nav.nav ul { gap: 32px; }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
     }
-    nav.nav a {
-      color: var(--fg);
+    @media (min-width: 768px) {
+      nav ul { gap: 24px; }
+    }
+
+    nav li {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--white);
       text-decoration: none;
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 500;
-      transition: opacity 0.15s;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
     }
     @media (min-width: 768px) {
-      nav.nav a { font-size: 16px; }
+      nav a { font-size: 15px; }
     }
-    nav.nav a:hover { opacity: 0.7; }
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    /* Logo CENTERED */
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo {
+      height: 32px;
+    }
+    @media (min-width: 768px) {
+      .logo { height: 40px; }
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 900px;
+      margin: 16px auto 40px;
+      padding: 0 20px;
+      background: var(--bg-light);
+    }
+    @media (min-width: 768px) {
+      main {
+        margin: 20px auto 60px;
+        padding: 0 40px;
+      }
+    }
 
     article {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px 60px;
+      background: var(--white);
+      padding: 40px 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      article { padding: 60px 40px 80px; }
+      article {
+        padding: 60px 50px;
+      }
     }
 
     .article-header {
-      margin-bottom: 40px;
+      margin-bottom: 48px;
       padding-bottom: 32px;
-      border-bottom: 1px solid rgba(25, 25, 25, 0.1);
-    }
-    @media (min-width: 768px) {
-      .article-header { margin-bottom: 48px; }
+      border-bottom: 2px solid var(--border-light);
     }
 
     h1 {
@@ -108,44 +210,64 @@
       line-height: 1.2;
       margin-bottom: 16px;
       letter-spacing: -0.02em;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
-      h1 { font-size: 42px; margin-bottom: 20px; }
+      h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
     }
 
     .article-meta {
-      color: var(--muted);
+      color: var(--text-muted);
       font-size: 14px;
-      margin-bottom: 20px;
-    }
-    @media (min-width: 768px) {
-      .article-meta { font-size: 15px; }
+      font-weight: 500;
+      margin-bottom: 24px;
     }
 
     .article-intro {
-      font-size: 18px;
+      font-size: 19px;
+      font-weight: 500;
       line-height: 1.6;
-      color: var(--muted);
-      margin-bottom: 32px;
+      color: var(--text-muted);
+      margin-bottom: 0;
     }
     @media (min-width: 768px) {
-      .article-intro { font-size: 20px; margin-bottom: 40px; }
+      .article-intro {
+        font-size: 21px;
+      }
+    }
+
+    .article-intro a {
+      color: var(--accent-navy);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    .article-intro a:hover {
+      opacity: 0.7;
     }
 
     .quick-facts {
-      background: rgba(25, 25, 25, 0.03);
-      border: 2px solid var(--border);
-      padding: 24px;
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
+      padding: 24px 28px;
       margin: 32px 0;
     }
     @media (min-width: 768px) {
-      .quick-facts { padding: 32px; }
+      .quick-facts {
+        padding: 28px 32px;
+      }
     }
 
     .quick-facts h3 {
       font-size: 18px;
       font-weight: 700;
       margin-bottom: 16px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       .quick-facts h3 { font-size: 20px; }
@@ -154,6 +276,7 @@
     .quick-facts ul {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
 
     .quick-facts li {
@@ -175,76 +298,120 @@
     }
 
     h2 {
-      font-size: 26px;
+      font-size: 28px;
       font-weight: 700;
-      line-height: 1.3;
-      margin: 48px 0 20px;
+      line-height: 1.2;
+      margin: 56px 0 24px;
       letter-spacing: -0.01em;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
-      h2 { font-size: 32px; margin: 56px 0 24px; }
+      h2 {
+        font-size: 36px;
+        margin: 64px 0 28px;
+      }
     }
 
     h3 {
-      font-size: 20px;
-      font-weight: 700;
+      font-size: 24px;
+      font-weight: 600;
       line-height: 1.3;
-      margin: 32px 0 16px;
+      margin: 40px 0 16px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
-      h3 { font-size: 24px; margin: 40px 0 20px; }
+      h3 {
+        font-size: 28px;
+        margin: 48px 0 20px;
+      }
     }
 
     p {
-      font-size: 16px;
+      font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
       margin-bottom: 20px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
-      p { font-size: 17px; margin-bottom: 24px; }
+      p {
+        font-size: 18px;
+        margin-bottom: 24px;
+      }
     }
 
-    strong { font-weight: 600; }
+    strong {
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    a:hover {
+      opacity: 0.7;
+    }
 
     .callout {
-      background: rgba(25, 25, 25, 0.03);
-      border-left: 4px solid var(--border);
-      padding: 20px 24px;
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
+      padding: 24px 28px;
       margin: 32px 0;
     }
     @media (min-width: 768px) {
-      .callout { padding: 24px 32px; }
+      .callout {
+        padding: 28px 32px;
+      }
     }
 
-    .callout p:last-child { margin-bottom: 0; }
+    .callout p:last-child {
+      margin-bottom: 0;
+    }
 
     table {
       width: 100%;
       border-collapse: collapse;
       margin: 32px 0;
-      font-size: 15px;
-      border: 2px solid var(--border);
+      font-size: 16px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
     @media (min-width: 768px) {
-      table { font-size: 16px; }
+      table {
+        font-size: 17px;
+      }
     }
 
     thead {
-      background: rgba(25, 25, 25, 0.05);
-      font-weight: 600;
+      background: var(--brand-orange);
+      color: var(--white);
+      font-weight: 700;
     }
 
     th, td {
       text-align: left;
-      padding: 12px;
-      border-bottom: 1px solid rgba(25, 25, 25, 0.1);
+      padding: 16px;
+      border-bottom: 1px solid var(--border-light);
     }
     @media (min-width: 768px) {
-      th, td { padding: 16px; }
+      th, td {
+        padding: 18px 20px;
+      }
     }
 
     tbody tr:last-child td {
       border-bottom: none;
+    }
+
+    tbody tr {
+      background: var(--white);
+      transition: background 0.2s ease;
+    }
+
+    tbody tr:hover {
+      background: rgba(192, 56, 0, 0.02);
     }
 
     ul, ol {
@@ -253,96 +420,175 @@
     }
 
     li {
-      font-size: 16px;
+      font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
       margin-bottom: 12px;
     }
     @media (min-width: 768px) {
-      li { font-size: 17px; }
+      li {
+        font-size: 18px;
+      }
     }
 
     .faq-section {
-      margin-top: 56px;
-      padding-top: 48px;
-      border-top: 2px solid var(--border);
+      margin-top: 64px;
+      padding-top: 56px;
+      border-top: 3px solid var(--border-light);
     }
 
     .faq-item {
       margin-bottom: 32px;
+      padding: 28px;
+      background: var(--bg-light);
+      border-radius: 12px;
+      border-left: 4px solid var(--brand-orange);
     }
 
     .faq-item h3 {
-      font-size: 19px;
-      margin: 0 0 12px 0;
+      font-size: 20px;
+      margin: 0 0 16px 0;
+      color: var(--brand-orange);
     }
     @media (min-width: 768px) {
-      .faq-item h3 { font-size: 21px; }
+      .faq-item h3 {
+        font-size: 23px;
+      }
+    }
+
+    .faq-item p {
+      margin-bottom: 0;
     }
 
     .related-articles {
-      margin-top: 56px;
-      padding-top: 40px;
-      border-top: 1px solid rgba(25, 25, 25, 0.1);
+      margin-top: 64px;
+      padding: 16px 20px;
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
     }
 
     .related-articles h2 {
-      font-size: 22px;
-      margin: 0 0 24px 0;
+      font-size: 20px;
+      margin: 0 0 8px 0;
+      color: var(--brand-orange);
     }
     @media (min-width: 768px) {
-      .related-articles h2 { font-size: 26px; }
+      .related-articles h2 {
+        font-size: 23px;
+      }
     }
 
     .related-grid {
       display: grid;
-      gap: 16px;
+      gap: 12px;
+      margin: 0;
     }
     @media (min-width: 768px) {
       .related-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        gap: 16px;
       }
     }
 
     .related-link {
       display: block;
-      padding: 20px;
-      border: 2px solid var(--border);
-      text-decoration: none;
-      color: var(--fg);
-      transition: background 0.15s;
+      padding: 12px 0;
+      text-decoration: underline;
+      color: var(--accent-navy);
+      transition: opacity 0.2s ease;
       font-size: 16px;
       font-weight: 500;
     }
-    @media (min-width: 768px) {
-      .related-link { font-size: 17px; }
-    }
 
     .related-link:hover {
-      background: rgba(0,0,0,.02);
+      opacity: 0.7;
     }
 
+    /* FOOTER WRAPPER - Black background */
+    .footer-wrapper {
+      background: #191919;
+      padding: 0 12px 12px;
+      margin-top: 80px;
+    }
+
+    /* FOOTER - Orange with asymmetric rounded shape like Shopify */
     footer {
-      width: 100%;
-      padding: 32px 20px 24px;
-      text-align: center;
-      border-top: 1px solid rgba(25, 25, 25, 0.1);
-      margin-top: 60px;
+      background: var(--brand-orange);
+      color: var(--white);
+      padding: 45px 40px 20px;
+      border-radius: 200px 16px 16px 200px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 144px;
     }
     @media (min-width: 768px) {
-      footer { padding: 40px 20px 32px; }
+      footer {
+        padding: 63px 60px 24px;
+        min-height: 207px;
+        border-radius: 300px 16px 16px 300px;
+      }
     }
+
+    .footer-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      flex: 1;
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 24px;
+      flex: 1;
+    }
+    @media (min-width: 768px) {
+      .footer-right {
+        gap: 32px;
+      }
+    }
+
+    .footer-right-text {
+      text-align: right;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-top: 128px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .footer-logo {
+        height: 160px;
+        margin-top: 160px;
+        margin-bottom: 0;
+      }
+    }
+
     footer p {
-      color: var(--muted);
-      font-size: 14px;
-      margin: 0;
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 12px;
     }
+
     footer a {
-      color: var(--fg);
+      color: var(--white);
       text-decoration: none;
-      transition: opacity 0.15s;
+      font-weight: 500;
     }
-    footer a:hover { opacity: 0.7; }
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 
   <script type="application/ld+json">
@@ -486,19 +732,29 @@
 </head>
 
 <body>
-  <nav class="nav">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/blog/">Blog</a></li>
-      <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
-    </ul>
-  </nav>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+        </div>
+      </div>
+    </header>
+  </div>
 
-  <article>
+  <main>
+    <article>
     <div class="article-header">
+      <div class="article-meta">January 14, 2026</div>
       <h1>Gut Health for Dogs: Microbiome, Diet & Digestive Support</h1>
-      <div class="article-meta">Published January 14, 2026</div>
       <p class="article-intro">
         Your dog's gut health affects far more than digestion. The gut microbiome—trillions of bacteria living in the digestive tract—influences immunity, behavior, skin health, and overall vitality. A healthy gut means a healthier, more resilient dog. Here's what you need to know.
       </p>
@@ -621,15 +877,15 @@
 
     <p>Building a healthy microbiome doesn't require expensive supplements—it starts with what you feed.</p>
 
-    <h3>1. <a href="/ingredient-analyzer/ingredients/bone-broth/" style="color: inherit;">Bone Broth</a></h3>
+    <h3>1. Bone Broth</h3>
 
-    <p><strong>Why it works:</strong> <a href="/ingredient-analyzer/ingredients/bone-broth/" style="color: inherit; text-decoration: underline;">Bone broth</a> contains gelatin and amino acids (glycine, glutamine) that heal and seal the gut lining, reducing inflammation and "leaky gut."</p>
+    <p><strong>Why it works:</strong> Bone broth contains gelatin and amino acids (glycine, glutamine) that heal and seal the gut lining, reducing inflammation and "leaky gut."</p>
 
-    <p><strong>How to use:</strong> 2-8 ounces daily (depending on dog size) as a meal topper or standalone treat. See our <a href="/blog/bone-broth-for-dogs.html" style="color: inherit; text-decoration: underline;">bone broth guide</a> for details.</p>
+    <p><strong>How to use:</strong> 2-8 ounces daily (depending on dog size) as a meal topper or standalone treat. See our <a href="/blog/bone-broth-for-dogs.html">bone broth guide</a> for details.</p>
 
     <h3>2. Organ Meats</h3>
 
-    <p><strong>Why it works:</strong> Organ meats (<a href="/ingredient-analyzer/ingredients/beef-liver/" style="color: inherit; text-decoration: underline;">liver</a>, <a href="/ingredient-analyzer/ingredients/beef-kidney/" style="color: inherit; text-decoration: underline;">kidney</a>, <a href="/ingredient-analyzer/ingredients/beef-heart/" style="color: inherit; text-decoration: underline;">heart</a>) are nutrient-dense and easily digestible. They provide vitamins, minerals, and amino acids that support gut lining repair and microbial balance.</p>
+    <p><strong>Why it works:</strong> Organ meats (liver, kidney, heart) are nutrient-dense and easily digestible. They provide vitamins, minerals, and amino acids that support gut lining repair and microbial balance.</p>
 
     <p><strong>How to use:</strong> 5-10% of your dog's diet can be organ meat. Start small to avoid digestive upset.</p>
 
@@ -639,8 +895,8 @@
 
     <p><strong>Safe options for dogs:</strong></p>
     <ul>
-      <li><strong>Plain, unsweetened <a href="/ingredient-analyzer/ingredients/yogurt/" style="color: inherit; text-decoration: underline;">yogurt</a> or <a href="/ingredient-analyzer/ingredients/kefir/" style="color: inherit; text-decoration: underline;">kefir</a></strong> — 1-3 tablespoons daily (contains Lactobacillus and Bifidobacterium)</li>
-      <li><strong><a href="/ingredient-analyzer/ingredients/sauerkraut/" style="color: inherit; text-decoration: underline;">Sauerkraut</a> (plain, no spices)</strong> — Small amounts (1-2 teaspoons) for larger dogs</li>
+      <li><strong>Plain, unsweetened yogurt or kefir</strong> — 1-3 tablespoons daily (contains Lactobacillus and Bifidobacterium)</li>
+      <li><strong>Sauerkraut (plain, no spices)</strong> — Small amounts (1-2 teaspoons) for larger dogs</li>
       <li><strong>Fermented vegetables</strong> — Plain kimchi (without spicy peppers) in tiny amounts</li>
     </ul>
 
@@ -652,10 +908,10 @@
 
     <p><strong>Best sources:</strong></p>
     <ul>
-      <li><strong><a href="/ingredient-analyzer/ingredients/pumpkin/" style="color: inherit; text-decoration: underline;">Pumpkin</a> (canned, plain)</strong> — 1-4 tablespoons daily (great for diarrhea or constipation)</li>
-      <li><strong><a href="/ingredient-analyzer/ingredients/dried-sweet-potatoes/" style="color: inherit; text-decoration: underline;">Sweet potato</a></strong> — Cooked, mashed (rich in soluble fiber and prebiotics)</li>
+      <li><strong>Pumpkin (canned, plain)</strong> — 1-4 tablespoons daily (great for diarrhea or constipation)</li>
+      <li><strong>Sweet potato</strong> — Cooked, mashed (rich in soluble fiber and prebiotics)</li>
       <li><strong>Green beans</strong> — Steamed or raw (low-calorie, high-fiber)</li>
-      <li><strong><a href="/ingredient-analyzer/ingredients/carrots/" style="color: inherit; text-decoration: underline;">Carrots</a></strong> — Raw or cooked (contains beta-carotene and fiber)</li>
+      <li><strong>Carrots</strong> — Raw or cooked (contains beta-carotene and fiber)</li>
       <li><strong>Leafy greens</strong> — Spinach, kale (in moderation—contains oxalates)</li>
     </ul>
 
@@ -666,9 +922,9 @@
     <p><strong>Best sources:</strong></p>
     <ul>
       <li><strong>Asparagus</strong> — Contains inulin (powerful prebiotic)</li>
-      <li><strong><a href="/ingredient-analyzer/ingredients/bananas/" style="color: inherit; text-decoration: underline;">Bananas</a></strong> — Rich in resistant starch and pectin (best when slightly green)</li>
-      <li><strong><a href="/ingredient-analyzer/ingredients/apples/" style="color: inherit; text-decoration: underline;">Apples</a></strong> — Pectin supports beneficial bacteria (remove seeds—they contain cyanide)</li>
-      <li><strong><a href="/ingredient-analyzer/ingredients/oats/" style="color: inherit; text-decoration: underline;">Oats</a></strong> — Beta-glucan fiber feeds beneficial microbes</li>
+      <li><strong>Bananas</strong> — Rich in resistant starch and pectin (best when slightly green)</li>
+      <li><strong>Apples</strong> — Pectin supports beneficial bacteria (remove seeds—they contain cyanide)</li>
+      <li><strong>Oats</strong> — Beta-glucan fiber feeds beneficial microbes</li>
     </ul>
 
     <h3>6. Omega-3 Fatty Acids</h3>
@@ -677,7 +933,7 @@
 
     <p><strong>Best sources:</strong></p>
     <ul>
-      <li><a href="/ingredient-analyzer/ingredients/sardines/" style="color: inherit; text-decoration: underline;">Sardines</a>, <a href="/ingredient-analyzer/ingredients/mackerel/" style="color: inherit; text-decoration: underline;">mackerel</a>, <a href="/ingredient-analyzer/ingredients/salmon/" style="color: inherit; text-decoration: underline;">salmon</a> (2-3 ounces for a 50 lb dog)</li>
+      <li>Sardines, mackerel, salmon (2-3 ounces for a 50 lb dog)</li>
       <li>Fish oil supplements (50-100mg EPA+DHA per pound of body weight)</li>
     </ul>
 
@@ -1012,11 +1268,23 @@
       </div>
     </div>
   </article>
+  </main>
 
-  <footer>
-    <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
-    <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet</p>
-  </footer>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
+      </div>
+    </footer>
+  </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();

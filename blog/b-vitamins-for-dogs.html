@@ -37,308 +37,430 @@
   <meta property="twitter:description" content="Learn why B vitamins are critical for dogs' energy, brain function, and metabolism — and why processing destroys them in most commercial dog foods. Discover the best whole-food sources.">
   <meta property="twitter:image" content="https://wattspet.com/images/og-default.jpg">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
-
+  <!-- Degular Font -->
   <style>
-    :root {
-      --bg: #F1ECE9;
-      --fg: #191919;
-      --muted: #3a3a3a;
-      --border: #191919;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body { min-height: 100%; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Regular.woff2') format('woff2');
       font-weight: 400;
-      line-height: 1.6;
-      overflow-x: hidden;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
     }
 
-    /* Navigation */
-    nav.nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px 20px;
-      border-bottom: 2.5px solid var(--border);
+    :root {
+      --brand-orange: #c03800;
+      --bg-light: #f1f1f1;
+      --text-dark: #191919;
+      --white: #ffffff;
+      --text-muted: #666666;
+      --border-light: rgba(25, 25, 25, 0.1);
+      --accent-navy: #1e3a5f;
     }
-    @media (min-width: 768px) {
-      nav.nav {
-        padding: 24px 20px;
-      }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    nav.nav ul {
-      list-style: none;
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      background: #191919;
+      color: var(--text-dark);
+      font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* HEADER WRAPPER - Black background */
+    .header-wrapper {
+      background: #191919;
+      padding: 12px 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    /* ORANGE HEADER - Rounded like Shopify site */
+    header {
+      background: var(--brand-orange);
+      padding: 7px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
-      gap: 24px;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-height: 40px;
+    }
+
+    /* Nav on the LEFT */
+    nav {
+      order: -1;
+      display: flex;
       align-items: center;
     }
-    @media (min-width: 768px) {
-      nav.nav ul {
-        gap: 32px;
-      }
-    }
-    nav.nav a {
-      color: var(--fg);
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 500;
-      transition: opacity 0.15s;
-      position: relative;
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
     }
     @media (min-width: 768px) {
-      nav.nav a {
-        font-size: 16px;
-      }
-    }
-    nav.nav a:hover {
-      opacity: 0.7;
-    }
-    nav.nav a.active::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: var(--fg);
+      nav ul { gap: 24px; }
     }
 
-    /* Article container */
+    nav li {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
+    }
+    @media (min-width: 768px) {
+      nav a { font-size: 15px; }
+    }
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    /* Logo CENTERED */
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo {
+      height: 32px;
+    }
+    @media (min-width: 768px) {
+      .logo { height: 40px; }
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 900px;
+      margin: 16px auto 40px;
+      padding: 0 20px;
+      background: var(--bg-light);
+    }
+    @media (min-width: 768px) {
+      main {
+        margin: 20px auto 60px;
+        padding: 0 40px;
+      }
+    }
+
     article {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px 60px;
+      background: var(--white);
+      padding: 40px 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
       article {
-        padding: 60px 40px 80px;
+        padding: 60px 50px;
       }
     }
 
-    /* Article header */
     .article-header {
-      margin-bottom: 32px;
-    }
-    @media (min-width: 768px) {
-      .article-header {
-        margin-bottom: 40px;
-      }
-    }
-
-    .article-meta {
-      font-size: 13px;
-      color: var(--muted);
-      margin-bottom: 16px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    @media (min-width: 768px) {
-      .article-meta {
-        font-size: 14px;
-        margin-bottom: 20px;
-      }
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--border-light);
     }
 
     h1 {
-      font-family: "Geologica", sans-serif;
       font-size: 32px;
       font-weight: 700;
       line-height: 1.2;
       margin-bottom: 16px;
       letter-spacing: -0.02em;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       h1 {
-        font-size: 42px;
+        font-size: 48px;
         margin-bottom: 20px;
       }
     }
 
+    .article-meta {
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
     .article-intro {
-      font-size: 18px;
+      font-size: 19px;
+      font-weight: 500;
       line-height: 1.6;
-      color: var(--muted);
+      color: var(--text-muted);
+      margin-bottom: 0;
     }
     @media (min-width: 768px) {
       .article-intro {
-        font-size: 20px;
-        line-height: 1.7;
+        font-size: 21px;
       }
     }
 
-    /* Article content */
-    .article-content {
-      font-size: 17px;
-      line-height: 1.7;
-    }
-    @media (min-width: 768px) {
-      .article-content {
-        font-size: 18px;
-        line-height: 1.8;
-      }
-    }
-
-    .article-content h2 {
-      font-size: 26px;
-      font-weight: 700;
-      line-height: 1.3;
-      margin: 48px 0 20px;
-      letter-spacing: -0.01em;
-    }
-    @media (min-width: 768px) {
-      .article-content h2 {
-        font-size: 30px;
-        margin: 56px 0 24px;
-      }
-    }
-
-    .article-content h3 {
-      font-size: 21px;
+    .article-intro a {
+      color: var(--accent-navy);
+      text-decoration: none;
       font-weight: 600;
-      line-height: 1.4;
-      margin: 36px 0 16px;
+      border-bottom: 1px solid var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    .article-intro a:hover {
+      opacity: 0.7;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 56px 0 24px;
+      letter-spacing: -0.01em;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
-      .article-content h3 {
-        font-size: 24px;
-        margin: 40px 0 20px;
+      h2 {
+        font-size: 36px;
+        margin: 64px 0 28px;
       }
     }
 
-    .article-content p {
-      margin-bottom: 20px;
+    h3 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 40px 0 16px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
-      .article-content p {
+      h3 {
+        font-size: 28px;
+        margin: 48px 0 20px;
+      }
+    }
+
+    p {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      p {
+        font-size: 18px;
         margin-bottom: 24px;
       }
     }
 
-    .article-content ul, .article-content ol {
-      margin: 20px 0 20px 24px;
-    }
-    @media (min-width: 768px) {
-      .article-content ul, .article-content ol {
-        margin: 24px 0 24px 32px;
-      }
-    }
-
-    .article-content li {
-      margin-bottom: 12px;
-      padding-left: 8px;
-    }
-
-    .article-content strong {
+    strong {
       font-weight: 600;
     }
 
-    .article-content a {
-      color: var(--fg);
-      text-decoration: underline;
-      text-decoration-thickness: 1.5px;
-      text-underline-offset: 2px;
-      transition: opacity 0.15s;
+    a {
+      color: var(--accent-navy);
+      transition: opacity 0.2s ease;
     }
-
-    .article-content a:hover {
+    a:hover {
       opacity: 0.7;
     }
 
-    /* Callout boxes */
-    .callout {
-      background: rgba(25, 25, 25, 0.04);
-      border: 2.5px solid var(--border);
-      padding: 24px;
-      margin: 32px 0;
-    }
-    @media (min-width: 768px) {
-      .callout {
-        padding: 32px;
-        margin: 40px 0;
-      }
+    ul, ol {
+      margin: 24px 0;
+      padding-left: 28px;
     }
 
-    /* FAQ section */
-    .faq {
-      margin-top: 56px;
-      padding-top: 40px;
-      border-top: 2.5px solid var(--border);
-    }
-    @media (min-width: 768px) {
-      .faq {
-        margin-top: 64px;
-        padding-top: 48px;
-      }
-    }
-
-    .faq h2 {
-      font-size: 26px;
-      font-weight: 700;
-      margin-bottom: 32px;
-    }
-    @media (min-width: 768px) {
-      .faq h2 {
-        font-size: 30px;
-        margin-bottom: 40px;
-      }
-    }
-
-    .faq-item {
-      margin-bottom: 32px;
-    }
-    @media (min-width: 768px) {
-      .faq-item {
-        margin-bottom: 40px;
-      }
-    }
-
-    .faq-question {
-      font-size: 19px;
-      font-weight: 600;
-      margin-bottom: 12px;
-      line-height: 1.4;
-    }
-    @media (min-width: 768px) {
-      .faq-question {
-        font-size: 21px;
-        margin-bottom: 16px;
-      }
-    }
-
-    .faq-answer {
+    li {
       font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
-      color: var(--muted);
+      margin-bottom: 12px;
     }
     @media (min-width: 768px) {
-      .faq-answer {
+      li {
         font-size: 18px;
       }
     }
 
-    /* Footer */
+    /* LIGHT CALLOUT BOX */
+    .callout {
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin: 32px 0;
+    }
+    @media (min-width: 768px) {
+      .callout {
+        padding: 28px 32px;
+      }
+    }
+
+    .callout p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* FAQ SECTION */
+    .faq-section {
+      margin-top: 64px;
+      padding-top: 56px;
+      border-top: 3px solid var(--border-light);
+    }
+
+    .faq-item {
+      margin-bottom: 32px;
+      padding: 28px;
+      background: var(--bg-light);
+      border-radius: 12px;
+      border-left: 4px solid var(--brand-orange);
+    }
+
+    .faq-item h3 {
+      font-size: 20px;
+      margin: 0 0 16px 0;
+      color: var(--brand-orange);
+    }
+    @media (min-width: 768px) {
+      .faq-item h3 {
+        font-size: 23px;
+      }
+    }
+
+    .faq-item p {
+      margin-bottom: 0;
+    }
+
+    /* FOOTER WRAPPER - Black background */
+    .footer-wrapper {
+      background: #191919;
+      padding: 0 12px 12px;
+      margin-top: 80px;
+    }
+
+    /* FOOTER - Orange with asymmetric rounded shape like Shopify */
     footer {
-      text-align: center;
-      padding: 20px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 400;
-      border-top: 2.5px solid var(--border);
-      margin-top: 60px;
+      background: var(--brand-orange);
+      color: var(--white);
+      padding: 45px 40px 20px;
+      border-radius: 200px 16px 16px 200px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 144px;
     }
     @media (min-width: 768px) {
       footer {
-        padding: 24px;
-        font-size: 13px;
+        padding: 63px 60px 24px;
+        min-height: 207px;
+        border-radius: 300px 16px 16px 300px;
       }
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      flex: 1;
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 24px;
+      flex: 1;
+    }
+    @media (min-width: 768px) {
+      .footer-right {
+        gap: 32px;
+      }
+    }
+
+    .footer-right-text {
+      text-align: right;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-top: 128px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .footer-logo {
+        height: 160px;
+        margin-top: 160px;
+        margin-bottom: 0;
+      }
+    }
+
+    footer p {
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    footer a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 
@@ -446,16 +568,26 @@
 </head>
 
 <body>
-  <nav class="nav">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/blog/" class="active">Blog</a></li>
-      <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
-    </ul>
-  </nav>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+        </div>
+      </div>
+    </header>
+  </div>
 
-  <article>
+  <main>
+    <article>
     <div class="article-header">
       <div class="article-meta">March 17, 2025</div>
       <h1>B Vitamins for Dogs: Why They're Missing from Most Kibble</h1>
@@ -534,8 +666,7 @@
       </ul>
 
       <div class="callout">
-        <h3 style="margin-top: 0; font-size: 18px;">Why B Vitamins Matter for Energy</h3>
-        <p style="margin-top: 12px; margin-bottom: 0;">B vitamins are often called the "energy vitamins" because they're essential for converting food into ATP (cellular energy). Without adequate B vitamins, dogs can't efficiently metabolize protein, fat, or carbohydrates — leading to lethargy, poor stamina, and muscle wasting even when calorie intake is adequate. If your dog seems tired despite eating enough, B vitamin deficiency could be a factor.</p>
+        <p><strong>Why B Vitamins Matter for Energy:</strong> B vitamins are often called the "energy vitamins" because they're essential for converting food into ATP (cellular energy). Without adequate B vitamins, dogs can't efficiently metabolize protein, fat, or carbohydrates — leading to lethargy, poor stamina, and muscle wasting even when calorie intake is adequate. If your dog seems tired despite eating enough, B vitamin deficiency could be a factor.</p>
       </div>
 
       <h2>Why Are B Vitamins Missing from Most Kibble?</h2>
@@ -646,12 +777,12 @@
       <p>Nutritional yeast is often fortified with B vitamins and can provide B12 for dogs on plant-based diets. However, dogs absorb animal-based B vitamins far more efficiently than plant-based or fortified sources. If feeding a plant-based diet, B12 supplementation (ideally from animal sources) is critical.</p>
 
       <div class="callout">
-        <h3 style="margin-top: 0; font-size: 18px;">B Vitamin Content: Liver vs Muscle Meat</h3>
-        <div style="margin-top: 12px;">
-          <div style="margin-bottom: 8px;"><strong>Beef liver (1 oz):</strong> 30-40 mcg B12, 80-100 mcg folate, 1.0 mg riboflavin</div>
-          <div style="margin-bottom: 8px;"><strong>Beef muscle meat (1 oz):</strong> 0.5-1 mcg B12, 3-5 mcg folate, 0.1 mg riboflavin</div>
-          <div><strong>Result:</strong> Liver delivers 30-40x more B12, 20x more folate, and 10x more riboflavin than muscle meat per ounce</div>
-        </div>
+        <p><strong>B Vitamin Content: Liver vs Muscle Meat</strong></p>
+        <ul style="list-style: none; padding: 0; margin: 12px 0 0 0;">
+          <li style="margin-bottom: 8px;"><strong>Beef liver (1 oz):</strong> 30-40 mcg B12, 80-100 mcg folate, 1.0 mg riboflavin</li>
+          <li style="margin-bottom: 8px;"><strong>Beef muscle meat (1 oz):</strong> 0.5-1 mcg B12, 3-5 mcg folate, 0.1 mg riboflavin</li>
+          <li style="margin-bottom: 0;"><strong>Result:</strong> Liver delivers 30-40x more B12, 20x more folate, and 10x more riboflavin than muscle meat per ounce</li>
+        </ul>
       </div>
 
       <h2>How Much B Vitamins Do Dogs Need?</h2>
@@ -728,61 +859,76 @@
       <p>If you want a simple, pre-portioned way to give your dog whole-food B vitamins every day, that's exactly what Watts is designed to do.</p>
     </div>
 
-    <div class="faq">
-      <h2 style="margin-top: 56px; padding-top: 40px; border-top: 2.5px solid var(--border);">Related Articles</h2>
+    <div class="faq-section">
+      <h2 style="margin-top: 56px; padding-top: 40px; border-top: 2px solid var(--border-light);">Related Articles</h2>
 
       <div style="display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 56px;">
-        <a href="/blog/why-dogs-need-supplements.html" style="display: block; padding: 20px; border: 2.5px solid var(--border); text-decoration: none; color: var(--fg); transition: background 0.15s;">
-          <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">Why Dogs Need Supplements</h3>
-          <p style="font-size: 15px; color: var(--muted); margin: 0;">Why processing destroys B vitamins and other essential nutrients</p>
+        <a href="/blog/why-dogs-need-supplements.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Why Dogs Need Supplements</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Why processing destroys B vitamins and other essential nutrients</p>
         </a>
 
-        <a href="/blog/choline-for-dogs.html" style="display: block; padding: 20px; border: 2.5px solid var(--border); text-decoration: none; color: var(--fg); transition: background 0.15s;">
-          <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">Choline for Dogs</h3>
-          <p style="font-size: 15px; color: var(--muted); margin: 0;">Another essential B-vitamin-like compound for brain and liver health</p>
+        <a href="/blog/choline-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Choline for Dogs</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Another essential B-vitamin-like compound for brain and liver health</p>
         </a>
 
-        <a href="/blog/beef-liver-for-dogs.html" style="display: block; padding: 20px; border: 2.5px solid var(--border); text-decoration: none; color: var(--fg); transition: background 0.15s;">
-          <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">Why Beef Liver is One of the Best Things You Can Feed Your Dog</h3>
-          <p style="font-size: 15px; color: var(--muted); margin: 0;">The richest whole-food source of B vitamins</p>
+        <a href="/blog/beef-liver-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Why Beef Liver is One of the Best Things You Can Feed Your Dog</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">The richest whole-food source of B vitamins</p>
         </a>
 
-        <a href="/blog/dog-vitamins-deficiency.html" style="display: block; padding: 20px; border: 2.5px solid var(--border); text-decoration: none; color: var(--fg); transition: background 0.15s;">
-          <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">Dog Vitamin Deficiency</h3>
-          <p style="font-size: 15px; color: var(--muted); margin: 0;">How to spot signs of B vitamin deficiency in your dog</p>
+        <a href="/blog/dog-vitamins-deficiency.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Dog Vitamin Deficiency</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">How to spot signs of B vitamin deficiency in your dog</p>
         </a>
       </div>
 
       <h2>Frequently Asked Questions</h2>
 
       <div class="faq-item">
-        <div class="faq-question">What do B vitamins do for dogs?</div>
-        <div class="faq-answer">B vitamins are essential for energy production (converting food into ATP), brain and nervous system function (neurotransmitter synthesis, myelin production), red blood cell formation (preventing anemia), metabolism (protein, fat, carbohydrate processing), and skin and coat health. Dogs need B vitamins daily because they're water-soluble and not stored in the body long-term.</div>
+        <h3>What do B vitamins do for dogs?</h3>
+        <p>B vitamins are essential for energy production (converting food into ATP), brain and nervous system function (neurotransmitter synthesis, myelin production), red blood cell formation (preventing anemia), metabolism (protein, fat, carbohydrate processing), and skin and coat health. Dogs need B vitamins daily because they're water-soluble and not stored in the body long-term.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Why are B vitamins missing from most kibble?</div>
-        <div class="faq-answer">B vitamins are heat-sensitive and destroyed during high-temperature processing (extrusion at 300-400°F). While many manufacturers add synthetic B vitamins back after processing, these are less bioavailable than naturally occurring B vitamins from whole foods. Additionally, AAFCO minimum requirements may not reflect optimal levels for long-term health.</div>
+        <h3>Why are B vitamins missing from most kibble?</h3>
+        <p>B vitamins are heat-sensitive and destroyed during high-temperature processing (extrusion at 300-400°F). While many manufacturers add synthetic B vitamins back after processing, these are less bioavailable than naturally occurring B vitamins from whole foods. Additionally, AAFCO minimum requirements may not reflect optimal levels for long-term health.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">What are the best sources of B vitamins for dogs?</div>
-        <div class="faq-answer">Beef liver is the richest source, providing 3000%+ of daily B12 needs per ounce, plus high levels of folate, B6, riboflavin, and niacin. Other excellent sources include beef kidney, beef heart, eggs (especially yolks), wild-caught salmon, and nutritional yeast. Organ meats deliver B vitamins in their most bioavailable form with co-factors that enhance absorption.</div>
+        <h3>What are the best sources of B vitamins for dogs?</h3>
+        <p>Beef liver is the richest source, providing 3000%+ of daily B12 needs per ounce, plus high levels of folate, B6, riboflavin, and niacin. Other excellent sources include beef kidney, beef heart, eggs (especially yolks), wild-caught salmon, and nutritional yeast. Organ meats deliver B vitamins in their most bioavailable form with co-factors that enhance absorption.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">What are signs of B vitamin deficiency in dogs?</div>
-        <div class="faq-answer">Common signs include lethargy and low energy (reduced ATP production), poor appetite or weight loss, dull coat or skin issues, weakness or muscle wasting, neurological symptoms (tremors, seizures, loss of coordination), anemia (pale gums, weakness), and GI issues (diarrhea, vomiting). B12 deficiency is particularly common in dogs with digestive issues like IBD or EPI.</div>
+        <h3>What are signs of B vitamin deficiency in dogs?</h3>
+        <p>Common signs include lethargy and low energy (reduced ATP production), poor appetite or weight loss, dull coat or skin issues, weakness or muscle wasting, neurological symptoms (tremors, seizures, loss of coordination), anemia (pale gums, weakness), and GI issues (diarrhea, vomiting). B12 deficiency is particularly common in dogs with digestive issues like IBD or EPI.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Are synthetic B vitamins as good as food-based B vitamins?</div>
-        <div class="faq-answer">Food-based B vitamins are absorbed more efficiently (60-80% bioavailability) compared to synthetic forms (30-50%). Whole-food sources provide B vitamins alongside co-factors like amino acids, minerals, and other vitamins that enhance utilization. Synthetic B vitamins are isolated compounds without these supporting nutrients, making them less effective at supporting long-term health.</div>
+        <h3>Are synthetic B vitamins as good as food-based B vitamins?</h3>
+        <p>Food-based B vitamins are absorbed more efficiently (60-80% bioavailability) compared to synthetic forms (30-50%). Whole-food sources provide B vitamins alongside co-factors like amino acids, minerals, and other vitamins that enhance utilization. Synthetic B vitamins are isolated compounds without these supporting nutrients, making them less effective at supporting long-term health.</p>
       </div>
     </div>
-  </article>
+    </article>
+  </main>
 
-  <footer>© <span id="year"></span> Watts Pet</footer>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
+      </div>
+    </footer>
+  </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();

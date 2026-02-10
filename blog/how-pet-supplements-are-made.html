@@ -10,13 +10,6 @@
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="How Most Pet Supplements Are Made (The Industry You Don't See)">
-  <meta property="og:description" content="Most pet supplements start with cheap fillers, get heat-treated (destroying nutrients), have synthetic vitamins added back, then artificial flavors. Here's the manufacturing process manufacturers don't advertise.">
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://wattspet.com/blog/how-pet-supplements-are-made.html">
-  <meta property="og:image" content="https://wattspet.com/og-image.png">
-
   <!-- Ahrefs Analytics -->
   <script src="https://analytics.ahrefs.com/analytics.js" data-key="22KmtuYXO77ED5o6fe6z1w" async></script>
   <!-- Google tag (gtag.js) -->
@@ -29,77 +22,186 @@
     gtag('config', 'G-C6KV5WBGK5');
   </script>
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="How Most Pet Supplements Are Made (The Industry You Don't See)">
+  <meta property="og:description" content="Most pet supplements start with cheap fillers, get heat-treated (destroying nutrients), have synthetic vitamins added back, then artificial flavors. Here's the manufacturing process manufacturers don't advertise.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://wattspet.com/blog/how-pet-supplements-are-made.html">
+  <meta property="og:image" content="https://wattspet.com/og-image.png">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+  <!-- Degular Font -->
   <style>
-    :root {
-      --bg: #F1ECE9;
-      --fg: #191919;
-      --muted: #3a3a3a;
-      --border: #191919;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body { min-height: 100%; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Regular.woff2') format('woff2');
       font-weight: 400;
-      line-height: 1.6;
-      overflow-x: hidden;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
     }
 
-    nav.nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px 20px;
-      border-bottom: 2.5px solid var(--border);
+    :root {
+      --brand-orange: #c03800;
+      --bg-light: #f1f1f1;
+      --text-dark: #191919;
+      --white: #ffffff;
+      --text-muted: #666666;
+      --border-light: rgba(25, 25, 25, 0.1);
+      --accent-navy: #1e3a5f;
     }
-    @media (min-width: 768px) {
-      nav.nav { padding: 24px 20px; }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    nav.nav ul {
-      list-style: none;
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      background: #191919;
+      color: var(--text-dark);
+      font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* HEADER WRAPPER - Black background */
+    .header-wrapper {
+      background: #191919;
+      padding: 12px 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    /* ORANGE HEADER - Rounded like Shopify site */
+    header {
+      background: var(--brand-orange);
+      padding: 7px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
-      gap: 24px;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-height: 40px;
+    }
+
+    /* Nav on the LEFT */
+    nav {
+      order: -1;
+      display: flex;
       align-items: center;
     }
-    @media (min-width: 768px) {
-      nav.nav ul { gap: 32px; }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
     }
-    nav.nav a {
-      color: var(--fg);
+    @media (min-width: 768px) {
+      nav ul { gap: 24px; }
+    }
+
+    nav li {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--white);
       text-decoration: none;
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 500;
-      transition: opacity 0.15s;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
     }
     @media (min-width: 768px) {
-      nav.nav a { font-size: 16px; }
+      nav a { font-size: 15px; }
     }
-    nav.nav a:hover { opacity: 0.7; }
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    /* Logo CENTERED */
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo {
+      height: 32px;
+    }
+    @media (min-width: 768px) {
+      .logo { height: 40px; }
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 900px;
+      margin: 16px auto 40px;
+      padding: 0 20px;
+      background: var(--bg-light);
+    }
+    @media (min-width: 768px) {
+      main {
+        margin: 20px auto 60px;
+        padding: 0 40px;
+      }
+    }
 
     article {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px 60px;
+      background: var(--white);
+      padding: 40px 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      article { padding: 60px 40px 80px; }
+      article {
+        padding: 60px 50px;
+      }
     }
 
     .article-header {
-      margin-bottom: 40px;
+      margin-bottom: 48px;
       padding-bottom: 32px;
-      border-bottom: 1px solid rgba(25, 25, 25, 0.1);
-    }
-    @media (min-width: 768px) {
-      .article-header { margin-bottom: 48px; }
+      border-bottom: 2px solid var(--border-light);
     }
 
     h1 {
@@ -108,143 +210,172 @@
       line-height: 1.2;
       margin-bottom: 16px;
       letter-spacing: -0.02em;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
-      h1 { font-size: 42px; margin-bottom: 20px; }
+      h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
     }
 
     .article-meta {
-      color: var(--muted);
+      color: var(--text-muted);
       font-size: 14px;
-      margin-bottom: 20px;
-    }
-    @media (min-width: 768px) {
-      .article-meta { font-size: 15px; }
+      font-weight: 500;
+      margin-bottom: 24px;
     }
 
     .article-intro {
-      font-size: 18px;
+      font-size: 19px;
+      font-weight: 500;
       line-height: 1.6;
-      color: var(--muted);
-      margin-bottom: 32px;
+      color: var(--text-muted);
+      margin-bottom: 0;
     }
     @media (min-width: 768px) {
-      .article-intro { font-size: 20px; margin-bottom: 40px; }
+      .article-intro {
+        font-size: 21px;
+      }
     }
 
+    .article-intro a {
+      color: var(--accent-navy);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    .article-intro a:hover {
+      opacity: 0.7;
+    }
+
+    /* LAYERED CALLOUT BOX */
     .quick-facts {
-      background: rgba(25, 25, 25, 0.03);
-      border: 2px solid var(--border);
-      padding: 24px;
-      margin: 32px 0;
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .quick-facts-content {
+      background: var(--white);
+      color: var(--text-dark);
+      border-radius: 12px;
+      padding: 24px 28px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .quick-facts { padding: 32px; }
+      .quick-facts-content {
+        padding: 28px 36px;
+      }
     }
 
     .quick-facts h3 {
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 16px;
+      font-size: 24px;
+      font-weight: 600;
+      margin-top: 4px;
+      margin-bottom: 20px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
-      .quick-facts h3 { font-size: 20px; }
+      .quick-facts h3 {
+        font-size: 28px;
+      }
     }
 
     .quick-facts ul {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
 
     .quick-facts li {
       padding: 8px 0;
-      padding-left: 24px;
+      padding-left: 28px;
       position: relative;
-      font-size: 15px;
+      font-size: 16px;
+      font-weight: 500;
       line-height: 1.6;
     }
     @media (min-width: 768px) {
-      .quick-facts li { font-size: 16px; }
+      .quick-facts li {
+        font-size: 17px;
+      }
     }
 
     .quick-facts li:before {
       content: "→";
       position: absolute;
       left: 0;
+      top: 8px;
       font-weight: 700;
+      color: var(--brand-orange);
+    }
+
+    .quick-facts a {
+      color: var(--accent-navy);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .quick-facts a:hover {
+      opacity: 0.85;
     }
 
     h2 {
-      font-size: 26px;
+      font-size: 28px;
       font-weight: 700;
-      line-height: 1.3;
-      margin: 48px 0 20px;
+      line-height: 1.2;
+      margin: 56px 0 24px;
       letter-spacing: -0.01em;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
-      h2 { font-size: 32px; margin: 56px 0 24px; }
+      h2 {
+        font-size: 36px;
+        margin: 64px 0 28px;
+      }
     }
 
     h3 {
-      font-size: 20px;
-      font-weight: 700;
+      font-size: 24px;
+      font-weight: 600;
       line-height: 1.3;
-      margin: 32px 0 16px;
+      margin: 40px 0 16px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
-      h3 { font-size: 24px; margin: 40px 0 20px; }
+      h3 {
+        font-size: 28px;
+        margin: 48px 0 20px;
+      }
     }
 
     p {
-      font-size: 16px;
+      font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
       margin-bottom: 20px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
-      p { font-size: 17px; margin-bottom: 24px; }
+      p {
+        font-size: 18px;
+        margin-bottom: 24px;
+      }
     }
 
-    strong { font-weight: 600; }
-
-    .callout {
-      background: rgba(25, 25, 25, 0.03);
-      border-left: 4px solid var(--border);
-      padding: 20px 24px;
-      margin: 32px 0;
-    }
-    @media (min-width: 768px) {
-      .callout { padding: 24px 32px; }
-    }
-
-    .callout p:last-child { margin-bottom: 0; }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 32px 0;
-      font-size: 15px;
-      border: 2px solid var(--border);
-    }
-    @media (min-width: 768px) {
-      table { font-size: 16px; }
-    }
-
-    thead {
-      background: rgba(25, 25, 25, 0.05);
+    strong {
       font-weight: 600;
     }
 
-    th, td {
-      text-align: left;
-      padding: 12px;
-      border-bottom: 1px solid rgba(25, 25, 25, 0.1);
+    a {
+      color: var(--accent-navy);
+      transition: opacity 0.2s ease;
     }
-    @media (min-width: 768px) {
-      th, td { padding: 16px; }
-    }
-
-    tbody tr:last-child td {
-      border-bottom: none;
+    a:hover {
+      opacity: 0.7;
     }
 
     ul, ol {
@@ -253,96 +384,195 @@
     }
 
     li {
-      font-size: 16px;
+      font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
       margin-bottom: 12px;
     }
     @media (min-width: 768px) {
-      li { font-size: 17px; }
+      li {
+        font-size: 18px;
+      }
     }
 
+    /* LIGHT CALLOUT BOX */
+    .callout {
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin: 32px 0;
+    }
+    @media (min-width: 768px) {
+      .callout {
+        padding: 28px 32px;
+      }
+    }
+
+    .callout p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* TABLE */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 32px 0;
+      font-size: 16px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    @media (min-width: 768px) {
+      table {
+        font-size: 17px;
+      }
+    }
+
+    thead {
+      background: var(--brand-orange);
+      color: var(--white);
+      font-weight: 700;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+      border-bottom: 1px solid var(--border-light);
+    }
+    @media (min-width: 768px) {
+      th, td {
+        padding: 18px 20px;
+      }
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    tbody tr {
+      background: var(--white);
+      transition: background 0.2s ease;
+    }
+
+    tbody tr:hover {
+      background: rgba(192, 56, 0, 0.02);
+    }
+
+    /* FAQ SECTION */
     .faq-section {
-      margin-top: 56px;
-      padding-top: 48px;
-      border-top: 2px solid var(--border);
+      margin-top: 64px;
+      padding-top: 56px;
+      border-top: 3px solid var(--border-light);
     }
 
     .faq-item {
       margin-bottom: 32px;
+      padding: 28px;
+      background: var(--bg-light);
+      border-radius: 12px;
+      border-left: 4px solid var(--brand-orange);
     }
 
     .faq-item h3 {
-      font-size: 19px;
-      margin: 0 0 12px 0;
+      font-size: 20px;
+      margin: 0 0 16px 0;
+      color: var(--brand-orange);
     }
     @media (min-width: 768px) {
-      .faq-item h3 { font-size: 21px; }
-    }
-
-    .related-articles {
-      margin-top: 56px;
-      padding-top: 40px;
-      border-top: 1px solid rgba(25, 25, 25, 0.1);
-    }
-
-    .related-articles h2 {
-      font-size: 22px;
-      margin: 0 0 24px 0;
-    }
-    @media (min-width: 768px) {
-      .related-articles h2 { font-size: 26px; }
-    }
-
-    .related-grid {
-      display: grid;
-      gap: 16px;
-    }
-    @media (min-width: 768px) {
-      .related-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+      .faq-item h3 {
+        font-size: 23px;
       }
     }
 
-    .related-link {
-      display: block;
-      padding: 20px;
-      border: 2px solid var(--border);
+    .faq-item p {
+      margin-bottom: 0;
+    }
+
+    /* FOOTER WRAPPER - Black background */
+    .footer-wrapper {
+      background: #191919;
+      padding: 0 12px 12px;
+      margin-top: 80px;
+    }
+
+    /* FOOTER - Orange with asymmetric rounded shape */
+    footer {
+      background: var(--brand-orange);
+      color: var(--white);
+      padding: 45px 40px 20px;
+      border-radius: 200px 16px 16px 200px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 144px;
+    }
+    @media (min-width: 768px) {
+      footer {
+        padding: 63px 60px 24px;
+        min-height: 207px;
+        border-radius: 300px 16px 16px 300px;
+      }
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      flex: 1;
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 24px;
+      flex: 1;
+    }
+    @media (min-width: 768px) {
+      .footer-right {
+        gap: 32px;
+      }
+    }
+
+    .footer-right-text {
+      text-align: right;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-top: 128px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .footer-logo {
+        height: 160px;
+        margin-top: 160px;
+        margin-bottom: 0;
+      }
+    }
+
+    footer p {
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    footer a {
+      color: var(--white);
       text-decoration: none;
-      color: var(--fg);
-      transition: background 0.15s;
-      font-size: 16px;
       font-weight: 500;
     }
-    @media (min-width: 768px) {
-      .related-link { font-size: 17px; }
+    footer a:hover {
+      text-decoration: underline;
     }
-
-    .related-link:hover {
-      background: rgba(0,0,0,.02);
-    }
-
-    footer {
-      width: 100%;
-      padding: 32px 20px 24px;
-      text-align: center;
-      border-top: 1px solid rgba(25, 25, 25, 0.1);
-      margin-top: 60px;
-    }
-    @media (min-width: 768px) {
-      footer { padding: 40px 20px 32px; }
-    }
-    footer p {
-      color: var(--muted);
-      font-size: 14px;
-      margin: 0;
-    }
-    footer a {
-      color: var(--fg);
-      text-decoration: none;
-      transition: opacity 0.15s;
-    }
-    footer a:hover { opacity: 0.7; }
   </style>
 
   <script type="application/ld+json">
@@ -486,35 +716,47 @@
 </head>
 
 <body>
-  <nav class="nav">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/blog/">Blog</a></li>
-      <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
-    </ul>
-  </nav>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+        </div>
+      </div>
+    </header>
+  </div>
 
-  <article>
+  <main>
+    <article>
     <div class="article-header">
+      <div class="article-meta">January 13, 2026</div>
       <h1>How Most Pet Supplements Are Made (The Industry You Don't See)</h1>
-      <div class="article-meta">Published January 13, 2026</div>
       <p class="article-intro">
         Most pet supplement manufacturers don't advertise their process. Here's what actually happens: cheap fillers form the base, high-heat processing destroys natural nutrients, synthetic vitamins are sprayed back on, and artificial flavors mask the processed taste. This is why your dog's supplement looks nothing like real food—and why it might not work as well as you'd hope.
       </p>
     </div>
 
     <div class="quick-facts">
-      <h3>The Standard Pet Supplement Manufacturing Process</h3>
-      <ul>
-        <li><strong>Step 1:</strong> Start with cheap base fillers (maltodextrin, rice flour, wheat) to bulk up the product</li>
-        <li><strong>Step 2:</strong> Add active ingredients (often minimal amounts to keep costs low)</li>
-        <li><strong>Step 3:</strong> Heat process at 200-400°F (extrusion, baking, pressing) for shelf stability</li>
-        <li><strong>Step 4:</strong> This destroys 50-90% of heat-sensitive vitamins, enzymes, and probiotics</li>
-        <li><strong>Step 5:</strong> Spray synthetic vitamins back on to meet label claims</li>
-        <li><strong>Step 6:</strong> Add artificial flavors because heat processing tastes terrible</li>
-        <li><strong>Result:</strong> A shelf-stable product that's cheap to make but far less bioavailable than whole food</li>
-      </ul>
+      <div class="quick-facts-content">
+        <h3>The Standard Pet Supplement Manufacturing Process</h3>
+        <ul>
+          <li><strong>Step 1:</strong> Start with cheap base fillers (maltodextrin, rice flour, wheat) to bulk up the product</li>
+          <li><strong>Step 2:</strong> Add active ingredients (often minimal amounts to keep costs low)</li>
+          <li><strong>Step 3:</strong> Heat process at 200-400°F (extrusion, baking, pressing) for shelf stability</li>
+          <li><strong>Step 4:</strong> This destroys 50-90% of heat-sensitive vitamins, enzymes, and probiotics</li>
+          <li><strong>Step 5:</strong> Spray synthetic vitamins back on to meet label claims</li>
+          <li><strong>Step 6:</strong> Add artificial flavors because heat processing tastes terrible</li>
+          <li><strong>Result:</strong> A shelf-stable product that's cheap to make but far less bioavailable than whole food</li>
+        </ul>
+      </div>
     </div>
 
     <h2>Step 1: Start with Cheap Fillers as the Base</h2>
@@ -785,6 +1027,30 @@
     <p>Choose supplements made from real food, processed gently, and formulated with transparency. Your dog deserves nutrition that's as close to nature as possible—not a heat-processed mix of fillers and lab-created vitamins.</p>
 
     <div class="faq-section">
+      <h2 style="margin-top: 56px; padding-top: 40px; border-top: 2px solid var(--border-light);">Related Articles</h2>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 56px;">
+        <a href="/blog/fillers-in-dog-supplements.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Common Fillers and Binders in Dog Supplements</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Understanding what's really in your dog's supplements</p>
+        </a>
+
+        <a href="/blog/whole-food-vs-synthetic-nutrients.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Whole Food vs Synthetic Vitamins in Dog Food</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Why bioavailability matters for your dog's nutrition</p>
+        </a>
+
+        <a href="/blog/how-to-read-dog-supplement-labels.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">How to Read a Dog Supplement Label</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Spot red flags and identify quality ingredients</p>
+        </a>
+
+        <a href="/blog/organ-based-nutrition-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">The Real Benefits of Organ-Based Nutrition</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Why whole-food organ meats outperform supplements</p>
+        </a>
+      </div>
+
       <h2>Frequently Asked Questions</h2>
 
       <div class="faq-item">
@@ -837,30 +1103,24 @@
         <p>Check the ingredient list: if maltodextrin, rice flour, or wheat flour are in the first 3 ingredients, it's filler-heavy. If you see many synthetic vitamins listed (ascorbic acid, cyanocobalamin, synthetic vitamin E), it's been heat-processed and fortified. If artificial flavors like "natural bacon flavor" or "chicken digest" are present, it needs masking agents. Soft chews, hard tablets, and extruded treats are almost always heat-processed. Whole-food supplements list real food ingredients (liver, heart, kidney) first and don't need long lists of synthetic additives.</p>
       </div>
     </div>
+    </article>
+  </main>
 
-    <div class="related-articles">
-      <h2>Related Articles</h2>
-      <div class="related-grid">
-        <a href="/blog/fillers-in-dog-supplements.html" class="related-link">
-          Common Fillers and Binders in Dog Supplements →
-        </a>
-        <a href="/blog/whole-food-vs-synthetic-nutrients.html" class="related-link">
-          Whole Food vs Synthetic Vitamins in Dog Food →
-        </a>
-        <a href="/blog/how-to-read-dog-supplement-labels.html" class="related-link">
-          How to Read a Dog Supplement Label →
-        </a>
-        <a href="/blog/organ-based-nutrition-for-dogs.html" class="related-link">
-          The Real Benefits of Organ-Based Nutrition →
-        </a>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
       </div>
-    </div>
-  </article>
-
-  <footer>
-    <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
-    <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet</p>
-  </footer>
+    </footer>
+  </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();

@@ -22,85 +22,144 @@
     gtag('config', 'G-C6KV5WBGK5');
   </script>
 
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
-
+  <!-- Degular Font -->
   <style>
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
     :root {
-      --bg: #F1ECE9;
-      --fg: #191919;
-      --muted: #3a3a3a;
-      --border: #191919;
+      --brand-orange: #c03800;
+      --bg-light: #f1f1f1;
+      --text-dark: #191919;
+      --white: #ffffff;
+      --text-muted: #666666;
+      --border-light: rgba(25, 25, 25, 0.1);
+      --accent-navy: #1e3a5f;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     html, body { min-height: 100%; }
     body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      font-weight: 400;
+      background: #191919;
+      color: var(--text-dark);
+      font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
       line-height: 1.6;
-      overflow-x: hidden;
     }
 
-    /* Navigation */
-    nav.nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px 20px;
-      border-bottom: 2.5px solid var(--border);
+    /* HEADER */
+    .header-wrapper {
+      background: #191919;
+      padding: 12px 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
-    @media (min-width: 768px) {
-      nav.nav {
-        padding: 24px 20px;
-      }
+
+    header {
+      background: var(--brand-orange);
+      padding: 7px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     }
-    nav.nav ul {
-      list-style: none;
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
-      gap: 24px;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-height: 40px;
+    }
+
+    nav {
+      order: -1;
+      display: flex;
       align-items: center;
     }
-    @media (min-width: 768px) {
-      nav.nav ul {
-        gap: 32px;
-      }
-    }
-    nav.nav a {
-      color: var(--fg);
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 500;
-      transition: opacity 0.15s;
-      position: relative;
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
     }
     @media (min-width: 768px) {
-      nav.nav a {
-        font-size: 16px;
-      }
-    }
-    nav.nav a:hover {
-      opacity: 0.7;
-    }
-    nav.nav a.active::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: var(--fg);
+      nav ul { gap: 24px; }
     }
 
-    /* Main content */
+    nav li {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
+    }
+    @media (min-width: 768px) {
+      nav a { font-size: 15px; }
+    }
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo {
+      height: 32px;
+    }
+    @media (min-width: 768px) {
+      .logo { height: 40px; }
+    }
+
+    /* MAIN CONTENT */
     main {
+      background: var(--bg-light);
       max-width: 900px;
-      margin: 0 auto;
+      margin: 20px auto 0;
       padding: 40px 20px 60px;
     }
     @media (min-width: 768px) {
@@ -121,24 +180,25 @@
     }
 
     h1 {
-      font-family: "Geologica", sans-serif;
       font-size: 32px;
       font-weight: 700;
       line-height: 1.2;
       margin-bottom: 12px;
       letter-spacing: -0.02em;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       h1 {
-        font-size: 42px;
+        font-size: 48px;
         margin-bottom: 16px;
       }
     }
 
     .page-description {
       font-size: 17px;
+      font-weight: 500;
       line-height: 1.5;
-      color: var(--muted);
+      color: var(--text-muted);
       max-width: 600px;
       margin: 0 auto;
     }
@@ -152,21 +212,23 @@
     .blog-posts {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 32px;
+      gap: 24px;
     }
     @media (min-width: 768px) {
       .blog-posts {
-        gap: 40px;
+        gap: 32px;
       }
     }
 
     /* Individual blog post card */
     .blog-post {
-      border: 2.5px solid var(--border);
+      border: 3px solid var(--brand-orange);
+      background: var(--white);
+      border-radius: 12px;
       padding: 24px;
-      transition: background 0.15s;
+      transition: background 0.2s;
       text-decoration: none;
-      color: var(--fg);
+      color: var(--text-dark);
       display: block;
     }
     @media (min-width: 768px) {
@@ -175,12 +237,13 @@
       }
     }
     .blog-post:hover {
-      background: rgba(0,0,0,.02);
+      background: rgba(192, 56, 0, 0.02);
     }
 
     .blog-post-date {
       font-size: 13px;
-      color: var(--muted);
+      font-weight: 600;
+      color: var(--text-muted);
       margin-bottom: 12px;
       text-transform: uppercase;
       letter-spacing: 0.05em;
@@ -197,6 +260,7 @@
       line-height: 1.3;
       margin-bottom: 12px;
       letter-spacing: -0.01em;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       .blog-post h2 {
@@ -207,8 +271,9 @@
 
     .blog-post-excerpt {
       font-size: 16px;
+      font-weight: 500;
       line-height: 1.6;
-      color: var(--muted);
+      color: var(--text-muted);
       margin-bottom: 16px;
     }
     @media (min-width: 768px) {
@@ -220,10 +285,8 @@
     .read-more {
       font-size: 15px;
       font-weight: 600;
-      color: var(--fg);
-      text-decoration: underline;
-      text-decoration-thickness: 1.5px;
-      text-underline-offset: 3px;
+      color: var(--brand-orange);
+      text-decoration: none;
     }
     @media (min-width: 768px) {
       .read-more {
@@ -231,55 +294,119 @@
       }
     }
 
-    /* Empty state */
     .empty-state {
       text-align: center;
       padding: 60px 20px;
-      color: var(--muted);
+      color: var(--text-muted);
     }
     .empty-state p {
       font-size: 17px;
     }
 
-    /* Footer */
-    footer {
-      width: 100%;
-      padding: 32px 20px 24px;
-      text-align: center;
-      border-top: 1px solid rgba(25, 25, 25, 0.1);
+    /* FOOTER */
+    .footer-wrapper {
+      background: #191919;
+      padding: 0 12px 12px;
       margin-top: 60px;
+    }
+
+    footer {
+      background: var(--brand-orange);
+      color: var(--white);
+      padding: 45px 40px 20px;
+      border-radius: 200px 16px 16px 200px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 144px;
     }
     @media (min-width: 768px) {
       footer {
-        padding: 40px 20px 32px;
+        padding: 63px 60px 24px;
+        min-height: 207px;
+        border-radius: 300px 16px 16px 300px;
       }
     }
-    footer p {
-      color: var(--muted);
-      font-size: 14px;
-      font-weight: 400;
-      margin: 0;
+
+    .footer-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
     }
+
+    .footer-left {
+      flex: 1;
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 24px;
+      flex: 1;
+    }
+    @media (min-width: 768px) {
+      .footer-right {
+        gap: 32px;
+      }
+    }
+
+    .footer-right-text {
+      text-align: right;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-top: 128px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .footer-logo {
+        height: 160px;
+        margin-top: 160px;
+        margin-bottom: 0;
+      }
+    }
+
+    footer p {
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
     footer a {
-      color: var(--fg);
+      color: var(--white);
       text-decoration: none;
-      transition: opacity 0.15s;
+      font-weight: 500;
     }
     footer a:hover {
-      opacity: 0.7;
+      text-decoration: underline;
     }
   </style>
 </head>
 
 <body>
-  <nav class="nav">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/blog/" class="active">Blog</a></li>
-      <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
-    </ul>
-  </nav>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+        </div>
+      </div>
+    </header>
+  </div>
 
   <main>
     <div class="page-header">
@@ -605,10 +732,20 @@
     </div>
   </main>
 
-  <footer>
-    <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
-    <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet</p>
-  </footer>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left"></div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
+      </div>
+    </footer>
+  </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();

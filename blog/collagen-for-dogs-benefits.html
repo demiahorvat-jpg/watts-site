@@ -32,198 +32,268 @@
   <meta property="og:site_name" content="Watts Pet">
   <meta property="og:image" content="https://wattspet.com/assets/hero.jpg">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
-
+  <!-- Degular Font -->
   <style>
-    :root {
-      --bg: #F1ECE9;
-      --fg: #191919;
-      --muted: #3a3a3a;
-      --border: #191919;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body { min-height: 100%; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Regular.woff2') format('woff2');
       font-weight: 400;
-      line-height: 1.6;
-      overflow-x: hidden;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
     }
 
-    /* Navigation */
-    nav.nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px 20px;
-      border-bottom: 2.5px solid var(--border);
+    :root {
+      --brand-orange: #c03800;
+      --bg-light: #f1f1f1;
+      --text-dark: #191919;
+      --white: #ffffff;
+      --text-muted: #666666;
+      --border-light: rgba(25, 25, 25, 0.1);
+      --accent-navy: #1e3a5f;
     }
-    @media (min-width: 768px) {
-      nav.nav {
-        padding: 24px 20px;
-      }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    nav.nav ul {
-      list-style: none;
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      background: #191919;
+      color: var(--text-dark);
+      font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* HEADER WRAPPER - Black background */
+    .header-wrapper {
+      background: #191919;
+      padding: 12px 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    /* ORANGE HEADER - Rounded like Shopify site */
+    header {
+      background: var(--brand-orange);
+      padding: 7px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
-      gap: 24px;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-height: 40px;
+    }
+
+    /* Nav on the LEFT */
+    nav {
+      order: -1;
+      display: flex;
       align-items: center;
     }
-    @media (min-width: 768px) {
-      nav.nav ul {
-        gap: 32px;
-      }
-    }
-    nav.nav a {
-      color: var(--fg);
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 500;
-      transition: opacity 0.15s;
-      position: relative;
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
     }
     @media (min-width: 768px) {
-      nav.nav a {
-        font-size: 16px;
-      }
-    }
-    nav.nav a:hover {
-      opacity: 0.7;
-    }
-    nav.nav a.active::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: var(--fg);
+      nav ul { gap: 24px; }
     }
 
-    /* Breadcrumbs */
-    .breadcrumbs {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px 20px 0;
+    nav li {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
       font-size: 14px;
-      color: var(--muted);
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
     }
     @media (min-width: 768px) {
-      .breadcrumbs {
-        padding: 24px 40px 0;
-        font-size: 15px;
-      }
+      nav a { font-size: 15px; }
     }
-    .breadcrumbs a {
-      color: var(--muted);
-      text-decoration: none;
-      transition: opacity 0.15s;
-    }
-    .breadcrumbs a:hover {
-      opacity: 0.7;
-    }
-    .breadcrumbs span {
-      margin: 0 8px;
+    nav a:hover {
+      opacity: 0.8;
     }
 
-    /* Article */
+    /* Logo CENTERED */
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo {
+      height: 32px;
+    }
+    @media (min-width: 768px) {
+      .logo { height: 40px; }
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 900px;
+      margin: 16px auto 40px;
+      padding: 0 20px;
+      background: var(--bg-light);
+    }
+    @media (min-width: 768px) {
+      main {
+        margin: 20px auto 60px;
+        padding: 0 40px;
+      }
+    }
+
     article {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 32px 20px 60px;
+      background: var(--white);
+      padding: 40px 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
       article {
-        padding: 48px 40px 80px;
+        padding: 60px 50px;
       }
     }
 
-    /* Article meta */
-    .article-meta {
-      margin-bottom: 24px;
-      font-size: 14px;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    @media (min-width: 768px) {
-      .article-meta {
-        margin-bottom: 28px;
-        font-size: 15px;
-      }
+    .article-header {
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--border-light);
     }
 
-    /* Typography */
     h1 {
-      font-family: "Geologica", sans-serif;
-      font-size: 28px;
+      font-size: 32px;
       font-weight: 700;
       line-height: 1.2;
       margin-bottom: 16px;
       letter-spacing: -0.02em;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       h1 {
-        font-size: 38px;
+        font-size: 48px;
         margin-bottom: 20px;
       }
     }
 
-    h2 {
-      font-family: "Geologica", sans-serif;
-      font-size: 22px;
-      font-weight: 700;
-      line-height: 1.3;
-      margin: 48px 0 20px;
-      letter-spacing: -0.01em;
+    .article-meta {
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      font-weight: 500;
+      line-height: 1.6;
+      color: var(--text-muted);
+      margin-bottom: 0;
     }
     @media (min-width: 768px) {
-      h2 {
-        font-size: 26px;
-        margin: 56px 0 24px;
+      .article-intro {
+        font-size: 21px;
       }
     }
 
-    h2:first-of-type {
-      margin-top: 32px;
+    .article-intro a {
+      color: var(--accent-navy);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    .article-intro a:hover {
+      opacity: 0.7;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 56px 0 24px;
+      letter-spacing: -0.01em;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h2 {
+        font-size: 36px;
+        margin: 64px 0 28px;
+      }
     }
 
     h3 {
-      font-family: "Geologica", sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 1.4;
-      margin: 32px 0 16px;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 40px 0 16px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       h3 {
-        font-size: 20px;
-        margin: 40px 0 18px;
+        font-size: 28px;
+        margin: 48px 0 20px;
       }
     }
 
     p {
       font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
-      margin-bottom: 16px;
-      color: var(--fg);
+      margin-bottom: 20px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       p {
         font-size: 18px;
-        margin-bottom: 18px;
-        line-height: 1.75;
+        margin-bottom: 24px;
       }
-    }
-
-    p:last-child {
-      margin-bottom: 0;
     }
 
     strong {
@@ -231,182 +301,161 @@
     }
 
     a {
-      color: var(--fg);
-      text-decoration: underline;
-      text-decoration-thickness: 1.5px;
-      text-underline-offset: 2px;
+      color: var(--accent-navy);
+      transition: opacity 0.2s ease;
     }
-
     a:hover {
       opacity: 0.7;
     }
 
-    /* Lists */
-    article ul, article ol {
-      margin: 20px 0;
-      padding-left: 0;
-      list-style: none;
+    ul, ol {
+      margin: 24px 0;
+      padding-left: 28px;
     }
 
-    article li {
+    li {
       font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
-      margin-bottom: 16px;
-      padding-left: 28px;
-      position: relative;
+      margin-bottom: 12px;
     }
     @media (min-width: 768px) {
-      article li {
+      li {
         font-size: 18px;
-        margin-bottom: 18px;
       }
     }
 
-    article ul li:before {
-      content: "•";
-      position: absolute;
-      left: 10px;
-      font-weight: 700;
-    }
-
-    /* Callout Box */
+    /* LIGHT CALLOUT BOX */
     .callout {
-      border: 2.5px solid var(--border);
-      padding: 20px;
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
+      padding: 24px 28px;
       margin: 32px 0;
-      background: rgba(0,0,0,.01);
     }
     @media (min-width: 768px) {
       .callout {
-        padding: 28px;
-        margin: 40px 0;
+        padding: 28px 32px;
       }
     }
 
-    /* FAQ Section */
-    .faq-section {
-      margin-top: 56px;
-      padding-top: 40px;
-      border-top: 2.5px solid var(--border);
+    .callout p:last-child {
+      margin-bottom: 0;
     }
-    @media (min-width: 768px) {
-      .faq-section {
-        margin-top: 64px;
-        padding-top: 48px;
-      }
+
+    /* FAQ SECTION */
+    .faq-section {
+      margin-top: 64px;
+      padding-top: 56px;
+      border-top: 3px solid var(--border-light);
     }
 
     .faq-item {
       margin-bottom: 32px;
+      padding: 28px;
+      background: var(--bg-light);
+      border-radius: 12px;
+      border-left: 4px solid var(--brand-orange);
+    }
+
+    .faq-item h3 {
+      font-size: 20px;
+      margin: 0 0 16px 0;
+      color: var(--brand-orange);
     }
     @media (min-width: 768px) {
-      .faq-item {
-        margin-bottom: 40px;
+      .faq-item h3 {
+        font-size: 23px;
       }
     }
 
-    .faq-item:last-child {
+    .faq-item p {
       margin-bottom: 0;
     }
 
-    .faq-question {
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 12px;
-      line-height: 1.4;
-    }
-    @media (min-width: 768px) {
-      .faq-question {
-        font-size: 20px;
-        margin-bottom: 14px;
-      }
+    /* FOOTER WRAPPER - Black background */
+    .footer-wrapper {
+      background: #191919;
+      padding: 0 12px 12px;
+      margin-top: 80px;
     }
 
-    .faq-answer {
-      font-size: 17px;
-      line-height: 1.7;
-      color: var(--fg);
-    }
-    @media (min-width: 768px) {
-      .faq-answer {
-        font-size: 18px;
-      }
-    }
-
-    /* CTA */
-    .cta-section {
-      text-align: center;
-      margin: 56px 0 0;
-      padding: 40px 0 0;
-      border-top: 2.5px solid var(--border);
-    }
-    @media (min-width: 768px) {
-      .cta-section {
-        margin: 64px 0 0;
-        padding: 48px 0 0;
-      }
-    }
-
-    .cta-section p {
-      margin-bottom: 24px;
-    }
-
-    .gate {
-      display: inline-flex;
-      align-items: stretch;
-      justify-content: space-between;
-      width: 100%;
-      max-width: 480px;
-      height: 52px;
-      border: 2.5px solid var(--border);
-      background: transparent;
-      color: var(--fg);
-      font: 600 16px "Geologica", sans-serif;
-      padding: 0;
-      border-radius: 0;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    @media (min-width: 768px) {
-      .gate {
-        font-size: 17px;
-      }
-    }
-    .gate-text { padding: 0 20px 0 14px; text-align: left; flex: 1 1 auto; display: flex; align-items: center; }
-    @media (min-width: 768px) {
-      .gate-text { padding: 0 20px 0 16px; }
-    }
-    .gate-arrow {
-      display: grid;
-      place-items: center;
-      width: 52px;
-      border-left: 2.5px solid var(--border);
-      font-size: 18px;
-      line-height: 1;
-      user-select: none;
-    }
-    @media (min-width: 768px) {
-      .gate-arrow {
-        width: 43px;
-        font-size: 20px;
-      }
-    }
-    .gate:hover { background: rgba(0,0,0,.035); }
-
-    /* Footer */
+    /* FOOTER - Orange with asymmetric rounded shape like Shopify */
     footer {
-      text-align: center;
-      padding: 20px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 400;
-      border-top: 2.5px solid var(--border);
+      background: var(--brand-orange);
+      color: var(--white);
+      padding: 45px 40px 20px;
+      border-radius: 200px 16px 16px 200px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 144px;
     }
     @media (min-width: 768px) {
       footer {
-        padding: 24px;
-        font-size: 13px;
+        padding: 63px 60px 24px;
+        min-height: 207px;
+        border-radius: 300px 16px 16px 300px;
       }
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      flex: 1;
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 24px;
+      flex: 1;
+    }
+    @media (min-width: 768px) {
+      .footer-right {
+        gap: 32px;
+      }
+    }
+
+    .footer-right-text {
+      text-align: right;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-top: 128px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .footer-logo {
+        height: 160px;
+        margin-top: 160px;
+        margin-bottom: 0;
+      }
+    }
+
+    footer p {
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    footer a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 
@@ -518,291 +567,322 @@
 </head>
 
 <body>
-  <nav class="nav">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/blog/" class="active">Blog</a></li>
-      <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
-    </ul>
-  </nav>
-
-  <div class="breadcrumbs">
-    <a href="/">Home</a>
-    <span>→</span>
-    <a href="/blog/">Blog</a>
-    <span>→</span>
-    <span>Collagen for Dogs Benefits</span>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+        </div>
+      </div>
+    </header>
   </div>
 
-  <article>
-    <div class="article-meta">February 17, 2025</div>
-
-    <h1>Collagen for Dogs: Benefits, Sources, and What Actually Works</h1>
-
-    <p><a href="/ingredient-analyzer/ingredients/collagen/">Collagen</a> has become one of the most talked-about supplements in both human and pet health. But unlike trendy ingredients that come and go, collagen actually has a meaningful role in canine health—especially as dogs age.</p>
-
-    <p>Collagen is the most abundant protein in a dog's body. It makes up the structure of joints, skin, tendons, ligaments, bones, and even the gut lining. As dogs get older, their bodies produce less of it naturally, which is why you start to see stiffness, dry skin, and slower recovery from activity.</p>
-
-    <p>The question isn't whether collagen matters—it does. The question is: what's the best way to support collagen production and maintenance in dogs?</p>
-
-    <h2>What Collagen Actually Does for Dogs</h2>
-
-    <p>Collagen isn't just one thing—it's a family of structural proteins that serve different functions throughout the body. Here's where it shows up and why it matters:</p>
-
-    <h3>1. Joint Health and Cartilage Support</h3>
-
-    <p>Cartilage—the smooth tissue that cushions joints—is about 70% collagen. As dogs age or put stress on their joints (from activity, body weight, or prior injuries), cartilage can break down faster than the body rebuilds it.</p>
-
-    <p>Supplementing with collagen provides the raw materials (amino acids like glycine, proline, and hydroxyproline) that dogs need to maintain cartilage structure. Research in dogs has shown that collagen supplementation can support joint comfort and mobility, particularly in older or active dogs.</p>
-
-    <h3>2. Skin Elasticity and Coat Health</h3>
-
-    <p>Collagen gives skin its structure and elasticity. When dogs don't produce enough, you may notice:</p>
-
-    <ul>
-      <li>Dry, flaky skin</li>
-      <li>Dull or brittle coat</li>
-      <li>Slower wound healing</li>
-      <li>Loss of skin "bounce" (you can test this by gently pinching the skin—if it snaps back slowly, hydration or collagen may be low)</li>
-    </ul>
-
-    <p>While collagen alone won't fix all skin issues (vitamin A, zinc, and omega-3s also play key roles), it's a foundational component of healthy skin from the inside out. Learn more about <a href="/blog/dog-vitamins-deficiency.html">essential vitamins for dog skin and coat health</a>.</p>
-
-    <h3>3. Gut Lining Integrity</h3>
-
-    <p>The digestive tract is lined with a layer of cells held together by connective tissue—much of which is collagen. This "gut barrier" determines what gets absorbed into the bloodstream and what stays out.</p>
-
-    <p>When gut lining integrity is compromised (often called "leaky gut"), dogs can experience:</p>
-
-    <ul>
-      <li>Food sensitivities</li>
-      <li>Inconsistent stool quality</li>
-      <li>Inflammation and immune reactivity</li>
-    </ul>
-
-    <p>Collagen, particularly in the form of gelatin or <a href="/ingredient-analyzer/ingredients/bone-broth/">bone broth</a>, provides amino acids that support the repair and maintenance of this gut lining. This is one reason bone broth has been used traditionally for digestive support in both humans and dogs.</p>
-
-    <h3>4. Tendon and Ligament Strength</h3>
-
-    <p>Tendons connect muscle to bone. Ligaments connect bone to bone. Both are made largely of collagen, and both are critical for movement and stability.</p>
-
-    <p>Active dogs—working dogs, agility competitors, or even enthusiastic fetch players—put constant stress on these structures. Collagen supplementation can support resilience and recovery, particularly for dogs prone to soft tissue injuries.</p>
-
-    <h2>Where Dogs Get Collagen (Naturally)</h2>
-
-    <p>Before supplements existed, dogs got collagen the way their ancestors did: by eating the whole animal—not just muscle meat.</p>
-
-    <p>Collagen-rich animal parts include:</p>
-
-    <ul>
-      <li><strong>Bones and cartilage</strong> (the classic source)</li>
-      <li><strong>Connective tissue</strong> (tendons, ligaments, skin)</li>
-      <li><strong>Organ meats</strong> (especially heart, which is rich in connective tissue)</li>
-      <li><strong>Chicken feet, beef trachea, pig ears</strong> (natural chews high in collagen)</li>
-    </ul>
-
-    <p>Modern commercial dog food—especially kibble—contains very little collagen. Muscle meat alone doesn't provide it. This is one reason <a href="/blog/organ-based-nutrition-for-dogs.html">organ-based nutrition</a> has become increasingly recognized as important for dogs.</p>
-
-    <h2>Collagen Supplements vs Whole-Food Sources</h2>
-
-    <p>You can support your dog's collagen needs in two main ways: through whole-food sources or through concentrated supplements. Both work, but they're not identical.</p>
-
-    <h3>Bone Broth</h3>
-
-    <p>Bone broth is made by simmering bones (with connective tissue attached) for hours or days. The collagen breaks down into gelatin, which is easier to digest and absorb.</p>
-
-    <p><strong>Benefits:</strong></p>
-
-    <ul>
-      <li>Provides collagen plus minerals (calcium, phosphorus, magnesium) from bones</li>
-      <li>Includes gelatin, which supports gut lining</li>
-      <li>Highly palatable—most dogs love it</li>
-      <li>Can be made at home or purchased</li>
-    </ul>
-
-    <p><strong>Considerations:</strong></p>
-
-    <ul>
-      <li>Homemade broth varies in collagen concentration depending on bones used and cook time</li>
-      <li>Store-bought "bone broth" products vary widely in quality—many are diluted or lack real collagen content</li>
-      <li>Must be refrigerated and used within a few days (or frozen)</li>
-    </ul>
-
-    <h3>Hydrolyzed Collagen Peptides</h3>
-
-    <p>Hydrolyzed collagen (also called collagen peptides) is collagen that's been broken down into smaller amino acid chains. This makes it easier to digest and absorb, and it dissolves easily in liquid.</p>
-
-    <p><strong>Benefits:</strong></p>
-
-    <ul>
-      <li>Highly concentrated and consistent dosing</li>
-      <li>Shelf-stable (no refrigeration needed)</li>
-      <li>Tasteless and easy to mix into food</li>
-      <li>Research-backed for joint health in dogs</li>
-    </ul>
-
-    <p><strong>Considerations:</strong></p>
-
-    <ul>
-      <li>Doesn't include the minerals or co-factors that bone broth provides</li>
-      <li>Quality varies—look for grass-fed, pasture-raised sources</li>
-      <li>More processed than whole-food options</li>
-    </ul>
-
-    <h3>Collagen-Rich Chews and Treats</h3>
-
-    <p>Natural chews like chicken feet, beef trachea, and tendons are high in collagen and provide mechanical benefits (dental cleaning, mental stimulation).</p>
-
-    <p><strong>Benefits:</strong></p>
-
-    <ul>
-      <li>Whole-food source of collagen</li>
-      <li>Dogs enjoy them as treats</li>
-      <li>Support dental health through chewing</li>
-    </ul>
-
-    <p><strong>Considerations:</strong></p>
-
-    <ul>
-      <li>Harder to dose consistently</li>
-      <li>Not suitable for all dogs (choking risk, digestive sensitivity)</li>
-      <li>Calorie-dense, so must be factored into daily intake</li>
-    </ul>
-
-    <h2>How Much Collagen Do Dogs Need?</h2>
-
-    <p>There's no official "recommended daily allowance" for collagen in dogs, but general guidelines based on research and veterinary use suggest:</p>
-
-    <p><strong>For collagen peptides:</strong></p>
-
-    <ul>
-      <li>Small dogs (under 25 lbs): 1/2 scoop (5-7g) daily</li>
-      <li>Medium dogs (25-50 lbs): 1 scoop (10-15g) daily</li>
-      <li>Large dogs (50-75 lbs): 1.5 scoops (15-20g) daily</li>
-      <li>Giant dogs (75+ lbs): 2 scoops (20-30g) daily</li>
-    </ul>
-
-    <p><strong>For bone broth:</strong></p>
-
-    <ul>
-      <li>1-2 ounces per 20 pounds of body weight, daily or several times per week</li>
-    </ul>
-
-    <p>Start with smaller amounts and increase gradually. Collagen is generally well-tolerated, but introducing too much at once can cause loose stools as the digestive system adjusts.</p>
-
-    <p>Consistency matters more than dose. Collagen works over weeks and months, not overnight. Think of it as a long-term investment in tissue health, not a quick fix.</p>
-
-    <h2>What the Research Actually Shows</h2>
-
-    <p>While collagen marketing often makes big promises, what does the science say?</p>
-
-    <p><strong>Joint health:</strong> Several studies in dogs have shown that collagen supplementation (especially undenatured collagen type II) can support joint comfort and mobility in dogs with osteoarthritis. The effects are modest but measurable, particularly when combined with other joint-supporting nutrients like glucosamine and omega-3s.</p>
-
-    <p><strong>Skin and coat:</strong> Human studies show collagen supplementation improves skin elasticity and hydration. While direct canine research is limited, the biological mechanisms are similar enough to suggest benefits for dogs, particularly when combined with fat-soluble vitamins like <a href="/blog/beef-liver-for-dogs.html">vitamin A from liver</a>.</p>
-
-    <p><strong>Gut health:</strong> Gelatin (from broken-down collagen) has been shown to support gut lining integrity in animal studies. It's used clinically for digestive support, though more canine-specific research is needed.</p>
-
-    <p>The takeaway: Collagen isn't a miracle cure, but it's a legitimate, biologically relevant nutrient that supports multiple systems—especially in aging or active dogs.</p>
-
-    <h2>When Collagen Matters Most</h2>
-
-    <p>Not every dog needs collagen supplementation, but it's particularly valuable for:</p>
-
-    <ul>
-      <li><strong>Senior dogs</strong> — Natural collagen production declines with age</li>
-      <li><strong>Active or working dogs</strong> — Higher stress on joints, tendons, and ligaments</li>
-      <li><strong>Dogs recovering from injury</strong> — Collagen supports tissue repair</li>
-      <li><strong>Dogs with joint issues</strong> — May help maintain cartilage and comfort</li>
-      <li><strong>Dogs with digestive sensitivities</strong> — Gelatin from bone broth can support gut lining</li>
-      <li><strong>Dogs with dry skin or dull coats</strong> — Collagen works from the inside out</li>
-    </ul>
-
-    <h2>What to Look For in a Collagen Supplement</h2>
-
-    <div class="callout">
-      <h3 style="margin-top: 0; font-size: 18px;">Signs of High-Quality Collagen for Dogs</h3>
-      <div style="margin-top: 12px;">
-        <div style="margin-bottom: 8px;"><strong>Sourcing:</strong> Grass-fed beef, pasture-raised chicken, or wild-caught fish</div>
-        <div style="margin-bottom: 8px;"><strong>Form:</strong> Hydrolyzed collagen peptides (easier to absorb) or gelatin from bone broth</div>
-        <div style="margin-bottom: 8px;"><strong>Purity:</strong> Minimal additives, no artificial flavors or sweeteners</div>
-        <div style="margin-bottom: 8px;"><strong>Transparency:</strong> Clear labeling of collagen type and amount per serving</div>
-        <div><strong>Third-party testing:</strong> Independent verification of purity and quality</div>
-      </div>
+  <main>
+    <article>
+    <div class="article-header">
+      <div class="article-meta">February 17, 2025</div>
+      <h1>Collagen for Dogs: Benefits, Sources, and What Actually Works</h1>
+      <p class="article-intro"><a href="/ingredient-analyzer/ingredients/collagen/">Collagen</a> has become one of the most talked-about supplements in both human and pet health. But unlike trendy ingredients that come and go, collagen actually has a meaningful role in canine health—especially as dogs age.</p>
     </div>
 
-    <p>Avoid products with long lists of fillers or those that hide collagen content behind "proprietary blends." Learn more about <a href="/blog/how-to-read-dog-supplement-labels.html">how to read supplement labels and spot quality</a>.</p>
+    <div class="article-content">
+      <p>Collagen is the most abundant protein in a dog's body. It makes up the structure of joints, skin, tendons, ligaments, bones, and even the gut lining. As dogs get older, their bodies produce less of it naturally, which is why you start to see stiffness, dry skin, and slower recovery from activity.</p>
 
-    <h2>The Whole-Food Advantage</h2>
+      <p>The question isn't whether collagen matters—it does. The question is: what's the best way to support collagen production and maintenance in dogs?</p>
 
-    <p>While isolated collagen supplements work, whole-food sources deliver collagen along with co-factors that support absorption and utilization:</p>
+      <h2>What Collagen Actually Does for Dogs</h2>
 
-    <ul>
-      <li><strong>Minerals</strong> (from bones) — Calcium, phosphorus, magnesium</li>
-      <li><strong>Vitamin C</strong> (if fresh ingredients are used) — Essential for collagen synthesis</li>
-      <li><strong>Glycosaminoglycans</strong> (from cartilage) — Additional joint support</li>
-      <li><strong>Gelatin</strong> (from slow-cooked connective tissue) — Easier to digest than raw collagen</li>
-    </ul>
+      <p>Collagen isn't just one thing—it's a family of structural proteins that serve different functions throughout the body. Here's where it shows up and why it matters:</p>
 
-    <p>This is why traditional diets that included bones, cartilage, and connective tissue naturally supported collagen levels—not through isolated supplements, but through nutrient-dense whole foods. <a href="/blog/dog-vs-human-nutrition.html">Dogs' digestive systems</a> are designed to utilize these animal-based nutrients efficiently.</p>
+      <h3>1. Joint Health and Cartilage Support</h3>
 
-    <h2>The Bottom Line</h2>
+      <p>Cartilage—the smooth tissue that cushions joints—is about 70% collagen. As dogs age or put stress on their joints (from activity, body weight, or prior injuries), cartilage can break down faster than the body rebuilds it.</p>
 
-    <p>Collagen isn't a passing trend—it's a structural protein that dogs need for joint health, skin integrity, gut function, and connective tissue maintenance. As dogs age or lead active lives, their natural collagen production declines, making supplementation or whole-food sources increasingly valuable.</p>
+      <p>Supplementing with collagen provides the raw materials (amino acids like glycine, proline, and hydroxyproline) that dogs need to maintain cartilage structure. Research in dogs has shown that collagen supplementation can support joint comfort and mobility, particularly in older or active dogs.</p>
 
-    <p>The best approach depends on your dog's needs and your preferences:</p>
+      <h3>2. Skin Elasticity and Coat Health</h3>
 
-    <ul>
-      <li><strong>For convenience and consistent dosing:</strong> Hydrolyzed collagen peptides</li>
-      <li><strong>For whole-food nutrition:</strong> High-quality bone broth or collagen-rich chews</li>
-      <li><strong>For comprehensive support:</strong> A combination of both</li>
-    </ul>
+      <p>Collagen gives skin its structure and elasticity. When dogs don't produce enough, you may notice:</p>
 
-    <p>Whatever you choose, prioritize quality, consistency, and transparency. Collagen works over time, and the results show up in how your dog moves, looks, and feels day to day.</p>
+      <ul>
+        <li>Dry, flaky skin</li>
+        <li>Dull or brittle coat</li>
+        <li>Slower wound healing</li>
+        <li>Loss of skin "bounce" (you can test this by gently pinching the skin—if it snaps back slowly, hydration or collagen may be low)</li>
+      </ul>
 
-    <!-- FAQ Section -->
+      <p>While collagen alone won't fix all skin issues (vitamin A, zinc, and omega-3s also play key roles), it's a foundational component of healthy skin from the inside out. Learn more about <a href="/blog/dog-vitamins-deficiency.html">essential vitamins for dog skin and coat health</a>.</p>
+
+      <h3>3. Gut Lining Integrity</h3>
+
+      <p>The digestive tract is lined with a layer of cells held together by connective tissue—much of which is collagen. This "gut barrier" determines what gets absorbed into the bloodstream and what stays out.</p>
+
+      <p>When gut lining integrity is compromised (often called "leaky gut"), dogs can experience:</p>
+
+      <ul>
+        <li>Food sensitivities</li>
+        <li>Inconsistent stool quality</li>
+        <li>Inflammation and immune reactivity</li>
+      </ul>
+
+      <p>Collagen, particularly in the form of gelatin or <a href="/ingredient-analyzer/ingredients/bone-broth/">bone broth</a>, provides amino acids that support the repair and maintenance of this gut lining. This is one reason bone broth has been used traditionally for digestive support in both humans and dogs.</p>
+
+      <h3>4. Tendon and Ligament Strength</h3>
+
+      <p>Tendons connect muscle to bone. Ligaments connect bone to bone. Both are made largely of collagen, and both are critical for movement and stability.</p>
+
+      <p>Active dogs—working dogs, agility competitors, or even enthusiastic fetch players—put constant stress on these structures. Collagen supplementation can support resilience and recovery, particularly for dogs prone to soft tissue injuries.</p>
+
+      <h2>Where Dogs Get Collagen (Naturally)</h2>
+
+      <p>Before supplements existed, dogs got collagen the way their ancestors did: by eating the whole animal—not just muscle meat.</p>
+
+      <p>Collagen-rich animal parts include:</p>
+
+      <ul>
+        <li><strong>Bones and cartilage</strong> (the classic source)</li>
+        <li><strong>Connective tissue</strong> (tendons, ligaments, skin)</li>
+        <li><strong>Organ meats</strong> (especially heart, which is rich in connective tissue)</li>
+        <li><strong>Chicken feet, beef trachea, pig ears</strong> (natural chews high in collagen)</li>
+      </ul>
+
+      <p>Modern commercial dog food—especially kibble—contains very little collagen. Muscle meat alone doesn't provide it. This is one reason <a href="/blog/organ-based-nutrition-for-dogs.html">organ-based nutrition</a> has become increasingly recognized as important for dogs.</p>
+
+      <h2>Collagen Supplements vs Whole-Food Sources</h2>
+
+      <p>You can support your dog's collagen needs in two main ways: through whole-food sources or through concentrated supplements. Both work, but they're not identical.</p>
+
+      <h3>Bone Broth</h3>
+
+      <p>Bone broth is made by simmering bones (with connective tissue attached) for hours or days. The collagen breaks down into gelatin, which is easier to digest and absorb.</p>
+
+      <p><strong>Benefits:</strong></p>
+
+      <ul>
+        <li>Provides collagen plus minerals (calcium, phosphorus, magnesium) from bones</li>
+        <li>Includes gelatin, which supports gut lining</li>
+        <li>Highly palatable—most dogs love it</li>
+        <li>Can be made at home or purchased</li>
+      </ul>
+
+      <p><strong>Considerations:</strong></p>
+
+      <ul>
+        <li>Homemade broth varies in collagen concentration depending on bones used and cook time</li>
+        <li>Store-bought "bone broth" products vary widely in quality—many are diluted or lack real collagen content</li>
+        <li>Must be refrigerated and used within a few days (or frozen)</li>
+      </ul>
+
+      <h3>Hydrolyzed Collagen Peptides</h3>
+
+      <p>Hydrolyzed collagen (also called collagen peptides) is collagen that's been broken down into smaller amino acid chains. This makes it easier to digest and absorb, and it dissolves easily in liquid.</p>
+
+      <p><strong>Benefits:</strong></p>
+
+      <ul>
+        <li>Highly concentrated and consistent dosing</li>
+        <li>Shelf-stable (no refrigeration needed)</li>
+        <li>Tasteless and easy to mix into food</li>
+        <li>Research-backed for joint health in dogs</li>
+      </ul>
+
+      <p><strong>Considerations:</strong></p>
+
+      <ul>
+        <li>Doesn't include the minerals or co-factors that bone broth provides</li>
+        <li>Quality varies—look for grass-fed, pasture-raised sources</li>
+        <li>More processed than whole-food options</li>
+      </ul>
+
+      <h3>Collagen-Rich Chews and Treats</h3>
+
+      <p>Natural chews like chicken feet, beef trachea, and tendons are high in collagen and provide mechanical benefits (dental cleaning, mental stimulation).</p>
+
+      <p><strong>Benefits:</strong></p>
+
+      <ul>
+        <li>Whole-food source of collagen</li>
+        <li>Dogs enjoy them as treats</li>
+        <li>Support dental health through chewing</li>
+      </ul>
+
+      <p><strong>Considerations:</strong></p>
+
+      <ul>
+        <li>Harder to dose consistently</li>
+        <li>Not suitable for all dogs (choking risk, digestive sensitivity)</li>
+        <li>Calorie-dense, so must be factored into daily intake</li>
+      </ul>
+
+      <h2>How Much Collagen Do Dogs Need?</h2>
+
+      <p>There's no official "recommended daily allowance" for collagen in dogs, but general guidelines based on research and veterinary use suggest:</p>
+
+      <p><strong>For collagen peptides:</strong></p>
+
+      <ul>
+        <li>Small dogs (under 25 lbs): 1/2 scoop (5-7g) daily</li>
+        <li>Medium dogs (25-50 lbs): 1 scoop (10-15g) daily</li>
+        <li>Large dogs (50-75 lbs): 1.5 scoops (15-20g) daily</li>
+        <li>Giant dogs (75+ lbs): 2 scoops (20-30g) daily</li>
+      </ul>
+
+      <p><strong>For bone broth:</strong></p>
+
+      <ul>
+        <li>1-2 ounces per 20 pounds of body weight, daily or several times per week</li>
+      </ul>
+
+      <p>Start with smaller amounts and increase gradually. Collagen is generally well-tolerated, but introducing too much at once can cause loose stools as the digestive system adjusts.</p>
+
+      <p>Consistency matters more than dose. Collagen works over weeks and months, not overnight. Think of it as a long-term investment in tissue health, not a quick fix.</p>
+
+      <h2>What the Research Actually Shows</h2>
+
+      <p>While collagen marketing often makes big promises, what does the science say?</p>
+
+      <p><strong>Joint health:</strong> Several studies in dogs have shown that collagen supplementation (especially undenatured collagen type II) can support joint comfort and mobility in dogs with osteoarthritis. The effects are modest but measurable, particularly when combined with other joint-supporting nutrients like glucosamine and omega-3s.</p>
+
+      <p><strong>Skin and coat:</strong> Human studies show collagen supplementation improves skin elasticity and hydration. While direct canine research is limited, the biological mechanisms are similar enough to suggest benefits for dogs, particularly when combined with fat-soluble vitamins like <a href="/blog/beef-liver-for-dogs.html">vitamin A from liver</a>.</p>
+
+      <p><strong>Gut health:</strong> Gelatin (from broken-down collagen) has been shown to support gut lining integrity in animal studies. It's used clinically for digestive support, though more canine-specific research is needed.</p>
+
+      <p>The takeaway: Collagen isn't a miracle cure, but it's a legitimate, biologically relevant nutrient that supports multiple systems—especially in aging or active dogs.</p>
+
+      <h2>When Collagen Matters Most</h2>
+
+      <p>Not every dog needs collagen supplementation, but it's particularly valuable for:</p>
+
+      <ul>
+        <li><strong>Senior dogs</strong> — Natural collagen production declines with age</li>
+        <li><strong>Active or working dogs</strong> — Higher stress on joints, tendons, and ligaments</li>
+        <li><strong>Dogs recovering from injury</strong> — Collagen supports tissue repair</li>
+        <li><strong>Dogs with joint issues</strong> — May help maintain cartilage and comfort</li>
+        <li><strong>Dogs with digestive sensitivities</strong> — Gelatin from bone broth can support gut lining</li>
+        <li><strong>Dogs with dry skin or dull coats</strong> — Collagen works from the inside out</li>
+      </ul>
+
+      <h2>What to Look For in a Collagen Supplement</h2>
+
+      <div class="callout">
+        <h3 style="margin-top: 0; font-size: 18px;">Signs of High-Quality Collagen for Dogs</h3>
+        <div style="margin-top: 12px;">
+          <div style="margin-bottom: 8px;"><strong>Sourcing:</strong> Grass-fed beef, pasture-raised chicken, or wild-caught fish</div>
+          <div style="margin-bottom: 8px;"><strong>Form:</strong> Hydrolyzed collagen peptides (easier to absorb) or gelatin from bone broth</div>
+          <div style="margin-bottom: 8px;"><strong>Purity:</strong> Minimal additives, no artificial flavors or sweeteners</div>
+          <div style="margin-bottom: 8px;"><strong>Transparency:</strong> Clear labeling of collagen type and amount per serving</div>
+          <div><strong>Third-party testing:</strong> Independent verification of purity and quality</div>
+        </div>
+      </div>
+
+      <p>Avoid products with long lists of fillers or those that hide collagen content behind "proprietary blends." Learn more about <a href="/blog/how-to-read-dog-supplement-labels.html">how to read supplement labels and spot quality</a>.</p>
+
+      <h2>The Whole-Food Advantage</h2>
+
+      <p>While isolated collagen supplements work, whole-food sources deliver collagen along with co-factors that support absorption and utilization:</p>
+
+      <ul>
+        <li><strong>Minerals</strong> (from bones) — Calcium, phosphorus, magnesium</li>
+        <li><strong>Vitamin C</strong> (if fresh ingredients are used) — Essential for collagen synthesis</li>
+        <li><strong>Glycosaminoglycans</strong> (from cartilage) — Additional joint support</li>
+        <li><strong>Gelatin</strong> (from slow-cooked connective tissue) — Easier to digest than raw collagen</li>
+      </ul>
+
+      <p>This is why traditional diets that included bones, cartilage, and connective tissue naturally supported collagen levels—not through isolated supplements, but through nutrient-dense whole foods. <a href="/blog/dog-vs-human-nutrition.html">Dogs' digestive systems</a> are designed to utilize these animal-based nutrients efficiently.</p>
+
+      <h2>The Bottom Line</h2>
+
+      <p>Collagen isn't a passing trend—it's a structural protein that dogs need for joint health, skin integrity, gut function, and connective tissue maintenance. As dogs age or lead active lives, their natural collagen production declines, making supplementation or whole-food sources increasingly valuable.</p>
+
+      <p>The best approach depends on your dog's needs and your preferences:</p>
+
+      <ul>
+        <li><strong>For convenience and consistent dosing:</strong> Hydrolyzed collagen peptides</li>
+        <li><strong>For whole-food nutrition:</strong> High-quality bone broth or collagen-rich chews</li>
+        <li><strong>For comprehensive support:</strong> A combination of both</li>
+      </ul>
+
+      <p>Whatever you choose, prioritize quality, consistency, and transparency. Collagen works over time, and the results show up in how your dog moves, looks, and feels day to day.</p>
+    </div>
+
     <div class="faq-section">
+      <h2 style="margin-top: 56px; padding-top: 40px; border-top: 2px solid var(--border-light);">Related Articles</h2>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 56px;">
+        <a href="/blog/do-joint-supplements-work-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Do Joint Supplements Work for Dogs?</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Evidence-based guide to supplements that actually help joint health</p>
+        </a>
+
+        <a href="/blog/natural-glucosamine-sources-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Natural Glucosamine Sources for Dogs</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Whole-food alternatives to synthetic glucosamine supplements</p>
+        </a>
+
+        <a href="/blog/beef-liver-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Why Beef Liver is One of the Best Things You Can Feed Your Dog</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Nutrient-dense superfood that supports skin, coat, and connective tissue</p>
+        </a>
+
+        <a href="/blog/organ-based-nutrition-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Organ-Based Nutrition for Dogs</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Why whole-animal nutrition provides collagen and other essential nutrients</p>
+        </a>
+      </div>
+
       <h2>Frequently Asked Questions</h2>
 
       <div class="faq-item">
-        <div class="faq-question">What does collagen do for dogs?</div>
-        <div class="faq-answer">Collagen supports joint cartilage, skin elasticity, coat health, gut lining integrity, and connective tissue throughout the body. It provides amino acids (especially glycine, proline, and hydroxyproline) that dogs use to maintain and repair tissues as they age.</div>
+        <h3>What does collagen do for dogs?</h3>
+        <p>Collagen supports joint cartilage, skin elasticity, coat health, gut lining integrity, and connective tissue throughout the body. It provides amino acids (especially glycine, proline, and hydroxyproline) that dogs use to maintain and repair tissues as they age.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">What's the best source of collagen for dogs?</div>
-        <div class="faq-answer">The best sources are whole-food, animal-based options: bone broth (homemade or high-quality commercial), connective tissue from meat cuts, chicken feet, beef tendons, and organ meats like heart. These deliver collagen along with co-factors that support absorption and utilization.</div>
+        <h3>What's the best source of collagen for dogs?</h3>
+        <p>The best sources are whole-food, animal-based options: bone broth (homemade or high-quality commercial), connective tissue from meat cuts, chicken feet, beef tendons, and organ meats like heart. These deliver collagen along with co-factors that support absorption and utilization.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Should I give my dog collagen supplements or bone broth?</div>
-        <div class="faq-answer">Both work, but whole-food sources like bone broth provide collagen plus minerals, gelatin, and other co-factors. Collagen supplements (hydrolyzed collagen peptides) are more concentrated and easier to dose consistently. The best choice depends on convenience and your dog's preferences.</div>
+        <h3>Should I give my dog collagen supplements or bone broth?</h3>
+        <p>Both work, but whole-food sources like bone broth provide collagen plus minerals, gelatin, and other co-factors. Collagen supplements (hydrolyzed collagen peptides) are more concentrated and easier to dose consistently. The best choice depends on convenience and your dog's preferences.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">How much collagen should I give my dog?</div>
-        <div class="faq-answer">For collagen peptides, a general guideline is 1 scoop (10-15g) per 50 pounds of body weight daily. For bone broth, 1-2 ounces per 20 pounds of body weight. Start with smaller amounts and increase gradually to avoid digestive upset. Consistency over weeks and months matters more than large single doses.</div>
+        <h3>How much collagen should I give my dog?</h3>
+        <p>For collagen peptides, a general guideline is 1 scoop (10-15g) per 50 pounds of body weight daily. For bone broth, 1-2 ounces per 20 pounds of body weight. Start with smaller amounts and increase gradually to avoid digestive upset. Consistency over weeks and months matters more than large single doses.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Can puppies have collagen?</div>
-        <div class="faq-answer">Yes, but it should complement—not replace—a complete puppy diet. Puppies need balanced calcium and phosphorus ratios for proper bone growth. Collagen from whole-food sources like bone broth is generally safer for puppies than high-dose collagen supplements.</div>
+        <h3>Can puppies have collagen?</h3>
+        <p>Yes, but it should complement—not replace—a complete puppy diet. Puppies need balanced calcium and phosphorus ratios for proper bone growth. Collagen from whole-food sources like bone broth is generally safer for puppies than high-dose collagen supplements.</p>
       </div>
     </div>
+    </article>
+  </main>
 
-    <!-- CTA Section -->
-    <div class="cta-section">
-      <p><strong>Whole-food nutrition that supports your dog from the inside out.</strong></p>
-      <p>Join the waitlist for Watts — nutrient-dense, animal-based supplements including collagen-rich connective tissue.</p>
-
-      <a href="/" class="gate">
-        <span class="gate-text">Notify me at launch</span>
-        <span class="gate-arrow" aria-hidden="true">→</span>
-      </a>
-    </div>
-  </article>
-
-  <footer>© <span id="year"></span> Watts Pet</footer>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
+      </div>
+    </footer>
+  </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();

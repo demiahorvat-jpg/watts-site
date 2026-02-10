@@ -1,106 +1,340 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Omega-3 & Fish Oil for Dogs: Whole Fish vs Supplements Explained</title>
-    <meta name="description" content="The best omega-3 for dogs comes from whole fatty fish like salmon and sardines. Learn about EPA/DHA ratios, triglyceride vs ethyl ester forms, dosing, and when fish oil supplements make sense.">
-    <link rel="canonical" href="https://wattspet.com/blog/omega-3-fish-oil-for-dogs.html">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Best Omega-3 & Fish Oil for Dogs: Whole Fish vs Supplements Explained</title>
+  <meta name="description" content="The best omega-3 for dogs comes from whole fatty fish like salmon and sardines. Learn about EPA/DHA ratios, triglyceride vs ethyl ester forms, dosing, and when fish oil supplements make sense.">
+  <link rel="canonical" href="https://wattspet.com/blog/omega-3-fish-oil-for-dogs.html">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Ahrefs Analytics -->
+  <script src="https://analytics.ahrefs.com/analytics.js" data-key="22KmtuYXO77ED5o6fe6z1w" async></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C6KV5WBGK5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-C6KV5WBGK5');
+  </script>
+
+  <!-- Degular Font -->
   <style>
-    :root {
-      --bg: #F1ECE9;
-      --fg: #191919;
-      --muted: #3a3a3a;
-      --border: #191919;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body { min-height: 100%; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Regular.woff2') format('woff2');
       font-weight: 400;
-      line-height: 1.6;
-      overflow-x: hidden;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
     }
 
-    /* Navigation */
-    nav.nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px 20px;
-      border-bottom: 2.5px solid var(--border);
+    :root {
+      --brand-orange: #c03800;
+      --bg-light: #f1f1f1;
+      --text-dark: #191919;
+      --white: #ffffff;
+      --text-muted: #666666;
+      --border-light: rgba(25, 25, 25, 0.1);
+      --accent-navy: #1e3a5f;
     }
-    @media (min-width: 768px) {
-      nav.nav {
-        padding: 24px 20px;
-      }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    nav.nav ul {
-      list-style: none;
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      background: #191919;
+      color: var(--text-dark);
+      font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* HEADER WRAPPER - Black background */
+    .header-wrapper {
+      background: #191919;
+      padding: 12px 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    /* ORANGE HEADER - Rounded like Shopify site */
+    header {
+      background: var(--brand-orange);
+      padding: 7px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
-      gap: 24px;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-height: 40px;
+    }
+
+    /* Nav on the LEFT */
+    nav {
+      order: -1;
+      display: flex;
       align-items: center;
     }
-    @media (min-width: 768px) {
-      nav.nav ul {
-        gap: 32px;
-      }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
     }
-    nav.nav a {
-      color: var(--fg);
+    @media (min-width: 768px) {
+      nav ul { gap: 24px; }
+    }
+
+    nav li {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--white);
       text-decoration: none;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 500;
-      white-space: nowrap;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
     }
     @media (min-width: 768px) {
-      nav.nav a {
-        font-size: 17px;
+      nav a { font-size: 15px; }
+    }
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    /* Logo CENTERED */
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo {
+      height: 32px;
+    }
+    @media (min-width: 768px) {
+      .logo { height: 40px; }
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 900px;
+      margin: 16px auto 40px;
+      padding: 0 20px;
+      background: var(--bg-light);
+    }
+    @media (min-width: 768px) {
+      main {
+        margin: 20px auto 60px;
+        padding: 0 40px;
       }
     }
-    nav.nav a:hover {
-      text-decoration: underline;
+
+    article {
+      background: var(--white);
+      padding: 40px 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    @media (min-width: 768px) {
+      article {
+        padding: 60px 50px;
+      }
     }
 
     .article-header {
-      max-width: 800px;
-      margin: 48px auto;
-      padding: 0 20px;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--border-light);
     }
 
-    .article-header h1 {
-      font-size: 36px;
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
       line-height: 1.2;
-      margin-bottom: 24px;
-      font-weight: 600;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+      color: var(--text-dark);
     }
-
     @media (min-width: 768px) {
-      .article-header h1 {
+      h1 {
         font-size: 48px;
+        margin-bottom: 20px;
       }
     }
 
     .article-meta {
-      color: var(--muted);
-      font-size: 15px;
-      margin-bottom: 32px;
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 24px;
     }
 
+    .article-intro {
+      font-size: 19px;
+      font-weight: 500;
+      line-height: 1.6;
+      color: var(--text-muted);
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .article-intro {
+        font-size: 21px;
+      }
+    }
+
+    .article-intro a {
+      color: var(--accent-navy);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    .article-intro a:hover {
+      opacity: 0.7;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 56px 0 24px;
+      letter-spacing: -0.01em;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h2 {
+        font-size: 36px;
+        margin: 64px 0 28px;
+      }
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 40px 0 16px;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h3 {
+        font-size: 28px;
+        margin: 48px 0 20px;
+      }
+    }
+
+    h4 {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.4;
+      margin: 32px 0 16px;
+      color: var(--text-dark);
+    }
+
+    p {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      p {
+        font-size: 18px;
+        margin-bottom: 24px;
+      }
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    a:hover {
+      opacity: 0.7;
+    }
+
+    ul, ol {
+      margin: 24px 0;
+      padding-left: 28px;
+    }
+
+    li {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+    @media (min-width: 768px) {
+      li {
+        font-size: 18px;
+      }
+    }
+
+    /* LIGHT CALLOUT BOX */
     .callout {
-      background: rgba(25, 25, 25, 0.05);
-      border-left: 4px solid var(--border);
-      padding: 20px 24px;
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
+      padding: 24px 28px;
       margin: 32px 0;
     }
-
-    .callout p:first-of-type {
-      margin-top: 0;
+    @media (min-width: 768px) {
+      .callout {
+        padding: 28px 32px;
+      }
     }
 
     .callout p:last-child {
@@ -110,267 +344,391 @@
     .warning {
       background: rgba(255, 100, 100, 0.1);
       border-left: 4px solid #ff6464;
-      padding: 20px 24px;
+      border-radius: 8px;
+      padding: 24px 28px;
       margin: 32px 0;
     }
-
-    .article-content {
-      max-width: 800px;
-      margin: 0 auto 80px;
-      padding: 0 20px;
+    @media (min-width: 768px) {
+      .warning {
+        padding: 28px 32px;
+      }
     }
 
-    .article-content h2 {
-      font-size: 32px;
-      margin: 48px 0 24px 0;
-      font-weight: 600;
-      line-height: 1.3;
+    .warning p:last-child {
+      margin-bottom: 0;
     }
 
-    .article-content h3 {
-      font-size: 24px;
-      margin: 36px 0 16px 0;
-      font-weight: 600;
-    }
-
-    .article-content h4 {
-      font-size: 20px;
-      margin: 24px 0 12px 0;
-      font-weight: 600;
-    }
-
-    .article-content p {
-      margin: 16px 0;
-      font-size: 17px;
-      line-height: 1.7;
-    }
-
-    .article-content ul, .article-content ol {
-      margin: 16px 0;
-      padding-left: 24px;
-    }
-
-    .article-content li {
-      margin: 8px 0;
-      font-size: 17px;
-      line-height: 1.7;
-    }
-
-    .article-content a {
-      color: var(--fg);
-      text-decoration: underline;
-    }
-
-    .article-content a:hover {
-      text-decoration: none;
-    }
-
-    .article-content strong {
-      font-weight: 600;
-    }
-
+    /* TABLE */
     table {
       width: 100%;
       border-collapse: collapse;
-      margin: 24px 0;
+      margin: 32px 0;
       font-size: 16px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
-
     @media (min-width: 768px) {
       table {
         font-size: 17px;
       }
     }
 
+    thead {
+      background: var(--brand-orange);
+      color: var(--white);
+      font-weight: 700;
+    }
+
     th, td {
       text-align: left;
-      padding: 12px 16px;
-      border: 2px solid var(--border);
+      padding: 16px;
+      border-bottom: 1px solid var(--border-light);
+    }
+    @media (min-width: 768px) {
+      th, td {
+        padding: 18px 20px;
+      }
     }
 
-    th {
-      background: rgba(25, 25, 25, 0.05);
-      font-weight: 600;
+    tbody tr:last-child td {
+      border-bottom: none;
     }
 
-    tr:nth-child(even) {
-      background: rgba(25, 25, 25, 0.02);
+    tbody tr {
+      background: var(--white);
+      transition: background 0.2s ease;
     }
 
+    tbody tr:hover {
+      background: rgba(192, 56, 0, 0.02);
+    }
+
+    /* FAQ SECTION */
+    .faq-section {
+      margin-top: 64px;
+      padding-top: 56px;
+      border-top: 3px solid var(--border-light);
+    }
+
+    .faq-item {
+      margin-bottom: 32px;
+      padding: 28px;
+      background: var(--bg-light);
+      border-radius: 12px;
+      border-left: 4px solid var(--brand-orange);
+    }
+
+    .faq-item h3 {
+      font-size: 20px;
+      margin: 0 0 16px 0;
+      color: var(--brand-orange);
+    }
+    @media (min-width: 768px) {
+      .faq-item h3 {
+        font-size: 23px;
+      }
+    }
+
+    .faq-item p {
+      margin-bottom: 0;
+    }
+
+    /* Related Articles */
+    .related-articles {
+      margin-top: 64px;
+      padding: 16px 20px;
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
+    }
+
+    .related-articles h3 {
+      font-size: 20px;
+      margin: 0 0 8px 0;
+      color: var(--brand-orange);
+    }
+    @media (min-width: 768px) {
+      .related-articles h3 {
+        font-size: 23px;
+      }
+    }
+
+    .related-articles ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .related-articles li {
+      margin-bottom: 12px;
+      padding-left: 0;
+    }
+
+    .related-articles a {
+      color: var(--accent-navy);
+      text-decoration: underline;
+      font-size: 16px;
+    }
+
+    /* FOOTER WRAPPER - Black background */
+    .footer-wrapper {
+      background: #191919;
+      padding: 0 12px 12px;
+      margin-top: 80px;
+    }
+
+    /* FOOTER - Orange with asymmetric rounded shape like Shopify */
     footer {
-      border-top: 2.5px solid var(--border);
-      padding: 32px 20px;
-      text-align: center;
-      color: var(--muted);
+      background: var(--brand-orange);
+      color: var(--white);
+      padding: 45px 40px 20px;
+      border-radius: 200px 16px 16px 200px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 144px;
+    }
+    @media (min-width: 768px) {
+      footer {
+        padding: 63px 60px 24px;
+        min-height: 207px;
+        border-radius: 300px 16px 16px 300px;
+      }
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      flex: 1;
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 24px;
+      flex: 1;
+    }
+    @media (min-width: 768px) {
+      .footer-right {
+        gap: 32px;
+      }
+    }
+
+    .footer-right-text {
+      text-align: right;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-top: 128px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .footer-logo {
+        height: 160px;
+        margin-top: 160px;
+        margin-bottom: 0;
+      }
+    }
+
+    footer p {
+      color: var(--white);
       font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    footer a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Best Omega-3 & Fish Oil for Dogs: Whole Fish vs Supplements Explained",
+    "description": "The best omega-3 for dogs comes from whole fatty fish like salmon and sardines. Learn about EPA/DHA ratios, triglyceride vs ethyl ester forms, dosing, and when fish oil supplements make sense.",
+    "author": {
+      "@type": "Organization",
+      "name": "Watts Pet",
+      "url": "https://wattspet.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Watts Pet",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://wattspet.com/logo.png"
+      }
+    },
+    "datePublished": "2026-01-22",
+    "dateModified": "2026-01-22"
+  }
+  </script>
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "Best Omega-3 & Fish Oil for Dogs: Whole Fish vs Supplements Explained",
-      "description": "The best omega-3 for dogs comes from whole fatty fish like salmon and sardines. Learn about EPA/DHA ratios, triglyceride vs ethyl ester forms, dosing, and when fish oil supplements make sense.",
-      "author": {
-        "@type": "Organization",
-        "name": "Watts Pet",
-        "url": "https://wattspet.com"
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://wattspet.com"
       },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Watts Pet",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://wattspet.com/logo.png"
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://wattspet.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Omega-3 & Fish Oil for Dogs",
+        "item": "https://wattspet.com/blog/omega-3-fish-oil-for-dogs.html"
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the best omega-3 source for dogs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Whole fatty fish (salmon, sardines, mackerel, anchovies) are the best omega-3 source for dogs. They provide EPA and DHA in natural triglyceride form with 70-90% absorption, plus vitamin D, selenium, and complete protein. A 50 lb dog needs 3-4 oz of fatty fish 2-3 times per week. Fish oil supplements can work when properly stored (refrigerated, used within 3 months of opening) but are prone to oxidation."
         }
       },
-      "datePublished": "2026-01-22",
-      "dateModified": "2026-01-22"
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://wattspet.com"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Blog",
-          "item": "https://wattspet.com/blog/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Omega-3 & Fish Oil for Dogs",
-          "item": "https://wattspet.com/blog/omega-3-fish-oil-for-dogs.html"
+      {
+        "@type": "Question",
+        "name": "How much omega-3 should I give my dog daily?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dogs need approximately 75-100 mg of combined EPA + DHA per 10 lbs of body weight daily for maintenance. For therapeutic doses (allergies, arthritis, inflammation): 150-200 mg per 10 lbs. A 50 lb dog needs 375-500 mg EPA+DHA daily for maintenance, or 750-1,000 mg for therapeutic support. This equals about 3-4 oz of salmon 2-3 times weekly, or a high-quality fish oil supplement if using that form."
         }
-      ]
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is the best omega-3 source for dogs?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Whole fatty fish (salmon, sardines, mackerel, anchovies) are the best omega-3 source for dogs. They provide EPA and DHA in natural triglyceride form with 70-90% absorption, plus vitamin D, selenium, and complete protein. A 50 lb dog needs 3-4 oz of fatty fish 2-3 times per week. Fish oil supplements can work when properly stored (refrigerated, used within 3 months of opening) but are prone to oxidation."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How much omega-3 should I give my dog daily?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Dogs need approximately 75-100 mg of combined EPA + DHA per 10 lbs of body weight daily for maintenance. For therapeutic doses (allergies, arthritis, inflammation): 150-200 mg per 10 lbs. A 50 lb dog needs 375-500 mg EPA+DHA daily for maintenance, or 750-1,000 mg for therapeutic support. This equals about 3-4 oz of salmon 2-3 times weekly, or a high-quality fish oil supplement if using that form."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I give my dog human fish oil?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "You can give dogs plain fish oil capsules intended for humans IF they contain only fish oil (no added vitamin D, flavorings, or other ingredients). However, most human fish oils use ethyl ester form (30-50% absorption) instead of triglyceride form (70-90% absorption). Dog-specific fish oils typically use better forms and include appropriate vitamin E to prevent oxidation. Always check ingredients for xylitol, added vitamins, or flavorings before giving human supplements to dogs."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the difference between EPA and DHA?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "EPA (eicosapentaenoic acid) primarily reduces inflammation throughout the body—crucial for allergies, arthritis, skin conditions, and inflammatory bowel disease. DHA (docosahexaenoic acid) supports brain development, cognitive function, eye health, and nerve function. Both are essential omega-3 fatty acids that dogs cannot efficiently produce from plant sources. The ideal ratio is roughly 2:1 to 3:1 EPA:DHA for most adult dogs, though puppies need higher DHA for brain development."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can dogs get omega-3 from flaxseed or chia seeds?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Dogs have limited ability to convert plant-based omega-3s (ALA from flaxseed, chia, hemp) into usable EPA and DHA due to low delta-6 desaturase enzyme activity. This makes plant sources extremely inefficient for dogs. A dog would need to eat massive amounts of flaxseed to get equivalent omega-3 benefits from a small serving of fish. Flaxseed can provide fiber and lignans, but should never be the primary omega-3 source. Dogs require pre-formed EPA and DHA from marine sources (fish, algae)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I know if fish oil is rancid?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Rancid fish oil smells extremely fishy, bitter, or like old paint. Fresh fish oil has a mild, clean ocean smell. To test capsules: pierce one and smell the oil directly. Rancid omega-3s create harmful free radicals and oxidative stress, doing more harm than good. Prevent rancidity by: refrigerating after opening, using within 3 months, choosing products with added vitamin E (tocopherols), buying smaller bottles, and checking expiration dates. Liquid oils oxidize faster than capsules."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is triglyceride form vs ethyl ester form fish oil?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Triglyceride form is the natural form found in fish, with 70-90% absorption and better stability. Ethyl ester form is chemically processed to concentrate EPA/DHA but has only 30-50% absorption and oxidizes more quickly. Re-esterified triglyceride (rTG) is ethyl ester converted back to triglyceride form—better than ethyl ester but still processed. Look for labels saying 'triglyceride form' or 'natural form.' Avoid products listing 'omega-3 fatty acid ethyl esters' in ingredients."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is salmon oil better than fish oil for dogs?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Salmon oil is one type of fish oil, typically higher in DHA than EPA (good for puppies and brain support). Other fish oils (sardine, anchovy, mackerel) tend to be higher in EPA (better for inflammation and allergies). 'Fish oil' products usually blend multiple fish species for balanced EPA:DHA ratios. The best choice depends on your dog's needs: higher EPA for allergies/arthritis, higher DHA for puppies/seniors with cognitive decline. Quality and freshness matter more than the specific fish source."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I give my dog omega-3 every day?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, omega-3s should be given daily or incorporated into your dog's regular diet through fatty fish meals 2-3 times per week. Omega-3s are essential fatty acids that dogs cannot produce adequately on their own. However, extremely high doses (over 200 mg per 10 lbs daily) can thin blood and suppress immune function. Stick to maintenance doses (75-100 mg per 10 lbs) or therapeutic doses (150-200 mg per 10 lbs) as recommended by your veterinarian."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Should I give fish oil with food?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, always give fish oil with food. Omega-3s are fat-soluble, meaning they absorb best when consumed with dietary fat and other nutrients. Giving fish oil with meals also reduces the risk of digestive upset and fishy burps. If feeding whole fish, the natural fats in the fish ensure proper absorption. Mix liquid fish oil into food or give capsules during mealtime. Avoid giving on an empty stomach."
-          }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I give my dog human fish oil?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can give dogs plain fish oil capsules intended for humans IF they contain only fish oil (no added vitamin D, flavorings, or other ingredients). However, most human fish oils use ethyl ester form (30-50% absorption) instead of triglyceride form (70-90% absorption). Dog-specific fish oils typically use better forms and include appropriate vitamin E to prevent oxidation. Always check ingredients for xylitol, added vitamins, or flavorings before giving human supplements to dogs."
         }
-      ]
-    }
-    </script>
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between EPA and DHA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "EPA (eicosapentaenoic acid) primarily reduces inflammation throughout the body—crucial for allergies, arthritis, skin conditions, and inflammatory bowel disease. DHA (docosahexaenoic acid) supports brain development, cognitive function, eye health, and nerve function. Both are essential omega-3 fatty acids that dogs cannot efficiently produce from plant sources. The ideal ratio is roughly 2:1 to 3:1 EPA:DHA for most adult dogs, though puppies need higher DHA for brain development."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can dogs get omega-3 from flaxseed or chia seeds?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dogs have limited ability to convert plant-based omega-3s (ALA from flaxseed, chia, hemp) into usable EPA and DHA due to low delta-6 desaturase enzyme activity. This makes plant sources extremely inefficient for dogs. A dog would need to eat massive amounts of flaxseed to get equivalent omega-3 benefits from a small serving of fish. Flaxseed can provide fiber and lignans, but should never be the primary omega-3 source. Dogs require pre-formed EPA and DHA from marine sources (fish, algae)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I know if fish oil is rancid?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rancid fish oil smells extremely fishy, bitter, or like old paint. Fresh fish oil has a mild, clean ocean smell. To test capsules: pierce one and smell the oil directly. Rancid omega-3s create harmful free radicals and oxidative stress, doing more harm than good. Prevent rancidity by: refrigerating after opening, using within 3 months, choosing products with added vitamin E (tocopherols), buying smaller bottles, and checking expiration dates. Liquid oils oxidize faster than capsules."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is triglyceride form vs ethyl ester form fish oil?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Triglyceride form is the natural form found in fish, with 70-90% absorption and better stability. Ethyl ester form is chemically processed to concentrate EPA/DHA but has only 30-50% absorption and oxidizes more quickly. Re-esterified triglyceride (rTG) is ethyl ester converted back to triglyceride form—better than ethyl ester but still processed. Look for labels saying 'triglyceride form' or 'natural form.' Avoid products listing 'omega-3 fatty acid ethyl esters' in ingredients."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is salmon oil better than fish oil for dogs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Salmon oil is one type of fish oil, typically higher in DHA than EPA (good for puppies and brain support). Other fish oils (sardine, anchovy, mackerel) tend to be higher in EPA (better for inflammation and allergies). 'Fish oil' products usually blend multiple fish species for balanced EPA:DHA ratios. The best choice depends on your dog's needs: higher EPA for allergies/arthritis, higher DHA for puppies/seniors with cognitive decline. Quality and freshness matter more than the specific fish source."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I give my dog omega-3 every day?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, omega-3s should be given daily or incorporated into your dog's regular diet through fatty fish meals 2-3 times per week. Omega-3s are essential fatty acids that dogs cannot produce adequately on their own. However, extremely high doses (over 200 mg per 10 lbs daily) can thin blood and suppress immune function. Stick to maintenance doses (75-100 mg per 10 lbs) or therapeutic doses (150-200 mg per 10 lbs) as recommended by your veterinarian."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I give fish oil with food?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, always give fish oil with food. Omega-3s are fat-soluble, meaning they absorb best when consumed with dietary fat and other nutrients. Giving fish oil with meals also reduces the risk of digestive upset and fishy burps. If feeding whole fish, the natural fats in the fish ensure proper absorption. Mix liquid fish oil into food or give capsules during mealtime. Avoid giving on an empty stomach."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <nav class="nav">
-    <ul>
-      <li><a href="https://wattspet.com/">Home</a></li>
-      <li><a href="https://wattspet.com/blog/">Blog</a></li>
-      <li><a href="https://wattspet.com/about.html">About</a></li>
-      <li><a href="https://wattspet.com/feedback.html">Feedback</a></li>
-    </ul>
-  </nav>
-
-  <div class="article-header">
-    <h1>Best Omega-3 & Fish Oil for Dogs: Whole Fish vs Supplements Explained</h1>
-    <div class="article-meta">Published January 22, 2026</div>
-
-    <div class="callout">
-      <p style="margin: 0; font-size: 18px;"><strong>🐟 Quick Answer:</strong></p>
-      <p style="margin-top: 12px; margin-bottom: 0;">The best omega-3 source for dogs is <strong>whole fatty fish</strong> (salmon, sardines, mackerel, anchovies) fed 2-3 times per week. They provide EPA and DHA in natural triglyceride form with superior absorption, plus vitamin D and selenium. If using fish oil supplements, choose triglyceride form (not ethyl ester), refrigerate after opening, and use within 3 months to prevent rancidity.</p>
-    </div>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+        </div>
+      </div>
+    </header>
   </div>
 
-  <div class="article-content">
+  <main>
+    <article>
+    <div class="article-header">
+      <div class="article-meta">January 22, 2026</div>
+      <h1>Best Omega-3 & Fish Oil for Dogs: Whole Fish vs Supplements Explained</h1>
+
+      <div class="callout" style="margin-top: 32px; margin-bottom: 40px;">
+        <p style="margin: 0; font-size: 18px;"><strong>Quick Answer:</strong></p>
+        <p style="margin-top: 12px; margin-bottom: 0;">The best omega-3 source for dogs is <strong>whole fatty fish</strong> (salmon, sardines, mackerel, anchovies) fed 2-3 times per week. They provide EPA and DHA in natural triglyceride form with superior absorption, plus vitamin D and selenium. If using fish oil supplements, choose triglyceride form (not ethyl ester), refrigerate after opening, and use within 3 months to prevent rancidity.</p>
+      </div>
+    </div>
+
+    <div class="article-content">
 
     <h2>Why Omega-3 Fatty Acids Are Essential for Dogs</h2>
 
@@ -494,7 +852,7 @@
     <p><strong>The problem with fish oil supplements:</strong></p>
 
     <div class="warning">
-      <strong>⚠️ OXIDATION RISK:</strong> Omega-3 fatty acids are highly unstable and oxidize (go rancid) when exposed to heat, light, and oxygen. Rancid fish oil creates harmful free radicals that cause oxidative stress and inflammation—the opposite of what you're trying to achieve. Studies show that 25-50% of fish oil supplements on store shelves are already oxidized before you even open them.
+      <strong>OXIDATION RISK:</strong> Omega-3 fatty acids are highly unstable and oxidize (go rancid) when exposed to heat, light, and oxygen. Rancid fish oil creates harmful free radicals that cause oxidative stress and inflammation—the opposite of what you're trying to achieve. Studies show that 25-50% of fish oil supplements on store shelves are already oxidized before you even open them.
     </div>
 
     <ul>
@@ -725,12 +1083,92 @@
 
     <p>Dose omega-3s at <strong>75-100 mg EPA+DHA per 10 lbs</strong> daily for maintenance, or <strong>150-200 mg per 10 lbs</strong> for therapeutic support. Most dogs will see improvements in skin, coat, and joint health within 4-12 weeks.</p>
 
-    <p><strong>Related:</strong> Learn more about <a href="https://wattspet.com/blog/immune-support-for-dogs.html">immune support for dogs</a>, <a href="https://wattspet.com/blog/antioxidants-for-dogs.html">antioxidants for dogs</a>, <a href="https://wattspet.com/blog/dog-skin-coat-supplements.html">skin and coat supplements</a>, and <a href="https://wattspet.com/blog/vitamin-d-for-dogs.html">vitamin D for dogs</a>.</p>
+    <div class="related-articles">
+      <h3>Related Articles:</h3>
+      <ul>
+        <li><a href="https://wattspet.com/blog/immune-support-for-dogs.html">Best Immune Support Supplements for Dogs</a></li>
+        <li><a href="https://wattspet.com/blog/antioxidants-for-dogs.html">Best Antioxidants for Dogs</a></li>
+        <li><a href="https://wattspet.com/blog/dog-skin-coat-supplements.html">Skin and Coat Supplements for Dogs</a></li>
+        <li><a href="https://wattspet.com/blog/vitamin-d-for-dogs.html">Vitamin D for Dogs</a></li>
+      </ul>
+    </div>
 
+    <div class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <h3>What is the best omega-3 source for dogs?</h3>
+        <p>Whole fatty fish (salmon, sardines, mackerel, anchovies) are the best omega-3 source for dogs. They provide EPA and DHA in natural triglyceride form with 70-90% absorption, plus vitamin D, selenium, and complete protein. A 50 lb dog needs 3-4 oz of fatty fish 2-3 times per week. Fish oil supplements can work when properly stored (refrigerated, used within 3 months of opening) but are prone to oxidation.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How much omega-3 should I give my dog daily?</h3>
+        <p>Dogs need approximately 75-100 mg of combined EPA + DHA per 10 lbs of body weight daily for maintenance. For therapeutic doses (allergies, arthritis, inflammation): 150-200 mg per 10 lbs. A 50 lb dog needs 375-500 mg EPA+DHA daily for maintenance, or 750-1,000 mg for therapeutic support. This equals about 3-4 oz of salmon 2-3 times weekly, or a high-quality fish oil supplement if using that form.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I give my dog human fish oil?</h3>
+        <p>You can give dogs plain fish oil capsules intended for humans IF they contain only fish oil (no added vitamin D, flavorings, or other ingredients). However, most human fish oils use ethyl ester form (30-50% absorption) instead of triglyceride form (70-90% absorption). Dog-specific fish oils typically use better forms and include appropriate vitamin E to prevent oxidation. Always check ingredients for xylitol, added vitamins, or flavorings before giving human supplements to dogs.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What is the difference between EPA and DHA?</h3>
+        <p>EPA (eicosapentaenoic acid) primarily reduces inflammation throughout the body—crucial for allergies, arthritis, skin conditions, and inflammatory bowel disease. DHA (docosahexaenoic acid) supports brain development, cognitive function, eye health, and nerve function. Both are essential omega-3 fatty acids that dogs cannot efficiently produce from plant sources. The ideal ratio is roughly 2:1 to 3:1 EPA:DHA for most adult dogs, though puppies need higher DHA for brain development.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can dogs get omega-3 from flaxseed or chia seeds?</h3>
+        <p>Dogs have limited ability to convert plant-based omega-3s (ALA from flaxseed, chia, hemp) into usable EPA and DHA due to low delta-6 desaturase enzyme activity. This makes plant sources extremely inefficient for dogs. A dog would need to eat massive amounts of flaxseed to get equivalent omega-3 benefits from a small serving of fish. Flaxseed can provide fiber and lignans, but should never be the primary omega-3 source. Dogs require pre-formed EPA and DHA from marine sources (fish, algae).</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I know if fish oil is rancid?</h3>
+        <p>Rancid fish oil smells extremely fishy, bitter, or like old paint. Fresh fish oil has a mild, clean ocean smell. To test capsules: pierce one and smell the oil directly. Rancid omega-3s create harmful free radicals and oxidative stress, doing more harm than good. Prevent rancidity by: refrigerating after opening, using within 3 months, choosing products with added vitamin E (tocopherols), buying smaller bottles, and checking expiration dates. Liquid oils oxidize faster than capsules.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What is triglyceride form vs ethyl ester form fish oil?</h3>
+        <p>Triglyceride form is the natural form found in fish, with 70-90% absorption and better stability. Ethyl ester form is chemically processed to concentrate EPA/DHA but has only 30-50% absorption and oxidizes more quickly. Re-esterified triglyceride (rTG) is ethyl ester converted back to triglyceride form—better than ethyl ester but still processed. Look for labels saying 'triglyceride form' or 'natural form.' Avoid products listing 'omega-3 fatty acid ethyl esters' in ingredients.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Is salmon oil better than fish oil for dogs?</h3>
+        <p>Salmon oil is one type of fish oil, typically higher in DHA than EPA (good for puppies and brain support). Other fish oils (sardine, anchovy, mackerel) tend to be higher in EPA (better for inflammation and allergies). 'Fish oil' products usually blend multiple fish species for balanced EPA:DHA ratios. The best choice depends on your dog's needs: higher EPA for allergies/arthritis, higher DHA for puppies/seniors with cognitive decline. Quality and freshness matter more than the specific fish source.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I give my dog omega-3 every day?</h3>
+        <p>Yes, omega-3s should be given daily or incorporated into your dog's regular diet through fatty fish meals 2-3 times per week. Omega-3s are essential fatty acids that dogs cannot produce adequately on their own. However, extremely high doses (over 200 mg per 10 lbs daily) can thin blood and suppress immune function. Stick to maintenance doses (75-100 mg per 10 lbs) or therapeutic doses (150-200 mg per 10 lbs) as recommended by your veterinarian.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Should I give fish oil with food?</h3>
+        <p>Yes, always give fish oil with food. Omega-3s are fat-soluble, meaning they absorb best when consumed with dietary fat and other nutrients. Giving fish oil with meals also reduces the risk of digestive upset and fishy burps. If feeding whole fish, the natural fats in the fish ensure proper absorption. Mix liquid fish oil into food or give capsules during mealtime. Avoid giving on an empty stomach.</p>
+      </div>
+    </div>
+
+    </div>
+    </article>
+  </main>
+
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
+      </div>
+    </footer>
   </div>
 
-  <footer>
-    © 2026 Watts Pet. All rights reserved.
-  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

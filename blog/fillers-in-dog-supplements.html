@@ -37,321 +37,538 @@
   <meta property="twitter:description" content="Common fillers in dog supplements and which ones to avoid for your dog's health.">
   <meta property="twitter:image" content="https://wattspet.com/images/og-default.jpg">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
-
+  <!-- Degular Font -->
   <style>
-    :root {
-      --bg: #F1ECE9;
-      --fg: #191919;
-      --muted: #3a3a3a;
-      --border: #191919;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body { min-height: 100%; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Regular.woff2') format('woff2');
       font-weight: 400;
-      line-height: 1.6;
-      overflow-x: hidden;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
     }
 
-    /* Navigation */
-    nav.nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px 20px;
-      border-bottom: 2.5px solid var(--border);
+    :root {
+      --brand-orange: #c03800;
+      --bg-light: #f1f1f1;
+      --text-dark: #191919;
+      --white: #ffffff;
+      --text-muted: #666666;
+      --border-light: rgba(25, 25, 25, 0.1);
+      --accent-navy: #1e3a5f;
     }
-    @media (min-width: 768px) {
-      nav.nav {
-        padding: 24px 20px;
-      }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    nav.nav ul {
-      list-style: none;
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      background: #191919;
+      color: var(--text-dark);
+      font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* HEADER WRAPPER - Black background */
+    .header-wrapper {
+      background: #191919;
+      padding: 12px 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    /* ORANGE HEADER - Rounded like Shopify site */
+    header {
+      background: var(--brand-orange);
+      padding: 7px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
-      gap: 24px;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-height: 40px;
+    }
+
+    /* Nav on the LEFT */
+    nav {
+      order: -1;
+      display: flex;
       align-items: center;
     }
-    @media (min-width: 768px) {
-      nav.nav ul {
-        gap: 32px;
-      }
-    }
-    nav.nav a {
-      color: var(--fg);
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 500;
-      transition: opacity 0.15s;
-      position: relative;
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
     }
     @media (min-width: 768px) {
-      nav.nav a {
-        font-size: 16px;
-      }
-    }
-    nav.nav a:hover {
-      opacity: 0.7;
-    }
-    nav.nav a.active::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: var(--fg);
+      nav ul { gap: 24px; }
     }
 
-    /* Article container */
+    nav li {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
+    }
+    @media (min-width: 768px) {
+      nav a { font-size: 15px; }
+    }
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    /* Logo CENTERED */
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo {
+      height: 32px;
+    }
+    @media (min-width: 768px) {
+      .logo { height: 40px; }
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 900px;
+      margin: 16px auto 40px;
+      padding: 0 20px;
+      background: var(--bg-light);
+    }
+    @media (min-width: 768px) {
+      main {
+        margin: 20px auto 60px;
+        padding: 0 40px;
+      }
+    }
+
     article {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px 60px;
+      background: var(--white);
+      padding: 40px 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
       article {
-        padding: 60px 40px 80px;
+        padding: 60px 50px;
       }
     }
 
-    /* Article header */
     .article-header {
-      margin-bottom: 32px;
-    }
-    @media (min-width: 768px) {
-      .article-header {
-        margin-bottom: 40px;
-      }
-    }
-
-    .article-meta {
-      font-size: 13px;
-      color: var(--muted);
-      margin-bottom: 16px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    @media (min-width: 768px) {
-      .article-meta {
-        font-size: 14px;
-        margin-bottom: 20px;
-      }
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--border-light);
     }
 
     h1 {
-      font-family: "Geologica", sans-serif;
       font-size: 32px;
       font-weight: 700;
       line-height: 1.2;
       margin-bottom: 16px;
       letter-spacing: -0.02em;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       h1 {
-        font-size: 42px;
+        font-size: 48px;
         margin-bottom: 20px;
       }
     }
 
+    .article-meta {
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
     .article-intro {
-      font-size: 18px;
+      font-size: 19px;
+      font-weight: 500;
       line-height: 1.6;
-      color: var(--muted);
+      color: var(--text-muted);
+      margin-bottom: 0;
     }
     @media (min-width: 768px) {
       .article-intro {
-        font-size: 20px;
-        line-height: 1.7;
-      }
-    }
-
-    /* Article content */
-    .article-content {
-      font-size: 17px;
-      line-height: 1.7;
-    }
-    @media (min-width: 768px) {
-      .article-content {
-        font-size: 18px;
-        line-height: 1.8;
-      }
-    }
-
-    .article-content h2 {
-      font-size: 26px;
-      font-weight: 700;
-      line-height: 1.3;
-      margin: 48px 0 20px;
-      letter-spacing: -0.01em;
-    }
-    @media (min-width: 768px) {
-      .article-content h2 {
-        font-size: 30px;
-        margin: 56px 0 24px;
-      }
-    }
-
-    .article-content h3 {
-      font-size: 21px;
-      font-weight: 600;
-      line-height: 1.4;
-      margin: 36px 0 16px;
-    }
-    @media (min-width: 768px) {
-      .article-content h3 {
-        font-size: 24px;
-        margin: 40px 0 20px;
-      }
-    }
-
-    .article-content h4 {
-      font-size: 19px;
-      font-weight: 600;
-      line-height: 1.4;
-      margin: 28px 0 12px;
-    }
-    @media (min-width: 768px) {
-      .article-content h4 {
         font-size: 21px;
-        margin: 32px 0 16px;
       }
     }
 
-    .article-content p {
-      margin-bottom: 20px;
+    .article-intro a {
+      color: var(--accent-navy);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    .article-intro a:hover {
+      opacity: 0.7;
+    }
+
+    /* LAYERED CALLOUT BOX - Pointed base with rounded content card */
+    .quick-facts {
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .quick-facts-content {
+      background: var(--white);
+      color: var(--text-dark);
+      border-radius: 12px;
+      padding: 24px 28px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .article-content p {
+      .quick-facts-content {
+        padding: 28px 36px;
+      }
+    }
+
+    .quick-facts h3 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-top: 4px;
+      margin-bottom: 20px;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      .quick-facts h3 {
+        font-size: 28px;
+      }
+    }
+
+    .quick-facts table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 16px;
+    }
+
+    .quick-facts table th {
+      text-align: left;
+      padding: 12px 8px;
+      font-weight: 600;
+      border-bottom: 2px solid var(--border-light);
+    }
+
+    .quick-facts table td {
+      padding: 12px 8px;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .quick-facts a {
+      color: var(--accent-navy);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .quick-facts a:hover {
+      opacity: 0.85;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 56px 0 24px;
+      letter-spacing: -0.01em;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h2 {
+        font-size: 36px;
+        margin: 64px 0 28px;
+      }
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 40px 0 16px;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h3 {
+        font-size: 28px;
+        margin: 48px 0 20px;
+      }
+    }
+
+    p {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      p {
+        font-size: 18px;
         margin-bottom: 24px;
       }
     }
 
-    .article-content ul, .article-content ol {
-      margin: 20px 0 20px 24px;
-    }
-    @media (min-width: 768px) {
-      .article-content ul, .article-content ol {
-        margin: 24px 0 24px 32px;
-      }
-    }
-
-    .article-content li {
-      margin-bottom: 12px;
-      padding-left: 8px;
-    }
-
-    .article-content strong {
+    strong {
       font-weight: 600;
     }
 
-    .article-content a {
-      color: var(--fg);
-      text-decoration: underline;
-      text-decoration-thickness: 1.5px;
-      text-underline-offset: 2px;
-      transition: opacity 0.15s;
+    a {
+      color: var(--accent-navy);
+      transition: opacity 0.2s ease;
     }
-
-    .article-content a:hover {
+    a:hover {
       opacity: 0.7;
     }
 
-    /* Callout boxes */
-    .callout {
-      background: rgba(25, 25, 25, 0.04);
-      border: 2.5px solid var(--border);
-      padding: 24px;
-      margin: 32px 0;
-    }
-    @media (min-width: 768px) {
-      .callout {
-        padding: 32px;
-        margin: 40px 0;
-      }
+    ul, ol {
+      margin: 24px 0;
+      padding-left: 28px;
     }
 
-    /* FAQ section */
-    .faq {
-      margin-top: 56px;
-      padding-top: 40px;
-      border-top: 2.5px solid var(--border);
-    }
-    @media (min-width: 768px) {
-      .faq {
-        margin-top: 64px;
-        padding-top: 48px;
-      }
-    }
-
-    .faq h2 {
-      font-size: 26px;
-      font-weight: 700;
-      margin-bottom: 32px;
-    }
-    @media (min-width: 768px) {
-      .faq h2 {
-        font-size: 30px;
-        margin-bottom: 40px;
-      }
-    }
-
-    .faq-item {
-      margin-bottom: 32px;
-    }
-    @media (min-width: 768px) {
-      .faq-item {
-        margin-bottom: 40px;
-      }
-    }
-
-    .faq-question {
-      font-size: 19px;
-      font-weight: 600;
-      margin-bottom: 12px;
-      line-height: 1.4;
-    }
-    @media (min-width: 768px) {
-      .faq-question {
-        font-size: 21px;
-        margin-bottom: 16px;
-      }
-    }
-
-    .faq-answer {
+    li {
       font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
-      color: var(--muted);
+      margin-bottom: 12px;
     }
     @media (min-width: 768px) {
-      .faq-answer {
+      li {
         font-size: 18px;
       }
     }
 
-    /* Footer */
+    /* LIGHT CALLOUT BOX */
+    .callout {
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin: 32px 0;
+    }
+    @media (min-width: 768px) {
+      .callout {
+        padding: 28px 32px;
+      }
+    }
+
+    .callout p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* TABLE */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 32px 0;
+      font-size: 16px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    @media (min-width: 768px) {
+      table {
+        font-size: 17px;
+      }
+    }
+
+    thead {
+      background: var(--brand-orange);
+      color: var(--white);
+      font-weight: 700;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+      border-bottom: 1px solid var(--border-light);
+    }
+    @media (min-width: 768px) {
+      th, td {
+        padding: 18px 20px;
+      }
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    tbody tr {
+      background: var(--white);
+      transition: background 0.2s ease;
+    }
+
+    tbody tr:hover {
+      background: rgba(192, 56, 0, 0.02);
+    }
+
+    /* FAQ SECTION */
+    .faq-section {
+      margin-top: 64px;
+      padding-top: 56px;
+      border-top: 3px solid var(--border-light);
+    }
+
+    .faq-item {
+      margin-bottom: 32px;
+      padding: 28px;
+      background: var(--bg-light);
+      border-radius: 12px;
+      border-left: 4px solid var(--brand-orange);
+    }
+
+    .faq-item h3 {
+      font-size: 20px;
+      margin: 0 0 16px 0;
+      color: var(--brand-orange);
+    }
+    @media (min-width: 768px) {
+      .faq-item h3 {
+        font-size: 23px;
+      }
+    }
+
+    .faq-item p {
+      margin-bottom: 0;
+    }
+
+    /* FOOTER WRAPPER - Black background */
+    .footer-wrapper {
+      background: #191919;
+      padding: 0 12px 12px;
+      margin-top: 80px;
+    }
+
+    /* FOOTER - Orange with asymmetric rounded shape like Shopify */
     footer {
-      text-align: center;
-      padding: 20px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 400;
-      border-top: 2.5px solid var(--border);
-      margin-top: 60px;
+      background: var(--brand-orange);
+      color: var(--white);
+      padding: 45px 40px 20px;
+      border-radius: 200px 16px 16px 200px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 144px;
     }
     @media (min-width: 768px) {
       footer {
-        padding: 24px;
-        font-size: 13px;
+        padding: 63px 60px 24px;
+        min-height: 207px;
+        border-radius: 300px 16px 16px 300px;
       }
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      flex: 1;
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 24px;
+      flex: 1;
+    }
+    @media (min-width: 768px) {
+      .footer-right {
+        gap: 32px;
+      }
+    }
+
+    .footer-right-text {
+      text-align: right;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-top: 128px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .footer-logo {
+        height: 160px;
+        margin-top: 160px;
+        margin-bottom: 0;
+      }
+    }
+
+    footer p {
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    footer a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 
@@ -499,73 +716,86 @@
 </head>
 
 <body>
-  <nav class="nav">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/blog/" class="active">Blog</a></li>
-      <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
-    </ul>
-  </nav>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+        </div>
+      </div>
+    </header>
+  </div>
 
-  <article>
+  <main>
+    <article>
     <div class="article-header">
       <div class="article-meta">January 13, 2026</div>
       <h1>Fillers and Binders in Dog Supplements: What to Avoid</h1>
+
       <p class="article-intro">Pick up a popular dog supplement and check the ingredient list. Chances are, the first few ingredients aren't vitamins or minerals—they're fillers like maltodextrin, rice flour, or cellulose. These inactive ingredients don't support your dog's health. So why are they there, and should you avoid them?</p>
     </div>
 
-    <div class="callout" style="margin-top: 32px; margin-bottom: 40px;">
-      <h2 style="margin-top: 0; font-size: 20px; margin-bottom: 16px;">⚠️ Common Fillers and Binders: Quick Reference</h2>
+    <div class="quick-facts">
+      <div class="quick-facts-content">
+        <h3>⚠️ Common Fillers and Binders: Quick Reference</h3>
 
-      <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px;">
-        <thead>
-          <tr style="border-bottom: 2px solid var(--border);">
-            <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Ingredient</th>
-            <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Purpose</th>
-            <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Concern Level</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px 8px;"><strong><a href="/ingredient-analyzer/ingredients/maltodextrin/">Maltodextrin</a></strong></td>
-            <td style="padding: 12px 8px;">Cheap bulking filler</td>
-            <td style="padding: 12px 8px; color: #d32f2f;"><strong>High</strong> - Avoid</td>
-          </tr>
-          <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px 8px;"><strong>Artificial colors</strong></td>
-            <td style="padding: 12px 8px;">Cosmetic only</td>
-            <td style="padding: 12px 8px; color: #d32f2f;"><strong>High</strong> - Unnecessary</td>
-          </tr>
-          <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px 8px;"><strong><a href="/ingredient-analyzer/ingredients/propylene-glycol/">Propylene glycol</a></strong></td>
-            <td style="padding: 12px 8px;">Moisture retention</td>
-            <td style="padding: 12px 8px; color: #d32f2f;"><strong>High</strong> - Toxic concerns</td>
-          </tr>
-          <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px 8px;"><strong>Rice flour/starch</strong></td>
-            <td style="padding: 12px 8px;">Bulking, binding</td>
-            <td style="padding: 12px 8px; color: #f57c00;">Moderate - Check amount</td>
-          </tr>
-          <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px 8px;"><strong>Magnesium stearate</strong></td>
-            <td style="padding: 12px 8px;">Flow agent</td>
-            <td style="padding: 12px 8px; color: #f57c00;">Moderate - OK in small amounts</td>
-          </tr>
-          <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px 8px;"><strong>Silicon dioxide</strong></td>
-            <td style="padding: 12px 8px;">Anti-caking</td>
-            <td style="padding: 12px 8px; color: #2e7d32;">Low - Generally safe</td>
-          </tr>
-          <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px 8px;"><strong><a href="/ingredient-analyzer/ingredients/cellulose/">Cellulose</a></strong></td>
-            <td style="padding: 12px 8px;">Bulking, binding</td>
-            <td style="padding: 12px 8px; color: #2e7d32;">Low - Inert fiber</td>
-          </tr>
-        </tbody>
-      </table>
+        <table>
+          <thead>
+            <tr>
+              <th>Ingredient</th>
+              <th>Purpose</th>
+              <th>Concern Level</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong><a href="/ingredient-analyzer/ingredients/maltodextrin/">Maltodextrin</a></strong></td>
+              <td>Cheap bulking filler</td>
+              <td style="color: #d32f2f;"><strong>High</strong> - Avoid</td>
+            </tr>
+            <tr>
+              <td><strong>Artificial colors</strong></td>
+              <td>Cosmetic only</td>
+              <td style="color: #d32f2f;"><strong>High</strong> - Unnecessary</td>
+            </tr>
+            <tr>
+              <td><strong><a href="/ingredient-analyzer/ingredients/propylene-glycol/">Propylene glycol</a></strong></td>
+              <td>Moisture retention</td>
+              <td style="color: #d32f2f;"><strong>High</strong> - Toxic concerns</td>
+            </tr>
+            <tr>
+              <td><strong>Rice flour/starch</strong></td>
+              <td>Bulking, binding</td>
+              <td style="color: #f57c00;">Moderate - Check amount</td>
+            </tr>
+            <tr>
+              <td><strong>Magnesium stearate</strong></td>
+              <td>Flow agent</td>
+              <td style="color: #f57c00;">Moderate - OK in small amounts</td>
+            </tr>
+            <tr>
+              <td><strong>Silicon dioxide</strong></td>
+              <td>Anti-caking</td>
+              <td style="color: #2e7d32;">Low - Generally safe</td>
+            </tr>
+            <tr>
+              <td><strong><a href="/ingredient-analyzer/ingredients/cellulose/">Cellulose</a></strong></td>
+              <td>Bulking, binding</td>
+              <td style="color: #2e7d32;">Low - Inert fiber</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <p style="margin-bottom: 0; font-size: 15px;"><strong>Best option:</strong> Supplements with no fillers—just whole-food ingredients that naturally bind</p>
+        <p style="margin-bottom: 0; font-size: 15px;"><strong>Best option:</strong> Supplements with no fillers—just whole-food ingredients that naturally bind</p>
+      </div>
     </div>
 
     <div class="article-content">
@@ -774,8 +1004,8 @@
 
       <p>Here's how to spot supplements loaded with fillers:</p>
 
-      <div class="callout" style="background: #f5f5f5; border-left: 4px solid var(--fg); padding: 20px; margin: 24px 0;">
-        <p style="margin: 0;"><strong>Quick Tip:</strong> Paste your supplement's ingredient list into our <a href="/ingredient-analyzer/">free ingredient analyzer</a> to instantly identify fillers, additives, and problematic ingredients with detailed explanations.</p>
+      <div class="callout">
+        <p><strong>Quick Tip:</strong> Paste your supplement's ingredient list into our <a href="/ingredient-analyzer/">free ingredient analyzer</a> to instantly identify fillers, additives, and problematic ingredients with detailed explanations.</p>
       </div>
 
       <h3>1. Check the Ingredient List Order</h3>
@@ -940,86 +1170,101 @@
       </ul>
     </div>
 
-    <div class="faq">
-      <h2 style="margin-top: 56px; padding-top: 40px; border-top: 2.5px solid var(--border);">Related Articles</h2>
+    <div class="faq-section">
+      <h2 style="margin-top: 56px; padding-top: 40px; border-top: 2px solid var(--border-light);">Related Articles</h2>
 
       <div style="display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 56px;">
-        <a href="/blog/how-to-read-dog-supplement-labels.html" style="display: block; padding: 20px; border: 2.5px solid var(--border); text-decoration: none; color: var(--fg); transition: background 0.15s;">
-          <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">How to Read Dog Supplement Labels</h3>
-          <p style="font-size: 15px; color: var(--muted); margin: 0;">Understanding ingredient quality and sourcing transparency</p>
+        <a href="/blog/how-to-read-dog-supplement-labels.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">How to Read Dog Supplement Labels</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Understanding ingredient quality and sourcing transparency</p>
         </a>
 
-        <a href="/blog/whole-food-vs-synthetic-nutrients.html" style="display: block; padding: 20px; border: 2.5px solid var(--border); text-decoration: none; color: var(--fg); transition: background 0.15s;">
-          <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">Whole Food vs. Synthetic Nutrients</h3>
-          <p style="font-size: 15px; color: var(--muted); margin: 0;">Why bioavailability matters more than ingredient lists</p>
+        <a href="/blog/whole-food-vs-synthetic-nutrients.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Whole Food vs. Synthetic Nutrients</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Why bioavailability matters more than ingredient lists</p>
         </a>
 
-        <a href="/blog/what-is-meat-meal-dog-food.html" style="display: block; padding: 20px; border: 2.5px solid var(--border); text-decoration: none; color: var(--fg); transition: background 0.15s;">
-          <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">What is Meat Meal in Dog Food?</h3>
-          <p style="font-size: 15px; color: var(--muted); margin: 0;">Understanding processed proteins and manufacturing additives</p>
+        <a href="/blog/what-is-meat-meal-dog-food.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">What is Meat Meal in Dog Food?</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Understanding processed proteins and manufacturing additives</p>
         </a>
 
-        <a href="/blog/do-joint-supplements-work-for-dogs.html" style="display: block; padding: 20px; border: 2.5px solid var(--border); text-decoration: none; color: var(--fg); transition: background 0.15s;">
-          <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">Do Joint Supplements Actually Work?</h3>
-          <p style="font-size: 15px; color: var(--muted); margin: 0;">Evidence-based guide to supplements that work vs filler-heavy formulas</p>
+        <a href="/blog/do-joint-supplements-work-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Do Joint Supplements Actually Work?</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Evidence-based guide to supplements that work vs filler-heavy formulas</p>
         </a>
       </div>
 
       <h2>Frequently Asked Questions</h2>
 
       <div class="faq-item">
-        <div class="faq-question">What are fillers in dog supplements?</div>
-        <div class="faq-answer">Fillers are inactive ingredients added to supplements to increase volume, improve manufacturing, or reduce costs. They include bulking agents (maltodextrin, rice flour, cellulose), binders (starch, gums), flow agents (magnesium stearate, silicon dioxide), and coatings. Some fillers serve legitimate manufacturing purposes (making tablets hold together), while others are just cheap bulk to make products look larger. Fillers provide no nutritional value and can dilute the concentration of active ingredients, meaning you're paying for inactive material instead of nutrients.</div>
+        <h3>What are fillers in dog supplements?</h3>
+        <p>Fillers are inactive ingredients added to supplements to increase volume, improve manufacturing, or reduce costs. They include bulking agents (maltodextrin, rice flour, cellulose), binders (starch, gums), flow agents (magnesium stearate, silicon dioxide), and coatings. Some fillers serve legitimate manufacturing purposes (making tablets hold together), while others are just cheap bulk to make products look larger. Fillers provide no nutritional value and can dilute the concentration of active ingredients, meaning you're paying for inactive material instead of nutrients.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Are fillers in dog supplements bad?</div>
-        <div class="faq-answer">It depends on the filler and the amount. Some fillers are benign and necessary for manufacturing (small amounts of silicon dioxide prevent clumping). Others are problematic: maltodextrin spikes blood sugar, artificial colors provide no benefit and may cause reactions, and excessive fillers dilute active ingredients. The main issue is that fillers replace real nutrition—supplements with 50%+ filler content deliver less of what you're paying for. High-quality supplements minimize fillers and use whole-food ingredients instead of synthetic isolates padded with cheap bulk.</div>
+        <h3>Are fillers in dog supplements bad?</h3>
+        <p>It depends on the filler and the amount. Some fillers are benign and necessary for manufacturing (small amounts of silicon dioxide prevent clumping). Others are problematic: maltodextrin spikes blood sugar, artificial colors provide no benefit and may cause reactions, and excessive fillers dilute active ingredients. The main issue is that fillers replace real nutrition—supplements with 50%+ filler content deliver less of what you're paying for. High-quality supplements minimize fillers and use whole-food ingredients instead of synthetic isolates padded with cheap bulk.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">What is maltodextrin in dog supplements?</div>
-        <div class="faq-answer">Maltodextrin is a highly processed carbohydrate made from corn, rice, or potato starch. It's used as a cheap filler and bulking agent in supplements. Maltodextrin has a high glycemic index (spikes blood sugar quickly), provides no nutritional value, and is often GMO-derived. In powdered supplements, maltodextrin can make up 50-80% of the product weight—meaning most of what you're buying is cheap sugar filler, not active ingredients. Dogs don't need maltodextrin, and it's particularly problematic for overweight or diabetic dogs.</div>
+        <h3>What is maltodextrin in dog supplements?</h3>
+        <p>Maltodextrin is a highly processed carbohydrate made from corn, rice, or potato starch. It's used as a cheap filler and bulking agent in supplements. Maltodextrin has a high glycemic index (spikes blood sugar quickly), provides no nutritional value, and is often GMO-derived. In powdered supplements, maltodextrin can make up 50-80% of the product weight—meaning most of what you're buying is cheap sugar filler, not active ingredients. Dogs don't need maltodextrin, and it's particularly problematic for overweight or diabetic dogs.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Is magnesium stearate safe for dogs?</div>
-        <div class="faq-answer">Magnesium stearate is generally considered safe in small amounts. It's a flow agent that prevents ingredients from sticking to manufacturing equipment during tablet/capsule production. However, some concerns exist: it may reduce nutrient absorption, can cause digestive upset in sensitive dogs, and is often derived from hydrogenated oils (cottonseed or palm oil). Small amounts (<1-2% of formula) are acceptable and sometimes necessary for manufacturing, but high-quality supplements minimize or avoid it by using whole-food ingredients that don't require flow agents.</div>
+        <h3>Is magnesium stearate safe for dogs?</h3>
+        <p>Magnesium stearate is generally considered safe in small amounts. It's a flow agent that prevents ingredients from sticking to manufacturing equipment during tablet/capsule production. However, some concerns exist: it may reduce nutrient absorption, can cause digestive upset in sensitive dogs, and is often derived from hydrogenated oils (cottonseed or palm oil). Small amounts (<1-2% of formula) are acceptable and sometimes necessary for manufacturing, but high-quality supplements minimize or avoid it by using whole-food ingredients that don't require flow agents.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Why do dog supplements have so many fillers?</div>
-        <div class="faq-answer">Manufacturers use fillers for three main reasons: (1) Cost reduction—fillers like maltodextrin and rice flour are cheaper than active ingredients, allowing higher profit margins. (2) Manufacturing ease—flow agents and binders help tablets/capsules form consistently and prevent machinery clogging. (3) Volume creation—fillers make products look larger and more substantial, even when active ingredients are minimal. Budget supplements often contain 50-70% fillers to cut costs. Premium supplements minimize fillers by using concentrated whole-food ingredients that naturally bind and flow well.</div>
+        <h3>Why do dog supplements have so many fillers?</h3>
+        <p>Manufacturers use fillers for three main reasons: (1) Cost reduction—fillers like maltodextrin and rice flour are cheaper than active ingredients, allowing higher profit margins. (2) Manufacturing ease—flow agents and binders help tablets/capsules form consistently and prevent machinery clogging. (3) Volume creation—fillers make products look larger and more substantial, even when active ingredients are minimal. Budget supplements often contain 50-70% fillers to cut costs. Premium supplements minimize fillers by using concentrated whole-food ingredients that naturally bind and flow well.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">What are the worst fillers in dog supplements?</div>
-        <div class="faq-answer">The most problematic fillers are: (1) Maltodextrin—high glycemic index, no nutrition, often 50%+ of product. (2) Artificial colors (FD&C dyes)—purely cosmetic, potential allergens. (3) Excessive rice flour/starch—cheap bulk with minimal nutrition. (4) Propylene glycol—used in soft chews, potential toxicity concerns. (5) BHA/BHT preservatives—synthetic antioxidants with health concerns. (6) Titanium dioxide—whitening agent, unnecessary and questioned for safety. Look for supplements that list fillers low on the ingredient list or avoid them entirely with whole-food formulations.</div>
+        <h3>What are the worst fillers in dog supplements?</h3>
+        <p>The most problematic fillers are: (1) Maltodextrin—high glycemic index, no nutrition, often 50%+ of product. (2) Artificial colors (FD&C dyes)—purely cosmetic, potential allergens. (3) Excessive rice flour/starch—cheap bulk with minimal nutrition. (4) Propylene glycol—used in soft chews, potential toxicity concerns. (5) BHA/BHT preservatives—synthetic antioxidants with health concerns. (6) Titanium dioxide—whitening agent, unnecessary and questioned for safety. Look for supplements that list fillers low on the ingredient list or avoid them entirely with whole-food formulations.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">How can you tell if a dog supplement has too many fillers?</div>
-        <div class="faq-answer">Check the ingredient list: (1) If maltodextrin, rice flour, or starch appears in the first 5 ingredients, fillers dominate. (2) If the label lists 15+ ingredients but serving sizes are tiny (1-2 grams), it's mostly filler. (3) If "active" ingredients have tiny amounts (50mg in a 2000mg serving), the rest is filler. (4) If the powder is pure white and flows like sugar, it's likely maltodextrin-heavy. (5) Compare price per active ingredient—cheap supplements use fillers to appear affordable. Quality supplements have short ingredient lists with whole foods or concentrated extracts, not long lists of inactive additives.</div>
+        <h3>How can you tell if a dog supplement has too many fillers?</h3>
+        <p>Check the ingredient list: (1) If maltodextrin, rice flour, or starch appears in the first 5 ingredients, fillers dominate. (2) If the label lists 15+ ingredients but serving sizes are tiny (1-2 grams), it's mostly filler. (3) If "active" ingredients have tiny amounts (50mg in a 2000mg serving), the rest is filler. (4) If the powder is pure white and flows like sugar, it's likely maltodextrin-heavy. (5) Compare price per active ingredient—cheap supplements use fillers to appear affordable. Quality supplements have short ingredient lists with whole foods or concentrated extracts, not long lists of inactive additives.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Are natural fillers better than synthetic fillers?</div>
-        <div class="faq-answer">Natural fillers are generally better, but the best option is minimal fillers period. Natural fillers like rice flour, tapioca starch, or cellulose are less concerning than synthetic ones like maltodextrin or propylene glycol—they're less processed and less likely to cause reactions. However, they still dilute active ingredients and add no nutritional value. The optimal approach is whole-food formulations where ingredients naturally bind without requiring separate fillers. For example, air-dried organ meat holds together naturally without needing binders, flow agents, or bulking agents.</div>
+        <h3>Are natural fillers better than synthetic fillers?</h3>
+        <p>Natural fillers are generally better, but the best option is minimal fillers period. Natural fillers like rice flour, tapioca starch, or cellulose are less concerning than synthetic ones like maltodextrin or propylene glycol—they're less processed and less likely to cause reactions. However, they still dilute active ingredients and add no nutritional value. The optimal approach is whole-food formulations where ingredients naturally bind without requiring separate fillers. For example, air-dried organ meat holds together naturally without needing binders, flow agents, or bulking agents.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">What should I look for in a clean dog supplement?</div>
-        <div class="faq-answer">A clean supplement has: (1) Short ingredient list—only active ingredients and minimal processing aids. (2) Whole-food sources—beef liver, fish, kelp instead of synthetic isolates. (3) No maltodextrin, artificial colors, or excessive starches. (4) Transparent sourcing—specifies where ingredients come from. (5) High concentration of actives—serving size reflects real food, not filler bulk. (6) Minimal processing—freeze-dried or air-dried instead of high-heat rendered. (7) Third-party testing for purity. Look for supplements where you recognize every ingredient as actual food, not chemical additives.</div>
+        <h3>What should I look for in a clean dog supplement?</h3>
+        <p>A clean supplement has: (1) Short ingredient list—only active ingredients and minimal processing aids. (2) Whole-food sources—beef liver, fish, kelp instead of synthetic isolates. (3) No maltodextrin, artificial colors, or excessive starches. (4) Transparent sourcing—specifies where ingredients come from. (5) High concentration of actives—serving size reflects real food, not filler bulk. (6) Minimal processing—freeze-dried or air-dried instead of high-heat rendered. (7) Third-party testing for purity. Look for supplements where you recognize every ingredient as actual food, not chemical additives.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Can fillers cause allergies or sensitivities in dogs?</div>
-        <div class="faq-answer">Yes, some fillers can trigger reactions in sensitive dogs. Common culprits include: (1) Corn-derived maltodextrin (dogs with corn sensitivities). (2) Soy lecithin (dogs with soy allergies). (3) Wheat or rice flour (grain sensitivities). (4) Artificial colors (potential allergens and behavioral reactions). (5) Preservatives like BHA/BHT (digestive upset or skin reactions). (6) Gums and starches (digestive issues in some dogs). If your dog has food sensitivities, choose supplements with minimal ingredients and avoid common allergen fillers. Whole-food supplements without fillers reduce reaction risk.</div>
+        <h3>Can fillers cause allergies or sensitivities in dogs?</h3>
+        <p>Yes, some fillers can trigger reactions in sensitive dogs. Common culprits include: (1) Corn-derived maltodextrin (dogs with corn sensitivities). (2) Soy lecithin (dogs with soy allergies). (3) Wheat or rice flour (grain sensitivities). (4) Artificial colors (potential allergens and behavioral reactions). (5) Preservatives like BHA/BHT (digestive upset or skin reactions). (6) Gums and starches (digestive issues in some dogs). If your dog has food sensitivities, choose supplements with minimal ingredients and avoid common allergen fillers. Whole-food supplements without fillers reduce reaction risk.</p>
       </div>
     </div>
-  </article>
+    </article>
+  </main>
 
-  <footer>© <span id="year"></span> Watts Pet</footer>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
+      </div>
+    </footer>
+  </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();

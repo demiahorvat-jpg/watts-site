@@ -23,207 +23,282 @@
     gtag('config', 'G-C6KV5WBGK5');
   </script>
 
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Dog Supplement Formats Compared: Powders, Soft Chews, and Air-Dried">
-  <meta property="og:description" content="Compare powders, soft chews, pills, and air-dried dog supplements. Learn which format preserves nutrients best and why processing methods matter for bioavailability.">
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://wattspet.com/blog/dog-supplement-formats-compared.html">
-  <meta property="og:site_name" content="Watts Pet">
-  <meta property="og:image" content="https://wattspet.com/assets/hero.jpg">
+  <meta property="og:title" content="Dog Supplement Formats Compared: Powders, Soft Chews, and Air-Dried">
+  <meta property="og:description" content="Compare powders, soft chews, pills, and air-dried dog supplements. Learn which format preserves nutrients best and why processing methods matter for bioavailability.">
+  <meta property="og:image" content="https://wattspet.com/images/og-default.jpg">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://wattspet.com/blog/dog-supplement-formats-compared.html">
+  <meta property="twitter:title" content="Dog Supplement Formats Compared: Powders, Soft Chews, and Air-Dried">
+  <meta property="twitter:description" content="Compare powders, soft chews, pills, and air-dried dog supplements. Learn which format preserves nutrients best and why processing methods matter for bioavailability.">
+  <meta property="twitter:image" content="https://wattspet.com/images/og-default.jpg">
 
+  <!-- Degular Font -->
   <style>
-    :root {
-      --bg: #F1ECE9;
-      --fg: #191919;
-      --muted: #3a3a3a;
-      --border: #191919;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body { min-height: 100%; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Regular.woff2') format('woff2');
       font-weight: 400;
-      line-height: 1.6;
-      overflow-x: hidden;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
     }
 
-    /* Navigation */
-    nav.nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px 20px;
-      border-bottom: 2.5px solid var(--border);
+    :root {
+      --brand-orange: #c03800;
+      --bg-light: #f1f1f1;
+      --text-dark: #191919;
+      --white: #ffffff;
+      --text-muted: #666666;
+      --border-light: rgba(25, 25, 25, 0.1);
+      --accent-navy: #1e3a5f;
     }
-    @media (min-width: 768px) {
-      nav.nav {
-        padding: 24px 20px;
-      }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    nav.nav ul {
-      list-style: none;
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      background: #191919;
+      color: var(--text-dark);
+      font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* HEADER WRAPPER - Black background */
+    .header-wrapper {
+      background: #191919;
+      padding: 12px 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    /* ORANGE HEADER - Rounded like Shopify site */
+    header {
+      background: var(--brand-orange);
+      padding: 7px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
-      gap: 24px;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-height: 40px;
+    }
+
+    /* Nav on the LEFT */
+    nav {
+      order: -1;
+      display: flex;
       align-items: center;
     }
-    @media (min-width: 768px) {
-      nav.nav ul {
-        gap: 32px;
-      }
-    }
-    nav.nav a {
-      color: var(--fg);
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 500;
-      transition: opacity 0.15s;
-      position: relative;
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
     }
     @media (min-width: 768px) {
-      nav.nav a {
-        font-size: 16px;
-      }
-    }
-    nav.nav a:hover {
-      opacity: 0.7;
-    }
-    nav.nav a.active::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: var(--fg);
+      nav ul { gap: 24px; }
     }
 
-    /* Breadcrumbs */
-    .breadcrumbs {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px 20px 0;
+    nav li {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
       font-size: 14px;
-      color: var(--muted);
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
     }
     @media (min-width: 768px) {
-      .breadcrumbs {
-        padding: 24px 40px 0;
-        font-size: 15px;
-      }
+      nav a { font-size: 15px; }
     }
-    .breadcrumbs a {
-      color: var(--muted);
-      text-decoration: none;
-      transition: opacity 0.15s;
-    }
-    .breadcrumbs a:hover {
-      opacity: 0.7;
-    }
-    .breadcrumbs span {
-      margin: 0 8px;
+    nav a:hover {
+      opacity: 0.8;
     }
 
-    /* Article */
+    /* Logo CENTERED */
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo {
+      height: 32px;
+    }
+    @media (min-width: 768px) {
+      .logo { height: 40px; }
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 900px;
+      margin: 16px auto 40px;
+      padding: 0 20px;
+      background: var(--bg-light);
+    }
+    @media (min-width: 768px) {
+      main {
+        margin: 20px auto 60px;
+        padding: 0 40px;
+      }
+    }
+
     article {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 32px 20px 60px;
+      background: var(--white);
+      padding: 40px 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
       article {
-        padding: 48px 40px 80px;
+        padding: 60px 50px;
       }
     }
 
-    /* Article meta */
-    .article-meta {
-      margin-bottom: 24px;
-      font-size: 14px;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    @media (min-width: 768px) {
-      .article-meta {
-        margin-bottom: 28px;
-        font-size: 15px;
-      }
+    .article-header {
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--border-light);
     }
 
-    /* Typography */
     h1 {
-      font-family: "Geologica", sans-serif;
-      font-size: 28px;
+      font-size: 32px;
       font-weight: 700;
       line-height: 1.2;
       margin-bottom: 16px;
       letter-spacing: -0.02em;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       h1 {
-        font-size: 38px;
+        font-size: 48px;
         margin-bottom: 20px;
       }
     }
 
-    h2 {
-      font-family: "Geologica", sans-serif;
-      font-size: 22px;
-      font-weight: 700;
-      line-height: 1.3;
-      margin: 48px 0 20px;
-      letter-spacing: -0.01em;
+    .article-meta {
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      font-weight: 500;
+      line-height: 1.6;
+      color: var(--text-muted);
+      margin-bottom: 0;
     }
     @media (min-width: 768px) {
-      h2 {
-        font-size: 26px;
-        margin: 56px 0 24px;
+      .article-intro {
+        font-size: 21px;
       }
     }
 
-    h2:first-of-type {
-      margin-top: 32px;
+    .article-intro a {
+      color: var(--accent-navy);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    .article-intro a:hover {
+      opacity: 0.7;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 56px 0 24px;
+      letter-spacing: -0.01em;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h2 {
+        font-size: 36px;
+        margin: 64px 0 28px;
+      }
     }
 
     h3 {
-      font-family: "Geologica", sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 1.4;
-      margin: 32px 0 16px;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 40px 0 16px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       h3 {
-        font-size: 20px;
-        margin: 40px 0 18px;
+        font-size: 28px;
+        margin: 48px 0 20px;
       }
     }
 
     p {
       font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
-      margin-bottom: 16px;
-      color: var(--fg);
+      margin-bottom: 20px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       p {
         font-size: 18px;
-        margin-bottom: 18px;
-        line-height: 1.75;
+        margin-bottom: 24px;
       }
-    }
-
-    p:last-child {
-      margin-bottom: 0;
     }
 
     strong {
@@ -231,235 +306,207 @@
     }
 
     a {
-      color: var(--fg);
-      text-decoration: underline;
-      text-decoration-thickness: 1.5px;
-      text-underline-offset: 2px;
+      color: var(--accent-navy);
+      transition: opacity 0.2s ease;
     }
-
     a:hover {
       opacity: 0.7;
     }
 
-    /* Lists */
-    article ul, article ol {
-      margin: 20px 0;
-      padding-left: 0;
-      list-style: none;
+    ul, ol {
+      margin: 24px 0;
+      padding-left: 28px;
     }
 
-    article li {
+    li {
       font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
-      margin-bottom: 16px;
-      padding-left: 28px;
-      position: relative;
+      margin-bottom: 12px;
     }
     @media (min-width: 768px) {
-      article li {
+      li {
         font-size: 18px;
-        margin-bottom: 18px;
       }
     }
 
-    article ul li:before {
-      content: "•";
-      position: absolute;
-      left: 10px;
-      font-weight: 700;
-    }
-
-    /* Callout Box */
+    /* LIGHT CALLOUT BOX */
     .callout {
-      border: 2.5px solid var(--border);
-      padding: 20px;
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
+      padding: 24px 28px;
       margin: 32px 0;
-      background: rgba(0,0,0,.01);
     }
     @media (min-width: 768px) {
       .callout {
-        padding: 28px;
-        margin: 40px 0;
+        padding: 28px 32px;
       }
-    }
-
-    .callout p {
-      margin-bottom: 12px;
     }
 
     .callout p:last-child {
       margin-bottom: 0;
     }
 
-    .callout strong {
-      display: block;
-      margin-bottom: 16px;
-      font-size: 18px;
+    /* TABLE */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 32px 0;
+      font-size: 16px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
     @media (min-width: 768px) {
-      .callout strong {
-        font-size: 19px;
+      table {
+        font-size: 17px;
       }
     }
 
-    /* Comparison table styles */
-    .comparison-grid {
-      margin: 32px 0;
-      border: 2.5px solid var(--border);
+    thead {
+      background: var(--brand-orange);
+      color: var(--white);
+      font-weight: 700;
     }
 
-    .comparison-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      border-bottom: 2.5px solid var(--border);
+    th, td {
+      text-align: left;
+      padding: 16px;
+      border-bottom: 1px solid var(--border-light);
+    }
+    @media (min-width: 768px) {
+      th, td {
+        padding: 18px 20px;
+      }
     }
 
-    .comparison-row:last-child {
+    tbody tr:last-child td {
       border-bottom: none;
     }
 
-    .comparison-label {
-      padding: 16px 20px;
-      font-weight: 600;
-      border-right: 2.5px solid var(--border);
-      background: rgba(0,0,0,.02);
+    tbody tr {
+      background: var(--white);
+      transition: background 0.2s ease;
     }
 
-    .comparison-value {
-      padding: 16px 20px;
+    tbody tr:hover {
+      background: rgba(192, 56, 0, 0.02);
     }
 
-    @media (min-width: 768px) {
-      .comparison-label,
-      .comparison-value {
-        padding: 18px 24px;
-      }
-    }
-
-    /* FAQ Section */
+    /* FAQ SECTION */
     .faq-section {
-      margin-top: 56px;
-      padding-top: 40px;
-      border-top: 2.5px solid var(--border);
-    }
-    @media (min-width: 768px) {
-      .faq-section {
-        margin-top: 64px;
-        padding-top: 48px;
-      }
+      margin-top: 64px;
+      padding-top: 56px;
+      border-top: 3px solid var(--border-light);
     }
 
     .faq-item {
       margin-bottom: 32px;
+      padding: 28px;
+      background: var(--bg-light);
+      border-radius: 12px;
+      border-left: 4px solid var(--brand-orange);
+    }
+
+    .faq-item h3 {
+      font-size: 20px;
+      margin: 0 0 16px 0;
+      color: var(--brand-orange);
     }
     @media (min-width: 768px) {
-      .faq-item {
-        margin-bottom: 40px;
+      .faq-item h3 {
+        font-size: 23px;
       }
     }
 
-    .faq-item:last-child {
+    .faq-item p {
       margin-bottom: 0;
     }
 
-    .faq-question {
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 12px;
-      line-height: 1.4;
-    }
-    @media (min-width: 768px) {
-      .faq-question {
-        font-size: 20px;
-        margin-bottom: 14px;
-      }
+    /* FOOTER WRAPPER - Black background */
+    .footer-wrapper {
+      background: #191919;
+      padding: 0 12px 12px;
+      margin-top: 80px;
     }
 
-    .faq-answer {
-      font-size: 17px;
-      line-height: 1.7;
-      color: var(--fg);
-    }
-    @media (min-width: 768px) {
-      .faq-answer {
-        font-size: 18px;
-      }
-    }
-
-    /* CTA */
-    .cta-section {
-      text-align: center;
-      margin: 56px 0 0;
-      padding: 40px 0 0;
-      border-top: 2.5px solid var(--border);
-    }
-    @media (min-width: 768px) {
-      .cta-section {
-        margin: 64px 0 0;
-        padding: 48px 0 0;
-      }
-    }
-
-    .cta-section p {
-      margin-bottom: 24px;
-    }
-
-    .gate {
-      display: inline-flex;
-      align-items: stretch;
-      justify-content: space-between;
-      width: 100%;
-      max-width: 480px;
-      height: 52px;
-      border: 2.5px solid var(--border);
-      background: transparent;
-      color: var(--fg);
-      font: 600 16px "Geologica", sans-serif;
-      padding: 0;
-      border-radius: 0;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    @media (min-width: 768px) {
-      .gate {
-        font-size: 17px;
-      }
-    }
-    .gate-text { padding: 0 20px 0 14px; text-align: left; flex: 1 1 auto; display: flex; align-items: center; }
-    @media (min-width: 768px) {
-      .gate-text { padding: 0 20px 0 16px; }
-    }
-    .gate-arrow {
-      display: grid;
-      place-items: center;
-      width: 52px;
-      border-left: 2.5px solid var(--border);
-      font-size: 18px;
-      line-height: 1;
-      user-select: none;
-    }
-    @media (min-width: 768px) {
-      .gate-arrow {
-        width: 43px;
-        font-size: 20px;
-      }
-    }
-    .gate:hover { background: rgba(0,0,0,.035); }
-
-    /* Footer */
+    /* FOOTER - Orange with asymmetric rounded shape like Shopify */
     footer {
-      text-align: center;
-      padding: 20px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 400;
-      border-top: 2.5px solid var(--border);
+      background: var(--brand-orange);
+      color: var(--white);
+      padding: 45px 40px 20px;
+      border-radius: 200px 16px 16px 200px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 144px;
     }
     @media (min-width: 768px) {
       footer {
-        padding: 24px;
-        font-size: 13px;
+        padding: 63px 60px 24px;
+        min-height: 207px;
+        border-radius: 300px 16px 16px 300px;
       }
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      flex: 1;
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 24px;
+      flex: 1;
+    }
+    @media (min-width: 768px) {
+      .footer-right {
+        gap: 32px;
+      }
+    }
+
+    .footer-right-text {
+      text-align: right;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-top: 128px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .footer-logo {
+        height: 160px;
+        margin-top: 160px;
+        margin-bottom: 0;
+      }
+    }
+
+    footer p {
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    footer a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 
@@ -557,7 +604,7 @@
       "name": "Watts Pet",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://wattspet.com/assets/file.svg"
+        "url": "https://wattspet.com/images/logo.svg"
       }
     },
     "datePublished": "2025-01-20T09:00:00-05:00",
@@ -571,31 +618,37 @@
 </head>
 
 <body>
-  <nav class="nav">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/blog/" class="active">Blog</a></li>
-      <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
-    </ul>
-  </nav>
-
-  <div class="breadcrumbs">
-    <a href="/">Home</a>
-    <span>→</span>
-    <a href="/blog/">Blog</a>
-    <span>→</span>
-    <span>Dog Supplement Formats Compared</span>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+        </div>
+      </div>
+    </header>
   </div>
 
-  <article>
-    <div class="article-meta">January 20, 2025</div>
+  <main>
+    <article>
+    <div class="article-header">
+      <div class="article-meta">January 20, 2025</div>
 
-    <h1>Dog Supplement Formats Compared: Powders, Soft Chews, and Air-Dried</h1>
+      <h1>Dog Supplement Formats Compared: Powders, Soft Chews, and Air-Dried</h1>
 
-    <p>Walk into any pet store and you'll see dog supplements in every format imaginable: powders, soft chews, pills, liquids, freeze-dried treats, and air-dried bites. The sheer variety makes it hard to know what actually works — and what's just packaging.</p>
+      <p class="article-intro">Walk into any pet store and you'll see dog supplements in every format imaginable: powders, soft chews, pills, liquids, freeze-dried treats, and air-dried bites. The sheer variety makes it hard to know what actually works — and what's just packaging. The truth is, format matters more than most dog owners realize. How a supplement is processed directly impacts nutrient stability, bioavailability, shelf life, and whether your dog will actually consume it.</p>
+    </div>
 
-    <p>The truth is, format matters more than most dog owners realize. How a supplement is processed directly impacts nutrient stability, bioavailability, shelf life, and whether your dog will actually consume it. Some formats preserve nutrients beautifully. Others destroy them before they ever reach your dog's bowl.</p>
+    <div class="article-content">
+
+    <p>Some formats preserve nutrients beautifully. Others destroy them before they ever reach your dog's bowl.</p>
 
     <p>Here's an honest comparison of the most common dog supplement formats — what they do well, where they fall short, and why the processing method behind the format might be more important than the ingredients list itself.</p>
 
@@ -628,7 +681,7 @@
       <li><strong>Oxidation risk:</strong> Once the container is opened, powders are exposed to air, which can degrade nutrients over time</li>
       <li><strong>Texture and taste issues:</strong> Some dogs refuse food with powder mixed in, especially if it's gritty or has a strong smell</li>
       <li><strong>Clumping and moisture:</strong> Powders can absorb moisture and clump, making them harder to measure and less shelf-stable</li>
-      <li><strong>Nutrient loss in processing:</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/19234945/" target="_blank" rel="noopener">High-heat drying methods can destroy heat-sensitive vitamins and enzymes</a></li>
+      <li><strong>Nutrient loss in processing:</strong> High-heat drying methods can destroy heat-sensitive vitamins and enzymes</li>
     </ul>
 
     <h3>Best For</h3>
@@ -746,43 +799,6 @@
 
     <p>Dog owners who want whole-food, nutrient-dense supplements without the cost of freeze-drying or the downsides of powders and soft chews. Ideal for supporting long-term health through <a href="/blog/organ-based-nutrition-for-dogs.html">organ-based nutrition</a>.</p>
 
-    <h2>Side-by-Side Comparison</h2>
-
-    <div class="comparison-grid">
-      <div class="comparison-row">
-        <div class="comparison-label">Format</div>
-        <div class="comparison-value"><strong>Air-Dried (Watts)</strong></div>
-      </div>
-      <div class="comparison-row">
-        <div class="comparison-label">Nutrient Retention</div>
-        <div class="comparison-value">Excellent — low-heat preserves vitamins and enzymes</div>
-      </div>
-      <div class="comparison-row">
-        <div class="comparison-label">Bioavailability</div>
-        <div class="comparison-value">High — whole-food nutrients in natural matrix</div>
-      </div>
-      <div class="comparison-row">
-        <div class="comparison-label">Palatability</div>
-        <div class="comparison-value">Very high — dogs love organ meat flavor</div>
-      </div>
-      <div class="comparison-row">
-        <div class="comparison-label">Fillers/Additives</div>
-        <div class="comparison-value">None — just grass-fed beef organs</div>
-      </div>
-      <div class="comparison-row">
-        <div class="comparison-label">Shelf Stability</div>
-        <div class="comparison-value">Excellent — no refrigeration needed</div>
-      </div>
-      <div class="comparison-row">
-        <div class="comparison-label">Convenience</div>
-        <div class="comparison-value">High — pre-portioned, easy to serve</div>
-      </div>
-      <div class="comparison-row">
-        <div class="comparison-label">Cost</div>
-        <div class="comparison-value">Moderate — more affordable than freeze-dried</div>
-      </div>
-    </div>
-
     <h2>The Bottom Line: Format Reflects Philosophy</h2>
 
     <p>Supplement format isn't just about convenience — it's a window into how a brand thinks about nutrition.</p>
@@ -806,47 +822,76 @@
 
     <!-- FAQ Section -->
     <div class="faq-section">
+      <h2 style="margin-top: 56px; padding-top: 40px; border-top: 2px solid var(--border-light);">Related Articles</h2>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 56px;">
+        <a href="/blog/beef-liver-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Why Beef Liver is One of the Best Things You Can Feed Your Dog</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">The ultimate whole-food supplement with maximum nutrient density</p>
+        </a>
+
+        <a href="/blog/whole-food-vs-synthetic-nutrients.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Whole Food vs Synthetic Vitamins</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Why bioavailability matters more than ingredient lists</p>
+        </a>
+
+        <a href="/blog/organ-based-nutrition-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">The Real Benefits of Organ-Based Nutrition for Dogs</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Why organ meats deliver nutrients dogs actually need</p>
+        </a>
+
+        <a href="/blog/human-grade-dog-treats.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Human-Grade Dog Treats</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Why quality standards matter for supplement formats</p>
+        </a>
+      </div>
+
       <h2>Frequently Asked Questions</h2>
 
       <div class="faq-item">
-        <div class="faq-question">What's the best format for dog supplements?</div>
-        <div class="faq-answer">Air-dried whole-food supplements typically preserve the most nutrients while staying shelf-stable and convenient. They avoid the high heat of processing (which degrades nutrients) and the fillers required for powders or soft chews. For synthetic supplements, format matters less since the nutrients are already isolated.</div>
+        <h3>What's the best format for dog supplements?</h3>
+        <p>Air-dried whole-food supplements typically preserve the most nutrients while staying shelf-stable and convenient. They avoid the high heat of processing (which degrades nutrients) and the fillers required for powders or soft chews. For synthetic supplements, format matters less since the nutrients are already isolated.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Are soft chews or powders better for dogs?</div>
-        <div class="faq-answer">It depends on the dog and ingredient quality. Soft chews are easier for picky eaters but often contain binders, sweeteners, and fillers. Powders can be mixed into food but may clump, oxidize, or taste unpleasant. Air-dried whole-food formats avoid these issues while preserving maximum nutrient density.</div>
+        <h3>Are soft chews or powders better for dogs?</h3>
+        <p>It depends on the dog and ingredient quality. Soft chews are easier for picky eaters but often contain binders, sweeteners, and fillers. Powders can be mixed into food but may clump, oxidize, or taste unpleasant. Air-dried whole-food formats avoid these issues while preserving maximum nutrient density.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Do dog supplement pills work as well as whole-food supplements?</div>
-        <div class="faq-answer">Pills typically contain synthetic, isolated nutrients that are less bioavailable than whole-food sources. They can prevent deficiencies but don't provide the co-factors, enzymes, and supporting compounds found in real food. Whole-food supplements deliver nutrients the way the body evolved to recognize and use them.</div>
+        <h3>Do dog supplement pills work as well as whole-food supplements?</h3>
+        <p>Pills typically contain synthetic, isolated nutrients that are less bioavailable than whole-food sources. They can prevent deficiencies but don't provide the co-factors, enzymes, and supporting compounds found in real food. Whole-food supplements deliver nutrients the way the body evolved to recognize and use them.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Why does processing method matter for dog supplements?</div>
-        <div class="faq-answer">High heat (extrusion, baking) can destroy heat-sensitive vitamins like B vitamins, vitamin C, and enzymes. Air-drying uses low temperatures to preserve nutrient integrity. Freeze-drying is also gentle but more expensive and can make products brittle. Processing directly impacts how much nutrition survives from ingredient to bowl.</div>
+        <h3>Why does processing method matter for dog supplements?</h3>
+        <p>High heat (extrusion, baking) can destroy heat-sensitive vitamins like B vitamins, vitamin C, and enzymes. Air-drying uses low temperatures to preserve nutrient integrity. Freeze-drying is also gentle but more expensive and can make products brittle. Processing directly impacts how much nutrition survives from ingredient to bowl.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Can I mix different supplement formats together?</div>
-        <div class="faq-answer">Yes, but avoid over-supplementing. If you're using multiple products, check for overlapping ingredients (especially fat-soluble vitamins A, D, E, K) to prevent toxicity. Whole-food supplements are generally safer to combine since nutrients are in naturally balanced ratios rather than isolated megadoses.</div>
+        <h3>Can I mix different supplement formats together?</h3>
+        <p>Yes, but avoid over-supplementing. If you're using multiple products, check for overlapping ingredients (especially fat-soluble vitamins A, D, E, K) to prevent toxicity. Whole-food supplements are generally safer to combine since nutrients are in naturally balanced ratios rather than isolated megadoses.</p>
       </div>
     </div>
-
-    <!-- CTA Section -->
-    <div class="cta-section">
-      <p><strong>Choose a supplement format that preserves what matters.</strong></p>
-      <p>Join the waitlist for Watts — air-dried organ nutrition with maximum nutrient retention.</p>
-
-      <a href="/" class="gate">
-        <span class="gate-text">Notify me at launch</span>
-        <span class="gate-arrow" aria-hidden="true">→</span>
-      </a>
     </div>
-  </article>
+    </article>
+  </main>
 
-  <footer>© <span id="year"></span> Watts Pet</footer>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
+      </div>
+    </footer>
+  </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();

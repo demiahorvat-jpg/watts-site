@@ -32,198 +32,268 @@
   <meta property="og:site_name" content="Watts Pet">
   <meta property="og:image" content="https://wattspet.com/assets/hero.jpg">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
-
+  <!-- Degular Font -->
   <style>
-    :root {
-      --bg: #F1ECE9;
-      --fg: #191919;
-      --muted: #3a3a3a;
-      --border: #191919;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body { min-height: 100%; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Regular.woff2') format('woff2');
       font-weight: 400;
-      line-height: 1.6;
-      overflow-x: hidden;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
     }
 
-    /* Navigation */
-    nav.nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px 20px;
-      border-bottom: 2.5px solid var(--border);
+    :root {
+      --brand-orange: #c03800;
+      --bg-light: #f1f1f1;
+      --text-dark: #191919;
+      --white: #ffffff;
+      --text-muted: #666666;
+      --border-light: rgba(25, 25, 25, 0.1);
+      --accent-navy: #1e3a5f;
     }
-    @media (min-width: 768px) {
-      nav.nav {
-        padding: 24px 20px;
-      }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    nav.nav ul {
-      list-style: none;
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      background: #191919;
+      color: var(--text-dark);
+      font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* HEADER WRAPPER - Black background */
+    .header-wrapper {
+      background: #191919;
+      padding: 12px 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    /* ORANGE HEADER - Rounded like Shopify site */
+    header {
+      background: var(--brand-orange);
+      padding: 7px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
-      gap: 24px;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-height: 40px;
+    }
+
+    /* Nav on the LEFT */
+    nav {
+      order: -1;
+      display: flex;
       align-items: center;
     }
-    @media (min-width: 768px) {
-      nav.nav ul {
-        gap: 32px;
-      }
-    }
-    nav.nav a {
-      color: var(--fg);
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 500;
-      transition: opacity 0.15s;
-      position: relative;
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
     }
     @media (min-width: 768px) {
-      nav.nav a {
-        font-size: 16px;
-      }
-    }
-    nav.nav a:hover {
-      opacity: 0.7;
-    }
-    nav.nav a.active::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: var(--fg);
+      nav ul { gap: 24px; }
     }
 
-    /* Breadcrumbs */
-    .breadcrumbs {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px 20px 0;
+    nav li {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
       font-size: 14px;
-      color: var(--muted);
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
     }
     @media (min-width: 768px) {
-      .breadcrumbs {
-        padding: 24px 40px 0;
-        font-size: 15px;
-      }
+      nav a { font-size: 15px; }
     }
-    .breadcrumbs a {
-      color: var(--muted);
-      text-decoration: none;
-      transition: opacity 0.15s;
-    }
-    .breadcrumbs a:hover {
-      opacity: 0.7;
-    }
-    .breadcrumbs span {
-      margin: 0 8px;
+    nav a:hover {
+      opacity: 0.8;
     }
 
-    /* Article */
+    /* Logo CENTERED */
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo {
+      height: 32px;
+    }
+    @media (min-width: 768px) {
+      .logo { height: 40px; }
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 900px;
+      margin: 16px auto 40px;
+      padding: 0 20px;
+      background: var(--bg-light);
+    }
+    @media (min-width: 768px) {
+      main {
+        margin: 20px auto 60px;
+        padding: 0 40px;
+      }
+    }
+
     article {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 32px 20px 60px;
+      background: var(--white);
+      padding: 40px 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
       article {
-        padding: 48px 40px 80px;
+        padding: 60px 50px;
       }
     }
 
-    /* Article meta */
-    .article-meta {
-      margin-bottom: 24px;
-      font-size: 14px;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    @media (min-width: 768px) {
-      .article-meta {
-        margin-bottom: 28px;
-        font-size: 15px;
-      }
+    .article-header {
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--border-light);
     }
 
-    /* Typography */
     h1 {
-      font-family: "Geologica", sans-serif;
-      font-size: 28px;
+      font-size: 32px;
       font-weight: 700;
       line-height: 1.2;
       margin-bottom: 16px;
       letter-spacing: -0.02em;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       h1 {
-        font-size: 38px;
+        font-size: 48px;
         margin-bottom: 20px;
       }
     }
 
-    h2 {
-      font-family: "Geologica", sans-serif;
-      font-size: 22px;
-      font-weight: 700;
-      line-height: 1.3;
-      margin: 48px 0 20px;
-      letter-spacing: -0.01em;
+    .article-meta {
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      font-weight: 500;
+      line-height: 1.6;
+      color: var(--text-muted);
+      margin-bottom: 0;
     }
     @media (min-width: 768px) {
-      h2 {
-        font-size: 26px;
-        margin: 56px 0 24px;
+      .article-intro {
+        font-size: 21px;
       }
     }
 
-    h2:first-of-type {
-      margin-top: 32px;
+    .article-intro a {
+      color: var(--accent-navy);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    .article-intro a:hover {
+      opacity: 0.7;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 56px 0 24px;
+      letter-spacing: -0.01em;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h2 {
+        font-size: 36px;
+        margin: 64px 0 28px;
+      }
     }
 
     h3 {
-      font-family: "Geologica", sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 1.4;
-      margin: 32px 0 16px;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 40px 0 16px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       h3 {
-        font-size: 20px;
-        margin: 40px 0 18px;
+        font-size: 28px;
+        margin: 48px 0 20px;
       }
     }
 
     p {
       font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
-      margin-bottom: 16px;
-      color: var(--fg);
+      margin-bottom: 20px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       p {
         font-size: 18px;
-        margin-bottom: 18px;
-        line-height: 1.75;
+        margin-bottom: 24px;
       }
-    }
-
-    p:last-child {
-      margin-bottom: 0;
     }
 
     strong {
@@ -231,201 +301,161 @@
     }
 
     a {
-      color: var(--fg);
-      text-decoration: underline;
-      text-decoration-thickness: 1.5px;
-      text-underline-offset: 2px;
+      color: var(--accent-navy);
+      transition: opacity 0.2s ease;
     }
-
     a:hover {
       opacity: 0.7;
     }
 
-    /* Lists */
-    article ul, article ol {
-      margin: 20px 0;
-      padding-left: 0;
-      list-style: none;
+    ul, ol {
+      margin: 24px 0;
+      padding-left: 28px;
     }
 
-    article li {
+    li {
       font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
-      margin-bottom: 16px;
-      padding-left: 28px;
-      position: relative;
+      margin-bottom: 12px;
     }
     @media (min-width: 768px) {
-      article li {
+      li {
         font-size: 18px;
-        margin-bottom: 18px;
       }
     }
 
-    article ul li:before {
-      content: "•";
-      position: absolute;
-      left: 10px;
-      font-weight: 700;
-    }
-
-    /* Callout Box */
+    /* LIGHT CALLOUT BOX */
     .callout {
-      border: 2.5px solid var(--border);
-      padding: 20px;
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
+      padding: 24px 28px;
       margin: 32px 0;
-      background: rgba(0,0,0,.01);
     }
     @media (min-width: 768px) {
       .callout {
-        padding: 28px;
-        margin: 40px 0;
+        padding: 28px 32px;
       }
-    }
-
-    .callout p {
-      margin-bottom: 12px;
     }
 
     .callout p:last-child {
       margin-bottom: 0;
     }
 
-    .callout strong {
-      display: block;
-      margin-bottom: 16px;
-      font-size: 18px;
-    }
-    @media (min-width: 768px) {
-      .callout strong {
-        font-size: 19px;
-      }
-    }
-
-    /* FAQ Section */
+    /* FAQ SECTION */
     .faq-section {
-      margin-top: 56px;
-      padding-top: 40px;
-      border-top: 2.5px solid var(--border);
-    }
-    @media (min-width: 768px) {
-      .faq-section {
-        margin-top: 64px;
-        padding-top: 48px;
-      }
+      margin-top: 64px;
+      padding-top: 56px;
+      border-top: 3px solid var(--border-light);
     }
 
     .faq-item {
       margin-bottom: 32px;
+      padding: 28px;
+      background: var(--bg-light);
+      border-radius: 12px;
+      border-left: 4px solid var(--brand-orange);
+    }
+
+    .faq-item h3 {
+      font-size: 20px;
+      margin: 0 0 16px 0;
+      color: var(--brand-orange);
     }
     @media (min-width: 768px) {
-      .faq-item {
-        margin-bottom: 40px;
+      .faq-item h3 {
+        font-size: 23px;
       }
     }
 
-    .faq-item:last-child {
+    .faq-item p {
       margin-bottom: 0;
     }
 
-    .faq-question {
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 12px;
-      line-height: 1.4;
-    }
-    @media (min-width: 768px) {
-      .faq-question {
-        font-size: 20px;
-        margin-bottom: 14px;
-      }
+    /* FOOTER WRAPPER - Black background */
+    .footer-wrapper {
+      background: #191919;
+      padding: 0 12px 12px;
+      margin-top: 80px;
     }
 
-    .faq-answer {
-      font-size: 17px;
-      line-height: 1.7;
-      color: var(--fg);
-    }
-    @media (min-width: 768px) {
-      .faq-answer {
-        font-size: 18px;
-      }
-    }
-
-    /* CTA */
-    .cta-section {
-      text-align: center;
-      margin: 56px 0 0;
-      padding: 40px 0 0;
-      border-top: 2.5px solid var(--border);
-    }
-    @media (min-width: 768px) {
-      .cta-section {
-        margin: 64px 0 0;
-        padding: 48px 0 0;
-      }
-    }
-
-    .cta-section p {
-      margin-bottom: 24px;
-    }
-
-    .gate {
-      display: inline-flex;
-      align-items: stretch;
-      justify-content: space-between;
-      width: 100%;
-      max-width: 480px;
-      height: 52px;
-      border: 2.5px solid var(--border);
-      background: transparent;
-      color: var(--fg);
-      font: 600 16px "Geologica", sans-serif;
-      padding: 0;
-      border-radius: 0;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    @media (min-width: 768px) {
-      .gate {
-        font-size: 17px;
-      }
-    }
-    .gate-text { padding: 0 20px 0 14px; text-align: left; flex: 1 1 auto; display: flex; align-items: center; }
-    @media (min-width: 768px) {
-      .gate-text { padding: 0 20px 0 16px; }
-    }
-    .gate-arrow {
-      display: grid;
-      place-items: center;
-      width: 52px;
-      border-left: 2.5px solid var(--border);
-      font-size: 18px;
-      line-height: 1;
-      user-select: none;
-    }
-    @media (min-width: 768px) {
-      .gate-arrow {
-        width: 43px;
-        font-size: 20px;
-      }
-    }
-    .gate:hover { background: rgba(0,0,0,.035); }
-
-    /* Footer */
+    /* FOOTER - Orange with asymmetric rounded shape like Shopify */
     footer {
-      text-align: center;
-      padding: 20px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 400;
-      border-top: 2.5px solid var(--border);
+      background: var(--brand-orange);
+      color: var(--white);
+      padding: 45px 40px 20px;
+      border-radius: 200px 16px 16px 200px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 144px;
     }
     @media (min-width: 768px) {
       footer {
-        padding: 24px;
-        font-size: 13px;
+        padding: 63px 60px 24px;
+        min-height: 207px;
+        border-radius: 300px 16px 16px 300px;
       }
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      flex: 1;
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 24px;
+      flex: 1;
+    }
+    @media (min-width: 768px) {
+      .footer-right {
+        gap: 32px;
+      }
+    }
+
+    .footer-right-text {
+      text-align: right;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-top: 128px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .footer-logo {
+        height: 160px;
+        margin-top: 160px;
+        margin-bottom: 0;
+      }
+    }
+
+    footer p {
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    footer a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 
@@ -537,148 +567,155 @@
 </head>
 
 <body>
-  <nav class="nav">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/blog/" class="active">Blog</a></li>
-      <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
-    </ul>
-  </nav>
-
-  <div class="breadcrumbs">
-    <a href="/">Home</a>
-    <span>→</span>
-    <a href="/blog/">Blog</a>
-    <span>→</span>
-    <span>Organ-Based Nutrition for Dogs</span>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+        </div>
+      </div>
+    </header>
   </div>
 
-  <article>
-    <div class="article-meta">December 5, 2024</div>
+  <main>
+    <article>
+    <div class="article-header">
+      <div class="article-meta">December 5, 2024</div>
+      <h1>The Real Benefits of Organ-Based Nutrition for Dogs</h1>
+      <p class="article-intro">When wild canines hunted, they didn't head straight for lean muscle meat. They went for the organs first. Instinctively, they prioritized the most nutrient-dense parts of the animal—liver, heart, kidney, spleen—because those organs delivered concentrated building blocks for energy, resilience, and long-term health. Today, most dogs don't get those nutrients in meaningful amounts, which is why organ-based nutrition is gaining recognition among owners who want to support their dog's vitality in a more natural way.</p>
+    </div>
 
-    <h1>The Real Benefits of Organ-Based Nutrition for Dogs</h1>
+    <div class="article-content">
+      <p><a href="/ingredient-analyzer/ingredients/beef-liver/">Liver</a>, for example, is exponentially more nutrient-dense than muscle meat—containing up to <strong>50x more vitamin A</strong> and <strong>30x more B12</strong>, along with substantially higher levels of other B vitamins, iron, zinc, and CoQ10. Yet most modern dog diets contain little to no organ meat.</p>
 
-    <p>When wild canines hunted, they didn't head straight for lean muscle meat. They went for the organs first. Instinctively, they prioritized the most nutrient-dense parts of the animal—liver, heart, kidney, spleen—because those organs delivered concentrated building blocks for energy, resilience, and long-term health. Today, most dogs don't get those nutrients in meaningful amounts, which is why organ-based nutrition is gaining recognition among owners who want to support their dog's vitality in a more natural way.</p>
+      <p>Organ nutrients stand out not just because they're dense, but because they're usable. They provide vitamins, minerals, amino acids, antioxidants, and co-factors in forms a dog's body can easily absorb and put to work. For dogs who need support with energy, digestion, skin, or daily resilience, whole-food organ nutrients can offer benefits you can actually see in your dog over time.</p>
 
-    <p><a href="/ingredient-analyzer/ingredients/beef-liver/">Liver</a>, for example, is exponentially more nutrient-dense than muscle meat—containing up to <strong>50x more vitamin A</strong> and <strong>30x more B12</strong>, along with substantially higher levels of other B vitamins, iron, zinc, and CoQ10. Yet most modern dog diets contain little to no organ meat.</p>
+      <h2>Why Whole-Food Nutrients Matter for Dogs</h2>
 
-    <p>Organ nutrients stand out not just because they're dense, but because they're usable. They provide vitamins, minerals, amino acids, antioxidants, and co-factors in forms a dog's body can easily absorb and put to work. For dogs who need support with energy, digestion, skin, or daily resilience, whole-food organ nutrients can offer benefits you can actually see in your dog over time.</p>
+      <p>Nutrition is only as good as what the body can absorb. Organ nutrients are bundled with natural enzymes and co-factors that support <a href="/blog/whole-food-vs-synthetic-nutrients.html">bioavailability</a>—the body recognizes the structure of these nutrients and puts them to use efficiently. That means more real benefit from smaller, more concentrated amounts. This is especially relevant for dogs that struggle with digestion, have high activity demands, or are getting older and need extra nutritional support to stay at their best.</p>
 
-    <h2>Why Whole-Food Nutrients Matter for Dogs</h2>
-
-    <p>Nutrition is only as good as what the body can absorb. Organ nutrients are bundled with natural enzymes and co-factors that support <a href="/blog/whole-food-vs-synthetic-nutrients.html">bioavailability</a>—the body recognizes the structure of these nutrients and puts them to use efficiently. That means more real benefit from smaller, more concentrated amounts. This is especially relevant for dogs that struggle with digestion, have high activity demands, or are getting older and need extra nutritional support to stay at their best.</p>
-
-    <div class="callout">
-      <h3 style="margin-top: 0; font-size: 18px;">Organ Meat vs. Muscle Meat: Nutrient Density</h3>
-      <div style="margin-top: 12px;">
-        <div style="margin-bottom: 8px;"><strong>Vitamin A:</strong> Liver has 50x more than muscle meat</div>
-        <div style="margin-bottom: 8px;"><strong>Iron:</strong> Organ meat contains heme iron (over 2x more iron, 3x more bioavailable)</div>
-        <div style="margin-bottom: 8px;"><strong>B12:</strong> Liver provides 30x more than beef</div>
-        <div><strong>CoQ10:</strong> Heart contains 10x more than muscle tissue</div>
+      <div class="callout">
+        <h3 style="margin-top: 0; font-size: 18px;">Organ Meat vs. Muscle Meat: Nutrient Density</h3>
+        <div style="margin-top: 12px;">
+          <div style="margin-bottom: 8px;"><strong>Vitamin A:</strong> Liver has 50x more than muscle meat</div>
+          <div style="margin-bottom: 8px;"><strong>Iron:</strong> Organ meat contains heme iron (over 2x more iron, 3x more bioavailable)</div>
+          <div style="margin-bottom: 8px;"><strong>B12:</strong> Liver provides 30x more than beef</div>
+          <div><strong>CoQ10:</strong> Heart contains 10x more than muscle tissue</div>
+        </div>
       </div>
+
+      <h2>Real, Visible Benefits of Organ-Based Nutrition</h2>
+
+      <p>Different organs bring different advantages, but they tend to support the areas of health dog owners care about most.</p>
+
+      <h3>Steadier Energy and Endurance</h3>
+
+      <p><a href="/ingredient-analyzer/ingredients/beef-heart/">Heart</a> and <a href="/ingredient-analyzer/ingredients/beef-liver/">liver</a> are rich in key nutrients like CoQ10, B vitamins, and heme iron, which help fuel cellular energy. Many owners notice better stamina on walks, improved willingness to play, and fewer afternoon slow-downs. Liver is particularly high in vitamin A and iron, while heart delivers concentrated CoQ10 for mitochondrial support.</p>
+
+      <h3>Digestive Support</h3>
+
+      <p>Organs like pancreas and tripe naturally contain enzymes and gentle proteins that can complement the gut's own work. When dogs digest their food more effectively, you often see it in their stool quality, appetite, and overall comfort.</p>
+
+      <h3>Healthy Skin and Coat</h3>
+
+      <p>Fat-soluble vitamins and trace minerals found in organs—especially liver and kidney—play a role in skin health and coat shine. It's a natural way to support a healthier skin barrier from the inside out.</p>
+
+      <h3>Resilient Immune Function</h3>
+
+      <p><a href="/ingredient-analyzer/ingredients/beef-kidney/">Kidney</a> and spleen offer minerals and bioactive compounds tied to immune resilience. Kidney is particularly rich in selenium, which supports immune function. They help the body manage inflammation, environmental stressors, and day-to-day immune demands.</p>
+
+      <h3>Comfortable Movement</h3>
+
+      <p>Heart, connective tissues, and certain organ peptides can help support joint comfort and mobility, particularly for older dogs or those with active lifestyles.</p>
+
+      <h2>Why Bioavailability Matters More Than "More Nutrients"</h2>
+
+      <p>Nutrient density alone doesn't drive results—usability does. Many synthetic nutrients added to modern diets exist as isolated fragments that don't resemble their natural form. Organ nutrients, by contrast, arrive as part of a whole system. That means the body doesn't have to work as hard to convert or assemble what it needs. The result is a smoother path from nutrient → absorption → benefit.</p>
+
+      <p>This is one of the key reasons <a href="/blog/why-dogs-need-supplements.html">why supplements can make sense even with complete and balanced food</a>—whole-food sources simply deliver more usable nutrition.</p>
+
+      <h2>How to Introduce Organ Nutrition Safely</h2>
+
+      <p>You don't need large amounts to make a meaningful impact. A little, used consistently, goes a long way.</p>
+
+      <ul>
+        <li><strong>Start with 5-10% of daily food intake,</strong> then gradually increase over 7-10 days. Watch for changes in stool consistency as a sign your dog is adjusting well.</li>
+        <li><strong>Rotate different organs for broader coverage.</strong> <a href="/ingredient-analyzer/ingredients/beef-liver/">Liver</a> for vitamin A, <a href="/ingredient-analyzer/ingredients/beef-heart/">heart</a> for CoQ10, <a href="/ingredient-analyzer/ingredients/beef-kidney/">kidney</a> for selenium—variety ensures your dog gets a full spectrum of nutrients.</li>
+        <li><strong>Choose clean, minimally processed, responsibly sourced ingredients.</strong> Grass-fed and air-dried options preserve maximum nutrient density.</li>
+        <li><strong>Pay attention to your dog's coat, digestion, energy, and mobility</strong> over a few weeks. Real results take time, but they're often visible.</li>
+      </ul>
+
+      <p>The goal isn't to overhaul the bowl. It's to elevate it, one smart addition at a time.</p>
+
+      <div class="callout" style="background: #f5f5f5; border-left: 4px solid var(--brand-orange); padding: 20px; margin: 24px 0;">
+        <p style="margin: 0;"><strong>Check What's In Your Dog's Food:</strong> Use our <a href="/ingredient-analyzer/">free ingredient analyzer</a> to see if your dog's current food contains organ meats and other whole-food ingredients.</p>
+      </div>
+
+      <h2>Where Watts Fits In</h2>
+
+      <p>At Watts, we believe dogs deserve nutrition that works with their biology—not against it. Watts is made from grass-fed beef liver, heart, and kidney—air-dried to preserve maximum nutrient density. Every bite delivers organ nutrition in its most bioavailable form, with none of the prep work or guesswork of raw feeding.</p>
+
+      <p>We focus on whole-food, highly bioavailable nutrients that support daily vitality through simple, sustainable habits. Our approach is grounded in nature, backed by research, and built for dog owners who want to support long-term health without overcomplicating daily care.</p>
+
+      <h2>The Bottom Line</h2>
+
+      <p>Organ-based nutrition is one of the most natural ways to give dogs concentrated, usable nutrients that support energy, digestion, skin, immunity, and overall vitality. It's a small daily choice that can add up to real benefits over time.</p>
     </div>
 
-    <h2>Real, Visible Benefits of Organ-Based Nutrition</h2>
-
-    <p>Different organs bring different advantages, but they tend to support the areas of health dog owners care about most.</p>
-
-    <h3>Steadier Energy and Endurance</h3>
-
-    <p><a href="/ingredient-analyzer/ingredients/beef-heart/">Heart</a> and <a href="/ingredient-analyzer/ingredients/beef-liver/">liver</a> are rich in key nutrients like CoQ10, B vitamins, and heme iron, which help fuel cellular energy. Many owners notice better stamina on walks, improved willingness to play, and fewer afternoon slow-downs. Liver is particularly high in vitamin A and iron, while heart delivers concentrated CoQ10 for mitochondrial support.</p>
-
-    <h3>Digestive Support</h3>
-
-    <p>Organs like pancreas and tripe naturally contain enzymes and gentle proteins that can complement the gut's own work. When dogs digest their food more effectively, you often see it in their stool quality, appetite, and overall comfort.</p>
-
-    <h3>Healthy Skin and Coat</h3>
-
-    <p>Fat-soluble vitamins and trace minerals found in organs—especially liver and kidney—play a role in skin health and coat shine. It's a natural way to support a healthier skin barrier from the inside out.</p>
-
-    <h3>Resilient Immune Function</h3>
-
-    <p><a href="/ingredient-analyzer/ingredients/beef-kidney/">Kidney</a> and spleen offer minerals and bioactive compounds tied to immune resilience. Kidney is particularly rich in selenium, which supports immune function. They help the body manage inflammation, environmental stressors, and day-to-day immune demands.</p>
-
-    <h3>Comfortable Movement</h3>
-
-    <p>Heart, connective tissues, and certain organ peptides can help support joint comfort and mobility, particularly for older dogs or those with active lifestyles.</p>
-
-    <h2>Why Bioavailability Matters More Than "More Nutrients"</h2>
-
-    <p>Nutrient density alone doesn't drive results—usability does. Many synthetic nutrients added to modern diets exist as isolated fragments that don't resemble their natural form. Organ nutrients, by contrast, arrive as part of a whole system. That means the body doesn't have to work as hard to convert or assemble what it needs. The result is a smoother path from nutrient → absorption → benefit.</p>
-
-    <p>This is one of the key reasons <a href="/blog/why-dogs-need-supplements.html">why supplements can make sense even with complete and balanced food</a>—whole-food sources simply deliver more usable nutrition.</p>
-
-    <h2>How to Introduce Organ Nutrition Safely</h2>
-
-    <p>You don't need large amounts to make a meaningful impact. A little, used consistently, goes a long way.</p>
-
-    <ul>
-      <li><strong>Start with 5-10% of daily food intake,</strong> then gradually increase over 7-10 days. Watch for changes in stool consistency as a sign your dog is adjusting well.</li>
-      <li><strong>Rotate different organs for broader coverage.</strong> <a href="/ingredient-analyzer/ingredients/beef-liver/">Liver</a> for vitamin A, <a href="/ingredient-analyzer/ingredients/beef-heart/">heart</a> for CoQ10, <a href="/ingredient-analyzer/ingredients/beef-kidney/">kidney</a> for selenium—variety ensures your dog gets a full spectrum of nutrients.</li>
-      <li><strong>Choose clean, minimally processed, responsibly sourced ingredients.</strong> Grass-fed and air-dried options preserve maximum nutrient density.</li>
-      <li><strong>Pay attention to your dog's coat, digestion, energy, and mobility</strong> over a few weeks. Real results take time, but they're often visible.</li>
-    </ul>
-
-    <p>The goal isn't to overhaul the bowl. It's to elevate it, one smart addition at a time.</p>
-
-    <div class="callout" style="background: #f5f5f5; border-left: 4px solid var(--fg); padding: 20px; margin: 24px 0;">
-      <p style="margin: 0;"><strong>Check What's In Your Dog's Food:</strong> Use our <a href="/ingredient-analyzer/">free ingredient analyzer</a> to see if your dog's current food contains organ meats and other whole-food ingredients.</p>
-    </div>
-
-    <h2>Where Watts Fits In</h2>
-
-    <p>At Watts, we believe dogs deserve nutrition that works with their biology—not against it. Watts is made from grass-fed beef liver, heart, and kidney—air-dried to preserve maximum nutrient density. Every bite delivers organ nutrition in its most bioavailable form, with none of the prep work or guesswork of raw feeding.</p>
-
-    <p>We focus on whole-food, highly bioavailable nutrients that support daily vitality through simple, sustainable habits. Our approach is grounded in nature, backed by research, and built for dog owners who want to support long-term health without overcomplicating daily care.</p>
-
-    <h2>The Bottom Line</h2>
-
-    <p>Organ-based nutrition is one of the most natural ways to give dogs concentrated, usable nutrients that support energy, digestion, skin, immunity, and overall vitality. It's a small daily choice that can add up to real benefits over time.</p>
-
-    <!-- FAQ Section -->
     <div class="faq-section">
       <h2>Frequently Asked Questions</h2>
 
       <div class="faq-item">
-        <div class="faq-question">What organs are best for dogs?</div>
-        <div class="faq-answer">Liver is the most nutrient-dense organ, providing vitamin A, B vitamins, iron, and zinc. Heart is rich in CoQ10 and supports energy. Kidney offers selenium and supports immune function. A rotation of liver, heart, and kidney provides the broadest nutrient coverage.</div>
+        <h3>What organs are best for dogs?</h3>
+        <p>Liver is the most nutrient-dense organ, providing vitamin A, B vitamins, iron, and zinc. Heart is rich in CoQ10 and supports energy. Kidney offers selenium and supports immune function. A rotation of liver, heart, and kidney provides the broadest nutrient coverage.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">How much organ meat should I feed my dog?</div>
-        <div class="faq-answer">Start with 5-10% of your dog's daily food intake. Introduce gradually over 7-10 days and watch for changes in stool consistency. Many dogs do well with organ meat comprising 10-15% of their overall diet once fully adjusted.</div>
+        <h3>How much organ meat should I feed my dog?</h3>
+        <p>Start with 5-10% of your dog's daily food intake. Introduce gradually over 7-10 days and watch for changes in stool consistency. Many dogs do well with organ meat comprising 10-15% of their overall diet once fully adjusted.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Can organ meat replace my dog's regular food?</div>
-        <div class="faq-answer">No. Organ meat is a supplement, not a complete diet. It should complement a complete and balanced dog food, not replace it. Think of organs as a nutrient-dense addition that fills nutritional gaps and optimizes what your dog already eats.</div>
+        <h3>Can organ meat replace my dog's regular food?</h3>
+        <p>No. Organ meat is a supplement, not a complete diet. It should complement a complete and balanced dog food, not replace it. Think of organs as a nutrient-dense addition that fills nutritional gaps and optimizes what your dog already eats.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Are there any risks to feeding organ meat to dogs?</div>
-        <div class="faq-answer">When introduced gradually and fed in appropriate amounts (5-15% of diet), organ meat is safe for most dogs. Too much liver can lead to vitamin A toxicity, which is why moderation and variety matter. Always choose high-quality, responsibly sourced organs and consult your vet if your dog has specific health conditions.</div>
+        <h3>Are there any risks to feeding organ meat to dogs?</h3>
+        <p>When introduced gradually and fed in appropriate amounts (5-15% of diet), organ meat is safe for most dogs. Too much liver can lead to vitamin A toxicity, which is why moderation and variety matter. Always choose high-quality, responsibly sourced organs and consult your vet if your dog has specific health conditions.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Is organ meat better than synthetic vitamin supplements?</div>
-        <div class="faq-answer">Organ meat provides vitamins and minerals in their natural food matrix, along with enzymes, amino acids, and co-factors that improve absorption and utilization. Synthetic supplements deliver isolated nutrients without these supporting compounds. Research shows that whole-food nutrients are absorbed 40-60% more efficiently than synthetic forms, and they're gentler on the digestive system. Organ meat also provides benefits you won't find in a pill — like CoQ10, heme iron, and bioactive peptides that support energy, immunity, and cellular function.</div>
+        <h3>Is organ meat better than synthetic vitamin supplements?</h3>
+        <p>Organ meat provides vitamins and minerals in their natural food matrix, along with enzymes, amino acids, and co-factors that improve absorption and utilization. Synthetic supplements deliver isolated nutrients without these supporting compounds. Research shows that whole-food nutrients are absorbed 40-60% more efficiently than synthetic forms, and they're gentler on the digestive system. Organ meat also provides benefits you won't find in a pill — like CoQ10, heme iron, and bioactive peptides that support energy, immunity, and cellular function.</p>
       </div>
     </div>
+    </article>
+  </main>
 
-    <!-- CTA Section -->
-    <div class="cta-section">
-      <p><strong>Give your dog the nutrients nature intended.</strong></p>
-      <p>Join the waitlist for Watts — grass-fed organ nutrition in its most bioavailable form.</p>
-
-      <a href="/" class="gate">
-        <span class="gate-text">Notify me at launch</span>
-        <span class="gate-arrow" aria-hidden="true">→</span>
-      </a>
-    </div>
-  </article>
-
-  <footer>© <span id="year"></span> Watts Pet</footer>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
+      </div>
+    </footer>
+  </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();

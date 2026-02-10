@@ -1,376 +1,718 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green-Lipped Mussel for Dogs: Benefits, Dosing & Research-Backed Results</title>
-    <meta name="description" content="Green-lipped mussel provides natural glucosamine, chondroitin, omega-3s (including rare ETA), and GAGs for joint health in dogs. Learn about benefits, research, dosing, powder vs oil forms, and quality factors.">
-    <link rel="canonical" href="https://wattspet.com/blog/green-lipped-mussel-for-dogs.html">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Green-Lipped Mussel for Dogs: Benefits, Dosing & Research-Backed Results</title>
+  <meta name="description" content="Green-lipped mussel provides natural glucosamine, chondroitin, omega-3s (including rare ETA), and GAGs for joint health in dogs. Learn about benefits, research, dosing, powder vs oil forms, and quality factors.">
+  <link rel="canonical" href="https://wattspet.com/blog/green-lipped-mussel-for-dogs.html">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Ahrefs Analytics -->
+  <script src="https://analytics.ahrefs.com/analytics.js" data-key="22KmtuYXO77ED5o6fe6z1w" async></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C6KV5WBGK5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-C6KV5WBGK5');
+  </script>
+
+  <!-- Degular Font -->
   <style>
-    :root {
-      --bg: #F1ECE9;
-      --fg: #191919;
-      --muted: #3a3a3a;
-      --border: #191919;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body { min-height: 100%; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Regular.woff2') format('woff2');
       font-weight: 400;
-      line-height: 1.6;
-      overflow-x: hidden;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
     }
 
-    /* Navigation */
-    nav.nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px 20px;
-      border-bottom: 2.5px solid var(--border);
+    :root {
+      --brand-orange: #c03800;
+      --bg-light: #f1f1f1;
+      --text-dark: #191919;
+      --white: #ffffff;
+      --text-muted: #666666;
+      --border-light: rgba(25, 25, 25, 0.1);
+      --accent-navy: #1e3a5f;
     }
-    @media (min-width: 768px) {
-      nav.nav {
-        padding: 24px 20px;
-      }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    nav.nav ul {
-      list-style: none;
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      background: #191919;
+      color: var(--text-dark);
+      font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* HEADER WRAPPER - Black background */
+    .header-wrapper {
+      background: #191919;
+      padding: 12px 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    /* ORANGE HEADER - Rounded like Shopify site */
+    header {
+      background: var(--brand-orange);
+      padding: 7px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
-      gap: 24px;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-height: 40px;
+    }
+
+    /* Nav on the LEFT */
+    nav {
+      order: -1;
+      display: flex;
       align-items: center;
     }
-    @media (min-width: 768px) {
-      nav.nav ul {
-        gap: 32px;
-      }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
     }
-    nav.nav a {
-      color: var(--fg);
+    @media (min-width: 768px) {
+      nav ul { gap: 24px; }
+    }
+
+    nav li {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--white);
       text-decoration: none;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 500;
-      white-space: nowrap;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
     }
     @media (min-width: 768px) {
-      nav.nav a {
-        font-size: 17px;
+      nav a { font-size: 15px; }
+    }
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    /* Logo CENTERED */
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo {
+      height: 32px;
+    }
+    @media (min-width: 768px) {
+      .logo { height: 40px; }
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 900px;
+      margin: 16px auto 40px;
+      padding: 0 20px;
+      background: var(--bg-light);
+    }
+    @media (min-width: 768px) {
+      main {
+        margin: 20px auto 60px;
+        padding: 0 40px;
       }
     }
-    nav.nav a:hover {
-      text-decoration: underline;
+
+    article {
+      background: var(--white);
+      padding: 40px 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    @media (min-width: 768px) {
+      article {
+        padding: 60px 50px;
+      }
     }
 
     .article-header {
-      max-width: 800px;
-      margin: 48px auto;
-      padding: 0 20px;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--border-light);
     }
 
-    .article-header h1 {
-      font-size: 36px;
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
       line-height: 1.2;
-      margin-bottom: 24px;
-      font-weight: 600;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+      color: var(--text-dark);
     }
-
     @media (min-width: 768px) {
-      .article-header h1 {
+      h1 {
         font-size: 48px;
+        margin-bottom: 20px;
       }
     }
 
     .article-meta {
-      color: var(--muted);
-      font-size: 15px;
-      margin-bottom: 32px;
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 24px;
     }
 
+    .article-intro {
+      font-size: 19px;
+      font-weight: 500;
+      line-height: 1.6;
+      color: var(--text-muted);
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .article-intro {
+        font-size: 21px;
+      }
+    }
+
+    .article-intro a {
+      color: var(--accent-navy);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    .article-intro a:hover {
+      opacity: 0.7;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 56px 0 24px;
+      letter-spacing: -0.01em;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h2 {
+        font-size: 36px;
+        margin: 64px 0 28px;
+      }
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 40px 0 16px;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h3 {
+        font-size: 28px;
+        margin: 48px 0 20px;
+      }
+    }
+
+    h4 {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.4;
+      margin: 32px 0 16px;
+      color: var(--text-dark);
+    }
+
+    p {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      p {
+        font-size: 18px;
+        margin-bottom: 24px;
+      }
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    a:hover {
+      opacity: 0.7;
+    }
+
+    ul, ol {
+      margin: 24px 0;
+      padding-left: 28px;
+    }
+
+    li {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+    @media (min-width: 768px) {
+      li {
+        font-size: 18px;
+      }
+    }
+
+    /* LIGHT CALLOUT BOX */
     .callout {
-      background: rgba(25, 25, 25, 0.05);
-      border-left: 4px solid var(--border);
-      padding: 20px 24px;
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
+      padding: 24px 28px;
       margin: 32px 0;
     }
-
-    .callout p:first-of-type {
-      margin-top: 0;
+    @media (min-width: 768px) {
+      .callout {
+        padding: 28px 32px;
+      }
     }
 
     .callout p:last-child {
       margin-bottom: 0;
     }
 
-    .warning {
-      background: rgba(255, 100, 100, 0.1);
-      border-left: 4px solid #ff6464;
-      padding: 20px 24px;
-      margin: 32px 0;
-    }
-
-    .article-content {
-      max-width: 800px;
-      margin: 0 auto 80px;
-      padding: 0 20px;
-    }
-
-    .article-content h2 {
-      font-size: 32px;
-      margin: 48px 0 24px 0;
-      font-weight: 600;
-      line-height: 1.3;
-    }
-
-    .article-content h3 {
-      font-size: 24px;
-      margin: 36px 0 16px 0;
-      font-weight: 600;
-    }
-
-    .article-content h4 {
-      font-size: 20px;
-      margin: 24px 0 12px 0;
-      font-weight: 600;
-    }
-
-    .article-content p {
-      margin: 16px 0;
-      font-size: 17px;
-      line-height: 1.7;
-    }
-
-    .article-content ul, .article-content ol {
-      margin: 16px 0;
-      padding-left: 24px;
-    }
-
-    .article-content li {
-      margin: 8px 0;
-      font-size: 17px;
-      line-height: 1.7;
-    }
-
-    .article-content a {
-      color: var(--fg);
-      text-decoration: underline;
-    }
-
-    .article-content a:hover {
-      text-decoration: none;
-    }
-
-    .article-content strong {
-      font-weight: 600;
-    }
-
+    /* TABLE */
     table {
       width: 100%;
       border-collapse: collapse;
-      margin: 24px 0;
+      margin: 32px 0;
       font-size: 16px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
-
     @media (min-width: 768px) {
       table {
         font-size: 17px;
       }
     }
 
+    thead {
+      background: var(--brand-orange);
+      color: var(--white);
+      font-weight: 700;
+    }
+
     th, td {
       text-align: left;
-      padding: 12px 16px;
-      border: 2px solid var(--border);
+      padding: 16px;
+      border-bottom: 1px solid var(--border-light);
+    }
+    @media (min-width: 768px) {
+      th, td {
+        padding: 18px 20px;
+      }
     }
 
-    th {
-      background: rgba(25, 25, 25, 0.05);
-      font-weight: 600;
+    tbody tr:last-child td {
+      border-bottom: none;
     }
 
-    tr:nth-child(even) {
-      background: rgba(25, 25, 25, 0.02);
+    tbody tr {
+      background: var(--white);
+      transition: background 0.2s ease;
     }
 
+    tbody tr:hover {
+      background: rgba(192, 56, 0, 0.02);
+    }
+
+    /* FAQ SECTION */
+    .faq-section {
+      margin-top: 64px;
+      padding-top: 56px;
+      border-top: 3px solid var(--border-light);
+    }
+
+    .faq-item {
+      margin-bottom: 32px;
+      padding: 28px;
+      background: var(--bg-light);
+      border-radius: 12px;
+      border-left: 4px solid var(--brand-orange);
+    }
+
+    .faq-item h3 {
+      font-size: 20px;
+      margin: 0 0 16px 0;
+      color: var(--brand-orange);
+    }
+    @media (min-width: 768px) {
+      .faq-item h3 {
+        font-size: 23px;
+      }
+    }
+
+    .faq-item p {
+      margin-bottom: 0;
+    }
+
+    /* Related Articles */
+    .related-articles {
+      margin-top: 64px;
+      padding: 16px 20px;
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
+    }
+
+    .related-articles h3 {
+      font-size: 20px;
+      margin: 0 0 8px 0;
+      color: var(--brand-orange);
+    }
+    @media (min-width: 768px) {
+      .related-articles h3 {
+        font-size: 23px;
+      }
+    }
+
+    .related-articles ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .related-articles li {
+      margin-bottom: 12px;
+      padding-left: 0;
+    }
+
+    .related-articles a {
+      color: var(--accent-navy);
+      text-decoration: underline;
+      font-size: 16px;
+    }
+
+    /* FOOTER WRAPPER - Black background */
+    .footer-wrapper {
+      background: #191919;
+      padding: 0 12px 12px;
+      margin-top: 80px;
+    }
+
+    /* FOOTER - Orange with asymmetric rounded shape like Shopify */
     footer {
-      border-top: 2.5px solid var(--border);
-      padding: 32px 20px;
-      text-align: center;
-      color: var(--muted);
+      background: var(--brand-orange);
+      color: var(--white);
+      padding: 45px 40px 20px;
+      border-radius: 200px 16px 16px 200px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 144px;
+    }
+    @media (min-width: 768px) {
+      footer {
+        padding: 63px 60px 24px;
+        min-height: 207px;
+        border-radius: 300px 16px 16px 300px;
+      }
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      flex: 1;
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 24px;
+      flex: 1;
+    }
+    @media (min-width: 768px) {
+      .footer-right {
+        gap: 32px;
+      }
+    }
+
+    .footer-right-text {
+      text-align: right;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-top: 128px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .footer-logo {
+        height: 160px;
+        margin-top: 160px;
+        margin-bottom: 0;
+      }
+    }
+
+    footer p {
+      color: var(--white);
       font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    footer a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Green-Lipped Mussel for Dogs: Benefits, Dosing & Research-Backed Results",
+    "description": "Green-lipped mussel provides natural glucosamine, chondroitin, omega-3s (including rare ETA), and GAGs for joint health in dogs. Learn about benefits, research, dosing, powder vs oil forms, and quality factors.",
+    "author": {
+      "@type": "Organization",
+      "name": "Watts Pet",
+      "url": "https://wattspet.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Watts Pet",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://wattspet.com/logo.png"
+      }
+    },
+    "datePublished": "2026-01-22",
+    "dateModified": "2026-01-22"
+  }
+  </script>
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "Green-Lipped Mussel for Dogs: Benefits, Dosing & Research-Backed Results",
-      "description": "Green-lipped mussel provides natural glucosamine, chondroitin, omega-3s (including rare ETA), and GAGs for joint health in dogs. Learn about benefits, research, dosing, powder vs oil forms, and quality factors.",
-      "author": {
-        "@type": "Organization",
-        "name": "Watts Pet",
-        "url": "https://wattspet.com"
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://wattspet.com"
       },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Watts Pet",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://wattspet.com/logo.png"
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://wattspet.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Green-Lipped Mussel for Dogs",
+        "item": "https://wattspet.com/blog/green-lipped-mussel-for-dogs.html"
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is green-lipped mussel for dogs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Green-lipped mussel (Perna canaliculus) is a shellfish native to New Zealand that naturally contains glucosamine, chondroitin, omega-3 fatty acids (including rare ETA - eicosatetraenoic acid), and glycosaminoglycans (GAGs). It's one of the most effective whole-food joint supplements for dogs because it provides multiple joint-supporting compounds in bioavailable forms. Research shows it reduces arthritis pain, improves mobility, and decreases inflammation in dogs with osteoarthritis."
         }
       },
-      "datePublished": "2026-01-22",
-      "dateModified": "2026-01-22"
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://wattspet.com"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Blog",
-          "item": "https://wattspet.com/blog/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Green-Lipped Mussel for Dogs",
-          "item": "https://wattspet.com/blog/green-lipped-mussel-for-dogs.html"
+      {
+        "@type": "Question",
+        "name": "What are the benefits of green-lipped mussel for dogs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Green-lipped mussel benefits for dogs include: reduced joint pain and stiffness in arthritis, improved mobility and activity level, decreased inflammation throughout the body, support for cartilage repair, better skin and coat health (from omega-3s), and reduced need for NSAIDs. It contains ETA (eicosatetraenoic acid), a rare omega-3 that's 10-30x more potent than EPA at reducing inflammation. Studies show improvements in 4-6 weeks when given at therapeutic doses."
         }
-      ]
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is green-lipped mussel for dogs?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Green-lipped mussel (Perna canaliculus) is a shellfish native to New Zealand that naturally contains glucosamine, chondroitin, omega-3 fatty acids (including rare ETA - eicosatetraenoic acid), and glycosaminoglycans (GAGs). It's one of the most effective whole-food joint supplements for dogs because it provides multiple joint-supporting compounds in bioavailable forms. Research shows it reduces arthritis pain, improves mobility, and decreases inflammation in dogs with osteoarthritis."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What are the benefits of green-lipped mussel for dogs?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Green-lipped mussel benefits for dogs include: reduced joint pain and stiffness in arthritis, improved mobility and activity level, decreased inflammation throughout the body, support for cartilage repair, better skin and coat health (from omega-3s), and reduced need for NSAIDs. It contains ETA (eicosatetraenoic acid), a rare omega-3 that's 10-30x more potent than EPA at reducing inflammation. Studies show improvements in 4-6 weeks when given at therapeutic doses."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How much green-lipped mussel should I give my dog?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The recommended dose of green-lipped mussel powder is 15-25 mg per pound of body weight daily. For a 25 lb dog: 375-625 mg daily. For a 50 lb dog: 750-1,250 mg daily. For a 75 lb dog: 1,125-1,875 mg daily. Use freeze-dried powder for best results. Start with lower doses and increase gradually over 1-2 weeks to avoid digestive upset. For prevention in healthy dogs, use half the therapeutic dose. Results typically appear within 4-6 weeks."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is green-lipped mussel powder or oil better for dogs?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Green-lipped mussel powder is better than oil for most dogs. Freeze-dried powder contains the full spectrum of nutrients: glucosamine, chondroitin, omega-3s (EPA, DHA, and ETA), glycosaminoglycans, minerals, and protein. Green-lipped mussel oil contains only the omega-3 fatty acids—it lacks the glucosamine, chondroitin, and GAGs that make the whole mussel so effective for joints. Powder provides comprehensive joint support; oil provides only anti-inflammatory omega-3s. Choose powder unless your dog specifically needs concentrated omega-3s without other nutrients."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does it take for green-lipped mussel to work in dogs?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most dogs show noticeable improvements from green-lipped mussel within 4-6 weeks of daily supplementation at therapeutic doses. Some dogs respond faster (2-3 weeks), while others need 8-10 weeks for full benefits. Early improvements include easier movement after rest and increased willingness to walk. By 6-8 weeks, most dogs show reduced stiffness, better mobility, and improved activity levels. Green-lipped mussel works faster than isolated glucosamine/chondroitin supplements, likely due to better absorption and the synergistic effects of multiple compounds."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is green-lipped mussel safe for dogs?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, green-lipped mussel is very safe for dogs when given at recommended doses. Side effects are rare and usually limited to mild digestive upset (soft stools, gas) if introduced too quickly or given in very high doses. To minimize side effects, start with a lower dose and increase gradually over 1-2 weeks. Avoid green-lipped mussel if your dog has a shellfish allergy. Dogs on blood-thinning medications should be monitored by a vet (omega-3s have mild anticoagulant effects). Green-lipped mussel is safe for long-term use and can be given daily indefinitely."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can puppies take green-lipped mussel?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, green-lipped mussel is safe for puppies, especially large-breed puppies at risk for hip dysplasia or joint issues. It provides omega-3s for brain development and glucosamine/chondroitin for healthy joint formation. However, avoid high doses in rapidly growing puppies—stick to the lower end of the dosing range (15 mg per lb instead of 25 mg per lb). Large-breed puppies (Labradors, German Shepherds, Golden Retrievers, Great Danes) can start green-lipped mussel around 6-8 months. Focus on maintaining healthy weight and controlled exercise alongside supplementation."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is ETA in green-lipped mussel?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "ETA (eicosatetraenoic acid) is a rare omega-3 fatty acid found almost exclusively in green-lipped mussel. It's structurally similar to EPA but has a double bond in a different position, making it 10-30 times more potent at reducing inflammation. ETA inhibits both COX and LOX pathways (enzymes that produce inflammatory compounds), while EPA only inhibits COX. This makes green-lipped mussel more effective than standard fish oil for managing inflammatory conditions like arthritis. The combination of ETA, EPA, and DHA in green-lipped mussel provides superior anti-inflammatory benefits compared to fish oil alone."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Should I give green-lipped mussel with food?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, always give green-lipped mussel powder with food. Mixing it into meals improves absorption (omega-3s are fat-soluble and absorb best with dietary fat), reduces the risk of digestive upset, and makes it more palatable. Sprinkle the powder directly onto food and mix thoroughly. If using capsules, open them and mix the powder into food rather than giving capsules whole. Give with breakfast, dinner, or split the dose between both meals. Avoid giving on an empty stomach, which can cause nausea or soft stools in some dogs."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I give my dog too much green-lipped mussel?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "While green-lipped mussel is very safe, extremely high doses (3-4x the recommended amount) can cause digestive upset, loose stools, or excessive omega-3 intake leading to blood thinning. Stick to recommended doses: 15-25 mg per pound daily. For a 50 lb dog, that's 750-1,250 mg daily—not 3,000-4,000 mg. More is not better. At therapeutic doses, green-lipped mussel is safe for long-term daily use. If your dog develops soft stools or digestive issues, reduce the dose or introduce it more gradually. Dogs on blood-thinning medications should be monitored by a veterinarian."
-          }
+      },
+      {
+        "@type": "Question",
+        "name": "How much green-lipped mussel should I give my dog?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The recommended dose of green-lipped mussel powder is 15-25 mg per pound of body weight daily. For a 25 lb dog: 375-625 mg daily. For a 50 lb dog: 750-1,250 mg daily. For a 75 lb dog: 1,125-1,875 mg daily. Use freeze-dried powder for best results. Start with lower doses and increase gradually over 1-2 weeks to avoid digestive upset. For prevention in healthy dogs, use half the therapeutic dose. Results typically appear within 4-6 weeks."
         }
-      ]
-    }
-    </script>
+      },
+      {
+        "@type": "Question",
+        "name": "Is green-lipped mussel powder or oil better for dogs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Green-lipped mussel powder is better than oil for most dogs. Freeze-dried powder contains the full spectrum of nutrients: glucosamine, chondroitin, omega-3s (EPA, DHA, and ETA), glycosaminoglycans, minerals, and protein. Green-lipped mussel oil contains only the omega-3 fatty acids—it lacks the glucosamine, chondroitin, and GAGs that make the whole mussel so effective for joints. Powder provides comprehensive joint support; oil provides only anti-inflammatory omega-3s. Choose powder unless your dog specifically needs concentrated omega-3s without other nutrients."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take for green-lipped mussel to work in dogs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most dogs show noticeable improvements from green-lipped mussel within 4-6 weeks of daily supplementation at therapeutic doses. Some dogs respond faster (2-3 weeks), while others need 8-10 weeks for full benefits. Early improvements include easier movement after rest and increased willingness to walk. By 6-8 weeks, most dogs show reduced stiffness, better mobility, and improved activity levels. Green-lipped mussel works faster than isolated glucosamine/chondroitin supplements, likely due to better absorption and the synergistic effects of multiple compounds."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is green-lipped mussel safe for dogs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, green-lipped mussel is very safe for dogs when given at recommended doses. Side effects are rare and usually limited to mild digestive upset (soft stools, gas) if introduced too quickly or given in very high doses. To minimize side effects, start with a lower dose and increase gradually over 1-2 weeks. Avoid green-lipped mussel if your dog has a shellfish allergy. Dogs on blood-thinning medications should be monitored by a vet (omega-3s have mild anticoagulant effects). Green-lipped mussel is safe for long-term use and can be given daily indefinitely."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can puppies take green-lipped mussel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, green-lipped mussel is safe for puppies, especially large-breed puppies at risk for hip dysplasia or joint issues. It provides omega-3s for brain development and glucosamine/chondroitin for healthy joint formation. However, avoid high doses in rapidly growing puppies—stick to the lower end of the dosing range (15 mg per lb instead of 25 mg per lb). Large-breed puppies (Labradors, German Shepherds, Golden Retrievers, Great Danes) can start green-lipped mussel around 6-8 months. Focus on maintaining healthy weight and controlled exercise alongside supplementation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is ETA in green-lipped mussel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ETA (eicosatetraenoic acid) is a rare omega-3 fatty acid found almost exclusively in green-lipped mussel. It's structurally similar to EPA but has a double bond in a different position, making it 10-30 times more potent at reducing inflammation. ETA inhibits both COX and LOX pathways (enzymes that produce inflammatory compounds), while EPA only inhibits COX. This makes green-lipped mussel more effective than standard fish oil for managing inflammatory conditions like arthritis. The combination of ETA, EPA, and DHA in green-lipped mussel provides superior anti-inflammatory benefits compared to fish oil alone."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I give green-lipped mussel with food?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, always give green-lipped mussel powder with food. Mixing it into meals improves absorption (omega-3s are fat-soluble and absorb best with dietary fat), reduces the risk of digestive upset, and makes it more palatable. Sprinkle the powder directly onto food and mix thoroughly. If using capsules, open them and mix the powder into food rather than giving capsules whole. Give with breakfast, dinner, or split the dose between both meals. Avoid giving on an empty stomach, which can cause nausea or soft stools in some dogs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I give my dog too much green-lipped mussel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "While green-lipped mussel is very safe, extremely high doses (3-4x the recommended amount) can cause digestive upset, loose stools, or excessive omega-3 intake leading to blood thinning. Stick to recommended doses: 15-25 mg per pound daily. For a 50 lb dog, that's 750-1,250 mg daily—not 3,000-4,000 mg. More is not better. At therapeutic doses, green-lipped mussel is safe for long-term daily use. If your dog develops soft stools or digestive issues, reduce the dose or introduce it more gradually. Dogs on blood-thinning medications should be monitored by a veterinarian."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
+
 <body>
-  <nav class="nav">
-    <ul>
-      <li><a href="https://wattspet.com/">Home</a></li>
-      <li><a href="https://wattspet.com/blog/">Blog</a></li>
-      <li><a href="https://wattspet.com/about.html">About</a></li>
-      <li><a href="https://wattspet.com/feedback.html">Feedback</a></li>
-    </ul>
-  </nav>
-
-  <div class="article-header">
-    <h1>Green-Lipped Mussel for Dogs: Benefits, Dosing & Research-Backed Results</h1>
-    <div class="article-meta">Published January 22, 2026</div>
-
-    <div class="callout">
-      <p style="margin: 0; font-size: 18px;"><strong>🦪 Quick Answer:</strong></p>
-      <p style="margin-top: 12px; margin-bottom: 0;">Green-lipped mussel (Perna canaliculus) from New Zealand is one of the most effective whole-food joint supplements for dogs. It naturally contains <strong>glucosamine, chondroitin, omega-3 fatty acids (including rare ETA), and glycosaminoglycans</strong> in bioavailable forms. Research shows it reduces arthritis pain and improves mobility within <strong>4-6 weeks</strong>. Dose: <strong>15-25 mg per pound daily</strong> using freeze-dried powder.</p>
-    </div>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+        </div>
+      </div>
+    </header>
   </div>
 
-  <div class="article-content">
+  <main>
+    <article>
+    <div class="article-header">
+      <div class="article-meta">January 22, 2026</div>
+      <h1>Green-Lipped Mussel for Dogs: Benefits, Dosing & Research-Backed Results</h1>
+
+      <div class="callout" style="margin-top: 32px; margin-bottom: 40px;">
+        <h2 style="margin-top: 0; font-size: 20px; margin-bottom: 16px;">🦪 Quick Answer:</h2>
+        <p style="margin-bottom: 0; font-size: 18px; font-weight: 600; color: var(--text-dark);">Green-lipped mussel (Perna canaliculus) from New Zealand is one of the most effective whole-food joint supplements for dogs. It naturally contains <strong>glucosamine, chondroitin, omega-3 fatty acids (including rare ETA), and glycosaminoglycans</strong> in bioavailable forms. Research shows it reduces arthritis pain and improves mobility within <strong>4-6 weeks</strong>. Dose: <strong>15-25 mg per pound daily</strong> using freeze-dried powder.</p>
+      </div>
+    </div>
+
+    <div class="article-content">
 
     <h2>What Is Green-Lipped Mussel?</h2>
 
@@ -795,12 +1137,38 @@
 
     <p>Green-lipped mussel is <strong>safe for long-term daily use</strong>, works faster than isolated glucosamine/chondroitin supplements, and provides comprehensive joint support that single-ingredient supplements can't match. For dogs with arthritis or at risk for joint problems, it's one of the most valuable additions to their diet.</p>
 
-    <p><strong>Related:</strong> <a href="https://wattspet.com/blog/joint-supplements-for-dogs.html">Joint Supplements for Dogs</a> | <a href="https://wattspet.com/blog/omega-3-fish-oil-for-dogs.html">Omega-3 for Dogs</a> | <a href="https://wattspet.com/blog/natural-glucosamine-sources-for-dogs.html">Natural Glucosamine Sources</a> | <a href="https://wattspet.com/blog/collagen-for-dogs-benefits.html">Collagen for Dogs</a></p>
+    <div class="related-articles">
+      <h3>Related Articles:</h3>
+      <ul>
+        <li><a href="https://wattspet.com/blog/joint-supplements-for-dogs.html">Best Joint Supplements for Dogs</a></li>
+        <li><a href="https://wattspet.com/blog/omega-3-fish-oil-for-dogs.html">Omega-3 for Dogs</a></li>
+        <li><a href="https://wattspet.com/blog/natural-glucosamine-sources-for-dogs.html">Natural Glucosamine Sources</a></li>
+        <li><a href="https://wattspet.com/blog/collagen-for-dogs-benefits.html">Collagen for Dogs</a></li>
+      </ul>
+    </div>
 
   </div>
+  </article>
+  </main>
 
-  <footer>
-    © 2026 Watts Pet. All rights reserved.
-  </footer>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

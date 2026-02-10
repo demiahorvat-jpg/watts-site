@@ -36,77 +36,165 @@
     gtag('config', 'G-C6KV5WBGK5');
   </script>
 
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
-
+  <!-- Degular Font -->
   <style>
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
     :root {
-      --bg: #F1ECE9;
-      --fg: #191919;
-      --muted: #3a3a3a;
-      --border: #191919;
+      --brand-orange: #c03800;
+      --bg-light: #f1f1f1;
+      --text-dark: #191919;
+      --white: #ffffff;
+      --text-muted: #666666;
+      --border-light: rgba(25, 25, 25, 0.1);
+      --accent-navy: #1e3a5f;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
-    html { height: 100%; }
+    html, body { min-height: 100%; }
     body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: #191919;
+      color: var(--text-dark);
+      font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
       font-weight: 500;
+      line-height: 1.6;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      overflow-x: hidden;
-      min-height: 100%;
     }
 
-    main.wrap {
+    /* HEADER */
+    .header-wrapper {
+      background: #191919;
+      padding: 12px 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header {
+      background: var(--brand-orange);
+      padding: 7px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-height: 40px;
+    }
+
+    nav {
+      order: -1;
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+    @media (min-width: 768px) {
+      nav ul { gap: 24px; }
+    }
+
+    nav li {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
+    }
+    @media (min-width: 768px) {
+      nav a { font-size: 15px; }
+    }
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo {
+      height: 32px;
+    }
+    @media (min-width: 768px) {
+      .logo { height: 40px; }
+    }
+
+    /* MAIN CONTENT */
+    main {
+      flex: 1;
+      background: var(--bg-light);
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      padding: 53px 20px 40px;
+      padding: 40px 20px;
       width: 100%;
-      overflow-x: hidden;
     }
     @media (min-width: 768px) {
-      main.wrap {
-        padding: 80px 16px 60px;
+      main {
+        padding: 60px 20px;
       }
     }
 
-    .logo {
-      margin-bottom: 28px;
-      margin-top: 0;
-      display: flex;
-      justify-content: center;
-    }
-    .logo img {
-      width: 220px;
-      height: auto;
-    }
-    @media (min-width: 768px) {
-      .logo {
-        margin-bottom: 24px;
-        margin-top: 8px;
-      }
-      .logo img {
-        width: 320px;
-      }
-    }
-
-    /* Hero container for consistent aspect ratio */
     .hero {
       margin: 0 0 32px 0;
       width: 100%;
     }
     @media (min-width: 768px) {
       .hero {
-        margin: 0 auto 20px;
+        margin: 0 auto 32px;
         width: 520px;
         max-width: 80vw;
       }
@@ -116,7 +204,7 @@
       width: 100%;
       aspect-ratio: 16 / 8;
       overflow: hidden;
-      border-radius: 0;
+      border-radius: 12px;
     }
     .hero img {
       position: absolute;
@@ -128,18 +216,17 @@
     }
 
     .tagline {
-      font-family: "Geologica", sans-serif;
-      font-size: 18px;
+      font-size: 20px;
       line-height: 1.4;
       font-weight: 700;
-      color: #111111;
+      color: var(--text-dark);
       text-align: center;
       margin: 0 auto 32px;
-      max-width: 280px;
+      max-width: 320px;
     }
     @media (min-width: 768px) {
       .tagline {
-        font-size: 23px;
+        font-size: 26px;
         line-height: 1.25;
         margin: 0 auto 48px;
         max-width: none;
@@ -152,13 +239,13 @@
     }
 
     .learn-more a {
-      color: var(--fg);
+      color: var(--accent-navy);
       text-decoration: underline;
       font-size: 15px;
       font-weight: 500;
       text-decoration-thickness: 1.5px;
       text-underline-offset: 3px;
-      transition: opacity 0.15s;
+      transition: opacity 0.2s;
     }
     .learn-more a:hover {
       opacity: 0.7;
@@ -175,7 +262,6 @@
       width: 100%;
     }
 
-    /* Dual CTA buttons container */
     .cta-buttons {
       display: flex;
       flex-direction: column;
@@ -191,20 +277,22 @@
       }
     }
 
-    /* Individual CTA button */
     .gate {
       display: flex;
       align-items: stretch;
       justify-content: space-between;
       width: 100%;
       height: 52px;
-      border: 2.5px solid var(--border);
-      background: transparent;
-      color: var(--fg);
-      font: 600 16px "Geologica", sans-serif;
+      border: 3px solid var(--brand-orange);
+      background: var(--white);
+      color: var(--text-dark);
+      font-family: 'Degular', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
       padding: 0;
-      border-radius: 0;
+      border-radius: 8px;
       cursor: pointer;
+      transition: background 0.2s;
     }
     @media (min-width: 768px) {
       .gate {
@@ -212,42 +300,47 @@
         font-size: 17px;
       }
     }
-    .gate-text { padding: 0 20px 0 14px; text-align: left; flex: 1 1 auto; display: flex; align-items: center; }
-    @media (min-width: 768px) {
-      .gate-text { padding: 0 20px 0 16px; }
+    .gate-text {
+      padding: 0 20px 0 16px;
+      text-align: left;
+      flex: 1 1 auto;
+      display: flex;
+      align-items: center;
     }
     .gate-arrow {
       display: grid;
       place-items: center;
       width: 52px;
-      border-left: 2.5px solid var(--border);
+      border-left: 3px solid var(--brand-orange);
       font-size: 18px;
       line-height: 1;
       user-select: none;
+      color: var(--brand-orange);
+      font-weight: 700;
     }
     @media (min-width: 768px) {
       .gate-arrow {
-        width: 43px;
+        width: 48px;
         font-size: 20px;
       }
     }
-    .gate:hover { background: rgba(0,0,0,.035); }
+    .gate:hover { background: rgba(192, 56, 0, 0.05); }
 
-    /* Expanded form */
+    /* Form */
     .form {
       display: none;
       width: 100%;
-      border: 2.5px solid var(--border);
-      padding: 20px;
-      border-radius: 0;
-      background: transparent;
+      border: 3px solid var(--brand-orange);
+      padding: 24px;
+      border-radius: 12px;
+      background: var(--white);
       margin-top: 16px;
       box-sizing: border-box;
     }
     @media (min-width: 768px) {
       .form {
         width: min(480px, 88vw);
-        padding: 24px;
+        padding: 28px;
       }
     }
 
@@ -255,11 +348,13 @@
     .form textarea {
       width: 100%;
       padding: 0 16px;
-      border: 2px solid var(--border);
-      border-radius: 0;
-      background: transparent;
-      color: var(--fg);
-      font: 500 16px "Geologica", sans-serif;
+      border: 2px solid var(--border-light);
+      border-radius: 8px;
+      background: var(--bg-light);
+      color: var(--text-dark);
+      font-family: 'Degular', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
       outline: none;
       box-sizing: border-box;
     }
@@ -283,7 +378,8 @@
 
     .form input:focus,
     .form textarea:focus {
-      box-shadow: inset 0 0 0 3px rgba(25,25,25,.15);
+      border-color: var(--brand-orange);
+      box-shadow: 0 0 0 3px rgba(192, 56, 0, 0.1);
     }
 
     .form .field-group {
@@ -298,16 +394,18 @@
       width: 100%;
       height: 52px;
       margin-top: 16px;
-      border: 2.5px solid var(--border);
-      border-radius: 0;
-      background: transparent;
-      color: var(--fg);
-      font: 600 16px "Geologica", sans-serif;
+      border: 3px solid var(--brand-orange);
+      border-radius: 8px;
+      background: var(--brand-orange);
+      color: var(--white);
+      font-family: 'Degular', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
       cursor: pointer;
-      transition: background 0.15s;
+      transition: background 0.2s;
     }
     .submit-btn:hover {
-      background: rgba(0,0,0,.035);
+      background: #a03000;
     }
     @media (min-width: 768px) {
       .submit-btn {
@@ -316,63 +414,111 @@
     }
 
     .small {
-      margin: 10px 2px 0;
+      margin: 12px 0 0;
       text-align: left;
-      font-size: 12px;
-      color: var(--muted);
+      font-size: 13px;
+      color: var(--text-muted);
     }
 
     .thanks {
       margin-top: 16px;
-      padding: 20px;
-      border: 2.5px solid var(--border);
-      font: 500 17px "Geologica", sans-serif;
+      padding: 24px;
+      border: 3px solid var(--brand-orange);
+      border-radius: 12px;
+      background: var(--white);
+      font-weight: 500;
+      font-size: 17px;
       text-align: center;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       .thanks {
-        width: min(600px, 88vw);
+        width: min(480px, 88vw);
       }
     }
 
-    .foot {
-      text-align: center;
-      padding: 20px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 400;
-    }
-    @media (min-width: 768px) {
-      .foot {
-        padding: 24px;
-        font-size: 13px;
-      }
+    /* FOOTER */
+    .footer-wrapper {
+      background: #191919;
+      padding: 0 12px 12px;
+      margin-top: 60px;
     }
 
     footer {
-      width: 100%;
-      padding: 32px 20px 24px;
-      text-align: center;
-      border-top: 1px solid rgba(25, 25, 25, 0.1);
+      background: var(--brand-orange);
+      color: var(--white);
+      padding: 45px 40px 20px;
+      border-radius: 200px 16px 16px 200px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 144px;
     }
     @media (min-width: 768px) {
       footer {
-        padding: 40px 20px 32px;
+        padding: 63px 60px 24px;
+        min-height: 207px;
+        border-radius: 300px 16px 16px 300px;
       }
     }
-    footer p {
-      color: var(--muted);
-      font-size: 14px;
-      font-weight: 400;
-      margin: 0;
+
+    .footer-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
     }
+
+    .footer-left {
+      flex: 1;
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 24px;
+      flex: 1;
+    }
+    @media (min-width: 768px) {
+      .footer-right {
+        gap: 32px;
+      }
+    }
+
+    .footer-right-text {
+      text-align: right;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-top: 128px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .footer-logo {
+        height: 160px;
+        margin-top: 160px;
+        margin-bottom: 0;
+      }
+    }
+
+    footer p {
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
     footer a {
-      color: var(--fg);
+      color: var(--white);
       text-decoration: none;
-      transition: opacity 0.15s;
+      font-weight: 500;
     }
     footer a:hover {
-      opacity: 0.7;
+      text-decoration: underline;
     }
 
     .sr-only {
@@ -386,76 +532,29 @@
       white-space: nowrap;
       border: 0;
     }
-
-    /* Navigation */
-    nav.nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px 20px 0;
-      margin-bottom: 20px;
-    }
-    @media (min-width: 768px) {
-      nav.nav {
-        padding: 32px 20px 0;
-        margin-bottom: 24px;
-      }
-    }
-    nav.nav ul {
-      list-style: none;
-      display: flex;
-      gap: 24px;
-      align-items: center;
-    }
-    @media (min-width: 768px) {
-      nav.nav ul {
-        gap: 32px;
-      }
-    }
-    nav.nav a {
-      color: var(--fg);
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 500;
-      transition: opacity 0.15s;
-      position: relative;
-    }
-    @media (min-width: 768px) {
-      nav.nav a {
-        font-size: 16px;
-      }
-    }
-    nav.nav a:hover {
-      opacity: 0.7;
-    }
-    nav.nav a.active::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: var(--fg);
-    }
   </style>
 </head>
 
 <body>
-  <nav class="nav">
-    <ul>
-      <li><a href="/" class="active">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/blog/">Blog</a></li>
-      <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
-    </ul>
-  </nav>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+        </div>
+      </div>
+    </header>
+  </div>
 
-  <main class="wrap">
-    <h1 class="logo">
-      <img src="assets/file.svg" alt="watts" width="624" height="186">
-      <span class="sr-only">Watts - The life-expanding dog treat</span>
-    </h1>
-
+  <main>
     <figure class="hero">
       <div class="hero-frame">
         <img src="assets/hero.jpg" alt="Happy dog with owner" width="1600" height="1066">
@@ -465,7 +564,6 @@
     <p class="tagline">The life-expanding dog treat – coming soon.</p>
 
     <section class="signup" id="signup">
-      <!-- Dual CTA buttons -->
       <div class="cta-buttons" id="cta-buttons">
         <button class="gate" id="gate-launch" aria-expanded="false" aria-controls="form-launch">
           <span class="gate-text">Notify me at launch</span>
@@ -478,7 +576,6 @@
         </a>
       </div>
 
-      <!-- Early access form -->
       <form id="form-launch" class="form" action="https://formspree.io/f/mjkalgwj" method="POST" novalidate>
         <div class="field-group">
           <label class="sr-only" for="launch-name">Name</label>
@@ -496,26 +593,36 @@
         <p class="small">We'll send you a promo code when we launch.</p>
       </form>
 
-      <!-- Success message -->
       <p id="thanks-launch" class="thanks" role="status" hidden>Thanks! You're on the list ✅</p>
     </section>
   </main>
 
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left"></div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
+      </div>
+    </footer>
+  </div>
+
   <script>
-    // Elements
     const ctaButtons = document.getElementById('cta-buttons');
     const gateLaunch = document.getElementById('gate-launch');
     const formLaunch = document.getElementById('form-launch');
     const thanksLaunch = document.getElementById('thanks-launch');
 
-    // Toggle form visibility
     gateLaunch.addEventListener('click', () => {
       ctaButtons.style.display = 'none';
       formLaunch.style.display = 'block';
       document.getElementById('launch-name').focus();
     });
 
-    // Handle Formspree submission for launch form
     formLaunch.addEventListener('submit', async (e) => {
       e.preventDefault();
       try {
@@ -536,9 +643,5 @@
       }
     });
   </script>
-
-  <footer>
-    <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
-  </footer>
 </body>
 </html>

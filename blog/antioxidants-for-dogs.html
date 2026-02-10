@@ -37,308 +37,549 @@
   <meta property="twitter:description" content="Learn how antioxidants protect dogs from oxidative stress, support aging, immune health, and longevity. Discover the best whole-food sources and why synthetic antioxidants fall short.">
   <meta property="twitter:image" content="https://wattspet.com/images/og-default.jpg">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
-
+  <!-- Degular Font -->
   <style>
-    :root {
-      --bg: #F1ECE9;
-      --fg: #191919;
-      --muted: #3a3a3a;
-      --border: #191919;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body { min-height: 100%; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Regular.woff2') format('woff2');
       font-weight: 400;
-      line-height: 1.6;
-      overflow-x: hidden;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
     }
 
-    /* Navigation */
-    nav.nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px 20px;
-      border-bottom: 2.5px solid var(--border);
+    :root {
+      --brand-orange: #c03800;
+      --bg-light: #f1f1f1;
+      --text-dark: #191919;
+      --white: #ffffff;
+      --text-muted: #666666;
+      --border-light: rgba(25, 25, 25, 0.1);
+      --accent-navy: #1e3a5f;
     }
-    @media (min-width: 768px) {
-      nav.nav {
-        padding: 24px 20px;
-      }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    nav.nav ul {
-      list-style: none;
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      background: #191919;
+      color: var(--text-dark);
+      font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* HEADER WRAPPER - Black background */
+    .header-wrapper {
+      background: #191919;
+      padding: 12px 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    /* ORANGE HEADER - Rounded like Shopify site */
+    header {
+      background: var(--brand-orange);
+      padding: 7px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
-      gap: 24px;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-height: 40px;
+    }
+
+    /* Nav on the LEFT */
+    nav {
+      order: -1;
+      display: flex;
       align-items: center;
     }
-    @media (min-width: 768px) {
-      nav.nav ul {
-        gap: 32px;
-      }
-    }
-    nav.nav a {
-      color: var(--fg);
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 500;
-      transition: opacity 0.15s;
-      position: relative;
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
     }
     @media (min-width: 768px) {
-      nav.nav a {
-        font-size: 16px;
-      }
-    }
-    nav.nav a:hover {
-      opacity: 0.7;
-    }
-    nav.nav a.active::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: var(--fg);
+      nav ul { gap: 24px; }
     }
 
-    /* Article container */
+    nav li {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
+    }
+    @media (min-width: 768px) {
+      nav a { font-size: 15px; }
+    }
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    /* Logo CENTERED */
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo {
+      height: 32px;
+    }
+    @media (min-width: 768px) {
+      .logo { height: 40px; }
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 900px;
+      margin: 16px auto 40px;
+      padding: 0 20px;
+      background: var(--bg-light);
+    }
+    @media (min-width: 768px) {
+      main {
+        margin: 20px auto 60px;
+        padding: 0 40px;
+      }
+    }
+
     article {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px 60px;
+      background: var(--white);
+      padding: 40px 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
       article {
-        padding: 60px 40px 80px;
+        padding: 60px 50px;
       }
     }
 
-    /* Article header */
     .article-header {
-      margin-bottom: 32px;
-    }
-    @media (min-width: 768px) {
-      .article-header {
-        margin-bottom: 40px;
-      }
-    }
-
-    .article-meta {
-      font-size: 13px;
-      color: var(--muted);
-      margin-bottom: 16px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    @media (min-width: 768px) {
-      .article-meta {
-        font-size: 14px;
-        margin-bottom: 20px;
-      }
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--border-light);
     }
 
     h1 {
-      font-family: "Geologica", sans-serif;
       font-size: 32px;
       font-weight: 700;
       line-height: 1.2;
       margin-bottom: 16px;
       letter-spacing: -0.02em;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       h1 {
-        font-size: 42px;
+        font-size: 48px;
         margin-bottom: 20px;
       }
     }
 
+    .article-meta {
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
     .article-intro {
-      font-size: 18px;
+      font-size: 19px;
+      font-weight: 500;
       line-height: 1.6;
-      color: var(--muted);
+      color: var(--text-muted);
+      margin-bottom: 0;
     }
     @media (min-width: 768px) {
       .article-intro {
-        font-size: 20px;
-        line-height: 1.7;
+        font-size: 21px;
       }
     }
 
-    /* Article content */
-    .article-content {
-      font-size: 17px;
-      line-height: 1.7;
-    }
-    @media (min-width: 768px) {
-      .article-content {
-        font-size: 18px;
-        line-height: 1.8;
-      }
-    }
-
-    .article-content h2 {
-      font-size: 26px;
-      font-weight: 700;
-      line-height: 1.3;
-      margin: 48px 0 20px;
-      letter-spacing: -0.01em;
-    }
-    @media (min-width: 768px) {
-      .article-content h2 {
-        font-size: 30px;
-        margin: 56px 0 24px;
-      }
-    }
-
-    .article-content h3 {
-      font-size: 21px;
+    .article-intro a {
+      color: var(--accent-navy);
+      text-decoration: none;
       font-weight: 600;
-      line-height: 1.4;
-      margin: 36px 0 16px;
+      border-bottom: 1px solid var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    .article-intro a:hover {
+      opacity: 0.7;
+    }
+
+    /* LAYERED CALLOUT BOX - Pointed base with rounded content card */
+    .quick-facts {
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .quick-facts-content {
+      background: var(--white);
+      color: var(--text-dark);
+      border-radius: 12px;
+      padding: 24px 28px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .article-content h3 {
-        font-size: 24px;
-        margin: 40px 0 20px;
+      .quick-facts-content {
+        padding: 28px 36px;
       }
     }
 
-    .article-content p {
+    .quick-facts h3 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-top: 4px;
       margin-bottom: 20px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
-      .article-content p {
+      .quick-facts h3 {
+        font-size: 28px;
+      }
+    }
+
+    .quick-facts ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .quick-facts li {
+      padding: 8px 0;
+      padding-left: 28px;
+      position: relative;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+    @media (min-width: 768px) {
+      .quick-facts li {
+        font-size: 17px;
+      }
+    }
+
+    .quick-facts li:before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      top: 8px;
+      font-weight: 700;
+      color: var(--brand-orange);
+    }
+
+    .quick-facts a {
+      color: var(--accent-navy);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .quick-facts a:hover {
+      opacity: 0.85;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 56px 0 24px;
+      letter-spacing: -0.01em;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h2 {
+        font-size: 36px;
+        margin: 64px 0 28px;
+      }
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 40px 0 16px;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h3 {
+        font-size: 28px;
+        margin: 48px 0 20px;
+      }
+    }
+
+    p {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      p {
+        font-size: 18px;
         margin-bottom: 24px;
       }
     }
 
-    .article-content ul, .article-content ol {
-      margin: 20px 0 20px 24px;
-    }
-    @media (min-width: 768px) {
-      .article-content ul, .article-content ol {
-        margin: 24px 0 24px 32px;
-      }
-    }
-
-    .article-content li {
-      margin-bottom: 12px;
-      padding-left: 8px;
-    }
-
-    .article-content strong {
+    strong {
       font-weight: 600;
     }
 
-    .article-content a {
-      color: var(--fg);
-      text-decoration: underline;
-      text-decoration-thickness: 1.5px;
-      text-underline-offset: 2px;
-      transition: opacity 0.15s;
+    a {
+      color: var(--accent-navy);
+      transition: opacity 0.2s ease;
     }
-
-    .article-content a:hover {
+    a:hover {
       opacity: 0.7;
     }
 
-    /* Callout boxes */
-    .callout {
-      background: rgba(25, 25, 25, 0.04);
-      border: 2.5px solid var(--border);
-      padding: 24px;
-      margin: 32px 0;
-    }
-    @media (min-width: 768px) {
-      .callout {
-        padding: 32px;
-        margin: 40px 0;
-      }
+    ul, ol {
+      margin: 24px 0;
+      padding-left: 28px;
     }
 
-    /* FAQ section */
-    .faq {
-      margin-top: 56px;
-      padding-top: 40px;
-      border-top: 2.5px solid var(--border);
-    }
-    @media (min-width: 768px) {
-      .faq {
-        margin-top: 64px;
-        padding-top: 48px;
-      }
-    }
-
-    .faq h2 {
-      font-size: 26px;
-      font-weight: 700;
-      margin-bottom: 32px;
-    }
-    @media (min-width: 768px) {
-      .faq h2 {
-        font-size: 30px;
-        margin-bottom: 40px;
-      }
-    }
-
-    .faq-item {
-      margin-bottom: 32px;
-    }
-    @media (min-width: 768px) {
-      .faq-item {
-        margin-bottom: 40px;
-      }
-    }
-
-    .faq-question {
-      font-size: 19px;
-      font-weight: 600;
-      margin-bottom: 12px;
-      line-height: 1.4;
-    }
-    @media (min-width: 768px) {
-      .faq-question {
-        font-size: 21px;
-        margin-bottom: 16px;
-      }
-    }
-
-    .faq-answer {
+    li {
       font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
-      color: var(--muted);
+      margin-bottom: 12px;
     }
     @media (min-width: 768px) {
-      .faq-answer {
+      li {
         font-size: 18px;
       }
     }
 
-    /* Footer */
+    /* LIGHT CALLOUT BOX */
+    .callout {
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin: 32px 0;
+    }
+    @media (min-width: 768px) {
+      .callout {
+        padding: 28px 32px;
+      }
+    }
+
+    .callout p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* TABLE */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 32px 0;
+      font-size: 16px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    @media (min-width: 768px) {
+      table {
+        font-size: 17px;
+      }
+    }
+
+    thead {
+      background: var(--brand-orange);
+      color: var(--white);
+      font-weight: 700;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+      border-bottom: 1px solid var(--border-light);
+    }
+    @media (min-width: 768px) {
+      th, td {
+        padding: 18px 20px;
+      }
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    tbody tr {
+      background: var(--white);
+      transition: background 0.2s ease;
+    }
+
+    tbody tr:hover {
+      background: rgba(192, 56, 0, 0.02);
+    }
+
+    /* FAQ SECTION */
+    .faq-section {
+      margin-top: 64px;
+      padding-top: 56px;
+      border-top: 3px solid var(--border-light);
+    }
+
+    .faq-item {
+      margin-bottom: 32px;
+      padding: 28px;
+      background: var(--bg-light);
+      border-radius: 12px;
+      border-left: 4px solid var(--brand-orange);
+    }
+
+    .faq-item h3 {
+      font-size: 20px;
+      margin: 0 0 16px 0;
+      color: var(--brand-orange);
+    }
+    @media (min-width: 768px) {
+      .faq-item h3 {
+        font-size: 23px;
+      }
+    }
+
+    .faq-item p {
+      margin-bottom: 0;
+    }
+
+    /* FOOTER WRAPPER - Black background */
+    .footer-wrapper {
+      background: #191919;
+      padding: 0 12px 12px;
+      margin-top: 80px;
+    }
+
+    /* FOOTER - Orange with asymmetric rounded shape like Shopify */
     footer {
-      text-align: center;
-      padding: 20px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 400;
-      border-top: 2.5px solid var(--border);
-      margin-top: 60px;
+      background: var(--brand-orange);
+      color: var(--white);
+      padding: 45px 40px 20px;
+      border-radius: 200px 16px 16px 200px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 144px;
     }
     @media (min-width: 768px) {
       footer {
-        padding: 24px;
-        font-size: 13px;
+        padding: 63px 60px 24px;
+        min-height: 207px;
+        border-radius: 300px 16px 16px 300px;
       }
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      flex: 1;
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 24px;
+      flex: 1;
+    }
+    @media (min-width: 768px) {
+      .footer-right {
+        gap: 32px;
+      }
+    }
+
+    .footer-right-text {
+      text-align: right;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-top: 128px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .footer-logo {
+        height: 160px;
+        margin-top: 160px;
+        margin-bottom: 0;
+      }
+    }
+
+    footer p {
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    footer a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 
@@ -470,32 +711,44 @@
 </head>
 
 <body>
-  <nav class="nav">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/blog/" class="active">Blog</a></li>
-      <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
-    </ul>
-  </nav>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+        </div>
+      </div>
+    </header>
+  </div>
 
-  <article>
+  <main>
+    <article>
     <div class="article-header">
       <div class="article-meta">March 10, 2025 • Updated January 21, 2026</div>
       <h1>Best Antioxidants for Dogs: Top 7 Sources & Benefits</h1>
 
-      <div class="callout" style="margin: 24px 0; background: #fff3e0; border: 3px solid var(--border);">
-        <h2 style="margin-top: 0; font-size: 22px; margin-bottom: 12px;">🛡️ Best Antioxidants for Dogs (Ranked by Effectiveness)</h2>
-        <ol style="margin-left: 24px; line-height: 1.8;">
-          <li><strong style="font-size: 17px;">Astaxanthin (salmon)</strong> — Most powerful antioxidant, 6000x stronger than vitamin C</li>
-          <li><strong style="font-size: 17px;">Vitamin A/Retinol (liver)</strong> — Protects eyes, immune system, skin integrity</li>
-          <li><strong style="font-size: 17px;">Glutathione (liver)</strong> — Master antioxidant, protects all cells</li>
-          <li><strong style="font-size: 17px;">CoQ10 (beef heart)</strong> — Cellular energy, heart health, brain function</li>
-          <li><strong style="font-size: 17px;">Vitamin E + Selenium (eggs, organ meats)</strong> — Work together to protect cell membranes</li>
-          <li><strong style="font-size: 17px;">Anthocyanins (blueberries)</strong> — Reduce inflammation, support brain health</li>
-          <li><strong style="font-size: 17px;">Lutein & Zeaxanthin (spinach, kale)</strong> — Protect eyes and brain from oxidative damage</li>
-        </ol>
-        <p style="margin-top: 16px; margin-bottom: 0;"><strong>Why whole foods beat synthetic supplements:</strong> 50-80% absorption vs 20-40% from isolated synthetic antioxidants</p>
+      <div class="quick-facts">
+        <div class="quick-facts-content">
+          <h3>Best Antioxidants for Dogs (Ranked by Effectiveness)</h3>
+          <ol style="margin-left: 24px; line-height: 1.8;">
+            <li><strong>Astaxanthin (salmon)</strong> — Most powerful antioxidant, 6000x stronger than vitamin C</li>
+            <li><strong>Vitamin A/Retinol (liver)</strong> — Protects eyes, immune system, skin integrity</li>
+            <li><strong>Glutathione (liver)</strong> — Master antioxidant, protects all cells</li>
+            <li><strong>CoQ10 (beef heart)</strong> — Cellular energy, heart health, brain function</li>
+            <li><strong>Vitamin E + Selenium (eggs, organ meats)</strong> — Work together to protect cell membranes</li>
+            <li><strong>Anthocyanins (blueberries)</strong> — Reduce inflammation, support brain health</li>
+            <li><strong>Lutein & Zeaxanthin (spinach, kale)</strong> — Protect eyes and brain from oxidative damage</li>
+          </ol>
+          <p style="margin-top: 16px; margin-bottom: 0;"><strong>Why whole foods beat synthetic supplements:</strong> 50-80% absorption vs 20-40% from isolated synthetic antioxidants</p>
+        </div>
       </div>
 
       <p class="article-intro">Antioxidants are one of the most important — yet least understood — components of canine nutrition. They protect cells from oxidative damage, support immune function, slow aging, and reduce inflammation. Yet most dogs don't get enough, especially those eating highly processed diets.</p>
@@ -533,65 +786,64 @@
       </ul>
 
       <div class="callout">
-        <h3 style="margin-top: 0; font-size: 18px;">Why Dogs Produce Free Radicals</h3>
-        <p style="margin-top: 12px; margin-bottom: 0;">Free radicals are a natural byproduct of cellular metabolism — the process of converting food into energy. Every time your dog breathes, digests food, or exercises, their cells produce free radicals. In small amounts, free radicals are harmless. But when production exceeds the body's ability to neutralize them (through antioxidants), oxidative stress occurs — leading to inflammation, cellular damage, and accelerated aging.</p>
+        <p><strong>Why Dogs Produce Free Radicals:</strong> Free radicals are a natural byproduct of cellular metabolism — the process of converting food into energy. Every time your dog breathes, digests food, or exercises, their cells produce free radicals. In small amounts, free radicals are harmless. But when production exceeds the body's ability to neutralize them (through antioxidants), oxidative stress occurs — leading to inflammation, cellular damage, and accelerated aging.</p>
       </div>
 
       <h2>Best Antioxidants for Dogs: Complete Ranking & Comparison</h2>
 
       <p>Not all antioxidants are created equal. Some are dramatically more powerful than others, and some have unique abilities (like crossing the blood-brain barrier) that make them especially valuable for dogs. Here's a comprehensive ranking of the most effective antioxidants for canine health:</p>
 
-      <table style="width: 100%; border-collapse: collapse; margin: 32px 0; border: 2.5px solid var(--border);">
+      <table>
         <thead>
-          <tr style="border-bottom: 2.5px solid var(--border); background: rgba(25,25,25,0.02);">
-            <th style="text-align: left; padding: 14px; font-weight: 700; font-size: 15px;">Rank</th>
-            <th style="text-align: left; padding: 14px; font-weight: 700; font-size: 15px;">Antioxidant</th>
-            <th style="text-align: left; padding: 14px; font-weight: 700; font-size: 15px;">Best Food Source</th>
-            <th style="text-align: left; padding: 14px; font-weight: 700; font-size: 15px;">Primary Benefits</th>
+          <tr>
+            <th>Rank</th>
+            <th>Antioxidant</th>
+            <th>Best Food Source</th>
+            <th>Primary Benefits</th>
           </tr>
         </thead>
         <tbody>
-          <tr style="border-bottom: 1.5px solid rgba(25,25,25,0.1);">
-            <td style="padding: 14px; font-weight: 700; color: #d97706;">1</td>
-            <td style="padding: 14px; font-weight: 600;"><a href="/ingredient-analyzer/ingredients/astaxanthin/">Astaxanthin</a></td>
-            <td style="padding: 14px;">Wild-caught salmon</td>
-            <td style="padding: 14px;">Brain, eyes, joints, muscles — 6000x stronger than vitamin C</td>
-          </tr>
-          <tr style="border-bottom: 1.5px solid rgba(25,25,25,0.1);">
-            <td style="padding: 14px; font-weight: 700; color: #d97706;">2</td>
-            <td style="padding: 14px; font-weight: 600;"><a href="/ingredient-analyzer/ingredients/vitamin-a-supplement/">Vitamin A</a> (Retinol)</td>
-            <td style="padding: 14px;">Beef liver</td>
-            <td style="padding: 14px;">Eye health, immune function, skin integrity, reproduction</td>
-          </tr>
-          <tr style="border-bottom: 1.5px solid rgba(25,25,25,0.1);">
-            <td style="padding: 14px; font-weight: 700; color: #d97706;">3</td>
-            <td style="padding: 14px; font-weight: 600;"><a href="/ingredient-analyzer/ingredients/glutathione/">Glutathione</a></td>
-            <td style="padding: 14px;">Beef liver, whey protein</td>
-            <td style="padding: 14px;">"Master antioxidant" — protects all cells, liver detox</td>
-          </tr>
-          <tr style="border-bottom: 1.5px solid rgba(25,25,25,0.1);">
-            <td style="padding: 14px; font-weight: 700; color: #d97706;">4</td>
-            <td style="padding: 14px; font-weight: 600;"><a href="/ingredient-analyzer/ingredients/coenzyme-q10/">CoQ10</a></td>
-            <td style="padding: 14px;">Beef heart</td>
-            <td style="padding: 14px;">Cellular energy, heart health, brain function, mitochondria</td>
-          </tr>
-          <tr style="border-bottom: 1.5px solid rgba(25,25,25,0.1);">
-            <td style="padding: 14px; font-weight: 700; color: #d97706;">5</td>
-            <td style="padding: 14px; font-weight: 600;"><a href="/ingredient-analyzer/ingredients/mixed-tocopherols/">Vitamin E</a> + <a href="/ingredient-analyzer/ingredients/selenium/">Selenium</a></td>
-            <td style="padding: 14px;">Eggs, organ meats</td>
-            <td style="padding: 14px;">Cell membrane protection (work synergistically together)</td>
-          </tr>
-          <tr style="border-bottom: 1.5px solid rgba(25,25,25,0.1);">
-            <td style="padding: 14px; font-weight: 700; color: #d97706;">6</td>
-            <td style="padding: 14px; font-weight: 600;"><a href="/ingredient-analyzer/ingredients/anthocyanins/">Anthocyanins</a></td>
-            <td style="padding: 14px;">Blueberries, blackberries</td>
-            <td style="padding: 14px;">Brain health, reduce inflammation, blood vessel protection</td>
+          <tr>
+            <td><strong style="color: var(--brand-orange);">1</strong></td>
+            <td><strong><a href="/ingredient-analyzer/ingredients/astaxanthin/">Astaxanthin</a></strong></td>
+            <td>Wild-caught salmon</td>
+            <td>Brain, eyes, joints, muscles — 6000x stronger than vitamin C</td>
           </tr>
           <tr>
-            <td style="padding: 14px; font-weight: 700; color: #d97706;">7</td>
-            <td style="padding: 14px; font-weight: 600;"><a href="/ingredient-analyzer/ingredients/lutein/">Lutein</a> & <a href="/ingredient-analyzer/ingredients/zeaxanthin/">Zeaxanthin</a></td>
-            <td style="padding: 14px;">Spinach, kale, eggs</td>
-            <td style="padding: 14px;">Eye health (retina protection), brain function</td>
+            <td><strong style="color: var(--brand-orange);">2</strong></td>
+            <td><strong><a href="/ingredient-analyzer/ingredients/vitamin-a-supplement/">Vitamin A</a> (Retinol)</strong></td>
+            <td>Beef liver</td>
+            <td>Eye health, immune function, skin integrity, reproduction</td>
+          </tr>
+          <tr>
+            <td><strong style="color: var(--brand-orange);">3</strong></td>
+            <td><strong><a href="/ingredient-analyzer/ingredients/glutathione/">Glutathione</a></strong></td>
+            <td>Beef liver, whey protein</td>
+            <td>"Master antioxidant" — protects all cells, liver detox</td>
+          </tr>
+          <tr>
+            <td><strong style="color: var(--brand-orange);">4</strong></td>
+            <td><strong><a href="/ingredient-analyzer/ingredients/coenzyme-q10/">CoQ10</a></strong></td>
+            <td>Beef heart</td>
+            <td>Cellular energy, heart health, brain function, mitochondria</td>
+          </tr>
+          <tr>
+            <td><strong style="color: var(--brand-orange);">5</strong></td>
+            <td><strong><a href="/ingredient-analyzer/ingredients/mixed-tocopherols/">Vitamin E</a> + <a href="/ingredient-analyzer/ingredients/selenium/">Selenium</a></strong></td>
+            <td>Eggs, organ meats</td>
+            <td>Cell membrane protection (work synergistically together)</td>
+          </tr>
+          <tr>
+            <td><strong style="color: var(--brand-orange);">6</strong></td>
+            <td><strong><a href="/ingredient-analyzer/ingredients/anthocyanins/">Anthocyanins</a></strong></td>
+            <td>Blueberries, blackberries</td>
+            <td>Brain health, reduce inflammation, blood vessel protection</td>
+          </tr>
+          <tr>
+            <td><strong style="color: var(--brand-orange);">7</strong></td>
+            <td><strong><a href="/ingredient-analyzer/ingredients/lutein/">Lutein</a> & <a href="/ingredient-analyzer/ingredients/zeaxanthin/">Zeaxanthin</a></strong></td>
+            <td>Spinach, kale, eggs</td>
+            <td>Eye health (retina protection), brain function</td>
           </tr>
         </tbody>
       </table>
@@ -798,39 +1050,39 @@
 
       <h3>Astaxanthin vs Other Antioxidants</h3>
 
-      <table style="width: 100%; border-collapse: collapse; margin: 24px 0; border: 2.5px solid var(--border);">
+      <table>
         <thead>
-          <tr style="border-bottom: 2.5px solid var(--border); background: rgba(25,25,25,0.02);">
-            <th style="text-align: left; padding: 12px; font-weight: 700;">Antioxidant</th>
-            <th style="text-align: left; padding: 12px; font-weight: 700;">Relative Strength</th>
-            <th style="text-align: left; padding: 12px; font-weight: 700;">Can Cross Blood-Brain Barrier?</th>
+          <tr>
+            <th>Antioxidant</th>
+            <th>Relative Strength</th>
+            <th>Can Cross Blood-Brain Barrier?</th>
           </tr>
         </thead>
         <tbody>
-          <tr style="border-bottom: 1.5px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px; font-weight: 600;">Astaxanthin</td>
-            <td style="padding: 12px;"><strong style="color: #2d7a3e;">6,000x stronger than vitamin C</strong></td>
-            <td style="padding: 12px;">✓ Yes</td>
-          </tr>
-          <tr style="border-bottom: 1.5px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px;">CoQ10</td>
-            <td style="padding: 12px;">800x stronger than vitamin C</td>
-            <td style="padding: 12px;">✓ Yes</td>
-          </tr>
-          <tr style="border-bottom: 1.5px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px;">Vitamin E</td>
-            <td style="padding: 12px;">550x stronger than vitamin C</td>
-            <td style="padding: 12px;">✗ No</td>
-          </tr>
-          <tr style="border-bottom: 1.5px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px;">Beta-Carotene</td>
-            <td style="padding: 12px;">10x stronger than vitamin C</td>
-            <td style="padding: 12px;">✗ No</td>
+          <tr>
+            <td><strong>Astaxanthin</strong></td>
+            <td><strong style="color: var(--brand-orange);">6,000x stronger than vitamin C</strong></td>
+            <td>✓ Yes</td>
           </tr>
           <tr>
-            <td style="padding: 12px;">Vitamin C</td>
-            <td style="padding: 12px;">1x (baseline)</td>
-            <td style="padding: 12px;">Partial</td>
+            <td>CoQ10</td>
+            <td>800x stronger than vitamin C</td>
+            <td>✓ Yes</td>
+          </tr>
+          <tr>
+            <td>Vitamin E</td>
+            <td>550x stronger than vitamin C</td>
+            <td>✗ No</td>
+          </tr>
+          <tr>
+            <td>Beta-Carotene</td>
+            <td>10x stronger than vitamin C</td>
+            <td>✗ No</td>
+          </tr>
+          <tr>
+            <td>Vitamin C</td>
+            <td>1x (baseline)</td>
+            <td>Partial</td>
           </tr>
         </tbody>
       </table>
@@ -838,16 +1090,16 @@
       <p><strong>Bottom line:</strong> If you could only add one antioxidant to your dog's diet, astaxanthin from wild-caught salmon would be the best choice. Its unique ability to protect the brain, eyes, and entire body — combined with zero toxicity risk — makes it unmatched among antioxidants.</p>
 
       <div class="callout">
-        <h3 style="margin-top: 0; font-size: 18px;">Top Antioxidant-Rich Foods for Dogs</h3>
-        <div style="margin-top: 12px;">
-          <div style="margin-bottom: 8px;"><strong>Beef liver:</strong> Vitamin A (retinol), selenium, glutathione</div>
-          <div style="margin-bottom: 8px;"><strong>Beef heart:</strong> CoQ10, taurine</div>
-          <div style="margin-bottom: 8px;"><strong>Blueberries:</strong> Anthocyanins, vitamin C, polyphenols</div>
-          <div style="margin-bottom: 8px;"><strong>Spinach/kale:</strong> Lutein, zeaxanthin, vitamin K</div>
-          <div style="margin-bottom: 8px;"><strong>Carrots/sweet potatoes:</strong> Beta-carotene</div>
-          <div style="margin-bottom: 8px;"><strong>Eggs:</strong> Selenium, lutein, choline</div>
-          <div><strong>Wild salmon:</strong> Astaxanthin, omega-3s (EPA/DHA)</div>
-        </div>
+        <p><strong>Top Antioxidant-Rich Foods for Dogs:</strong></p>
+        <ul style="list-style: none; padding: 0; margin: 12px 0 0 0;">
+          <li style="margin-bottom: 8px;"><strong>Beef liver:</strong> Vitamin A (retinol), selenium, glutathione</li>
+          <li style="margin-bottom: 8px;"><strong>Beef heart:</strong> CoQ10, taurine</li>
+          <li style="margin-bottom: 8px;"><strong>Blueberries:</strong> Anthocyanins, vitamin C, polyphenols</li>
+          <li style="margin-bottom: 8px;"><strong>Spinach/kale:</strong> Lutein, zeaxanthin, vitamin K</li>
+          <li style="margin-bottom: 8px;"><strong>Carrots/sweet potatoes:</strong> Beta-carotene</li>
+          <li style="margin-bottom: 8px;"><strong>Eggs:</strong> Selenium, lutein, choline</li>
+          <li style="margin-bottom: 0;"><strong>Wild salmon:</strong> Astaxanthin, omega-3s (EPA/DHA)</li>
+        </ul>
       </div>
 
       <p>Organ meats like beef liver and heart provide the highest concentrations of bioavailable antioxidants alongside essential vitamins and minerals. For a complete guide to organ meat nutrition, see <a href="/blog/organ-based-nutrition-for-dogs.html">Why Organ-Based Nutrition is Essential for Dogs</a>.</p>
@@ -946,61 +1198,76 @@
       <p>If you want a simple, pre-portioned way to give your dog whole-food antioxidants every day, that's exactly what Watts is designed to do.</p>
     </div>
 
-    <div class="faq">
-      <h2 style="margin-top: 56px; padding-top: 40px; border-top: 2.5px solid var(--border);">Related Articles</h2>
+    <div class="faq-section">
+      <h2 style="margin-top: 56px; padding-top: 40px; border-top: 2px solid var(--border-light);">Related Articles</h2>
 
       <div style="display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 56px;">
-        <a href="/blog/what-extends-dog-lifespan.html" style="display: block; padding: 20px; border: 2.5px solid var(--border); text-decoration: none; color: var(--fg); transition: background 0.15s;">
-          <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">What Actually Extends a Dog's Lifespan</h3>
-          <p style="font-size: 15px; color: var(--muted); margin: 0;">How antioxidants fight aging and support longevity</p>
+        <a href="/blog/what-extends-dog-lifespan.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">What Actually Extends a Dog's Lifespan</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">How antioxidants fight aging and support longevity</p>
         </a>
 
-        <a href="/blog/senior-dog-formula-kibble.html" style="display: block; padding: 20px; border: 2.5px solid var(--border); text-decoration: none; color: var(--fg); transition: background 0.15s;">
-          <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">Do Senior Dogs Need High Protein?</h3>
-          <p style="font-size: 15px; color: var(--muted); margin: 0;">Why senior dogs need more antioxidants to combat oxidative stress</p>
+        <a href="/blog/senior-dog-formula-kibble.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Do Senior Dogs Need High Protein?</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Why senior dogs need more antioxidants to combat oxidative stress</p>
         </a>
 
-        <a href="/blog/whole-food-vs-synthetic-nutrients.html" style="display: block; padding: 20px; border: 2.5px solid var(--border); text-decoration: none; color: var(--fg); transition: background 0.15s;">
-          <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">Whole Food vs Synthetic Vitamins</h3>
-          <p style="font-size: 15px; color: var(--muted); margin: 0;">Why whole-food antioxidants are better absorbed than synthetic supplements</p>
+        <a href="/blog/whole-food-vs-synthetic-nutrients.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Whole Food vs Synthetic Vitamins</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Why whole-food antioxidants are better absorbed than synthetic supplements</p>
         </a>
 
-        <a href="/blog/zinc-for-dogs.html" style="display: block; padding: 20px; border: 2.5px solid var(--border); text-decoration: none; color: var(--fg); transition: background 0.15s;">
-          <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">Zinc for Dogs</h3>
-          <p style="font-size: 15px; color: var(--muted); margin: 0;">An essential antioxidant mineral for immune health and skin integrity</p>
+        <a href="/blog/zinc-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Zinc for Dogs</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">An essential antioxidant mineral for immune health and skin integrity</p>
         </a>
       </div>
 
       <h2>Frequently Asked Questions</h2>
 
       <div class="faq-item">
-        <div class="faq-question">What do antioxidants do for dogs?</div>
-        <div class="faq-answer">Antioxidants neutralize free radicals — unstable molecules that damage cells, DNA, and tissues. This oxidative damage accumulates over time and contributes to aging, inflammation, chronic disease, and immune decline. Antioxidants protect cells from this damage, supporting long-term health, vitality, and longevity. Key benefits include reducing inflammation, supporting immune function, protecting brain and eye health, improving skin and coat quality, and slowing the aging process.</div>
+        <h3>What do antioxidants do for dogs?</h3>
+        <p>Antioxidants neutralize free radicals — unstable molecules that damage cells, DNA, and tissues. This oxidative damage accumulates over time and contributes to aging, inflammation, chronic disease, and immune decline. Antioxidants protect cells from this damage, supporting long-term health, vitality, and longevity. Key benefits include reducing inflammation, supporting immune function, protecting brain and eye health, improving skin and coat quality, and slowing the aging process.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">What are the best sources of antioxidants for dogs?</div>
-        <div class="faq-answer">The best antioxidant sources for dogs include beef liver (vitamin A, selenium, glutathione), beef heart (CoQ10, taurine), blueberries and blackberries (anthocyanins), leafy greens like spinach and kale (lutein, zeaxanthin), carrots and sweet potatoes (beta-carotene), eggs (selenium, lutein), and wild-caught salmon (astaxanthin, omega-3s). Whole-food sources deliver antioxidants along with co-factors that enhance absorption and utilization.</div>
+        <h3>What are the best sources of antioxidants for dogs?</h3>
+        <p>The best antioxidant sources for dogs include beef liver (vitamin A, selenium, glutathione), beef heart (CoQ10, taurine), blueberries and blackberries (anthocyanins), leafy greens like spinach and kale (lutein, zeaxanthin), carrots and sweet potatoes (beta-carotene), eggs (selenium, lutein), and wild-caught salmon (astaxanthin, omega-3s). Whole-food sources deliver antioxidants along with co-factors that enhance absorption and utilization.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Do all dogs need antioxidants?</div>
-        <div class="faq-answer">Yes. All dogs produce free radicals as a byproduct of normal metabolism, and oxidative stress increases with age, illness, stress, and environmental toxins. While young, healthy dogs may get sufficient antioxidants from a balanced diet, senior dogs, active dogs, and dogs with chronic health issues benefit from higher antioxidant intake. Whole-food sources provide safe, bioavailable antioxidants without the risks of synthetic over-supplementation.</div>
+        <h3>Do all dogs need antioxidants?</h3>
+        <p>Yes. All dogs produce free radicals as a byproduct of normal metabolism, and oxidative stress increases with age, illness, stress, and environmental toxins. While young, healthy dogs may get sufficient antioxidants from a balanced diet, senior dogs, active dogs, and dogs with chronic health issues benefit from higher antioxidant intake. Whole-food sources provide safe, bioavailable antioxidants without the risks of synthetic over-supplementation.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Are synthetic antioxidant supplements effective for dogs?</div>
-        <div class="faq-answer">Synthetic antioxidants (like isolated vitamin E or vitamin C) are less effective than whole-food sources because they lack the co-factors that support absorption and utilization. Research shows that whole-food antioxidants work synergistically — vitamin E works with selenium, vitamin C regenerates vitamin E, and carotenoids enhance vitamin A activity. Synthetic forms also carry a higher risk of imbalances and don't provide the same protective benefits as food-based nutrients.</div>
+        <h3>Are synthetic antioxidant supplements effective for dogs?</h3>
+        <p>Synthetic antioxidants (like isolated vitamin E or vitamin C) are less effective than whole-food sources because they lack the co-factors that support absorption and utilization. Research shows that whole-food antioxidants work synergistically — vitamin E works with selenium, vitamin C regenerates vitamin E, and carotenoids enhance vitamin A activity. Synthetic forms also carry a higher risk of imbalances and don't provide the same protective benefits as food-based nutrients.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">How do antioxidants support aging dogs?</div>
-        <div class="faq-answer">Antioxidants slow cellular aging by protecting DNA, proteins, and cell membranes from oxidative damage. In senior dogs, this translates to better cognitive function (reduced brain inflammation), healthier joints (reduced oxidative stress in cartilage), stronger immune response (protecting immune cells), improved energy levels (supporting mitochondrial function), and better skin and coat health. Studies show dogs with higher antioxidant intake experience slower age-related decline.</div>
+        <h3>How do antioxidants support aging dogs?</h3>
+        <p>Antioxidants slow cellular aging by protecting DNA, proteins, and cell membranes from oxidative damage. In senior dogs, this translates to better cognitive function (reduced brain inflammation), healthier joints (reduced oxidative stress in cartilage), stronger immune response (protecting immune cells), improved energy levels (supporting mitochondrial function), and better skin and coat health. Studies show dogs with higher antioxidant intake experience slower age-related decline.</p>
       </div>
     </div>
-  </article>
+    </article>
+  </main>
 
-  <footer>© <span id="year"></span> Watts Pet</footer>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
+      </div>
+    </footer>
+  </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();

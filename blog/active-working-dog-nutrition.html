@@ -32,198 +32,341 @@
   <meta property="og:site_name" content="Watts Pet">
   <meta property="og:image" content="https://wattspet.com/assets/hero.jpg">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
-
+  <!-- Degular Font -->
   <style>
-    :root {
-      --bg: #F1ECE9;
-      --fg: #191919;
-      --muted: #3a3a3a;
-      --border: #191919;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body { min-height: 100%; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Regular.woff2') format('woff2');
       font-weight: 400;
-      line-height: 1.6;
-      overflow-x: hidden;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
     }
 
-    /* Navigation */
-    nav.nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px 20px;
-      border-bottom: 2.5px solid var(--border);
+    :root {
+      --brand-orange: #c03800;
+      --bg-light: #f1f1f1;
+      --text-dark: #191919;
+      --white: #ffffff;
+      --text-muted: #666666;
+      --border-light: rgba(25, 25, 25, 0.1);
+      --accent-navy: #1e3a5f;
     }
-    @media (min-width: 768px) {
-      nav.nav {
-        padding: 24px 20px;
-      }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    nav.nav ul {
-      list-style: none;
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      background: #191919;
+      color: var(--text-dark);
+      font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* HEADER WRAPPER - Black background */
+    .header-wrapper {
+      background: #191919;
+      padding: 12px 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    /* ORANGE HEADER - Rounded like Shopify site */
+    header {
+      background: var(--brand-orange);
+      padding: 7px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
-      gap: 24px;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-height: 40px;
+    }
+
+    /* Nav on the LEFT */
+    nav {
+      order: -1;
+      display: flex;
       align-items: center;
     }
-    @media (min-width: 768px) {
-      nav.nav ul {
-        gap: 32px;
-      }
-    }
-    nav.nav a {
-      color: var(--fg);
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 500;
-      transition: opacity 0.15s;
-      position: relative;
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
     }
     @media (min-width: 768px) {
-      nav.nav a {
-        font-size: 16px;
-      }
-    }
-    nav.nav a:hover {
-      opacity: 0.7;
-    }
-    nav.nav a.active::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: var(--fg);
+      nav ul { gap: 24px; }
     }
 
-    /* Breadcrumbs */
-    .breadcrumbs {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px 20px 0;
+    nav li {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
       font-size: 14px;
-      color: var(--muted);
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
     }
     @media (min-width: 768px) {
-      .breadcrumbs {
-        padding: 24px 40px 0;
-        font-size: 15px;
-      }
+      nav a { font-size: 15px; }
     }
-    .breadcrumbs a {
-      color: var(--muted);
-      text-decoration: none;
-      transition: opacity 0.15s;
-    }
-    .breadcrumbs a:hover {
-      opacity: 0.7;
-    }
-    .breadcrumbs span {
-      margin: 0 8px;
+    nav a:hover {
+      opacity: 0.8;
     }
 
-    /* Article */
+    /* Logo CENTERED */
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo {
+      height: 32px;
+    }
+    @media (min-width: 768px) {
+      .logo { height: 40px; }
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 900px;
+      margin: 16px auto 40px;
+      padding: 0 20px;
+      background: var(--bg-light);
+    }
+    @media (min-width: 768px) {
+      main {
+        margin: 20px auto 60px;
+        padding: 0 40px;
+      }
+    }
+
     article {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 32px 20px 60px;
+      background: var(--white);
+      padding: 40px 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
       article {
-        padding: 48px 40px 80px;
+        padding: 60px 50px;
       }
     }
 
-    /* Article meta */
-    .article-meta {
-      margin-bottom: 24px;
-      font-size: 14px;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    @media (min-width: 768px) {
-      .article-meta {
-        margin-bottom: 28px;
-        font-size: 15px;
-      }
+    .article-header {
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--border-light);
     }
 
-    /* Typography */
     h1 {
-      font-family: "Geologica", sans-serif;
-      font-size: 28px;
+      font-size: 32px;
       font-weight: 700;
       line-height: 1.2;
       margin-bottom: 16px;
       letter-spacing: -0.02em;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       h1 {
-        font-size: 38px;
+        font-size: 48px;
         margin-bottom: 20px;
       }
     }
 
-    h2 {
-      font-family: "Geologica", sans-serif;
-      font-size: 22px;
-      font-weight: 700;
-      line-height: 1.3;
-      margin: 48px 0 20px;
-      letter-spacing: -0.01em;
+    .article-meta {
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      font-weight: 500;
+      line-height: 1.6;
+      color: var(--text-muted);
+      margin-bottom: 0;
     }
     @media (min-width: 768px) {
-      h2 {
-        font-size: 26px;
-        margin: 56px 0 24px;
+      .article-intro {
+        font-size: 21px;
       }
     }
 
-    h2:first-of-type {
-      margin-top: 32px;
+    .article-intro a {
+      color: var(--accent-navy);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    .article-intro a:hover {
+      opacity: 0.7;
+    }
+
+    /* LAYERED CALLOUT BOX - Pointed base with rounded content card */
+    .quick-facts {
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .quick-facts-content {
+      background: var(--white);
+      color: var(--text-dark);
+      border-radius: 12px;
+      padding: 24px 28px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    @media (min-width: 768px) {
+      .quick-facts-content {
+        padding: 28px 36px;
+      }
+    }
+
+    .quick-facts h3 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-top: 4px;
+      margin-bottom: 20px;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      .quick-facts h3 {
+        font-size: 28px;
+      }
+    }
+
+    .quick-facts ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .quick-facts li {
+      padding: 8px 0;
+      padding-left: 28px;
+      position: relative;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+    @media (min-width: 768px) {
+      .quick-facts li {
+        font-size: 17px;
+      }
+    }
+
+    .quick-facts li:before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      top: 8px;
+      font-weight: 700;
+      color: var(--brand-orange);
+    }
+
+    .quick-facts a {
+      color: var(--accent-navy);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .quick-facts a:hover {
+      opacity: 0.85;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 56px 0 24px;
+      letter-spacing: -0.01em;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h2 {
+        font-size: 36px;
+        margin: 64px 0 28px;
+      }
     }
 
     h3 {
-      font-family: "Geologica", sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 1.4;
-      margin: 32px 0 16px;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 40px 0 16px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       h3 {
-        font-size: 20px;
-        margin: 40px 0 18px;
+        font-size: 28px;
+        margin: 48px 0 20px;
       }
     }
 
     p {
       font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
-      margin-bottom: 16px;
-      color: var(--fg);
+      margin-bottom: 20px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       p {
         font-size: 18px;
-        margin-bottom: 18px;
-        line-height: 1.75;
+        margin-bottom: 24px;
       }
-    }
-
-    p:last-child {
-      margin-bottom: 0;
     }
 
     strong {
@@ -231,232 +374,207 @@
     }
 
     a {
-      color: var(--fg);
-      text-decoration: underline;
-      text-decoration-thickness: 1.5px;
-      text-underline-offset: 2px;
+      color: var(--accent-navy);
+      transition: opacity 0.2s ease;
     }
-
     a:hover {
       opacity: 0.7;
     }
 
-    /* Lists */
-    article ul, article ol {
-      margin: 20px 0;
-      padding-left: 0;
-      list-style: none;
+    ul, ol {
+      margin: 24px 0;
+      padding-left: 28px;
     }
 
-    article li {
+    li {
       font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
-      margin-bottom: 16px;
-      padding-left: 28px;
-      position: relative;
+      margin-bottom: 12px;
     }
     @media (min-width: 768px) {
-      article li {
+      li {
         font-size: 18px;
-        margin-bottom: 18px;
       }
     }
 
-    article ul li:before {
-      content: "•";
-      position: absolute;
-      left: 10px;
-      font-weight: 700;
-    }
-
-    /* Callout Box */
+    /* LIGHT CALLOUT BOX */
     .callout {
-      border: 2.5px solid var(--border);
-      padding: 20px;
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
+      padding: 24px 28px;
       margin: 32px 0;
-      background: rgba(0,0,0,.01);
     }
     @media (min-width: 768px) {
       .callout {
-        padding: 28px;
-        margin: 40px 0;
+        padding: 28px 32px;
       }
     }
 
-    /* Table */
-    .comparison-table {
-      margin: 32px 0;
-      overflow-x: auto;
-    }
-    @media (min-width: 768px) {
-      .comparison-table {
-        margin: 40px 0;
-      }
+    .callout p:last-child {
+      margin-bottom: 0;
     }
 
+    /* TABLE */
     table {
       width: 100%;
       border-collapse: collapse;
-      border: 2.5px solid var(--border);
-      font-size: 15px;
+      margin: 32px 0;
+      font-size: 16px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
     @media (min-width: 768px) {
       table {
-        font-size: 16px;
+        font-size: 17px;
       }
+    }
+
+    thead {
+      background: var(--brand-orange);
+      color: var(--white);
+      font-weight: 700;
     }
 
     th, td {
-      padding: 16px;
       text-align: left;
-      border: 2.5px solid var(--border);
+      padding: 16px;
+      border-bottom: 1px solid var(--border-light);
     }
     @media (min-width: 768px) {
       th, td {
-        padding: 20px;
+        padding: 18px 20px;
       }
     }
 
-    th {
-      background: rgba(0,0,0,.02);
-      font-weight: 700;
-      font-size: 15px;
-    }
-    @media (min-width: 768px) {
-      th {
-        font-size: 16px;
-      }
+    tbody tr:last-child td {
+      border-bottom: none;
     }
 
-    td {
-      vertical-align: top;
-      line-height: 1.6;
+    tbody tr {
+      background: var(--white);
+      transition: background 0.2s ease;
     }
 
-    /* FAQ Section */
+    tbody tr:hover {
+      background: rgba(192, 56, 0, 0.02);
+    }
+
+    /* FAQ SECTION */
     .faq-section {
-      margin-top: 56px;
-      padding-top: 40px;
-      border-top: 2.5px solid var(--border);
-    }
-    @media (min-width: 768px) {
-      .faq-section {
-        margin-top: 64px;
-        padding-top: 48px;
-      }
+      margin-top: 64px;
+      padding-top: 56px;
+      border-top: 3px solid var(--border-light);
     }
 
     .faq-item {
       margin-bottom: 32px;
+      padding: 28px;
+      background: var(--bg-light);
+      border-radius: 12px;
+      border-left: 4px solid var(--brand-orange);
+    }
+
+    .faq-item h3 {
+      font-size: 20px;
+      margin: 0 0 16px 0;
+      color: var(--brand-orange);
     }
     @media (min-width: 768px) {
-      .faq-item {
-        margin-bottom: 40px;
+      .faq-item h3 {
+        font-size: 23px;
       }
     }
 
-    .faq-item:last-child {
+    .faq-item p {
       margin-bottom: 0;
     }
 
-    .faq-question {
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 12px;
-      line-height: 1.4;
-    }
-    @media (min-width: 768px) {
-      .faq-question {
-        font-size: 20px;
-        margin-bottom: 14px;
-      }
+    /* FOOTER WRAPPER - Black background */
+    .footer-wrapper {
+      background: #191919;
+      padding: 0 12px 12px;
+      margin-top: 80px;
     }
 
-    .faq-answer {
-      font-size: 17px;
-      line-height: 1.7;
-      color: var(--fg);
-    }
-    @media (min-width: 768px) {
-      .faq-answer {
-        font-size: 18px;
-      }
-    }
-
-    /* CTA */
-    .cta-section {
-      text-align: center;
-      margin: 56px 0 0;
-      padding: 40px 0 0;
-      border-top: 2.5px solid var(--border);
-    }
-    @media (min-width: 768px) {
-      .cta-section {
-        margin: 64px 0 0;
-        padding: 48px 0 0;
-      }
-    }
-
-    .cta-section p {
-      margin-bottom: 24px;
-    }
-
-    .gate {
-      display: inline-flex;
-      align-items: stretch;
-      justify-content: space-between;
-      width: 100%;
-      max-width: 480px;
-      height: 52px;
-      border: 2.5px solid var(--border);
-      background: transparent;
-      color: var(--fg);
-      font: 600 16px "Geologica", sans-serif;
-      padding: 0;
-      border-radius: 0;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    @media (min-width: 768px) {
-      .gate {
-        font-size: 17px;
-      }
-    }
-    .gate-text { padding: 0 20px 0 14px; text-align: left; flex: 1 1 auto; display: flex; align-items: center; }
-    @media (min-width: 768px) {
-      .gate-text { padding: 0 20px 0 16px; }
-    }
-    .gate-arrow {
-      display: grid;
-      place-items: center;
-      width: 52px;
-      border-left: 2.5px solid var(--border);
-      font-size: 18px;
-      line-height: 1;
-      user-select: none;
-    }
-    @media (min-width: 768px) {
-      .gate-arrow {
-        width: 43px;
-        font-size: 20px;
-      }
-    }
-    .gate:hover { background: rgba(0,0,0,.035); }
-
-    /* Footer */
+    /* FOOTER - Orange with asymmetric rounded shape like Shopify */
     footer {
-      text-align: center;
-      padding: 20px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 400;
-      border-top: 2.5px solid var(--border);
+      background: var(--brand-orange);
+      color: var(--white);
+      padding: 45px 40px 20px;
+      border-radius: 200px 16px 16px 200px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 144px;
     }
     @media (min-width: 768px) {
       footer {
-        padding: 24px;
-        font-size: 13px;
+        padding: 63px 60px 24px;
+        min-height: 207px;
+        border-radius: 300px 16px 16px 300px;
       }
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      flex: 1;
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 24px;
+      flex: 1;
+    }
+    @media (min-width: 768px) {
+      .footer-right {
+        gap: 32px;
+      }
+    }
+
+    .footer-right-text {
+      text-align: right;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-top: 128px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .footer-logo {
+        height: 160px;
+        margin-top: 160px;
+        margin-bottom: 0;
+      }
+    }
+
+    footer p {
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    footer a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 
@@ -568,116 +686,119 @@
 </head>
 
 <body>
-  <nav class="nav">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/blog/" class="active">Blog</a></li>
-      <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
-    </ul>
-  </nav>
-
-  <div class="breadcrumbs">
-    <a href="/">Home</a>
-    <span>→</span>
-    <a href="/blog/">Blog</a>
-    <span>→</span>
-    <span>Active & Working Dog Nutrition</span>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+        </div>
+      </div>
+    </header>
   </div>
 
-  <article>
-    <div class="article-meta">February 7, 2025 • Updated January 12, 2026</div>
+  <main>
+    <article>
+      <div class="article-header">
+        <h1>Working Dog Nutrition: How Much Protein, Fat & Calories They Need</h1>
+        <div class="article-meta">Published February 7, 2025 • Updated January 12, 2026</div>
+        <p class="article-intro">
+          A Border Collie running agility courses. A German Shepherd working search and rescue. A Labrador hunting waterfowl in freezing conditions. These aren't just "active" dogs—they're canine athletes with nutritional demands that standard pet food formulas simply don't address.
+        </p>
+      </div>
 
-    <h1>Working Dog Nutrition: How Much Protein, Fat & Calories They Need</h1>
+      <p>Working dogs burn 1.5-3x more calories than sedentary pets, produce significantly more oxidative stress, and require faster recovery between sessions. Their nutrition needs to match the intensity of what they do—not just in quantity, but in quality and timing.</p>
 
-    <p>A Border Collie running agility courses. A German Shepherd working search and rescue. A Labrador hunting waterfowl in freezing conditions. These aren't just "active" dogs—they're canine athletes with nutritional demands that standard pet food formulas simply don't address.</p>
+      <div class="quick-facts">
+        <div class="quick-facts-content">
+          <h3>Working Dog Nutrition Requirements</h3>
+          <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px;">
+            <thead>
+              <tr style="border-bottom: 2px solid var(--border-light);">
+                <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Activity Level</th>
+                <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Daily Calories (50 lb)</th>
+                <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Protein</th>
+                <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Fat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
+                <td style="padding: 12px 8px;">Sedentary pet</td>
+                <td style="padding: 12px 8px;">900-1,000 cal</td>
+                <td style="padding: 12px 8px;">22-25%</td>
+                <td style="padding: 12px 8px;">10-15%</td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
+                <td style="padding: 12px 8px;">Moderately active</td>
+                <td style="padding: 12px 8px;">1,200-1,400 cal</td>
+                <td style="padding: 12px 8px;">25-28%</td>
+                <td style="padding: 12px 8px;">15-18%</td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(25,25,25,0.1); background: rgba(192, 56, 0, 0.05);">
+                <td style="padding: 12px 8px;"><strong>Working dog (4-6 hrs)</strong></td>
+                <td style="padding: 12px 8px;"><strong>1,800-2,200 cal</strong></td>
+                <td style="padding: 12px 8px;"><strong>30-35%</strong></td>
+                <td style="padding: 12px 8px;"><strong>18-22%</strong></td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
+                <td style="padding: 12px 8px;">Extreme work (6-8+ hrs)</td>
+                <td style="padding: 12px 8px;">2,500-3,500 cal</td>
+                <td style="padding: 12px 8px;">35-38%</td>
+                <td style="padding: 12px 8px;">22-28%</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="margin-bottom: 12px; font-size: 15px;"><strong>Key difference:</strong> Working dogs need proportionally MORE protein (not just more food) for muscle repair and sustained energy</p>
+          <p style="margin-bottom: 12px; font-size: 15px;"><strong>Critical nutrients:</strong> B vitamins (energy metabolism), iron (oxygen transport), antioxidants (oxidative stress)</p>
+          <p style="margin-bottom: 0; font-size: 15px;"><strong>Feeding timing:</strong> Small meal 2-3 hours before work, main meal after work for recovery</p>
+        </div>
+      </div>
 
-    <p>Working dogs burn 1.5-3x more calories than sedentary pets, produce significantly more oxidative stress, and require faster recovery between sessions. Their nutrition needs to match the intensity of what they do—not just in quantity, but in quality and timing.</p>
+      <p>This guide breaks down what working and active dogs actually need to perform, recover, and stay healthy long-term.</p>
 
-    <div class="callout" style="margin: 32px 0;">
-      <h2 style="margin-top: 0; font-size: 20px; margin-bottom: 16px;">🏃 Working Dog Nutrition Requirements</h2>
+      <h2>What Counts as a "Working" or "Active" Dog?</h2>
 
-      <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px;">
-        <thead>
-          <tr style="border-bottom: 2px solid var(--border);">
-            <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Activity Level</th>
-            <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Daily Calories (50 lb)</th>
-            <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Protein</th>
-            <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Fat</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px 8px;">Sedentary pet</td>
-            <td style="padding: 12px 8px;">900-1,000 cal</td>
-            <td style="padding: 12px 8px;">22-25%</td>
-            <td style="padding: 12px 8px;">10-15%</td>
-          </tr>
-          <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px 8px;">Moderately active</td>
-            <td style="padding: 12px 8px;">1,200-1,400 cal</td>
-            <td style="padding: 12px 8px;">25-28%</td>
-            <td style="padding: 12px 8px;">15-18%</td>
-          </tr>
-          <tr style="border-bottom: 1px solid rgba(25,25,25,0.1); background: rgba(59, 130, 246, 0.05);">
-            <td style="padding: 12px 8px;"><strong>Working dog (4-6 hrs)</strong></td>
-            <td style="padding: 12px 8px;"><strong>1,800-2,200 cal</strong></td>
-            <td style="padding: 12px 8px;"><strong>30-35%</strong></td>
-            <td style="padding: 12px 8px;"><strong>18-22%</strong></td>
-          </tr>
-          <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px 8px;">Extreme work (6-8+ hrs)</td>
-            <td style="padding: 12px 8px;">2,500-3,500 cal</td>
-            <td style="padding: 12px 8px;">35-38%</td>
-            <td style="padding: 12px 8px;">22-28%</td>
-          </tr>
-        </tbody>
-      </table>
+      <p>Not all exercise is equal. A 20-minute neighborhood walk is very different from 6 hours of upland bird hunting. Here's how to assess your dog's actual activity level:</p>
 
-      <p style="margin-bottom: 12px; font-size: 15px;"><strong>Key difference:</strong> Working dogs need proportionally MORE protein (not just more food) for muscle repair and sustained energy</p>
-      <p style="margin-bottom: 12px; font-size: 15px;"><strong>Critical nutrients:</strong> B vitamins (energy metabolism), iron (oxygen transport), antioxidants (oxidative stress)</p>
-      <p style="margin-bottom: 0; font-size: 15px;"><strong>Feeding timing:</strong> Small meal 2-3 hours before work, main meal after work for recovery</p>
-    </div>
+      <h3>High-Intensity Working Dogs</h3>
 
-    <p>This guide breaks down what working and active dogs actually need to perform, recover, and stay healthy long-term.</p>
+      <ul>
+        <li><strong>Police and military dogs</strong> — Detection, patrol, protection work</li>
+        <li><strong>Search and rescue dogs</strong> — Wilderness tracking, disaster response</li>
+        <li><strong>Herding dogs (active farms)</strong> — Daily livestock management</li>
+        <li><strong>Hunting dogs (frequent season)</strong> — Waterfowl retrieval, upland game, tracking</li>
+        <li><strong>Sled dogs</strong> — Distance pulling, cold weather endurance</li>
+        <li><strong>Competition agility</strong> — Multiple runs per week, trial weekends</li>
+      </ul>
 
-    <h2>What Counts as a "Working" or "Active" Dog?</h2>
+      <p><strong>Typical workload:</strong> 3-8+ hours of intense physical or mental work, 4-7 days per week</p>
 
-    <p>Not all exercise is equal. A 20-minute neighborhood walk is very different from 6 hours of upland bird hunting. Here's how to assess your dog's actual activity level:</p>
+      <h3>Moderately Active Dogs</h3>
 
-    <h3>High-Intensity Working Dogs</h3>
+      <ul>
+        <li><strong>Recreational agility/dock diving</strong> — 1-2 sessions per week</li>
+        <li><strong>Hiking/trail dogs</strong> — Regular multi-hour outings with elevation</li>
+        <li><strong>Running companions</strong> — Daily 5-10k runs</li>
+        <li><strong>Active breed exercise</strong> — High-drive breeds getting 2+ hours daily structured activity</li>
+      </ul>
 
-    <ul>
-      <li><strong>Police and military dogs</strong> — Detection, patrol, protection work</li>
-      <li><strong>Search and rescue dogs</strong> — Wilderness tracking, disaster response</li>
-      <li><strong>Herding dogs (active farms)</strong> — Daily livestock management</li>
-      <li><strong>Hunting dogs (frequent season)</strong> — Waterfowl retrieval, upland game, tracking</li>
-      <li><strong>Sled dogs</strong> — Distance pulling, cold weather endurance</li>
-      <li><strong>Competition agility</strong> — Multiple runs per week, trial weekends</li>
-    </ul>
+      <p><strong>Typical workload:</strong> 1-3 hours of sustained activity, 4-6 days per week</p>
 
-    <p><strong>Typical workload:</strong> 3-8+ hours of intense physical or mental work, 4-7 days per week</p>
+      <h3>When Standard "Active Dog" Food Isn't Enough</h3>
 
-    <h3>Moderately Active Dogs</h3>
+      <p>Most commercial "active" or "performance" formulas are designed for moderately active pets—not true working dogs. They typically increase calories through fat and carbs without proportionally increasing protein, vitamins, or minerals. This leaves working dogs overfed on energy but underfed on recovery nutrients.</p>
 
-    <ul>
-      <li><strong>Recreational agility/dock diving</strong> — 1-2 sessions per week</li>
-      <li><strong>Hiking/trail dogs</strong> — Regular multi-hour outings with elevation</li>
-      <li><strong>Running companions</strong> — Daily 5-10k runs</li>
-      <li><strong>Active breed exercise</strong> — High-drive breeds getting 2+ hours daily structured activity</li>
-    </ul>
+      <h2>Energy Requirements: It's Not Just About Calories</h2>
 
-    <p><strong>Typical workload:</strong> 1-3 hours of sustained activity, 4-6 days per week</p>
+      <p>Working dogs need more calories, but <em>how</em> those calories are delivered matters.</p>
 
-    <h3>When Standard "Active Dog" Food Isn't Enough</h3>
-
-    <p>Most commercial "active" or "performance" formulas are designed for moderately active pets—not true working dogs. They typically increase calories through fat and carbs without proportionally increasing protein, vitamins, or minerals. This leaves working dogs overfed on energy but underfed on recovery nutrients.</p>
-
-    <h2>Energy Requirements: It's Not Just About Calories</h2>
-
-    <p>Working dogs need more calories, but <em>how</em> those calories are delivered matters.</p>
-
-    <div class="comparison-table">
       <table>
         <thead>
           <tr>
@@ -714,270 +835,270 @@
           </tr>
         </tbody>
       </table>
-    </div>
 
-    <h3>Why Working Dogs Need More Protein</h3>
+      <h3>Why Working Dogs Need More Protein</h3>
 
-    <p>Unlike humans, who primarily burn carbs and fats during exercise, dogs are <strong>protein-adapted athletes</strong>. They use amino acids from protein for:</p>
+      <p>Unlike humans, who primarily burn carbs and fats during exercise, dogs are <strong>protein-adapted athletes</strong>. They use amino acids from protein for:</p>
 
-    <ul>
-      <li><strong>Sustained energy during work</strong> — Dogs convert protein to glucose more efficiently than humans</li>
-      <li><strong>Muscle repair and recovery</strong> — Intense work breaks down muscle tissue that must be rebuilt</li>
-      <li><strong>Immune function</strong> — Prolonged work suppresses immune response; protein supports recovery</li>
-      <li><strong>Enzyme and hormone production</strong> — Working dogs produce more stress hormones and metabolic enzymes</li>
-    </ul>
+      <ul>
+        <li><strong>Sustained energy during work</strong> — Dogs convert protein to glucose more efficiently than humans</li>
+        <li><strong>Muscle repair and recovery</strong> — Intense work breaks down muscle tissue that must be rebuilt</li>
+        <li><strong>Immune function</strong> — Prolonged work suppresses immune response; protein supports recovery</li>
+        <li><strong>Enzyme and hormone production</strong> — Working dogs produce more stress hormones and metabolic enzymes</li>
+      </ul>
 
-    <p>Research shows that working dogs on high-protein diets (32-38%) maintain better body condition, recover faster, and sustain performance longer than dogs on standard protein levels (22-25%).</p>
+      <p>Research shows that working dogs on high-protein diets (32-38%) maintain better body condition, recover faster, and sustain performance longer than dogs on standard protein levels (22-25%).</p>
 
-    <p>For more on why <a href="/blog/dog-vs-human-nutrition.html">dogs process protein differently than humans</a>, see our guide on canine vs human nutrition.</p>
+      <p>For more on why <a href="/blog/dog-vs-human-nutrition.html">dogs process protein differently than humans</a>, see our guide on canine vs human nutrition.</p>
 
-    <h2>Critical Nutrients for Working Dogs</h2>
+      <h2>Critical Nutrients for Working Dogs</h2>
 
-    <h3>1. B Vitamins (Especially B12, B6, and Folate)</h3>
+      <h3>1. B Vitamins (Especially B12, B6, and Folate)</h3>
 
-    <p>B vitamins are essential for converting food into cellular energy (ATP). Working dogs burn through B vitamins faster than sedentary pets because they're producing energy at a much higher rate.</p>
+      <p>B vitamins are essential for converting food into cellular energy (ATP). Working dogs burn through B vitamins faster than sedentary pets because they're producing energy at a much higher rate.</p>
 
-    <p><strong>Why it matters for working dogs:</strong></p>
+      <p><strong>Why it matters for working dogs:</strong></p>
 
-    <ul>
-      <li><strong>B12</strong> — Required for red blood cell formation and oxygen delivery to muscles</li>
-      <li><strong>B6</strong> — Supports protein metabolism and neurotransmitter function</li>
-      <li><strong>Folate</strong> — Essential for cell regeneration and recovery</li>
-    </ul>
+      <ul>
+        <li><strong>B12</strong> — Required for red blood cell formation and oxygen delivery to muscles</li>
+        <li><strong>B6</strong> — Supports protein metabolism and neurotransmitter function</li>
+        <li><strong>Folate</strong> — Essential for cell regeneration and recovery</li>
+      </ul>
 
-    <p><strong>Best sources:</strong> Beef liver (contains 3000%+ daily B12 needs per ounce), beef heart, kidney, eggs</p>
+      <p><strong>Best sources:</strong> Beef liver (contains 3000%+ daily B12 needs per ounce), beef heart, kidney, eggs</p>
 
-    <p>Working dogs with low B vitamin status show earlier fatigue, longer recovery times, and decreased performance over time. Learn more about <a href="/blog/b-vitamins-for-dogs.html">why B vitamins are often missing from kibble</a>.</p>
+      <p>Working dogs with low B vitamin status show earlier fatigue, longer recovery times, and decreased performance over time. Learn more about <a href="/blog/b-vitamins-for-dogs.html">why B vitamins are often missing from kibble</a>.</p>
 
-    <h3>2. Iron (Heme Iron for Oxygen Transport)</h3>
+      <h3>2. Iron (Heme Iron for Oxygen Transport)</h3>
 
-    <p>Working dogs need efficient oxygen delivery to muscles. Iron is the core component of hemoglobin (carries oxygen in blood) and myoglobin (stores oxygen in muscle).</p>
+      <p>Working dogs need efficient oxygen delivery to muscles. Iron is the core component of hemoglobin (carries oxygen in blood) and myoglobin (stores oxygen in muscle).</p>
 
-    <p><strong>Why working dogs need more:</strong></p>
+      <p><strong>Why working dogs need more:</strong></p>
 
-    <ul>
-      <li>Higher blood volume and red blood cell turnover</li>
-      <li>Increased oxygen demand during sustained work</li>
-      <li>Greater oxidative stress on red blood cells</li>
-    </ul>
+      <ul>
+        <li>Higher blood volume and red blood cell turnover</li>
+        <li>Increased oxygen demand during sustained work</li>
+        <li>Greater oxidative stress on red blood cells</li>
+      </ul>
 
-    <p><strong>Best sources:</strong> Heme iron from red meat, liver, heart, kidney. Heme iron is absorbed 3x more efficiently than plant-based (non-heme) iron.</p>
+      <p><strong>Best sources:</strong> Heme iron from red meat, liver, heart, kidney. Heme iron is absorbed 3x more efficiently than plant-based (non-heme) iron.</p>
 
-    <h3>3. Antioxidants (Vitamin E, Selenium, Vitamin A)</h3>
+      <h3>3. Antioxidants (Vitamin E, Selenium, Vitamin A)</h3>
 
-    <p>Intense exercise produces <strong>oxidative stress</strong>—free radicals that damage cells, proteins, and DNA. Working dogs generate significantly more oxidative stress than pets, which accelerates aging and increases injury risk if not managed.</p>
+      <p>Intense exercise produces <strong>oxidative stress</strong>—free radicals that damage cells, proteins, and DNA. Working dogs generate significantly more oxidative stress than pets, which accelerates aging and increases injury risk if not managed.</p>
 
-    <p><strong>Key antioxidants for working dogs:</strong></p>
+      <p><strong>Key antioxidants for working dogs:</strong></p>
 
-    <ul>
-      <li><strong>Vitamin E</strong> — Protects cell membranes, especially in muscle tissue</li>
-      <li><strong>Selenium</strong> — Works synergistically with vitamin E to neutralize free radicals</li>
-      <li><strong>Vitamin A (retinol)</strong> — Supports immune function and tissue repair</li>
-    </ul>
+      <ul>
+        <li><strong>Vitamin E</strong> — Protects cell membranes, especially in muscle tissue</li>
+        <li><strong>Selenium</strong> — Works synergistically with vitamin E to neutralize free radicals</li>
+        <li><strong>Vitamin A (retinol)</strong> — Supports immune function and tissue repair</li>
+      </ul>
 
-    <p><strong>Best sources:</strong> Beef liver (vitamin A, selenium), eggs (selenium), fatty fish (vitamin E and omega-3s)</p>
+      <p><strong>Best sources:</strong> Beef liver (vitamin A, selenium), eggs (selenium), fatty fish (vitamin E and omega-3s)</p>
 
-    <p>Research shows that working dogs supplemented with antioxidants recover faster, have lower markers of muscle damage, and maintain performance better over long seasons. See our guide on <a href="/blog/antioxidants-for-dogs.html">antioxidants for dogs</a> for more detail.</p>
+      <p>Research shows that working dogs supplemented with antioxidants recover faster, have lower markers of muscle damage, and maintain performance better over long seasons. See our guide on <a href="/blog/antioxidants-for-dogs.html">antioxidants for dogs</a> for more detail.</p>
 
-    <h3>4. Electrolytes (Sodium, Potassium, Chloride)</h3>
+      <h3>4. Electrolytes (Sodium, Potassium, Chloride)</h3>
 
-    <p>Dogs lose electrolytes through panting and limited sweating (through paw pads). For dogs working in heat or for extended periods, electrolyte balance becomes critical.</p>
+      <p>Dogs lose electrolytes through panting and limited sweating (through paw pads). For dogs working in heat or for extended periods, electrolyte balance becomes critical.</p>
 
-    <p><strong>Signs of electrolyte depletion:</strong></p>
+      <p><strong>Signs of electrolyte depletion:</strong></p>
 
-    <ul>
-      <li>Excessive panting that doesn't resolve with rest</li>
-      <li>Weakness or "fading" during work</li>
-      <li>Muscle cramping or stiffness</li>
-      <li>Disorientation or confusion</li>
-    </ul>
+      <ul>
+        <li>Excessive panting that doesn't resolve with rest</li>
+        <li>Weakness or "fading" during work</li>
+        <li>Muscle cramping or stiffness</li>
+        <li>Disorientation or confusion</li>
+      </ul>
 
-    <p><strong>Best approach:</strong> Provide fresh water with a pinch of salt for extended work (4+ hours). Commercial electrolyte supplements designed for dogs can help during particularly intense or hot conditions.</p>
+      <p><strong>Best approach:</strong> Provide fresh water with a pinch of salt for extended work (4+ hours). Commercial electrolyte supplements designed for dogs can help during particularly intense or hot conditions.</p>
 
-    <h3>5. Joint Support (Glucosamine, Collagen, Omega-3s)</h3>
+      <h3>5. Joint Support (Glucosamine, Collagen, Omega-3s)</h3>
 
-    <p>Working dogs put constant stress on joints, cartilage, and connective tissue. Proactive joint support isn't just for older dogs—it's essential for maintaining soundness in working dogs of all ages.</p>
+      <p>Working dogs put constant stress on joints, cartilage, and connective tissue. Proactive joint support isn't just for older dogs—it's essential for maintaining soundness in working dogs of all ages.</p>
 
-    <p><strong>Key nutrients:</strong></p>
+      <p><strong>Key nutrients:</strong></p>
 
-    <ul>
-      <li><strong>Glucosamine and chondroitin</strong> — Support cartilage health and joint lubrication</li>
-      <li><strong>Collagen</strong> — Provides building blocks for cartilage, tendons, and ligaments</li>
-      <li><strong>Omega-3 fatty acids (EPA/DHA)</strong> — Reduce inflammation and support recovery</li>
-    </ul>
+      <ul>
+        <li><strong>Glucosamine and chondroitin</strong> — Support cartilage health and joint lubrication</li>
+        <li><strong>Collagen</strong> — Provides building blocks for cartilage, tendons, and ligaments</li>
+        <li><strong>Omega-3 fatty acids (EPA/DHA)</strong> — Reduce inflammation and support recovery</li>
+      </ul>
 
-    <p><strong>Best sources:</strong> Bone broth, green-lipped mussel, beef cartilage, fatty fish (salmon, sardines)</p>
+      <p><strong>Best sources:</strong> Bone broth, green-lipped mussel, beef cartilage, fatty fish (salmon, sardines)</p>
 
-    <p>Learn more about <a href="/blog/natural-glucosamine-sources-for-dogs.html">natural glucosamine sources</a> and <a href="/blog/collagen-for-dogs-benefits.html">collagen for dogs</a>.</p>
+      <p>Learn more about <a href="/blog/natural-glucosamine-sources-for-dogs.html">natural glucosamine sources</a> and <a href="/blog/collagen-for-dogs-benefits.html">collagen for dogs</a>.</p>
 
-    <h2>Feeding Strategy: Timing Matters</h2>
+      <h2>Feeding Strategy: Timing Matters</h2>
 
-    <p>What you feed matters, but <em>when</em> you feed working dogs is just as important.</p>
+      <p>What you feed matters, but <em>when</em> you feed working dogs is just as important.</p>
 
-    <h3>Pre-Work Feeding (2-4 Hours Before)</h3>
+      <h3>Pre-Work Feeding (2-4 Hours Before)</h3>
 
-    <p>Feed working dogs 2-4 hours before intense activity to allow digestion and avoid gastric issues. Blood flow during exercise diverts from the gut to muscles—if the stomach is full, this can cause cramping, bloating, or (in deep-chested breeds) increase risk of bloat.</p>
+      <p>Feed working dogs 2-4 hours before intense activity to allow digestion and avoid gastric issues. Blood flow during exercise diverts from the gut to muscles—if the stomach is full, this can cause cramping, bloating, or (in deep-chested breeds) increase risk of bloat.</p>
 
-    <p><strong>What to feed:</strong> Easily digestible, protein-rich meal. Avoid high-fat or high-fiber meals immediately before work.</p>
+      <p><strong>What to feed:</strong> Easily digestible, protein-rich meal. Avoid high-fat or high-fiber meals immediately before work.</p>
 
-    <h3>During Work (For Extended Sessions)</h3>
+      <h3>During Work (For Extended Sessions)</h3>
 
-    <p>For work lasting 4+ hours, provide small, high-protein snacks every 2-3 hours. This maintains energy and prevents muscle breakdown.</p>
+      <p>For work lasting 4+ hours, provide small, high-protein snacks every 2-3 hours. This maintains energy and prevents muscle breakdown.</p>
 
-    <p><strong>Good options:</strong> Small pieces of cooked meat, hard-boiled eggs, freeze-dried liver treats, or commercial working dog energy bars</p>
+      <p><strong>Good options:</strong> Small pieces of cooked meat, hard-boiled eggs, freeze-dried liver treats, or commercial working dog energy bars</p>
 
-    <h3>Post-Work Recovery (30-60 Minutes After)</h3>
+      <h3>Post-Work Recovery (30-60 Minutes After)</h3>
 
-    <p>Wait 30-60 minutes after work ends before feeding a full meal. This allows the dog's body to cool down, heart rate to normalize, and blood flow to return to the digestive system.</p>
+      <p>Wait 30-60 minutes after work ends before feeding a full meal. This allows the dog's body to cool down, heart rate to normalize, and blood flow to return to the digestive system.</p>
 
-    <p><strong>What to feed:</strong> Protein-rich meal with easily digestible carbs (sweet potato, rice) to replenish glycogen stores and support muscle repair.</p>
+      <p><strong>What to feed:</strong> Protein-rich meal with easily digestible carbs (sweet potato, rice) to replenish glycogen stores and support muscle repair.</p>
 
-    <div class="callout">
-      <h3 style="margin-top: 0; font-size: 18px;">Recovery Nutrition Window</h3>
-      <div style="margin-top: 12px;">
-        <div style="margin-bottom: 8px;">The 2-4 hours after intense work are when muscle repair happens. Protein consumed during this window is used more efficiently for recovery than protein consumed later.</div>
-        <div>For multi-day events (hunt tests, trials, etc.), prioritizing recovery nutrition between sessions can make a significant difference in Day 2 and Day 3 performance.</div>
-      </div>
-    </div>
-
-    <h2>Signs Your Working Dog Isn't Getting Enough Nutrition</h2>
-
-    <p>Even if your dog seems fine, subtle signs of nutritional deficiency can show up in performance before they show up in health.</p>
-
-    <h3>Performance Indicators</h3>
-
-    <ul>
-      <li><strong>Declining stamina</strong> — Can't sustain work as long as they used to</li>
-      <li><strong>Slower recovery</strong> — Still tired or reluctant to work 24+ hours after a session</li>
-      <li><strong>Reduced drive or enthusiasm</strong> — Less eager to work, needs more encouragement</li>
-      <li><strong>Increased errors</strong> — Loss of focus, decreased accuracy in tasks</li>
-    </ul>
-
-    <h3>Physical Indicators</h3>
-
-    <ul>
-      <li><strong>Weight loss</strong> — Visible ribs or hip bones despite adequate calories</li>
-      <li><strong>Loss of muscle mass</strong> — Especially along the spine, shoulders, and hindquarters</li>
-      <li><strong>Dull or dry coat</strong> — Coat loses shine, feels brittle</li>
-      <li><strong>Slow healing</strong> — Cuts, scrapes, or pad wear take longer to heal</li>
-      <li><strong>Increased injuries</strong> — More sprains, strains, or soft tissue issues</li>
-    </ul>
-
-    <h3>Behavioral Indicators</h3>
-
-    <ul>
-      <li><strong>Food guarding</strong> — Becomes protective of food when previously wasn't</li>
-      <li><strong>Increased hunger</strong> — Always seems hungry despite adequate calories</li>
-      <li><strong>Irritability</strong> — Less tolerant of other dogs or handling</li>
-    </ul>
-
-    <p>If you notice multiple signs, work with your vet to assess body condition, nutrient status, and adjust feeding accordingly.</p>
-
-    <h2>Why Organ-Based Nutrition Makes Sense for Working Dogs</h2>
-
-    <p>Organ meats—especially liver, heart, and kidney—are some of the most nutrient-dense foods available. They deliver concentrated vitamins, minerals, and co-factors that support the exact demands working dogs face:</p>
-
-    <ul>
-      <li><strong>Beef liver</strong> — Vitamin A, B12, folate, iron, choline, selenium</li>
-      <li><strong>Beef heart</strong> — CoQ10, taurine, B vitamins, high-quality protein</li>
-      <li><strong>Beef kidney</strong> — B12, selenium, riboflavin, protein</li>
-    </ul>
-
-    <p>These nutrients come in <strong>bioavailable forms</strong>—meaning dogs absorb and use them efficiently without needing to convert precursors or synthetic isolates. For working dogs operating at high metabolic rates, bioavailability matters.</p>
-
-    <p>Learn more about <a href="/blog/organ-based-nutrition-for-dogs.html">why organ-based nutrition works</a> and <a href="/blog/beef-liver-for-dogs.html">the benefits of beef liver for dogs</a>.</p>
-
-    <h2>Supplementing vs. Feeding Whole Organs</h2>
-
-    <p>You can add organ meat to your working dog's diet in two ways:</p>
-
-    <h3>Option 1: Fresh or Frozen Organs</h3>
-
-    <p><strong>Pros:</strong> Whole-food source, no processing, cost-effective in bulk</p>
-
-    <p><strong>Cons:</strong> Requires sourcing, storage, and careful portioning; inconsistent nutrient delivery; potential food safety concerns if not handled properly</p>
-
-    <p><strong>Recommended amount:</strong> 5-10% of daily food intake (e.g., 1-2 oz per day for a 50 lb dog)</p>
-
-    <h3>Option 2: Organ-Based Supplements</h3>
-
-    <p><strong>Pros:</strong> Pre-portioned, shelf-stable, consistent nutrient profile, convenient for travel</p>
-
-    <p><strong>Cons:</strong> Higher cost per serving than bulk fresh organs</p>
-
-    <p><strong>What to look for:</strong> Grass-fed sources, minimal processing (freeze-dried or air-dried), no synthetic additives or fillers</p>
-
-    <p>For working dogs traveling to trials, hunt tests, or field work, supplements offer consistency and convenience without refrigeration.</p>
-
-    <h2>Common Mistakes in Working Dog Nutrition</h2>
-
-    <h3>1. Just Feeding More of the Same Food</h3>
-
-    <p>Doubling kibble portions increases calories but doesn't proportionally increase protein, vitamins, or minerals. Working dogs end up overfed on energy but underfed on recovery nutrients.</p>
-
-    <h3>2. High-Fat "Performance" Diets</h3>
-
-    <p>Many working dog foods increase fat to boost calories. While fat provides energy, it doesn't support muscle repair or recovery the way protein does. Working dogs on very high-fat diets (30%+) often show GI upset and loose stools.</p>
-
-    <h3>3. Ignoring Micronutrients</h3>
-
-    <p>Calories and protein matter, but working dogs also burn through B vitamins, antioxidants, and minerals faster than pets. These "invisible" deficiencies show up as declining performance before they show up as obvious health issues.</p>
-
-    <h3>4. Not Adjusting for Season or Workload</h3>
-
-    <p>A hunting dog during active season has very different needs than the same dog in summer downtime. Adjust feeding based on actual work, not calendar dates.</p>
-
-    <h2>The Bottom Line</h2>
-
-    <p>Working dogs aren't just "active pets"—they're canine athletes with distinct nutritional demands. They need more calories, yes—but they also need more protein, faster-absorbing nutrients, targeted micronutrient support, and strategic feeding timing.</p>
-
-    <p>Standard "performance" kibbles increase calories through fat and carbs but often fall short on recovery nutrients like B vitamins, antioxidants, and bioavailable iron. This is why many working dog handlers supplement with whole-food sources like organ meat, eggs, and bone broth—these deliver concentrated nutrition in forms working dogs can actually use.</p>
-
-    <p>Whether you're running agility, working livestock, or hunting every weekend, your dog's nutrition should match the intensity of what they do. When it does, you'll see it in their stamina, recovery, and long-term soundness.</p>
-
-    <!-- FAQ Section -->
-    <div class="faq-section">
-      <h2>Frequently Asked Questions</h2>
-
-      <div class="faq-item">
-        <div class="faq-question">How much more should I feed an active working dog?</div>
-        <div class="faq-answer">Active working dogs typically need 1.5-2x more calories than sedentary pets of the same size. A moderately active 50 lb dog needs about 1,200-1,400 calories daily, while a working dog doing 4+ hours of intense activity may need 2,000-2,500 calories. The exact amount depends on intensity, duration, and environmental conditions.</div>
+      <div class="callout">
+        <h3 style="margin-top: 0; font-size: 18px;">Recovery Nutrition Window</h3>
+        <p style="margin-top: 12px; margin-bottom: 8px;">The 2-4 hours after intense work are when muscle repair happens. Protein consumed during this window is used more efficiently for recovery than protein consumed later.</p>
+        <p style="margin: 0;">For multi-day events (hunt tests, trials, etc.), prioritizing recovery nutrition between sessions can make a significant difference in Day 2 and Day 3 performance.</p>
       </div>
 
-      <div class="faq-item">
-        <div class="faq-question">What is the best protein level for working dogs?</div>
-        <div class="faq-answer">Working dogs need 30-38% protein (dry matter basis) compared to 22-28% for sedentary pets. Higher protein supports muscle maintenance, recovery, and sustained energy. The protein should come from high-quality animal sources like meat, organs, and eggs for optimal bioavailability.</div>
+      <h2>Signs Your Working Dog Isn't Getting Enough Nutrition</h2>
+
+      <p>Even if your dog seems fine, subtle signs of nutritional deficiency can show up in performance before they show up in health.</p>
+
+      <h3>Performance Indicators</h3>
+
+      <ul>
+        <li><strong>Declining stamina</strong> — Can't sustain work as long as they used to</li>
+        <li><strong>Slower recovery</strong> — Still tired or reluctant to work 24+ hours after a session</li>
+        <li><strong>Reduced drive or enthusiasm</strong> — Less eager to work, needs more encouragement</li>
+        <li><strong>Increased errors</strong> — Loss of focus, decreased accuracy in tasks</li>
+      </ul>
+
+      <h3>Physical Indicators</h3>
+
+      <ul>
+        <li><strong>Weight loss</strong> — Visible ribs or hip bones despite adequate calories</li>
+        <li><strong>Loss of muscle mass</strong> — Especially along the spine, shoulders, and hindquarters</li>
+        <li><strong>Dull or dry coat</strong> — Coat loses shine, feels brittle</li>
+        <li><strong>Slow healing</strong> — Cuts, scrapes, or pad wear take longer to heal</li>
+        <li><strong>Increased injuries</strong> — More sprains, strains, or soft tissue issues</li>
+      </ul>
+
+      <h3>Behavioral Indicators</h3>
+
+      <ul>
+        <li><strong>Food guarding</strong> — Becomes protective of food when previously wasn't</li>
+        <li><strong>Increased hunger</strong> — Always seems hungry despite adequate calories</li>
+        <li><strong>Irritability</strong> — Less tolerant of other dogs or handling</li>
+      </ul>
+
+      <p>If you notice multiple signs, work with your vet to assess body condition, nutrient status, and adjust feeding accordingly.</p>
+
+      <h2>Why Organ-Based Nutrition Makes Sense for Working Dogs</h2>
+
+      <p>Organ meats—especially liver, heart, and kidney—are some of the most nutrient-dense foods available. They deliver concentrated vitamins, minerals, and co-factors that support the exact demands working dogs face:</p>
+
+      <ul>
+        <li><strong>Beef liver</strong> — Vitamin A, B12, folate, iron, choline, selenium</li>
+        <li><strong>Beef heart</strong> — CoQ10, taurine, B vitamins, high-quality protein</li>
+        <li><strong>Beef kidney</strong> — B12, selenium, riboflavin, protein</li>
+      </ul>
+
+      <p>These nutrients come in <strong>bioavailable forms</strong>—meaning dogs absorb and use them efficiently without needing to convert precursors or synthetic isolates. For working dogs operating at high metabolic rates, bioavailability matters.</p>
+
+      <p>Learn more about <a href="/blog/organ-based-nutrition-for-dogs.html">why organ-based nutrition works</a> and <a href="/blog/beef-liver-for-dogs.html">the benefits of beef liver for dogs</a>.</p>
+
+      <h2>Supplementing vs. Feeding Whole Organs</h2>
+
+      <p>You can add organ meat to your working dog's diet in two ways:</p>
+
+      <h3>Option 1: Fresh or Frozen Organs</h3>
+
+      <p><strong>Pros:</strong> Whole-food source, no processing, cost-effective in bulk</p>
+
+      <p><strong>Cons:</strong> Requires sourcing, storage, and careful portioning; inconsistent nutrient delivery; potential food safety concerns if not handled properly</p>
+
+      <p><strong>Recommended amount:</strong> 5-10% of daily food intake (e.g., 1-2 oz per day for a 50 lb dog)</p>
+
+      <h3>Option 2: Organ-Based Supplements</h3>
+
+      <p><strong>Pros:</strong> Pre-portioned, shelf-stable, consistent nutrient profile, convenient for travel</p>
+
+      <p><strong>Cons:</strong> Higher cost per serving than bulk fresh organs</p>
+
+      <p><strong>What to look for:</strong> Grass-fed sources, minimal processing (freeze-dried or air-dried), no synthetic additives or fillers</p>
+
+      <p>For working dogs traveling to trials, hunt tests, or field work, supplements offer consistency and convenience without refrigeration.</p>
+
+      <h2>Common Mistakes in Working Dog Nutrition</h2>
+
+      <h3>1. Just Feeding More of the Same Food</h3>
+
+      <p>Doubling kibble portions increases calories but doesn't proportionally increase protein, vitamins, or minerals. Working dogs end up overfed on energy but underfed on recovery nutrients.</p>
+
+      <h3>2. High-Fat "Performance" Diets</h3>
+
+      <p>Many working dog foods increase fat to boost calories. While fat provides energy, it doesn't support muscle repair or recovery the way protein does. Working dogs on very high-fat diets (30%+) often show GI upset and loose stools.</p>
+
+      <h3>3. Ignoring Micronutrients</h3>
+
+      <p>Calories and protein matter, but working dogs also burn through B vitamins, antioxidants, and minerals faster than pets. These "invisible" deficiencies show up as declining performance before they show up as obvious health issues.</p>
+
+      <h3>4. Not Adjusting for Season or Workload</h3>
+
+      <p>A hunting dog during active season has very different needs than the same dog in summer downtime. Adjust feeding based on actual work, not calendar dates.</p>
+
+      <h2>The Bottom Line</h2>
+
+      <p>Working dogs aren't just "active pets"—they're canine athletes with distinct nutritional demands. They need more calories, yes—but they also need more protein, faster-absorbing nutrients, targeted micronutrient support, and strategic feeding timing.</p>
+
+      <p>Standard "performance" kibbles increase calories through fat and carbs but often fall short on recovery nutrients like B vitamins, antioxidants, and bioavailable iron. This is why many working dog handlers supplement with whole-food sources like organ meat, eggs, and bone broth—these deliver concentrated nutrition in forms working dogs can actually use.</p>
+
+      <p>Whether you're running agility, working livestock, or hunting every weekend, your dog's nutrition should match the intensity of what they do. When it does, you'll see it in their stamina, recovery, and long-term soundness.</p>
+
+      <div class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <h3>How much more should I feed an active working dog?</h3>
+          <p>Active working dogs typically need 1.5-2x more calories than sedentary pets of the same size. A moderately active 50 lb dog needs about 1,200-1,400 calories daily, while a working dog doing 4+ hours of intense activity may need 2,000-2,500 calories. The exact amount depends on intensity, duration, and environmental conditions.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What is the best protein level for working dogs?</h3>
+          <p>Working dogs need 30-38% protein (dry matter basis) compared to 22-28% for sedentary pets. Higher protein supports muscle maintenance, recovery, and sustained energy. The protein should come from high-quality animal sources like meat, organs, and eggs for optimal bioavailability.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Do working dogs need special supplements?</h3>
+          <p>Working dogs benefit from targeted supplementation: B vitamins (especially B12) for energy metabolism, antioxidants (vitamin E, selenium) for oxidative stress from intense exercise, electrolytes for extended work, joint support (glucosamine, collagen) for cartilage protection, and omega-3s for inflammation management. Organ-based supplements deliver many of these in bioavailable forms.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>When should I feed my working dog before activity?</h3>
+          <p>Feed working dogs 2-4 hours before intense activity to allow digestion and avoid gastric issues. For extended work (4+ hours), provide small, easily digestible snacks every 2-3 hours during activity. Post-activity, wait 30-60 minutes before feeding a full meal to allow the body to cool down and blood flow to normalize.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What are signs my working dog isn't getting enough nutrition?</h3>
+          <p>Watch for: declining stamina or endurance during work, weight loss or visible ribs despite adequate calories, slow recovery (still tired 24+ hours post-activity), increased injuries or slower healing, dull coat or skin issues, behavioral changes like food guarding or increased hunger, and loss of muscle mass especially along the spine and hindquarters.</p>
+        </div>
       </div>
+    </article>
+  </main>
 
-      <div class="faq-item">
-        <div class="faq-question">Do working dogs need special supplements?</div>
-        <div class="faq-answer">Working dogs benefit from targeted supplementation: B vitamins (especially B12) for energy metabolism, antioxidants (vitamin E, selenium) for oxidative stress from intense exercise, electrolytes for extended work, joint support (glucosamine, collagen) for cartilage protection, and omega-3s for inflammation management. Organ-based supplements deliver many of these in bioavailable forms.</div>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
       </div>
-
-      <div class="faq-item">
-        <div class="faq-question">When should I feed my working dog before activity?</div>
-        <div class="faq-answer">Feed working dogs 2-4 hours before intense activity to allow digestion and avoid gastric issues. For extended work (4+ hours), provide small, easily digestible snacks every 2-3 hours during activity. Post-activity, wait 30-60 minutes before feeding a full meal to allow the body to cool down and blood flow to normalize.</div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-question">What are signs my working dog isn't getting enough nutrition?</div>
-        <div class="faq-answer">Watch for: declining stamina or endurance during work, weight loss or visible ribs despite adequate calories, slow recovery (still tired 24+ hours post-activity), increased injuries or slower healing, dull coat or skin issues, behavioral changes like food guarding or increased hunger, and loss of muscle mass especially along the spine and hindquarters.</div>
-      </div>
-    </div>
-
-    <!-- CTA Section -->
-    <div class="cta-section">
-      <p><strong>Performance nutrition from whole-food sources.</strong></p>
-      <p>Join the waitlist for Watts — nutrient-dense supplements designed to support working dogs' unique demands.</p>
-
-      <a href="/" class="gate">
-        <span class="gate-text">Notify me at launch</span>
-        <span class="gate-arrow" aria-hidden="true">→</span>
-      </a>
-    </div>
-  </article>
-
-  <footer>© <span id="year"></span> Watts Pet</footer>
+    </footer>
+  </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();

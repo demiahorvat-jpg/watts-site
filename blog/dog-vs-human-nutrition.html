@@ -30,200 +30,270 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://wattspet.com/blog/dog-vs-human-nutrition.html">
   <meta property="og:site_name" content="Watts Pet">
-  <meta property="og:image" content="https://wattspet.com/assets/hero.jpg">
+  <meta property="og:image" content="https://wattspet.com/images/og-default.jpg">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
-
+  <!-- Degular Font -->
   <style>
-    :root {
-      --bg: #F1ECE9;
-      --fg: #191919;
-      --muted: #3a3a3a;
-      --border: #191919;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body { min-height: 100%; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Regular.woff2') format('woff2');
       font-weight: 400;
-      line-height: 1.6;
-      overflow-x: hidden;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
     }
 
-    /* Navigation */
-    nav.nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px 20px;
-      border-bottom: 2.5px solid var(--border);
+    :root {
+      --brand-orange: #c03800;
+      --bg-light: #f1f1f1;
+      --text-dark: #191919;
+      --white: #ffffff;
+      --text-muted: #666666;
+      --border-light: rgba(25, 25, 25, 0.1);
+      --accent-navy: #1e3a5f;
     }
-    @media (min-width: 768px) {
-      nav.nav {
-        padding: 24px 20px;
-      }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    nav.nav ul {
-      list-style: none;
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      background: #191919;
+      color: var(--text-dark);
+      font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* HEADER WRAPPER - Black background */
+    .header-wrapper {
+      background: #191919;
+      padding: 12px 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    /* ORANGE HEADER - Rounded like Shopify site */
+    header {
+      background: var(--brand-orange);
+      padding: 7px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
-      gap: 24px;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-height: 40px;
+    }
+
+    /* Nav on the LEFT */
+    nav {
+      order: -1;
+      display: flex;
       align-items: center;
     }
-    @media (min-width: 768px) {
-      nav.nav ul {
-        gap: 32px;
-      }
-    }
-    nav.nav a {
-      color: var(--fg);
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 500;
-      transition: opacity 0.15s;
-      position: relative;
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
     }
     @media (min-width: 768px) {
-      nav.nav a {
-        font-size: 16px;
-      }
-    }
-    nav.nav a:hover {
-      opacity: 0.7;
-    }
-    nav.nav a.active::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: var(--fg);
+      nav ul { gap: 24px; }
     }
 
-    /* Breadcrumbs */
-    .breadcrumbs {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px 20px 0;
+    nav li {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
       font-size: 14px;
-      color: var(--muted);
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
     }
     @media (min-width: 768px) {
-      .breadcrumbs {
-        padding: 24px 40px 0;
-        font-size: 15px;
-      }
+      nav a { font-size: 15px; }
     }
-    .breadcrumbs a {
-      color: var(--muted);
-      text-decoration: none;
-      transition: opacity 0.15s;
-    }
-    .breadcrumbs a:hover {
-      opacity: 0.7;
-    }
-    .breadcrumbs span {
-      margin: 0 8px;
+    nav a:hover {
+      opacity: 0.8;
     }
 
-    /* Article */
+    /* Logo CENTERED */
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo {
+      height: 32px;
+    }
+    @media (min-width: 768px) {
+      .logo { height: 40px; }
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 900px;
+      margin: 16px auto 40px;
+      padding: 0 20px;
+      background: var(--bg-light);
+    }
+    @media (min-width: 768px) {
+      main {
+        margin: 20px auto 60px;
+        padding: 0 40px;
+      }
+    }
+
     article {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 32px 20px 60px;
+      background: var(--white);
+      padding: 40px 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
       article {
-        padding: 48px 40px 80px;
+        padding: 60px 50px;
       }
     }
 
-    /* Article meta */
-    .article-meta {
-      margin-bottom: 24px;
-      font-size: 14px;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    @media (min-width: 768px) {
-      .article-meta {
-        margin-bottom: 28px;
-        font-size: 15px;
-      }
+    .article-header {
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--border-light);
     }
 
-    /* Typography */
     h1 {
-      font-family: "Geologica", sans-serif;
-      font-size: 28px;
+      font-size: 32px;
       font-weight: 700;
       line-height: 1.2;
       margin-bottom: 16px;
       letter-spacing: -0.02em;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       h1 {
-        font-size: 38px;
+        font-size: 48px;
         margin-bottom: 20px;
       }
     }
 
-    h2 {
-      font-family: "Geologica", sans-serif;
-      font-size: 22px;
-      font-weight: 700;
-      line-height: 1.3;
-      margin: 48px 0 20px;
-      letter-spacing: -0.01em;
+    .article-meta {
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      font-weight: 500;
+      line-height: 1.6;
+      color: var(--text-muted);
+      margin-bottom: 0;
     }
     @media (min-width: 768px) {
-      h2 {
-        font-size: 26px;
-        margin: 56px 0 24px;
+      .article-intro {
+        font-size: 21px;
       }
     }
 
-    h2:first-of-type {
-      margin-top: 32px;
+    .article-intro a {
+      color: var(--accent-navy);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    .article-intro a:hover {
+      opacity: 0.7;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 56px 0 24px;
+      letter-spacing: -0.01em;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h2 {
+        font-size: 36px;
+        margin: 64px 0 28px;
+      }
     }
 
     h3 {
-      font-family: "Geologica", sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 1.4;
-      margin: 32px 0 16px;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 40px 0 16px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       h3 {
-        font-size: 20px;
-        margin: 40px 0 18px;
+        font-size: 28px;
+        margin: 48px 0 20px;
       }
     }
 
     p {
       font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
-      margin-bottom: 16px;
-      color: var(--fg);
+      margin-bottom: 20px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       p {
         font-size: 18px;
-        margin-bottom: 18px;
-        line-height: 1.75;
+        margin-bottom: 24px;
       }
-    }
-
-    p:last-child {
-      margin-bottom: 0;
     }
 
     strong {
@@ -231,182 +301,161 @@
     }
 
     a {
-      color: var(--fg);
-      text-decoration: underline;
-      text-decoration-thickness: 1.5px;
-      text-underline-offset: 2px;
+      color: var(--accent-navy);
+      transition: opacity 0.2s ease;
     }
-
     a:hover {
       opacity: 0.7;
     }
 
-    /* Lists */
-    article ul, article ol {
-      margin: 20px 0;
-      padding-left: 0;
-      list-style: none;
+    ul, ol {
+      margin: 24px 0;
+      padding-left: 28px;
     }
 
-    article li {
+    li {
       font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
-      margin-bottom: 16px;
-      padding-left: 28px;
-      position: relative;
+      margin-bottom: 12px;
     }
     @media (min-width: 768px) {
-      article li {
+      li {
         font-size: 18px;
-        margin-bottom: 18px;
       }
     }
 
-    article ul li:before {
-      content: "•";
-      position: absolute;
-      left: 10px;
-      font-weight: 700;
-    }
-
-    /* Callout Box */
+    /* LIGHT CALLOUT BOX */
     .callout {
-      border: 2.5px solid var(--border);
-      padding: 20px;
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
+      padding: 24px 28px;
       margin: 32px 0;
-      background: rgba(0,0,0,.01);
     }
     @media (min-width: 768px) {
       .callout {
-        padding: 28px;
-        margin: 40px 0;
+        padding: 28px 32px;
       }
     }
 
-    /* FAQ Section */
-    .faq-section {
-      margin-top: 56px;
-      padding-top: 40px;
-      border-top: 2.5px solid var(--border);
+    .callout p:last-child {
+      margin-bottom: 0;
     }
-    @media (min-width: 768px) {
-      .faq-section {
-        margin-top: 64px;
-        padding-top: 48px;
-      }
+
+    /* FAQ SECTION */
+    .faq-section {
+      margin-top: 64px;
+      padding-top: 56px;
+      border-top: 3px solid var(--border-light);
     }
 
     .faq-item {
       margin-bottom: 32px;
+      padding: 28px;
+      background: var(--bg-light);
+      border-radius: 12px;
+      border-left: 4px solid var(--brand-orange);
+    }
+
+    .faq-item h3 {
+      font-size: 20px;
+      margin: 0 0 16px 0;
+      color: var(--brand-orange);
     }
     @media (min-width: 768px) {
-      .faq-item {
-        margin-bottom: 40px;
+      .faq-item h3 {
+        font-size: 23px;
       }
     }
 
-    .faq-item:last-child {
+    .faq-item p {
       margin-bottom: 0;
     }
 
-    .faq-question {
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 12px;
-      line-height: 1.4;
-    }
-    @media (min-width: 768px) {
-      .faq-question {
-        font-size: 20px;
-        margin-bottom: 14px;
-      }
+    /* FOOTER WRAPPER - Black background */
+    .footer-wrapper {
+      background: #191919;
+      padding: 0 12px 12px;
+      margin-top: 80px;
     }
 
-    .faq-answer {
-      font-size: 17px;
-      line-height: 1.7;
-      color: var(--fg);
-    }
-    @media (min-width: 768px) {
-      .faq-answer {
-        font-size: 18px;
-      }
-    }
-
-    /* CTA */
-    .cta-section {
-      text-align: center;
-      margin: 56px 0 0;
-      padding: 40px 0 0;
-      border-top: 2.5px solid var(--border);
-    }
-    @media (min-width: 768px) {
-      .cta-section {
-        margin: 64px 0 0;
-        padding: 48px 0 0;
-      }
-    }
-
-    .cta-section p {
-      margin-bottom: 24px;
-    }
-
-    .gate {
-      display: inline-flex;
-      align-items: stretch;
-      justify-content: space-between;
-      width: 100%;
-      max-width: 480px;
-      height: 52px;
-      border: 2.5px solid var(--border);
-      background: transparent;
-      color: var(--fg);
-      font: 600 16px "Geologica", sans-serif;
-      padding: 0;
-      border-radius: 0;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    @media (min-width: 768px) {
-      .gate {
-        font-size: 17px;
-      }
-    }
-    .gate-text { padding: 0 20px 0 14px; text-align: left; flex: 1 1 auto; display: flex; align-items: center; }
-    @media (min-width: 768px) {
-      .gate-text { padding: 0 20px 0 16px; }
-    }
-    .gate-arrow {
-      display: grid;
-      place-items: center;
-      width: 52px;
-      border-left: 2.5px solid var(--border);
-      font-size: 18px;
-      line-height: 1;
-      user-select: none;
-    }
-    @media (min-width: 768px) {
-      .gate-arrow {
-        width: 43px;
-        font-size: 20px;
-      }
-    }
-    .gate:hover { background: rgba(0,0,0,.035); }
-
-    /* Footer */
+    /* FOOTER - Orange with asymmetric rounded shape like Shopify */
     footer {
-      text-align: center;
-      padding: 20px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 400;
-      border-top: 2.5px solid var(--border);
+      background: var(--brand-orange);
+      color: var(--white);
+      padding: 45px 40px 20px;
+      border-radius: 200px 16px 16px 200px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 144px;
     }
     @media (min-width: 768px) {
       footer {
-        padding: 24px;
-        font-size: 13px;
+        padding: 63px 60px 24px;
+        min-height: 207px;
+        border-radius: 300px 16px 16px 300px;
       }
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      flex: 1;
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 24px;
+      flex: 1;
+    }
+    @media (min-width: 768px) {
+      .footer-right {
+        gap: 32px;
+      }
+    }
+
+    .footer-right-text {
+      text-align: right;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-top: 128px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .footer-logo {
+        height: 160px;
+        margin-top: 160px;
+        margin-bottom: 0;
+      }
+    }
+
+    footer p {
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    footer a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 
@@ -504,7 +553,7 @@
       "name": "Watts Pet",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://wattspet.com/assets/file.svg"
+        "url": "https://wattspet.com/images/logo.svg"
       }
     },
     "datePublished": "2025-02-03T09:00:00-05:00",
@@ -518,207 +567,239 @@
 </head>
 
 <body>
-  <nav class="nav">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/blog/" class="active">Blog</a></li>
-      <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
-    </ul>
-  </nav>
-
-  <div class="breadcrumbs">
-    <a href="/">Home</a>
-    <span>→</span>
-    <a href="/blog/">Blog</a>
-    <span>→</span>
-    <span>Dog vs Human Nutrition</span>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+        </div>
+      </div>
+    </header>
   </div>
 
-  <article>
-    <div class="article-meta">February 3, 2025</div>
+  <main>
+    <article>
+    <div class="article-header">
+      <div class="article-meta">February 3, 2025</div>
+      <h1>Dog vs Human Nutrition: Why Dogs Absorb Differently</h1>
 
-    <h1>Dog vs Human Nutrition: Why Dogs Absorb Differently</h1>
-
-    <p>Dogs and humans both need vitamins, minerals, protein, and fats to survive. But that's where the similarities end. Despite living alongside us for thousands of years, dogs have retained a digestive system and metabolism that work fundamentally differently from ours—and understanding those differences is key to feeding them well.</p>
-
-    <p>What's healthy for humans isn't always healthy for dogs. More importantly, the way dogs process and absorb nutrients isn't the same as how we do. This is why dog nutrition can't just be "human nutrition, but smaller portions."</p>
-
-    <h2>The Evolutionary Split: Carnivore vs Omnivore</h2>
-
-    <p>Humans evolved as omnivores. Our digestive systems are designed to extract nutrients from a wide variety of plant and animal sources. We have long digestive tracts, enzymes that break down complex carbohydrates, and the ability to convert plant-based nutrient precursors into active vitamins.</p>
-
-    <p>Dogs, on the other hand, evolved as <strong>facultative carnivores</strong>—animals that thrive primarily on meat but can survive on other foods when necessary. Their digestive systems are optimized for animal-based nutrition:</p>
-
-    <ul>
-      <li><strong>Shorter digestive tract:</strong> Food moves through a dog's system in 6-8 hours, compared to 24-72 hours in humans</li>
-      <li><strong>Higher stomach acidity:</strong> Dogs produce more gastric acid to break down bones, cartilage, and raw meat</li>
-      <li><strong>Fewer carbohydrate enzymes:</strong> Dogs have limited amylase (the enzyme that breaks down starches)</li>
-      <li><strong>Different protein metabolism:</strong> Dogs use amino acids more efficiently and have a higher biological need for protein</li>
-    </ul>
-
-    <p>These adaptations mean dogs are built to extract nutrients quickly from animal-based foods—and struggle to get the same nutritional value from plant-based sources that humans can.</p>
-
-    <h2>Key Nutritional Differences Between Dogs and Humans</h2>
-
-    <h3>1. Vitamin A: Retinol vs Beta-Carotene</h3>
-
-    <p>This is one of the most important differences. Humans can convert beta-carotene (the orange pigment in carrots and sweet potatoes) into active vitamin A (retinol). We're quite good at it—about 50% of the beta-carotene we eat gets converted.</p>
-
-    <p>Dogs, however, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5090096/" target="_blank" rel="noopener">convert beta-carotene to vitamin A poorly compared to humans, according to veterinary research</a>. Their bodies simply lack the enzyme needed to make this conversion efficiently.</p>
-
-    <p>This means dogs need <strong>preformed vitamin A</strong>—the kind that comes from animal sources like liver, egg yolks, and organ meat. Feeding a dog carrots for vitamin A is like trying to fuel a car with the wrong type of gas—it just doesn't work. Learn more about <a href="/blog/beef-liver-for-dogs.html">why beef liver is such a powerful source of vitamin A for dogs</a>.</p>
-
-    <h3>2. Protein Requirements</h3>
-
-    <p>Humans can thrive on relatively low protein diets—around 10-15% of daily calories from protein is enough for most adults. Dogs, however, need significantly more.</p>
-
-    <p>Most healthy adult dogs require at least <strong>25-30% of their calories from protein</strong>, and active or growing dogs may need even more. This isn't just about quantity—it's about biological function.</p>
-
-    <p>Dogs use amino acids from protein for:</p>
-
-    <ul>
-      <li>Energy production (humans primarily use carbs and fats)</li>
-      <li>Immune system support</li>
-      <li>Tissue repair and muscle maintenance</li>
-      <li>Enzyme and hormone production</li>
-    </ul>
-
-    <p>Unlike humans, who can store protein in muscle tissue for later use, dogs break down and use protein continuously. This means they need consistent, high-quality animal protein every day.</p>
-
-    <h3>3. Digestive Speed and Nutrient Absorption</h3>
-
-    <p>Because food moves through a dog's digestive system 3-4x faster than a human's, dogs need nutrients that are:</p>
-
-    <ul>
-      <li><strong>Highly bioavailable</strong> — quickly absorbed and utilized</li>
-      <li><strong>Minimally processed</strong> — their bodies don't have time to break down complex, synthetic compounds</li>
-      <li><strong>In their active forms</strong> — they can't afford to spend energy converting precursors</li>
-    </ul>
-
-    <p>This is why <a href="/blog/whole-food-vs-synthetic-nutrients.html">whole-food nutrients outperform synthetic vitamins for dogs</a>. When digestion happens fast, bioavailability is everything.</p>
-
-    <h3>4. Iron: Heme vs Non-Heme</h3>
-
-    <p>Humans can absorb both heme iron (from animal sources) and non-heme iron (from plants) reasonably well. Dogs, however, absorb heme iron <strong>3x more efficiently</strong> than non-heme iron.</p>
-
-    <p>Heme iron comes from:</p>
-
-    <ul>
-      <li>Red meat (especially organ meats like liver and heart)</li>
-      <li>Poultry</li>
-      <li>Fish</li>
-    </ul>
-
-    <p>Non-heme iron comes from:</p>
-
-    <ul>
-      <li>Spinach, kale, and leafy greens</li>
-      <li>Beans and legumes</li>
-      <li>Fortified grains</li>
-    </ul>
-
-    <p>For dogs, animal-based iron isn't just better—it's essential for maintaining energy, supporting red blood cell production, and preventing fatigue.</p>
-
-    <h3>5. B Vitamins: Folate vs Folic Acid</h3>
-
-    <p>Most human multivitamins contain synthetic folic acid, which the human body converts into active folate fairly efficiently. Dogs, however, don't process synthetic folic acid as well.</p>
-
-    <p>Dogs benefit more from <strong>natural folate</strong> found in:</p>
-
-    <ul>
-      <li>Beef liver</li>
-      <li>Egg yolks</li>
-      <li>Dark leafy greens (though absorption is limited)</li>
-    </ul>
-
-    <p>This is one reason why giving your dog human supplements isn't ideal—the nutrient forms may not be optimized for canine metabolism. Read more about <a href="/blog/dog-vitamins-deficiency.html">which vitamins dogs actually need and how they're best absorbed</a>.</p>
-
-    <h2>Why "Human-Grade" Doesn't Always Mean "Dog-Optimal"</h2>
-
-    <p>In recent years, "human-grade" has become a popular marketing term in dog food. And while it signals quality ingredients and safe handling, it doesn't automatically mean the food is optimized for how dogs digest and absorb nutrients.</p>
-
-    <p>A sweet potato is human-grade. But it won't deliver usable vitamin A to your dog.</p>
-
-    <p>Synthetic folic acid is human-grade. But dogs absorb natural folate better.</p>
-
-    <p>Plant-based iron is human-grade. But dogs need heme iron from meat.</p>
-
-    <p>The better question isn't "Is this food safe for humans?" It's "Is this food aligned with how dogs actually process nutrition?"</p>
-
-    <h2>What This Means for Feeding Your Dog</h2>
-
-    <div class="callout">
-      <h3 style="margin-top: 0; font-size: 18px;">Dogs Thrive on Nutrition That Matches Their Biology</h3>
-      <div style="margin-top: 12px;">
-        <div style="margin-bottom: 8px;"><strong>Animal-based protein:</strong> High-quality meat, not just plant fillers</div>
-        <div style="margin-bottom: 8px;"><strong>Preformed vitamins:</strong> Retinol (not beta-carotene), natural folate (not folic acid)</div>
-        <div style="margin-bottom: 8px;"><strong>Heme iron:</strong> From organ meats like liver and heart</div>
-        <div style="margin-bottom: 8px;"><strong>Highly bioavailable nutrients:</strong> Whole-food sources that absorb quickly</div>
-        <div><strong>Minimal processing:</strong> The closer to nature, the better dogs can utilize it</div>
-      </div>
+      <p class="article-intro">Dogs and humans both need vitamins, minerals, protein, and fats to survive. But that's where the similarities end. Despite living alongside us for thousands of years, dogs have retained a digestive system and metabolism that work fundamentally differently from ours—and understanding those differences is key to feeding them well.</p>
     </div>
 
-    <p>This is why <a href="/blog/organ-based-nutrition-for-dogs.html">organ meat is so powerful for dogs</a>. Liver, heart, and kidney deliver nutrients in exactly the forms a dog's body recognizes and uses—no conversion required, no slow absorption, just direct nutritional benefit.</p>
+    <div class="article-content">
+      <p>What's healthy for humans isn't always healthy for dogs. More importantly, the way dogs process and absorb nutrients isn't the same as how we do. This is why dog nutrition can't just be "human nutrition, but smaller portions."</p>
 
-    <h2>The Practical Takeaway</h2>
+      <h2>The Evolutionary Split: Carnivore vs Omnivore</h2>
 
-    <p>Understanding that dogs absorb nutrients differently than humans changes how you think about feeding them. It's not about giving them more or less of what we eat. It's about giving them what their biology is designed to process.</p>
+      <p>Humans evolved as omnivores. Our digestive systems are designed to extract nutrients from a wide variety of plant and animal sources. We have long digestive tracts, enzymes that break down complex carbohydrates, and the ability to convert plant-based nutrient precursors into active vitamins.</p>
 
-    <p>That means:</p>
+      <p>Dogs, on the other hand, evolved as <strong>facultative carnivores</strong>—animals that thrive primarily on meat but can survive on other foods when necessary. Their digestive systems are optimized for animal-based nutrition:</p>
 
-    <ul>
-      <li>Prioritizing animal-based nutrition over plant-heavy diets</li>
-      <li>Choosing whole-food nutrients over synthetic isolates</li>
-      <li>Feeding preformed vitamins (like retinol) instead of precursors (like beta-carotene)</li>
-      <li>Understanding that faster digestion = higher need for bioavailability</li>
-    </ul>
+      <ul>
+        <li><strong>Shorter digestive tract:</strong> Food moves through a dog's system in 6-8 hours, compared to 24-72 hours in humans</li>
+        <li><strong>Higher stomach acidity:</strong> Dogs produce more gastric acid to break down bones, cartilage, and raw meat</li>
+        <li><strong>Fewer carbohydrate enzymes:</strong> Dogs have limited amylase (the enzyme that breaks down starches)</li>
+        <li><strong>Different protein metabolism:</strong> Dogs use amino acids more efficiently and have a higher biological need for protein</li>
+      </ul>
 
-    <p>Dogs aren't small humans. They're carnivore-adapted animals with their own unique nutritional blueprint—and when you feed them accordingly, you'll see it in their energy, coat, digestion, and long-term health.</p>
+      <p>These adaptations mean dogs are built to extract nutrients quickly from animal-based foods—and struggle to get the same nutritional value from plant-based sources that humans can.</p>
 
-    <!-- FAQ Section -->
+      <h2>Key Nutritional Differences Between Dogs and Humans</h2>
+
+      <h3>1. Vitamin A: Retinol vs Beta-Carotene</h3>
+
+      <p>This is one of the most important differences. Humans can convert beta-carotene (the orange pigment in carrots and sweet potatoes) into active vitamin A (retinol). We're quite good at it—about 50% of the beta-carotene we eat gets converted.</p>
+
+      <p>Dogs, however, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5090096/" target="_blank" rel="noopener">convert beta-carotene to vitamin A poorly compared to humans, according to veterinary research</a>. Their bodies simply lack the enzyme needed to make this conversion efficiently.</p>
+
+      <p>This means dogs need <strong>preformed vitamin A</strong>—the kind that comes from animal sources like liver, egg yolks, and organ meat. Feeding a dog carrots for vitamin A is like trying to fuel a car with the wrong type of gas—it just doesn't work. Learn more about <a href="/blog/beef-liver-for-dogs.html">why beef liver is such a powerful source of vitamin A for dogs</a>.</p>
+
+      <h3>2. Protein Requirements</h3>
+
+      <p>Humans can thrive on relatively low protein diets—around 10-15% of daily calories from protein is enough for most adults. Dogs, however, need significantly more.</p>
+
+      <p>Most healthy adult dogs require at least <strong>25-30% of their calories from protein</strong>, and active or growing dogs may need even more. This isn't just about quantity—it's about biological function.</p>
+
+      <p>Dogs use amino acids from protein for:</p>
+
+      <ul>
+        <li>Energy production (humans primarily use carbs and fats)</li>
+        <li>Immune system support</li>
+        <li>Tissue repair and muscle maintenance</li>
+        <li>Enzyme and hormone production</li>
+      </ul>
+
+      <p>Unlike humans, who can store protein in muscle tissue for later use, dogs break down and use protein continuously. This means they need consistent, high-quality animal protein every day.</p>
+
+      <h3>3. Digestive Speed and Nutrient Absorption</h3>
+
+      <p>Because food moves through a dog's digestive system 3-4x faster than a human's, dogs need nutrients that are:</p>
+
+      <ul>
+        <li><strong>Highly bioavailable</strong> — quickly absorbed and utilized</li>
+        <li><strong>Minimally processed</strong> — their bodies don't have time to break down complex, synthetic compounds</li>
+        <li><strong>In their active forms</strong> — they can't afford to spend energy converting precursors</li>
+      </ul>
+
+      <p>This is why <a href="/blog/whole-food-vs-synthetic-nutrients.html">whole-food nutrients outperform synthetic vitamins for dogs</a>. When digestion happens fast, bioavailability is everything.</p>
+
+      <h3>4. Iron: Heme vs Non-Heme</h3>
+
+      <p>Humans can absorb both heme iron (from animal sources) and non-heme iron (from plants) reasonably well. Dogs, however, absorb heme iron <strong>3x more efficiently</strong> than non-heme iron.</p>
+
+      <p>Heme iron comes from:</p>
+
+      <ul>
+        <li>Red meat (especially organ meats like liver and heart)</li>
+        <li>Poultry</li>
+        <li>Fish</li>
+      </ul>
+
+      <p>Non-heme iron comes from:</p>
+
+      <ul>
+        <li>Spinach, kale, and leafy greens</li>
+        <li>Beans and legumes</li>
+        <li>Fortified grains</li>
+      </ul>
+
+      <p>For dogs, animal-based iron isn't just better—it's essential for maintaining energy, supporting red blood cell production, and preventing fatigue.</p>
+
+      <h3>5. B Vitamins: Folate vs Folic Acid</h3>
+
+      <p>Most human multivitamins contain synthetic folic acid, which the human body converts into active folate fairly efficiently. Dogs, however, don't process synthetic folic acid as well.</p>
+
+      <p>Dogs benefit more from <strong>natural folate</strong> found in:</p>
+
+      <ul>
+        <li>Beef liver</li>
+        <li>Egg yolks</li>
+        <li>Dark leafy greens (though absorption is limited)</li>
+      </ul>
+
+      <p>This is one reason why giving your dog human supplements isn't ideal—the nutrient forms may not be optimized for canine metabolism. Read more about <a href="/blog/dog-vitamins-deficiency.html">which vitamins dogs actually need and how they're best absorbed</a>.</p>
+
+      <h2>Why "Human-Grade" Doesn't Always Mean "Dog-Optimal"</h2>
+
+      <p>In recent years, "human-grade" has become a popular marketing term in dog food. And while it signals quality ingredients and safe handling, it doesn't automatically mean the food is optimized for how dogs digest and absorb nutrients.</p>
+
+      <p>A sweet potato is human-grade. But it won't deliver usable vitamin A to your dog.</p>
+
+      <p>Synthetic folic acid is human-grade. But dogs absorb natural folate better.</p>
+
+      <p>Plant-based iron is human-grade. But dogs need heme iron from meat.</p>
+
+      <p>The better question isn't "Is this food safe for humans?" It's "Is this food aligned with how dogs actually process nutrition?"</p>
+
+      <h2>What This Means for Feeding Your Dog</h2>
+
+      <div class="callout">
+        <h3 style="margin-top: 0; font-size: 18px;">Dogs Thrive on Nutrition That Matches Their Biology</h3>
+        <div style="margin-top: 12px;">
+          <div style="margin-bottom: 8px;"><strong>Animal-based protein:</strong> High-quality meat, not just plant fillers</div>
+          <div style="margin-bottom: 8px;"><strong>Preformed vitamins:</strong> Retinol (not beta-carotene), natural folate (not folic acid)</div>
+          <div style="margin-bottom: 8px;"><strong>Heme iron:</strong> From organ meats like liver and heart</div>
+          <div style="margin-bottom: 8px;"><strong>Highly bioavailable nutrients:</strong> Whole-food sources that absorb quickly</div>
+          <div><strong>Minimal processing:</strong> The closer to nature, the better dogs can utilize it</div>
+        </div>
+      </div>
+
+      <p>This is why <a href="/blog/organ-based-nutrition-for-dogs.html">organ meat is so powerful for dogs</a>. Liver, heart, and kidney deliver nutrients in exactly the forms a dog's body recognizes and uses—no conversion required, no slow absorption, just direct nutritional benefit.</p>
+
+      <h2>The Practical Takeaway</h2>
+
+      <p>Understanding that dogs absorb nutrients differently than humans changes how you think about feeding them. It's not about giving them more or less of what we eat. It's about giving them what their biology is designed to process.</p>
+
+      <p>That means:</p>
+
+      <ul>
+        <li>Prioritizing animal-based nutrition over plant-heavy diets</li>
+        <li>Choosing whole-food nutrients over synthetic isolates</li>
+        <li>Feeding preformed vitamins (like retinol) instead of precursors (like beta-carotene)</li>
+        <li>Understanding that faster digestion = higher need for bioavailability</li>
+      </ul>
+
+      <p>Dogs aren't small humans. They're carnivore-adapted animals with their own unique nutritional blueprint—and when you feed them accordingly, you'll see it in their energy, coat, digestion, and long-term health.</p>
+    </div>
+
     <div class="faq-section">
+      <h2 style="margin-top: 56px; padding-top: 40px; border-top: 2px solid var(--border-light);">Related Articles</h2>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 56px;">
+        <a href="/blog/beef-liver-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Why Beef Liver is Essential for Dogs</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Preformed vitamin A and heme iron dogs can actually use</p>
+        </a>
+
+        <a href="/blog/whole-food-vs-synthetic-nutrients.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Whole Food vs Synthetic Vitamins</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Why bioavailability matters more than ingredient lists</p>
+        </a>
+
+        <a href="/blog/organ-based-nutrition-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">The Real Benefits of Organ-Based Nutrition</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Why organ meats deliver nutrients dogs can actually absorb</p>
+        </a>
+
+        <a href="/blog/dog-vitamins-deficiency.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Common Vitamin Deficiencies in Dogs</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Which vitamins dogs need and how they're best absorbed</p>
+        </a>
+      </div>
+
       <h2>Frequently Asked Questions</h2>
 
       <div class="faq-item">
-        <div class="faq-question">Can dogs absorb nutrients from vegetables like humans?</div>
-        <div class="faq-answer">Not as efficiently. Dogs lack the enzyme needed to convert beta-carotene from vegetables into active vitamin A (retinol). While humans convert about 50% of beta-carotene into vitamin A, dogs convert less than 5%. This is why dogs need animal-based sources of vitamin A, like liver, to meet their nutritional needs.</div>
+        <h3>Can dogs absorb nutrients from vegetables like humans?</h3>
+        <p>Not as efficiently. Dogs lack the enzyme needed to convert beta-carotene from vegetables into active vitamin A (retinol). While humans convert about 50% of beta-carotene into vitamin A, dogs convert less than 5%. This is why dogs need animal-based sources of vitamin A, like liver, to meet their nutritional needs.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Why do dogs need more protein than humans?</div>
-        <div class="faq-answer">Dogs evolved as facultative carnivores with a higher biological need for protein. They use amino acids from protein for energy, immune function, tissue repair, and enzyme production. While humans can thrive on 10-15% of calories from protein, dogs typically need 25-30% or more, depending on age and activity level.</div>
+        <h3>Why do dogs need more protein than humans?</h3>
+        <p>Dogs evolved as facultative carnivores with a higher biological need for protein. They use amino acids from protein for energy, immune function, tissue repair, and enzyme production. While humans can thrive on 10-15% of calories from protein, dogs typically need 25-30% or more, depending on age and activity level.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Do dogs and humans digest food at the same speed?</div>
-        <div class="faq-answer">No. Dogs have much faster digestion than humans. Food moves through a dog's digestive system in 6-8 hours, compared to 24-72 hours in humans. This shorter transit time means dogs need highly bioavailable nutrients that can be absorbed quickly and efficiently.</div>
+        <h3>Do dogs and humans digest food at the same speed?</h3>
+        <p>No. Dogs have much faster digestion than humans. Food moves through a dog's digestive system in 6-8 hours, compared to 24-72 hours in humans. This shorter transit time means dogs need highly bioavailable nutrients that can be absorbed quickly and efficiently.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Can I give my dog the same supplements I take?</div>
-        <div class="faq-answer">Not always. Many human supplements contain forms of nutrients that dogs can't utilize well, or doses that are inappropriate for their metabolism. For example, synthetic folic acid (common in human vitamins) is less bioavailable for dogs than natural folate from whole foods. Always choose dog-specific supplements formulated for canine absorption.</div>
+        <h3>Can I give my dog the same supplements I take?</h3>
+        <p>Not always. Many human supplements contain forms of nutrients that dogs can't utilize well, or doses that are inappropriate for their metabolism. For example, synthetic folic acid (common in human vitamins) is less bioavailable for dogs than natural folate from whole foods. Always choose dog-specific supplements formulated for canine absorption.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">What's the biggest nutritional difference between dogs and humans?</div>
-        <div class="faq-answer">The biggest difference is how they process and utilize nutrients. Dogs need preformed vitamins (like retinol for vitamin A) rather than precursors (like beta-carotene). They have shorter digestive tracts requiring faster nutrient absorption. And they have higher protein needs with a carnivore-adapted metabolism. These differences mean dogs benefit most from animal-based, whole-food nutrition.</div>
+        <h3>What's the biggest nutritional difference between dogs and humans?</h3>
+        <p>The biggest difference is how they process and utilize nutrients. Dogs need preformed vitamins (like retinol for vitamin A) rather than precursors (like beta-carotene). They have shorter digestive tracts requiring faster nutrient absorption. And they have higher protein needs with a carnivore-adapted metabolism. These differences mean dogs benefit most from animal-based, whole-food nutrition.</p>
       </div>
     </div>
+    </article>
+  </main>
 
-    <!-- CTA Section -->
-    <div class="cta-section">
-      <p><strong>Nutrition designed for how dogs actually absorb nutrients.</strong></p>
-      <p>Join the waitlist for Watts — whole-food, animal-based nutrition optimized for canine biology.</p>
-
-      <a href="/" class="gate">
-        <span class="gate-text">Notify me at launch</span>
-        <span class="gate-arrow" aria-hidden="true">→</span>
-      </a>
-    </div>
-  </article>
-
-  <footer>© <span id="year"></span> Watts Pet</footer>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
+      </div>
+    </footer>
+  </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();

@@ -7,328 +7,507 @@
     <meta name="description" content="The best calming supplements for dogs support nervous system health with B vitamins, magnesium, and tryptophan from whole foods - not synthetic sedatives and fillers.">
     <link rel="canonical" href="https://wattspet.com/blog/calming-supplements-for-dogs.html">
 
-  <style>
-    :root {
-      --bg: #F1ECE9;
-      --fg: #191919;
-      --muted: #3a3a3a;
-      --border: #191919;
-    }
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="22KmtuYXO77ED5o6fe6z1w" async></script>
 
-    html, body { min-height: 100%; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      font-weight: 400;
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    /* Navigation */
-    nav.nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px 20px;
-      border-bottom: 2.5px solid var(--border);
-    }
-    @media (min-width: 768px) {
-      nav.nav {
-        padding: 24px 20px;
+    <!-- Degular Font -->
+    <style>
+      @font-face {
+        font-family: 'Degular';
+        src: url('/fonts/Degular-Regular.woff2') format('woff2');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
       }
-    }
-    nav.nav ul {
-      list-style: none;
-      display: flex;
-      gap: 24px;
-      align-items: center;
-    }
-    @media (min-width: 768px) {
-      nav.nav ul {
-        gap: 32px;
+      @font-face {
+        font-family: 'Degular';
+        src: url('/fonts/Degular-Medium.woff2') format('woff2');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
       }
-    }
-    nav.nav a {
-      color: var(--fg);
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 500;
-      transition: opacity 0.15s;
-      position: relative;
-    }
-    @media (min-width: 768px) {
-      nav.nav a {
-        font-size: 16px;
+      @font-face {
+        font-family: 'Degular';
+        src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
       }
-    }
-    nav.nav a:hover {
-      opacity: 0.7;
-    }
-    nav.nav a.active::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: var(--fg);
-    }
+      @font-face {
+        font-family: 'Degular';
+        src: url('/fonts/Degular-Bold.woff2') format('woff2');
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
 
-    /* Article container */
-    article {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px 60px;
-    }
-    @media (min-width: 768px) {
-      article {
-        padding: 60px 40px 80px;
+      :root {
+        --brand-orange: #c03800;
+        --bg-light: #f1f1f1;
+        --text-dark: #191919;
+        --white: #ffffff;
+        --text-muted: #666666;
+        --border-light: rgba(25, 25, 25, 0.1);
+        --accent-navy: #1e3a5f;
       }
-    }
 
-    /* Article header */
-    .article-header {
-      margin-bottom: 32px;
-    }
-    @media (min-width: 768px) {
-      .article-header {
-        margin-bottom: 40px;
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
       }
-    }
 
-    .article-meta {
-      font-size: 13px;
-      color: var(--muted);
-      margin-bottom: 16px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    @media (min-width: 768px) {
-      .article-meta {
+      html, body {
+        min-height: 100%;
+      }
+
+      body {
+        background: #191919;
+        color: var(--text-dark);
+        font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-weight: 500;
+        line-height: 1.6;
+      }
+
+      /* HEADER WRAPPER - Black background */
+      .header-wrapper {
+        background: #191919;
+        padding: 12px 12px 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      /* ORANGE HEADER - Rounded like Shopify site */
+      header {
+        background: var(--brand-orange);
+        padding: 7px 20px;
+        border-radius: 16px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      }
+
+      .header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        min-height: 40px;
+      }
+
+      /* Nav on the LEFT */
+      nav {
+        order: -1;
+        display: flex;
+        align-items: center;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+      @media (min-width: 768px) {
+        nav ul { gap: 24px; }
+      }
+
+      nav li {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav a {
+        color: var(--white);
+        text-decoration: none;
         font-size: 14px;
-        margin-bottom: 20px;
+        font-weight: 500;
+        transition: opacity 0.2s ease;
+        line-height: 1;
+        padding: 0;
+        margin: 0;
       }
-    }
+      @media (min-width: 768px) {
+        nav a { font-size: 15px; }
+      }
+      nav a:hover {
+        opacity: 0.8;
+      }
 
-    h1 {
-      font-family: "Geologica", sans-serif;
-      font-size: 32px;
-      font-weight: 700;
-      line-height: 1.2;
-      margin-bottom: 16px;
-      letter-spacing: -0.02em;
-    }
-    @media (min-width: 768px) {
+      /* Logo CENTERED */
+      .logo-container {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .logo {
+        height: 32px;
+      }
+      @media (min-width: 768px) {
+        .logo { height: 40px; }
+      }
+
+      /* MAIN CONTENT */
+      main {
+        max-width: 900px;
+        margin: 16px auto 40px;
+        padding: 0 20px;
+        background: var(--bg-light);
+      }
+      @media (min-width: 768px) {
+        main {
+          margin: 20px auto 60px;
+          padding: 0 40px;
+        }
+      }
+
+      article {
+        background: var(--white);
+        padding: 40px 24px;
+        border-radius: 12px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      }
+      @media (min-width: 768px) {
+        article {
+          padding: 60px 50px;
+        }
+      }
+
+      .article-header {
+        margin-bottom: 48px;
+        padding-bottom: 32px;
+        border-bottom: 2px solid var(--border-light);
+      }
+
       h1 {
-        font-size: 42px;
-        margin-bottom: 20px;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 16px;
+        letter-spacing: -0.02em;
+        color: var(--text-dark);
       }
-    }
-
-    .article-intro {
-      font-size: 18px;
-      line-height: 1.6;
-      color: var(--muted);
-    }
-    @media (min-width: 768px) {
-      .article-intro {
-        font-size: 20px;
-        line-height: 1.7;
+      @media (min-width: 768px) {
+        h1 {
+          font-size: 48px;
+          margin-bottom: 20px;
+        }
       }
-    }
 
-    /* Article content */
-    .article-content {
-      font-size: 17px;
-      line-height: 1.7;
-    }
-    @media (min-width: 768px) {
-      .article-content {
-        font-size: 18px;
-        line-height: 1.8;
-      }
-    }
-
-    .article-content h2 {
-      font-size: 26px;
-      font-weight: 700;
-      line-height: 1.3;
-      margin: 48px 0 20px;
-      letter-spacing: -0.01em;
-    }
-    @media (min-width: 768px) {
-      .article-content h2 {
-        font-size: 30px;
-        margin: 56px 0 24px;
-      }
-    }
-
-    .article-content h3 {
-      font-size: 21px;
-      font-weight: 600;
-      line-height: 1.4;
-      margin: 36px 0 16px;
-    }
-    @media (min-width: 768px) {
-      .article-content h3 {
-        font-size: 24px;
-        margin: 40px 0 20px;
-      }
-    }
-
-    .article-content p {
-      margin-bottom: 20px;
-    }
-    @media (min-width: 768px) {
-      .article-content p {
+      .article-meta {
+        color: var(--text-muted);
+        font-size: 14px;
+        font-weight: 500;
         margin-bottom: 24px;
       }
-    }
 
-    .article-content ul, .article-content ol {
-      margin: 20px 0 20px 24px;
-    }
-    @media (min-width: 768px) {
-      .article-content ul, .article-content ol {
-        margin: 24px 0 24px 32px;
+      .article-intro {
+        font-size: 19px;
+        font-weight: 500;
+        line-height: 1.6;
+        color: var(--text-muted);
+        margin-bottom: 0;
       }
-    }
+      @media (min-width: 768px) {
+        .article-intro {
+          font-size: 21px;
+        }
+      }
 
-    .article-content li {
-      margin-bottom: 12px;
-      padding-left: 8px;
-    }
+      .article-intro a {
+        color: var(--accent-navy);
+        text-decoration: none;
+        font-weight: 600;
+        border-bottom: 1px solid var(--accent-navy);
+        transition: opacity 0.2s ease;
+      }
+      .article-intro a:hover {
+        opacity: 0.7;
+      }
 
-    .article-content strong {
-      font-weight: 600;
-    }
+      h2 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 56px 0 24px;
+        letter-spacing: -0.01em;
+        color: var(--text-dark);
+      }
+      @media (min-width: 768px) {
+        h2 {
+          font-size: 36px;
+          margin: 64px 0 28px;
+        }
+      }
 
-    .article-content a {
-      color: var(--fg);
-      text-decoration: underline;
-      text-decoration-thickness: 1.5px;
-      text-underline-offset: 2px;
-      transition: opacity 0.15s;
-    }
+      h3 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.3;
+        margin: 40px 0 16px;
+        color: var(--text-dark);
+      }
+      @media (min-width: 768px) {
+        h3 {
+          font-size: 28px;
+          margin: 48px 0 20px;
+        }
+      }
 
-    .article-content a:hover {
-      opacity: 0.7;
-    }
+      p {
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 1.7;
+        margin-bottom: 20px;
+        color: var(--text-dark);
+      }
+      @media (min-width: 768px) {
+        p {
+          font-size: 18px;
+          margin-bottom: 24px;
+        }
+      }
 
-    /* Callout boxes */
-    .callout {
-      background: rgba(25, 25, 25, 0.04);
-      border: 2.5px solid var(--border);
-      padding: 24px;
-      margin: 32px 0;
-    }
-    @media (min-width: 768px) {
+      strong {
+        font-weight: 600;
+      }
+
+      a {
+        color: var(--accent-navy);
+        transition: opacity 0.2s ease;
+      }
+      a:hover {
+        opacity: 0.7;
+      }
+
+      ul, ol {
+        margin: 24px 0;
+        padding-left: 28px;
+      }
+
+      li {
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 1.7;
+        margin-bottom: 12px;
+      }
+      @media (min-width: 768px) {
+        li {
+          font-size: 18px;
+        }
+      }
+
+      /* LIGHT CALLOUT BOX */
       .callout {
-        padding: 32px;
-        margin: 40px 0;
+        background: var(--bg-light);
+        border-left: 4px solid var(--brand-orange);
+        border-radius: 8px;
+        padding: 24px 28px;
+        margin: 32px 0;
       }
-    }
+      @media (min-width: 768px) {
+        .callout {
+          padding: 28px 32px;
+        }
+      }
 
-    /* FAQ section */
-    .faq {
-      margin-top: 56px;
-      padding-top: 40px;
-      border-top: 2.5px solid var(--border);
-    }
-    @media (min-width: 768px) {
-      .faq {
+      .callout p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* TABLE */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 32px 0;
+        font-size: 16px;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      }
+      @media (min-width: 768px) {
+        table {
+          font-size: 17px;
+        }
+      }
+
+      thead {
+        background: var(--brand-orange);
+        color: var(--white);
+        font-weight: 700;
+      }
+
+      th, td {
+        text-align: left;
+        padding: 16px;
+        border-bottom: 1px solid var(--border-light);
+      }
+      @media (min-width: 768px) {
+        th, td {
+          padding: 18px 20px;
+        }
+      }
+
+      tbody tr:last-child td {
+        border-bottom: none;
+      }
+
+      tbody tr {
+        background: var(--white);
+        transition: background 0.2s ease;
+      }
+
+      tbody tr:hover {
+        background: rgba(192, 56, 0, 0.02);
+      }
+
+      /* FAQ SECTION */
+      .faq-section {
         margin-top: 64px;
-        padding-top: 48px;
+        padding-top: 56px;
+        border-top: 3px solid var(--border-light);
       }
-    }
 
-    .faq h2 {
-      font-size: 26px;
-      font-weight: 700;
-      margin-bottom: 32px;
-    }
-    @media (min-width: 768px) {
-      .faq h2 {
-        font-size: 30px;
-        margin-bottom: 40px;
-      }
-    }
-
-    .faq-item {
-      margin-bottom: 32px;
-    }
-    @media (min-width: 768px) {
       .faq-item {
-        margin-bottom: 40px;
+        margin-bottom: 32px;
+        padding: 28px;
+        background: var(--bg-light);
+        border-radius: 12px;
+        border-left: 4px solid var(--brand-orange);
       }
-    }
 
-    .faq-question {
-      font-size: 19px;
-      font-weight: 600;
-      margin-bottom: 12px;
-      line-height: 1.4;
-    }
-    @media (min-width: 768px) {
+      .faq-item h3 {
+        font-size: 20px;
+        margin: 0 0 16px 0;
+        color: var(--brand-orange);
+      }
+      @media (min-width: 768px) {
+        .faq-item h3 {
+          font-size: 23px;
+        }
+      }
+
+      .faq-item p {
+        margin-bottom: 0;
+      }
+
       .faq-question {
-        font-size: 21px;
-        margin-bottom: 16px;
+        font-size: 20px;
+        margin: 0 0 16px 0;
+        color: var(--brand-orange);
       }
-    }
-
-    .faq-answer {
-      font-size: 17px;
-      line-height: 1.7;
-      color: var(--muted);
-    }
-    @media (min-width: 768px) {
-      .faq-answer {
-        font-size: 18px;
+      @media (min-width: 768px) {
+        .faq-question {
+          font-size: 23px;
+        }
       }
-    }
 
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 400;
-      border-top: 2.5px solid var(--border);
-      margin-top: 60px;
-    }
-    @media (min-width: 768px) {
+      .faq-answer p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* FOOTER WRAPPER - Black background */
+      .footer-wrapper {
+        background: #191919;
+        padding: 0 12px 12px;
+        margin-top: 80px;
+      }
+
+      /* FOOTER - Orange with asymmetric rounded shape like Shopify */
       footer {
-        padding: 24px;
-        font-size: 13px;
+        background: var(--brand-orange);
+        color: var(--white);
+        padding: 45px 40px 20px;
+        border-radius: 200px 16px 16px 200px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        min-height: 144px;
       }
-    }
+      @media (min-width: 768px) {
+        footer {
+          padding: 63px 60px 24px;
+          min-height: 207px;
+          border-radius: 300px 16px 16px 300px;
+        }
+      }
 
-    /* Table styling */
-    article table thead tr {
-      border-bottom: 2.5px solid var(--border);
-      background: rgba(25,25,25,0.02);
-    }
-    article table thead th {
-      text-align: left;
-      padding: 14px 12px;
-      font-weight: 700;
-      font-size: 15px;
-    }
-    article table tbody tr {
-      border-bottom: 1.5px solid rgba(25,25,25,0.1);
-    }
-    article table tbody tr:last-child {
-      border-bottom: none;
-    }
-    article table tbody td {
-      padding: 14px 12px;
-      font-size: 16px;
-    }
-  </style>
+      .footer-content {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .footer-left {
+        flex: 1;
+      }
+
+      .footer-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 24px;
+        flex: 1;
+      }
+      @media (min-width: 768px) {
+        .footer-right {
+          gap: 32px;
+        }
+      }
+
+      .footer-right-text {
+        text-align: right;
+      }
+
+      .footer-logo {
+        height: 100px;
+        margin-top: 128px;
+        margin-bottom: 0;
+      }
+      @media (min-width: 768px) {
+        .footer-logo {
+          height: 160px;
+          margin-top: 160px;
+          margin-bottom: 0;
+        }
+      }
+
+      footer p {
+        color: var(--white);
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 12px;
+      }
+
+      footer a {
+        color: var(--white);
+        text-decoration: none;
+        font-weight: 500;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      .warning {
+        background: var(--bg-light);
+        border-left: 4px solid var(--brand-orange);
+        border-radius: 8px;
+        padding: 24px 28px;
+        margin: 32px 0;
+      }
+    </style>
 
     <script type="application/ld+json">
     {
@@ -482,572 +661,623 @@
 </head>
 <body>
 
-<nav class="nav">
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/blog/" class="active">Blog</a></li>
-        <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
-    </ul>
-</nav>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+        </div>
+      </div>
+    </header>
+  </div>
 
-<article>
-<div class="article-header">
-<h1>Best Calming Supplements for Dogs: Natural Anxiety Relief That Works</h1>
+  <main>
+    <article>
+    <div class="article-header">
+      <h1>Best Calming Supplements for Dogs: Natural Anxiety Relief That Works</h1>
 
-<div class="callout" style="margin-top: 32px; margin-bottom: 40px;">
-    <h2 style="margin-top: 0; font-size: 20px; margin-bottom: 16px;">🐕 Quick Answer: What's Best for Dog Anxiety?</h2>
-    <p style="margin-bottom: 16px; font-size: 18px; font-weight: 600; color: var(--fg);"><strong>B vitamins, magnesium, and omega-3s from whole foods like beef liver and fish.</strong> These nutrients support nervous system health and build long-term stress resilience.</p>
-    <p style="margin-bottom: 12px; font-size: 15px;"><strong>Results timeline:</strong> 2-4 weeks for nutritional support to replenish deficiencies. Herbal sedatives (chamomile, L-theanine) work in 30-90 minutes but only provide temporary relief.</p>
-    <p style="margin-bottom: 12px; font-size: 15px;"><strong>Why most chews don't work:</strong> Low doses of synthetic nutrients (30-50% absorption) plus temporary sedation — they don't address the root cause of nutritional deficiencies.</p>
-    <p style="margin-bottom: 0; font-size: 15px;"><strong>The deficiency problem:</strong> Chronic stress depletes B vitamins (especially B1, B6) and magnesium faster than processed food can replenish them — creating a vicious cycle of worsening anxiety.</p>
-</div>
+      <div class="callout" style="margin-top: 32px; margin-bottom: 40px;">
+        <h2 style="margin-top: 0; font-size: 20px; margin-bottom: 16px;">Quick Answer: What's Best for Dog Anxiety?</h2>
+        <p style="margin-bottom: 16px; font-size: 18px; font-weight: 600; color: var(--text-dark);"><strong>B vitamins, magnesium, and omega-3s from whole foods like beef liver and fish.</strong> These nutrients support nervous system health and build long-term stress resilience.</p>
+        <p style="margin-bottom: 12px; font-size: 15px;"><strong>Results timeline:</strong> 2-4 weeks for nutritional support to replenish deficiencies. Herbal sedatives (chamomile, L-theanine) work in 30-90 minutes but only provide temporary relief.</p>
+        <p style="margin-bottom: 12px; font-size: 15px;"><strong>Why most chews don't work:</strong> Low doses of synthetic nutrients (30-50% absorption) plus temporary sedation — they don't address the root cause of nutritional deficiencies.</p>
+        <p style="margin-bottom: 0; font-size: 15px;"><strong>The deficiency problem:</strong> Chronic stress depletes B vitamins (especially B1, B6) and magnesium faster than processed food can replenish them — creating a vicious cycle of worsening anxiety.</p>
+      </div>
 
-<p class="article-intro">Walk down the pet store aisle and you'll find dozens of "calming chews" for anxious dogs. Some contain evidence-based botanicals like L-theanine and chamomile. Others rely on low-dose synthetic vitamins and fillers—providing minimal benefit beyond palatability. Effective anxiety support starts with understanding what causes stress responses in dogs and which ingredients actually work. This guide explains the science behind calming supplements, which herbs have solid evidence in dogs, why nutritional support matters, and when to combine approaches for best results.</p>
-</div>
+      <p class="article-intro">Walk down the pet store aisle and you'll find dozens of "calming chews" for anxious dogs. Some contain evidence-based botanicals like L-theanine and chamomile. Others rely on low-dose synthetic vitamins and fillers—providing minimal benefit beyond palatability. Effective anxiety support starts with understanding what causes stress responses in dogs and which ingredients actually work. This guide explains the science behind calming supplements, which herbs have solid evidence in dogs, why nutritional support matters, and when to combine approaches for best results.</p>
+    </div>
 
-<div class="article-content">
-<h2>How Stress and Anxiety Work in Dogs</h2>
+    <div class="article-content">
+      <h2>How Stress and Anxiety Work in Dogs</h2>
 
-<p>Anxiety isn't just behavioral—it's physiological. Understanding the mechanisms helps you choose effective interventions.</p>
+      <p>Anxiety isn't just behavioral—it's physiological. Understanding the mechanisms helps you choose effective interventions.</p>
 
-<h3>The Stress Response System</h3>
+      <h3>The Stress Response System</h3>
 
-<p>When dogs perceive threats (real or imagined), the hypothalamic-pituitary-adrenal (HPA) axis activates:</p>
+      <p>When dogs perceive threats (real or imagined), the hypothalamic-pituitary-adrenal (HPA) axis activates:</p>
 
-<ol>
-    <li><strong>Cortisol release:</strong> The "stress hormone" increases heart rate, blood pressure, and alertness</li>
-    <li><strong>Neurotransmitter shifts:</strong> Serotonin decreases, norepinephrine increases (fight-or-flight mode)</li>
-    <li><strong>Nutrient depletion:</strong> Stress burns through B vitamins, magnesium, and antioxidants rapidly</li>
-    <li><strong>Inflammation:</strong> Chronic stress triggers systemic inflammation, including neuroinflammation</li>
-</ol>
+      <ol>
+        <li><strong>Cortisol release:</strong> The "stress hormone" increases heart rate, blood pressure, and alertness</li>
+        <li><strong>Neurotransmitter shifts:</strong> Serotonin decreases, norepinephrine increases (fight-or-flight mode)</li>
+        <li><strong>Nutrient depletion:</strong> Stress burns through B vitamins, magnesium, and antioxidants rapidly</li>
+        <li><strong>Inflammation:</strong> Chronic stress triggers systemic inflammation, including neuroinflammation</li>
+      </ol>
 
-<p><strong>The problem with chronic anxiety:</strong> Repeated activation of the stress response depletes nutrients faster than diet can replenish them—creating a vicious cycle where nutrient deficiencies worsen stress responses.</p>
+      <p><strong>The problem with chronic anxiety:</strong> Repeated activation of the stress response depletes nutrients faster than diet can replenish them—creating a vicious cycle where nutrient deficiencies worsen stress responses.</p>
 
-<h3>Key Neurotransmitters Involved in Anxiety</h3>
+      <h3>Key Neurotransmitters Involved in Anxiety</h3>
 
-<ul>
-    <li><strong>Serotonin:</strong> "Feel-good" neurotransmitter that regulates mood and anxiety. Low serotonin = increased anxiety, depression, aggression</li>
-    <li><strong>GABA (gamma-aminobutyric acid):</strong> Inhibitory neurotransmitter that promotes relaxation. Low GABA = hyperactivity, anxiety, inability to calm down</li>
-    <li><strong>Dopamine:</strong> Reward and motivation neurotransmitter. Imbalances contribute to compulsive behaviors and anxiety</li>
-    <li><strong>Norepinephrine:</strong> Stress hormone that increases alertness. Excess = hypervigilance, reactive behavior</li>
-</ul>
+      <ul>
+        <li><strong>Serotonin:</strong> "Feel-good" neurotransmitter that regulates mood and anxiety. Low serotonin = increased anxiety, depression, aggression</li>
+        <li><strong>GABA (gamma-aminobutyric acid):</strong> Inhibitory neurotransmitter that promotes relaxation. Low GABA = hyperactivity, anxiety, inability to calm down</li>
+        <li><strong>Dopamine:</strong> Reward and motivation neurotransmitter. Imbalances contribute to compulsive behaviors and anxiety</li>
+        <li><strong>Norepinephrine:</strong> Stress hormone that increases alertness. Excess = hypervigilance, reactive behavior</li>
+      </ul>
 
-<p><strong>Nutrient connection:</strong> Production and regulation of these neurotransmitters require specific vitamins, minerals, and amino acids. Deficiencies directly impair stress response and emotional regulation.</p>
+      <p><strong>Nutrient connection:</strong> Production and regulation of these neurotransmitters require specific vitamins, minerals, and amino acids. Deficiencies directly impair stress response and emotional regulation.</p>
 
-<h2>Nutrients That Actually Support Calm Behavior</h2>
+      <h2>Nutrients That Actually Support Calm Behavior</h2>
 
-<p>Not all "calming" ingredients are created equal. Here's what research shows works:</p>
+      <p>Not all "calming" ingredients are created equal. Here's what research shows works:</p>
 
-<h3>1. B Vitamins (Especially B1, B6, and B12)</h3>
+      <h3>1. B Vitamins (Especially B1, B6, and B12)</h3>
 
-<p><strong>Why they matter:</strong></p>
-<ul>
-    <li><strong>B1 (thiamine):</strong> Essential for neurotransmitter production, regulates cortisol response, supports nerve signaling</li>
-    <li><strong>B6 (pyridoxine):</strong> Converts tryptophan to serotonin, synthesizes GABA, supports dopamine production</li>
-    <li><strong>B12 (cobalamin):</strong> Maintains myelin sheath (nerve insulation), supports neurotransmitter metabolism</li>
-    <li><strong>B-complex synergy:</strong> B vitamins work together—deficiency in one impairs utilization of others</li>
-</ul>
+      <p><strong>Why they matter:</strong></p>
+      <ul>
+        <li><strong>B1 (thiamine):</strong> Essential for neurotransmitter production, regulates cortisol response, supports nerve signaling</li>
+        <li><strong>B6 (pyridoxine):</strong> Converts tryptophan to serotonin, synthesizes GABA, supports dopamine production</li>
+        <li><strong>B12 (cobalamin):</strong> Maintains myelin sheath (nerve insulation), supports neurotransmitter metabolism</li>
+        <li><strong>B-complex synergy:</strong> B vitamins work together—deficiency in one impairs utilization of others</li>
+      </ul>
 
-<p><strong>The deficiency problem:</strong> Processing heat destroys 50-80% of B vitamins in kibble. Stress depletes B vitamins rapidly. Most dogs eating commercial food are chronically deficient.</p>
+      <p><strong>The deficiency problem:</strong> Processing heat destroys 50-80% of B vitamins in kibble. Stress depletes B vitamins rapidly. Most dogs eating commercial food are chronically deficient.</p>
 
-<p><strong>Best whole-food source:</strong> Beef liver—provides the complete B-complex in highly bioavailable forms. 1 oz contains:</p>
-<ul>
-    <li>0.26 mg B1 (thiamine)</li>
-    <li>4.2 mg B6 (pyridoxine)</li>
-    <li>111 mcg B12 (cobalamin)</li>
-    <li>Plus B2, B3, B5, biotin, folate</li>
-</ul>
+      <p><strong>Best whole-food source:</strong> Beef liver—provides the complete B-complex in highly bioavailable forms. 1 oz contains:</p>
+      <ul>
+        <li>0.26 mg B1 (thiamine)</li>
+        <li>4.2 mg B6 (pyridoxine)</li>
+        <li>111 mcg B12 (cobalamin)</li>
+        <li>Plus B2, B3, B5, biotin, folate</li>
+      </ul>
 
-<p>Read more: <a href="b-vitamins-for-dogs.html">B Vitamins for Dogs: Why They're Missing from Most Kibble</a></p>
+      <p>Read more: <a href="b-vitamins-for-dogs.html">B Vitamins for Dogs: Why They're Missing from Most Kibble</a></p>
 
-<h3>2. Magnesium</h3>
+      <h3>2. Magnesium</h3>
 
-<p><strong>What it does:</strong></p>
-<ul>
-    <li>Activates GABA receptors (the "calm down" neurotransmitter system)</li>
-    <li>Regulates cortisol and stress hormone release</li>
-    <li>Supports muscle relaxation (reduces physical tension from anxiety)</li>
-    <li>Protects against excitotoxicity (overstimulation of nerve cells)</li>
-</ul>
+      <p><strong>What it does:</strong></p>
+      <ul>
+        <li>Activates GABA receptors (the "calm down" neurotransmitter system)</li>
+        <li>Regulates cortisol and stress hormone release</li>
+        <li>Supports muscle relaxation (reduces physical tension from anxiety)</li>
+        <li>Protects against excitotoxicity (overstimulation of nerve cells)</li>
+      </ul>
 
-<p><strong>Deficiency signs:</strong> Muscle tension, hyperactivity, noise sensitivity, poor stress recovery, restlessness.</p>
+      <p><strong>Deficiency signs:</strong> Muscle tension, hyperactivity, noise sensitivity, poor stress recovery, restlessness.</p>
 
-<p><strong>Best sources:</strong> Organ meats (liver, heart), fish, dark leafy greens (in small amounts), pumpkin seeds (small amounts for dogs).</p>
+      <p><strong>Best sources:</strong> Organ meats (liver, heart), fish, dark leafy greens (in small amounts), pumpkin seeds (small amounts for dogs).</p>
 
-<p><strong>Absorption matters:</strong> Magnesium from animal sources has 60-70% bioavailability vs 20-30% from magnesium oxide supplements.</p>
+      <p><strong>Absorption matters:</strong> Magnesium from animal sources has 60-70% bioavailability vs 20-30% from magnesium oxide supplements.</p>
 
-<h3>3. Omega-3 Fatty Acids (EPA and DHA)</h3>
+      <h3>3. Omega-3 Fatty Acids (EPA and DHA)</h3>
 
-<p><strong>How they help anxiety:</strong></p>
-<ul>
-    <li>Reduce neuroinflammation (brain inflammation worsens anxiety)</li>
-    <li>Support brain cell membrane fluidity and neurotransmitter receptor function</li>
-    <li>Regulate HPA axis (stress response system)</li>
-    <li>Increase serotonin receptor sensitivity</li>
-</ul>
+      <p><strong>How they help anxiety:</strong></p>
+      <ul>
+        <li>Reduce neuroinflammation (brain inflammation worsens anxiety)</li>
+        <li>Support brain cell membrane fluidity and neurotransmitter receptor function</li>
+        <li>Regulate HPA axis (stress response system)</li>
+        <li>Increase serotonin receptor sensitivity</li>
+      </ul>
 
-<p><strong>Research:</strong> Multiple studies show omega-3 supplementation reduces anxiety-like behaviors in dogs, particularly in response to novel stressors.</p>
+      <p><strong>Research:</strong> Multiple studies show omega-3 supplementation reduces anxiety-like behaviors in dogs, particularly in response to novel stressors.</p>
 
-<p><strong>Dosage:</strong> 20-55 mg combined EPA/DHA per pound of body weight daily from fish oil (not plant sources—dogs convert only 5-10% of ALA to usable EPA/DHA).</p>
+      <p><strong>Dosage:</strong> 20-55 mg combined EPA/DHA per pound of body weight daily from fish oil (not plant sources—dogs convert only 5-10% of ALA to usable EPA/DHA).</p>
 
-<h3>4. Tryptophan</h3>
+      <h3>4. Tryptophan</h3>
 
-<p><strong>What it does:</strong> Amino acid that converts to serotonin (the "feel-good" neurotransmitter). Low serotonin = increased anxiety, aggression, and compulsive behaviors.</p>
+      <p><strong>What it does:</strong> Amino acid that converts to serotonin (the "feel-good" neurotransmitter). Low serotonin = increased anxiety, aggression, and compulsive behaviors.</p>
 
-<p><strong>Important nuance:</strong> Tryptophan needs B6 and magnesium for conversion to serotonin. Isolated tryptophan supplements don't work well without these co-factors.</p>
+      <p><strong>Important nuance:</strong> Tryptophan needs B6 and magnesium for conversion to serotonin. Isolated tryptophan supplements don't work well without these co-factors.</p>
 
-<p><strong>Best whole-food sources:</strong></p>
-<ul>
-    <li>Turkey (especially breast): 350 mg per 3 oz</li>
-    <li>Chicken: 290 mg per 3 oz</li>
-    <li>Salmon: 250 mg per 3 oz</li>
-    <li>Eggs: 80 mg per large egg</li>
-</ul>
+      <p><strong>Best whole-food sources:</strong></p>
+      <ul>
+        <li>Turkey (especially breast): 350 mg per 3 oz</li>
+        <li>Chicken: 290 mg per 3 oz</li>
+        <li>Salmon: 250 mg per 3 oz</li>
+        <li>Eggs: 80 mg per large egg</li>
+      </ul>
 
-<p><strong>Why whole foods work better:</strong> Provide tryptophan + B6 + magnesium in one source, ensuring proper conversion to serotonin.</p>
+      <p><strong>Why whole foods work better:</strong> Provide tryptophan + B6 + magnesium in one source, ensuring proper conversion to serotonin.</p>
 
-<h3>5. Vitamin D</h3>
+      <h3>5. Vitamin D</h3>
 
-<p><strong>Anxiety connection:</strong> Vitamin D receptors are found throughout the brain, including areas that regulate mood and anxiety. Deficiency is linked to increased anxiety and depression in both humans and dogs.</p>
+      <p><strong>Anxiety connection:</strong> Vitamin D receptors are found throughout the brain, including areas that regulate mood and anxiety. Deficiency is linked to increased anxiety and depression in both humans and dogs.</p>
 
-<p><strong>The dog-specific problem:</strong> Dogs can't make vitamin D from sunlight—they require 100% dietary vitamin D. Most commercial foods meet minimums but don't optimize levels.</p>
+      <p><strong>The dog-specific problem:</strong> Dogs can't make vitamin D from sunlight—they require 100% dietary vitamin D. Most commercial foods meet minimums but don't optimize levels.</p>
 
-<p><strong>Best sources:</strong> Fatty fish (salmon, mackerel, sardines), beef liver, egg yolks.</p>
+      <p><strong>Best sources:</strong> Fatty fish (salmon, mackerel, sardines), beef liver, egg yolks.</p>
 
-<p>Read more: <a href="vitamin-d-for-dogs.html">Do Dogs Get Vitamin D From the Sun? The Surprising Answer</a></p>
+      <p>Read more: <a href="vitamin-d-for-dogs.html">Do Dogs Get Vitamin D From the Sun? The Surprising Answer</a></p>
 
-<h2>Why Most Commercial Calming Supplements Don't Work</h2>
+      <h2>Why Most Commercial Calming Supplements Don't Work</h2>
 
-<p>Despite marketing claims, most calming chews have fundamental problems:</p>
+      <p>Despite marketing claims, most calming chews have fundamental problems:</p>
 
-<h3>1. Calming Herbs: Evidence and Appropriate Use</h3>
+      <h3>1. Calming Herbs: Evidence and Appropriate Use</h3>
 
-<p>Many calming supplements include botanical ingredients. Some have solid research in dogs, others don't. Here's what the evidence shows:</p>
+      <p>Many calming supplements include botanical ingredients. Some have solid research in dogs, others don't. Here's what the evidence shows:</p>
 
-<table style="width: 100%; border-collapse: collapse; margin: 32px 0; border: 2.5px solid var(--border);">
-    <thead>
-        <tr>
+      <table>
+        <thead>
+          <tr>
             <th>Ingredient</th>
             <th>Mechanism</th>
             <th>Evidence in Dogs</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
             <td><strong>L-theanine</strong></td>
             <td>Increases alpha brain waves, supports GABA</td>
             <td><strong>Good evidence:</strong> Multiple studies show reduced anxiety behaviors in dogs during stressful events</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td><strong>Chamomile</strong></td>
             <td>Binds to GABA receptors (mild sedative)</td>
             <td><strong>Moderate evidence:</strong> Traditional use + some canine studies showing calming effects for acute stress</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td><strong>Valerian root</strong></td>
             <td>Increases GABA availability</td>
             <td><strong>Mixed evidence:</strong> Effective in some dogs for situational anxiety, but highly variable individual response</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td><strong>Passionflower</strong></td>
             <td>GABA modulation</td>
             <td><strong>Limited evidence:</strong> Few dog-specific studies; mostly extrapolated from human research</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td><strong>Melatonin</strong></td>
             <td>Regulates sleep-wake cycle</td>
             <td><strong>Good evidence:</strong> Helps with situational anxiety (storms, travel) when sedation is beneficial</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td><strong>CBD</strong></td>
             <td>Endocannabinoid system modulation</td>
             <td><strong>Growing evidence:</strong> Emerging studies show anxiety reduction in dogs; quality and dosing critical</td>
-        </tr>
-    </tbody>
-</table>
+          </tr>
+        </tbody>
+      </table>
 
-<p><strong>The nuance:</strong> These ingredients can provide helpful calming effects for <strong>acute situational anxiety</strong> (vet visits, thunderstorms, travel). Mild sedation isn't inherently bad—sometimes that's exactly what's needed.</p>
+      <p><strong>The nuance:</strong> These ingredients can provide helpful calming effects for <strong>acute situational anxiety</strong> (vet visits, thunderstorms, travel). Mild sedation isn't inherently bad—sometimes that's exactly what's needed.</p>
 
-<p><strong>The limitation:</strong> They don't address underlying nutritional deficiencies that worsen chronic stress responses. A dog deficient in B vitamins and magnesium will benefit more from replenishing those nutrients than from repeated herbal sedation. Best approach: build nutritional foundation, use herbs strategically for acute situations.</p>
+      <p><strong>The limitation:</strong> They don't address underlying nutritional deficiencies that worsen chronic stress responses. A dog deficient in B vitamins and magnesium will benefit more from replenishing those nutrients than from repeated herbal sedation. Best approach: build nutritional foundation, use herbs strategically for acute situations.</p>
 
-<h3>2. Synthetic Vitamins in Ineffective Doses</h3>
+      <h3>2. Synthetic Vitamins in Ineffective Doses</h3>
 
-<p>Many calming chews add B vitamins, but:</p>
+      <p>Many calming chews add B vitamins, but:</p>
 
-<ul>
-    <li><strong>Synthetic forms</strong> have 30-50% bioavailability vs 70-90% from whole foods</li>
-    <li><strong>Dosages are too low</strong>—a typical chew provides 5-10% of therapeutic doses</li>
-    <li><strong>Missing co-factors</strong>—isolated vitamins lack the supporting nutrients found in whole foods</li>
-</ul>
+      <ul>
+        <li><strong>Synthetic forms</strong> have 30-50% bioavailability vs 70-90% from whole foods</li>
+        <li><strong>Dosages are too low</strong>—a typical chew provides 5-10% of therapeutic doses</li>
+        <li><strong>Missing co-factors</strong>—isolated vitamins lack the supporting nutrients found in whole foods</li>
+      </ul>
 
-<p>Example: A typical calming chew provides 1-2 mg B6. Therapeutic support requires 5-10 mg daily for a 50 lb dog—you'd need to feed 3-10 chews to reach effective levels.</p>
+      <p>Example: A typical calming chew provides 1-2 mg B6. Therapeutic support requires 5-10 mg daily for a 50 lb dog—you'd need to feed 3-10 chews to reach effective levels.</p>
 
-<h3>3. Fillers and Sugar Make Anxiety Worse</h3>
+      <h3>3. Fillers and Sugar Make Anxiety Worse</h3>
 
-<p>Check the ingredient list of popular calming chews:</p>
+      <p>Check the ingredient list of popular calming chews:</p>
 
-<ul>
-    <li><strong>Maltodextrin</strong> (blood sugar spike → crash → increased anxiety)</li>
-    <li><strong>Corn syrup, cane sugar</strong> (same blood sugar problem)</li>
-    <li><strong>Glycerin</strong> (adds calories, no nutritional value)</li>
-    <li><strong>Artificial flavors</strong> (liver flavor, bacon flavor—palatants, not nutrition)</li>
-    <li><strong>Brewers yeast</strong> (filler marketed as "natural B vitamins"—degraded by processing)</li>
-</ul>
+      <ul>
+        <li><strong>Maltodextrin</strong> (blood sugar spike → crash → increased anxiety)</li>
+        <li><strong>Corn syrup, cane sugar</strong> (same blood sugar problem)</li>
+        <li><strong>Glycerin</strong> (adds calories, no nutritional value)</li>
+        <li><strong>Artificial flavors</strong> (liver flavor, bacon flavor—palatants, not nutrition)</li>
+        <li><strong>Brewers yeast</strong> (filler marketed as "natural B vitamins"—degraded by processing)</li>
+      </ul>
 
-<p>Your dog's getting sugar, fillers, and minimal active ingredients.</p>
+      <p>Your dog's getting sugar, fillers, and minimal active ingredients.</p>
 
-<p>Learn more: <a href="fillers-in-dog-supplements.html">Common Fillers and Binders in Dog Supplements</a></p>
+      <p>Learn more: <a href="fillers-in-dog-supplements.html">Common Fillers and Binders in Dog Supplements</a></p>
 
-<h3>4. They Ignore the Gut-Brain Axis</h3>
+      <h3>4. They Ignore the Gut-Brain Axis</h3>
 
-<p>Emerging research shows that <strong>70-80% of serotonin is produced in the gut</strong>, not the brain. Gut health directly affects anxiety levels.</p>
+      <p>Emerging research shows that <strong>70-80% of serotonin is produced in the gut</strong>, not the brain. Gut health directly affects anxiety levels.</p>
 
-<p>Most calming chews ignore digestive health. Effective anxiety support should include:</p>
-<ul>
-    <li>Probiotics and prebiotics for gut microbiome balance</li>
-    <li>Omega-3s to reduce gut inflammation</li>
-    <li>Nutrient-dense whole foods that support both gut and brain health</li>
-</ul>
+      <p>Most calming chews ignore digestive health. Effective anxiety support should include:</p>
+      <ul>
+        <li>Probiotics and prebiotics for gut microbiome balance</li>
+        <li>Omega-3s to reduce gut inflammation</li>
+        <li>Nutrient-dense whole foods that support both gut and brain health</li>
+      </ul>
 
-<p>Read more: <a href="gut-health-for-dogs.html">Gut Health for Dogs: Microbiome, Diet & Digestive Support</a></p>
+      <p>Read more: <a href="gut-health-for-dogs.html">Gut Health for Dogs: Microbiome, Diet & Digestive Support</a></p>
 
-<h2>The Most Effective Approach: Whole-Food Nutritional Support</h2>
+      <h2>The Most Effective Approach: Whole-Food Nutritional Support</h2>
 
-<p>Instead of synthetic chews, focus on providing the nutrients that support nervous system health:</p>
+      <p>Instead of synthetic chews, focus on providing the nutrients that support nervous system health:</p>
 
-<h3>Daily Protocol for a 50 lb Dog:</h3>
+      <h3>Daily Protocol for a 50 lb Dog:</h3>
 
-<p><strong>1. B Vitamins + Magnesium from Organ Meats</strong></p>
-<ul>
-    <li><strong>1 oz beef liver daily</strong> (fresh, freeze-dried, or air-dried)</li>
-    <li>Provides full B-complex + magnesium + vitamin D</li>
-    <li>Cost: $20-30/month for freeze-dried liver</li>
-</ul>
+      <p><strong>1. B Vitamins + Magnesium from Organ Meats</strong></p>
+      <ul>
+        <li><strong>1 oz beef liver daily</strong> (fresh, freeze-dried, or air-dried)</li>
+        <li>Provides full B-complex + magnesium + vitamin D</li>
+        <li>Cost: $20-30/month for freeze-dried liver</li>
+      </ul>
 
-<p><strong>2. Omega-3s from Fish</strong></p>
-<ul>
-    <li><strong>1,500 mg combined EPA/DHA daily</strong> from fish oil or whole small fish</li>
-    <li>Reduces neuroinflammation, supports serotonin receptors</li>
-    <li>Cost: $15-25/month for quality fish oil</li>
-</ul>
+      <p><strong>2. Omega-3s from Fish</strong></p>
+      <ul>
+        <li><strong>1,500 mg combined EPA/DHA daily</strong> from fish oil or whole small fish</li>
+        <li>Reduces neuroinflammation, supports serotonin receptors</li>
+        <li>Cost: $15-25/month for quality fish oil</li>
+      </ul>
 
-<p><strong>3. Tryptophan from Protein Sources</strong></p>
-<ul>
-    <li><strong>Turkey, chicken, salmon, or eggs</strong> as primary protein (rotation diet ideal)</li>
-    <li>Provides tryptophan for serotonin production</li>
-    <li>Already part of base diet—no extra cost</li>
-</ul>
+      <p><strong>3. Tryptophan from Protein Sources</strong></p>
+      <ul>
+        <li><strong>Turkey, chicken, salmon, or eggs</strong> as primary protein (rotation diet ideal)</li>
+        <li>Provides tryptophan for serotonin production</li>
+        <li>Already part of base diet—no extra cost</li>
+      </ul>
 
-<p><strong>4. Optional: Gut Health Support</strong></p>
-<ul>
-    <li>Probiotic from fermented foods (kefir, goat's milk yogurt) or high-quality supplement</li>
-    <li>Prebiotic from vegetables (sweet potato, pumpkin, green beans)</li>
-    <li>Supports gut-brain axis and serotonin production</li>
-</ul>
+      <p><strong>4. Optional: Gut Health Support</strong></p>
+      <ul>
+        <li>Probiotic from fermented foods (kefir, goat's milk yogurt) or high-quality supplement</li>
+        <li>Prebiotic from vegetables (sweet potato, pumpkin, green beans)</li>
+        <li>Supports gut-brain axis and serotonin production</li>
+      </ul>
 
-<p><strong>Total monthly cost:</strong> $35-55 vs $40-70 for synthetic calming chews that don't address root causes.</p>
+      <p><strong>Total monthly cost:</strong> $35-55 vs $40-70 for synthetic calming chews that don't address root causes.</p>
 
-<h2>How to Combine Nutrition and Calming Herbs Effectively</h2>
+      <h2>How to Combine Nutrition and Calming Herbs Effectively</h2>
 
-<p>The most effective approach uses <strong>both nutritional support and evidence-based botanicals</strong> strategically:</p>
+      <p>The most effective approach uses <strong>both nutritional support and evidence-based botanicals</strong> strategically:</p>
 
-<h3>Situational Anxiety (Herbs Work Well Here)</h3>
+      <h3>Situational Anxiety (Herbs Work Well Here)</h3>
 
-<p><strong>Examples:</strong> Vet visits, grooming, thunderstorms, fireworks, car travel</p>
+      <p><strong>Examples:</strong> Vet visits, grooming, thunderstorms, fireworks, car travel</p>
 
-<p><strong>Evidence-based options:</strong></p>
-<ul>
-    <li><strong>L-theanine:</strong> 100-200 mg for 50 lb dog, give 30-60 min before stressor (strongest evidence for acute stress reduction)</li>
-    <li><strong>CBD oil:</strong> 1-5 mg per 10 lbs, given 30-60 min before stressor (choose third-party tested, 0.3% THC or less)</li>
-    <li><strong>Chamomile:</strong> Follow product dosing, give 60-90 min before event (traditional use + moderate evidence)</li>
-    <li><strong>Melatonin (with vet approval):</strong> 1-6 mg depending on size, give 30-60 min before bedtime or stressful event (good evidence for storm phobias)</li>
-    <li><strong>Valerian (individual response varies):</strong> Follow product dosing; test effectiveness on low-stress day first</li>
-</ul>
+      <p><strong>Evidence-based options:</strong></p>
+      <ul>
+        <li><strong>L-theanine:</strong> 100-200 mg for 50 lb dog, give 30-60 min before stressor (strongest evidence for acute stress reduction)</li>
+        <li><strong>CBD oil:</strong> 1-5 mg per 10 lbs, given 30-60 min before stressor (choose third-party tested, 0.3% THC or less)</li>
+        <li><strong>Chamomile:</strong> Follow product dosing, give 60-90 min before event (traditional use + moderate evidence)</li>
+        <li><strong>Melatonin (with vet approval):</strong> 1-6 mg depending on size, give 30-60 min before bedtime or stressful event (good evidence for storm phobias)</li>
+        <li><strong>Valerian (individual response varies):</strong> Follow product dosing; test effectiveness on low-stress day first</li>
+      </ul>
 
-<p><strong>Combination strategy:</strong> Many dogs benefit from L-theanine + chamomile or L-theanine + CBD for acute events, while maintaining daily B vitamin and magnesium support for baseline nervous system health.</p>
+      <p><strong>Combination strategy:</strong> Many dogs benefit from L-theanine + chamomile or L-theanine + CBD for acute events, while maintaining daily B vitamin and magnesium support for baseline nervous system health.</p>
 
-<h3>Chronic Anxiety (Use Nutrition + Training)</h3>
+      <h3>Chronic Anxiety (Use Nutrition + Training)</h3>
 
-<p><strong>Examples:</strong> Separation anxiety, generalized anxiety disorder, noise phobias, reactive behavior</p>
+      <p><strong>Examples:</strong> Separation anxiety, generalized anxiety disorder, noise phobias, reactive behavior</p>
 
-<p><strong>Effective approach:</strong></p>
-<ol>
-    <li><strong>Daily nutritional support</strong> (B vitamins, magnesium, omega-3s from whole foods)</li>
-    <li><strong>Behavioral modification</strong> (desensitization, counter-conditioning, positive reinforcement training)</li>
-    <li><strong>Environmental management</strong> (adequate exercise, mental enrichment, safe spaces)</li>
-    <li><strong>Medical evaluation</strong> (rule out pain, thyroid issues, cognitive dysfunction)</li>
-    <li><strong>Prescription medication if needed</strong> (SSRIs, anti-anxiety meds—consult veterinary behaviorist)</li>
-</ol>
+      <p><strong>Effective approach:</strong></p>
+      <ol>
+        <li><strong>Daily nutritional support</strong> (B vitamins, magnesium, omega-3s from whole foods)</li>
+        <li><strong>Behavioral modification</strong> (desensitization, counter-conditioning, positive reinforcement training)</li>
+        <li><strong>Environmental management</strong> (adequate exercise, mental enrichment, safe spaces)</li>
+        <li><strong>Medical evaluation</strong> (rule out pain, thyroid issues, cognitive dysfunction)</li>
+        <li><strong>Prescription medication if needed</strong> (SSRIs, anti-anxiety meds—consult veterinary behaviorist)</li>
+      </ol>
 
-<p>Chronic anxiety rarely responds to supplements alone. Nutrition builds resilience, but behavioral work is essential.</p>
+      <p>Chronic anxiety rarely responds to supplements alone. Nutrition builds resilience, but behavioral work is essential.</p>
 
-<h2>Timeline: When to Expect Results</h2>
+      <h2>Timeline: When to Expect Results</h2>
 
-<ul>
-    <li><strong>Herbal sedatives (chamomile, valerian, CBD):</strong> 30-90 minutes, effects last 4-6 hours</li>
-    <li><strong>Nutritional support (B vitamins, magnesium, omega-3s):</strong> 2-4 weeks to replenish deficiencies and see behavioral changes</li>
-    <li><strong>Gut health improvements:</strong> 4-6 weeks for microbiome changes to affect serotonin production</li>
-    <li><strong>Behavioral training:</strong> 6-12 weeks for sustained improvements in anxiety-driven behaviors</li>
-</ul>
+      <ul>
+        <li><strong>Herbal sedatives (chamomile, valerian, CBD):</strong> 30-90 minutes, effects last 4-6 hours</li>
+        <li><strong>Nutritional support (B vitamins, magnesium, omega-3s):</strong> 2-4 weeks to replenish deficiencies and see behavioral changes</li>
+        <li><strong>Gut health improvements:</strong> 4-6 weeks for microbiome changes to affect serotonin production</li>
+        <li><strong>Behavioral training:</strong> 6-12 weeks for sustained improvements in anxiety-driven behaviors</li>
+      </ul>
 
-<p><strong>Key point:</strong> Quick fixes (sedatives) provide temporary relief. Long-term improvement requires addressing nutritional deficiencies and behavioral factors—a 4-8 week commitment minimum.</p>
+      <p><strong>Key point:</strong> Quick fixes (sedatives) provide temporary relief. Long-term improvement requires addressing nutritional deficiencies and behavioral factors—a 4-8 week commitment minimum.</p>
 
-<h2>When Supplements Can't Help</h2>
+      <h2>When Supplements Can't Help</h2>
 
-<p>Some anxiety requires veterinary intervention. See your vet if:</p>
+      <p>Some anxiety requires veterinary intervention. See your vet if:</p>
 
-<ul>
-    <li><strong>Severe separation anxiety</strong> with destructive behavior, self-harm, or inability to be alone</li>
-    <li><strong>Aggression linked to anxiety</strong> (fear-based biting, resource guarding)</li>
-    <li><strong>Panic attacks</strong> (extreme reactions to triggers—panting, pacing, trying to escape)</li>
-    <li><strong>No improvement after 6-8 weeks</strong> of nutritional support + behavioral training</li>
-    <li><strong>Medical causes of anxiety</strong> (pain, thyroid problems, cognitive dysfunction, neurological issues)</li>
-</ul>
+      <ul>
+        <li><strong>Severe separation anxiety</strong> with destructive behavior, self-harm, or inability to be alone</li>
+        <li><strong>Aggression linked to anxiety</strong> (fear-based biting, resource guarding)</li>
+        <li><strong>Panic attacks</strong> (extreme reactions to triggers—panting, pacing, trying to escape)</li>
+        <li><strong>No improvement after 6-8 weeks</strong> of nutritional support + behavioral training</li>
+        <li><strong>Medical causes of anxiety</strong> (pain, thyroid problems, cognitive dysfunction, neurological issues)</li>
+      </ul>
 
-<p>Prescription anti-anxiety medications (fluoxetine, clomipramine, trazodone) may be necessary for severe cases. Work with a veterinary behaviorist to develop a comprehensive treatment plan.</p>
+      <p>Prescription anti-anxiety medications (fluoxetine, clomipramine, trazodone) may be necessary for severe cases. Work with a veterinary behaviorist to develop a comprehensive treatment plan.</p>
 
-<h2>How to Evaluate Commercial Calming Supplements</h2>
+      <h2>How to Evaluate Commercial Calming Supplements</h2>
 
-<p>If you choose a commercial product, look for:</p>
+      <p>If you choose a commercial product, look for:</p>
 
-<table style="width: 100%; border-collapse: collapse; margin: 32px 0; border: 2.5px solid var(--border);">
-    <thead>
-        <tr>
+      <table>
+        <thead>
+          <tr>
             <th>Quality Indicator</th>
             <th>What to Look For</th>
             <th>Red Flags</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
             <td><strong>Primary ingredients</strong></td>
             <td>Whole-food sources (liver, fish) listed first</td>
             <td>Maltodextrin, brewers yeast, corn syrup in top 3</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td><strong>B vitamin content</strong></td>
             <td>Thiamine (B1): 5+ mg, B6: 3+ mg, B12: 50+ mcg</td>
             <td>Less than 1 mg B1 or B6, less than 10 mcg B12</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td><strong>Magnesium source</strong></td>
             <td>Magnesium from organ meats, magnesium glycinate</td>
             <td>Magnesium oxide (poor absorption)</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td><strong>Omega-3 content</strong></td>
             <td>100+ mg combined EPA/DHA per serving</td>
             <td>No omega-3s or only plant-based (ALA)</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td><strong>Serving size</strong></td>
             <td>Realistic daily dose (1-2 pieces for 50 lb dog)</td>
             <td>Requires 6-8 chews per day to reach effective dose</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td><strong>Processing</strong></td>
             <td>Air-dried, freeze-dried, minimal heat</td>
             <td>Baked, extruded, high-heat processed</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td><strong>Sugar content</strong></td>
             <td>No added sugars or sweeteners</td>
             <td>Corn syrup, cane sugar, molasses</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td><strong>Herbal ingredients</strong></td>
             <td>Evidence-based botanicals (L-theanine, chamomile, CBD) with clear dosing</td>
             <td>Proprietary "calming blend" without individual ingredient amounts</td>
-        </tr>
-    </tbody>
-</table>
+          </tr>
+        </tbody>
+      </table>
 
-<div class="warning">
-    <strong>⚠️ Caution:</strong> Never combine multiple calming supplements without veterinary guidance. Layering sedatives (chamomile + valerian + melatonin + CBD) can cause excessive sedation. If your dog takes prescription medications (especially SSRIs or anti-anxiety drugs), consult your vet before adding supplements—drug interactions can occur.
-</div>
+      <div class="warning">
+        <strong>Caution:</strong> Never combine multiple calming supplements without veterinary guidance. Layering sedatives (chamomile + valerian + melatonin + CBD) can cause excessive sedation. If your dog takes prescription medications (especially SSRIs or anti-anxiety drugs), consult your vet before adding supplements—drug interactions can occur.
+      </div>
 
-<h2>Common Mistakes to Avoid</h2>
+      <h2>Common Mistakes to Avoid</h2>
 
-<h3>1. Using Herbs Alone Without Nutritional Support</h3>
+      <h3>1. Using Herbs Alone Without Nutritional Support</h3>
 
-<p>Evidence-based botanicals like L-theanine and chamomile can be very helpful for acute anxiety. However, they work best when your dog's baseline nervous system health is supported through proper nutrition.</p>
+      <p>Evidence-based botanicals like L-theanine and chamomile can be very helpful for acute anxiety. However, they work best when your dog's baseline nervous system health is supported through proper nutrition.</p>
 
-<p>A dog deficient in B vitamins, magnesium, and omega-3s will have a heightened stress response regardless of herbal supplementation. Build the nutritional foundation first, then layer in botanicals strategically for situational stress.</p>
+      <p>A dog deficient in B vitamins, magnesium, and omega-3s will have a heightened stress response regardless of herbal supplementation. Build the nutritional foundation first, then layer in botanicals strategically for situational stress.</p>
 
-<h3>2. Ignoring Exercise and Mental Enrichment</h3>
+      <h3>2. Ignoring Exercise and Mental Enrichment</h3>
 
-<p>No supplement can compensate for inadequate physical and mental stimulation. Dogs need:</p>
-<ul>
-    <li>30-120 minutes daily exercise (breed-dependent)</li>
-    <li>Mental enrichment (puzzle toys, sniff walks, training sessions)</li>
-    <li>Social interaction (with people and other dogs)</li>
-</ul>
+      <p>No supplement can compensate for inadequate physical and mental stimulation. Dogs need:</p>
+      <ul>
+        <li>30-120 minutes daily exercise (breed-dependent)</li>
+        <li>Mental enrichment (puzzle toys, sniff walks, training sessions)</li>
+        <li>Social interaction (with people and other dogs)</li>
+      </ul>
 
-<p>A bored, under-exercised dog will be anxious regardless of supplementation.</p>
+      <p>A bored, under-exercised dog will be anxious regardless of supplementation.</p>
 
-<h3>3. Using Human Anti-Anxiety Medications</h3>
+      <h3>3. Using Human Anti-Anxiety Medications</h3>
 
-<p>Never give dogs human benzodiazepines (Xanax, Valium), SSRIs (Prozac, Zoloft), or other prescription medications without veterinary supervision. Dosing differs dramatically, and side effects can be severe.</p>
+      <p>Never give dogs human benzodiazepines (Xanax, Valium), SSRIs (Prozac, Zoloft), or other prescription medications without veterinary supervision. Dosing differs dramatically, and side effects can be severe.</p>
 
-<h3>4. Expecting Overnight Results from Nutritional Support</h3>
+      <h3>4. Expecting Overnight Results from Nutritional Support</h3>
 
-<p>Replenishing B vitamins and magnesium takes weeks. If you need immediate relief for a vet visit tomorrow, use CBD or vet-prescribed anti-anxiety medication—don't expect nutrition to work overnight.</p>
+      <p>Replenishing B vitamins and magnesium takes weeks. If you need immediate relief for a vet visit tomorrow, use CBD or vet-prescribed anti-anxiety medication—don't expect nutrition to work overnight.</p>
 
-<h3>5. Overlooking Medical Causes</h3>
+      <h3>5. Overlooking Medical Causes</h3>
 
-<p>Pain (arthritis, dental disease), thyroid dysfunction, cognitive decline, and neurological issues all cause anxiety-like behaviors. Rule out medical problems before assuming it's purely behavioral or nutritional.</p>
+      <p>Pain (arthritis, dental disease), thyroid dysfunction, cognitive decline, and neurological issues all cause anxiety-like behaviors. Rule out medical problems before assuming it's purely behavioral or nutritional.</p>
 
-<h2>The Bottom Line</h2>
+      <h2>The Bottom Line</h2>
 
-<p>The best calming approach combines whole-food nutritional support with evidence-based botanicals used strategically.</p>
+      <p>The best calming approach combines whole-food nutritional support with evidence-based botanicals used strategically.</p>
 
-<p><strong>Effective anxiety support requires:</strong></p>
+      <p><strong>Effective anxiety support requires:</strong></p>
 
-<ol>
-    <li><strong>Nutritional foundation:</strong> B vitamins, magnesium, and omega-3s from whole foods (liver, fish) for baseline nervous system health</li>
-    <li><strong>Evidence-based botanicals when needed:</strong> L-theanine, chamomile, CBD, or melatonin for situational anxiety</li>
-    <li><strong>Behavioral training:</strong> Desensitization, counter-conditioning, positive reinforcement for chronic anxiety</li>
-    <li><strong>Environmental management:</strong> Adequate exercise, mental enrichment, stress reduction</li>
-    <li><strong>Veterinary care:</strong> Medical evaluation and prescription medications when anxiety is severe</li>
-</ol>
+      <ol>
+        <li><strong>Nutritional foundation:</strong> B vitamins, magnesium, and omega-3s from whole foods (liver, fish) for baseline nervous system health</li>
+        <li><strong>Evidence-based botanicals when needed:</strong> L-theanine, chamomile, CBD, or melatonin for situational anxiety</li>
+        <li><strong>Behavioral training:</strong> Desensitization, counter-conditioning, positive reinforcement for chronic anxiety</li>
+        <li><strong>Environmental management:</strong> Adequate exercise, mental enrichment, stress reduction</li>
+        <li><strong>Veterinary care:</strong> Medical evaluation and prescription medications when anxiety is severe</li>
+      </ol>
 
-<p>Anxiety is complex—no single supplement will fix separation anxiety, noise phobias, or reactive behavior. But proper nutrition creates the foundation for stress resilience, while well-chosen botanicals provide targeted support for acute situations.</p>
+      <p>Anxiety is complex—no single supplement will fix separation anxiety, noise phobias, or reactive behavior. But proper nutrition creates the foundation for stress resilience, while well-chosen botanicals provide targeted support for acute situations.</p>
 
-<p><strong>Start with nutrition. Layer in evidence-based herbs. Support with training. Consult your vet when needed.</strong></p>
-</div>
+      <p><strong>Start with nutrition. Layer in evidence-based herbs. Support with training. Consult your vet when needed.</strong></p>
+    </div>
 
-<div class="related-articles">
-    <h3>Related Articles:</h3>
-    <ul>
-        <li><a href="b-vitamins-for-dogs.html">B Vitamins for Dogs: Why They're Missing from Most Kibble</a></li>
-        <li><a href="gut-health-for-dogs.html">Gut Health for Dogs: Microbiome, Diet & Digestive Support</a></li>
-        <li><a href="beef-liver-for-dogs.html">Why Beef Liver is One of the Best Things You Can Feed Your Dog</a></li>
-        <li><a href="vitamin-d-for-dogs.html">Do Dogs Get Vitamin D From the Sun? The Surprising Answer</a></li>
-        <li><a href="whole-food-vs-synthetic-nutrients.html">Whole Food vs Synthetic Vitamins: Bioavailability Explained</a></li>
-        <li><a href="fillers-in-dog-supplements.html">Common Fillers and Binders in Dog Supplements</a></li>
-    </ul>
-</div>
+    <div class="faq-section">
+      <h2 style="margin-top: 56px; padding-top: 40px; border-top: 2px solid var(--border-light);">Related Articles</h2>
 
-<div class="faq">
-    <h2>Frequently Asked Questions</h2>
+      <div style="display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 56px;">
+        <a href="b-vitamins-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">B Vitamins for Dogs: Why They're Missing from Most Kibble</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Essential for nervous system function and stress response</p>
+        </a>
 
-    <div class="faq-item">
+        <a href="gut-health-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Gut Health for Dogs: Microbiome, Diet & Digestive Support</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">70-80% of serotonin is produced in the gut</p>
+        </a>
+
+        <a href="beef-liver-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Why Beef Liver is One of the Best Things You Can Feed Your Dog</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">The richest whole-food source of B vitamins and magnesium</p>
+        </a>
+
+        <a href="vitamin-d-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Do Dogs Get Vitamin D From the Sun? The Surprising Answer</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Vitamin D influences serotonin production and mood regulation</p>
+        </a>
+
+        <a href="whole-food-vs-synthetic-nutrients.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Whole Food vs Synthetic Vitamins: Bioavailability Explained</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Why whole-food nutrients absorb better than synthetic supplements</p>
+        </a>
+
+        <a href="fillers-in-dog-supplements.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Common Fillers and Binders in Dog Supplements</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">How sugar and fillers can worsen anxiety symptoms</p>
+        </a>
+      </div>
+
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
         <div class="faq-question">What is the best natural calming supplement for dogs?</div>
         <div class="faq-answer">
-            <p>The most effective natural approach combines <strong>B vitamins, magnesium, and tryptophan from whole-food sources</strong>.</p>
-            <p>Beef liver provides the full B-complex (especially B1, B6, and B12) essential for nervous system function. Magnesium from organ meats and leafy greens supports GABA production and muscle relaxation. Tryptophan from turkey, chicken, and eggs converts to serotonin for mood regulation.</p>
-            <p>This nutrient-based approach supports long-term stress resilience, unlike synthetic calming chews that provide temporary sedation without addressing nutritional deficiencies.</p>
+          <p>The most effective natural approach combines <strong>B vitamins, magnesium, and tryptophan from whole-food sources</strong>.</p>
+          <p>Beef liver provides the full B-complex (especially B1, B6, and B12) essential for nervous system function. Magnesium from organ meats and leafy greens supports GABA production and muscle relaxation. Tryptophan from turkey, chicken, and eggs converts to serotonin for mood regulation.</p>
+          <p>This nutrient-based approach supports long-term stress resilience, unlike synthetic calming chews that provide temporary sedation without addressing nutritional deficiencies.</p>
         </div>
-    </div>
+      </div>
 
-    <div class="faq-item">
+      <div class="faq-item">
         <div class="faq-question">Do calming supplements actually work for dogs?</div>
         <div class="faq-answer">
-            <p>Evidence-based nutrients like <strong>B vitamins, magnesium, omega-3s, and tryptophan</strong> support nervous system function and stress response when provided in bioavailable forms from whole foods.</p>
-            <p>However, most commercial calming chews contain low doses of synthetic nutrients plus sedating herbs (chamomile, valerian, L-theanine) that provide temporary relief without addressing underlying deficiencies.</p>
-            <p>Studies show that chronic stress depletes B vitamins and magnesium—replenishing these through diet and whole-food supplements produces better long-term results than relying on herbal sedatives.</p>
+          <p>Evidence-based nutrients like <strong>B vitamins, magnesium, omega-3s, and tryptophan</strong> support nervous system function and stress response when provided in bioavailable forms from whole foods.</p>
+          <p>However, most commercial calming chews contain low doses of synthetic nutrients plus sedating herbs (chamomile, valerian, L-theanine) that provide temporary relief without addressing underlying deficiencies.</p>
+          <p>Studies show that chronic stress depletes B vitamins and magnesium—replenishing these through diet and whole-food supplements produces better long-term results than relying on herbal sedatives.</p>
         </div>
-    </div>
+      </div>
 
-    <div class="faq-item">
+      <div class="faq-item">
         <div class="faq-question">What vitamins help calm dogs?</div>
         <div class="faq-answer">
-            <p><strong>B vitamins</strong> (especially B1/thiamine, B6/pyridoxine, and B12/cobalamin) are essential for nervous system function and stress response:</p>
-            <ul>
-                <li>B1 supports neurotransmitter production and reduces cortisol</li>
-                <li>B6 converts tryptophan to serotonin</li>
-                <li>B12 supports myelin sheath health and nerve signaling</li>
-            </ul>
-            <p><strong>Magnesium</strong> (technically a mineral) activates GABA receptors for relaxation. <strong>Vitamin D</strong> influences serotonin production.</p>
-            <p>These nutrients work synergistically—beef liver provides all B vitamins plus bioavailable magnesium and vitamin D in a single whole-food source.</p>
+          <p><strong>B vitamins</strong> (especially B1/thiamine, B6/pyridoxine, and B12/cobalamin) are essential for nervous system function and stress response:</p>
+          <ul>
+            <li>B1 supports neurotransmitter production and reduces cortisol</li>
+            <li>B6 converts tryptophan to serotonin</li>
+            <li>B12 supports myelin sheath health and nerve signaling</li>
+          </ul>
+          <p><strong>Magnesium</strong> (technically a mineral) activates GABA receptors for relaxation. <strong>Vitamin D</strong> influences serotonin production.</p>
+          <p>These nutrients work synergistically—beef liver provides all B vitamins plus bioavailable magnesium and vitamin D in a single whole-food source.</p>
         </div>
-    </div>
+      </div>
 
-    <div class="faq-item">
+      <div class="faq-item">
         <div class="faq-question">Are over-the-counter calming products safe for dogs?</div>
         <div class="faq-answer">
-            <p>Most OTC calming products are safe but vary widely in effectiveness:</p>
-            <ul>
-                <li><strong>Whole-food supplements</strong> (organ meats, fish oil) are safest with highest bioavailability</li>
-                <li><strong>Herbal supplements</strong> (chamomile, valerian root, L-theanine) are generally safe but provide sedation rather than nutritional support</li>
-                <li><strong>Avoid melatonin</strong> unless vet-approved—dosing is tricky and long-term effects are unclear</li>
-            </ul>
-            <p><strong>Never give human anti-anxiety medications</strong> (benzodiazepines, SSRIs) without veterinary supervision. Start with nutrition-based approaches before adding herbal sedatives.</p>
+          <p>Most OTC calming products are safe but vary widely in effectiveness:</p>
+          <ul>
+            <li><strong>Whole-food supplements</strong> (organ meats, fish oil) are safest with highest bioavailability</li>
+            <li><strong>Herbal supplements</strong> (chamomile, valerian root, L-theanine) are generally safe but provide sedation rather than nutritional support</li>
+            <li><strong>Avoid melatonin</strong> unless vet-approved—dosing is tricky and long-term effects are unclear</li>
+          </ul>
+          <p><strong>Never give human anti-anxiety medications</strong> (benzodiazepines, SSRIs) without veterinary supervision. Start with nutrition-based approaches before adding herbal sedatives.</p>
         </div>
-    </div>
+      </div>
 
-    <div class="faq-item">
+      <div class="faq-item">
         <div class="faq-question">How long does it take for calming supplements to work in dogs?</div>
         <div class="faq-answer">
-            <p>Timeline depends on supplement type:</p>
-            <ul>
-                <li><strong>Herbal sedatives</strong> (chamomile, valerian) work within 30-90 minutes but effects are temporary</li>
-                <li><strong>Nutritional support</strong> (B vitamins, magnesium, omega-3s) takes 2-4 weeks to build up in the system and replenish deficiencies, but provides lasting stress resilience</li>
-            </ul>
-            <p>Acute anxiety (vet visits, storms) may require immediate interventions like CBD or prescription medications. Chronic anxiety responds better to long-term nutritional support that addresses root causes rather than masking symptoms.</p>
+          <p>Timeline depends on supplement type:</p>
+          <ul>
+            <li><strong>Herbal sedatives</strong> (chamomile, valerian) work within 30-90 minutes but effects are temporary</li>
+            <li><strong>Nutritional support</strong> (B vitamins, magnesium, omega-3s) takes 2-4 weeks to build up in the system and replenish deficiencies, but provides lasting stress resilience</li>
+          </ul>
+          <p>Acute anxiety (vet visits, storms) may require immediate interventions like CBD or prescription medications. Chronic anxiety responds better to long-term nutritional support that addresses root causes rather than masking symptoms.</p>
         </div>
-    </div>
+      </div>
 
-    <div class="faq-item">
+      <div class="faq-item">
         <div class="faq-question">Can I give my dog melatonin for anxiety?</div>
         <div class="faq-answer">
-            <p>Melatonin can help with <strong>situational anxiety</strong> (thunderstorms, fireworks, travel) but consult your vet first for proper dosing. Typical dose is 1-6 mg depending on dog size, given 30-60 minutes before stressor.</p>
-            <p>Melatonin is <strong>not a long-term anxiety solution</strong>—it promotes sleep but doesn't address nervous system health or nutritional deficiencies. Side effects include lethargy, digestive upset, and hormonal changes.</p>
-            <p>For chronic anxiety, focus on B vitamins, magnesium, and omega-3s from whole foods before adding melatonin.</p>
+          <p>Melatonin can help with <strong>situational anxiety</strong> (thunderstorms, fireworks, travel) but consult your vet first for proper dosing. Typical dose is 1-6 mg depending on dog size, given 30-60 minutes before stressor.</p>
+          <p>Melatonin is <strong>not a long-term anxiety solution</strong>—it promotes sleep but doesn't address nervous system health or nutritional deficiencies. Side effects include lethargy, digestive upset, and hormonal changes.</p>
+          <p>For chronic anxiety, focus on B vitamins, magnesium, and omega-3s from whole foods before adding melatonin.</p>
         </div>
-    </div>
+      </div>
 
-    <div class="faq-item">
+      <div class="faq-item">
         <div class="faq-question">What foods naturally calm dogs?</div>
         <div class="faq-answer">
-            <p><strong>Tryptophan-rich foods</strong> support serotonin production: turkey, chicken, eggs, salmon.</p>
-            <p><strong>B-vitamin-rich foods</strong> support nervous system function: beef liver, chicken liver, organ meats, nutritional yeast.</p>
-            <p><strong>Magnesium-rich foods</strong> support muscle relaxation and GABA production: spinach, pumpkin seeds (small amounts), fish.</p>
-            <p><strong>Omega-3-rich foods</strong> reduce inflammation and support brain health: salmon, sardines, mackerel.</p>
-            <p><strong>Complex carbohydrates</strong> support stable blood sugar and serotonin transport: sweet potato, oats.</p>
-            <p>Avoid high-sugar treats that cause blood sugar crashes and increased anxiety.</p>
+          <p><strong>Tryptophan-rich foods</strong> support serotonin production: turkey, chicken, eggs, salmon.</p>
+          <p><strong>B-vitamin-rich foods</strong> support nervous system function: beef liver, chicken liver, organ meats, nutritional yeast.</p>
+          <p><strong>Magnesium-rich foods</strong> support muscle relaxation and GABA production: spinach, pumpkin seeds (small amounts), fish.</p>
+          <p><strong>Omega-3-rich foods</strong> reduce inflammation and support brain health: salmon, sardines, mackerel.</p>
+          <p><strong>Complex carbohydrates</strong> support stable blood sugar and serotonin transport: sweet potato, oats.</p>
+          <p>Avoid high-sugar treats that cause blood sugar crashes and increased anxiety.</p>
         </div>
-    </div>
+      </div>
 
-    <div class="faq-item">
+      <div class="faq-item">
         <div class="faq-question">Is CBD or calming supplements better for dogs?</div>
         <div class="faq-answer">
-            <p>CBD and nutritional supplements serve different purposes:</p>
-            <ul>
-                <li><strong>CBD</strong> provides acute anxiety relief within 30-60 minutes by interacting with endocannabinoid receptors but doesn't address nutritional deficiencies</li>
-                <li><strong>Whole-food supplements</strong> (B vitamins, magnesium, omega-3s) build long-term stress resilience by supporting nervous system health but take weeks to show effects</li>
-            </ul>
-            <p><strong>Best approach:</strong> Use CBD for situational anxiety (vet visits, storms) while addressing chronic stress with daily nutritional support. Choose high-quality, third-party tested CBD (0.3% THC or less) and consult your vet about dosing.</p>
+          <p>CBD and nutritional supplements serve different purposes:</p>
+          <ul>
+            <li><strong>CBD</strong> provides acute anxiety relief within 30-60 minutes by interacting with endocannabinoid receptors but doesn't address nutritional deficiencies</li>
+            <li><strong>Whole-food supplements</strong> (B vitamins, magnesium, omega-3s) build long-term stress resilience by supporting nervous system health but take weeks to show effects</li>
+          </ul>
+          <p><strong>Best approach:</strong> Use CBD for situational anxiety (vet visits, storms) while addressing chronic stress with daily nutritional support. Choose high-quality, third-party tested CBD (0.3% THC or less) and consult your vet about dosing.</p>
         </div>
-    </div>
+      </div>
 
-    <div class="faq-item">
+      <div class="faq-item">
         <div class="faq-question">Why is my dog anxious even with calming supplements?</div>
         <div class="faq-answer">
-            <p>Several possibilities:</p>
-            <ol>
-                <li><strong>Supplements contain synthetic, poorly absorbed nutrients</strong>—switch to whole-food sources</li>
-                <li><strong>Dosages are too low</strong>—most chews provide 10-20% of therapeutic doses</li>
-                <li><strong>Medical issues causing anxiety</strong>—thyroid problems, pain, cognitive dysfunction require vet diagnosis</li>
-                <li><strong>Environmental/behavioral factors</strong>—separation anxiety, lack of exercise, insufficient mental stimulation need training and lifestyle changes, not just supplements</li>
-                <li><strong>Severe anxiety may require prescription medication</strong>—consult a veterinary behaviorist for refractory cases</li>
-            </ol>
-            <p>Supplements support but don't replace behavioral modification or medical treatment.</p>
+          <p>Several possibilities:</p>
+          <ol>
+            <li><strong>Supplements contain synthetic, poorly absorbed nutrients</strong>—switch to whole-food sources</li>
+            <li><strong>Dosages are too low</strong>—most chews provide 10-20% of therapeutic doses</li>
+            <li><strong>Medical issues causing anxiety</strong>—thyroid problems, pain, cognitive dysfunction require vet diagnosis</li>
+            <li><strong>Environmental/behavioral factors</strong>—separation anxiety, lack of exercise, insufficient mental stimulation need training and lifestyle changes, not just supplements</li>
+            <li><strong>Severe anxiety may require prescription medication</strong>—consult a veterinary behaviorist for refractory cases</li>
+          </ol>
+          <p>Supplements support but don't replace behavioral modification or medical treatment.</p>
         </div>
-    </div>
+      </div>
 
-    <div class="faq-item">
+      <div class="faq-item">
         <div class="faq-question">Can too much tryptophan be bad for dogs?</div>
         <div class="faq-answer">
-            <p>Excess isolated tryptophan supplements can cause serotonin syndrome (rare but serious), especially when combined with SSRIs or other serotonergic drugs.</p>
-            <p>However, <strong>tryptophan from whole foods</strong> (turkey, chicken, eggs) is safe—the body regulates conversion to serotonin naturally. Typical whole-food amounts: 3 oz turkey breast provides ~350 mg tryptophan, well within safe range.</p>
-            <p>Avoid high-dose synthetic tryptophan supplements (1000+ mg) without vet supervision. If your dog takes prescription anti-anxiety medications, consult your vet before adding tryptophan-rich foods or supplements.</p>
+          <p>Excess isolated tryptophan supplements can cause serotonin syndrome (rare but serious), especially when combined with SSRIs or other serotonergic drugs.</p>
+          <p>However, <strong>tryptophan from whole foods</strong> (turkey, chicken, eggs) is safe—the body regulates conversion to serotonin naturally. Typical whole-food amounts: 3 oz turkey breast provides ~350 mg tryptophan, well within safe range.</p>
+          <p>Avoid high-dose synthetic tryptophan supplements (1000+ mg) without vet supervision. If your dog takes prescription anti-anxiety medications, consult your vet before adding tryptophan-rich foods or supplements.</p>
         </div>
+      </div>
     </div>
-</div>
+    </article>
+  </main>
 
-</article>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
+      </div>
+    </footer>
+  </div>
 
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

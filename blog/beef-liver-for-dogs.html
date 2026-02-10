@@ -32,198 +32,268 @@
   <meta property="og:site_name" content="Watts Pet">
   <meta property="og:image" content="https://wattspet.com/assets/hero.jpg">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
-
+  <!-- Degular Font -->
   <style>
-    :root {
-      --bg: #F1ECE9;
-      --fg: #191919;
-      --muted: #3a3a3a;
-      --border: #191919;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body { min-height: 100%; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Regular.woff2') format('woff2');
       font-weight: 400;
-      line-height: 1.6;
-      overflow-x: hidden;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
     }
 
-    /* Navigation */
-    nav.nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px 20px;
-      border-bottom: 2.5px solid var(--border);
+    :root {
+      --brand-orange: #c03800;
+      --bg-light: #f1f1f1;
+      --text-dark: #191919;
+      --white: #ffffff;
+      --text-muted: #666666;
+      --border-light: rgba(25, 25, 25, 0.1);
+      --accent-navy: #1e3a5f;
     }
-    @media (min-width: 768px) {
-      nav.nav {
-        padding: 24px 20px;
-      }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    nav.nav ul {
-      list-style: none;
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      background: #191919;
+      color: var(--text-dark);
+      font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* HEADER WRAPPER - Black background */
+    .header-wrapper {
+      background: #191919;
+      padding: 12px 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    /* ORANGE HEADER - Rounded like Shopify site */
+    header {
+      background: var(--brand-orange);
+      padding: 7px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
-      gap: 24px;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-height: 40px;
+    }
+
+    /* Nav on the LEFT */
+    nav {
+      order: -1;
+      display: flex;
       align-items: center;
     }
-    @media (min-width: 768px) {
-      nav.nav ul {
-        gap: 32px;
-      }
-    }
-    nav.nav a {
-      color: var(--fg);
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 500;
-      transition: opacity 0.15s;
-      position: relative;
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
     }
     @media (min-width: 768px) {
-      nav.nav a {
-        font-size: 16px;
-      }
-    }
-    nav.nav a:hover {
-      opacity: 0.7;
-    }
-    nav.nav a.active::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: var(--fg);
+      nav ul { gap: 24px; }
     }
 
-    /* Breadcrumbs */
-    .breadcrumbs {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px 20px 0;
+    nav li {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
       font-size: 14px;
-      color: var(--muted);
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
     }
     @media (min-width: 768px) {
-      .breadcrumbs {
-        padding: 24px 40px 0;
-        font-size: 15px;
-      }
+      nav a { font-size: 15px; }
     }
-    .breadcrumbs a {
-      color: var(--muted);
-      text-decoration: none;
-      transition: opacity 0.15s;
-    }
-    .breadcrumbs a:hover {
-      opacity: 0.7;
-    }
-    .breadcrumbs span {
-      margin: 0 8px;
+    nav a:hover {
+      opacity: 0.8;
     }
 
-    /* Article */
+    /* Logo CENTERED */
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo {
+      height: 32px;
+    }
+    @media (min-width: 768px) {
+      .logo { height: 40px; }
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 900px;
+      margin: 16px auto 40px;
+      padding: 0 20px;
+      background: var(--bg-light);
+    }
+    @media (min-width: 768px) {
+      main {
+        margin: 20px auto 60px;
+        padding: 0 40px;
+      }
+    }
+
     article {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 32px 20px 60px;
+      background: var(--white);
+      padding: 40px 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
       article {
-        padding: 48px 40px 80px;
+        padding: 60px 50px;
       }
     }
 
-    /* Article meta */
-    .article-meta {
-      margin-bottom: 24px;
-      font-size: 14px;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    @media (min-width: 768px) {
-      .article-meta {
-        margin-bottom: 28px;
-        font-size: 15px;
-      }
+    .article-header {
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--border-light);
     }
 
-    /* Typography */
     h1 {
-      font-family: "Geologica", sans-serif;
-      font-size: 28px;
+      font-size: 32px;
       font-weight: 700;
       line-height: 1.2;
       margin-bottom: 16px;
       letter-spacing: -0.02em;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       h1 {
-        font-size: 38px;
+        font-size: 48px;
         margin-bottom: 20px;
       }
     }
 
-    h2 {
-      font-family: "Geologica", sans-serif;
-      font-size: 22px;
-      font-weight: 700;
-      line-height: 1.3;
-      margin: 48px 0 20px;
-      letter-spacing: -0.01em;
+    .article-meta {
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      font-weight: 500;
+      line-height: 1.6;
+      color: var(--text-muted);
+      margin-bottom: 0;
     }
     @media (min-width: 768px) {
-      h2 {
-        font-size: 26px;
-        margin: 56px 0 24px;
+      .article-intro {
+        font-size: 21px;
       }
     }
 
-    h2:first-of-type {
-      margin-top: 32px;
+    .article-intro a {
+      color: var(--accent-navy);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    .article-intro a:hover {
+      opacity: 0.7;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 56px 0 24px;
+      letter-spacing: -0.01em;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h2 {
+        font-size: 36px;
+        margin: 64px 0 28px;
+      }
     }
 
     h3 {
-      font-family: "Geologica", sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 1.4;
-      margin: 32px 0 16px;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 40px 0 16px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       h3 {
-        font-size: 20px;
-        margin: 40px 0 18px;
+        font-size: 28px;
+        margin: 48px 0 20px;
       }
     }
 
     p {
       font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
-      margin-bottom: 16px;
-      color: var(--fg);
+      margin-bottom: 20px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       p {
         font-size: 18px;
-        margin-bottom: 18px;
-        line-height: 1.75;
+        margin-bottom: 24px;
       }
-    }
-
-    p:last-child {
-      margin-bottom: 0;
     }
 
     strong {
@@ -231,201 +301,161 @@
     }
 
     a {
-      color: var(--fg);
-      text-decoration: underline;
-      text-decoration-thickness: 1.5px;
-      text-underline-offset: 2px;
+      color: var(--accent-navy);
+      transition: opacity 0.2s ease;
     }
-
     a:hover {
       opacity: 0.7;
     }
 
-    /* Lists */
-    article ul, article ol {
-      margin: 20px 0;
-      padding-left: 0;
-      list-style: none;
+    ul, ol {
+      margin: 24px 0;
+      padding-left: 28px;
     }
 
-    article li {
+    li {
       font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
-      margin-bottom: 16px;
-      padding-left: 28px;
-      position: relative;
+      margin-bottom: 12px;
     }
     @media (min-width: 768px) {
-      article li {
+      li {
         font-size: 18px;
-        margin-bottom: 18px;
       }
     }
 
-    article ul li:before {
-      content: "•";
-      position: absolute;
-      left: 10px;
-      font-weight: 700;
-    }
-
-    /* Callout Box */
+    /* LIGHT CALLOUT BOX */
     .callout {
-      border: 2.5px solid var(--border);
-      padding: 20px;
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
+      padding: 24px 28px;
       margin: 32px 0;
-      background: rgba(0,0,0,.01);
     }
     @media (min-width: 768px) {
       .callout {
-        padding: 28px;
-        margin: 40px 0;
+        padding: 28px 32px;
       }
-    }
-
-    .callout p {
-      margin-bottom: 12px;
     }
 
     .callout p:last-child {
       margin-bottom: 0;
     }
 
-    .callout strong {
-      display: block;
-      margin-bottom: 16px;
-      font-size: 18px;
-    }
-    @media (min-width: 768px) {
-      .callout strong {
-        font-size: 19px;
-      }
-    }
-
-    /* FAQ Section */
+    /* FAQ SECTION */
     .faq-section {
-      margin-top: 56px;
-      padding-top: 40px;
-      border-top: 2.5px solid var(--border);
-    }
-    @media (min-width: 768px) {
-      .faq-section {
-        margin-top: 64px;
-        padding-top: 48px;
-      }
+      margin-top: 64px;
+      padding-top: 56px;
+      border-top: 3px solid var(--border-light);
     }
 
     .faq-item {
       margin-bottom: 32px;
+      padding: 28px;
+      background: var(--bg-light);
+      border-radius: 12px;
+      border-left: 4px solid var(--brand-orange);
+    }
+
+    .faq-item h3 {
+      font-size: 20px;
+      margin: 0 0 16px 0;
+      color: var(--brand-orange);
     }
     @media (min-width: 768px) {
-      .faq-item {
-        margin-bottom: 40px;
+      .faq-item h3 {
+        font-size: 23px;
       }
     }
 
-    .faq-item:last-child {
+    .faq-item p {
       margin-bottom: 0;
     }
 
-    .faq-question {
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 12px;
-      line-height: 1.4;
-    }
-    @media (min-width: 768px) {
-      .faq-question {
-        font-size: 20px;
-        margin-bottom: 14px;
-      }
+    /* FOOTER WRAPPER - Black background */
+    .footer-wrapper {
+      background: #191919;
+      padding: 0 12px 12px;
+      margin-top: 80px;
     }
 
-    .faq-answer {
-      font-size: 17px;
-      line-height: 1.7;
-      color: var(--fg);
-    }
-    @media (min-width: 768px) {
-      .faq-answer {
-        font-size: 18px;
-      }
-    }
-
-    /* CTA */
-    .cta-section {
-      text-align: center;
-      margin: 56px 0 0;
-      padding: 40px 0 0;
-      border-top: 2.5px solid var(--border);
-    }
-    @media (min-width: 768px) {
-      .cta-section {
-        margin: 64px 0 0;
-        padding: 48px 0 0;
-      }
-    }
-
-    .cta-section p {
-      margin-bottom: 24px;
-    }
-
-    .gate {
-      display: inline-flex;
-      align-items: stretch;
-      justify-content: space-between;
-      width: 100%;
-      max-width: 480px;
-      height: 52px;
-      border: 2.5px solid var(--border);
-      background: transparent;
-      color: var(--fg);
-      font: 600 16px "Geologica", sans-serif;
-      padding: 0;
-      border-radius: 0;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    @media (min-width: 768px) {
-      .gate {
-        font-size: 17px;
-      }
-    }
-    .gate-text { padding: 0 20px 0 14px; text-align: left; flex: 1 1 auto; display: flex; align-items: center; }
-    @media (min-width: 768px) {
-      .gate-text { padding: 0 20px 0 16px; }
-    }
-    .gate-arrow {
-      display: grid;
-      place-items: center;
-      width: 52px;
-      border-left: 2.5px solid var(--border);
-      font-size: 18px;
-      line-height: 1;
-      user-select: none;
-    }
-    @media (min-width: 768px) {
-      .gate-arrow {
-        width: 43px;
-        font-size: 20px;
-      }
-    }
-    .gate:hover { background: rgba(0,0,0,.035); }
-
-    /* Footer */
+    /* FOOTER - Orange with asymmetric rounded shape like Shopify */
     footer {
-      text-align: center;
-      padding: 20px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 400;
-      border-top: 2.5px solid var(--border);
+      background: var(--brand-orange);
+      color: var(--white);
+      padding: 45px 40px 20px;
+      border-radius: 200px 16px 16px 200px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 144px;
     }
     @media (min-width: 768px) {
       footer {
-        padding: 24px;
-        font-size: 13px;
+        padding: 63px 60px 24px;
+        min-height: 207px;
+        border-radius: 300px 16px 16px 300px;
       }
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      flex: 1;
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 24px;
+      flex: 1;
+    }
+    @media (min-width: 768px) {
+      .footer-right {
+        gap: 32px;
+      }
+    }
+
+    .footer-right-text {
+      text-align: right;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-top: 128px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .footer-logo {
+        height: 160px;
+        margin-top: 160px;
+        margin-bottom: 0;
+      }
+    }
+
+    footer p {
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    footer a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 
@@ -537,165 +567,172 @@
 </head>
 
 <body>
-  <nav class="nav">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/blog/" class="active">Blog</a></li>
-      <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
-    </ul>
-  </nav>
-
-  <div class="breadcrumbs">
-    <a href="/">Home</a>
-    <span>→</span>
-    <a href="/blog/">Blog</a>
-    <span>→</span>
-    <span>Beef Liver for Dogs</span>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+        </div>
+      </div>
+    </header>
   </div>
 
-  <article>
-    <div class="article-meta">December 18, 2024</div>
+  <main>
+    <article>
+    <div class="article-header">
+      <div class="article-meta">December 18, 2024</div>
+      <h1>Why Beef Liver is One of the Best Things You Can Feed Your Dog</h1>
+      <p class="article-intro">If you could only add one supplement to your dog's diet, <a href="/ingredient-analyzer/ingredients/beef-liver/">beef liver</a> would be hard to beat. It's not flashy. It's not trendy. But gram for gram, beef liver is one of the most nutrient-dense whole foods on the planet — and it's exactly the kind of nutrition dogs' bodies are built to thrive on.</p>
+    </div>
 
-    <h1>Why Beef Liver is One of the Best Things You Can Feed Your Dog</h1>
+    <div class="article-content">
+      <p>Unlike synthetic vitamins or heavily processed supplements, beef liver delivers a complete nutritional package: vitamins, minerals, amino acids, and enzymes all working together the way nature intended. Dogs don't just tolerate it — they're designed to use it.</p>
 
-    <p>If you could only add one supplement to your dog's diet, <a href="/ingredient-analyzer/ingredients/beef-liver/">beef liver</a> would be hard to beat. It's not flashy. It's not trendy. But gram for gram, beef liver is one of the most nutrient-dense whole foods on the planet — and it's exactly the kind of nutrition dogs' bodies are built to thrive on.</p>
+      <h2>What Makes Beef Liver So Nutrient-Dense?</h2>
 
-    <p>Unlike synthetic vitamins or heavily processed supplements, beef liver delivers a complete nutritional package: vitamins, minerals, amino acids, and enzymes all working together the way nature intended. Dogs don't just tolerate it — they're designed to use it.</p>
+      <p>Beef liver isn't just rich in nutrients. It's off-the-charts rich.</p>
 
-    <h2>What Makes Beef Liver So Nutrient-Dense?</h2>
+      <p>Here's what a single ounce of beef liver delivers compared to muscle meat, <a href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/169451/nutrients" target="_blank" rel="noopener">according to USDA nutritional data</a>:</p>
 
-    <p>Beef liver isn't just rich in nutrients. It's off-the-charts rich.</p>
-
-    <p>Here's what a single ounce of beef liver delivers compared to muscle meat, <a href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/169451/nutrients" target="_blank" rel="noopener">according to USDA nutritional data</a>:</p>
-
-    <div class="callout">
-      <h3 style="margin-top: 0; font-size: 18px;">Beef Liver vs. Muscle Meat (per ounce)</h3>
-      <div style="margin-top: 12px;">
-        <div style="margin-bottom: 8px;"><strong>50x more vitamin A</strong> (critical for vision, skin, and immune health) <a href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/169451/nutrients" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; font-size: 13px;">*</a></div>
-        <div style="margin-bottom: 8px;"><strong>Over 2x more iron</strong> — and it's heme iron, the most bioavailable form <a href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/169451/nutrients" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; font-size: 13px;">*</a></div>
-        <div style="margin-bottom: 8px;"><strong>30x more B12</strong> (essential for energy and nervous system function) <a href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/169451/nutrients" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; font-size: 13px;">*</a></div>
-        <div style="margin-bottom: 16px;"><strong>High levels of riboflavin, folate, copper, and zinc</strong> — all in their most usable forms</div>
-        <div style="font-size: 13px; color: var(--muted); margin-top: 12px;">* Nutrient comparisons based on <a href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/169451/nutrients" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">USDA FoodData Central</a> data for raw beef liver vs. raw ground beef (85% lean).</div>
+      <div class="callout">
+        <h3 style="margin-top: 0; font-size: 18px;">Beef Liver vs. Muscle Meat (per ounce)</h3>
+        <div style="margin-top: 12px;">
+          <div style="margin-bottom: 8px;"><strong>50x more vitamin A</strong> (critical for vision, skin, and immune health) <a href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/169451/nutrients" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; font-size: 13px;">*</a></div>
+          <div style="margin-bottom: 8px;"><strong>Over 2x more iron</strong> — and it's heme iron, the most bioavailable form <a href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/169451/nutrients" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; font-size: 13px;">*</a></div>
+          <div style="margin-bottom: 8px;"><strong>30x more B12</strong> (essential for energy and nervous system function) <a href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/169451/nutrients" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; font-size: 13px;">*</a></div>
+          <div style="margin-bottom: 16px;"><strong>High levels of riboflavin, folate, copper, and zinc</strong> — all in their most usable forms</div>
+          <div style="font-size: 13px; color: var(--text-muted); margin-top: 12px;">* Nutrient comparisons based on <a href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/169451/nutrients" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">USDA FoodData Central</a> data for raw beef liver vs. raw ground beef (85% lean).</div>
+        </div>
       </div>
+
+      <p>That's why you don't need much. A little liver goes a very long way. This is what makes it such a powerful example of <a href="/blog/organ-based-nutrition-for-dogs.html">organ-based nutrition for dogs</a>.</p>
+
+      <div class="callout">
+        <p style="margin: 0;"><strong>Compare Any Ingredient:</strong> Check how beef liver compares to other ingredients in your dog's food using our <a href="/ingredient-analyzer/">free ingredient analyzer</a>. Get detailed nutritional breakdowns and quality ratings for hundreds of ingredients.</p>
+      </div>
+
+      <h2>The Real-World Benefits You'll Actually Notice</h2>
+
+      <h3>Shinier, Healthier Coat and Skin</h3>
+
+      <p>Vitamin A is a fat-soluble vitamin that supports skin cell turnover and barrier function. Many dogs eating processed diets don't get enough of the active, usable form (retinol) — only the plant-based precursor (beta-carotene), which <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5090096/" target="_blank" rel="noopener">dogs convert poorly compared to humans, according to veterinary research</a>.</p>
+
+      <p>Beef liver provides retinol directly. The result? Healthier skin from the inside out, less dryness and flaking, and a coat that actually shines.</p>
+
+      <h3>More Consistent Energy Throughout the Day</h3>
+
+      <p>If your dog gets tired halfway through a walk or seems sluggish in the afternoon, they may not be getting enough bioavailable iron or B vitamins. Beef liver is loaded with both — and because it's heme iron (from animal sources), it's absorbed 3x more efficiently than the non-heme iron found in plants or synthetic supplements.</p>
+
+      <p>The B12 in liver supports red blood cell production and cellular energy. Together, these nutrients help your dog sustain energy, not just start with it.</p>
+
+      <h3>Better Digestion and Gut Function</h3>
+
+      <p>Liver isn't just nutrient-dense — it's also gentle and easy to digest. The amino acids are highly bioavailable, and the natural enzymes and cofactors support the gut's own digestive processes.</p>
+
+      <p>For dogs with sensitive stomachs or inconsistent stool quality, liver can be a game-changer. It's nutrient-rich without being hard to break down, which makes it ideal for dogs who struggle with heavier proteins or complex ingredients.</p>
+
+      <h3>Stronger Immune Resilience</h3>
+
+      <p>Liver is rich in zinc, copper, selenium, and vitamin A — all nutrients that play a central role in immune function. This is especially important for dogs living in high-stress environments: cities, multi-dog households, dogs who travel frequently, or seniors whose immune systems need extra support.</p>
+
+      <p>It's not about "boosting" immunity. It's about giving the immune system the raw materials it needs to do its job well.</p>
+
+      <h3>A Nutrient Safety Net for Picky Eaters or Senior Dogs</h3>
+
+      <p>Some dogs just don't eat much — whether they're small, senior, recovering from illness, or naturally picky. When every bite counts, nutrient density matters.</p>
+
+      <p>Beef liver gives you the most nutrition per calorie of almost any food. A small amount delivers outsized benefits, which is why it's such a valuable addition for dogs with smaller appetites or higher nutrient needs. This is one of many reasons <a href="/blog/why-dogs-need-supplements.html">supplements can make sense even with complete and balanced food</a>.</p>
+
+      <h2>How Much Liver Should You Feed?</h2>
+
+      <p>Liver is powerful, so moderation matters.</p>
+
+      <ul>
+        <li><strong>Start small:</strong> 5% of your dog's daily food intake</li>
+        <li><strong>Introduce gradually</strong> over 7–10 days to allow their system to adjust</li>
+        <li><strong>Watch their response:</strong> stool quality, energy, coat condition</li>
+        <li><strong>Most dogs do well with 10–15%</strong> of their diet coming from organ meat once fully adjusted</li>
+      </ul>
+
+      <p>Too much liver (especially over a long period) can lead to <a href="https://www.merckvetmanual.com/toxicology/toxicoses-from-human-vitamins-minerals-and-dietary-supplements/toxicoses-in-animals-from-human-multivitamins-and-supplements#Magnesium_v101584705" target="_blank" rel="noopener">vitamin A toxicity</a>, which is why variety and moderation are key. Rotate liver with other organs like heart and kidney for the broadest nutrient coverage.</p>
+
+      <h2>The Difference Between Fresh, Freeze-Dried, and Air-Dried</h2>
+
+      <p><strong>Fresh/Raw Liver:</strong> Maximum nutrients, but requires careful sourcing, storage, and handling. Not practical for everyone.</p>
+
+      <p><strong>Freeze-Dried Liver:</strong> Lightweight and shelf-stable, but the freeze-drying process can degrade some heat-sensitive nutrients.</p>
+
+      <p><strong>Air-Dried Liver:</strong> Preserves nutrient density while staying shelf-stable. Air-drying locks in the vitamins, minerals, and enzymes without the mess or guesswork of raw feeding. Learn more about <a href="/blog/whole-food-vs-synthetic-nutrients.html">why bioavailability matters when choosing supplements</a>.</p>
+
+      <h2>Why Source Quality Matters</h2>
+
+      <p>Not all liver is created equal. The quality of the animal matters.</p>
+
+      <p>Grass-fed cattle produce liver that's richer in omega-3 fatty acids, CLA (conjugated linoleic acid), and fat-soluble vitamins like A, D, and E. They're also raised without antibiotics or hormones, which means cleaner, more nutrient-dense organ meat.</p>
+
+      <p>When choosing liver supplements or treats, look for grass-fed, responsibly sourced options that use gentle processing methods like air-drying to preserve maximum nutrition.</p>
+
+      <h2>The Bottom Line</h2>
+
+      <p>Beef liver is one of the most powerful whole-food nutrients you can give your dog. It supports skin and coat health, energy, digestion, immune function, and overall vitality — all from a single, natural ingredient.</p>
+
+      <p>It's not a trend. It's ancestral nutrition, backed by biology, and used by dog owners who want real results from real food.</p>
     </div>
 
-    <p>That's why you don't need much. A little liver goes a very long way. This is what makes it such a powerful example of <a href="/blog/organ-based-nutrition-for-dogs.html">organ-based nutrition for dogs</a>.</p>
-
-    <div class="callout" style="background: #f5f5f5; border-left: 4px solid var(--fg); padding: 20px; margin: 24px 0;">
-      <p style="margin: 0;"><strong>Compare Any Ingredient:</strong> Check how beef liver compares to other ingredients in your dog's food using our <a href="/ingredient-analyzer/">free ingredient analyzer</a>. Get detailed nutritional breakdowns and quality ratings for hundreds of ingredients.</p>
-    </div>
-
-    <h2>The Real-World Benefits You'll Actually Notice</h2>
-
-    <h3>Shinier, Healthier Coat and Skin</h3>
-
-    <p>Vitamin A is a fat-soluble vitamin that supports skin cell turnover and barrier function. Many dogs eating processed diets don't get enough of the active, usable form (retinol) — only the plant-based precursor (beta-carotene), which <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5090096/" target="_blank" rel="noopener">dogs convert poorly compared to humans, according to veterinary research</a>.</p>
-
-    <p>Beef liver provides retinol directly. The result? Healthier skin from the inside out, less dryness and flaking, and a coat that actually shines.</p>
-
-    <h3>More Consistent Energy Throughout the Day</h3>
-
-    <p>If your dog gets tired halfway through a walk or seems sluggish in the afternoon, they may not be getting enough bioavailable iron or B vitamins. Beef liver is loaded with both — and because it's heme iron (from animal sources), it's absorbed 3x more efficiently than the non-heme iron found in plants or synthetic supplements.</p>
-
-    <p>The B12 in liver supports red blood cell production and cellular energy. Together, these nutrients help your dog sustain energy, not just start with it.</p>
-
-    <h3>Better Digestion and Gut Function</h3>
-
-    <p>Liver isn't just nutrient-dense — it's also gentle and easy to digest. The amino acids are highly bioavailable, and the natural enzymes and cofactors support the gut's own digestive processes.</p>
-
-    <p>For dogs with sensitive stomachs or inconsistent stool quality, liver can be a game-changer. It's nutrient-rich without being hard to break down, which makes it ideal for dogs who struggle with heavier proteins or complex ingredients.</p>
-
-    <h3>Stronger Immune Resilience</h3>
-
-    <p>Liver is rich in zinc, copper, selenium, and vitamin A — all nutrients that play a central role in immune function. This is especially important for dogs living in high-stress environments: cities, multi-dog households, dogs who travel frequently, or seniors whose immune systems need extra support.</p>
-
-    <p>It's not about "boosting" immunity. It's about giving the immune system the raw materials it needs to do its job well.</p>
-
-    <h3>A Nutrient Safety Net for Picky Eaters or Senior Dogs</h3>
-
-    <p>Some dogs just don't eat much — whether they're small, senior, recovering from illness, or naturally picky. When every bite counts, nutrient density matters.</p>
-
-    <p>Beef liver gives you the most nutrition per calorie of almost any food. A small amount delivers outsized benefits, which is why it's such a valuable addition for dogs with smaller appetites or higher nutrient needs. This is one of many reasons <a href="/blog/why-dogs-need-supplements.html">supplements can make sense even with complete and balanced food</a>.</p>
-
-    <h2>How Much Liver Should You Feed?</h2>
-
-    <p>Liver is powerful, so moderation matters.</p>
-
-    <ul>
-      <li><strong>Start small:</strong> 5% of your dog's daily food intake</li>
-      <li><strong>Introduce gradually</strong> over 7–10 days to allow their system to adjust</li>
-      <li><strong>Watch their response:</strong> stool quality, energy, coat condition</li>
-      <li><strong>Most dogs do well with 10–15%</strong> of their diet coming from organ meat once fully adjusted</li>
-    </ul>
-
-    <p>Too much liver (especially over a long period) can lead to <a href="https://www.merckvetmanual.com/toxicology/toxicoses-from-human-vitamins-minerals-and-dietary-supplements/toxicoses-in-animals-from-human-multivitamins-and-supplements#Magnesium_v101584705" target="_blank" rel="noopener">vitamin A toxicity</a>, which is why variety and moderation are key. Rotate liver with other organs like heart and kidney for the broadest nutrient coverage.</p>
-
-    <h2>The Difference Between Fresh, Freeze-Dried, and Air-Dried</h2>
-
-    <p><strong>Fresh/Raw Liver:</strong> Maximum nutrients, but requires careful sourcing, storage, and handling. Not practical for everyone.</p>
-
-    <p><strong>Freeze-Dried Liver:</strong> Lightweight and shelf-stable, but the freeze-drying process can degrade some heat-sensitive nutrients.</p>
-
-    <p><strong>Air-Dried Liver:</strong> Preserves nutrient density while staying shelf-stable. Air-drying locks in the vitamins, minerals, and enzymes without the mess or guesswork of raw feeding. Learn more about <a href="/blog/whole-food-vs-synthetic-nutrients.html">why bioavailability matters when choosing supplements</a>.</p>
-
-    <h2>Why Source Quality Matters</h2>
-
-    <p>Not all liver is created equal. The quality of the animal matters.</p>
-
-    <p>Grass-fed cattle produce liver that's richer in omega-3 fatty acids, CLA (conjugated linoleic acid), and fat-soluble vitamins like A, D, and E. They're also raised without antibiotics or hormones, which means cleaner, more nutrient-dense organ meat.</p>
-
-    <p>When choosing liver supplements or treats, look for grass-fed, responsibly sourced options that use gentle processing methods like air-drying to preserve maximum nutrition.</p>
-
-    <h2>The Bottom Line</h2>
-
-    <p>Beef liver is one of the most powerful whole-food nutrients you can give your dog. It supports skin and coat health, energy, digestion, immune function, and overall vitality — all from a single, natural ingredient.</p>
-
-    <p>It's not a trend. It's ancestral nutrition, backed by biology, and used by dog owners who want real results from real food.</p>
-
-    <!-- FAQ Section -->
     <div class="faq-section">
       <h2>Frequently Asked Questions</h2>
 
       <div class="faq-item">
-        <div class="faq-question">How much beef liver should I feed my dog?</div>
-        <div class="faq-answer">Start with 5% of your dog's daily food intake and introduce gradually over 7-10 days. Most dogs do well with 10-15% of their diet coming from organ meat once fully adjusted. Too much liver can lead to vitamin A toxicity, so moderation is key.</div>
+        <h3>How much beef liver should I feed my dog?</h3>
+        <p>Start with 5% of your dog's daily food intake and introduce gradually over 7-10 days. Most dogs do well with 10-15% of their diet coming from organ meat once fully adjusted. Too much liver can lead to vitamin A toxicity, so moderation is key.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Is beef liver safe for all dogs?</div>
-        <div class="faq-answer">Yes, beef liver is safe for most dogs when introduced gradually and fed in appropriate amounts (5-15% of diet). However, dogs with specific health conditions should consult their vet first. Always choose high-quality, responsibly sourced liver.</div>
+        <h3>Is beef liver safe for all dogs?</h3>
+        <p>Yes, beef liver is safe for most dogs when introduced gradually and fed in appropriate amounts (5-15% of diet). However, dogs with specific health conditions should consult their vet first. Always choose high-quality, responsibly sourced liver.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">What's better: raw, freeze-dried, or air-dried beef liver?</div>
-        <div class="faq-answer">Raw liver has maximum nutrients but requires careful handling. Freeze-dried is shelf-stable but can degrade some nutrients. Air-dried preserves nutrient density while staying shelf-stable, making it the most practical option for most dog owners.</div>
+        <h3>What's better: raw, freeze-dried, or air-dried beef liver?</h3>
+        <p>Raw liver has maximum nutrients but requires careful handling. Freeze-dried is shelf-stable but can degrade some nutrients. Air-dried preserves nutrient density while staying shelf-stable, making it the most practical option for most dog owners.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Why is grass-fed beef liver better for dogs?</div>
-        <div class="faq-answer">Grass-fed cattle produce liver that's richer in omega-3 fatty acids, CLA, and fat-soluble vitamins like A, D, and E. They're also raised without antibiotics or hormones, which means cleaner, more nutrient-dense organ meat.</div>
+        <h3>Why is grass-fed beef liver better for dogs?</h3>
+        <p>Grass-fed cattle produce liver that's richer in omega-3 fatty acids, CLA, and fat-soluble vitamins like A, D, and E. They're also raised without antibiotics or hormones, which means cleaner, more nutrient-dense organ meat.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Can beef liver help with my dog's skin and coat?</div>
-        <div class="faq-answer">Yes. Beef liver provides retinol (active vitamin A), which supports skin cell turnover and barrier function. Many dogs eating processed diets don't get enough usable vitamin A, which can lead to dry skin and dull coats. Liver delivers it in the most bioavailable form.</div>
+        <h3>Can beef liver help with my dog's skin and coat?</h3>
+        <p>Yes. Beef liver provides retinol (active vitamin A), which supports skin cell turnover and barrier function. Many dogs eating processed diets don't get enough usable vitamin A, which can lead to dry skin and dull coats. Liver delivers it in the most bioavailable form.</p>
       </div>
     </div>
+    </article>
+  </main>
 
-    <!-- CTA Section -->
-    <div class="cta-section">
-      <p><strong>Looking for high-quality organ nutrition for your dog?</strong></p>
-      <p>Watts offers grass-fed beef liver, air-dried to preserve maximum nutrition. Learn more about our whole-food approach.</p>
-
-      <a href="/" class="gate">
-        <span class="gate-text">Learn about Watts</span>
-        <span class="gate-arrow" aria-hidden="true">→</span>
-      </a>
-    </div>
-  </article>
-
-  <footer>© <span id="year"></span> Watts Pet</footer>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
+      </div>
+    </footer>
+  </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();

@@ -32,193 +32,268 @@
   <meta property="og:site_name" content="Watts Pet">
   <meta property="og:image" content="https://wattspet.com/assets/hero.jpg">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
-
+  <!-- Degular Font -->
   <style>
-    :root {
-      --bg: #F1ECE9;
-      --fg: #191919;
-      --muted: #3a3a3a;
-      --border: #191919;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body { min-height: 100%; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Regular.woff2') format('woff2');
       font-weight: 400;
-      line-height: 1.6;
-      overflow-x: hidden;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
     }
 
-    nav.nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px 20px;
-      border-bottom: 2.5px solid var(--border);
+    :root {
+      --brand-orange: #c03800;
+      --bg-light: #f1f1f1;
+      --text-dark: #191919;
+      --white: #ffffff;
+      --text-muted: #666666;
+      --border-light: rgba(25, 25, 25, 0.1);
+      --accent-navy: #1e3a5f;
     }
-    @media (min-width: 768px) {
-      nav.nav {
-        padding: 24px 20px;
-      }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    nav.nav ul {
-      list-style: none;
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      background: #191919;
+      color: var(--text-dark);
+      font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* HEADER WRAPPER - Black background */
+    .header-wrapper {
+      background: #191919;
+      padding: 12px 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    /* ORANGE HEADER - Rounded like Shopify site */
+    header {
+      background: var(--brand-orange);
+      padding: 7px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
-      gap: 24px;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-height: 40px;
+    }
+
+    /* Nav on the LEFT */
+    nav {
+      order: -1;
+      display: flex;
       align-items: center;
     }
-    @media (min-width: 768px) {
-      nav.nav ul {
-        gap: 32px;
-      }
-    }
-    nav.nav a {
-      color: var(--fg);
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 500;
-      transition: opacity 0.15s;
-      position: relative;
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
     }
     @media (min-width: 768px) {
-      nav.nav a {
-        font-size: 16px;
-      }
-    }
-    nav.nav a:hover {
-      opacity: 0.7;
-    }
-    nav.nav a.active::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: var(--fg);
+      nav ul { gap: 24px; }
     }
 
-    .breadcrumbs {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px 20px 0;
+    nav li {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
       font-size: 14px;
-      color: var(--muted);
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
     }
     @media (min-width: 768px) {
-      .breadcrumbs {
-        padding: 24px 40px 0;
-        font-size: 15px;
+      nav a { font-size: 15px; }
+    }
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    /* Logo CENTERED */
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo {
+      height: 32px;
+    }
+    @media (min-width: 768px) {
+      .logo { height: 40px; }
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 900px;
+      margin: 16px auto 40px;
+      padding: 0 20px;
+      background: var(--bg-light);
+    }
+    @media (min-width: 768px) {
+      main {
+        margin: 20px auto 60px;
+        padding: 0 40px;
       }
-    }
-    .breadcrumbs a {
-      color: var(--muted);
-      text-decoration: none;
-      transition: opacity 0.15s;
-    }
-    .breadcrumbs a:hover {
-      opacity: 0.7;
-    }
-    .breadcrumbs span {
-      margin: 0 8px;
     }
 
     article {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 32px 20px 60px;
+      background: var(--white);
+      padding: 40px 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
       article {
-        padding: 48px 40px 80px;
+        padding: 60px 50px;
       }
     }
 
-    .article-meta {
-      margin-bottom: 24px;
-      font-size: 14px;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    @media (min-width: 768px) {
-      .article-meta {
-        margin-bottom: 28px;
-        font-size: 15px;
-      }
+    .article-header {
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--border-light);
     }
 
     h1 {
-      font-family: "Geologica", sans-serif;
-      font-size: 28px;
+      font-size: 32px;
       font-weight: 700;
       line-height: 1.2;
       margin-bottom: 16px;
       letter-spacing: -0.02em;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       h1 {
-        font-size: 38px;
+        font-size: 48px;
         margin-bottom: 20px;
       }
     }
 
-    h2 {
-      font-family: "Geologica", sans-serif;
-      font-size: 22px;
-      font-weight: 700;
-      line-height: 1.3;
-      margin: 48px 0 20px;
-      letter-spacing: -0.01em;
+    .article-meta {
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      font-weight: 500;
+      line-height: 1.6;
+      color: var(--text-muted);
+      margin-bottom: 0;
     }
     @media (min-width: 768px) {
-      h2 {
-        font-size: 26px;
-        margin: 56px 0 24px;
+      .article-intro {
+        font-size: 21px;
       }
     }
 
-    h2:first-of-type {
-      margin-top: 32px;
+    .article-intro a {
+      color: var(--accent-navy);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    .article-intro a:hover {
+      opacity: 0.7;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 56px 0 24px;
+      letter-spacing: -0.01em;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h2 {
+        font-size: 36px;
+        margin: 64px 0 28px;
+      }
     }
 
     h3 {
-      font-family: "Geologica", sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 1.4;
-      margin: 32px 0 16px;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 40px 0 16px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       h3 {
-        font-size: 20px;
-        margin: 40px 0 18px;
+        font-size: 28px;
+        margin: 48px 0 20px;
       }
     }
 
     p {
       font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
-      margin-bottom: 16px;
-      color: var(--fg);
+      margin-bottom: 20px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       p {
         font-size: 18px;
-        margin-bottom: 18px;
-        line-height: 1.75;
+        margin-bottom: 24px;
       }
-    }
-
-    p:last-child {
-      margin-bottom: 0;
     }
 
     strong {
@@ -226,226 +301,207 @@
     }
 
     a {
-      color: var(--fg);
-      text-decoration: underline;
-      text-decoration-thickness: 1.5px;
-      text-underline-offset: 2px;
+      color: var(--accent-navy);
+      transition: opacity 0.2s ease;
     }
-
     a:hover {
       opacity: 0.7;
     }
 
-    article ul, article ol {
-      margin: 20px 0;
-      padding-left: 0;
-      list-style: none;
+    ul, ol {
+      margin: 24px 0;
+      padding-left: 28px;
     }
 
-    article li {
+    li {
       font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
-      margin-bottom: 16px;
-      padding-left: 28px;
-      position: relative;
+      margin-bottom: 12px;
     }
     @media (min-width: 768px) {
-      article li {
+      li {
         font-size: 18px;
-        margin-bottom: 18px;
       }
     }
 
-    article ul li:before {
-      content: "•";
-      position: absolute;
-      left: 10px;
-      font-weight: 700;
-    }
-
+    /* LIGHT CALLOUT BOX */
     .callout {
-      border: 2.5px solid var(--border);
-      padding: 20px;
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
+      padding: 24px 28px;
       margin: 32px 0;
-      background: rgba(0,0,0,.01);
     }
     @media (min-width: 768px) {
       .callout {
-        padding: 28px;
-        margin: 40px 0;
+        padding: 28px 32px;
       }
     }
 
-    .comparison-table {
-      margin: 32px 0;
-      overflow-x: auto;
-    }
-    @media (min-width: 768px) {
-      .comparison-table {
-        margin: 40px 0;
-      }
+    .callout p:last-child {
+      margin-bottom: 0;
     }
 
+    /* TABLE */
     table {
       width: 100%;
       border-collapse: collapse;
-      border: 2.5px solid var(--border);
-      font-size: 15px;
+      margin: 32px 0;
+      font-size: 16px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
     @media (min-width: 768px) {
       table {
-        font-size: 16px;
+        font-size: 17px;
       }
+    }
+
+    thead {
+      background: var(--brand-orange);
+      color: var(--white);
+      font-weight: 700;
     }
 
     th, td {
-      padding: 16px;
       text-align: left;
-      border: 2.5px solid var(--border);
+      padding: 16px;
+      border-bottom: 1px solid var(--border-light);
     }
     @media (min-width: 768px) {
       th, td {
-        padding: 20px;
+        padding: 18px 20px;
       }
     }
 
-    th {
-      background: rgba(0,0,0,.02);
-      font-weight: 700;
-      font-size: 15px;
-    }
-    @media (min-width: 768px) {
-      th {
-        font-size: 16px;
-      }
+    tbody tr:last-child td {
+      border-bottom: none;
     }
 
-    td {
-      vertical-align: top;
-      line-height: 1.6;
+    tbody tr {
+      background: var(--white);
+      transition: background 0.2s ease;
     }
 
+    tbody tr:hover {
+      background: rgba(192, 56, 0, 0.02);
+    }
+
+    /* FAQ SECTION */
     .faq-section {
-      margin-top: 56px;
-      padding-top: 40px;
-      border-top: 2.5px solid var(--border);
-    }
-    @media (min-width: 768px) {
-      .faq-section {
-        margin-top: 64px;
-        padding-top: 48px;
-      }
+      margin-top: 64px;
+      padding-top: 56px;
+      border-top: 3px solid var(--border-light);
     }
 
     .faq-item {
       margin-bottom: 32px;
+      padding: 28px;
+      background: var(--bg-light);
+      border-radius: 12px;
+      border-left: 4px solid var(--brand-orange);
+    }
+
+    .faq-item h3 {
+      font-size: 20px;
+      margin: 0 0 16px 0;
+      color: var(--brand-orange);
     }
     @media (min-width: 768px) {
-      .faq-item {
-        margin-bottom: 40px;
+      .faq-item h3 {
+        font-size: 23px;
       }
     }
 
-    .faq-item:last-child {
+    .faq-item p {
       margin-bottom: 0;
     }
 
-    .faq-question {
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 12px;
-      line-height: 1.4;
-    }
-    @media (min-width: 768px) {
-      .faq-question {
-        font-size: 20px;
-        margin-bottom: 14px;
-      }
+    /* FOOTER WRAPPER - Black background */
+    .footer-wrapper {
+      background: #191919;
+      padding: 0 12px 12px;
+      margin-top: 80px;
     }
 
-    .faq-answer {
-      font-size: 17px;
-      line-height: 1.7;
-      color: var(--fg);
-    }
-    @media (min-width: 768px) {
-      .faq-answer {
-        font-size: 18px;
-      }
-    }
-
-    .cta-section {
-      text-align: center;
-      margin: 56px 0 0;
-      padding: 40px 0 0;
-      border-top: 2.5px solid var(--border);
-    }
-    @media (min-width: 768px) {
-      .cta-section {
-        margin: 64px 0 0;
-        padding: 48px 0 0;
-      }
-    }
-
-    .cta-section p {
-      margin-bottom: 24px;
-    }
-
-    .gate {
-      display: inline-flex;
-      align-items: stretch;
-      justify-content: space-between;
-      width: 100%;
-      max-width: 480px;
-      height: 52px;
-      border: 2.5px solid var(--border);
-      background: transparent;
-      color: var(--fg);
-      font: 600 16px "Geologica", sans-serif;
-      padding: 0;
-      border-radius: 0;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    @media (min-width: 768px) {
-      .gate {
-        font-size: 17px;
-      }
-    }
-    .gate-text { padding: 0 20px 0 14px; text-align: left; flex: 1 1 auto; display: flex; align-items: center; }
-    @media (min-width: 768px) {
-      .gate-text { padding: 0 20px 0 16px; }
-    }
-    .gate-arrow {
-      display: grid;
-      place-items: center;
-      width: 52px;
-      border-left: 2.5px solid var(--border);
-      font-size: 18px;
-      line-height: 1;
-      user-select: none;
-    }
-    @media (min-width: 768px) {
-      .gate-arrow {
-        width: 43px;
-        font-size: 20px;
-      }
-    }
-    .gate:hover { background: rgba(0,0,0,.035); }
-
+    /* FOOTER - Orange with asymmetric rounded shape like Shopify */
     footer {
-      text-align: center;
-      padding: 20px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 400;
-      border-top: 2.5px solid var(--border);
+      background: var(--brand-orange);
+      color: var(--white);
+      padding: 45px 40px 20px;
+      border-radius: 200px 16px 16px 200px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 144px;
     }
     @media (min-width: 768px) {
       footer {
-        padding: 24px;
-        font-size: 13px;
+        padding: 63px 60px 24px;
+        min-height: 207px;
+        border-radius: 300px 16px 16px 300px;
       }
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      flex: 1;
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 24px;
+      flex: 1;
+    }
+    @media (min-width: 768px) {
+      .footer-right {
+        gap: 32px;
+      }
+    }
+
+    .footer-right-text {
+      text-align: right;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-top: 128px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .footer-logo {
+        height: 160px;
+        margin-top: 160px;
+        margin-bottom: 0;
+      }
+    }
+
+    footer p {
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    footer a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 
@@ -612,188 +668,190 @@
 </head>
 
 <body>
-  <nav class="nav">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/blog/" class="active">Blog</a></li>
-      <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
-    </ul>
-  </nav>
-
-  <div class="breadcrumbs">
-    <a href="/">Home</a>
-    <span>→</span>
-    <a href="/blog/">Blog</a>
-    <span>→</span>
-    <span>Pregnant & Nursing Dog Nutrition</span>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+        </div>
+      </div>
+    </header>
   </div>
 
-  <article>
-    <div class="article-meta">February 14, 2025 • Updated January 21, 2026</div>
-
-    <h1>Lactating Dog Calorie Requirements: How Much to Feed Large Litters</h1>
-
-    <div class="callout" style="margin: 24px 0 32px; background: #fff3e0; border: 3px solid var(--border);">
-      <h2 style="margin-top: 0; font-size: 22px; margin-bottom: 12px;">🔍 Quick Answer: 50 lb Dog with Large Litter</h2>
-      <p style="font-size: 19px; font-weight: 600; margin-bottom: 16px; line-height: 1.5;">A 50 lb lactating dog nursing a large litter (6-8 puppies) needs <strong style="font-size: 22px; color: #d97706;">3,000-4,000 calories per day</strong> during peak lactation (weeks 3-5).</p>
-      <p style="margin-bottom: 12px;"><strong>Normal maintenance:</strong> 1,000-1,100 cal/day</p>
-      <p style="margin-bottom: 12px;"><strong>Large litter nursing:</strong> 3,000-4,000 cal/day (3-4x normal)</p>
-      <p style="margin-bottom: 12px;"><strong>Why so high?</strong> She's producing 1-2 liters of milk daily for 6-8 rapidly growing puppies while maintaining her own health</p>
-      <p style="margin-bottom: 0;"><strong>Feeding approach:</strong> Free-feed high-quality, calorie-dense food and let her eat as much as she wants</p>
+  <main>
+    <article>
+    <div class="article-header">
+      <div class="article-meta">February 14, 2025 • Updated January 21, 2026</div>
+      <h1>Lactating Dog Calorie Requirements: How Much to Feed Large Litters</h1>
+      <p class="article-intro">A pregnant or nursing dog isn't just eating for herself—she's building entirely new lives from her own nutritional reserves. During gestation, her body creates organs, bones, brains, and nervous systems for an entire litter. During lactation, she produces nutrient-dense milk 24/7 while trying to maintain her own health.</p>
     </div>
 
-    <p>A pregnant or nursing dog isn't just eating for herself—she's building entirely new lives from her own nutritional reserves. During gestation, her body creates organs, bones, brains, and nervous systems for an entire litter. During lactation, she produces nutrient-dense milk 24/7 while trying to maintain her own health.</p>
-
-    <p>The nutritional demands during these stages are extreme. A lactating dog with a large litter can need <strong>4x her normal calorie intake</strong>—and those calories must be packed with protein, calcium, vitamins, and minerals to prevent her body from cannibalizing its own reserves.</p>
-
-    <div class="callout" style="margin: 32px 0;">
-      <h2 style="margin-top: 0; font-size: 20px; margin-bottom: 16px;">🍼 Calorie Requirements for Lactating Dogs</h2>
-
-      <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px;">
-        <thead>
-          <tr style="border-bottom: 2px solid var(--border);">
-            <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Dog Weight</th>
-            <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Normal Calories</th>
-            <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Large Litter (6-8 pups)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px 8px;"><strong>30 lb dog</strong></td>
-            <td style="padding: 12px 8px;">700-800 cal</td>
-            <td style="padding: 12px 8px;"><strong>2,100-3,200 cal</strong></td>
-          </tr>
-          <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px 8px;"><strong>50 lb dog</strong></td>
-            <td style="padding: 12px 8px;">1,000-1,100 cal</td>
-            <td style="padding: 12px 8px;"><strong>3,000-4,000 cal</strong></td>
-          </tr>
-          <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px 8px;"><strong>70 lb dog</strong></td>
-            <td style="padding: 12px 8px;">1,400-1,500 cal</td>
-            <td style="padding: 12px 8px;"><strong>4,200-6,000 cal</strong></td>
-          </tr>
-        </tbody>
-      </table>
-
-      <p style="margin-bottom: 12px; font-size: 15px;"><strong>Peak demand:</strong> Weeks 3-5 of lactation when puppies nurse heavily but aren't eating solid food yet</p>
-      <p style="margin-bottom: 12px; font-size: 15px;"><strong>Feeding strategy:</strong> Free-feed high-quality, calorie-dense food. Allow dam to eat as much as she wants</p>
-      <p style="margin-bottom: 0; font-size: 15px;"><strong>Smaller litters (1-3 pups):</strong> Multiply normal calories by 2-2.5x instead of 3-4x</p>
-    </div>
-
-    <p>Yet many breeders simply "feed more kibble" without understanding what actually changes during gestation and lactation. This guide breaks down the science of maternal nutrition and what dogs really need to produce healthy puppies without wrecking their own health.</p>
-
-    <h2>Calorie Requirements for a 50 lb Lactating Dog with a Large Litter</h2>
-
-    <p>If you have a 50 lb dog nursing 6-8 puppies, here's exactly what she needs and why:</p>
-
-    <h3>Normal Maintenance vs. Large Litter Lactation</h3>
-
-    <p>A 50 lb dog in normal maintenance mode needs approximately <strong>1,000-1,100 calories per day</strong> using the formula: Body Weight (kg) × 70 × 0.75 = RER (Resting Energy Requirement), then multiply by activity factor.</p>
-
-    <p>When nursing a large litter (6-8 puppies), that same dog needs <strong>3,000-4,000 calories per day</strong> — a 3-4x increase. Here's why:</p>
-
-    <ul>
-      <li><strong>Milk production demands:</strong> A lactating dog produces 1-2 liters of milk daily for a large litter. Each liter of milk requires ~1,000 calories to produce</li>
-      <li><strong>Her own maintenance:</strong> She still needs her baseline 1,000-1,100 calories just to sustain her own body</li>
-      <li><strong>Metabolic overhead:</strong> The physical work of producing milk, cleaning puppies, and maintaining body temperature adds 500-1,000 extra calories</li>
-      <li><strong>Peak demand timing:</strong> Calorie needs are highest during weeks 3-5 when puppies are nursing heavily but not yet eating solid food</li>
-    </ul>
-
-    <h3>What 3,000-4,000 Calories Looks Like in Practice</h3>
-
-    <p><strong>Example daily feeding for a 50 lb lactating dog with 8 puppies:</strong></p>
-
-    <ul>
-      <li><strong>6-8 cups of high-quality puppy formula kibble</strong> (most puppy formulas provide 400-500 cal/cup)</li>
-      <li><strong>OR:</strong> 2.5-3 lbs of raw/cooked meat + organs + some carbs (if feeding homemade)</li>
-      <li><strong>OR:</strong> Mix of both: 4-5 cups kibble + 1 lb meat + 3-4 eggs + bone broth</li>
-    </ul>
-
-    <p><strong>Critical feeding strategy:</strong> Free-feed during peak lactation. Put out food 24/7 and let her eat whenever she's hungry. Most dams will self-regulate and eat what they need. Monitor body condition — she should maintain weight, not lose significant mass.</p>
-
-    <h3>Adjust for Litter Size</h3>
-
-    <p>Not all litters are the same size. Adjust calories accordingly:</p>
-
-    <ul>
-      <li><strong>Small litter (1-3 puppies):</strong> 2,000-2,500 cal/day (2-2.5x normal)</li>
-      <li><strong>Medium litter (4-5 puppies):</strong> 2,500-3,000 cal/day (2.5-3x normal)</li>
-      <li><strong>Large litter (6-8 puppies):</strong> 3,000-4,000 cal/day (3-4x normal)</li>
-      <li><strong>Very large litter (9+ puppies):</strong> 4,000-5,000 cal/day (4-5x normal) — may need supplemental bottle feeding for puppies</li>
-    </ul>
-
-    <h3>What If She Won't Eat Enough?</h3>
-
-    <p>Some dams struggle to consume enough calories, especially in the first week postpartum or with very large litters. If your 50 lb dog isn't maintaining body condition:</p>
-
-    <ul>
-      <li><strong>Switch to more calorie-dense food:</strong> Add canned food, eggs, or meat to boost calories without increasing volume</li>
-      <li><strong>Feed smaller, more frequent meals:</strong> 4-6 times per day instead of free-feeding</li>
-      <li><strong>Add appetite stimulants:</strong> Warm the food, add bone broth, mix in canned fish or chicken</li>
-      <li><strong>Consider supplemental feeding:</strong> If she's losing significant weight, start bottle-feeding some puppies to reduce her load</li>
-      <li><strong>Check for health issues:</strong> Mastitis, metritis, or retained placentas can suppress appetite — see a vet if she's lethargic or has discharge</li>
-    </ul>
-
-    <h2>The Three Nutritional Phases of Breeding</h2>
-
-    <h3>Phase 1: Early Gestation (Weeks 0-4)</h3>
-
-    <p>The first month of pregnancy is when embryos implant and early organ development begins. Nutritional needs are only slightly elevated during this phase.</p>
-
-    <p><strong>What changes:</strong></p>
-
-    <ul>
-      <li>Folate (vitamin B9) needs increase dramatically for neural tube development</li>
-      <li>Protein needs rise slightly (5-10% above maintenance)</li>
-      <li>Appetite may decrease slightly due to hormonal changes</li>
-    </ul>
-
-    <p><strong>Feeding strategy:</strong> Maintain normal portions of high-quality food. Add folate-rich foods like beef liver or eggs. Avoid abrupt diet changes that could cause digestive upset.</p>
-
-    <h3>Phase 2: Late Gestation (Weeks 5-9)</h3>
-
-    <p>This is when fetal growth accelerates. By week 9, the fetuses make up 30-50% of the dam's body weight. This is the most critical nutritional phase of pregnancy.</p>
-
-    <p><strong>What changes:</strong></p>
-
-    <ul>
-      <li>Energy needs increase by 50-70% by week 9</li>
-      <li>Protein needs jump to 30-35% (vs 25% for maintenance)</li>
-      <li>Calcium, phosphorus, and vitamin D requirements increase significantly</li>
-      <li>Stomach capacity decreases as fetuses take up abdominal space</li>
-    </ul>
-
-    <p><strong>Feeding strategy:</strong> Increase food gradually starting week 5—about 10-15% more per week. Switch to smaller, more frequent meals (3-4x daily) as stomach space decreases. Choose calorie-dense, highly digestible foods.</p>
-
-    <div class="callout">
-      <h3 style="margin-top: 0; font-size: 18px;">Critical: Do NOT Over-Supplement Calcium During Pregnancy</h3>
-      <div style="margin-top: 12px;">
-        <div style="margin-bottom: 8px;">Excess calcium during pregnancy can suppress the parathyroid gland, making the body unable to mobilize calcium from bones when needed during whelping and lactation. This dramatically increases risk of eclampsia (life-threatening calcium crash).</div>
-        <div>Feed a balanced diet with appropriate calcium levels (1-1.8% dry matter), but avoid calcium supplements or high-calcium treats during pregnancy. Save calcium support for lactation.</div>
+    <div class="article-content">
+      <div class="callout" style="margin: 24px 0 32px; background: #fff3e0; border: 3px solid var(--brand-orange);">
+        <h2 style="margin-top: 0; font-size: 22px; margin-bottom: 12px;">Quick Answer: 50 lb Dog with Large Litter</h2>
+        <p style="font-size: 19px; font-weight: 600; margin-bottom: 16px; line-height: 1.5;">A 50 lb lactating dog nursing a large litter (6-8 puppies) needs <strong style="font-size: 22px; color: #d97706;">3,000-4,000 calories per day</strong> during peak lactation (weeks 3-5).</p>
+        <p style="margin-bottom: 12px;"><strong>Normal maintenance:</strong> 1,000-1,100 cal/day</p>
+        <p style="margin-bottom: 12px;"><strong>Large litter nursing:</strong> 3,000-4,000 cal/day (3-4x normal)</p>
+        <p style="margin-bottom: 12px;"><strong>Why so high?</strong> She's producing 1-2 liters of milk daily for 6-8 rapidly growing puppies while maintaining her own health</p>
+        <p style="margin-bottom: 0;"><strong>Feeding approach:</strong> Free-feed high-quality, calorie-dense food and let her eat as much as she wants</p>
       </div>
-    </div>
 
-    <h3>Phase 3: Lactation (Weeks 1-8 Post-Whelping)</h3>
+      <p>The nutritional demands during these stages are extreme. A lactating dog with a large litter can need <strong>4x her normal calorie intake</strong>—and those calories must be packed with protein, calcium, vitamins, and minerals to prevent her body from cannibalizing its own reserves.</p>
 
-    <p>Lactation is the most nutritionally demanding phase. A dog nursing 6-8 puppies produces 1.5-2x her body weight in milk over 4-6 weeks. The energy required is staggering.</p>
+      <div class="callout" style="margin: 32px 0;">
+        <h2 style="margin-top: 0; font-size: 20px; margin-bottom: 16px;">Calorie Requirements for Lactating Dogs</h2>
 
-    <p><strong>What changes:</strong></p>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px;">
+          <thead>
+            <tr style="border-bottom: 2px solid var(--border-light);">
+              <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Dog Weight</th>
+              <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Normal Calories</th>
+              <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Large Litter (6-8 pups)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
+              <td style="padding: 12px 8px;"><strong>30 lb dog</strong></td>
+              <td style="padding: 12px 8px;">700-800 cal</td>
+              <td style="padding: 12px 8px;"><strong>2,100-3,200 cal</strong></td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
+              <td style="padding: 12px 8px;"><strong>50 lb dog</strong></td>
+              <td style="padding: 12px 8px;">1,000-1,100 cal</td>
+              <td style="padding: 12px 8px;"><strong>3,000-4,000 cal</strong></td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
+              <td style="padding: 12px 8px;"><strong>70 lb dog</strong></td>
+              <td style="padding: 12px 8px;">1,400-1,500 cal</td>
+              <td style="padding: 12px 8px;"><strong>4,200-6,000 cal</strong></td>
+            </tr>
+          </tbody>
+        </table>
 
-    <ul>
-      <li>Energy needs: 2-4x maintenance calories (depending on litter size)</li>
-      <li>Protein needs: 30-38% to support milk production</li>
-      <li>Calcium needs: 3-4x normal to prevent eclampsia and support milk</li>
-      <li>Water needs: Dramatically increased (milk is 77% water)</li>
-      <li>B vitamins, iron, and zinc: Much higher turnover</li>
-    </ul>
+        <p style="margin-bottom: 12px; font-size: 15px;"><strong>Peak demand:</strong> Weeks 3-5 of lactation when puppies nurse heavily but aren't eating solid food yet</p>
+        <p style="margin-bottom: 12px; font-size: 15px;"><strong>Feeding strategy:</strong> Free-feed high-quality, calorie-dense food. Allow dam to eat as much as she wants</p>
+        <p style="margin-bottom: 0; font-size: 15px;"><strong>Smaller litters (1-3 pups):</strong> Multiply normal calories by 2-2.5x instead of 3-4x</p>
+      </div>
 
-    <p><strong>Feeding strategy:</strong> Free-feed high-quality, calorie-dense food. The dam should eat as much as she wants. Provide constant access to fresh water. Peak nutritional demand hits weeks 3-5 when puppies are nursing heavily but not yet eating solid food.</p>
+      <p>Yet many breeders simply "feed more kibble" without understanding what actually changes during gestation and lactation. This guide breaks down the science of maternal nutrition and what dogs really need to produce healthy puppies without wrecking their own health.</p>
 
-    <h2>Nutritional Breakdown: What Actually Changes</h2>
+      <h2>Calorie Requirements for a 50 lb Lactating Dog with a Large Litter</h2>
 
-    <div class="comparison-table">
+      <p>If you have a 50 lb dog nursing 6-8 puppies, here's exactly what she needs and why:</p>
+
+      <h3>Normal Maintenance vs. Large Litter Lactation</h3>
+
+      <p>A 50 lb dog in normal maintenance mode needs approximately <strong>1,000-1,100 calories per day</strong> using the formula: Body Weight (kg) × 70 × 0.75 = RER (Resting Energy Requirement), then multiply by activity factor.</p>
+
+      <p>When nursing a large litter (6-8 puppies), that same dog needs <strong>3,000-4,000 calories per day</strong> — a 3-4x increase. Here's why:</p>
+
+      <ul>
+        <li><strong>Milk production demands:</strong> A lactating dog produces 1-2 liters of milk daily for a large litter. Each liter of milk requires ~1,000 calories to produce</li>
+        <li><strong>Her own maintenance:</strong> She still needs her baseline 1,000-1,100 calories just to sustain her own body</li>
+        <li><strong>Metabolic overhead:</strong> The physical work of producing milk, cleaning puppies, and maintaining body temperature adds 500-1,000 extra calories</li>
+        <li><strong>Peak demand timing:</strong> Calorie needs are highest during weeks 3-5 when puppies are nursing heavily but not yet eating solid food</li>
+      </ul>
+
+      <h3>What 3,000-4,000 Calories Looks Like in Practice</h3>
+
+      <p><strong>Example daily feeding for a 50 lb lactating dog with 8 puppies:</strong></p>
+
+      <ul>
+        <li><strong>6-8 cups of high-quality puppy formula kibble</strong> (most puppy formulas provide 400-500 cal/cup)</li>
+        <li><strong>OR:</strong> 2.5-3 lbs of raw/cooked meat + organs + some carbs (if feeding homemade)</li>
+        <li><strong>OR:</strong> Mix of both: 4-5 cups kibble + 1 lb meat + 3-4 eggs + bone broth</li>
+      </ul>
+
+      <p><strong>Critical feeding strategy:</strong> Free-feed during peak lactation. Put out food 24/7 and let her eat whenever she's hungry. Most dams will self-regulate and eat what they need. Monitor body condition — she should maintain weight, not lose significant mass.</p>
+
+      <h3>Adjust for Litter Size</h3>
+
+      <p>Not all litters are the same size. Adjust calories accordingly:</p>
+
+      <ul>
+        <li><strong>Small litter (1-3 puppies):</strong> 2,000-2,500 cal/day (2-2.5x normal)</li>
+        <li><strong>Medium litter (4-5 puppies):</strong> 2,500-3,000 cal/day (2.5-3x normal)</li>
+        <li><strong>Large litter (6-8 puppies):</strong> 3,000-4,000 cal/day (3-4x normal)</li>
+        <li><strong>Very large litter (9+ puppies):</strong> 4,000-5,000 cal/day (4-5x normal) — may need supplemental bottle feeding for puppies</li>
+      </ul>
+
+      <h3>What If She Won't Eat Enough?</h3>
+
+      <p>Some dams struggle to consume enough calories, especially in the first week postpartum or with very large litters. If your 50 lb dog isn't maintaining body condition:</p>
+
+      <ul>
+        <li><strong>Switch to more calorie-dense food:</strong> Add canned food, eggs, or meat to boost calories without increasing volume</li>
+        <li><strong>Feed smaller, more frequent meals:</strong> 4-6 times per day instead of free-feeding</li>
+        <li><strong>Add appetite stimulants:</strong> Warm the food, add bone broth, mix in canned fish or chicken</li>
+        <li><strong>Consider supplemental feeding:</strong> If she's losing significant weight, start bottle-feeding some puppies to reduce her load</li>
+        <li><strong>Check for health issues:</strong> Mastitis, metritis, or retained placentas can suppress appetite — see a vet if she's lethargic or has discharge</li>
+      </ul>
+
+      <h2>The Three Nutritional Phases of Breeding</h2>
+
+      <h3>Phase 1: Early Gestation (Weeks 0-4)</h3>
+
+      <p>The first month of pregnancy is when embryos implant and early organ development begins. Nutritional needs are only slightly elevated during this phase.</p>
+
+      <p><strong>What changes:</strong></p>
+
+      <ul>
+        <li>Folate (vitamin B9) needs increase dramatically for neural tube development</li>
+        <li>Protein needs rise slightly (5-10% above maintenance)</li>
+        <li>Appetite may decrease slightly due to hormonal changes</li>
+      </ul>
+
+      <p><strong>Feeding strategy:</strong> Maintain normal portions of high-quality food. Add folate-rich foods like beef liver or eggs. Avoid abrupt diet changes that could cause digestive upset.</p>
+
+      <h3>Phase 2: Late Gestation (Weeks 5-9)</h3>
+
+      <p>This is when fetal growth accelerates. By week 9, the fetuses make up 30-50% of the dam's body weight. This is the most critical nutritional phase of pregnancy.</p>
+
+      <p><strong>What changes:</strong></p>
+
+      <ul>
+        <li>Energy needs increase by 50-70% by week 9</li>
+        <li>Protein needs jump to 30-35% (vs 25% for maintenance)</li>
+        <li>Calcium, phosphorus, and vitamin D requirements increase significantly</li>
+        <li>Stomach capacity decreases as fetuses take up abdominal space</li>
+      </ul>
+
+      <p><strong>Feeding strategy:</strong> Increase food gradually starting week 5—about 10-15% more per week. Switch to smaller, more frequent meals (3-4x daily) as stomach space decreases. Choose calorie-dense, highly digestible foods.</p>
+
+      <div class="callout">
+        <h3 style="margin-top: 0; font-size: 18px;">Critical: Do NOT Over-Supplement Calcium During Pregnancy</h3>
+        <div style="margin-top: 12px;">
+          <div style="margin-bottom: 8px;">Excess calcium during pregnancy can suppress the parathyroid gland, making the body unable to mobilize calcium from bones when needed during whelping and lactation. This dramatically increases risk of eclampsia (life-threatening calcium crash).</div>
+          <div>Feed a balanced diet with appropriate calcium levels (1-1.8% dry matter), but avoid calcium supplements or high-calcium treats during pregnancy. Save calcium support for lactation.</div>
+        </div>
+      </div>
+
+      <h3>Phase 3: Lactation (Weeks 1-8 Post-Whelping)</h3>
+
+      <p>Lactation is the most nutritionally demanding phase. A dog nursing 6-8 puppies produces 1.5-2x her body weight in milk over 4-6 weeks. The energy required is staggering.</p>
+
+      <p><strong>What changes:</strong></p>
+
+      <ul>
+        <li>Energy needs: 2-4x maintenance calories (depending on litter size)</li>
+        <li>Protein needs: 30-38% to support milk production</li>
+        <li>Calcium needs: 3-4x normal to prevent eclampsia and support milk</li>
+        <li>Water needs: Dramatically increased (milk is 77% water)</li>
+        <li>B vitamins, iron, and zinc: Much higher turnover</li>
+      </ul>
+
+      <p><strong>Feeding strategy:</strong> Free-feed high-quality, calorie-dense food. The dam should eat as much as she wants. Provide constant access to fresh water. Peak nutritional demand hits weeks 3-5 when puppies are nursing heavily but not yet eating solid food.</p>
+
+      <h2>Nutritional Breakdown: What Actually Changes</h2>
+
       <table>
         <thead>
           <tr>
@@ -836,283 +894,312 @@
           </tr>
         </tbody>
       </table>
+
+      <h2>Critical Nutrients for Pregnancy and Lactation</h2>
+
+      <h3>1. Protein (Amino Acids for Growth and Milk)</h3>
+
+      <p>Protein provides the building blocks for fetal development and milk production. During lactation, a dam nursing 8 puppies may need <strong>300-400 grams of protein per day</strong>—that's like eating 2 pounds of chicken breast daily.</p>
+
+      <p><strong>Why it matters:</strong></p>
+
+      <ul>
+        <li>Fetal tissue development (muscle, organs, nervous system)</li>
+        <li>Milk protein content (puppies need high protein for growth)</li>
+        <li>Maternal muscle maintenance (prevents muscle wasting)</li>
+        <li>Immune function (antibodies in colostrum and milk)</li>
+      </ul>
+
+      <p><strong>Best sources:</strong> Animal proteins with complete amino acid profiles—meat, organ meats, eggs, fish. Plant proteins lack sufficient bioavailable amino acids for these extreme demands.</p>
+
+      <h3>2. Calcium and Phosphorus (Bone Development and Milk)</h3>
+
+      <p>Calcium is essential for puppy skeletal development and milk production. However, <em>timing</em> of calcium supplementation is critical.</p>
+
+      <p><strong>During pregnancy:</strong> Do NOT over-supplement calcium. Excess calcium during pregnancy suppresses the parathyroid gland, which regulates calcium mobilization from bones. When lactation hits and calcium demand spikes, a suppressed parathyroid can't respond quickly enough—leading to eclampsia (hypocalcemia).</p>
+
+      <p><strong>During lactation:</strong> Calcium needs skyrocket. A nursing dam needs 3-4x normal calcium to produce milk and prevent eclampsia. This is when calcium supplementation becomes critical.</p>
+
+      <p><strong>Best sources:</strong> Natural calcium from bone (bone meal, bone broth), dairy (if tolerated), or calcium supplements specifically formulated for lactation. Always maintain proper calcium:phosphorus ratio (1.2:1 to 1.8:1).</p>
+
+      <h3>3. Folate (Vitamin B9 for Neural Development)</h3>
+
+      <p>Folate is essential for DNA synthesis and cell division—critical during early pregnancy when the neural tube forms (becomes the brain and spinal cord). Folate deficiency during early gestation can cause birth defects.</p>
+
+      <p><strong>When it matters most:</strong> Weeks 0-4 of gestation (neural tube closes by day 25-28)</p>
+
+      <p><strong>Best sources:</strong> Beef liver, dark leafy greens, eggs. Synthetic folic acid (in most prenatal vitamins) is less bioavailable for dogs than natural folate from whole foods. Learn more about <a href="/blog/b-vitamins-for-dogs.html">B vitamins for dogs</a>.</p>
+
+      <h3>4. DHA (Omega-3 for Brain and Eye Development)</h3>
+
+      <p>DHA (docosahexaenoic acid) is a long-chain omega-3 fatty acid critical for fetal brain and retinal development. Puppies born to dams with low DHA status show cognitive deficits and vision problems.</p>
+
+      <p><strong>Why it matters:</strong></p>
+
+      <ul>
+        <li>60% of the brain is fat; DHA makes up 40% of brain fatty acids</li>
+        <li>Essential for retinal photoreceptor development (vision)</li>
+        <li>Supports learning and trainability in puppies</li>
+        <li>Anti-inflammatory benefits for the dam</li>
+      </ul>
+
+      <p><strong>Best sources:</strong> Fatty fish (salmon, sardines, mackerel), fish oil supplements, krill oil. Plant-based ALA (from flax) converts poorly to DHA in dogs—direct DHA sources are essential.</p>
+
+      <h3>5. Iron (Blood Production and Oxygen Delivery)</h3>
+
+      <p>Blood volume increases 30-40% during pregnancy to support the growing fetuses. After whelping, blood loss is common. Iron is essential for producing new red blood cells and delivering oxygen to tissues.</p>
+
+      <p><strong>Best sources:</strong> Heme iron from red meat, liver, heart. Heme iron is absorbed 3x more efficiently than plant-based iron. A small amount of liver 2-3x per week during gestation and lactation provides concentrated iron plus B12, folate, and vitamin A.</p>
+
+      <p>Learn more about <a href="/blog/beef-liver-for-dogs.html">beef liver for dogs</a> and proper dosing during breeding.</p>
+
+      <h3>6. Vitamin E and Selenium (Antioxidant Protection)</h3>
+
+      <p>Pregnancy and lactation create significant oxidative stress. Vitamin E and selenium work together to protect cells from damage and support immune function in both dam and puppies.</p>
+
+      <p><strong>Best sources:</strong> Vitamin E from eggs, fatty fish; selenium from organ meats (especially kidney), fish, eggs</p>
+
+      <h3>7. Choline (Liver Function and Brain Development)</h3>
+
+      <p>Choline supports liver function (which is working overtime during pregnancy), fat metabolism, and fetal brain development. Choline needs increase significantly during gestation and lactation.</p>
+
+      <p><strong>Best sources:</strong> Egg yolks, beef liver, chicken. Learn more about <a href="/blog/choline-for-dogs.html">choline for dogs</a>.</p>
+
+      <h2>Feeding Strategy by Week</h2>
+
+      <h3>Weeks 1-4: Maintenance Plus Folate</h3>
+
+      <ul>
+        <li>Feed normal portions of high-quality adult dog food (25-28% protein, 12-15% fat)</li>
+        <li>Add folate-rich foods: 1-2 oz beef liver per week, or daily egg yolk</li>
+        <li>Begin DHA supplementation (fish oil or whole fish 2-3x/week)</li>
+        <li>Avoid diet changes or digestive upset</li>
+      </ul>
+
+      <h3>Weeks 5-9: Gradual Increase</h3>
+
+      <ul>
+        <li>Increase food by 10-15% per week starting week 5</li>
+        <li>By week 9, feed 50-70% more than normal</li>
+        <li>Switch to 3-4 smaller meals per day (stomach space decreases)</li>
+        <li>Choose calorie-dense, highly digestible foods</li>
+        <li>Continue liver (1-2 oz, 2-3x/week) for concentrated nutrients</li>
+        <li>Do NOT add calcium supplements (maintain normal dietary calcium only)</li>
+      </ul>
+
+      <h3>Lactation Weeks 1-2: Building Supply</h3>
+
+      <ul>
+        <li>Free-feed high-quality food (let dam eat as much as she wants)</li>
+        <li>Provide fresh water constantly (milk is 77% water)</li>
+        <li>Begin calcium supplementation if recommended by your vet</li>
+        <li>Monitor dam's body condition—she should maintain weight, not crash</li>
+      </ul>
+
+      <h3>Lactation Weeks 3-6: Peak Demand</h3>
+
+      <ul>
+        <li>Continue free-feeding; dam may eat 3-4x normal intake</li>
+        <li>Add calorie-dense toppings: scrambled eggs, canned fish, bone broth</li>
+        <li>Maintain calcium support to prevent eclampsia</li>
+        <li>Watch for signs of nutritional depletion: rapid weight loss, dull coat, lethargy</li>
+      </ul>
+
+      <h3>Lactation Weeks 7-8: Weaning Transition</h3>
+
+      <ul>
+        <li>As puppies eat more solid food, dam's milk production decreases</li>
+        <li>Gradually reduce dam's food intake back toward maintenance</li>
+        <li>Continue high-quality nutrition until fully weaned</li>
+        <li>Allow 4-6 weeks post-weaning for full nutritional recovery before next breeding</li>
+      </ul>
+
+      <h2>Supplementation: What Helps and What to Avoid</h2>
+
+      <h3>Beneficial Supplements</h3>
+
+      <ul>
+        <li><strong>Whole-food organ supplements</strong> — Beef liver provides folate, B12, iron, vitamin A, choline in bioavailable forms</li>
+        <li><strong>Fish oil or whole fish</strong> — DHA for puppy brain development</li>
+        <li><strong>Probiotics</strong> — Support gut health and immune function during stress</li>
+        <li><strong>Vitamin E</strong> — Antioxidant protection during high metabolic demand</li>
+        <li><strong>Calcium (lactation only)</strong> — Prevent eclampsia during nursing; follow vet guidance</li>
+      </ul>
+
+      <h3>Avoid During Pregnancy</h3>
+
+      <ul>
+        <li><strong>Excess calcium</strong> — Increases eclampsia risk</li>
+        <li><strong>Vitamin A megadoses</strong> — Can cause birth defects; normal dietary amounts from liver are safe</li>
+        <li><strong>Herbal supplements</strong> — Many herbs affect hormones or uterine contractions; consult vet first</li>
+      </ul>
+
+      <h2>Warning Signs: When Nutrition Isn't Enough</h2>
+
+      <h3>During Pregnancy</h3>
+
+      <ul>
+        <li>Excessive weight loss or failure to gain weight in late gestation</li>
+        <li>Lethargy or weakness</li>
+        <li>Loss of appetite in weeks 6-9 (when appetite should be highest)</li>
+        <li>Vaginal discharge (could indicate infection or pregnancy complications)</li>
+      </ul>
+
+      <h3>During Lactation</h3>
+
+      <ul>
+        <li><strong>Eclampsia (hypocalcemia)</strong> — Muscle tremors, stiffness, panting, disorientation, seizures. This is a veterinary emergency.</li>
+        <li><strong>Mastitis</strong> — Hot, swollen, painful mammary glands; reduced milk production</li>
+        <li><strong>Rapid weight loss</strong> — Losing more than 10% body weight in 2 weeks</li>
+        <li><strong>Decreased milk production</strong> — Puppies crying constantly, not gaining weight</li>
+        <li><strong>Severe lethargy</strong> — Dam not caring for puppies, refusing to eat</li>
+      </ul>
+
+      <p>If you see any of these signs, contact your vet immediately. Eclampsia and severe nutritional depletion can be life-threatening.</p>
+
+      <h2>Post-Weaning Recovery</h2>
+
+      <p>Even after weaning, the dam needs time to rebuild her nutritional reserves. Lactation is exhausting—many dams lose significant body condition even with optimal nutrition.</p>
+
+      <p><strong>Recovery timeline:</strong> Allow 4-6 weeks minimum, ideally 8-12 weeks, before breeding again. This gives the body time to:</p>
+
+      <ul>
+        <li>Restore body condition and muscle mass</li>
+        <li>Replenish nutrient stores (iron, calcium, B vitamins)</li>
+        <li>Normalize hormone levels</li>
+        <li>Recover immune function</li>
+      </ul>
+
+      <p><strong>Recovery nutrition:</strong> Continue high-quality, nutrient-dense food. Focus on protein for muscle rebuilding, iron and B vitamins to replenish stores, and whole-food nutrients for overall vitality.</p>
+
+      <h2>Why Organ-Based Nutrition Makes Sense for Breeding Dogs</h2>
+
+      <p>Pregnant and nursing dogs need concentrated nutrients in bioavailable forms—exactly what organ meats provide:</p>
+
+      <ul>
+        <li><strong>Beef liver</strong> — Folate, B12, iron, vitamin A, choline, zinc. One ounce provides 3000% daily B12, 100% iron, and concentrated folate.</li>
+        <li><strong>Beef heart</strong> — High-quality protein, CoQ10, taurine, B vitamins. Supports cardiovascular function during increased blood volume.</li>
+        <li><strong>Beef kidney</strong> — B12, selenium, riboflavin. Supports detoxification and metabolic demands.</li>
+      </ul>
+
+      <p>These nutrients come in forms dogs recognize and absorb efficiently—critical when metabolic demands are this extreme. Learn more about <a href="/blog/organ-based-nutrition-for-dogs.html">organ-based nutrition for dogs</a>.</p>
+
+      <p>A small amount of organ meat (1-2 oz, 2-3x per week) during gestation and lactation delivers concentrated micronutrients without excessive volume—important when stomach space is limited.</p>
+
+      <h2>The Bottom Line</h2>
+
+      <p>Pregnancy and lactation place extreme nutritional demands on dogs. It's not just about "feeding more"—it's about delivering the right nutrients at the right time in forms the body can actually use.</p>
+
+      <p>Protein needs nearly double. Calcium timing is critical (too much during pregnancy increases eclampsia risk; too little during lactation does the same). Folate, DHA, iron, and B vitamins become essential—not optional. And the dam's body will cannibalize its own muscle, bone, and organ reserves if diet doesn't provide what milk production demands.</p>
+
+      <p>Whether you're a breeder planning a litter or a dog owner whose dog has an unexpected pregnancy, understanding what changes during these phases—and feeding accordingly—makes the difference between healthy puppies with a thriving dam and a litter that depletes the mother's health for months afterward.</p>
     </div>
 
-    <h2>Critical Nutrients for Pregnancy and Lactation</h2>
-
-    <h3>1. Protein (Amino Acids for Growth and Milk)</h3>
-
-    <p>Protein provides the building blocks for fetal development and milk production. During lactation, a dam nursing 8 puppies may need <strong>300-400 grams of protein per day</strong>—that's like eating 2 pounds of chicken breast daily.</p>
-
-    <p><strong>Why it matters:</strong></p>
-
-    <ul>
-      <li>Fetal tissue development (muscle, organs, nervous system)</li>
-      <li>Milk protein content (puppies need high protein for growth)</li>
-      <li>Maternal muscle maintenance (prevents muscle wasting)</li>
-      <li>Immune function (antibodies in colostrum and milk)</li>
-    </ul>
-
-    <p><strong>Best sources:</strong> Animal proteins with complete amino acid profiles—meat, organ meats, eggs, fish. Plant proteins lack sufficient bioavailable amino acids for these extreme demands.</p>
-
-    <h3>2. Calcium and Phosphorus (Bone Development and Milk)</h3>
-
-    <p>Calcium is essential for puppy skeletal development and milk production. However, <em>timing</em> of calcium supplementation is critical.</p>
-
-    <p><strong>During pregnancy:</strong> Do NOT over-supplement calcium. Excess calcium during pregnancy suppresses the parathyroid gland, which regulates calcium mobilization from bones. When lactation hits and calcium demand spikes, a suppressed parathyroid can't respond quickly enough—leading to eclampsia (hypocalcemia).</p>
-
-    <p><strong>During lactation:</strong> Calcium needs skyrocket. A nursing dam needs 3-4x normal calcium to produce milk and prevent eclampsia. This is when calcium supplementation becomes critical.</p>
-
-    <p><strong>Best sources:</strong> Natural calcium from bone (bone meal, bone broth), dairy (if tolerated), or calcium supplements specifically formulated for lactation. Always maintain proper calcium:phosphorus ratio (1.2:1 to 1.8:1).</p>
-
-    <h3>3. Folate (Vitamin B9 for Neural Development)</h3>
-
-    <p>Folate is essential for DNA synthesis and cell division—critical during early pregnancy when the neural tube forms (becomes the brain and spinal cord). Folate deficiency during early gestation can cause birth defects.</p>
-
-    <p><strong>When it matters most:</strong> Weeks 0-4 of gestation (neural tube closes by day 25-28)</p>
-
-    <p><strong>Best sources:</strong> Beef liver, dark leafy greens, eggs. Synthetic folic acid (in most prenatal vitamins) is less bioavailable for dogs than natural folate from whole foods. Learn more about <a href="/blog/b-vitamins-for-dogs.html">B vitamins for dogs</a>.</p>
-
-    <h3>4. DHA (Omega-3 for Brain and Eye Development)</h3>
-
-    <p>DHA (docosahexaenoic acid) is a long-chain omega-3 fatty acid critical for fetal brain and retinal development. Puppies born to dams with low DHA status show cognitive deficits and vision problems.</p>
-
-    <p><strong>Why it matters:</strong></p>
-
-    <ul>
-      <li>60% of the brain is fat; DHA makes up 40% of brain fatty acids</li>
-      <li>Essential for retinal photoreceptor development (vision)</li>
-      <li>Supports learning and trainability in puppies</li>
-      <li>Anti-inflammatory benefits for the dam</li>
-    </ul>
-
-    <p><strong>Best sources:</strong> Fatty fish (salmon, sardines, mackerel), fish oil supplements, krill oil. Plant-based ALA (from flax) converts poorly to DHA in dogs—direct DHA sources are essential.</p>
-
-    <h3>5. Iron (Blood Production and Oxygen Delivery)</h3>
-
-    <p>Blood volume increases 30-40% during pregnancy to support the growing fetuses. After whelping, blood loss is common. Iron is essential for producing new red blood cells and delivering oxygen to tissues.</p>
-
-    <p><strong>Best sources:</strong> Heme iron from red meat, liver, heart. Heme iron is absorbed 3x more efficiently than plant-based iron. A small amount of liver 2-3x per week during gestation and lactation provides concentrated iron plus B12, folate, and vitamin A.</p>
-
-    <p>Learn more about <a href="/blog/beef-liver-for-dogs.html">beef liver for dogs</a> and proper dosing during breeding.</p>
-
-    <h3>6. Vitamin E and Selenium (Antioxidant Protection)</h3>
-
-    <p>Pregnancy and lactation create significant oxidative stress. Vitamin E and selenium work together to protect cells from damage and support immune function in both dam and puppies.</p>
-
-    <p><strong>Best sources:</strong> Vitamin E from eggs, fatty fish; selenium from organ meats (especially kidney), fish, eggs</p>
-
-    <h3>7. Choline (Liver Function and Brain Development)</h3>
-
-    <p>Choline supports liver function (which is working overtime during pregnancy), fat metabolism, and fetal brain development. Choline needs increase significantly during gestation and lactation.</p>
-
-    <p><strong>Best sources:</strong> Egg yolks, beef liver, chicken. Learn more about <a href="/blog/choline-for-dogs.html">choline for dogs</a>.</p>
-
-    <h2>Feeding Strategy by Week</h2>
-
-    <h3>Weeks 1-4: Maintenance Plus Folate</h3>
-
-    <ul>
-      <li>Feed normal portions of high-quality adult dog food (25-28% protein, 12-15% fat)</li>
-      <li>Add folate-rich foods: 1-2 oz beef liver per week, or daily egg yolk</li>
-      <li>Begin DHA supplementation (fish oil or whole fish 2-3x/week)</li>
-      <li>Avoid diet changes or digestive upset</li>
-    </ul>
-
-    <h3>Weeks 5-9: Gradual Increase</h3>
-
-    <ul>
-      <li>Increase food by 10-15% per week starting week 5</li>
-      <li>By week 9, feed 50-70% more than normal</li>
-      <li>Switch to 3-4 smaller meals per day (stomach space decreases)</li>
-      <li>Choose calorie-dense, highly digestible foods</li>
-      <li>Continue liver (1-2 oz, 2-3x/week) for concentrated nutrients</li>
-      <li>Do NOT add calcium supplements (maintain normal dietary calcium only)</li>
-    </ul>
-
-    <h3>Lactation Weeks 1-2: Building Supply</h3>
-
-    <ul>
-      <li>Free-feed high-quality food (let dam eat as much as she wants)</li>
-      <li>Provide fresh water constantly (milk is 77% water)</li>
-      <li>Begin calcium supplementation if recommended by your vet</li>
-      <li>Monitor dam's body condition—she should maintain weight, not crash</li>
-    </ul>
-
-    <h3>Lactation Weeks 3-6: Peak Demand</h3>
-
-    <ul>
-      <li>Continue free-feeding; dam may eat 3-4x normal intake</li>
-      <li>Add calorie-dense toppings: scrambled eggs, canned fish, bone broth</li>
-      <li>Maintain calcium support to prevent eclampsia</li>
-      <li>Watch for signs of nutritional depletion: rapid weight loss, dull coat, lethargy</li>
-    </ul>
-
-    <h3>Lactation Weeks 7-8: Weaning Transition</h3>
-
-    <ul>
-      <li>As puppies eat more solid food, dam's milk production decreases</li>
-      <li>Gradually reduce dam's food intake back toward maintenance</li>
-      <li>Continue high-quality nutrition until fully weaned</li>
-      <li>Allow 4-6 weeks post-weaning for full nutritional recovery before next breeding</li>
-    </ul>
-
-    <h2>Supplementation: What Helps and What to Avoid</h2>
-
-    <h3>Beneficial Supplements</h3>
-
-    <ul>
-      <li><strong>Whole-food organ supplements</strong> — Beef liver provides folate, B12, iron, vitamin A, choline in bioavailable forms</li>
-      <li><strong>Fish oil or whole fish</strong> — DHA for puppy brain development</li>
-      <li><strong>Probiotics</strong> — Support gut health and immune function during stress</li>
-      <li><strong>Vitamin E</strong> — Antioxidant protection during high metabolic demand</li>
-      <li><strong>Calcium (lactation only)</strong> — Prevent eclampsia during nursing; follow vet guidance</li>
-    </ul>
-
-    <h3>Avoid During Pregnancy</h3>
-
-    <ul>
-      <li><strong>Excess calcium</strong> — Increases eclampsia risk</li>
-      <li><strong>Vitamin A megadoses</strong> — Can cause birth defects; normal dietary amounts from liver are safe</li>
-      <li><strong>Herbal supplements</strong> — Many herbs affect hormones or uterine contractions; consult vet first</li>
-    </ul>
-
-    <h2>Warning Signs: When Nutrition Isn't Enough</h2>
-
-    <h3>During Pregnancy</h3>
-
-    <ul>
-      <li>Excessive weight loss or failure to gain weight in late gestation</li>
-      <li>Lethargy or weakness</li>
-      <li>Loss of appetite in weeks 6-9 (when appetite should be highest)</li>
-      <li>Vaginal discharge (could indicate infection or pregnancy complications)</li>
-    </ul>
-
-    <h3>During Lactation</h3>
-
-    <ul>
-      <li><strong>Eclampsia (hypocalcemia)</strong> — Muscle tremors, stiffness, panting, disorientation, seizures. This is a veterinary emergency.</li>
-      <li><strong>Mastitis</strong> — Hot, swollen, painful mammary glands; reduced milk production</li>
-      <li><strong>Rapid weight loss</strong> — Losing more than 10% body weight in 2 weeks</li>
-      <li><strong>Decreased milk production</strong> — Puppies crying constantly, not gaining weight</li>
-      <li><strong>Severe lethargy</strong> — Dam not caring for puppies, refusing to eat</li>
-    </ul>
-
-    <p>If you see any of these signs, contact your vet immediately. Eclampsia and severe nutritional depletion can be life-threatening.</p>
-
-    <h2>Post-Weaning Recovery</h2>
-
-    <p>Even after weaning, the dam needs time to rebuild her nutritional reserves. Lactation is exhausting—many dams lose significant body condition even with optimal nutrition.</p>
-
-    <p><strong>Recovery timeline:</strong> Allow 4-6 weeks minimum, ideally 8-12 weeks, before breeding again. This gives the body time to:</p>
-
-    <ul>
-      <li>Restore body condition and muscle mass</li>
-      <li>Replenish nutrient stores (iron, calcium, B vitamins)</li>
-      <li>Normalize hormone levels</li>
-      <li>Recover immune function</li>
-    </ul>
-
-    <p><strong>Recovery nutrition:</strong> Continue high-quality, nutrient-dense food. Focus on protein for muscle rebuilding, iron and B vitamins to replenish stores, and whole-food nutrients for overall vitality.</p>
-
-    <h2>Why Organ-Based Nutrition Makes Sense for Breeding Dogs</h2>
-
-    <p>Pregnant and nursing dogs need concentrated nutrients in bioavailable forms—exactly what organ meats provide:</p>
-
-    <ul>
-      <li><strong>Beef liver</strong> — Folate, B12, iron, vitamin A, choline, zinc. One ounce provides 3000% daily B12, 100% iron, and concentrated folate.</li>
-      <li><strong>Beef heart</strong> — High-quality protein, CoQ10, taurine, B vitamins. Supports cardiovascular function during increased blood volume.</li>
-      <li><strong>Beef kidney</strong> — B12, selenium, riboflavin. Supports detoxification and metabolic demands.</li>
-    </ul>
-
-    <p>These nutrients come in forms dogs recognize and absorb efficiently—critical when metabolic demands are this extreme. Learn more about <a href="/blog/organ-based-nutrition-for-dogs.html">organ-based nutrition for dogs</a>.</p>
-
-    <p>A small amount of organ meat (1-2 oz, 2-3x per week) during gestation and lactation delivers concentrated micronutrients without excessive volume—important when stomach space is limited.</p>
-
-    <h2>The Bottom Line</h2>
-
-    <p>Pregnancy and lactation place extreme nutritional demands on dogs. It's not just about "feeding more"—it's about delivering the right nutrients at the right time in forms the body can actually use.</p>
-
-    <p>Protein needs nearly double. Calcium timing is critical (too much during pregnancy increases eclampsia risk; too little during lactation does the same). Folate, DHA, iron, and B vitamins become essential—not optional. And the dam's body will cannibalize its own muscle, bone, and organ reserves if diet doesn't provide what milk production demands.</p>
-
-    <p>Whether you're a breeder planning a litter or a dog owner whose dog has an unexpected pregnancy, understanding what changes during these phases—and feeding accordingly—makes the difference between healthy puppies with a thriving dam and a litter that depletes the mother's health for months afterward.</p>
-
     <div class="faq-section">
+      <h2 style="margin-top: 56px; padding-top: 40px; border-top: 2px solid var(--border-light);">Related Articles</h2>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 56px;">
+        <a href="/blog/organ-based-nutrition-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Organ-Based Nutrition for Dogs</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Why liver, heart, and kidney are critical for breeding dogs</p>
+        </a>
+
+        <a href="/blog/beef-liver-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Beef Liver for Dogs</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">How liver supports pregnant and nursing dogs</p>
+        </a>
+
+        <a href="/blog/b-vitamins-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">B Vitamins for Dogs</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">The role of folate, B12, and other B vitamins in pregnancy</p>
+        </a>
+
+        <a href="/blog/choline-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Choline for Dogs</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Essential for fetal brain development and maternal liver function</p>
+        </a>
+      </div>
+
       <h2>Frequently Asked Questions</h2>
 
       <div class="faq-item">
-        <div class="faq-question">When should I increase food for a pregnant dog?</div>
-        <div class="faq-answer">Start increasing food in week 5-6 of gestation, when fetal growth accelerates. By week 9, pregnant dogs typically need 50-70% more calories than normal. Increase gradually—about 10-15% more per week starting at week 5—to avoid digestive upset while meeting growing nutritional demands.</div>
+        <h3>When should I increase food for a pregnant dog?</h3>
+        <p>Start increasing food in week 5-6 of gestation, when fetal growth accelerates. By week 9, pregnant dogs typically need 50-70% more calories than normal. Increase gradually—about 10-15% more per week starting at week 5—to avoid digestive upset while meeting growing nutritional demands.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">What nutrients do nursing dogs need most?</div>
-        <div class="faq-answer">Nursing dogs need significantly more: protein (30-35% vs 25% for maintenance), calcium (for milk production and preventing eclampsia), calories (2-4x normal intake depending on litter size), omega-3 DHA (for puppy brain development), B vitamins (especially B12 and folate for cell production), and iron (to replace blood loss and support milk production).</div>
+        <h3>What nutrients do nursing dogs need most?</h3>
+        <p>Nursing dogs need significantly more: protein (30-35% vs 25% for maintenance), calcium (for milk production and preventing eclampsia), calories (2-4x normal intake depending on litter size), omega-3 DHA (for puppy brain development), B vitamins (especially B12 and folate for cell production), and iron (to replace blood loss and support milk production).</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">How much should I feed a nursing dog?</div>
-        <div class="faq-answer">Nursing dogs need 2-4x their normal maintenance calories depending on litter size. A dog nursing 6-8 puppies may need 3-4x normal intake. Free-feed high-quality, calorie-dense food during peak lactation (weeks 3-5) and allow the dam to eat as much as she wants. Monitor body condition—she should maintain weight, not lose it dramatically.</div>
+        <h3>How much should I feed a nursing dog?</h3>
+        <p>Nursing dogs need 2-4x their normal maintenance calories depending on litter size. A dog nursing 6-8 puppies may need 3-4x normal intake. Free-feed high-quality, calorie-dense food during peak lactation (weeks 3-5) and allow the dam to eat as much as she wants. Monitor body condition—she should maintain weight, not lose it dramatically.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Can I give supplements to a pregnant dog?</div>
-        <div class="faq-answer">Yes, but carefully. Avoid excessive calcium during pregnancy (can cause eclampsia). Safe and beneficial supplements include: folate for neural tube development, omega-3 DHA for puppy brain and eye development, vitamin E for antioxidant support, and whole-food sources like beef liver for concentrated micronutrients. Always consult your vet, especially for calcium timing.</div>
+        <h3>Can I give supplements to a pregnant dog?</h3>
+        <p>Yes, but carefully. Avoid excessive calcium during pregnancy (can cause eclampsia). Safe and beneficial supplements include: folate for neural tube development, omega-3 DHA for puppy brain and eye development, vitamin E for antioxidant support, and whole-food sources like beef liver for concentrated micronutrients. Always consult your vet, especially for calcium timing.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">What are signs a nursing dog isn't getting enough nutrition?</div>
-        <div class="faq-answer">Watch for: rapid weight loss (more than 10% body weight in first 2 weeks), dull or dry coat, lethargy or weakness, decreased milk production (puppies crying constantly, not gaining weight), muscle tremors or stiffness (potential calcium deficiency/eclampsia), and reluctance to care for puppies. If you see these signs, contact your vet immediately.</div>
+        <h3>What are signs a nursing dog isn't getting enough nutrition?</h3>
+        <p>Watch for: rapid weight loss (more than 10% body weight in first 2 weeks), dull or dry coat, lethargy or weakness, decreased milk production (puppies crying constantly, not gaining weight), muscle tremors or stiffness (potential calcium deficiency/eclampsia), and reluctance to care for puppies. If you see these signs, contact your vet immediately.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">What are the calorie requirements for a lactating dog with a large litter?</div>
-        <div class="faq-answer">Lactating dogs with large litters (6-8 puppies) need 3-4x their normal calorie intake. A 50 lb dog normally needs 1,000-1,100 calories per day, but when nursing a large litter, she needs 3,000-4,000 calories per day. A 30 lb dog needs 2,100-2,800 calories, and a 70 lb dog needs 3,500-4,800 calories per day when nursing large litters. Calorie needs peak at weeks 3-5 of lactation.</div>
+        <h3>What are the calorie requirements for a lactating dog with a large litter?</h3>
+        <p>Lactating dogs with large litters (6-8 puppies) need 3-4x their normal calorie intake. A 50 lb dog normally needs 1,000-1,100 calories per day, but when nursing a large litter, she needs 3,000-4,000 calories per day. A 30 lb dog needs 2,100-2,800 calories, and a 70 lb dog needs 3,500-4,800 calories per day when nursing large litters. Calorie needs peak at weeks 3-5 of lactation.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">How many calories does a 50 lb dog need when nursing?</div>
-        <div class="faq-answer">A 50 lb dog nursing puppies needs 2,000-4,000 calories per day depending on litter size. For small litters (1-3 puppies): 2,000-2,500 cal/day. For medium litters (4-5 puppies): 2,500-3,000 cal/day. For large litters (6-8 puppies): 3,000-4,000 cal/day. Normal maintenance for a 50 lb dog is only 1,000-1,100 cal/day, so nursing dramatically increases calorie needs.</div>
+        <h3>How many calories does a 50 lb dog need when nursing?</h3>
+        <p>A 50 lb dog nursing puppies needs 2,000-4,000 calories per day depending on litter size. For small litters (1-3 puppies): 2,000-2,500 cal/day. For medium litters (4-5 puppies): 2,500-3,000 cal/day. For large litters (6-8 puppies): 3,000-4,000 cal/day. Normal maintenance for a 50 lb dog is only 1,000-1,100 cal/day, so nursing dramatically increases calorie needs.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">What should I feed a lactating dog?</div>
-        <div class="faq-answer">Feed lactating dogs high-quality, calorie-dense food with 30-35% protein and 15-20% fat. Best options include puppy food (formulated for high energy needs), raw or cooked meat with organs (liver, heart, kidney), fatty fish for omega-3 DHA, eggs for protein and choline, and high-quality kibble designed for growth/lactation. Free-feed during peak lactation (weeks 3-5) and provide constant access to fresh water.</div>
+        <h3>What should I feed a lactating dog?</h3>
+        <p>Feed lactating dogs high-quality, calorie-dense food with 30-35% protein and 15-20% fat. Best options include puppy food (formulated for high energy needs), raw or cooked meat with organs (liver, heart, kidney), fatty fish for omega-3 DHA, eggs for protein and choline, and high-quality kibble designed for growth/lactation. Free-feed during peak lactation (weeks 3-5) and provide constant access to fresh water.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">What is the best diet for a nursing dog?</div>
-        <div class="faq-answer">The best diet for a nursing dog is high in protein (30-35%), moderate in fat (15-20%), and calorie-dense. Include high-quality animal protein (chicken, beef, fish), organ meats like liver for vitamins and minerals, fatty fish for DHA (supports puppy brain development), eggs for choline and protein, and either puppy formula kibble or a balanced raw/cooked diet. Free-feed during peak lactation and ensure constant water access.</div>
+        <h3>What is the best diet for a nursing dog?</h3>
+        <p>The best diet for a nursing dog is high in protein (30-35%), moderate in fat (15-20%), and calorie-dense. Include high-quality animal protein (chicken, beef, fish), organ meats like liver for vitamins and minerals, fatty fish for DHA (supports puppy brain development), eggs for choline and protein, and either puppy formula kibble or a balanced raw/cooked diet. Free-feed during peak lactation and ensure constant water access.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">What is the best diet for a lactating dog?</div>
-        <div class="faq-answer">A lactating dog needs a calorie-dense diet with 30-35% protein and 15-20% fat. Feed puppy formula food (designed for high energy needs), or a diet rich in meat, organs (especially liver), fatty fish, and eggs. Include calcium-rich foods (but avoid excess calcium during pregnancy), omega-3 sources for DHA, and ensure 24/7 access to food during weeks 3-5 of lactation when milk production peaks.</div>
+        <h3>What is the best diet for a lactating dog?</h3>
+        <p>A lactating dog needs a calorie-dense diet with 30-35% protein and 15-20% fat. Feed puppy formula food (designed for high energy needs), or a diet rich in meat, organs (especially liver), fatty fish, and eggs. Include calcium-rich foods (but avoid excess calcium during pregnancy), omega-3 sources for DHA, and ensure 24/7 access to food during weeks 3-5 of lactation when milk production peaks.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">What supplements should I give a nursing dog?</div>
-        <div class="faq-answer">Beneficial supplements for nursing dogs include: calcium (especially during lactation to prevent eclampsia, but not during pregnancy), omega-3 fish oil for DHA (supports puppy brain development), vitamin E for antioxidant support, B-complex vitamins for energy metabolism, and whole-food supplements like beef liver for concentrated vitamins and minerals. Always consult your vet before supplementing, especially with calcium.</div>
+        <h3>What supplements should I give a nursing dog?</h3>
+        <p>Beneficial supplements for nursing dogs include: calcium (especially during lactation to prevent eclampsia, but not during pregnancy), omega-3 fish oil for DHA (supports puppy brain development), vitamin E for antioxidant support, B-complex vitamins for energy metabolism, and whole-food supplements like beef liver for concentrated vitamins and minerals. Always consult your vet before supplementing, especially with calcium.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">How do puppies get nutrients in the womb?</div>
-        <div class="faq-answer">Puppies receive nutrients from the mother through the placenta during gestation. Nutrients from the mother's bloodstream cross the placental barrier and are delivered to developing puppies via the umbilical cord. This is why maternal nutrition is critical during pregnancy—the mother must consume enough protein, vitamins, minerals, and calories to support her own body plus growing puppies. Key nutrients like folate, omega-3 DHA, calcium, and protein directly affect puppy development.</div>
+        <h3>How do puppies get nutrients in the womb?</h3>
+        <p>Puppies receive nutrients from the mother through the placenta during gestation. Nutrients from the mother's bloodstream cross the placental barrier and are delivered to developing puppies via the umbilical cord. This is why maternal nutrition is critical during pregnancy—the mother must consume enough protein, vitamins, minerals, and calories to support her own body plus growing puppies. Key nutrients like folate, omega-3 DHA, calcium, and protein directly affect puppy development.</p>
       </div>
     </div>
+    </article>
+  </main>
 
-    <div class="cta-section">
-      <p><strong>Nutrient-dense support for breeding dogs.</strong></p>
-      <p>Join the waitlist for Watts — whole-food nutrition designed for dogs with extreme nutritional demands.</p>
-
-      <a href="/" class="gate">
-        <span class="gate-text">Notify me at launch</span>
-        <span class="gate-arrow" aria-hidden="true">→</span>
-      </a>
-    </div>
-  </article>
-
-  <footer>© <span id="year"></span> Watts Pet</footer>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
+      </div>
+    </footer>
+  </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();

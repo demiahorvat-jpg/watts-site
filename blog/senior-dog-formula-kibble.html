@@ -37,308 +37,527 @@
   <meta property="twitter:description" content="Yes. Senior dogs need MORE protein than young dogs (25-30%+) to maintain muscle mass. Most senior formulas dangerously reduce protein to 18-22%.">
   <meta property="twitter:image" content="https://wattspet.com/images/og-default.jpg">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
-
+  <!-- Degular Font -->
   <style>
-    :root {
-      --bg: #F1ECE9;
-      --fg: #191919;
-      --muted: #3a3a3a;
-      --border: #191919;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body { min-height: 100%; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Regular.woff2') format('woff2');
       font-weight: 400;
-      line-height: 1.6;
-      overflow-x: hidden;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
     }
 
-    /* Navigation */
-    nav.nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px 20px;
-      border-bottom: 2.5px solid var(--border);
+    :root {
+      --brand-orange: #c03800;
+      --bg-light: #f1f1f1;
+      --text-dark: #191919;
+      --white: #ffffff;
+      --text-muted: #666666;
+      --border-light: rgba(25, 25, 25, 0.1);
+      --accent-navy: #1e3a5f;
     }
-    @media (min-width: 768px) {
-      nav.nav {
-        padding: 24px 20px;
-      }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    nav.nav ul {
-      list-style: none;
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      background: #191919;
+      color: var(--text-dark);
+      font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* HEADER WRAPPER - Black background */
+    .header-wrapper {
+      background: #191919;
+      padding: 12px 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    /* ORANGE HEADER - Rounded like Shopify site */
+    header {
+      background: var(--brand-orange);
+      padding: 7px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
-      gap: 24px;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-height: 40px;
+    }
+
+    /* Nav on the LEFT */
+    nav {
+      order: -1;
+      display: flex;
       align-items: center;
     }
-    @media (min-width: 768px) {
-      nav.nav ul {
-        gap: 32px;
-      }
-    }
-    nav.nav a {
-      color: var(--fg);
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 500;
-      transition: opacity 0.15s;
-      position: relative;
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
     }
     @media (min-width: 768px) {
-      nav.nav a {
-        font-size: 16px;
-      }
-    }
-    nav.nav a:hover {
-      opacity: 0.7;
-    }
-    nav.nav a.active::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: var(--fg);
+      nav ul { gap: 24px; }
     }
 
-    /* Article container */
+    nav li {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
+    }
+    @media (min-width: 768px) {
+      nav a { font-size: 15px; }
+    }
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    /* Logo CENTERED */
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo {
+      height: 32px;
+    }
+    @media (min-width: 768px) {
+      .logo { height: 40px; }
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 900px;
+      margin: 16px auto 40px;
+      padding: 0 20px;
+      background: var(--bg-light);
+    }
+    @media (min-width: 768px) {
+      main {
+        margin: 20px auto 60px;
+        padding: 0 40px;
+      }
+    }
+
     article {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px 60px;
+      background: var(--white);
+      padding: 40px 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
       article {
-        padding: 60px 40px 80px;
+        padding: 60px 50px;
       }
     }
 
-    /* Article header */
     .article-header {
-      margin-bottom: 32px;
-    }
-    @media (min-width: 768px) {
-      .article-header {
-        margin-bottom: 40px;
-      }
-    }
-
-    .article-meta {
-      font-size: 13px;
-      color: var(--muted);
-      margin-bottom: 16px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    @media (min-width: 768px) {
-      .article-meta {
-        font-size: 14px;
-        margin-bottom: 20px;
-      }
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--border-light);
     }
 
     h1 {
-      font-family: "Geologica", sans-serif;
       font-size: 32px;
       font-weight: 700;
       line-height: 1.2;
       margin-bottom: 16px;
       letter-spacing: -0.02em;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       h1 {
-        font-size: 42px;
+        font-size: 48px;
         margin-bottom: 20px;
       }
     }
 
+    .article-meta {
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
     .article-intro {
-      font-size: 18px;
+      font-size: 19px;
+      font-weight: 500;
       line-height: 1.6;
-      color: var(--muted);
+      color: var(--text-muted);
+      margin-bottom: 0;
     }
     @media (min-width: 768px) {
       .article-intro {
-        font-size: 20px;
-        line-height: 1.7;
+        font-size: 21px;
       }
     }
 
-    /* Article content */
-    .article-content {
-      font-size: 17px;
-      line-height: 1.7;
+    .article-intro a {
+      color: var(--accent-navy);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid var(--accent-navy);
+      transition: opacity 0.2s ease;
     }
-    @media (min-width: 768px) {
-      .article-content {
-        font-size: 18px;
-        line-height: 1.8;
-      }
+    .article-intro a:hover {
+      opacity: 0.7;
     }
 
-    .article-content h2 {
-      font-size: 26px;
+    h2 {
+      font-size: 28px;
       font-weight: 700;
-      line-height: 1.3;
-      margin: 48px 0 20px;
+      line-height: 1.2;
+      margin: 56px 0 24px;
       letter-spacing: -0.01em;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
-      .article-content h2 {
-        font-size: 30px;
-        margin: 56px 0 24px;
+      h2 {
+        font-size: 36px;
+        margin: 64px 0 28px;
       }
     }
 
-    .article-content h3 {
-      font-size: 21px;
+    h3 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 40px 0 16px;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h3 {
+        font-size: 28px;
+        margin: 48px 0 20px;
+      }
+    }
+
+    h4 {
+      font-size: 20px;
       font-weight: 600;
       line-height: 1.4;
-      margin: 36px 0 16px;
+      margin: 32px 0 12px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
-      .article-content h3 {
-        font-size: 24px;
-        margin: 40px 0 20px;
+      h4 {
+        font-size: 22px;
+        margin: 36px 0 16px;
       }
     }
 
-    .article-content p {
+    p {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.7;
       margin-bottom: 20px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
-      .article-content p {
+      p {
+        font-size: 18px;
         margin-bottom: 24px;
       }
     }
 
-    .article-content ul, .article-content ol {
-      margin: 20px 0 20px 24px;
-    }
-    @media (min-width: 768px) {
-      .article-content ul, .article-content ol {
-        margin: 24px 0 24px 32px;
-      }
-    }
-
-    .article-content li {
-      margin-bottom: 12px;
-      padding-left: 8px;
-    }
-
-    .article-content strong {
+    strong {
       font-weight: 600;
     }
 
-    .article-content a {
-      color: var(--fg);
-      text-decoration: underline;
-      text-decoration-thickness: 1.5px;
-      text-underline-offset: 2px;
-      transition: opacity 0.15s;
+    a {
+      color: var(--accent-navy);
+      transition: opacity 0.2s ease;
     }
-
-    .article-content a:hover {
+    a:hover {
       opacity: 0.7;
     }
 
-    /* Callout boxes */
-    .callout {
-      background: rgba(25, 25, 25, 0.04);
-      border: 2.5px solid var(--border);
-      padding: 24px;
-      margin: 32px 0;
-    }
-    @media (min-width: 768px) {
-      .callout {
-        padding: 32px;
-        margin: 40px 0;
-      }
+    ul, ol {
+      margin: 24px 0;
+      padding-left: 28px;
     }
 
-    /* FAQ section */
-    .faq {
-      margin-top: 56px;
-      padding-top: 40px;
-      border-top: 2.5px solid var(--border);
-    }
-    @media (min-width: 768px) {
-      .faq {
-        margin-top: 64px;
-        padding-top: 48px;
-      }
-    }
-
-    .faq h2 {
-      font-size: 26px;
-      font-weight: 700;
-      margin-bottom: 32px;
-    }
-    @media (min-width: 768px) {
-      .faq h2 {
-        font-size: 30px;
-        margin-bottom: 40px;
-      }
-    }
-
-    .faq-item {
-      margin-bottom: 32px;
-    }
-    @media (min-width: 768px) {
-      .faq-item {
-        margin-bottom: 40px;
-      }
-    }
-
-    .faq-question {
-      font-size: 19px;
-      font-weight: 600;
-      margin-bottom: 12px;
-      line-height: 1.4;
-    }
-    @media (min-width: 768px) {
-      .faq-question {
-        font-size: 21px;
-        margin-bottom: 16px;
-      }
-    }
-
-    .faq-answer {
+    li {
       font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
-      color: var(--muted);
+      margin-bottom: 12px;
     }
     @media (min-width: 768px) {
-      .faq-answer {
+      li {
         font-size: 18px;
       }
     }
 
-    /* Footer */
+    /* LIGHT CALLOUT BOX */
+    .callout {
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin: 32px 0;
+    }
+    @media (min-width: 768px) {
+      .callout {
+        padding: 28px 32px;
+      }
+    }
+
+    .callout p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* TABLE */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 32px 0;
+      font-size: 16px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    @media (min-width: 768px) {
+      table {
+        font-size: 17px;
+      }
+    }
+
+    thead {
+      background: var(--brand-orange);
+      color: var(--white);
+      font-weight: 700;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+      border-bottom: 1px solid var(--border-light);
+    }
+    @media (min-width: 768px) {
+      th, td {
+        padding: 18px 20px;
+      }
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    tbody tr {
+      background: var(--white);
+      transition: background 0.2s ease;
+    }
+
+    tbody tr:hover {
+      background: rgba(192, 56, 0, 0.02);
+    }
+
+    /* FAQ SECTION */
+    .faq-section {
+      margin-top: 64px;
+      padding-top: 56px;
+      border-top: 3px solid var(--border-light);
+    }
+
+    .faq-item {
+      margin-bottom: 32px;
+      padding: 28px;
+      background: var(--bg-light);
+      border-radius: 12px;
+      border-left: 4px solid var(--brand-orange);
+    }
+
+    .faq-item h3 {
+      font-size: 20px;
+      margin: 0 0 16px 0;
+      color: var(--brand-orange);
+    }
+    @media (min-width: 768px) {
+      .faq-item h3 {
+        font-size: 23px;
+      }
+    }
+
+    .faq-item p {
+      margin-bottom: 0;
+    }
+
+    /* Related Articles */
+    .related-articles {
+      margin-top: 64px;
+      padding: 16px 20px;
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
+    }
+
+    .related-articles h3 {
+      font-size: 20px;
+      margin: 0 0 8px 0;
+      color: var(--brand-orange);
+    }
+    @media (min-width: 768px) {
+      .related-articles h3 {
+        font-size: 23px;
+      }
+    }
+
+    .related-articles ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .related-articles li {
+      margin-bottom: 12px;
+      padding-left: 0;
+    }
+
+    .related-articles a {
+      color: var(--accent-navy);
+      text-decoration: underline;
+      font-size: 16px;
+    }
+
+    /* FOOTER WRAPPER - Black background */
+    .footer-wrapper {
+      background: #191919;
+      padding: 0 12px 12px;
+      margin-top: 80px;
+    }
+
+    /* FOOTER - Orange with asymmetric rounded shape like Shopify */
     footer {
-      text-align: center;
-      padding: 20px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 400;
-      border-top: 2.5px solid var(--border);
-      margin-top: 60px;
+      background: var(--brand-orange);
+      color: var(--white);
+      padding: 45px 40px 20px;
+      border-radius: 200px 16px 16px 200px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 144px;
     }
     @media (min-width: 768px) {
       footer {
-        padding: 24px;
-        font-size: 13px;
+        padding: 63px 60px 24px;
+        min-height: 207px;
+        border-radius: 300px 16px 16px 300px;
       }
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      flex: 1;
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 24px;
+      flex: 1;
+    }
+    @media (min-width: 768px) {
+      .footer-right {
+        gap: 32px;
+      }
+    }
+
+    .footer-right-text {
+      text-align: right;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-top: 128px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .footer-logo {
+        height: 160px;
+        margin-top: 160px;
+        margin-bottom: 0;
+      }
+    }
+
+    footer p {
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    footer a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 
@@ -486,16 +705,26 @@
 </head>
 
 <body>
-  <nav class="nav">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/blog/" class="active">Blog</a></li>
-      <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
-    </ul>
-  </nav>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+        </div>
+      </div>
+    </header>
+  </div>
 
-  <article>
+  <main>
+    <article>
     <div class="article-header">
       <div class="article-meta">April 14, 2025 • Updated January 12, 2026</div>
       <h1>Do Senior Dogs Need High Protein? Yes — Here's Why</h1>
@@ -503,12 +732,12 @@
     </div>
 
     <div class="callout" style="margin-top: 32px; margin-bottom: 40px;">
-      <h2 style="margin-top: 0; font-size: 20px; margin-bottom: 16px;">🐕 Quick Answer: Do Senior Dogs Need High Protein?</h2>
-      <p style="margin-bottom: 16px; font-size: 18px; font-weight: 600; color: var(--fg);"><strong>Yes. Senior dogs need MORE protein than young dogs — not less.</strong></p>
+      <h2 style="margin-top: 0; font-size: 20px; margin-bottom: 16px;">Quick Answer: Do Senior Dogs Need High Protein?</h2>
+      <p style="margin-bottom: 16px; font-size: 18px; font-weight: 600; color: var(--text-dark);"><strong>Yes. Senior dogs need MORE protein than young dogs — not less.</strong></p>
 
       <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px;">
         <thead>
-          <tr style="border-bottom: 2px solid var(--border);">
+          <tr style="border-bottom: 2px solid var(--border-light);">
             <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Life Stage</th>
             <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Protein Need</th>
             <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Why</th>
@@ -832,62 +1061,77 @@
       <p>Your senior dog deserves better than reduced-protein, grain-heavy kibble marketed as "senior nutrition." They deserve food that actually supports healthy aging.</p>
     </div>
 
-    <div class="faq">
+    <div class="faq-section">
       <h2>Frequently Asked Questions</h2>
 
       <div class="faq-item">
-        <div class="faq-question">Do senior dogs need high protein?</div>
-        <div class="faq-answer">Yes. Senior dogs need high protein (25-30%+ of their diet) to prevent sarcopenia (age-related muscle loss). As dogs age, their bodies become less efficient at utilizing protein, so they need MORE protein than younger dogs to maintain muscle mass, strength, and overall health. High-quality animal protein from meat, organs, and eggs is essential for senior dogs.</div>
+        <h3>Do senior dogs need high protein?</h3>
+        <p>Yes. Senior dogs need high protein (25-30%+ of their diet) to prevent sarcopenia (age-related muscle loss). As dogs age, their bodies become less efficient at utilizing protein, so they need MORE protein than younger dogs to maintain muscle mass, strength, and overall health. High-quality animal protein from meat, organs, and eggs is essential for senior dogs.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Do senior dogs need less protein?</div>
-        <div class="faq-answer">No — this is one of the most common and harmful misconceptions in dog nutrition. Senior dogs actually need MORE protein than younger dogs (not less) because their bodies are less efficient at utilizing protein for muscle maintenance. Research shows senior dogs require 25-30% protein (or higher) to prevent sarcopenia (age-related muscle loss). Many senior formulas reduce protein to 18-22%, accelerating muscle wasting and contributing to weakness, poor mobility, and faster decline.</div>
+        <h3>Do senior dogs need less protein?</h3>
+        <p>No — this is one of the most common and harmful misconceptions in dog nutrition. Senior dogs actually need MORE protein than younger dogs (not less) because their bodies are less efficient at utilizing protein for muscle maintenance. Research shows senior dogs require 25-30% protein (or higher) to prevent sarcopenia (age-related muscle loss). Many senior formulas reduce protein to 18-22%, accelerating muscle wasting and contributing to weakness, poor mobility, and faster decline.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Is it a bad idea to buy senior formula for an active dog?</div>
-        <div class="faq-answer">Yes, most senior formulas are a poor choice for active dogs (even senior-aged active dogs). Senior formulas typically reduce protein to 18-22% and calories, which is the opposite of what active dogs need. Active dogs — regardless of age — require high protein (25-30%+), adequate calories for energy output, and higher nutrient density to support muscle maintenance and recovery. Feed active senior dogs high-protein, nutrient-dense food (like all-life-stages or performance formulas) rather than low-protein senior formulas.</div>
+        <h3>Is it a bad idea to buy senior formula for an active dog?</h3>
+        <p>Yes, most senior formulas are a poor choice for active dogs (even senior-aged active dogs). Senior formulas typically reduce protein to 18-22% and calories, which is the opposite of what active dogs need. Active dogs — regardless of age — require high protein (25-30%+), adequate calories for energy output, and higher nutrient density to support muscle maintenance and recovery. Feed active senior dogs high-protein, nutrient-dense food (like all-life-stages or performance formulas) rather than low-protein senior formulas.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Should active senior dogs eat senior dog food?</div>
-        <div class="faq-answer">No. Active senior dogs should not eat typical senior formulas. Most senior formulas reduce protein and calories, which accelerates muscle loss in active dogs. Active senior dogs need the same nutrition as younger active dogs: high protein (25-30%+), adequate calories for their activity level, omega-3s for joint health, and antioxidants for recovery. Choose all-life-stages formulas or performance foods instead of age-restricted senior formulas.</div>
+        <h3>Should active senior dogs eat senior dog food?</h3>
+        <p>No. Active senior dogs should not eat typical senior formulas. Most senior formulas reduce protein and calories, which accelerates muscle loss in active dogs. Active senior dogs need the same nutrition as younger active dogs: high protein (25-30%+), adequate calories for their activity level, omega-3s for joint health, and antioxidants for recovery. Choose all-life-stages formulas or performance foods instead of age-restricted senior formulas.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">How much protein does a senior dog need?</div>
-        <div class="faq-answer">Senior dogs need at least 25-30% protein from high-quality animal sources (meat, organs, eggs, fish). Research shows that senior dogs require higher protein than young adults to prevent sarcopenia (muscle wasting). While AAFCO minimums allow 18% protein for adult maintenance, this is far too low for senior dogs. Optimal protein intake for seniors is 25-30% or higher, from bioavailable animal sources, not plant-based fillers.</div>
+        <h3>How much protein does a senior dog need?</h3>
+        <p>Senior dogs need at least 25-30% protein from high-quality animal sources (meat, organs, eggs, fish). Research shows that senior dogs require higher protein than young adults to prevent sarcopenia (muscle wasting). While AAFCO minimums allow 18% protein for adult maintenance, this is far too low for senior dogs. Optimal protein intake for seniors is 25-30% or higher, from bioavailable animal sources, not plant-based fillers.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">What do senior dogs actually need more of?</div>
-        <div class="faq-answer">Senior dogs need higher levels of high-quality protein (25-30%+ from bioavailable sources like meat and organs), omega-3 fatty acids (EPA/DHA for anti-inflammatory support and brain health), antioxidants (vitamin A, E, C, selenium to combat oxidative stress), B vitamins (especially B12 for energy and cognitive function), choline (for brain health and liver function), and joint-supporting nutrients (glucosamine, chondroitin, collagen from whole-food sources). They also need higher nutrient density per calorie since they typically eat less as they age.</div>
+        <h3>What do senior dogs actually need more of?</h3>
+        <p>Senior dogs need higher levels of high-quality protein (25-30%+ from bioavailable sources like meat and organs), omega-3 fatty acids (EPA/DHA for anti-inflammatory support and brain health), antioxidants (vitamin A, E, C, selenium to combat oxidative stress), B vitamins (especially B12 for energy and cognitive function), choline (for brain health and liver function), and joint-supporting nutrients (glucosamine, chondroitin, collagen from whole-food sources). They also need higher nutrient density per calorie since they typically eat less as they age.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Why do senior dog formulas reduce protein?</div>
-        <div class="faq-answer">The outdated belief that senior dogs need less protein stems from concerns about kidney disease. The thinking was that high protein stresses the kidneys. However, research has shown that dietary protein does NOT cause kidney disease in healthy dogs — and dogs with existing kidney disease may still need adequate protein to prevent muscle wasting. Reducing protein accelerates sarcopenia (muscle loss), weakens the immune system, and shortens lifespan. Modern veterinary nutrition recognizes that senior dogs need MORE high-quality protein, not less.</div>
+        <h3>Why do senior dog formulas reduce protein?</h3>
+        <p>The outdated belief that senior dogs need less protein stems from concerns about kidney disease. The thinking was that high protein stresses the kidneys. However, research has shown that dietary protein does NOT cause kidney disease in healthy dogs — and dogs with existing kidney disease may still need adequate protein to prevent muscle wasting. Reducing protein accelerates sarcopenia (muscle loss), weakens the immune system, and shortens lifespan. Modern veterinary nutrition recognizes that senior dogs need MORE high-quality protein, not less.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Is senior dog food bad for dogs?</div>
-        <div class="faq-answer">Most commercial senior dog formulas are problematic because they reduce protein to 18-22% when senior dogs actually need 25-30%+ protein. This accelerates muscle loss (sarcopenia), weakens immune function, and contributes to faster decline. Senior formulas also often use low-quality protein sources and reduce calories without increasing nutrient density, leading to deficiencies. The 'senior formula' category is built on outdated nutritional assumptions that harm dogs rather than help them age well.</div>
+        <h3>Is senior dog food bad for dogs?</h3>
+        <p>Most commercial senior dog formulas are problematic because they reduce protein to 18-22% when senior dogs actually need 25-30%+ protein. This accelerates muscle loss (sarcopenia), weakens immune function, and contributes to faster decline. Senior formulas also often use low-quality protein sources and reduce calories without increasing nutrient density, leading to deficiencies. The 'senior formula' category is built on outdated nutritional assumptions that harm dogs rather than help them age well.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">What's wrong with most senior dog formulas?</div>
-        <div class="faq-answer">Most senior formulas make these mistakes: (1) Reduce protein to 18-22% when seniors need 25-30%+, (2) Use low-quality protein sources (corn, wheat, soy) instead of bioavailable animal protein, (3) Reduce calories without increasing nutrient density (leading to deficiencies), (4) Add joint supplements (glucosamine, chondroitin) in amounts too low to be effective, (5) Rely on synthetic vitamins instead of whole-food sources with better bioavailability, and (6) Use the same highly processed ingredients that contribute to inflammation and oxidative stress.</div>
+        <h3>What's wrong with most senior dog formulas?</h3>
+        <p>Most senior formulas make these mistakes: (1) Reduce protein to 18-22% when seniors need 25-30%+, (2) Use low-quality protein sources (corn, wheat, soy) instead of bioavailable animal protein, (3) Reduce calories without increasing nutrient density (leading to deficiencies), (4) Add joint supplements (glucosamine, chondroitin) in amounts too low to be effective, (5) Rely on synthetic vitamins instead of whole-food sources with better bioavailability, and (6) Use the same highly processed ingredients that contribute to inflammation and oxidative stress.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">What should I feed my senior dog instead?</div>
-        <div class="faq-answer">Focus on nutrient-dense, minimally processed foods: high-quality animal protein (beef, chicken, fish, eggs — 25-30%+ of diet), organ meats (liver, heart, kidney for concentrated vitamins, minerals, and co-factors), fatty fish (salmon, sardines for omega-3s and vitamin D), eggs (complete protein, choline, biotin, selenium), antioxidant-rich foods (berries, leafy greens), and bone broth or cartilage (natural glucosamine and collagen). Prioritize calorie restriction with nutrient density — fewer calories but MORE nutrients per calorie. Avoid grain-heavy, highly processed kibble that delivers empty calories.</div>
+        <h3>What should I feed my senior dog instead?</h3>
+        <p>Focus on nutrient-dense, minimally processed foods: high-quality animal protein (beef, chicken, fish, eggs — 25-30%+ of diet), organ meats (liver, heart, kidney for concentrated vitamins, minerals, and co-factors), fatty fish (salmon, sardines for omega-3s and vitamin D), eggs (complete protein, choline, biotin, selenium), antioxidant-rich foods (berries, leafy greens), and bone broth or cartilage (natural glucosamine and collagen). Prioritize calorie restriction with nutrient density — fewer calories but MORE nutrients per calorie. Avoid grain-heavy, highly processed kibble that delivers empty calories.</p>
       </div>
     </div>
-  </article>
+    </article>
+  </main>
 
-  <footer>© <span id="year"></span> Watts Pet</footer>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
+      </div>
+    </footer>
+  </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();

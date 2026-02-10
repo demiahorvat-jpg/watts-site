@@ -1,520 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Can Dogs Take Human Supplements? Safety Risks & Vet-Approved Alternatives</title>
-    <meta name="description" content="Some human supplements are dangerous for dogs (xylitol, iron, vitamin D). Others might be okay with proper dosing. Learn what's safe, what's toxic, and why dog-specific formulations work better.">
-    <link rel="canonical" href="https://wattspet.com/blog/can-dogs-take-human-supplements.html">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Can Dogs Take Human Supplements? Safety Risks & Vet-Approved Alternatives</title>
+  <meta name="description" content="Some human supplements are dangerous for dogs (xylitol, iron, vitamin D). Others might be okay with proper dosing. Learn what's safe, what's toxic, and why dog-specific formulations work better.">
+  <link rel="canonical" href="https://wattspet.com/blog/can-dogs-take-human-supplements.html">
 
-  <style>
-    :root {
-      --bg: #F1ECE9;
-      --fg: #191919;
-      --muted: #3a3a3a;
-      --border: #191919;
-    }
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body { min-height: 100%; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      font-weight: 400;
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    /* Navigation */
-    nav.nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px 20px;
-      border-bottom: 2.5px solid var(--border);
-    }
-    @media (min-width: 768px) {
-      nav.nav {
-        padding: 24px 20px;
-      }
-    }
-    nav.nav ul {
-      list-style: none;
-      display: flex;
-      gap: 24px;
-      align-items: center;
-    }
-    @media (min-width: 768px) {
-      nav.nav ul {
-        gap: 32px;
-      }
-    }
-    nav.nav a {
-      color: var(--fg);
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 500;
-      transition: opacity 0.15s;
-      position: relative;
-    }
-    @media (min-width: 768px) {
-      nav.nav a {
-        font-size: 16px;
-      }
-    }
-    nav.nav a:hover {
-      opacity: 0.7;
-    }
-    nav.nav a.active::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: var(--fg);
-    }
-
-    /* Article container */
-    article {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px 60px;
-    }
-    @media (min-width: 768px) {
-      article {
-        padding: 60px 40px 80px;
-      }
-    }
-
-    /* Article header */
-    .article-header {
-      margin-bottom: 32px;
-    }
-    @media (min-width: 768px) {
-      .article-header {
-        margin-bottom: 40px;
-      }
-    }
-
-    .article-meta {
-      font-size: 13px;
-      color: var(--muted);
-      margin-bottom: 16px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    @media (min-width: 768px) {
-      .article-meta {
-        font-size: 14px;
-        margin-bottom: 20px;
-      }
-    }
-
-    h1 {
-      font-family: "Geologica", sans-serif;
-      font-size: 32px;
-      font-weight: 700;
-      line-height: 1.2;
-      margin-bottom: 16px;
-      letter-spacing: -0.02em;
-    }
-    @media (min-width: 768px) {
-      h1 {
-        font-size: 42px;
-        margin-bottom: 20px;
-      }
-    }
-
-    .article-intro {
-      font-size: 18px;
-      line-height: 1.6;
-      color: var(--muted);
-    }
-    @media (min-width: 768px) {
-      .article-intro {
-        font-size: 20px;
-        line-height: 1.7;
-      }
-    }
-
-    /* Article content */
-    .article-content {
-      font-size: 17px;
-      line-height: 1.7;
-    }
-    @media (min-width: 768px) {
-      .article-content {
-        font-size: 18px;
-        line-height: 1.8;
-      }
-    }
-
-    .article-content h2 {
-      font-size: 26px;
-      font-weight: 700;
-      line-height: 1.3;
-      margin: 48px 0 20px;
-      letter-spacing: -0.01em;
-    }
-    @media (min-width: 768px) {
-      .article-content h2 {
-        font-size: 30px;
-        margin: 56px 0 24px;
-      }
-    }
-
-    .article-content h3 {
-      font-size: 21px;
-      font-weight: 600;
-      line-height: 1.4;
-      margin: 36px 0 16px;
-    }
-    @media (min-width: 768px) {
-      .article-content h3 {
-        font-size: 24px;
-        margin: 40px 0 20px;
-      }
-    }
-
-    .article-content p {
-      margin-bottom: 20px;
-    }
-    @media (min-width: 768px) {
-      .article-content p {
-        margin-bottom: 24px;
-      }
-    }
-
-    .article-content ul, .article-content ol {
-      margin: 20px 0 20px 24px;
-    }
-    @media (min-width: 768px) {
-      .article-content ul, .article-content ol {
-        margin: 24px 0 24px 32px;
-      }
-    }
-
-    .article-content li {
-      margin-bottom: 12px;
-      padding-left: 8px;
-    }
-
-    .article-content strong {
-      font-weight: 600;
-    }
-
-    .article-content a {
-      color: var(--fg);
-      text-decoration: underline;
-      text-decoration-thickness: 1.5px;
-      text-underline-offset: 2px;
-      transition: opacity 0.15s;
-    }
-
-    .article-content a:hover {
-      opacity: 0.7;
-    }
-
-    /* Callout boxes */
-    .callout {
-      background: rgba(25, 25, 25, 0.04);
-      border: 2.5px solid var(--border);
-      padding: 24px;
-      margin: 32px 0;
-    }
-    @media (min-width: 768px) {
-      .callout {
-        padding: 32px;
-        margin: 40px 0;
-      }
-    }
-
-    /* Warning boxes */
-    .warning {
-      background: #fff3e0;
-      border: 3px solid #d97706;
-      padding: 24px;
-      margin: 32px 0;
-    }
-    @media (min-width: 768px) {
-      .warning {
-        padding: 32px;
-        margin: 40px 0;
-      }
-    }
-
-    /* FAQ section */
-    .faq {
-      margin-top: 56px;
-      padding-top: 40px;
-      border-top: 2.5px solid var(--border);
-    }
-    @media (min-width: 768px) {
-      .faq {
-        margin-top: 64px;
-        padding-top: 48px;
-      }
-    }
-
-    .faq h2 {
-      font-size: 26px;
-      font-weight: 700;
-      margin-bottom: 32px;
-    }
-    @media (min-width: 768px) {
-      .faq h2 {
-        font-size: 30px;
-        margin-bottom: 40px;
-      }
-    }
-
-    .faq-item {
-      margin-bottom: 32px;
-    }
-    @media (min-width: 768px) {
-      .faq-item {
-        margin-bottom: 40px;
-      }
-    }
-
-    .faq-question {
-      font-size: 19px;
-      font-weight: 600;
-      margin-bottom: 12px;
-      line-height: 1.4;
-    }
-    @media (min-width: 768px) {
-      .faq-question {
-        font-size: 21px;
-        margin-bottom: 16px;
-      }
-    }
-
-    .faq-answer {
-      font-size: 17px;
-      line-height: 1.7;
-      color: var(--muted);
-    }
-    @media (min-width: 768px) {
-      .faq-answer {
-        font-size: 18px;
-      }
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 400;
-      border-top: 2.5px solid var(--border);
-      margin-top: 60px;
-    }
-    @media (min-width: 768px) {
-      footer {
-        padding: 24px;
-        font-size: 13px;
-      }
-    }
-
-    /* Table styling */
-    article table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 32px 0;
-      border: 2.5px solid var(--border);
-    }
-    article table thead tr {
-      border-bottom: 2.5px solid var(--border);
-      background: rgba(25,25,25,0.02);
-    }
-    article table thead th {
-      text-align: left;
-      padding: 14px 12px;
-      font-weight: 700;
-      font-size: 15px;
-    }
-    article table tbody tr {
-      border-bottom: 1.5px solid rgba(25,25,25,0.1);
-    }
-    article table tbody tr:last-child {
-      border-bottom: none;
-    }
-    article table tbody td {
-      padding: 14px 12px;
-      font-size: 16px;
-    }
-
-    /* Related articles */
-    .related-articles {
-      margin-top: 48px;
-      padding: 24px;
-      background: rgba(25, 25, 25, 0.02);
-      border: 2px solid var(--border);
-    }
-    .related-articles h3 {
-      font-size: 20px;
-      margin-bottom: 16px;
-    }
-    .related-articles ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    .related-articles li {
-      margin-bottom: 12px;
-      padding-left: 0;
-    }
-    .related-articles a {
-      color: var(--fg);
-      text-decoration: underline;
-      font-size: 16px;
-    }
-  </style>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "Can Dogs Take Human Supplements? Safety Risks & Vet-Approved Alternatives",
-      "description": "Some human supplements are dangerous for dogs (xylitol, iron, vitamin D). Others might be okay with proper dosing. Learn what's safe, what's toxic, and why dog-specific formulations work better.",
-      "author": {
-        "@type": "Organization",
-        "name": "Watts Pet"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Watts Pet",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://wattspet.com/logo.png"
-        }
-      },
-      "datePublished": "2026-01-22",
-      "dateModified": "2026-01-22"
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://wattspet.com"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Blog",
-          "item": "https://wattspet.com/blog/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Can Dogs Take Human Supplements",
-          "item": "https://wattspet.com/blog/can-dogs-take-human-supplements.html"
-        }
-      ]
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Can I give my dog human supplements?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sometimes, but with extreme caution. Some human supplements are dangerous for dogs (xylitol-containing products, high-dose iron, excessive vitamin D). Others might be safe with proper weight-adjusted dosing (plain fish oil, vitamin E, CoQ10). However, dog-specific supplements are generally safer because they: (1) Avoid toxic ingredients like xylitol, (2) Use nutrient forms optimized for canine metabolism, (3) Provide appropriate doses for dog body weight, (4) Don't contain unnecessary additives. Never give human supplements without checking ingredients and consulting your vet first."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What human supplements are toxic to dogs?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Dangerous human supplements for dogs include: Xylitol-containing products (causes life-threatening hypoglycemia and liver failure), High-dose iron supplements (causes iron toxicity—vomiting, bloody diarrhea, organ damage), Excessive vitamin D (hypercalcemia, kidney failure—dog doses are 1/10th human doses), Prenatal vitamins (too much iron and folic acid), Garcinia cambogia and weight loss supplements (can cause liver damage), High-dose vitamin A (causes bone problems and liver toxicity), Medications with pain relievers (ibuprofen, acetaminophen—extremely toxic to dogs). Always check labels for xylitol, which appears in many sugar-free vitamins, gummies, and dissolvable tablets."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can dogs take human fish oil?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, plain human fish oil is generally safe for dogs if it contains no xylitol or additives. However, dose by EPA+DHA content (20-55 mg per pound of body weight daily), not by capsule count. Check that the product: (1) Contains no xylitol, vitamin D, or other additives, (2) Provides pure EPA+DHA from fish oil (not flaxseed or plant sources), (3) Is molecularly distilled to remove heavy metals, (4) Has not oxidized (check expiration date, smell—should be mild, not fishy). Dog-specific fish oils often have better quality control and appropriate dosing per pump or capsule. Refrigerate after opening to prevent oxidation."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I calculate human supplement dosage for my dog?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Use weight-based dosing, but this is NOT a simple linear calculation. General approximation: Divide the human dose by 7 (for a 20 lb dog) to 2 (for a 150 lb dog). Example: Human vitamin E dose = 400 IU. For a 50 lb dog: approximately 400 ÷ 4 = 100 IU. However, this method is risky because: (1) Dogs metabolize nutrients differently than humans, (2) Some nutrients (like vitamin D) require much lower doses in dogs, (3) Toxic thresholds vary by species. Safer approach: Look up dog-specific recommended doses for the nutrient, not human doses adjusted by weight. For most supplements, choose dog-formulated versions with research-backed dosing."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can dogs take human probiotics?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Usually yes, if the product contains no xylitol and uses beneficial strains like Lactobacillus and Bifidobacterium species. Many probiotic strains work in both humans and dogs. However, check for: (1) Xylitol (common in gummies and chewables—deadly for dogs), (2) High doses (reduce to match dog's weight), (3) Strains not researched in dogs (less likely to be effective). Better alternatives: Plain kefir, goat's milk yogurt, or dog-specific multi-strain probiotics. These provide diverse beneficial bacteria without risk of toxic additives. Learn more: Best Probiotics for Dogs: Vet-Approved Strains, Prebiotics & Postbiotics."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Why are dog supplements better than human supplements?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Dog-specific supplements are formulated for canine metabolism and physiology: (1) Correct nutrient forms: Dogs need pre-formed vitamin A (retinol) from animal sources, not plant beta-carotene. Dogs can't convert ALA omega-3s to EPA/DHA efficiently—they need fish-based omega-3s. (2) Appropriate doses: Vitamin D for dogs is 1/10th the human dose per pound. B-vitamin requirements differ significantly. (3) No toxic ingredients: Dog supplements avoid xylitol, excess iron, and other dangerous additives. (4) Better absorption: Nutrients in forms dogs can utilize (natural folate vs synthetic folic acid). (5) Safety testing: Dog supplements undergo safety testing for canine toxicity thresholds. Learn more: Dog Nutrition vs Human Nutrition: Why Dogs Absorb Nutrients Differently."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What if my dog accidentally ate human vitamins?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Call your vet or Pet Poison Helpline (855-764-7661) immediately. Provide: (1) Product name and ingredient list, (2) Number of pills/dose consumed, (3) Dog's weight, (4) Time since ingestion. Most dangerous ingredients: Xylitol (emergency—causes hypoglycemia within 30 minutes), Iron (causes vomiting, bloody diarrhea, organ damage), Vitamin D (high doses cause kidney failure over days), Vitamin A (causes bone issues with chronic overdose). If ingestion just occurred (within 2 hours), your vet may induce vomiting. Do NOT induce vomiting at home without veterinary guidance—some substances cause more damage coming back up."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are gummy vitamins safe for dogs?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Most gummy vitamins contain xylitol as a sweetener, which is extremely toxic to dogs—causing life-threatening hypoglycemia and liver failure within hours. Even gummies without xylitol often contain: (1) High sugar content (blood sugar spikes, digestive upset), (2) Artificial colors and flavors, (3) Doses inappropriate for dogs. Gummy texture also poses choking risk for some dogs. Never give human gummy vitamins to dogs. If your dog needs supplements, choose: Plain capsules or tablets (check for xylitol-free), Powders mixed into food, Dog-specific soft chews formulated without xylitol, Whole-food sources (beef liver for vitamins, fish oil for omega-3s)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can dogs take human vitamin D supplements?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Extremely dangerous without veterinary guidance. Dogs require far less vitamin D than humans relative to body weight—approximately 1/10th the dose. Human vitamin D supplements typically contain 1,000-5,000 IU per capsule. A 50 lb dog needs only 500-800 IU per day total from all sources (food + supplements). Overdose causes hypercalcemia (excess blood calcium), leading to kidney failure, vomiting, excessive thirst, and death if untreated. If your dog needs vitamin D supplementation, use: Dog-specific vitamin D products, Whole-food sources (fatty fish, beef liver, egg yolks), Veterinary-prescribed doses if deficiency confirmed by blood test. Learn more: Do Dogs Get Vitamin D From the Sun?"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What's a safer alternative to human supplements for dogs?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Whole-food nutrition provides the safest, most bioavailable nutrients without risk of toxicity or incorrect dosing: (1) Beef liver: Vitamin A, B-complex, iron, zinc, choline—1 oz daily for 50 lb dog. (2) Wild-caught fish: Omega-3s (EPA/DHA), vitamin D, selenium—2-3 servings weekly. (3) Eggs: Complete protein, choline, biotin, selenium—2-3 daily for 50 lb dog. (4) Plain kefir or yogurt: Probiotics, calcium, B vitamins—1-2 tablespoons daily. (5) Pumpkin and sweet potato: Fiber, vitamins, prebiotics. If supplements are needed, choose dog-specific formulas with: Research-backed strains or nutrients, Appropriate doses for dogs, No fillers, artificial colors, or toxic additives, Whole-food ingredients (freeze-dried organ meats, not synthetic isolates)."
-          }
-        }
-      ]
-    }
-    </script>
-
+  <!-- Ahrefs Analytics -->
+  <script src="https://analytics.ahrefs.com/analytics.js" data-key="22KmtuYXO77ED5o6fe6z1w" async></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-C6KV5WBGK5"></script>
   <script>
@@ -525,31 +22,757 @@
     gtag('config', 'G-C6KV5WBGK5');
   </script>
 
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://wattspet.com/blog/can-dogs-take-human-supplements.html">
+  <meta property="og:title" content="Can Dogs Take Human Supplements? Safety Risks & Vet-Approved Alternatives">
+  <meta property="og:description" content="Some human supplements are dangerous for dogs (xylitol, iron, vitamin D). Others might be okay with proper dosing. Learn what's safe, what's toxic, and why dog-specific formulations work better.">
+  <meta property="og:image" content="https://wattspet.com/images/og-default.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://wattspet.com/blog/can-dogs-take-human-supplements.html">
+  <meta property="twitter:title" content="Can Dogs Take Human Supplements? Safety Risks & Vet-Approved Alternatives">
+  <meta property="twitter:description" content="Some human supplements are dangerous for dogs (xylitol, iron, vitamin D). Others might be okay with proper dosing. Learn what's safe, what's toxic, and why dog-specific formulations work better.">
+  <meta property="twitter:image" content="https://wattspet.com/images/og-default.jpg">
+
+  <!-- Degular Font -->
+  <style>
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      --brand-orange: #c03800;
+      --bg-light: #f1f1f1;
+      --text-dark: #191919;
+      --white: #ffffff;
+      --text-muted: #666666;
+      --border-light: rgba(25, 25, 25, 0.1);
+      --accent-navy: #1e3a5f;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      background: #191919;
+      color: var(--text-dark);
+      font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* HEADER WRAPPER - Black background */
+    .header-wrapper {
+      background: #191919;
+      padding: 12px 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    /* ORANGE HEADER - Rounded like Shopify site */
+    header {
+      background: var(--brand-orange);
+      padding: 7px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-height: 40px;
+    }
+
+    /* Nav on the LEFT */
+    nav {
+      order: -1;
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+    @media (min-width: 768px) {
+      nav ul { gap: 24px; }
+    }
+
+    nav li {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
+    }
+    @media (min-width: 768px) {
+      nav a { font-size: 15px; }
+    }
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    /* Logo CENTERED */
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo {
+      height: 32px;
+    }
+    @media (min-width: 768px) {
+      .logo { height: 40px; }
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 900px;
+      margin: 16px auto 40px;
+      padding: 0 20px;
+      background: var(--bg-light);
+    }
+    @media (min-width: 768px) {
+      main {
+        margin: 20px auto 60px;
+        padding: 0 40px;
+      }
+    }
+
+    article {
+      background: var(--white);
+      padding: 40px 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    @media (min-width: 768px) {
+      article {
+        padding: 60px 50px;
+      }
+    }
+
+    .article-header {
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--border-light);
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .article-meta {
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      font-weight: 500;
+      line-height: 1.6;
+      color: var(--text-muted);
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .article-intro {
+        font-size: 21px;
+      }
+    }
+
+    .article-intro a {
+      color: var(--accent-navy);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    .article-intro a:hover {
+      opacity: 0.7;
+    }
+
+    /* LAYERED CALLOUT BOX - Pointed base with rounded content card */
+    .quick-facts {
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .quick-facts-content {
+      background: var(--white);
+      color: var(--text-dark);
+      border-radius: 12px;
+      padding: 24px 28px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    @media (min-width: 768px) {
+      .quick-facts-content {
+        padding: 28px 36px;
+      }
+    }
+
+    .quick-facts h3 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-top: 4px;
+      margin-bottom: 20px;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      .quick-facts h3 {
+        font-size: 28px;
+      }
+    }
+
+    .quick-facts ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .quick-facts li {
+      padding: 8px 0;
+      padding-left: 28px;
+      position: relative;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+    @media (min-width: 768px) {
+      .quick-facts li {
+        font-size: 17px;
+      }
+    }
+
+    .quick-facts li:before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      top: 8px;
+      font-weight: 700;
+      color: var(--brand-orange);
+    }
+
+    .quick-facts a {
+      color: var(--accent-navy);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .quick-facts a:hover {
+      opacity: 0.85;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 56px 0 24px;
+      letter-spacing: -0.01em;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h2 {
+        font-size: 36px;
+        margin: 64px 0 28px;
+      }
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 40px 0 16px;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h3 {
+        font-size: 28px;
+        margin: 48px 0 20px;
+      }
+    }
+
+    p {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      p {
+        font-size: 18px;
+        margin-bottom: 24px;
+      }
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    a:hover {
+      opacity: 0.7;
+    }
+
+    ul, ol {
+      margin: 24px 0;
+      padding-left: 28px;
+    }
+
+    li {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+    @media (min-width: 768px) {
+      li {
+        font-size: 18px;
+      }
+    }
+
+    /* LIGHT CALLOUT BOX */
+    .callout {
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin: 32px 0;
+    }
+    @media (min-width: 768px) {
+      .callout {
+        padding: 28px 32px;
+      }
+    }
+
+    .callout p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* WARNING BOX */
+    .warning {
+      background: #fff3e0;
+      border-left: 4px solid #d97706;
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin: 32px 0;
+    }
+    @media (min-width: 768px) {
+      .warning {
+        padding: 28px 32px;
+      }
+    }
+
+    /* TABLE */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 32px 0;
+      font-size: 16px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    @media (min-width: 768px) {
+      table {
+        font-size: 17px;
+      }
+    }
+
+    thead {
+      background: var(--brand-orange);
+      color: var(--white);
+      font-weight: 700;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+      border-bottom: 1px solid var(--border-light);
+    }
+    @media (min-width: 768px) {
+      th, td {
+        padding: 18px 20px;
+      }
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    tbody tr {
+      background: var(--white);
+      transition: background 0.2s ease;
+    }
+
+    tbody tr:hover {
+      background: rgba(192, 56, 0, 0.02);
+    }
+
+    /* FAQ SECTION */
+    .faq-section {
+      margin-top: 64px;
+      padding-top: 56px;
+      border-top: 3px solid var(--border-light);
+    }
+
+    .faq-item {
+      margin-bottom: 32px;
+      padding: 28px;
+      background: var(--bg-light);
+      border-radius: 12px;
+      border-left: 4px solid var(--brand-orange);
+    }
+
+    .faq-item h3 {
+      font-size: 20px;
+      margin: 0 0 16px 0;
+      color: var(--brand-orange);
+    }
+    @media (min-width: 768px) {
+      .faq-item h3 {
+        font-size: 23px;
+      }
+    }
+
+    .faq-item p {
+      margin-bottom: 0;
+    }
+
+    /* FOOTER WRAPPER - Black background */
+    .footer-wrapper {
+      background: #191919;
+      padding: 0 12px 12px;
+      margin-top: 80px;
+    }
+
+    /* FOOTER - Orange with asymmetric rounded shape like Shopify */
+    footer {
+      background: var(--brand-orange);
+      color: var(--white);
+      padding: 45px 40px 20px;
+      border-radius: 200px 16px 16px 200px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 144px;
+    }
+    @media (min-width: 768px) {
+      footer {
+        padding: 63px 60px 24px;
+        min-height: 207px;
+        border-radius: 300px 16px 16px 300px;
+      }
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      flex: 1;
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 24px;
+      flex: 1;
+    }
+    @media (min-width: 768px) {
+      .footer-right {
+        gap: 32px;
+      }
+    }
+
+    .footer-right-text {
+      text-align: right;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-top: 128px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .footer-logo {
+        height: 160px;
+        margin-top: 160px;
+        margin-bottom: 0;
+      }
+    }
+
+    footer p {
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    footer a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Can Dogs Take Human Supplements? Safety Risks & Vet-Approved Alternatives",
+    "description": "Some human supplements are dangerous for dogs (xylitol, iron, vitamin D). Others might be okay with proper dosing. Learn what's safe, what's toxic, and why dog-specific formulations work better.",
+    "author": {
+      "@type": "Organization",
+      "name": "Watts Pet"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Watts Pet",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://wattspet.com/logo.png"
+      }
+    },
+    "datePublished": "2026-01-22",
+    "dateModified": "2026-01-22"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://wattspet.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://wattspet.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Can Dogs Take Human Supplements",
+        "item": "https://wattspet.com/blog/can-dogs-take-human-supplements.html"
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can I give my dog human supplements?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sometimes, but with extreme caution. Some human supplements are dangerous for dogs (xylitol-containing products, high-dose iron, excessive vitamin D). Others might be safe with proper weight-adjusted dosing (plain fish oil, vitamin E, CoQ10). However, dog-specific supplements are generally safer because they: (1) Avoid toxic ingredients like xylitol, (2) Use nutrient forms optimized for canine metabolism, (3) Provide appropriate doses for dog body weight, (4) Don't contain unnecessary additives. Never give human supplements without checking ingredients and consulting your vet first."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What human supplements are toxic to dogs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dangerous human supplements for dogs include: Xylitol-containing products (causes life-threatening hypoglycemia and liver failure), High-dose iron supplements (causes iron toxicity—vomiting, bloody diarrhea, organ damage), Excessive vitamin D (hypercalcemia, kidney failure—dog doses are 1/10th human doses), Prenatal vitamins (too much iron and folic acid), Garcinia cambogia and weight loss supplements (can cause liver damage), High-dose vitamin A (causes bone problems and liver toxicity), Medications with pain relievers (ibuprofen, acetaminophen—extremely toxic to dogs). Always check labels for xylitol, which appears in many sugar-free vitamins, gummies, and dissolvable tablets."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can dogs take human fish oil?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, plain human fish oil is generally safe for dogs if it contains no xylitol or additives. However, dose by EPA+DHA content (20-55 mg per pound of body weight daily), not by capsule count. Check that the product: (1) Contains no xylitol, vitamin D, or other additives, (2) Provides pure EPA+DHA from fish oil (not flaxseed or plant sources), (3) Is molecularly distilled to remove heavy metals, (4) Has not oxidized (check expiration date, smell—should be mild, not fishy). Dog-specific fish oils often have better quality control and appropriate dosing per pump or capsule. Refrigerate after opening to prevent oxidation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I calculate human supplement dosage for my dog?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use weight-based dosing, but this is NOT a simple linear calculation. General approximation: Divide the human dose by 7 (for a 20 lb dog) to 2 (for a 150 lb dog). Example: Human vitamin E dose = 400 IU. For a 50 lb dog: approximately 400 ÷ 4 = 100 IU. However, this method is risky because: (1) Dogs metabolize nutrients differently than humans, (2) Some nutrients (like vitamin D) require much lower doses in dogs, (3) Toxic thresholds vary by species. Safer approach: Look up dog-specific recommended doses for the nutrient, not human doses adjusted by weight. For most supplements, choose dog-formulated versions with research-backed dosing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can dogs take human probiotics?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Usually yes, if the product contains no xylitol and uses beneficial strains like Lactobacillus and Bifidobacterium species. Many probiotic strains work in both humans and dogs. However, check for: (1) Xylitol (common in gummies and chewables—deadly for dogs), (2) High doses (reduce to match dog's weight), (3) Strains not researched in dogs (less likely to be effective). Better alternatives: Plain kefir, goat's milk yogurt, or dog-specific multi-strain probiotics. These provide diverse beneficial bacteria without risk of toxic additives. Learn more: Best Probiotics for Dogs: Vet-Approved Strains, Prebiotics & Postbiotics."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why are dog supplements better than human supplements?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dog-specific supplements are formulated for canine metabolism and physiology: (1) Correct nutrient forms: Dogs need pre-formed vitamin A (retinol) from animal sources, not plant beta-carotene. Dogs can't convert ALA omega-3s to EPA/DHA efficiently—they need fish-based omega-3s. (2) Appropriate doses: Vitamin D for dogs is 1/10th the human dose per pound. B-vitamin requirements differ significantly. (3) No toxic ingredients: Dog supplements avoid xylitol, excess iron, and other dangerous additives. (4) Better absorption: Nutrients in forms dogs can utilize (natural folate vs synthetic folic acid). (5) Safety testing: Dog supplements undergo safety testing for canine toxicity thresholds. Learn more: Dog Nutrition vs Human Nutrition: Why Dogs Absorb Nutrients Differently."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if my dog accidentally ate human vitamins?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Call your vet or Pet Poison Helpline (855-764-7661) immediately. Provide: (1) Product name and ingredient list, (2) Number of pills/dose consumed, (3) Dog's weight, (4) Time since ingestion. Most dangerous ingredients: Xylitol (emergency—causes hypoglycemia within 30 minutes), Iron (causes vomiting, bloody diarrhea, organ damage), Vitamin D (high doses cause kidney failure over days), Vitamin A (causes bone issues with chronic overdose). If ingestion just occurred (within 2 hours), your vet may induce vomiting. Do NOT induce vomiting at home without veterinary guidance—some substances cause more damage coming back up."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are gummy vitamins safe for dogs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Most gummy vitamins contain xylitol as a sweetener, which is extremely toxic to dogs—causing life-threatening hypoglycemia and liver failure within hours. Even gummies without xylitol often contain: (1) High sugar content (blood sugar spikes, digestive upset), (2) Artificial colors and flavors, (3) Doses inappropriate for dogs. Gummy texture also poses choking risk for some dogs. Never give human gummy vitamins to dogs. If your dog needs supplements, choose: Plain capsules or tablets (check for xylitol-free), Powders mixed into food, Dog-specific soft chews formulated without xylitol, Whole-food sources (beef liver for vitamins, fish oil for omega-3s)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can dogs take human vitamin D supplements?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Extremely dangerous without veterinary guidance. Dogs require far less vitamin D than humans relative to body weight—approximately 1/10th the dose. Human vitamin D supplements typically contain 1,000-5,000 IU per capsule. A 50 lb dog needs only 500-800 IU per day total from all sources (food + supplements). Overdose causes hypercalcemia (excess blood calcium), leading to kidney failure, vomiting, excessive thirst, and death if untreated. If your dog needs vitamin D supplementation, use: Dog-specific vitamin D products, Whole-food sources (fatty fish, beef liver, egg yolks), Veterinary-prescribed doses if deficiency confirmed by blood test. Learn more: Do Dogs Get Vitamin D From the Sun?"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's a safer alternative to human supplements for dogs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Whole-food nutrition provides the safest, most bioavailable nutrients without risk of toxicity or incorrect dosing: (1) Beef liver: Vitamin A, B-complex, iron, zinc, choline—1 oz daily for 50 lb dog. (2) Wild-caught fish: Omega-3s (EPA/DHA), vitamin D, selenium—2-3 servings weekly. (3) Eggs: Complete protein, choline, biotin, selenium—2-3 daily for 50 lb dog. (4) Plain kefir or yogurt: Probiotics, calcium, B vitamins—1-2 tablespoons daily. (5) Pumpkin and sweet potato: Fiber, vitamins, prebiotics. If supplements are needed, choose dog-specific formulas with: Research-backed strains or nutrients, Appropriate doses for dogs, No fillers, artificial colors, or toxic additives, Whole-food ingredients (freeze-dried organ meats, not synthetic isolates)."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
+
 <body>
-
-<nav class="nav">
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/blog/" class="active">Blog</a></li>
-        <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
-    </ul>
-</nav>
-
-<article>
-    <div class="article-header">
-        <h1>Can Dogs Take Human Supplements? Safety Risks & Vet-Approved Alternatives</h1>
-
-        <div class="callout" style="margin-top: 32px; margin-bottom: 40px;">
-            <h2 style="margin-top: 0; font-size: 20px; margin-bottom: 16px;">⚠️ Quick Answer: Can I Give My Dog Human Supplements?</h2>
-            <p style="margin-bottom: 16px; font-size: 18px; font-weight: 600; color: var(--fg);"><strong>Some are safe with proper dosing. Many are dangerous.</strong> Human supplements may contain xylitol (deadly), excessive vitamin D, or high iron—all toxic to dogs.</p>
-            <p style="margin-bottom: 12px; font-size: 15px;"><strong>Most dangerous:</strong> Xylitol-containing products, iron supplements, high-dose vitamin D, prenatal vitamins, weight loss supplements</p>
-            <p style="margin-bottom: 12px; font-size: 15px;"><strong>Possibly okay (with caution):</strong> Plain fish oil (no additives), vitamin E, CoQ10—dose by weight and check for xylitol</p>
-            <p style="margin-bottom: 0; font-size: 15px;"><strong>Better approach:</strong> Use dog-specific supplements formulated for canine metabolism, or provide nutrients through whole foods (beef liver, fish, eggs) that are safe and bioavailable.</p>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
         </div>
+      </div>
+    </header>
+  </div>
 
-        <p class="article-intro">It's tempting to share your own supplements with your dog—it's convenient, potentially cheaper, and you might assume "what's good for me is good for my dog." But dogs and humans metabolize nutrients very differently. Some human supplements contain ingredients that are outright toxic to dogs (like xylitol), while others provide doses far too high for canine physiology. This guide explains which human supplements are dangerous, which might be safe with adjustments, why dog-specific formulations work better, and how to provide nutrients safely through whole foods or properly formulated supplements.</p>
+  <main>
+    <article>
+    <div class="article-header">
+      <div class="article-meta">January 22, 2026</div>
+      <h1>Can Dogs Take Human Supplements? Safety Risks & Vet-Approved Alternatives</h1>
+
+      <div class="quick-facts">
+        <div class="quick-facts-content">
+          <h3>Quick Answer: Can I Give My Dog Human Supplements?</h3>
+          <p style="margin-bottom: 16px; font-size: 18px; font-weight: 600; color: var(--text-dark);"><strong>Some are safe with proper dosing. Many are dangerous.</strong> Human supplements may contain xylitol (deadly), excessive vitamin D, or high iron—all toxic to dogs.</p>
+          <p style="margin-bottom: 12px; font-size: 15px;"><strong>Most dangerous:</strong> Xylitol-containing products, iron supplements, high-dose vitamin D, prenatal vitamins, weight loss supplements</p>
+          <p style="margin-bottom: 12px; font-size: 15px;"><strong>Possibly okay (with caution):</strong> Plain fish oil (no additives), vitamin E, CoQ10—dose by weight and check for xylitol</p>
+          <p style="margin-bottom: 0; font-size: 15px;"><strong>Better approach:</strong> Use dog-specific supplements formulated for canine metabolism, or provide nutrients through whole foods (beef liver, fish, eggs) that are safe and bioavailable.</p>
+        </div>
+      </div>
+
+      <p class="article-intro">It's tempting to share your own supplements with your dog—it's convenient, potentially cheaper, and you might assume "what's good for me is good for my dog." But dogs and humans metabolize nutrients very differently. Some human supplements contain ingredients that are outright toxic to dogs (like xylitol), while others provide doses far too high for canine physiology. This guide explains which human supplements are dangerous, which might be safe with adjustments, why dog-specific formulations work better, and how to provide nutrients safely through whole foods or properly formulated supplements.</p>
     </div>
 
     <div class="article-content">
@@ -981,165 +1204,186 @@
 </ul>
 
 <p>The few dollars saved by using human supplements aren't worth the risk of poisoning your dog. Invest in proper canine nutrition through whole foods or quality dog-specific supplements—your dog's life depends on it.</p>
-
-<div class="related-articles">
-    <h3>Related Articles:</h3>
-    <ul>
-        <li><a href="dog-vs-human-nutrition.html">Dog Nutrition vs Human Nutrition: Why Dogs Absorb Nutrients Differently</a></li>
-        <li><a href="whole-food-vs-synthetic-nutrients.html">Whole Food vs Synthetic Vitamins: Bioavailability Explained</a></li>
-        <li><a href="beef-liver-for-dogs.html">Why Beef Liver is One of the Best Things You Can Feed Your Dog</a></li>
-        <li><a href="vitamin-d-for-dogs.html">Do Dogs Get Vitamin D From the Sun? The Surprising Answer</a></li>
-        <li><a href="probiotics-for-dogs.html">Best Probiotics for Dogs: Vet-Approved Strains, Prebiotics & Postbiotics</a></li>
-        <li><a href="how-to-read-dog-supplement-labels.html">How to Read Dog Supplement Labels Like a Vet</a></li>
-    </ul>
-</div>
-
-<div class="faq">
-    <h2>Frequently Asked Questions</h2>
-
-    <div class="faq-item">
-        <div class="faq-question">Can I give my dog human supplements?</div>
-        <div class="faq-answer">
-            <p>Sometimes, but with extreme caution. Some human supplements are dangerous for dogs (xylitol-containing products, high-dose iron, excessive vitamin D). Others might be safe with proper weight-adjusted dosing (plain fish oil, vitamin E, CoQ10).</p>
-            <p>However, dog-specific supplements are generally safer because they: (1) Avoid toxic ingredients like xylitol, (2) Use nutrient forms optimized for canine metabolism, (3) Provide appropriate doses for dog body weight, (4) Don't contain unnecessary additives.</p>
-            <p><strong>Never give human supplements without checking ingredients and consulting your vet first.</strong></p>
-        </div>
     </div>
 
-    <div class="faq-item">
-        <div class="faq-question">What human supplements are toxic to dogs?</div>
-        <div class="faq-answer">
-            <p>Dangerous human supplements for dogs include:</p>
-            <ul>
-                <li><strong>Xylitol-containing products</strong> (causes life-threatening hypoglycemia and liver failure)</li>
-                <li><strong>High-dose iron supplements</strong> (causes iron toxicity—vomiting, bloody diarrhea, organ damage)</li>
-                <li><strong>Excessive vitamin D</strong> (hypercalcemia, kidney failure—dog doses are 1/10th human doses)</li>
-                <li><strong>Prenatal vitamins</strong> (too much iron and folic acid)</li>
-                <li><strong>Garcinia cambogia and weight loss supplements</strong> (can cause liver damage)</li>
-                <li><strong>High-dose vitamin A</strong> (causes bone problems and liver toxicity)</li>
-                <li><strong>Medications with pain relievers</strong> (ibuprofen, acetaminophen—extremely toxic to dogs)</li>
-            </ul>
-            <p>Always check labels for xylitol, which appears in many sugar-free vitamins, gummies, and dissolvable tablets.</p>
-        </div>
+    <div class="faq-section">
+      <h2 style="margin-top: 56px; padding-top: 40px; border-top: 2px solid var(--border-light);">Related Articles</h2>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 56px;">
+        <a href="/blog/dog-vs-human-nutrition.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Dog Nutrition vs Human Nutrition: Why Dogs Absorb Nutrients Differently</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Understanding metabolic differences and why supplements need to be species-specific</p>
+        </a>
+
+        <a href="/blog/whole-food-vs-synthetic-nutrients.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Whole Food vs Synthetic Vitamins: Bioavailability Explained</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Why whole-food nutrients outperform synthetic isolates</p>
+        </a>
+
+        <a href="/blog/beef-liver-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Why Beef Liver is One of the Best Things You Can Feed Your Dog</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">The most nutrient-dense whole-food alternative to synthetic supplements</p>
+        </a>
+
+        <a href="/blog/vitamin-d-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Do Dogs Get Vitamin D From the Sun? The Surprising Answer</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Why dogs can't synthesize vitamin D like humans and dosing guidelines</p>
+        </a>
+
+        <a href="/blog/probiotics-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Best Probiotics for Dogs: Vet-Approved Strains, Prebiotics & Postbiotics</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Dog-specific probiotic strains and whole-food alternatives</p>
+        </a>
+
+        <a href="/blog/how-to-read-dog-supplement-labels.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">How to Read Dog Supplement Labels Like a Vet</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Understanding ingredient quality and sourcing transparency</p>
+        </a>
+      </div>
+
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <h3>Can I give my dog human supplements?</h3>
+        <p>Sometimes, but with extreme caution. Some human supplements are dangerous for dogs (xylitol-containing products, high-dose iron, excessive vitamin D). Others might be safe with proper weight-adjusted dosing (plain fish oil, vitamin E, CoQ10).</p>
+        <p>However, dog-specific supplements are generally safer because they: (1) Avoid toxic ingredients like xylitol, (2) Use nutrient forms optimized for canine metabolism, (3) Provide appropriate doses for dog body weight, (4) Don't contain unnecessary additives.</p>
+        <p><strong>Never give human supplements without checking ingredients and consulting your vet first.</strong></p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What human supplements are toxic to dogs?</h3>
+        <p>Dangerous human supplements for dogs include:</p>
+        <ul>
+            <li><strong>Xylitol-containing products</strong> (causes life-threatening hypoglycemia and liver failure)</li>
+            <li><strong>High-dose iron supplements</strong> (causes iron toxicity—vomiting, bloody diarrhea, organ damage)</li>
+            <li><strong>Excessive vitamin D</strong> (hypercalcemia, kidney failure—dog doses are 1/10th human doses)</li>
+            <li><strong>Prenatal vitamins</strong> (too much iron and folic acid)</li>
+            <li><strong>Garcinia cambogia and weight loss supplements</strong> (can cause liver damage)</li>
+            <li><strong>High-dose vitamin A</strong> (causes bone problems and liver toxicity)</li>
+            <li><strong>Medications with pain relievers</strong> (ibuprofen, acetaminophen—extremely toxic to dogs)</li>
+        </ul>
+        <p>Always check labels for xylitol, which appears in many sugar-free vitamins, gummies, and dissolvable tablets.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can dogs take human fish oil?</h3>
+        <p>Yes, plain human fish oil is generally safe for dogs if it contains no xylitol or additives. However, dose by EPA+DHA content (20-55 mg per pound of body weight daily), not by capsule count.</p>
+        <p><strong>Check that the product:</strong></p>
+        <ol>
+            <li>Contains no xylitol, vitamin D, or other additives</li>
+            <li>Provides pure EPA+DHA from fish oil (not flaxseed or plant sources)</li>
+            <li>Is molecularly distilled to remove heavy metals</li>
+            <li>Has not oxidized (check expiration date, smell—should be mild, not fishy)</li>
+        </ol>
+        <p>Dog-specific fish oils often have better quality control and appropriate dosing per pump or capsule. Refrigerate after opening to prevent oxidation.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I calculate human supplement dosage for my dog?</h3>
+        <p>Use weight-based dosing, but this is NOT a simple linear calculation. General approximation: Divide the human dose by 7 (for a 20 lb dog) to 2 (for a 150 lb dog).</p>
+        <p><strong>Example:</strong> Human vitamin E dose = 400 IU. For a 50 lb dog: approximately 400 ÷ 4 = 100 IU.</p>
+        <p><strong>However, this method is risky because:</strong></p>
+        <ul>
+            <li>Dogs metabolize nutrients differently than humans</li>
+            <li>Some nutrients (like vitamin D) require much lower doses in dogs</li>
+            <li>Toxic thresholds vary by species</li>
+        </ul>
+        <p><strong>Safer approach:</strong> Look up dog-specific recommended doses for the nutrient, not human doses adjusted by weight. For most supplements, choose dog-formulated versions with research-backed dosing.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can dogs take human probiotics?</h3>
+        <p>Usually yes, if the product contains no xylitol and uses beneficial strains like Lactobacillus and Bifidobacterium species. Many probiotic strains work in both humans and dogs.</p>
+        <p><strong>However, check for:</strong></p>
+        <ul>
+            <li>Xylitol (common in gummies and chewables—deadly for dogs)</li>
+            <li>High doses (reduce to match dog's weight)</li>
+            <li>Strains not researched in dogs (less likely to be effective)</li>
+        </ul>
+        <p><strong>Better alternatives:</strong> Plain kefir, goat's milk yogurt, or dog-specific multi-strain probiotics. These provide diverse beneficial bacteria without risk of toxic additives.</p>
+        <p>Learn more: <a href="probiotics-for-dogs.html">Best Probiotics for Dogs: Vet-Approved Strains, Prebiotics & Postbiotics</a></p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Why are dog supplements better than human supplements?</h3>
+        <p>Dog-specific supplements are formulated for canine metabolism and physiology:</p>
+        <ol>
+            <li><strong>Correct nutrient forms:</strong> Dogs need pre-formed vitamin A (retinol) from animal sources, not plant beta-carotene. Dogs can't convert ALA omega-3s to EPA/DHA efficiently—they need fish-based omega-3s.</li>
+            <li><strong>Appropriate doses:</strong> Vitamin D for dogs is 1/10th the human dose per pound. B-vitamin requirements differ significantly.</li>
+            <li><strong>No toxic ingredients:</strong> Dog supplements avoid xylitol, excess iron, and other dangerous additives.</li>
+            <li><strong>Better absorption:</strong> Nutrients in forms dogs can utilize (natural folate vs synthetic folic acid).</li>
+            <li><strong>Safety testing:</strong> Dog supplements undergo safety testing for canine toxicity thresholds.</li>
+        </ol>
+        <p>Learn more: <a href="dog-vs-human-nutrition.html">Dog Nutrition vs Human Nutrition: Why Dogs Absorb Nutrients Differently</a></p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What if my dog accidentally ate human vitamins?</h3>
+        <p><strong>Call your vet or Pet Poison Helpline (855-764-7661) immediately.</strong> Provide: (1) Product name and ingredient list, (2) Number of pills/dose consumed, (3) Dog's weight, (4) Time since ingestion.</p>
+        <p><strong>Most dangerous ingredients:</strong></p>
+        <ul>
+            <li><strong>Xylitol</strong> (emergency—causes hypoglycemia within 30 minutes)</li>
+            <li><strong>Iron</strong> (causes vomiting, bloody diarrhea, organ damage)</li>
+            <li><strong>Vitamin D</strong> (high doses cause kidney failure over days)</li>
+            <li><strong>Vitamin A</strong> (causes bone issues with chronic overdose)</li>
+        </ul>
+        <p>If ingestion just occurred (within 2 hours), your vet may induce vomiting. Do NOT induce vomiting at home without veterinary guidance—some substances cause more damage coming back up.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Are gummy vitamins safe for dogs?</h3>
+        <p>No. Most gummy vitamins contain xylitol as a sweetener, which is extremely toxic to dogs—causing life-threatening hypoglycemia and liver failure within hours.</p>
+        <p>Even gummies without xylitol often contain: (1) High sugar content (blood sugar spikes, digestive upset), (2) Artificial colors and flavors, (3) Doses inappropriate for dogs. Gummy texture also poses choking risk for some dogs.</p>
+        <p><strong>Never give human gummy vitamins to dogs.</strong> If your dog needs supplements, choose: Plain capsules or tablets (check for xylitol-free), Powders mixed into food, Dog-specific soft chews formulated without xylitol, Whole-food sources (beef liver for vitamins, fish oil for omega-3s).</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can dogs take human vitamin D supplements?</h3>
+        <p><strong>Extremely dangerous without veterinary guidance.</strong> Dogs require far less vitamin D than humans relative to body weight—approximately 1/10th the dose.</p>
+        <p>Human vitamin D supplements typically contain 1,000-5,000 IU per capsule. A 50 lb dog needs only 500-800 IU per day total from all sources (food + supplements). Overdose causes hypercalcemia (excess blood calcium), leading to kidney failure, vomiting, excessive thirst, and death if untreated.</p>
+        <p><strong>If your dog needs vitamin D supplementation, use:</strong></p>
+        <ul>
+            <li>Dog-specific vitamin D products</li>
+            <li>Whole-food sources (fatty fish, beef liver, egg yolks)</li>
+            <li>Veterinary-prescribed doses if deficiency confirmed by blood test</li>
+        </ul>
+        <p>Learn more: <a href="vitamin-d-for-dogs.html">Do Dogs Get Vitamin D From the Sun?</a></p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What's a safer alternative to human supplements for dogs?</h3>
+        <p>Whole-food nutrition provides the safest, most bioavailable nutrients without risk of toxicity or incorrect dosing:</p>
+        <ol>
+            <li><strong>Beef liver:</strong> Vitamin A, B-complex, iron, zinc, choline—1 oz daily for 50 lb dog</li>
+            <li><strong>Wild-caught fish:</strong> Omega-3s (EPA/DHA), vitamin D, selenium—2-3 servings weekly</li>
+            <li><strong>Eggs:</strong> Complete protein, choline, biotin, selenium—2-3 daily for 50 lb dog</li>
+            <li><strong>Plain kefir or yogurt:</strong> Probiotics, calcium, B vitamins—1-2 tablespoons daily</li>
+            <li><strong>Pumpkin and sweet potato:</strong> Fiber, vitamins, prebiotics</li>
+        </ol>
+        <p><strong>If supplements are needed, choose dog-specific formulas with:</strong> Research-backed strains or nutrients, Appropriate doses for dogs, No fillers, artificial colors, or toxic additives, Whole-food ingredients (freeze-dried organ meats, not synthetic isolates).</p>
+      </div>
     </div>
+    </article>
+  </main>
 
-    <div class="faq-item">
-        <div class="faq-question">Can dogs take human fish oil?</div>
-        <div class="faq-answer">
-            <p>Yes, plain human fish oil is generally safe for dogs if it contains no xylitol or additives. However, dose by EPA+DHA content (20-55 mg per pound of body weight daily), not by capsule count.</p>
-            <p><strong>Check that the product:</strong></p>
-            <ol>
-                <li>Contains no xylitol, vitamin D, or other additives</li>
-                <li>Provides pure EPA+DHA from fish oil (not flaxseed or plant sources)</li>
-                <li>Is molecularly distilled to remove heavy metals</li>
-                <li>Has not oxidized (check expiration date, smell—should be mild, not fishy)</li>
-            </ol>
-            <p>Dog-specific fish oils often have better quality control and appropriate dosing per pump or capsule. Refrigerate after opening to prevent oxidation.</p>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
         </div>
-    </div>
-
-    <div class="faq-item">
-        <div class="faq-question">How do I calculate human supplement dosage for my dog?</div>
-        <div class="faq-answer">
-            <p>Use weight-based dosing, but this is NOT a simple linear calculation. General approximation: Divide the human dose by 7 (for a 20 lb dog) to 2 (for a 150 lb dog).</p>
-            <p><strong>Example:</strong> Human vitamin E dose = 400 IU. For a 50 lb dog: approximately 400 ÷ 4 = 100 IU.</p>
-            <p><strong>However, this method is risky because:</strong></p>
-            <ul>
-                <li>Dogs metabolize nutrients differently than humans</li>
-                <li>Some nutrients (like vitamin D) require much lower doses in dogs</li>
-                <li>Toxic thresholds vary by species</li>
-            </ul>
-            <p><strong>Safer approach:</strong> Look up dog-specific recommended doses for the nutrient, not human doses adjusted by weight. For most supplements, choose dog-formulated versions with research-backed dosing.</p>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
         </div>
-    </div>
+      </div>
+    </footer>
+  </div>
 
-    <div class="faq-item">
-        <div class="faq-question">Can dogs take human probiotics?</div>
-        <div class="faq-answer">
-            <p>Usually yes, if the product contains no xylitol and uses beneficial strains like Lactobacillus and Bifidobacterium species. Many probiotic strains work in both humans and dogs.</p>
-            <p><strong>However, check for:</strong></p>
-            <ul>
-                <li>Xylitol (common in gummies and chewables—deadly for dogs)</li>
-                <li>High doses (reduce to match dog's weight)</li>
-                <li>Strains not researched in dogs (less likely to be effective)</li>
-            </ul>
-            <p><strong>Better alternatives:</strong> Plain kefir, goat's milk yogurt, or dog-specific multi-strain probiotics. These provide diverse beneficial bacteria without risk of toxic additives.</p>
-            <p>Learn more: <a href="probiotics-for-dogs.html">Best Probiotics for Dogs: Vet-Approved Strains, Prebiotics & Postbiotics</a></p>
-        </div>
-    </div>
-
-    <div class="faq-item">
-        <div class="faq-question">Why are dog supplements better than human supplements?</div>
-        <div class="faq-answer">
-            <p>Dog-specific supplements are formulated for canine metabolism and physiology:</p>
-            <ol>
-                <li><strong>Correct nutrient forms:</strong> Dogs need pre-formed vitamin A (retinol) from animal sources, not plant beta-carotene. Dogs can't convert ALA omega-3s to EPA/DHA efficiently—they need fish-based omega-3s.</li>
-                <li><strong>Appropriate doses:</strong> Vitamin D for dogs is 1/10th the human dose per pound. B-vitamin requirements differ significantly.</li>
-                <li><strong>No toxic ingredients:</strong> Dog supplements avoid xylitol, excess iron, and other dangerous additives.</li>
-                <li><strong>Better absorption:</strong> Nutrients in forms dogs can utilize (natural folate vs synthetic folic acid).</li>
-                <li><strong>Safety testing:</strong> Dog supplements undergo safety testing for canine toxicity thresholds.</li>
-            </ol>
-            <p>Learn more: <a href="dog-vs-human-nutrition.html">Dog Nutrition vs Human Nutrition: Why Dogs Absorb Nutrients Differently</a></p>
-        </div>
-    </div>
-
-    <div class="faq-item">
-        <div class="faq-question">What if my dog accidentally ate human vitamins?</div>
-        <div class="faq-answer">
-            <p><strong>Call your vet or Pet Poison Helpline (855-764-7661) immediately.</strong> Provide: (1) Product name and ingredient list, (2) Number of pills/dose consumed, (3) Dog's weight, (4) Time since ingestion.</p>
-            <p><strong>Most dangerous ingredients:</strong></p>
-            <ul>
-                <li><strong>Xylitol</strong> (emergency—causes hypoglycemia within 30 minutes)</li>
-                <li><strong>Iron</strong> (causes vomiting, bloody diarrhea, organ damage)</li>
-                <li><strong>Vitamin D</strong> (high doses cause kidney failure over days)</li>
-                <li><strong>Vitamin A</strong> (causes bone issues with chronic overdose)</li>
-            </ul>
-            <p>If ingestion just occurred (within 2 hours), your vet may induce vomiting. Do NOT induce vomiting at home without veterinary guidance—some substances cause more damage coming back up.</p>
-        </div>
-    </div>
-
-    <div class="faq-item">
-        <div class="faq-question">Are gummy vitamins safe for dogs?</div>
-        <div class="faq-answer">
-            <p>No. Most gummy vitamins contain xylitol as a sweetener, which is extremely toxic to dogs—causing life-threatening hypoglycemia and liver failure within hours.</p>
-            <p>Even gummies without xylitol often contain: (1) High sugar content (blood sugar spikes, digestive upset), (2) Artificial colors and flavors, (3) Doses inappropriate for dogs. Gummy texture also poses choking risk for some dogs.</p>
-            <p><strong>Never give human gummy vitamins to dogs.</strong> If your dog needs supplements, choose: Plain capsules or tablets (check for xylitol-free), Powders mixed into food, Dog-specific soft chews formulated without xylitol, Whole-food sources (beef liver for vitamins, fish oil for omega-3s).</p>
-        </div>
-    </div>
-
-    <div class="faq-item">
-        <div class="faq-question">Can dogs take human vitamin D supplements?</div>
-        <div class="faq-answer">
-            <p><strong>Extremely dangerous without veterinary guidance.</strong> Dogs require far less vitamin D than humans relative to body weight—approximately 1/10th the dose.</p>
-            <p>Human vitamin D supplements typically contain 1,000-5,000 IU per capsule. A 50 lb dog needs only 500-800 IU per day total from all sources (food + supplements). Overdose causes hypercalcemia (excess blood calcium), leading to kidney failure, vomiting, excessive thirst, and death if untreated.</p>
-            <p><strong>If your dog needs vitamin D supplementation, use:</strong></p>
-            <ul>
-                <li>Dog-specific vitamin D products</li>
-                <li>Whole-food sources (fatty fish, beef liver, egg yolks)</li>
-                <li>Veterinary-prescribed doses if deficiency confirmed by blood test</li>
-            </ul>
-            <p>Learn more: <a href="vitamin-d-for-dogs.html">Do Dogs Get Vitamin D From the Sun?</a></p>
-        </div>
-    </div>
-
-    <div class="faq-item">
-        <div class="faq-question">What's a safer alternative to human supplements for dogs?</div>
-        <div class="faq-answer">
-            <p>Whole-food nutrition provides the safest, most bioavailable nutrients without risk of toxicity or incorrect dosing:</p>
-            <ol>
-                <li><strong>Beef liver:</strong> Vitamin A, B-complex, iron, zinc, choline—1 oz daily for 50 lb dog</li>
-                <li><strong>Wild-caught fish:</strong> Omega-3s (EPA/DHA), vitamin D, selenium—2-3 servings weekly</li>
-                <li><strong>Eggs:</strong> Complete protein, choline, biotin, selenium—2-3 daily for 50 lb dog</li>
-                <li><strong>Plain kefir or yogurt:</strong> Probiotics, calcium, B vitamins—1-2 tablespoons daily</li>
-                <li><strong>Pumpkin and sweet potato:</strong> Fiber, vitamins, prebiotics</li>
-            </ol>
-            <p><strong>If supplements are needed, choose dog-specific formulas with:</strong> Research-backed strains or nutrients, Appropriate doses for dogs, No fillers, artificial colors, or toxic additives, Whole-food ingredients (freeze-dried organ meats, not synthetic isolates).</p>
-        </div>
-    </div>
-
-</div>
-
-</article>
-
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

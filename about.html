@@ -19,10 +19,10 @@
   <meta property="og:image" content="https://wattspet.com/assets/hero.jpg">
 
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="About Watts — Real nutrition for a longer, better life">
-  <meta name="twitter:description" content="Learn about Watts and our mission to extend dog healthspan through real food nutrition. Premium dog supplement made from grass-fed beef and organs.">
-  <meta name="twitter:image" content="https://wattspet.com/assets/hero.jpg">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="About Watts — Real nutrition for a longer, better life">
+  <meta property="twitter:description" content="Learn about Watts and our mission to extend dog healthspan through real food nutrition. Premium dog supplement made from grass-fed beef and organs.">
+  <meta property="twitter:image" content="https://wattspet.com/assets/hero.jpg">
 
   <!-- Ahrefs Analytics -->
   <script src="https://analytics.ahrefs.com/analytics.js" data-key="22KmtuYXO77ED5o6fe6z1w" async></script>
@@ -36,125 +36,181 @@
     gtag('config', 'G-C6KV5WBGK5');
   </script>
 
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
-
+  <!-- Degular Font -->
   <style>
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
     :root {
-      --bg: #F1ECE9;
-      --fg: #191919;
-      --muted: #3a3a3a;
-      --border: #191919;
+      --brand-orange: #c03800;
+      --bg-light: #f1f1f1;
+      --text-dark: #191919;
+      --white: #ffffff;
+      --text-muted: #666666;
+      --border-light: rgba(25, 25, 25, 0.1);
+      --accent-navy: #1e3a5f;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
-    html, body { height: 100%; }
+    html, body { min-height: 100%; }
     body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      font-weight: 400;
+      background: #191919;
+      color: var(--text-dark);
+      font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
       line-height: 1.6;
-      overflow-x: hidden;
     }
 
-    /* Navigation */
-    nav.nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px 20px;
-      border-bottom: 2.5px solid var(--border);
+    /* HEADER */
+    .header-wrapper {
+      background: #191919;
+      padding: 12px 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
-    @media (min-width: 768px) {
-      nav.nav {
-        padding: 24px 20px;
-      }
+
+    header {
+      background: var(--brand-orange);
+      padding: 7px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     }
-    nav.nav ul {
-      list-style: none;
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
-      gap: 24px;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-height: 40px;
+    }
+
+    nav {
+      order: -1;
+      display: flex;
       align-items: center;
     }
-    @media (min-width: 768px) {
-      nav.nav ul {
-        gap: 32px;
-      }
-    }
-    nav.nav a {
-      color: var(--fg);
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 500;
-      transition: opacity 0.15s;
-      position: relative;
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
     }
     @media (min-width: 768px) {
-      nav.nav a {
-        font-size: 16px;
-      }
-    }
-    nav.nav a:hover {
-      opacity: 0.7;
-    }
-    nav.nav a.active::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: var(--fg);
+      nav ul { gap: 24px; }
     }
 
-    /* Main content */
+    nav li {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
+    }
+    @media (min-width: 768px) {
+      nav a { font-size: 15px; }
+    }
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo {
+      height: 32px;
+    }
+    @media (min-width: 768px) {
+      .logo { height: 40px; }
+    }
+
+    /* MAIN CONTENT */
     main {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px 60px;
+      background: var(--bg-light);
+      max-width: 900px;
+      margin: 20px auto 0;
+      padding: 40px 24px;
     }
     @media (min-width: 768px) {
       main {
-        padding: 60px 40px 80px;
+        padding: 60px 50px 80px;
       }
     }
 
     /* Typography */
     h1 {
-      font-family: "Geologica", sans-serif;
-      font-size: 28px;
+      font-size: 32px;
       font-weight: 700;
       line-height: 1.2;
       margin-bottom: 16px;
       letter-spacing: -0.02em;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       h1 {
-        font-size: 36px;
+        font-size: 48px;
         margin-bottom: 20px;
       }
     }
 
     h2 {
-      font-family: "Geologica", sans-serif;
-      font-size: 20px;
+      font-size: 14px;
       font-weight: 700;
       line-height: 1.3;
-      margin: 48px 0 16px;
-      letter-spacing: -0.01em;
-      text-transform: uppercase;
-      font-size: 14px;
+      margin: 56px 0 16px;
       letter-spacing: 0.05em;
-      color: var(--muted);
+      text-transform: uppercase;
+      color: var(--text-muted);
     }
     @media (min-width: 768px) {
       h2 {
         font-size: 15px;
-        margin: 56px 0 20px;
+        margin: 64px 0 20px;
       }
     }
 
@@ -162,16 +218,32 @@
       margin-top: 0;
     }
 
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 24px 0 16px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h3 {
+        font-size: 19px;
+      }
+    }
+
     p {
       font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
-      margin-bottom: 16px;
-      color: var(--fg);
+      margin-bottom: 20px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       p {
         font-size: 18px;
-        margin-bottom: 18px;
+        margin-bottom: 24px;
       }
     }
 
@@ -184,6 +256,7 @@
       font-weight: 500;
       line-height: 1.5;
       margin-bottom: 24px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       .lead {
@@ -194,6 +267,14 @@
 
     strong {
       font-weight: 600;
+    }
+
+    a {
+      color: var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    a:hover {
+      opacity: 0.7;
     }
 
     /* Sections */
@@ -210,13 +291,15 @@
     main ul {
       list-style: none;
       margin: 20px 0;
+      padding: 0;
     }
 
     main li {
       font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
       margin-bottom: 12px;
-      padding-left: 24px;
+      padding-left: 28px;
       position: relative;
     }
     @media (min-width: 768px) {
@@ -226,17 +309,19 @@
     }
 
     main li:before {
-      content: "•";
+      content: "→";
       position: absolute;
-      left: 8px;
+      left: 0;
       font-weight: 700;
+      color: var(--brand-orange);
     }
 
     /* Comparison table */
     .comparison {
       margin: 32px 0;
-      border: 2.5px solid var(--border);
       overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
 
     .comparison table {
@@ -248,8 +333,9 @@
     .comparison td {
       padding: 16px;
       text-align: left;
-      border-bottom: 2px solid var(--border);
+      border-bottom: 1px solid var(--border-light);
       font-size: 15px;
+      font-weight: 500;
     }
     @media (min-width: 768px) {
       .comparison th,
@@ -260,11 +346,12 @@
     }
 
     .comparison thead th {
-      background: var(--fg);
-      color: var(--bg);
+      background: var(--brand-orange);
+      color: var(--white);
       font-weight: 700;
       font-size: 16px;
       text-align: center;
+      border-bottom: none;
     }
     @media (min-width: 768px) {
       .comparison thead th {
@@ -272,12 +359,21 @@
       }
     }
 
+    .comparison tbody tr {
+      background: var(--white);
+      transition: background 0.2s ease;
+    }
+
+    .comparison tbody tr:hover {
+      background: rgba(192, 56, 0, 0.02);
+    }
+
     .comparison tbody tr:last-child td {
       border-bottom: none;
     }
 
     .comparison td:first-child {
-      font-weight: 500;
+      font-weight: 600;
       width: 35%;
     }
 
@@ -302,21 +398,24 @@
     }
 
     .ingredient-box {
-      border: 2.5px solid var(--border);
-      padding: 20px;
+      border: 3px solid var(--brand-orange);
+      background: var(--white);
+      padding: 24px;
+      border-radius: 12px;
     }
     @media (min-width: 768px) {
       .ingredient-box {
-        padding: 24px;
+        padding: 28px;
       }
     }
 
     .ingredient-box h3 {
       font-size: 16px;
       font-weight: 700;
-      margin-bottom: 16px;
+      margin: 0 0 16px 0;
       text-transform: uppercase;
       letter-spacing: 0.05em;
+      color: var(--brand-orange);
     }
 
     .ingredient-box ul {
@@ -341,13 +440,13 @@
     .cta-section {
       text-align: center;
       margin: 56px 0 0;
-      padding: 40px 0 0;
-      border-top: 2.5px solid var(--border);
+      padding: 48px 0 0;
+      border-top: 3px solid var(--border-light);
     }
     @media (min-width: 768px) {
       .cta-section {
         margin: 64px 0 0;
-        padding: 48px 0 0;
+        padding: 56px 0 0;
       }
     }
 
@@ -357,21 +456,23 @@
       width: 100%;
     }
 
-    /* CTA button */
     .gate {
       display: flex;
       align-items: stretch;
       justify-content: space-between;
       width: 100%;
       height: 52px;
-      border: 2.5px solid var(--border);
-      background: transparent;
-      color: var(--fg);
-      font: 600 16px "Geologica", sans-serif;
+      border: 3px solid var(--brand-orange);
+      background: var(--white);
+      color: var(--text-dark);
+      font-family: 'Degular', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
       padding: 0;
-      border-radius: 0;
+      border-radius: 8px;
       cursor: pointer;
       text-decoration: none;
+      transition: background 0.2s;
     }
     @media (min-width: 768px) {
       .gate {
@@ -380,65 +481,136 @@
         font-size: 17px;
       }
     }
-    .gate-text { padding: 0 20px 0 14px; text-align: left; flex: 1 1 auto; display: flex; align-items: center; }
-    @media (min-width: 768px) {
-      .gate-text { padding: 0 20px 0 16px; }
+    .gate-text {
+      padding: 0 20px 0 16px;
+      text-align: left;
+      flex: 1 1 auto;
+      display: flex;
+      align-items: center;
     }
     .gate-arrow {
       display: grid;
       place-items: center;
       width: 52px;
-      border-left: 2.5px solid var(--border);
+      border-left: 3px solid var(--brand-orange);
       font-size: 18px;
       line-height: 1;
       user-select: none;
+      color: var(--brand-orange);
+      font-weight: 700;
     }
     @media (min-width: 768px) {
       .gate-arrow {
-        width: 43px;
+        width: 48px;
         font-size: 20px;
       }
     }
-    .gate:hover { background: rgba(0,0,0,.035); }
+    .gate:hover { background: rgba(192, 56, 0, 0.05); }
 
-    /* Footer */
+    /* FOOTER */
+    .footer-wrapper {
+      background: #191919;
+      padding: 0 12px 12px;
+      margin-top: 60px;
+    }
+
     footer {
-      width: 100%;
-      padding: 32px 20px 24px;
-      text-align: center;
-      border-top: 1px solid rgba(25, 25, 25, 0.1);
+      background: var(--brand-orange);
+      color: var(--white);
+      padding: 45px 40px 20px;
+      border-radius: 200px 16px 16px 200px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 144px;
     }
     @media (min-width: 768px) {
       footer {
-        padding: 40px 20px 32px;
+        padding: 63px 60px 24px;
+        min-height: 207px;
+        border-radius: 300px 16px 16px 300px;
       }
     }
-    footer p {
-      color: var(--muted);
-      font-size: 14px;
-      font-weight: 400;
-      margin: 0;
+
+    .footer-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
     }
+
+    .footer-left {
+      flex: 1;
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 24px;
+      flex: 1;
+    }
+    @media (min-width: 768px) {
+      .footer-right {
+        gap: 32px;
+      }
+    }
+
+    .footer-right-text {
+      text-align: right;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-top: 128px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .footer-logo {
+        height: 160px;
+        margin-top: 160px;
+        margin-bottom: 0;
+      }
+    }
+
+    footer p {
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
     footer a {
-      color: var(--fg);
+      color: var(--white);
       text-decoration: none;
-      transition: opacity 0.15s;
+      font-weight: 500;
     }
     footer a:hover {
-      opacity: 0.7;
+      text-decoration: underline;
     }
   </style>
 </head>
 
 <body>
-  <nav class="nav">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about.html" class="active">About</a></li>
-      <li><a href="/blog/">Blog</a></li>
-      <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
-    </ul>
-  </nav>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+        </div>
+      </div>
+    </header>
+  </div>
 
   <main>
     <section>
@@ -557,10 +729,20 @@
     </section>
   </main>
 
-  <footer>
-    <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
-    <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet</p>
-  </footer>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left"></div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
+      </div>
+    </footer>
+  </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();

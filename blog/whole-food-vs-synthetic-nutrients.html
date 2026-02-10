@@ -32,288 +32,399 @@
   <meta property="og:site_name" content="Watts Pet">
   <meta property="og:image" content="https://wattspet.com/assets/hero.jpg">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
-
+  <!-- Degular Font -->
   <style>
-    :root {
-      --bg: #F1ECE9;
-      --fg: #191919;
-      --muted: #3a3a3a;
-      --border: #191919;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body { min-height: 100%; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Regular.woff2') format('woff2');
       font-weight: 400;
-      line-height: 1.6;
-      overflow-x: hidden;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
     }
 
-    /* Navigation */
-    nav.nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px 20px;
-      border-bottom: 2.5px solid var(--border);
+    :root {
+      --brand-orange: #c03800;
+      --bg-light: #f1f1f1;
+      --text-dark: #191919;
+      --white: #ffffff;
+      --text-muted: #666666;
+      --border-light: rgba(25, 25, 25, 0.1);
+      --accent-navy: #1e3a5f;
     }
-    @media (min-width: 768px) {
-      nav.nav {
-        padding: 24px 20px;
-      }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    nav.nav ul {
-      list-style: none;
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      background: #191919;
+      color: var(--text-dark);
+      font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* HEADER WRAPPER - Black background */
+    .header-wrapper {
+      background: #191919;
+      padding: 12px 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    /* ORANGE HEADER - Rounded like Shopify site */
+    header {
+      background: var(--brand-orange);
+      padding: 7px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
-      gap: 24px;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-height: 40px;
+    }
+
+    /* Nav on the LEFT */
+    nav {
+      order: -1;
+      display: flex;
       align-items: center;
     }
-    @media (min-width: 768px) {
-      nav.nav ul {
-        gap: 32px;
-      }
-    }
-    nav.nav a {
-      color: var(--fg);
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 500;
-      transition: opacity 0.15s;
-      position: relative;
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
     }
     @media (min-width: 768px) {
-      nav.nav a {
-        font-size: 16px;
-      }
-    }
-    nav.nav a:hover {
-      opacity: 0.7;
-    }
-    nav.nav a.active::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: var(--fg);
+      nav ul { gap: 24px; }
     }
 
-    /* Breadcrumbs */
-    .breadcrumbs {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px 20px 0;
+    nav li {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
       font-size: 14px;
-      color: var(--muted);
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
     }
     @media (min-width: 768px) {
-      .breadcrumbs {
-        padding: 24px 40px 0;
-        font-size: 15px;
-      }
+      nav a { font-size: 15px; }
     }
-    .breadcrumbs a {
-      color: var(--muted);
-      text-decoration: none;
-      transition: opacity 0.15s;
-    }
-    .breadcrumbs a:hover {
-      opacity: 0.7;
-    }
-    .breadcrumbs span {
-      margin: 0 8px;
+    nav a:hover {
+      opacity: 0.8;
     }
 
-    /* Article */
+    /* Logo CENTERED */
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo {
+      height: 32px;
+    }
+    @media (min-width: 768px) {
+      .logo { height: 40px; }
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 900px;
+      margin: 16px auto 40px;
+      padding: 0 20px;
+      background: var(--bg-light);
+    }
+    @media (min-width: 768px) {
+      main {
+        margin: 20px auto 60px;
+        padding: 0 40px;
+      }
+    }
+
     article {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 32px 20px 60px;
+      background: var(--white);
+      padding: 40px 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
       article {
-        padding: 48px 40px 80px;
+        padding: 60px 50px;
       }
     }
 
-    /* Article meta */
-    .article-meta {
-      margin-bottom: 24px;
-      font-size: 14px;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    @media (min-width: 768px) {
-      .article-meta {
-        margin-bottom: 28px;
-        font-size: 15px;
-      }
+    .article-header {
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--border-light);
     }
 
-    /* Typography */
     h1 {
-      font-family: "Geologica", sans-serif;
-      font-size: 28px;
+      font-size: 32px;
       font-weight: 700;
       line-height: 1.2;
       margin-bottom: 16px;
       letter-spacing: -0.02em;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       h1 {
-        font-size: 38px;
+        font-size: 48px;
         margin-bottom: 20px;
       }
     }
 
-    h2 {
-      font-family: "Geologica", sans-serif;
-      font-size: 22px;
-      font-weight: 700;
-      line-height: 1.3;
-      margin: 48px 0 20px;
-      letter-spacing: -0.01em;
+    .article-meta {
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      font-weight: 500;
+      line-height: 1.6;
+      color: var(--text-muted);
+      margin-bottom: 0;
     }
     @media (min-width: 768px) {
-      h2 {
-        font-size: 26px;
-        margin: 56px 0 24px;
+      .article-intro {
+        font-size: 21px;
       }
     }
 
-    h2:first-of-type {
-      margin-top: 32px;
+    .article-intro a {
+      color: var(--accent-navy);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    .article-intro a:hover {
+      opacity: 0.7;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 56px 0 24px;
+      letter-spacing: -0.01em;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h2 {
+        font-size: 36px;
+        margin: 64px 0 28px;
+      }
     }
 
     h3 {
-      font-family: "Geologica", sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 1.4;
-      margin: 32px 0 16px;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 40px 0 16px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       h3 {
-        font-size: 20px;
-        margin: 40px 0 18px;
+        font-size: 28px;
+        margin: 48px 0 20px;
       }
     }
 
     p {
       font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
-      margin-bottom: 16px;
-      color: var(--fg);
+      margin-bottom: 20px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       p {
         font-size: 18px;
-        margin-bottom: 18px;
-        line-height: 1.75;
+        margin-bottom: 24px;
       }
-    }
-
-    p:last-child {
-      margin-bottom: 0;
     }
 
     strong {
       font-weight: 600;
     }
 
-    /* Lists */
-    article ul, article ol {
-      margin: 20px 0;
-      padding-left: 0;
-      list-style: none;
+    a {
+      color: var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    a:hover {
+      opacity: 0.7;
     }
 
-    article li {
-      font-size: 17px;
-      line-height: 1.7;
-      margin-bottom: 16px;
+    ul, ol {
+      margin: 24px 0;
       padding-left: 28px;
-      position: relative;
+    }
+
+    li {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.7;
+      margin-bottom: 12px;
     }
     @media (min-width: 768px) {
-      article li {
+      li {
         font-size: 18px;
-        margin-bottom: 18px;
       }
     }
 
-    article ul li:before {
-      content: "•";
-      position: absolute;
-      left: 10px;
+    /* LIGHT CALLOUT BOX */
+    .callout {
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin: 32px 0;
+    }
+    @media (min-width: 768px) {
+      .callout {
+        padding: 28px 32px;
+      }
+    }
+
+    .callout p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* TABLE */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 32px 0;
+      font-size: 16px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    @media (min-width: 768px) {
+      table {
+        font-size: 17px;
+      }
+    }
+
+    thead {
+      background: var(--brand-orange);
+      color: var(--white);
       font-weight: 700;
     }
 
-    /* FAQ Section */
-    .faq-section {
-      margin-top: 56px;
-      padding-top: 40px;
-      border-top: 2.5px solid var(--border);
+    th, td {
+      text-align: left;
+      padding: 16px;
+      border-bottom: 1px solid var(--border-light);
     }
     @media (min-width: 768px) {
-      .faq-section {
-        margin-top: 64px;
-        padding-top: 48px;
+      th, td {
+        padding: 18px 20px;
       }
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    tbody tr {
+      background: var(--white);
+      transition: background 0.2s ease;
+    }
+
+    tbody tr:hover {
+      background: rgba(192, 56, 0, 0.02);
+    }
+
+    /* FAQ SECTION */
+    .faq-section {
+      margin-top: 64px;
+      padding-top: 56px;
+      border-top: 3px solid var(--border-light);
     }
 
     .faq-item {
       margin-bottom: 32px;
+      padding: 28px;
+      background: var(--bg-light);
+      border-radius: 12px;
+      border-left: 4px solid var(--brand-orange);
+    }
+
+    .faq-item h3 {
+      font-size: 20px;
+      margin: 0 0 16px 0;
+      color: var(--brand-orange);
     }
     @media (min-width: 768px) {
-      .faq-item {
-        margin-bottom: 40px;
+      .faq-item h3 {
+        font-size: 23px;
       }
     }
 
-    .faq-item:last-child {
+    .faq-item p {
       margin-bottom: 0;
     }
 
-    .faq-question {
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 12px;
-      line-height: 1.4;
-    }
-    @media (min-width: 768px) {
-      .faq-question {
-        font-size: 20px;
-        margin-bottom: 14px;
-      }
-    }
-
-    .faq-answer {
-      font-size: 17px;
-      line-height: 1.7;
-      color: var(--fg);
-    }
-    @media (min-width: 768px) {
-      .faq-answer {
-        font-size: 18px;
-      }
-    }
-
-    /* CTA */
+    /* CTA Section */
     .cta-section {
       text-align: center;
       margin: 56px 0 0;
       padding: 40px 0 0;
-      border-top: 2.5px solid var(--border);
+      border-top: 3px solid var(--border-light);
     }
     @media (min-width: 768px) {
       .cta-section {
@@ -333,10 +444,10 @@
       width: 100%;
       max-width: 480px;
       height: 52px;
-      border: 2.5px solid var(--border);
+      border: 2.5px solid var(--text-dark);
       background: transparent;
-      color: var(--fg);
-      font: 600 16px "Geologica", sans-serif;
+      color: var(--text-dark);
+      font: 600 16px 'Degular', sans-serif;
       padding: 0;
       border-radius: 0;
       cursor: pointer;
@@ -355,7 +466,7 @@
       display: grid;
       place-items: center;
       width: 52px;
-      border-left: 2.5px solid var(--border);
+      border-left: 2.5px solid var(--text-dark);
       font-size: 18px;
       line-height: 1;
       user-select: none;
@@ -368,20 +479,89 @@
     }
     .gate:hover { background: rgba(0,0,0,.035); }
 
-    /* Footer */
+    /* FOOTER WRAPPER - Black background */
+    .footer-wrapper {
+      background: #191919;
+      padding: 0 12px 12px;
+      margin-top: 80px;
+    }
+
+    /* FOOTER - Orange with asymmetric rounded shape like Shopify */
     footer {
-      text-align: center;
-      padding: 20px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 400;
-      border-top: 2.5px solid var(--border);
+      background: var(--brand-orange);
+      color: var(--white);
+      padding: 45px 40px 20px;
+      border-radius: 200px 16px 16px 200px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 144px;
     }
     @media (min-width: 768px) {
       footer {
-        padding: 24px;
-        font-size: 13px;
+        padding: 63px 60px 24px;
+        min-height: 207px;
+        border-radius: 300px 16px 16px 300px;
       }
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      flex: 1;
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 24px;
+      flex: 1;
+    }
+    @media (min-width: 768px) {
+      .footer-right {
+        gap: 32px;
+      }
+    }
+
+    .footer-right-text {
+      text-align: right;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-top: 128px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .footer-logo {
+        height: 160px;
+        margin-top: 160px;
+        margin-bottom: 0;
+      }
+    }
+
+    footer p {
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    footer a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 
@@ -509,198 +689,217 @@
 </head>
 
 <body>
-  <nav class="nav">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/blog/" class="active">Blog</a></li>
-      <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
-    </ul>
-  </nav>
-
-  <div class="breadcrumbs">
-    <a href="/">Home</a>
-    <span>→</span>
-    <a href="/blog/">Blog</a>
-    <span>→</span>
-    <span>Whole Food vs. Synthetic Nutrients</span>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+        </div>
+      </div>
+    </header>
   </div>
 
-  <article>
-    <div class="article-meta">November 22, 2024 • Updated January 12, 2026</div>
-
-    <h1>Whole Food vs Synthetic Vitamins: Why Bioavailability Matters</h1>
-
-    <p>Most dog owners assume that if a food is labeled "complete and balanced," their dog must be getting everything they need. And on paper, that's true. AAFCO standards ensure that commercial dog foods contain the minimum required nutrients to prevent deficiencies. But there's a big difference between meeting minimum requirements and delivering nutrients in a form the body can easily absorb and use. That difference comes down to bioavailability — and it's one of the most overlooked parts of canine nutrition.</p>
-
-    <div class="callout" style="margin: 32px 0;">
-      <h2 style="margin-top: 0; font-size: 20px; margin-bottom: 16px;">🥩 Whole Food vs Synthetic: Key Differences</h2>
-
-      <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px;">
-        <thead>
-          <tr style="border-bottom: 2px solid var(--border);">
-            <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Aspect</th>
-            <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Whole Food Nutrients</th>
-            <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Synthetic Vitamins</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px 8px;"><strong>Absorption</strong></td>
-            <td style="padding: 12px 8px; color: #2e7d32;"><strong>70-90% bioavailable</strong></td>
-            <td style="padding: 12px 8px;">40-60% bioavailable</td>
-          </tr>
-          <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px 8px;"><strong>Form</strong></td>
-            <td style="padding: 12px 8px;">Natural matrix with co-factors</td>
-            <td style="padding: 12px 8px;">Isolated compounds</td>
-          </tr>
-          <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px 8px;"><strong>Supporting compounds</strong></td>
-            <td style="padding: 12px 8px;">Enzymes, phytonutrients, lipids</td>
-            <td style="padding: 12px 8px;">None - added after processing</td>
-          </tr>
-          <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px 8px;"><strong>Examples</strong></td>
-            <td style="padding: 12px 8px;"><a href="/ingredient-analyzer/ingredients/beef-liver/">Beef liver</a>, <a href="/ingredient-analyzer/ingredients/salmon/">salmon</a>, egg yolks</td>
-            <td style="padding: 12px 8px;">Vitamin premixes in kibble</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <p style="margin-bottom: 12px; font-size: 15px;"><strong>Bottom line:</strong> Synthetic vitamins meet AAFCO minimums and prevent deficiency, but whole food nutrients provide better absorption through natural co-factors</p>
-      <p style="margin-bottom: 0; font-size: 15px;"><strong>Why it matters:</strong> Heat processing destroys natural vitamins in kibble, so manufacturers add synthetic premixes back in to meet standards</p>
+  <main>
+    <article>
+    <div class="article-header">
+      <div class="article-meta">November 22, 2024 • Updated January 12, 2026</div>
+      <h1>Whole Food vs Synthetic Vitamins: Why Bioavailability Matters</h1>
+      <p class="article-intro">Most dog owners assume that if a food is labeled "complete and balanced," their dog must be getting everything they need. And on paper, that's true. AAFCO standards ensure that commercial dog foods contain the minimum required nutrients to prevent deficiencies. But there's a big difference between meeting minimum requirements and delivering nutrients in a form the body can easily absorb and use. That difference comes down to bioavailability — and it's one of the most overlooked parts of canine nutrition.</p>
     </div>
 
-    <h2>What Bioavailability Actually Means</h2>
+    <div class="article-content">
+      <div class="callout">
+        <h2 style="margin-top: 0; font-size: 20px; margin-bottom: 16px;">Whole Food vs Synthetic: Key Differences</h2>
 
-    <p>Bioavailability describes how efficiently your dog can absorb and utilize a nutrient once it's eaten. Two ingredients might list the same vitamin on a label, but if one is more bioavailable, the body will get more real benefit from it. In practical terms: it's not just what your dog eats — it's what their body can use. This is one of the key reasons <a href="/blog/why-dogs-need-supplements.html">why supplements can make sense even with complete and balanced food</a>.</p>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px;">
+          <thead>
+            <tr style="border-bottom: 2px solid var(--border-light);">
+              <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Aspect</th>
+              <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Whole Food Nutrients</th>
+              <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Synthetic Vitamins</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
+              <td style="padding: 12px 8px;"><strong>Absorption</strong></td>
+              <td style="padding: 12px 8px; color: #2e7d32;"><strong>70-90% bioavailable</strong></td>
+              <td style="padding: 12px 8px;">40-60% bioavailable</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
+              <td style="padding: 12px 8px;"><strong>Form</strong></td>
+              <td style="padding: 12px 8px;">Natural matrix with co-factors</td>
+              <td style="padding: 12px 8px;">Isolated compounds</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
+              <td style="padding: 12px 8px;"><strong>Supporting compounds</strong></td>
+              <td style="padding: 12px 8px;">Enzymes, phytonutrients, lipids</td>
+              <td style="padding: 12px 8px;">None - added after processing</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
+              <td style="padding: 12px 8px;"><strong>Examples</strong></td>
+              <td style="padding: 12px 8px;"><a href="/ingredient-analyzer/ingredients/beef-liver/">Beef liver</a>, <a href="/ingredient-analyzer/ingredients/salmon/">salmon</a>, egg yolks</td>
+              <td style="padding: 12px 8px;">Vitamin premixes in kibble</td>
+            </tr>
+          </tbody>
+        </table>
 
-    <p>Dogs absorb nutrients through the gut, and that process is influenced by how those nutrients are packaged in the food. Whole-food sources often come with natural enzymes, co-factors, and supporting compounds that help the body recognize and utilize them. Many synthetic vitamins, on the other hand, are isolated, less complex, and may not be absorbed as effectively.</p>
+        <p style="margin-bottom: 12px; font-size: 15px;"><strong>Bottom line:</strong> Synthetic vitamins meet AAFCO minimums and prevent deficiency, but whole food nutrients provide better absorption through natural co-factors</p>
+        <p style="margin-bottom: 0; font-size: 15px;"><strong>Why it matters:</strong> Heat processing destroys natural vitamins in kibble, so manufacturers add synthetic premixes back in to meet standards</p>
+      </div>
 
-    <h2>Why Most Dog Food Relies on Synthetic Vitamins</h2>
+      <h2>What Bioavailability Actually Means</h2>
 
-    <p>To understand why this matters, it helps to look at how most kibble is made. High-heat extrusion — the process used to create dry dog food — <a href="https://pubmed.ncbi.nlm.nih.gov/10335371/" target="_blank" rel="noopener">can destroy or degrade naturally occurring vitamins and beneficial compounds</a>. <a href="https://doi.org/10.1016/j.anifeedsci.2021.114975" target="_blank" rel="noopener">Research shows that high extrusion temperatures and low moisture conditions significantly impair nutritional quality</a>, particularly for heat-labile vitamins. After processing, manufacturers add synthetic premixes back in to hit AAFCO minimums. Those premixes are what make the food "complete and balanced" again.</p>
+      <p>Bioavailability describes how efficiently your dog can absorb and utilize a nutrient once it's eaten. Two ingredients might list the same vitamin on a label, but if one is more bioavailable, the body will get more real benefit from it. In practical terms: it's not just what your dog eats — it's what their body can use. This is one of the key reasons <a href="/blog/why-dogs-need-supplements.html">why supplements can make sense even with complete and balanced food</a>.</p>
 
-    <p>To be clear, this isn't about villainizing kibble. Synthetic vitamins can prevent serious deficiencies, and the industry uses them for a reason: they're shelf-stable, standardized, and cost-effective. But they are also:</p>
+      <p>Dogs absorb nutrients through the gut, and that process is influenced by how those nutrients are packaged in the food. Whole-food sources often come with natural enzymes, co-factors, and supporting compounds that help the body recognize and utilize them. Many synthetic vitamins, on the other hand, are isolated, less complex, and may not be absorbed as effectively.</p>
 
-    <ul>
-      <li>Less complex than nutrients in whole foods</li>
-      <li>Not always as easily absorbed</li>
-      <li>Used to meet minimums, not optimize health</li>
-    </ul>
+      <h2>Why Most Dog Food Relies on Synthetic Vitamins</h2>
 
-    <p>This is why two foods can meet the same standards on paper and deliver very different outcomes in the body.</p>
+      <p>To understand why this matters, it helps to look at how most kibble is made. High-heat extrusion — the process used to create dry dog food — <a href="https://pubmed.ncbi.nlm.nih.gov/10335371/" target="_blank" rel="noopener">can destroy or degrade naturally occurring vitamins and beneficial compounds</a>. <a href="https://doi.org/10.1016/j.anifeedsci.2021.114975" target="_blank" rel="noopener">Research shows that high extrusion temperatures and low moisture conditions significantly impair nutritional quality</a>, particularly for heat-labile vitamins. After processing, manufacturers add synthetic premixes back in to hit AAFCO minimums. Those premixes are what make the food "complete and balanced" again.</p>
 
-    <h2>Whole-Food Nutrients vs. Synthetic Vitamins</h2>
+      <p>To be clear, this isn't about villainizing kibble. Synthetic vitamins can prevent serious deficiencies, and the industry uses them for a reason: they're shelf-stable, standardized, and cost-effective. But they are also:</p>
 
-    <p>Whole-food nutrients are bound up in their natural matrix — complete with enzymes, lipids, proteins, and phytonutrients that support absorption and activity in the body. Synthetic vitamins are more like isolated fragments. They can fill a gap, but they don't always act the same biologically.</p>
+      <ul>
+        <li>Less complex than nutrients in whole foods</li>
+        <li>Not always as easily absorbed</li>
+        <li>Used to meet minimums, not optimize health</li>
+      </ul>
 
-    <h3>Key Differences You'll See</h3>
+      <p>This is why two foods can meet the same standards on paper and deliver very different outcomes in the body.</p>
 
-    <p><strong>Omega-3 fatty acids:</strong> Whole marine sources are more effective than generic "fish oil flavor" or trace plant omegas.</p>
+      <h2>Whole-Food Nutrients vs. Synthetic Vitamins</h2>
 
-    <p><strong>Antioxidants:</strong> Berries, greens, and sea plants contain synergistic compounds you don't get from isolated synthetics.</p>
+      <p>Whole-food nutrients are bound up in their natural matrix — complete with enzymes, lipids, proteins, and phytonutrients that support absorption and activity in the body. Synthetic vitamins are more like isolated fragments. They can fill a gap, but they don't always act the same biologically.</p>
 
-    <p><strong>Probiotics:</strong> Live, strain-specific cultures behave very differently than "spray-on" probiotic claims that don't survive processing.</p>
+      <h3>Key Differences You'll See</h3>
 
-    <p>The closer a nutrient is to its natural state, the more the body tends to do with it. Research confirms that processing methods and ingredient sources significantly impact how dogs absorb and utilize nutrients.</p>
+      <p><strong>Omega-3 fatty acids:</strong> Whole marine sources are more effective than generic "fish oil flavor" or trace plant omegas.</p>
 
-    <h2>What Affects Nutrient Absorption in Dogs</h2>
+      <p><strong>Antioxidants:</strong> Berries, greens, and sea plants contain synergistic compounds you don't get from isolated synthetics.</p>
 
-    <p>Even if a food checks out nutritionally, absorption can still be limited by factors like:</p>
+      <p><strong>Probiotics:</strong> Live, strain-specific cultures behave very differently than "spray-on" probiotic claims that don't survive processing.</p>
 
-    <ul>
-      <li>Gut inflammation or dysbiosis</li>
-      <li>Highly processed diets</li>
-      <li>Low digestibility proteins</li>
-      <li>Stress, illness, age, or activity level</li>
-      <li>Poor omega-3 to omega-6 balance</li>
-    </ul>
+      <p>The closer a nutrient is to its natural state, the more the body tends to do with it. Research confirms that processing methods and ingredient sources significantly impact how dogs absorb and utilize nutrients.</p>
 
-    <p>This is why bioavailability and gut health are central to long-term wellness. If the gut isn't functioning well, it doesn't matter how many synthetic vitamins are sitting on the label.</p>
+      <h2>What Affects Nutrient Absorption in Dogs</h2>
 
-    <div class="callout" style="background: #f5f5f5; border-left: 4px solid var(--fg); padding: 20px; margin: 24px 0;">
-      <p style="margin: 0;"><strong>Check Your Dog's Food:</strong> Use our <a href="/ingredient-analyzer/">free ingredient analyzer</a> to see what's really in your dog's food—whole food sources or synthetic additives.</p>
+      <p>Even if a food checks out nutritionally, absorption can still be limited by factors like:</p>
+
+      <ul>
+        <li>Gut inflammation or dysbiosis</li>
+        <li>Highly processed diets</li>
+        <li>Low digestibility proteins</li>
+        <li>Stress, illness, age, or activity level</li>
+        <li>Poor omega-3 to omega-6 balance</li>
+      </ul>
+
+      <p>This is why bioavailability and gut health are central to long-term wellness. If the gut isn't functioning well, it doesn't matter how many synthetic vitamins are sitting on the label.</p>
+
+      <div class="callout">
+        <p style="margin: 0;"><strong>Check Your Dog's Food:</strong> Use our <a href="/ingredient-analyzer/">free ingredient analyzer</a> to see what's really in your dog's food—whole food sources or synthetic additives.</p>
+      </div>
+
+      <h2>When Bioavailability Matters Most</h2>
+
+      <p>While every dog can benefit from more usable nutrients, bioavailability becomes especially important for:</p>
+
+      <ul>
+        <li>Active or working dogs</li>
+        <li>Senior dogs</li>
+        <li>Dogs with skin, gut, or joint concerns</li>
+        <li>Dogs recovering from stress or inflammation</li>
+        <li>Breeds genetically prone to sensitivities or immune issues</li>
+      </ul>
+
+      <p>These are the dogs that often need support beyond the minimum.</p>
+
+      <h2>Why Whole-Food Supplementation Can Help</h2>
+
+      <p>Thoughtful supplementation isn't about adding more nutrients. It's about adding better nutrients — the kind the body can absorb and put to work. Whole-food–based supplements can complement a complete and balanced diet by filling gaps in a form the body recognizes, without relying on heavy synthetic fortification.</p>
+
+      <p>Look for supplements made from real food sources rather than synthetic powders. Nutrients like <a href="/blog/beef-liver-for-dogs.html">heme iron, taurine, and vitamin A from beef liver</a> come in their most bioavailable forms, the way your dog's body evolved to recognize and use them. Whole-food supplements focus on supporting long-term health through nutrients your dog can actually absorb and benefit from. Learn more about <a href="/blog/organ-based-nutrition-for-dogs.html">the benefits of organ-based nutrition for dogs</a>.</p>
+
+      <h2>The Bottom Line</h2>
+
+      <p>AAFCO ensures the floor. But bioavailability is about the ceiling — helping dogs get the most from what they eat, so they can stay healthier for longer. Whole-food nutrients offer a more natural path to absorption and utilization, which is why focusing on bioavailability can make such a meaningful difference in a dog's long-term health.</p>
+
+      <!-- FAQ Section -->
+      <div class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <h3>What does bioavailability mean in dog food?</h3>
+          <p>Bioavailability describes how efficiently your dog can absorb and utilize a nutrient once it's eaten. Two ingredients might list the same vitamin on a label, but if one is more bioavailable, the body will get more real benefit from it.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What is the difference between whole food and synthetic vitamins for dogs?</h3>
+          <p>Whole food vitamins come from actual food sources (meat, organs, eggs, fish) and include natural co-factors that enhance absorption, typically achieving 70-90% bioavailability. Synthetic vitamins are isolated compounds created in labs, lacking these co-factors, with bioavailability around 40-60%. For example, natural vitamin A from liver is absorbed 3-10x better than synthetic retinyl acetate.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Are whole food vitamins better than synthetic for dogs?</h3>
+          <p>Yes. Whole food vitamins are generally better because they have higher bioavailability (70-90% vs 40-60%), come with natural co-factors that enhance absorption, provide multiple nutrients together, and are in forms the body recognizes and utilizes more efficiently. Dogs evolved eating whole foods, not isolated synthetic compounds, so their bodies are optimized to absorb nutrients from real food sources.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Are synthetic vitamins in dog food bad for dogs?</h3>
+          <p>Not necessarily bad, but synthetic vitamins are often less bioavailable than whole-food sources. They can prevent deficiencies and meet AAFCO minimums, but they're isolated, less complex, and may not be absorbed as effectively as nutrients from whole foods.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Why do most dog foods use synthetic vitamins?</h3>
+          <p>High-heat extrusion used to create dry dog food can destroy naturally occurring vitamins. Manufacturers add synthetic premixes back in to hit AAFCO minimums. Synthetic vitamins are also shelf-stable, standardized, and cost-effective, which is why the industry relies on them.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Which dogs benefit most from whole-food supplements?</h3>
+          <p>While every dog can benefit from more usable nutrients, bioavailability becomes especially important for active or working dogs, senior dogs, dogs with skin, gut, or joint concerns, dogs recovering from stress or inflammation, and breeds genetically prone to sensitivities or immune issues.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How can I tell if my dog is absorbing nutrients properly?</h3>
+          <p>Signs of good nutrient absorption include consistent energy levels, healthy coat shine and thickness, firm stools, good muscle tone, and overall vitality. Poor absorption often shows up as dull coat, low energy, digestive issues, slow wound healing, or recurring skin problems — even when the dog is eating a "complete and balanced" diet. If you're concerned, bloodwork can reveal nutrient deficiencies that indicate absorption issues.</p>
+        </div>
+      </div>
+
+      <!-- CTA Section -->
+      <div class="cta-section">
+        <p><strong>Looking for whole-food nutrition with maximum bioavailability?</strong></p>
+        <p>Watts offers grass-fed organ supplements designed for optimal nutrient absorption. Learn more about our approach.</p>
+
+        <a href="/" class="gate">
+          <span class="gate-text">Learn about Watts</span>
+          <span class="gate-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
     </div>
+    </article>
+  </main>
 
-    <h2>When Bioavailability Matters Most</h2>
-
-    <p>While every dog can benefit from more usable nutrients, bioavailability becomes especially important for:</p>
-
-    <ul>
-      <li>Active or working dogs</li>
-      <li>Senior dogs</li>
-      <li>Dogs with skin, gut, or joint concerns</li>
-      <li>Dogs recovering from stress or inflammation</li>
-      <li>Breeds genetically prone to sensitivities or immune issues</li>
-    </ul>
-
-    <p>These are the dogs that often need support beyond the minimum.</p>
-
-    <h2>Why Whole-Food Supplementation Can Help</h2>
-
-    <p>Thoughtful supplementation isn't about adding more nutrients. It's about adding better nutrients — the kind the body can absorb and put to work. Whole-food–based supplements can complement a complete and balanced diet by filling gaps in a form the body recognizes, without relying on heavy synthetic fortification.</p>
-
-    <p>Look for supplements made from real food sources rather than synthetic powders. Nutrients like <a href="/blog/beef-liver-for-dogs.html">heme iron, taurine, and vitamin A from beef liver</a> come in their most bioavailable forms, the way your dog's body evolved to recognize and use them. Whole-food supplements focus on supporting long-term health through nutrients your dog can actually absorb and benefit from. Learn more about <a href="/blog/organ-based-nutrition-for-dogs.html">the benefits of organ-based nutrition for dogs</a>.</p>
-
-    <h2>The Bottom Line</h2>
-
-    <p>AAFCO ensures the floor. But bioavailability is about the ceiling — helping dogs get the most from what they eat, so they can stay healthier for longer. Whole-food nutrients offer a more natural path to absorption and utilization, which is why focusing on bioavailability can make such a meaningful difference in a dog's long-term health.</p>
-
-    <!-- FAQ Section -->
-    <div class="faq-section">
-      <h2>Frequently Asked Questions</h2>
-
-      <div class="faq-item">
-        <div class="faq-question">What does bioavailability mean in dog food?</div>
-        <div class="faq-answer">Bioavailability describes how efficiently your dog can absorb and utilize a nutrient once it's eaten. Two ingredients might list the same vitamin on a label, but if one is more bioavailable, the body will get more real benefit from it.</div>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
       </div>
-
-      <div class="faq-item">
-        <div class="faq-question">What is the difference between whole food and synthetic vitamins for dogs?</div>
-        <div class="faq-answer">Whole food vitamins come from actual food sources (meat, organs, eggs, fish) and include natural co-factors that enhance absorption, typically achieving 70-90% bioavailability. Synthetic vitamins are isolated compounds created in labs, lacking these co-factors, with bioavailability around 40-60%. For example, natural vitamin A from liver is absorbed 3-10x better than synthetic retinyl acetate.</div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-question">Are whole food vitamins better than synthetic for dogs?</div>
-        <div class="faq-answer">Yes. Whole food vitamins are generally better because they have higher bioavailability (70-90% vs 40-60%), come with natural co-factors that enhance absorption, provide multiple nutrients together, and are in forms the body recognizes and utilizes more efficiently. Dogs evolved eating whole foods, not isolated synthetic compounds, so their bodies are optimized to absorb nutrients from real food sources.</div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-question">Are synthetic vitamins in dog food bad for dogs?</div>
-        <div class="faq-answer">Not necessarily bad, but synthetic vitamins are often less bioavailable than whole-food sources. They can prevent deficiencies and meet AAFCO minimums, but they're isolated, less complex, and may not be absorbed as effectively as nutrients from whole foods.</div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-question">Why do most dog foods use synthetic vitamins?</div>
-        <div class="faq-answer">High-heat extrusion used to create dry dog food can destroy naturally occurring vitamins. Manufacturers add synthetic premixes back in to hit AAFCO minimums. Synthetic vitamins are also shelf-stable, standardized, and cost-effective, which is why the industry relies on them.</div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-question">Which dogs benefit most from whole-food supplements?</div>
-        <div class="faq-answer">While every dog can benefit from more usable nutrients, bioavailability becomes especially important for active or working dogs, senior dogs, dogs with skin, gut, or joint concerns, dogs recovering from stress or inflammation, and breeds genetically prone to sensitivities or immune issues.</div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-question">How can I tell if my dog is absorbing nutrients properly?</div>
-        <div class="faq-answer">Signs of good nutrient absorption include consistent energy levels, healthy coat shine and thickness, firm stools, good muscle tone, and overall vitality. Poor absorption often shows up as dull coat, low energy, digestive issues, slow wound healing, or recurring skin problems — even when the dog is eating a "complete and balanced" diet. If you're concerned, bloodwork can reveal nutrient deficiencies that indicate absorption issues.</div>
-      </div>
-    </div>
-
-    <!-- CTA Section -->
-    <div class="cta-section">
-      <p><strong>Looking for whole-food nutrition with maximum bioavailability?</strong></p>
-      <p>Watts offers grass-fed organ supplements designed for optimal nutrient absorption. Learn more about our approach.</p>
-
-      <a href="/" class="gate">
-        <span class="gate-text">Learn about Watts</span>
-        <span class="gate-arrow" aria-hidden="true">→</span>
-      </a>
-    </div>
-  </article>
-
-  <footer>© <span id="year"></span> Watts Pet</footer>
+    </footer>
+  </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();

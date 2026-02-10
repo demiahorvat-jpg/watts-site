@@ -37,308 +37,580 @@
   <meta property="twitter:description" content="Chicken by-products include organs—nutrient-dense parts dogs need. Learn what's actually in by-products.">
   <meta property="twitter:image" content="https://wattspet.com/images/og-default.jpg">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
-
+  <!-- Degular Font -->
   <style>
-    :root {
-      --bg: #F1ECE9;
-      --fg: #191919;
-      --muted: #3a3a3a;
-      --border: #191919;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body { min-height: 100%; }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Regular.woff2') format('woff2');
       font-weight: 400;
-      line-height: 1.6;
-      overflow-x: hidden;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
     }
 
-    /* Navigation */
-    nav.nav {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px 20px;
-      border-bottom: 2.5px solid var(--border);
+    :root {
+      --brand-orange: #c03800;
+      --bg-light: #f1f1f1;
+      --text-dark: #191919;
+      --white: #ffffff;
+      --text-muted: #666666;
+      --border-light: rgba(25, 25, 25, 0.1);
+      --accent-navy: #1e3a5f;
     }
-    @media (min-width: 768px) {
-      nav.nav {
-        padding: 24px 20px;
-      }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    nav.nav ul {
-      list-style: none;
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      background: #191919;
+      color: var(--text-dark);
+      font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* HEADER WRAPPER - Black background */
+    .header-wrapper {
+      background: #191919;
+      padding: 12px 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    /* ORANGE HEADER - Rounded like Shopify site */
+    header {
+      background: var(--brand-orange);
+      padding: 7px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
-      gap: 24px;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-height: 40px;
+    }
+
+    /* Nav on the LEFT */
+    nav {
+      order: -1;
+      display: flex;
       align-items: center;
     }
-    @media (min-width: 768px) {
-      nav.nav ul {
-        gap: 32px;
-      }
-    }
-    nav.nav a {
-      color: var(--fg);
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 500;
-      transition: opacity 0.15s;
-      position: relative;
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
     }
     @media (min-width: 768px) {
-      nav.nav a {
-        font-size: 16px;
-      }
-    }
-    nav.nav a:hover {
-      opacity: 0.7;
-    }
-    nav.nav a.active::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: var(--fg);
+      nav ul { gap: 24px; }
     }
 
-    /* Article container */
+    nav li {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
+    }
+    @media (min-width: 768px) {
+      nav a { font-size: 15px; }
+    }
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    /* Logo CENTERED */
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo {
+      height: 32px;
+    }
+    @media (min-width: 768px) {
+      .logo { height: 40px; }
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 900px;
+      margin: 16px auto 40px;
+      padding: 0 20px;
+      background: var(--bg-light);
+    }
+    @media (min-width: 768px) {
+      main {
+        margin: 20px auto 60px;
+        padding: 0 40px;
+      }
+    }
+
     article {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px 60px;
+      background: var(--white);
+      padding: 40px 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
       article {
-        padding: 60px 40px 80px;
+        padding: 60px 50px;
       }
     }
 
-    /* Article header */
     .article-header {
-      margin-bottom: 32px;
-    }
-    @media (min-width: 768px) {
-      .article-header {
-        margin-bottom: 40px;
-      }
-    }
-
-    .article-meta {
-      font-size: 13px;
-      color: var(--muted);
-      margin-bottom: 16px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    @media (min-width: 768px) {
-      .article-meta {
-        font-size: 14px;
-        margin-bottom: 20px;
-      }
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--border-light);
     }
 
     h1 {
-      font-family: "Geologica", sans-serif;
       font-size: 32px;
       font-weight: 700;
       line-height: 1.2;
       margin-bottom: 16px;
       letter-spacing: -0.02em;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
       h1 {
-        font-size: 42px;
+        font-size: 48px;
         margin-bottom: 20px;
       }
     }
 
+    .article-meta {
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
     .article-intro {
-      font-size: 18px;
+      font-size: 19px;
+      font-weight: 500;
       line-height: 1.6;
-      color: var(--muted);
+      color: var(--text-muted);
+      margin-bottom: 0;
     }
     @media (min-width: 768px) {
       .article-intro {
-        font-size: 20px;
-        line-height: 1.7;
+        font-size: 21px;
       }
     }
 
-    /* Article content */
-    .article-content {
-      font-size: 17px;
-      line-height: 1.7;
-    }
-    @media (min-width: 768px) {
-      .article-content {
-        font-size: 18px;
-        line-height: 1.8;
-      }
-    }
-
-    .article-content h2 {
-      font-size: 26px;
-      font-weight: 700;
-      line-height: 1.3;
-      margin: 48px 0 20px;
-      letter-spacing: -0.01em;
-    }
-    @media (min-width: 768px) {
-      .article-content h2 {
-        font-size: 30px;
-        margin: 56px 0 24px;
-      }
-    }
-
-    .article-content h3 {
-      font-size: 21px;
+    .article-intro a {
+      color: var(--accent-navy);
+      text-decoration: none;
       font-weight: 600;
-      line-height: 1.4;
-      margin: 36px 0 16px;
+      border-bottom: 1px solid var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    .article-intro a:hover {
+      opacity: 0.7;
+    }
+
+    /* LAYERED CALLOUT BOX - Pointed base with rounded content card */
+    .quick-facts {
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .quick-facts-content {
+      background: var(--white);
+      color: var(--text-dark);
+      border-radius: 12px;
+      padding: 24px 28px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .article-content h3 {
-        font-size: 24px;
-        margin: 40px 0 20px;
+      .quick-facts-content {
+        padding: 28px 36px;
       }
     }
 
-    .article-content p {
+    .quick-facts h3 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-top: 4px;
       margin-bottom: 20px;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
-      .article-content p {
+      .quick-facts h3 {
+        font-size: 28px;
+      }
+    }
+
+    .quick-facts table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 16px;
+      font-size: 15px;
+    }
+
+    .quick-facts thead {
+      background: transparent;
+      border-bottom: 2px solid var(--border-light);
+    }
+
+    .quick-facts th {
+      text-align: left;
+      padding: 12px 8px;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+
+    .quick-facts td {
+      padding: 12px 8px;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .quick-facts tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .quick-facts p {
+      margin-bottom: 12px;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .quick-facts p:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 56px 0 24px;
+      letter-spacing: -0.01em;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h2 {
+        font-size: 36px;
+        margin: 64px 0 28px;
+      }
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 40px 0 16px;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h3 {
+        font-size: 28px;
+        margin: 48px 0 20px;
+      }
+    }
+
+    p {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      p {
+        font-size: 18px;
         margin-bottom: 24px;
       }
     }
 
-    .article-content ul, .article-content ol {
-      margin: 20px 0 20px 24px;
-    }
-    @media (min-width: 768px) {
-      .article-content ul, .article-content ol {
-        margin: 24px 0 24px 32px;
-      }
-    }
-
-    .article-content li {
-      margin-bottom: 12px;
-      padding-left: 8px;
-    }
-
-    .article-content strong {
+    strong {
       font-weight: 600;
     }
 
-    .article-content a {
-      color: var(--fg);
-      text-decoration: underline;
-      text-decoration-thickness: 1.5px;
-      text-underline-offset: 2px;
-      transition: opacity 0.15s;
+    a {
+      color: var(--accent-navy);
+      transition: opacity 0.2s ease;
     }
-
-    .article-content a:hover {
+    a:hover {
       opacity: 0.7;
     }
 
-    /* Callout boxes */
-    .callout {
-      background: rgba(25, 25, 25, 0.04);
-      border: 2.5px solid var(--border);
-      padding: 24px;
-      margin: 32px 0;
-    }
-    @media (min-width: 768px) {
-      .callout {
-        padding: 32px;
-        margin: 40px 0;
-      }
+    ul, ol {
+      margin: 24px 0;
+      padding-left: 28px;
     }
 
-    /* FAQ section */
-    .faq {
-      margin-top: 56px;
-      padding-top: 40px;
-      border-top: 2.5px solid var(--border);
-    }
-    @media (min-width: 768px) {
-      .faq {
-        margin-top: 64px;
-        padding-top: 48px;
-      }
-    }
-
-    .faq h2 {
-      font-size: 26px;
-      font-weight: 700;
-      margin-bottom: 32px;
-    }
-    @media (min-width: 768px) {
-      .faq h2 {
-        font-size: 30px;
-        margin-bottom: 40px;
-      }
-    }
-
-    .faq-item {
-      margin-bottom: 32px;
-    }
-    @media (min-width: 768px) {
-      .faq-item {
-        margin-bottom: 40px;
-      }
-    }
-
-    .faq-question {
-      font-size: 19px;
-      font-weight: 600;
-      margin-bottom: 12px;
-      line-height: 1.4;
-    }
-    @media (min-width: 768px) {
-      .faq-question {
-        font-size: 21px;
-        margin-bottom: 16px;
-      }
-    }
-
-    .faq-answer {
+    li {
       font-size: 17px;
+      font-weight: 500;
       line-height: 1.7;
-      color: var(--muted);
+      margin-bottom: 12px;
     }
     @media (min-width: 768px) {
-      .faq-answer {
+      li {
         font-size: 18px;
       }
     }
 
-    /* Footer */
+    /* LIGHT CALLOUT BOX */
+    .callout {
+      background: var(--bg-light);
+      border-left: 4px solid var(--brand-orange);
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin: 32px 0;
+    }
+    @media (min-width: 768px) {
+      .callout {
+        padding: 28px 32px;
+      }
+    }
+
+    .callout p:last-child {
+      margin-bottom: 0;
+    }
+
+    .callout h3 {
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+
+    .callout table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+    }
+
+    .callout thead {
+      border-bottom: 2px solid var(--border-light);
+    }
+
+    .callout th {
+      text-align: left;
+      padding: 12px 8px;
+      font-weight: 600;
+    }
+
+    .callout td {
+      padding: 12px 8px;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .callout tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* TABLE */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 32px 0;
+      font-size: 16px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    @media (min-width: 768px) {
+      table {
+        font-size: 17px;
+      }
+    }
+
+    thead {
+      background: var(--brand-orange);
+      color: var(--white);
+      font-weight: 700;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+      border-bottom: 1px solid var(--border-light);
+    }
+    @media (min-width: 768px) {
+      th, td {
+        padding: 18px 20px;
+      }
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    tbody tr {
+      background: var(--white);
+      transition: background 0.2s ease;
+    }
+
+    tbody tr:hover {
+      background: rgba(192, 56, 0, 0.02);
+    }
+
+    /* FAQ SECTION */
+    .faq-section {
+      margin-top: 64px;
+      padding-top: 56px;
+      border-top: 3px solid var(--border-light);
+    }
+
+    .faq-item {
+      margin-bottom: 32px;
+      padding: 28px;
+      background: var(--bg-light);
+      border-radius: 12px;
+      border-left: 4px solid var(--brand-orange);
+    }
+
+    .faq-item h3 {
+      font-size: 20px;
+      margin: 0 0 16px 0;
+      color: var(--brand-orange);
+    }
+    @media (min-width: 768px) {
+      .faq-item h3 {
+        font-size: 23px;
+      }
+    }
+
+    .faq-item p {
+      margin-bottom: 0;
+    }
+
+    /* FOOTER WRAPPER - Black background */
+    .footer-wrapper {
+      background: #191919;
+      padding: 0 12px 12px;
+      margin-top: 80px;
+    }
+
+    /* FOOTER - Orange with asymmetric rounded shape like Shopify */
     footer {
-      text-align: center;
-      padding: 20px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 400;
-      border-top: 2.5px solid var(--border);
-      margin-top: 60px;
+      background: var(--brand-orange);
+      color: var(--white);
+      padding: 45px 40px 20px;
+      border-radius: 200px 16px 16px 200px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 144px;
     }
     @media (min-width: 768px) {
       footer {
-        padding: 24px;
-        font-size: 13px;
+        padding: 63px 60px 24px;
+        min-height: 207px;
+        border-radius: 300px 16px 16px 300px;
       }
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      flex: 1;
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 24px;
+      flex: 1;
+    }
+    @media (min-width: 768px) {
+      .footer-right {
+        gap: 32px;
+      }
+    }
+
+    .footer-right-text {
+      text-align: right;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-top: 128px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .footer-logo {
+        height: 160px;
+        margin-top: 160px;
+        margin-bottom: 0;
+      }
+    }
+
+    footer p {
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    footer a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 
@@ -486,58 +758,70 @@
 </head>
 
 <body>
-  <nav class="nav">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/blog/" class="active">Blog</a></li>
-      <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
-    </ul>
-  </nav>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+        </div>
+      </div>
+    </header>
+  </div>
 
-  <article>
+  <main>
+    <article>
     <div class="article-header">
       <div class="article-meta">January 13, 2026</div>
       <h1>Chicken By-Products in Dog Food: What They Actually Are</h1>
       <p class="article-intro">The term "chicken by-products" sounds vague, industrial, and unappetizing. It's become one of the most stigmatized ingredients in pet food. But what are by-products actually? Are they fillers, waste, or something else? And should you avoid them?</p>
     </div>
 
-    <div class="callout" style="margin-top: 32px; margin-bottom: 40px;">
-      <h2 style="margin-top: 0; font-size: 20px; margin-bottom: 16px;">🐔 Chicken By-Products Quick Facts</h2>
+    <div class="quick-facts">
+      <div class="quick-facts-content">
+        <h3>Chicken By-Products Quick Facts</h3>
 
-      <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px;">
-        <thead>
-          <tr style="border-bottom: 2px solid var(--border);">
-            <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Aspect</th>
-            <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px 8px;"><strong>What they are</strong></td>
-            <td style="padding: 12px 8px;">Organs, necks, feet, heads, intestines—parts not included in "chicken"</td>
-          </tr>
-          <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px 8px;"><strong>Can include</strong></td>
-            <td style="padding: 12px 8px;">Liver, heart, kidney, gizzard, spleen, lungs, necks, feet, heads</td>
-          </tr>
-          <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px 8px;"><strong>Cannot include</strong></td>
-            <td style="padding: 12px 8px;">Feathers, feces, beaks, foreign matter (per AAFCO)</td>
-          </tr>
-          <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px 8px;"><strong>Nutritional value</strong></td>
-            <td style="padding: 12px 8px;">Highly variable—organs are excellent, feet/necks are minimal</td>
-          </tr>
-          <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-            <td style="padding: 12px 8px;"><strong>Main issue</strong></td>
-            <td style="padding: 12px 8px;">Lack of transparency—you can't tell which parts from the label</td>
-          </tr>
-        </tbody>
-      </table>
+        <table>
+          <thead>
+            <tr>
+              <th>Aspect</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>What they are</strong></td>
+              <td>Organs, necks, feet, heads, intestines—parts not included in "chicken"</td>
+            </tr>
+            <tr>
+              <td><strong>Can include</strong></td>
+              <td>Liver, heart, kidney, gizzard, spleen, lungs, necks, feet, heads</td>
+            </tr>
+            <tr>
+              <td><strong>Cannot include</strong></td>
+              <td>Feathers, feces, beaks, foreign matter (per AAFCO)</td>
+            </tr>
+            <tr>
+              <td><strong>Nutritional value</strong></td>
+              <td>Highly variable—organs are excellent, feet/necks are minimal</td>
+            </tr>
+            <tr>
+              <td><strong>Main issue</strong></td>
+              <td>Lack of transparency—you can't tell which parts from the label</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <p style="margin-bottom: 12px; font-size: 15px;"><strong>The problem:</strong> "Chicken by-products" is too vague—could be nutrient-rich liver or low-value feet</p>
-      <p style="margin-bottom: 0; font-size: 15px;"><strong>Better option:</strong> Named organs like "chicken liver" or "chicken heart" provide transparency</p>
+        <p><strong>The problem:</strong> "Chicken by-products" is too vague—could be nutrient-rich liver or low-value feet</p>
+        <p style="margin-bottom: 0;"><strong>Better option:</strong> Named organs like "chicken liver" or "chicken heart" provide transparency</p>
+      </div>
     </div>
 
     <div class="article-content">
@@ -604,44 +888,44 @@
       <p>Here's the key distinction that matters for dog owners:</p>
 
       <div class="callout">
-        <h3 style="margin-top: 0; font-size: 18px; margin-bottom: 16px;">Transparency Makes the Difference</h3>
+        <h3>Transparency Makes the Difference</h3>
 
-        <table style="width: 100%; border-collapse: collapse;">
+        <table>
           <thead>
-            <tr style="border-bottom: 2px solid var(--border);">
-              <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Ingredient</th>
-              <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Transparency</th>
-              <th style="text-align: left; padding: 12px 8px; font-weight: 600;">Quality Signal</th>
+            <tr>
+              <th>Ingredient</th>
+              <th>Transparency</th>
+              <th>Quality Signal</th>
             </tr>
           </thead>
           <tbody>
-            <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-              <td style="padding: 12px 8px;"><strong>"Chicken liver"</strong></td>
-              <td style="padding: 12px 8px;">✅ Clear - you know exactly what it is</td>
-              <td style="padding: 12px 8px;">✅ High - manufacturer is confident in ingredient</td>
+            <tr>
+              <td><strong>"Chicken liver"</strong></td>
+              <td>✅ Clear - you know exactly what it is</td>
+              <td>✅ High - manufacturer is confident in ingredient</td>
             </tr>
-            <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-              <td style="padding: 12px 8px;"><strong>"Chicken heart"</strong></td>
-              <td style="padding: 12px 8px;">✅ Clear - you know exactly what it is</td>
-              <td style="padding: 12px 8px;">✅ High - shows intentional sourcing</td>
+            <tr>
+              <td><strong>"Chicken heart"</strong></td>
+              <td>✅ Clear - you know exactly what it is</td>
+              <td>✅ High - shows intentional sourcing</td>
             </tr>
-            <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-              <td style="padding: 12px 8px;"><strong>"Chicken by-products"</strong></td>
-              <td style="padding: 12px 8px;">❌ Vague - could be anything</td>
-              <td style="padding: 12px 8px;">⚠️ Low - manufacturer hiding specifics</td>
+            <tr>
+              <td><strong>"Chicken by-products"</strong></td>
+              <td>❌ Vague - could be anything</td>
+              <td>⚠️ Low - manufacturer hiding specifics</td>
             </tr>
-            <tr style="border-bottom: 1px solid rgba(25,25,25,0.1);">
-              <td style="padding: 12px 8px;"><strong>"Chicken by-product meal"</strong></td>
-              <td style="padding: 12px 8px;">❌ Vague + rendered (heat-damaged)</td>
-              <td style="padding: 12px 8px;">❌ Very low - double red flag</td>
+            <tr>
+              <td><strong>"Chicken by-product meal"</strong></td>
+              <td>❌ Vague + rendered (heat-damaged)</td>
+              <td>❌ Very low - double red flag</td>
             </tr>
           </tbody>
         </table>
 
-        <p style="margin-top: 16px; margin-bottom: 0; font-size: 15px;"><strong>Rule of thumb:</strong> If a manufacturer is using high-quality organs, they'll name them specifically. If they hide behind "by-products," they're likely using lower-value parts or don't want you to know what's included.</p>
+        <p style="margin-top: 16px; margin-bottom: 0;"><strong>Rule of thumb:</strong> If a manufacturer is using high-quality organs, they'll name them specifically. If they hide behind "by-products," they're likely using lower-value parts or don't want you to know what's included.</p>
       </div>
 
-      <div class="callout" style="background: #f5f5f5; border-left: 4px solid var(--fg); padding: 20px; margin: 24px 0;">
+      <div class="callout">
         <p style="margin: 0;"><strong>Evaluate Any Ingredient:</strong> Use our <a href="/ingredient-analyzer/">free ingredient analyzer</a> to check your dog's food. Get detailed breakdowns of chicken by-products, chicken liver, chicken meal, and hundreds of other ingredients with our transparency-focused ratings.</p>
       </div>
 
@@ -790,86 +1074,101 @@
       </ul>
     </div>
 
-    <div class="faq">
-      <h2 style="margin-top: 56px; padding-top: 40px; border-top: 2.5px solid var(--border);">Related Articles</h2>
+    <div class="faq-section">
+      <h2 style="margin-top: 56px; padding-top: 40px; border-top: 2px solid var(--border-light);">Related Articles</h2>
 
       <div style="display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 56px;">
-        <a href="/blog/what-is-meat-meal-dog-food.html" style="display: block; padding: 20px; border: 2.5px solid var(--border); text-decoration: none; color: var(--fg); transition: background 0.15s;">
-          <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">What is Meat Meal in Dog Food?</h3>
-          <p style="font-size: 15px; color: var(--muted); margin: 0;">Understanding rendered proteins and why transparency matters</p>
+        <a href="/blog/what-is-meat-meal-dog-food.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">What is Meat Meal in Dog Food?</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Understanding rendered proteins and why transparency matters</p>
         </a>
 
-        <a href="/blog/beef-liver-for-dogs.html" style="display: block; padding: 20px; border: 2.5px solid var(--border); text-decoration: none; color: var(--fg); transition: background 0.15s;">
-          <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">Why Beef Liver is One of the Best Things You Can Feed Your Dog</h3>
-          <p style="font-size: 15px; color: var(--muted); margin: 0;">The most nutrient-dense whole-food protein source available</p>
+        <a href="/blog/beef-liver-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Why Beef Liver is One of the Best Things You Can Feed Your Dog</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">The most nutrient-dense whole-food protein source available</p>
         </a>
 
-        <a href="/blog/organ-based-nutrition-for-dogs.html" style="display: block; padding: 20px; border: 2.5px solid var(--border); text-decoration: none; color: var(--fg); transition: background 0.15s;">
-          <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">Why Organ Meats Are Essential for Dogs</h3>
-          <p style="font-size: 15px; color: var(--muted); margin: 0;">How organs provide nutrients muscle meat can't deliver</p>
+        <a href="/blog/organ-based-nutrition-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Why Organ Meats Are Essential for Dogs</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">How organs provide nutrients muscle meat can't deliver</p>
         </a>
 
-        <a href="/blog/how-to-read-dog-supplement-labels.html" style="display: block; padding: 20px; border: 2.5px solid var(--border); text-decoration: none; color: var(--fg); transition: background 0.15s;">
-          <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">How to Read Dog Supplement Labels</h3>
-          <p style="font-size: 15px; color: var(--muted); margin: 0;">Understanding ingredient quality and sourcing transparency</p>
+        <a href="/blog/how-to-read-dog-supplement-labels.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+          <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">How to Read Dog Supplement Labels</h3>
+          <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Understanding ingredient quality and sourcing transparency</p>
         </a>
       </div>
 
       <h2>Frequently Asked Questions</h2>
 
       <div class="faq-item">
-        <div class="faq-question">What are chicken by-products in dog food?</div>
-        <div class="faq-answer">Chicken by-products are the parts of the chicken not typically consumed by humans in Western cultures, including organs (liver, heart, kidney, spleen), necks, feet, and intestines. AAFCO defines chicken by-products as "non-rendered, clean parts of slaughtered chicken such as heads, feet, viscera, free from fecal content and foreign matter." This includes some of the most nutrient-dense parts of the animal, like liver (50x more vitamin A than muscle meat) and heart (rich in taurine and CoQ10).</div>
+        <h3>What are chicken by-products in dog food?</h3>
+        <p>Chicken by-products are the parts of the chicken not typically consumed by humans in Western cultures, including organs (liver, heart, kidney, spleen), necks, feet, and intestines. AAFCO defines chicken by-products as "non-rendered, clean parts of slaughtered chicken such as heads, feet, viscera, free from fecal content and foreign matter." This includes some of the most nutrient-dense parts of the animal, like liver (50x more vitamin A than muscle meat) and heart (rich in taurine and CoQ10).</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Are chicken by-products bad for dogs?</div>
-        <div class="faq-answer">No, chicken by-products are not inherently bad for dogs. Many by-products (liver, heart, kidney, gizzard) are actually more nutrient-dense than muscle meat. The issue is lack of transparency—"chicken by-products" can include highly nutritious organs or lower-value parts like feet and necks, and you can't tell which from the label. Quality varies widely between manufacturers. Premium by-products from a trustworthy source can be excellent nutrition, while low-quality by-products from unknown sources are concerning.</div>
+        <h3>Are chicken by-products bad for dogs?</h3>
+        <p>No, chicken by-products are not inherently bad for dogs. Many by-products (liver, heart, kidney, gizzard) are actually more nutrient-dense than muscle meat. The issue is lack of transparency—"chicken by-products" can include highly nutritious organs or lower-value parts like feet and necks, and you can't tell which from the label. Quality varies widely between manufacturers. Premium by-products from a trustworthy source can be excellent nutrition, while low-quality by-products from unknown sources are concerning.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">What is the difference between chicken and chicken by-products?</div>
-        <div class="faq-answer">"Chicken" on a dog food label means clean muscle meat and skin, with or without bone. "Chicken by-products" means organs, feet, heads, necks, intestines, and other parts not included in the "chicken" definition. Nutritionally, some by-products (organs like liver and heart) are far superior to plain muscle meat in vitamins, minerals, and amino acids. The main difference is transparency: "chicken" is specific and clear, while "chicken by-products" is vague and could include anything from premium liver to low-value feet.</div>
+        <h3>What is the difference between chicken and chicken by-products?</h3>
+        <p>"Chicken" on a dog food label means clean muscle meat and skin, with or without bone. "Chicken by-products" means organs, feet, heads, necks, intestines, and other parts not included in the "chicken" definition. Nutritionally, some by-products (organs like liver and heart) are far superior to plain muscle meat in vitamins, minerals, and amino acids. The main difference is transparency: "chicken" is specific and clear, while "chicken by-products" is vague and could include anything from premium liver to low-value feet.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">What is chicken by-product meal?</div>
-        <div class="faq-answer">Chicken by-product meal is chicken by-products (organs, necks, feet, heads) that have been rendered—cooked at high heat (240-290°F) to remove moisture and fat, then ground into a dry powder. It's similar to chicken meal but made from by-products instead of muscle meat. Rendering concentrates protein (60-70% protein vs 18-20% in fresh chicken) but damages heat-sensitive nutrients like B vitamins and taurine. Chicken by-product meal is less transparent and generally lower quality than named organ ingredients like "chicken liver" or "chicken heart."</div>
+        <h3>What is chicken by-product meal?</h3>
+        <p>Chicken by-product meal is chicken by-products (organs, necks, feet, heads) that have been rendered—cooked at high heat (240-290°F) to remove moisture and fat, then ground into a dry powder. It's similar to chicken meal but made from by-products instead of muscle meat. Rendering concentrates protein (60-70% protein vs 18-20% in fresh chicken) but damages heat-sensitive nutrients like B vitamins and taurine. Chicken by-product meal is less transparent and generally lower quality than named organ ingredients like "chicken liver" or "chicken heart."</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Why are chicken by-products cheap?</div>
-        <div class="faq-answer">Chicken by-products are cheap because they're the parts of the chicken that Western consumers don't typically eat. In the US, people prefer boneless, skinless chicken breast, so organs, feet, necks, and heads have lower market value and are sold to pet food manufacturers at a discount. This doesn't necessarily mean by-products are low quality—many cultures prize organs for their nutritional value. The low cost reflects market demand, not inherent nutritional worth. However, the cheapness does attract manufacturers who prioritize cost-cutting over nutrition.</div>
+        <h3>Why are chicken by-products cheap?</h3>
+        <p>Chicken by-products are cheap because they're the parts of the chicken that Western consumers don't typically eat. In the US, people prefer boneless, skinless chicken breast, so organs, feet, necks, and heads have lower market value and are sold to pet food manufacturers at a discount. This doesn't necessarily mean by-products are low quality—many cultures prize organs for their nutritional value. The low cost reflects market demand, not inherent nutritional worth. However, the cheapness does attract manufacturers who prioritize cost-cutting over nutrition.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Are organs considered by-products?</div>
-        <div class="faq-answer">Yes, organs like liver, heart, kidney, spleen, and gizzard are classified as by-products under AAFCO definitions because they're not muscle meat. This is one reason the by-product stigma is misleading—some of the most nutrient-dense parts of the animal (especially liver, which has 50x more vitamin A, 3000% more B12, and 12x more iron than muscle meat) are technically by-products. The issue isn't whether something is a by-product, but whether the manufacturer specifies which organs (transparent) or hides behind the vague term "by-products" (not transparent).</div>
+        <h3>Are organs considered by-products?</h3>
+        <p>Yes, organs like liver, heart, kidney, spleen, and gizzard are classified as by-products under AAFCO definitions because they're not muscle meat. This is one reason the by-product stigma is misleading—some of the most nutrient-dense parts of the animal (especially liver, which has 50x more vitamin A, 3000% more B12, and 12x more iron than muscle meat) are technically by-products. The issue isn't whether something is a by-product, but whether the manufacturer specifies which organs (transparent) or hides behind the vague term "by-products" (not transparent).</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Is chicken liver a by-product?</div>
-        <div class="faq-answer">Yes, chicken liver is technically a by-product since it's not muscle meat. However, when a food label lists "chicken liver" specifically (rather than "chicken by-products"), it's transparent and high-quality. Chicken liver is one of the most nutrient-dense foods available: 50x more vitamin A than muscle meat, 3000% more B12, 12x more iron, and extremely rich in folate, choline, and riboflavin. Named liver is excellent nutrition—vague "by-products" that might or might not include liver are the concern.</div>
+        <h3>Is chicken liver a by-product?</h3>
+        <p>Yes, chicken liver is technically a by-product since it's not muscle meat. However, when a food label lists "chicken liver" specifically (rather than "chicken by-products"), it's transparent and high-quality. Chicken liver is one of the most nutrient-dense foods available: 50x more vitamin A than muscle meat, 3000% more B12, 12x more iron, and extremely rich in folate, choline, and riboflavin. Named liver is excellent nutrition—vague "by-products" that might or might not include liver are the concern.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Should I avoid dog food with chicken by-products?</div>
-        <div class="faq-answer">It depends on transparency and trust. Avoid foods that list vague "chicken by-products" without specifying what's included, especially from brands with poor quality reputations. Look for foods that name specific organs (chicken liver, chicken heart) instead of hiding behind generic "by-products." If a premium brand you trust lists by-products and provides transparency about sourcing, it may be fine. The issue isn't by-products themselves—it's manufacturers using the vague term to obscure low-quality ingredients.</div>
+        <h3>Should I avoid dog food with chicken by-products?</h3>
+        <p>It depends on transparency and trust. Avoid foods that list vague "chicken by-products" without specifying what's included, especially from brands with poor quality reputations. Look for foods that name specific organs (chicken liver, chicken heart) instead of hiding behind generic "by-products." If a premium brand you trust lists by-products and provides transparency about sourcing, it may be fine. The issue isn't by-products themselves—it's manufacturers using the vague term to obscure low-quality ingredients.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">What are chicken by-products used for in dog treats?</div>
-        <div class="faq-answer">In dog treats, chicken by-products often refer to dehydrated or rendered organs, feet, necks, or cartilage. Some by-product treats are excellent: dehydrated chicken liver, heart, or gizzard are nutrient-dense and dogs love them. Others are low-value: chicken feet or necks provide collagen but little else. The problem is the label "chicken by-products" doesn't tell you which parts you're getting. Look for treats that specify the ingredient: "freeze-dried chicken liver" is transparent and trustworthy, while "chicken by-products" is vague and concerning.</div>
+        <h3>What are chicken by-products used for in dog treats?</h3>
+        <p>In dog treats, chicken by-products often refer to dehydrated or rendered organs, feet, necks, or cartilage. Some by-product treats are excellent: dehydrated chicken liver, heart, or gizzard are nutrient-dense and dogs love them. Others are low-value: chicken feet or necks provide collagen but little else. The problem is the label "chicken by-products" doesn't tell you which parts you're getting. Look for treats that specify the ingredient: "freeze-dried chicken liver" is transparent and trustworthy, while "chicken by-products" is vague and concerning.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Why do premium dog foods avoid by-products?</div>
-        <div class="faq-answer">Premium dog foods often avoid the term "by-products" for marketing reasons, not nutritional ones. The pet food industry has successfully stigmatized by-products as "fillers" or "waste," so premium brands avoid the term to appeal to consumers—even though many by-products (organs) are nutritionally superior to muscle meat. Instead, premium brands list specific organs like "beef liver," "chicken heart," or "turkey gizzard" rather than using the catch-all term "by-products." This provides transparency and avoids the negative association, even though these named organs are technically by-products.</div>
+        <h3>Why do premium dog foods avoid by-products?</h3>
+        <p>Premium dog foods often avoid the term "by-products" for marketing reasons, not nutritional ones. The pet food industry has successfully stigmatized by-products as "fillers" or "waste," so premium brands avoid the term to appeal to consumers—even though many by-products (organs) are nutritionally superior to muscle meat. Instead, premium brands list specific organs like "beef liver," "chicken heart," or "turkey gizzard" rather than using the catch-all term "by-products." This provides transparency and avoids the negative association, even though these named organs are technically by-products.</p>
       </div>
     </div>
-  </article>
+    </article>
+  </main>
 
-  <footer>© <span id="year"></span> Watts Pet</footer>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
+      </div>
+    </footer>
+  </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
