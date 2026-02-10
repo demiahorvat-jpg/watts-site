@@ -3972,6 +3972,33 @@
             "difference": "These are the same ingredient—calcium D-pantothenate and calcium pantothenate both provide vitamin B5 (pantothenic acid). The \"D\" just specifies the molecular form."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Calcium salt of pantothenic acid (vitamin B5) supporting energy metabolism, hormone production, and stress response",
+        "vitaminB5": "Provides pantothenic acid (vitamin B5) - essential water-soluble B vitamin required for numerous metabolic processes",
+        "nameNote": "Calcium D-pantothenate and calcium pantothenate are the same compound - both refer to the calcium salt of D-pantothenic acid",
+        "energyMetabolism": "Critical component of Coenzyme A (CoA) which is essential for metabolizing fats, proteins, and carbohydrates into energy",
+        "hormoneProduction": "Required for synthesis of steroid hormones, stress hormones (cortisol), and sex hormones",
+        "healthBenefits": [
+          "Energy production (converts food to ATP energy)",
+          "Fatty acid synthesis and breakdown",
+          "Cholesterol and hormone synthesis",
+          "Neurotransmitter production (acetylcholine)",
+          "Stress response support (adrenal function)",
+          "Skin and coat health",
+          "Wound healing and tissue repair"
+        ],
+        "deficiencySymptoms": "Rare in dogs eating complete diets. Severe deficiency causes poor growth, GI issues, immune dysfunction, and neurological problems.",
+        "calciumContent": "Provides small amount of calcium (8-9% by weight) in addition to vitamin B5",
+        "stability": "More stable than pure pantothenic acid - calcium salt form resists degradation during food processing and storage",
+        "typicalInclusion": "10-60mg per kg of food (AAFCO minimum: 12mg/kg for all life stages)",
+        "safety": "Very safe - water-soluble with no known toxicity. Excess is excreted in urine.",
+        "syntheticVsNatural": "Typically synthetic but chemically identical to natural B5. Well-absorbed and effective.",
+        "qualityNote": "Calcium D-pantothenate is a stable, effective form of vitamin B5. Essential for energy metabolism and stress response. Standard inclusion in complete dog foods."
+      },
+      "seoMetadata": {
+        "focusKeyword": "calcium d pantothenate dog food",
+        "metaDescription": "Is calcium D-pantothenate safe for dogs? Learn vitamin B5 benefits, vs pantothenic acid, energy metabolism, hormone production, stress support & safety."
       }
     },
     {
@@ -4004,6 +4031,33 @@
             "difference": "Calcium iodate is a stable iodine source commonly used in pet food, while calcium iodide is less stable and rarely used. Both provide iodine for thyroid health."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Iodine supplement in the form of calcium salt providing essential iodine for thyroid hormone production",
+        "iodineSource": "Provides iodine in stable, oxidized iodate form - more stable during food processing than potassium iodide",
+        "iodineContent": "65% iodine by weight - concentrated iodine source",
+        "thyroidFunction": "Iodine is essential for synthesis of thyroid hormones (T3 and T4) which regulate metabolism, growth, and development",
+        "healthBenefits": [
+          "Thyroid hormone production (T3, T4)",
+          "Metabolic rate regulation",
+          "Growth and development support",
+          "Nervous system function",
+          "Reproductive health",
+          "Skin and coat health",
+          "Cognitive function"
+        ],
+        "deficiencyConsequences": "Iodine deficiency causes hypothyroidism - symptoms include weight gain, lethargy, cold intolerance, poor coat, reproductive issues",
+        "AAFCOrequirements": "AAFCO minimum: 1.5mg iodine/kg for adults, 1.5mg/kg for growth. Maximum: 50mg/kg to prevent toxicity.",
+        "stability": "Very stable - resists degradation from heat, moisture, and oxidation better than iodide forms",
+        "vsOtherIodineForms": "Calcium iodate is more stable than potassium iodide. Potassium iodide is cheaper but degrades faster. Both are effective.",
+        "bioavailability": "Good bioavailability - readily absorbed in intestines and utilized by thyroid gland",
+        "typicalInclusion": "Very small amounts needed - usually 1-10mg per kg of food provides adequate iodine",
+        "safety": "Safe at appropriate levels. Excessive iodine can cause hyperthyroidism. Stick to AAFCO maximums.",
+        "qualityNote": "Calcium iodate is a stable, reliable iodine source for thyroid health. Standard mineral supplement in complete dog foods."
+      },
+      "seoMetadata": {
+        "focusKeyword": "calcium iodate dog food",
+        "metaDescription": "Is calcium iodate safe for dogs? Learn iodine supplement benefits, thyroid hormone support, vs potassium iodide, stability, dosing & safety limits."
       }
     },
     {
@@ -4032,6 +4086,33 @@
             "difference": "Both provide iodine and calcium. Calcium iodide is less stable and rarely used, while calcium iodate is more shelf-stable. Iodine is essential for thyroid function."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Iodine supplement providing essential iodine for thyroid function and metabolism",
+        "iodineSource": "Calcium salt of iodide - provides iodine in reduced iodide form",
+        "iodineContent": "76% iodine by weight - very concentrated iodine source",
+        "thyroidSupport": "Iodine is essential for thyroid hormone synthesis (T3 and T4) which control metabolism, energy, and growth",
+        "healthBenefits": [
+          "Thyroid hormone production",
+          "Metabolic regulation",
+          "Growth and development",
+          "Brain and cognitive function",
+          "Reproductive health",
+          "Temperature regulation",
+          "Skin and coat quality"
+        ],
+        "deficiencyRisks": "Iodine deficiency leads to hypothyroidism with symptoms: lethargy, weight gain, poor coat, cold sensitivity, reproductive problems",
+        "stability": "Less stable than calcium iodate - iodide form is more prone to oxidation and degradation during storage",
+        "vsCalciumIodate": "Calcium iodate is preferred in pet foods due to better stability. Calcium iodide works but degrades faster.",
+        "bioavailability": "Good absorption and utilization - iodide is readily absorbed and transported to thyroid",
+        "typicalInclusion": "Small amounts (1-10mg per kg food) provide adequate iodine. AAFCO minimum: 1.5mg/kg, maximum: 50mg/kg.",
+        "safety": "Safe at proper levels. Excess can cause hyperthyroidism. Follow AAFCO guidelines.",
+        "lessCommon": "Less commonly used than calcium iodate or potassium iodide due to stability issues",
+        "qualityNote": "Calcium iodide provides essential iodine but is less stable than iodate forms. Effective when properly stored and handled."
+      },
+      "seoMetadata": {
+        "focusKeyword": "calcium iodide dog food",
+        "metaDescription": "Is calcium iodide safe for dogs? Learn iodine supplement, thyroid support, vs calcium iodate/potassium iodide, stability issues & dosing."
       }
     },
     {
@@ -4066,6 +4147,32 @@
             "difference": "Calcium pantothenate and calcium D-pantothenate are identical—both are the calcium salt form of vitamin B5. Used interchangeably in pet food formulations."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Calcium salt of pantothenic acid (vitamin B5) essential for energy metabolism, hormone synthesis, and cellular function",
+        "identicalToCalciumD": "Calcium pantothenate is identical to calcium D-pantothenate - same compound, different naming conventions",
+        "vitaminB5": "Provides pantothenic acid (vitamin B5) - water-soluble B vitamin named from Greek \"pantothen\" meaning \"from everywhere\" due to wide distribution",
+        "coenzymeA": "Essential component of Coenzyme A (CoA) - required for over 100 metabolic reactions including energy production",
+        "metabolicRoles": [
+          "Carbohydrate metabolism (converts glucose to energy)",
+          "Fat synthesis and breakdown (beta-oxidation)",
+          "Protein metabolism (amino acid processing)",
+          "Cholesterol and steroid hormone synthesis",
+          "Neurotransmitter production (acetylcholine)",
+          "Red blood cell formation",
+          "Vitamin D synthesis"
+        ],
+        "stressSupport": "Supports adrenal gland function and cortisol production - helps body respond to physical and emotional stress",
+        "skinAndCoat": "Supports healthy skin, coat, and mucous membranes. May reduce shedding and improve coat quality.",
+        "deficiency": "Rare in complete diets. Severe deficiency causes poor growth, GI distress, immune problems, and \"burning feet syndrome\" in humans.",
+        "typicalInclusion": "10-60mg per kg food. AAFCO minimum: 12mg/kg for all life stages.",
+        "stability": "Stable calcium salt form - resists heat and oxidation better than free pantothenic acid",
+        "safety": "Very safe - no known toxicity even at high doses. Excess excreted in urine.",
+        "qualityNote": "Calcium pantothenate is a reliable vitamin B5 source essential for energy and metabolism. Standard in complete dog foods."
+      },
+      "seoMetadata": {
+        "focusKeyword": "calcium pantothenate dog food",
+        "metaDescription": "Is calcium pantothenate safe for dogs? Learn vitamin B5, vs D-pantothenate, CoA role, energy metabolism, stress/hormone support & safety."
       }
     },
     {
@@ -4095,6 +4202,31 @@
             "difference": "Both are preservatives. Calcium propionate prevents mold growth (especially in baked goods), while potassium sorbate inhibits yeast and mold. Both are considered safe."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Antimicrobial preservative preventing mold and bacterial growth in dog food",
+        "whatIsIt": "Calcium salt of propionic acid - naturally occurring fatty acid also produced in animal digestive systems",
+        "antimicrobialAction": "Inhibits growth of molds, yeasts, and some bacteria by disrupting cellular metabolism - particularly effective against Bacillus species and molds",
+        "naturalOccurrence": "Propionic acid is naturally produced in the rumen of cattle and colon of dogs during fiber fermentation by gut bacteria",
+        "preservationTarget": "Primarily prevents mold and rope bacteria in baked goods, semi-moist foods, and grain-based kibble",
+        "effectiveness": "Most effective at pH 5.0-6.0. Works better in slightly acidic foods. Less effective in high-moisture products.",
+        "typicalInclusion": "0.1-0.4% of food by weight. Generally 2000-4000 ppm (parts per million).",
+        "FDAstatus": "FDA GRAS (Generally Recognized As Safe) for use in human and animal foods",
+        "safety": [
+          "Generally safe with long history of use",
+          "Naturally occurs in body from gut bacteria",
+          "No known toxicity at typical usage levels",
+          "May cause digestive upset in sensitive dogs at very high doses",
+          "Some dogs may have sensitivities"
+        ],
+        "vsOtherPreservatives": "Natural alternative to synthetic preservatives like BHA/BHT. Less effective than potassium sorbate against yeasts.",
+        "benefits": "Extends shelf life, prevents mycotoxin formation from mold, maintains food safety",
+        "concerns": "Some pet owners prefer no added preservatives. May contribute to calcium intake (though minimal).",
+        "qualityNote": "Calcium propionate is a safe, naturally-derived preservative. Prevents mold effectively. Acceptable alternative to synthetic preservatives."
+      },
+      "seoMetadata": {
+        "focusKeyword": "calcium propionate dog food",
+        "metaDescription": "Is calcium propionate safe for dogs? Learn mold preservative, natural antimicrobial, vs synthetic preservatives, FDA GRAS status & safety profile."
       }
     },
     {
@@ -4131,6 +4263,34 @@
             "difference": "Camellia sinensis is the tea plant. Green tea extract is made from its leaves. Same source—green tea extract is just the concentrated form of camellia sinensis."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Green tea plant extract providing powerful antioxidants (catechins), particularly EGCG, supporting health and longevity",
+        "whatIsIt": "Camellia sinensis is the tea plant - all true teas (green, black, white, oolong) come from this plant. Different processing creates different tea types.",
+        "greenTeaExtract": "Most pet foods use green tea extract (minimally processed leaves) which retains highest antioxidant levels",
+        "catechins": "Rich in catechins - potent antioxidants including EGCG (epigallocatechin gallate), the most powerful and well-studied",
+        "EGCGbenefits": "EGCG is 25-100x more potent than vitamins C and E as an antioxidant",
+        "healthBenefits": [
+          "Powerful antioxidant protection (reduces oxidative stress)",
+          "Anti-inflammatory effects (reduces chronic inflammation)",
+          "Cognitive support (may improve brain function, reduce decline)",
+          "Cardiovascular health (improves blood vessel function)",
+          "Weight management (increases metabolism, fat oxidation)",
+          "Dental health (antibacterial, reduces plaque)",
+          "Cancer prevention (may inhibit tumor growth)",
+          "Immune system enhancement"
+        ],
+        "polyphenols": "Contains polyphenols and flavonoids with anti-cancer, anti-viral, and anti-bacterial properties",
+        "caffeineContent": "Green tea contains caffeine (2-4% by weight in extract). Small amounts in dog food are generally safe but excessive amounts can cause toxicity.",
+        "typicalInclusion": "0.1-1% of diet as dried extract or powder. Usually 50-200mg per serving.",
+        "decaffeinated": "Some pet foods use decaffeinated green tea extract to provide catechins without caffeine concerns",
+        "research": "Extensive research in humans and animals shows significant antioxidant and health benefits",
+        "safety": "Generally safe at appropriate levels. Monitor caffeine content - excessive caffeine is toxic to dogs. Stick to small amounts.",
+        "qualityNote": "Camellia sinensis (green tea) is a premium antioxidant ingredient with strong scientific backing. Signals health-focused, longevity-supporting formulation."
+      },
+      "seoMetadata": {
+        "focusKeyword": "camellia sinensis dog food",
+        "metaDescription": "Is green tea (camellia sinensis) safe for dogs? Learn EGCG catechin benefits, antioxidant power, caffeine concerns, dosing & health research."
       }
     },
     {
@@ -4155,7 +4315,32 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "nutritionalProfile": {
+        "function": "Plant protein and fiber byproduct from canola oil extraction - provides moderate protein and energy",
+        "whatIsIt": "Canola meal is what remains after extracting oil from canola seeds (rapeseed) - contains protein, fiber, and residual nutrients",
+        "macronutrients": {
+          "protein": "36-40% plant protein (decent for plant source)",
+          "fiber": "10-12% fiber",
+          "fat": "3-5% residual fat after oil extraction",
+          "carbohydrates": "~35% (mostly complex carbs)"
+        },
+        "proteinQuality": "Incomplete protein - low in lysine and methionine (essential amino acids). Must be combined with animal protein for dogs.",
+        "aminoAcidProfile": "Better amino acid profile than soybean meal but still deficient in key amino acids for dogs",
+        "digestibility": "70-80% digestible - moderate for plant protein. Lower than meat meals (85-90%)",
+        "glucosinolates": "Modern canola is bred to be low in glucosinolates (antinutrients that can affect thyroid). \"Canola\" = Canadian Oil Low Acid.",
+        "fiber": "High fiber supports digestive health but dilutes nutrient density",
+        "micronutrients": "Good source of B vitamins, vitamin E, calcium, phosphorus, magnesium, and selenium",
+        "typicalInclusion": "5-15% in budget/economy formulas as supplemental protein and fiber source",
+        "GMOconcerns": "Most canola is genetically modified. Organic or non-GMO canola meal is available but more expensive.",
+        "betterAlternatives": "Animal protein meals (chicken meal, fish meal) provide superior protein quality and digestibility",
+        "whenUsed": "Common in budget foods to boost protein percentage and fiber. Less expensive than premium protein sources.",
+        "qualityNote": "Canola meal is an acceptable plant protein and fiber source in moderation. Signals budget formulation. Should be paired with substantial animal protein."
+      },
+      "seoMetadata": {
+        "focusKeyword": "canola meal dog food",
+        "metaDescription": "Is canola meal good for dogs? Learn plant protein quality, vs animal protein, fiber content, glucosinolates, digestibility, GMO concerns & budget use."
+      }
     },
     {
       "name": "Canola Oil",
@@ -4288,6 +4473,33 @@
             "difference": "Carrageenan is a seaweed thickener with inflammatory concerns (especially degraded form), while agar agar is a safer alternative gelling agent from red algae."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Seaweed-derived thickening and gelling agent used in wet dog food to create texture and prevent separation",
+        "whatIsIt": "Natural polysaccharide extracted from red seaweed (Irish moss, Eucheuma species) - used for 600+ years in food",
+        "typesOfCarrageenan": "Three types: kappa (firm gel), iota (soft gel), lambda (no gel, just thickening). Pet foods typically use kappa or iota.",
+        "functionalRole": [
+          "Creates gel structure in pates and loaves",
+          "Thickens gravies and sauces",
+          "Prevents fat and water separation",
+          "Improves texture and mouthfeel",
+          "Suspends particles evenly",
+          "Replaces fat for texture in low-fat formulas"
+        ],
+        "nutritionalValue": "Zero nutritional value - 100% soluble fiber that passes through undigested",
+        "controversy": "MAJOR CONTROVERSY - degraded carrageenan (poligeenan) causes inflammation and GI issues in animal studies",
+        "degradedVsFood": "Food-grade carrageenan is high molecular weight and safe. Degraded carrageenan (poligeenan) is low molecular weight and inflammatory - NOT allowed in food.",
+        "animalStudies": "Studies showing harm used degraded poligeenan (not food-grade carrageenan) or injected carrageenan directly into tissues (not oral consumption)",
+        "FDAposition": "FDA considers food-grade carrageenan safe. Some scientists disagree citing potential for degradation during digestion.",
+        "inflammatoryConcerns": "Some research suggests even food-grade carrageenan may trigger inflammation in sensitive individuals, especially in GI-compromised animals",
+        "IBDconcerns": "Dogs with IBD, colitis, or sensitive stomachs may react poorly to carrageenan - avoid if digestive issues present",
+        "typicalInclusion": "0.2-2% of wet food for texture and stability",
+        "alternatives": "Agar agar, guar gum, xanthan gum, locust bean gum are alternative thickeners",
+        "qualityNote": "Carrageenan is controversial. Food-grade is FDA-approved but may cause inflammation in sensitive dogs. Avoid for IBD/sensitive stomachs. Preference is for carrageenan-free foods."
+      },
+      "seoMetadata": {
+        "focusKeyword": "carrageenan dog food",
+        "metaDescription": "Is carrageenan safe for dogs? Learn seaweed thickener concerns, inflammation risks, degraded vs food-grade, IBD issues, alternatives & controversy."
       }
     },
     {
