@@ -753,7 +753,164 @@ tbody tr:hover {
 
 ---
 
-## 10. Spacing System
+## 10. Related Articles Section (Blog Posts)
+
+### Purpose
+The Related Articles section appears at the end of blog posts to guide readers to relevant content. It should be visually consistent, easy to scan, and encourage further reading.
+
+### Standard Format
+```html
+<h2 style="margin-top: 56px; padding-top: 40px; border-top: 2px solid var(--border-light);">Related Articles</h2>
+
+<div style="display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 56px;">
+  <a href="/blog/article-url.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+    <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Article Title</h3>
+    <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Brief description of the article</p>
+  </a>
+  <a href="/blog/article-url.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+    <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Article Title</h3>
+    <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Brief description of the article</p>
+  </a>
+  <a href="/blog/article-url.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+    <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Article Title</h3>
+    <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Brief description of the article</p>
+  </a>
+</div>
+```
+
+### Key Design Elements
+
+#### Section Header
+```css
+h2 {
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 2px solid var(--border-light);
+}
+```
+- **Top border separator**: 2px border creates visual separation from article content
+- **Generous spacing**: 56px margin-top + 40px padding-top for clear section break
+
+#### Grid Container
+```css
+div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 56px;
+}
+```
+- **Single column layout**: Easy to scan on all screen sizes
+- **16px gap**: Compact but breathable spacing between cards
+- **Bottom margin**: 56px creates space before footer
+
+#### Article Cards
+```css
+a {
+  display: block;
+  padding: 16px 20px;  /* Specific: 16px top/bottom, 20px left/right */
+  border: 3px solid var(--brand-orange);
+  background: var(--white);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--text-dark);
+  transition: background 0.15s;
+}
+```
+- **3px orange border**: Provides visual weight and brand consistency
+- **Specific padding**: 16px vertical, 20px horizontal (not 20px all around)
+- **12px border-radius**: Consistent with content card radius
+- **Hover effect**: Use `transition: background 0.15s` for smooth hover state
+
+#### Card Title
+```css
+h3 {
+  font-size: 18px;
+  font-weight: 600;  /* Semibold */
+  margin: 0 0 8px 0;  /* Specific: only bottom margin */
+}
+```
+- **Fixed 18px size**: Does not scale up on desktop (keeps cards compact)
+- **Semibold weight**: Balanced emphasis without being too heavy
+- **8px bottom margin**: Tight spacing to description
+
+#### Card Description
+```css
+p {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin: 0;
+}
+```
+- **Smaller 15px size**: Clearly subordinate to title
+- **Muted color**: Distinguishes from title text
+- **No margin**: Clean alignment at card bottom
+
+### Placement Guidelines
+
+1. **Before FAQ section**: If the blog post has a "Frequently Asked Questions" section, place Related Articles immediately before it
+2. **Before `</main>`**: If there's no FAQ section, place Related Articles as the last element before the closing `</main>` tag
+3. **After main content**: Always place after all article content and callout boxes
+
+### Best Practices
+
+#### Number of Articles
+- **Recommended**: 3-4 related articles
+- **Minimum**: 3 articles (fewer looks sparse)
+- **Maximum**: 5 articles (more becomes overwhelming)
+
+#### Article Selection
+- Choose articles that are genuinely related to the current topic
+- Prioritize articles that provide deeper information on subtopics mentioned
+- Consider user journey: what would a reader naturally want to learn next?
+- Link to both foundational content and advanced topics
+
+#### Title and Description Writing
+- **Title**: Keep concise (3-6 words), match the actual article H1
+- **Description**: 8-12 words explaining what the article covers
+- **Descriptions**: Should be unique and informative, not generic
+- **Tone**: Direct and helpful, matching overall site voice
+
+### Inline Styles Required
+All Related Articles sections use inline styles (not CSS classes) to ensure consistency and portability. This approach:
+- Prevents style inheritance issues
+- Makes it easy to copy sections between posts
+- Ensures visual consistency even if global CSS changes
+- Simplifies maintenance and updates
+
+### Example Implementation
+```html
+<!-- At end of blog post, before FAQ or before </main> -->
+<h2 style="margin-top: 56px; padding-top: 40px; border-top: 2px solid var(--border-light);">Related Articles</h2>
+
+<div style="display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 56px;">
+  <a href="/blog/protein-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+    <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Protein for Dogs</h3>
+    <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Why active dogs need optimal protein levels</p>
+  </a>
+  <a href="/blog/beef-liver-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+    <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Beef Liver for Dogs</h3>
+    <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Nutrient-dense organ meat for working dogs</p>
+  </a>
+  <a href="/blog/joint-supplements-for-dogs.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+    <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Joint Supplements for Dogs</h3>
+    <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Supporting active dogs' joint health</p>
+  </a>
+</div>
+```
+
+### Common Mistakes to Avoid
+- ❌ Don't use padding: 20px (use 16px 20px instead)
+- ❌ Don't scale H3 to different sizes on desktop (keep at 18px)
+- ❌ Don't give H3 top margin (use margin: 0 0 8px 0)
+- ❌ Don't use fewer than 3 or more than 5 articles
+- ❌ Don't write generic descriptions like "Learn more about this topic"
+- ❌ Don't forget the 2px top border on the H2
+- ❌ Don't use CSS classes instead of inline styles
+
+---
+
+## 11. Spacing System
 
 ### Vertical Rhythm
 ```css
@@ -789,7 +946,7 @@ article { padding: 60px 50px; }
 
 ---
 
-## 11. Border Radius System
+## 12. Border Radius System
 
 ### Standard Values
 ```css
@@ -812,7 +969,7 @@ border-radius: 300px;  /* Desktop */
 
 ---
 
-## 12. Shadow System
+## 13. Shadow System
 
 ### Elevation Levels
 ```css
@@ -837,7 +994,7 @@ box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 
 ---
 
-## 13. Responsive Breakpoint
+## 14. Responsive Breakpoint
 
 ### Single Breakpoint Strategy
 ```css
@@ -857,7 +1014,7 @@ box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 
 ---
 
-## 14. Logo Assets
+## 15. Logo Assets
 
 ### Files
 Located in root directory:
@@ -882,7 +1039,7 @@ Located in root directory:
 
 ---
 
-## 15. Implementation Checklist
+## 16. Implementation Checklist
 
 When applying this design system to a new page:
 
@@ -948,7 +1105,7 @@ When applying this design system to a new page:
 
 ---
 
-## 16. Common Mistakes to Avoid
+## 17. Common Mistakes to Avoid
 
 ### Typography
 - ❌ Don't use Regular (400) as body text weight
@@ -976,7 +1133,7 @@ When applying this design system to a new page:
 
 ---
 
-## 17. File Reference
+## 18. File Reference
 
 Test implementation: `/Users/demihorvat/Projects/watts-site/blog/bone-broth-REDESIGN-v2.html`
 
@@ -984,7 +1141,7 @@ This file contains the complete working implementation of all design system elem
 
 ---
 
-## 18. Version History
+## 19. Version History
 
 **v1.0 - February 10, 2026**
 - Initial design system documentation
