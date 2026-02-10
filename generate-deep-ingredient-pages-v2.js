@@ -609,6 +609,12 @@ function generateIngredientPage(ingredient, allIngredients) {
     pageTitle = `${ingredient.name} in Dog Food | Watts`;
   }
 
+  // Helper: Get "what it is" text with proper fallback
+  const whatItIsText = ingredient.whatItIsExpanded?.overview
+    || ingredient.whatItIs
+    || (ingredient.nutritionalProfile && ingredient.nutritionalProfile.function)
+    || 'No description available.';
+
   const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -620,7 +626,7 @@ function generateIngredientPage(ingredient, allIngredients) {
 
     <!-- Open Graph -->
     <meta property="og:title" content="${ingredient.name} in Dog Food: Complete Guide | Watts Pet">
-    <meta property="og:description" content="${ingredient.whatItIs.substring(0, 150)}">
+    <meta property="og:description" content="${whatItIsText.substring(0, 150)}">
     <meta property="og:url" content="https://wattspet.com/ingredient-analyzer/ingredients/${slug}/">
     <meta property="og:type" content="article">
 
@@ -1108,7 +1114,7 @@ function generateIngredientPage(ingredient, allIngredients) {
     </div>
 
     <h2 id="what-it-is">What It Is</h2>
-    ${ingredient.whatItIsExpanded ? `<p>${ingredient.whatItIsExpanded.overview}</p>` : `<p>${ingredient.whatItIs}</p>`}
+    <p>${whatItIsText}</p>
     ${ingredient.whatItIsExpanded ? generateComparisonLinks(ingredient.whatItIsExpanded.compareToSimilar) : ''}
 
     <h2 id="why-used">Why It's Used in Dog Products</h2>
