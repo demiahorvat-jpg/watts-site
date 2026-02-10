@@ -3027,7 +3027,32 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "nutritionalProfile": {
+        "function": "B vitamin (B7/B8) essential for skin, coat, metabolism, and cellular energy production",
+        "vitaminBcomplex": "One of 8 B vitamins - water-soluble vitamin that must be consumed regularly (not stored in body)",
+        "skinAndCoat": "Critical for keratin production - supports healthy skin, shiny coat, and strong nails",
+        "metabolism": "Cofactor for enzymes that metabolize fats, proteins, and carbohydrates into energy",
+        "healthBenefits": [
+          "Skin health (prevents dryness, flaking, dermatitis)",
+          "Coat quality (improves shine, reduces shedding)",
+          "Nail strength (prevents brittle, cracking nails)",
+          "Energy metabolism (helps convert food to energy)",
+          "Nervous system function",
+          "Cell growth and DNA synthesis"
+        ],
+        "deficiencySymptoms": "Hair loss, dry flaky skin, dull coat, lethargy, poor growth. Rare in dogs eating complete diets.",
+        "naturalSources": "Liver, egg yolks, fish, meat, whole grains. Also produced by gut bacteria in dogs.",
+        "supplementationNeeds": "Most dogs get adequate biotin from food and gut bacteria synthesis. Supplementation helps dogs with coat issues or on antibiotics (which kill biotin-producing bacteria).",
+        "typicalInclusion": "0.1-1.0 mg per kg of food (AAFCOs minimum: 0.018 mg/kg)",
+        "safety": "Very safe - water-soluble with no known toxicity even at high doses. Excess is excreted in urine.",
+        "synergisticNutrients": "Works with other B vitamins, zinc, and omega fatty acids for optimal skin and coat health",
+        "qualityNote": "Biotin is an essential B vitamin with proven benefits for skin and coat. Signals health-focused formulation, especially for coat quality."
+      },
+      "seoMetadata": {
+        "focusKeyword": "biotin dog food",
+        "metaDescription": "Is biotin good for dogs? Learn B vitamin benefits, skin/coat health, metabolism support, deficiency symptoms, natural sources, dosing & safety."
+      }
     },
     {
       "name": "Blue 2",
@@ -3258,6 +3283,31 @@
             "difference": "Bone broth is made by simmering beef bones (and sometimes meat) to extract collagen, minerals, and flavor. It adds moisture and palatability but less protein than whole beef."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Slow-simmered animal bones and connective tissue providing collagen, minerals, amino acids, and hydration",
+        "whatIsIt": "Bones (with marrow, joints, connective tissue) simmered for 12-48 hours to extract nutrients into liquid",
+        "collagenAndGelatin": "Rich in collagen and gelatin from slow breakdown of connective tissue - supports joint, gut, and skin health",
+        "aminoAcids": [
+          "Glycine (gut healing, anti-inflammatory, detoxification)",
+          "Proline (collagen formation, joint health)",
+          "Glutamine (intestinal barrier repair, immune function)",
+          "Arginine (wound healing, immune support)"
+        ],
+        "minerals": "Naturally occurring calcium, phosphorus, magnesium, potassium, and trace minerals from bones",
+        "glucosamineAndChondroitin": "Contains naturally occurring glucosamine and chondroitin from cartilage - supports joint health",
+        "hyaluronicAcid": "Provides hyaluronic acid from joints and connective tissue - lubricates joints and hydrates skin",
+        "digestibility": "Highly digestible and bioavailable - nutrients are pre-broken down by long cooking process",
+        "hydration": "Excellent for hydration and palatability - encourages fluid intake",
+        "gutHealing": "Gelatin and glutamine support intestinal barrier integrity - beneficial for leaky gut and IBD",
+        "typicalInclusion": "5-20% of wet food or used as meal topper",
+        "qualityConsiderations": "Quality varies - best when made from grass-fed or pasture-raised bones. Check for added salt (should be minimal or none).",
+        "vsStock": "Bone broth is simmered longer (12-48 hours) than stock (2-6 hours) - more concentrated nutrients and gelatin",
+        "qualityNote": "Bone broth is a nutrient-dense whole food ingredient with genuine joint, gut, and skin benefits. Premium addition for hydration and palatability."
+      },
+      "seoMetadata": {
+        "focusKeyword": "bone broth dog food",
+        "metaDescription": "Is bone broth good for dogs? Learn collagen/gelatin benefits, amino acids, joint support, gut healing, vs stock, minerals & quality factors."
       }
     },
     {
@@ -3293,6 +3343,30 @@
             "difference": "Both are anti-inflammatory herbs for joint health. Boswellia (frankincense) targets joint pain and inflammation, similar to turmeric (curcumin). Often used together."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Anti-inflammatory herbal extract from Boswellia serrata tree resin supporting joint health and reducing inflammation",
+        "whatIsIt": "Boswellia serrata (Indian frankincense) - resin extract used for thousands of years in Ayurvedic medicine",
+        "activeCompounds": "Boswellic acids (especially AKBA - acetyl-11-keto-beta-boswellic acid) provide anti-inflammatory effects",
+        "antiInflammatory": "Inhibits 5-LOX enzyme that produces inflammatory leukotrienes - reduces inflammation without stomach side effects of NSAIDs",
+        "jointHealthBenefits": [
+          "Reduces joint pain and stiffness (especially in arthritis)",
+          "Improves mobility and range of motion",
+          "Protects cartilage from degradation",
+          "Reduces inflammation in joints",
+          "May slow progression of osteoarthritis"
+        ],
+        "otherBenefits": "May support respiratory health, inflammatory bowel disease, and general inflammation reduction",
+        "research": "Moderate to strong research support - multiple studies show efficacy for arthritis in humans and animals",
+        "typicalInclusion": "50-200mg per day depending on dog size (standardized to 65-75% boswellic acids)",
+        "synergisticIngredients": "Often combined with glucosamine, chondroitin, turmeric, and MSM for enhanced joint support",
+        "safety": "Generally safe with minimal side effects. Rare digestive upset at high doses. Avoid in pregnant dogs.",
+        "standardization": "Look for standardized extracts (65-75% boswellic acids or 10-30% AKBA) for consistent potency",
+        "qualityNote": "Boswellia is a well-researched anti-inflammatory herb for joint health. Signals therapeutic, joint-focused formulation. Effective for arthritis."
+      },
+      "seoMetadata": {
+        "focusKeyword": "boswellia dog food",
+        "metaDescription": "Is boswellia safe for dogs? Learn anti-inflammatory benefits, joint/arthritis support, boswellic acids, vs NSAIDs, dosing, research & safety."
       }
     },
     {
@@ -3319,7 +3393,27 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "nutritionalProfile": {
+        "function": "Dried inactive yeast (Saccharomyces cerevisiae) from beer brewing providing B vitamins, protein, and minerals",
+        "whatIsIt": "Byproduct of beer brewing - yeast cells are inactivated (not alive), dried, and powdered",
+        "bVitamins": "Exceptionally rich in B vitamins (thiamine, riboflavin, niacin, B6, B12, pantothenic acid, folic acid)",
+        "proteinContent": "40-50% protein with decent amino acid profile (though not as complete as animal protein)",
+        "minerals": "Good source of chromium, selenium, zinc, iron, and potassium",
+        "betaGlucans": "Contains beta-glucans (1,3/1,6) that support immune function",
+        "skinAndCoat": "High B vitamin content supports healthy skin and shiny coat",
+        "paleability": "Savory, slightly bitter flavor - improves food acceptance for many dogs",
+        "fleaRepellent": "MYTH - No scientific evidence that brewers yeast repels fleas despite popular belief",
+        "vsNutritionalYeast": "Very similar - both are inactive S. cerevisiae. Nutritional yeast is fortified with extra B12.",
+        "vsAutolyzedYeast": "Brewers yeast is whole dried cells. Autolyzed yeast is broken down for flavor enhancement.",
+        "typicalInclusion": "1-5% of diet for B vitamin supplementation and flavor",
+        "yeastSensitivity": "Some dogs may be sensitive to yeast. Avoid if allergies present.",
+        "qualityNote": "Brewers yeast is a nutrient-dense ingredient rich in B vitamins. Good addition for skin, coat, and overall nutrition. Not a flea repellent."
+      },
+      "seoMetadata": {
+        "focusKeyword": "brewers yeast dog food",
+        "metaDescription": "Is brewers yeast good for dogs? Learn B vitamin benefits, skin/coat support, vs nutritional yeast, flea myth, protein/minerals & safety."
+      }
     },
     {
       "name": "Brewers Rice",
@@ -3512,6 +3606,31 @@
             "difference": "Bromelain is a protease enzyme (breaks down protein) from pineapple, while cellulase breaks down plant fiber. Both are digestive enzymes with different functions."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Proteolytic enzyme from pineapple that aids protein digestion and reduces inflammation",
+        "whatIsIt": "Enzyme extracted from pineapple stem and fruit - breaks down protein into smaller peptides and amino acids",
+        "digestiveSupport": "Helps digest dietary protein, reducing digestive burden on pancreas and improving nutrient absorption",
+        "antiInflammatory": "Reduces inflammation by breaking down inflammatory proteins and inhibiting inflammatory pathways",
+        "healthBenefits": [
+          "Improves protein digestion",
+          "Reduces joint pain and swelling",
+          "Supports post-injury recovery",
+          "May reduce allergic reactions",
+          "Supports respiratory health (thins mucus)",
+          "Enhances absorption of other nutrients"
+        ],
+        "jointHealth": "Clinical studies show bromelain reduces arthritis pain and improves mobility",
+        "enzymeActivity": "Measured in GDU (gelatin digesting units) or MCU (milk clotting units) - higher numbers indicate stronger activity",
+        "typicalInclusion": "50-500 GDU per serving depending on therapeutic goal",
+        "stomachAcid": "Partially survives stomach acid when taken with food - more active in intestines than stomach",
+        "safety": "Generally safe. May cause digestive upset at very high doses. Avoid in dogs on blood thinners.",
+        "synergisticIngredients": "Often paired with papain (papaya enzyme), turmeric, and quercetin for enhanced anti-inflammatory effects",
+        "qualityNote": "Bromelain is a research-backed digestive enzyme with anti-inflammatory properties. Signals therapeutic formulation for digestion or joint health."
+      },
+      "seoMetadata": {
+        "focusKeyword": "bromelain dog food",
+        "metaDescription": "Is bromelain safe for dogs? Learn pineapple enzyme benefits, protein digestion, anti-inflammatory effects, joint support, dosing & safety."
       }
     },
     {
@@ -3700,7 +3819,32 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "nutritionalProfile": {
+        "function": "Buffered, non-acidic form of vitamin C providing antioxidant protection and calcium supplementation",
+        "whatIsIt": "Calcium salt of ascorbic acid (vitamin C) - combines vitamin C with calcium in a pH-neutral form",
+        "vitaminC": "Provides 82-90% vitamin C by weight - powerful antioxidant supporting immune function, collagen synthesis, and tissue repair",
+        "calcium": "Provides 10-12% elemental calcium - supports bone health and mineral balance",
+        "bufferedAdvantage": "Non-acidic (pH neutral) unlike pure ascorbic acid - gentler on stomach, reduces digestive upset",
+        "antioxidantPower": "Neutralizes free radicals, reduces oxidative stress, and protects cells from damage",
+        "healthBenefits": [
+          "Immune system support (enhances white blood cell function)",
+          "Collagen synthesis (wound healing, skin, joint health)",
+          "Antioxidant protection (reduces aging, disease risk)",
+          "Iron absorption enhancement",
+          "Cartilage and bone health",
+          "Stress response support"
+        ],
+        "dogsSynthesizeVitaminC": "Dogs produce vitamin C in their liver - supplementation not essential but may benefit stressed, sick, or aging dogs",
+        "typicalInclusion": "50-500mg per kg of food depending on formulation goals",
+        "safety": "Very safe - excess vitamin C is excreted in urine. Very high doses may cause diarrhea.",
+        "vsAscorbicAcid": "Calcium ascorbate is less acidic and gentler on stomach than pure ascorbic acid",
+        "qualityNote": "Calcium ascorbate is a premium, buffered vitamin C source with added calcium benefits. Signals health-focused formulation for immune and antioxidant support."
+      },
+      "seoMetadata": {
+        "focusKeyword": "calcium ascorbate dog food",
+        "metaDescription": "Is calcium ascorbate safe for dogs? Learn buffered vitamin C benefits, vs ascorbic acid, antioxidant/immune support, calcium content & safety."
+      }
     },
     {
       "name": "Calcium Carbonate",
@@ -3733,6 +3877,25 @@
             "difference": "Calcium carbonate is the cheapest calcium source but harder to absorb, while calcium citrate is more bioavailable and gentle on the stomach. Both supplement calcium."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Common calcium supplement providing calcium and acid-buffering properties",
+        "whatIsIt": "Calcium salt of carbonic acid - simple, inexpensive calcium source found in limestone, chalk, and shells",
+        "calciumContent": "40% elemental calcium by weight - highest calcium concentration of common supplements",
+        "bioavailability": "Moderate bioavailability - requires stomach acid for absorption. Less bioavailable than calcium citrate.",
+        "boneHealth": "Calcium is essential for bone and tooth development, maintenance, and strength",
+        "otherFunctions": "Calcium supports muscle contraction, nerve transmission, blood clotting, and enzyme function",
+        "acidBuffer": "Acts as antacid - neutralizes stomach acid (can be beneficial or reduce absorption of certain nutrients)",
+        "typicalInclusion": "Amount varies widely based on formulation needs - AAFCO minimum: 0.6% for adult dogs, 1.0% for growth",
+        "absorption": "Best absorbed when taken with food. Vitamin D enhances calcium absorption.",
+        "calciumPhosphorusRatio": "Must be balanced with phosphorus - ideal ratio 1:1 to 2:1 (Ca:P)",
+        "concerns": "Excessive calcium can cause skeletal problems in large breed puppies. Must be carefully balanced.",
+        "vsOtherCalciumForms": "Calcium carbonate has highest calcium %, but citrate has better absorption. Carbonate is cheaper.",
+        "qualityNote": "Calcium carbonate is an economical calcium source. Effective when properly balanced with phosphorus. Moderate bioavailability."
+      },
+      "seoMetadata": {
+        "focusKeyword": "calcium carbonate dog food",
+        "metaDescription": "Is calcium carbonate safe for dogs? Learn calcium supplement, vs citrate, bioavailability, bone health, Ca:P ratio, large breed concerns & dosing."
       }
     },
     {
@@ -3761,6 +3924,25 @@
             "difference": "Both are calcium supplements. Calcium citrate is more bioavailable and easier to digest, while calcium carbonate is cheaper but requires more stomach acid to absorb."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Highly bioavailable calcium supplement from citric acid salt providing superior calcium absorption",
+        "whatIsIt": "Calcium salt of citric acid - more expensive but more bioavailable calcium source than carbonate",
+        "calciumContent": "21% elemental calcium by weight - lower than carbonate but better absorbed",
+        "bioavailability": "Superior bioavailability - does NOT require stomach acid for absorption. 20-25% better absorbed than calcium carbonate.",
+        "absorptionIndependence": "Absorbed equally well with or without food and regardless of stomach acid levels",
+        "boneHealth": "Supports bone and tooth development, skeletal health, and calcium homeostasis",
+        "otherRoles": "Essential for muscle contraction, nerve function, blood clotting, enzyme activation, and cellular signaling",
+        "typicalInclusion": "Variable based on formulation - AAFCO minimums: 0.6% Ca for adults, 1.0% for growth",
+        "balanceWithPhosphorus": "Must maintain proper Ca:P ratio (1:1 to 2:1) for optimal skeletal health",
+        "largeBreedsNote": "Particularly important for large breed puppies to avoid excessive calcium which can cause skeletal deformities",
+        "safetyProfile": "Generally safe when properly balanced. Excess calcium can interfere with absorption of zinc, iron, and magnesium.",
+        "vsCarbonate": "Calcium citrate costs more but absorbs better - ideal for dogs with low stomach acid or digestive issues",
+        "qualityNote": "Calcium citrate is a premium calcium source with superior bioavailability. More expensive but more effective than carbonate. Signals quality formulation."
+      },
+      "seoMetadata": {
+        "focusKeyword": "calcium citrate dog food",
+        "metaDescription": "Is calcium citrate good for dogs? Learn superior absorption vs carbonate, bioavailability, bone health, Ca:P balance, large breed safety & benefits."
       }
     },
     {
