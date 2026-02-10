@@ -499,6 +499,34 @@
             "difference": "Animal fat is an unspecified fat source (could be from any animal), while chicken fat is specifically from chickens. Named fats like chicken fat are far more transparent."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Generic rendered fat from unspecified animal sources, providing concentrated energy and palatability",
+        "fatContent": "99% fat - pure energy source at 9 calories per gram",
+        "lackOfTransparency": "MAJOR CONCERN - \"Animal Fat\" does not specify which animals. Could be chicken, pork, beef, lamb, or mix of any/all. No traceability.",
+        "qualityVariability": "Quality varies wildly depending on source animals and rendering process. Could be healthy or highly oxidized.",
+        "fattyAcidProfile": {
+          "saturated": "40-50% (varies by animal source)",
+          "monounsaturated": "40-50% (oleic acid)",
+          "polyunsaturated": "5-15% (includes some omega-6, minimal omega-3)"
+        },
+        "omega6toOmega3": "Typically high omega-6:omega-3 ratio (10:1 to 20:1) - pro-inflammatory if not balanced with omega-3 sources",
+        "preservationRequired": "Must be preserved with antioxidants (mixed tocopherols, BHA/BHT, rosemary) to prevent rancidity",
+        "palatability": "Very palatable to dogs - adds flavor and improves food acceptance",
+        "concerns": [
+          "No transparency - unknown animal sources",
+          "Quality inconsistency between batches",
+          "May contain low-quality rendered material",
+          "Potential for contamination if poorly sourced",
+          "Pro-inflammatory without omega-3 balance"
+        ],
+        "betterAlternatives": "Named fats (chicken fat, beef tallow, pork fat) provide transparency and consistent quality",
+        "whenAcceptable": "Only acceptable if preserved with natural antioxidants and used in small amounts alongside named protein sources",
+        "qualityNote": "Animal fat signals lack of transparency and budget formulation. Named fats (chicken fat, beef tallow) are vastly superior."
+      },
+      "seoMetadata": {
+        "focusKeyword": "animal fat dog food",
+        "metaDescription": "Is animal fat in dog food bad? Learn transparency issues, vs named fats, quality concerns, omega-6/omega-3 ratio, preservation needs & alternatives."
       }
     },
     {
@@ -525,7 +553,32 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "nutritionalProfile": {
+        "function": "Plant pigments (flavonoids) from berries and purple vegetables providing powerful antioxidant and anti-inflammatory benefits",
+        "naturalSources": "Blueberries, blackberries, cranberries, purple sweet potato, black currants, elderberries, red cabbage",
+        "colorPigments": "Responsible for red, purple, and blue colors in fruits and vegetables",
+        "antioxidantPower": "Among the most potent antioxidants - neutralize free radicals and reduce oxidative stress",
+        "healthBenefits": [
+          "Cognitive function and brain health (crosses blood-brain barrier)",
+          "Vision support (protects retinal cells)",
+          "Cardiovascular health (improves blood vessel function)",
+          "Anti-inflammatory effects (reduces chronic inflammation)",
+          "Immune system support",
+          "May reduce cancer risk (inhibits tumor growth in studies)",
+          "Urinary tract health (especially from cranberries)"
+        ],
+        "bioavailability": "Moderately absorbed - bioavailability increases with fat present in meal",
+        "typicalInclusion": "Added as berry extracts or whole dried berries - typically 0.5-2% of diet",
+        "researchSupport": "Extensive human and animal research shows cognitive benefits, especially in aging populations",
+        "agingDogs": "Particularly valuable for senior dogs - supports cognitive function and reduces age-related decline",
+        "safety": "Very safe - no known toxicity even at high doses",
+        "qualityNote": "Anthocyanins are premium functional ingredients with strong scientific backing. Signals health-focused, antioxidant-rich formula."
+      },
+      "seoMetadata": {
+        "focusKeyword": "anthocyanins dog food",
+        "metaDescription": "Are anthocyanins good for dogs? Learn antioxidant benefits, cognitive support, berry sources, anti-inflammatory effects, aging dogs & safety."
+      }
     },
     {
       "name": "Apple Cider Vinegar",
@@ -550,7 +603,30 @@
           "url": "https://www.fda.gov/",
           "publisher": "FDA"
         }
-      ]
+      ],
+      "nutritionalProfile": {
+        "function": "Fermented apple juice providing acetic acid, trace minerals, and potential digestive and immune benefits",
+        "aceticAcid": "5-6% acetic acid content - provides antimicrobial and pH-balancing properties",
+        "fermentationBenefits": "Contains beneficial bacteria, enzymes, and pectin from fermentation process",
+        "potentialBenefits": [
+          "Digestive support (may improve gut pH and enzyme activity)",
+          "Antimicrobial properties (acetic acid inhibits harmful bacteria)",
+          "Blood sugar regulation (may improve insulin sensitivity)",
+          "Alkalizing effect despite acidic nature",
+          "Trace minerals (potassium, magnesium, calcium)",
+          "Immune support from prebiotics"
+        ],
+        "rawVsPasteurized": "Raw, unfiltered ACV with \"mother\" (bacterial culture) provides more beneficial bacteria and enzymes than filtered versions",
+        "typicalInclusion": "0.1-1% of wet food or added to drinking water",
+        "limitations": "Scientific evidence for many claimed benefits is limited - mostly anecdotal or from human studies",
+        "acidityNote": "High acidity can damage tooth enamel if used excessively - dilute if adding to water",
+        "safety": "Generally safe at appropriate dilution. May cause digestive upset if overused.",
+        "qualityNote": "Apple cider vinegar is a traditional folk remedy with some supportive evidence. Raw, unfiltered versions are preferable. Neutral to slightly positive addition."
+      },
+      "seoMetadata": {
+        "focusKeyword": "apple cider vinegar dog food",
+        "metaDescription": "Is apple cider vinegar safe for dogs? Learn digestive benefits, raw vs filtered, acetic acid effects, blood sugar support, safety & typical usage."
+      }
     },
     {
       "name": "Apples",
@@ -965,6 +1041,31 @@
             "difference": "Astaxanthin is a potent carotenoid antioxidant from algae, while CoQ10 supports cellular energy production and heart health. Both are antioxidants with different benefits."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Powerful carotenoid antioxidant from algae and seafood, providing exceptional free radical protection",
+        "source": "Naturally from Haematococcus pluvialis microalgae (same source salmon get their pink color from eating algae/krill)",
+        "antioxidantPower": "One of the most powerful antioxidants known - 6000x stronger than vitamin C, 550x stronger than vitamin E, 40x stronger than beta-carotene",
+        "colorPigment": "Provides red-orange-pink color in salmon, shrimp, krill, and lobster",
+        "healthBenefits": [
+          "Eye health and vision (protects retina from UV damage)",
+          "Joint health (reduces inflammation and pain)",
+          "Skin health (protects from UV damage, reduces aging)",
+          "Immune system support",
+          "Cardiovascular health (reduces oxidative stress)",
+          "Brain health (crosses blood-brain barrier)",
+          "Exercise recovery (reduces muscle damage and inflammation)"
+        ],
+        "bioavailability": "Fat-soluble - absorbed best when consumed with dietary fat",
+        "typicalInclusion": "2-10mg per kilogram of food (very small amounts needed)",
+        "naturalVsSynthetic": "Natural astaxanthin from algae is superior to synthetic versions - better absorbed and more effective",
+        "research": "Extensive research in humans and animals shows significant benefits for inflammation, oxidative stress, and joint health",
+        "safety": "Very safe - no known toxicity even at high doses",
+        "qualityNote": "Astaxanthin is a premium antioxidant ingredient backed by strong science. Signals high-quality, health-focused formula."
+      },
+      "seoMetadata": {
+        "focusKeyword": "astaxanthin dog food",
+        "metaDescription": "Is astaxanthin good for dogs? Learn powerful antioxidant benefits, eye/joint health, algae source, vs vitamin E/C, dosing & research support."
       }
     },
     {
@@ -1001,6 +1102,30 @@
             "difference": "Both are herbs used for health benefits. Astragalus is an adaptogen used to support immune function, while chamomile is calming and anti-inflammatory. Different purposes."
           }
         ]
+      },
+      "nutritionalProfile": {
+        "function": "Traditional Chinese medicinal herb (Astragalus membranaceus root) supporting immune function and vitality",
+        "traditionalUse": "Used for over 2000 years in Chinese medicine as adaptogen and immune tonic",
+        "activeCompounds": "Polysaccharides, saponins (astragalosides), and flavonoids provide therapeutic effects",
+        "immuneSupport": "Enhances immune system by increasing white blood cell activity, antibody production, and interferon levels",
+        "adaptogenicEffects": "Helps body adapt to stress and maintain homeostasis - balances immune response rather than over-stimulating",
+        "potentialBenefits": [
+          "Immune system enhancement (especially during illness or stress)",
+          "Anti-inflammatory effects",
+          "Antioxidant protection",
+          "Energy and vitality support",
+          "Cardiovascular health (improves blood flow)",
+          "Kidney support (traditional use for kidney health)",
+          "May support longevity and healthy aging"
+        ],
+        "typicalInclusion": "0.1-0.5% of diet as dried root powder or extract",
+        "research": "Moderate scientific support - traditional use is well-documented, modern research shows immune-enhancing effects",
+        "safety": "Generally safe - used for centuries with minimal side effects. May interact with immunosuppressant medications.",
+        "qualityNote": "Astragalus is a traditional herbal ingredient with documented immune support. Signals holistic, health-focused formulation."
+      },
+      "seoMetadata": {
+        "focusKeyword": "astragalus dog food",
+        "metaDescription": "Is astragalus safe for dogs? Learn immune support benefits, adaptogenic effects, Chinese medicine, active compounds, safety & research evidence."
       }
     },
     {
@@ -1025,7 +1150,30 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "nutritionalProfile": {
+        "function": "Broken-down yeast cells providing glutamic acid, nucleotides, and B vitamins used primarily as natural flavor enhancer",
+        "whatIsIt": "Yeast (Saccharomyces cerevisiae) is broken down (autolyzed) by its own enzymes, releasing cell contents",
+        "primaryUse": "Natural flavor enhancer - provides savory umami taste similar to monosodium glutamate (MSG)",
+        "glutamicAcid": "Contains free glutamic acid (10-20%) which activates umami taste receptors - makes food more palatable",
+        "nutritionalContent": [
+          "B vitamins (thiamine, riboflavin, niacin, B6)",
+          "Protein and amino acids (40-50% protein)",
+          "Nucleotides (RNA/DNA building blocks)",
+          "Minerals (selenium, chromium, zinc)",
+          "Beta-glucans (immune support)"
+        ],
+        "palatabilityBoost": "Significantly improves food acceptance - dogs are attracted to the savory, meaty flavor",
+        "typicalInclusion": "0.5-2% of diet for flavor enhancement",
+        "vsBrewersYeast": "Brewers yeast is whole yeast cells. Autolyzed yeast is broken down - more concentrated flavor and easier to digest.",
+        "vsMSG": "Natural source of glutamic acid vs synthetic MSG. Similar flavor effect but from whole food source.",
+        "concerns": "Some dogs may be sensitive to yeast. High glutamate content may not be suitable for all dogs.",
+        "qualityNote": "Autolyzed yeast is primarily a palatability enhancer, not a nutritional powerhouse. Signals efforts to improve food acceptance."
+      },
+      "seoMetadata": {
+        "focusKeyword": "autolyzed yeast dog food",
+        "metaDescription": "Is autolyzed yeast safe for dogs? Learn natural flavor enhancer, umami taste, vs brewers yeast/MSG, B vitamins, glutamic acid & palatability."
+      }
     },
     {
       "name": "Bacillus Coagulans",
@@ -2287,7 +2435,30 @@
           "url": "https://ntp.niehs.nih.gov/",
           "publisher": "NTP"
         }
-      ]
+      ],
+      "nutritionalProfile": {
+        "function": "Butylated hydroxyanisole - synthetic antioxidant preservative preventing fat rancidity in pet food",
+        "chemicalName": "Butylated hydroxyanisole (BHA) - petroleum-derived phenolic compound",
+        "purposeInFood": "Prevents fat oxidation and rancidity by neutralizing free radicals - extends shelf life of fats and oils",
+        "effectiveness": "Very effective at preventing oxidation - one of the most potent synthetic preservatives available",
+        "FDAstatus": "FDA-approved for use in human and pet food at limited concentrations (up to 0.02% of fat content)",
+        "majorConcerns": [
+          "Possible carcinogen - animal studies show increased cancer risk at high doses",
+          "Endocrine disruptor - may interfere with hormone function",
+          "Accumulates in body fat over time",
+          "Banned or restricted in several countries (EU requires warning labels)"
+        ],
+        "animalStudies": "Studies in rats and hamsters show BHA causes stomach and liver tumors at high doses. Effects in dogs at food-level doses are unclear.",
+        "IARCclassification": "International Agency for Research on Cancer classifies BHA as Group 2B (possibly carcinogenic to humans)",
+        "typicalInclusion": "0.001-0.02% of total fat - very small amounts",
+        "betterAlternatives": "Natural preservatives like mixed tocopherols (vitamin E), rosemary extract, or ascorbic acid (vitamin C) are safer options",
+        "whenUsed": "Typically found in budget/economy foods where cost-cutting is priority",
+        "qualityNote": "BHA is a controversial synthetic preservative with cancer concerns. Major red flag. Avoid foods with BHA - natural preservatives are safer."
+      },
+      "seoMetadata": {
+        "focusKeyword": "BHA dog food",
+        "metaDescription": "Is BHA in dog food safe? Learn synthetic preservative concerns, cancer risk, vs natural alternatives (vitamin E), FDA status & why to avoid."
+      }
     },
     {
       "name": "BHT",
@@ -2311,7 +2482,32 @@
           "url": "https://www.fda.gov/",
           "publisher": "FDA"
         }
-      ]
+      ],
+      "nutritionalProfile": {
+        "function": "Butylated hydroxytoluene - synthetic antioxidant preservative preventing fat rancidity in pet food",
+        "chemicalName": "Butylated hydroxytoluene (BHT) - petroleum-derived phenolic compound similar to BHA",
+        "purposeInFood": "Prevents oxidation of fats and oils, extending shelf life and preventing rancid flavors",
+        "effectiveness": "Highly effective synthetic preservative - prevents oxidation better than many natural alternatives",
+        "FDAstatus": "FDA-approved for human and pet food at concentrations up to 0.02% of fat content",
+        "majorConcerns": [
+          "Potential carcinogen - some animal studies link to cancer (though evidence is mixed)",
+          "Liver and kidney toxicity at high doses in animal studies",
+          "May cause allergic reactions in sensitive dogs",
+          "Accumulates in body tissues over time",
+          "Endocrine disruption concerns"
+        ],
+        "animalStudies": "Mixed results - some studies show tumor promotion, others show no effect. Effects vary by species and dose.",
+        "vsBHA": "Similar concerns as BHA but slightly less evidence of carcinogenicity. Still controversial.",
+        "typicalInclusion": "0.001-0.02% of fat - very small amounts needed for preservation",
+        "betterAlternatives": "Mixed tocopherols (vitamin E), rosemary extract, ascorbic acid are natural, safer preservatives",
+        "synergisticUse": "Often used alongside BHA and/or citric acid for enhanced preservation",
+        "whenUsed": "Found in budget/economy foods where manufacturers prioritize cost over natural ingredients",
+        "qualityNote": "BHT is a controversial synthetic preservative with health concerns. Red flag ingredient. Choose foods preserved with natural antioxidants."
+      },
+      "seoMetadata": {
+        "focusKeyword": "BHT dog food",
+        "metaDescription": "Is BHT in dog food safe? Learn synthetic preservative risks, vs BHA, cancer concerns, natural alternatives (tocopherols), FDA limits & avoidance."
+      }
     },
     {
       "name": "Bifidobacterium Animalis",
