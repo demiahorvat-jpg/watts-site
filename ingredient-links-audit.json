@@ -1,0 +1,3170 @@
+{
+  "summary": {
+    "totalPages": 396,
+    "pagesWithLinks": 138,
+    "pagesWithEnoughLinks": 55,
+    "pagesNeedingLinks": 341
+  },
+  "pages": [
+    {
+      "dir": "alfalfa-nutrient-concentrate",
+      "title": "Alfalfa Nutrient Concentrate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "anchovies",
+      "title": "Anchovies",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "anthocyanins",
+      "title": "Anthocyanins",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "apple-cider-vinegar",
+      "title": "Apple Cider Vinegar",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "autolyzed-yeast",
+      "title": "Autolyzed Yeast",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "bananas",
+      "title": "Bananas",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "barley-grass",
+      "title": "Barley Grass",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "beef-heart",
+      "title": "Beef Heart",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "beef-kidney",
+      "title": "Beef Kidney",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "beet-juice-color",
+      "title": "Beet Juice Color",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "beetroot",
+      "title": "Beetroot",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "bha",
+      "title": "BHA",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "bht",
+      "title": "BHT",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "bifidobacterium-animalis",
+      "title": "Bifidobacterium Animalis",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "biotin",
+      "title": "Biotin",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "blue-1",
+      "title": "Blue 1",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "brewers-dried-yeast",
+      "title": "Brewers Dried Yeast",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "calcium-ascorbate",
+      "title": "Calcium Ascorbate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "canola-meal",
+      "title": "Canola Meal",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "chicken-heart",
+      "title": "Chicken Heart",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "chlorella",
+      "title": "Chlorella",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "choline-chloride",
+      "title": "Choline Chloride",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "chromium-picolinate",
+      "title": "Chromium Picolinate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "citric-acid",
+      "title": "Citric Acid",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "copper-amino-acid-chelate",
+      "title": "Copper Amino Acid Chelate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "copper-chelate",
+      "title": "Copper Chelate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "copper-sulfate",
+      "title": "Copper Sulfate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "corn-bran",
+      "title": "Corn Bran",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "corn-gluten-feed",
+      "title": "Corn Gluten Feed",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "corn-meal",
+      "title": "Corn Meal",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "corn-starch",
+      "title": "Corn Starch",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "crab-meal",
+      "title": "Crab Meal",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "cracked-pearled-barley",
+      "title": "Cracked Pearled Barley",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "cucumber",
+      "title": "Cucumber",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "cultured-dextrose",
+      "title": "Cultured Dextrose",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "dandelion-root",
+      "title": "Dandelion Root",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "dicalcium-phosphate",
+      "title": "Dicalcium Phosphate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "digestive-enzymes",
+      "title": "Digestive Enzymes",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "direct-dehydrated-alfalfa-pellets",
+      "title": "Direct Dehydrated Alfalfa Pellets",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "dl-methionine",
+      "title": "Dl-Methionine",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "docosahexaenoic-acid",
+      "title": "Docosahexaenoic Acid",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "dried-bacon-fat",
+      "title": "Dried Bacon Fat",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "dried-chicory-root",
+      "title": "Dried Chicory Root",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "dried-kelp",
+      "title": "Dried Kelp",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "dried-plasma",
+      "title": "Dried Plasma",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "dried-sweet-potatoes",
+      "title": "Dried Sweet Potatoes",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "dried-tomato-pomace",
+      "title": "Dried Tomato Pomace",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "dried-yeast",
+      "title": "Dried Yeast",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "duck-fat",
+      "title": "Duck Fat",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "duck-liver",
+      "title": "Duck Liver",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "egg",
+      "title": "Egg",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "eggshell-membrane",
+      "title": "Eggshell Membrane",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "eicosapentaenoic-acid",
+      "title": "Eicosapentaenoic Acid",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "enterococcus-faecium",
+      "title": "Enterococcus Faecium",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "ethoxyquin",
+      "title": "Ethoxyquin",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "euphausia-superba",
+      "title": "Euphausia Superba",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "fermented-ingredients",
+      "title": "Fermented Ingredients",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "ferrous-sulfate",
+      "title": "Ferrous Sulfate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "fish-digest",
+      "title": "Fish Digest",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "folic-acid",
+      "title": "Folic Acid",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "fructooligosaccharides",
+      "title": "Fructooligosaccharides",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "ginger",
+      "title": "Ginger",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "ginkgo-biloba",
+      "title": "Ginkgo Biloba",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "glutamine",
+      "title": "Glutamine",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "glutathione",
+      "title": "Glutathione",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "glycerin",
+      "title": "Glycerin",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "gos",
+      "title": "GOS",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "green-lipped-mussel",
+      "title": "Green-Lipped Mussel",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "guar-fiber",
+      "title": "Guar Fiber",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "heart",
+      "title": "Heart",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "herring",
+      "title": "Herring",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "hickory-smoke-flavor",
+      "title": "Hickory Smoke Flavor",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "hyaluronic-acid",
+      "title": "Hyaluronic Acid",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "hydrolyzed-poultry-liver",
+      "title": "Hydrolyzed Poultry Liver",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "hydrolyzed-yeast",
+      "title": "Hydrolyzed Yeast",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "inulin",
+      "title": "Inulin",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "iron-amino-acid-chelate",
+      "title": "Iron Amino Acid Chelate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "iron-proteinate",
+      "title": "Iron Proteinate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "iron-sulfate",
+      "title": "Iron Sulfate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "kefir",
+      "title": "Kefir",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "krill-oil",
+      "title": "Krill Oil",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "l-ascorbyl-2-polyphosphate",
+      "title": "L-Ascorbyl-2-Polyphosphate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "l-glutamine",
+      "title": "L-Glutamine",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "l-lysine",
+      "title": "L-Lysine",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "l-lysine-monohydrochloride",
+      "title": "L-Lysine Monohydrochloride",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "l-theanine",
+      "title": "L-Theanine",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "l-threonine",
+      "title": "L-Threonine",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "lactic-acid",
+      "title": "Lactic Acid",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "lactobacillus-acidophilus",
+      "title": "Lactobacillus Acidophilus",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "lamb-fat",
+      "title": "Lamb Fat",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "lecithin",
+      "title": "Lecithin",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "lentil-flour",
+      "title": "Lentil Flour",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "lignocellulose",
+      "title": "Lignocellulose",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "lipase",
+      "title": "Lipase",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "liver-digest",
+      "title": "Liver Digest",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "locust-bean-gum",
+      "title": "Locust Bean Gum",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "lung",
+      "title": "Lung",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "lutein",
+      "title": "Lutein",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "mackerel",
+      "title": "Mackerel",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "magnesium-citrate",
+      "title": "Magnesium Citrate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "magnesium-stearate",
+      "title": "Magnesium Stearate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "maitake",
+      "title": "Maitake",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "malic-acid",
+      "title": "Malic Acid",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "maltodextrin",
+      "title": "Maltodextrin",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "manganese-amino-acid-chelate",
+      "title": "Manganese Amino Acid Chelate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "manganese-gluconate",
+      "title": "Manganese Gluconate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "manganese-proteinate",
+      "title": "Manganese Proteinate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "manganese-sulfate",
+      "title": "Manganese Sulfate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "manganous-oxide",
+      "title": "Manganous Oxide",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "mango",
+      "title": "Mango",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "marshmallow-root",
+      "title": "Marshmallow Root",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "meat-and-bone-meal",
+      "title": "Meat and Bone Meal",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "melatonin",
+      "title": "Melatonin",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "menadione-sodium-bisulfite-complex",
+      "title": "Menadione Sodium Bisulfite Complex",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "menhaden-oil",
+      "title": "Menhaden Oil",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "microcrystalline-cellulose",
+      "title": "Microcrystalline Cellulose",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "milk-thistle",
+      "title": "Milk Thistle",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "miscanthus-grass",
+      "title": "Miscanthus Grass",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "mixed-tocopherols",
+      "title": "Mixed Tocopherols",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "modified-food-starch",
+      "title": "Modified Food Starch",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "molasses",
+      "title": "Molasses",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "montmorillonite-clay",
+      "title": "Montmorillonite Clay",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "mos",
+      "title": "MOS",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "msm",
+      "title": "MSM",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "natural-color",
+      "title": "Natural Color",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "navy-beans",
+      "title": "Navy Beans",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "niacin",
+      "title": "Niacin",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "niacin-supplement",
+      "title": "Niacin Supplement",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "nutritional-yeast",
+      "title": "Nutritional Yeast",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "oat-fiber",
+      "title": "Oat Fiber",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "oat-flour",
+      "title": "Oat Flour",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "oat-groats",
+      "title": "Oat Groats",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "oat-hulls",
+      "title": "Oat Hulls",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "oats",
+      "title": "Oats",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "oil-of-rosemary",
+      "title": "Oil of Rosemary",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "olive-oil",
+      "title": "Olive Oil",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "omega-3-fatty-acids",
+      "title": "Omega-3 Fatty Acids",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "oysters",
+      "title": "Oysters",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "palatant",
+      "title": "Palatant",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "palm-fruit-oil",
+      "title": "Palm Fruit Oil",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "papain",
+      "title": "Papain",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "papaya",
+      "title": "Papaya",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "paractin",
+      "title": "Paractin",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "parsley",
+      "title": "Parsley",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "passionflower",
+      "title": "Passionflower",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "pea-fiber",
+      "title": "Pea Fiber",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "pea-flour",
+      "title": "Pea Flour",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "pea-hull-fiber",
+      "title": "Pea Hull Fiber",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "pea-protein-concentrate",
+      "title": "Pea Protein Concentrate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "pea-starch",
+      "title": "Pea Starch",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "peanut-hulls",
+      "title": "Peanut Hulls",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "pear",
+      "title": "Pear",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "pectin",
+      "title": "Pectin",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "phosphoric-acid",
+      "title": "Phosphoric Acid",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "pineapple",
+      "title": "Pineapple",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "pinto-beans",
+      "title": "Pinto Beans",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "pork-liver-flavor",
+      "title": "Pork Liver Flavor",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "potassium-chloride",
+      "title": "Potassium Chloride",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "potassium-citrate",
+      "title": "Potassium Citrate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "potassium-iodide",
+      "title": "Potassium Iodide",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "potato-starch",
+      "title": "Potato Starch",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "poultry-digest",
+      "title": "Poultry Digest",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "poultry-fat",
+      "title": "Poultry Fat",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "prebiotics",
+      "title": "Prebiotics",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "propylene-glycol",
+      "title": "Propylene Glycol",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "protease",
+      "title": "Protease",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "psyllium-husk",
+      "title": "Psyllium Husk",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "pumpkin-seed",
+      "title": "Pumpkin Seed",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "pyridoxine-hydrochloride",
+      "title": "Pyridoxine Hydrochloride",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "quercetin",
+      "title": "Quercetin",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "red-3",
+      "title": "Red 3",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "resistant-starch",
+      "title": "Resistant Starch",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "riboflavin",
+      "title": "Riboflavin",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "riboflavin-supplement",
+      "title": "Riboflavin Supplement",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "rice-bran",
+      "title": "Rice Bran",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "rice-flour",
+      "title": "Rice Flour",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "rice-hulls",
+      "title": "Rice Hulls",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "rice-starch",
+      "title": "Rice Starch",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "rosemary-extract",
+      "title": "Rosemary Extract",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "rye-meal",
+      "title": "Rye Meal",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "safflower-oil",
+      "title": "Safflower Oil",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "sardine-oil",
+      "title": "Sardine Oil",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "sardines",
+      "title": "Sardines",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "sauerkraut",
+      "title": "Sauerkraut",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "sea-buckthorn",
+      "title": "Sea Buckthorn",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "selenium",
+      "title": "Selenium",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "selenium-yeast",
+      "title": "Selenium Yeast",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "shiitake",
+      "title": "Shiitake",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "shrimp",
+      "title": "Shrimp",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "shrimp-meal",
+      "title": "Shrimp Meal",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "silicon-dioxide",
+      "title": "Silicon Dioxide",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "slippery-elm-bark",
+      "title": "Slippery Elm Bark",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "smoke-flavor",
+      "title": "Smoke Flavor",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "sodium-acid-pyrophosphate",
+      "title": "Sodium Acid Pyrophosphate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "sodium-alginate",
+      "title": "Sodium Alginate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "sodium-benzoate",
+      "title": "Sodium Benzoate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "sodium-chloride",
+      "title": "Sodium Chloride",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "sodium-hexametaphosphate",
+      "title": "Sodium Hexametaphosphate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "sodium-propionate",
+      "title": "Sodium Propionate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "sodium-selenite",
+      "title": "Sodium Selenite",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "sodium-tripolyphosphate",
+      "title": "Sodium Tripolyphosphate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "sorbic-acid",
+      "title": "Sorbic Acid",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "sorghum",
+      "title": "Sorghum",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "sorghum-flour",
+      "title": "Sorghum Flour",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "soy-hulls",
+      "title": "Soy Hulls",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "soy-protein-concentrate",
+      "title": "Soy Protein Concentrate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "soy-protein-isolate",
+      "title": "Soy Protein Isolate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "soybean-oil",
+      "title": "Soybean Oil",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "spirulina",
+      "title": "Spirulina",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "spirulina-color",
+      "title": "Spirulina Color",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "sunflower-lecithin",
+      "title": "Sunflower Lecithin",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "sunflower-oil",
+      "title": "Sunflower Oil",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "sweet-potato-fiber",
+      "title": "Sweet Potato Fiber",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "tapioca-starch",
+      "title": "Tapioca Starch",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "thiamine-hydrochloride",
+      "title": "Thiamine Hydrochloride",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "thiamine-mononitrate",
+      "title": "Thiamine Mononitrate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "tricalcium-phosphate",
+      "title": "Tricalcium Phosphate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "tripe",
+      "title": "Tripe",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "tryptophan",
+      "title": "Tryptophan",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "tuna",
+      "title": "Tuna",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "turkey-heart",
+      "title": "Turkey Heart",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "turkey-liver",
+      "title": "Turkey Liver",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "valerian-root",
+      "title": "Valerian Root",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "vegetable-juice-for-color",
+      "title": "Vegetable Juice for color",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "vegetable-oil",
+      "title": "Vegetable Oil",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "vitamin-a-acetate",
+      "title": "Vitamin A Acetate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "vitamin-a-supplement",
+      "title": "Vitamin A Supplement",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "vitamin-b12-supplement",
+      "title": "Vitamin B12 Supplement",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "vitamin-d2-supplement",
+      "title": "Vitamin D2 Supplement",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "vitamin-d3-supplement",
+      "title": "Vitamin D3 Supplement",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "vitamin-e-acetate",
+      "title": "Vitamin E Acetate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "vitamin-e-succinate",
+      "title": "Vitamin E Succinate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "vitamin-e-supplement",
+      "title": "Vitamin E Supplement",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "vitamin-k1",
+      "title": "Vitamin K1",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "vitamin-k1-supplement",
+      "title": "Vitamin K1 Supplement",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "watermelon",
+      "title": "Watermelon",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "wheat-bran",
+      "title": "Wheat Bran",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "wheat-flour",
+      "title": "Wheat Flour",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "wheat-germ-meal",
+      "title": "Wheat Germ Meal",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "whey-powder",
+      "title": "Whey Powder",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "white-distilled-vinegar",
+      "title": "White Distilled Vinegar",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "whitefish-meal",
+      "title": "Whitefish Meal",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "whole-antarctic-krill-meal",
+      "title": "Whole Antarctic Krill Meal",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "withania-somnifera",
+      "title": "Withania Somnifera",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "yeast-beta-glucans",
+      "title": "Yeast Beta-Glucans",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "yeast-fermentate",
+      "title": "Yeast Fermentate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "yellow-peas",
+      "title": "Yellow Peas",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "yogurt",
+      "title": "Yogurt",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "yucca-schidigera-extract",
+      "title": "Yucca Schidigera Extract",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "zeaxanthin",
+      "title": "Zeaxanthin",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "zinc-amino-acid-chelate",
+      "title": "Zinc Amino Acid Chelate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "zinc-chelate",
+      "title": "Zinc Chelate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "zinc-methionine-complex",
+      "title": "Zinc Methionine Complex",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "zinc-oxide",
+      "title": "Zinc Oxide",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "zinc-proteinate",
+      "title": "Zinc Proteinate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "zinc-sulfate",
+      "title": "Zinc Sulfate",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "zucchini",
+      "title": "Zucchini",
+      "blogLinks": 0,
+      "ingredientLinks": 0,
+      "totalContextualLinks": 0,
+      "needsMore": true
+    },
+    {
+      "dir": "acacia-gum",
+      "title": "Acacia Gum",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "algal-oil",
+      "title": "Algal Oil",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "alginic-acid",
+      "title": "Alginic Acid",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "amylase",
+      "title": "Amylase",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "animal-fat",
+      "title": "Animal Fat",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "astragalus",
+      "title": "Astragalus",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "banana",
+      "title": "Banana",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "barley-malt-extract",
+      "title": "Barley Malt Extract",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "bean-flour",
+      "title": "Bean Flour",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "beef-spleen",
+      "title": "Beef Spleen",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "beef-tallow",
+      "title": "Beef Tallow",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "beet-fiber",
+      "title": "Beet Fiber",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "beta-carotene",
+      "title": "Beta-Carotene",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "bioperine",
+      "title": "Bioperine",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "bone-broth",
+      "title": "Bone Broth",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "boswellia",
+      "title": "Boswellia",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "broccoli",
+      "title": "Broccoli",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "bromelain",
+      "title": "Bromelain",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "calcium-carbonate",
+      "title": "Calcium Carbonate",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "calcium-citrate",
+      "title": "Calcium Citrate",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "calcium-d-pantothenate",
+      "title": "Calcium D-pantothenate",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "calcium-iodate",
+      "title": "Calcium Iodate",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "calcium-iodide",
+      "title": "Calcium Iodide",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "calcium-pantothenate",
+      "title": "Calcium Pantothenate",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "calcium-propionate",
+      "title": "Calcium Propionate",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "camellia-sinensis",
+      "title": "Camellia Sinensis",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "carrageenan",
+      "title": "Carrageenan",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "cassava",
+      "title": "Cassava",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "celery",
+      "title": "Celery",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "chamomile",
+      "title": "Chamomile",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "champignon-mushroom-extract",
+      "title": "Champignon Mushroom Extract",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "chia-seed",
+      "title": "Chia Seed",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "chicken-breast",
+      "title": "Chicken Breast",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "coconut-flour",
+      "title": "Coconut Flour",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "coconut-glycerin",
+      "title": "Coconut Glycerin",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "coconut-sugar",
+      "title": "Coconut Sugar",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "cod-liver-oil",
+      "title": "Cod Liver Oil",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "coenzyme-q10",
+      "title": "Coenzyme Q10",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "cordyceps",
+      "title": "Cordyceps",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "cranberries",
+      "title": "Cranberries",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "dried-egg-product",
+      "title": "Dried Egg Product",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "dried-whey",
+      "title": "Dried Whey",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "egg-product",
+      "title": "Egg Product",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "gelatin",
+      "title": "Gelatin",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "green-tea-extract",
+      "title": "Green Tea Extract",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "guar-gum",
+      "title": "Guar Gum",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "honey",
+      "title": "Honey",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "lion-s-mane",
+      "title": "Lion's Mane",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "natural-flavor",
+      "title": "Natural Flavor",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "pea-protein",
+      "title": "Pea Protein",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "pork-fat",
+      "title": "Pork Fat",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "potassium-sorbate",
+      "title": "Potassium Sorbate",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "reishi",
+      "title": "Reishi",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "salt",
+      "title": "Salt",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "spinach",
+      "title": "Spinach",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "tomatoes",
+      "title": "Tomatoes",
+      "blogLinks": 0,
+      "ingredientLinks": 1,
+      "totalContextualLinks": 1,
+      "needsMore": true
+    },
+    {
+      "dir": "agar-agar",
+      "title": "Agar Agar",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "anchovy-meal",
+      "title": "Anchovy Meal",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "apples",
+      "title": "Apples",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "astaxanthin",
+      "title": "Astaxanthin",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "bacillus-coagulans",
+      "title": "Bacillus Coagulans",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "beet-pulp",
+      "title": "Beet Pulp",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "bifidobacterium-lactis",
+      "title": "Bifidobacterium Lactis",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "blueberries",
+      "title": "Blueberries",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "brewers-rice",
+      "title": "Brewers Rice",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "cassava-flour",
+      "title": "Cassava Flour",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "cellulase",
+      "title": "Cellulase",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "chaga",
+      "title": "Chaga",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "chicken-liver",
+      "title": "Chicken Liver",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "chickpea-flour",
+      "title": "Chickpea Flour",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "coconut-oil",
+      "title": "Coconut Oil",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "collagen",
+      "title": "Collagen",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "duck",
+      "title": "Duck",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "kale",
+      "title": "Kale",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "lentils",
+      "title": "Lentils",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "millet",
+      "title": "Millet",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "pork",
+      "title": "Pork",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "potatoes",
+      "title": "Potatoes",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "pumpkin",
+      "title": "Pumpkin",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "rice",
+      "title": "Rice",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "soybean-meal",
+      "title": "Soybean Meal",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "split-peas",
+      "title": "Split Peas",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "turmeric",
+      "title": "Turmeric",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "whitefish",
+      "title": "Whitefish",
+      "blogLinks": 0,
+      "ingredientLinks": 2,
+      "totalContextualLinks": 2,
+      "needsMore": true
+    },
+    {
+      "dir": "animal-digest",
+      "title": "Animal Digest",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "artificial-flavor",
+      "title": "Artificial Flavor",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "ascorbic-acid",
+      "title": "Ascorbic Acid",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "barley",
+      "title": "Barley",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "beef-liver",
+      "title": "Beef Liver",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "beef-meal",
+      "title": "Beef Meal",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "canola-oil",
+      "title": "Canola Oil",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "carrots",
+      "title": "Carrots",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "cellulose",
+      "title": "Cellulose",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "chicken-liver-flavor",
+      "title": "Chicken Liver Flavor",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "chicken-meal",
+      "title": "Chicken Meal",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "chickpeas",
+      "title": "Chickpeas",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "copper-proteinate",
+      "title": "Copper Proteinate",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "corn",
+      "title": "Corn",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "corn-gluten-meal",
+      "title": "Corn Gluten Meal",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "glucosamine",
+      "title": "Glucosamine",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "herring-meal",
+      "title": "Herring Meal",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "l-carnitine",
+      "title": "L-Carnitine",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "lamb",
+      "title": "Lamb",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "meat-by-products",
+      "title": "Meat By-Products",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "pork-by-product-meal",
+      "title": "Pork By-Product Meal",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "pork-meal",
+      "title": "Pork Meal",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "poultry-by-product-meal",
+      "title": "Poultry By-Product Meal",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "salmon",
+      "title": "Salmon",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "salmon-meal",
+      "title": "Salmon Meal",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "tapioca",
+      "title": "Tapioca",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "taurine",
+      "title": "Taurine",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "turkey",
+      "title": "Turkey",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "wheat",
+      "title": "Wheat",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "xanthan-gum",
+      "title": "Xanthan Gum",
+      "blogLinks": 0,
+      "ingredientLinks": 3,
+      "totalContextualLinks": 3,
+      "needsMore": false
+    },
+    {
+      "dir": "beef",
+      "title": "Beef",
+      "blogLinks": 0,
+      "ingredientLinks": 4,
+      "totalContextualLinks": 4,
+      "needsMore": false
+    },
+    {
+      "dir": "beef-fat",
+      "title": "Beef Fat",
+      "blogLinks": 0,
+      "ingredientLinks": 4,
+      "totalContextualLinks": 4,
+      "needsMore": false
+    },
+    {
+      "dir": "brown-rice",
+      "title": "Brown Rice",
+      "blogLinks": 0,
+      "ingredientLinks": 4,
+      "totalContextualLinks": 4,
+      "needsMore": false
+    },
+    {
+      "dir": "chicken",
+      "title": "Chicken",
+      "blogLinks": 0,
+      "ingredientLinks": 4,
+      "totalContextualLinks": 4,
+      "needsMore": false
+    },
+    {
+      "dir": "colostrum",
+      "title": "Colostrum",
+      "blogLinks": 0,
+      "ingredientLinks": 4,
+      "totalContextualLinks": 4,
+      "needsMore": false
+    },
+    {
+      "dir": "duck-meal",
+      "title": "Duck Meal",
+      "blogLinks": 0,
+      "ingredientLinks": 4,
+      "totalContextualLinks": 4,
+      "needsMore": false
+    },
+    {
+      "dir": "fish-meal",
+      "title": "Fish Meal",
+      "blogLinks": 0,
+      "ingredientLinks": 4,
+      "totalContextualLinks": 4,
+      "needsMore": false
+    },
+    {
+      "dir": "ground-corn",
+      "title": "Ground Corn",
+      "blogLinks": 0,
+      "ingredientLinks": 4,
+      "totalContextualLinks": 4,
+      "needsMore": false
+    },
+    {
+      "dir": "lamb-meal",
+      "title": "Lamb Meal",
+      "blogLinks": 0,
+      "ingredientLinks": 4,
+      "totalContextualLinks": 4,
+      "needsMore": false
+    },
+    {
+      "dir": "oatmeal",
+      "title": "Oatmeal",
+      "blogLinks": 0,
+      "ingredientLinks": 4,
+      "totalContextualLinks": 4,
+      "needsMore": false
+    },
+    {
+      "dir": "peas",
+      "title": "Peas",
+      "blogLinks": 0,
+      "ingredientLinks": 4,
+      "totalContextualLinks": 4,
+      "needsMore": false
+    },
+    {
+      "dir": "salmon-oil",
+      "title": "Salmon Oil",
+      "blogLinks": 0,
+      "ingredientLinks": 4,
+      "totalContextualLinks": 4,
+      "needsMore": false
+    },
+    {
+      "dir": "sweet-potatoes",
+      "title": "Sweet Potatoes",
+      "blogLinks": 0,
+      "ingredientLinks": 4,
+      "totalContextualLinks": 4,
+      "needsMore": false
+    },
+    {
+      "dir": "turkey-meal",
+      "title": "Turkey Meal",
+      "blogLinks": 0,
+      "ingredientLinks": 4,
+      "totalContextualLinks": 4,
+      "needsMore": false
+    },
+    {
+      "dir": "wheat-gluten",
+      "title": "Wheat Gluten",
+      "blogLinks": 0,
+      "ingredientLinks": 4,
+      "totalContextualLinks": 4,
+      "needsMore": false
+    },
+    {
+      "dir": "yellow-5",
+      "title": "Yellow 5",
+      "blogLinks": 0,
+      "ingredientLinks": 4,
+      "totalContextualLinks": 4,
+      "needsMore": false
+    },
+    {
+      "dir": "yellow-6",
+      "title": "Yellow 6",
+      "blogLinks": 0,
+      "ingredientLinks": 4,
+      "totalContextualLinks": 4,
+      "needsMore": false
+    },
+    {
+      "dir": "blue-2",
+      "title": "Blue 2",
+      "blogLinks": 0,
+      "ingredientLinks": 5,
+      "totalContextualLinks": 5,
+      "needsMore": false
+    },
+    {
+      "dir": "chicken-fat",
+      "title": "Chicken Fat",
+      "blogLinks": 0,
+      "ingredientLinks": 5,
+      "totalContextualLinks": 5,
+      "needsMore": false
+    },
+    {
+      "dir": "chondroitin",
+      "title": "Chondroitin",
+      "blogLinks": 0,
+      "ingredientLinks": 5,
+      "totalContextualLinks": 5,
+      "needsMore": false
+    },
+    {
+      "dir": "fish-oil",
+      "title": "Fish Oil",
+      "blogLinks": 0,
+      "ingredientLinks": 5,
+      "totalContextualLinks": 5,
+      "needsMore": false
+    },
+    {
+      "dir": "flaxseed",
+      "title": "Flaxseed",
+      "blogLinks": 0,
+      "ingredientLinks": 5,
+      "totalContextualLinks": 5,
+      "needsMore": false
+    },
+    {
+      "dir": "probiotics",
+      "title": "Probiotics",
+      "blogLinks": 0,
+      "ingredientLinks": 5,
+      "totalContextualLinks": 5,
+      "needsMore": false
+    },
+    {
+      "dir": "red-40",
+      "title": "Red 40",
+      "blogLinks": 0,
+      "ingredientLinks": 5,
+      "totalContextualLinks": 5,
+      "needsMore": false
+    }
+  ]
+}

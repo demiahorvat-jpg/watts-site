@@ -1,0 +1,526 @@
+[
+  {
+    "file": "calming-supplements-for-dogs.html",
+    "title": "Best Calming Supplements for Dogs: Natural Anxiety Relief That Works",
+    "blogLinks": 0,
+    "ingredientLinks": 0,
+    "totalInlineLinks": 0,
+    "needsMore": true,
+    "linksList": []
+  },
+  {
+    "file": "can-dogs-take-human-supplements.html",
+    "title": "Can Dogs Take Human Supplements? Safety Risks & Vet-Approved Alternatives",
+    "blogLinks": 0,
+    "ingredientLinks": 0,
+    "totalInlineLinks": 0,
+    "needsMore": true,
+    "linksList": []
+  },
+  {
+    "file": "dog-anal-gland-diet.html",
+    "title": "Dog Anal Gland Problems and Diet: How Food Affects Anal Gland Health",
+    "blogLinks": 0,
+    "ingredientLinks": 0,
+    "totalInlineLinks": 0,
+    "needsMore": true,
+    "linksList": []
+  },
+  {
+    "file": "dog-skin-coat-supplements.html",
+    "title": "Best Dog Supplements for Healthy Skin & Shiny Coat",
+    "blogLinks": 0,
+    "ingredientLinks": 0,
+    "totalInlineLinks": 0,
+    "needsMore": true,
+    "linksList": []
+  },
+  {
+    "file": "how-pet-supplements-are-made.html",
+    "title": "How Most Pet Supplements Are Made (The Industry You Don't See)",
+    "blogLinks": 0,
+    "ingredientLinks": 0,
+    "totalInlineLinks": 0,
+    "needsMore": true,
+    "linksList": []
+  },
+  {
+    "file": "probiotics-for-dogs.html",
+    "title": "Best Probiotics for Dogs: Vet-Approved Strains, Prebiotics & Postbiotics Explained",
+    "blogLinks": 0,
+    "ingredientLinks": 0,
+    "totalInlineLinks": 0,
+    "needsMore": true,
+    "linksList": []
+  },
+  {
+    "file": "yeast-beta-glucan-for-dogs.html",
+    "title": "Yeast Beta-Glucan for Dogs: Immune Support Backed by Research",
+    "blogLinks": 0,
+    "ingredientLinks": 0,
+    "totalInlineLinks": 0,
+    "needsMore": true,
+    "linksList": []
+  },
+  {
+    "file": "yeast-fermentate-for-dogs.html",
+    "title": "Yeast Fermentate for Dogs: Benefits, Research & How It Works",
+    "blogLinks": 0,
+    "ingredientLinks": 0,
+    "totalInlineLinks": 0,
+    "needsMore": true,
+    "linksList": []
+  },
+  {
+    "file": "green-lipped-mussel-for-dogs.html",
+    "title": "Green-Lipped Mussel for Dogs: Benefits, Dosing & Research-Backed Results",
+    "blogLinks": 0,
+    "ingredientLinks": 2,
+    "totalInlineLinks": 2,
+    "needsMore": true,
+    "linksList": []
+  },
+  {
+    "file": "large-breed-puppy-nutrition.html",
+    "title": "Large Breed Puppy Nutrition: Avoiding Growth Problems",
+    "blogLinks": 2,
+    "ingredientLinks": 0,
+    "totalInlineLinks": 2,
+    "needsMore": true,
+    "linksList": [
+      "/blog/puppy-vitamins.html",
+      "/blog/whole-food-vs-synthetic-nutrients.html"
+    ]
+  },
+  {
+    "file": "b-vitamins-for-dogs.html",
+    "title": "B Vitamins for Dogs: Why They're Missing from Most Kibble",
+    "blogLinks": 3,
+    "ingredientLinks": 0,
+    "totalInlineLinks": 3,
+    "needsMore": false,
+    "linksList": [
+      "/blog/whole-food-vs-synthetic-nutrients.html",
+      "/blog/beef-liver-for-dogs.html",
+      "/blog/organ-based-nutrition-for-dogs.html"
+    ]
+  },
+  {
+    "file": "do-joint-supplements-work-for-dogs.html",
+    "title": "Do Joint Supplements Actually Work for Dogs?",
+    "blogLinks": 3,
+    "ingredientLinks": 0,
+    "totalInlineLinks": 3,
+    "needsMore": false,
+    "linksList": [
+      "/blog/collagen-for-dogs-benefits.html",
+      "/blog/natural-glucosamine-sources-for-dogs.html",
+      "/blog/whole-food-vs-synthetic-nutrients.html"
+    ]
+  },
+  {
+    "file": "joint-supplements-for-dogs.html",
+    "title": "Best Joint Supplements for Dogs: Glucosamine, Whole Foods & What Works",
+    "blogLinks": 0,
+    "ingredientLinks": 3,
+    "totalInlineLinks": 3,
+    "needsMore": false,
+    "linksList": []
+  },
+  {
+    "file": "puppy-vitamins.html",
+    "title": "Best Vitamins for Puppies: Supporting Healthy Growth & Development",
+    "blogLinks": 3,
+    "ingredientLinks": 0,
+    "totalInlineLinks": 3,
+    "needsMore": false,
+    "linksList": [
+      "/blog/whole-food-vs-synthetic-nutrients.html",
+      "/blog/why-dogs-need-supplements.html",
+      "/blog/organ-based-nutrition-for-dogs.html"
+    ]
+  },
+  {
+    "file": "why-dogs-need-supplements.html",
+    "title": "Why Dogs Need Supplements Beyond \"Complete & Balanced\"",
+    "blogLinks": 3,
+    "ingredientLinks": 0,
+    "totalInlineLinks": 3,
+    "needsMore": false,
+    "linksList": [
+      "/blog/whole-food-vs-synthetic-nutrients.html",
+      "/blog/beef-liver-for-dogs.html",
+      "/blog/organ-based-nutrition-for-dogs.html"
+    ]
+  },
+  {
+    "file": "beef-liver-for-dogs.html",
+    "title": "Why Beef Liver is One of the Best Things You Can Feed Your Dog",
+    "blogLinks": 3,
+    "ingredientLinks": 1,
+    "totalInlineLinks": 4,
+    "needsMore": false,
+    "linksList": [
+      "/blog/organ-based-nutrition-for-dogs.html",
+      "/blog/why-dogs-need-supplements.html",
+      "/blog/whole-food-vs-synthetic-nutrients.html"
+    ]
+  },
+  {
+    "file": "bone-broth-for-dogs.html",
+    "title": "Bone Broth for Dogs: Benefits, Research & How to Use It",
+    "blogLinks": 0,
+    "ingredientLinks": 4,
+    "totalInlineLinks": 4,
+    "needsMore": false,
+    "linksList": []
+  },
+  {
+    "file": "dog-vitamins-deficiency.html",
+    "title": "The Dog Vitamins That Actually Matter",
+    "blogLinks": 4,
+    "ingredientLinks": 0,
+    "totalInlineLinks": 4,
+    "needsMore": false,
+    "linksList": [
+      "/blog/why-dogs-need-supplements.html",
+      "/blog/whole-food-vs-synthetic-nutrients.html",
+      "/blog/organ-based-nutrition-for-dogs.html",
+      "/blog/beef-liver-for-dogs.html"
+    ]
+  },
+  {
+    "file": "dog-vs-human-nutrition.html",
+    "title": "Dog vs Human Nutrition: Why Dogs Absorb Differently",
+    "blogLinks": 4,
+    "ingredientLinks": 0,
+    "totalInlineLinks": 4,
+    "needsMore": false,
+    "linksList": [
+      "/blog/beef-liver-for-dogs.html",
+      "/blog/whole-food-vs-synthetic-nutrients.html",
+      "/blog/dog-vitamins-deficiency.html",
+      "/blog/organ-based-nutrition-for-dogs.html"
+    ]
+  },
+  {
+    "file": "how-much-liver-to-feed-dog.html",
+    "title": "How Much Liver Should I Feed My Dog Per Day? Safe Feeding Guidelines",
+    "blogLinks": 4,
+    "ingredientLinks": 0,
+    "totalInlineLinks": 4,
+    "needsMore": false,
+    "linksList": [
+      "/blog/organ-based-nutrition-for-dogs.html",
+      "/blog/beef-liver-for-dogs.html",
+      "/blog/whole-food-vs-synthetic-nutrients.html",
+      "/blog/dog-vitamins-deficiency.html"
+    ]
+  },
+  {
+    "file": "pregnant-nursing-dog-nutrition.html",
+    "title": "Lactating Dog Calorie Requirements: How Much to Feed Large Litters",
+    "blogLinks": 4,
+    "ingredientLinks": 0,
+    "totalInlineLinks": 4,
+    "needsMore": false,
+    "linksList": [
+      "/blog/b-vitamins-for-dogs.html",
+      "/blog/beef-liver-for-dogs.html",
+      "/blog/choline-for-dogs.html",
+      "/blog/organ-based-nutrition-for-dogs.html"
+    ]
+  },
+  {
+    "file": "red-dye-40-dog-food.html",
+    "title": "Red Dye 40 in Dog Food and Treats: Safety, Side Effects & Alternatives",
+    "blogLinks": 0,
+    "ingredientLinks": 4,
+    "totalInlineLinks": 4,
+    "needsMore": false,
+    "linksList": []
+  },
+  {
+    "file": "what-extends-dog-lifespan.html",
+    "title": "What Actually Extends a Dog's Lifespan (According to Research)",
+    "blogLinks": 4,
+    "ingredientLinks": 0,
+    "totalInlineLinks": 4,
+    "needsMore": false,
+    "linksList": [
+      "/blog/organ-based-nutrition-for-dogs.html",
+      "/blog/antioxidants-for-dogs.html",
+      "/blog/dog-vs-human-nutrition.html",
+      "/blog/beef-liver-for-dogs.html"
+    ]
+  },
+  {
+    "file": "choline-for-dogs.html",
+    "title": "Choline for Dogs: 4 Critical Benefits",
+    "blogLinks": 5,
+    "ingredientLinks": 0,
+    "totalInlineLinks": 5,
+    "needsMore": false,
+    "linksList": [
+      "/blog/pregnant-nursing-dog-nutrition.html",
+      "/blog/beef-liver-for-dogs.html",
+      "/blog/organ-based-nutrition-for-dogs.html",
+      "/blog/whole-food-vs-synthetic-nutrients.html",
+      "/blog/b-vitamins-for-dogs.html"
+    ]
+  },
+  {
+    "file": "omega-3-fish-oil-for-dogs.html",
+    "title": "Best Omega-3 & Fish Oil for Dogs: Whole Fish vs Supplements Explained",
+    "blogLinks": 0,
+    "ingredientLinks": 5,
+    "totalInlineLinks": 5,
+    "needsMore": false,
+    "linksList": []
+  },
+  {
+    "file": "organ-based-nutrition-for-dogs.html",
+    "title": "The Real Benefits of Organ-Based Nutrition for Dogs",
+    "blogLinks": 2,
+    "ingredientLinks": 3,
+    "totalInlineLinks": 5,
+    "needsMore": false,
+    "linksList": [
+      "/blog/whole-food-vs-synthetic-nutrients.html",
+      "/blog/why-dogs-need-supplements.html"
+    ]
+  },
+  {
+    "file": "whole-food-vs-synthetic-nutrients.html",
+    "title": "Whole Food vs Synthetic Vitamins: Why Bioavailability Matters",
+    "blogLinks": 3,
+    "ingredientLinks": 2,
+    "totalInlineLinks": 5,
+    "needsMore": false,
+    "linksList": [
+      "/blog/why-dogs-need-supplements.html",
+      "/blog/beef-liver-for-dogs.html",
+      "/blog/organ-based-nutrition-for-dogs.html"
+    ]
+  },
+  {
+    "file": "human-grade-dog-treats.html",
+    "title": "What \"Human Grade\" Really Means in Dog Treats and Supplements",
+    "blogLinks": 3,
+    "ingredientLinks": 3,
+    "totalInlineLinks": 6,
+    "needsMore": false,
+    "linksList": [
+      "/blog/how-to-read-dog-supplement-labels.html",
+      "/blog/whole-food-vs-synthetic-nutrients.html",
+      "/blog/organ-based-nutrition-for-dogs.html"
+    ]
+  },
+  {
+    "file": "spirulina-for-dogs.html",
+    "title": "Spirulina for Dogs: Benefits, Research & Dosage Guide",
+    "blogLinks": 0,
+    "ingredientLinks": 6,
+    "totalInlineLinks": 6,
+    "needsMore": false,
+    "linksList": []
+  },
+  {
+    "file": "vitamin-d-for-dogs.html",
+    "title": "Do Dogs Get Vitamin D From the Sun?",
+    "blogLinks": 6,
+    "ingredientLinks": 0,
+    "totalInlineLinks": 6,
+    "needsMore": false,
+    "linksList": [
+      "/blog/antioxidants-for-dogs.html",
+      "/blog/dog-vitamins-deficiency.html",
+      "/blog/beef-liver-for-dogs.html",
+      "/blog/choline-for-dogs.html",
+      "/blog/organ-based-nutrition-for-dogs.html",
+      "/blog/whole-food-vs-synthetic-nutrients.html"
+    ]
+  },
+  {
+    "file": "active-working-dog-nutrition.html",
+    "title": "Working Dog Nutrition: How Much Protein, Fat & Calories They Need",
+    "blogLinks": 7,
+    "ingredientLinks": 0,
+    "totalInlineLinks": 7,
+    "needsMore": false,
+    "linksList": [
+      "/blog/dog-vs-human-nutrition.html",
+      "/blog/b-vitamins-for-dogs.html",
+      "/blog/antioxidants-for-dogs.html",
+      "/blog/natural-glucosamine-sources-for-dogs.html",
+      "/blog/collagen-for-dogs-benefits.html",
+      "/blog/organ-based-nutrition-for-dogs.html",
+      "/blog/beef-liver-for-dogs.html"
+    ]
+  },
+  {
+    "file": "collagen-for-dogs-benefits.html",
+    "title": "Collagen for Dogs: Benefits, Sources, and What Actually Works",
+    "blogLinks": 5,
+    "ingredientLinks": 2,
+    "totalInlineLinks": 7,
+    "needsMore": false,
+    "linksList": [
+      "/blog/dog-vitamins-deficiency.html",
+      "/blog/organ-based-nutrition-for-dogs.html",
+      "/blog/beef-liver-for-dogs.html",
+      "/blog/how-to-read-dog-supplement-labels.html",
+      "/blog/dog-vs-human-nutrition.html"
+    ]
+  },
+  {
+    "file": "natural-glucosamine-sources-for-dogs.html",
+    "title": "Best Natural Sources of Glucosamine for Dogs (Beyond Supplements)",
+    "blogLinks": 4,
+    "ingredientLinks": 4,
+    "totalInlineLinks": 8,
+    "needsMore": false,
+    "linksList": [
+      "/blog/collagen-for-dogs-benefits.html",
+      "/blog/whole-food-vs-synthetic-nutrients.html",
+      "/blog/organ-based-nutrition-for-dogs.html",
+      "/blog/dog-vs-human-nutrition.html"
+    ]
+  },
+  {
+    "file": "dog-supplement-formats-compared.html",
+    "title": "Dog Supplement Formats Compared: Powders, Soft Chews, and Air-Dried",
+    "blogLinks": 5,
+    "ingredientLinks": 4,
+    "totalInlineLinks": 9,
+    "needsMore": false,
+    "linksList": [
+      "/blog/whole-food-vs-synthetic-nutrients.html",
+      "/blog/how-to-read-dog-supplement-labels.html",
+      "/blog/beef-liver-for-dogs.html",
+      "/blog/organ-based-nutrition-for-dogs.html",
+      "/blog/human-grade-dog-treats.html"
+    ]
+  },
+  {
+    "file": "protein-for-dogs.html",
+    "title": "Protein for Dogs: Requirements, Quality & Best Sources",
+    "blogLinks": 1,
+    "ingredientLinks": 8,
+    "totalInlineLinks": 9,
+    "needsMore": false,
+    "linksList": [
+      "/blog/organ-based-nutrition-for-dogs.html"
+    ]
+  },
+  {
+    "file": "chicken-by-products-dog-food.html",
+    "title": "Chicken By-Products in Dog Food: What They Actually Are",
+    "blogLinks": 3,
+    "ingredientLinks": 7,
+    "totalInlineLinks": 10,
+    "needsMore": false,
+    "linksList": [
+      "/blog/beef-liver-for-dogs.html",
+      "/blog/what-is-meat-meal-dog-food.html",
+      "/blog/organ-based-nutrition-for-dogs.html"
+    ]
+  },
+  {
+    "file": "senior-dog-formula-kibble.html",
+    "title": "Do Senior Dogs Need High Protein? Yes — Here's Why",
+    "blogLinks": 10,
+    "ingredientLinks": 0,
+    "totalInlineLinks": 10,
+    "needsMore": false,
+    "linksList": [
+      "/blog/what-extends-dog-lifespan.html",
+      "/blog/dog-vs-human-nutrition.html",
+      "/blog/antioxidants-for-dogs.html",
+      "/blog/b-vitamins-for-dogs.html",
+      "/blog/choline-for-dogs.html",
+      "/blog/collagen-for-dogs-benefits.html",
+      "/blog/natural-glucosamine-sources-for-dogs.html",
+      "/blog/vitamin-d-for-dogs.html",
+      "/blog/beef-liver-for-dogs.html",
+      "/blog/organ-based-nutrition-for-dogs.html"
+    ]
+  },
+  {
+    "file": "what-is-meat-meal-dog-food.html",
+    "title": "What is Meat Meal in Dog Food?",
+    "blogLinks": 2,
+    "ingredientLinks": 8,
+    "totalInlineLinks": 10,
+    "needsMore": false,
+    "linksList": [
+      "/blog/whole-food-vs-synthetic-nutrients.html",
+      "/blog/beef-liver-for-dogs.html"
+    ]
+  },
+  {
+    "file": "zinc-for-dogs.html",
+    "title": "Zinc for Dogs: What It Does and When It's Missing",
+    "blogLinks": 3,
+    "ingredientLinks": 7,
+    "totalInlineLinks": 10,
+    "needsMore": false,
+    "linksList": [
+      "/blog/beef-liver-for-dogs.html",
+      "/blog/whole-food-vs-synthetic-nutrients.html",
+      "/blog/organ-based-nutrition-for-dogs.html"
+    ]
+  },
+  {
+    "file": "fillers-in-dog-supplements.html",
+    "title": "Fillers and Binders in Dog Supplements: What to Avoid",
+    "blogLinks": 2,
+    "ingredientLinks": 9,
+    "totalInlineLinks": 11,
+    "needsMore": false,
+    "linksList": [
+      "/blog/whole-food-vs-synthetic-nutrients.html",
+      "/blog/how-to-read-dog-supplement-labels.html"
+    ]
+  },
+  {
+    "file": "how-to-read-dog-supplement-labels.html",
+    "title": "How to Read a Dog Supplement Label (And What to Ignore)",
+    "blogLinks": 4,
+    "ingredientLinks": 11,
+    "totalInlineLinks": 15,
+    "needsMore": false,
+    "linksList": [
+      "/blog/whole-food-vs-synthetic-nutrients.html",
+      "/blog/beef-liver-for-dogs.html",
+      "/blog/dog-vs-human-nutrition.html",
+      "/blog/organ-based-nutrition-for-dogs.html"
+    ]
+  },
+  {
+    "file": "antioxidants-for-dogs.html",
+    "title": "Best Antioxidants for Dogs: Top 7 Sources & Benefits",
+    "blogLinks": 7,
+    "ingredientLinks": 9,
+    "totalInlineLinks": 16,
+    "needsMore": false,
+    "linksList": [
+      "/blog/vitamin-d-for-dogs.html",
+      "/blog/whole-food-vs-synthetic-nutrients.html",
+      "/blog/beef-liver-for-dogs.html",
+      "/blog/dog-vs-human-nutrition.html",
+      "/blog/organ-based-nutrition-for-dogs.html",
+      "/blog/senior-dog-formula-kibble.html",
+      "/blog/what-extends-dog-lifespan.html"
+    ]
+  },
+  {
+    "file": "immune-support-for-dogs.html",
+    "title": "Best Immune Support Supplements for Dogs: Vitamins, Whole Foods & What Works",
+    "blogLinks": 0,
+    "ingredientLinks": 23,
+    "totalInlineLinks": 23,
+    "needsMore": false,
+    "linksList": []
+  }
+]

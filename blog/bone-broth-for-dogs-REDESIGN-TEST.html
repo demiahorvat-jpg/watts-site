@@ -108,6 +108,12 @@
     nav.nav a:hover {
       color: var(--brand-orange);
     }
+    /* Mobile nav fix - hide About link on small screens to prevent logo overlap */
+    @media (max-width: 499px) {
+      nav li:nth-child(2) { /* About link */
+        display: none;
+      }
+    }
 
     article {
       max-width: 800px;

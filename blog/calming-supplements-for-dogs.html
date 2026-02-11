@@ -141,6 +141,12 @@
       nav a:hover {
         opacity: 0.8;
       }
+    /* Mobile nav fix - hide About link on small screens to prevent logo overlap */
+    @media (max-width: 499px) {
+      nav li:nth-child(2) { /* About link */
+        display: none;
+      }
+    }
 
       /* Logo CENTERED */
       .logo-container {

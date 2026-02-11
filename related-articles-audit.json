@@ -1,0 +1,68 @@
+{
+  "total": 45,
+  "hasRelated": 38,
+  "noRelated": 7,
+  "formatIssues": [
+    {
+      "file": "calming-supplements-for-dogs.html",
+      "issues": [
+        "Only 0 related articles (recommend 3-4)"
+      ]
+    },
+    {
+      "file": "can-dogs-take-human-supplements.html",
+      "issues": [
+        "Too many related articles (6, recommend 3-4)"
+      ]
+    },
+    {
+      "file": "digestive-enzymes-for-dogs.html",
+      "issues": [
+        "Missing inline styles",
+        "H2 missing margin-top: 56px",
+        "H2 missing padding-top: 40px",
+        "H2 missing border-top",
+        "Missing grid container",
+        "Cards missing correct padding (16px 20px)",
+        "Cards missing orange border",
+        "Cards missing border-radius",
+        "Card h3 missing correct margin (0 0 8px 0)"
+      ]
+    },
+    {
+      "file": "dog-anal-gland-diet.html",
+      "issues": [
+        "Only 0 related articles (recommend 3-4)"
+      ]
+    },
+    {
+      "file": "gut-health-for-dogs.html",
+      "issues": [
+        "Missing inline styles",
+        "H2 missing margin-top: 56px",
+        "H2 missing padding-top: 40px",
+        "H2 missing border-top",
+        "Missing grid container",
+        "Cards missing correct padding (16px 20px)",
+        "Cards missing orange border",
+        "Cards missing border-radius",
+        "Card h3 missing correct margin (0 0 8px 0)"
+      ]
+    },
+    {
+      "file": "large-breed-puppy-nutrition.html",
+      "issues": [
+        "Only 2 related articles (recommend 3-4)"
+      ]
+    }
+  ],
+  "missingRelated": [
+    "active-working-dog-nutrition.html",
+    "beef-liver-for-dogs.html",
+    "bone-broth-for-dogs.html",
+    "how-much-liver-to-feed-dog.html",
+    "organ-based-nutrition-for-dogs.html",
+    "whole-food-vs-synthetic-nutrients.html",
+    "zinc-for-dogs.html"
+  ]
+}
