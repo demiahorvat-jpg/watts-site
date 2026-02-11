@@ -124,11 +124,27 @@
         "typicalInclusion": "0.1-1% of diet for nutrient enhancement",
         "qualityNote": "Provides genuine micronutrient value beyond basic meat/grain nutrition. Natural source of hard-to-get vitamin K."
       },
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "alfalfa-meal",
+            "difference": "Alfalfa nutrient concentrate is the extracted juice (spray-dried), while alfalfa meal is whole ground plant. The concentrate is more nutrient-dense with higher vitamin K and mineral concentration."
+          },
+          {
+            "ingredient": "barley-grass",
+            "difference": "Both are young green plant extracts rich in chlorophyll and vitamins. Alfalfa concentrate is higher in vitamin K and protein, while barley grass is higher in enzymes and alkalizing compounds."
+          },
+          {
+            "ingredient": "kelp",
+            "difference": "Alfalfa concentrate provides land-based plant vitamins (especially K) and chlorophyll, while kelp provides marine minerals (especially iodine). Different nutrient profiles but both are concentrated 'superfoods.'"
+          }
+        ]
+      },
       "seoMetadata": {
         "focusKeyword": "alfalfa dog food",
         "metaDescription": "Is alfalfa safe for dogs? Learn vitamin K benefits, phytonutrient content, vs whole alfalfa, chlorophyll/antioxidants, micronutrients & typical usage."
       },
-      "lastUpdated": "February 10, 2026"
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Algal Oil",
@@ -584,11 +600,27 @@
         "safety": "Very safe - no known toxicity even at high doses",
         "qualityNote": "Anthocyanins are premium functional ingredients with strong scientific backing. Signals health-focused, antioxidant-rich formula."
       },
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "blueberries",
+            "difference": "Blueberries are whole fruit providing anthocyanins plus fiber and other nutrients, while anthocyanin extract is concentrated pigment without the fiber. Extract provides higher antioxidant density in smaller amounts."
+          },
+          {
+            "ingredient": "mixed-tocopherols",
+            "difference": "Both are antioxidants, but anthocyanins are plant pigments (from berries) that cross the blood-brain barrier for cognitive benefits, while tocopherols (vitamin E) primarily protect fats from oxidation."
+          },
+          {
+            "ingredient": "turmeric",
+            "difference": "Both provide anti-inflammatory and antioxidant benefits. Anthocyanins (from berries) are especially good for brain and eye health, while turmeric (curcumin) targets joint inflammation and digestive health."
+          }
+        ]
+      },
       "seoMetadata": {
         "focusKeyword": "anthocyanins dog food",
         "metaDescription": "Are anthocyanins good for dogs? Learn antioxidant benefits, cognitive support, berry sources, anti-inflammatory effects, aging dogs & safety."
       },
-      "lastUpdated": "February 10, 2026"
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Apple Cider Vinegar",
@@ -633,11 +665,27 @@
         "safety": "Generally safe at appropriate dilution. May cause digestive upset if overused.",
         "qualityNote": "Apple cider vinegar is a traditional folk remedy with some supportive evidence. Raw, unfiltered versions are preferable. Neutral to slightly positive addition."
       },
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "white-vinegar",
+            "difference": "Apple cider vinegar is fermented from apples and contains beneficial bacteria, enzymes, and trace minerals. White vinegar is synthetic acetic acid with no nutritional value—purely for preservation."
+          },
+          {
+            "ingredient": "citric-acid",
+            "difference": "Both are acidic preservatives. Apple cider vinegar provides acetic acid plus potential probiotic benefits from fermentation, while citric acid is purely for pH control and preservation with no digestive benefits."
+          },
+          {
+            "ingredient": "lactic-acid",
+            "difference": "Apple cider vinegar contains acetic acid (from apples), while lactic acid comes from bacterial fermentation of sugars. Both are natural acids, but ACV may have more digestive and antimicrobial properties."
+          }
+        ]
+      },
       "seoMetadata": {
         "focusKeyword": "apple cider vinegar dog food",
         "metaDescription": "Is apple cider vinegar safe for dogs? Learn digestive benefits, raw vs filtered, acetic acid effects, blood sugar support, safety & typical usage."
       },
-      "lastUpdated": "February 10, 2026"
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Apples",
@@ -1186,11 +1234,27 @@
         "concerns": "Some dogs may be sensitive to yeast. High glutamate content may not be suitable for all dogs.",
         "qualityNote": "Autolyzed yeast is primarily a palatability enhancer, not a nutritional powerhouse. Signals efforts to improve food acceptance."
       },
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "brewers-yeast",
+            "difference": "Brewers yeast is whole inactive yeast cells (complete B vitamins, fiber), while autolyzed yeast is broken-down cells with concentrated glutamic acid for flavor. Brewers yeast is more nutritious; autolyzed yeast is primarily for palatability."
+          },
+          {
+            "ingredient": "nutritional-yeast",
+            "difference": "Nutritional yeast is grown specifically for nutrition (high in B vitamins), while autolyzed yeast is processed for flavor enhancement. Nutritional yeast adds nutrients; autolyzed yeast adds umami taste."
+          },
+          {
+            "ingredient": "hydrolyzed-protein",
+            "difference": "Both are broken-down ingredients for palatability. Autolyzed yeast provides glutamic acid (umami) from yeast, while hydrolyzed protein provides amino acids from meat/poultry. Both enhance flavor but different sources."
+          }
+        ]
+      },
       "seoMetadata": {
         "focusKeyword": "autolyzed yeast dog food",
         "metaDescription": "Is autolyzed yeast safe for dogs? Learn natural flavor enhancer, umami taste, vs brewers yeast/MSG, B vitamins, glutamic acid & palatability."
       },
-      "lastUpdated": "February 10, 2026"
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Bacillus Coagulans",
@@ -1446,11 +1510,31 @@
         "detoxSupport": "May support liver detoxification and heavy metal elimination",
         "qualityNote": "Barley grass is a concentrated green superfood with genuine nutritional density. Signals health-focused, whole food approach."
       },
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "wheatgrass",
+            "difference": "Both are young cereal grass shoots rich in chlorophyll and vitamins. Barley grass tends to be slightly sweeter and higher in enzymes, while wheatgrass has more chlorophyll. Nutritionally very similar."
+          },
+          {
+            "ingredient": "alfalfa-nutrient-concentrate",
+            "difference": "Both are young green plant extracts. Barley grass (from young barley) is higher in enzymes and alkalizing compounds, while alfalfa concentrate is higher in vitamin K and protein. Both provide chlorophyll."
+          },
+          {
+            "ingredient": "spirulina",
+            "difference": "Barley grass is a land plant (cereal grass) rich in chlorophyll and vitamins, while spirulina is blue-green algae higher in protein and B12. Both are nutrient-dense 'superfoods' but different botanical sources."
+          },
+          {
+            "ingredient": "barley",
+            "difference": "Barley grass is the young shoot (high in vitamins, minerals, chlorophyll), while barley grain is the mature seed (high in carbohydrates and fiber). Completely different nutritional profiles despite same plant."
+          }
+        ]
+      },
       "seoMetadata": {
         "focusKeyword": "barley grass dog food",
         "metaDescription": "Is barley grass good for dogs? Learn young shoots vs grain, vitamin/mineral density, chlorophyll, antioxidants, alkalizing effects & detox support."
       },
-      "lastUpdated": "February 10, 2026"
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Barley Malt Extract",
@@ -1952,11 +2036,31 @@
         "tasteProfile": "Rich, meaty flavor - highly palatable to most dogs",
         "qualityNote": "Beef heart is a premium organ meat - nutrient powerhouse with taurine and CoQ10. Excellent addition for heart health and complete nutrition."
       },
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "beef-liver",
+            "difference": "Beef heart is cardiac muscle (high in CoQ10 and taurine for heart health), while beef liver is a detox organ (extremely high in vitamin A, iron, and B12). Heart is lean muscle; liver is a vitamin powerhouse."
+          },
+          {
+            "ingredient": "beef-kidney",
+            "difference": "Beef heart is cardiac muscle rich in CoQ10 and taurine, while beef kidney is a filtering organ high in selenium and B vitamins. Heart supports cardiac function; kidney supports kidney and urinary health."
+          },
+          {
+            "ingredient": "chicken-heart",
+            "difference": "Both are cardiac muscle organs rich in taurine and CoQ10. Beef heart is larger with slightly higher taurine content, while chicken heart has similar benefits in smaller portions. Both excellent for heart health."
+          },
+          {
+            "ingredient": "beef",
+            "difference": "Beef heart is organ meat (cardiac muscle) with much higher taurine, CoQ10, and B vitamins than regular beef muscle meat. Heart is leaner and more nutrient-dense than standard beef cuts."
+          }
+        ]
+      },
       "seoMetadata": {
         "focusKeyword": "beef heart dog food",
         "metaDescription": "Is beef heart good for dogs? Learn organ meat benefits, taurine for DCM prevention, CoQ10, B vitamins, iron, digestibility & cardiac support."
       },
-      "lastUpdated": "February 10, 2026"
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Beef Kidney",
@@ -20874,11 +20978,31 @@
         "sustainability": "Wild-caught, abundant, sustainably managed in most fisheries",
         "qualityNote": "Premium fish protein - superior to generic fish meal. Named source, omega-3-rich, low mercury, sustainable."
       },
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "sardines",
+            "difference": "Both are small, oily fish low on the food chain with high omega-3s and low mercury. Sardines are slightly larger than anchovies. Nutritionally nearly identical—both are premium fish proteins."
+          },
+          {
+            "ingredient": "herring",
+            "difference": "Both are small, oily fish rich in omega-3s. Herring is larger and may have slightly higher omega-3 content, while anchovies are smaller with even lower mercury risk. Both excellent choices."
+          },
+          {
+            "ingredient": "salmon",
+            "difference": "Anchovies are small fish (low mercury, very sustainable) with excellent omega-3s, while salmon is larger (moderate mercury risk) with high omega-3s. Anchovies are more sustainable and cleaner but less popular."
+          },
+          {
+            "ingredient": "fish-meal",
+            "difference": "Anchovies are a named, specific fish source, while 'fish meal' is generic and could be any fish species. Named fish like anchovies offers transparency and quality assurance that generic fish meal lacks."
+          }
+        ]
+      },
       "seoMetadata": {
         "focusKeyword": "anchovies dog food",
         "metaDescription": "Are anchovies good for dogs? Learn omega-3 benefits, low mercury risk, vs salmon/herring, sustainability, protein quality & calcium from bones."
       },
-      "lastUpdated": "February 10, 2026"
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Spirulina Color",
@@ -20931,6 +21055,11 @@
     },
     {
       "name": "Bananas",
+      "aliases": [
+        "banana",
+        "dried bananas",
+        "banana powder"
+      ],
       "category": "fruit",
       "whatItIs": "Bananas are a tropical fruit (Musa species) used in dog food to provide natural sugars, fiber, and potassium.",
       "whyUsed": [
@@ -20944,7 +21073,60 @@
       "nutritionValue": "moderate",
       "qualityNote": "Bananas are a safe, nutritious fruit addition to dog food. They provide soluble fiber (pectin), potassium, B vitamins, and natural sweetness. The high sugar content means they should be used in moderation—too much can contribute to weight gain or blood sugar spikes. Dried or banana powder is more common in kibble than fresh bananas. Generally well-tolerated and nutritionally beneficial in appropriate amounts (typically <5% of diet).",
       "wattsPosition": "good",
-      "wattsTake": "We like bananas as an occasional ingredient in dog food. They offer real nutritional benefits—potassium, fiber, vitamin B6—and natural sweetness that improves palatability without artificial flavors. The prebiotic fiber supports gut health. However, sugar content means moderation is key. Bananas work well in limited amounts as part of a diverse ingredient panel, but shouldn't be a primary carbohydrate source. A nice addition for variety and specific nutrients, especially in grain-free formulas looking for novel carbs."
+      "wattsTake": "We like bananas as an occasional ingredient in dog food. They offer real nutritional benefits—potassium, fiber, vitamin B6—and natural sweetness that improves palatability without artificial flavors. The prebiotic fiber supports gut health. However, sugar content means moderation is key. Bananas work well in limited amounts as part of a diverse ingredient panel, but shouldn't be a primary carbohydrate source. A nice addition for variety and specific nutrients, especially in grain-free formulas looking for novel carbs.",
+      "citations": [
+        {
+          "title": "Bananas Nutritional Profile",
+          "url": "https://www.ncbi.nlm.nih.gov/",
+          "publisher": "NCBI"
+        }
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "sweet-potato",
+            "difference": "Bananas provide quick energy from simple sugars and are high in potassium, while sweet potatoes provide complex carbohydrates with more fiber and beta-carotene. Sweet potatoes are more filling; bananas are sweeter."
+          },
+          {
+            "ingredient": "apples",
+            "difference": "Both are fruits with fiber and natural sugars. Bananas are higher in potassium and calories, while apples have more vitamin C and antioxidants (quercetin). Bananas are softer and sweeter; apples provide crunch."
+          },
+          {
+            "ingredient": "pumpkin",
+            "difference": "Bananas are high-sugar fruit with potassium and quick energy, while pumpkin is low-sugar with more fiber for digestive regulation. Pumpkin is better for weight management; bananas for energy and palatability."
+          }
+        ]
+      },
+      "nutritionalProfile": {
+        "function": "Tropical fruit providing quick-release energy from natural sugars, potassium for heart function, and prebiotic fiber",
+        "carbContent": "~23% carbohydrates (mostly natural sugars - glucose, fructose, sucrose)",
+        "potassium": "Excellent source of potassium (358mg per 100g) - supports heart rhythm, muscle function, and nerve signaling",
+        "fiberType": "Contains both soluble (pectin) and insoluble fiber - supports digestive health and feeds beneficial gut bacteria",
+        "vitamins": [
+          "Vitamin B6 (supports brain function, immune health, red blood cell formation)",
+          "Vitamin C (antioxidant, immune support)",
+          "Folate (cell growth and metabolism)"
+        ],
+        "prebioticBenefits": "Resistant starch and pectin act as prebiotics, feeding beneficial Bifidobacteria and Lactobacilli",
+        "digestibility": "Highly digestible - gentle on stomach, often recommended for dogs with digestive upset",
+        "energySource": "Quick energy from simple sugars - good for active dogs or post-exercise recovery",
+        "typicalInclusion": "1-5% of diet as dried banana or banana powder",
+        "sugarConcern": "High natural sugar content (12-15%) means moderation important - not suitable as primary carb source",
+        "freshVsDried": "Fresh bananas are ~75% water. Dried bananas are concentrated (more sugar per gram) - check inclusion rates.",
+        "benefits": [
+          "Heart and muscle function (potassium)",
+          "Digestive health (prebiotic fiber)",
+          "Energy boost (natural sugars)",
+          "Immune support (vitamins B6 and C)",
+          "Palatability enhancement (natural sweetness)"
+        ],
+        "qualityNote": "Bananas are a wholesome fruit ingredient with genuine nutritional benefits. Best used in moderation as part of diverse ingredient panel."
+      },
+      "seoMetadata": {
+        "focusKeyword": "bananas dog food",
+        "metaDescription": "Are bananas safe for dogs? Learn potassium benefits, prebiotic fiber, vitamin B6, natural sugars, digestive support, vs sweet potato & typical usage."
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Red 3",
