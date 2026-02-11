@@ -9554,7 +9554,33 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "iron-proteinate",
+            "difference": "Both provide iron. Ferrous sulfate is an inorganic iron salt, while iron proteinate is chelated to protein for potentially better absorption and less digestive upset."
+          },
+          {
+            "ingredient": "iron-amino-acid-chelate",
+            "difference": "Both supplement iron. Ferrous sulfate is inorganic and may cause digestive upset, while iron amino acid chelate is organic, more bioavailable, and gentler on the stomach."
+          },
+          {
+            "ingredient": "iron-sulfate",
+            "difference": "Ferrous sulfate and iron sulfate are essentially the same compound - both are inorganic iron salts used as iron supplements."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026",
+      "seoMetadata": {
+        "focusKeyword": "ferrous sulfate dog food",
+        "metaDescription": "Is ferrous sulfate safe for dogs? Learn about benefits, nutritional value, and quality in pet food."
+      },
+      "nutritionalProfile": {
+        "function": "Ferrous Sulfate in dog food",
+        "typicalInclusion": "Varies by formula",
+        "safety": "Generally recognized as safe when used appropriately"
+      }
     },
     {
       "name": "Fish Digest",
@@ -9578,7 +9604,33 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "chicken-digest",
+            "difference": "Both are hydrolyzed protein palatants. Fish digest is made from fish tissue while chicken digest uses chicken, offering different flavor profiles."
+          },
+          {
+            "ingredient": "hydrolyzed-poultry-liver",
+            "difference": "Both are enzymatically broken-down animal proteins used for palatability. Fish digest uses fish while hydrolyzed poultry liver uses liver tissue, providing different amino acid and flavor profiles."
+          },
+          {
+            "ingredient": "natural-chicken-flavor",
+            "difference": "Both enhance palatability. Fish digest is specifically enzymatically digested fish protein, while natural chicken flavor can be derived through various processes from chicken."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026",
+      "seoMetadata": {
+        "focusKeyword": "fish digest dog food",
+        "metaDescription": "Is fish digest safe for dogs? Learn about benefits, nutritional value, and quality in pet food."
+      },
+      "nutritionalProfile": {
+        "function": "Fish Digest in dog food",
+        "typicalInclusion": "Varies by formula",
+        "safety": "Generally recognized as safe when used appropriately"
+      }
     },
     {
       "name": "Fish Meal",
@@ -10153,7 +10205,19 @@
         "focusKeyword": "folic acid dog food",
         "metaDescription": "Is folic acid important for dogs? Learn B9 vitamin functions, folic acid vs folate forms, DNA synthesis, anemia prevention & pregnancy requirements."
       },
-      "lastUpdated": "February 10, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "folate",
+            "difference": "Both are forms of vitamin B9. Folic acid is the synthetic form, while folate refers to the naturally occurring vitamin in foods. Folic acid is more stable in kibble processing."
+          },
+          {
+            "ingredient": "vitamin-b-complex",
+            "difference": "Folic acid is a single B vitamin (B9). Vitamin B complex contains multiple B vitamins including folic acid/folate along with B1, B2, B6, B12, etc."
+          }
+        ]
+      }
     },
     {
       "name": "Fructooligosaccharides",
@@ -10178,7 +10242,37 @@
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7166405/",
           "publisher": "NIH"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "inulin",
+            "difference": "Both are prebiotic fibers. FOS are shorter-chain fructans (oligosaccharides) while inulin consists of longer chains, but they function very similarly and support beneficial gut bacteria."
+          },
+          {
+            "ingredient": "chicory-root",
+            "difference": "Chicory root is the natural source from which both FOS and inulin are extracted. FOS is the isolated, purified prebiotic fiber component."
+          },
+          {
+            "ingredient": "gos",
+            "difference": "Both are prebiotic oligosaccharides. FOS are fructose-based while GOS (galactooligosaccharides) are galactose-based, but both support beneficial gut bacteria."
+          },
+          {
+            "ingredient": "dried-chicory-root",
+            "difference": "Dried chicory root contains inulin and FOS naturally. FOS is the extracted and purified prebiotic component from chicory or other sources."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026",
+      "seoMetadata": {
+        "focusKeyword": "fructooligosaccharides dog food",
+        "metaDescription": "Is fructooligosaccharides safe for dogs? Learn about benefits, nutritional value, and quality in pet food."
+      },
+      "nutritionalProfile": {
+        "function": "Fructooligosaccharides in dog food",
+        "typicalInclusion": "Varies by formula",
+        "safety": "Generally recognized as safe when used appropriately"
+      }
     },
     {
       "name": "Gelatin",
@@ -10286,7 +10380,29 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NIH"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "turmeric",
+            "difference": "Both are rhizomes with anti-inflammatory properties. Ginger is known for digestive benefits and nausea relief, while turmeric is valued for curcumin and joint health."
+          },
+          {
+            "ingredient": "peppermint",
+            "difference": "Both support digestive health. Ginger reduces nausea and inflammation through gingerols, while peppermint soothes through menthol and helps with gas."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026",
+      "seoMetadata": {
+        "focusKeyword": "ginger dog food",
+        "metaDescription": "Is ginger safe for dogs? Learn about benefits, nutritional value, and quality in pet food."
+      },
+      "nutritionalProfile": {
+        "function": "Ginger in dog food",
+        "typicalInclusion": "Varies by formula",
+        "safety": "Generally recognized as safe when used appropriately"
+      }
     },
     {
       "name": "Ginkgo Biloba",
@@ -10312,7 +10428,29 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "turmeric",
+            "difference": "Both are plant extracts with antioxidant properties. Ginkgo biloba supports cognitive function and circulation, while turmeric provides anti-inflammatory benefits through curcumin."
+          },
+          {
+            "ingredient": "rosemary-extract",
+            "difference": "Both are botanical antioxidants. Ginkgo biloba is used for cognitive and circulatory support, while rosemary extract is primarily a preservative with antioxidant properties."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026",
+      "seoMetadata": {
+        "focusKeyword": "ginkgo biloba dog food",
+        "metaDescription": "Is ginkgo biloba safe for dogs? Learn about benefits, nutritional value, and quality in pet food."
+      },
+      "nutritionalProfile": {
+        "function": "Ginkgo Biloba in dog food",
+        "typicalInclusion": "Varies by formula",
+        "safety": "Generally recognized as safe when used appropriately"
+      }
     },
     {
       "name": "Glucosamine",
@@ -10510,7 +10648,29 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "glutathione",
+            "difference": "Both support cellular health. Glutamine is an amino acid that supports gut health and immune function, while glutathione is an antioxidant tripeptide made from glutamine, cysteine, and glycine."
+          },
+          {
+            "ingredient": "l-carnitine",
+            "difference": "Both are amino acid derivatives. Glutamine supports gut lining and immune function, while L-carnitine transports fatty acids for energy production and supports heart and muscle function."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026",
+      "seoMetadata": {
+        "focusKeyword": "glutamine dog food",
+        "metaDescription": "Is glutamine safe for dogs? Learn about benefits, nutritional value, and quality in pet food."
+      },
+      "nutritionalProfile": {
+        "function": "Glutamine in dog food",
+        "typicalInclusion": "Varies by formula",
+        "safety": "Generally recognized as safe when used appropriately"
+      }
     },
     {
       "name": "Glutathione",
@@ -10536,7 +10696,33 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "glutamine",
+            "difference": "Glutathione is a tripeptide antioxidant made partly from glutamine. Glutamine is a single amino acid that supports gut and immune health, while glutathione neutralizes free radicals."
+          },
+          {
+            "ingredient": "vitamin-e",
+            "difference": "Both are antioxidants. Glutathione is a cellular antioxidant produced in the body, while vitamin E is a fat-soluble vitamin antioxidant obtained from diet."
+          },
+          {
+            "ingredient": "vitamin-c",
+            "difference": "Both are powerful antioxidants. Glutathione is an endogenous tripeptide that regenerates other antioxidants, while vitamin C is a water-soluble vitamin that also helps regenerate glutathione."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026",
+      "seoMetadata": {
+        "focusKeyword": "glutathione dog food",
+        "metaDescription": "Is glutathione safe for dogs? Learn about benefits, nutritional value, and quality in pet food."
+      },
+      "nutritionalProfile": {
+        "function": "Glutathione in dog food",
+        "typicalInclusion": "Varies by formula",
+        "safety": "Generally recognized as safe when used appropriately"
+      }
     },
     {
       "name": "Glycerin",
@@ -10562,7 +10748,33 @@
           "url": "https://www.fda.gov/",
           "publisher": "FDA"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "molasses",
+            "difference": "Both are humectants and sweeteners in treats. Glycerin is a pure compound that's clear and neutral, while molasses is a complex sugar syrup with minerals and a distinctive flavor."
+          },
+          {
+            "ingredient": "honey",
+            "difference": "Both provide moisture and sweetness. Glycerin is a pure humectant with no nutritional value, while honey contains natural sugars, enzymes, and trace nutrients."
+          },
+          {
+            "ingredient": "propylene-glycol",
+            "difference": "Both are humectants used to retain moisture. Glycerin (vegetable glycerin) is generally safer and more accepted in dog products, while propylene glycol has more regulatory restrictions."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026",
+      "seoMetadata": {
+        "focusKeyword": "glycerin dog food",
+        "metaDescription": "Is glycerin safe for dogs? Learn about benefits, nutritional value, and quality in pet food."
+      },
+      "nutritionalProfile": {
+        "function": "Glycerin in dog food",
+        "typicalInclusion": "Varies by formula",
+        "safety": "Generally recognized as safe when used appropriately"
+      }
     },
     {
       "name": "GOS",
@@ -10588,7 +10800,33 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "fructooligosaccharides",
+            "difference": "Both are prebiotic oligosaccharides. GOS (galactooligosaccharides) are galactose-based while FOS are fructose-based, but both support beneficial gut bacteria similarly."
+          },
+          {
+            "ingredient": "inulin",
+            "difference": "Both are prebiotic fibers. GOS are shorter-chain galactose-based oligosaccharides, while inulin consists of longer fructose chains, but both nourish beneficial bacteria."
+          },
+          {
+            "ingredient": "chicory-root",
+            "difference": "Chicory root naturally contains inulin and FOS. GOS are typically synthesized from lactose and are chemically different but functionally similar as prebiotics."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026",
+      "seoMetadata": {
+        "focusKeyword": "gos dog food",
+        "metaDescription": "Is gos safe for dogs? Learn about benefits, nutritional value, and quality in pet food."
+      },
+      "nutritionalProfile": {
+        "function": "GOS in dog food",
+        "typicalInclusion": "Varies by formula",
+        "safety": "Generally recognized as safe when used appropriately"
+      }
     },
     {
       "name": "Green Tea Extract",
@@ -10649,7 +10887,33 @@
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9929184/",
           "publisher": "NIH"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "glucosamine",
+            "difference": "Green lipped mussel naturally contains glucosamine plus chondroitin, omega-3s, and glycosaminoglycans. Glucosamine alone is a single extracted compound for joint support."
+          },
+          {
+            "ingredient": "chondroitin-sulfate",
+            "difference": "Green lipped mussel provides chondroitin naturally along with glucosamine, omega-3s, and anti-inflammatory compounds. Chondroitin sulfate is the isolated compound."
+          },
+          {
+            "ingredient": "fish-oil",
+            "difference": "Both provide omega-3 fatty acids. Green lipped mussel offers joint-specific compounds (glucosamine, chondroitin) plus omega-3s, while fish oil provides concentrated EPA/DHA only."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026",
+      "seoMetadata": {
+        "focusKeyword": "green-lipped mussel dog food",
+        "metaDescription": "Is green-lipped mussel safe for dogs? Learn about benefits, nutritional value, and quality in pet food."
+      },
+      "nutritionalProfile": {
+        "function": "Green-Lipped Mussel in dog food",
+        "typicalInclusion": "Varies by formula",
+        "safety": "Generally recognized as safe when used appropriately"
+      }
     },
     {
       "name": "Ground Corn",
@@ -10831,7 +11095,33 @@
       "qualityNote": "Guar fiber (especially partially hydrolyzed versions) is a soluble fiber with documented prebiotic benefits. Research shows it supports beneficial gut bacteria and digestive health. It's more fermentable and better tolerated than whole guar gum. While it's not nutritionally dense, it serves legitimate functional and health purposes. It can help with both diarrhea and constipation by regulating stool consistency. Generally well-tolerated.",
       "wattsPosition": "neutral",
       "wattsTake": "Guar fiber is a functional prebiotic ingredient with legitimate digestive health benefits. It's better than cheap cellulose fillers because it actually supports gut bacteria. However, we prefer whole food fiber sources when possible. Guar fiber is acceptable as a supplemental fiber source, especially in foods targeting digestive health. It's neutral - serving a legitimate purpose but not a standout ingredient. Better than synthetic gums, not as good as whole vegetables.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "guar-gum",
+            "difference": "Guar fiber is the whole ground guar bean (including hull), providing more fiber. Guar gum is the isolated, purified galactomannan from the seed, used primarily as a thickener."
+          },
+          {
+            "ingredient": "beet-pulp",
+            "difference": "Both are fermentable fibers for digestive health. Guar fiber is from guar beans and forms a gel, while beet pulp is from sugar beets and provides both soluble and insoluble fiber."
+          },
+          {
+            "ingredient": "psyllium",
+            "difference": "Both are soluble, gel-forming fibers. Guar fiber comes from guar beans and is moderately fermentable, while psyllium from plantain seeds absorbs more water and aids bowel regularity."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026",
+      "seoMetadata": {
+        "focusKeyword": "guar fiber dog food",
+        "metaDescription": "Is guar fiber safe for dogs? Learn about benefits, nutritional value, and quality in pet food."
+      },
+      "nutritionalProfile": {
+        "function": "Guar Fiber in dog food",
+        "typicalInclusion": "Varies by formula",
+        "safety": "Generally recognized as safe when used appropriately"
+      }
     },
     {
       "name": "Guar Gum",
@@ -10891,7 +11181,33 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "liver",
+            "difference": "Both are organ meats. Heart is a muscle organ high in CoQ10, taurine, and B vitamins. Liver is a glandular organ exceptionally rich in vitamin A, iron, and copper."
+          },
+          {
+            "ingredient": "kidney",
+            "difference": "Both are nutrient-dense organs. Heart is muscle tissue rich in taurine and CoQ10, while kidney is a filtration organ high in B vitamins, iron, and selenium."
+          },
+          {
+            "ingredient": "chicken-muscle",
+            "difference": "Both are muscle proteins. Heart is a dense, nutrient-rich organ muscle high in taurine and CoQ10, while skeletal muscle is leaner with less micronutrient density."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026",
+      "seoMetadata": {
+        "focusKeyword": "heart dog food",
+        "metaDescription": "Is heart safe for dogs? Learn about benefits, nutritional value, and quality in pet food."
+      },
+      "nutritionalProfile": {
+        "function": "Heart in dog food",
+        "typicalInclusion": "Varies by formula",
+        "safety": "Generally recognized as safe when used appropriately"
+      }
     },
     {
       "name": "Herring Meal",
@@ -11017,7 +11333,29 @@
       "qualityNote": "Hickory smoke flavor is essentially condensed smoke used for flavoring. It adds no nutritional value and is purely for taste and smell. While it's considered natural (derived from actual smoke), some smoke flavorings contain trace amounts of potentially carcinogenic compounds (PAHs). However, it's used in very small amounts. The need for smoke flavoring often indicates foods are lacking in real meat flavor.",
       "wattsPosition": "caution",
       "wattsTake": "Hickory smoke flavor is unnecessary flavoring that adds no nutrition. While it's technically natural, we question why food needs smoke flavoring - quality meat ingredients should provide flavor naturally. It's often used to mask low meat content or make plant proteins taste 'meatier.' We prefer foods where palatability comes from real ingredients, not added flavorings. It's not toxic in the amounts used, but it's a sign the food may lack real meat flavor.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "natural-smoke-flavor",
+            "difference": "Both are smoke flavorings. Hickory smoke flavor specifically uses hickory wood, while natural smoke flavor can derive from various wood types (hickory, mesquite, applewood, etc.)."
+          },
+          {
+            "ingredient": "liquid-smoke",
+            "difference": "Very similar - both are condensed smoke products. Hickory smoke flavor specifies hickory wood, while liquid smoke may use various woods. Both add smoky flavor without actual smoking."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026",
+      "seoMetadata": {
+        "focusKeyword": "hickory smoke flavor dog food",
+        "metaDescription": "Is hickory smoke flavor safe for dogs? Learn about benefits, nutritional value, and quality in pet food."
+      },
+      "nutritionalProfile": {
+        "function": "Hickory Smoke Flavor in dog food",
+        "typicalInclusion": "Varies by formula",
+        "safety": "Generally recognized as safe when used appropriately"
+      }
     },
     {
       "name": "Honey",
@@ -11080,7 +11418,33 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "glucosamine",
+            "difference": "Both support joint health. Hyaluronic acid lubricates joints and maintains synovial fluid, while glucosamine helps build and repair cartilage. Often used together."
+          },
+          {
+            "ingredient": "chondroitin-sulfate",
+            "difference": "Both are joint-supporting compounds. Hyaluronic acid provides lubrication and hydration to joints, while chondroitin helps maintain cartilage structure and water retention."
+          },
+          {
+            "ingredient": "green-lipped-mussel",
+            "difference": "Green lipped mussel contains multiple joint compounds including some hyaluronic acid. Hyaluronic acid is a single purified compound focused on joint lubrication."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026",
+      "seoMetadata": {
+        "focusKeyword": "hyaluronic acid dog food",
+        "metaDescription": "Is hyaluronic acid safe for dogs? Learn about benefits, nutritional value, and quality in pet food."
+      },
+      "nutritionalProfile": {
+        "function": "Hyaluronic Acid in dog food",
+        "typicalInclusion": "Varies by formula",
+        "safety": "Generally recognized as safe when used appropriately"
+      }
     },
     {
       "name": "Hydrolyzed Poultry Liver",
@@ -11105,7 +11469,33 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "chicken-liver",
+            "difference": "Hydrolyzed poultry liver is enzymatically broken down chicken/turkey liver for enhanced palatability and digestibility, while chicken liver is the whole organ."
+          },
+          {
+            "ingredient": "chicken-digest",
+            "difference": "Both are hydrolyzed poultry products. Hydrolyzed poultry liver specifically uses liver tissue, while chicken digest can use various chicken parts. Liver provides more nutrients."
+          },
+          {
+            "ingredient": "fish-digest",
+            "difference": "Both are enzymatically hydrolyzed animal proteins used for palatability. Poultry liver uses bird liver while fish digest uses fish tissue, offering different flavor and nutrient profiles."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026",
+      "seoMetadata": {
+        "focusKeyword": "hydrolyzed poultry liver dog food",
+        "metaDescription": "Is hydrolyzed poultry liver safe for dogs? Learn about benefits, nutritional value, and quality in pet food."
+      },
+      "nutritionalProfile": {
+        "function": "Hydrolyzed Poultry Liver in dog food",
+        "typicalInclusion": "Varies by formula",
+        "safety": "Generally recognized as safe when used appropriately"
+      }
     },
     {
       "name": "Hydrolyzed Yeast",
@@ -11126,7 +11516,33 @@
       "qualityNote": "Hydrolyzed yeast is produced by breaking down yeast cells into their component amino acids and nucleotides, creating a concentrated savory flavor similar to MSG (monosodium glutamate). While it's a natural ingredient, it's used primarily for flavoring rather than nutrition. It does provide some B vitamins and beneficial compounds, making it more functional than pure flavor additives. The hydrolysis process creates free glutamic acid, which provides the savory taste dogs find appealing. Generally safe and better than artificial flavors, though primarily used to make food taste better rather than add significant nutrition.",
       "wattsPosition": "neutral",
       "wattsTake": "Hydrolyzed yeast is a natural palatability enhancer that's better than artificial flavors but still mainly about taste rather than nutrition. It's essentially natural MSG - breaks down into free glutamates that create savory flavor dogs love. On the positive side, it provides some B vitamins and is from a natural source. On the other hand, if food needs flavor enhancers, it raises questions about the base ingredient quality. We're neutral - it's acceptable as a natural flavoring, and it does provide some nutritional value, but we'd prefer foods that are palatable from quality meat content alone. Better than 'natural flavors' or synthetic additives.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "brewers-dried-yeast",
+            "difference": "Hydrolyzed yeast is enzymatically broken down for better absorption and palatability, while brewers dried yeast is simply dried whole yeast cells."
+          },
+          {
+            "ingredient": "yeast-culture",
+            "difference": "Yeast culture is live or fermented yeast with growth medium. Hydrolyzed yeast is broken down into amino acids, nucleotides, and B vitamins for enhanced bioavailability."
+          },
+          {
+            "ingredient": "dried-yeast",
+            "difference": "Dried yeast is whole deactivated yeast cells. Hydrolyzed yeast is enzymatically broken down, making nutrients more bioavailable and creating savory flavor compounds."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026",
+      "seoMetadata": {
+        "focusKeyword": "hydrolyzed yeast dog food",
+        "metaDescription": "Is hydrolyzed yeast safe for dogs? Learn about benefits, nutritional value, and quality in pet food."
+      },
+      "nutritionalProfile": {
+        "function": "Hydrolyzed Yeast in dog food",
+        "typicalInclusion": "Varies by formula",
+        "safety": "Generally recognized as safe when used appropriately"
+      }
     },
     {
       "name": "Inulin",
@@ -11151,7 +11567,37 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "fructooligosaccharides",
+            "difference": "Both are prebiotic fructans. Inulin consists of longer fructose chains while FOS are shorter oligosaccharides, but they function very similarly in supporting gut bacteria."
+          },
+          {
+            "ingredient": "chicory-root",
+            "difference": "Chicory root is the natural source from which inulin is extracted. Inulin is the purified, isolated prebiotic fiber component."
+          },
+          {
+            "ingredient": "gos",
+            "difference": "Both are prebiotic oligosaccharides. Inulin is fructose-based and extracted from plants, while GOS (galactooligosaccharides) are galactose-based, but both support beneficial bacteria."
+          },
+          {
+            "ingredient": "dried-chicory-root",
+            "difference": "Dried chicory root contains inulin naturally along with other compounds. Inulin is the extracted and purified prebiotic fiber."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026",
+      "seoMetadata": {
+        "focusKeyword": "inulin dog food",
+        "metaDescription": "Is inulin safe for dogs? Learn about benefits, nutritional value, and quality in pet food."
+      },
+      "nutritionalProfile": {
+        "function": "Inulin in dog food",
+        "typicalInclusion": "Varies by formula",
+        "safety": "Generally recognized as safe when used appropriately"
+      }
     },
     {
       "name": "Iron Amino Acid Chelate",
@@ -11209,7 +11655,23 @@
         "focusKeyword": "iron amino acid chelate dog food",
         "metaDescription": "Is iron amino acid chelate better than ferrous sulfate? Learn 2-4x higher absorption, anemia prevention, hemoglobin production & AAFCO iron requirements."
       },
-      "lastUpdated": "February 10, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "ferrous-sulfate",
+            "difference": "Both provide iron. Iron amino acid chelate is organic iron bound to amino acids for better absorption and less digestive upset, while ferrous sulfate is an inorganic salt."
+          },
+          {
+            "ingredient": "iron-proteinate",
+            "difference": "Both are chelated, organic iron forms. Iron amino acid chelate binds iron to specific amino acids, while iron proteinate binds to partially hydrolyzed protein. Very similar bioavailability."
+          },
+          {
+            "ingredient": "iron-sulfate",
+            "difference": "Iron amino acid chelate is organic iron chelated to amino acids for superior absorption and tolerance. Iron sulfate is inorganic and may cause digestive upset."
+          }
+        ]
+      }
     },
     {
       "name": "Iron Proteinate",
@@ -11234,7 +11696,33 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "ferrous-sulfate",
+            "difference": "Both supplement iron. Iron proteinate is chelated to protein for better absorption and less digestive upset, while ferrous sulfate is an inorganic iron salt."
+          },
+          {
+            "ingredient": "iron-amino-acid-chelate",
+            "difference": "Both are chelated organic iron forms. Iron proteinate binds to partially hydrolyzed protein, while iron amino acid chelate binds to specific amino acids. Very similar in bioavailability."
+          },
+          {
+            "ingredient": "iron-sulfate",
+            "difference": "Iron proteinate is organic iron chelated to protein for better absorption and gentler digestion. Iron sulfate is inorganic and less bioavailable."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026",
+      "seoMetadata": {
+        "focusKeyword": "iron proteinate dog food",
+        "metaDescription": "Is iron proteinate safe for dogs? Learn about benefits, nutritional value, and quality in pet food."
+      },
+      "nutritionalProfile": {
+        "function": "Iron Proteinate in dog food",
+        "typicalInclusion": "Varies by formula",
+        "safety": "Generally recognized as safe when used appropriately"
+      }
     },
     {
       "name": "Iron Sulfate",
@@ -11259,7 +11747,33 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "ferrous-sulfate",
+            "difference": "Iron sulfate and ferrous sulfate are essentially the same compound - both are inorganic iron salts. Ferrous sulfate is the more specific chemical name (Fe²⁺)."
+          },
+          {
+            "ingredient": "iron-proteinate",
+            "difference": "Both provide iron. Iron sulfate is an inorganic salt that's less expensive but may cause digestive upset, while iron proteinate is chelated for better absorption."
+          },
+          {
+            "ingredient": "iron-amino-acid-chelate",
+            "difference": "Iron sulfate is inorganic iron that's economical but less bioavailable. Iron amino acid chelate is organic, chelated iron with superior absorption and less GI irritation."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026",
+      "seoMetadata": {
+        "focusKeyword": "iron sulfate dog food",
+        "metaDescription": "Is iron sulfate safe for dogs? Learn about benefits, nutritional value, and quality in pet food."
+      },
+      "nutritionalProfile": {
+        "function": "Iron Sulfate in dog food",
+        "typicalInclusion": "Varies by formula",
+        "safety": "Generally recognized as safe when used appropriately"
+      }
     },
     {
       "name": "Kale",
@@ -11359,7 +11873,33 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "yogurt",
+            "difference": "Both are fermented dairy products with probiotics. Kefir is liquid, has more diverse bacterial strains (10-40+) plus beneficial yeasts, while yogurt has fewer strains and is thicker."
+          },
+          {
+            "ingredient": "probiotics",
+            "difference": "Kefir is a fermented food naturally containing diverse live probiotics plus nutrients. Probiotics supplements are concentrated, specific bacterial strains added to food."
+          },
+          {
+            "ingredient": "fermented-ingredients",
+            "difference": "Kefir is a specific fermented dairy product with probiotics. Fermented ingredients is a broader category including various fermented plant and animal materials."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026",
+      "seoMetadata": {
+        "focusKeyword": "kefir dog food",
+        "metaDescription": "Is kefir safe for dogs? Learn about benefits, nutritional value, and quality in pet food."
+      },
+      "nutritionalProfile": {
+        "function": "Kefir in dog food",
+        "typicalInclusion": "Varies by formula",
+        "safety": "Generally recognized as safe when used appropriately"
+      }
     },
     {
       "name": "L-Ascorbyl-2-Polyphosphate",
@@ -21384,7 +21924,37 @@
       "nutritionValue": "moderate",
       "qualityNote": "Fermented ingredients represent an emerging area of pet nutrition with promising benefits. Fermentation can increase protein digestibility, reduce anti-nutrients, and produce beneficial compounds like short-chain fatty acids and vitamins. Examples include fermented soy (tempeh), fermented vegetables, and fermented grains. Quality depends on fermentation method and which ingredients are fermented. Generally safe and may offer genuine nutritional advantages, especially for plant-based proteins.",
       "wattsPosition": "good",
-      "wattsTake": "We're intrigued by fermented ingredients and the science looks promising. Fermentation is an ancient preservation and enhancement method that can genuinely improve nutrition—breaking down hard-to-digest compounds, increasing bioavailability, and adding beneficial bacteria and enzymes. Fermented soy, vegetables, and even grains show improved digestibility. We appreciate innovation in this space. However, vague \"fermented ingredients\" without specifics is less informative than \"fermented chickpeas\" or \"tempeh.\" When clearly identified, fermented ingredients add functional value."
+      "wattsTake": "We're intrigued by fermented ingredients and the science looks promising. Fermentation is an ancient preservation and enhancement method that can genuinely improve nutrition—breaking down hard-to-digest compounds, increasing bioavailability, and adding beneficial bacteria and enzymes. Fermented soy, vegetables, and even grains show improved digestibility. We appreciate innovation in this space. However, vague \"fermented ingredients\" without specifics is less informative than \"fermented chickpeas\" or \"tempeh.\" When clearly identified, fermented ingredients add functional value.",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "probiotics",
+            "difference": "Both provide beneficial bacteria. Fermented ingredients offer bacteria plus fermentation byproducts (enzymes, organic acids) while probiotics are concentrated live cultures."
+          },
+          {
+            "ingredient": "kefir",
+            "difference": "Kefir is a specific fermented dairy product. Fermented ingredients is a broader category that includes various fermented plant and animal materials."
+          },
+          {
+            "ingredient": "yeast-culture",
+            "difference": "Both are fermentation products. Yeast culture specifically uses Saccharomyces cerevisiae, while fermented ingredients can use various bacteria and yeasts."
+          },
+          {
+            "ingredient": "dried-fermentation-products",
+            "difference": "Very similar - both are products of microbial fermentation. Dried fermentation products typically specify the microorganism used, while fermented ingredients may be less specific."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026",
+      "seoMetadata": {
+        "focusKeyword": "fermented ingredients dog food",
+        "metaDescription": "Is fermented ingredients safe for dogs? Learn about benefits, nutritional value, and quality in pet food."
+      },
+      "nutritionalProfile": {
+        "function": "Fermented Ingredients in dog food",
+        "typicalInclusion": "Varies by formula",
+        "safety": "Generally recognized as safe when used appropriately"
+      }
     },
     {
       "name": "Natural Color",
@@ -21486,7 +22056,37 @@
       "nutritionValue": "high",
       "qualityNote": "Herring is an outstanding protein source for dogs. As a small, oily fish, it provides exceptional omega-3 content naturally—among the highest of any fish. Low on the food chain means minimal mercury and contaminant accumulation. Wild-caught herring is abundant and sustainably managed in most regions. Whether used as fresh herring or herring meal, it delivers complete protein, omega-3s, and micronutrients. Premium, species-specific ingredient.",
       "wattsPosition": "excellent",
-      "wattsTake": "Herring is one of the absolute best fish-based proteins available. It rivals or exceeds salmon in omega-3 content, with the added benefit of being a smaller fish with lower contaminant risk. The built-in EPA and DHA support heart, brain, joint, and skin health without requiring additional fish oil. Wild-caught, sustainable, and named—everything we want in a fish protein. Whether listed as herring, herring meal, or dehydrated herring, this is a top-tier ingredient that adds serious nutritional value."
+      "wattsTake": "Herring is one of the absolute best fish-based proteins available. It rivals or exceeds salmon in omega-3 content, with the added benefit of being a smaller fish with lower contaminant risk. The built-in EPA and DHA support heart, brain, joint, and skin health without requiring additional fish oil. Wild-caught, sustainable, and named—everything we want in a fish protein. Whether listed as herring, herring meal, or dehydrated herring, this is a top-tier ingredient that adds serious nutritional value.",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "salmon",
+            "difference": "Both are oily fish rich in omega-3s. Herring has slightly higher omega-3 content than salmon and is more sustainable, being lower on the food chain with less mercury risk."
+          },
+          {
+            "ingredient": "whitefish",
+            "difference": "Herring is an oily fish exceptionally high in omega-3 fatty acids, while whitefish is leaner with lower omega-3 content but milder flavor. Herring provides more anti-inflammatory benefits."
+          },
+          {
+            "ingredient": "menhaden-fish-meal",
+            "difference": "Both are small, oily fish high in omega-3s. Herring is typically specified by species with premium status, while menhaden meal is an economical option. Both are low-mercury."
+          },
+          {
+            "ingredient": "sardine",
+            "difference": "Both are small, oily fish rich in omega-3s and low in mercury. Herring and sardines are nutritionally very similar, with sardines being slightly smaller and herring often larger."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026",
+      "seoMetadata": {
+        "focusKeyword": "herring dog food",
+        "metaDescription": "Is herring safe for dogs? Learn about benefits, nutritional value, and quality in pet food."
+      },
+      "nutritionalProfile": {
+        "function": "Herring in dog food",
+        "typicalInclusion": "Varies by formula",
+        "safety": "Generally recognized as safe when used appropriately"
+      }
     },
     {
       "name": "Whitefish Meal",
