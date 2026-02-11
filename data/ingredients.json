@@ -17291,7 +17291,24 @@
       "qualityNote": "Resistant starch is a unique carbohydrate that functions more like fiber than traditional starch. It resists digestion in the small intestine and is fermented by gut bacteria in the colon, producing beneficial short-chain fatty acids like butyrate. Research supports its prebiotic benefits for gut health. While it doesn't provide direct nutrition, it supports the gut microbiome. Generally well-tolerated and considered beneficial for digestive health.",
       "wattsPosition": "good",
       "wattsTake": "We view resistant starch positively as a functional prebiotic ingredient. Unlike empty fillers, it serves a legitimate purpose supporting gut health and beneficial bacteria. It's particularly valuable for dogs with digestive issues or those needing microbiome support. While it's not a nutrient-dense superfood, it's a targeted functional ingredient that adds real value. We appreciate seeing it in foods focused on digestive health.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "rice-starch",
+            "difference": "Resistant starch resists digestion and acts as prebiotic fiber feeding gut bacteria, while rice starch is fully digestible providing rapid energy with high glycemic impact."
+          },
+          {
+            "ingredient": "inulin",
+            "difference": "Both are prebiotic fibers, but resistant starch is from starch sources and produces more butyrate (beneficial for colon health), while inulin is from plants like chicory and may cause more gas."
+          },
+          {
+            "ingredient": "cellulose",
+            "difference": "Resistant starch is fermented by gut bacteria producing beneficial short-chain fatty acids, while cellulose is insoluble fiber that passes through largely unchanged providing only bulk."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Riboflavin",
@@ -17316,7 +17333,20 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "thiamine",
+            "difference": "Both are essential B vitamins. Riboflavin (B2) is crucial for energy metabolism and is more stable during cooking, while thiamine (B1) is more heat-sensitive and supports nerve function."
+          },
+          {
+            "ingredient": "niacin",
+            "difference": "Riboflavin (B2) and niacin (B3) both support energy production, but riboflavin is involved in converting other B vitamins to usable forms, while niacin directly supports DNA repair and skin health."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Rice",
@@ -17455,7 +17485,24 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "rice-flour",
+            "difference": "Rice bran is the nutrient-rich outer layer with fiber, B vitamins, and healthy fats, while rice flour is the starchy endosperm with minimal fiber and nutrients."
+          },
+          {
+            "ingredient": "rice-hulls",
+            "difference": "Rice bran is the edible, nutritious layer beneath the hull providing vitamins and antioxidants, while rice hulls are the indigestible outer shell with zero nutritional value."
+          },
+          {
+            "ingredient": "wheat-bran",
+            "difference": "Both are nutritious grain outer layers, but rice bran contains more healthy fats and antioxidants (like tocotrienols), while wheat bran has more insoluble fiber and contains gluten."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Rice Flour",
@@ -17481,7 +17528,24 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "rice-bran",
+            "difference": "Rice flour is the refined starchy interior with minimal fiber and nutrients, while rice bran is the outer layer packed with fiber, vitamins, and healthy fats."
+          },
+          {
+            "ingredient": "rice-starch",
+            "difference": "Rice flour is finely ground whole rice with some protein and minerals, while rice starch is the isolated starch component with no protein or micronutrients."
+          },
+          {
+            "ingredient": "oat-flour",
+            "difference": "Both are grain flours, but oat flour provides more protein, fiber, and beta-glucans for heart health, while rice flour is more hypoallergenic and easier to digest."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Rice Hulls",
@@ -17501,7 +17565,24 @@
       "qualityNote": "Rice hulls are the inedible, indigestible outer shell of rice kernels - essentially agricultural waste. They provide virtually no nutrition - no protein, fat, vitamins, or minerals. They're mostly silica and cellulose that passes through the digestive system unchanged. They add bulk and fiber, but it's the lowest possible quality fiber. This is pure filler with no nutritional value whatsoever.",
       "wattsPosition": "avoid",
       "wattsTake": "Rice hulls are bottom-tier filler with zero nutritional value. This is industrial waste from rice processing being used to cheaply bulk up dog food. We view this as a major red flag - manufacturers using rice hulls are prioritizing cost savings over any semblance of quality. There are countless better fiber sources. If rice hulls appear in the ingredient list, we'd strongly recommend finding a better food. This ingredient has no place in quality pet nutrition.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "rice-bran",
+            "difference": "Rice hulls are the indigestible outer shell with no nutritional value, while rice bran is the nutritious layer beneath providing fiber, vitamins, and healthy fats."
+          },
+          {
+            "ingredient": "cellulose",
+            "difference": "Both are inexpensive, low-quality fibers, but cellulose (from wood pulp) is at least processed for digestibility, while rice hulls are literal agricultural waste with high silica content."
+          },
+          {
+            "ingredient": "peanut-hulls",
+            "difference": "Both are indigestible agricultural waste used as cheap fillers. Rice hulls are from rice processing, peanut hulls from peanuts - both equally worthless nutritionally and signs of low-quality food."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Rice Starch",
@@ -17521,7 +17602,28 @@
       "qualityNote": "Rice starch is a refined carbohydrate consisting primarily of isolated starch with minimal protein, fiber, vitamins, or minerals. It's extremely digestible and gentle, making it useful for sensitive stomachs or bland diets. However, it's nutritionally empty—just simple carbohydrates for energy. It has a high glycemic index and provides no meaningful micronutrients. It's a processed fraction of rice, not a whole food.",
       "wattsPosition": "caution",
       "wattsTake": "Rice starch is nutritionally empty filler. While it's digestible and useful for dogs with severe digestive issues, it's stripped of all the beneficial components of whole rice (fiber, protein, vitamins). It's essentially pure carbs with no nutritional value. We prefer whole food carbohydrates like sweet potato or even whole rice. Rice starch is acceptable in small amounts for texture in wet foods or for dogs with GI distress, but in dry foods, it's a sign of low-quality filler ingredients.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "rice-flour",
+            "difference": "Rice starch is the isolated starch component with no protein, fiber, or nutrients, while rice flour retains some protein and minerals from the whole grain."
+          },
+          {
+            "ingredient": "resistant-starch",
+            "difference": "Rice starch is fully digestible providing rapid glucose spikes, while resistant starch resists digestion and acts as prebiotic fiber supporting gut health."
+          },
+          {
+            "ingredient": "tapioca-starch",
+            "difference": "Both are refined, isolated starches with minimal nutrition. Rice starch comes from rice, tapioca from cassava root - functionally similar as nutritionally empty, high-glycemic carbohydrates."
+          },
+          {
+            "ingredient": "rice-bran",
+            "difference": "Rice starch is the extracted carbohydrate with zero nutritional value, while rice bran is the outer layer rich in fiber, B vitamins, antioxidants, and healthy fats."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Rosemary Extract",
@@ -17547,6 +17649,22 @@
           "publisher": "FDA"
         }
       ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "mixed-tocopherols",
+            "difference": "Both are natural preservatives. Rosemary extract contains carnosic acid that inhibits fat oxidation, while mixed tocopherols (vitamin E) are antioxidants. They're often combined for synergistic preservation."
+          },
+          {
+            "ingredient": "bha",
+            "difference": "Rosemary extract is a natural plant-based preservative with additional antioxidant benefits, while BHA (butylated hydroxyanisole) is a synthetic preservative with controversial health concerns."
+          },
+          {
+            "ingredient": "vitamin-e",
+            "difference": "Rosemary extract preserves through carnosic acid preventing fat rancidity, while vitamin E (tocopherols) works as an antioxidant. Both are natural; often used together for better preservation."
+          }
+        ]
+      },
       "nutritionalProfile": {
         "function": "Natural antioxidant and preservative derived from rosemary herb",
         "activeCompounds": {
@@ -17571,7 +17689,7 @@
         "focusKeyword": "rosemary extract dog food",
         "metaDescription": "Is rosemary extract safe for dogs? Learn natural preservative benefits, carnosic acid for fat protection, vs BHA/BHT, and antioxidant properties."
       },
-      "lastUpdated": "February 10, 2026"
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Rye Meal",
@@ -17592,7 +17710,24 @@
       "qualityNote": "Rye meal is a whole grain ingredient offering moderate nutritional value. It's higher in fiber than wheat and contains beneficial compounds like lignans and antioxidants. It provides B vitamins, iron, and magnesium. However, rye contains gluten and can cause sensitivities in some dogs. It's less commonly used in pet foods than other grains, partly because it's less palatable. Overall, it's a moderate-quality grain - better than corn, similar to wheat in quality.",
       "wattsPosition": "neutral",
       "wattsTake": "Rye meal is an acceptable but uncommon grain ingredient. It offers some fiber and nutrients, though it contains gluten which can be problematic for sensitive dogs. We don't see it often in dog food, which is fine - there are better grain options like oats or brown rice. Rye isn't inherently bad, but it's not our preferred grain choice. It's neutral - neither a red flag nor a feature worth highlighting.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "wheat",
+            "difference": "Both are gluten-containing grains. Rye has a lower glycemic index and more fiber than wheat, but wheat is more common and palatable in dog foods."
+          },
+          {
+            "ingredient": "barley",
+            "difference": "Both are whole grains with fiber. Barley has more beta-glucans for heart health and is generally better tolerated, while rye has a stronger flavor and is less commonly used."
+          },
+          {
+            "ingredient": "oats",
+            "difference": "Both provide fiber and B vitamins. Oats are gluten-free (or low-gluten), more digestible, and have better palatability than rye, making oats the superior grain choice."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Safflower Oil",
@@ -17617,7 +17752,24 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "sunflower-oil",
+            "difference": "Both are plant oils high in omega-6. Sunflower oil is slightly higher in vitamin E, while safflower oil (high-oleic variety) may be better for stability. Functionally very similar."
+          },
+          {
+            "ingredient": "fish-oil",
+            "difference": "Safflower oil provides omega-6 fatty acids (already abundant in most diets), while fish oil provides omega-3s (EPA/DHA) that dogs need more of for inflammation control and health."
+          },
+          {
+            "ingredient": "flaxseed-oil",
+            "difference": "Safflower oil is high in omega-6 with no omega-3, while flaxseed oil provides plant-based omega-3 (ALA). Flaxseed is a better choice for fatty acid balance."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Salmon",
@@ -18305,7 +18457,24 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "salmon-oil",
+            "difference": "Both are excellent omega-3 sources. Sardine oil comes from smaller fish with lower mercury/toxin accumulation, while salmon oil is more common. Both provide EPA/DHA; sardine may be slightly safer."
+          },
+          {
+            "ingredient": "fish-oil",
+            "difference": "Sardine oil is a specific type of fish oil from sardines (small fish, low contaminants), while generic 'fish oil' may come from various species with potentially higher mercury concerns."
+          },
+          {
+            "ingredient": "krill-oil",
+            "difference": "Both are marine omega-3 sources. Sardine oil has higher total EPA/DHA content per serving, while krill oil contains astaxanthin antioxidant. Sardine oil is more cost-effective."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Sardines",
@@ -18332,7 +18501,24 @@
           "url": "https://fdc.nal.usda.gov/",
           "publisher": "USDA"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "salmon",
+            "difference": "Both are oily fish rich in omega-3s. Sardines are smaller with lower mercury concerns and edible bones providing calcium, while salmon is larger with more protein per serving."
+          },
+          {
+            "ingredient": "herring",
+            "difference": "Both are small, oily fish with excellent omega-3 content and low mercury. Sardines are slightly smaller and have softer edible bones; both are premium protein sources."
+          },
+          {
+            "ingredient": "mackerel",
+            "difference": "Both are omega-3-rich fish. Sardines are smaller with lower mercury/contaminant risk and include edible bones, while mackerel is larger, fattier, and has slightly higher mercury levels."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Sauerkraut",
@@ -18357,7 +18543,20 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "dried-fermentation-products",
+            "difference": "Sauerkraut is whole fermented cabbage with live cultures (if unpasteurized), while dried fermentation products are concentrated probiotic powders. Dried products are more standardized and shelf-stable."
+          },
+          {
+            "ingredient": "kimchi",
+            "difference": "Both are fermented vegetables with probiotics. Kimchi typically includes more vegetables and spices (garlic, ginger), while sauerkraut is just fermented cabbage. Kimchi spices may irritate some dogs."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Sea Buckthorn",
@@ -18385,7 +18584,24 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "blueberry",
+            "difference": "Both are antioxidant-rich berries. Sea buckthorn is unique for omega-7 fatty acids and exceptional vitamin C content (10x more than oranges), while blueberries focus on anthocyanins and cognitive support."
+          },
+          {
+            "ingredient": "fish-oil",
+            "difference": "Sea buckthorn provides rare omega-7 plus omega-3, 6, and 9 in one plant source, while fish oil specializes in marine omega-3s (EPA/DHA). Both support skin and coat but through different mechanisms."
+          },
+          {
+            "ingredient": "pumpkin",
+            "difference": "Both support digestive health. Sea buckthorn provides omega-7 for mucous membrane health plus antioxidants, while pumpkin offers fiber and beta-carotene. Sea buckthorn is more nutrient-dense but less common."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Selenium",
@@ -18406,7 +18622,20 @@
       "qualityNote": "Selenium is an essential trace mineral that dogs cannot produce and must obtain from diet. It's critical for antioxidant defense systems, immune function, and thyroid health. Deficiency can cause muscle weakness, immune dysfunction, and reproductive issues. However, selenium has a narrow safety margin—too much can be toxic. Organic forms (selenium yeast) are generally better absorbed than inorganic forms (sodium selenite). Required by AAFCO standards for complete and balanced pet foods.",
       "wattsPosition": "good",
       "wattsTake": "Selenium is an essential nutrient that must be included in dog food. It's critical for antioxidant protection and overall health. We prefer organic selenium sources (like selenium yeast) over inorganic forms (sodium selenite) for better absorption and safety. Quality foods should list selenium supplementation to meet AAFCO requirements. The presence of selenium indicates the food is formulated to be nutritionally complete. This is a necessary and beneficial ingredient when used appropriately.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "selenium-yeast",
+            "difference": "Selenium yeast is organic selenium bound to yeast proteins with better bioavailability and safety, while generic 'selenium' often refers to inorganic forms (sodium selenite) that are less efficiently absorbed."
+          },
+          {
+            "ingredient": "zinc",
+            "difference": "Both are essential trace minerals with antioxidant functions. Selenium is critical for thyroid health and glutathione peroxidase, while zinc supports immune function, skin health, and wound healing."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Selenium Yeast",
@@ -18431,7 +18660,20 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "sodium-selenite",
+            "difference": "Selenium yeast is organic selenium bound to amino acids with 30-50% better absorption and lower toxicity risk, while sodium selenite is inorganic with poorer bioavailability and narrower safety margin."
+          },
+          {
+            "ingredient": "selenium",
+            "difference": "Selenium yeast is the premium organic form with superior absorption, while generic 'selenium' often means sodium selenite (inorganic). Selenium yeast is the preferred choice in quality pet foods."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Shiitake",
@@ -18459,7 +18701,24 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "reishi",
+            "difference": "Both are medicinal mushrooms. Shiitake is both culinary and medicinal with lentinan for immune support, while reishi is primarily medicinal with stronger adaptogenic and calming properties."
+          },
+          {
+            "ingredient": "turkey-tail",
+            "difference": "Both support immune function through beta-glucans. Turkey tail (with PSK/PSP compounds) has more cancer-specific research, while shiitake is more versatile as both food and medicine."
+          },
+          {
+            "ingredient": "maitake",
+            "difference": "Both are culinary mushrooms with immune benefits. Maitake has D-fraction beta-glucans for blood sugar support, while shiitake contains lentinan and eritadenine for cardiovascular health."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Shrimp",
@@ -18480,7 +18739,24 @@
       "qualityNote": "Whole shrimp is a premium protein source offering complete amino acids, beneficial omega-3s, and high levels of selenium and other minerals. The protein is highly digestible and bioavailable. Shrimp also contains astaxanthin, a powerful antioxidant. Because it's a novel protein, it's useful for elimination diets. The main considerations are cost and potential shellfish allergies (though rare in dogs).",
       "wattsPosition": "good",
       "wattsTake": "We love seeing whole shrimp in dog food. It's a complete, high-quality protein that brings omega-3s, selenium, and unique nutrients like astaxanthin. As a novel protein, it's excellent for dogs with chicken or beef sensitivities. The fact that it's whole shrimp (not just shrimp meal) means better moisture and nutrient retention. This is a premium ingredient that adds real value. Our only caution: watch for shellfish allergies, though they're uncommon in dogs.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "shrimp-meal",
+            "difference": "Whole shrimp retains moisture and full nutrient profile, while shrimp meal is dried and concentrated (60-70% protein). Whole shrimp is fresher; shrimp meal is more shelf-stable and protein-dense."
+          },
+          {
+            "ingredient": "salmon",
+            "difference": "Both are high-quality animal proteins with omega-3s. Shrimp is a novel protein with more selenium and astaxanthin, while salmon provides more total omega-3 EPA/DHA per serving."
+          },
+          {
+            "ingredient": "chicken",
+            "difference": "Shrimp is a novel protein useful for food sensitivities with marine omega-3s and selenium, while chicken is a common protein (higher allergy risk) with less omega-3 content."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Shrimp Meal",
@@ -18500,7 +18776,24 @@
       "qualityNote": "Shrimp meal is a concentrated form of shrimp protein with most moisture removed, resulting in very high protein content. It retains the beneficial amino acids, minerals, and some omega-3s from whole shrimp. As a rendered product, it's shelf-stable and nutrient-dense. Quality can vary based on processing methods, but named shrimp meal is generally a high-quality ingredient. It's a novel protein useful for dogs with common protein allergies.",
       "wattsPosition": "good",
       "wattsTake": "Shrimp meal is an excellent concentrated protein source. While we generally prefer whole proteins, shrimp meal offers concentrated nutrition and is particularly valuable as a novel protein for sensitive dogs. The high protein concentration (60-70%) means a little goes a long way. It brings quality amino acids, omega-3s, and minerals like selenium. For dogs who can't tolerate common proteins, this is a premium alternative. We'd choose shrimp meal over cheap poultry by-products any day.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "shrimp",
+            "difference": "Shrimp meal is concentrated and dried (60-70% protein) with longer shelf life, while whole shrimp retains moisture and full fresh nutrient profile. Both are high-quality; meal is more protein-dense."
+          },
+          {
+            "ingredient": "fish-meal",
+            "difference": "Both are concentrated, rendered protein sources. Shrimp meal is a novel protein from crustaceans with more selenium, while fish meal (from various fish) is more common and may have higher omega-3s."
+          },
+          {
+            "ingredient": "chicken-meal",
+            "difference": "Shrimp meal is a novel protein from shellfish (lower allergy risk), while chicken meal is a common protein with higher allergic response potential. Both are concentrated, but shrimp offers unique marine nutrients."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Silicon Dioxide",
@@ -18525,7 +18818,20 @@
           "url": "https://www.fda.gov/",
           "publisher": "FDA"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "cellulose",
+            "difference": "Both are anti-caking agents. Silicon dioxide is mineral-based (silica) used in powdered supplements, while cellulose is plant-based fiber used in kibble for texture and bulk."
+          },
+          {
+            "ingredient": "calcium-silicate",
+            "difference": "Both are anti-caking agents containing silicon. Silicon dioxide is pure silica, while calcium silicate combines calcium and silicon. Both serve the same function; silicon dioxide is more common."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Slippery Elm Bark",
@@ -18551,7 +18857,24 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "marshmallow-root",
+            "difference": "Both contain mucilage that soothes digestive tract. Slippery elm has higher mucilage content and is more commonly used for acute GI upset, while marshmallow root also supports respiratory health."
+          },
+          {
+            "ingredient": "pumpkin",
+            "difference": "Both support digestive health. Slippery elm provides mucilage coating for inflamed GI lining, while pumpkin offers soluble/insoluble fiber for stool regulation. Slippery elm is more therapeutic; pumpkin more preventive."
+          },
+          {
+            "ingredient": "psyllium",
+            "difference": "Slippery elm's mucilage coats and soothes inflamed digestive tissue, while psyllium provides bulk-forming fiber for stool consistency. Slippery elm is better for inflammation; psyllium for fiber needs."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Smoke Flavor",
@@ -18578,7 +18901,20 @@
           "url": "https://www.fda.gov/",
           "publisher": "FDA"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "natural-flavor",
+            "difference": "Smoke flavor is a specific type of natural flavor from smoke condensate adding smoky taste, while 'natural flavor' is a broad category from various plant/animal sources for general palatability."
+          },
+          {
+            "ingredient": "beef-broth",
+            "difference": "Smoke flavor is an artificial taste enhancer with no nutrition, while beef broth adds both flavor and some nutrients (protein, minerals) from real meat. Broth is the superior choice."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Sodium Acid Pyrophosphate",
@@ -18599,7 +18935,24 @@
       "qualityNote": "Sodium acid pyrophosphate (SAPP) is a synthetic additive with no nutritional value. It's used primarily in foods containing potatoes to prevent darkening and as a processing aid. While it's Generally Recognized As Safe (GRAS), it's a chemical additive that serves processing purposes rather than nutritional ones. Some concerns exist about excessive phosphate consumption, though amounts in pet food are typically small.",
       "wattsPosition": "caution",
       "wattsTake": "Sodium acid pyrophosphate is an unnecessary chemical additive used for cosmetic and processing purposes. We prefer foods that don't need synthetic additives to maintain appearance or texture. While it's not acutely toxic, it's a sign of heavy processing and formulation tricks. Quality whole food ingredients don't need SAPP. We'd rather see natural preservation methods and accept that potatoes might darken slightly. It's a caution ingredient indicating processing over purity.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "sodium-tripolyphosphate",
+            "difference": "Both are synthetic phosphate additives. SAPP is used as leavening agent and to prevent discoloration, while sodium tripolyphosphate is primarily for moisture retention. Both are processing aids with no nutritional value."
+          },
+          {
+            "ingredient": "citric-acid",
+            "difference": "SAPP is a synthetic chemical leavening agent, while citric acid is a natural preservative and acidulant. Citric acid is preferred as it's from natural sources and serves legitimate preservation purposes."
+          },
+          {
+            "ingredient": "cream-of-tartar",
+            "difference": "Both are leavening agents. Cream of tartar is a natural byproduct of winemaking, while SAPP is synthetic. Cream of tartar is the more natural, preferable option for baked treats."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Sodium Alginate",
@@ -18621,7 +18974,24 @@
       "qualityNote": "Sodium alginate is a natural, seaweed-derived thickener with minimal nutritional value. It's primarily soluble fiber that's not well-digested by dogs. It's used in very small amounts to create desired texture and stability in wet foods. It's Generally Recognized As Safe (GRAS) with no known adverse effects at typical inclusion levels. While it doesn't add nutrition, it serves a legitimate functional purpose for texture.",
       "wattsPosition": "neutral",
       "wattsTake": "Sodium alginate is a functional texturizer that serves a legitimate purpose in wet foods. It's natural (from seaweed) and safe, used to create appropriate gravy or gel texture. While it doesn't add nutrition, it's not filler either - it's a processing aid in tiny amounts. We're neutral on it. It's neither a selling point nor a red flag. We appreciate that it's clearly named and from a natural source rather than synthetic.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "guar-gum",
+            "difference": "Both are natural thickeners. Sodium alginate (from seaweed) creates firmer gels and is used in wet foods, while guar gum (from beans) is a softer thickener common in both wet and dry foods."
+          },
+          {
+            "ingredient": "carrageenan",
+            "difference": "Both are seaweed-derived gelling agents. Sodium alginate is from brown seaweed and considered safer with no inflammatory concerns, while carrageenan (from red seaweed) is controversial for potential GI irritation."
+          },
+          {
+            "ingredient": "xanthan-gum",
+            "difference": "Sodium alginate is a natural seaweed extract creating firm gels, while xanthan gum is fermentation-derived providing viscosity. Sodium alginate is more natural; xanthan is more versatile across pH levels."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Sodium Benzoate",
