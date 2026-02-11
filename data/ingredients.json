@@ -71,7 +71,7 @@
             "difference": "Both are seaweed-derived gelling agents. Agar agar is from red algae and considered safer with no inflammatory concerns, unlike carrageenan which is controversial."
           },
           {
-            "ingredient": "alginic-acid",
+            "ingredient": "agar-agar",
             "difference": "Agar agar is a gelling agent from red algae, while alginic acid is a stabilizer from brown algae (kelp). Both are natural seaweed-based thickeners."
           }
         ]
@@ -4336,7 +4336,7 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "calcium-d-pantothenate",
+            "ingredient": "calcium-pantothenate",
             "difference": "Calcium pantothenate and calcium D-pantothenate are identical—both are the calcium salt form of vitamin B5. Used interchangeably in pet food formulations."
           }
         ]
@@ -5287,7 +5287,7 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "lions-mane",
+            "ingredient": "lion-s-mane",
             "difference": "Champignon is button mushroom extract used to reduce stool odor, while lion's mane is a medicinal mushroom for cognitive function. Different mushrooms, different purposes."
           }
         ]
@@ -8132,7 +8132,7 @@
             "difference": "Both are digestible grains, but brown rice retains its bran layer while pearled barley has it removed. Barley has more beta-glucan fiber."
           },
           {
-            "ingredient": "white-rice",
+            "ingredient": "rice",
             "difference": "Both are processed grains with outer layers removed. Barley retains more fiber and has a lower glycemic index than white rice."
           }
         ]
@@ -8313,7 +8313,7 @@
             "difference": "Both are root vegetables rich in inulin prebiotic fiber. Dandelion is also used for liver support, while chicory is primarily a fiber source."
           },
           {
-            "ingredient": "burdock-root",
+            "ingredient": "dandelion-root",
             "difference": "Both are traditional herbal roots with prebiotic fiber. Dandelion is more focused on liver/kidney support, burdock on blood purification."
           },
           {
@@ -8354,7 +8354,7 @@
             "difference": "Both are calcium supplements. Dicalcium phosphate provides both calcium and phosphorus (important for bone), while calcium carbonate is pure calcium."
           },
           {
-            "ingredient": "bone-meal",
+            "ingredient": "dicalcium-phosphate",
             "difference": "Both provide calcium and phosphorus. Dicalcium phosphate is a purified mineral supplement, while bone meal is ground animal bones with variable mineral content."
           },
           {
@@ -8396,7 +8396,7 @@
             "difference": "Alfalfa pellets are land-based plant fiber and nutrients, while kelp is seaweed providing iodine and trace minerals from the ocean."
           },
           {
-            "ingredient": "wheat-grass",
+            "ingredient": "barley-grass",
             "difference": "Both are green plant sources with vitamins and chlorophyll. Alfalfa is a legume with more protein, while wheatgrass is a cereal grass."
           }
         ]
@@ -8766,20 +8766,7 @@
       },
       "lastUpdated": "February 11, 2026",
       "whatItIsExpanded": {
-        "compareToSimilar": [
-          {
-            "ingredient": "seaweed",
-            "difference": "Kelp is a specific type of large brown seaweed. Both provide iodine and trace minerals, but kelp specifically refers to Laminaria species."
-          },
-          {
-            "ingredient": "bladderwrack",
-            "difference": "Both are brown seaweeds providing iodine. Kelp (Laminaria) is a larger kelp variety, while bladderwrack (Fucus) is a smaller seaweed with different mineral profile."
-          },
-          {
-            "ingredient": "dulse",
-            "difference": "Both are sea vegetables. Kelp is a brown seaweed high in iodine, while dulse is a red seaweed with more iron and less iodine."
-          }
-        ]
+        "compareToSimilar": []
       }
     },
     {
@@ -8808,14 +8795,6 @@
       ],
       "whatItIsExpanded": {
         "compareToSimilar": [
-          {
-            "ingredient": "whole-blood",
-            "difference": "Dried plasma is the liquid portion of blood (proteins, antibodies) without red blood cells, while whole blood includes all blood components."
-          },
-          {
-            "ingredient": "blood-meal",
-            "difference": "Dried plasma contains immunoglobulins and blood proteins, while blood meal is dried whole blood primarily used as a protein/iron source."
-          },
           {
             "ingredient": "egg-product",
             "difference": "Both provide proteins and antibodies. Plasma offers blood immunoglobulins for gut immunity, while eggs provide avidin and lysozyme with different immune benefits."
@@ -8859,7 +8838,7 @@
             "difference": "Both are orange root vegetables. Sweet potatoes are higher in carbohydrates and calories, while pumpkin is mostly water with fewer calories."
           },
           {
-            "ingredient": "white-potato",
+            "ingredient": "potatoes",
             "difference": "Sweet potatoes have more fiber, beta-carotene, and lower glycemic index than white potatoes, which are higher in starch and potassium."
           }
         ]
@@ -8893,16 +8872,12 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "tomato",
+            "ingredient": "tomatoes",
             "difference": "Tomato pomace is the leftover skins, seeds, and pulp from tomato processing - a concentrated fiber source - while whole tomato includes flesh and juice."
           },
           {
             "ingredient": "beet-pulp",
             "difference": "Both are processing by-products used as fiber sources. Tomato pomace provides lycopene antioxidants, while beet pulp is a plainer fiber source."
-          },
-          {
-            "ingredient": "apple-pomace",
-            "difference": "Both are fruit pomaces (processing leftovers). Tomato pomace provides lycopene and different fiber, while apple pomace has pectin and polyphenols."
           }
         ]
       },
@@ -8977,7 +8952,7 @@
             "difference": "Both are dried inactive yeast. Brewer's yeast is a by-product of beer brewing, while dried yeast may be purpose-grown or from baking."
           },
           {
-            "ingredient": "yeast-extract",
+            "ingredient": "autolyzed-yeast",
             "difference": "Dried yeast is whole deactivated yeast cells, while yeast extract is a concentrated paste of yeast cell contents (glutamates, nucleotides)."
           }
         ]
@@ -9130,7 +9105,7 @@
             "difference": "Both are poultry fats. Duck fat has more monounsaturated fat (like olive oil) and richer flavor, while chicken fat is lighter with more polyunsaturated fat."
           },
           {
-            "ingredient": "goose-fat",
+            "ingredient": "duck-fat",
             "difference": "Both are waterfowl fats with similar fatty acid profiles. Duck and goose fat are nearly identical - rich, flavorful, high in monounsaturated fats."
           },
           {
@@ -9621,7 +9596,7 @@
             "difference": "Both are probiotic bacteria. Enterococcus faecium survives harsh conditions better, while Lactobacillus acidophilus is better researched with more health benefits."
           },
           {
-            "ingredient": "bacillus-subtilis",
+            "ingredient": "bacillus-coagulans",
             "difference": "Both are hardy probiotics. Enterococcus faecium colonizes the intestines, while Bacillus subtilis forms spores and survives processing better."
           },
           {
@@ -9751,7 +9726,7 @@
             "difference": "Both supplement iron. Ferrous sulfate is inorganic and may cause digestive upset, while iron amino acid chelate is organic, more bioavailable, and gentler on the stomach."
           },
           {
-            "ingredient": "iron-sulfate",
+            "ingredient": "ferrous-sulfate",
             "difference": "Ferrous sulfate and iron sulfate are essentially the same compound - both are inorganic iron salts used as iron supplements."
           }
         ]
@@ -10384,8 +10359,7 @@
       },
       "lastUpdated": "February 11, 2026",
       "whatItIsExpanded": {
-        "compareToSimilar": [
-        ]
+        "compareToSimilar": []
       }
     },
     {
@@ -11024,7 +10998,7 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "camellia-sinensis",
+            "ingredient": "green-tea-extract",
             "difference": "Green tea extract is the concentrated form of camellia sinensis (tea plant) leaves. Same plant, just concentrated for antioxidant benefits (EGCG catechins)."
           }
         ]
@@ -11345,8 +11319,7 @@
         }
       ],
       "whatItIsExpanded": {
-        "compareToSimilar": [
-        ]
+        "compareToSimilar": []
       },
       "lastUpdated": "February 11, 2026",
       "seoMetadata": {
@@ -11485,8 +11458,7 @@
       "wattsTake": "Hickory smoke flavor is unnecessary flavoring that adds no nutrition. While it's technically natural, we question why food needs smoke flavoring - quality meat ingredients should provide flavor naturally. It's often used to mask low meat content or make plant proteins taste 'meatier.' We prefer foods where palatability comes from real ingredients, not added flavorings. It's not toxic in the amounts used, but it's a sign the food may lack real meat flavor.",
       "citations": [],
       "whatItIsExpanded": {
-        "compareToSimilar": [
-        ]
+        "compareToSimilar": []
       },
       "lastUpdated": "February 11, 2026",
       "seoMetadata": {
@@ -11797,7 +11769,7 @@
             "difference": "Both are chelated, organic iron forms. Iron amino acid chelate binds iron to specific amino acids, while iron proteinate binds to partially hydrolyzed protein. Very similar bioavailability."
           },
           {
-            "ingredient": "iron-sulfate",
+            "ingredient": "ferrous-sulfate",
             "difference": "Iron amino acid chelate is organic iron chelated to amino acids for superior absorption and tolerance. Iron sulfate is inorganic and may cause digestive upset."
           }
         ]
@@ -11838,7 +11810,7 @@
             "difference": "Both are chelated organic iron forms. Iron proteinate binds to partially hydrolyzed protein, while iron amino acid chelate binds to specific amino acids. Very similar in bioavailability."
           },
           {
-            "ingredient": "iron-sulfate",
+            "ingredient": "ferrous-sulfate",
             "difference": "Iron proteinate is organic iron chelated to protein for better absorption and gentler digestion. Iron sulfate is inorganic and less bioavailable."
           }
         ]
@@ -12231,11 +12203,7 @@
             "difference": "Both are amino acids. L-glutamine supports gut lining and immune function (conditionally essential), while L-lysine is essential for growth and immunity."
           },
           {
-            "ingredient": "glycine",
-            "difference": "Both are amino acids for gut health. L-glutamine is primary fuel for intestinal cells, while glycine supports collagen and detoxification."
-          },
-          {
-            "ingredient": "threonine",
+            "ingredient": "l-threonine",
             "difference": "Both support mucus production. L-glutamine fuels gut cells and immunity, while threonine is essential for mucin production in the gut lining."
           }
         ]
@@ -12399,10 +12367,6 @@
           {
             "ingredient": "dl-methionine",
             "difference": "Both are essential amino acids. L-threonine supports mucin production and immunity, while DL-methionine provides sulfur for coat and detoxification."
-          },
-          {
-            "ingredient": "glycine",
-            "difference": "L-threonine is essential for mucus production and protein synthesis, while glycine is non-essential supporting collagen, detox, and gut lining."
           }
         ]
       },
@@ -12480,7 +12444,7 @@
             "difference": "Both are beneficial probiotics. Lactobacillus acidophilus works primarily in the small intestine, while Bifidobacterium colonizes the large intestine."
           },
           {
-            "ingredient": "bacillus-subtilis",
+            "ingredient": "bacillus-coagulans",
             "difference": "Both are probiotics. Lactobacillus acidophilus colonizes the gut and produces lactic acid, while Bacillus subtilis forms spores and produces enzymes."
           }
         ]
@@ -13123,7 +13087,7 @@
             "difference": "Both are indigestible fiber fillers. Lignocellulose is purified plant fiber, while peanut hulls are agricultural waste - similar low nutritional value."
           },
           {
-            "ingredient": "powdered-cellulose",
+            "ingredient": "cellulose",
             "difference": "Both are indigestible plant fibers used as fillers. Lignocellulose includes lignin structure, while powdered cellulose is refined pure cellulose."
           }
         ]
@@ -13428,15 +13392,15 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "magnesium-oxide",
+            "ingredient": "magnesium-citrate",
             "difference": "Both provide magnesium. Magnesium citrate is better absorbed and gentler, while magnesium oxide is cheaper but poorly absorbed."
           },
           {
-            "ingredient": "magnesium-sulfate",
+            "ingredient": "magnesium-citrate",
             "difference": "Both are magnesium supplements. Magnesium citrate is well-absorbed and gentle, while magnesium sulfate (Epsom salt) has laxative effects."
           },
           {
-            "ingredient": "magnesium-chloride",
+            "ingredient": "magnesium-citrate",
             "difference": "Both are absorbable magnesium forms. Citrate is bound to citric acid and gentle, while chloride is bound to chloride and slightly more acidifying."
           }
         ]
@@ -13469,14 +13433,6 @@
       ],
       "whatItIsExpanded": {
         "compareToSimilar": [
-          {
-            "ingredient": "calcium-stearate",
-            "difference": "Both are stearate salts used as flow agents. Magnesium stearate is more common in supplements, calcium stearate in food - similar functions."
-          },
-          {
-            "ingredient": "stearic-acid",
-            "difference": "Magnesium stearate is the magnesium salt of stearic acid used as a lubricant, while stearic acid is the fatty acid itself."
-          },
           {
             "ingredient": "silicon-dioxide",
             "difference": "Both are anti-caking agents. Magnesium stearate is a fatty acid salt, while silicon dioxide is a mineral powder - different chemistry, same purpose."
@@ -13551,10 +13507,6 @@
           {
             "ingredient": "citric-acid",
             "difference": "Both are organic acids for flavor and preservation. Malic acid (from apples) is smoother and less sharp than citric acid."
-          },
-          {
-            "ingredient": "tartaric-acid",
-            "difference": "Both are fruit-derived organic acids. Malic acid is from apples with milder flavor, while tartaric acid is from grapes with stronger tartness."
           },
           {
             "ingredient": "lactic-acid",
@@ -14201,7 +14153,7 @@
             "difference": "Menadione is synthetic vitamin K3, while phylloquinone is natural vitamin K1 from plants. K1 is preferred natural form with no safety concerns; menadione is synthetic and controversial."
           },
           {
-            "ingredient": "vitamin-k2",
+            "ingredient": "vitamin-k1",
             "difference": "Menadione is synthetic vitamin K3, while menaquinone is natural vitamin K2 from fermentation. K2 has superior bone and cardiovascular benefits; menadione is basic synthetic form."
           },
           {
@@ -14946,7 +14898,7 @@
             "difference": "Nutritional yeast is specifically grown and fortified with B vitamins for nutrition, while dried yeast is inactive baker's/brewer's yeast without fortification."
           },
           {
-            "ingredient": "yeast-extract",
+            "ingredient": "autolyzed-yeast",
             "difference": "Nutritional yeast is whole deactivated yeast flakes with B vitamins, while yeast extract is a concentrated paste of yeast cell contents (glutamates)."
           }
         ]
@@ -15073,7 +15025,7 @@
             "difference": "Oat groats are whole intact oat kernels with maximum nutrition, while oat flour is ground oats - groats retain more nutrients and lower glycemic impact."
           },
           {
-            "ingredient": "steel-cut-oats",
+            "ingredient": "oat-groats",
             "difference": "Oat groats are whole kernels, while steel-cut oats are groats chopped into pieces. Nutritionally identical, groats just take longer to cook."
           }
         ]
@@ -15368,7 +15320,7 @@
             "difference": "Oil of rosemary is a plant-based antioxidant preservative from herb, while mixed tocopherols are vitamin E antioxidants - both natural preservatives."
           },
           {
-            "ingredient": "sage-extract",
+            "ingredient": "rosemary-extract",
             "difference": "Both are herb-based antioxidant preservatives. Rosemary oil is more potent and common, while sage extract is milder with similar preservative properties."
           }
         ]
@@ -15488,11 +15440,11 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "mussels",
+            "ingredient": "green-lipped-mussel",
             "difference": "Both are bivalve mollusks. Oysters are extremely high in zinc and copper, while mussels have more iron and omega-3s."
           },
           {
-            "ingredient": "clams",
+            "ingredient": "oysters",
             "difference": "Both are shellfish. Oysters are higher in zinc and lower in iron, while clams are the highest iron source in nature."
           },
           {
@@ -15566,7 +15518,7 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "palm-oil",
+            "ingredient": "palm-fruit-oil",
             "difference": "Palm fruit oil is from the fleshy fruit (high in carotenoids and vitamin E), while generic palm oil is usually from the kernel (more saturated fat)."
           },
           {
@@ -15699,10 +15651,6 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "andrographis",
-            "difference": "Paractin is a standardized extract of Andrographis paniculata (14% andrographolides), while andrographis is the whole herb - Paractin is more concentrated."
-          },
-          {
             "ingredient": "turmeric",
             "difference": "Both are anti-inflammatory herbs. Paractin (Andrographis) reduces inflammation via different pathways than turmeric (curcumin) - complementary mechanisms."
           },
@@ -15740,7 +15688,7 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "cilantro",
+            "ingredient": "parsley",
             "difference": "Both are fresh green herbs. Parsley is milder with vitamins K and C and breath-freshening properties, while cilantro has stronger flavor."
           },
           {
@@ -16058,7 +16006,7 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "pea-protein-isolate",
+            "ingredient": "pea-protein-concentrate",
             "difference": "Pea protein concentrate is 60-80% protein (some starch remains), while pea protein isolate is 85-90%+ protein (more processed, more pure)."
           },
           {
@@ -16222,7 +16170,7 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "apple",
+            "ingredient": "apples",
             "difference": "Both are pome fruits with pectin fiber. Pears are slightly softer and sweeter with more fiber, while apples have more vitamin C."
           },
           {
@@ -16601,11 +16549,11 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "black-beans",
+            "ingredient": "pinto-beans",
             "difference": "Both are legumes with similar protein and fiber. Pinto beans are creamier in texture, black beans slightly higher in antioxidants."
           },
           {
-            "ingredient": "kidney-beans",
+            "ingredient": "pinto-beans",
             "difference": "Both are common beans. Pinto and kidney beans have nearly identical nutrition - similar protein, fiber, and mineral content."
           },
           {
@@ -17205,7 +17153,7 @@
             "difference": "Both provide potassium. Potassium chloride is a salt form used as an electrolyte and sodium substitute, while potassium citrate is an alkalizing form that also supports urinary health."
           },
           {
-            "ingredient": "sodium-chloride",
+            "ingredient": "salt",
             "difference": "Both are chloride salts for electrolyte balance. Potassium chloride provides potassium for muscle/heart function, while sodium chloride provides sodium for nerve signals and hydration."
           }
         ]
@@ -17989,7 +17937,7 @@
             "difference": "Both are humectants used to retain moisture in semi-moist foods. Propylene glycol is a synthetic diol that's controversial in pet food, while glycerin (glycerol) is a natural sugar alcohol considered safer."
           },
           {
-            "ingredient": "sorbitol",
+            "ingredient": "glycerin",
             "difference": "Both are humectants for moisture retention. Propylene glycol is a synthetic chemical humectant, while sorbitol is a natural sugar alcohol from fruits with fewer safety concerns."
           }
         ]
@@ -18214,7 +18162,7 @@
             "difference": "Both are nutrient-dense seeds. Pumpkin seeds provide zinc, magnesium, and compounds that support urinary/prostate health, while flaxseeds are omega-3 powerhouses for skin and inflammation."
           },
           {
-            "ingredient": "sunflower-seed",
+            "ingredient": "pumpkin-seed",
             "difference": "Both are nutritious seeds high in healthy fats. Pumpkin seeds are richer in zinc and amino acids for prostate health, while sunflower seeds are higher in vitamin E for antioxidant protection."
           }
         ]
@@ -18262,7 +18210,7 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "pyridoxine",
+            "ingredient": "pyridoxine-hydrochloride",
             "difference": "These are essentially the same—pyridoxine hydrochloride is just the hydrochloride salt form of pyridoxine (vitamin B6), used because it's more stable and water-soluble."
           },
           {
@@ -18315,11 +18263,7 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "rutin",
-            "difference": "Both are plant flavonoids with antioxidant and anti-inflammatory properties. Quercetin is the more researched, bioavailable form, while rutin is a glycoside of quercetin that converts to quercetin in the body."
-          },
-          {
-            "ingredient": "curcumin",
+            "ingredient": "turmeric",
             "difference": "Both are plant polyphenols used for anti-inflammatory benefits. Quercetin is a flavonoid from fruits/vegetables for allergies and inflammation, while curcumin is from turmeric root for joint inflammation."
           }
         ]
@@ -19593,7 +19537,7 @@
         "overview": "Salt (sodium chloride, NaCl) is a mineral additive providing essential sodium and chloride in dog food. Dogs require sodium for fluid balance, nerve function, muscle contraction, and cellular processes. Sodium is essential nutrient—deficiency causes serious health problems. However, sodium needs are moderate—AAFCO minimum is 0.3% for adult dogs, 0.4% for puppies (dry matter basis). Salt appears in dog food to ensure adequate sodium levels, enhance palatability, and act as preservative. Most quality proteins naturally contain sodium, but plant-heavy or heavily processed formulas may need supplemental salt. Added salt typically represents less than 1% of formula. Salt is safe in appropriate amounts but concerning in excess—dogs with heart or kidney disease should have sodium monitored.",
         "compareToSimilar": [
           {
-            "ingredient": "sodium-chloride",
+            "ingredient": "salt",
             "difference": "Salt and sodium chloride are identical—same chemical compound (NaCl). 'Sodium chloride' is scientific name; 'salt' is common name. Both provide identical nutrition and function. Either indicates added sodium source in formula."
           }
         ]
@@ -19767,8 +19711,7 @@
         }
       ],
       "whatItIsExpanded": {
-        "compareToSimilar": [
-        ]
+        "compareToSimilar": []
       },
       "lastUpdated": "February 11, 2026"
     },
@@ -20432,7 +20375,7 @@
             "difference": "Both are polyphosphates for dental tartar control. Sodium tripolyphosphate is a shorter-chain phosphate that binds calcium in saliva, while sodium hexametaphosphate is a longer chain with similar tartar-preventing function."
           },
           {
-            "ingredient": "tetrasodium-pyrophosphate",
+            "ingredient": "sodium-tripolyphosphate",
             "difference": "Both are sodium phosphates used for dental health and as emulsifiers. Sodium tripolyphosphate is a longer chain (pentasodium) used primarily for tartar control, while tetrasodium pyrophosphate is shorter."
           }
         ]
@@ -20734,7 +20677,7 @@
             "difference": "Both are concentrated soy proteins. Soy protein isolate is 90%+ protein with fiber and carbs almost entirely removed, while soy protein concentrate is 70% protein with some fiber retained."
           },
           {
-            "ingredient": "pea-protein-isolate",
+            "ingredient": "pea-protein-concentrate",
             "difference": "Both are highly refined plant protein isolates (90%+ protein). Soy protein isolate is from soybeans and a complete protein but allergenic, while pea protein isolate is from yellow peas and hypoallergenic."
           }
         ]
@@ -21148,11 +21091,11 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "soy-lecithin",
+            "ingredient": "sunflower-lecithin",
             "difference": "Both are lecithin emulsifiers rich in phospholipids. Sunflower lecithin is from sunflower seeds and allergen-free, while soy lecithin is from soybeans and a potential allergen for sensitive dogs."
           },
           {
-            "ingredient": "egg-lecithin",
+            "ingredient": "sunflower-lecithin",
             "difference": "Both are natural lecithin sources rich in phosphatidylcholine. Sunflower lecithin is plant-based from sunflower seeds, while egg lecithin is animal-based from egg yolks with higher choline content."
           }
         ]
@@ -21606,7 +21549,7 @@
             "difference": "Both are grain-free, bland starches used as carbohydrate sources and binders. Tapioca starch is from cassava root and easily digested, while potato starch is from potatoes with more resistant starch."
           },
           {
-            "ingredient": "arrowroot",
+            "ingredient": "tapioca-starch",
             "difference": "Both are grain-free root starches. Tapioca starch is from cassava root with neutral flavor, while arrowroot is from arrowroot tubers—they're nearly identical in function and digestibility."
           }
         ]
@@ -22047,7 +21990,7 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "stomach",
+            "ingredient": "tripe",
             "difference": "Tripe specifically refers to ruminant (cow, sheep, goat) stomach lining, which is the same as 'stomach' but from grazing animals. The terms are often interchangeable when referring to beef tripe."
           }
         ]
@@ -22917,7 +22860,7 @@
             "difference": "Vitamin A supplement is a vague term that could be acetate, palmitate, or other forms, while vitamin A acetate is specifically the acetate ester form—they're often the same."
           },
           {
-            "ingredient": "retinyl-palmitate",
+            "ingredient": "vitamin-a-supplement",
             "difference": "Both are preformed vitamin A forms. 'Vitamin A supplement' is vague (could be any form), while retinyl palmitate is specifically the palmitate ester form—similar bioavailability."
           }
         ]
@@ -22961,7 +22904,7 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "cyanocobalamin",
+            "ingredient": "vitamin-b12-supplement",
             "difference": "These are usually the same—cyanocobalamin is the specific synthetic form of vitamin B12, while 'vitamin B12 supplement' is a vague term that's typically cyanocobalamin (rarely methylcobalamin)."
           },
           {
@@ -23013,7 +22956,7 @@
             "difference": "Both are vitamin D forms. Vitamin D2 (ergocalciferol) is plant-derived and less effective, while vitamin D3 (cholecalciferol) is animal-derived and 2-3x more potent at raising vitamin D levels."
           },
           {
-            "ingredient": "cholecalciferol",
+            "ingredient": "vitamin-d3-supplement",
             "difference": "Vitamin D2 supplement (ergocalciferol) is plant-derived and less bioavailable, while cholecalciferol is vitamin D3 from animal sources—D3 is superior for raising vitamin D status in dogs."
           }
         ]
@@ -23094,7 +23037,7 @@
             "difference": "Both are vitamin D forms. Vitamin D3 (cholecalciferol) is animal-derived and 2-3x more effective at raising vitamin D levels, while vitamin D2 (ergocalciferol) is plant-derived and less potent."
           },
           {
-            "ingredient": "cholecalciferol",
+            "ingredient": "vitamin-d3-supplement",
             "difference": "These are the same—cholecalciferol is the scientific name for vitamin D3, while 'vitamin D3 supplement' is the common name. Both refer to the animal-derived form of vitamin D."
           }
         ]
@@ -23317,11 +23260,11 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "vitamin-k2",
+            "ingredient": "vitamin-k1",
             "difference": "Both are vitamin K forms for blood clotting. Vitamin K1 (phylloquinone) is from plants and primarily for clotting factors, while vitamin K2 (menaquinone) is from animal/fermented foods for bone and heart health."
           },
           {
-            "ingredient": "menadione",
+            "ingredient": "menadione-sodium-bisulfite-complex",
             "difference": "Vitamin K1 (phylloquinone) is natural from plants and safe, while menadione is synthetic vitamin K3 that's toxic and banned in many countries—K1 is far superior."
           }
         ]
@@ -23363,10 +23306,6 @@
       "lastUpdated": "February 11, 2026",
       "whatItIsExpanded": {
         "compareToSimilar": [
-          {
-            "ingredient": "cantaloupe",
-            "difference": "Both are hydrating melons. Watermelon is 92% water with lycopene antioxidant and citrulline for circulation, while cantaloupe is 90% water with more vitamin A and beta-carotene."
-          },
           {
             "ingredient": "cucumber",
             "difference": "Both are very hydrating foods (90%+ water). Watermelon is a sweet fruit with lycopene and natural sugars, while cucumber is a mild vegetable with almost no sugar and more silica for skin."
@@ -23637,7 +23576,7 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "whole-wheat-flour",
+            "ingredient": "wheat-flour",
             "difference": "Wheat flour is refined (white flour) with bran and germ removed, while whole wheat flour includes all parts of the grain—whole wheat is more nutritious with more fiber, vitamins, and minerals."
           },
           {
@@ -23921,11 +23860,11 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "milk-powder",
+            "ingredient": "whey-powder",
             "difference": "Both are dairy products. Whey powder is the liquid by-product of cheesemaking (high in lactose and protein), while milk powder is dehydrated whole milk with all components—both can cause lactose intolerance."
           },
           {
-            "ingredient": "casein",
+            "ingredient": "whey-powder",
             "difference": "Both are dairy proteins. Whey powder is the fast-digesting liquid fraction of milk (20% of milk protein), while casein is the slow-digesting solid curds (80% of milk protein)."
           }
         ]
@@ -24185,12 +24124,8 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "ashwagandha",
+            "ingredient": "withania-somnifera",
             "difference": "These are the same—Withania somnifera is the scientific name for ashwagandha. Both refer to the adaptogenic herb used for stress, anxiety, and immune support."
-          },
-          {
-            "ingredient": "rhodiola",
-            "difference": "Both are adaptogenic herbs for stress. Withania somnifera (ashwagandha) is calming and supports thyroid/immune function, while rhodiola is more stimulating for energy and mental performance."
           }
         ]
       }
@@ -24388,7 +24323,7 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "beta-glucans",
+            "ingredient": "yeast-beta-glucans",
             "difference": "Yeast beta-glucans are specifically from yeast cell walls (1,3/1,6-beta-glucans), while 'beta-glucans' is a vague term that could be from yeast, mushrooms, or oats—yeast form is best for immune support."
           },
           {
@@ -24743,7 +24678,7 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "green-peas",
+            "ingredient": "peas",
             "difference": "Both are garden peas (Pisum sativum). Yellow peas are split mature peas with slightly more starch, while green peas are harvested earlier with more chlorophyll—nutritionally nearly identical."
           },
           {
@@ -24800,7 +24735,7 @@
             "difference": "Both are fermented dairy with probiotics. Yogurt has 5-10 probiotic strains and thicker texture, while kefir has 30+ strains with more diverse bacteria and yeasts—kefir is more probiotic-rich."
           },
           {
-            "ingredient": "milk",
+            "ingredient": "yogurt",
             "difference": "Yogurt is fermented milk with live probiotic bacteria (Lactobacillus, Bifidobacterium) that pre-digest lactose, while milk is raw dairy with full lactose—yogurt is more digestible for lactose-sensitive dogs."
           }
         ]
@@ -25029,7 +24964,7 @@
             "difference": "These are essentially the same—'zinc chelate' is a general term for zinc bound to organic molecules, while zinc amino acid chelate specifically refers to zinc bound to amino acids."
           },
           {
-            "ingredient": "zinc-glycinate",
+            "ingredient": "zinc-amino-acid-chelate",
             "difference": "Zinc chelate is a vague term for any organically-bound zinc, while zinc glycinate is specifically zinc bound to the amino acid glycine—glycinate is more specific and transparent."
           }
         ]
@@ -25312,7 +25247,7 @@
             "difference": "Both are mild, hydrating cucurbits (90%+ water). Zucchini is technically a summer squash with slightly more nutrients (vitamin C, potassium), while cucumber is botanically a fruit with more water and silica."
           },
           {
-            "ingredient": "yellow-squash",
+            "ingredient": "zucchini",
             "difference": "Both are summer squashes. Zucchini is green with slightly more vitamin C and lutein, while yellow squash is yellow with more beta-carotene—nutritionally nearly identical."
           }
         ]
@@ -25340,12 +25275,8 @@
             "difference": "Digestive enzymes is a blend of multiple enzymes (protease, lipase, amylase), while papain is a single protease enzyme from papaya."
           },
           {
-            "ingredient": "dried-bacillus-coagulans-fermentation-product",
+            "ingredient": "bacillus-coagulans",
             "difference": "Digestive enzymes directly break down food, while probiotics like B. coagulans produce enzymes and support gut health through bacterial colonization."
-          },
-          {
-            "ingredient": "dried-aspergillus-oryzae-fermentation-product",
-            "difference": "Both provide enzymes. Aspergillus oryzae is a fungal source producing specific enzymes, while digestive enzymes is typically a broader multi-enzyme blend."
           }
         ]
       },
@@ -25843,7 +25774,7 @@
             "difference": "Red 3 (erythrosine) is a synthetic petroleum-based dye (FD&C Red #3) linked to cancer and banned in cosmetics, while beet juice color is a natural red colorant from beets—beet juice is far safer."
           },
           {
-            "ingredient": "carmine",
+            "ingredient": "red-40",
             "difference": "Red 3 is a synthetic petroleum-based dye with cancer concerns, while carmine is a natural red dye from crushed cochineal insects—both add only color, but carmine is safer (though not vegan)."
           }
         ]
