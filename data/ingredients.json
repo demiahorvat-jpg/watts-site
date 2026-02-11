@@ -13154,7 +13154,24 @@
           "url": "https://www.fda.gov/",
           "publisher": "FDA"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "tapioca-starch",
+            "difference": "Both are refined starches used as cheap fillers. Maltodextrin is more processed and has a higher glycemic index, while tapioca starch is less refined but still lacks nutrition."
+          },
+          {
+            "ingredient": "cornstarch",
+            "difference": "Maltodextrin is highly processed starch broken down into shorter chains, while cornstarch is less processed. Both are empty carbs with zero nutritional value used as cheap fillers."
+          },
+          {
+            "ingredient": "sweet-potato",
+            "difference": "Sweet potato is a whole food carbohydrate with fiber, vitamins, and antioxidants. Maltodextrin is a refined, processed starch with zero nutrition. Sweet potato is vastly superior."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Manganese Amino Acid Chelate",
@@ -13179,7 +13196,28 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "manganese-proteinate",
+            "difference": "Both are chelated manganese forms with superior absorption. Amino acid chelate bonds manganese to individual amino acids, while proteinate bonds to protein hydrolysates. Both are equally bioavailable and premium forms."
+          },
+          {
+            "ingredient": "manganese-sulfate",
+            "difference": "Manganese amino acid chelate is absorbed 2-3x better than manganese sulfate (inorganic form). Chelation protects the mineral from interference in the gut, making it much more bioavailable."
+          },
+          {
+            "ingredient": "manganese-gluconate",
+            "difference": "Both are organic manganese forms. Amino acid chelate has slightly better absorption than gluconate due to amino acid protection. Both are significantly better than inorganic oxide or sulfate forms."
+          },
+          {
+            "ingredient": "manganous-oxide",
+            "difference": "Manganese amino acid chelate is absorbed 3-6x better than manganous oxide (cheapest inorganic form). Chelation dramatically improves bioavailability, making amino acid chelate the premium choice."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Manganese Gluconate",
@@ -13199,7 +13237,24 @@
       "qualityNote": "Manganese gluconate is a chelated, organic form of manganese that's better absorbed than inorganic forms like manganese oxide. Manganese is an essential trace mineral required for bone development, wound healing, and metabolism. Deficiency can cause skeletal abnormalities and impaired reproduction. The gluconate form is gentle on the digestive system and efficiently utilized. This is a quality mineral supplement.",
       "wattsPosition": "good",
       "wattsTake": "Manganese gluconate is a quality, bioavailable form of an essential mineral. We appreciate when manufacturers use organic, chelated forms rather than cheap oxides. Manganese is critical for bone health and enzyme function, and the gluconate form ensures better absorption. This is the kind of formulation detail that indicates attention to bioavailability and quality. We view chelated minerals positively - they show investment in actual nutrition.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "manganese-amino-acid-chelate",
+            "difference": "Both are organic chelated forms. Amino acid chelate has slightly better absorption due to amino acid protection, while gluconate is chelated to gluconic acid. Both are vastly superior to inorganic forms."
+          },
+          {
+            "ingredient": "manganese-sulfate",
+            "difference": "Manganese gluconate is chelated (organic) and absorbed 2-3x better than manganese sulfate (inorganic). Gluconate is gentler on digestion and more efficiently utilized."
+          },
+          {
+            "ingredient": "manganous-oxide",
+            "difference": "Manganese gluconate is organic and absorbed 3-5x better than manganous oxide (cheapest inorganic form). Gluconate indicates quality formulation, while oxide signals budget cutting."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Manganese Proteinate",
@@ -13258,7 +13313,23 @@
         "focusKeyword": "manganese proteinate dog food",
         "metaDescription": "Is manganese proteinate better for dogs? Learn 2-3x higher absorption vs manganese sulfate, bone & cartilage benefits, joint health support & proper dosing."
       },
-      "lastUpdated": "February 10, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "manganese-amino-acid-chelate",
+            "difference": "Both are premium chelated forms with 2-3x better absorption than inorganic manganese. Proteinate bonds to protein hydrolysates while amino acid chelate bonds to individual amino acids. Functionally equivalent."
+          },
+          {
+            "ingredient": "manganese-sulfate",
+            "difference": "Manganese proteinate is chelated to protein for superior absorption (15-30% vs 3-5% for sulfate). Proteinate is premium form indicating quality formulation, while sulfate is basic inorganic form."
+          },
+          {
+            "ingredient": "manganous-oxide",
+            "difference": "Manganese proteinate is absorbed 3-6x better than manganous oxide (cheapest form). Proteinate indicates premium bioavailable formulation, while oxide signals cost-cutting with minimal absorption."
+          }
+        ]
+      }
     },
     {
       "name": "Manganese Sulfate",
@@ -13282,7 +13353,24 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "manganese-amino-acid-chelate",
+            "difference": "Manganese sulfate is inorganic with 3-5% absorption, while amino acid chelate is organic with 15-30% absorption. Chelated forms are 2-3x more bioavailable and indicate premium formulation."
+          },
+          {
+            "ingredient": "manganese-proteinate",
+            "difference": "Manganese sulfate is basic inorganic form (3-5% absorption), while proteinate is chelated to protein (15-30% absorption). Proteinate is premium form with much better bioavailability."
+          },
+          {
+            "ingredient": "manganous-oxide",
+            "difference": "Manganese sulfate is slightly better absorbed than manganous oxide (3-5% vs 1-3%), but both are inorganic forms with poor bioavailability. Sulfate is marginally superior but still budget-grade."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Manganous Oxide",
@@ -13307,7 +13395,24 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "manganese-amino-acid-chelate",
+            "difference": "Manganous oxide is the cheapest, least bioavailable form (1-3% absorption). Amino acid chelate is premium with 15-30% absorption. Chelated forms are 3-6x more effective."
+          },
+          {
+            "ingredient": "manganese-proteinate",
+            "difference": "Manganous oxide has only 1-3% absorption (cheapest form), while proteinate has 15-30% absorption. Proteinate indicates quality investment; oxide signals cost-cutting."
+          },
+          {
+            "ingredient": "manganese-sulfate",
+            "difference": "Manganous oxide is the least bioavailable inorganic form (1-3% absorption) compared to sulfate (3-5%). Both are budget forms, but sulfate is marginally better."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Mango",
@@ -13328,7 +13433,24 @@
       "qualityNote": "Mango is a nutrient-rich fruit high in vitamins A and C, beta-carotene, and antioxidants. It supports immune function and eye health. However, like all fruits, it's relatively high in natural sugars. The fiber is beneficial for digestion. Mango is generally safe for dogs in moderation, though some dogs may have digestive sensitivity to new fruits. Better than many fruit options due to vitamin A content.",
       "wattsPosition": "neutral",
       "wattsTake": "Mango is a wholesome fruit that provides vitamin A and antioxidants. We appreciate whole food ingredients, and mango brings real nutrients. However, it's naturally high in sugar, so it should be a minor ingredient. It's fine for adding variety and nutrition to foods or treats, but we wouldn't want it as a major component. Better than added sugars or synthetic vitamins, but should be used thoughtfully. Neutral - good in moderation.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "blueberries",
+            "difference": "Mango is higher in vitamin A and beta-carotene, while blueberries are richer in antioxidants. Mango has more natural sugar, while blueberries have a lower glycemic impact. Both are beneficial fruits."
+          },
+          {
+            "ingredient": "pumpkin",
+            "difference": "Mango provides more vitamin C and natural sweetness, while pumpkin is higher in fiber and better for digestive regulation. Pumpkin is lower in sugar and more functional for digestion."
+          },
+          {
+            "ingredient": "sweet-potato",
+            "difference": "Both provide vitamin A, but sweet potato is a complex carbohydrate with sustained energy, while mango is a fruit with higher simple sugars. Sweet potato is more substantial nutrition source."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Marshmallow Root",
@@ -13354,7 +13476,24 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "slippery-elm",
+            "difference": "Both contain mucilage that soothes the GI tract. Marshmallow root also supports urinary health, while slippery elm is more focused on digestive soothing. Both are gentle, effective herbs."
+          },
+          {
+            "ingredient": "pumpkin",
+            "difference": "Marshmallow root soothes with mucilage coating inflamed tissues, while pumpkin provides bulk fiber for stool regulation. Marshmallow is medicinal herb; pumpkin is whole food fiber source."
+          },
+          {
+            "ingredient": "licorice-root",
+            "difference": "Both soothe digestive inflammation. Marshmallow root uses mucilage coating, while licorice root has glycyrrhizin compounds. Marshmallow is gentler with fewer concerns about long-term use."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Meat and Bone Meal",
@@ -13379,7 +13518,24 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "chicken-meal",
+            "difference": "Chicken meal is a named animal source with transparency about species. Meat and bone meal is generic mystery meat from unspecified mammals. Named meals are vastly superior for quality and consistency."
+          },
+          {
+            "ingredient": "beef-meal",
+            "difference": "Beef meal identifies the specific animal source, while meat and bone meal could be any mammal. Named meals provide transparency and consistency; generic meals signal poor quality and cost-cutting."
+          },
+          {
+            "ingredient": "meat-by-products",
+            "difference": "Both are vague, low-transparency ingredients. Meat and bone meal is rendered and dried, while meat by-products are fresh but unspecified organs. Both lack transparency; named ingredients are always preferable."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Meat By-Products",
@@ -13569,7 +13725,24 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NIH"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "l-theanine",
+            "difference": "Melatonin is a hormone regulating sleep-wake cycles, while L-theanine is an amino acid promoting relaxation without sedation. Melatonin is more directly sedating; L-theanine is calming without drowsiness."
+          },
+          {
+            "ingredient": "valerian-root",
+            "difference": "Melatonin works on sleep hormones, while valerian root is an herbal sedative affecting GABA receptors. Melatonin is for sleep cycle regulation; valerian is for anxiety and relaxation."
+          },
+          {
+            "ingredient": "chamomile",
+            "difference": "Melatonin is a hormone with direct sleep effects, while chamomile is a gentle herb with mild calming properties. Melatonin is stronger and more targeted for sleep; chamomile is gentler overall calming."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Menadione Sodium Bisulfite Complex",
@@ -13595,7 +13768,24 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "phylloquinone",
+            "difference": "Menadione is synthetic vitamin K3, while phylloquinone is natural vitamin K1 from plants. K1 is preferred natural form with no safety concerns; menadione is synthetic and controversial."
+          },
+          {
+            "ingredient": "menaquinone",
+            "difference": "Menadione is synthetic vitamin K3, while menaquinone is natural vitamin K2 from fermentation. K2 has superior bone and cardiovascular benefits; menadione is basic synthetic form."
+          },
+          {
+            "ingredient": "vitamin-k1",
+            "difference": "Menadione sodium bisulfite complex is synthetic K3, while vitamin K1 is natural phylloquinone. Natural K1 is always preferred over synthetic menadione for safety and efficacy."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Menhaden Oil",
@@ -13619,7 +13809,28 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "salmon-oil",
+            "difference": "Menhaden oil is higher in EPA (anti-inflammatory omega-3) and more affordable, but has a stronger fishy smell. Salmon oil has better omega-3 balance and palatability but costs more."
+          },
+          {
+            "ingredient": "sardine-oil",
+            "difference": "Both are small fish oils low on the food chain with minimal mercury. Menhaden oil has more EPA, while sardine oil has better palatability. Both are excellent sustainable omega-3 sources."
+          },
+          {
+            "ingredient": "fish-oil",
+            "difference": "Menhaden oil is a named species fish oil (transparency), while generic fish oil could be any species. Named sources like menhaden are preferable for quality assurance and sustainability tracking."
+          },
+          {
+            "ingredient": "flaxseed",
+            "difference": "Menhaden oil provides EPA/DHA (marine omega-3s) that are bioactive, while flaxseed provides ALA that dogs poorly convert to EPA/DHA. Marine oils are vastly superior for omega-3 benefits."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Microcrystalline Cellulose",
@@ -13640,7 +13851,24 @@
       "qualityNote": "Microcrystalline cellulose is purified, partially depolymerized cellulose - essentially refined wood pulp. It's completely indigestible and provides no nutritional value. It's used for texture, bulk, and as an anti-caking agent. While it's Generally Recognized As Safe (GRAS), it's pure filler with no nutrients. It's functionally identical to powdered cellulose - just processed slightly differently for different textures.",
       "wattsPosition": "avoid",
       "wattsTake": "Microcrystalline cellulose is wood pulp filler disguised with a scientific name. It has zero nutritional value and is used purely to add bulk and texture cheaply. We view this as a low-quality ingredient that signals cost-cutting. Quality foods use whole food ingredients for fiber and texture. If you see MCC in the ingredient list, it's a red flag that the food is prioritizing profit margins over nutritional quality.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "cellulose",
+            "difference": "Both are refined wood pulp with zero nutrition. Microcrystalline cellulose is more processed for texture, while regular cellulose is basic fiber. Both are cheap fillers; whole food fiber is vastly superior."
+          },
+          {
+            "ingredient": "pumpkin",
+            "difference": "Pumpkin is whole food providing fiber plus vitamins and minerals. Microcrystalline cellulose is refined wood pulp with zero nutrition. Pumpkin is vastly superior for functional fiber."
+          },
+          {
+            "ingredient": "beet-pulp",
+            "difference": "Beet pulp is a whole food byproduct with moderate fermentable fiber. Microcrystalline cellulose is refined wood pulp that's completely indigestible. Beet pulp provides more functional benefit."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Milk Thistle",
@@ -13668,7 +13896,24 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "dandelion-root",
+            "difference": "Milk thistle (silymarin) is specifically hepatoprotective with strong research for liver regeneration. Dandelion root supports liver and kidney detox but has less clinical evidence. Milk thistle is gold standard for liver support."
+          },
+          {
+            "ingredient": "turmeric",
+            "difference": "Milk thistle targets liver health and regeneration specifically, while turmeric (curcumin) provides broad anti-inflammatory and antioxidant benefits including liver support. Milk thistle is more liver-focused; turmeric is broader."
+          },
+          {
+            "ingredient": "sam-e",
+            "difference": "Both support liver health. Milk thistle provides antioxidant protection and regeneration via silymarin. SAM-e supports liver detoxification and cellular health via methionine. Often used together for comprehensive liver support."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Millet",
@@ -13798,7 +14043,24 @@
           "url": "https://www.petfoodindustry.com/",
           "publisher": "Pet Food Industry"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "cellulose",
+            "difference": "Both are plant-based indigestible fiber fillers. Miscanthus grass is dried grass, while cellulose is refined wood pulp. Both provide zero nutrition and are used for bulk in weight management formulas."
+          },
+          {
+            "ingredient": "peanut-hulls",
+            "difference": "Both are agricultural byproduct fillers with minimal nutrition. Miscanthus grass is perennial grass fiber, while peanut hulls are legume shells. Both are cheap bulk fillers for weight control foods."
+          },
+          {
+            "ingredient": "beet-pulp",
+            "difference": "Beet pulp is fermentable fiber providing some functional benefit, while miscanthus grass is completely indigestible bulk filler. Beet pulp is marginally more functional than miscanthus."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Mixed Tocopherols",
@@ -13825,7 +14087,28 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "vitamin-e",
+            "difference": "Mixed tocopherols ARE vitamin E (natural form). The term emphasizes use as natural preservative rather than synthetic vitamin E supplement. Same compound, different application context."
+          },
+          {
+            "ingredient": "rosemary-extract",
+            "difference": "Both are natural antioxidant preservatives. Mixed tocopherols (vitamin E) prevent fat oxidation chemically, while rosemary extract provides antioxidants from plant compounds. Often used together for synergistic preservation."
+          },
+          {
+            "ingredient": "bha-bht",
+            "difference": "Mixed tocopherols are natural vitamin E preservatives, while BHA/BHT are synthetic chemical preservatives. Natural tocopherols are preferred for safety and provide vitamin E benefit; BHA/BHT have safety concerns."
+          },
+          {
+            "ingredient": "ascorbic-acid",
+            "difference": "Mixed tocopherols (vitamin E) and ascorbic acid (vitamin C) are both antioxidant preservatives that work synergistically. Tocopherols protect fats; ascorbic acid is water-soluble. Often used together."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Modified Food Starch",
@@ -13849,7 +14132,24 @@
           "url": "https://www.fda.gov/",
           "publisher": "FDA"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "tapioca-starch",
+            "difference": "Modified food starch is chemically or physically altered for functionality, while tapioca starch is less processed. Both are empty carbs, but tapioca is more natural. Neither provides meaningful nutrition."
+          },
+          {
+            "ingredient": "maltodextrin",
+            "difference": "Both are highly processed starches with zero nutrition. Modified food starch is altered for texture/binding, while maltodextrin is broken down for quick absorption. Both are cheap fillers to avoid."
+          },
+          {
+            "ingredient": "potato",
+            "difference": "Potato is a whole food with vitamins and fiber, while modified food starch is refined, processed starch with zero nutrition. Whole potato is vastly superior to modified starch."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Molasses",
@@ -13876,7 +14176,24 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "honey",
+            "difference": "Molasses is sugar refining byproduct with some minerals (especially iron), while honey is natural sweetener with enzymes and antioxidants. Honey is slightly more nutritious, but both add unnecessary sugar."
+          },
+          {
+            "ingredient": "cane-sugar",
+            "difference": "Molasses retains some minerals from sugar refining (iron, calcium, B vitamins), while cane sugar is pure refined sucrose. Molasses is marginally less processed but both are added sugars dogs don't need."
+          },
+          {
+            "ingredient": "sweet-potato",
+            "difference": "Sweet potato provides complex carbs, fiber, and vitamins with natural sweetness. Molasses is simple sugar syrup with minimal nutrients. Sweet potato is vastly superior whole food source of sweetness."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Montmorillonite Clay",
@@ -13902,7 +14219,24 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "activated-charcoal",
+            "difference": "Both bind toxins. Montmorillonite clay is gentle mineral clay with sustained binding, while activated charcoal is more aggressive and short-acting. Clay is better for daily use; charcoal for acute toxin exposure."
+          },
+          {
+            "ingredient": "bentonite-clay",
+            "difference": "Montmorillonite and bentonite are both types of swelling clays with toxin-binding properties. They're similar compounds often used interchangeably, both effective for digestive detox support."
+          },
+          {
+            "ingredient": "psyllium-husk",
+            "difference": "Montmorillonite clay binds toxins via absorption, while psyllium husk is soluble fiber that promotes regularity. Clay is detox-focused; psyllium is digestive regularity. Different mechanisms and purposes."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "MOS",
@@ -13928,7 +14262,28 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "fos",
+            "difference": "MOS (mannan-oligosaccharides) blocks pathogen binding AND feeds good bacteria, while FOS (fructooligosaccharides) primarily feeds beneficial bacteria. MOS has dual immune and prebiotic benefits; FOS is prebiotic-focused."
+          },
+          {
+            "ingredient": "inulin",
+            "difference": "MOS blocks pathogen adhesion to gut walls, while inulin is fermented by beneficial bacteria. MOS has unique immune benefits plus prebiotic effects; inulin is purely prebiotic fiber."
+          },
+          {
+            "ingredient": "chicory-root",
+            "difference": "Chicory root is a whole food providing inulin (prebiotic fiber), while MOS is extracted from yeast cell walls with pathogen-blocking properties. MOS is more targeted functional ingredient; chicory is whole food."
+          },
+          {
+            "ingredient": "dried-yeast",
+            "difference": "MOS is extracted from yeast cell walls (purified mannan compounds), while dried yeast provides broader nutritional benefits including B vitamins and protein. MOS is targeted prebiotic; yeast is multi-functional."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "MSM",
@@ -13953,7 +14308,24 @@
           "url": "https://www.fda.gov/",
           "publisher": "FDA"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "glucosamine",
+            "difference": "Glucosamine provides building blocks for cartilage repair, while MSM (methylsulfonylmethane) reduces joint inflammation via sulfur. Often combined for comprehensive joint support—glucosamine rebuilds, MSM reduces pain."
+          },
+          {
+            "ingredient": "chondroitin",
+            "difference": "Chondroitin is a cartilage component with strong research for joint health, while MSM is an anti-inflammatory sulfur compound with limited dog-specific evidence. Chondroitin has stronger scientific backing."
+          },
+          {
+            "ingredient": "turmeric",
+            "difference": "MSM provides sulfur for cartilage and reduces inflammation, while turmeric (curcumin) is a potent anti-inflammatory herb. Turmeric has stronger evidence and broader benefits; MSM is more joint-specific."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Natural Flavor",
@@ -14065,7 +14437,28 @@
       "qualityNote": "Navy beans are nutrient-dense legumes offering moderate plant protein (about 21g per 100g cooked), significant fiber, and micronutrients. They're particularly high in folate and manganese. Like all beans, they contain anti-nutrients that can reduce mineral absorption and may cause gas in some dogs. The protein is incomplete for canine nutrition. They're a reasonable grain-free ingredient but should complement animal proteins, not replace them.",
       "wattsPosition": "neutral",
       "wattsTake": "Navy beans are acceptable whole food legumes that add protein and fiber to grain-free formulas. They're better than cheap grain fillers and provide legitimate nutrients. However, we always prioritize animal proteins. Beans should be minor ingredients, not foundations of the diet. If navy beans appear high on the list alongside other legumes, it's a sign of too much plant protein. In moderation, they're fine.",
-      "citations": []
+      "citations": [],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "chickpeas",
+            "difference": "Navy beans have slightly more fiber and folate, while chickpeas have more protein and are better tolerated. Both are grain-free legumes providing moderate plant protein. Similar nutritional profiles."
+          },
+          {
+            "ingredient": "lentils",
+            "difference": "Lentils have more protein (25% vs 21%) and iron than navy beans. Navy beans have more fiber. Both are quality legumes, but lentils are nutritionally denser and more commonly used in dog food."
+          },
+          {
+            "ingredient": "peas",
+            "difference": "Peas and navy beans are both legumes providing plant protein and fiber. Peas are more common, digestible, and better tolerated. Navy beans have more fiber but may cause more gas."
+          },
+          {
+            "ingredient": "chicken",
+            "difference": "Chicken is complete animal protein with superior amino acid profile and bioavailability. Navy beans are incomplete plant protein requiring complementation. Animal proteins are vastly superior to legume proteins for dogs."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Niacin",
@@ -14090,7 +14483,24 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "vitamin-b3",
+            "difference": "Niacin IS vitamin B3 (identical terms). Both refer to nicotinic acid or nicotinamide essential for energy metabolism. Same vitamin, different names."
+          },
+          {
+            "ingredient": "thiamine",
+            "difference": "Niacin is vitamin B3 (energy metabolism, skin health), while thiamine is vitamin B1 (nerve function, carb metabolism). Both are essential B vitamins with different specific functions."
+          },
+          {
+            "ingredient": "riboflavin",
+            "difference": "Niacin (B3) supports energy metabolism and skin health, while riboflavin (B2) supports growth and red blood cell production. Both are essential B vitamins working synergistically in metabolism."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Niacin Supplement",
@@ -21970,7 +22380,24 @@
       "nutritionValue": "none",
       "qualityNote": "Natural color is an umbrella term that can include many different plant-based colorants—turmeric (yellow), annatto (orange), beet juice (red/pink), spirulina (blue-green), caramel color (brown), etc. While safer than synthetic dyes, color serves only cosmetic purposes—dogs are not influenced by food color. The specific source matters: turmeric and spirulina have antioxidant properties, while caramel color (especially Type III/IV) has potential health concerns. \"Natural color\" without specifics lacks transparency.",
       "wattsPosition": "neutral",
-      "wattsTake": "Natural color is unnecessary but generally harmless. If a manufacturer is going to add color (which is for humans, not dogs), natural sources are far preferable to synthetic FD&C dyes. However, the vague term \"natural color\" is less transparent than naming the actual source—\"turmeric extract\" or \"beet juice\" is more informative. We appreciate when brands skip colorants entirely or use clearly named natural sources. It's a neutral ingredient that signals marketing-focused formulation but not necessarily poor quality."
+      "wattsTake": "Natural color is unnecessary but generally harmless. If a manufacturer is going to add color (which is for humans, not dogs), natural sources are far preferable to synthetic FD&C dyes. However, the vague term \"natural color\" is less transparent than naming the actual source—\"turmeric extract\" or \"beet juice\" is more informative. We appreciate when brands skip colorants entirely or use clearly named natural sources. It's a neutral ingredient that signals marketing-focused formulation but not necessarily poor quality.",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "artificial-color",
+            "difference": "Natural color is derived from plant/mineral sources (turmeric, beet juice, etc.), while artificial color is synthetic petroleum-based dye. Natural is safer and preferable, though both are cosmetic and unnecessary."
+          },
+          {
+            "ingredient": "caramel-color",
+            "difference": "Natural color is broad term including plant-based colorants. Caramel color is specific brown colorant that may have concerns (Type III/IV). Other natural colors (turmeric, beet) are generally safer than caramel color."
+          },
+          {
+            "ingredient": "turmeric",
+            "difference": "When turmeric is used specifically as 'natural color,' it's for yellow pigment not health benefits. Turmeric as ingredient provides curcumin antioxidants. Natural color turmeric is cosmetic; ingredient turmeric is functional."
+          }
+        ]
+      },
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Anchovies",
