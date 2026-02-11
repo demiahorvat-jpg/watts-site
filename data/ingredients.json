@@ -196,50 +196,6 @@
       "lastUpdated": "February 10, 2026"
     },
     {
-      "name": "Alginic Acid",
-      "aliases": [
-        "algin",
-        "alginate"
-      ],
-      "category": "additive",
-      "whatItIs": "Alginic acid is a natural compound extracted from brown algae, used as a thickener, stabilizer, and gelling agent in pet foods.",
-      "whyUsed": [
-        "Natural thickening agent",
-        "Creates gel structure in wet foods",
-        "Stabilizes mixtures and prevents separation",
-        "Controls texture and consistency",
-        "Plant-based, natural source"
-      ],
-      "nutritionValue": "low",
-      "qualityNote": "Alginic acid is functionally similar to sodium alginate - both are derived from brown seaweed and serve as thickening agents. It provides minimal nutritional value (some soluble fiber) and is used in very small quantities for texture and stability. It's safe and natural with no known adverse effects. Like other gums, it's a functional ingredient rather than a nutritious one.",
-      "wattsPosition": "neutral",
-      "wattsTake": "Alginic acid is a harmless, natural texturizer used in small amounts to create appropriate consistency in wet pet foods. It's not adding nutrition, but it's not problematic either. We view it as a necessary processing ingredient that serves a legitimate function. We appreciate that it's from a natural, clearly identified source (brown algae). It's neutral - neither impressive nor concerning.",
-      "citations": [],
-      "whatItIsExpanded": {
-        "compareToSimilar": [
-          {
-            "ingredient": "agar-agar",
-            "difference": "Both are seaweed-derived thickeners. Alginic acid comes from brown algae (kelp) and is used as a stabilizer, while agar agar is from red algae and used as a gelling agent."
-          }
-        ]
-      },
-      "nutritionalProfile": {
-        "function": "Natural polysaccharide from brown seaweed used as thickener and stabilizer",
-        "source": "Extracted from brown algae (kelp) cell walls",
-        "functionalRole": "Thickens and stabilizes wet foods, prevents separation, creates smooth texture",
-        "nutritionalValue": "Minimal - primarily soluble fiber with no significant nutrients",
-        "fiberContent": "80-90% soluble fiber, may provide mild prebiotic benefits",
-        "typicalInclusion": "0.1-0.5% of wet food for functional benefits",
-        "safety": "Generally safe - used in human and pet foods for decades with no known toxicity",
-        "qualityNote": "Functional ingredient for texture, not nutrition. Natural seaweed source preferable to synthetic thickeners. Neutral ingredient."
-      },
-      "seoMetadata": {
-        "focusKeyword": "alginic acid dog food",
-        "metaDescription": "Is alginic acid safe for dogs? Learn natural seaweed thickener, gelling agent, vs agar/carrageenan, wet food texture, minimal nutrition & safety."
-      },
-      "lastUpdated": "February 10, 2026"
-    },
-    {
       "name": "Amylase",
       "aliases": [
         "alpha-amylase",
@@ -4248,63 +4204,6 @@
       "lastUpdated": "February 10, 2026"
     },
     {
-      "name": "Calcium D-pantothenate",
-      "aliases": [
-        "vitamin B5",
-        "pantothenic acid"
-      ],
-      "category": "vitamin",
-      "whatItIs": "Calcium D-pantothenate is a stable form of vitamin B5 (pantothenic acid) added to pet foods for energy metabolism and overall health.",
-      "whyUsed": [
-        "Essential for energy metabolism",
-        "Necessary for fatty acid synthesis",
-        "Supports adrenal gland function",
-        "Required for coenzyme A production",
-        "Important for skin and coat health"
-      ],
-      "nutritionValue": "high",
-      "qualityNote": "Calcium D-pantothenate is a stable, bioavailable form of vitamin B5, an essential B vitamin required for metabolism. It's necessary for converting food into energy and synthesizing fatty acids, cholesterol, and hormones. Deficiency is rare but can cause growth issues and skin problems. As a water-soluble B vitamin, excess is excreted, making toxicity unlikely. Required for nutritionally complete pet foods.",
-      "wattsPosition": "good",
-      "wattsTake": "Calcium D-pantothenate is a necessary B vitamin supplement for nutritionally complete dog food. It's essential for metabolism and overall health. We have no concerns with B vitamin supplementation - it's required to meet AAFCO standards and ensure dogs get adequate nutrition. This is a standard, appropriate ingredient in properly formulated foods. Its presence indicates the food is fortified to be nutritionally complete.",
-      "citations": [],
-      "whatItIsExpanded": {
-        "compareToSimilar": [
-          {
-            "ingredient": "calcium-pantothenate",
-            "difference": "These are the same ingredient—calcium D-pantothenate and calcium pantothenate both provide vitamin B5 (pantothenic acid). The \"D\" just specifies the molecular form."
-          }
-        ]
-      },
-      "nutritionalProfile": {
-        "function": "Calcium salt of pantothenic acid (vitamin B5) supporting energy metabolism, hormone production, and stress response",
-        "vitaminB5": "Provides pantothenic acid (vitamin B5) - essential water-soluble B vitamin required for numerous metabolic processes",
-        "nameNote": "Calcium D-pantothenate and calcium pantothenate are the same compound - both refer to the calcium salt of D-pantothenic acid",
-        "energyMetabolism": "Critical component of Coenzyme A (CoA) which is essential for metabolizing fats, proteins, and carbohydrates into energy",
-        "hormoneProduction": "Required for synthesis of steroid hormones, stress hormones (cortisol), and sex hormones",
-        "healthBenefits": [
-          "Energy production (converts food to ATP energy)",
-          "Fatty acid synthesis and breakdown",
-          "Cholesterol and hormone synthesis",
-          "Neurotransmitter production (acetylcholine)",
-          "Stress response support (adrenal function)",
-          "Skin and coat health",
-          "Wound healing and tissue repair"
-        ],
-        "deficiencySymptoms": "Rare in dogs eating complete diets. Severe deficiency causes poor growth, GI issues, immune dysfunction, and neurological problems.",
-        "calciumContent": "Provides small amount of calcium (8-9% by weight) in addition to vitamin B5",
-        "stability": "More stable than pure pantothenic acid - calcium salt form resists degradation during food processing and storage",
-        "typicalInclusion": "10-60mg per kg of food (AAFCO minimum: 12mg/kg for all life stages)",
-        "safety": "Very safe - water-soluble with no known toxicity. Excess is excreted in urine.",
-        "syntheticVsNatural": "Typically synthetic but chemically identical to natural B5. Well-absorbed and effective.",
-        "qualityNote": "Calcium D-pantothenate is a stable, effective form of vitamin B5. Essential for energy metabolism and stress response. Standard inclusion in complete dog foods."
-      },
-      "seoMetadata": {
-        "focusKeyword": "calcium d pantothenate dog food",
-        "metaDescription": "Is calcium D-pantothenate safe for dogs? Learn vitamin B5 benefits, vs pantothenic acid, energy metabolism, hormone production, stress support & safety."
-      },
-      "lastUpdated": "February 10, 2026"
-    },
-    {
       "name": "Calcium Iodate",
       "aliases": [
         "iodine supplement"
@@ -4425,7 +4324,8 @@
       "aliases": [
         "vitamin B-5",
         "vitamin B5",
-        "pantothenic acid"
+        "pantothenic acid",
+        "calcium d-pantothenate"
       ],
       "category": "vitamin",
       "whatItIs": "Supplemental vitamin B5 for energy metabolism and hormone synthesis.",
@@ -4533,71 +4433,6 @@
       "seoMetadata": {
         "focusKeyword": "calcium propionate dog food",
         "metaDescription": "Is calcium propionate safe for dogs? Learn mold preservative, natural antimicrobial, vs synthetic preservatives, FDA GRAS status & safety profile."
-      },
-      "lastUpdated": "February 10, 2026"
-    },
-    {
-      "name": "Camellia Sinensis",
-      "aliases": [
-        "green tea plant",
-        "tea plant",
-        "tea leaf"
-      ],
-      "category": "active",
-      "whatItIs": "The tea plant from which green, black, white, and oolong teas are made. In pet products, typically refers to green tea leaves rich in catechins and EGCG.",
-      "whyUsed": [
-        "Powerful antioxidant support from catechins",
-        "Natural source of EGCG for cellular health",
-        "May support weight management and metabolism",
-        "Dental health benefits (reduces bacteria)",
-        "Anti-inflammatory properties"
-      ],
-      "nutritionValue": "moderate",
-      "qualityNote": "Rich in beneficial polyphenols, particularly EGCG. Caffeine content is a concern—decaffeinated extracts are safer for dogs. Quality varies by growing conditions and processing. Standardized extracts ensure consistent polyphenol content. Green tea is preferred over black tea for higher antioxidant levels.",
-      "wattsPosition": "good",
-      "wattsTake": "Excellent antioxidant source if properly processed and decaffeinated. EGCG has strong research for cellular health and metabolism. Ensure products use decaffeinated extracts or whole leaf in appropriate amounts. Premium ingredient in weight management and antioxidant formulas.",
-      "citations": [
-        {
-          "title": "Green Tea Polyphenols in Pet Health",
-          "url": "https://www.ncbi.nlm.nih.gov/",
-          "publisher": "NCBI"
-        }
-      ],
-      "whatItIsExpanded": {
-        "compareToSimilar": [
-          {
-            "ingredient": "green-tea-extract",
-            "difference": "Camellia sinensis is the tea plant. Green tea extract is made from its leaves. Same source—green tea extract is just the concentrated form of camellia sinensis."
-          }
-        ]
-      },
-      "nutritionalProfile": {
-        "function": "Green tea plant extract providing powerful antioxidants (catechins), particularly EGCG, supporting health and longevity",
-        "whatIsIt": "Camellia sinensis is the tea plant - all true teas (green, black, white, oolong) come from this plant. Different processing creates different tea types.",
-        "greenTeaExtract": "Most pet foods use green tea extract (minimally processed leaves) which retains highest antioxidant levels",
-        "catechins": "Rich in catechins - potent antioxidants including EGCG (epigallocatechin gallate), the most powerful and well-studied",
-        "EGCGbenefits": "EGCG is 25-100x more potent than vitamins C and E as an antioxidant",
-        "healthBenefits": [
-          "Powerful antioxidant protection (reduces oxidative stress)",
-          "Anti-inflammatory effects (reduces chronic inflammation)",
-          "Cognitive support (may improve brain function, reduce decline)",
-          "Cardiovascular health (improves blood vessel function)",
-          "Weight management (increases metabolism, fat oxidation)",
-          "Dental health (antibacterial, reduces plaque)",
-          "Cancer prevention (may inhibit tumor growth)",
-          "Immune system enhancement"
-        ],
-        "polyphenols": "Contains polyphenols and flavonoids with anti-cancer, anti-viral, and anti-bacterial properties",
-        "caffeineContent": "Green tea contains caffeine (2-4% by weight in extract). Small amounts in dog food are generally safe but excessive amounts can cause toxicity.",
-        "typicalInclusion": "0.1-1% of diet as dried extract or powder. Usually 50-200mg per serving.",
-        "decaffeinated": "Some pet foods use decaffeinated green tea extract to provide catechins without caffeine concerns",
-        "research": "Extensive research in humans and animals shows significant antioxidant and health benefits",
-        "safety": "Generally safe at appropriate levels. Monitor caffeine content - excessive caffeine is toxic to dogs. Stick to small amounts.",
-        "qualityNote": "Camellia sinensis (green tea) is a premium antioxidant ingredient with strong scientific backing. Signals health-focused, longevity-supporting formulation."
-      },
-      "seoMetadata": {
-        "focusKeyword": "camellia sinensis dog food",
-        "metaDescription": "Is green tea (camellia sinensis) safe for dogs? Learn EGCG catechin benefits, antioxidant power, caffeine concerns, dosing & health research."
       },
       "lastUpdated": "February 10, 2026"
     },
@@ -9535,7 +9370,8 @@
     {
       "name": "Ferrous Sulfate",
       "aliases": [
-        "iron sulfate (ferrous)"
+        "iron sulfate (ferrous)",
+        "iron sulfate"
       ],
       "category": "mineral",
       "whatItIs": "An iron supplement in sulfate form, providing essential iron for oxygen transport in blood.",
@@ -10833,7 +10669,8 @@
       "aliases": [
         "green tea polyphenols",
         "EGCG",
-        "green tea catechins"
+        "green tea catechins",
+        "camellia sinensis"
       ],
       "category": "active",
       "whatItIs": "Concentrated extract from green tea leaves (Camellia sinensis), standardized for catechins and EGCG (epigallocatechin gallate).",
@@ -11720,57 +11557,6 @@
       },
       "nutritionalProfile": {
         "function": "Iron Proteinate in dog food",
-        "typicalInclusion": "Varies by formula",
-        "safety": "Generally recognized as safe when used appropriately"
-      }
-    },
-    {
-      "name": "Iron Sulfate",
-      "aliases": [
-        "ferrous sulfate",
-        "iron supplement"
-      ],
-      "category": "mineral",
-      "whatItIs": "Inorganic iron supplement for red blood cell formation.",
-      "whyUsed": [
-        "Iron supplementation",
-        "Red blood cell production",
-        "Oxygen transport"
-      ],
-      "nutritionValue": "high",
-      "qualityNote": "Essential mineral. Less bioavailable than chelated forms.",
-      "wattsPosition": "neutral",
-      "wattsTake": "Adequate iron source, though chelated forms preferred.",
-      "citations": [
-        {
-          "title": "AAFCO Official Publication",
-          "url": "https://www.aafco.org/",
-          "publisher": "AAFCO"
-        }
-      ],
-      "whatItIsExpanded": {
-        "compareToSimilar": [
-          {
-            "ingredient": "ferrous-sulfate",
-            "difference": "Iron sulfate and ferrous sulfate are essentially the same compound - both are inorganic iron salts. Ferrous sulfate is the more specific chemical name (Fe²⁺)."
-          },
-          {
-            "ingredient": "iron-proteinate",
-            "difference": "Both provide iron. Iron sulfate is an inorganic salt that's less expensive but may cause digestive upset, while iron proteinate is chelated for better absorption."
-          },
-          {
-            "ingredient": "iron-amino-acid-chelate",
-            "difference": "Iron sulfate is inorganic iron that's economical but less bioavailable. Iron amino acid chelate is organic, chelated iron with superior absorption and less GI irritation."
-          }
-        ]
-      },
-      "lastUpdated": "February 11, 2026",
-      "seoMetadata": {
-        "focusKeyword": "iron sulfate dog food",
-        "metaDescription": "Is iron sulfate safe for dogs? Learn about benefits, nutritional value, and quality in pet food."
-      },
-      "nutritionalProfile": {
-        "function": "Iron Sulfate in dog food",
         "typicalInclusion": "Varies by formula",
         "safety": "Generally recognized as safe when used appropriately"
       }
@@ -14464,7 +14250,8 @@
       "name": "Niacin",
       "aliases": [
         "vitamin B3",
-        "nicotinic acid"
+        "nicotinic acid",
+        "niacin supplement"
       ],
       "category": "vitamin",
       "whatItIs": "Vitamin B3, essential for energy metabolism, nervous system function, and skin health.",
@@ -14501,32 +14288,6 @@
         ]
       },
       "lastUpdated": "February 11, 2026"
-    },
-    {
-      "name": "Niacin Supplement",
-      "aliases": [
-        "vitamin B3",
-        "nicotinic acid",
-        "niacinamide"
-      ],
-      "category": "vitamin",
-      "whatItIs": "Supplemental B3 for energy metabolism and enzyme function.",
-      "whyUsed": [
-        "Energy metabolism",
-        "Enzyme cofactor",
-        "Skin and coat health"
-      ],
-      "nutritionValue": "high",
-      "qualityNote": "Essential B vitamin involved in hundreds of metabolic processes.",
-      "wattsPosition": "good",
-      "wattsTake": "Critical B vitamin supplementation.",
-      "citations": [
-        {
-          "title": "AAFCO Official Publication",
-          "url": "https://www.aafco.org/",
-          "publisher": "AAFCO"
-        }
-      ]
     },
     {
       "name": "Nutritional Yeast",
@@ -17209,7 +16970,8 @@
     {
       "name": "Riboflavin",
       "aliases": [
-        "vitamin B2"
+        "vitamin B2",
+        "riboflavin supplement"
       ],
       "category": "vitamin",
       "whatItIs": "Vitamin B2, essential for energy metabolism and cellular function.",
@@ -17222,31 +16984,6 @@
       "qualityNote": "Essential vitamin required in all complete and balanced dog foods.",
       "wattsPosition": "good",
       "wattsTake": "Essential B vitamin that must be present for complete nutrition.",
-      "citations": [
-        {
-          "title": "AAFCO Official Publication",
-          "url": "https://www.aafco.org/",
-          "publisher": "AAFCO"
-        }
-      ]
-    },
-    {
-      "name": "Riboflavin Supplement",
-      "aliases": [
-        "vitamin B2",
-        "riboflavin"
-      ],
-      "category": "vitamin",
-      "whatItIs": "Supplemental B2 for energy production and cell function.",
-      "whyUsed": [
-        "Energy metabolism",
-        "Cell growth and function",
-        "Essential B vitamin"
-      ],
-      "nutritionValue": "high",
-      "qualityNote": "Essential B vitamin for multiple metabolic processes.",
-      "wattsPosition": "good",
-      "wattsTake": "Necessary B vitamin supplementation.",
       "citations": [
         {
           "title": "AAFCO Official Publication",
@@ -18542,7 +18279,8 @@
       "name": "Sodium Alginate",
       "aliases": [
         "alginate",
-        "algin"
+        "algin",
+        "alginic acid"
       ],
       "category": "additive",
       "whatItIs": "Sodium alginate is a natural gum extracted from brown seaweed, used as a thickener, stabilizer, and gelling agent in wet pet foods.",
@@ -18580,33 +18318,6 @@
           "title": "FDA GRAS Substances",
           "url": "https://www.fda.gov/",
           "publisher": "FDA"
-        }
-      ]
-    },
-    {
-      "name": "Sodium Chloride",
-      "aliases": [
-        "salt",
-        "table salt",
-        "sea salt",
-        "iodized salt"
-      ],
-      "category": "mineral",
-      "whatItIs": "Common salt. Provides sodium and chloride for fluid balance and nerve function.",
-      "whyUsed": [
-        "Sodium and chloride supplementation",
-        "Electrolyte balance",
-        "Palatability"
-      ],
-      "nutritionValue": "high",
-      "qualityNote": "Essential minerals in appropriate amounts. Excess can be harmful.",
-      "wattsPosition": "neutral",
-      "wattsTake": "Necessary in correct amounts. Should be balanced in formulation.",
-      "citations": [
-        {
-          "title": "AAFCO Official Publication",
-          "url": "https://www.aafco.org/",
-          "publisher": "AAFCO"
         }
       ]
     },
@@ -20749,27 +20460,6 @@
           "publisher": "NCBI"
         }
       ]
-    },
-    {
-      "name": "Vitamin K1 Supplement",
-      "aliases": [
-        "phylloquinone",
-        "phytonadione"
-      ],
-      "category": "vitamin",
-      "whatItIs": "Vitamin K1 supplement is the plant form of vitamin K added to pet foods for blood clotting and bone health.",
-      "whyUsed": [
-        "Essential for blood clotting",
-        "Supports bone mineralization",
-        "Prevents hemorrhagic disorders",
-        "Necessary for protein synthesis",
-        "Required for cardiovascular health"
-      ],
-      "nutritionValue": "high",
-      "qualityNote": "Vitamin K1 (phylloquinone) is the primary dietary form of vitamin K, essential for blood clotting and bone metabolism. While dogs can produce some vitamin K through gut bacteria, dietary supplementation ensures adequate levels. Deficiency can cause bleeding disorders. Vitamin K1 is safe with wide margin of safety. It's a necessary vitamin supplement in complete and balanced pet foods.",
-      "wattsPosition": "good",
-      "wattsTake": "Vitamin K1 supplement is a necessary and appropriate addition to dog food. It's essential for blood clotting and bone health. We have no concerns with vitamin K supplementation - it's required for nutritional completeness and safety. Some dogs on certain medications (anticoagulants) need careful vitamin K monitoring, but for healthy dogs, supplementation is beneficial and necessary. This indicates proper fortification.",
-      "citations": []
     },
     {
       "name": "Watermelon",

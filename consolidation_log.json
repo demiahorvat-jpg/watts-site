@@ -1,0 +1,42 @@
+[
+  {
+    "main": "Salt",
+    "duplicate": "Sodium Chloride",
+    "slug": "sodium-chloride"
+  },
+  {
+    "main": "Ferrous Sulfate",
+    "duplicate": "Iron Sulfate",
+    "slug": "iron-sulfate"
+  },
+  {
+    "main": "Green Tea Extract",
+    "duplicate": "Camellia Sinensis",
+    "slug": "camellia-sinensis"
+  },
+  {
+    "main": "Niacin",
+    "duplicate": "Niacin Supplement",
+    "slug": "niacin-supplement"
+  },
+  {
+    "main": "Riboflavin",
+    "duplicate": "Riboflavin Supplement",
+    "slug": "riboflavin-supplement"
+  },
+  {
+    "main": "Vitamin K1",
+    "duplicate": "Vitamin K1 Supplement",
+    "slug": "vitamin-k1-supplement"
+  },
+  {
+    "main": "Sodium Alginate",
+    "duplicate": "Alginic Acid",
+    "slug": "alginic-acid"
+  },
+  {
+    "main": "Calcium Pantothenate",
+    "duplicate": "Calcium D-pantothenate",
+    "slug": "calcium-d-pantothenate"
+  }
+]

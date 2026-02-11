@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+const fs = require('fs');
+const path = require('path');
+
+const ingredientsDir = './ingredient-analyzer/ingredients';
+const dirs = fs.readdirSync(ingredientsDir).filter(d => {
+  const stats = fs.statSync(path.join(ingredientsDir, d));
+  return stats.isDirectory();
+});
+
+const unenhanced = [];
+dirs.forEach(dir => {
+  const indexPath = path.join(ingredientsDir, dir, 'index.html');
+  if (fs.existsSync(indexPath)) {
+    const content = fs.readFileSync(indexPath, 'utf8');
+    if (!content.includes('Compare to Similar Ingredients')) {
+      unenhanced.push(dir);
+    }
+  }
+});
+
+unenhanced.sort();
+
+console.log('Batch 24:');
+unenhanced.slice(48, 56).forEach((ing, idx) => console.log(`${idx + 1}. ${ing}`));
+console.log('\nBatch 25:');
+unenhanced.slice(56, 64).forEach((ing, idx) => console.log(`${idx + 1}. ${ing}`));
+console.log('\nBatch 26:');
+unenhanced.slice(64, 72).forEach((ing, idx) => console.log(`${idx + 1}. ${ing}`));
+console.log('\nAll 24:', unenhanced.slice(48, 72).join(', '));
