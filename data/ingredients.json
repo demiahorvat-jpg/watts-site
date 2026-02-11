@@ -17165,7 +17165,19 @@
           "difference": "Pork liver flavor is a specific liver-derived palatant, while natural flavor is a vague, non-transparent term that could include any plant or animal source."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "chicken-liver-flavor",
+            "difference": "Both are natural meat-based flavoring agents from organ meats. Pork liver flavor is from pork organs while chicken liver flavor is from poultry, each providing species-specific palatability."
+          },
+          {
+            "ingredient": "natural-flavor",
+            "difference": "Pork liver flavor is a specific organ-based flavoring that's transparent about its source, while 'natural flavor' is a vague umbrella term that could be from any plant or animal source."
+          }
+        ]
+      }
     },
     {
       "name": "Pork Meal",
@@ -17341,7 +17353,19 @@
           "difference": "Potassium chloride is a potassium source, while salt (sodium chloride) is a sodium source. Potassium chloride can partially replace salt in reduced-sodium diets."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "potassium-citrate",
+            "difference": "Both provide potassium. Potassium chloride is a salt form used as an electrolyte and sodium substitute, while potassium citrate is an alkalizing form that also supports urinary health."
+          },
+          {
+            "ingredient": "sodium-chloride",
+            "difference": "Both are chloride salts for electrolyte balance. Potassium chloride provides potassium for muscle/heart function, while sodium chloride provides sodium for nerve signals and hydration."
+          }
+        ]
+      }
     },
     {
       "name": "Potassium Citrate",
@@ -17377,7 +17401,19 @@
           "difference": "Both are alkalizing citrate salts. Potassium citrate provides potassium, while sodium citrate provides sodium. Potassium citrate is preferred for urinary stone prevention."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "potassium-chloride",
+            "difference": "Both provide potassium. Potassium citrate is an alkalizing form that helps prevent urinary crystals and stones, while potassium chloride is a neutral salt form used as an electrolyte."
+          },
+          {
+            "ingredient": "calcium-citrate",
+            "difference": "Both are citrate salts that alkalinize urine. Potassium citrate provides potassium for heart/muscle function, while calcium citrate provides calcium for bones and teeth."
+          }
+        ]
+      }
     },
     {
       "name": "Potassium Iodide",
@@ -17413,7 +17449,19 @@
           "difference": "Potassium iodide provides iodine for thyroid hormone production, while sodium selenite provides selenium for thyroid enzyme function. Both support thyroid health but different minerals."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "calcium-iodate",
+            "difference": "Both provide iodine for thyroid function. Potassium iodide is a stable, well-absorbed salt form, while calcium iodate is a more oxidized form that also provides calcium."
+          },
+          {
+            "ingredient": "sodium-selenite",
+            "difference": "Both are trace mineral salts for thyroid health. Potassium iodide provides iodine for thyroid hormone production, while sodium selenite provides selenium for thyroid hormone activation."
+          }
+        ]
+      }
     },
     {
       "name": "Potassium Sorbate",
@@ -17485,7 +17533,19 @@
           "difference": "Potato starch is isolated starch (pure carbohydrate), while sweet potato is whole food with fiber, vitamins, and complex carbs. Sweet potato is far more nutritious."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "tapioca-starch",
+            "difference": "Both are grain-free, bland starches used as carbohydrate sources and binders. Potato starch is from potatoes and slightly higher in resistant starch, while tapioca starch is from cassava root."
+          },
+          {
+            "ingredient": "corn-starch",
+            "difference": "Both are refined starches used for binding and carbohydrates. Potato starch is grain-free and hypoallergenic, while corn starch is grain-based and a potential allergen for sensitive dogs."
+          }
+        ]
+      }
     },
     {
       "name": "Potatoes",
@@ -17799,7 +17859,19 @@
           "difference": "Both are concentrated palatants. Poultry digest is enzymatically broken-down poultry tissue, while chicken liver flavor is specifically from liver. Both enhance taste."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "chicken-digest",
+            "difference": "Both are enzymatically hydrolyzed animal proteins used as palatability enhancers. Poultry digest can be from any poultry (chicken, turkey, duck), while chicken digest is specifically from chicken."
+          },
+          {
+            "ingredient": "animal-digest",
+            "difference": "Poultry digest is specifically from poultry tissue, which is more transparent, while 'animal digest' is a vague term that could be from any mammal or poultry source."
+          }
+        ]
+      }
     },
     {
       "name": "Poultry Fat",
@@ -17840,7 +17912,19 @@
           "difference": "Poultry fat is rich in omega-6 fatty acids, while fish oil is rich in omega-3s (EPA/DHA). Fish oil provides anti-inflammatory benefits poultry fat lacks."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "chicken-fat",
+            "difference": "Both are rendered poultry fat sources rich in omega-6 fatty acids. Poultry fat can be from any poultry (chicken, turkey, duck), while chicken fat is specifically from chicken."
+          },
+          {
+            "ingredient": "pork-fat",
+            "difference": "Both are rendered animal fats for energy and palatability. Poultry fat is from birds and higher in omega-6, while pork fat is from pigs and higher in monounsaturated fats."
+          }
+        ]
+      }
     },
     {
       "name": "Probiotics",
@@ -18061,7 +18145,19 @@
           "difference": "Propylene glycol is considered safer than ethylene glycol (antifreeze, highly toxic). However, propylene glycol is still controversial and banned in cat food due to health concerns."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "glycerin",
+            "difference": "Both are humectants used to retain moisture in semi-moist foods. Propylene glycol is a synthetic diol that's controversial in pet food, while glycerin (glycerol) is a natural sugar alcohol considered safer."
+          },
+          {
+            "ingredient": "sorbitol",
+            "difference": "Both are humectants for moisture retention. Propylene glycol is a synthetic chemical humectant, while sorbitol is a natural sugar alcohol from fruits with fewer safety concerns."
+          }
+        ]
+      }
     },
     {
       "name": "Protease",
@@ -18102,7 +18198,19 @@
           "difference": "Protease breaks down proteins, while lipase breaks down fats. Both are digestive enzymes that enhance nutrient absorption."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "bromelain",
+            "difference": "Both are protein-digesting enzymes. Protease is a general term for any protein-breaking enzyme (often microbial), while bromelain is a specific protease from pineapple with anti-inflammatory properties."
+          },
+          {
+            "ingredient": "papain",
+            "difference": "Both are proteolytic enzymes that break down proteins. Protease is a broad category (often from bacteria/fungi), while papain is a specific plant protease from papaya."
+          }
+        ]
+      }
     },
     {
       "name": "Psyllium Husk",
@@ -18142,7 +18250,19 @@
           "difference": "Psyllium husk is soluble fiber that absorbs water and forms gel, while cellulose is insoluble fiber that adds bulk. Psyllium is more effective for digestive regulation."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "beet-pulp",
+            "difference": "Both are fiber sources for digestive health. Psyllium husk is 70% soluble fiber that forms a gel for stool consistency, while beet pulp is mixed fiber (30% soluble) used as a prebiotic."
+          },
+          {
+            "ingredient": "pumpkin",
+            "difference": "Both are used for stool consistency. Psyllium husk is a concentrated fiber supplement (80% fiber) that's stronger for diarrhea/constipation, while pumpkin is whole food fiber (3% fiber) with nutrients."
+          }
+        ]
+      }
     },
     {
       "name": "Pumpkin",
@@ -18250,7 +18370,19 @@
           "difference": "Pumpkin seeds provide zinc and prostate/urinary benefits, while chia seeds are rich in omega-3s and fiber. Both are superfoods with distinct nutrient profiles."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "flaxseed",
+            "difference": "Both are nutrient-dense seeds. Pumpkin seeds provide zinc, magnesium, and compounds that support urinary/prostate health, while flaxseeds are omega-3 powerhouses for skin and inflammation."
+          },
+          {
+            "ingredient": "sunflower-seed",
+            "difference": "Both are nutritious seeds high in healthy fats. Pumpkin seeds are richer in zinc and amino acids for prostate health, while sunflower seeds are higher in vitamin E for antioxidant protection."
+          }
+        ]
+      }
     },
     {
       "name": "Pyridoxine Hydrochloride",
@@ -18290,7 +18422,19 @@
           "difference": "Pyridoxine hydrochloride is vitamin B6 (amino acid and neurotransmitter metabolism), while riboflavin is vitamin B2 (energy production). Both are essential B vitamins."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "pyridoxine",
+            "difference": "These are essentially the same—pyridoxine hydrochloride is just the hydrochloride salt form of pyridoxine (vitamin B6), used because it's more stable and water-soluble."
+          },
+          {
+            "ingredient": "riboflavin",
+            "difference": "Both are B vitamins. Pyridoxine hydrochloride is vitamin B6 for amino acid metabolism and neurotransmitters, while riboflavin is vitamin B2 for energy production and antioxidant function."
+          }
+        ]
+      }
     },
     {
       "name": "Quercetin",
@@ -18331,7 +18475,19 @@
           "difference": "Quercetin is a plant flavonoid with antihistamine and anti-inflammatory properties, while vitamin C is a water-soluble antioxidant. Both are antioxidants but different structures."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "rutin",
+            "difference": "Both are plant flavonoids with antioxidant and anti-inflammatory properties. Quercetin is the more researched, bioavailable form, while rutin is a glycoside of quercetin that converts to quercetin in the body."
+          },
+          {
+            "ingredient": "curcumin",
+            "difference": "Both are plant polyphenols used for anti-inflammatory benefits. Quercetin is a flavonoid from fruits/vegetables for allergies and inflammation, while curcumin is from turmeric root for joint inflammation."
+          }
+        ]
+      }
     },
     {
       "name": "Red 40",
@@ -20260,7 +20416,19 @@
           "difference": "Sodium benzoate is a synthetic preservative preventing microbial growth, while mixed tocopherols are natural vitamin E compounds preventing fat oxidation. Different preservation methods."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "potassium-sorbate",
+            "difference": "Both are synthetic preservatives that prevent mold and yeast growth. Sodium benzoate is a salt of benzoic acid, while potassium sorbate is a salt of sorbic acid—both are controversial for long-term use."
+          },
+          {
+            "ingredient": "sorbic-acid",
+            "difference": "Both are antimicrobial preservatives. Sodium benzoate is the sodium salt of benzoic acid, while sorbic acid is a natural organic acid—both prevent mold but sodium benzoate is more controversial."
+          }
+        ]
+      }
     },
     {
       "name": "Sodium Hexametaphosphate",
@@ -20297,7 +20465,19 @@
           "difference": "Sodium hexametaphosphate is a long-chain polyphosphate for tartar control, while sodium phosphate is simpler and primarily provides phosphorus. Different structures and functions."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "sodium-tripolyphosphate",
+            "difference": "Both are polyphosphates used for dental health. Sodium hexametaphosphate is a longer-chain phosphate that binds calcium in saliva to prevent tartar, while sodium tripolyphosphate is a shorter chain with similar function."
+          },
+          {
+            "ingredient": "tricalcium-phosphate",
+            "difference": "Both provide phosphorus. Sodium hexametaphosphate is a synthetic polyphosphate for dental tartar control, while tricalcium phosphate is a calcium-phosphorus mineral supplement for bones."
+          }
+        ]
+      }
     },
     {
       "name": "Sodium Propionate",
@@ -20332,7 +20512,19 @@
           "difference": "Both are propionate preservatives preventing mold. Sodium propionate provides sodium, while calcium propionate provides calcium. Same antimicrobial function."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "calcium-propionate",
+            "difference": "Both are propionate salts used as mold inhibitors. Sodium propionate provides sodium, while calcium propionate provides calcium—both prevent mold growth equally well."
+          },
+          {
+            "ingredient": "sorbic-acid",
+            "difference": "Both are preservatives that prevent mold and yeast. Sodium propionate is a salt of propionic acid (naturally in some dairy), while sorbic acid is an unsaturated fatty acid from berries."
+          }
+        ]
+      }
     },
     {
       "name": "Sodium Selenite",
@@ -20371,7 +20563,19 @@
           "difference": "Sodium selenite provides selenium (mineral cofactor for antioxidant enzymes), while vitamin E is a fat-soluble antioxidant. Both work synergistically as antioxidants."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "selenium-yeast",
+            "difference": "Both provide selenium for thyroid and antioxidant function. Sodium selenite is an inorganic salt form that's cheaper but potentially toxic in excess, while selenium yeast is organic, safer, and better absorbed."
+          },
+          {
+            "ingredient": "potassium-iodide",
+            "difference": "Both are trace mineral salts for thyroid health. Sodium selenite provides selenium for thyroid hormone activation and antioxidant function, while potassium iodide provides iodine for thyroid hormone production."
+          }
+        ]
+      }
     },
     {
       "name": "Sodium Tripolyphosphate",
@@ -20408,7 +20612,19 @@
           "difference": "Sodium tripolyphosphate chelates minerals to prevent tartar, while calcium phosphate provides calcium and phosphorus. Opposite functions—one binds minerals, one supplies them."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "sodium-hexametaphosphate",
+            "difference": "Both are polyphosphates for dental tartar control. Sodium tripolyphosphate is a shorter-chain phosphate that binds calcium in saliva, while sodium hexametaphosphate is a longer chain with similar tartar-preventing function."
+          },
+          {
+            "ingredient": "tetrasodium-pyrophosphate",
+            "difference": "Both are sodium phosphates used for dental health and as emulsifiers. Sodium tripolyphosphate is a longer chain (pentasodium) used primarily for tartar control, while tetrasodium pyrophosphate is shorter."
+          }
+        ]
+      }
     },
     {
       "name": "Sorbic Acid",
@@ -20443,7 +20659,19 @@
           "difference": "Sorbic acid is a synthetic antimicrobial preservative, while mixed tocopherols are natural vitamin E antioxidants preventing fat oxidation. Different preservation targets."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "potassium-sorbate",
+            "difference": "These are closely related—potassium sorbate is the potassium salt of sorbic acid. Both prevent mold and yeast equally well, with potassium sorbate being more water-soluble."
+          },
+          {
+            "ingredient": "sodium-benzoate",
+            "difference": "Both are antimicrobial preservatives that prevent mold and yeast. Sorbic acid is a natural unsaturated fatty acid from berries, while sodium benzoate is a synthetic salt of benzoic acid."
+          }
+        ]
+      }
     },
     {
       "name": "Sorghum",
@@ -20484,7 +20712,19 @@
           "difference": "Sorghum is a nutrient-dense ancient grain with antioxidants and gluten-free, while corn is more allergenic, lower in nutrients, and often GMO. Sorghum is a premium alternative."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "millet",
+            "difference": "Both are ancient, gluten-free grains. Sorghum is slightly higher in protein and resistant starch, while millet is richer in B vitamins and more easily digestible."
+          },
+          {
+            "ingredient": "brown-rice",
+            "difference": "Both are whole grains. Sorghum is higher in protein and antioxidants with a lower glycemic index, while brown rice is more digestible and a more familiar grain option."
+          }
+        ]
+      }
     },
     {
       "name": "Sorghum Flour",
@@ -20520,7 +20760,19 @@
           "difference": "Sorghum flour is completely gluten-free, while oat flour may have gluten cross-contamination. Sorghum has more antioxidants; oats have more beta-glucan fiber."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "rice-flour",
+            "difference": "Both are gluten-free grain flours. Sorghum flour is higher in protein and fiber with a mild flavor, while rice flour is blander, more easily digested, and more common in sensitive stomach formulas."
+          },
+          {
+            "ingredient": "oat-flour",
+            "difference": "Both are grain flours. Sorghum flour is gluten-free with more resistant starch, while oat flour contains beta-glucans for heart health but may contain trace gluten."
+          }
+        ]
+      }
     },
     {
       "name": "Soy Hulls",
@@ -20559,7 +20811,19 @@
           "difference": "Soy hulls are plant fiber from soybean processing, while cellulose is purified insoluble fiber. Soy hulls are cheaper but less refined; cellulose is cleaner filler."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "oat-hulls",
+            "difference": "Both are fibrous grain by-products used as cheap filler fiber. Soy hulls are from soybean processing and moderately fermentable, while oat hulls are from oat processing and largely indigestible."
+          },
+          {
+            "ingredient": "beet-pulp",
+            "difference": "Both are fiber sources. Soy hulls are a low-quality, indigestible filler by-product with minimal nutritional value, while beet pulp is a moderate-quality prebiotic fiber that supports gut health."
+          }
+        ]
+      }
     },
     {
       "name": "Soy Protein Concentrate",
@@ -20599,7 +20863,19 @@
           "difference": "Both are plant proteins. Soy protein concentrate is allergenic and estrogenic (phytoestrogens), while pea protein is hypoallergenic and doesn't affect hormones. Pea is preferred."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "soy-protein-isolate",
+            "difference": "Both are concentrated soy proteins. Soy protein concentrate is 70% protein with some fiber and carbs retained, while soy protein isolate is 90%+ protein with almost everything else removed."
+          },
+          {
+            "ingredient": "wheat-gluten",
+            "difference": "Both are concentrated plant proteins used as protein boosters. Soy protein concentrate is 70% protein from soybeans (allergen for some), while wheat gluten is 75-80% protein from wheat (allergen for many)."
+          }
+        ]
+      }
     },
     {
       "name": "Soy Protein Isolate",
@@ -20638,7 +20914,19 @@
           "difference": "Soy protein isolate is plant-based and allergenic, while whey protein is animal-based (dairy) with better amino acid profile and digestibility. Whey is superior."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "soy-protein-concentrate",
+            "difference": "Both are concentrated soy proteins. Soy protein isolate is 90%+ protein with fiber and carbs almost entirely removed, while soy protein concentrate is 70% protein with some fiber retained."
+          },
+          {
+            "ingredient": "pea-protein-isolate",
+            "difference": "Both are highly refined plant protein isolates (90%+ protein). Soy protein isolate is from soybeans and a complete protein but allergenic, while pea protein isolate is from yellow peas and hypoallergenic."
+          }
+        ]
+      }
     },
     {
       "name": "Soybean Meal",
@@ -20775,7 +21063,19 @@
           "difference": "Both are omega-6 rich. Soybean oil is plant-based and highly processed, while chicken fat is animal-based and less processed. Neither provides omega-3s."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "canola-oil",
+            "difference": "Both are common plant oils high in omega-6 fatty acids. Soybean oil is higher in omega-6 (50% vs 20%) and more inflammatory, while canola oil has better omega-6:omega-3 ratio (2:1 vs 7:1)."
+          },
+          {
+            "ingredient": "sunflower-oil",
+            "difference": "Both are omega-6 rich plant oils used for energy. Soybean oil is slightly lower in omega-6 (50% vs 60%) and contains some omega-3, while sunflower oil is almost pure omega-6 with more vitamin E."
+          }
+        ]
+      }
     },
     {
       "name": "Spinach",
@@ -20878,7 +21178,19 @@
           "difference": "Spirulina is concentrated algae protein (60-70% protein) with phycocyanin, while spinach is leafy green with vitamins and minerals. Spirulina is more protein-dense."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "chlorella",
+            "difference": "Both are nutrient-dense blue-green algae. Spirulina is higher in protein (60-70%) and easier to digest, while chlorella has a tougher cell wall but is richer in chlorophyll and detoxifying properties."
+          },
+          {
+            "ingredient": "kelp",
+            "difference": "Both are algae used as superfoods. Spirulina is a freshwater blue-green algae rich in protein and phycocyanin antioxidants, while kelp is a saltwater brown algae rich in iodine for thyroid health."
+          }
+        ]
+      }
     },
     {
       "name": "Split Peas",
@@ -21020,7 +21332,19 @@
           "difference": "Sunflower lecithin provides choline naturally along with emulsifying properties, while choline chloride is synthetic choline without emulsifying benefits."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "soy-lecithin",
+            "difference": "Both are lecithin emulsifiers rich in phospholipids. Sunflower lecithin is from sunflower seeds and allergen-free, while soy lecithin is from soybeans and a potential allergen for sensitive dogs."
+          },
+          {
+            "ingredient": "egg-lecithin",
+            "difference": "Both are natural lecithin sources rich in phosphatidylcholine. Sunflower lecithin is plant-based from sunflower seeds, while egg lecithin is animal-based from egg yolks with higher choline content."
+          }
+        ]
+      }
     },
     {
       "name": "Sunflower Oil",
@@ -21059,7 +21383,19 @@
           "difference": "Sunflower oil is omega-6 dominant, while flaxseed oil is omega-3 rich (ALA). Flaxseed provides better fatty acid balance, though fish oil is ideal."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "safflower-oil",
+            "difference": "Both are omega-6 rich plant oils for energy and coat health. Sunflower oil is slightly higher in vitamin E and oleic acid, while safflower oil has a milder flavor and similar fatty acid profile."
+          },
+          {
+            "ingredient": "soybean-oil",
+            "difference": "Both are common plant oils high in omega-6 fatty acids. Sunflower oil is higher in omega-6 (60% vs 50%) with more vitamin E but no omega-3, while soybean oil contains small amounts of omega-3."
+          }
+        ]
+      }
     },
     {
       "name": "Sweet Potato Fiber",
@@ -21126,7 +21462,19 @@
           "ingredient": "cellulose",
           "difference": "Sweet potato fiber retains some nutrients from sweet potatoes, while cellulose is purified insoluble fiber with zero nutrition. Sweet potato fiber is slightly more valuable."
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "pumpkin",
+            "difference": "Both are root vegetable fiber sources. Sweet potato fiber is an isolated fiber concentrate (higher fiber %), while pumpkin is whole food fiber with more moisture and nutrients but lower fiber concentration."
+          },
+          {
+            "ingredient": "beet-pulp",
+            "difference": "Both are prebiotic fiber sources. Sweet potato fiber is from a whole food vegetable with mixed fiber types, while beet pulp is a by-product of sugar processing with slightly more fermentable fiber."
+          }
+        ]
+      }
     },
     {
       "name": "Sweet Potatoes",
@@ -21438,7 +21786,19 @@
           "difference": "Tapioca is isolated starch from cassava root (pure carb), while cassava flour is whole root (includes fiber). Cassava flour is more nutritious."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "potato-starch",
+            "difference": "Both are grain-free, bland starches used as carbohydrate sources and binders. Tapioca starch is from cassava root and easily digested, while potato starch is from potatoes with more resistant starch."
+          },
+          {
+            "ingredient": "arrowroot",
+            "difference": "Both are grain-free root starches. Tapioca starch is from cassava root with neutral flavor, while arrowroot is from arrowroot tubers—they're nearly identical in function and digestibility."
+          }
+        ]
+      }
     },
     {
       "name": "Taurine",
@@ -21657,7 +22017,19 @@
           "difference": "Thiamine hydrochloride is vitamin B1 (carbohydrate metabolism), while riboflavin is vitamin B2 (energy production). Both are essential B vitamins."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "thiamine-mononitrate",
+            "difference": "Both are synthetic forms of thiamine (vitamin B1). Thiamine hydrochloride is the hydrochloride salt (more common, slightly more bioavailable), while thiamine mononitrate is the nitrate salt (more stable)."
+          },
+          {
+            "ingredient": "riboflavin",
+            "difference": "Both are B vitamins. Thiamine hydrochloride is vitamin B1 for energy metabolism and nerve function, while riboflavin is vitamin B2 for energy production and antioxidant function."
+          }
+        ]
+      }
     },
     {
       "name": "Thiamine Mononitrate",
@@ -21697,7 +22069,19 @@
           "difference": "Thiamine mononitrate is vitamin B1 (energy metabolism), while folic acid is vitamin B9 (cell division and DNA synthesis). Both are essential B vitamins."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "thiamine-hydrochloride",
+            "difference": "Both are synthetic forms of thiamine (vitamin B1). Thiamine mononitrate is the nitrate salt (more stable in storage), while thiamine hydrochloride is the hydrochloride salt (slightly more bioavailable)."
+          },
+          {
+            "ingredient": "niacin",
+            "difference": "Both are B vitamins for energy metabolism. Thiamine mononitrate is vitamin B1 for carbohydrate metabolism and nerve function, while niacin is vitamin B3 for cellular energy and DNA repair."
+          }
+        ]
+      }
     },
     {
       "name": "Tomatoes",
@@ -21803,7 +22187,19 @@
           "difference": "Tricalcium phosphate has the highest calcium ratio of the three calcium phosphates, while monocalcium phosphate has the highest phosphorus. Different calcium-to-phosphorus ratios."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "dicalcium-phosphate",
+            "difference": "Both are calcium-phosphorus supplements. Tricalcium phosphate is 39% calcium with 3:1 calcium to phosphorus ratio, while dicalcium phosphate is 29% calcium with 2:1 ratio—both used for bone health."
+          },
+          {
+            "ingredient": "calcium-carbonate",
+            "difference": "Both provide calcium for bones. Tricalcium phosphate provides both calcium and phosphorus (39% calcium, 20% phosphorus), while calcium carbonate is 40% calcium with no phosphorus."
+          }
+        ]
+      }
     },
     {
       "name": "Tripe",
@@ -21843,7 +22239,19 @@
           "difference": "Both are organ meats. Tripe offers digestive enzymes and probiotics from stomach lining, while kidney is rich in B vitamins and selenium. Tripe is unique for gut health."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "stomach",
+            "difference": "Tripe specifically refers to ruminant (cow, sheep, goat) stomach lining, which is the same as 'stomach' but from grazing animals. The terms are often interchangeable when referring to beef tripe."
+          },
+          {
+            "ingredient": "liver",
+            "difference": "Both are nutrient-dense organ meats. Tripe is stomach lining rich in digestive enzymes and probiotics, while liver is the detox organ packed with vitamin A, iron, and B vitamins."
+          }
+        ]
+      }
     },
     {
       "name": "Tryptophan",
@@ -21882,7 +22290,19 @@
           "difference": "Tryptophan is an amino acid that converts to serotonin via 5-HTP, while 5-HTP is the intermediate compound. 5-HTP acts faster but tryptophan is safer and natural."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "l-lysine",
+            "difference": "Both are essential amino acids added to balance protein. Tryptophan is for serotonin production and calming effects, while L-lysine supports immune function and collagen formation."
+          },
+          {
+            "ingredient": "dl-methionine",
+            "difference": "Both are amino acids for protein balance. Tryptophan is an essential amino acid for mood and sleep regulation, while DL-methionine is a sulfur amino acid for liver health and urinary acidification."
+          }
+        ]
+      }
     },
     {
       "name": "Tuna",
@@ -21923,7 +22343,19 @@
           "difference": "Tuna is an oily fish high in omega-3s, while whitefish is leaner with lower omega-3 content. Tuna has more mercury risk but better fatty acid profile."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "salmon",
+            "difference": "Both are oily fish rich in omega-3s. Tuna is leaner with more protein and selenium but higher mercury risk, while salmon is fattier with more omega-3s (EPA/DHA) and lower mercury."
+          },
+          {
+            "ingredient": "whitefish",
+            "difference": "Both are quality fish proteins. Tuna is a large, fatty fish high in protein and selenium but with mercury concerns, while whitefish is a mild, white-fleshed fish lower in omega-3s and safer from contaminants."
+          }
+        ]
+      }
     },
     {
       "name": "Turkey",
@@ -22140,7 +22572,19 @@
           "difference": "Turkey heart is poultry heart (leaner), while beef heart is red meat heart (fattier). Both are rich in taurine and CoQ10 but turkey is lower fat."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "chicken-heart",
+            "difference": "Both are nutrient-dense heart muscle organs. Turkey heart is from turkeys and slightly larger, while chicken heart is from chickens—both are excellent sources of taurine, CoQ10, and B vitamins."
+          },
+          {
+            "ingredient": "turkey-liver",
+            "difference": "Both are turkey organ meats. Turkey heart is muscle tissue rich in taurine and CoQ10 for heart health, while turkey liver is the detox organ packed with vitamin A, iron, and folate."
+          }
+        ]
+      }
     },
     {
       "name": "Turkey Liver",
@@ -22180,7 +22624,19 @@
           "difference": "Turkey liver is poultry liver (leaner), while beef liver is red meat liver (richer flavor, higher iron). Both are vitamin powerhouses."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "chicken-liver",
+            "difference": "Both are poultry liver organs. Turkey liver is from turkeys with similar nutrient density (vitamin A, iron, B vitamins), while chicken liver is from chickens—nutritionally nearly identical."
+          },
+          {
+            "ingredient": "turkey-heart",
+            "difference": "Both are turkey organ meats. Turkey liver is the detox organ packed with vitamin A, iron, and folate, while turkey heart is muscle tissue rich in taurine and CoQ10 for heart health."
+          }
+        ]
+      }
     },
     {
       "name": "Turkey Meal",
@@ -22460,7 +22916,19 @@
           "difference": "Valerian root promotes sleep by increasing GABA (natural sedative), while melatonin is a hormone regulating sleep-wake cycles. Different mechanisms for sleep support."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "chamomile",
+            "difference": "Both are calming herbs. Valerian root is a stronger sedative for anxiety and sleep (works on GABA receptors), while chamomile is a milder, gentler relaxant with anti-inflammatory properties."
+          },
+          {
+            "ingredient": "passionflower",
+            "difference": "Both are herbal sedatives for anxiety. Valerian root has a stronger sedative effect and earthier smell, while passionflower is gentler with additional pain-relieving properties."
+          }
+        ]
+      }
     },
     {
       "name": "Vegetable Juice for color",
@@ -22500,7 +22968,19 @@
           "difference": "Vegetable juice for color is non-transparent (unknown source), while carrot juice is specific and provides orange color plus beta-carotene. Carrot juice is clearer."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "beet-juice-color",
+            "difference": "Vegetable juice for color is a vague term that could be from any vegetable, while beet juice color specifically uses beets for red/pink coloring—both are natural but beet juice is more transparent."
+          },
+          {
+            "ingredient": "caramel-color",
+            "difference": "Vegetable juice for color is a natural plant-based colorant from vegetable extracts, while caramel color is made by heating sugars—both add color but caramel can contain contaminants like 4-MEI."
+          }
+        ]
+      }
     },
     {
       "name": "Vegetable Oil",
@@ -22536,7 +23016,19 @@
           "difference": "Vegetable oil is omega-6 rich (inflammatory), while fish oil is omega-3 rich (anti-inflammatory). Fish oil is vastly superior."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "soybean-oil",
+            "difference": "Vegetable oil is a vague term that's usually soybean oil or a blend of cheap oils. Soybean oil is specifically from soybeans—both are high in omega-6 but 'vegetable oil' is less transparent."
+          },
+          {
+            "ingredient": "canola-oil",
+            "difference": "Vegetable oil is a vague term (often soybean oil) with unknown omega-6:3 ratio, while canola oil is specific with a better omega-6:omega-3 ratio (2:1) and more transparency."
+          }
+        ]
+      }
     },
     {
       "name": "Vitamin A Acetate",
@@ -22572,7 +23064,19 @@
           "difference": "Vitamin A acetate is preformed vitamin A (direct), while beta-carotene is a provitamin A carotenoid (converted to vitamin A). Acetate is more potent."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "vitamin-a-supplement",
+            "difference": "These are often the same—vitamin A acetate is the specific acetate ester form of vitamin A, while 'vitamin A supplement' is a vague term that could be acetate, palmitate, or other forms."
+          },
+          {
+            "ingredient": "beta-carotene",
+            "difference": "Vitamin A acetate is preformed vitamin A (retinyl acetate) that's directly usable, while beta-carotene is a provitamin A carotenoid that must be converted to active vitamin A in the body."
+          }
+        ]
+      }
     },
     {
       "name": "Vitamin A Supplement",
@@ -22613,7 +23117,19 @@
           "difference": "Vitamin A supplement is synthetic vitamin A added to fortify food, while liver is a natural whole food exceptionally high in vitamin A. Liver is the superior source."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "vitamin-a-acetate",
+            "difference": "Vitamin A supplement is a vague term that could be acetate, palmitate, or other forms, while vitamin A acetate is specifically the acetate ester form—they're often the same."
+          },
+          {
+            "ingredient": "retinyl-palmitate",
+            "difference": "Both are preformed vitamin A forms. 'Vitamin A supplement' is vague (could be any form), while retinyl palmitate is specifically the palmitate ester form—similar bioavailability."
+          }
+        ]
+      }
     },
     {
       "name": "Vitamin B12 Supplement",
@@ -22653,7 +23169,19 @@
           "difference": "Vitamin B12 supplement is synthetic B12 added to food, while liver is a natural whole food extraordinarily rich in B12. Liver is the superior, natural source."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "cyanocobalamin",
+            "difference": "These are usually the same—cyanocobalamin is the specific synthetic form of vitamin B12, while 'vitamin B12 supplement' is a vague term that's typically cyanocobalamin (rarely methylcobalamin)."
+          },
+          {
+            "ingredient": "folic-acid",
+            "difference": "Both are B vitamins. Vitamin B12 supplement is for red blood cell formation and nerve function, while folic acid is vitamin B9 for DNA synthesis and cell division."
+          }
+        ]
+      }
     },
     {
       "name": "Vitamin D2 Supplement",
@@ -22689,7 +23217,19 @@
           "difference": "Vitamin D2 supplement is specifically ergocalciferol (less effective), while generic 'vitamin D supplement' could be D2 or D3. D3 is always preferred."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "vitamin-d3-supplement",
+            "difference": "Both are vitamin D forms. Vitamin D2 (ergocalciferol) is plant-derived and less effective, while vitamin D3 (cholecalciferol) is animal-derived and 2-3x more potent at raising vitamin D levels."
+          },
+          {
+            "ingredient": "cholecalciferol",
+            "difference": "Vitamin D2 supplement (ergocalciferol) is plant-derived and less bioavailable, while cholecalciferol is vitamin D3 from animal sources—D3 is superior for raising vitamin D status in dogs."
+          }
+        ]
+      }
     },
     {
       "name": "Vitamin D3 Supplement",
@@ -22758,7 +23298,19 @@
           "ingredient": "calcium-carbonate",
           "difference": "Vitamin D3 supports calcium absorption and bone health, while calcium carbonate provides the calcium itself. They work synergistically for skeletal health."
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "vitamin-d2-supplement",
+            "difference": "Both are vitamin D forms. Vitamin D3 (cholecalciferol) is animal-derived and 2-3x more effective at raising vitamin D levels, while vitamin D2 (ergocalciferol) is plant-derived and less potent."
+          },
+          {
+            "ingredient": "cholecalciferol",
+            "difference": "These are the same—cholecalciferol is the scientific name for vitamin D3, while 'vitamin D3 supplement' is the common name. Both refer to the animal-derived form of vitamin D."
+          }
+        ]
+      }
     },
     {
       "name": "Vitamin E Acetate",
@@ -22794,7 +23346,19 @@
           "difference": "Both are synthetic vitamin E. Vitamin E acetate is an acetate ester, while vitamin E succinate is a succinate ester. Both are stable and bioavailable."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "vitamin-e-supplement",
+            "difference": "Vitamin E acetate is specifically the acetate ester form (dl-alpha-tocopheryl acetate or d-alpha-tocopheryl acetate), while 'vitamin E supplement' is vague and could be acetate, succinate, or mixed tocopherols."
+          },
+          {
+            "ingredient": "mixed-tocopherols",
+            "difference": "Vitamin E acetate is a single synthetic form (alpha-tocopheryl acetate), while mixed tocopherols are natural vitamin E from plant oils (alpha, beta, gamma, delta) with broader antioxidant activity."
+          }
+        ]
+      }
     },
     {
       "name": "Vitamin E Succinate",
@@ -22830,7 +23394,19 @@
           "difference": "Vitamin E succinate is a specific synthetic form, while vitamin E supplement is vague and could include acetate, succinate, or natural forms."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "vitamin-e-acetate",
+            "difference": "Both are vitamin E esters. Vitamin E succinate is the succinate ester (d-alpha-tocopheryl succinate) that's more stable and water-soluble, while vitamin E acetate is the acetate ester—both are effective."
+          },
+          {
+            "ingredient": "vitamin-e-supplement",
+            "difference": "Vitamin E succinate is specifically the succinate ester form of vitamin E, while 'vitamin E supplement' is a vague term that could be succinate, acetate, or mixed tocopherols."
+          }
+        ]
+      }
     },
     {
       "name": "Vitamin E Supplement",
@@ -22896,7 +23472,19 @@
           "ingredient": "selenium",
           "difference": "Vitamin E is a fat-soluble antioxidant protecting cell membranes, while selenium is a mineral cofactor for antioxidant enzymes. They work synergistically."
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "vitamin-e-acetate",
+            "difference": "Vitamin E supplement is a vague term that could be acetate, succinate, or mixed tocopherols, while vitamin E acetate is specifically the acetate ester form—often they're the same."
+          },
+          {
+            "ingredient": "mixed-tocopherols",
+            "difference": "Vitamin E supplement is vague (could be any form), while mixed tocopherols are natural vitamin E from plant oils (alpha, beta, gamma, delta) with broader antioxidant activity than synthetic forms."
+          }
+        ]
+      }
     },
     {
       "name": "Vitamin K1",
@@ -22937,7 +23525,19 @@
           "difference": "Vitamin K1 is specifically phylloquinone (natural, plant-based), while vitamin K supplement is vague and could include K1, K2, or synthetic K3."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "vitamin-k2",
+            "difference": "Both are vitamin K forms for blood clotting. Vitamin K1 (phylloquinone) is from plants and primarily for clotting factors, while vitamin K2 (menaquinone) is from animal/fermented foods for bone and heart health."
+          },
+          {
+            "ingredient": "menadione",
+            "difference": "Vitamin K1 (phylloquinone) is natural from plants and safe, while menadione is synthetic vitamin K3 that's toxic and banned in many countries—K1 is far superior."
+          }
+        ]
+      }
     },
     {
       "name": "Watermelon",
@@ -22972,7 +23572,19 @@
           "difference": "Watermelon is hydrating with lycopene and low fiber, while pumpkin is fiber-rich for digestive regulation and high in beta-carotene. Different purposes."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "cantaloupe",
+            "difference": "Both are hydrating melons. Watermelon is 92% water with lycopene antioxidant and citrulline for circulation, while cantaloupe is 90% water with more vitamin A and beta-carotene."
+          },
+          {
+            "ingredient": "cucumber",
+            "difference": "Both are very hydrating foods (90%+ water). Watermelon is a sweet fruit with lycopene and natural sugars, while cucumber is a mild vegetable with almost no sugar and more silica for skin."
+          }
+        ]
+      }
     },
     {
       "name": "Wheat",
@@ -23189,7 +23801,19 @@
           "difference": "Wheat bran is natural grain fiber with some nutrients, while cellulose is purified insoluble fiber with zero nutrition. Wheat bran is slightly more valuable."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "rice-bran",
+            "difference": "Both are grain brans (outer layers). Wheat bran is the outer layer of wheat with mostly insoluble fiber, while rice bran is from rice with more fat, antioxidants, and mixed fiber types."
+          },
+          {
+            "ingredient": "oat-bran",
+            "difference": "Both are grain brans. Wheat bran is mostly insoluble fiber (good for constipation), while oat bran is higher in soluble beta-glucan fiber for cholesterol and blood sugar control."
+          }
+        ]
+      }
     },
     {
       "name": "Wheat Flour",
@@ -23229,7 +23853,19 @@
           "difference": "Wheat flour contains gluten and is more allergenic, while oat flour is naturally gluten-free (but may have cross-contamination) and higher in beta-glucan fiber."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "whole-wheat-flour",
+            "difference": "Wheat flour is refined (white flour) with bran and germ removed, while whole wheat flour includes all parts of the grain—whole wheat is more nutritious with more fiber, vitamins, and minerals."
+          },
+          {
+            "ingredient": "rice-flour",
+            "difference": "Both are grain flours. Wheat flour contains gluten and is a common allergen, while rice flour is gluten-free, blander, and more easily digested by sensitive dogs."
+          }
+        ]
+      }
     },
     {
       "name": "Wheat Germ Meal",
@@ -23265,7 +23901,19 @@
           "difference": "Wheat germ meal is the concentrated embryo (most nutritious wheat part), while wheat flour is refined endosperm (mostly starch). Germ is nutrient-dense."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "wheat-bran",
+            "difference": "Both are wheat by-products. Wheat germ meal is from the embryo (germ) and nutrient-dense with vitamin E, B vitamins, and healthy fats, while wheat bran is the outer hull with mostly insoluble fiber."
+          },
+          {
+            "ingredient": "rice-bran",
+            "difference": "Both are grain by-products. Wheat germ meal is the wheat embryo rich in vitamin E and protein, while rice bran is the outer layer of rice with more fiber and gamma-oryzanol antioxidants."
+          }
+        ]
+      }
     },
     {
       "name": "Wheat Gluten",
@@ -23489,7 +24137,19 @@
           "difference": "Whey powder is dairy-based protein, while egg powder is egg-based protein. Both are high-quality proteins; egg is hypoallergenic for lactose-intolerant dogs."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "milk-powder",
+            "difference": "Both are dairy products. Whey powder is the liquid by-product of cheesemaking (high in lactose and protein), while milk powder is dehydrated whole milk with all components—both can cause lactose intolerance."
+          },
+          {
+            "ingredient": "casein",
+            "difference": "Both are dairy proteins. Whey powder is the fast-digesting liquid fraction of milk (20% of milk protein), while casein is the slow-digesting solid curds (80% of milk protein)."
+          }
+        ]
+      }
     },
     {
       "name": "White Distilled Vinegar",
@@ -23530,7 +24190,19 @@
           "difference": "White distilled vinegar provides acetic acid (sharper preservative), while lactic acid is milder and from fermentation. Both preserve and acidify."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "apple-cider-vinegar",
+            "difference": "Both are vinegars (acetic acid). White distilled vinegar is made from grain alcohol and neutral in flavor, while apple cider vinegar is from fermented apples with more nutrients and prebiotic benefits."
+          },
+          {
+            "ingredient": "citric-acid",
+            "difference": "Both are acidulants for pH control and preservation. White distilled vinegar is acetic acid from fermentation with antimicrobial properties, while citric acid is from citrus/fermentation with antioxidant properties."
+          }
+        ]
+      }
     },
     {
       "name": "Whitefish",
@@ -23674,7 +24346,19 @@
           "difference": "Both are crustacean meals. Krill is richer in omega-3s and astaxanthin (antioxidant), while shrimp is higher in protein and cholesterol."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "fish-meal",
+            "difference": "Both are marine animal meals. Whole Antarctic krill meal is from tiny crustaceans rich in omega-3s and astaxanthin (more sustainable), while fish meal is from whole fish with higher protein but mercury concerns."
+          },
+          {
+            "ingredient": "salmon-meal",
+            "difference": "Both are omega-3 rich marine meals. Whole Antarctic krill meal is from tiny crustaceans with astaxanthin antioxidant and sustainability, while salmon meal is from fish with more protein and slightly different omega-3 profile."
+          }
+        ]
+      }
     },
     {
       "name": "Withania Somnifera",
@@ -23717,7 +24401,19 @@
           "difference": "Withania somnifera is an adaptogen supporting stress resilience long-term, while valerian root is a sedative for immediate calming. Different mechanisms."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "ashwagandha",
+            "difference": "These are the same—Withania somnifera is the scientific name for ashwagandha. Both refer to the adaptogenic herb used for stress, anxiety, and immune support."
+          },
+          {
+            "ingredient": "rhodiola",
+            "difference": "Both are adaptogenic herbs for stress. Withania somnifera (ashwagandha) is calming and supports thyroid/immune function, while rhodiola is more stimulating for energy and mental performance."
+          }
+        ]
+      }
     },
     {
       "name": "Xanthan Gum",
@@ -23908,7 +24604,19 @@
           "difference": "Yeast beta-glucans support immune function, while mannanoligosaccharides (MOS) bind pathogens in the gut. Both from yeast but different functions."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "beta-glucans",
+            "difference": "Yeast beta-glucans are specifically from yeast cell walls (1,3/1,6-beta-glucans), while 'beta-glucans' is a vague term that could be from yeast, mushrooms, or oats—yeast form is best for immune support."
+          },
+          {
+            "ingredient": "dried-yeast",
+            "difference": "Yeast beta-glucans are isolated 1,3/1,6-beta-glucans from yeast cell walls concentrated for immune benefits, while dried yeast is whole inactive yeast with beta-glucans plus B vitamins and protein."
+          }
+        ]
+      }
     },
     {
       "name": "Yeast Fermentate",
@@ -23948,7 +24656,19 @@
           "difference": "Yeast fermentate contains metabolites from fermentation (prebiotics, enzymes), while probiotics are live beneficial bacteria. Different gut health mechanisms."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "dried-yeast",
+            "difference": "Yeast fermentate is the fermented metabolite extract of yeast (what yeast produces during fermentation), while dried yeast is the whole inactive yeast cells themselves—fermentate has more postbiotic compounds."
+          },
+          {
+            "ingredient": "brewers-dried-yeast",
+            "difference": "Yeast fermentate is the liquid extract from yeast fermentation with postbiotic metabolites, while brewers dried yeast is the whole inactive yeast cells from brewing with more B vitamins and protein."
+          }
+        ]
+      }
     },
     {
       "name": "Yellow 5",
@@ -24239,7 +24959,19 @@
           "difference": "Both are legumes high in plant protein. Yellow peas are higher in carbs and starchier, while lentils are higher in fiber and iron. Both are grain-free."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "green-peas",
+            "difference": "Both are garden peas (Pisum sativum). Yellow peas are split mature peas with slightly more starch, while green peas are harvested earlier with more chlorophyll—nutritionally nearly identical."
+          },
+          {
+            "ingredient": "chickpeas",
+            "difference": "Both are legumes. Yellow peas are smaller with more protein (25% vs 20%) and less fat, while chickpeas (garbanzo beans) are larger, creamier, and richer in fiber and minerals."
+          }
+        ]
+      }
     },
     {
       "name": "Yogurt",
@@ -24280,7 +25012,19 @@
           "difference": "Yogurt is whole food with live cultures, protein, and calcium, while probiotics are isolated bacterial strains. Yogurt provides nutrition plus probiotics."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "kefir",
+            "difference": "Both are fermented dairy with probiotics. Yogurt has 5-10 probiotic strains and thicker texture, while kefir has 30+ strains with more diverse bacteria and yeasts—kefir is more probiotic-rich."
+          },
+          {
+            "ingredient": "milk",
+            "difference": "Yogurt is fermented milk with live probiotic bacteria (Lactobacillus, Bifidobacterium) that pre-digest lactose, while milk is raw dairy with full lactose—yogurt is more digestible for lactose-sensitive dogs."
+          }
+        ]
+      }
     },
     {
       "name": "Yucca Schidigera Extract",
@@ -24345,7 +25089,19 @@
           "ingredient": "probiotics",
           "difference": "Yucca schidigera reduces stool odor by binding ammonia, while probiotics improve digestion and gut health (may reduce odor indirectly). Different approaches."
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "chicory-root",
+            "difference": "Both reduce stool odor. Yucca schidigera extract is from yucca plant with saponins that bind ammonia, while chicory root is a prebiotic fiber that improves gut health to reduce odor—different mechanisms."
+          },
+          {
+            "ingredient": "parsley",
+            "difference": "Both are used for odor control. Yucca schidigera extract binds ammonia in the gut with saponins, while parsley contains chlorophyll that freshens breath and may reduce body odor."
+          }
+        ]
+      }
     },
     {
       "name": "Zeaxanthin",
@@ -24385,7 +25141,19 @@
           "difference": "Zeaxanthin is a yellow carotenoid for macular health, while astaxanthin is a red carotenoid for broader antioxidant protection. Both support eyes."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "lutein",
+            "difference": "Both are carotenoid antioxidants for eye health. Zeaxanthin concentrates in the center of the retina (macula) for central vision, while lutein is more in peripheral retina—they work together."
+          },
+          {
+            "ingredient": "beta-carotene",
+            "difference": "Both are carotenoids. Zeaxanthin is a non-provitamin A carotenoid specifically for eye health and blue light protection, while beta-carotene converts to vitamin A for vision and immune function."
+          }
+        ]
+      }
     },
     {
       "name": "Zinc Amino Acid Chelate",
@@ -24425,7 +25193,19 @@
           "difference": "Zinc amino acid chelate is bound to mixed amino acids, while zinc methionine complex is specifically bound to methionine. Both are highly bioavailable chelated forms."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "zinc-proteinate",
+            "difference": "Both are organic zinc forms. Zinc amino acid chelate is zinc bound to synthetic amino acids, while zinc proteinate is zinc bound to partially hydrolyzed protein—both are well-absorbed chelates."
+          },
+          {
+            "ingredient": "zinc-oxide",
+            "difference": "Zinc amino acid chelate is an organic form where zinc is bound to amino acids for superior absorption (40-60%), while zinc oxide is an inorganic salt with poor absorption (10-20%)."
+          }
+        ]
+      }
     },
     {
       "name": "Zinc Chelate",
@@ -24461,7 +25241,19 @@
           "difference": "Zinc chelate is organic and highly bioavailable, while zinc oxide is inorganic and poorly absorbed. Chelated forms are far superior."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "zinc-amino-acid-chelate",
+            "difference": "These are essentially the same—'zinc chelate' is a general term for zinc bound to organic molecules, while zinc amino acid chelate specifically refers to zinc bound to amino acids."
+          },
+          {
+            "ingredient": "zinc-glycinate",
+            "difference": "Zinc chelate is a vague term for any organically-bound zinc, while zinc glycinate is specifically zinc bound to the amino acid glycine—glycinate is more specific and transparent."
+          }
+        ]
+      }
     },
     {
       "name": "Zinc Methionine Complex",
@@ -24497,7 +25289,19 @@
           "difference": "Zinc methionine complex is organic, highly bioavailable, while zinc oxide is inorganic and poorly absorbed. Methionine complex is vastly superior."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "zinc-amino-acid-chelate",
+            "difference": "Zinc methionine complex is zinc specifically bound to the amino acid methionine, while zinc amino acid chelate could be bound to any amino acids—methionine form may support coat health better."
+          },
+          {
+            "ingredient": "dl-methionine",
+            "difference": "Zinc methionine complex provides both zinc (for immune/skin) and methionine (for liver/coat), while DL-methionine provides only the amino acid methionine without zinc."
+          }
+        ]
+      }
     },
     {
       "name": "Zinc Oxide",
@@ -24569,7 +25373,19 @@
           "ingredient": "zinc-sulfate",
           "difference": "Both are inorganic zinc forms with lower bioavailability. Zinc oxide is cheaper and less absorbed than zinc sulfate, which is slightly better but still inferior to chelates."
         }
-      ]
+      ],
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "zinc-sulfate",
+            "difference": "Both are inorganic zinc salts with poor absorption. Zinc oxide is 10-20% absorbed and cheaper, while zinc sulfate is 20-30% absorbed—both are inferior to organic chelated forms."
+          },
+          {
+            "ingredient": "zinc-proteinate",
+            "difference": "Zinc oxide is an inorganic salt with poor absorption (10-20%) and potential toxicity at high doses, while zinc proteinate is an organic form bound to protein with 40-60% absorption—proteinate is superior."
+          }
+        ]
+      }
     },
     {
       "name": "Zinc Proteinate",
@@ -24609,7 +25425,19 @@
           "difference": "Zinc proteinate is bound to protein fragments, while zinc methionine complex is bound to methionine amino acid. Both are premium, bioavailable forms."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "zinc-amino-acid-chelate",
+            "difference": "Both are organic zinc forms. Zinc proteinate is zinc bound to partially hydrolyzed protein, while zinc amino acid chelate is zinc bound to synthetic amino acids—both have similar high absorption (40-60%)."
+          },
+          {
+            "ingredient": "zinc-oxide",
+            "difference": "Zinc proteinate is an organic form bound to protein with high absorption (40-60%) and low toxicity, while zinc oxide is an inorganic salt with poor absorption (10-20%)—proteinate is far superior."
+          }
+        ]
+      }
     },
     {
       "name": "Zinc Sulfate",
@@ -24648,7 +25476,19 @@
           "difference": "Zinc sulfate provides zinc in sulfate form, while copper sulfate provides copper. Both are inorganic mineral sulfates with moderate bioavailability."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "zinc-oxide",
+            "difference": "Both are inorganic zinc salts with poor absorption. Zinc sulfate is 20-30% absorbed and can cause GI upset, while zinc oxide is 10-20% absorbed and cheaper—both are inferior to organic forms."
+          },
+          {
+            "ingredient": "zinc-proteinate",
+            "difference": "Zinc sulfate is an inorganic salt with poor absorption (20-30%) that can irritate the GI tract, while zinc proteinate is an organic form bound to protein with 40-60% absorption and better tolerance."
+          }
+        ]
+      }
     },
     {
       "name": "Zucchini",
@@ -24684,7 +25524,19 @@
           "difference": "Zucchini is low-calorie with moderate fiber and vitamins, while pumpkin is higher in fiber and beta-carotene for digestive regulation. Pumpkin is more therapeutic."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "cucumber",
+            "difference": "Both are mild, hydrating cucurbits (90%+ water). Zucchini is technically a summer squash with slightly more nutrients (vitamin C, potassium), while cucumber is botanically a fruit with more water and silica."
+          },
+          {
+            "ingredient": "yellow-squash",
+            "difference": "Both are summer squashes. Zucchini is green with slightly more vitamin C and lutein, while yellow squash is yellow with more beta-carotene—nutritionally nearly identical."
+          }
+        ]
+      }
     },
     {
       "name": "Digestive Enzymes",
@@ -24781,7 +25633,19 @@
           "difference": "Fructooligosaccharides (FOS) is a specific type of prebiotic fiber, while 'prebiotics' is a vague umbrella term. FOS is more transparent and verifiable."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "probiotics",
+            "difference": "Prebiotics are non-digestible fibers that feed beneficial gut bacteria, while probiotics are live beneficial bacteria themselves—prebiotics feed probiotics."
+          },
+          {
+            "ingredient": "chicory-root",
+            "difference": "Prebiotics is a vague category term for fibers that feed gut bacteria, while chicory root is a specific prebiotic ingredient rich in inulin—chicory root is a type of prebiotic."
+          }
+        ]
+      }
     },
     {
       "name": "Blue 1",
@@ -25011,7 +25875,19 @@
           "difference": "Spirulina color provides blue-green hues from algae, while beet juice color provides red-purple from beets. Both are natural plant-based colorants."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "spirulina",
+            "difference": "Spirulina color is spirulina extract used specifically as a blue-green natural colorant (phycocyanin pigment), while spirulina as an ingredient provides nutrition (protein, antioxidants) plus coloring."
+          },
+          {
+            "ingredient": "vegetable-juice-for-color",
+            "difference": "Both are natural plant-based colorants. Spirulina color is specifically from blue-green algae for blue/green hues, while vegetable juice is a vague term from any vegetable for various colors."
+          }
+        ]
+      }
     },
     {
       "name": "Herring",
@@ -25089,7 +25965,19 @@
           "difference": "Whitefish meal at least specifies white-fleshed fish, while fish meal is completely vague. Both lack transparency but whitefish is slightly better."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "salmon-meal",
+            "difference": "Both are rendered, concentrated fish meals. Whitefish meal is from mild white-fleshed fish (cod, pollock) with less omega-3s, while salmon meal is from salmon with 2-3x more omega-3 EPA/DHA."
+          },
+          {
+            "ingredient": "herring-meal",
+            "difference": "Both are concentrated fish meals. Whitefish meal is from mild fish with moderate omega-3s and lower mercury, while herring meal is from oily fish with more omega-3s and stronger flavor."
+          }
+        ]
+      }
     },
     {
       "name": "Bananas",
@@ -25195,7 +26083,19 @@
           "difference": "Carmine is a natural red dye from insects that's safer than synthetic options, while Red 3 is petroleum-based with thyroid and cancer concerns."
         }
       ],
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "whatItIsExpanded": {
+        "compareToSimilar": [
+          {
+            "ingredient": "beet-juice-color",
+            "difference": "Red 3 (erythrosine) is a synthetic petroleum-based dye (FD&C Red #3) linked to cancer and banned in cosmetics, while beet juice color is a natural red colorant from beets—beet juice is far safer."
+          },
+          {
+            "ingredient": "carmine",
+            "difference": "Red 3 is a synthetic petroleum-based dye with cancer concerns, while carmine is a natural red dye from crushed cochineal insects—both add only color, but carmine is safer (though not vegan)."
+          }
+        ]
+      }
     }
   ]
 }
