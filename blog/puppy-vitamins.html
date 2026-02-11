@@ -602,6 +602,46 @@
     footer a:hover {
       text-decoration: underline;
     }
+    /* Mobile footer fixes */
+    @media (max-width: 599px) {
+      footer {
+        padding: 32px 20px 16px;
+        border-radius: 100px 16px 16px 100px;
+        min-height: auto;
+      }
+
+      .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+      }
+
+      .footer-left {
+        flex: none;
+        width: 100%;
+      }
+
+      .footer-right {
+        flex: none;
+        width: 100%;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .footer-right-text {
+        text-align: center;
+      }
+
+      .footer-logo {
+        height: 60px;
+        margin-top: 0;
+      }
+
+      footer p {
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+    }
   </style>
 
   <!-- JSON-LD Structured Data -->
