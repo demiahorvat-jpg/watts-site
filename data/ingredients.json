@@ -127,15 +127,11 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "alfalfa-meal",
-            "difference": "Alfalfa nutrient concentrate is the extracted juice (spray-dried), while alfalfa meal is whole ground plant. The concentrate is more nutrient-dense with higher vitamin K and mineral concentration."
-          },
-          {
             "ingredient": "barley-grass",
             "difference": "Both are young green plant extracts rich in chlorophyll and vitamins. Alfalfa concentrate is higher in vitamin K and protein, while barley grass is higher in enzymes and alkalizing compounds."
           },
           {
-            "ingredient": "kelp",
+            "ingredient": "dried-kelp",
             "difference": "Alfalfa concentrate provides land-based plant vitamins (especially K) and chlorophyll, while kelp provides marine minerals (especially iodine). Different nutrient profiles but both are concentrated 'superfoods.'"
           }
         ]
@@ -623,10 +619,6 @@
       },
       "whatItIsExpanded": {
         "compareToSimilar": [
-          {
-            "ingredient": "white-vinegar",
-            "difference": "Apple cider vinegar is fermented from apples and contains beneficial bacteria, enzymes, and trace minerals. White vinegar is synthetic acetic acid with no nutritional value—purely for preservation."
-          },
           {
             "ingredient": "citric-acid",
             "difference": "Both are acidic preservatives. Apple cider vinegar provides acetic acid plus potential probiotic benefits from fermentation, while citric acid is purely for pH control and preservation with no digestive benefits."
@@ -1193,16 +1185,12 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "brewers-yeast",
+            "ingredient": "brewers-dried-yeast",
             "difference": "Brewers yeast is whole inactive yeast cells (complete B vitamins, fiber), while autolyzed yeast is broken-down cells with concentrated glutamic acid for flavor. Brewers yeast is more nutritious; autolyzed yeast is primarily for palatability."
           },
           {
             "ingredient": "nutritional-yeast",
             "difference": "Nutritional yeast is grown specifically for nutrition (high in B vitamins), while autolyzed yeast is processed for flavor enhancement. Nutritional yeast adds nutrients; autolyzed yeast adds umami taste."
-          },
-          {
-            "ingredient": "hydrolyzed-protein",
-            "difference": "Both are broken-down ingredients for palatability. Autolyzed yeast provides glutamic acid (umami) from yeast, while hydrolyzed protein provides amino acids from meat/poultry. Both enhance flavor but different sources."
           }
         ]
       },
@@ -1469,7 +1457,7 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "wheatgrass",
+            "ingredient": "barley-grass",
             "difference": "Both are young cereal grass shoots rich in chlorophyll and vitamins. Barley grass tends to be slightly sweeter and higher in enzymes, while wheatgrass has more chlorophyll. Nutritionally very similar."
           },
           {
@@ -2791,11 +2779,11 @@
             "difference": "Whole beetroot provides fiber, nitrates, folate, and antioxidants along with natural coloring, while beet juice color is a concentrated extract focused on pigmentation with minimal nutrition."
           },
           {
-            "ingredient": "sweet-potato",
+            "ingredient": "dried-sweet-potatoes",
             "difference": "Both are colorful root vegetables rich in fiber and antioxidants. Sweet potato provides more carbohydrates and beta-carotene, while beetroot offers unique nitrates and betalain antioxidants."
           },
           {
-            "ingredient": "carrot",
+            "ingredient": "carrots",
             "difference": "Both are root vegetables with antioxidants. Carrots are higher in beta-carotene (vitamin A precursor), while beets are unique for their nitrates, betaine, and betalain pigments."
           }
         ]
@@ -2991,7 +2979,7 @@
             "difference": "Both are controversial synthetic preservatives, but ethoxyquin faces stricter regulations and is banned in human food in many countries. BHT is more commonly accepted but still avoided by premium brands."
           },
           {
-            "ingredient": "vitamin-e",
+            "ingredient": "mixed-tocopherols",
             "difference": "BHT is a synthetic preservative with some health concerns, while vitamin E (tocopherols) is a natural nutrient that also acts as an antioxidant preservative. Vitamin E is nutritionally beneficial."
           }
         ]
@@ -3250,7 +3238,7 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "vitamin-b12",
+            "ingredient": "vitamin-b12-supplement",
             "difference": "Biotin (B7) supports skin, coat, and metabolism of fats and proteins, while B12 is essential for nervous system function and red blood cell formation. Both are B vitamins with distinct roles."
           },
           {
@@ -3258,7 +3246,7 @@
             "difference": "Biotin (B7) is crucial for healthy skin and coat, while niacin (B3) supports energy metabolism and cellular function. Both are B vitamins but serve different primary functions."
           },
           {
-            "ingredient": "zinc",
+            "ingredient": "zinc-proteinate",
             "difference": "Both biotin and zinc are critical for healthy skin and coat. Biotin works at the cellular metabolism level, while zinc supports protein synthesis and wound healing. Often combined for skin health."
           },
           {
@@ -4096,7 +4084,7 @@
             "difference": "Calcium ascorbate (vitamin C) is a water-soluble antioxidant, while mixed tocopherols (vitamin E) are fat-soluble antioxidants. Both preserve food but work in different environments."
           },
           {
-            "ingredient": "sodium-ascorbate",
+            "ingredient": "ascorbic-acid",
             "difference": "Both are buffered forms of vitamin C, but calcium ascorbate includes calcium while sodium ascorbate includes sodium. The calcium version provides additional mineral nutrition."
           }
         ]
@@ -4492,7 +4480,7 @@
             "difference": "Canola meal has lower protein (38-40%) than soybean meal (44-48%) but contains less anti-nutritional factors. Both are plant protein sources after oil extraction."
           },
           {
-            "ingredient": "flaxseed-meal",
+            "ingredient": "flaxseed",
             "difference": "Flaxseed meal retains more oil content with omega-3 fatty acids, while canola meal is lower in fat after oil extraction. Flax provides more essential fatty acids."
           },
           {
@@ -6550,7 +6538,7 @@
             "difference": "Chlorella is a freshwater green algae rich in chlorophyll and CGF (Chlorella Growth Factor), while kelp is a brown seaweed providing iodine and sea minerals. Different aquatic nutrient sources."
           },
           {
-            "ingredient": "wheatgrass",
+            "ingredient": "barley-grass",
             "difference": "Both are green superfoods with chlorophyll, but chlorella is a complete protein algae with vitamin B12, while wheatgrass is a plant grass with enzymes and phytonutrients but no B12."
           }
         ]
@@ -6591,7 +6579,7 @@
             "difference": "Eggs provide natural choline from phosphatidylcholine along with complete protein and other nutrients, while choline chloride is an isolated synthetic supplement. Whole food vs supplement."
           },
           {
-            "ingredient": "methionine",
+            "ingredient": "dl-methionine",
             "difference": "Choline and methionine work together in methylation pathways. Choline supports liver health and fat metabolism, while methionine is an amino acid that can convert to choline if needed."
           }
         ]
@@ -6788,15 +6776,11 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "chromium-yeast",
-            "difference": "Chromium picolinate is a synthetic chelate with chromium bound to picolinic acid, while chromium yeast is organically bound chromium from yeast fermentation. Yeast form may be more bioavailable."
-          },
-          {
             "ingredient": "brewers-dried-yeast",
             "difference": "Chromium picolinate provides isolated chromium for glucose metabolism, while brewers yeast contains natural chromium plus B vitamins, protein, and minerals. Whole food vs isolated mineral."
           },
           {
-            "ingredient": "zinc",
+            "ingredient": "zinc-proteinate",
             "difference": "Both are trace minerals supporting metabolism, but chromium specifically enhances insulin function for glucose metabolism, while zinc supports immune function, protein synthesis, and wound healing."
           }
         ]
@@ -6839,10 +6823,6 @@
           {
             "ingredient": "phosphoric-acid",
             "difference": "Both are acids used in pet food, but citric acid is a natural organic acid from citrus fruits, while phosphoric acid is a synthetic mineral acid. Citric acid is gentler and more natural."
-          },
-          {
-            "ingredient": "vinegar",
-            "difference": "Both provide acidity for preservation, but citric acid is derived from citrus fruits or fermentation, while vinegar is fermented acetic acid. Citric acid is more concentrated and shelf-stable."
           }
         ]
       },
@@ -7765,10 +7745,6 @@
             "difference": "Corn bran is the outer hull of corn kernels providing insoluble fiber, while rice bran includes more of the germ with higher fat, vitamin E, and slightly better protein quality."
           },
           {
-            "ingredient": "oat-bran",
-            "difference": "Oat bran contains more soluble fiber (beta-glucans) that supports gut health and cholesterol, while corn bran is primarily insoluble fiber for stool bulk and digestive transit."
-          },
-          {
             "ingredient": "corn-gluten-feed",
             "difference": "Corn bran is specifically the fiber-rich outer hull, while corn gluten feed includes bran plus other corn processing byproducts with moderate protein (20-25%). Gluten feed is more complete."
           },
@@ -7811,11 +7787,7 @@
             "difference": "Corn gluten feed combines bran plus other corn processing parts with moderate protein (20-25%), while corn bran is specifically the fiber-rich outer hull with minimal protein."
           },
           {
-            "ingredient": "wheat-middlings",
-            "difference": "Both are grain processing byproducts with moderate protein and fiber, but corn gluten feed comes from corn while wheat middlings come from wheat. Similar nutritional profiles from different grains."
-          },
-          {
-            "ingredient": "soybean-hulls",
+            "ingredient": "soy-hulls",
             "difference": "Corn gluten feed provides moderate protein (20-25%) plus fiber, while soybean hulls are primarily fiber with minimal protein. Corn gluten feed offers more nutritional value."
           }
         ]
@@ -8027,7 +7999,7 @@
             "difference": "Corn meal is ground whole corn kernels with processing that removes some of the outer hull and germ, while whole corn includes everything. Corn meal is more digestible but slightly less nutritious."
           },
           {
-            "ingredient": "corn-flour",
+            "ingredient": "corn-meal",
             "difference": "Corn meal is more coarsely ground with a gritty texture used for structure in kibble, while corn flour is finely ground powder. Both are from corn but different textures."
           },
           {
@@ -8080,7 +8052,7 @@
             "difference": "Corn starch is highly refined pure starch with almost no protein, fiber, or nutrients, while corn meal is ground whole kernels retaining some nutrition. Starch is less nutritious."
           },
           {
-            "ingredient": "sweet-potato",
+            "ingredient": "dried-sweet-potatoes",
             "difference": "Sweet potato is a whole food carbohydrate with fiber, vitamins, and antioxidants, while corn starch is refined pure starch with negligible nutrition. Whole foods are superior."
           }
         ]
@@ -8296,10 +8268,6 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "vinegar",
-            "difference": "Both are natural preservatives. Cultured dextrose is fermented glucose producing lactic acid, while vinegar is acetic acid from fermented alcohol."
-          },
-          {
             "ingredient": "citric-acid",
             "difference": "Both are acidic preservatives. Cultured dextrose is produced by bacterial fermentation, while citric acid is typically derived from mold fermentation or citrus."
           },
@@ -8423,10 +8391,6 @@
       ],
       "whatItIsExpanded": {
         "compareToSimilar": [
-          {
-            "ingredient": "alfalfa-meal",
-            "difference": "Both are from alfalfa plants. Direct dehydrated pellets are gently dried and compressed, while alfalfa meal is ground dried alfalfa - similar nutrition."
-          },
           {
             "ingredient": "dried-kelp",
             "difference": "Alfalfa pellets are land-based plant fiber and nutrients, while kelp is seaweed providing iodine and trace minerals from the ocean."
@@ -8887,7 +8851,7 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "sweet-potato",
+            "ingredient": "dried-sweet-potatoes",
             "difference": "Dried sweet potatoes are dehydrated for storage, while fresh sweet potato has higher moisture. Both provide the same nutrients when rehydrated."
           },
           {
@@ -9009,7 +8973,7 @@
             "difference": "Dried yeast is inactive baker's or brewer's yeast, while nutritional yeast is specifically grown and fortified with B vitamins for nutrition."
           },
           {
-            "ingredient": "brewers-yeast",
+            "ingredient": "brewers-dried-yeast",
             "difference": "Both are dried inactive yeast. Brewer's yeast is a by-product of beer brewing, while dried yeast may be purpose-grown or from baking."
           },
           {
@@ -9579,10 +9543,6 @@
             "difference": "Eggshell membrane provides natural glucosamine, chondroitin, collagen, and hyaluronic acid together, while glucosamine is a single isolated compound."
           },
           {
-            "ingredient": "chondroitin-sulfate",
-            "difference": "Eggshell membrane contains chondroitin plus collagen, glucosamine, and hyaluronic acid, while chondroitin sulfate is a purified single compound."
-          },
-          {
             "ingredient": "green-lipped-mussel",
             "difference": "Both are natural joint support ingredients. Eggshell membrane provides glucosamine/chondroitin/collagen, while green-lipped mussel adds omega-3s and glycosaminoglycans."
           }
@@ -9833,16 +9793,8 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "chicken-digest",
-            "difference": "Both are hydrolyzed protein palatants. Fish digest is made from fish tissue while chicken digest uses chicken, offering different flavor profiles."
-          },
-          {
             "ingredient": "hydrolyzed-poultry-liver",
             "difference": "Both are enzymatically broken-down animal proteins used for palatability. Fish digest uses fish while hydrolyzed poultry liver uses liver tissue, providing different amino acid and flavor profiles."
-          },
-          {
-            "ingredient": "natural-chicken-flavor",
-            "difference": "Both enhance palatability. Fish digest is specifically enzymatically digested fish protein, while natural chicken flavor can be derived through various processes from chicken."
           }
         ]
       },
@@ -10433,14 +10385,6 @@
       "lastUpdated": "February 11, 2026",
       "whatItIsExpanded": {
         "compareToSimilar": [
-          {
-            "ingredient": "folate",
-            "difference": "Both are forms of vitamin B9. Folic acid is the synthetic form, while folate refers to the naturally occurring vitamin in foods. Folic acid is more stable in kibble processing."
-          },
-          {
-            "ingredient": "vitamin-b-complex",
-            "difference": "Folic acid is a single B vitamin (B9). Vitamin B complex contains multiple B vitamins including folic acid/folate along with B1, B2, B6, B12, etc."
-          }
         ]
       }
     },
@@ -10475,7 +10419,7 @@
             "difference": "Both are prebiotic fibers. FOS are shorter-chain fructans (oligosaccharides) while inulin consists of longer chains, but they function very similarly and support beneficial gut bacteria."
           },
           {
-            "ingredient": "chicory-root",
+            "ingredient": "dried-chicory-root",
             "difference": "Chicory root is the natural source from which both FOS and inulin are extracted. FOS is the isolated, purified prebiotic fiber component."
           },
           {
@@ -10611,10 +10555,6 @@
           {
             "ingredient": "turmeric",
             "difference": "Both are rhizomes with anti-inflammatory properties. Ginger is known for digestive benefits and nausea relief, while turmeric is valued for curcumin and joint health."
-          },
-          {
-            "ingredient": "peppermint",
-            "difference": "Both support digestive health. Ginger reduces nausea and inflammation through gingerols, while peppermint soothes through menthol and helps with gas."
           }
         ]
       },
@@ -10929,11 +10869,11 @@
             "difference": "Glutathione is a tripeptide antioxidant made partly from glutamine. Glutamine is a single amino acid that supports gut and immune health, while glutathione neutralizes free radicals."
           },
           {
-            "ingredient": "vitamin-e",
+            "ingredient": "mixed-tocopherols",
             "difference": "Both are antioxidants. Glutathione is a cellular antioxidant produced in the body, while vitamin E is a fat-soluble vitamin antioxidant obtained from diet."
           },
           {
-            "ingredient": "vitamin-c",
+            "ingredient": "ascorbic-acid",
             "difference": "Both are powerful antioxidants. Glutathione is an endogenous tripeptide that regenerates other antioxidants, while vitamin C is a water-soluble vitamin that also helps regenerate glutathione."
           }
         ]
@@ -11037,7 +10977,7 @@
             "difference": "Both are prebiotic fibers. GOS are shorter-chain galactose-based oligosaccharides, while inulin consists of longer fructose chains, but both nourish beneficial bacteria."
           },
           {
-            "ingredient": "chicory-root",
+            "ingredient": "dried-chicory-root",
             "difference": "Chicory root naturally contains inulin and FOS. GOS are typically synthesized from lactose and are chemically different but functionally similar as prebiotics."
           }
         ]
@@ -11119,10 +11059,6 @@
           {
             "ingredient": "glucosamine",
             "difference": "Green lipped mussel naturally contains glucosamine plus chondroitin, omega-3s, and glycosaminoglycans. Glucosamine alone is a single extracted compound for joint support."
-          },
-          {
-            "ingredient": "chondroitin-sulfate",
-            "difference": "Green lipped mussel provides chondroitin naturally along with glucosamine, omega-3s, and anti-inflammatory compounds. Chondroitin sulfate is the isolated compound."
           },
           {
             "ingredient": "fish-oil",
@@ -11333,7 +11269,7 @@
             "difference": "Both are fermentable fibers for digestive health. Guar fiber is from guar beans and forms a gel, while beet pulp is from sugar beets and provides both soluble and insoluble fiber."
           },
           {
-            "ingredient": "psyllium",
+            "ingredient": "psyllium-husk",
             "difference": "Both are soluble, gel-forming fibers. Guar fiber comes from guar beans and is moderately fermentable, while psyllium from plantain seeds absorbs more water and aids bowel regularity."
           }
         ]
@@ -11410,18 +11346,6 @@
       ],
       "whatItIsExpanded": {
         "compareToSimilar": [
-          {
-            "ingredient": "liver",
-            "difference": "Both are organ meats. Heart is a muscle organ high in CoQ10, taurine, and B vitamins. Liver is a glandular organ exceptionally rich in vitamin A, iron, and copper."
-          },
-          {
-            "ingredient": "kidney",
-            "difference": "Both are nutrient-dense organs. Heart is muscle tissue rich in taurine and CoQ10, while kidney is a filtration organ high in B vitamins, iron, and selenium."
-          },
-          {
-            "ingredient": "chicken-muscle",
-            "difference": "Both are muscle proteins. Heart is a dense, nutrient-rich organ muscle high in taurine and CoQ10, while skeletal muscle is leaner with less micronutrient density."
-          }
         ]
       },
       "lastUpdated": "February 11, 2026",
@@ -11562,14 +11486,6 @@
       "citations": [],
       "whatItIsExpanded": {
         "compareToSimilar": [
-          {
-            "ingredient": "natural-smoke-flavor",
-            "difference": "Both are smoke flavorings. Hickory smoke flavor specifically uses hickory wood, while natural smoke flavor can derive from various wood types (hickory, mesquite, applewood, etc.)."
-          },
-          {
-            "ingredient": "liquid-smoke",
-            "difference": "Very similar - both are condensed smoke products. Hickory smoke flavor specifies hickory wood, while liquid smoke may use various woods. Both add smoky flavor without actual smoking."
-          }
         ]
       },
       "lastUpdated": "February 11, 2026",
@@ -11652,10 +11568,6 @@
             "difference": "Both support joint health. Hyaluronic acid lubricates joints and maintains synovial fluid, while glucosamine helps build and repair cartilage. Often used together."
           },
           {
-            "ingredient": "chondroitin-sulfate",
-            "difference": "Both are joint-supporting compounds. Hyaluronic acid provides lubrication and hydration to joints, while chondroitin helps maintain cartilage structure and water retention."
-          },
-          {
             "ingredient": "green-lipped-mussel",
             "difference": "Green lipped mussel contains multiple joint compounds including some hyaluronic acid. Hyaluronic acid is a single purified compound focused on joint lubrication."
           }
@@ -11703,10 +11615,6 @@
             "difference": "Hydrolyzed poultry liver is enzymatically broken down chicken/turkey liver for enhanced palatability and digestibility, while chicken liver is the whole organ."
           },
           {
-            "ingredient": "chicken-digest",
-            "difference": "Both are hydrolyzed poultry products. Hydrolyzed poultry liver specifically uses liver tissue, while chicken digest can use various chicken parts. Liver provides more nutrients."
-          },
-          {
             "ingredient": "fish-digest",
             "difference": "Both are enzymatically hydrolyzed animal proteins used for palatability. Poultry liver uses bird liver while fish digest uses fish tissue, offering different flavor and nutrient profiles."
           }
@@ -11748,10 +11656,6 @@
           {
             "ingredient": "brewers-dried-yeast",
             "difference": "Hydrolyzed yeast is enzymatically broken down for better absorption and palatability, while brewers dried yeast is simply dried whole yeast cells."
-          },
-          {
-            "ingredient": "yeast-culture",
-            "difference": "Yeast culture is live or fermented yeast with growth medium. Hydrolyzed yeast is broken down into amino acids, nucleotides, and B vitamins for enhanced bioavailability."
           },
           {
             "ingredient": "dried-yeast",
@@ -11801,7 +11705,7 @@
             "difference": "Both are prebiotic fructans. Inulin consists of longer fructose chains while FOS are shorter oligosaccharides, but they function very similarly in supporting gut bacteria."
           },
           {
-            "ingredient": "chicory-root",
+            "ingredient": "dried-chicory-root",
             "difference": "Chicory root is the natural source from which inulin is extracted. Inulin is the purified, isolated prebiotic fiber component."
           },
           {
@@ -12107,7 +12011,7 @@
             "difference": "Both are vitamin C forms. L-ascorbyl-2-polyphosphate is a stable, fat-soluble form for pet food, while ascorbic acid is water-soluble and less stable."
           },
           {
-            "ingredient": "sodium-ascorbate",
+            "ingredient": "ascorbic-acid",
             "difference": "Both are vitamin C sources. L-ascorbyl-2-polyphosphate is a stable polyphosphate form, while sodium ascorbate is a buffered water-soluble form."
           },
           {
@@ -12536,10 +12440,6 @@
           {
             "ingredient": "phosphoric-acid",
             "difference": "Both are acidifying agents. Lactic acid is an organic acid from fermentation that's milder, while phosphoric acid is a stronger mineral acid."
-          },
-          {
-            "ingredient": "vinegar",
-            "difference": "Both are acidic preservatives. Lactic acid is produced by bacteria fermenting sugars, while vinegar is acetic acid from alcohol fermentation."
           }
         ]
       },
@@ -13333,10 +13233,6 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "chicken-digest",
-            "difference": "Both are hydrolyzed animal tissues for palatability. Liver digest uses liver organs, while chicken digest uses whole chicken tissues."
-          },
-          {
             "ingredient": "animal-digest",
             "difference": "Liver digest is specifically from liver organs, while animal digest can be from any animal tissues - liver is more defined and nutrient-rich."
           },
@@ -13418,16 +13314,8 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "liver",
-            "difference": "Lung is a low-fat organ meat primarily protein, while liver is nutrient-dense with vitamins A, B, iron, and copper."
-          },
-          {
             "ingredient": "heart",
             "difference": "Both are organ meats. Lung is spongy, low-fat protein, while heart is denser muscle with more CoQ10, taurine, and B vitamins."
-          },
-          {
-            "ingredient": "kidney",
-            "difference": "Both are organ meats. Lung is mild-flavored low-fat protein, while kidney is more nutrient-dense with B vitamins and selenium."
           }
         ]
       },
@@ -13633,10 +13521,6 @@
           {
             "ingredient": "reishi",
             "difference": "Both are functional mushrooms. Maitake is used for immune and metabolic support, while reishi is more for stress adaptation and longevity."
-          },
-          {
-            "ingredient": "turkey-tail",
-            "difference": "Both are immune-supporting mushrooms. Maitake has beta-glucans for immunity and metabolism, while turkey tail is focused on gut immunity and cancer support."
           }
         ]
       },
@@ -13711,11 +13595,11 @@
             "difference": "Both are refined starches used as cheap fillers. Maltodextrin is more processed and has a higher glycemic index, while tapioca starch is less refined but still lacks nutrition."
           },
           {
-            "ingredient": "cornstarch",
+            "ingredient": "corn-starch",
             "difference": "Maltodextrin is highly processed starch broken down into shorter chains, while cornstarch is less processed. Both are empty carbs with zero nutritional value used as cheap fillers."
           },
           {
-            "ingredient": "sweet-potato",
+            "ingredient": "dried-sweet-potatoes",
             "difference": "Sweet potato is a whole food carbohydrate with fiber, vitamins, and antioxidants. Maltodextrin is a refined, processed starch with zero nutrition. Sweet potato is vastly superior."
           }
         ]
@@ -13994,7 +13878,7 @@
             "difference": "Mango provides more vitamin C and natural sweetness, while pumpkin is higher in fiber and better for digestive regulation. Pumpkin is lower in sugar and more functional for digestion."
           },
           {
-            "ingredient": "sweet-potato",
+            "ingredient": "dried-sweet-potatoes",
             "difference": "Both provide vitamin A, but sweet potato is a complex carbohydrate with sustained energy, while mango is a fruit with higher simple sugars. Sweet potato is more substantial nutrition source."
           }
         ]
@@ -14029,16 +13913,8 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "slippery-elm",
-            "difference": "Both contain mucilage that soothes the GI tract. Marshmallow root also supports urinary health, while slippery elm is more focused on digestive soothing. Both are gentle, effective herbs."
-          },
-          {
             "ingredient": "pumpkin",
             "difference": "Marshmallow root soothes with mucilage coating inflamed tissues, while pumpkin provides bulk fiber for stool regulation. Marshmallow is medicinal herb; pumpkin is whole food fiber source."
-          },
-          {
-            "ingredient": "licorice-root",
-            "difference": "Both soothe digestive inflammation. Marshmallow root uses mucilage coating, while licorice root has glycyrrhizin compounds. Marshmallow is gentler with fewer concerns about long-term use."
           }
         ]
       },
@@ -14321,11 +14197,11 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "phylloquinone",
+            "ingredient": "vitamin-k1",
             "difference": "Menadione is synthetic vitamin K3, while phylloquinone is natural vitamin K1 from plants. K1 is preferred natural form with no safety concerns; menadione is synthetic and controversial."
           },
           {
-            "ingredient": "menaquinone",
+            "ingredient": "vitamin-k2",
             "difference": "Menadione is synthetic vitamin K3, while menaquinone is natural vitamin K2 from fermentation. K2 has superior bone and cardiovascular benefits; menadione is basic synthetic form."
           },
           {
@@ -14455,10 +14331,6 @@
           {
             "ingredient": "turmeric",
             "difference": "Milk thistle targets liver health and regeneration specifically, while turmeric (curcumin) provides broad anti-inflammatory and antioxidant benefits including liver support. Milk thistle is more liver-focused; turmeric is broader."
-          },
-          {
-            "ingredient": "sam-e",
-            "difference": "Both support liver health. Milk thistle provides antioxidant protection and regeneration via silymarin. SAM-e supports liver detoxification and cellular health via methionine. Often used together for comprehensive liver support."
           }
         ]
       },
@@ -14640,16 +14512,12 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "vitamin-e",
+            "ingredient": "mixed-tocopherols",
             "difference": "Mixed tocopherols ARE vitamin E (natural form). The term emphasizes use as natural preservative rather than synthetic vitamin E supplement. Same compound, different application context."
           },
           {
             "ingredient": "rosemary-extract",
             "difference": "Both are natural antioxidant preservatives. Mixed tocopherols (vitamin E) prevent fat oxidation chemically, while rosemary extract provides antioxidants from plant compounds. Often used together for synergistic preservation."
-          },
-          {
-            "ingredient": "bha-bht",
-            "difference": "Mixed tocopherols are natural vitamin E preservatives, while BHA/BHT are synthetic chemical preservatives. Natural tocopherols are preferred for safety and provide vitamin E benefit; BHA/BHT have safety concerns."
           },
           {
             "ingredient": "ascorbic-acid",
@@ -14693,7 +14561,7 @@
             "difference": "Both are highly processed starches with zero nutrition. Modified food starch is altered for texture/binding, while maltodextrin is broken down for quick absorption. Both are cheap fillers to avoid."
           },
           {
-            "ingredient": "potato",
+            "ingredient": "potatoes",
             "difference": "Potato is a whole food with vitamins and fiber, while modified food starch is refined, processed starch with zero nutrition. Whole potato is vastly superior to modified starch."
           }
         ]
@@ -14733,11 +14601,7 @@
             "difference": "Molasses is sugar refining byproduct with some minerals (especially iron), while honey is natural sweetener with enzymes and antioxidants. Honey is slightly more nutritious, but both add unnecessary sugar."
           },
           {
-            "ingredient": "cane-sugar",
-            "difference": "Molasses retains some minerals from sugar refining (iron, calcium, B vitamins), while cane sugar is pure refined sucrose. Molasses is marginally less processed but both are added sugars dogs don't need."
-          },
-          {
-            "ingredient": "sweet-potato",
+            "ingredient": "dried-sweet-potatoes",
             "difference": "Sweet potato provides complex carbs, fiber, and vitamins with natural sweetness. Molasses is simple sugar syrup with minimal nutrients. Sweet potato is vastly superior whole food source of sweetness."
           }
         ]
@@ -14771,14 +14635,6 @@
       ],
       "whatItIsExpanded": {
         "compareToSimilar": [
-          {
-            "ingredient": "activated-charcoal",
-            "difference": "Both bind toxins. Montmorillonite clay is gentle mineral clay with sustained binding, while activated charcoal is more aggressive and short-acting. Clay is better for daily use; charcoal for acute toxin exposure."
-          },
-          {
-            "ingredient": "bentonite-clay",
-            "difference": "Montmorillonite and bentonite are both types of swelling clays with toxin-binding properties. They're similar compounds often used interchangeably, both effective for digestive detox support."
-          },
           {
             "ingredient": "psyllium-husk",
             "difference": "Montmorillonite clay binds toxins via absorption, while psyllium husk is soluble fiber that promotes regularity. Clay is detox-focused; psyllium is digestive regularity. Different mechanisms and purposes."
@@ -14815,7 +14671,7 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "fos",
+            "ingredient": "fructooligosaccharides",
             "difference": "MOS (mannan-oligosaccharides) blocks pathogen binding AND feeds good bacteria, while FOS (fructooligosaccharides) primarily feeds beneficial bacteria. MOS has dual immune and prebiotic benefits; FOS is prebiotic-focused."
           },
           {
@@ -14823,7 +14679,7 @@
             "difference": "MOS blocks pathogen adhesion to gut walls, while inulin is fermented by beneficial bacteria. MOS has unique immune benefits plus prebiotic effects; inulin is purely prebiotic fiber."
           },
           {
-            "ingredient": "chicory-root",
+            "ingredient": "dried-chicory-root",
             "difference": "Chicory root is a whole food providing inulin (prebiotic fiber), while MOS is extracted from yeast cell walls with pathogen-blocking properties. MOS is more targeted functional ingredient; chicory is whole food."
           },
           {
@@ -15037,11 +14893,11 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "vitamin-b3",
+            "ingredient": "niacin",
             "difference": "Niacin IS vitamin B3 (identical terms). Both refer to nicotinic acid or nicotinamide essential for energy metabolism. Same vitamin, different names."
           },
           {
-            "ingredient": "thiamine",
+            "ingredient": "thiamine-mononitrate",
             "difference": "Niacin is vitamin B3 (energy metabolism, skin health), while thiamine is vitamin B1 (nerve function, carb metabolism). Both are essential B vitamins with different specific functions."
           },
           {
@@ -15082,7 +14938,7 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "brewers-yeast",
+            "ingredient": "brewers-dried-yeast",
             "difference": "Nutritional yeast is grown for nutrition and fortified with B vitamins, while brewer's yeast is a beer by-product and may taste bitter."
           },
           {
@@ -15675,10 +15531,6 @@
             "difference": "Both are flavor enhancers. \"Palatant\" explicitly means taste enhancer, while \"natural flavor\" is vaguer and could mean many things."
           },
           {
-            "ingredient": "chicken-digest",
-            "difference": "Palatant is a generic term for any flavor coating, while chicken digest is a specific hydrolyzed chicken palatant."
-          },
-          {
             "ingredient": "animal-digest",
             "difference": "Palatant is the general category, while animal digest is a specific type of palatant made from enzymatically broken down animal tissues."
           }
@@ -15890,10 +15742,6 @@
           {
             "ingredient": "cilantro",
             "difference": "Both are fresh green herbs. Parsley is milder with vitamins K and C and breath-freshening properties, while cilantro has stronger flavor."
-          },
-          {
-            "ingredient": "peppermint",
-            "difference": "Both are herbs for breath freshening. Parsley provides vitamins K, C, and chlorophyll, while peppermint is more aromatic with digestive benefits."
           },
           {
             "ingredient": "spinach",
@@ -16638,10 +16486,6 @@
         {
           "ingredient": "citric-acid",
           "difference": "Citric acid is derived from natural sources like citrus fruits and is a gentler acidulant, while phosphoric acid is synthetic and stronger for industrial pH manipulation."
-        },
-        {
-          "ingredient": "vinegar",
-          "difference": "Vinegar is a natural, food-based acidulant derived from fermentation, whereas phosphoric acid is a synthetic chemical used primarily for industrial processing."
         }
       ],
       "lastUpdated": "February 11, 2026",
@@ -17441,7 +17285,7 @@
           "difference": "Both provide iodine for thyroid function. Potassium iodide is a simple iodine salt, while calcium iodate is more stable during processing and storage."
         },
         {
-          "ingredient": "kelp",
+          "ingredient": "dried-kelp",
           "difference": "Potassium iodide is a synthetic, precise iodine source, while kelp is a natural seaweed with variable iodine content. Potassium iodide allows exact iodine control."
         },
         {
@@ -17529,7 +17373,7 @@
           "difference": "Potato starch is grain-free and hypoallergenic, while corn starch comes from grain and may trigger corn allergies. Both are pure starch with minimal nutrition."
         },
         {
-          "ingredient": "sweet-potato",
+          "ingredient": "dried-sweet-potatoes",
           "difference": "Potato starch is isolated starch (pure carbohydrate), while sweet potato is whole food with fiber, vitamins, and complex carbs. Sweet potato is far more nutritious."
         }
       ],
@@ -17847,10 +17691,6 @@
       ],
       "compareToSimilar": [
         {
-          "ingredient": "chicken-digest",
-          "difference": "Poultry digest can include any poultry (chicken, turkey, duck), while chicken digest is specific to chicken. Chicken digest is more transparent."
-        },
-        {
           "ingredient": "animal-digest",
           "difference": "Poultry digest is specific to birds (chicken, turkey), while animal digest is completely vague and could include any animal tissue. Poultry is more transparent."
         },
@@ -17862,10 +17702,6 @@
       "lastUpdated": "February 11, 2026",
       "whatItIsExpanded": {
         "compareToSimilar": [
-          {
-            "ingredient": "chicken-digest",
-            "difference": "Both are enzymatically hydrolyzed animal proteins used as palatability enhancers. Poultry digest can be from any poultry (chicken, turkey, duck), while chicken digest is specifically from chicken."
-          },
           {
             "ingredient": "animal-digest",
             "difference": "Poultry digest is specifically from poultry tissue, which is more transparent, while 'animal digest' is a vague term that could be from any mammal or poultry source."
@@ -18471,7 +18307,7 @@
           "difference": "Quercetin is a flavonoid antioxidant and natural antihistamine, while turmeric contains curcumin for anti-inflammatory effects. Both reduce inflammation but different mechanisms."
         },
         {
-          "ingredient": "vitamin-c",
+          "ingredient": "ascorbic-acid",
           "difference": "Quercetin is a plant flavonoid with antihistamine and anti-inflammatory properties, while vitamin C is a water-soluble antioxidant. Both are antioxidants but different structures."
         }
       ],
@@ -18723,7 +18559,7 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "thiamine",
+            "ingredient": "thiamine-mononitrate",
             "difference": "Both are essential B vitamins. Riboflavin (B2) is crucial for energy metabolism and is more stable during cooking, while thiamine (B1) is more heat-sensitive and supports nerve function."
           },
           {
@@ -19046,7 +18882,7 @@
             "difference": "Rosemary extract is a natural plant-based preservative with additional antioxidant benefits, while BHA (butylated hydroxyanisole) is a synthetic preservative with controversial health concerns."
           },
           {
-            "ingredient": "vitamin-e",
+            "ingredient": "mixed-tocopherols",
             "difference": "Rosemary extract preserves through carnosic acid preventing fat rancidity, while vitamin E (tocopherols) works as an antioxidant. Both are natural; often used together for better preservation."
           }
         ]
@@ -19150,7 +18986,7 @@
             "difference": "Safflower oil provides omega-6 fatty acids (already abundant in most diets), while fish oil provides omega-3s (EPA/DHA) that dogs need more of for inflammation control and health."
           },
           {
-            "ingredient": "flaxseed-oil",
+            "ingredient": "flaxseed",
             "difference": "Safflower oil is high in omega-6 with no omega-3, while flaxseed oil provides plant-based omega-3 (ALA). Flaxseed is a better choice for fatty acid balance."
           }
         ]
@@ -19932,14 +19768,6 @@
       ],
       "whatItIsExpanded": {
         "compareToSimilar": [
-          {
-            "ingredient": "dried-fermentation-products",
-            "difference": "Sauerkraut is whole fermented cabbage with live cultures (if unpasteurized), while dried fermentation products are concentrated probiotic powders. Dried products are more standardized and shelf-stable."
-          },
-          {
-            "ingredient": "kimchi",
-            "difference": "Both are fermented vegetables with probiotics. Kimchi typically includes more vegetables and spices (garlic, ginger), while sauerkraut is just fermented cabbage. Kimchi spices may irritate some dogs."
-          }
         ]
       },
       "lastUpdated": "February 11, 2026"
@@ -19974,7 +19802,7 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "blueberry",
+            "ingredient": "blueberries",
             "difference": "Both are antioxidant-rich berries. Sea buckthorn is unique for omega-7 fatty acids and exceptional vitamin C content (10x more than oranges), while blueberries focus on anthocyanins and cognitive support."
           },
           {
@@ -20016,7 +19844,7 @@
             "difference": "Selenium yeast is organic selenium bound to yeast proteins with better bioavailability and safety, while generic 'selenium' often refers to inorganic forms (sodium selenite) that are less efficiently absorbed."
           },
           {
-            "ingredient": "zinc",
+            "ingredient": "zinc-proteinate",
             "difference": "Both are essential trace minerals with antioxidant functions. Selenium is critical for thyroid health and glutathione peroxidase, while zinc supports immune function, skin health, and wound healing."
           }
         ]
@@ -20093,10 +19921,6 @@
           {
             "ingredient": "reishi",
             "difference": "Both are medicinal mushrooms. Shiitake is both culinary and medicinal with lentinan for immune support, while reishi is primarily medicinal with stronger adaptogenic and calming properties."
-          },
-          {
-            "ingredient": "turkey-tail",
-            "difference": "Both support immune function through beta-glucans. Turkey tail (with PSK/PSP compounds) has more cancer-specific research, while shiitake is more versatile as both food and medicine."
           },
           {
             "ingredient": "maitake",
@@ -20210,10 +20034,6 @@
           {
             "ingredient": "cellulose",
             "difference": "Both are anti-caking agents. Silicon dioxide is mineral-based (silica) used in powdered supplements, while cellulose is plant-based fiber used in kibble for texture and bulk."
-          },
-          {
-            "ingredient": "calcium-silicate",
-            "difference": "Both are anti-caking agents containing silicon. Silicon dioxide is pure silica, while calcium silicate combines calcium and silicon. Both serve the same function; silicon dioxide is more common."
           }
         ]
       },
@@ -20255,7 +20075,7 @@
             "difference": "Both support digestive health. Slippery elm provides mucilage coating for inflamed GI lining, while pumpkin offers soluble/insoluble fiber for stool regulation. Slippery elm is more therapeutic; pumpkin more preventive."
           },
           {
-            "ingredient": "psyllium",
+            "ingredient": "psyllium-husk",
             "difference": "Slippery elm's mucilage coats and soothes inflamed digestive tissue, while psyllium provides bulk-forming fiber for stool consistency. Slippery elm is better for inflammation; psyllium for fiber needs."
           }
         ]
@@ -20293,10 +20113,6 @@
           {
             "ingredient": "natural-flavor",
             "difference": "Smoke flavor is a specific type of natural flavor from smoke condensate adding smoky taste, while 'natural flavor' is a broad category from various plant/animal sources for general palatability."
-          },
-          {
-            "ingredient": "beef-broth",
-            "difference": "Smoke flavor is an artificial taste enhancer with no nutrition, while beef broth adds both flavor and some nutrients (protein, minerals) from real meat. Broth is the superior choice."
           }
         ]
       },
@@ -20331,10 +20147,6 @@
           {
             "ingredient": "citric-acid",
             "difference": "SAPP is a synthetic chemical leavening agent, while citric acid is a natural preservative and acidulant. Citric acid is preferred as it's from natural sources and serves legitimate preservation purposes."
-          },
-          {
-            "ingredient": "cream-of-tartar",
-            "difference": "Both are leavening agents. Cream of tartar is a natural byproduct of winemaking, while SAPP is synthetic. Cream of tartar is the more natural, preferable option for baked treats."
           }
         ]
       },
@@ -21170,7 +20982,7 @@
           "difference": "Both are blue-green algae superfoods. Spirulina has more protein and phycocyanin (blue pigment), while chlorella has more chlorophyll and detox properties (breaks cell walls)."
         },
         {
-          "ingredient": "kelp",
+          "ingredient": "dried-kelp",
           "difference": "Spirulina is freshwater algae rich in protein and antioxidants, while kelp is seaweed high in iodine. Spirulina is protein-focused; kelp is thyroid-focused."
         },
         {
@@ -21186,7 +20998,7 @@
             "difference": "Both are nutrient-dense blue-green algae. Spirulina is higher in protein (60-70%) and easier to digest, while chlorella has a tougher cell wall but is richer in chlorophyll and detoxifying properties."
           },
           {
-            "ingredient": "kelp",
+            "ingredient": "dried-kelp",
             "difference": "Both are algae used as superfoods. Spirulina is a freshwater blue-green algae rich in protein and phycocyanin antioxidants, while kelp is a saltwater brown algae rich in iodine for thyroid health."
           }
         ]
@@ -21379,7 +21191,7 @@
           "difference": "Sunflower oil is high in omega-6 (inflammatory), while fish oil is rich in omega-3 EPA/DHA (anti-inflammatory). Fish oil is far superior."
         },
         {
-          "ingredient": "flaxseed-oil",
+          "ingredient": "flaxseed",
           "difference": "Sunflower oil is omega-6 dominant, while flaxseed oil is omega-3 rich (ALA). Flaxseed provides better fatty acid balance, though fish oil is ideal."
         }
       ],
@@ -21451,7 +21263,7 @@
       "lastUpdated": "February 11, 2026",
       "compareToSimilar": [
         {
-          "ingredient": "sweet-potato",
+          "ingredient": "dried-sweet-potatoes",
           "difference": "Sweet potato fiber is isolated fiber from sweet potatoes (byproduct), while whole sweet potato includes flesh, vitamins, and complex carbs. Whole sweet potato is more nutritious."
         },
         {
@@ -22229,14 +22041,6 @@
         {
           "ingredient": "beef",
           "difference": "Tripe is stomach lining (organ meat) rich in digestive enzymes and probiotics, while beef is muscle meat higher in protein. Tripe is more nutritious with unique digestive benefits."
-        },
-        {
-          "ingredient": "liver",
-          "difference": "Both are organ meats. Tripe (stomach) provides digestive enzymes and probiotics, while liver provides concentrated vitamins (A, B12) and iron. Different nutrient profiles."
-        },
-        {
-          "ingredient": "kidney",
-          "difference": "Both are organ meats. Tripe offers digestive enzymes and probiotics from stomach lining, while kidney is rich in B vitamins and selenium. Tripe is unique for gut health."
         }
       ],
       "lastUpdated": "February 11, 2026",
@@ -22245,10 +22049,6 @@
           {
             "ingredient": "stomach",
             "difference": "Tripe specifically refers to ruminant (cow, sheep, goat) stomach lining, which is the same as 'stomach' but from grazing animals. The terms are often interchangeable when referring to beef tripe."
-          },
-          {
-            "ingredient": "liver",
-            "difference": "Both are nutrient-dense organ meats. Tripe is stomach lining rich in digestive enzymes and probiotics, while liver is the detox organ packed with vitamin A, iron, and B vitamins."
           }
         ]
       }
@@ -22282,7 +22082,7 @@
           "difference": "Tryptophan is an essential amino acid for serotonin production (calming), while lysine supports immune function and collagen. Both are essential but different functions."
         },
         {
-          "ingredient": "methionine",
+          "ingredient": "dl-methionine",
           "difference": "Tryptophan is an aromatic amino acid for neurotransmitter production, while methionine is a sulfur-containing amino acid for detoxification and coat health. Both are essential."
         },
         {
@@ -22335,7 +22135,7 @@
           "difference": "Both are oily fish high in omega-3s. Tuna is leaner with more mercury risk (larger fish), while salmon is fattier with lower mercury and more sustainable."
         },
         {
-          "ingredient": "sardine",
+          "ingredient": "sardines",
           "difference": "Tuna is a large predatory fish with higher mercury risk, while sardines are small fish with low mercury and higher sustainability. Sardines are safer for regular feeding."
         },
         {
@@ -22974,10 +22774,6 @@
           {
             "ingredient": "beet-juice-color",
             "difference": "Vegetable juice for color is a vague term that could be from any vegetable, while beet juice color specifically uses beets for red/pink coloring—both are natural but beet juice is more transparent."
-          },
-          {
-            "ingredient": "caramel-color",
-            "difference": "Vegetable juice for color is a natural plant-based colorant from vegetable extracts, while caramel color is made by heating sugars—both add color but caramel can contain contaminants like 4-MEI."
           }
         ]
       }
@@ -23111,10 +22907,6 @@
         {
           "ingredient": "beta-carotene",
           "difference": "Vitamin A supplement is typically preformed vitamin A (synthetic), while beta-carotene is a plant-based provitamin A that converts to vitamin A. Preformed is more potent."
-        },
-        {
-          "ingredient": "liver",
-          "difference": "Vitamin A supplement is synthetic vitamin A added to fortify food, while liver is a natural whole food exceptionally high in vitamin A. Liver is the superior source."
         }
       ],
       "lastUpdated": "February 11, 2026",
@@ -23163,10 +22955,6 @@
         {
           "ingredient": "methylcobalamin",
           "difference": "Vitamin B12 supplement is generic (form unclear), while methylcobalamin is a specific active form of B12. Methylcobalamin is more bioavailable."
-        },
-        {
-          "ingredient": "liver",
-          "difference": "Vitamin B12 supplement is synthetic B12 added to food, while liver is a natural whole food extraordinarily rich in B12. Liver is the superior, natural source."
         }
       ],
       "lastUpdated": "February 11, 2026",
@@ -23789,10 +23577,6 @@
       ],
       "compareToSimilar": [
         {
-          "ingredient": "oat-bran",
-          "difference": "Wheat bran is insoluble fiber from wheat (may contain gluten), while oat bran is soluble fiber from oats with beta-glucans. Oat bran is gentler and more heart-healthy."
-        },
-        {
           "ingredient": "rice-bran",
           "difference": "Wheat bran is grain fiber that may trigger allergies, while rice bran is hypoallergenic and contains more fat and nutrients. Rice bran is more nutritious."
         },
@@ -23807,10 +23591,6 @@
           {
             "ingredient": "rice-bran",
             "difference": "Both are grain brans (outer layers). Wheat bran is the outer layer of wheat with mostly insoluble fiber, while rice bran is from rice with more fat, antioxidants, and mixed fiber types."
-          },
-          {
-            "ingredient": "oat-bran",
-            "difference": "Both are grain brans. Wheat bran is mostly insoluble fiber (good for constipation), while oat bran is higher in soluble beta-glucan fiber for cholesterol and blood sugar control."
           }
         ]
       }
@@ -23893,7 +23673,7 @@
           "difference": "Wheat germ meal is the nutrient-rich embryo of wheat (high in vitamin E, protein, healthy fats), while wheat bran is the outer fiber layer. Germ is more nutritious."
         },
         {
-          "ingredient": "flaxseed-meal",
+          "ingredient": "flaxseed",
           "difference": "Wheat germ meal is from wheat embryo (vitamin E, protein), while flaxseed meal is from flax seeds (omega-3 ALA, lignans). Flax has better fatty acids."
         },
         {
@@ -24648,7 +24428,7 @@
           "difference": "Yeast fermentate is fermented yeast (probiotic metabolites, better digestibility), while dried yeast is just dehydrated yeast. Fermentate is more bioavailable."
         },
         {
-          "ingredient": "brewers-yeast",
+          "ingredient": "brewers-dried-yeast",
           "difference": "Yeast fermentate is fermented for enhanced nutrients and probiotics, while brewers yeast is a byproduct of brewing (high B vitamins). Fermentate is more advanced."
         },
         {
@@ -25093,7 +24873,7 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "chicory-root",
+            "ingredient": "dried-chicory-root",
             "difference": "Both reduce stool odor. Yucca schidigera extract is from yucca plant with saponins that bind ammonia, while chicory root is a prebiotic fiber that improves gut health to reduce odor—different mechanisms."
           },
           {
@@ -25621,7 +25401,7 @@
       "wattsTake": "We strongly support prebiotics in dog food. They're one of the most evidence-based functional ingredients for digestive and immune health. Unlike trendy additives, prebiotics have robust research showing they improve gut bacteria balance and produce beneficial metabolites. Natural sources like chicory root, beet pulp, and pumpkin are preferred over synthetic FOS. Used appropriately, they add genuine health value beyond basic nutrition.",
       "compareToSimilar": [
         {
-          "ingredient": "chicory-root",
+          "ingredient": "dried-chicory-root",
           "difference": "Chicory root is a specific prebiotic source containing inulin, while 'prebiotics' is a generic term that could include chicory, FOS, MOS, or other sources. Chicory is more transparent."
         },
         {
@@ -25641,7 +25421,7 @@
             "difference": "Prebiotics are non-digestible fibers that feed beneficial gut bacteria, while probiotics are live beneficial bacteria themselves—prebiotics feed probiotics."
           },
           {
-            "ingredient": "chicory-root",
+            "ingredient": "dried-chicory-root",
             "difference": "Prebiotics is a vague category term for fibers that feed gut bacteria, while chicory root is a specific prebiotic ingredient rich in inulin—chicory root is a type of prebiotic."
           }
         ]
@@ -25667,10 +25447,6 @@
           {
             "ingredient": "beet-juice-color",
             "difference": "Blue 1 is a synthetic petroleum-derived dye (FD&C Blue No. 1), while beet juice color is a natural plant-based colorant. Natural colorants are preferred in premium pet foods."
-          },
-          {
-            "ingredient": "caramel-color",
-            "difference": "Blue 1 is a synthetic dye providing bright blue color, while caramel color is derived from heat-treated carbohydrates creating brown tones. Both are primarily cosmetic additions."
           },
           {
             "ingredient": "turmeric",
@@ -25704,10 +25480,6 @@
           {
             "ingredient": "blue-1",
             "difference": "Beet juice color is a natural plant-based colorant derived from beets, while Blue 1 is a synthetic petroleum-derived dye. Natural colorants are generally preferred in premium pet foods."
-          },
-          {
-            "ingredient": "caramel-color",
-            "difference": "Beet juice provides pink/red hues from natural betalain pigments, while caramel color creates brown tones through heat-processed sugars. Beet juice is less processed and more natural."
           }
         ]
       },
@@ -25738,14 +25510,6 @@
           {
             "ingredient": "kefir",
             "difference": "Kefir is a specific fermented dairy product. Fermented ingredients is a broader category that includes various fermented plant and animal materials."
-          },
-          {
-            "ingredient": "yeast-culture",
-            "difference": "Both are fermentation products. Yeast culture specifically uses Saccharomyces cerevisiae, while fermented ingredients can use various bacteria and yeasts."
-          },
-          {
-            "ingredient": "dried-fermentation-products",
-            "difference": "Very similar - both are products of microbial fermentation. Dried fermentation products typically specify the microorganism used, while fermented ingredients may be less specific."
           }
         ]
       },
@@ -25777,14 +25541,6 @@
       "wattsTake": "Natural color is unnecessary but generally harmless. If a manufacturer is going to add color (which is for humans, not dogs), natural sources are far preferable to synthetic FD&C dyes. However, the vague term \"natural color\" is less transparent than naming the actual source—\"turmeric extract\" or \"beet juice\" is more informative. We appreciate when brands skip colorants entirely or use clearly named natural sources. It's a neutral ingredient that signals marketing-focused formulation but not necessarily poor quality.",
       "whatItIsExpanded": {
         "compareToSimilar": [
-          {
-            "ingredient": "artificial-color",
-            "difference": "Natural color is derived from plant/mineral sources (turmeric, beet juice, etc.), while artificial color is synthetic petroleum-based dye. Natural is safer and preferable, though both are cosmetic and unnecessary."
-          },
-          {
-            "ingredient": "caramel-color",
-            "difference": "Natural color is broad term including plant-based colorants. Caramel color is specific brown colorant that may have concerns (Type III/IV). Other natural colors (turmeric, beet) are generally safer than caramel color."
-          },
           {
             "ingredient": "turmeric",
             "difference": "When turmeric is used specifically as 'natural color,' it's for yellow pigment not health benefits. Turmeric as ingredient provides curcumin antioxidants. Natural color turmeric is cosmetic; ingredient turmeric is functional."
@@ -25916,11 +25672,7 @@
             "difference": "Herring is an oily fish exceptionally high in omega-3 fatty acids, while whitefish is leaner with lower omega-3 content but milder flavor. Herring provides more anti-inflammatory benefits."
           },
           {
-            "ingredient": "menhaden-fish-meal",
-            "difference": "Both are small, oily fish high in omega-3s. Herring is typically specified by species with premium status, while menhaden meal is an economical option. Both are low-mercury."
-          },
-          {
-            "ingredient": "sardine",
+            "ingredient": "sardines",
             "difference": "Both are small, oily fish rich in omega-3s and low in mercury. Herring and sardines are nutritionally very similar, with sardines being slightly smaller and herring often larger."
           }
         ]
@@ -26010,7 +25762,7 @@
       "whatItIsExpanded": {
         "compareToSimilar": [
           {
-            "ingredient": "sweet-potato",
+            "ingredient": "dried-sweet-potatoes",
             "difference": "Bananas provide quick energy from simple sugars and are high in potassium, while sweet potatoes provide complex carbohydrates with more fiber and beta-carotene. Sweet potatoes are more filling; bananas are sweeter."
           },
           {

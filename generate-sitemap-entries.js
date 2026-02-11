@@ -28,8 +28,22 @@ entries.push(`  <url>
     <priority>0.8</priority>
   </url>`);
 
-// Add all individual ingredient pages
-const slugs = Object.values(slugMap).sort();
+// Redirect pages that should be excluded from sitemap
+const redirectPages = [
+  'alginic-acid',
+  'calcium-d-pantothenate',
+  'camellia-sinensis',
+  'iron-sulfate',
+  'niacin-supplement',
+  'riboflavin-supplement',
+  'sodium-chloride',
+  'vitamin-k1-supplement',
+  'guar-fiber',
+  'lions-mane'
+];
+
+// Add all individual ingredient pages (excluding redirects)
+const slugs = Object.values(slugMap).sort().filter(slug => !redirectPages.includes(slug));
 slugs.forEach(slug => {
   entries.push(`  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/${slug}/</loc>
