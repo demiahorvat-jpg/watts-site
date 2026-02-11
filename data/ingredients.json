@@ -14967,7 +14967,22 @@
       "qualityNote": "Pea hull fiber is largely indigestible roughage with minimal nutritional value. It's the outer shell of peas—essentially waste material from pea processing. It provides insoluble fiber that adds bulk and can help with constipation, but it's not particularly nutritious or fermentable. In excess, it can reduce the digestibility and nutrient density of food. It's primarily used as cheap filler to increase volume and fiber content without adding calories or cost.",
       "wattsPosition": "caution",
       "wattsTake": "Pea hull fiber is cheap, low-quality filler. While some fiber is beneficial, this is the least nutritious part of the pea—just the hull that would otherwise be discarded. It's used to bulk up food and create the illusion of satiety in weight management formulas without adding actual nutrition. We'd much prefer whole vegetables or whole peas for fiber. If pea hull fiber appears high on the ingredient list, it's a sign of a low-quality formula using cheap fillers to pad out the recipe.",
-      "citations": []
+      "citations": [],
+      "compareToSimilar": [
+        {
+          "ingredient": "psyllium-husk",
+          "difference": "Psyllium husk is a premium soluble fiber that forms a gel and supports digestive health, while pea hull fiber is insoluble roughage with minimal nutritional value."
+        },
+        {
+          "ingredient": "pectin",
+          "difference": "Pectin is a fermentable soluble fiber that feeds beneficial gut bacteria, whereas pea hull fiber is indigestible bulk filler."
+        },
+        {
+          "ingredient": "peanut-hulls",
+          "difference": "Both are cheap legume by-products used as fillers, but peanut hulls are even less digestible and lower quality than pea hulls."
+        }
+      ],
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Pea Protein",
@@ -15074,7 +15089,22 @@
           "url": "https://www.fda.gov/",
           "publisher": "FDA"
         }
-      ]
+      ],
+      "compareToSimilar": [
+        {
+          "ingredient": "pea-protein",
+          "difference": "Pea protein concentrate has slightly lower protein content (80-85%) compared to pea protein isolate (85-90%), with more residual carbohydrates and fiber."
+        },
+        {
+          "ingredient": "pea-starch",
+          "difference": "Pea starch is the extracted carbohydrate portion used for binding, while pea protein concentrate is the extracted protein portion used to boost protein levels."
+        },
+        {
+          "ingredient": "chicken-meal",
+          "difference": "Chicken meal provides complete animal protein with all essential amino acids dogs need, while pea protein concentrate is incomplete plant protein lacking methionine and taurine."
+        }
+      ],
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Pea Starch",
@@ -15099,7 +15129,22 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "compareToSimilar": [
+        {
+          "ingredient": "potato-starch",
+          "difference": "Potato starch is extracted from potatoes while pea starch comes from peas, but both are refined carbohydrates with minimal nutrition used as grain-free binders."
+        },
+        {
+          "ingredient": "tapioca-starch",
+          "difference": "Tapioca starch is extracted from cassava root and is generally more digestible, while pea starch is from legumes and may contribute to digestive sensitivity in some dogs."
+        },
+        {
+          "ingredient": "pea-protein-concentrate",
+          "difference": "Pea starch is the extracted carbohydrate portion used for binding, while pea protein concentrate is the protein portion used to boost protein percentages."
+        }
+      ],
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Peanut Hulls",
@@ -15124,7 +15169,22 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "compareToSimilar": [
+        {
+          "ingredient": "pea-hull-fiber",
+          "difference": "Both are cheap legume by-products used as fillers, but peanut hulls are even less digestible and lower quality than pea hull fiber."
+        },
+        {
+          "ingredient": "cellulose",
+          "difference": "Cellulose is purified plant fiber that provides consistent insoluble fiber, while peanut hulls are crude, unprocessed shells with zero nutritional value."
+        },
+        {
+          "ingredient": "psyllium-husk",
+          "difference": "Psyllium husk is a premium soluble fiber with digestive benefits, while peanut hulls are indigestible waste material used purely as cheap filler."
+        }
+      ],
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Pear",
@@ -15145,7 +15205,22 @@
       "qualityNote": "Pears are a good source of fiber (especially soluble fiber), vitamin C, and vitamin K. They're relatively low on the glycemic index compared to some fruits and are generally well-tolerated. The fiber supports digestive health, while vitamins provide antioxidant benefits. Pears are naturally sweet but less sugary than some tropical fruits. Generally safe, though seeds should be removed (contain small amounts of cyanide compounds).",
       "wattsPosition": "neutral",
       "wattsTake": "Pear is a decent fruit option - relatively lower in sugar than tropical fruits while providing good fiber and vitamins. We appreciate whole fruit inclusions for fiber and nutrients. Pears are gentle on digestion and provide legitimate nutritional value. However, like all fruits, they should be minor ingredients rather than major components. Fine for variety and fiber in balanced amounts. Neutral - good when used appropriately.",
-      "citations": []
+      "citations": [],
+      "compareToSimilar": [
+        {
+          "ingredient": "apple",
+          "difference": "Apples and pears are similar in fiber and vitamin content, but pears have slightly more soluble fiber and are often gentler on sensitive stomachs."
+        },
+        {
+          "ingredient": "pineapple",
+          "difference": "Pineapple is higher in sugar and contains bromelain enzyme for digestion, while pear is lower glycemic with more fiber and better for weight management."
+        },
+        {
+          "ingredient": "blueberries",
+          "difference": "Blueberries provide superior antioxidants and lower sugar than pears, but pears offer more fiber and bulk for digestive health."
+        }
+      ],
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Peas",
@@ -15340,7 +15415,22 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "compareToSimilar": [
+        {
+          "ingredient": "psyllium-husk",
+          "difference": "Both are premium soluble fibers, but psyllium husk forms a thicker gel and is especially effective for constipation, while pectin is gentler and better for loose stools."
+        },
+        {
+          "ingredient": "pea-hull-fiber",
+          "difference": "Pectin is a fermentable soluble fiber that feeds beneficial gut bacteria, whereas pea hull fiber is indigestible bulk filler with no prebiotic benefits."
+        },
+        {
+          "ingredient": "cellulose",
+          "difference": "Cellulose is insoluble fiber that adds bulk, while pectin is soluble fiber that forms a gel, feeds gut bacteria, and helps regulate stool consistency."
+        }
+      ],
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Phosphoric Acid",
@@ -15361,7 +15451,18 @@
       "qualityNote": "Phosphoric acid is a synthetic acid used to acidify foods and regulate pH. While it provides phosphorus, it's not used as a nutrient source - amounts are too small. Some concerns exist about excessive phosphorus intake contributing to kidney issues, though amounts from acidulants are typically minimal compared to protein sources. It's Generally Recognized As Safe but serves processing purposes rather than nutritional ones.",
       "wattsPosition": "caution",
       "wattsTake": "Phosphoric acid is an unnecessary chemical additive used for pH and flavor manipulation. While it's not acutely toxic, we question why food needs acid additives for flavor or preservation. Quality foods with good ingredients shouldn't need pH manipulators. We prefer foods using natural acidulants like citric acid (from lemons) if acidification is needed, or better yet, foods that don't need chemical pH adjustment. It's a sign of heavy processing.",
-      "citations": []
+      "citations": [],
+      "compareToSimilar": [
+        {
+          "ingredient": "citric-acid",
+          "difference": "Citric acid is derived from natural sources like citrus fruits and is a gentler acidulant, while phosphoric acid is synthetic and stronger for industrial pH manipulation."
+        },
+        {
+          "ingredient": "vinegar",
+          "difference": "Vinegar is a natural, food-based acidulant derived from fermentation, whereas phosphoric acid is a synthetic chemical used primarily for industrial processing."
+        }
+      ],
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Pineapple",
@@ -15388,7 +15489,22 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "compareToSimilar": [
+        {
+          "ingredient": "pear",
+          "difference": "Pineapple is higher in sugar and contains bromelain enzyme for digestion, while pear is lower glycemic with more fiber and better for weight management."
+        },
+        {
+          "ingredient": "papaya",
+          "difference": "Both contain digestive enzymes (bromelain in pineapple, papain in papaya), but pineapple has higher vitamin C while papaya is gentler on sensitive stomachs."
+        },
+        {
+          "ingredient": "blueberries",
+          "difference": "Blueberries are lower in sugar with superior antioxidants, while pineapple provides unique bromelain enzyme and is higher in natural sugars."
+        }
+      ],
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Pinto Beans",
@@ -15408,7 +15524,22 @@
       "qualityNote": "Pinto beans are nutritionally similar to other common beans, offering moderate plant protein, substantial fiber, and micronutrients. They're particularly rich in folate and manganese, with beneficial polyphenol antioxidants. Like all legumes, they contain anti-nutritional factors and incomplete protein. They can cause digestive upset (gas) in some dogs. A decent whole food ingredient but not a substitute for animal protein.",
       "wattsPosition": "neutral",
       "wattsTake": "Pinto beans are fine as a minor ingredient in grain-free formulas. They provide some protein and nutrients, though we'd never want them as a primary protein source. We appreciate whole beans over bean fractions, but we still prioritize animal proteins. If you see multiple bean varieties (pinto, navy, garbanzo) in the same food, it's likely legume stacking to hide the total plant protein content. One bean type in moderation is acceptable.",
-      "citations": []
+      "citations": [],
+      "compareToSimilar": [
+        {
+          "ingredient": "chickpeas",
+          "difference": "Chickpeas have slightly higher protein content and are firmer texture, while pinto beans are softer and higher in folate, but both are legumes used similarly in grain-free formulas."
+        },
+        {
+          "ingredient": "lentils",
+          "difference": "Lentils cook faster and have higher protein density than pinto beans, but both are legumes associated with DCM concerns when used heavily in grain-free diets."
+        },
+        {
+          "ingredient": "peas",
+          "difference": "Peas are more commonly used in dog food and slightly lower in anti-nutritional factors than pinto beans, but both provide similar plant protein and fiber."
+        }
+      ],
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Pork",
@@ -15789,7 +15920,22 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "compareToSimilar": [
+        {
+          "ingredient": "natural-flavor",
+          "difference": "Pork liver flavor specifies the source (pork liver), while natural flavor is vague and could come from any animal or plant source, making pork liver flavor more transparent."
+        },
+        {
+          "ingredient": "chicken-flavor",
+          "difference": "Both are named flavoring agents, but pork liver flavor comes from pork liver while chicken flavor comes from chicken tissue, with similar palatability enhancement purposes."
+        },
+        {
+          "ingredient": "pork-liver",
+          "difference": "Pork liver is actual organ meat providing nutrition, while pork liver flavor is just extracted taste compounds used in tiny amounts for palatability."
+        }
+      ],
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Pork Meal",
@@ -15950,7 +16096,22 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "compareToSimilar": [
+        {
+          "ingredient": "potassium-citrate",
+          "difference": "Potassium citrate also provides potassium but includes citric acid which helps alkalize urine and prevent kidney stones, while potassium chloride is a simple salt without pH-buffering properties."
+        },
+        {
+          "ingredient": "potassium-iodide",
+          "difference": "Potassium iodide primarily provides iodine for thyroid function with potassium as a carrier, while potassium chloride is used specifically for potassium supplementation."
+        },
+        {
+          "ingredient": "sodium-chloride",
+          "difference": "Sodium chloride provides sodium and chloride for different electrolyte needs, while potassium chloride specifically supplies potassium which is crucial for heart and muscle function."
+        }
+      ],
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Potassium Citrate",
@@ -15971,7 +16132,22 @@
       "qualityNote": "Potassium citrate serves dual purposes - pH regulation and potassium supplementation. It's particularly useful in urinary health formulas where it helps prevent crystal formation by alkalinizing urine. Potassium is an essential mineral, so unlike other additives, potassium citrate provides some nutritional value. It's considered safe and is used in both human and pet foods. Better than purely functional additives since it contributes a nutrient.",
       "wattsPosition": "neutral",
       "wattsTake": "Potassium citrate is an acceptable ingredient that serves both functional (pH regulation) and nutritional (potassium) purposes. We appreciate that it's providing a nutrient while also serving a processing function. It's particularly valuable in urinary health formulas. While we'd prefer potassium from whole food sources, potassium citrate is harmless and effective. Neutral - it's functional and provides some benefit without being problematic.",
-      "citations": []
+      "citations": [],
+      "compareToSimilar": [
+        {
+          "ingredient": "potassium-chloride",
+          "difference": "Potassium citrate also provides potassium but includes citric acid which helps alkalize urine and prevent kidney stones, while potassium chloride is a simple salt without pH-buffering properties."
+        },
+        {
+          "ingredient": "sodium-citrate",
+          "difference": "Both are citrate salts used for pH buffering, but potassium citrate provides potassium while sodium citrate provides sodium for different electrolyte needs."
+        },
+        {
+          "ingredient": "calcium-citrate",
+          "difference": "Calcium citrate provides calcium and pH buffering, while potassium citrate provides potassium, both serving dual nutritional and functional roles."
+        }
+      ],
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Potassium Iodide",
@@ -15992,7 +16168,22 @@
       "qualityNote": "Potassium iodide is the most widely used form of iodine supplementation in pet foods. Iodine is an essential trace mineral critical for thyroid hormone synthesis. Without adequate iodine, dogs can develop hypothyroidism and metabolic issues. Potassium iodide is bioavailable, stable, and cost-effective. Required by AAFCO for complete and balanced pet foods. Safe at appropriate levels.",
       "wattsPosition": "good",
       "wattsTake": "Potassium iodide is a necessary and appropriate iodine supplement. Iodine is essential for thyroid function and metabolism, and supplementation ensures dogs get adequate amounts. We have no concerns with potassium iodide - it's the standard, reliable form used in quality pet foods. Its presence indicates the food is properly fortified to meet iodine requirements. This is expected in complete and balanced formulas.",
-      "citations": []
+      "citations": [],
+      "compareToSimilar": [
+        {
+          "ingredient": "potassium-chloride",
+          "difference": "Potassium iodide primarily provides iodine for thyroid function with potassium as a carrier, while potassium chloride is used specifically for potassium supplementation."
+        },
+        {
+          "ingredient": "calcium-iodate",
+          "difference": "Both provide essential iodine for thyroid function, but calcium iodate also provides calcium while potassium iodide provides potassium, with both being safe iodine sources."
+        },
+        {
+          "ingredient": "kelp",
+          "difference": "Kelp is a natural whole-food source of iodine from seaweed, while potassium iodide is a synthetic supplement providing precise, controlled iodine levels."
+        }
+      ],
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Potassium Sorbate",
@@ -16049,7 +16240,26 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "compareToSimilar": [
+        {
+          "ingredient": "pea-starch",
+          "difference": "Potato starch is extracted from potatoes while pea starch comes from peas, but both are refined carbohydrates with minimal nutrition used as grain-free binders."
+        },
+        {
+          "ingredient": "tapioca-starch",
+          "difference": "Both are pure refined starches used as grain-free binders, though tapioca is from cassava root and potato is from potatoes, with similar nutritional emptiness."
+        },
+        {
+          "ingredient": "sweet-potato",
+          "difference": "Sweet potato is a whole food with fiber, vitamins, and antioxidants, while potato starch is just the extracted carbohydrate with zero nutritional value."
+        },
+        {
+          "ingredient": "white-potato",
+          "difference": "White potato is a whole vegetable with some nutrients and fiber, while potato starch is just the isolated starch component with no fiber or micronutrients."
+        }
+      ],
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Potatoes",
@@ -16348,7 +16558,22 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "compareToSimilar": [
+        {
+          "ingredient": "chicken-digest",
+          "difference": "Chicken digest specifies the exact poultry source (chicken), making it more transparent and traceable than poultry digest which could be any bird species."
+        },
+        {
+          "ingredient": "animal-digest",
+          "difference": "Animal digest is completely vague and could come from any animal source, while poultry digest at least specifies bird tissue as the source."
+        },
+        {
+          "ingredient": "natural-flavor",
+          "difference": "Natural flavor is even more vague about source and processing, while poultry digest clearly indicates enzymatic hydrolysis of poultry tissue."
+        }
+      ],
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Poultry Fat",
@@ -16374,7 +16599,22 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "compareToSimilar": [
+        {
+          "ingredient": "chicken-fat",
+          "difference": "Chicken fat specifies the exact poultry source, making it more transparent and consistent than generic poultry fat which could be any bird species."
+        },
+        {
+          "ingredient": "fish-oil",
+          "difference": "Fish oil provides omega-3 fatty acids (EPA/DHA) for anti-inflammatory benefits, while poultry fat is primarily omega-6 fatty acids for energy and palatability."
+        },
+        {
+          "ingredient": "pork-fat",
+          "difference": "Pork fat comes from pigs and has a different fatty acid profile than poultry fat, though both serve as concentrated energy and palatability enhancers."
+        }
+      ],
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Probiotics",
@@ -16580,7 +16820,18 @@
           "url": "https://www.fda.gov/",
           "publisher": "FDA"
         }
-      ]
+      ],
+      "compareToSimilar": [
+        {
+          "ingredient": "vegetable-glycerin",
+          "difference": "Vegetable glycerin is a natural plant-derived humectant with better safety profile, while propylene glycol is synthetic and potentially problematic for sensitive dogs."
+        },
+        {
+          "ingredient": "glycerin",
+          "difference": "Glycerin (from fats/oils) is a safer natural alternative humectant, while propylene glycol is synthetic and toxic to cats."
+        }
+      ],
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Protease",
@@ -16606,7 +16857,22 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "compareToSimilar": [
+        {
+          "ingredient": "amylase",
+          "difference": "Amylase breaks down carbohydrates and starches, while protease specifically breaks down proteins into amino acids for absorption."
+        },
+        {
+          "ingredient": "lipase",
+          "difference": "Lipase breaks down dietary fats into fatty acids, while protease breaks down proteins, with both being important digestive enzymes."
+        },
+        {
+          "ingredient": "bromelain",
+          "difference": "Bromelain is a plant-derived protease from pineapple with anti-inflammatory properties, while protease is a general term for protein-digesting enzymes from various sources."
+        }
+      ],
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Psyllium Husk",
@@ -16631,7 +16897,22 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "compareToSimilar": [
+        {
+          "ingredient": "pectin",
+          "difference": "Both are premium soluble fibers, but psyllium husk forms a thicker gel and is especially effective for constipation, while pectin is gentler and better for loose stools."
+        },
+        {
+          "ingredient": "pea-hull-fiber",
+          "difference": "Psyllium husk is a premium soluble fiber that forms a gel and supports digestive health, while pea hull fiber is insoluble roughage with minimal nutritional value."
+        },
+        {
+          "ingredient": "cellulose",
+          "difference": "Cellulose is insoluble fiber for bulk, while psyllium husk is soluble fiber that absorbs water, forms a gel, and helps regulate both diarrhea and constipation."
+        }
+      ],
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Pumpkin",
@@ -16724,7 +17005,22 @@
       "qualityNote": "Pumpkin seeds are a nutrient-dense superfood ingredient. They're exceptionally high in zinc, magnesium, and healthy fats. They contain cucurbitacin compounds that have been traditionally used for parasite control, though evidence is limited. The seeds provide quality plant protein and beneficial fatty acids. Generally well-tolerated with minimal downsides when used in appropriate amounts.",
       "wattsPosition": "good",
       "wattsTake": "We love seeing pumpkin seeds in dog food and supplements. They're one of the best plant-based ingredients, packed with minerals and healthy fats. The zinc content supports skin and coat health, while magnesium aids muscle and nerve function. Unlike cheap fillers, pumpkin seeds add genuine nutritional value. They're especially beneficial for senior dogs or those needing urinary support. A small, mighty ingredient worth celebrating.",
-      "citations": []
+      "citations": [],
+      "compareToSimilar": [
+        {
+          "ingredient": "flaxseed",
+          "difference": "Flaxseed provides omega-3 fatty acids (ALA) for inflammation, while pumpkin seed is higher in zinc, magnesium, and omega-6 fatty acids for skin and urinary health."
+        },
+        {
+          "ingredient": "sunflower-seed",
+          "difference": "Both provide healthy fats and vitamin E, but pumpkin seeds are superior in zinc and magnesium content, making them better for urinary and prostate support."
+        },
+        {
+          "ingredient": "chia-seed",
+          "difference": "Chia seeds are higher in omega-3s and soluble fiber, while pumpkin seeds excel in zinc, magnesium, and traditional use for urinary tract health."
+        }
+      ],
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Pyridoxine Hydrochloride",
@@ -16749,7 +17045,22 @@
           "url": "https://www.aafco.org/",
           "publisher": "AAFCO"
         }
-      ]
+      ],
+      "compareToSimilar": [
+        {
+          "ingredient": "thiamine-mononitrate",
+          "difference": "Thiamine mononitrate is vitamin B1 for energy metabolism, while pyridoxine hydrochloride is vitamin B6 for protein metabolism and neurotransmitter production."
+        },
+        {
+          "ingredient": "riboflavin",
+          "difference": "Riboflavin is vitamin B2 for energy production from all macronutrients, while pyridoxine hydrochloride is B6 specifically important for protein and amino acid metabolism."
+        },
+        {
+          "ingredient": "niacin",
+          "difference": "Niacin (B3) supports cellular energy and DNA repair, while pyridoxine hydrochloride (B6) focuses on protein metabolism and red blood cell formation."
+        }
+      ],
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Quercetin",
@@ -16775,7 +17086,22 @@
           "url": "https://www.ncbi.nlm.nih.gov/",
           "publisher": "NCBI"
         }
-      ]
+      ],
+      "compareToSimilar": [
+        {
+          "ingredient": "bromelain",
+          "difference": "Bromelain is a digestive enzyme with anti-inflammatory properties, while quercetin is a flavonoid antioxidant; they're often combined to enhance absorption and allergy relief."
+        },
+        {
+          "ingredient": "turmeric",
+          "difference": "Both are natural anti-inflammatory compounds, but turmeric contains curcumin for broader inflammation reduction, while quercetin specifically acts as an antihistamine for allergies."
+        },
+        {
+          "ingredient": "omega-3-fatty-acids",
+          "difference": "Omega-3s reduce inflammation through different pathways (prostaglandins), while quercetin works as an antihistamine and antioxidant for allergy-related inflammation."
+        }
+      ],
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Red 40",
@@ -21941,7 +22267,22 @@
       "nutritionValue": "moderate",
       "qualityNote": "Prebiotics are scientifically validated for gut health support. Unlike probiotics (live bacteria), prebiotics are stable and don't require refrigeration. They selectively feed beneficial bacteria while starving harmful strains. Common sources like chicory root and beet pulp are natural and well-tolerated. However, too much can cause gas and loose stools. Quality formulas include moderate amounts (1-3% of diet) rather than excessive levels.",
       "wattsPosition": "good",
-      "wattsTake": "We strongly support prebiotics in dog food. They're one of the most evidence-based functional ingredients for digestive and immune health. Unlike trendy additives, prebiotics have robust research showing they improve gut bacteria balance and produce beneficial metabolites. Natural sources like chicory root, beet pulp, and pumpkin are preferred over synthetic FOS. Used appropriately, they add genuine health value beyond basic nutrition."
+      "wattsTake": "We strongly support prebiotics in dog food. They're one of the most evidence-based functional ingredients for digestive and immune health. Unlike trendy additives, prebiotics have robust research showing they improve gut bacteria balance and produce beneficial metabolites. Natural sources like chicory root, beet pulp, and pumpkin are preferred over synthetic FOS. Used appropriately, they add genuine health value beyond basic nutrition.",
+      "compareToSimilar": [
+        {
+          "ingredient": "probiotics",
+          "difference": "Probiotics are live beneficial bacteria that need to survive processing, while prebiotics are non-digestible fibers that feed existing gut bacteria and are more stable in kibble."
+        },
+        {
+          "ingredient": "fiber",
+          "difference": "General fiber adds bulk and promotes regularity, while prebiotics specifically feed beneficial bacteria and produce health-promoting short-chain fatty acids."
+        },
+        {
+          "ingredient": "chicory-root",
+          "difference": "Chicory root is a specific natural source of prebiotics (inulin), while prebiotics is a general term that can include chicory, FOS, or other fermentable fibers."
+        }
+      ],
+      "lastUpdated": "February 11, 2026"
     },
     {
       "name": "Blue 1",
@@ -22310,7 +22651,26 @@
       "nutritionValue": "none",
       "qualityNote": "Red 3 provides zero nutritional value and serves only cosmetic purposes for human perception. Dogs are not influenced by food color. Red 3 is the most controversial synthetic dye—it was banned in cosmetics in 1990 due to cancer concerns from animal studies showing thyroid tumors. However, it remains FDA-approved for food use. Several studies link it to behavioral changes and thyroid dysfunction. There is absolutely no legitimate reason to include Red 3 in dog food.",
       "wattsPosition": "bad",
-      "wattsTake": "Red 3 is one of the worst ingredients you can find in dog food. Banned in cosmetics for cancer concerns but still allowed in food—that alone should raise red flags. Synthetic dyes serve zero purpose for dogs and exist only to fool human buyers. Red 3 specifically has concerning research on thyroid effects and behavioral changes. Any food containing Red 3 or other FD&C dyes signals a manufacturer prioritizing marketing over health. Avoid entirely and choose brands with no artificial colors or natural colorants like beet juice."
+      "wattsTake": "Red 3 is one of the worst ingredients you can find in dog food. Banned in cosmetics for cancer concerns but still allowed in food—that alone should raise red flags. Synthetic dyes serve zero purpose for dogs and exist only to fool human buyers. Red 3 specifically has concerning research on thyroid effects and behavioral changes. Any food containing Red 3 or other FD&C dyes signals a manufacturer prioritizing marketing over health. Avoid entirely and choose brands with no artificial colors or natural colorants like beet juice.",
+      "compareToSimilar": [
+        {
+          "ingredient": "red-40",
+          "difference": "Both are synthetic red dyes, but Red 3 is more controversial due to being banned in cosmetics for cancer concerns, while Red 40 remains widely used despite hyperactivity concerns."
+        },
+        {
+          "ingredient": "beet-juice-color",
+          "difference": "Beet juice is a natural plant-based colorant with no health concerns, while Red 3 is a synthetic petroleum-derived dye banned in cosmetics for cancer risks."
+        },
+        {
+          "ingredient": "carmine",
+          "difference": "Carmine is a natural red dye from insects that's safer than synthetic options, while Red 3 is petroleum-based with thyroid and cancer concerns."
+        },
+        {
+          "ingredient": "blue-2",
+          "difference": "Both are synthetic FD&C dyes with no nutritional value, but Red 3 has more serious health concerns including cosmetics ban, while Blue 2 has bladder tumor concerns."
+        }
+      ],
+      "lastUpdated": "February 11, 2026"
     }
   ]
 }
