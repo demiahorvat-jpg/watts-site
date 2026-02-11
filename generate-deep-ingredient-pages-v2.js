@@ -163,16 +163,22 @@ function generateNutritionalProfile(profile) {
   }
 
   if (profile.micronutrients) {
-    html += `
+    // Handle both object and string formats
+    if (typeof profile.micronutrients === 'string') {
+      html += `
+    <p><strong>Key Micronutrients:</strong> ${profile.micronutrients}</p>`;
+    } else if (typeof profile.micronutrients === 'object') {
+      html += `
     <h3>Key Micronutrients</h3>
     <ul>`;
-    for (const [key, value] of Object.entries(profile.micronutrients)) {
-      const label = key.replace(/([A-Z])/g, ' $1').trim();
-      html += `
+      for (const [key, value] of Object.entries(profile.micronutrients)) {
+        const label = key.replace(/([A-Z])/g, ' $1').trim();
+        html += `
       <li><strong>${capitalize(label)}:</strong> ${value}</li>`;
-    }
-    html += `
+      }
+      html += `
     </ul>`;
+    }
   }
 
   if (profile.aminoAcids && Array.isArray(profile.aminoAcids)) {

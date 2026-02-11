@@ -14,35 +14,6 @@
     <meta property="og:type" content="article">
 
     <style>
-      @font-face {
-        font-family: 'Degular';
-        src: url('/fonts/Degular-Regular.woff2') format('woff2');
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-      }
-      @font-face {
-        font-family: 'Degular';
-        src: url('/fonts/Degular-Medium.woff2') format('woff2');
-        font-weight: 500;
-        font-style: normal;
-        font-display: swap;
-      }
-      @font-face {
-        font-family: 'Degular';
-        src: url('/fonts/Degular-Semibold.woff2') format('woff2');
-        font-weight: 600;
-        font-style: normal;
-        font-display: swap;
-      }
-      @font-face {
-        font-family: 'Degular';
-        src: url('/fonts/Degular-Bold.woff2') format('woff2');
-        font-weight: 700;
-        font-style: normal;
-        font-display: swap;
-      }
-
       :root {
         --bg: #F1ECE9;
         --fg: #191919;
@@ -51,10 +22,6 @@
         --good: #2d5016;
         --caution: #b45309;
         --avoid: #991b1b;
-        --brand-orange: #c03800;
-        --accent-navy: #1e3a5f;
-        --bg-light: #f1f1f1;
-        --white: #ffffff;
       }
 
       * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -63,165 +30,10 @@
       body {
         background: var(--bg);
         color: var(--fg);
-        font-family: "Degular", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        font-family: "Geologica", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
         font-weight: 400;
         line-height: 1.6;
         overflow-x: hidden;
-      }
-
-      
-      /* HEADER WRAPPER - Black background */
-      .header-wrapper {
-        background: #191919;
-        padding: 12px 12px 0;
-        position: sticky;
-        top: 0;
-        z-index: 100;
-      }
-
-      /* ORANGE HEADER - Rounded like Shopify site */
-      header {
-        background: var(--brand-orange);
-        padding: 7px 20px;
-        border-radius: 16px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-      }
-
-      .header-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
-        min-height: 40px;
-      }
-
-      /* Nav on the LEFT */
-      header nav {
-        order: -1;
-        display: flex;
-        align-items: center;
-      }
-
-      header nav ul {
-        list-style: none;
-        display: flex;
-        gap: 16px;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-      }
-      @media (min-width: 768px) {
-        header nav ul { gap: 24px; }
-      }
-
-      header nav li {
-        display: flex;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-      }
-
-      header nav a {
-        color: var(--white);
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: 500;
-        transition: opacity 0.15s;
-      }
-      @media (min-width: 768px) {
-        header nav a { font-size: 15px; }
-      }
-      header nav a:hover {
-        opacity: 0.8;
-      }
-    /* Hamburger menu for mobile */
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 4px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 8px;
-      z-index: 1000;
-    }
-
-    .hamburger span {
-      display: block;
-      width: 22px;
-      height: 2px;
-      background: var(--white);
-      transition: all 0.3s ease;
-    }
-
-    @media (max-width: 767px) {
-      .hamburger {
-        display: flex;
-      }
-
-      nav ul {
-        position: fixed;
-        top: 64px;
-        left: 0;
-        right: 0;
-        background: var(--brand-orange);
-        flex-direction: column;
-        gap: 0;
-        padding: 20px;
-        margin: 0;
-        transform: translateX(-100%);
-        transition: transform 0.3s ease;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        max-height: calc(100vh - 64px);
-        overflow-y: auto;
-      }
-
-      nav ul.active {
-        transform: translateX(0);
-      }
-
-      nav li {
-        width: 100%;
-        padding: 12px 0;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
-      }
-
-      nav li:last-child {
-        border-bottom: none;
-      }
-
-      nav a {
-        font-size: 16px;
-        display: block;
-        width: 100%;
-      }
-
-      /* Keep logo centered */
-      .logo-container {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-    }
-    
-
-      /* Logo in CENTER */
-      .logo-link {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        align-items: center;
-      }
-
-      .logo {
-        height: 24px;
-        width: auto;
-      }
-      @media (min-width: 768px) {
-        .logo { height: 28px; }
       }
 
       nav.nav {
@@ -279,7 +91,7 @@
       .ingredient-hero { margin-bottom: 40px; }
 
       h1 {
-        font-family: "Degular", sans-serif;
+        font-family: "Geologica", sans-serif;
         font-size: 36px;
         font-weight: 700;
         line-height: 1.2;
@@ -565,80 +377,6 @@
           font-size: 13px;
         }
       }
-    
-      /* FOOTER WRAPPER */
-      .footer-wrapper {
-        background: #191919;
-        padding: 0 12px 12px;
-        margin-top: 80px;
-      }
-
-      /* FOOTER - Orange with asymmetric rounded shape like Shopify */
-      footer {
-        background: var(--brand-orange);
-        color: var(--white);
-        padding: 45px 40px 20px;
-        border-radius: 200px 16px 16px 200px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        min-height: 144px;
-      }
-      @media (min-width: 768px) {
-        footer {
-          padding: 63px 60px 24px;
-          min-height: 207px;
-          border-radius: 300px 16px 16px 300px;
-        }
-      }
-
-      .footer-content {
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-
-      .footer-left {
-        flex: 1;
-      }
-
-      .footer-right {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 24px;
-        flex: 1;
-      }
-      @media (min-width: 768px) {
-        .footer-right {
-          gap: 32px;
-        }
-      }
-
-      .footer-right-text {
-        text-align: right;
-      }
-
-      .footer-logo {
-        height: 100px;
-        width: auto;
-      }
-      @media (min-width: 768px) {
-        .footer-logo { height: 140px; }
-      }
-
-      footer p {
-        margin: 0;
-        font-size: 15px;
-        line-height: 1.5;
-      }
-      @media (min-width: 768px) {
-        footer p { font-size: 16px; }
-      }
-
     </style>
 
     <script type="application/ld+json">
@@ -731,28 +469,14 @@
     </script>
 </head>
 <body>
-    <div class="header-wrapper">
-    <header>
-      <div class="header-container">
-        <button class="hamburger" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/blog/">Blog</a></li>
-            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
-          </ul>
-        </nav>
-        <a href="/" class="logo-link">
-          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
-        </a>
-      </div>
-    </header>
-  </div>
+  <nav class="nav">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
+    </ul>
+  </nav>
 
   <main>
     <div class="breadcrumbs">
@@ -830,103 +554,7 @@
 
     
     <h2 id="nutritional-profile">Nutritional Profile</h2>
-    <h3>Key Micronutrients</h3>
-    <ul>
-      <li><strong>0:</strong> E</li>
-      <li><strong>1:</strong> s</li>
-      <li><strong>2:</strong> s</li>
-      <li><strong>3:</strong> e</li>
-      <li><strong>4:</strong> n</li>
-      <li><strong>5:</strong> t</li>
-      <li><strong>6:</strong> i</li>
-      <li><strong>7:</strong> a</li>
-      <li><strong>8:</strong> l</li>
-      <li><strong>9:</strong> l</li>
-      <li><strong>10:</strong> y</li>
-      <li><strong>11:</strong>  </li>
-      <li><strong>12:</strong> n</li>
-      <li><strong>13:</strong> o</li>
-      <li><strong>14:</strong> n</li>
-      <li><strong>15:</strong> e</li>
-      <li><strong>16:</strong>  </li>
-      <li><strong>17:</strong> a</li>
-      <li><strong>18:</strong> f</li>
-      <li><strong>19:</strong> t</li>
-      <li><strong>20:</strong> e</li>
-      <li><strong>21:</strong> r</li>
-      <li><strong>22:</strong>  </li>
-      <li><strong>23:</strong> r</li>
-      <li><strong>24:</strong> e</li>
-      <li><strong>25:</strong> f</li>
-      <li><strong>26:</strong> i</li>
-      <li><strong>27:</strong> n</li>
-      <li><strong>28:</strong> i</li>
-      <li><strong>29:</strong> n</li>
-      <li><strong>30:</strong> g</li>
-      <li><strong>31:</strong> —</li>
-      <li><strong>32:</strong> t</li>
-      <li><strong>33:</strong> r</li>
-      <li><strong>34:</strong> a</li>
-      <li><strong>35:</strong> c</li>
-      <li><strong>36:</strong> e</li>
-      <li><strong>37:</strong>  </li>
-      <li><strong>38:</strong> v</li>
-      <li><strong>39:</strong> i</li>
-      <li><strong>40:</strong> t</li>
-      <li><strong>41:</strong> a</li>
-      <li><strong>42:</strong> m</li>
-      <li><strong>43:</strong> i</li>
-      <li><strong>44:</strong> n</li>
-      <li><strong>45:</strong>  </li>
-      <li><strong>46:</strong> E</li>
-      <li><strong>47:</strong>  </li>
-      <li><strong>48:</strong> r</li>
-      <li><strong>49:</strong> e</li>
-      <li><strong>50:</strong> m</li>
-      <li><strong>51:</strong> a</li>
-      <li><strong>52:</strong> i</li>
-      <li><strong>53:</strong> n</li>
-      <li><strong>54:</strong> s</li>
-      <li><strong>55:</strong>  </li>
-      <li><strong>56:</strong> b</li>
-      <li><strong>57:</strong> u</li>
-      <li><strong>58:</strong> t</li>
-      <li><strong>59:</strong>  </li>
-      <li><strong>60:</strong> i</li>
-      <li><strong>61:</strong> n</li>
-      <li><strong>62:</strong> s</li>
-      <li><strong>63:</strong> u</li>
-      <li><strong>64:</strong> f</li>
-      <li><strong>65:</strong> f</li>
-      <li><strong>66:</strong> i</li>
-      <li><strong>67:</strong> c</li>
-      <li><strong>68:</strong> i</li>
-      <li><strong>69:</strong> e</li>
-      <li><strong>70:</strong> n</li>
-      <li><strong>71:</strong> t</li>
-      <li><strong>72:</strong>  </li>
-      <li><strong>73:</strong> f</li>
-      <li><strong>74:</strong> o</li>
-      <li><strong>75:</strong> r</li>
-      <li><strong>76:</strong>  </li>
-      <li><strong>77:</strong> n</li>
-      <li><strong>78:</strong> u</li>
-      <li><strong>79:</strong> t</li>
-      <li><strong>80:</strong> r</li>
-      <li><strong>81:</strong> i</li>
-      <li><strong>82:</strong> t</li>
-      <li><strong>83:</strong> i</li>
-      <li><strong>84:</strong> o</li>
-      <li><strong>85:</strong> n</li>
-      <li><strong>86:</strong> a</li>
-      <li><strong>87:</strong> l</li>
-      <li><strong>88:</strong>  </li>
-      <li><strong>89:</strong> v</li>
-      <li><strong>90:</strong> a</li>
-      <li><strong>91:</strong> l</li>
-      <li><strong>92:</strong> u</li>
-      <li><strong>93:</strong> e</li>
-    </ul>
+    <p><strong>Key Micronutrients:</strong> Essentially none after refining—trace vitamin E remains but insufficient for nutritional value</p>
 
     <h2 id="key-considerations">Quality Considerations</h2>
     <p>Canola oil signals budget formulation. Animal fats (chicken fat, beef fat) are preferable for palatability and nutrition. Organic, cold-pressed, or expeller-pressed canola oil retains more nutrients than refined canola but is rare in pet food. GMO concerns exist—most canola is genetically modified; organic canola avoids GMOs. Processing concerns include hexane solvent extraction and high-heat refining, though these create shelf-stable product. Canola oil is acceptable in small amounts but shouldn't be primary fat source.</p>
@@ -1035,53 +663,8 @@
     </div>
   </main>
 
-    <div class="footer-wrapper">
-    <footer>
-      <div class="footer-content">
-        <div class="footer-left">
-          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
-        </div>
-        <div class="footer-right">
-          <div class="footer-right-text">
-            <p>hello@wattspet.com</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
-  <script>
-  // Hamburger menu toggle
-  document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('nav ul');
-
-    if (hamburger && navMenu) {
-      hamburger.addEventListener('click', function() {
-        navMenu.classList.toggle('active');
-        this.classList.toggle('active');
-      });
-
-      // Close menu when clicking a link
-      const navLinks = navMenu.querySelectorAll('a');
-      navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-          navMenu.classList.remove('active');
-          hamburger.classList.remove('active');
-        });
-      });
-
-      // Close menu when clicking outside
-      document.addEventListener('click', function(event) {
-        const isClickInsideNav = navMenu.contains(event.target);
-        const isClickOnHamburger = hamburger.contains(event.target);
-
-        if (!isClickInsideNav && !isClickOnHamburger && navMenu.classList.contains('active')) {
-          navMenu.classList.remove('active');
-          hamburger.classList.remove('active');
-        }
-      });
-    }
-  });
-  </script>
+  <footer>
+    <p>&copy; 2026 Watts Pet. All rights reserved.</p>
+  </footer>
 </body>
 </html>
