@@ -722,6 +722,45 @@
           height: 36px;
         }
       }
+
+      /* WATTS CALLOUT BOX - Layered design with orange border */
+      .callout {
+        position: relative;
+        background: var(--brand-orange);
+        border-radius: 4px;
+        padding: 8px;
+        margin: 48px 0;
+      }
+
+      .callout-content {
+        background: var(--white);
+        color: var(--text-dark);
+        border-radius: 12px;
+        padding: 24px 28px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      }
+      @media (min-width: 768px) {
+        .callout-content {
+          padding: 28px 36px;
+        }
+      }
+
+      .callout h3 {
+        color: var(--text-dark);
+      }
+
+      .callout p:last-child {
+        margin-bottom: 0;
+      }
+
+      .callout a {
+        color: var(--accent-navy);
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+      .callout a:hover {
+        opacity: 0.85;
+      }
     </style>
 
     <script type="application/ld+json">
@@ -909,7 +948,8 @@
           <a href="/" aria-label="Watts home">
             <img src="/watts-logo-white.svg" alt="Watts" class="logo">
           </a>
-    </div>
+        </div>
+      </div>
     </header>
   </div>
 
@@ -1003,7 +1043,8 @@
           <div class="quick-facts-content">
             <h3 style="margin-top: 0; font-size: 18px; font-weight: 600;">EPI Is Manageable with Treatment</h3>
             <p style="margin-top: 12px; margin-bottom: 0;">While EPI is not curable, it's highly treatable. Dogs diagnosed with EPI can live normal, healthy lives with proper enzyme replacement and diet management. Without treatment, EPI is fatal—dogs starve despite eating. If your dog shows symptoms, seek veterinary diagnosis immediately.</p>
-    </div>
+          </div>
+        </div>
 
         <h3>How to Know If Your Dog Has EPI: Diagnostic Flowchart</h3>
 
@@ -1118,7 +1159,8 @@
           <div class="warning-content">
             <p><strong>⚠️ Don't Assume Digestive Problems = Enzyme Deficiency</strong><br><br>
             If your dog has chronic diarrhea, gas, bloating, or weight loss, <strong>do not self-diagnose enzyme deficiency</strong>. These symptoms can be caused by dozens of conditions: food intolerances, IBD, parasites, bacterial overgrowth, liver disease, kidney disease, or cancer. See your veterinarian for proper diagnosis before adding any supplements.</p>
-    </div>
+          </div>
+        </div>
 
         <h2>Digestive Enzymes vs Probiotics: What's the Difference?</h2>
 
@@ -1905,7 +1947,13 @@
           <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Protein for Dogs</h3>
           <p style="font-size: 15px; color: var(--text-muted); margin: 0;">How dogs digest and utilize protein from different sources</p>
         </a>
-      </div></main>
+      </div>
+    </div>
+
+    </div>
+
+    </article>
+  </main>
 
   <div class="footer-wrapper">
     <footer>
@@ -1918,7 +1966,8 @@
             <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
           </div>
           <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
-    </div>
+        </div>
+      </div>
     </footer>
   </div>
 
