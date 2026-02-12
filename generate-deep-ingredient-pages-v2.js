@@ -1340,7 +1340,7 @@ function generateIngredientPage(ingredient, allIngredients) {
             <li><a href="/">Home</a></li>
             <li><a href="/about.html">About</a></li>
             <li><a href="/blog/">Blog</a></li>
-            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
           </ul>
         </nav>
         <div class="logo-container">
