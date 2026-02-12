@@ -431,17 +431,28 @@
       margin: 32px 0;
       font-size: 14px;
       border-radius: 12px;
-      overflow: visible;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      display: block;
+    }
+
+    /* Wrapper for horizontal scroll on wide tables only */
+    .table-scroll {
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
+      margin: 32px 0;
     }
+
+    .table-scroll table {
+      margin: 0;
+      min-width: 600px; /* Force scroll for wide tables */
+    }
+
     @media (min-width: 768px) {
       table {
         font-size: 17px;
-        display: table;
-        overflow-x: visible;
+      }
+
+      .table-scroll table {
+        min-width: auto;
       }
     }
 
@@ -877,7 +888,8 @@
 
 <p>Not all probiotic bacteria are equally beneficial. Research in dogs shows specific strains have proven effects:</p>
 
-<table>
+<div class="table-scroll">
+    <table>
     <thead>
         <tr>
             <th>Strain</th>
@@ -923,6 +935,7 @@
         </tr>
     </tbody>
 </table>
+    </div>
 
 <p><strong>The multi-strain advantage:</strong> Products containing 3-5+ different strains typically outperform single-strain formulas. Different bacteria have complementary effects—some excel at immune support, others at producing digestive enzymes, and others at strengthening gut lining.</p>
 
@@ -1136,7 +1149,8 @@
 
 <p>If you opt for supplements, look for these quality indicators:</p>
 
-<table>
+<div class="table-scroll">
+    <table>
     <thead>
         <tr>
             <th>Quality Indicator</th>
@@ -1187,6 +1201,7 @@
         </tr>
     </tbody>
 </table>
+    </div>
 
 <p><strong>The CFU myth:</strong> Products claiming 50-100 billion CFU aren't necessarily better. Strain quality, diversity, and survivability matter more than total count. A well-formulated 5 billion CFU product with multiple researched strains often outperforms a 50 billion CFU product with a single generic strain.</p>
 

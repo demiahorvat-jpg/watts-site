@@ -401,17 +401,28 @@
       margin: 32px 0;
       font-size: 14px;
       border-radius: 12px;
-      overflow: visible;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      display: block;
+    }
+
+    /* Wrapper for horizontal scroll on wide tables only */
+    .table-scroll {
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
+      margin: 32px 0;
     }
+
+    .table-scroll table {
+      margin: 0;
+      min-width: 600px; /* Force scroll for wide tables */
+    }
+
     @media (min-width: 768px) {
       table {
         font-size: 17px;
-        display: table;
-        overflow-x: visible;
+      }
+
+      .table-scroll table {
+        min-width: auto;
       }
     }
 
@@ -938,7 +949,8 @@
 
       <p>Many calming supplements include botanical ingredients. Some have solid research in dogs, others don't. Here's what the evidence shows:</p>
 
-      <table>
+      <div class="table-scroll">
+    <table>
         <thead>
           <tr>
             <th>Ingredient</th>
@@ -979,6 +991,7 @@
           </tr>
         </tbody>
       </table>
+    </div>
 
       <p><strong>The nuance:</strong> These ingredients can provide helpful calming effects for <strong>acute situational anxiety</strong> (vet visits, thunderstorms, travel). Mild sedation isn't inherently bad—sometimes that's exactly what's needed.</p>
 
@@ -1124,7 +1137,8 @@
 
       <p>If you choose a commercial product, look for:</p>
 
-      <table>
+      <div class="table-scroll">
+    <table>
         <thead>
           <tr>
             <th>Quality Indicator</th>
@@ -1175,6 +1189,7 @@
           </tr>
         </tbody>
       </table>
+    </div>
 
       <div class="warning">
         <strong>Caution:</strong> Never combine multiple calming supplements without veterinary guidance. Layering sedatives (chamomile + valerian + melatonin + CBD) can cause excessive sedation. If your dog takes prescription medications (especially SSRIs or anti-anxiety drugs), consult your vet before adding supplements—drug interactions can occur.

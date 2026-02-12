@@ -491,17 +491,28 @@
       margin: 32px 0;
       font-size: 14px;
       border-radius: 12px;
-      overflow: visible;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      display: block;
+    }
+
+    /* Wrapper for horizontal scroll on wide tables only */
+    .table-scroll {
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
+      margin: 32px 0;
     }
+
+    .table-scroll table {
+      margin: 0;
+      min-width: 600px; /* Force scroll for wide tables */
+    }
+
     @media (min-width: 768px) {
       table {
         font-size: 17px;
-        display: table;
-        overflow-x: visible;
+      }
+
+      .table-scroll table {
+        min-width: auto;
       }
     }
 
@@ -933,7 +944,8 @@
 
       <h3>Optimal Protein Levels:</h3>
 
-      <table>
+      <div class="table-scroll">
+    <table>
         <thead>
           <tr>
             <th>Dog Type</th>
@@ -969,6 +981,7 @@
           </tr>
         </tbody>
       </table>
+    </div>
 
       <div class="callout">
       <div class="callout-content">
@@ -985,7 +998,8 @@
 
       <p>Biological value measures how much of the protein your dog can actually absorb and use.</p>
 
-      <table>
+      <div class="table-scroll">
+    <table>
         <thead>
           <tr>
             <th>Protein Source</th>
@@ -1031,6 +1045,7 @@
           </tr>
         </tbody>
       </table>
+    </div>
 
       <p><strong>What this means:</strong> A food with 25% protein from whole meats and eggs is more valuable than one with 35% protein from meat meals and plant proteins.</p>
 
@@ -1109,7 +1124,8 @@
 
       <h3>Protein-Rich Whole Foods: Serving Guide</h3>
 
-      <table>
+      <div class="table-scroll">
+    <table>
         <thead>
           <tr>
             <th>Food</th>
@@ -1160,6 +1176,7 @@
           </tr>
         </tbody>
       </table>
+    </div>
 
       <h2>Understanding Meat Meals in Dog Food</h2>
 
@@ -1187,7 +1204,8 @@
 
       <h3>Named Meals vs. Generic Meals:</h3>
 
-      <table>
+      <div class="table-scroll">
+    <table>
         <thead>
           <tr>
             <th>Type</th>
@@ -1213,6 +1231,7 @@
           </tr>
         </tbody>
       </table>
+    </div>
 
       <p><strong>What to look for:</strong> Foods that list whole meat (chicken, beef) as the first ingredient <em>and</em> a named meat meal (chicken meal) as the second or third ingredient. This provides both fresh and concentrated protein.</p>
 
@@ -1273,7 +1292,8 @@
 
       <h3>Best Plant Proteins (if using):</h3>
 
-      <table>
+      <div class="table-scroll">
+    <table>
         <thead>
           <tr>
             <th>Source</th>
@@ -1304,6 +1324,7 @@
           </tr>
         </tbody>
       </table>
+    </div>
 
       <p><strong>Best approach:</strong> Use animal protein as the foundation (70-80% of protein intake) and supplement with plant proteins for fiber and variety (20-30%).</p>
 
@@ -1423,7 +1444,8 @@
 
       <p>Processing degrades protein quality. The less heat and pressure applied, the better the protein retains its nutritional value.</p>
 
-      <table>
+      <div class="table-scroll">
+    <table>
         <thead>
           <tr>
             <th>Processing Level</th>
@@ -1464,6 +1486,7 @@
           </tr>
         </tbody>
       </table>
+    </div>
 
       <p><strong>Best approach:</strong> Choose the least processed protein your budget and lifestyle allow. Fresh, frozen, or freeze-dried foods provide the highest-quality protein.</p>
 

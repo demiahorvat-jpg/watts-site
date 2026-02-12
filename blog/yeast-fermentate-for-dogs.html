@@ -431,17 +431,28 @@
       margin: 32px 0;
       font-size: 14px;
       border-radius: 12px;
-      overflow: visible;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      display: block;
+    }
+
+    /* Wrapper for horizontal scroll on wide tables only */
+    .table-scroll {
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
+      margin: 32px 0;
     }
+
+    .table-scroll table {
+      margin: 0;
+      min-width: 600px; /* Force scroll for wide tables */
+    }
+
     @media (min-width: 768px) {
       table {
         font-size: 17px;
-        display: table;
-        overflow-x: visible;
+      }
+
+      .table-scroll table {
+        min-width: auto;
       }
     }
 
@@ -1005,6 +1016,7 @@
 
     <p>There's a lot of confusion about different yeast ingredients. Here's how they compare:</p>
 
+    <div class="table-scroll">
     <table>
       <thead>
         <tr>
@@ -1047,6 +1059,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <div class="callout">
       <div class="callout-content">
@@ -1060,6 +1073,7 @@
 
     <p>No, but they're complementary.</p>
 
+    <div class="table-scroll">
     <table>
       <thead>
         <tr>
@@ -1101,6 +1115,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <p><strong>The bottom line:</strong> Probiotics add beneficial bacteria; yeast fermentate feeds beneficial bacteria and provides metabolites. Used together, they can be more effective than either alone—probiotics provide the bacteria, yeast fermentate provides the "food" and metabolic byproducts that support those bacteria.</p>
 
@@ -1108,6 +1123,7 @@
 
     <p>Research studies in dogs typically use yeast fermentate at <strong>1-2% of the total diet</strong>. For a concentrated supplement, this translates to:</p>
 
+    <div class="table-scroll">
     <table>
       <thead>
         <tr>
@@ -1144,6 +1160,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <p><strong>When to use therapeutic doses:</strong></p>
     <ul>

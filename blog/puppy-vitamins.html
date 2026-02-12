@@ -441,17 +441,28 @@
       margin: 32px 0;
       font-size: 14px;
       border-radius: 12px;
-      overflow: visible;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      display: block;
+    }
+
+    /* Wrapper for horizontal scroll on wide tables only */
+    .table-scroll {
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
+      margin: 32px 0;
     }
+
+    .table-scroll table {
+      margin: 0;
+      min-width: 600px; /* Force scroll for wide tables */
+    }
+
     @media (min-width: 768px) {
       table {
         font-size: 17px;
-        display: table;
-        overflow-x: visible;
+      }
+
+      .table-scroll table {
+        min-width: auto;
       }
     }
 
@@ -900,7 +911,8 @@
 
       <p>The vitamins below play outsized roles in a puppy's development. When supported properly, they contribute to stronger structure, sharper cognition, and a more resilient foundation for adulthood.</p>
 
-      <table>
+      <div class="table-scroll">
+    <table>
         <thead>
           <tr>
             <th>Vitamin</th>
@@ -941,6 +953,7 @@
           </tr>
         </tbody>
       </table>
+    </div>
 
       <p>Puppies don't need excessive doses—they need vitamins delivered in forms their bodies can actually recognize and use throughout each phase of growth. This is one of the key reasons <a href="/blog/why-dogs-need-supplements.html">targeted supplementation can support development even with balanced puppy food</a>.</p>
 

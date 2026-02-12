@@ -497,17 +497,28 @@
       margin: 32px 0;
       font-size: 14px;
       border-radius: 12px;
-      overflow: visible;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      display: block;
+    }
+
+    /* Wrapper for horizontal scroll on wide tables only */
+    .table-scroll {
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
+      margin: 32px 0;
     }
+
+    .table-scroll table {
+      margin: 0;
+      min-width: 600px; /* Force scroll for wide tables */
+    }
+
     @media (min-width: 768px) {
       table {
         font-size: 17px;
-        display: table;
-        overflow-x: visible;
+      }
+
+      .table-scroll table {
+        min-width: auto;
       }
     }
 
@@ -910,7 +921,8 @@
 
 <p><strong>Best whole-food source:</strong> <a href="/blog/beef-liver-for-dogs.html">Beef liver</a>—contains <strong>1,500 mcg biotin per 100g</strong>, compared to 10-30 mcg/kg in most commercial dog foods.</p>
 
-<table>
+<div class="table-scroll">
+    <table>
     <thead>
         <tr>
             <th>Food Source</th>
@@ -946,6 +958,7 @@
         </tr>
     </tbody>
 </table>
+    </div>
 
 <h3>3. Zinc</h3>
 
@@ -1069,7 +1082,8 @@
 
 <p>If you choose a commercial supplement, look for:</p>
 
-<table>
+<div class="table-scroll">
+    <table>
     <thead>
         <tr>
             <th>Quality Indicator</th>
@@ -1115,6 +1129,7 @@
         </tr>
     </tbody>
 </table>
+    </div>
 
 <h2>Timeline: When to Expect Results</h2>
 
@@ -1185,7 +1200,8 @@
 
 <p><strong>Cost comparison (monthly for 50 lb dog):</strong></p>
 
-<table>
+<div class="table-scroll">
+    <table>
     <thead>
         <tr>
             <th>Approach</th>
@@ -1211,6 +1227,7 @@
         </tr>
     </tbody>
 </table>
+    </div>
 
 <p>Whole foods cost the same or less—and work better.</p>
 

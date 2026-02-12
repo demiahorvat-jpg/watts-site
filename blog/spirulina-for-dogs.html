@@ -511,17 +511,28 @@
       margin: 32px 0;
       font-size: 14px;
       border-radius: 12px;
-      overflow: visible;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      display: block;
+    }
+
+    /* Wrapper for horizontal scroll on wide tables only */
+    .table-scroll {
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
+      margin: 32px 0;
     }
+
+    .table-scroll table {
+      margin: 0;
+      min-width: 600px; /* Force scroll for wide tables */
+    }
+
     @media (min-width: 768px) {
       table {
         font-size: 17px;
-        display: table;
-        overflow-x: visible;
+      }
+
+      .table-scroll table {
+        min-width: auto;
       }
     }
 
@@ -1033,6 +1044,7 @@
 
     <p><strong>What this means for your dog:</strong> Spirulina isn't a protein replacement for meat, but it's an excellent <strong>complementary protein source</strong> that delivers amino acids efficiently—especially valuable for senior dogs with reduced muscle mass or dogs recovering from illness.</p>
 
+    <div class="table-scroll">
     <table>
       <thead>
         <tr>
@@ -1074,11 +1086,13 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <h2>How Much Spirulina Should You Give Your Dog?</h2>
 
     <p>Research-based dosing guidelines suggest the following daily amounts:</p>
 
+    <div class="table-scroll">
     <table>
       <thead>
         <tr>
@@ -1110,6 +1124,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <h3>Dosing Tips:</h3>
 
@@ -1181,6 +1196,7 @@
 
     <p>How does spirulina compare to other popular supplements?</p>
 
+    <div class="table-scroll">
     <table>
       <thead>
         <tr>
@@ -1217,6 +1233,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <p><strong>The bottom line:</strong> <a href="/ingredient-analyzer/ingredients/spirulina/">Spirulina</a> offers unique benefits (phycocyanin, complete plant protein, immune support) that other superfoods don't provide. The best approach is combining multiple nutrient-dense whole foods—like spirulina, organ meats, and <a href="/ingredient-analyzer/ingredients/bone-broth/">bone broth</a>—for comprehensive nutrition.</p>
 

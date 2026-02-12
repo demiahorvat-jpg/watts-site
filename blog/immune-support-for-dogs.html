@@ -439,17 +439,28 @@
       margin: 32px 0;
       font-size: 14px;
       border-radius: 12px;
-      overflow: visible;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      display: block;
+    }
+
+    /* Wrapper for horizontal scroll on wide tables only */
+    .table-scroll {
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
+      margin: 32px 0;
     }
+
+    .table-scroll table {
+      margin: 0;
+      min-width: 600px; /* Force scroll for wide tables */
+    }
+
     @media (min-width: 768px) {
       table {
         font-size: 17px;
-        display: table;
-        overflow-x: visible;
+      }
+
+      .table-scroll table {
+        min-width: auto;
       }
     }
 
@@ -1108,7 +1119,8 @@
 
 <p><strong>Most important antioxidants for immunity:</strong></p>
 
-<table>
+<div class="table-scroll">
+    <table>
     <thead>
         <tr>
             <th>Antioxidant</th>
@@ -1149,6 +1161,7 @@
         </tr>
     </tbody>
 </table>
+    </div>
 
 <p><strong>Why whole foods are better than antioxidant supplements:</strong> Antioxidants work synergistically in complex ratios found in food. Isolated antioxidants (like high-dose vitamin E alone) can become pro-oxidants without supporting nutrients.</p>
 

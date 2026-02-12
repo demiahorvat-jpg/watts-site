@@ -439,17 +439,28 @@
       margin: 32px 0;
       font-size: 14px;
       border-radius: 12px;
-      overflow: visible;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      display: block;
+    }
+
+    /* Wrapper for horizontal scroll on wide tables only */
+    .table-scroll {
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
+      margin: 32px 0;
     }
+
+    .table-scroll table {
+      margin: 0;
+      min-width: 600px; /* Force scroll for wide tables */
+    }
+
     @media (min-width: 768px) {
       table {
         font-size: 17px;
-        display: table;
-        overflow-x: visible;
+      }
+
+      .table-scroll table {
+        min-width: auto;
       }
     }
 
@@ -946,7 +957,8 @@
 
 <h3>High-Risk Products</h3>
 
-<table>
+<div class="table-scroll">
+    <table>
   <thead>
     <tr>
       <th>Product Type</th>
@@ -992,6 +1004,7 @@
     </tr>
   </tbody>
 </table>
+    </div>
 
 <h3>Lower-Risk Products</h3>
 
@@ -1006,7 +1019,8 @@
 
 <p>Red Dye 40 isn't the only synthetic color in pet products. Others to watch for:</p>
 
-<table>
+<div class="table-scroll">
+    <table>
   <thead>
     <tr>
       <th>Dye Name</th>
@@ -1052,6 +1066,7 @@
     </tr>
   </tbody>
 </table>
+    </div>
 
 <p><strong>Simple rule:</strong> If the ingredient list includes any "FD&C" colors, "Lake" dyes, or numbered colors (<a href="/ingredient-analyzer/ingredients/red-40/">Red 40</a>, <a href="/ingredient-analyzer/ingredients/yellow-5/">Yellow 5</a>, etc.), avoid the product. Learn more about each dye in our <a href="/ingredient-analyzer/">ingredient analyzer</a>.</p>
 
@@ -1059,7 +1074,8 @@
 
 <p>Quality pet food manufacturers use whole-food ingredients that provide natural coloring:</p>
 
-<table>
+<div class="table-scroll">
+    <table>
   <thead>
     <tr>
       <th>Natural Ingredient</th>
@@ -1110,6 +1126,7 @@
     </tr>
   </tbody>
 </table>
+    </div>
 
 <p><strong>Even better approach:</strong> Let whole-food ingredients determine color naturally:</p>
 <ul>

@@ -456,17 +456,28 @@
       margin: 32px 0;
       font-size: 14px;
       border-radius: 12px;
-      overflow: visible;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      display: block;
+    }
+
+    /* Wrapper for horizontal scroll on wide tables only */
+    .table-scroll {
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
+      margin: 32px 0;
     }
+
+    .table-scroll table {
+      margin: 0;
+      min-width: 600px; /* Force scroll for wide tables */
+    }
+
     @media (min-width: 768px) {
       table {
         font-size: 17px;
-        display: table;
-        overflow-x: visible;
+      }
+
+      .table-scroll table {
+        min-width: auto;
       }
     }
 
@@ -919,6 +930,7 @@
 
     <p>EPA and DHA are both long-chain omega-3 fatty acids, but they serve different primary functions in the body:</p>
 
+    <div class="table-scroll">
     <table>
       <thead>
         <tr>
@@ -945,6 +957,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <p><strong>The ideal EPA:DHA ratio for most adult dogs:</strong> Roughly 2:1 to 3:1 (more EPA than DHA). This ratio provides strong anti-inflammatory benefits while still supporting brain and nerve function.</p>
 
@@ -954,6 +967,7 @@
 
     <p>Different omega-3 sources provide varying amounts and ratios of EPA and DHA. Here's what you can expect from common sources:</p>
 
+    <div class="table-scroll">
     <table>
       <thead>
         <tr>
@@ -1037,6 +1051,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <p style="font-size: 14px; color: #666; margin-top: 8px;">*Flaxseed provides ALA, which dogs convert to EPA/DHA at <5% efficiency. Not a reliable source of active omega-3s for dogs.</p>
 
@@ -1068,6 +1083,7 @@
 
     <p><strong>Best whole fish sources for dogs:</strong></p>
 
+    <div class="table-scroll">
     <table>
       <thead>
         <tr>
@@ -1104,6 +1120,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <p><strong>How to feed:</strong> Fresh, frozen, or canned (packed in water, no salt added). For a 50 lb dog: 3-4 oz of fatty fish, 2-3 times per week. Rotate species for nutrient variety.</p>
 
@@ -1146,6 +1163,7 @@
 
     <p>Not all fish oils are created equal. The molecular form determines how well your dog absorbs the omega-3s.</p>
 
+    <div class="table-scroll">
     <table>
       <thead>
         <tr>
@@ -1176,6 +1194,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <p><strong>Why triglyceride form matters:</strong> If you give a dog 1,000 mg of EPA+DHA in ethyl ester form, they might only absorb 300-500 mg. With triglyceride form, they absorb 700-900 mg—almost double the benefit from the same dose.</p>
 
@@ -1191,6 +1210,7 @@
 
     <p><strong>Target:</strong> 75-100 mg of combined EPA + DHA per 10 lbs of body weight, daily.</p>
 
+    <div class="table-scroll">
     <table>
       <thead>
         <tr>
@@ -1227,6 +1247,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <h3>Therapeutic Dosing (Allergies, Arthritis, Inflammation)</h3>
 
@@ -1247,6 +1268,7 @@
 
     <p>Different health conditions benefit from targeted EPA+DHA dosing. Use this guide to determine the right amount for your dog's specific needs:</p>
 
+    <div class="table-scroll">
     <table>
       <thead>
         <tr>
@@ -1307,6 +1329,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <p><strong>Important notes:</strong></p>
     <ul>
@@ -1394,6 +1417,7 @@
 
     <p>If you're considering omega-3 supplements instead of whole fish, here's how the main options compare:</p>
 
+    <div class="table-scroll">
     <table>
       <thead>
         <tr>
@@ -1466,6 +1490,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <p><strong>Bottom line on these options:</strong></p>
 

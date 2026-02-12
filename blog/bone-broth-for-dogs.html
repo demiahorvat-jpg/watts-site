@@ -488,17 +488,28 @@
       margin: 32px 0;
       font-size: 14px;
       border-radius: 12px;
-      overflow: visible;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      display: block;
+    }
+
+    /* Wrapper for horizontal scroll on wide tables only */
+    .table-scroll {
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
+      margin: 32px 0;
     }
+
+    .table-scroll table {
+      margin: 0;
+      min-width: 600px; /* Force scroll for wide tables */
+    }
+
     @media (min-width: 768px) {
       table {
         font-size: 17px;
-        display: table;
-        overflow-x: visible;
+      }
+
+      .table-scroll table {
+        min-width: auto;
       }
     }
 
@@ -797,7 +808,8 @@
         <li><strong>Glycine reduces inflammation</strong> — Glycine has anti-inflammatory properties and supports detoxification in the liver.</li>
       </ul>
 
-      <table>
+      <div class="table-scroll">
+    <table>
         <thead>
           <tr>
             <th>Benefit</th>
@@ -828,6 +840,7 @@
           </tr>
         </tbody>
       </table>
+    </div>
 
       <div class="faq-section">
               <h2 style="margin-top: 56px; padding-top: 40px; border-top: 2px solid var(--border-light);">Related Articles</h2>

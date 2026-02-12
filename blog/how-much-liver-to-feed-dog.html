@@ -441,17 +441,28 @@
       margin: 32px 0;
       font-size: 14px;
       border-radius: 12px;
-      overflow: visible;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      display: block;
+    }
+
+    /* Wrapper for horizontal scroll on wide tables only */
+    .table-scroll {
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
+      margin: 32px 0;
     }
+
+    .table-scroll table {
+      margin: 0;
+      min-width: 600px; /* Force scroll for wide tables */
+    }
+
     @media (min-width: 768px) {
       table {
         font-size: 17px;
-        display: table;
-        overflow-x: visible;
+      }
+
+      .table-scroll table {
+        min-width: auto;
       }
     }
 
@@ -856,7 +867,8 @@
 
       <p>Here's a practical breakdown based on dog weight and typical daily food intake:</p>
 
-      <table>
+      <div class="table-scroll">
+    <table>
         <thead>
           <tr>
             <th>Dog Weight</th>
@@ -898,6 +910,7 @@
           </tr>
         </tbody>
       </table>
+    </div>
 
       <p><strong>Important:</strong> Freeze-dried and air-dried liver are concentrated—approximately 4-5x more concentrated than fresh liver by weight. A small amount goes a long way, which is why dried liver measurements are much smaller.</p>
 

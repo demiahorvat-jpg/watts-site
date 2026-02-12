@@ -439,17 +439,28 @@
       margin: 32px 0;
       font-size: 14px;
       border-radius: 12px;
-      overflow: visible;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      display: block;
+    }
+
+    /* Wrapper for horizontal scroll on wide tables only */
+    .table-scroll {
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
+      margin: 32px 0;
     }
+
+    .table-scroll table {
+      margin: 0;
+      min-width: 600px; /* Force scroll for wide tables */
+    }
+
     @media (min-width: 768px) {
       table {
         font-size: 17px;
-        display: table;
-        overflow-x: visible;
+      }
+
+      .table-scroll table {
+        min-width: auto;
       }
     }
 
@@ -1052,6 +1063,7 @@
 
     <p><strong>Target:</strong> 20-25 mg per pound of body weight daily</p>
 
+    <div class="table-scroll">
     <table>
       <thead>
         <tr>
@@ -1088,6 +1100,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <p><em>Note: Teaspoon measurements are approximate. Always weigh powder using a scale or follow product-specific scoops, as density varies by brand.</em></p>
 
@@ -1234,6 +1247,7 @@
 
     <p>How does green-lipped mussel compare to other popular joint supplements?</p>
 
+    <div class="table-scroll">
     <table>
       <thead>
         <tr>
@@ -1270,6 +1284,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <p><strong>Verdict:</strong> Green-lipped mussel provides the most comprehensive joint support in one whole-food source. It's the closest you can get to combining glucosamine, chondroitin, and omega-3s without buying three separate supplements.</p>
 
