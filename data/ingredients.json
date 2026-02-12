@@ -11306,47 +11306,6 @@
       }
     },
     {
-      "name": "Heart",
-      "aliases": [
-        "beef heart",
-        "chicken heart",
-        "pork heart",
-        "grass fed beef heart",
-        "grass-fed beef heart"
-      ],
-      "category": "protein",
-      "whatItIs": "Heart muscle tissue. Rich in taurine, CoQ10, and B vitamins.",
-      "whyUsed": [
-        "Nutrient-dense organ meat",
-        "Natural taurine source",
-        "High-quality protein"
-      ],
-      "nutritionValue": "high",
-      "qualityNote": "Excellent organ meat. Particularly valuable for taurine content important for heart health.",
-      "wattsPosition": "good",
-      "wattsTake": "Top-tier organ meat. Natural taurine source is particularly valuable.",
-      "citations": [
-        {
-          "title": "AAFCO Official Publication",
-          "url": "https://www.aafco.org/",
-          "publisher": "AAFCO"
-        }
-      ],
-      "whatItIsExpanded": {
-        "compareToSimilar": []
-      },
-      "lastUpdated": "February 11, 2026",
-      "seoMetadata": {
-        "focusKeyword": "heart dog food",
-        "metaDescription": "Is heart safe for dogs? Learn about benefits, nutritional value, and quality in pet food."
-      },
-      "nutritionalProfile": {
-        "function": "Heart in dog food",
-        "typicalInclusion": "Varies by formula",
-        "safety": "Generally recognized as safe when used appropriately"
-      }
-    },
-    {
       "name": "Herring Meal",
       "aliases": [
         "herring fish meal"

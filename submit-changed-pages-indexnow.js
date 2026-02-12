@@ -5,61 +5,8 @@ const fs = require('fs');
 
 // Pages changed in this session
 const changedUrls = [
-  // New page created
-  'https://wattspet.com/blog/vitamin-a-supplement.html',
-
-  // Title optimizations (13 pages)
-  'https://wattspet.com/blog/whole-food-vs-synthetic-nutrients.html',
-  'https://wattspet.com/blog/fillers-in-dog-supplements.html',
-  'https://wattspet.com/blog/dog-supplement-formats-compared.html',
-  'https://wattspet.com/blog/green-lipped-mussel-for-dogs.html',
-  'https://wattspet.com/blog/do-joint-supplements-work-for-dogs.html',
-  'https://wattspet.com/blog/digestive-enzymes-for-dogs.html',
-  'https://wattspet.com/blog/can-dogs-take-human-supplements.html',
-  'https://wattspet.com/blog/how-to-read-dog-supplement-labels.html',
-  'https://wattspet.com/blog/active-working-dog-nutrition.html',
-  'https://wattspet.com/blog/antioxidants-for-dogs.html',
-  'https://wattspet.com/blog/probiotics-for-dogs.html',
-  'https://wattspet.com/blog/pregnant-nursing-dog-nutrition.html',
-  'https://wattspet.com/blog/immune-support-for-dogs.html',
-
-  // H1/title alignment (8 pages)
-  'https://wattspet.com/blog/red-dye-40-dog-food.html',
-  'https://wattspet.com/ingredient-analyzer/ingredients/barley/',
-  'https://wattspet.com/ingredient-analyzer/ingredients/cellulose/',
-  'https://wattspet.com/blog/chicken-by-products-dog-food.html',
-  'https://wattspet.com/ingredient-analyzer/ingredients/xanthan-gum/',
-  'https://wattspet.com/ingredient-analyzer/ingredients/chickpeas/',
-  'https://wattspet.com/ingredient-analyzer/ingredients/colostrum/',
-  'https://wattspet.com/blog/spirulina-for-dogs.html',
-
-  // Internal linking changes (blog posts that received links)
-  'https://wattspet.com/blog/joint-supplements-for-dogs.html',
-  'https://wattspet.com/blog/organ-based-nutrition-for-dogs.html',
-  'https://wattspet.com/blog/calming-supplements-for-dogs.html',
-  'https://wattspet.com/blog/protein-for-dogs.html',
-  'https://wattspet.com/blog/puppy-vitamins.html',
-  'https://wattspet.com/blog/omega-3-fish-oil-for-dogs.html',
-  'https://wattspet.com/blog/yeast-beta-glucan-for-dogs.html',
-  'https://wattspet.com/blog/yeast-fermentate-for-dogs.html',
-  'https://wattspet.com/blog/gut-health-for-dogs.html',
-  'https://wattspet.com/blog/dog-skin-coat-supplements.html',
-  'https://wattspet.com/blog/what-extends-dog-lifespan.html',
-
-  // Callout box styling updates
-  'https://wattspet.com/blog/beef-liver-for-dogs.html',
-  'https://wattspet.com/blog/bone-broth-for-dogs.html',
-
-  // Table responsiveness updates (sample - many were updated)
-  'https://wattspet.com/blog/senior-dog-formula-kibble.html',
-  'https://wattspet.com/blog/zinc-for-dogs.html',
-
-  // Main pages with nav updates
-  'https://wattspet.com/',
-  'https://wattspet.com/about.html',
-
-  // Blog index layout fixes
-  'https://wattspet.com/blog/'
+  // About page updates - new copy and visual design
+  'https://wattspet.com/about.html'
 ];
 
 // Remove duplicates
