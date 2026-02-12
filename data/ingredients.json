@@ -510,7 +510,8 @@
       "name": "Anthocyanins",
       "aliases": [
         "anthocyanin",
-        "anthocyanin extract"
+        "anthocyanin extract",
+        "anthocyanin color"
       ],
       "category": "active",
       "whatItIs": "Powerful antioxidant pigments (flavonoids) that give berries and purple vegetables their color. Found in blueberries, cranberries, blackberries.",
@@ -4094,7 +4095,8 @@
       "name": "Calcium Carbonate",
       "aliases": [
         "limestone",
-        "calcium supplement"
+        "calcium supplement",
+        "ground limestone"
       ],
       "category": "mineral",
       "whatItIs": "Supplemental calcium source for bones, teeth, and muscle function.",
@@ -4736,7 +4738,8 @@
       "name": "Cassava",
       "aliases": [
         "yuca",
-        "manioc"
+        "manioc",
+        "tapioca"
       ],
       "category": "carbohydrate",
       "whatItIs": "Cassava is a starchy root vegetable (Manihot esculenta) used in grain-free pet foods as an alternative carbohydrate source.",
@@ -5323,7 +5326,8 @@
       "name": "Chia Seed",
       "aliases": [
         "chia seeds",
-        "salvia hispanica"
+        "salvia hispanica",
+        "chia"
       ],
       "category": "fiber",
       "whatItIs": "Small seeds from the Salvia hispanica plant, rich in omega-3 ALA, fiber, protein, and minerals.",
@@ -6900,10 +6904,7 @@
     },
     {
       "name": "Coconut Oil",
-      "aliases": [
-        "mct oil",
-        "medium chain triglycerides"
-      ],
+      "aliases": [],
       "category": "fat",
       "whatItIs": "Tropical oil rich in medium-chain fatty acids.",
       "whyUsed": [
@@ -7798,7 +7799,8 @@
       "name": "Corn Gluten Meal",
       "aliases": [
         "corn gluten",
-        "corn protein meal"
+        "corn protein meal",
+        "CGM"
       ],
       "category": "protein",
       "whatItIs": "Protein-rich byproduct of corn processing. 60%+ protein but low biological value for dogs.",
@@ -8327,7 +8329,8 @@
     {
       "name": "Dicalcium Phosphate",
       "aliases": [
-        "calcium phosphate"
+        "calcium phosphate",
+        "DCP"
       ],
       "category": "mineral",
       "whatItIs": "Supplemental source of both calcium and phosphorus.",
@@ -8708,7 +8711,8 @@
       "name": "Dried Kelp",
       "aliases": [
         "kelp",
-        "seaweed"
+        "seaweed",
+        "kelp powder"
       ],
       "category": "additive",
       "whatItIs": "Dried seaweed providing iodine and other trace minerals from the ocean.",
@@ -8773,7 +8777,9 @@
       "name": "Dried Plasma",
       "aliases": [
         "animal plasma",
-        "spray dried plasma"
+        "spray dried plasma",
+        "spray dried animal plasma",
+        "SDAP"
       ],
       "category": "protein",
       "whatItIs": "Spray-dried blood plasma. Rich in immunoglobulins and highly digestible protein.",
@@ -8963,7 +8969,8 @@
       "name": "Duck",
       "aliases": [
         "fresh duck",
-        "deboned duck"
+        "deboned duck",
+        "whole duck"
       ],
       "category": "protein",
       "whatItIs": "Fresh duck meat. Novel protein higher in fat than chicken or turkey.",
@@ -9347,7 +9354,8 @@
       "name": "Egg",
       "aliases": [
         "whole egg",
-        "eggs"
+        "eggs",
+        "fresh eggs"
       ],
       "category": "protein",
       "whatItIs": "Whole egg including yolk and white. Gold standard complete protein with highest biological value. Nutrient-dense whole food.",
@@ -9609,7 +9617,10 @@
     },
     {
       "name": "Ethoxyquin",
-      "aliases": [],
+      "aliases": [
+        "EMQ",
+        "ethoxyquin preservative"
+      ],
       "category": "preservative",
       "whatItIs": "Synthetic antioxidant preservative, also used as pesticide.",
       "whyUsed": [
@@ -9966,7 +9977,8 @@
       "aliases": [
         "salmon oil",
         "omega-3 oil",
-        "marine oil"
+        "marine oil",
+        "fish body oil"
       ],
       "category": "fat",
       "whatItIs": "Oil extracted from fatty fish. Rich in omega-3 fatty acids (EPA and DHA).",
@@ -10420,7 +10432,8 @@
     {
       "name": "Gelatin",
       "aliases": [
-        "animal gelatin"
+        "animal gelatin",
+        "gelatine"
       ],
       "category": "additive",
       "whatItIs": "Protein derived from collagen in animal bones and connective tissue.",
@@ -11008,7 +11021,8 @@
       "name": "Green-Lipped Mussel",
       "aliases": [
         "green lipped mussel",
-        "perna canaliculus"
+        "perna canaliculus",
+        "GLM"
       ],
       "category": "active",
       "whatItIs": "New Zealand shellfish naturally rich in glucosamine, chondroitin, omega-3s, and anti-inflammatory compounds.",
@@ -13212,7 +13226,8 @@
       "name": "Locust Bean Gum",
       "aliases": [
         "carob gum",
-        "locust bean"
+        "locust bean",
+        "carob bean gum"
       ],
       "category": "additive",
       "whatItIs": "Natural thickening agent derived from carob tree seeds, used to improve texture in wet foods.",
@@ -14084,7 +14099,9 @@
     },
     {
       "name": "Melatonin",
-      "aliases": [],
+      "aliases": [
+        "melatonin supplement"
+      ],
       "category": "active",
       "whatItIs": "Hormone that regulates sleep-wake cycles.",
       "whyUsed": [
@@ -15665,7 +15682,8 @@
     {
       "name": "Parsley",
       "aliases": [
-        "dried parsley"
+        "dried parsley",
+        "parsley flakes"
       ],
       "category": "produce",
       "whatItIs": "Herb rich in vitamins and known for breath-freshening properties.",
@@ -17290,7 +17308,6 @@
     {
       "name": "Potato Starch",
       "aliases": [
-        "tapioca starch",
         "modified potato starch"
       ],
       "category": "carbohydrate",
@@ -18632,7 +18649,8 @@
     {
       "name": "Rice Bran",
       "aliases": [
-        "stabilized rice bran"
+        "stabilized rice bran",
+        "defatted rice bran"
       ],
       "category": "fiber",
       "whatItIs": "Outer layer of brown rice. Rich in fiber, vitamins, and healthy fats.",
@@ -21908,7 +21926,8 @@
     {
       "name": "Tricalcium Phosphate",
       "aliases": [
-        "calcium phosphate tribasic"
+        "calcium phosphate tribasic",
+        "TCP"
       ],
       "category": "mineral",
       "whatItIs": "Calcium and phosphorus supplement, also used as anti-caking agent.",
@@ -25280,7 +25299,11 @@
           }
         ]
       },
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "aliases": [
+        "enzyme blend",
+        "digestive enzyme blend"
+      ]
     },
     {
       "name": "Krill Oil",
@@ -25313,7 +25336,11 @@
           }
         ]
       },
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "aliases": [
+        "antarctic krill oil",
+        "krill omega-3"
+      ]
     },
     {
       "name": "Prebiotics",
@@ -25356,7 +25383,11 @@
             "difference": "Prebiotics is a vague category term for fibers that feed gut bacteria, while chicory root is a specific prebiotic ingredient rich in inulin—chicory root is a type of prebiotic."
           }
         ]
-      }
+      },
+      "aliases": [
+        "prebiotic fiber",
+        "prebiotic blend"
+      ]
     },
     {
       "name": "Blue 1",
@@ -25385,7 +25416,12 @@
           }
         ]
       },
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "aliases": [
+        "brilliant blue FCF",
+        "FD&C blue 1",
+        "blue dye 1"
+      ]
     },
     {
       "name": "Beet Juice Color",
@@ -25414,7 +25450,12 @@
           }
         ]
       },
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "aliases": [
+        "beetroot juice color",
+        "beet juice for color",
+        "beet juice concentrate for color"
+      ]
     },
     {
       "name": "Fermented Ingredients",
@@ -25453,7 +25494,11 @@
         "function": "Fermented Ingredients in dog food",
         "typicalInclusion": "Varies by formula",
         "safety": "Generally recognized as safe when used appropriately"
-      }
+      },
+      "aliases": [
+        "fermented blend",
+        "fermentation products"
+      ]
     },
     {
       "name": "Natural Color",
@@ -25478,7 +25523,11 @@
           }
         ]
       },
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "aliases": [
+        "natural coloring",
+        "natural food coloring"
+      ]
     },
     {
       "name": "Anchovies",
@@ -25531,7 +25580,11 @@
         "focusKeyword": "anchovies dog food",
         "metaDescription": "Are anchovies good for dogs? Learn omega-3 benefits, low mercury risk, vs salmon/herring, sustainability, protein quality & calcium from bones."
       },
-      "lastUpdated": "February 11, 2026"
+      "lastUpdated": "February 11, 2026",
+      "aliases": [
+        "anchovy",
+        "whole anchovies"
+      ]
     },
     {
       "name": "Spirulina Color",
@@ -25574,7 +25627,11 @@
             "difference": "Both are natural plant-based colorants. Spirulina color is specifically from blue-green algae for blue/green hues, while vegetable juice is a vague term from any vegetable for various colors."
           }
         ]
-      }
+      },
+      "aliases": [
+        "spirulina extract for color",
+        "blue spirulina color"
+      ]
     },
     {
       "name": "Herring",
@@ -25617,7 +25674,12 @@
         "function": "Herring in dog food",
         "typicalInclusion": "Varies by formula",
         "safety": "Generally recognized as safe when used appropriately"
-      }
+      },
+      "aliases": [
+        "whole herring",
+        "fresh herring",
+        "atlantic herring"
+      ]
     },
     {
       "name": "Whitefish Meal",
@@ -25660,7 +25722,11 @@
             "difference": "Both are concentrated fish meals. Whitefish meal is from mild fish with moderate omega-3s and lower mercury, while herring meal is from oily fish with more omega-3s and stronger flavor."
           }
         ]
-      }
+      },
+      "aliases": [
+        "white fish meal",
+        "dehydrated whitefish"
+      ]
     },
     {
       "name": "Bananas",
@@ -25778,7 +25844,12 @@
             "difference": "Red 3 is a synthetic petroleum-based dye with cancer concerns, while carmine is a natural red dye from crushed cochineal insects—both add only color, but carmine is safer (though not vegan)."
           }
         ]
-      }
+      },
+      "aliases": [
+        "erythrosine",
+        "FD&C red 3",
+        "red dye 3"
+      ]
     }
   ]
 }
