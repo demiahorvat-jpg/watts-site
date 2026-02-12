@@ -4023,6 +4023,38 @@
       "lastUpdated": "February 10, 2026"
     },
     {
+      "name": "Butternut Squash",
+      "aliases": [
+        "butternut",
+        "organic butternut squash"
+      ],
+      "category": "vegetable",
+      "whatItIs": "Butternut squash (Cucurbita moschata) is a winter squash variety with sweet, nutty-flavored orange flesh. Rich in beta-carotene, vitamins, and minerals.",
+      "whyUsed": [
+        "High in beta-carotene (vitamin A precursor)",
+        "Natural source of vitamins C and E",
+        "Provides fiber and potassium",
+        "Naturally sweet and palatable"
+      ],
+      "nutritionValue": "high",
+      "qualityNote": "Excellent vegetable choice. Higher in vitamin A and sweeter than many other squash varieties. Whole food ingredient with good nutrient density.",
+      "wattsPosition": "good",
+      "wattsTake": "Top-tier vegetable ingredient. Specific variety labeling shows transparency. Nutrient-dense with high beta-carotene content.",
+      "citations": [
+        {
+          "type": "general",
+          "text": "USDA FoodData Central: Squash, winter, butternut, raw",
+          "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169278/nutrients"
+        }
+      ],
+      "compareToSimilar": [
+        "pumpkin",
+        "squash",
+        "sweet-potatoes",
+        "carrots"
+      ]
+    },
+    {
       "name": "Calcium Ascorbate",
       "aliases": [
         "calcium vitamin C",
@@ -21025,6 +21057,31 @@
         "metaDescription": "Are split peas safe for dogs? Learn about plant protein content, high fiber benefits, low glycemic advantages, DCM considerations & comparison to green peas and lentils."
       },
       "lastUpdated": "February 10, 2026"
+    },
+    {
+      "name": "Squash",
+      "aliases": [
+        "organic squash",
+        "winter squash"
+      ],
+      "category": "vegetable",
+      "whatItIs": "Winter squash varieties (excluding pumpkin and zucchini) used in pet foods. Typically refers to varieties like acorn, butternut, or kabocha squash.",
+      "whyUsed": [
+        "Source of beta-carotene and vitamins",
+        "Provides natural sweetness and fiber",
+        "Low-calorie vegetable filler"
+      ],
+      "nutritionValue": "moderate",
+      "qualityNote": "Nutritious vegetable when squash type is specified. Generic \"squash\" without variety indicated may be less transparent labeling.",
+      "wattsPosition": "good",
+      "wattsTake": "Good vegetable source. More specific labeling (butternut, acorn, etc.) is preferred for transparency.",
+      "citations": [],
+      "compareToSimilar": [
+        "pumpkin",
+        "butternut-squash",
+        "sweet-potatoes",
+        "carrots"
+      ]
     },
     {
       "name": "Sunflower Lecithin",
