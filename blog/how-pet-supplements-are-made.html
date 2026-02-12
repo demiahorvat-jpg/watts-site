@@ -465,16 +465,24 @@
       }
     }
 
-        /* WATTS CALLOUT BOX - Orange border with white content */
+        /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
       background: var(--white);
+      color: var(--text-dark);
       border-radius: 12px;
       padding: 24px 28px;
-      margin: 48px 0;
-      box-shadow: 0 0 0 8px var(--brand-orange), 0 2px 8px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
+      .callout-content {
         padding: 28px 36px;
       }
     }
@@ -907,7 +915,10 @@
     <p>If a supplement claims to contain glucosamine, probiotics, or omega-3s, manufacturers can use fillers to stretch these costly ingredients. Instead of a product made from nutrient-dense whole foods, you're getting a base of starch with a sprinkle of active compounds.</p>
 
     <div class="callout">
+      <div class="callout-content">
       <p><strong>Why manufacturers use fillers:</strong> If beef liver costs $8/lb and maltodextrin costs $0.50/lb, it's easy to see why manufacturers choose fillers. They can create a 60-chew bottle for $2 in materials instead of $12. The difference is pocketed as profit or used for marketing spend.</p>
+    
+      </div>
     </div>
 
     <h2>Step 2: Heat Processing (Where the Damage Happens)</h2>
@@ -1011,7 +1022,10 @@
     </ul>
 
     <div class="callout">
+      <div class="callout-content">
       <p><strong>Example:</strong> Vitamin C from acerola cherry includes bioflavonoids, rutin, and hesperidin—compounds that enhance absorption and antioxidant activity. Ascorbic acid (synthetic vitamin C) is just one isolated molecule. Studies show whole-food vitamin C is retained in tissues 4x longer than synthetic ascorbic acid.</p>
+    
+      </div>
     </div>
 
     <h2>Step 4: Add Artificial Flavors (Because It Tastes Terrible)</h2>
@@ -1057,7 +1071,10 @@
     </ul>
 
     <div class="callout">
+      <div class="callout-content">
       <p><strong>Marketing vs. Reality:</strong> A supplement can be "veterinarian formulated" and still be 60% maltodextrin with synthetic vitamins. "Scientifically backed" might mean one ingredient has research—not the final product. Always read the ingredient list, not the front-of-package claims.</p>
+    
+      </div>
     </div>
 
     <h2>The Cost Breakdown: Why This Process Is So Profitable</h2>
@@ -1120,7 +1137,10 @@
     <p>These ingredients are more expensive, but they provide naturally occurring vitamins, minerals, and enzymes—no synthetic fortification needed.</p>
 
     <div class="callout">
+      <div class="callout-content">
       <p><strong>What Watts does differently:</strong> We start with 100% human-grade organ meats (liver, heart, kidney) and air-dry at low temperatures to preserve natural nutrients. No fillers, no synthetic vitamins, no artificial flavors. Just real food, gently dehydrated. This approach costs more to produce, but it delivers exponentially more bioavailable nutrition per serving.</p>
+    
+      </div>
     </div>
 
     <h2>How to Identify Heavily Processed Supplements</h2>

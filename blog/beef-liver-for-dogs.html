@@ -395,16 +395,24 @@
       }
     }
 
-        /* WATTS CALLOUT BOX - Orange border with white content */
+        /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
       background: var(--white);
+      color: var(--text-dark);
       border-radius: 12px;
       padding: 24px 28px;
-      margin: 48px 0;
-      box-shadow: 0 0 0 8px var(--brand-orange), 0 2px 8px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
+      .callout-content {
         padding: 28px 36px;
       }
     }
@@ -732,6 +740,7 @@
       <p>Here's what a single ounce of beef liver delivers compared to muscle meat, <a href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/169451/nutrients" target="_blank" rel="noopener">according to USDA nutritional data</a>:</p>
 
       <div class="callout">
+      <div class="callout-content">
       <h3 style="margin-top: 0; font-size: 18px;">Beef Liver vs. Muscle Meat (per ounce)</h3>
         <div style="margin-top: 12px;">
           <div style="margin-bottom: 8px;"><strong>50x more vitamin A</strong> (critical for vision, skin, and immune health) <a href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/169451/nutrients" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; font-size: 13px;">*</a>
@@ -815,6 +824,8 @@
       <p>Beef liver is one of the most powerful whole-food nutrients you can give your dog. It supports skin and coat health, energy, digestion, immune function, and overall vitality — all from a single, natural ingredient.</p>
 
       <p>It's not a trend. It's ancestral nutrition, backed by biology, and used by dog owners who want real results from real food.</p>
+    
+      </div>
     </div>
 
     <div class="faq-section">

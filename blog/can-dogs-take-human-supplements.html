@@ -473,16 +473,24 @@
       }
     }
 
-        /* WATTS CALLOUT BOX - Orange border with white content */
+        /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
       background: var(--white);
+      color: var(--text-dark);
       border-radius: 12px;
       padding: 24px 28px;
-      margin: 48px 0;
-      box-shadow: 0 0 0 8px var(--brand-orange), 0 2px 8px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
+      .callout-content {
         padding: 28px 36px;
       }
     }
@@ -1111,6 +1119,7 @@
 <p>Read more: <a href="probiotics-for-dogs.html">Best Probiotics for Dogs: Vet-Approved Strains, Prebiotics & Postbiotics</a></p>
 
 <div class="callout">
+      <div class="callout-content">
       <h3 style="margin-top: 0; font-size: 18px;">The "Check Ingredients First" Rule</h3>
     <p style="margin-top: 12px; margin-bottom: 12px;">Before giving ANY human supplement to your dog, check the full ingredient list for:</p>
     <ul style="margin-bottom: 12px;">
@@ -1122,6 +1131,8 @@
         <li><strong>Medications</strong> (ibuprofen, acetaminophen, aspirin)</li>
     </ul>
     <p style="margin-bottom: 0;">When in doubt, don't use it. The risk isn't worth the potential cost savings.</p>
+    
+      </div>
     </div>
 
 <h2>Why Dog-Specific Supplements Are Worth It</h2>

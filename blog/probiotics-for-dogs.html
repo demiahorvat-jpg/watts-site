@@ -385,16 +385,24 @@
       }
     }
 
-        /* WATTS CALLOUT BOX - Orange border with white content */
+        /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
       background: var(--white);
+      color: var(--text-dark);
       border-radius: 12px;
       padding: 24px 28px;
-      margin: 48px 0;
-      box-shadow: 0 0 0 8px var(--brand-orange), 0 2px 8px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
+      .callout-content {
         padding: 28px 36px;
       }
     }
@@ -974,6 +982,7 @@
 <p><strong>How to increase postbiotics naturally:</strong> Feed prebiotics! You can't supplement butyrate effectively (it's absorbed too quickly), but you can support your dog's resident bacteria to produce it by providing prebiotic-rich whole foods.</p>
 
 <div class="callout">
+      <div class="callout-content">
       <h3 style="margin-top: 0; font-size: 18px;">The Synbiotic Approach: Combining Probiotics + Prebiotics</h3>
     <p style="margin-top: 12px; margin-bottom: 12px;"><strong>Synbiotics</strong> are products that combine probiotics (live bacteria) with prebiotics (fiber that feeds them). This approach is more effective than probiotics alone because:</p>
     <ul style="margin-bottom: 12px;">
@@ -982,6 +991,8 @@
         <li>Effects last longer—even after you stop supplementing</li>
     </ul>
     <p style="margin-bottom: 0;"><strong>Best whole-food synbiotic:</strong> Plain kefir mixed with mashed pumpkin or sweet potato. The kefir provides 10-40+ probiotic strains, while the pumpkin provides prebiotic fiber—perfect synergy.</p>
+    
+      </div>
     </div>
 
 <h2>When Do Dogs Actually Need Probiotics?</h2>

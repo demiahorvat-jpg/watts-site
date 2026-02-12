@@ -395,16 +395,24 @@
       }
     }
 
-        /* WATTS CALLOUT BOX - Orange border with white content */
+        /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
       background: var(--white);
+      color: var(--text-dark);
       border-radius: 12px;
       padding: 24px 28px;
-      margin: 48px 0;
-      box-shadow: 0 0 0 8px var(--brand-orange), 0 2px 8px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
+      .callout-content {
         padding: 28px 36px;
       }
     }
@@ -865,6 +873,7 @@
       <p>Most glucosamine supplements are synthesized from shellfish shells or made in labs. While effective, they lack the co-factors found in whole-food sources.</p>
 
       <div class="callout">
+      <div class="callout-content">
       <h3 style="margin-top: 0; font-size: 18px;">Whole-Food Glucosamine vs Synthetic</h3>
         <div style="margin-top: 12px;">
           <div style="margin-bottom: 8px;"><strong>Whole-food sources:</strong> Glucosamine + chondroitin + collagen + hyaluronic acid + omega-3s + minerals
@@ -950,6 +959,8 @@
       <p>While synthetic glucosamine supplements are convenient and research-backed, whole-food sources offer broader joint support that aligns with how <a href="/blog/dog-vs-human-nutrition.html">dogs' bodies are designed to process nutrition</a>.</p>
 
       <p>The best approach depends on your dog's needs, diet, and your preferences. But one thing is clear: glucosamine—whether from food or supplements—is one of the most valuable tools for supporting long-term joint health in dogs.</p>
+    
+      </div>
     </div>
 
     <div class="faq-section">

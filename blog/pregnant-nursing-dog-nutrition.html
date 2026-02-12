@@ -395,16 +395,24 @@
       }
     }
 
-        /* WATTS CALLOUT BOX - Orange border with white content */
+        /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
       background: var(--white);
+      color: var(--text-dark);
       border-radius: 12px;
       padding: 24px 28px;
-      margin: 48px 0;
-      box-shadow: 0 0 0 8px var(--brand-orange), 0 2px 8px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
+      .callout-content {
         padding: 28px 36px;
       }
     }
@@ -961,6 +969,7 @@
       <p><strong>Feeding strategy:</strong> Increase food gradually starting week 5—about 10-15% more per week. Switch to smaller, more frequent meals (3-4x daily) as stomach space decreases. Choose calorie-dense, highly digestible foods.</p>
 
       <div class="callout">
+      <div class="callout-content">
       <h3 style="margin-top: 0; font-size: 18px;">Critical: Do NOT Over-Supplement Calcium During Pregnancy</h3>
         <div style="margin-top: 12px;">
           <div style="margin-bottom: 8px;">Excess calcium during pregnancy can suppress the parathyroid gland, making the body unable to mobilize calcium from bones when needed during whelping and lactation. This dramatically increases risk of eclampsia (life-threatening calcium crash).
@@ -1228,6 +1237,8 @@
       <p>Protein needs nearly double. Calcium timing is critical (too much during pregnancy increases eclampsia risk; too little during lactation does the same). Folate, DHA, iron, and B vitamins become essential—not optional. And the dam's body will cannibalize its own muscle, bone, and organ reserves if diet doesn't provide what milk production demands.</p>
 
       <p>Whether you're a breeder planning a litter or a dog owner whose dog has an unexpected pregnancy, understanding what changes during these phases—and feeding accordingly—makes the difference between healthy puppies with a thriving dam and a litter that depletes the mother's health for months afterward.</p>
+    
+      </div>
     </div>
 
     <div class="faq-section">

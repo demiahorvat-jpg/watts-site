@@ -402,16 +402,24 @@
       }
     }
 
-        /* WATTS CALLOUT BOX - Orange border with white content */
+        /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
       background: var(--white);
+      color: var(--text-dark);
       border-radius: 12px;
       padding: 24px 28px;
-      margin: 48px 0;
-      box-shadow: 0 0 0 8px var(--brand-orange), 0 2px 8px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
+      .callout-content {
         padding: 28px 36px;
       }
     }
@@ -754,7 +762,10 @@
       </ul>
 
       <div class="callout">
+      <div class="callout-content">
       <p style="margin: 0;"><strong>Decode Any Label:</strong> Paste your supplement's ingredient list into our <a href="/ingredient-analyzer/">free ingredient analyzer</a> to instantly identify fillers, synthetic ingredients, and problematic additives with our detailed quality ratings.</p>
+    
+      </div>
     </div>
 
       <p>If the ingredient list reads like a chemistry textbook, you're likely looking at synthetic vitamins that your dog's body may not absorb well. Learn more about <a href="/blog/whole-food-vs-synthetic-nutrients.html">why bioavailability matters for dog supplements</a>.</p>
@@ -924,6 +935,7 @@
       <h2>What a Good Dog Supplement Label Looks Like</h2>
 
       <div class="callout">
+      <div class="callout-content">
       <h3 style="margin-top: 0; font-size: 18px;">Signs of a High-Quality Dog Supplement</h3>
         <div style="margin-top: 12px;">
           <div style="margin-bottom: 8px;"><strong>Whole-food ingredients listed first</strong> (<a href="/ingredient-analyzer/ingredients/beef-liver/">beef liver</a>, <a href="/ingredient-analyzer/ingredients/chicken-liver/">chicken liver</a>, salmon, egg yolk—not synthetic isolates)
@@ -972,6 +984,8 @@
         <li><strong><a href="/ingredient-analyzer/ingredients/ascorbic-acid/">Ascorbic Acid</a></strong> — Synthetic vitamin C less bioavailable than whole-food sources (dogs synthesize their own vitamin C)</li>
         <li><strong>Proprietary Blends</strong> — Lack of transparency in dosing</li>
       </ul>
+    
+      </div>
     </div>
 
     <div class="faq-section">

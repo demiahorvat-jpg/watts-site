@@ -414,16 +414,24 @@
       }
     }
 
-        /* WATTS CALLOUT BOX - Orange border with white content */
+        /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
       background: var(--white);
+      color: var(--text-dark);
       border-radius: 12px;
       padding: 24px 28px;
-      margin: 48px 0;
-      box-shadow: 0 0 0 8px var(--brand-orange), 0 2px 8px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
+      .callout-content {
         padding: 28px 36px;
       }
     }
@@ -936,9 +944,12 @@
       <p>For more on muscle mass and longevity, see <a href="/blog/what-extends-dog-lifespan.html">What Actually Extends a Dog's Lifespan (According to Research)</a>.</p>
 
       <div class="callout">
+      <div class="callout-content">
       <h3 style="margin-top: 0; font-size: 18px;">The Kidney Protein Myth</h3>
         <p style="margin-top: 12px; margin-bottom: 12px;">The belief that high protein causes kidney disease in dogs has been thoroughly debunked. Research shows that dietary protein does NOT cause kidney disease in healthy dogs. Even dogs with existing kidney disease may still need adequate protein to prevent muscle wasting — though the type and quality of protein matter.</p>
         <p style="margin-bottom: 0;">The myth persists because early studies used low-quality protein (plant-based, poorly digestible) that increased waste products. High-quality animal protein from meat, organs, and fish is highly digestible and does not stress healthy kidneys.</p>
+    
+      </div>
     </div>
 
       <h2>What Senior Dogs Actually Need More Of</h2>
@@ -1093,6 +1104,7 @@
       <p>Extrusion (high-heat, high-pressure processing) destroys B vitamins, antioxidants, and enzymes — then synthetic versions are sprayed back on.</p>
 
       <div class="callout">
+      <div class="callout-content">
       <h3 style="margin-top: 0; font-size: 18px;">What to Look for in a Senior Dog Diet</h3>
         <div style="margin-top: 12px;">
           <div style="margin-bottom: 8px;"><strong>High protein:</strong> 25-30%+ from bioavailable animal sources (meat, organs, fish, eggs)
@@ -1194,6 +1206,8 @@
       <p>The best approach? Focus on nutrient-dense, minimally processed whole foods: organ meats, fatty fish, eggs, bone broth, and antioxidant-rich vegetables. These deliver maximum nutrition per calorie while supporting muscle maintenance, cognitive function, and overall vitality.</p>
 
       <p>Your senior dog deserves better than reduced-protein, grain-heavy kibble marketed as "senior nutrition." They deserve food that actually supports healthy aging.</p>
+    
+      </div>
     </div>
 
     <div class="faq-section">

@@ -400,16 +400,24 @@
       }
     }
 
-        /* WATTS CALLOUT BOX - Orange border with white content */
+        /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
       background: var(--white);
+      color: var(--text-dark);
       border-radius: 12px;
       padding: 24px 28px;
-      margin: 48px 0;
-      box-shadow: 0 0 0 8px var(--brand-orange), 0 2px 8px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
+      .callout-content {
         padding: 28px 36px;
       }
     }
@@ -1022,6 +1030,7 @@
       <p>Kidney provides small amounts of vitamin D along with B12, selenium, and riboflavin.</p>
 
       <div class="callout">
+      <div class="callout-content">
       <h3 style="margin-top: 0; font-size: 18px;">Vitamin D Content: Whole Foods</h3>
         <div style="margin-top: 12px;">
           <div style="margin-bottom: 8px;"><strong>Wild-caught salmon (3 oz):</strong> 400-600 IU vitamin D3
@@ -1179,6 +1188,8 @@
       <p>If you want to ensure your dog gets adequate vitamin D naturally, add fatty fish 2-3 times per week, include egg yolks daily, and incorporate organ meats like beef liver into their regular diet.</p>
 
       <p>And if you want a simple, pre-portioned way to give your dog whole-food vitamin D (plus all the other nutrients that come with it), that's exactly what Watts is designed to do.</p>
+    
+      </div>
     </div>
 
     <div class="related-articles">

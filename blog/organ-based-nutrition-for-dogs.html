@@ -395,16 +395,24 @@
       }
     }
 
-        /* WATTS CALLOUT BOX - Orange border with white content */
+        /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
       background: var(--white);
+      color: var(--text-dark);
       border-radius: 12px;
       padding: 24px 28px;
-      margin: 48px 0;
-      box-shadow: 0 0 0 8px var(--brand-orange), 0 2px 8px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
+      .callout-content {
         padding: 28px 36px;
       }
     }
@@ -732,6 +740,7 @@
       <p>Nutrition is only as good as what the body can absorb. Organ nutrients are bundled with natural enzymes and co-factors that support <a href="/blog/whole-food-vs-synthetic-nutrients.html">bioavailability</a>—the body recognizes the structure of these nutrients and puts them to use efficiently. That means more real benefit from smaller, more concentrated amounts. This is especially relevant for dogs that struggle with digestion, have high activity demands, or are getting older and need extra nutritional support to stay at their best.</p>
 
       <div class="callout">
+      <div class="callout-content">
       <h3 style="margin-top: 0; font-size: 18px;">Organ Meat vs. Muscle Meat: Nutrient Density</h3>
         <div style="margin-top: 12px;">
           <div style="margin-bottom: 8px;"><strong>Vitamin A:</strong> Liver has 50x more than muscle meat
@@ -798,6 +807,8 @@
       <h2>The Bottom Line</h2>
 
       <p>Organ-based nutrition is one of the most natural ways to give dogs concentrated, usable nutrients that support energy, digestion, skin, immunity, and overall vitality. It's a small daily choice that can add up to real benefits over time.</p>
+    
+      </div>
     </div>
 
     <div class="faq-section">

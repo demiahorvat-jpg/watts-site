@@ -395,16 +395,24 @@
       }
     }
 
-        /* WATTS CALLOUT BOX - Orange border with white content */
+        /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
       background: var(--white);
+      color: var(--text-dark);
       border-radius: 12px;
       padding: 24px 28px;
-      margin: 48px 0;
-      box-shadow: 0 0 0 8px var(--brand-orange), 0 2px 8px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
+      .callout-content {
         padding: 28px 36px;
       }
     }
@@ -970,6 +978,7 @@
       <p>This is where a properly dosed supplement makes a real difference. Instead of measuring, guessing, or risking too much, a pre-portioned <a href="/blog/whole-food-vs-synthetic-nutrients.html">whole-food liver supplement</a> delivers the exact amount your dog needs—no more, no less.</p>
 
       <div class="callout">
+      <div class="callout-content">
       <h3 style="margin-top: 0; font-size: 18px;">Why Watts Takes the Guesswork Out of Liver Feeding</h3>
         <div style="margin-top: 12px;">
           <div style="margin-bottom: 8px;"><strong>Pre-measured doses:</strong> Every serving contains the optimal amount of grass-fed beef liver—no measuring, no math.
@@ -1003,6 +1012,8 @@
       <p>The safe range is 5-15% of daily food intake, but getting that dose right consistently can be tricky—especially with concentrated forms like freeze-dried or air-dried liver.</p>
 
       <p>That's why pre-portioned, whole-food liver supplements like Watts make sense. You get all the benefits of liver nutrition without the guesswork, measuring, or risk of overdoing it.</p>
+    
+      </div>
     </div>
 
     <div class="faq-section">

@@ -462,16 +462,24 @@
       }
     }
 
-        /* WATTS CALLOUT BOX - Orange border with white content */
+        /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
       background: var(--white);
+      color: var(--text-dark);
       border-radius: 12px;
       padding: 24px 28px;
-      margin: 48px 0;
-      box-shadow: 0 0 0 8px var(--brand-orange), 0 2px 8px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
+      .callout-content {
         padding: 28px 36px;
       }
     }
@@ -1138,7 +1146,10 @@
       <p>Here's how to spot supplements loaded with fillers:</p>
 
       <div class="callout">
+      <div class="callout-content">
       <p><strong>Quick Tip:</strong> Paste your supplement's ingredient list into our <a href="/ingredient-analyzer/">free ingredient analyzer</a> to instantly identify fillers, additives, and problematic ingredients with detailed explanations.</p>
+    
+      </div>
     </div>
 
       <h3>1. Check the Ingredient List Order</h3>

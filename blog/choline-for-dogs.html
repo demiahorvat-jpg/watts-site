@@ -481,16 +481,24 @@
       }
     }
 
-        /* WATTS CALLOUT BOX - Orange border with white content */
+        /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
       background: var(--white);
+      color: var(--text-dark);
       border-radius: 12px;
       padding: 24px 28px;
-      margin: 48px 0;
-      box-shadow: 0 0 0 8px var(--brand-orange), 0 2px 8px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
+      .callout-content {
         padding: 28px 36px;
       }
     }
@@ -981,8 +989,11 @@
       <p>Choline works synergistically with <strong>folate (vitamin B9) and B12</strong> to support methylation cycles — critical for long-term health and disease prevention.</p>
 
       <div class="callout">
+      <div class="callout-content">
       <h3>Why Choline is Critical for Senior Dogs</h3>
         <p style="margin-top: 12px; margin-bottom: 0;">As dogs age, their ability to synthesize choline declines, and their need for dietary choline increases. Choline deficiency in senior dogs is linked to cognitive decline, memory loss, and confusion (canine cognitive dysfunction). Ensuring adequate choline intake through whole foods like egg yolks and liver can support brain health and slow age-related cognitive decline.</p>
+    
+      </div>
     </div>
 
       <h2>Signs of Choline Deficiency in Dogs</h2>

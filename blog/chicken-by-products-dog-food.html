@@ -473,16 +473,24 @@
       }
     }
 
-        /* WATTS CALLOUT BOX - Orange border with white content */
+        /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
       background: var(--white);
+      color: var(--text-dark);
       border-radius: 12px;
       padding: 24px 28px;
-      margin: 48px 0;
-      box-shadow: 0 0 0 8px var(--brand-orange), 0 2px 8px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
+      .callout-content {
         padding: 28px 36px;
       }
     }
@@ -1021,6 +1029,7 @@
       <p>Here's the key distinction that matters for dog owners:</p>
 
       <div class="callout">
+      <div class="callout-content">
       <h3>Transparency Makes the Difference</h3>
 
         <table>
@@ -1056,10 +1065,15 @@
         </table>
 
         <p style="margin-top: 16px; margin-bottom: 0;"><strong>Rule of thumb:</strong> If a manufacturer is using high-quality organs, they'll name them specifically. If they hide behind "by-products," they're likely using lower-value parts or don't want you to know what's included.</p>
+    
+      </div>
     </div>
 
       <div class="callout">
+      <div class="callout-content">
       <p style="margin: 0;"><strong>Evaluate Any Ingredient:</strong> Use our <a href="/ingredient-analyzer/">free ingredient analyzer</a> to check your dog's food. Get detailed breakdowns of chicken by-products, chicken liver, chicken meal, and hundreds of other ingredients with our transparency-focused ratings.</p>
+    
+      </div>
     </div>
 
       <h2>What Is Chicken By-Product Meal?</h2>

@@ -400,16 +400,24 @@
       }
     }
 
-        /* WATTS CALLOUT BOX - Orange border with white content */
+        /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
       background: var(--white);
+      color: var(--text-dark);
       border-radius: 12px;
       padding: 24px 28px;
-      margin: 48px 0;
-      box-shadow: 0 0 0 8px var(--brand-orange), 0 2px 8px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
+      .callout-content {
         padding: 28px 36px;
       }
     }
@@ -799,8 +807,11 @@
       <p>Zinc plays a role in hormone production and reproductive function in both male and female dogs.</p>
 
       <div class="callout">
+      <div class="callout-content">
       <h3 style="margin-top: 0; font-size: 18px;">Why Dogs Can't Store Zinc</h3>
         <p style="margin-top: 12px; margin-bottom: 0;">Unlike fat-soluble vitamins (A, D, E, K) that can be stored in tissues, zinc is a water-soluble mineral with no long-term storage mechanism. This means dogs need a consistent daily supply from food. If their diet doesn't provide enough zinc — even for a few days — deficiency symptoms can start to appear.</p>
+    
+      </div>
     </div>
 
       <h2>Signs of Zinc Deficiency in Dogs</h2>
