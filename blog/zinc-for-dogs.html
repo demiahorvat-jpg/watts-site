@@ -400,24 +400,16 @@
       }
     }
 
-    /* WATTS CALLOUT BOX - Layered design with orange border */
+        /* WATTS CALLOUT BOX - Orange border with white content */
     .callout {
-      position: relative;
-      background: var(--brand-orange);
-      border-radius: 4px;
-      padding: 8px;
-      margin: 48px 0;
-    }
-
-    .callout-content {
       background: var(--white);
-      color: var(--text-dark);
       border-radius: 12px;
       padding: 24px 28px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      margin: 48px 0;
+      box-shadow: 0 0 0 8px var(--brand-orange), 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout-content {
+      .callout {
         padding: 28px 36px;
       }
     }
@@ -770,7 +762,6 @@
           <a href="/" aria-label="Watts home">
             <img src="/watts-logo-white.svg" alt="Watts" class="logo">
           </a>
-        </div>
     </div>
   </header>
 </div>
@@ -808,11 +799,8 @@
       <p>Zinc plays a role in hormone production and reproductive function in both male and female dogs.</p>
 
       <div class="callout">
-      <div class="callout-content">
-        <h3 style="margin-top: 0; font-size: 18px;">Why Dogs Can't Store Zinc</h3>
+      <h3 style="margin-top: 0; font-size: 18px;">Why Dogs Can't Store Zinc</h3>
         <p style="margin-top: 12px; margin-bottom: 0;">Unlike fat-soluble vitamins (A, D, E, K) that can be stored in tissues, zinc is a water-soluble mineral with no long-term storage mechanism. This means dogs need a consistent daily supply from food. If their diet doesn't provide enough zinc — even for a few days — deficiency symptoms can start to appear.</p>
-      
-      </div>
     </div>
 
       <h2>Signs of Zinc Deficiency in Dogs</h2>
@@ -877,17 +865,15 @@
       <p><a href="/ingredient-analyzer/ingredients/pumpkin-seed/">Pumpkin seeds</a> contain zinc, but they also contain phytates that reduce absorption. They're fine as an occasional treat but shouldn't be relied on as a primary zinc source.</p>
 
       <div class="callout">
-      <div class="callout-content">
-        <h3 style="margin-top: 0; font-size: 18px;">Zinc Content Comparison: Whole Foods vs Synthetic</h3>
+      <h3 style="margin-top: 0; font-size: 18px;">Zinc Content Comparison: Whole Foods vs Synthetic</h3>
         <div style="margin-top: 12px;">
           <div style="margin-bottom: 8px;"><strong><a href="/ingredient-analyzer/ingredients/beef-liver/">Beef liver</a> (1 oz):</strong> 4-5mg zinc + co-factors (amino acids, B vitamins, iron)
-      </div>
     </div>
           <div style="margin-bottom: 8px;"><strong><a href="/ingredient-analyzer/ingredients/beef-kidney/">Beef kidney</a> (1 oz):</strong> 3-4mg zinc + selenium, B12, trace minerals</div>
           <div style="margin-bottom: 8px;"><strong>Red meat (1 oz):</strong> 2-3mg zinc</div>
           <div style="margin-bottom: 8px;"><strong><a href="/ingredient-analyzer/ingredients/egg/">Egg</a> yolk (1 large):</strong> 0.4mg zinc</div>
-          <div><strong>Synthetic zinc sulfate (isolated):</strong> 20-40% absorption efficiency vs 40-60%+ for whole-food sources</div>
-        </div>
+          <div><strong>Synthetic zinc sulfate (isolated):</strong> 20-40% absorption efficiency vs 40-60%+ for whole-food sources
+    </div>
       </div>
 
       <h2>How Much Zinc Does My Dog Need?</h2>
@@ -1050,8 +1036,7 @@
         <div class="faq-item">
           <h3>Is synthetic zinc as good as zinc from food?</h3>
           <p>Synthetic zinc (zinc sulfate, zinc oxide, zinc gluconate) is absorbed at 20-40% efficiency, while whole-food zinc from organ meats is absorbed at 40-60%+ efficiency. Food-based zinc comes with co-factors like amino acids, B vitamins, and other minerals that improve utilization. Synthetic forms can also cause GI upset (nausea, vomiting) at higher doses, while whole-food sources are gentler on the digestive system.</p>
-        </div>
-      </div>
+    </div>
     </div>
   </article>
 </main>
@@ -1067,7 +1052,6 @@
           <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
         </div>
         <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
-      </div>
     </div>
   </footer>
 </div>

@@ -395,24 +395,16 @@
       }
     }
 
-    /* WATTS CALLOUT BOX - Layered design with orange border */
+        /* WATTS CALLOUT BOX - Orange border with white content */
     .callout {
-      position: relative;
-      background: var(--brand-orange);
-      border-radius: 4px;
-      padding: 8px;
-      margin: 48px 0;
-    }
-
-    .callout-content {
       background: var(--white);
-      color: var(--text-dark);
       border-radius: 12px;
       padding: 24px 28px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      margin: 48px 0;
+      box-shadow: 0 0 0 8px var(--brand-orange), 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout-content {
+      .callout {
         padding: 28px 36px;
       }
     }
@@ -755,8 +747,7 @@
           <a href="/" aria-label="Watts home">
             <img src="/watts-logo-white.svg" alt="Watts" class="logo">
           </a>
-        </div>
-      </div>
+    </div>
     </header>
   </div>
 
@@ -841,7 +832,6 @@
         <li><a href="/blog/what-extends-dog-lifespan.html">What Actually Extends a Dog's Lifespan: The role of nutrition</a></li>
       </ul>
     </div>
-    </div>
 
     <div class="faq-section">
       <h2>Frequently Asked Questions</h2>
@@ -869,7 +859,6 @@
       <div class="faq-item">
         <h3>Can you over-supplement a dog?</h3>
         <p>Yes. Over-supplementation with certain nutrients — especially fat-soluble vitamins (A, D, E, K) and minerals like calcium or iron — can cause toxicity. This is why whole-food supplements are generally safer than synthetic, high-dose products: they provide nutrients in naturally balanced amounts that are harder to over-consume. Always follow dosing guidelines and work with your vet if combining multiple supplements.</p>
-      </div>
     </div>
     </article>
   </main>
@@ -885,8 +874,7 @@
             <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
           </div>
           <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
-        </div>
-      </div>
+    </div>
     </footer>
   </div>
 

@@ -393,24 +393,16 @@
       }
     }
 
-    /* WATTS CALLOUT BOX - Layered design with orange border */
+        /* WATTS CALLOUT BOX - Orange border with white content */
     .callout {
-      position: relative;
-      background: var(--brand-orange);
-      border-radius: 4px;
-      padding: 8px;
-      margin: 48px 0;
-    }
-
-    .callout-content {
       background: var(--white);
-      color: var(--text-dark);
       border-radius: 12px;
       padding: 24px 28px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      margin: 48px 0;
+      box-shadow: 0 0 0 8px var(--brand-orange), 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout-content {
+      .callout {
         padding: 28px 36px;
       }
     }
@@ -837,8 +829,7 @@
           <a href="/" aria-label="Watts home">
             <img src="/watts-logo-white.svg" alt="Watts" class="logo">
           </a>
-        </div>
-      </div>
+    </div>
     </header>
   </div>
 
@@ -1528,8 +1519,6 @@
     </div>
 
 </div>
-
-</div>
 </article>
 </main>
 
@@ -1544,7 +1533,6 @@
           <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
         </div>
         <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
-      </div>
     </div>
   </footer>
 </div>

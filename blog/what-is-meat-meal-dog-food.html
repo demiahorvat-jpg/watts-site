@@ -414,24 +414,16 @@
       }
     }
 
-    /* WATTS CALLOUT BOX - Layered design with orange border */
+        /* WATTS CALLOUT BOX - Orange border with white content */
     .callout {
-      position: relative;
-      background: var(--brand-orange);
-      border-radius: 4px;
-      padding: 8px;
-      margin: 48px 0;
-    }
-
-    .callout-content {
       background: var(--white);
-      color: var(--text-dark);
       border-radius: 12px;
       padding: 24px 28px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      margin: 48px 0;
+      box-shadow: 0 0 0 8px var(--brand-orange), 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout-content {
+      .callout {
         padding: 28px 36px;
       }
     }
@@ -861,8 +853,7 @@
           <a href="/" aria-label="Watts home">
             <img src="/watts-logo-white.svg" alt="Watts" class="logo">
           </a>
-        </div>
-      </div>
+    </div>
     </header>
   </div>
 
@@ -948,8 +939,7 @@
       <p>When you see "chicken" and "chicken meal" on a label, they're very different ingredients:</p>
 
       <div class="callout">
-      <div class="callout-content">
-        <h3 style="margin-top: 0; font-size: 18px; margin-bottom: 16px;">Fresh Meat vs. Meat Meal</h3>
+      <h3 style="margin-top: 0; font-size: 18px; margin-bottom: 16px;">Fresh Meat vs. Meat Meal</h3>
 
         <table style="width: 100%; border-collapse: collapse;">
           <thead>
@@ -994,8 +984,6 @@
         </table>
 
         <p style="margin-top: 16px; margin-bottom: 0; font-size: 15px;"><strong>Key takeaway:</strong> One pound of chicken meal contains roughly the same amount of protein as 4 pounds of fresh chicken — but the meal has lost heat-sensitive nutrients during rendering.</p>
-      
-      </div>
     </div>
 
       <h3>Why Labels Can Be Misleading</h3>
@@ -1100,10 +1088,7 @@
       <p>Generic meals aren't necessarily unsafe, but they indicate a lack of quality control and transparency.</p>
 
       <div class="callout">
-      <div class="callout-content">
-        <p style="margin: 0;"><strong>Check Any Meat Meal Ingredient:</strong> Not sure about a specific meal ingredient in your dog's food? Use our <a href="/ingredient-analyzer/">free ingredient analyzer</a> to look up any meat meal and see detailed quality analysis, protein content, and sourcing concerns.</p>
-      
-      </div>
+      <p style="margin: 0;"><strong>Check Any Meat Meal Ingredient:</strong> Not sure about a specific meal ingredient in your dog's food? Use our <a href="/ingredient-analyzer/">free ingredient analyzer</a> to look up any meat meal and see detailed quality analysis, protein content, and sourcing concerns.</p>
     </div>
 
       <h2>Does Meat Meal Contain Organs?</h2>
@@ -1237,7 +1222,6 @@
       <div class="faq-item">
         <h3>Can meat meal cause allergies in dogs?</h3>
         <p>Named meat meals (chicken meal, beef meal) can cause allergies in dogs sensitive to those specific proteins, just like fresh meat can. Generic "meat meal" or "poultry meal" is more problematic because it can contain multiple undisclosed protein sources that change batch to batch, making it impossible to identify and avoid allergens. If your dog has food sensitivities, choose foods with named protein sources (chicken meal, not poultry meal) or whole-food proteins you can clearly identify.</p>
-      </div>
     </div>
     </article>
   </main>
@@ -1253,8 +1237,7 @@
             <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
           </div>
           <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
-        </div>
-      </div>
+    </div>
     </footer>
   </div>
 

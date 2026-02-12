@@ -395,24 +395,16 @@
       }
     }
 
-    /* WATTS CALLOUT BOX - Layered design with orange border */
+        /* WATTS CALLOUT BOX - Orange border with white content */
     .callout {
-      position: relative;
-      background: var(--brand-orange);
-      border-radius: 4px;
-      padding: 8px;
-      margin: 48px 0;
-    }
-
-    .callout-content {
       background: var(--white);
-      color: var(--text-dark);
       border-radius: 12px;
       padding: 24px 28px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      margin: 48px 0;
+      box-shadow: 0 0 0 8px var(--brand-orange), 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout-content {
+      .callout {
         padding: 28px 36px;
       }
     }
@@ -718,8 +710,7 @@
           <a href="/" aria-label="Watts home">
             <img src="/watts-logo-white.svg" alt="Watts" class="logo">
           </a>
-        </div>
-      </div>
+    </div>
     </header>
   </div>
 
@@ -874,16 +865,14 @@
       <p>Most glucosamine supplements are synthesized from shellfish shells or made in labs. While effective, they lack the co-factors found in whole-food sources.</p>
 
       <div class="callout">
-      <div class="callout-content">
-        <h3 style="margin-top: 0; font-size: 18px;">Whole-Food Glucosamine vs Synthetic</h3>
+      <h3 style="margin-top: 0; font-size: 18px;">Whole-Food Glucosamine vs Synthetic</h3>
         <div style="margin-top: 12px;">
           <div style="margin-bottom: 8px;"><strong>Whole-food sources:</strong> Glucosamine + chondroitin + collagen + hyaluronic acid + omega-3s + minerals
-      </div>
     </div>
           <div style="margin-bottom: 8px;"><strong>Synthetic glucosamine:</strong> Glucosamine only (often as glucosamine sulfate or HCl)</div>
           <div style="margin-bottom: 8px;"><strong>Bioavailability:</strong> Whole-food sources may be better absorbed due to co-factors that support utilization</div>
-          <div><strong>Cost:</strong> Synthetic is cheaper and easier to dose consistently; whole-food sources cost more but deliver broader nutrition</div>
-        </div>
+          <div><strong>Cost:</strong> Synthetic is cheaper and easier to dose consistently; whole-food sources cost more but deliver broader nutrition
+    </div>
       </div>
 
       <p>Research shows that glucosamine works best when combined with chondroitin and omega-3 fatty acids—exactly what you get from natural sources like green-lipped mussel or bone broth. This is why <a href="/blog/whole-food-vs-synthetic-nutrients.html">whole-food nutrition often outperforms isolated synthetic compounds</a>.</p>
@@ -1013,7 +1002,6 @@
       <div class="faq-item">
         <h3>How much natural glucosamine do dogs need?</h3>
         <p>For whole-food sources like green-lipped mussel, typical dosing is 15-20mg per pound of body weight daily. For bone broth, 1-2 ounces per 20 pounds several times per week. Natural sources are less concentrated than synthetic supplements, so amounts may be higher but come with additional nutritional benefits.</p>
-      </div>
     </div>
     </article>
   </main>
@@ -1029,8 +1017,7 @@
             <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
           </div>
           <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
-        </div>
-      </div>
+    </div>
     </footer>
   </div>
 
