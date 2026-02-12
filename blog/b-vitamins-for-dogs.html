@@ -400,22 +400,43 @@
       }
     }
 
-    /* LIGHT CALLOUT BOX */
+    /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
-      background: var(--bg-light);
-      border-left: 4px solid var(--brand-orange);
-      border-radius: 8px;
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
+      background: var(--white);
+      color: var(--text-dark);
+      border-radius: 12px;
       padding: 24px 28px;
-      margin: 32px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
-        padding: 28px 32px;
+      .callout-content {
+        padding: 28px 36px;
       }
+    }
+
+    .callout h3 {
+      color: var(--text-dark);
     }
 
     .callout p:last-child {
       margin-bottom: 0;
+    }
+
+    .callout a {
+      color: var(--accent-navy);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .callout a:hover {
+      opacity: 0.85;
     }
 
     /* FAQ SECTION */
@@ -783,8 +804,11 @@
       </ul>
 
       <div class="callout">
+      <div class="callout-content">
         <p><strong>Why B Vitamins Matter for Energy:</strong> B vitamins are often called the "energy vitamins" because they're essential for converting food into ATP (cellular energy). Without adequate B vitamins, dogs can't efficiently metabolize protein, fat, or carbohydrates — leading to lethargy, poor stamina, and muscle wasting even when calorie intake is adequate. If your dog seems tired despite eating enough, B vitamin deficiency could be a factor.</p>
+      
       </div>
+    </div>
 
       <h2>Why Are B Vitamins Missing from Most Kibble?</h2>
 
@@ -894,13 +918,16 @@
       <p>Nutritional yeast is often fortified with B vitamins and can provide B12 for dogs on plant-based diets. However, dogs absorb animal-based B vitamins far more efficiently than plant-based or fortified sources. If feeding a plant-based diet, B12 supplementation (ideally from animal sources) is critical.</p>
 
       <div class="callout">
+      <div class="callout-content">
         <p><strong>B Vitamin Content: Liver vs Muscle Meat</strong></p>
         <ul style="list-style: none; padding: 0; margin: 12px 0 0 0;">
           <li style="margin-bottom: 8px;"><strong>Beef liver (1 oz):</strong> 30-40 mcg B12, 80-100 mcg folate, 1.0 mg riboflavin</li>
           <li style="margin-bottom: 8px;"><strong>Beef muscle meat (1 oz):</strong> 0.5-1 mcg B12, 3-5 mcg folate, 0.1 mg riboflavin</li>
           <li style="margin-bottom: 0;"><strong>Result:</strong> Liver delivers 30-40x more B12, 20x more folate, and 10x more riboflavin than muscle meat per ounce</li>
         </ul>
+      
       </div>
+    </div>
 
       <h2>How Much B Vitamins Do Dogs Need?</h2>
 

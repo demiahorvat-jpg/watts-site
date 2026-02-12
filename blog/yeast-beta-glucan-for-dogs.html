@@ -385,22 +385,43 @@
       }
     }
 
-    /* LIGHT CALLOUT BOX */
+    /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
-      background: var(--bg-light);
-      border-left: 4px solid var(--brand-orange);
-      border-radius: 8px;
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
+      background: var(--white);
+      color: var(--text-dark);
+      border-radius: 12px;
       padding: 24px 28px;
-      margin: 32px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
-        padding: 28px 32px;
+      .callout-content {
+        padding: 28px 36px;
       }
+    }
+
+    .callout h3 {
+      color: var(--text-dark);
     }
 
     .callout p:last-child {
       margin-bottom: 0;
+    }
+
+    .callout a {
+      color: var(--accent-navy);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .callout a:hover {
+      opacity: 0.85;
     }
 
     /* TABLE - Responsive */
@@ -820,8 +841,11 @@
     <h1>Yeast Beta-Glucan for Dogs: Immune Support Backed by Research</h1>
 
     <div class="callout">
+      <div class="callout-content">
       <p style="margin: 0; font-size: 18px;"><strong>Quick Answer:</strong></p>
       <p style="margin-top: 12px; margin-bottom: 0;">Yeast beta-glucan (from <em>Saccharomyces cerevisiae</em>) is one of the most researched immune-modulating compounds for dogs. It works by activating immune cells (macrophages, neutrophils, natural killer cells) through specific receptors, enhancing the body's ability to fight infections, cancer, and inflammatory conditions. Research shows measurable immune improvements within <strong>1-2 weeks</strong> at doses of <strong>5-20 mg per kg body weight daily</strong>.</p>
+    
+      </div>
     </div>
   </div>
 

@@ -393,22 +393,43 @@
       }
     }
 
-    /* LIGHT CALLOUT BOX */
+    /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
-      background: var(--bg-light);
-      border-left: 4px solid var(--brand-orange);
-      border-radius: 8px;
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
+      background: var(--white);
+      color: var(--text-dark);
+      border-radius: 12px;
       padding: 24px 28px;
-      margin: 32px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
-        padding: 28px 32px;
+      .callout-content {
+        padding: 28px 36px;
       }
+    }
+
+    .callout h3 {
+      color: var(--text-dark);
     }
 
     .callout p:last-child {
       margin-bottom: 0;
+    }
+
+    .callout a {
+      color: var(--accent-navy);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .callout a:hover {
+      opacity: 0.85;
     }
 
     /* TABLE - Responsive */
@@ -934,8 +955,11 @@
     </ul>
 
     <div class="callout">
+      <div class="callout-content">
       <h3 style="margin-top: 0; font-size: 18px;">What Makes ETA Special?</h3>
       <p style="margin-top: 12px; margin-bottom: 0;"><strong>ETA (eicosatetraenoic acid)</strong> is a rare omega-3 fatty acid found almost exclusively in green-lipped mussel. It's structurally similar to EPA but has a double bond in a different position, making it <strong>10-30 times more potent</strong> at reducing inflammation. Unlike EPA (which only inhibits the COX pathway), ETA inhibits <strong>both COX and LOX pathways</strong>—the two main routes for producing inflammatory compounds. This dual-action makes green-lipped mussel more effective than standard fish oil for inflammatory conditions.</p>
+    
+      </div>
     </div>
 
     <h3>3. Skin and Coat Health</h3>
@@ -1012,8 +1036,11 @@
     <p><strong>Best for:</strong> Supplemental treats alongside powder supplementation, or for small dogs where precise dosing is easier.</p>
 
     <div class="callout">
+      <div class="callout-content">
       <h3 style="margin-top: 0; font-size: 18px;">Recommendation: Use Freeze-Dried Powder</h3>
       <p style="margin-top: 12px; margin-bottom: 0;">For comprehensive joint support and maximum benefit, choose <strong>freeze-dried green-lipped mussel powder</strong>. It provides the full spectrum of nutrients in bioavailable forms. Mix it into your dog's food daily at 15-25 mg per pound of body weight. Oil is only beneficial if you specifically need concentrated omega-3s without glucosamine and chondroitin.</p>
+    
+      </div>
     </div>
 
     <h2>How Much Green-Lipped Mussel to Give Your Dog</h2>

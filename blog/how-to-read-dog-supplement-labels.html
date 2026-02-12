@@ -402,22 +402,43 @@
       }
     }
 
-    /* LIGHT CALLOUT BOX */
+    /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
-      background: var(--bg-light);
-      border-left: 4px solid var(--brand-orange);
-      border-radius: 8px;
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
+      background: var(--white);
+      color: var(--text-dark);
+      border-radius: 12px;
       padding: 24px 28px;
-      margin: 32px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
-        padding: 28px 32px;
+      .callout-content {
+        padding: 28px 36px;
       }
+    }
+
+    .callout h3 {
+      color: var(--text-dark);
     }
 
     .callout p:last-child {
       margin-bottom: 0;
+    }
+
+    .callout a {
+      color: var(--accent-navy);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .callout a:hover {
+      opacity: 0.85;
     }
 
     /* FAQ SECTION */
@@ -742,8 +763,11 @@
       </ul>
 
       <div class="callout">
+      <div class="callout-content">
         <p style="margin: 0;"><strong>Decode Any Label:</strong> Paste your supplement's ingredient list into our <a href="/ingredient-analyzer/">free ingredient analyzer</a> to instantly identify fillers, synthetic ingredients, and problematic additives with our detailed quality ratings.</p>
+      
       </div>
+    </div>
 
       <p>If the ingredient list reads like a chemistry textbook, you're likely looking at synthetic vitamins that your dog's body may not absorb well. Learn more about <a href="/blog/whole-food-vs-synthetic-nutrients.html">why bioavailability matters for dog supplements</a>.</p>
 
@@ -912,9 +936,12 @@
       <h2>What a Good Dog Supplement Label Looks Like</h2>
 
       <div class="callout">
+      <div class="callout-content">
         <h3 style="margin-top: 0; font-size: 18px;">Signs of a High-Quality Dog Supplement</h3>
         <div style="margin-top: 12px;">
-          <div style="margin-bottom: 8px;"><strong>Whole-food ingredients listed first</strong> (<a href="/ingredient-analyzer/ingredients/beef-liver/">beef liver</a>, <a href="/ingredient-analyzer/ingredients/chicken-liver/">chicken liver</a>, salmon, egg yolk—not synthetic isolates)</div>
+          <div style="margin-bottom: 8px;"><strong>Whole-food ingredients listed first</strong> (<a href="/ingredient-analyzer/ingredients/beef-liver/">beef liver</a>, <a href="/ingredient-analyzer/ingredients/chicken-liver/">chicken liver</a>, salmon, egg yolk—not synthetic isolates)
+      </div>
+    </div>
           <div style="margin-bottom: 8px;"><strong>Transparent dosing</strong> (exact mg or IU per serving, no proprietary blends)</div>
           <div style="margin-bottom: 8px;"><strong>Sourcing information</strong> (grass-fed, wild-caught, country of origin)</div>
           <div style="margin-bottom: 8px;"><strong>Processing method disclosed</strong> (air-dried, freeze-dried, cold-pressed)</div>

@@ -395,22 +395,43 @@
       }
     }
 
-    /* LIGHT CALLOUT BOX */
+    /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
-      background: var(--bg-light);
-      border-left: 4px solid var(--brand-orange);
-      border-radius: 8px;
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
+      background: var(--white);
+      color: var(--text-dark);
+      border-radius: 12px;
       padding: 24px 28px;
-      margin: 32px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
-        padding: 28px 32px;
+      .callout-content {
+        padding: 28px 36px;
       }
+    }
+
+    .callout h3 {
+      color: var(--text-dark);
     }
 
     .callout p:last-child {
       margin-bottom: 0;
+    }
+
+    .callout a {
+      color: var(--accent-navy);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .callout a:hover {
+      opacity: 0.85;
     }
 
     /* TABLE - Responsive */
@@ -839,6 +860,7 @@
 
     <div class="article-content">
       <div class="callout">
+      <div class="callout-content">
         <h2 style="margin-top: 0; font-size: 20px; margin-bottom: 16px;">Whole Food vs Synthetic: Key Differences</h2>
 
         <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px;">
@@ -875,7 +897,9 @@
 
         <p style="margin-bottom: 12px; font-size: 15px;"><strong>Bottom line:</strong> Synthetic vitamins meet AAFCO minimums and prevent deficiency, but whole food nutrients provide better absorption through natural co-factors</p>
         <p style="margin-bottom: 0; font-size: 15px;"><strong>Why it matters:</strong> Heat processing destroys natural vitamins in kibble, so manufacturers add synthetic premixes back in to meet standards</p>
+      
       </div>
+    </div>
 
       <h2>What Bioavailability Actually Means</h2>
 
@@ -926,8 +950,11 @@
       <p>This is why bioavailability and gut health are central to long-term wellness. If the gut isn't functioning well, it doesn't matter how many synthetic vitamins are sitting on the label.</p>
 
       <div class="callout">
+      <div class="callout-content">
         <p style="margin: 0;"><strong>Check Your Dog's Food:</strong> Use our <a href="/ingredient-analyzer/">free ingredient analyzer</a> to see what's really in your dog's food—whole food sources or synthetic additives.</p>
+      
       </div>
+    </div>
 
       <h2>When Bioavailability Matters Most</h2>
 

@@ -473,22 +473,43 @@
       }
     }
 
-    /* LIGHT CALLOUT BOX */
+    /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
-      background: var(--bg-light);
-      border-left: 4px solid var(--brand-orange);
-      border-radius: 8px;
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
+      background: var(--white);
+      color: var(--text-dark);
+      border-radius: 12px;
       padding: 24px 28px;
-      margin: 32px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
-        padding: 28px 32px;
+      .callout-content {
+        padding: 28px 36px;
       }
+    }
+
+    .callout h3 {
+      color: var(--text-dark);
     }
 
     .callout p:last-child {
       margin-bottom: 0;
+    }
+
+    .callout a {
+      color: var(--accent-navy);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .callout a:hover {
+      opacity: 0.85;
     }
 
     /* TABLE - Responsive */
@@ -908,8 +929,11 @@
       </ul>
 
       <div class="callout">
+      <div class="callout-content">
         <p><strong>Why Dogs Produce Free Radicals:</strong> Free radicals are a natural byproduct of cellular metabolism — the process of converting food into energy. Every time your dog breathes, digests food, or exercises, their cells produce free radicals. In small amounts, free radicals are harmless. But when production exceeds the body's ability to neutralize them (through antioxidants), oxidative stress occurs — leading to inflammation, cellular damage, and accelerated aging.</p>
+      
       </div>
+    </div>
 
       <h2>Best Antioxidants for Dogs: Complete Ranking & Comparison</h2>
 
@@ -1212,6 +1236,7 @@
       <p><strong>Bottom line:</strong> If you could only add one antioxidant to your dog's diet, astaxanthin from wild-caught salmon would be the best choice. Its unique ability to protect the brain, eyes, and entire body — combined with zero toxicity risk — makes it unmatched among antioxidants.</p>
 
       <div class="callout">
+      <div class="callout-content">
         <p><strong>Top Antioxidant-Rich Foods for Dogs:</strong></p>
         <ul style="list-style: none; padding: 0; margin: 12px 0 0 0;">
           <li style="margin-bottom: 8px;"><strong>Beef liver:</strong> Vitamin A (retinol), selenium, glutathione</li>
@@ -1222,7 +1247,9 @@
           <li style="margin-bottom: 8px;"><strong>Eggs:</strong> Selenium, lutein, choline</li>
           <li style="margin-bottom: 0;"><strong>Wild salmon:</strong> Astaxanthin, omega-3s (EPA/DHA)</li>
         </ul>
+      
       </div>
+    </div>
 
       <p>Organ meats like beef liver and heart provide the highest concentrations of bioavailable antioxidants alongside essential vitamins and minerals. For a complete guide to organ meat nutrition, see <a href="/blog/organ-based-nutrition-for-dogs.html">Why Organ-Based Nutrition is Essential for Dogs</a>.</p>
 

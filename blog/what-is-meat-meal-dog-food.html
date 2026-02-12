@@ -414,22 +414,43 @@
       }
     }
 
-    /* LIGHT CALLOUT BOX */
+    /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
-      background: var(--bg-light);
-      border-left: 4px solid var(--brand-orange);
-      border-radius: 8px;
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
+      background: var(--white);
+      color: var(--text-dark);
+      border-radius: 12px;
       padding: 24px 28px;
-      margin: 32px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
-        padding: 28px 32px;
+      .callout-content {
+        padding: 28px 36px;
       }
+    }
+
+    .callout h3 {
+      color: var(--text-dark);
     }
 
     .callout p:last-child {
       margin-bottom: 0;
+    }
+
+    .callout a {
+      color: var(--accent-navy);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .callout a:hover {
+      opacity: 0.85;
     }
 
     /* TABLE - Responsive */
@@ -927,6 +948,7 @@
       <p>When you see "chicken" and "chicken meal" on a label, they're very different ingredients:</p>
 
       <div class="callout">
+      <div class="callout-content">
         <h3 style="margin-top: 0; font-size: 18px; margin-bottom: 16px;">Fresh Meat vs. Meat Meal</h3>
 
         <table style="width: 100%; border-collapse: collapse;">
@@ -972,7 +994,9 @@
         </table>
 
         <p style="margin-top: 16px; margin-bottom: 0; font-size: 15px;"><strong>Key takeaway:</strong> One pound of chicken meal contains roughly the same amount of protein as 4 pounds of fresh chicken — but the meal has lost heat-sensitive nutrients during rendering.</p>
+      
       </div>
+    </div>
 
       <h3>Why Labels Can Be Misleading</h3>
 
@@ -1076,8 +1100,11 @@
       <p>Generic meals aren't necessarily unsafe, but they indicate a lack of quality control and transparency.</p>
 
       <div class="callout">
+      <div class="callout-content">
         <p style="margin: 0;"><strong>Check Any Meat Meal Ingredient:</strong> Not sure about a specific meal ingredient in your dog's food? Use our <a href="/ingredient-analyzer/">free ingredient analyzer</a> to look up any meat meal and see detailed quality analysis, protein content, and sourcing concerns.</p>
+      
       </div>
+    </div>
 
       <h2>Does Meat Meal Contain Organs?</h2>
 

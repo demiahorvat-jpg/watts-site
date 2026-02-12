@@ -400,22 +400,43 @@
       }
     }
 
-    /* LIGHT CALLOUT BOX */
+    /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
-      background: var(--bg-light);
-      border-left: 4px solid var(--brand-orange);
-      border-radius: 8px;
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
+      background: var(--white);
+      color: var(--text-dark);
+      border-radius: 12px;
       padding: 24px 28px;
-      margin: 32px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
-        padding: 28px 32px;
+      .callout-content {
+        padding: 28px 36px;
       }
+    }
+
+    .callout h3 {
+      color: var(--text-dark);
     }
 
     .callout p:last-child {
       margin-bottom: 0;
+    }
+
+    .callout a {
+      color: var(--accent-navy);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .callout a:hover {
+      opacity: 0.85;
     }
 
     /* TABLE - Responsive */
@@ -787,9 +808,12 @@
       <p>Zinc plays a role in hormone production and reproductive function in both male and female dogs.</p>
 
       <div class="callout">
+      <div class="callout-content">
         <h3 style="margin-top: 0; font-size: 18px;">Why Dogs Can't Store Zinc</h3>
         <p style="margin-top: 12px; margin-bottom: 0;">Unlike fat-soluble vitamins (A, D, E, K) that can be stored in tissues, zinc is a water-soluble mineral with no long-term storage mechanism. This means dogs need a consistent daily supply from food. If their diet doesn't provide enough zinc — even for a few days — deficiency symptoms can start to appear.</p>
+      
       </div>
+    </div>
 
       <h2>Signs of Zinc Deficiency in Dogs</h2>
 
@@ -853,9 +877,12 @@
       <p><a href="/ingredient-analyzer/ingredients/pumpkin-seed/">Pumpkin seeds</a> contain zinc, but they also contain phytates that reduce absorption. They're fine as an occasional treat but shouldn't be relied on as a primary zinc source.</p>
 
       <div class="callout">
+      <div class="callout-content">
         <h3 style="margin-top: 0; font-size: 18px;">Zinc Content Comparison: Whole Foods vs Synthetic</h3>
         <div style="margin-top: 12px;">
-          <div style="margin-bottom: 8px;"><strong><a href="/ingredient-analyzer/ingredients/beef-liver/">Beef liver</a> (1 oz):</strong> 4-5mg zinc + co-factors (amino acids, B vitamins, iron)</div>
+          <div style="margin-bottom: 8px;"><strong><a href="/ingredient-analyzer/ingredients/beef-liver/">Beef liver</a> (1 oz):</strong> 4-5mg zinc + co-factors (amino acids, B vitamins, iron)
+      </div>
+    </div>
           <div style="margin-bottom: 8px;"><strong><a href="/ingredient-analyzer/ingredients/beef-kidney/">Beef kidney</a> (1 oz):</strong> 3-4mg zinc + selenium, B12, trace minerals</div>
           <div style="margin-bottom: 8px;"><strong>Red meat (1 oz):</strong> 2-3mg zinc</div>
           <div style="margin-bottom: 8px;"><strong><a href="/ingredient-analyzer/ingredients/egg/">Egg</a> yolk (1 large):</strong> 0.4mg zinc</div>

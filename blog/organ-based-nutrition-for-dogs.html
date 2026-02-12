@@ -395,22 +395,43 @@
       }
     }
 
-    /* LIGHT CALLOUT BOX */
+    /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
-      background: var(--bg-light);
-      border-left: 4px solid var(--brand-orange);
-      border-radius: 8px;
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
+      background: var(--white);
+      color: var(--text-dark);
+      border-radius: 12px;
       padding: 24px 28px;
-      margin: 32px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
-        padding: 28px 32px;
+      .callout-content {
+        padding: 28px 36px;
       }
+    }
+
+    .callout h3 {
+      color: var(--text-dark);
     }
 
     .callout p:last-child {
       margin-bottom: 0;
+    }
+
+    .callout a {
+      color: var(--accent-navy);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .callout a:hover {
+      opacity: 0.85;
     }
 
     /* FAQ SECTION */
@@ -720,9 +741,12 @@
       <p>Nutrition is only as good as what the body can absorb. Organ nutrients are bundled with natural enzymes and co-factors that support <a href="/blog/whole-food-vs-synthetic-nutrients.html">bioavailability</a>—the body recognizes the structure of these nutrients and puts them to use efficiently. That means more real benefit from smaller, more concentrated amounts. This is especially relevant for dogs that struggle with digestion, have high activity demands, or are getting older and need extra nutritional support to stay at their best.</p>
 
       <div class="callout">
+      <div class="callout-content">
         <h3 style="margin-top: 0; font-size: 18px;">Organ Meat vs. Muscle Meat: Nutrient Density</h3>
         <div style="margin-top: 12px;">
-          <div style="margin-bottom: 8px;"><strong>Vitamin A:</strong> Liver has 50x more than muscle meat</div>
+          <div style="margin-bottom: 8px;"><strong>Vitamin A:</strong> Liver has 50x more than muscle meat
+      </div>
+    </div>
           <div style="margin-bottom: 8px;"><strong>Iron:</strong> Organ meat contains heme iron (over 2x more iron, 3x more bioavailable)</div>
           <div style="margin-bottom: 8px;"><strong>B12:</strong> Liver provides 30x more than beef</div>
           <div><strong>CoQ10:</strong> Heart contains 10x more than muscle tissue</div>

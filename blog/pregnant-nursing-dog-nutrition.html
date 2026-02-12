@@ -395,22 +395,43 @@
       }
     }
 
-    /* LIGHT CALLOUT BOX */
+    /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
-      background: var(--bg-light);
-      border-left: 4px solid var(--brand-orange);
-      border-radius: 8px;
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
+      background: var(--white);
+      color: var(--text-dark);
+      border-radius: 12px;
       padding: 24px 28px;
-      margin: 32px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
-        padding: 28px 32px;
+      .callout-content {
+        padding: 28px 36px;
       }
+    }
+
+    .callout h3 {
+      color: var(--text-dark);
     }
 
     .callout p:last-child {
       margin-bottom: 0;
+    }
+
+    .callout a {
+      color: var(--accent-navy);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .callout a:hover {
+      opacity: 0.85;
     }
 
     /* TABLE - Responsive */
@@ -949,9 +970,12 @@
       <p><strong>Feeding strategy:</strong> Increase food gradually starting week 5—about 10-15% more per week. Switch to smaller, more frequent meals (3-4x daily) as stomach space decreases. Choose calorie-dense, highly digestible foods.</p>
 
       <div class="callout">
+      <div class="callout-content">
         <h3 style="margin-top: 0; font-size: 18px;">Critical: Do NOT Over-Supplement Calcium During Pregnancy</h3>
         <div style="margin-top: 12px;">
-          <div style="margin-bottom: 8px;">Excess calcium during pregnancy can suppress the parathyroid gland, making the body unable to mobilize calcium from bones when needed during whelping and lactation. This dramatically increases risk of eclampsia (life-threatening calcium crash).</div>
+          <div style="margin-bottom: 8px;">Excess calcium during pregnancy can suppress the parathyroid gland, making the body unable to mobilize calcium from bones when needed during whelping and lactation. This dramatically increases risk of eclampsia (life-threatening calcium crash).
+      </div>
+    </div>
           <div>Feed a balanced diet with appropriate calcium levels (1-1.8% dry matter), but avoid calcium supplements or high-calcium treats during pregnancy. Save calcium support for lactation.</div>
         </div>
       </div>

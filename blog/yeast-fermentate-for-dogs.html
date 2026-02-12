@@ -385,22 +385,43 @@
       }
     }
 
-    /* LIGHT CALLOUT BOX */
+    /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
-      background: var(--bg-light);
-      border-left: 4px solid var(--brand-orange);
-      border-radius: 8px;
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
+      background: var(--white);
+      color: var(--text-dark);
+      border-radius: 12px;
       padding: 24px 28px;
-      margin: 32px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     @media (min-width: 768px) {
-      .callout {
-        padding: 28px 32px;
+      .callout-content {
+        padding: 28px 36px;
       }
+    }
+
+    .callout h3 {
+      color: var(--text-dark);
     }
 
     .callout p:last-child {
       margin-bottom: 0;
+    }
+
+    .callout a {
+      color: var(--accent-navy);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .callout a:hover {
+      opacity: 0.85;
     }
 
     /* TABLE - Responsive */
@@ -841,8 +862,11 @@
     <p>This is fundamentally different from isolated yeast extracts (like beta-glucan powder) or inactive yeast products (like nutritional yeast). You're getting the <strong>whole fermented ecosystem</strong>, not just one or two compounds.</p>
 
     <div class="callout">
+      <div class="callout-content">
       <h3 style="margin-top: 0; font-size: 18px;">Fermentation Creates New Compounds</h3>
       <p>The fermentation process doesn't just multiply yeast cells—it creates entirely new beneficial compounds that weren't present in the original ingredients. These metabolites include organic acids (like acetic and lactic acid), bioactive peptides, enzymes, and other compounds with proven health benefits. This is why fermented foods (like yogurt, kefir, and kimchi) are often more beneficial than their raw ingredients—fermentation adds functional value.</p>
+    
+      </div>
     </div>
 
     <h3>How Yeast Fermentate Is Made</h3>
@@ -1026,8 +1050,11 @@
     </table>
 
     <div class="callout">
+      <div class="callout-content">
       <h3 style="margin-top: 0; font-size: 18px;">Can You Use Multiple Yeast Products Together?</h3>
       <p>Yes. Many high-quality supplements combine yeast fermentate (for broad-spectrum gut and immune support) with concentrated yeast beta-glucan (for targeted immune activation). They work synergistically—the fermentate supports overall gut health and provides metabolites, while the concentrated beta-glucan provides higher doses of the specific immune-activating compound. This combination can be particularly beneficial for dogs with immune challenges or chronic health conditions.</p>
+    
+      </div>
     </div>
 
     <h2>Yeast Fermentate vs. Probiotics: Are They the Same?</h2>
@@ -1132,8 +1159,11 @@
     <p><strong>Start low and increase gradually:</strong> Begin with the lower end of the maintenance dose and increase over 5-7 days to avoid any temporary digestive adjustment. Most dogs tolerate yeast fermentate well even at higher doses, but gradual introduction is always safer.</p>
 
     <div class="callout">
+      <div class="callout-content">
       <h3 style="margin-top: 0; font-size: 18px;">Commercial Dog Foods Already Contain Yeast Fermentate</h3>
       <p>Many high-quality commercial dog foods include yeast fermentate as an ingredient (often listed as "dried Saccharomyces cerevisiae fermentation product"). If your dog's food already contains it, you may need less supplemental yeast fermentate—or you may choose to provide additional amounts during times of need. Check your food label to understand baseline intake.</p>
+    
+      </div>
     </div>
 
     <h2>Is Yeast Fermentate Safe for Dogs?</h2>
@@ -1189,6 +1219,7 @@
     <p><strong>Avoid:</strong> Products where yeast fermentate is buried deep in the ingredient list after multiple fillers, or where the actual amount isn't disclosed.</p>
 
     <div class="callout">
+      <div class="callout-content">
       <h3 style="margin-top: 0; font-size: 18px;">Ingredient Label Translation</h3>
       <p>On commercial dog food and supplement labels, yeast fermentate might appear as:</p>
       <ul>
@@ -1198,6 +1229,8 @@
         <li>"Active dry yeast fermentation product"</li>
       </ul>
       <p>All of these indicate whole-culture yeast fermentate. Simple "yeast extract" or "autolyzed yeast" are different products with different benefits.</p>
+    
+      </div>
     </div>
 
     <h2>When to Use Yeast Fermentate</h2>
