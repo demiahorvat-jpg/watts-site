@@ -1,0 +1,51 @@
+Priority Ingredient Links - Batch 3
+Total files updated: 4
+Total links added: 40
+
+how-to-read-dog-supplement-labels.html:
+  - Linked "ginger" to /ingredient-analyzer/ingredients/ginger/
+
+index.html:
+  - Linked "Yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+
+vitamin-a-supplement.html:
+  - Linked "duck liver" to /ingredient-analyzer/ingredients/duck-liver/
+  - Linked "Duck liver" to /ingredient-analyzer/ingredients/duck-liver/
+
+yeast-fermentate-for-dogs.html:
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "Yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "Yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "Yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "Yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "Yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "Yeast Fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "Yeast Fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/
+  - Linked "Yeast fermentate" to /ingredient-analyzer/ingredients/yeast-fermentate/

@@ -1,0 +1,60 @@
+digestive-enzymes-for-dogs.html:
+  - Linked "white fish" to /ingredient-analyzer/ingredients/whitefish/
+  - Linked "white fish" to /ingredient-analyzer/ingredients/whitefish/
+
+dog-skin-coat-supplements.html:
+  - Linked "anchovy" to /ingredient-analyzer/ingredients/anchovies/
+  - Linked "anchovy" to /ingredient-analyzer/ingredients/anchovies/
+  - Linked "anchovies" to /ingredient-analyzer/ingredients/anchovies/
+
+fillers-in-dog-supplements.html:
+  - Linked "anchovies" to /ingredient-analyzer/ingredients/anchovies/
+
+gut-health-for-dogs.html:
+  - Linked "Pectin" to /ingredient-analyzer/ingredients/pectin/
+
+index.html:
+  - Linked "Yeast beta-glucan" to /ingredient-analyzer/ingredients/yeast-beta-glucans/
+
+joint-supplements-for-dogs.html:
+  - Linked "anchovies" to /ingredient-analyzer/ingredients/anchovies/
+
+omega-3-fish-oil-for-dogs.html:
+  - Linked "anchovies" to /ingredient-analyzer/ingredients/anchovies/
+  - Linked "anchovies" to /ingredient-analyzer/ingredients/anchovies/
+  - Linked "Anchovies" to /ingredient-analyzer/ingredients/anchovies/
+  - Linked "anchovies" to /ingredient-analyzer/ingredients/anchovies/
+  - Linked "Anchovies" to /ingredient-analyzer/ingredients/anchovies/
+  - Linked "anchovies" to /ingredient-analyzer/ingredients/anchovies/
+
+vitamin-a-supplement.html:
+  - Linked "anchovies" to /ingredient-analyzer/ingredients/anchovies/
+
+what-extends-dog-lifespan.html:
+  - Linked "Anchovies" to /ingredient-analyzer/ingredients/anchovies/
+  - Linked "anchovies" to /ingredient-analyzer/ingredients/anchovies/
+
+yeast-beta-glucan-for-dogs.html:
+  - Linked "Yeast beta-glucan" to /ingredient-analyzer/ingredients/yeast-beta-glucans/
+  - Linked "yeast beta-glucan" to /ingredient-analyzer/ingredients/yeast-beta-glucans/
+  - Linked "yeast beta-glucan" to /ingredient-analyzer/ingredients/yeast-beta-glucans/
+  - Linked "yeast beta-glucan" to /ingredient-analyzer/ingredients/yeast-beta-glucans/
+  - Linked "yeast beta-glucan" to /ingredient-analyzer/ingredients/yeast-beta-glucans/
+  - Linked "Yeast beta-glucan" to /ingredient-analyzer/ingredients/yeast-beta-glucans/
+  - Linked "Yeast beta-glucan" to /ingredient-analyzer/ingredients/yeast-beta-glucans/
+  - Linked "yeast beta-glucan" to /ingredient-analyzer/ingredients/yeast-beta-glucans/
+  - Linked "Yeast beta-glucan" to /ingredient-analyzer/ingredients/yeast-beta-glucans/
+  - Linked "Yeast beta-glucan" to /ingredient-analyzer/ingredients/yeast-beta-glucans/
+  - Linked "Yeast beta-glucan" to /ingredient-analyzer/ingredients/yeast-beta-glucans/
+  - Linked "Yeast Beta-Glucan" to /ingredient-analyzer/ingredients/yeast-beta-glucans/
+  - Linked "yeast beta-glucan" to /ingredient-analyzer/ingredients/yeast-beta-glucans/
+  - Linked "Yeast beta-glucan" to /ingredient-analyzer/ingredients/yeast-beta-glucans/
+  - Linked "yeast beta-glucan" to /ingredient-analyzer/ingredients/yeast-beta-glucans/
+  - Linked "Yeast beta-glucan" to /ingredient-analyzer/ingredients/yeast-beta-glucans/
+  - Linked "Yeast Beta-Glucan" to /ingredient-analyzer/ingredients/yeast-beta-glucans/
+  - Linked "Yeast beta-glucan" to /ingredient-analyzer/ingredients/yeast-beta-glucans/
+  - Linked "Yeast Beta-Glucan" to /ingredient-analyzer/ingredients/yeast-beta-glucans/
+
+yeast-fermentate-for-dogs.html:
+  - Linked "Yeast beta-glucan" to /ingredient-analyzer/ingredients/yeast-beta-glucans/
+  - Linked "Yeast Beta-Glucan" to /ingredient-analyzer/ingredients/yeast-beta-glucans/
