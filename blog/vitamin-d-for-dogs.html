@@ -398,7 +398,80 @@
       li {
         font-size: 18px;
       }
+    }    /* LAYERED CALLOUT BOX - Pointed base with rounded content card */
+    .quick-facts {
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
     }
+
+    .quick-facts-content {
+      background: var(--white);
+      color: var(--text-dark);
+      border-radius: 12px;
+      padding: 24px 28px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    @media (min-width: 768px) {
+      .quick-facts-content {
+        padding: 28px 36px;
+      }
+    }
+
+    .quick-facts h3 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-top: 4px;
+      margin-bottom: 20px;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      .quick-facts h3 {
+        font-size: 28px;
+      }
+    }
+
+    .quick-facts ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .quick-facts li {
+      padding: 8px 0;
+      padding-left: 28px;
+      position: relative;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+    @media (min-width: 768px) {
+      .quick-facts li {
+        font-size: 17px;
+      }
+    }
+
+    .quick-facts li:before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      top: 8px;
+      font-weight: 700;
+      color: var(--brand-orange);
+    }
+
+    .quick-facts a {
+      color: var(--accent-navy);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .quick-facts a:hover {
+      opacity: 0.85;
+    }
+
+
 
         /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
@@ -820,7 +893,8 @@
           <a href="/" aria-label="Watts home">
             <img src="/watts-logo-white.svg" alt="Watts" class="logo">
           </a>
-    </div>
+        </div>
+      </div>
     </header>
   </div>
 
@@ -1195,6 +1269,7 @@
         <li><a href="/blog/whole-food-vs-synthetic-nutrients.html">Whole Food vs Synthetic Vitamins</a></li>
       </ul>
     </div>
+    </div>
 
     <div class="faq-section">
       <h2>Frequently Asked Questions</h2>
@@ -1280,6 +1355,7 @@
         <h3>Can vitamin D hurt a dog?</h3>
         <p>Vitamin D can hurt a dog only if given in excessive amounts, typically from over-supplementation with synthetic vitamin D or accidental ingestion of rodenticides. Toxicity causes elevated blood calcium, kidney damage, and calcification of soft tissues. However, vitamin D from whole-food sources (fatty fish, liver, eggs) is safe and actually essential for your dog's health. The key is using whole foods rather than high-dose isolated supplements.</p>
     </div>
+    </div>
     </article>
   </main>
 
@@ -1294,7 +1370,8 @@
             <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
           </div>
           <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
-    </div>
+        </div>
+      </div>
     </footer>
   </div>
 
