@@ -467,38 +467,49 @@
     /* Related Articles */
     .related-articles {
       margin-top: 64px;
-      padding: 16px 20px;
-      background: var(--bg-light);
-      border-left: 4px solid var(--brand-orange);
-      border-radius: 8px;
     }
 
     .related-articles h3 {
-      font-size: 20px;
-      margin: 0 0 8px 0;
-      color: var(--brand-orange);
+      font-size: 24px;
+      margin: 0 0 24px 0;
+      font-weight: 700;
     }
     @media (min-width: 768px) {
       .related-articles h3 {
-        font-size: 23px;
+        font-size: 28px;
       }
     }
 
-    .related-articles ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
+    .related-grid {
+      display: grid;
+      gap: 16px;
+    }
+    @media (min-width: 768px) {
+      .related-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
     }
 
-    .related-articles li {
-      margin-bottom: 12px;
-      padding-left: 0;
-    }
-
-    .related-articles a {
-      color: var(--accent-navy);
-      text-decoration: underline;
+    .related-link {
+      display: block;
+      padding: 20px;
+      border: 2px solid var(--border);
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--fg);
+      transition: all 0.2s ease;
       font-size: 16px;
+      font-weight: 500;
+    }
+    @media (min-width: 768px) {
+      .related-link { font-size: 17px; }
+    }
+
+    .related-link:hover {
+      background: var(--bg-light);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
 
     /* FOOTER WRAPPER - Black background */
@@ -829,17 +840,21 @@
 
     <!-- Related Articles Section -->
     <div class="related-articles">
-      <h3>Related Articles:</h3>
-      <ul>
-        <li><a href="/blog/vitamin-d-for-dogs.html">Vitamin D for Dogs: Why dogs can't get vitamin D from sunlight</a></li>
-        <li><a href="/blog/b-vitamins-for-dogs.html">B Vitamins for Dogs: Essential for energy production</a></li>
-        <li><a href="/blog/choline-for-dogs.html">Choline for Dogs: Critical for brain health and liver function</a></li>
-        <li><a href="/blog/antioxidants-for-dogs.html">Antioxidants for Dogs: How they protect against aging and disease</a></li>
-        <li><a href="/blog/dog-vitamins-deficiency.html">Dog Vitamin Deficiency: How to identify and address deficiencies</a></li>
-        <li><a href="/blog/whole-food-vs-synthetic-nutrients.html">Whole Food vs Synthetic Vitamins: Why bioavailability matters</a></li>
-        <li><a href="/blog/how-to-read-dog-supplement-labels.html">How to Read Dog Supplement Labels: What to look for and avoid</a></li>
-        <li><a href="/blog/what-extends-dog-lifespan.html">What Actually Extends a Dog's Lifespan: The role of nutrition</a></li>
-      </ul>
+      <h3>Related Articles</h3>
+      <div class="related-grid">
+        <a href="/blog/whole-food-vs-synthetic-nutrients.html" class="related-link">
+          Whole Food vs Synthetic Vitamins: Why Bioavailability Matters →
+        </a>
+        <a href="/blog/how-to-read-dog-supplement-labels.html" class="related-link">
+          How to Read Dog Supplement Labels →
+        </a>
+        <a href="/blog/dog-vitamins-deficiency.html" class="related-link">
+          Dog Vitamin Deficiency: Signs & Solutions →
+        </a>
+        <a href="/blog/what-extends-dog-lifespan.html" class="related-link">
+          What Actually Extends a Dog's Lifespan →
+        </a>
+      </div>
     </div>
     </div>
 
