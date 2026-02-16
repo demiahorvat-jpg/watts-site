@@ -464,54 +464,6 @@
       margin-bottom: 0;
     }
 
-    /* Related Articles */
-    .related-articles {
-      margin-top: 64px;
-    }
-
-    .related-articles h3 {
-      font-size: 24px;
-      margin: 0 0 24px 0;
-      font-weight: 700;
-    }
-    @media (min-width: 768px) {
-      .related-articles h3 {
-        font-size: 28px;
-      }
-    }
-
-    .related-grid {
-      display: grid;
-      gap: 16px;
-    }
-    @media (min-width: 768px) {
-      .related-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-      }
-    }
-
-    .related-link {
-      display: block;
-      padding: 20px;
-      border: 2px solid var(--border);
-      border-radius: 8px;
-      text-decoration: none;
-      color: var(--fg);
-      transition: all 0.2s ease;
-      font-size: 16px;
-      font-weight: 500;
-    }
-    @media (min-width: 768px) {
-      .related-link { font-size: 17px; }
-    }
-
-    .related-link:hover {
-      background: var(--bg-light);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-
     /* FOOTER WRAPPER - Black background */
     .footer-wrapper {
       background: #191919;
@@ -839,22 +791,28 @@
     <p>AAFCO gives dogs the baseline they need to avoid deficiency — and that matters. But many dogs can benefit from optimized nutrition based on their individual needs, activity level, and biology. Supplements, when chosen carefully and rooted in whole-food ingredients, can help bridge the gap between adequate and optimal, supporting better health over the long run.</p>
 
     <!-- Related Articles Section -->
-    <div class="related-articles">
-      <h3>Related Articles</h3>
-      <div class="related-grid">
-        <a href="/blog/whole-food-vs-synthetic-nutrients.html" class="related-link">
-          Whole Food vs Synthetic Vitamins: Why Bioavailability Matters →
-        </a>
-        <a href="/blog/how-to-read-dog-supplement-labels.html" class="related-link">
-          How to Read Dog Supplement Labels →
-        </a>
-        <a href="/blog/dog-vitamins-deficiency.html" class="related-link">
-          Dog Vitamin Deficiency: Signs & Solutions →
-        </a>
-        <a href="/blog/what-extends-dog-lifespan.html" class="related-link">
-          What Actually Extends a Dog's Lifespan →
-        </a>
-      </div>
+    <h2 style="margin-top: 56px; padding-top: 40px; border-top: 2px solid var(--border-light);">Related Articles</h2>
+
+    <div style="display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 56px;">
+      <a href="/blog/whole-food-vs-synthetic-nutrients.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+        <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Whole Food vs Synthetic Vitamins</h3>
+        <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Why bioavailability matters more than what's listed on the label</p>
+      </a>
+
+      <a href="/blog/how-to-read-dog-supplement-labels.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+        <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">How to Read Dog Supplement Labels</h3>
+        <p style="font-size: 15px; color: var(--text-muted); margin: 0;">What to look for and what to avoid when choosing supplements</p>
+      </a>
+
+      <a href="/blog/dog-vitamins-deficiency.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+        <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Dog Vitamin Deficiency: Signs & Solutions</h3>
+        <p style="font-size: 15px; color: var(--text-muted); margin: 0;">How to identify and address nutritional gaps in your dog's diet</p>
+      </a>
+
+      <a href="/blog/what-extends-dog-lifespan.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
+        <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">What Actually Extends a Dog's Lifespan</h3>
+        <p style="font-size: 15px; color: var(--text-muted); margin: 0;">The role of nutrition in supporting long-term health and longevity</p>
+      </a>
     </div>
     </div>
 
