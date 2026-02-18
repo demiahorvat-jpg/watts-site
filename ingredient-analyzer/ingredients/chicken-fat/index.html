@@ -689,6 +689,94 @@
           margin-bottom: 8px !important;
         }
       }
+    
+      /* === STICKY EMAIL CTA (mobile only) === */
+      .sticky-email-cta {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: var(--brand-orange);
+        color: #ffffff;
+        padding: 16px 20px 24px;
+        z-index: 500;
+        box-shadow: 0 -4px 24px rgba(0,0,0,0.18);
+        border-radius: 16px 16px 0 0;
+        transform: translateY(100%);
+        transition: transform 0.35s ease;
+      }
+      .sticky-email-cta.visible {
+        transform: translateY(0);
+      }
+      @media (min-width: 768px) {
+        .sticky-email-cta { display: none !important; }
+      }
+      .sticky-cta-close {
+        position: absolute;
+        top: 12px;
+        right: 16px;
+        background: none;
+        border: none;
+        color: #ffffff;
+        font-size: 22px;
+        line-height: 1;
+        cursor: pointer;
+        padding: 4px 6px;
+        opacity: 0.75;
+      }
+      .sticky-cta-close:hover { opacity: 1; }
+      .sticky-cta-heading {
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0 0 12px;
+        color: #ffffff;
+        padding-right: 36px;
+      }
+      .sticky-cta-form {
+        display: flex;
+        gap: 8px;
+      }
+      .sticky-cta-form input[type="email"] {
+        flex: 1;
+        min-width: 0;
+        padding: 11px 14px;
+        border: none;
+        border-radius: 8px;
+        font-family: inherit;
+        font-size: 15px;
+        background: #ffffff;
+        color: #191919;
+      }
+      .sticky-cta-form input[type="email"]::placeholder {
+        color: rgba(25,25,25,0.4);
+      }
+      .sticky-cta-form input[type="email"]:focus {
+        outline: none;
+      }
+      .sticky-cta-form button[type="submit"] {
+        padding: 11px 16px;
+        background: #191919;
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        font-family: inherit;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+      .sticky-cta-form button[type="submit"]:hover {
+        opacity: 0.85;
+      }
+      .sticky-cta-success {
+        font-size: 16px;
+        font-weight: 500;
+        color: #ffffff;
+        margin: 0;
+        display: none;
+      }
     </style>
 
     <script type="application/ld+json">
@@ -1121,6 +1209,68 @@
         });
       }
     });
+  </script>
+
+  <!-- Sticky email CTA (mobile) -->
+  <div id="sticky-email-cta" class="sticky-email-cta" aria-hidden="true">
+    <button class="sticky-cta-close" id="sticky-cta-close" aria-label="Close">&#x2715;</button>
+    <p class="sticky-cta-heading">Stay in the loop</p>
+    <form class="sticky-cta-form" id="sticky-cta-form" action="https://formspree.io/f/mjkalgwj" method="POST" novalidate>
+      <input type="email" name="email" placeholder="Your email" required autocomplete="email">
+      <button type="submit">Notify me</button>
+    </form>
+    <p class="sticky-cta-success" id="sticky-cta-success">Thanks — we'll be in touch!</p>
+  </div>
+  <script>
+    (function() {
+      var cta = document.getElementById('sticky-email-cta');
+      var closeBtn = document.getElementById('sticky-cta-close');
+      var form = document.getElementById('sticky-cta-form');
+      var successMsg = document.getElementById('sticky-cta-success');
+      if (!cta) return;
+      if (localStorage.getItem('watts-cta-dismissed') || localStorage.getItem('watts-subscribed')) return;
+      var shown = false;
+      function showCta() {
+        if (shown) return;
+        shown = true;
+        cta.style.display = 'block';
+        // force reflow so transition fires
+        void cta.offsetHeight;
+        cta.classList.add('visible');
+        cta.setAttribute('aria-hidden', 'false');
+      }
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) showCta();
+      }, { passive: true });
+      closeBtn.addEventListener('click', function() {
+        cta.classList.remove('visible');
+        cta.setAttribute('aria-hidden', 'true');
+        localStorage.setItem('watts-cta-dismissed', '1');
+        setTimeout(function() { cta.style.display = 'none'; }, 350);
+      });
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        }).then(function(res) {
+          if (res.ok) {
+            form.style.display = 'none';
+            successMsg.style.display = 'block';
+            localStorage.setItem('watts-subscribed', '1');
+            setTimeout(function() {
+              cta.classList.remove('visible');
+              setTimeout(function() { cta.style.display = 'none'; }, 350);
+            }, 2500);
+          } else {
+            form.submit();
+          }
+        }).catch(function() {
+          form.submit();
+        });
+      });
+    })();
   </script>
 </body>
 </html>
