@@ -552,11 +552,17 @@
       min-width: 100%;
     }
 
-    .table-scroll th:first-child,
+    .table-scroll th:first-child {
+      position: sticky;
+      left: 0;
+      background: var(--brand-orange);
+      z-index: 1;
+    }
+
     .table-scroll td:first-child {
       position: sticky;
       left: 0;
-      background: inherit;
+      background: var(--white);
       z-index: 1;
     }
 
