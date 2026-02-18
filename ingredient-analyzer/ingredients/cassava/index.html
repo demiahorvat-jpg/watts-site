@@ -333,25 +333,27 @@
 
       .quick-summary {
         background: var(--brand-orange);
-        border-radius: 12px;
+        border-radius: 4px;
         padding: 8px;
         margin: 32px 0;
       }
 
+      .quick-summary-inner {
+        background: var(--white);
+        border-radius: 12px;
+        padding: 20px 24px;
+      }
+
       .quick-summary h2 {
-        color: var(--white);
+        color: var(--brand-orange);
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        margin: 4px 8px 0;
-        padding: 4px 4px 8px;
+        margin: 0 0 12px 0;
       }
 
       .quick-summary p {
-        background: var(--white);
-        border-radius: 8px;
-        padding: 20px 24px;
         margin: 0;
         font-size: 17px;
         line-height: 1.6;
@@ -445,18 +447,15 @@
 
       .watts-take-box {
         background: var(--brand-orange);
-        border-radius: 12px;
+        border-radius: 4px;
         padding: 8px;
         margin: 32px 0;
       }
 
-      .watts-take-box p {
+      .watts-take-inner {
         background: var(--white);
-        border-radius: 8px;
+        border-radius: 12px;
         padding: 20px 24px;
-        margin: 0;
-        font-size: 18px;
-        line-height: 1.7;
       }
 
       .quality-note-label {
@@ -468,13 +467,12 @@
       }
 
       .watts-take-label {
-        color: var(--white);
+        color: var(--brand-orange);
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        padding: 6px 8px 10px;
-        margin-bottom: 0;
+        margin-bottom: 12px;
       }
 
       .faq-item {
@@ -845,8 +843,10 @@
     </div>
 
     <div class="quick-summary" id="quick-summary">
-      <h2>Quick Summary</h2>
-      <p><strong>Cassava</strong> Cassava is a starchy root vegetable (Manihot esculenta) used in grain-free pet foods as an alternative carbohydrate source.</p>
+      <div class="quick-summary-inner">
+        <h2>Quick Summary</h2>
+        <p><strong>Cassava</strong> Cassava is a starchy root vegetable (Manihot esculenta) used in grain-free pet foods as an alternative carbohydrate source.</p>
+      </div>
     </div>
 
     <div class="key-facts">
@@ -921,8 +921,10 @@
     
 
     <div class="watts-take-box" id="watts-take">
-      <div class="watts-take-label">Watts' Take</div>
-      <p style="margin: 0; font-size: 18px;">Cassava is a low-quality filler ingredient masquerading as a grain-free option. While it's digestible and doesn't contain gluten, it's nutritionally barren—just empty carbs. It's often used because it's cheap, not because it's nutritious. We'd much prefer sweet potato, pumpkin, or even whole grains like oats. Cassava root is better than corn or wheat flour, but that's a low bar. If it's high on the ingredient list, it's a sign of a budget formula prioritizing cost over nutrition.</p>
+      <div class="watts-take-inner">
+        <div class="watts-take-label">Watts' Take</div>
+        <p style="margin: 0; font-size: 18px;">Cassava is a low-quality filler ingredient masquerading as a grain-free option. While it's digestible and doesn't contain gluten, it's nutritionally barren—just empty carbs. It's often used because it's cheap, not because it's nutritious. We'd much prefer sweet potato, pumpkin, or even whole grains like oats. Cassava root is better than corn or wheat flour, but that's a low bar. If it's high on the ingredient list, it's a sign of a budget formula prioritizing cost over nutrition.</p>
+      </div>
     </div>
 
     <h2 id="faqs">Frequently Asked Questions</h2>

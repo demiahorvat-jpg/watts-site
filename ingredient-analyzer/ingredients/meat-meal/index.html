@@ -281,25 +281,27 @@
 
       .quick-summary {
         background: var(--brand-orange);
-        border-radius: 12px;
+        border-radius: 4px;
         padding: 8px;
         margin: 32px 0;
       }
 
+      .quick-summary-inner {
+        background: var(--white);
+        border-radius: 12px;
+        padding: 20px 24px;
+      }
+
       .quick-summary h2 {
-        color: var(--white);
+        color: var(--brand-orange);
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        margin: 4px 8px 0;
-        padding: 4px 4px 8px;
+        margin: 0 0 12px 0;
       }
 
       .quick-summary p {
-        background: var(--white);
-        border-radius: 8px;
-        padding: 20px 24px;
         margin: 0;
         font-size: 17px;
         line-height: 1.6;
@@ -365,18 +367,15 @@
 
       .watts-take-box {
         background: var(--brand-orange);
-        border-radius: 12px;
+        border-radius: 4px;
         padding: 8px;
         margin: 32px 0;
       }
 
-      .watts-take-box p {
+      .watts-take-inner {
         background: var(--white);
-        border-radius: 8px;
+        border-radius: 12px;
         padding: 20px 24px;
-        margin: 0;
-        font-size: 18px;
-        line-height: 1.7;
       }
       .watts-take-box { background: #e8f5e9; }
       .quality-note-label {
@@ -388,13 +387,12 @@
       }
 
       .watts-take-label {
-        color: var(--white);
+        color: var(--brand-orange);
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        padding: 6px 8px 10px;
-        margin-bottom: 0;
+        margin-bottom: 12px;
       }
 
       .faq-item {
@@ -684,8 +682,10 @@
     </div>
 
     <div class="quick-summary" id="quick-summary">
-      <h2>Quick Summary</h2>
-      <p><strong>Meat meal</strong> is a dry rendered protein concentrate made from mammalian tissue — but the source animal is not specified on the label. It could be cattle, pigs, sheep, goats, or a mixture. While it provides concentrated protein (approximately 50–55% by weight), it offers no transparency about species, sourcing, or quality. Named meals like <a href="/ingredient-analyzer/ingredients/chicken-meal/">chicken meal</a> or <a href="/ingredient-analyzer/ingredients/beef-meal/">beef meal</a> are always preferable.</p>
+      <div class="quick-summary-inner">
+        <h2>Quick Summary</h2>
+        <p><strong>Meat meal</strong> is a dry rendered protein concentrate made from mammalian tissue — but the source animal is not specified on the label. It could be cattle, pigs, sheep, goats, or a mixture. While it provides concentrated protein (approximately 50–55% by weight), it offers no transparency about species, sourcing, or quality. Named meals like <a href="/ingredient-analyzer/ingredients/chicken-meal/">chicken meal</a> or <a href="/ingredient-analyzer/ingredients/beef-meal/">beef meal</a> are always preferable.</p>
+      </div>
     </div>
 
     <div class="key-facts">
@@ -757,8 +757,10 @@
     <p>If "meat meal" appears in the first five ingredients of a food, that food is using generic, unspecified protein as a primary nutritional foundation — a reliable signal of budget formulation regardless of the marketing claims on the packaging.</p>
 
     <div class="watts-take-box" id="watts-take">
-      <div class="watts-take-label">Watts' Take</div>
-      <p style="margin: 0; font-size: 18px;">We avoid meat meal entirely. There's no way to verify source, species, or quality from the label. Named animal meals — chicken meal, beef meal, lamb meal — provide the transparency needed to make an informed choice. If a food uses "meat meal" as a primary protein, it's cutting corners.</p>
+      <div class="watts-take-inner">
+        <div class="watts-take-label">Watts' Take</div>
+        <p style="margin: 0; font-size: 18px;">We avoid meat meal entirely. There's no way to verify source, species, or quality from the label. Named animal meals — chicken meal, beef meal, lamb meal — provide the transparency needed to make an informed choice. If a food uses "meat meal" as a primary protein, it's cutting corners.</p>
+      </div>
     </div>
 
     <h2 id="faqs">Frequently Asked Questions</h2>

@@ -333,25 +333,27 @@
 
       .quick-summary {
         background: var(--brand-orange);
-        border-radius: 12px;
+        border-radius: 4px;
         padding: 8px;
         margin: 32px 0;
       }
 
+      .quick-summary-inner {
+        background: var(--white);
+        border-radius: 12px;
+        padding: 20px 24px;
+      }
+
       .quick-summary h2 {
-        color: var(--white);
+        color: var(--brand-orange);
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        margin: 4px 8px 0;
-        padding: 4px 4px 8px;
+        margin: 0 0 12px 0;
       }
 
       .quick-summary p {
-        background: var(--white);
-        border-radius: 8px;
-        padding: 20px 24px;
         margin: 0;
         font-size: 17px;
         line-height: 1.6;
@@ -445,18 +447,15 @@
 
       .watts-take-box {
         background: var(--brand-orange);
-        border-radius: 12px;
+        border-radius: 4px;
         padding: 8px;
         margin: 32px 0;
       }
 
-      .watts-take-box p {
+      .watts-take-inner {
         background: var(--white);
-        border-radius: 8px;
+        border-radius: 12px;
         padding: 20px 24px;
-        margin: 0;
-        font-size: 18px;
-        line-height: 1.7;
       }
 
       .quality-note-label {
@@ -468,13 +467,12 @@
       }
 
       .watts-take-label {
-        color: var(--white);
+        color: var(--brand-orange);
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        padding: 6px 8px 10px;
-        margin-bottom: 0;
+        margin-bottom: 12px;
       }
 
       .faq-item {
@@ -860,8 +858,10 @@
     </div>
 
     <div class="quick-summary" id="quick-summary">
-      <h2>Quick Summary</h2>
-      <p><strong>Vegetable Oil</strong> Vegetable oil is a generic term for oils extracted from various plant sources, commonly including soybean, corn, canola, or a blend of multiple oils.</p>
+      <div class="quick-summary-inner">
+        <h2>Quick Summary</h2>
+        <p><strong>Vegetable Oil</strong> Vegetable oil is a generic term for oils extracted from various plant sources, commonly including soybean, corn, canola, or a blend of multiple oils.</p>
+      </div>
     </div>
 
     <div class="key-facts">
@@ -928,8 +928,10 @@
     
 
     <div class="watts-take-box" id="watts-take">
-      <div class="watts-take-label">Watts' Take</div>
-      <p style="margin: 0; font-size: 18px;">We're skeptical of generic 'vegetable oil' because it's a transparency issue. Quality foods specify their fat sources - chicken fat, fish oil, flaxseed oil. When labels just say 'vegetable oil,' it usually means the cheapest available option (often soybean or corn oil), and the source can change batch to batch. We prefer named fat sources where you know exactly what you're getting. If you see vegetable oil, ask: why won't they tell you which vegetables? Usually it's because they're using whatever's cheapest. Red flag for lack of transparency and potentially low-quality, high-omega-6 oils.</p>
+      <div class="watts-take-inner">
+        <div class="watts-take-label">Watts' Take</div>
+        <p style="margin: 0; font-size: 18px;">We're skeptical of generic 'vegetable oil' because it's a transparency issue. Quality foods specify their fat sources - chicken fat, fish oil, flaxseed oil. When labels just say 'vegetable oil,' it usually means the cheapest available option (often soybean or corn oil), and the source can change batch to batch. We prefer named fat sources where you know exactly what you're getting. If you see vegetable oil, ask: why won't they tell you which vegetables? Usually it's because they're using whatever's cheapest. Red flag for lack of transparency and potentially low-quality, high-omega-6 oils.</p>
+      </div>
     </div>
 
     <h2 id="faqs">Frequently Asked Questions</h2>

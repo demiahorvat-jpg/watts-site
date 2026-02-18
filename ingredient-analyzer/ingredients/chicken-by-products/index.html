@@ -256,25 +256,27 @@
 
       .quick-summary {
         background: var(--brand-orange);
-        border-radius: 12px;
+        border-radius: 4px;
         padding: 8px;
         margin: 32px 0;
       }
 
+      .quick-summary-inner {
+        background: var(--white);
+        border-radius: 12px;
+        padding: 20px 24px;
+      }
+
       .quick-summary h2 {
-        color: var(--white);
+        color: var(--brand-orange);
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        margin: 4px 8px 0;
-        padding: 4px 4px 8px;
+        margin: 0 0 12px 0;
       }
 
       .quick-summary p {
-        background: var(--white);
-        border-radius: 8px;
-        padding: 20px 24px;
         margin: 0;
         font-size: 17px;
         line-height: 1.6;
@@ -317,18 +319,15 @@
 
       .watts-take-box {
         background: var(--brand-orange);
-        border-radius: 12px;
+        border-radius: 4px;
         padding: 8px;
         margin: 32px 0;
       }
 
-      .watts-take-box p {
+      .watts-take-inner {
         background: var(--white);
-        border-radius: 8px;
+        border-radius: 12px;
         padding: 20px 24px;
-        margin: 0;
-        font-size: 18px;
-        line-height: 1.7;
       }
       .watts-take-box { background: #e8f5e9; }
       .quality-note-label {
@@ -340,13 +339,12 @@
       }
 
       .watts-take-label {
-        color: var(--white);
+        color: var(--brand-orange);
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        padding: 6px 8px 10px;
-        margin-bottom: 0;
+        margin-bottom: 12px;
       }
 
       .faq-item {
@@ -617,8 +615,10 @@
     </div>
 
     <div class="quick-summary" id="quick-summary">
-      <h2>Quick Summary</h2>
-      <p><strong>Chicken by-products</strong> are the non-rendered, non-muscle-meat parts of slaughtered chickens — primarily organ meats (liver, heart, kidneys), plus heads and feet. According to AAFCO, the definition requires these parts to be clean and free from fecal matter. They are species-specific (chicken), which is an advantage over generic ingredients like <a href="/ingredient-analyzer/ingredients/meat-meal/">meat meal</a>, but the label doesn't specify which parts are actually included. The nutritional value ranges from excellent (if mostly organs) to moderate (if mostly heads and feet). Named organ ingredients are always more transparent.</p>
+      <div class="quick-summary-inner">
+        <h2>Quick Summary</h2>
+        <p><strong>Chicken by-products</strong> are the non-rendered, non-muscle-meat parts of slaughtered chickens — primarily organ meats (liver, heart, kidneys), plus heads and feet. According to AAFCO, the definition requires these parts to be clean and free from fecal matter. They are species-specific (chicken), which is an advantage over generic ingredients like <a href="/ingredient-analyzer/ingredients/meat-meal/">meat meal</a>, but the label doesn't specify which parts are actually included. The nutritional value ranges from excellent (if mostly organs) to moderate (if mostly heads and feet). Named organ ingredients are always more transparent.</p>
+      </div>
     </div>
 
     <div class="key-facts">
@@ -707,8 +707,10 @@
     <p>Chicken by-products appear frequently as the second or third ingredient in canned/wet dog foods, where fresh ingredients list high due to water weight. In this context, "chicken, chicken by-products" as the first two ingredients typically means a chicken muscle meat + organ mix — potentially a good formula if the manufacturer sources quality organ material.</p>
 
     <div class="watts-take-box" id="watts-take">
-      <div class="watts-take-label">Watts' Take</div>
-      <p style="margin: 0; font-size: 18px;">Chicken by-products aren't the bogeyman pet food marketing sometimes makes them out to be — liver and heart are excellent nutrition. But the label doesn't tell you what's actually in there. We prefer named organ ingredients: chicken liver, chicken heart, chicken kidney. If a manufacturer is proud of their organ-meat sourcing, they name it. "By-products" is a catch-all that leaves too much to chance.</p>
+      <div class="watts-take-inner">
+        <div class="watts-take-label">Watts' Take</div>
+        <p style="margin: 0; font-size: 18px;">Chicken by-products aren't the bogeyman pet food marketing sometimes makes them out to be — liver and heart are excellent nutrition. But the label doesn't tell you what's actually in there. We prefer named organ ingredients: chicken liver, chicken heart, chicken kidney. If a manufacturer is proud of their organ-meat sourcing, they name it. "By-products" is a catch-all that leaves too much to chance.</p>
+      </div>
     </div>
 
     <h2 id="faqs">Frequently Asked Questions</h2>

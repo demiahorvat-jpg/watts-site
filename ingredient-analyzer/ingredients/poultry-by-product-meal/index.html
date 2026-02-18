@@ -333,25 +333,27 @@
 
       .quick-summary {
         background: var(--brand-orange);
-        border-radius: 12px;
+        border-radius: 4px;
         padding: 8px;
         margin: 32px 0;
       }
 
+      .quick-summary-inner {
+        background: var(--white);
+        border-radius: 12px;
+        padding: 20px 24px;
+      }
+
       .quick-summary h2 {
-        color: var(--white);
+        color: var(--brand-orange);
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        margin: 4px 8px 0;
-        padding: 4px 4px 8px;
+        margin: 0 0 12px 0;
       }
 
       .quick-summary p {
-        background: var(--white);
-        border-radius: 8px;
-        padding: 20px 24px;
         margin: 0;
         font-size: 17px;
         line-height: 1.6;
@@ -445,18 +447,15 @@
 
       .watts-take-box {
         background: var(--brand-orange);
-        border-radius: 12px;
+        border-radius: 4px;
         padding: 8px;
         margin: 32px 0;
       }
 
-      .watts-take-box p {
+      .watts-take-inner {
         background: var(--white);
-        border-radius: 8px;
+        border-radius: 12px;
         padding: 20px 24px;
-        margin: 0;
-        font-size: 18px;
-        line-height: 1.7;
       }
 
       .quality-note-label {
@@ -468,13 +467,12 @@
       }
 
       .watts-take-label {
-        color: var(--white);
+        color: var(--brand-orange);
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        padding: 6px 8px 10px;
-        margin-bottom: 0;
+        margin-bottom: 12px;
       }
 
       .faq-item {
@@ -871,8 +869,10 @@
     </div>
 
     <div class="quick-summary" id="quick-summary">
-      <h2>Quick Summary</h2>
-      <p><strong>Poultry By-Product Meal</strong> Rendered poultry parts excluding feathers, heads, feet, intestines. Can include necks, organs, undeveloped eggs.</p>
+      <div class="quick-summary-inner">
+        <h2>Quick Summary</h2>
+        <p><strong>Poultry By-Product Meal</strong> Rendered poultry parts excluding feathers, heads, feet, intestines. Can include necks, organs, undeveloped eggs.</p>
+      </div>
     </div>
 
     <div class="key-facts">
@@ -983,8 +983,10 @@
     <p><strong>Typical Position:</strong> In budget foods, appears as first or second ingredient indicating primary protein source. In mid-tier foods, appears in positions 3-7 as supplemental protein. Premium foods avoid this ingredient entirely, using named meals and specific organs instead.</p>
 
     <div class="watts-take-box" id="watts-take">
-      <div class="watts-take-label">Watts' Take</div>
-      <p style="margin: 0; font-size: 18px;">The frustrating truth about poultry by-product meal is that it COULD be a good ingredient - poultry organs are nutritious and the rendering process creates stable, concentrated protein. If manufacturers were transparent about including substantial liver, heart, and gizzards from quality birds, this would be defensible. Instead, the vague term allows flexibility to use whatever parts are cheapest (often feet and necks) from unspecified birds (could be chicken one batch, turkey the next). Premium brands avoid this opacity, using 'chicken meal' or naming organs specifically. The generic by-product term signals: 'we want flexibility to use whatever is cheapest without telling you.' That lack of transparency typically correlates with overall lower quality standards. We recommend avoiding when possible - not because by-products are inherently bad, but because transparency matters and this ingredient offers none.</p>
+      <div class="watts-take-inner">
+        <div class="watts-take-label">Watts' Take</div>
+        <p style="margin: 0; font-size: 18px;">The frustrating truth about poultry by-product meal is that it COULD be a good ingredient - poultry organs are nutritious and the rendering process creates stable, concentrated protein. If manufacturers were transparent about including substantial liver, heart, and gizzards from quality birds, this would be defensible. Instead, the vague term allows flexibility to use whatever parts are cheapest (often feet and necks) from unspecified birds (could be chicken one batch, turkey the next). Premium brands avoid this opacity, using 'chicken meal' or naming organs specifically. The generic by-product term signals: 'we want flexibility to use whatever is cheapest without telling you.' That lack of transparency typically correlates with overall lower quality standards. We recommend avoiding when possible - not because by-products are inherently bad, but because transparency matters and this ingredient offers none.</p>
+      </div>
     </div>
 
     <h2 id="faqs">Frequently Asked Questions</h2>

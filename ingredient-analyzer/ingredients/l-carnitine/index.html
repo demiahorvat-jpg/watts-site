@@ -333,25 +333,27 @@
 
       .quick-summary {
         background: var(--brand-orange);
-        border-radius: 12px;
+        border-radius: 4px;
         padding: 8px;
         margin: 32px 0;
       }
 
+      .quick-summary-inner {
+        background: var(--white);
+        border-radius: 12px;
+        padding: 20px 24px;
+      }
+
       .quick-summary h2 {
-        color: var(--white);
+        color: var(--brand-orange);
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        margin: 4px 8px 0;
-        padding: 4px 4px 8px;
+        margin: 0 0 12px 0;
       }
 
       .quick-summary p {
-        background: var(--white);
-        border-radius: 8px;
-        padding: 20px 24px;
         margin: 0;
         font-size: 17px;
         line-height: 1.6;
@@ -445,18 +447,15 @@
 
       .watts-take-box {
         background: var(--brand-orange);
-        border-radius: 12px;
+        border-radius: 4px;
         padding: 8px;
         margin: 32px 0;
       }
 
-      .watts-take-box p {
+      .watts-take-inner {
         background: var(--white);
-        border-radius: 8px;
+        border-radius: 12px;
         padding: 20px 24px;
-        margin: 0;
-        font-size: 18px;
-        line-height: 1.7;
       }
 
       .quality-note-label {
@@ -468,13 +467,12 @@
       }
 
       .watts-take-label {
-        color: var(--white);
+        color: var(--brand-orange);
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        padding: 6px 8px 10px;
-        margin-bottom: 0;
+        margin-bottom: 12px;
       }
 
       .faq-item {
@@ -871,8 +869,10 @@
     </div>
 
     <div class="quick-summary" id="quick-summary">
-      <h2>Quick Summary</h2>
-      <p><strong>L-Carnitine</strong> Amino acid derivative that transports fatty acids for energy production.</p>
+      <div class="quick-summary-inner">
+        <h2>Quick Summary</h2>
+        <p><strong>L-Carnitine</strong> Amino acid derivative that transports fatty acids for energy production.</p>
+      </div>
     </div>
 
     <div class="key-facts">
@@ -985,8 +985,10 @@
     <p><strong>Typical Position:</strong> L-carnitine typically appears near the end of ingredient lists since it's added in small amounts by weight. Position doesn't reflect importance - check guaranteed analysis for actual content rather than relying on position.</p>
 
     <div class="watts-take-box" id="watts-take">
-      <div class="watts-take-label">Watts' Take</div>
-      <p style="margin: 0; font-size: 18px;">L-carnitine is one of those supplements with solid theory but modest real-world results. The science shows it can help with weight loss - but only when combined with calorie restriction and exercise, and effects are modest (perhaps 10-20% better than diet alone). The bigger issue is dosing: therapeutic benefits require 2,500-5,000mg daily for an average dog, but most 'weight management' foods contain only 25-100mg daily - essentially marketing theater. For specific cardiac cases (Boxers, Dobermans with DCM) or serious weight loss efforts, dedicated supplements at gram-level doses make sense. Otherwise, we're skeptical of L-carnitine's value in regular dog food. It's not harmful, but probably not helping much either at typical inclusion rates.</p>
+      <div class="watts-take-inner">
+        <div class="watts-take-label">Watts' Take</div>
+        <p style="margin: 0; font-size: 18px;">L-carnitine is one of those supplements with solid theory but modest real-world results. The science shows it can help with weight loss - but only when combined with calorie restriction and exercise, and effects are modest (perhaps 10-20% better than diet alone). The bigger issue is dosing: therapeutic benefits require 2,500-5,000mg daily for an average dog, but most 'weight management' foods contain only 25-100mg daily - essentially marketing theater. For specific cardiac cases (Boxers, Dobermans with DCM) or serious weight loss efforts, dedicated supplements at gram-level doses make sense. Otherwise, we're skeptical of L-carnitine's value in regular dog food. It's not harmful, but probably not helping much either at typical inclusion rates.</p>
+      </div>
     </div>
 
     <h2 id="faqs">Frequently Asked Questions</h2>

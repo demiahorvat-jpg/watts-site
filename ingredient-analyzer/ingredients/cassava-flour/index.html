@@ -333,25 +333,27 @@
 
       .quick-summary {
         background: var(--brand-orange);
-        border-radius: 12px;
+        border-radius: 4px;
         padding: 8px;
         margin: 32px 0;
       }
 
+      .quick-summary-inner {
+        background: var(--white);
+        border-radius: 12px;
+        padding: 20px 24px;
+      }
+
       .quick-summary h2 {
-        color: var(--white);
+        color: var(--brand-orange);
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        margin: 4px 8px 0;
-        padding: 4px 4px 8px;
+        margin: 0 0 12px 0;
       }
 
       .quick-summary p {
-        background: var(--white);
-        border-radius: 8px;
-        padding: 20px 24px;
         margin: 0;
         font-size: 17px;
         line-height: 1.6;
@@ -445,18 +447,15 @@
 
       .watts-take-box {
         background: var(--brand-orange);
-        border-radius: 12px;
+        border-radius: 4px;
         padding: 8px;
         margin: 32px 0;
       }
 
-      .watts-take-box p {
+      .watts-take-inner {
         background: var(--white);
-        border-radius: 8px;
+        border-radius: 12px;
         padding: 20px 24px;
-        margin: 0;
-        font-size: 18px;
-        line-height: 1.7;
       }
 
       .quality-note-label {
@@ -468,13 +467,12 @@
       }
 
       .watts-take-label {
-        color: var(--white);
+        color: var(--brand-orange);
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        padding: 6px 8px 10px;
-        margin-bottom: 0;
+        margin-bottom: 12px;
       }
 
       .faq-item {
@@ -845,8 +843,10 @@
     </div>
 
     <div class="quick-summary" id="quick-summary">
-      <h2>Quick Summary</h2>
-      <p><strong>Cassava Flour</strong> Cassava flour is ground cassava root used as a grain-free, gluten-free carbohydrate and binding agent in pet foods.</p>
+      <div class="quick-summary-inner">
+        <h2>Quick Summary</h2>
+        <p><strong>Cassava Flour</strong> Cassava flour is ground cassava root used as a grain-free, gluten-free carbohydrate and binding agent in pet foods.</p>
+      </div>
     </div>
 
     <div class="key-facts">
@@ -915,8 +915,10 @@
     
 
     <div class="watts-take-box" id="watts-take">
-      <div class="watts-take-label">Watts' Take</div>
-      <p style="margin: 0; font-size: 18px;">Cassava flour is a low-quality grain-free filler. It's used because it's cheap and binds kibble together, not because it adds nutrition. We see it as a sign that manufacturers are prioritizing cost savings over quality ingredients. While it's fine for dogs with grain allergies, it's still empty calories. We'd prefer nutrient-dense carbohydrates like sweet potato or whole food options. If cassava flour is high on the ingredient list, it's a red flag for a budget formula.</p>
+      <div class="watts-take-inner">
+        <div class="watts-take-label">Watts' Take</div>
+        <p style="margin: 0; font-size: 18px;">Cassava flour is a low-quality grain-free filler. It's used because it's cheap and binds kibble together, not because it adds nutrition. We see it as a sign that manufacturers are prioritizing cost savings over quality ingredients. While it's fine for dogs with grain allergies, it's still empty calories. We'd prefer nutrient-dense carbohydrates like sweet potato or whole food options. If cassava flour is high on the ingredient list, it's a red flag for a budget formula.</p>
+      </div>
     </div>
 
     <h2 id="faqs">Frequently Asked Questions</h2>

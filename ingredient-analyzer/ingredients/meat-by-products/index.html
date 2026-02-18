@@ -333,25 +333,27 @@
 
       .quick-summary {
         background: var(--brand-orange);
-        border-radius: 12px;
+        border-radius: 4px;
         padding: 8px;
         margin: 32px 0;
       }
 
+      .quick-summary-inner {
+        background: var(--white);
+        border-radius: 12px;
+        padding: 20px 24px;
+      }
+
       .quick-summary h2 {
-        color: var(--white);
+        color: var(--brand-orange);
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        margin: 4px 8px 0;
-        padding: 4px 4px 8px;
+        margin: 0 0 12px 0;
       }
 
       .quick-summary p {
-        background: var(--white);
-        border-radius: 8px;
-        padding: 20px 24px;
         margin: 0;
         font-size: 17px;
         line-height: 1.6;
@@ -445,18 +447,15 @@
 
       .watts-take-box {
         background: var(--brand-orange);
-        border-radius: 12px;
+        border-radius: 4px;
         padding: 8px;
         margin: 32px 0;
       }
 
-      .watts-take-box p {
+      .watts-take-inner {
         background: var(--white);
-        border-radius: 8px;
+        border-radius: 12px;
         padding: 20px 24px;
-        margin: 0;
-        font-size: 18px;
-        line-height: 1.7;
       }
 
       .quality-note-label {
@@ -468,13 +467,12 @@
       }
 
       .watts-take-label {
-        color: var(--white);
+        color: var(--brand-orange);
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        padding: 6px 8px 10px;
-        margin-bottom: 0;
+        margin-bottom: 12px;
       }
 
       .faq-item {
@@ -871,8 +869,10 @@
     </div>
 
     <div class="quick-summary" id="quick-summary">
-      <h2>Quick Summary</h2>
-      <p><strong>Meat By-Products</strong> Non-rendered parts from slaughtered animals—organs, blood, bone, fatty tissue. Excludes meat, hide, hooves, hair, horns.</p>
+      <div class="quick-summary-inner">
+        <h2>Quick Summary</h2>
+        <p><strong>Meat By-Products</strong> Non-rendered parts from slaughtered animals—organs, blood, bone, fatty tissue. Excludes meat, hide, hooves, hair, horns.</p>
+      </div>
     </div>
 
     <div class="key-facts">
@@ -984,8 +984,10 @@
     <p><strong>Typical Position:</strong> In budget foods, meat by-products often appear as first or second ingredient, indicating heavy reliance. In mid-tier foods, may appear in positions 3-7 as supplemental protein. Premium foods typically avoid meat by-products entirely, using named proteins and specific organs instead.</p>
 
     <div class="watts-take-box" id="watts-take">
-      <div class="watts-take-label">Watts' Take</div>
-      <p style="margin: 0; font-size: 18px;">Here's the nuance: organ meats like liver and heart are more nutritious than muscle meat - if meat by-products consisted primarily of these premium organs from quality animals, they'd be excellent ingredients. The problem is you'll never know because manufacturers hide behind vague terminology. This opacity signals cost-cutting over transparency. If the organs included were consistently high-quality, brands would name them specifically ('beef liver') for marketing advantage. The generic term means they want flexibility to use whatever is cheapest. We recommend avoiding meat by-products not because they're inherently bad, but because lack of transparency prevents informed choices and typically correlates with overall lower quality standards.</p>
+      <div class="watts-take-inner">
+        <div class="watts-take-label">Watts' Take</div>
+        <p style="margin: 0; font-size: 18px;">Here's the nuance: organ meats like liver and heart are more nutritious than muscle meat - if meat by-products consisted primarily of these premium organs from quality animals, they'd be excellent ingredients. The problem is you'll never know because manufacturers hide behind vague terminology. This opacity signals cost-cutting over transparency. If the organs included were consistently high-quality, brands would name them specifically ('beef liver') for marketing advantage. The generic term means they want flexibility to use whatever is cheapest. We recommend avoiding meat by-products not because they're inherently bad, but because lack of transparency prevents informed choices and typically correlates with overall lower quality standards.</p>
+      </div>
     </div>
 
     <h2 id="faqs">Frequently Asked Questions</h2>

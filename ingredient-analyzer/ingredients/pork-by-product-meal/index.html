@@ -333,25 +333,27 @@
 
       .quick-summary {
         background: var(--brand-orange);
-        border-radius: 12px;
+        border-radius: 4px;
         padding: 8px;
         margin: 32px 0;
       }
 
+      .quick-summary-inner {
+        background: var(--white);
+        border-radius: 12px;
+        padding: 20px 24px;
+      }
+
       .quick-summary h2 {
-        color: var(--white);
+        color: var(--brand-orange);
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        margin: 4px 8px 0;
-        padding: 4px 4px 8px;
+        margin: 0 0 12px 0;
       }
 
       .quick-summary p {
-        background: var(--white);
-        border-radius: 8px;
-        padding: 20px 24px;
         margin: 0;
         font-size: 17px;
         line-height: 1.6;
@@ -445,18 +447,15 @@
 
       .watts-take-box {
         background: var(--brand-orange);
-        border-radius: 12px;
+        border-radius: 4px;
         padding: 8px;
         margin: 32px 0;
       }
 
-      .watts-take-box p {
+      .watts-take-inner {
         background: var(--white);
-        border-radius: 8px;
+        border-radius: 12px;
         padding: 20px 24px;
-        margin: 0;
-        font-size: 18px;
-        line-height: 1.7;
       }
 
       .quality-note-label {
@@ -468,13 +467,12 @@
       }
 
       .watts-take-label {
-        color: var(--white);
+        color: var(--brand-orange);
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        padding: 6px 8px 10px;
-        margin-bottom: 0;
+        margin-bottom: 12px;
       }
 
       .faq-item {
@@ -871,8 +869,10 @@
     </div>
 
     <div class="quick-summary" id="quick-summary">
-      <h2>Quick Summary</h2>
-      <p><strong>Pork By-Product Meal</strong> Rendered pork parts including organs, bones, and tissue, excluding hair, hooves, horns, and hide. Ambiguous quality and consistency.</p>
+      <div class="quick-summary-inner">
+        <h2>Quick Summary</h2>
+        <p><strong>Pork By-Product Meal</strong> Rendered pork parts including organs, bones, and tissue, excluding hair, hooves, horns, and hide. Ambiguous quality and consistency.</p>
+      </div>
     </div>
 
     <div class="key-facts">
@@ -983,8 +983,10 @@
     <p><strong>Typical Position:</strong> When present, pork by-product meal typically appears in positions 3-8 as supplemental protein rather than primary source. Very rare as first ingredient. Premium foods don't include pork by-product meal at all.</p>
 
     <div class="watts-take-box" id="watts-take">
-      <div class="watts-take-label">Watts' Take</div>
-      <p style="margin: 0; font-size: 18px;">Pork by-product meal is the least common of the major by-product ingredients, appearing primarily in budget formulas as supplemental protein. Like all generic by-products, the core issue is opacity - you don't know which organs and parts are included, their proportions, or quality. Pork organs can be nutritious, and rendering creates stable protein, but the vague terminology suggests manufacturers want flexibility to use whatever is cheapest without disclosure. The higher fat content compared to poultry by-products adds another variable that may affect digestion. Premium brands avoid pork by-product meal entirely. We recommend choosing foods with named protein sources that provide transparency about what you're feeding. The generic by-product term signals: 'we prioritize cost over transparency' - and transparency usually correlates with overall quality standards.</p>
+      <div class="watts-take-inner">
+        <div class="watts-take-label">Watts' Take</div>
+        <p style="margin: 0; font-size: 18px;">Pork by-product meal is the least common of the major by-product ingredients, appearing primarily in budget formulas as supplemental protein. Like all generic by-products, the core issue is opacity - you don't know which organs and parts are included, their proportions, or quality. Pork organs can be nutritious, and rendering creates stable protein, but the vague terminology suggests manufacturers want flexibility to use whatever is cheapest without disclosure. The higher fat content compared to poultry by-products adds another variable that may affect digestion. Premium brands avoid pork by-product meal entirely. We recommend choosing foods with named protein sources that provide transparency about what you're feeding. The generic by-product term signals: 'we prioritize cost over transparency' - and transparency usually correlates with overall quality standards.</p>
+      </div>
     </div>
 
     <h2 id="faqs">Frequently Asked Questions</h2>

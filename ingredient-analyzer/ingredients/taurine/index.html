@@ -333,25 +333,27 @@
 
       .quick-summary {
         background: var(--brand-orange);
-        border-radius: 12px;
+        border-radius: 4px;
         padding: 8px;
         margin: 32px 0;
       }
 
+      .quick-summary-inner {
+        background: var(--white);
+        border-radius: 12px;
+        padding: 20px 24px;
+      }
+
       .quick-summary h2 {
-        color: var(--white);
+        color: var(--brand-orange);
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        margin: 4px 8px 0;
-        padding: 4px 4px 8px;
+        margin: 0 0 12px 0;
       }
 
       .quick-summary p {
-        background: var(--white);
-        border-radius: 8px;
-        padding: 20px 24px;
         margin: 0;
         font-size: 17px;
         line-height: 1.6;
@@ -445,18 +447,15 @@
 
       .watts-take-box {
         background: var(--brand-orange);
-        border-radius: 12px;
+        border-radius: 4px;
         padding: 8px;
         margin: 32px 0;
       }
 
-      .watts-take-box p {
+      .watts-take-inner {
         background: var(--white);
-        border-radius: 8px;
+        border-radius: 12px;
         padding: 20px 24px;
-        margin: 0;
-        font-size: 18px;
-        line-height: 1.7;
       }
 
       .quality-note-label {
@@ -468,13 +467,12 @@
       }
 
       .watts-take-label {
-        color: var(--white);
+        color: var(--brand-orange);
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        padding: 6px 8px 10px;
-        margin-bottom: 0;
+        margin-bottom: 12px;
       }
 
       .faq-item {
@@ -871,8 +869,10 @@
     </div>
 
     <div class="quick-summary" id="quick-summary">
-      <h2>Quick Summary</h2>
-      <p><strong>Taurine</strong> Amino sulfonic acid critical for heart health, vision, and reproduction. Essential for cats, conditionally essential for dogs.</p>
+      <div class="quick-summary-inner">
+        <h2>Quick Summary</h2>
+        <p><strong>Taurine</strong> Amino sulfonic acid critical for heart health, vision, and reproduction. Essential for cats, conditionally essential for dogs.</p>
+      </div>
     </div>
 
     <div class="key-facts">
@@ -982,8 +982,10 @@
     <p><strong>Typical Position:</strong> Taurine typically appears near the end of ingredient lists since it's added in small amounts by weight. Position doesn't reflect importance - even trace amounts provide hundreds of milligrams. Check guaranteed analysis for actual taurine content rather than relying on position.</p>
 
     <div class="watts-take-box" id="watts-take">
-      <div class="watts-take-label">Watts' Take</div>
-      <p style="margin: 0; font-size: 18px;">Taurine is one of the supplements where the science is crystal clear - deficiency causes serious, potentially fatal heart disease (DCM), and supplementation prevents or reverses it if caught early. The FDA's grain-free diet investigation has created appropriate concern, though mechanisms remain unclear. For at-risk breeds (Golden Retrievers, Cocker Spaniels, etc.) or dogs eating grain-free/legume-heavy diets, taurine supplementation (1,000-1,500mg daily) is non-negotiable cheap insurance. We look for foods with robust taurine supplementation or whole-food sources like heart tissue. This is one ingredient where 'more is better' applies - excess is safely excreted, but deficiency kills.</p>
+      <div class="watts-take-inner">
+        <div class="watts-take-label">Watts' Take</div>
+        <p style="margin: 0; font-size: 18px;">Taurine is one of the supplements where the science is crystal clear - deficiency causes serious, potentially fatal heart disease (DCM), and supplementation prevents or reverses it if caught early. The FDA's grain-free diet investigation has created appropriate concern, though mechanisms remain unclear. For at-risk breeds (Golden Retrievers, Cocker Spaniels, etc.) or dogs eating grain-free/legume-heavy diets, taurine supplementation (1,000-1,500mg daily) is non-negotiable cheap insurance. We look for foods with robust taurine supplementation or whole-food sources like heart tissue. This is one ingredient where 'more is better' applies - excess is safely excreted, but deficiency kills.</p>
+      </div>
     </div>
 
     <h2 id="faqs">Frequently Asked Questions</h2>

@@ -333,25 +333,27 @@
 
       .quick-summary {
         background: var(--brand-orange);
-        border-radius: 12px;
+        border-radius: 4px;
         padding: 8px;
         margin: 32px 0;
       }
 
+      .quick-summary-inner {
+        background: var(--white);
+        border-radius: 12px;
+        padding: 20px 24px;
+      }
+
       .quick-summary h2 {
-        color: var(--white);
+        color: var(--brand-orange);
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        margin: 4px 8px 0;
-        padding: 4px 4px 8px;
+        margin: 0 0 12px 0;
       }
 
       .quick-summary p {
-        background: var(--white);
-        border-radius: 8px;
-        padding: 20px 24px;
         margin: 0;
         font-size: 17px;
         line-height: 1.6;
@@ -445,18 +447,15 @@
 
       .watts-take-box {
         background: var(--brand-orange);
-        border-radius: 12px;
+        border-radius: 4px;
         padding: 8px;
         margin: 32px 0;
       }
 
-      .watts-take-box p {
+      .watts-take-inner {
         background: var(--white);
-        border-radius: 8px;
+        border-radius: 12px;
         padding: 20px 24px;
-        margin: 0;
-        font-size: 18px;
-        line-height: 1.7;
       }
 
       .quality-note-label {
@@ -468,13 +467,12 @@
       }
 
       .watts-take-label {
-        color: var(--white);
+        color: var(--brand-orange);
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        padding: 6px 8px 10px;
-        margin-bottom: 0;
+        margin-bottom: 12px;
       }
 
       .faq-item {
@@ -852,8 +850,10 @@
     </div>
 
     <div class="quick-summary" id="quick-summary">
-      <h2>Quick Summary</h2>
-      <p><strong>Coconut Sugar</strong> Coconut sugar is a natural sweetener made from coconut palm sap, used to enhance palatability in pet treats and foods.</p>
+      <div class="quick-summary-inner">
+        <h2>Quick Summary</h2>
+        <p><strong>Coconut Sugar</strong> Coconut sugar is a natural sweetener made from coconut palm sap, used to enhance palatability in pet treats and foods.</p>
+      </div>
     </div>
 
     <div class="key-facts">
@@ -919,8 +919,10 @@
     
 
     <div class="watts-take-box" id="watts-take">
-      <div class="watts-take-label">Watts' Take</div>
-      <p style="margin: 0; font-size: 18px;">Coconut sugar is still sugar - dogs don't need added sweeteners. While it's better than refined sugar or corn syrup, it's still unnecessary empty calories used to make food more palatable. Quality food should taste good from real ingredients, not added sugars. We view any added sugar cautiously, even 'natural' ones. If it's in treats in small amounts, it's tolerable, but we'd prefer treats sweetened with fruit or nothing at all. Caution - it's sugar, period.</p>
+      <div class="watts-take-inner">
+        <div class="watts-take-label">Watts' Take</div>
+        <p style="margin: 0; font-size: 18px;">Coconut sugar is still sugar - dogs don't need added sweeteners. While it's better than refined sugar or corn syrup, it's still unnecessary empty calories used to make food more palatable. Quality food should taste good from real ingredients, not added sugars. We view any added sugar cautiously, even 'natural' ones. If it's in treats in small amounts, it's tolerable, but we'd prefer treats sweetened with fruit or nothing at all. Caution - it's sugar, period.</p>
+      </div>
     </div>
 
     <h2 id="faqs">Frequently Asked Questions</h2>
