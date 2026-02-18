@@ -42,6 +42,7 @@
         --fg: #191919;
         --muted: #3a3a3a;
         --border: #191919;
+        --border-light: rgba(25,25,25,0.1);
         --good: #2d5016;
         --caution: #b45309;
         --avoid: #991b1b;
@@ -49,6 +50,7 @@
         --accent-navy: #1e3a5f;
         --bg-light: #f1f1f1;
         --white: #ffffff;
+        --text-dark: #191919;
       }
 
       * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -210,11 +212,11 @@
       }
 
       .logo {
-        height: 24px;
+        height: 32px;
         width: auto;
       }
       @media (min-width: 768px) {
-        .logo { height: 28px; }
+        .logo { height: 40px; }
       }
 
       nav.nav {
@@ -259,10 +261,12 @@
 
       /* Main container */
       main {
-        background: var(--bg-light);
+        background: var(--white);
         max-width: 1100px;
         margin: 20px auto 0;
         padding: 40px 20px 60px;
+        border-radius: 12px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.06);
       }
       @media (min-width: 768px) {
         main {
@@ -309,14 +313,15 @@
         padding: 14px 18px;
         font-family: inherit;
         font-size: 16px;
-        border: 2.5px solid var(--border);
-        background: white;
+        border: 1.5px solid var(--border-light);
+        border-radius: 8px;
+        background: var(--white);
         margin-bottom: 20px;
       }
 
       .search-box:focus {
         outline: none;
-        border-color: var(--fg);
+        border-color: var(--brand-orange);
       }
 
       .filter-tabs {
@@ -326,23 +331,27 @@
       }
 
       .filter-tab {
-        padding: 10px 20px;
-        border: 2px solid var(--border);
+        padding: 8px 18px;
+        border: 1.5px solid var(--border-light);
+        border-radius: 20px;
         background: transparent;
         font-family: inherit;
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 600;
         cursor: pointer;
         transition: all 0.15s;
+        color: var(--text-dark);
       }
 
       .filter-tab:hover {
-        background: rgba(25, 25, 25, 0.04);
+        border-color: var(--brand-orange);
+        color: var(--brand-orange);
       }
 
       .filter-tab.active {
-        background: var(--fg);
-        color: var(--bg);
+        background: var(--brand-orange);
+        border-color: var(--brand-orange);
+        color: var(--white);
       }
 
       /* Ingredient grid */
@@ -365,16 +374,19 @@
       }
 
       .ingredient-card {
-        border: 2.5px solid var(--border);
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
         padding: 20px;
         text-decoration: none;
         color: var(--fg);
         transition: all 0.15s;
         display: block;
+        background: var(--bg-light);
       }
 
       .ingredient-card:hover {
-        background: rgba(25, 25, 25, 0.02);
+        box-shadow: 0 4px 16px rgba(0,0,0,0.12);
         transform: translateY(-2px);
       }
 
@@ -405,6 +417,7 @@
         letter-spacing: 0.05em;
         color: white;
         white-space: nowrap;
+        border-radius: 20px;
       }
 
       .badge-good {
@@ -506,35 +519,73 @@
 
       .footer-logo {
         height: 100px;
-        width: auto;
+        margin-top: 128px;
+        margin-bottom: 0;
       }
       @media (min-width: 768px) {
-        .footer-logo { height: 140px; }
+        .footer-logo {
+          height: 160px;
+          margin-top: 160px;
+          margin-bottom: 0;
+        }
       }
 
       footer p {
-        margin: 0;
+        color: var(--white);
         font-size: 15px;
-        line-height: 1.5;
+        font-weight: 500;
+        margin-bottom: 12px;
       }
       @media (min-width: 768px) {
         footer p { font-size: 16px; }
       }
 
-      /* Old footer (unused) */
-      footer.old {
-        text-align: center;
-        padding: 20px;
-        color: var(--muted);
-        font-size: 12px;
-        font-weight: 400;
-        border-top: 2.5px solid var(--border);
-        margin-top: 60px;
+      footer a {
+        color: var(--white);
+        text-decoration: none;
+        font-weight: 500;
       }
-      @media (min-width: 768px) {
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 767px) {
         footer {
-          padding: 24px;
-          font-size: 13px;
+          padding: 32px 20px 16px !important;
+          border-radius: 100px 16px 16px 100px !important;
+          min-height: auto !important;
+        }
+
+        .footer-content {
+          flex-direction: column !important;
+          align-items: center !important;
+          gap: 24px !important;
+        }
+
+        .footer-left {
+          flex: none !important;
+          width: 100% !important;
+        }
+
+        .footer-right {
+          flex: none !important;
+          width: 100% !important;
+          align-items: center !important;
+          gap: 16px !important;
+        }
+
+        .footer-right-text {
+          text-align: center !important;
+        }
+
+        .footer-logo {
+          height: 60px !important;
+          margin-top: 0 !important;
+        }
+
+        footer p {
+          font-size: 14px !important;
+          margin-bottom: 8px !important;
         }
       }
     </style>
