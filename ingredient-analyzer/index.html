@@ -151,11 +151,11 @@
       }
 
       .logo {
-        height: 24px;
+        height: 32px;
         width: auto;
       }
       @media (min-width: 768px) {
-        .logo { height: 28px; }
+        .logo { height: 40px; }
       }
 
       nav.nav {
@@ -290,14 +290,17 @@
 
       /* Main container */
       main {
-        background: var(--bg-light);
+        background: var(--white);
         max-width: 900px;
-        margin: 20px auto 0;
-        padding: 40px 20px 60px;
+        margin: 16px auto 40px;
+        padding: 40px 24px;
+        border-radius: 12px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.06);
       }
       @media (min-width: 768px) {
         main {
-          padding: 60px 40px 80px;
+          margin: 20px auto 60px;
+          padding: 60px 50px;
         }
       }
 
@@ -385,8 +388,9 @@
 
       /* Tool interface */
       .tool-container {
-        background: rgba(25, 25, 25, 0.02);
-        border: 2.5px solid var(--border);
+        background: var(--bg-light);
+        border: none;
+        border-radius: 12px;
         padding: 24px;
         margin: 32px 0;
       }
@@ -411,15 +415,15 @@
         font-family: inherit;
         font-size: 16px;
         line-height: 1.5;
-        border: 2.5px solid var(--border);
-        background: white;
+        border: 1.5px solid var(--border-light);
+        background: var(--white);
         resize: vertical;
-        border-radius: 0;
+        border-radius: 8px;
       }
 
       textarea:focus {
         outline: none;
-        border-color: var(--fg);
+        border-color: var(--brand-orange);
       }
 
       .button-group {
@@ -430,24 +434,26 @@
       }
 
       button {
-        padding: 14px 28px;
+        padding: 14px 32px;
         font-family: inherit;
         font-size: 16px;
         font-weight: 600;
-        border: 2.5px solid var(--border);
-        background: var(--fg);
-        color: var(--bg);
+        border: none;
+        background: var(--brand-orange);
+        color: var(--white);
         cursor: pointer;
         transition: opacity 0.15s;
+        border-radius: 8px;
       }
 
       button:hover {
-        opacity: 0.8;
+        opacity: 0.85;
       }
 
       button.secondary {
         background: transparent;
-        color: var(--fg);
+        color: var(--text-dark);
+        border: 1.5px solid rgba(25,25,25,0.2);
       }
 
       .example-link {
@@ -461,34 +467,35 @@
 
       /* Browse link */
       .browse-link-box {
-        background: white;
-        border: 2.5px solid var(--border);
-        padding: 20px 24px;
+        background: var(--brand-orange);
+        border: none;
+        border-radius: 12px;
+        padding: 24px;
         margin: 32px 0;
         text-align: center;
       }
 
       .browse-link-box p {
-        margin: 0 0 12px 0;
-        color: var(--muted);
+        margin: 0 0 16px 0;
+        color: var(--white);
         font-size: 16px;
+        font-weight: 500;
       }
 
       .browse-link-box a {
         display: inline-block;
-        background: var(--fg);
-        color: var(--bg);
+        background: var(--white);
+        color: var(--brand-orange);
         padding: 12px 28px;
         text-decoration: none;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 16px;
-        border: 2.5px solid var(--fg);
-        transition: all 0.15s;
+        border-radius: 8px;
+        transition: opacity 0.15s;
       }
 
       .browse-link-box a:hover {
-        background: transparent;
-        color: var(--fg);
+        opacity: 0.9;
       }
 
       /* Results */
@@ -508,8 +515,9 @@
       }
 
       .stat-badge {
-        padding: 8px 16px;
-        border: 2px solid var(--border);
+        padding: 6px 16px;
+        border: 1.5px solid var(--border-light);
+        border-radius: 20px;
         font-size: 14px;
         font-weight: 600;
         cursor: pointer;
@@ -518,14 +526,14 @@
       }
 
       .stat-badge:hover {
-        opacity: 0.7;
+        opacity: 0.8;
         transform: translateY(-1px);
       }
 
       .stat-badge.active {
-        background: var(--fg);
-        color: var(--bg);
-        border-color: var(--fg);
+        background: var(--text-dark);
+        color: var(--white);
+        border-color: var(--text-dark);
       }
 
       .stat-badge.badge-good.active {
@@ -553,10 +561,12 @@
       }
 
       .ingredient-card {
-        border: 2.5px solid var(--border);
+        border: none;
+        border-radius: 12px;
         padding: 20px;
         margin-bottom: 16px;
-        background: white;
+        background: var(--white);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
       }
 
       .ingredient-header {
@@ -580,6 +590,7 @@
         text-transform: uppercase;
         letter-spacing: 0.05em;
         white-space: nowrap;
+        border-radius: 4px;
       }
 
       .badge-good {
@@ -638,10 +649,11 @@
       }
 
       .watts-take {
-        background: rgba(25, 25, 25, 0.04);
+        background: var(--bg-light);
         padding: 16px;
         margin-top: 16px;
-        border-left: 3px solid var(--fg);
+        border-left: 4px solid var(--brand-orange);
+        border-radius: 0 8px 8px 0;
       }
 
       .watts-take-label {
@@ -653,8 +665,9 @@
       }
 
       .unknown-ingredient {
-        border-color: var(--muted);
-        background: rgba(0, 0, 0, 0.02);
+        box-shadow: none;
+        border-left: 4px solid var(--border-light);
+        background: var(--bg-light);
       }
 
       .unknown-ingredient .ingredient-name {
@@ -682,7 +695,7 @@
       .faq {
         margin-top: 56px;
         padding-top: 40px;
-        border-top: 2.5px solid var(--border);
+        border-top: 3px solid var(--border-light);
       }
       @media (min-width: 768px) {
         .faq {
@@ -704,12 +717,11 @@
       }
 
       .faq-item {
-        margin-bottom: 32px;
-      }
-      @media (min-width: 768px) {
-        .faq-item {
-          margin-bottom: 40px;
-        }
+        margin-bottom: 24px;
+        padding: 28px;
+        background: var(--bg-light);
+        border-radius: 12px;
+        border-left: 4px solid var(--brand-orange);
       }
 
       .faq-question {
@@ -717,6 +729,7 @@
         font-weight: 600;
         margin-bottom: 12px;
         line-height: 1.4;
+        color: var(--brand-orange);
       }
       @media (min-width: 768px) {
         .faq-question {
@@ -736,22 +749,7 @@
         }
       }
 
-      /* Footer */
-      footer {
-        text-align: center;
-        padding: 20px;
-        color: var(--muted);
-        font-size: 12px;
-        font-weight: 400;
-        border-top: 2.5px solid var(--border);
-        margin-top: 60px;
-      }
-      @media (min-width: 768px) {
-        footer {
-          padding: 24px;
-          font-size: 13px;
-        }
-      }
+
 
       .hidden {
         display: none;
@@ -815,19 +813,74 @@
 
       .footer-logo {
         height: 100px;
-        width: auto;
+        margin-top: 128px;
+        margin-bottom: 0;
       }
       @media (min-width: 768px) {
-        .footer-logo { height: 140px; }
+        .footer-logo {
+          height: 160px;
+          margin-top: 160px;
+          margin-bottom: 0;
+        }
       }
 
       footer p {
-        margin: 0;
+        color: var(--white);
         font-size: 15px;
-        line-height: 1.5;
+        font-weight: 500;
+        margin-bottom: 12px;
       }
       @media (min-width: 768px) {
         footer p { font-size: 16px; }
+      }
+
+      footer a {
+        color: var(--white);
+        text-decoration: none;
+        font-weight: 500;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 767px) {
+        footer {
+          padding: 32px 20px 16px !important;
+          border-radius: 100px 16px 16px 100px !important;
+          min-height: auto !important;
+        }
+
+        .footer-content {
+          flex-direction: column !important;
+          align-items: center !important;
+          gap: 24px !important;
+        }
+
+        .footer-left {
+          flex: none !important;
+          width: 100% !important;
+        }
+
+        .footer-right {
+          flex: none !important;
+          width: 100% !important;
+          align-items: center !important;
+          gap: 16px !important;
+        }
+
+        .footer-right-text {
+          text-align: center !important;
+        }
+
+        .footer-logo {
+          height: 60px !important;
+          margin-top: 0 !important;
+        }
+
+        footer p {
+          font-size: 14px !important;
+          margin-bottom: 8px !important;
+        }
       }
 
     </style>
