@@ -1021,12 +1021,13 @@
     <footer>
       <div class="footer-content">
         <div class="footer-left">
-          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
         </div>
         <div class="footer-right">
           <div class="footer-right-text">
-            <p>hello@wattspet.com</p>
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
           </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
         </div>
       </div>
     </footer>
@@ -1481,6 +1482,9 @@
         }
       });
     }
+
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
