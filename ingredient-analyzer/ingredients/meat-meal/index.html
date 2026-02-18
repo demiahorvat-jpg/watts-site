@@ -280,15 +280,30 @@
       .table-of-contents a:hover { text-decoration: underline; }
 
       .quick-summary {
-        background: var(--bg-light);
-        border: none;
-        border-left: 4px solid var(--brand-orange);
-        border-radius: 0 12px 12px 0;
-        padding: 24px;
+        background: var(--brand-orange);
+        border-radius: 12px;
+        padding: 8px;
         margin: 32px 0;
       }
-      .quick-summary h2 { font-size: 20px; margin: 0 0 12px 0; }
-      .quick-summary p { margin: 0; font-size: 17px; line-height: 1.6; }
+
+      .quick-summary h2 {
+        color: var(--white);
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin: 4px 8px 0;
+        padding: 4px 4px 8px;
+      }
+
+      .quick-summary p {
+        background: var(--white);
+        border-radius: 8px;
+        padding: 20px 24px;
+        margin: 0;
+        font-size: 17px;
+        line-height: 1.6;
+      }
 
       .key-facts {
         display: grid;
@@ -339,8 +354,7 @@
       @media (min-width: 768px) { ul { margin: 24px 0 24px 32px; } }
       li { margin-bottom: 12px; font-size: 18px; line-height: 1.6; }
 
-      .quality-note-box,
-      .watts-take-box {
+      .quality-note-box {
         border: none;
         border-left: 4px solid var(--brand-orange);
         border-radius: 0 8px 8px 0;
@@ -348,14 +362,39 @@
         padding: 24px;
         margin: 32px 0;
       }
+
+      .watts-take-box {
+        background: var(--brand-orange);
+        border-radius: 12px;
+        padding: 8px;
+        margin: 32px 0;
+      }
+
+      .watts-take-box p {
+        background: var(--white);
+        border-radius: 8px;
+        padding: 20px 24px;
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.7;
+      }
       .watts-take-box { background: #e8f5e9; }
-      .quality-note-label,
-      .watts-take-label {
+      .quality-note-label {
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.05em;
         margin-bottom: 12px;
+      }
+
+      .watts-take-label {
+        color: var(--white);
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        padding: 6px 8px 10px;
+        margin-bottom: 0;
       }
 
       .faq-item {
