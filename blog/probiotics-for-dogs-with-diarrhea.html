@@ -1129,14 +1129,11 @@
   <footer>
     <div class="footer-content">
       <div class="footer-left">
-        <p>Watts Pet Nutrition</p>
-        <p><a href="/blog/">Blog</a></p>
-        <p><a href="/ingredient-analyzer/">Ingredient Analyzer</a></p>
-        <p><a href="/about.html">About</a></p>
       </div>
       <div class="footer-right">
         <div class="footer-right-text">
-          <p>Real food.<br>Real science.<br>No fluff.</p>
+          <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+          <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
         </div>
         <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
       </div>
@@ -1145,10 +1142,17 @@
 </div>
 
 <script>
-  const hamburger = document.querySelector('.hamburger');
-  const navUl = document.querySelector('nav ul');
-  hamburger.addEventListener('click', () => {
-    navUl.classList.toggle('active');
+  document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('nav ul');
+    if (hamburger && navMenu) {
+      hamburger.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+        this.classList.toggle('active');
+      });
+    }
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
   });
 </script>
 
