@@ -277,57 +277,86 @@
     }
 
     h1 {
-      font-size: 28px;
+      font-size: 32px;
       font-weight: 700;
-      line-height: 1.25;
-      color: var(--text-dark);
+      line-height: 1.2;
       margin-bottom: 16px;
+      letter-spacing: -0.02em;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
-      h1 { font-size: 36px; }
+      h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
     }
 
     h2 {
-      font-size: 22px;
+      font-size: 28px;
       font-weight: 700;
+      line-height: 1.2;
+      margin: 56px 0 24px;
+      letter-spacing: -0.01em;
       color: var(--text-dark);
-      margin-top: 48px;
-      margin-bottom: 16px;
     }
     @media (min-width: 768px) {
-      h2 { font-size: 26px; }
+      h2 {
+        font-size: 36px;
+        margin: 64px 0 28px;
+      }
     }
 
     h3 {
-      font-size: 18px;
+      font-size: 24px;
       font-weight: 600;
+      line-height: 1.3;
+      margin: 40px 0 16px;
       color: var(--text-dark);
-      margin-top: 28px;
-      margin-bottom: 12px;
+    }
+    @media (min-width: 768px) {
+      h3 {
+        font-size: 28px;
+        margin: 48px 0 20px;
+      }
     }
 
     p {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.7;
       margin-bottom: 20px;
-      font-size: 16px;
-      line-height: 1.75;
       color: var(--text-dark);
     }
     @media (min-width: 768px) {
-      p { font-size: 17px; }
+      p {
+        font-size: 18px;
+        margin-bottom: 24px;
+      }
     }
 
     ul, ol {
-      margin-bottom: 20px;
-      padding-left: 24px;
+      margin: 24px 0;
+      padding-left: 28px;
     }
 
     li {
-      margin-bottom: 10px;
-      font-size: 16px;
-      line-height: 1.75;
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.7;
+      margin-bottom: 12px;
     }
     @media (min-width: 768px) {
-      li { font-size: 17px; }
+      li {
+        font-size: 18px;
+      }
+    }
+
+    a {
+      color: var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    a:hover {
+      opacity: 0.7;
     }
 
     .article-meta {
@@ -337,73 +366,134 @@
       margin-bottom: 0;
     }
 
+    /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
-      background: var(--bg-light);
-      border-left: 4px solid var(--brand-orange);
-      border-radius: 0 8px 8px 0;
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
+      background: var(--white);
+      color: var(--text-dark);
+      border-radius: 12px;
       padding: 24px 28px;
-      margin: 32px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    @media (min-width: 768px) {
+      .callout-content {
+        padding: 28px 36px;
+      }
+    }
+
+    .callout h3 {
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 16px;
+      color: var(--text-dark);
+    }
+
+    .callout p:last-child {
+      margin-bottom: 0;
+    }
+
+    .callout a {
+      color: var(--accent-navy);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .callout a:hover {
+      opacity: 0.85;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-bottom: 24px;
-      font-size: 15px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    th {
-      background: var(--text-dark);
-      color: var(--white);
-      padding: 12px 16px;
-      text-align: left;
-      font-weight: 600;
+      margin: 32px 0;
       font-size: 14px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
 
-    td {
-      padding: 12px 16px;
+    .table-scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 32px 0;
+    }
+
+    .table-scroll table {
+      margin: 0;
+      min-width: 600px;
+    }
+
+    @media (min-width: 768px) {
+      table {
+        font-size: 17px;
+      }
+      .table-scroll table {
+        min-width: auto;
+      }
+    }
+
+    thead {
+      background: var(--brand-orange);
+      color: var(--white);
+      font-weight: 700;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
       border-bottom: 1px solid var(--border-light);
-      vertical-align: top;
+    }
+    @media (min-width: 768px) {
+      th, td {
+        padding: 18px 20px;
+      }
     }
 
-    tr:last-child td {
+    tbody tr:last-child td {
       border-bottom: none;
     }
 
-    tr:nth-child(even) td {
-      background: var(--bg-light);
+    tbody tr {
+      background: var(--white);
+      transition: background 0.2s ease;
     }
 
-    /* FAQ Section */
+    tbody tr:hover {
+      background: rgba(192, 56, 0, 0.02);
+    }
+
     .faq-section {
-      margin-top: 56px;
-      padding-top: 40px;
-      border-top: 2px solid var(--border-light);
+      margin-top: 64px;
+      padding-top: 56px;
+      border-top: 3px solid var(--border-light);
     }
 
     .faq-item {
       margin-bottom: 32px;
-      padding-bottom: 32px;
-      border-bottom: 1px solid var(--border-light);
-    }
-
-    .faq-item:last-child {
-      border-bottom: none;
-      margin-bottom: 0;
-      padding-bottom: 0;
+      padding: 28px;
+      background: var(--bg-light);
+      border-radius: 12px;
+      border-left: 4px solid var(--brand-orange);
     }
 
     .faq-item h3 {
-      margin-top: 0;
-      font-size: 17px;
+      font-size: 20px;
+      margin: 0 0 16px 0;
       color: var(--brand-orange);
     }
     @media (min-width: 768px) {
-      .faq-item h3 { font-size: 18px; }
+      .faq-item h3 {
+        font-size: 23px;
+      }
+    }
+
+    .faq-item p {
+      margin-bottom: 0;
     }
 
     /* Related articles */
@@ -476,25 +566,39 @@
       color: var(--border-light);
     }
 
-    /* Footer */
-    footer {
+    /* FOOTER WRAPPER - Black background */
+    .footer-wrapper {
       background: #191919;
-      border-radius: 16px 100px 100px 16px;
-      margin: 20px 12px 12px;
-      padding: 40px 40px 20px 40px;
-      min-height: 200px;
+      padding: 0 12px 12px;
+      margin-top: 80px;
+    }
+
+    /* FOOTER - Orange with asymmetric rounded shape */
+    footer {
+      background: var(--brand-orange);
+      color: var(--white);
+      padding: 45px 40px 20px;
+      border-radius: 200px 16px 16px 200px;
       display: flex;
-      align-items: flex-start;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 144px;
+    }
+    @media (min-width: 768px) {
+      footer {
+        padding: 63px 60px 24px;
+        min-height: 207px;
+        border-radius: 300px 16px 16px 300px;
+      }
     }
 
     .footer-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
       max-width: 1200px;
       margin: 0 auto;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 40px;
     }
 
     .footer-left {
@@ -546,7 +650,7 @@
     footer a:hover {
       text-decoration: underline;
     }
-    /* Mobile footer fixes */
+
     @media (max-width: 767px) {
       footer {
         padding: 32px 20px 16px !important;
@@ -587,30 +691,6 @@
       }
     }
 
-    /* Citation link style */
-    .citation {
-      color: var(--text-muted);
-      font-size: 14px;
-      font-weight: 500;
-      text-decoration: none;
-      border-bottom: 1px solid var(--border-light);
-    }
-    .citation:hover {
-      opacity: 0.7;
-    }
-
-    .warning-box {
-      background: #fff8e1;
-      border-left: 4px solid #f59e0b;
-      border-radius: 0 8px 8px 0;
-      padding: 20px 24px;
-      margin: 28px 0;
-    }
-
-    .warning-box p {
-      margin-bottom: 0;
-      font-size: 15px;
-    }
   </style>
 
   <!-- BlogPosting Schema -->
@@ -798,11 +878,11 @@
       <h1>Probiotics for Dogs with Diarrhea: Which Strains Help & When to Use Them</h1>
       <div class="article-meta">Published February 18, 2026</div>
 
-      <div class="callout" style="margin-top: 32px; margin-bottom: 40px;">
+      <div class="callout">
         <div class="callout-content">
-          <h3 style="margin-top: 0; font-size: 20px; margin-bottom: 16px;">Do Probiotics Help Dogs with Diarrhea?</h3>
-          <p style="margin-bottom: 20px;">Yes — but the evidence is strain-specific. <em>Enterococcus faecium</em> SF68 and <em>Bifidobacterium animalis</em> have the strongest research support for reducing the duration and severity of diarrhea in dogs. Generic "probiotic blends" without named strains are less reliable. Probiotics work best for stress-induced and antibiotic-associated diarrhea; they don't replace veterinary care when blood is present or symptoms persist beyond 48 hours.</p>
-          <table style="margin: 0; box-shadow: none;">
+          <h3>Do Probiotics Help Dogs with Diarrhea?</h3>
+          <p>Yes — but the evidence is strain-specific. <em>Enterococcus faecium</em> SF68 and <em>Bifidobacterium animalis</em> have the strongest research support for reducing the duration and severity of diarrhea in dogs. Generic "probiotic blends" without named strains are less reliable. Probiotics work best for stress-induced and antibiotic-associated diarrhea; they don't replace veterinary care when blood is present or symptoms persist beyond 48 hours.</p>
+          <table>
             <thead>
               <tr>
                 <th>Diarrhea Type</th>
@@ -839,6 +919,8 @@
         </div>
       </div>
     </div>
+
+    <div class="article-content">
 
     <h2>Why Diarrhea Disrupts the Gut Microbiome</h2>
     <p>Diarrhea isn't just a symptom — it both results from and accelerates microbiome disruption. A healthy canine gut contains hundreds of bacterial species in a stable balance. When that balance is disturbed by antibiotics, stress, pathogens, or dietary change, opportunistic bacteria can proliferate, gut transit speeds up, and the intestinal lining becomes more permeable.</p>
@@ -907,8 +989,10 @@
 
     <h2>When to See a Vet Instead of Using Probiotics</h2>
 
-    <div class="warning-box">
-      <p><strong>See your vet immediately if:</strong> diarrhea contains blood (bright red, dark/tarry, or black), your dog is a puppy under 6 months or a senior dog, the dog is also vomiting repeatedly and cannot keep water down, diarrhea is profuse and watery (risk of dehydration), symptoms have lasted more than 48 hours without improvement, or your dog appears lethargic, in pain, or has a distended abdomen. These signs indicate conditions probiotics cannot treat — parasites, parvovirus, intussusception, severe infection, or other emergencies.</p>
+    <div class="callout">
+      <div class="callout-content">
+        <p><strong>See your vet immediately if:</strong> diarrhea contains blood (bright red, dark/tarry, or black), your dog is a puppy under 6 months or a senior dog, the dog is also vomiting repeatedly and cannot keep water down, diarrhea is profuse and watery (risk of dehydration), symptoms have lasted more than 48 hours without improvement, or your dog appears lethargic, in pain, or has a distended abdomen. These signs indicate conditions probiotics cannot treat — parasites, parvovirus, intussusception, severe infection, or other emergencies.</p>
+      </div>
     </div>
 
     <p>Probiotics are a supportive tool for mild, uncomplicated acute diarrhea. They are not a diagnostic tool and don't treat infections, parasites, foreign body obstruction, or inflammatory bowel disease. When the cause is unknown, a vet visit is always the right call.</p>
@@ -961,6 +1045,8 @@
     </table>
 
     <p>If you want to understand more about what makes a probiotic supplement worth taking, the <a href="/blog/probiotic-supplement-for-dogs.html">complete buyer's guide to probiotic supplements for dogs</a> covers label reading, CFU explained, shelf stability, and the emerging role of postbiotic ingredients in gut health.</p>
+
+    </div>
 
     <h2>Frequently Asked Questions</h2>
 
@@ -1043,22 +1129,24 @@
   </article>
 </main>
 
-<footer>
-  <div class="footer-content">
-    <div class="footer-left">
-      <p>Watts Pet Nutrition</p>
-      <p><a href="/blog/">Blog</a></p>
-      <p><a href="/ingredient-analyzer/">Ingredient Analyzer</a></p>
-      <p><a href="/about.html">About</a></p>
-    </div>
-    <div class="footer-right">
-      <div class="footer-right-text">
-        <p>Real food.<br>Real science.<br>No fluff.</p>
+<div class="footer-wrapper">
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <p>Watts Pet Nutrition</p>
+        <p><a href="/blog/">Blog</a></p>
+        <p><a href="/ingredient-analyzer/">Ingredient Analyzer</a></p>
+        <p><a href="/about.html">About</a></p>
       </div>
-      <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+      <div class="footer-right">
+        <div class="footer-right-text">
+          <p>Real food.<br>Real science.<br>No fluff.</p>
+        </div>
+        <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
+</div>
 
 <script>
   const hamburger = document.querySelector('.hamburger');

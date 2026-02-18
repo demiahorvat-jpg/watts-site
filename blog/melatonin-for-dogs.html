@@ -270,57 +270,86 @@
     }
 
     h1 {
-      font-size: 28px;
+      font-size: 32px;
       font-weight: 700;
-      line-height: 1.25;
-      color: var(--text-dark);
+      line-height: 1.2;
       margin-bottom: 16px;
+      letter-spacing: -0.02em;
+      color: var(--text-dark);
     }
     @media (min-width: 768px) {
-      h1 { font-size: 36px; }
+      h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
     }
 
     h2 {
-      font-size: 22px;
+      font-size: 28px;
       font-weight: 700;
+      line-height: 1.2;
+      margin: 56px 0 24px;
+      letter-spacing: -0.01em;
       color: var(--text-dark);
-      margin-top: 48px;
-      margin-bottom: 16px;
     }
     @media (min-width: 768px) {
-      h2 { font-size: 26px; }
+      h2 {
+        font-size: 36px;
+        margin: 64px 0 28px;
+      }
     }
 
     h3 {
-      font-size: 18px;
+      font-size: 24px;
       font-weight: 600;
+      line-height: 1.3;
+      margin: 40px 0 16px;
       color: var(--text-dark);
-      margin-top: 28px;
-      margin-bottom: 12px;
+    }
+    @media (min-width: 768px) {
+      h3 {
+        font-size: 28px;
+        margin: 48px 0 20px;
+      }
     }
 
     p {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.7;
       margin-bottom: 20px;
-      font-size: 16px;
-      line-height: 1.75;
       color: var(--text-dark);
     }
     @media (min-width: 768px) {
-      p { font-size: 17px; }
+      p {
+        font-size: 18px;
+        margin-bottom: 24px;
+      }
     }
 
     ul, ol {
-      margin-bottom: 20px;
-      padding-left: 24px;
+      margin: 24px 0;
+      padding-left: 28px;
     }
 
     li {
-      margin-bottom: 10px;
-      font-size: 16px;
-      line-height: 1.75;
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.7;
+      margin-bottom: 12px;
     }
     @media (min-width: 768px) {
-      li { font-size: 17px; }
+      li {
+        font-size: 18px;
+      }
+    }
+
+    a {
+      color: var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    a:hover {
+      opacity: 0.7;
     }
 
     .article-meta {
@@ -330,72 +359,134 @@
       margin-bottom: 0;
     }
 
+    /* WATTS CALLOUT BOX - Layered design with orange border */
     .callout {
-      background: var(--bg-light);
-      border-left: 4px solid var(--brand-orange);
-      border-radius: 0 8px 8px 0;
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 48px 0;
+    }
+
+    .callout-content {
+      background: var(--white);
+      color: var(--text-dark);
+      border-radius: 12px;
       padding: 24px 28px;
-      margin: 32px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    @media (min-width: 768px) {
+      .callout-content {
+        padding: 28px 36px;
+      }
+    }
+
+    .callout h3 {
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 16px;
+      color: var(--text-dark);
+    }
+
+    .callout p:last-child {
+      margin-bottom: 0;
+    }
+
+    .callout a {
+      color: var(--accent-navy);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .callout a:hover {
+      opacity: 0.85;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-bottom: 24px;
-      font-size: 15px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    th {
-      background: var(--text-dark);
-      color: var(--white);
-      padding: 12px 16px;
-      text-align: left;
-      font-weight: 600;
+      margin: 32px 0;
       font-size: 14px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
 
-    td {
-      padding: 12px 16px;
+    .table-scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 32px 0;
+    }
+
+    .table-scroll table {
+      margin: 0;
+      min-width: 600px;
+    }
+
+    @media (min-width: 768px) {
+      table {
+        font-size: 17px;
+      }
+      .table-scroll table {
+        min-width: auto;
+      }
+    }
+
+    thead {
+      background: var(--brand-orange);
+      color: var(--white);
+      font-weight: 700;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
       border-bottom: 1px solid var(--border-light);
-      vertical-align: top;
+    }
+    @media (min-width: 768px) {
+      th, td {
+        padding: 18px 20px;
+      }
     }
 
-    tr:last-child td {
+    tbody tr:last-child td {
       border-bottom: none;
     }
 
-    tr:nth-child(even) td {
-      background: var(--bg-light);
+    tbody tr {
+      background: var(--white);
+      transition: background 0.2s ease;
+    }
+
+    tbody tr:hover {
+      background: rgba(192, 56, 0, 0.02);
     }
 
     .faq-section {
-      margin-top: 56px;
-      padding-top: 40px;
-      border-top: 2px solid var(--border-light);
+      margin-top: 64px;
+      padding-top: 56px;
+      border-top: 3px solid var(--border-light);
     }
 
     .faq-item {
       margin-bottom: 32px;
-      padding-bottom: 32px;
-      border-bottom: 1px solid var(--border-light);
-    }
-
-    .faq-item:last-child {
-      border-bottom: none;
-      margin-bottom: 0;
-      padding-bottom: 0;
+      padding: 28px;
+      background: var(--bg-light);
+      border-radius: 12px;
+      border-left: 4px solid var(--brand-orange);
     }
 
     .faq-item h3 {
-      margin-top: 0;
-      font-size: 17px;
+      font-size: 20px;
+      margin: 0 0 16px 0;
       color: var(--brand-orange);
     }
     @media (min-width: 768px) {
-      .faq-item h3 { font-size: 18px; }
+      .faq-item h3 {
+        font-size: 23px;
+      }
+    }
+
+    .faq-item p {
+      margin-bottom: 0;
     }
 
     .related-section {
@@ -466,24 +557,39 @@
       color: var(--border-light);
     }
 
-    footer {
+    /* FOOTER WRAPPER - Black background */
+    .footer-wrapper {
       background: #191919;
-      border-radius: 16px 100px 100px 16px;
-      margin: 20px 12px 12px;
-      padding: 40px 40px 20px 40px;
-      min-height: 200px;
+      padding: 0 12px 12px;
+      margin-top: 80px;
+    }
+
+    /* FOOTER - Orange with asymmetric rounded shape */
+    footer {
+      background: var(--brand-orange);
+      color: var(--white);
+      padding: 45px 40px 20px;
+      border-radius: 200px 16px 16px 200px;
       display: flex;
-      align-items: flex-start;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 144px;
+    }
+    @media (min-width: 768px) {
+      footer {
+        padding: 63px 60px 24px;
+        min-height: 207px;
+        border-radius: 300px 16px 16px 300px;
+      }
     }
 
     .footer-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
       max-width: 1200px;
       margin: 0 auto;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 40px;
     }
 
     .footer-left {
@@ -587,31 +693,6 @@
       opacity: 0.7;
     }
 
-    .warning-box {
-      background: #fff8e1;
-      border-left: 4px solid #f59e0b;
-      border-radius: 0 8px 8px 0;
-      padding: 20px 24px;
-      margin: 28px 0;
-    }
-
-    .warning-box p {
-      margin-bottom: 0;
-      font-size: 15px;
-    }
-
-    .danger-box {
-      background: #fff1f0;
-      border-left: 4px solid #ef4444;
-      border-radius: 0 8px 8px 0;
-      padding: 20px 24px;
-      margin: 28px 0;
-    }
-
-    .danger-box p {
-      margin-bottom: 0;
-      font-size: 15px;
-    }
   </style>
 
   <!-- BlogPosting Schema -->
@@ -799,11 +880,11 @@
       <h1>Melatonin for Dogs: Dosage, Safety & Side Effects</h1>
       <div class="article-meta">Published February 18, 2026</div>
 
-      <div class="callout" style="margin-top: 32px; margin-bottom: 40px;">
+      <div class="callout">
         <div class="callout-content">
-          <h3 style="margin-top: 0; font-size: 20px; margin-bottom: 16px;">How Much Melatonin Can You Give a Dog?</h3>
-          <p style="margin-bottom: 20px;">Melatonin is generally safe for dogs at low doses, but the dose must match your dog's weight. The biggest risk with human melatonin products is xylitol — a sweetener toxic to dogs that's commonly found in gummies and chews. Always check the ingredient list before giving any melatonin product to your dog.</p>
-          <table style="margin: 0; box-shadow: none;">
+          <h3>How Much Melatonin Can You Give a Dog?</h3>
+          <p>Melatonin is generally safe for dogs at low doses, but the dose must match your dog's weight. The biggest risk with human melatonin products is xylitol — a sweetener toxic to dogs that's commonly found in gummies and chews. Always check the ingredient list before giving any melatonin product to your dog.</p>
+          <table>
             <thead>
               <tr>
                 <th>Dog Weight</th>
@@ -834,10 +915,12 @@
               </tr>
             </tbody>
           </table>
-          <p style="margin-top: 16px; margin-bottom: 0; font-size: 14px; color: var(--text-muted);">These are general guidelines. Consult your vet before starting melatonin, especially if your dog takes other medications.</p>
+          <p>These are general guidelines. Consult your vet before starting melatonin, especially if your dog takes other medications.</p>
         </div>
       </div>
     </div>
+
+    <div class="article-content">
 
     <h2>What Melatonin Does in Dogs</h2>
     <p>Melatonin is a hormone produced naturally by the pineal gland in response to darkness. It regulates circadian rhythm — the biological clock governing sleep, wakefulness, and seasonal hormonal cycles. In dogs, exogenous (supplemental) melatonin mimics this signal, producing sedation and influencing hormone-regulated processes including hair follicle cycling.</p>
@@ -851,8 +934,10 @@
 
     <h2>The Xylitol Warning: What to Check Before Giving Your Dog Melatonin</h2>
 
-    <div class="danger-box">
-      <p><strong>Never give your dog melatonin gummies, chews, or flavored tablets without checking the full ingredient list for xylitol.</strong> Xylitol is a sugar alcohol commonly used to sweeten human supplement gummies and chews. It is acutely toxic to dogs — even small amounts can cause severe hypoglycemia (blood sugar drop) and liver failure. Symptoms of xylitol poisoning include vomiting, weakness, collapse, and seizures. If your dog ingests a product containing xylitol, call your vet or ASPCA Animal Poison Control (888-426-4435) immediately.</p>
+    <div class="callout">
+      <div class="callout-content">
+        <p><strong>Never give your dog melatonin gummies, chews, or flavored tablets without checking the full ingredient list for xylitol.</strong> Xylitol is a sugar alcohol commonly used to sweeten human supplement gummies and chews. It is acutely toxic to dogs — even small amounts can cause severe hypoglycemia (blood sugar drop) and liver failure. Symptoms of xylitol poisoning include vomiting, weakness, collapse, and seizures. If your dog ingests a product containing xylitol, call your vet or ASPCA Animal Poison Control (888-426-4435) immediately.</p>
+      </div>
     </div>
 
     <p>Plain melatonin tablets — typically sold as 1 mg, 3 mg, or 5 mg tablets without additional sweeteners or flavoring — are the safest form to use for dogs. Liquid melatonin formulated for children is sometimes used as an alternative because the low concentrations make small-dog dosing easier, but again: check the ingredient list for xylitol before use.</p>
@@ -894,8 +979,10 @@
 
     <p>For situational anxiety (thunderstorm, vet visit, fireworks): give a single dose 30–60 minutes before the expected stressor. For sleep regulation: give at bedtime. For alopecia X: dosing is typically once or twice daily on a longer schedule of weeks to months — this use should be under veterinary supervision.</p>
 
-    <div class="warning-box">
-      <p><strong>Start low.</strong> Human melatonin tablets most commonly come in 5 mg or 10 mg doses — both are above the recommended range for most dogs. Buy the lowest available dose (1 mg or 3 mg tablets) and cut to the appropriate amount for your dog's weight. Do not assume a human-sized dose is appropriate.</p>
+    <div class="callout">
+      <div class="callout-content">
+        <p><strong>Start low.</strong> Human melatonin tablets most commonly come in 5 mg or 10 mg doses — both are above the recommended range for most dogs. Buy the lowest available dose (1 mg or 3 mg tablets) and cut to the appropriate amount for your dog's weight. Do not assume a human-sized dose is appropriate.</p>
+      </div>
     </div>
 
     <h2>Side Effects of Melatonin in Dogs</h2>
@@ -1027,6 +1114,8 @@
 
     <h2>Frequently Asked Questions</h2>
 
+    </div><!-- end article-content -->
+
     <div class="faq-section">
 
       <div class="faq-item">
@@ -1106,22 +1195,24 @@
   </article>
 </main>
 
-<footer>
-  <div class="footer-content">
-    <div class="footer-left">
-      <p>Watts Pet Nutrition</p>
-      <p><a href="/blog/">Blog</a></p>
-      <p><a href="/ingredient-analyzer/">Ingredient Analyzer</a></p>
-      <p><a href="/about.html">About</a></p>
-    </div>
-    <div class="footer-right">
-      <div class="footer-right-text">
-        <p>Real food.<br>Real science.<br>No fluff.</p>
+<div class="footer-wrapper">
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <p>Watts Pet Nutrition</p>
+        <p><a href="/blog/">Blog</a></p>
+        <p><a href="/ingredient-analyzer/">Ingredient Analyzer</a></p>
+        <p><a href="/about.html">About</a></p>
       </div>
-      <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+      <div class="footer-right">
+        <div class="footer-right-text">
+          <p>Real food.<br>Real science.<br>No fluff.</p>
+        </div>
+        <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
+</div>
 
 <script>
   const hamburger = document.querySelector('.hamburger');
