@@ -432,6 +432,14 @@
       min-width: 100%;
     }
 
+    .table-scroll th:first-child,
+    .table-scroll td:first-child {
+      position: sticky;
+      left: 0;
+      background: inherit;
+      z-index: 1;
+    }
+
     @media (min-width: 768px) {
       table {
         font-size: 17px;

@@ -318,6 +318,8 @@
       border-radius: 12px;
       padding: 24px 28px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
     }
     @media (min-width: 768px) {
       .callout-content {
@@ -357,6 +359,7 @@
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
       margin: 32px 0;
+      isolation: isolate;
     }
 
     .table-scroll table {
@@ -382,7 +385,7 @@
 
     th, td {
       text-align: left;
-      padding: 16px;
+      padding: 10px 12px;
       border-bottom: 1px solid var(--border-light);
     }
 
