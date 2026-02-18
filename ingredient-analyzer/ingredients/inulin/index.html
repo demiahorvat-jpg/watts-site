@@ -49,6 +49,7 @@
         --fg: #191919;
         --muted: #3a3a3a;
         --border: #191919;
+        --border-light: rgba(25,25,25,0.1);
         --good: #2d5016;
         --caution: #b45309;
         --avoid: #991b1b;
@@ -225,7 +226,9 @@
         max-width: 900px;
         margin: 0 auto;
         padding: 40px 20px 60px;
-        background: var(--bg);
+        background: var(--white);
+        border-radius: 12px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.06);
       }
       @media (min-width: 768px) {
         main { padding: 60px 40px 80px; }
@@ -267,7 +270,8 @@
 
       .category-badge {
         padding: 6px 14px;
-        border: 2px solid var(--border);
+        border: 1.5px solid var(--border-light);
+        border-radius: 20px;
         font-size: 14px;
         font-weight: 600;
         text-transform: capitalize;
@@ -280,6 +284,7 @@
         text-transform: uppercase;
         letter-spacing: 0.05em;
         color: white;
+        border-radius: 20px;
       }
 
       .badge-good { background: var(--good); }
@@ -293,8 +298,10 @@
       }
 
       .table-of-contents {
-        background: white;
-        border: 2.5px solid var(--border);
+        background: var(--bg-light);
+        border: none;
+        border-left: 4px solid var(--brand-orange);
+        border-radius: 0 12px 12px 0;
         padding: 24px;
         margin: 32px 0;
       }
@@ -325,8 +332,10 @@
       }
 
       .quick-summary {
-        background: white;
-        border: 2.5px solid var(--border);
+        background: var(--bg-light);
+        border: none;
+        border-left: 4px solid var(--brand-orange);
+        border-radius: 0 12px 12px 0;
         padding: 24px;
         margin: 32px 0;
       }
@@ -353,7 +362,9 @@
       }
 
       .fact-item {
-        border: 2px solid var(--border);
+        background: var(--bg-light);
+        border: none;
+        border-radius: 8px;
         padding: 16px;
       }
 
@@ -419,13 +430,13 @@
 
       .quality-note-box,
       .watts-take-box {
-        border: 2.5px solid var(--border);
+        border: none;
+        border-left: 4px solid var(--brand-orange);
+        border-radius: 0 8px 8px 0;
+        background: var(--bg-light);
         padding: 24px;
         margin: 32px 0;
       }
-
-      .quality-note-box { background: #fff9e6; }
-      .watts-take-box { background: #e8f5e9; }
 
       .quality-note-label,
       .watts-take-label {
@@ -436,7 +447,13 @@
         margin-bottom: 12px;
       }
 
-      .faq-item { margin-bottom: 32px; }
+      .faq-item {
+        background: var(--bg-light);
+        border-radius: 12px;
+        border-left: 4px solid var(--brand-orange);
+        padding: 24px;
+        margin-bottom: 16px;
+      }
       .faq-item h3 { margin-top: 0; }
 
       .related-grid {
@@ -453,7 +470,10 @@
       }
 
       .related-card {
-        border: 2.5px solid var(--border);
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        background: var(--bg-light);
         padding: 20px;
         text-decoration: none;
         color: var(--fg);
@@ -462,7 +482,7 @@
       }
 
       .related-card:hover {
-        background: rgba(25, 25, 25, 0.02);
+        box-shadow: 0 4px 16px rgba(0,0,0,0.12);
         transform: translateY(-2px);
       }
 
@@ -479,15 +499,16 @@
       }
 
       .cta-section {
-        background: var(--fg);
-        color: var(--bg);
+        background: var(--brand-orange);
+        color: var(--white);
         padding: 40px;
         text-align: center;
         margin: 60px 0 40px;
+        border-radius: 12px;
       }
 
       .cta-section h3 {
-        color: var(--bg);
+        color: var(--white);
         margin-top: 0;
         font-size: 28px;
       }
@@ -495,26 +516,25 @@
       .cta-section p {
         font-size: 18px;
         margin-bottom: 24px;
-        color: var(--bg);
+        color: var(--white);
         opacity: 0.9;
       }
 
       .cta-button {
         display: inline-block;
-        background: var(--bg);
-        color: var(--fg);
+        background: var(--white);
+        color: var(--brand-orange);
         padding: 14px 32px;
         text-decoration: none;
         font-weight: 600;
         font-size: 16px;
-        border: 2.5px solid var(--bg);
+        border: none;
+        border-radius: 8px;
         transition: all 0.15s;
       }
 
       .cta-button:hover {
-        background: transparent;
-        color: var(--bg);
-        border-color: var(--bg);
+        opacity: 0.9;
       }
 
       /* FOOTER */
