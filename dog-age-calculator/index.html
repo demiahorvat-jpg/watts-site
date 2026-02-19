@@ -1,0 +1,1898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Age Calculator: Real Biological Age (Not the 7-Year Rule) | Watts</title>
+  <meta name="description" content="Find out your dog's real biological age using the science-backed epigenetic clock method — not the outdated 7-year rule. Enter breed size and age for an accurate result.">
+  <link rel="canonical" href="https://wattspet.com/dog-age-calculator/">
+  <meta property="og:title" content="Dog Age Calculator: Real Biological Age | Watts">
+  <meta property="og:description" content="The 7-year rule is wrong. Find your dog's real biological age using the 2020 epigenetic clock research.">
+  <meta property="og:url" content="https://wattspet.com/dog-age-calculator/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <script src="https://analytics.ahrefs.com/analytics.js" data-key="22KmtuYXO77ED5o6fe6z1w" async></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C6KV5WBGK5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C6KV5WBGK5');
+  </script>
+
+  <style>
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      --brand-orange: #c03800;
+      --bg-light: #f1f1f1;
+      --text-dark: #191919;
+      --white: #ffffff;
+      --text-muted: #666666;
+      --border-light: rgba(25, 25, 25, 0.1);
+      --accent-navy: #1e3a5f;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      background: #191919;
+      color: var(--text-dark);
+      font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* ===== HEADER ===== */
+    .header-wrapper {
+      background: #191919;
+      padding: 12px 12px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header {
+      background: var(--brand-orange);
+      padding: 7px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-height: 40px;
+    }
+
+    nav {
+      order: -1;
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+    @media (min-width: 768px) {
+      nav ul { gap: 24px; }
+    }
+
+    nav li {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
+    }
+    @media (min-width: 768px) {
+      nav a { font-size: 15px; }
+    }
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      z-index: 1000;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--white);
+      transition: all 0.3s ease;
+    }
+
+    @media (max-width: 767px) {
+      .hamburger {
+        display: flex;
+      }
+
+      nav ul {
+        position: fixed;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background: var(--brand-orange);
+        flex-direction: column;
+        gap: 0;
+        padding: 20px;
+        margin: 0;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        max-height: calc(100vh - 64px);
+        overflow-y: auto;
+      }
+
+      nav ul.active {
+        transform: translateX(0);
+      }
+
+      nav li {
+        width: 100%;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+      }
+
+      nav li:last-child {
+        border-bottom: none;
+      }
+
+      nav a {
+        font-size: 16px;
+        display: block;
+        width: 100%;
+      }
+
+      .logo-container {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo {
+      height: 32px;
+    }
+    @media (min-width: 768px) {
+      .logo { height: 40px; }
+    }
+
+    /* ===== MAIN ===== */
+    main {
+      max-width: 900px;
+      margin: 16px auto 40px;
+      padding: 0 20px;
+    }
+    @media (min-width: 768px) {
+      main {
+        margin: 20px auto 60px;
+        padding: 0 40px;
+      }
+    }
+
+    /* ===== PAGE CARD ===== */
+    .page-card {
+      background: var(--white);
+      padding: 40px 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      margin-bottom: 24px;
+    }
+    @media (min-width: 768px) {
+      .page-card {
+        padding: 60px 50px;
+      }
+    }
+
+    /* ===== TYPOGRAPHY ===== */
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      letter-spacing: -0.02em;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 48px;
+        margin-bottom: 24px;
+      }
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h2 { font-size: 30px; }
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin-bottom: 12px;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      h3 { font-size: 24px; }
+    }
+
+    p {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      p { font-size: 18px; margin-bottom: 24px; }
+    }
+
+    strong { font-weight: 600; }
+
+    a {
+      color: var(--accent-navy);
+      transition: opacity 0.2s ease;
+    }
+    a:hover { opacity: 0.7; }
+
+    ul, ol {
+      margin: 16px 0;
+      padding-left: 28px;
+    }
+
+    li {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+    @media (min-width: 768px) {
+      li { font-size: 18px; }
+    }
+
+    /* ===== CALLOUT BOX (Watts style) ===== */
+    .callout {
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 32px 0;
+    }
+
+    .callout-content {
+      background: var(--white);
+      color: var(--text-dark);
+      border-radius: 12px;
+      padding: 24px 28px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    @media (min-width: 768px) {
+      .callout-content { padding: 28px 36px; }
+    }
+
+    .callout p:last-child { margin-bottom: 0; }
+
+    /* ===== PAGE INTRO SECTION ===== */
+    .page-intro {
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 2px solid var(--border-light);
+    }
+
+    .intro-subheading {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.6;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+    }
+    @media (min-width: 768px) {
+      .intro-subheading { font-size: 20px; }
+    }
+
+    /* ===== CALCULATOR FORM CARD ===== */
+    .calc-form-card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 32px 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      border: 1px solid var(--border-light);
+    }
+    @media (min-width: 768px) {
+      .calc-form-card { padding: 40px 40px; }
+    }
+
+    /* ===== FORM FIELDS ===== */
+    .form-group {
+      margin-bottom: 28px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+
+    .form-helper {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-top: 6px;
+      margin-bottom: 0;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 12px 16px;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--text-dark);
+      background: var(--bg-light);
+      border: 2px solid var(--border-light);
+      border-radius: 8px;
+      transition: border-color 0.2s ease;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+
+    .form-input:focus {
+      outline: none;
+      border-color: var(--brand-orange);
+    }
+
+    .form-input::placeholder {
+      color: rgba(25,25,25,0.35);
+    }
+
+    /* Age selects - side by side */
+    .age-selects {
+      display: flex;
+      gap: 12px;
+    }
+
+    .age-select-wrap {
+      flex: 1;
+    }
+
+    .age-select-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    select.form-input {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23666' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      padding-right: 36px;
+      cursor: pointer;
+    }
+
+    /* ===== SIZE RADIO CARDS ===== */
+    .size-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    @media (min-width: 640px) {
+      .size-grid { grid-template-columns: repeat(4, 1fr); }
+    }
+
+    .size-card-label {
+      display: block;
+      cursor: pointer;
+    }
+
+    .size-card-label input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .size-card-inner {
+      display: flex;
+      flex-direction: column;
+      padding: 14px 12px;
+      border: 2px solid var(--border-light);
+      border-radius: 10px;
+      background: var(--bg-light);
+      transition: border-color 0.18s ease, background 0.18s ease;
+      min-height: 90px;
+    }
+
+    .size-card-label:hover .size-card-inner {
+      border-color: rgba(192, 56, 0, 0.35);
+    }
+
+    .size-card-label input[type="radio"]:checked + .size-card-inner {
+      border-color: var(--brand-orange);
+      background: rgba(192, 56, 0, 0.06);
+    }
+
+    .size-card-label input[type="radio"]:focus-visible + .size-card-inner {
+      outline: 2px solid var(--brand-orange);
+      outline-offset: 2px;
+    }
+
+    .size-card-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 3px;
+    }
+
+    .size-card-weight {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--brand-orange);
+      margin-bottom: 4px;
+    }
+
+    .size-card-breeds {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* ===== LIFESTYLE TOGGLE ===== */
+    .lifestyle-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: none;
+      border: none;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--brand-orange);
+      cursor: pointer;
+      padding: 0;
+      margin-bottom: 20px;
+      transition: opacity 0.2s ease;
+    }
+    .lifestyle-toggle:hover { opacity: 0.75; }
+
+    .lifestyle-toggle-icon {
+      font-size: 18px;
+      line-height: 1;
+      transition: transform 0.25s ease;
+    }
+
+    .lifestyle-toggle.open .lifestyle-toggle-icon {
+      transform: rotate(45deg);
+    }
+
+    .lifestyle-section {
+      display: none;
+      padding-top: 4px;
+    }
+
+    .lifestyle-section.open {
+      display: block;
+    }
+
+    /* ===== BUTTON GROUP (body condition / activity) ===== */
+    .btn-group {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .btn-option {
+      flex: 1;
+      min-width: 80px;
+      padding: 10px 14px;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-dark);
+      background: var(--bg-light);
+      border: 2px solid var(--border-light);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: border-color 0.18s ease, background 0.18s ease, color 0.18s ease;
+      text-align: center;
+    }
+
+    .btn-option:hover {
+      border-color: rgba(192, 56, 0, 0.35);
+    }
+
+    .btn-option.active {
+      border-color: var(--brand-orange);
+      background: rgba(192, 56, 0, 0.06);
+      color: var(--brand-orange);
+    }
+
+    /* ===== SUBMIT BUTTON ===== */
+    .calc-submit-btn {
+      width: 100%;
+      padding: 16px 24px;
+      font-family: inherit;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--white);
+      background: var(--brand-orange);
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: opacity 0.2s ease, transform 0.1s ease;
+      margin-top: 8px;
+    }
+
+    .calc-submit-btn:hover {
+      opacity: 0.88;
+    }
+
+    .calc-submit-btn:active {
+      transform: scale(0.99);
+    }
+
+    /* ===== ERROR MESSAGE ===== */
+    .form-error {
+      display: none;
+      font-size: 14px;
+      font-weight: 600;
+      color: #c03800;
+      background: rgba(192, 56, 0, 0.08);
+      border: 1px solid rgba(192, 56, 0, 0.2);
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin-top: 16px;
+    }
+    .form-error.visible {
+      display: block;
+    }
+
+    /* ===== RESULTS SECTION ===== */
+    #results-section {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      margin-top: 32px;
+    }
+
+    #results-section.visible {
+      opacity: 1;
+    }
+
+    .results-card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 40px 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      border: 1px solid var(--border-light);
+    }
+    @media (min-width: 768px) {
+      .results-card { padding: 48px 50px; }
+    }
+
+    /* Big number + badge */
+    .results-hero {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .results-big-number {
+      font-size: 72px;
+      font-weight: 700;
+      line-height: 1;
+      color: var(--brand-orange);
+      letter-spacing: -0.03em;
+    }
+    @media (min-width: 768px) {
+      .results-big-number { font-size: 96px; }
+    }
+
+    .life-stage-badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      background: var(--brand-orange);
+      color: var(--white);
+    }
+
+    .results-headline {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 32px;
+      line-height: 1.4;
+    }
+    @media (min-width: 768px) {
+      .results-headline { font-size: 22px; }
+    }
+
+    /* VS rule callout */
+    .results-vs-callout {
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 24px 0 32px;
+    }
+
+    .results-vs-callout .callout-content {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      .results-vs-callout .callout-content { font-size: 17px; }
+    }
+
+    .results-vs-callout .callout-content p {
+      margin-bottom: 0;
+    }
+
+    /* Life stage card */
+    .life-stage-card {
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 24px 0;
+    }
+
+    .life-stage-card .callout-content {
+      border-radius: 12px;
+    }
+
+    .life-stage-card h3 {
+      color: var(--brand-orange);
+      margin-bottom: 12px;
+    }
+
+    .life-stage-card p {
+      margin-bottom: 12px;
+    }
+
+    /* Priorities section */
+    .priorities-section {
+      margin: 32px 0;
+      padding: 28px;
+      background: var(--bg-light);
+      border-radius: 12px;
+      border-left: 4px solid var(--brand-orange);
+    }
+
+    .priorities-section h3 {
+      font-size: 18px;
+      color: var(--brand-orange);
+      margin-bottom: 16px;
+    }
+    @media (min-width: 768px) {
+      .priorities-section h3 { font-size: 20px; }
+    }
+
+    .priorities-section ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    .priorities-section li {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .priorities-section li:last-child { margin-bottom: 0; }
+    @media (min-width: 768px) {
+      .priorities-section li { font-size: 17px; }
+    }
+
+    /* Share section */
+    .share-section {
+      margin: 32px 0;
+      padding: 24px 28px;
+      background: var(--bg-light);
+      border-radius: 12px;
+    }
+
+    .share-section h3 {
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 10px;
+    }
+
+    .share-text-box {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text-dark);
+      background: var(--white);
+      border: 1px solid var(--border-light);
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+
+    .copy-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--white);
+      background: var(--text-dark);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+
+    .copy-btn:hover { opacity: 0.8; }
+
+    .copy-btn.copied {
+      background: #2e7d32;
+    }
+
+    /* Email CTA in results */
+    .email-cta-callout {
+      position: relative;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin: 32px 0 0;
+    }
+
+    .email-cta-callout .callout-content {
+      padding: 28px 28px;
+    }
+
+    .email-cta-callout h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+    @media (min-width: 768px) {
+      .email-cta-callout h3 { font-size: 22px; }
+    }
+
+    .email-cta-callout p {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .email-cta-form {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+    }
+    @media (min-width: 480px) {
+      .email-cta-form { flex-direction: row; }
+    }
+
+    .email-cta-form input[type="email"] {
+      flex: 1;
+      min-width: 0;
+      padding: 12px 16px;
+      border: 2px solid var(--border-light);
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 500;
+      background: var(--white);
+      color: var(--text-dark);
+      transition: border-color 0.2s ease;
+    }
+
+    .email-cta-form input[type="email"]::placeholder {
+      color: rgba(25,25,25,0.4);
+    }
+
+    .email-cta-form input[type="email"]:focus {
+      outline: none;
+      border-color: var(--brand-orange);
+    }
+
+    .email-cta-form button[type="submit"] {
+      padding: 12px 20px;
+      background: var(--brand-orange);
+      color: var(--white);
+      border: none;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    .email-cta-form button[type="submit"]:hover {
+      opacity: 0.85;
+    }
+
+    .email-cta-success {
+      font-size: 16px;
+      font-weight: 600;
+      color: #2e7d32;
+      margin: 0;
+      display: none;
+    }
+
+    /* ===== FAQ SECTION ===== */
+    .faq-section {
+      margin-top: 48px;
+      padding-top: 48px;
+      border-top: 2px solid var(--border-light);
+    }
+
+    .faq-section h2 {
+      margin-bottom: 28px;
+    }
+
+    .faq-item {
+      margin-bottom: 24px;
+      padding: 24px 28px;
+      background: var(--bg-light);
+      border-radius: 12px;
+      border-left: 4px solid var(--brand-orange);
+    }
+
+    .faq-item h3 {
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--brand-orange);
+    }
+    @media (min-width: 768px) {
+      .faq-item h3 { font-size: 19px; }
+    }
+
+    .faq-item p {
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+    @media (min-width: 768px) {
+      .faq-item p { font-size: 17px; }
+    }
+
+    /* ===== FOOTER ===== */
+    .footer-wrapper {
+      background: #191919;
+      padding: 0 12px 12px;
+      margin-top: 80px;
+    }
+
+    footer {
+      background: var(--brand-orange);
+      color: var(--white);
+      padding: 45px 40px 20px;
+      border-radius: 200px 16px 16px 200px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-height: 144px;
+    }
+    @media (min-width: 768px) {
+      footer {
+        padding: 63px 60px 24px;
+        min-height: 207px;
+        border-radius: 300px 16px 16px 300px;
+      }
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      flex: 1;
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 24px;
+      flex: 1;
+    }
+    @media (min-width: 768px) {
+      .footer-right { gap: 32px; }
+    }
+
+    .footer-right-text {
+      text-align: right;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-top: 128px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      .footer-logo {
+        height: 160px;
+        margin-top: 160px;
+        margin-bottom: 0;
+      }
+    }
+
+    footer p {
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    footer a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 767px) {
+      footer {
+        padding: 32px 20px 16px !important;
+        border-radius: 100px 16px 16px 100px !important;
+        min-height: auto !important;
+      }
+
+      .footer-content {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 24px !important;
+      }
+
+      .footer-left {
+        flex: none !important;
+        width: 100% !important;
+      }
+
+      .footer-right {
+        flex: none !important;
+        width: 100% !important;
+        align-items: center !important;
+        gap: 16px !important;
+      }
+
+      .footer-right-text {
+        text-align: center !important;
+      }
+
+      .footer-logo {
+        height: 60px !important;
+        margin-top: 0 !important;
+      }
+
+      footer p {
+        font-size: 14px !important;
+        margin-bottom: 8px !important;
+      }
+    }
+
+    /* ===== STICKY EMAIL CTA (mobile only) ===== */
+    .sticky-email-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--brand-orange);
+      color: #ffffff;
+      padding: 16px 20px 24px;
+      z-index: 500;
+      box-shadow: 0 -4px 24px rgba(0,0,0,0.18);
+      border-radius: 16px 16px 0 0;
+      transform: translateY(100%);
+      transition: transform 0.35s ease;
+    }
+    .sticky-email-cta.visible {
+      transform: translateY(0);
+    }
+    @media (min-width: 768px) {
+      .sticky-email-cta { display: none !important; }
+    }
+    .sticky-cta-close {
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      background: none;
+      border: none;
+      color: #ffffff;
+      font-size: 22px;
+      line-height: 1;
+      cursor: pointer;
+      padding: 4px 6px;
+      opacity: 0.75;
+    }
+    .sticky-cta-close:hover { opacity: 1; }
+    .sticky-cta-heading {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 0 0 12px;
+      color: #ffffff;
+      padding-right: 36px;
+    }
+    .sticky-cta-form {
+      display: flex;
+      gap: 8px;
+    }
+    .sticky-cta-form input[type="email"] {
+      flex: 1;
+      min-width: 0;
+      padding: 11px 14px;
+      border: none;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 15px;
+      background: #ffffff;
+      color: #191919;
+    }
+    .sticky-cta-form input[type="email"]::placeholder {
+      color: rgba(25,25,25,0.4);
+    }
+    .sticky-cta-form input[type="email"]:focus {
+      outline: none;
+    }
+    .sticky-cta-form button[type="submit"] {
+      padding: 11px 16px;
+      background: #191919;
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .sticky-cta-form button[type="submit"]:hover {
+      opacity: 0.85;
+    }
+    .sticky-cta-success {
+      font-size: 16px;
+      font-weight: 500;
+      color: #ffffff;
+      margin: 0;
+      display: none;
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Dog Age Calculator",
+    "description": "Calculate your dog's real biological age using the epigenetic clock research — not the outdated 7-year rule.",
+    "url": "https://wattspet.com/dog-age-calculator/"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is the 7-year rule accurate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Dogs age logarithmically. They develop extremely rapidly in the first 1–2 years (a 1-year-old dog is biologically around 30 in human terms) and then age more slowly. The 7-year rule produces wildly inaccurate results, especially for young dogs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the epigenetic clock method?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The 2020 UC San Diego study mapped changes in DNA methylation — chemical tags on DNA that change predictably with age — in both dogs and humans. By comparing these patterns, researchers derived a formula that maps dog age to human biological age far more accurately than the 7-year rule."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why does breed size matter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Larger dogs have shorter lifespans than smaller dogs. A 7-year-old Great Dane is biologically much older than a 7-year-old Chihuahua. The calculator adjusts for this by scaling the chronological age before applying the formula."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I do differently based on my dog's life stage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Different life stages have different nutritional priorities. Puppies need DHA and complete nutrition for development. Adults benefit from omega-3 and probiotics. Seniors need joint support, higher omega-3, and antioxidants. The calculator shows specific priorities for your dog's current stage."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <a href="/" aria-label="Watts home">
+            <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+          </a>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <main>
+    <div class="page-card">
+
+      <!-- ===== INTRO SECTION ===== -->
+      <div class="page-intro">
+        <h1>Dog Age Calculator</h1>
+        <p class="intro-subheading">The "multiply by 7" rule has been debunked. Dogs age logarithmically — they develop rapidly in their first year and slow down as they get older. This calculator uses the 2020 epigenetic clock research from UC San Diego to give you your dog's real biological age.</p>
+
+        <div class="callout">
+          <div class="callout-content">
+            <p>A 1-year-old dog isn't biologically 7 — they're closer to 31. A 2-year-old isn't 14 — they're closer to 42. The difference matters for how you care for them.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== CALCULATOR FORM ===== -->
+      <div class="calc-form-card">
+        <form id="dog-age-form" novalidate>
+
+          <!-- Field 1: Dog's name -->
+          <div class="form-group">
+            <label class="form-label" for="dog-name">Dog's name <span style="font-weight:400;color:var(--text-muted);font-size:13px;">(optional)</span></label>
+            <input
+              type="text"
+              id="dog-name"
+              name="dog-name"
+              class="form-input"
+              placeholder="e.g. Buddy"
+              autocomplete="off"
+            >
+          </div>
+
+          <!-- Field 2: Dog's age -->
+          <div class="form-group">
+            <label class="form-label">Age</label>
+            <div class="age-selects">
+              <div class="age-select-wrap">
+                <span class="age-select-label">Years</span>
+                <select id="age-years" name="age-years" class="form-input" aria-label="Years">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                </select>
+              </div>
+              <div class="age-select-wrap">
+                <span class="age-select-label">Months</span>
+                <select id="age-months" name="age-months" class="form-input" aria-label="Months">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                </select>
+              </div>
+            </div>
+            <p class="form-helper">Include months for dogs under 2 years</p>
+          </div>
+
+          <!-- Field 3: Size class -->
+          <div class="form-group">
+            <label class="form-label">Size</label>
+            <div class="size-grid" role="radiogroup" aria-label="Dog size">
+
+              <label class="size-card-label">
+                <input type="radio" name="dog-size" value="small">
+                <div class="size-card-inner">
+                  <span class="size-card-name">Small</span>
+                  <span class="size-card-weight">Under 20 lbs</span>
+                  <span class="size-card-breeds">Chihuahua, Pug, Shih Tzu</span>
+                </div>
+              </label>
+
+              <label class="size-card-label">
+                <input type="radio" name="dog-size" value="medium">
+                <div class="size-card-inner">
+                  <span class="size-card-name">Medium</span>
+                  <span class="size-card-weight">20–50 lbs</span>
+                  <span class="size-card-breeds">Beagle, Bulldog, Cocker Spaniel</span>
+                </div>
+              </label>
+
+              <label class="size-card-label">
+                <input type="radio" name="dog-size" value="large">
+                <div class="size-card-inner">
+                  <span class="size-card-name">Large</span>
+                  <span class="size-card-weight">50–90 lbs</span>
+                  <span class="size-card-breeds">Lab, Golden, German Shepherd</span>
+                </div>
+              </label>
+
+              <label class="size-card-label">
+                <input type="radio" name="dog-size" value="giant">
+                <div class="size-card-inner">
+                  <span class="size-card-name">Giant</span>
+                  <span class="size-card-weight">Over 90 lbs</span>
+                  <span class="size-card-breeds">Great Dane, Mastiff, St. Bernard</span>
+                </div>
+              </label>
+
+            </div>
+          </div>
+
+          <!-- Lifestyle factors (optional, collapsed) -->
+          <div class="form-group" style="margin-bottom:24px;">
+            <button type="button" class="lifestyle-toggle" id="lifestyle-toggle" aria-expanded="false" aria-controls="lifestyle-section">
+              <span class="lifestyle-toggle-icon">+</span>
+              Refine with lifestyle factors
+            </button>
+
+            <div class="lifestyle-section" id="lifestyle-section">
+
+              <div class="form-group" style="margin-bottom:20px;">
+                <label class="form-label">Body condition</label>
+                <div class="btn-group" role="group" aria-label="Body condition">
+                  <button type="button" class="btn-option" data-group="body" data-value="lean">Lean</button>
+                  <button type="button" class="btn-option active" data-group="body" data-value="ideal">Ideal</button>
+                  <button type="button" class="btn-option" data-group="body" data-value="overweight">Overweight</button>
+                </div>
+              </div>
+
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label">Activity level</label>
+                <div class="btn-group" role="group" aria-label="Activity level">
+                  <button type="button" class="btn-option" data-group="activity" data-value="low">Low</button>
+                  <button type="button" class="btn-option active" data-group="activity" data-value="moderate">Moderate</button>
+                  <button type="button" class="btn-option" data-group="activity" data-value="high">High</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <button type="submit" class="calc-submit-btn">Calculate Age</button>
+          <div class="form-error" id="form-error" role="alert"></div>
+
+        </form>
+      </div>
+
+      <!-- ===== RESULTS SECTION ===== -->
+      <div id="results-section" aria-live="polite">
+        <div class="results-card">
+
+          <!-- Big number + life stage badge -->
+          <div class="results-hero">
+            <div class="results-big-number" id="result-human-age"></div>
+            <div class="life-stage-badge" id="result-stage-badge"></div>
+          </div>
+
+          <p class="results-headline" id="result-headline"></p>
+
+          <!-- VS 7x rule callout -->
+          <div class="results-vs-callout">
+            <div class="callout-content">
+              <p id="result-vs-text"></p>
+            </div>
+          </div>
+
+          <!-- Life stage card -->
+          <div class="life-stage-card">
+            <div class="callout-content">
+              <h3 id="result-stage-title"></h3>
+              <p id="result-stage-desc"></p>
+            </div>
+          </div>
+
+          <!-- Nutritional priorities -->
+          <div class="priorities-section">
+            <h3>Nutritional priorities at this stage</h3>
+            <ul id="result-priorities"></ul>
+          </div>
+
+          <!-- Share section -->
+          <div class="share-section">
+            <h3>Share your result</h3>
+            <div class="share-text-box" id="share-text-box"></div>
+            <button type="button" class="copy-btn" id="copy-btn">Copy to clipboard</button>
+          </div>
+
+          <!-- Email CTA -->
+          <div class="email-cta-callout">
+            <div class="callout-content">
+              <h3>Stay in the loop</h3>
+              <p>Get updates from Watts — dog nutrition, supplement guides, and tools like this one.</p>
+              <form class="email-cta-form" id="results-email-form" action="https://formspree.io/f/mjkalgwj" method="POST" novalidate>
+                <input type="email" name="email" placeholder="Your email address" required autocomplete="email">
+                <button type="submit">Subscribe</button>
+              </form>
+              <p class="email-cta-success" id="results-email-success">Thanks — we'll be in touch!</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ===== FAQ SECTION ===== -->
+      <div class="faq-section">
+        <h2>Frequently asked questions</h2>
+
+        <div class="faq-item">
+          <h3>Is the 7-year rule accurate?</h3>
+          <p>No. Dogs age logarithmically. They develop extremely rapidly in the first 1–2 years (a 1-year-old dog is biologically around 30 in human terms) and then age more slowly. The 7-year rule produces wildly inaccurate results, especially for young dogs.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What is the epigenetic clock method?</h3>
+          <p>The 2020 UC San Diego study mapped changes in DNA methylation — chemical tags on DNA that change predictably with age — in both dogs and humans. By comparing these patterns, researchers derived a formula that maps dog age to human biological age far more accurately than the 7-year rule.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Why does breed size matter?</h3>
+          <p>Larger dogs have shorter lifespans than smaller dogs. A 7-year-old Great Dane is biologically much older than a 7-year-old Chihuahua. The calculator adjusts for this by scaling the chronological age before applying the formula.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What should I do differently based on my dog's life stage?</h3>
+          <p>Different life stages have different nutritional priorities. Puppies need DHA and complete nutrition for development. Adults benefit from omega-3 and probiotics. Seniors need joint support, higher omega-3, and antioxidants. The calculator shows specific priorities for your dog's current stage.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left"></div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Sticky email CTA (mobile) -->
+  <div id="sticky-email-cta" class="sticky-email-cta" aria-hidden="true">
+    <button class="sticky-cta-close" id="sticky-cta-close" aria-label="Close">&#x2715;</button>
+    <p class="sticky-cta-heading">Stay in the loop</p>
+    <form class="sticky-cta-form" id="sticky-cta-form" action="https://formspree.io/f/mjkalgwj" method="POST" novalidate>
+      <input type="email" name="email" placeholder="Your email" required autocomplete="email">
+      <button type="submit">Notify me</button>
+    </form>
+    <p class="sticky-cta-success" id="sticky-cta-success">Thanks — we'll be in touch!</p>
+  </div>
+
+  <script>
+  // ===== HAMBURGER MENU =====
+  document.addEventListener('DOMContentLoaded', function() {
+    var hamburger = document.querySelector('.hamburger');
+    var navMenu = document.querySelector('nav ul');
+
+    if (hamburger && navMenu) {
+      hamburger.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+        this.classList.toggle('active');
+      });
+
+      navMenu.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          navMenu.classList.remove('active');
+          hamburger.classList.remove('active');
+        });
+      });
+
+      document.addEventListener('click', function(e) {
+        if (!navMenu.contains(e.target) && !hamburger.contains(e.target) && navMenu.classList.contains('active')) {
+          navMenu.classList.remove('active');
+          hamburger.classList.remove('active');
+        }
+      });
+    }
+  });
+
+  // ===== FOOTER YEAR =====
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // ===== LIFESTYLE TOGGLE =====
+  (function() {
+    var toggleBtn = document.getElementById('lifestyle-toggle');
+    var section = document.getElementById('lifestyle-section');
+
+    toggleBtn.addEventListener('click', function() {
+      var isOpen = section.classList.contains('open');
+      if (isOpen) {
+        section.classList.remove('open');
+        toggleBtn.classList.remove('open');
+        toggleBtn.setAttribute('aria-expanded', 'false');
+      } else {
+        section.classList.add('open');
+        toggleBtn.classList.add('open');
+        toggleBtn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  })();
+
+  // ===== OPTION BUTTONS (body condition / activity) =====
+  (function() {
+    document.querySelectorAll('.btn-option').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var group = this.getAttribute('data-group');
+        document.querySelectorAll('.btn-option[data-group="' + group + '"]').forEach(function(b) {
+          b.classList.remove('active');
+        });
+        this.classList.add('active');
+      });
+    });
+  })();
+
+  // ===== LIFE STAGE DATA =====
+  var lifeStageData = {
+    puppy: {
+      title: 'Puppy — Rapid Development',
+      badge: 'Puppy',
+      description: 'More biological change happens in your dog\'s first year than any other period of their life. By 7 weeks, a puppy\'s DNA methylation pattern already resembles a 35-year-old human. This phase is about establishing a foundation — nutrition, socialization, and healthy growth matter enormously.',
+      priorities: [
+        'Complete and balanced puppy nutrition',
+        'DHA for brain and eye development',
+        'Appropriate protein for muscle growth',
+        'Avoid over-supplementing — excess can disrupt growth'
+      ]
+    },
+    adolescent: {
+      title: 'Adolescent — Young Adult',
+      badge: 'Adolescent',
+      description: 'Most physical development is complete. Biologically, your dog is now in their 30s or 40s — a fully developed adult in all but social maturity. Energy is high and joints are being stressed by activity.',
+      priorities: [
+        'Omega-3 fatty acids for inflammation management',
+        'Joint health foundation before problems develop',
+        'Probiotics to establish a healthy gut microbiome',
+        'Maintain lean body condition — weight issues compound over time'
+      ]
+    },
+    adult: {
+      title: 'Prime Adult',
+      badge: 'Adult',
+      description: 'The stable years. Health outcomes in this phase are largely determined by the habits established now — body weight, exercise consistency, and nutritional quality. This is the time to build the reserve your dog will draw on in their senior years.',
+      priorities: [
+        'Omega-3 for coat, inflammation, and cardiovascular health',
+        'Probiotics for digestive and immune health',
+        'Maintain ideal body weight — even mild obesity shortens lifespan',
+        'Annual vet checks to catch issues early'
+      ]
+    },
+    senior: {
+      title: 'Senior — Health Maintenance',
+      badge: 'Senior',
+      description: 'Metabolism is slowing, joints are accumulating wear, and the risk of cognitive changes is rising. Dog cognitive dysfunction syndrome affects roughly 28% of dogs aged 11–12. This phase requires more active management of nutrition and supplementation.',
+      priorities: [
+        'Joint support becomes important — glucosamine, green-lipped mussel',
+        'Omega-3 at higher doses for inflammation and brain health',
+        'Antioxidants to combat oxidative stress (vitamin E, CoQ10)',
+        'Digestive enzyme support as gut efficiency decreases',
+        'Watch for cognitive changes — confusion, disrupted sleep, disorientation'
+      ]
+    },
+    geriatric: {
+      title: 'Geriatric — Active Support',
+      badge: 'Geriatric',
+      description: 'Your dog is in the final chapter, and quality of life is the priority. Muscle mass loss (sarcopenia), joint pain, cognitive decline, and reduced organ efficiency are the main challenges. Every supplement and nutrition decision should be weighed against its impact on how your dog feels day to day.',
+      priorities: [
+        'All senior priorities apply, plus:',
+        'Protein quality matters more (muscle preservation)',
+        'Easy-to-digest formats',
+        'Regular vet monitoring of organ function',
+        'Quality of life over quantity of interventions'
+      ]
+    }
+  };
+
+  // ===== CALCULATION FUNCTIONS =====
+  function getLifeStage(years, size) {
+    if (years < 1) return 'puppy';
+    if (years < 2) return 'adolescent';
+    var seniorAge = { small: 9, medium: 8, large: 7, giant: 6 };
+    var geriatricAge = { small: 12, medium: 11, large: 10, giant: 8 };
+    if (years >= geriatricAge[size]) return 'geriatric';
+    if (years >= seniorAge[size]) return 'senior';
+    return 'adult';
+  }
+
+  function calculateHumanAge(totalYears, size, bodyCondition, activityLevel) {
+    var sizeScale = { small: 0.80, medium: 1.0, large: 1.09, giant: 1.33 };
+    var scaledAge = totalYears * sizeScale[size];
+
+    if (scaledAge < 0.1) return null; // very young puppy edge case
+
+    var humanAge = Math.round(16 * Math.log(scaledAge) + 31);
+
+    // Body condition modifier
+    var bodyMod = { lean: -1, ideal: 0, overweight: 3 };
+    humanAge += (bodyMod[bodyCondition] || 0);
+
+    // Activity modifier
+    var activityMod = { low: 2, moderate: 0, high: -1 };
+    humanAge += (activityMod[activityLevel] || 0);
+
+    return humanAge;
+  }
+
+  // ===== FORM SUBMISSION =====
+  document.getElementById('dog-age-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    var errorEl = document.getElementById('form-error');
+    errorEl.classList.remove('visible');
+    errorEl.textContent = '';
+
+    // Gather values
+    var dogName = (document.getElementById('dog-name').value.trim() || '').replace(/[<>]/g, '');
+    var displayName = dogName || 'Your dog';
+    var years = parseInt(document.getElementById('age-years').value, 10);
+    var months = parseInt(document.getElementById('age-months').value, 10);
+    var totalYears = years + (months / 12);
+
+    var sizeRadio = document.querySelector('input[name="dog-size"]:checked');
+    var size = sizeRadio ? sizeRadio.value : null;
+
+    var activeBodyBtn = document.querySelector('.btn-option[data-group="body"].active');
+    var bodyCondition = activeBodyBtn ? activeBodyBtn.getAttribute('data-value') : 'ideal';
+
+    var activeActivityBtn = document.querySelector('.btn-option[data-group="activity"].active');
+    var activityLevel = activeActivityBtn ? activeActivityBtn.getAttribute('data-value') : 'moderate';
+
+    // Validation
+    if (totalYears === 0) {
+      errorEl.textContent = 'Please enter your dog\'s age — at least a few months.';
+      errorEl.classList.add('visible');
+      return;
+    }
+    if (!size) {
+      errorEl.textContent = 'Please select your dog\'s size to continue.';
+      errorEl.classList.add('visible');
+      return;
+    }
+
+    // Very young puppy edge case
+    if (totalYears < 0.1) {
+      showEdgeCaseResult(displayName);
+      return;
+    }
+
+    var humanAge = calculateHumanAge(totalYears, size, bodyCondition, activityLevel);
+    var sevenxAge = Math.round(totalYears * 7);
+    var stage = getLifeStage(totalYears, size);
+    var stageData = lifeStageData[stage];
+
+    // Populate results
+    document.getElementById('result-human-age').textContent = humanAge;
+    document.getElementById('result-stage-badge').textContent = stageData.badge;
+
+    var headline;
+    if (dogName) {
+      headline = dogName + ' is biologically ' + humanAge + ' human years old.';
+    } else {
+      headline = 'Your dog is biologically ' + humanAge + ' human years old.';
+    }
+    document.getElementById('result-headline').textContent = headline;
+
+    var vsText = 'The old rule would say ' + displayName + ' is ' + sevenxAge + ' human years old. The science says ' + humanAge + '.';
+    document.getElementById('result-vs-text').textContent = vsText;
+
+    document.getElementById('result-stage-title').textContent = stageData.title;
+    document.getElementById('result-stage-desc').textContent = stageData.description;
+
+    var prioritiesList = document.getElementById('result-priorities');
+    prioritiesList.innerHTML = '';
+    stageData.priorities.forEach(function(p) {
+      var li = document.createElement('li');
+      li.textContent = p;
+      prioritiesList.appendChild(li);
+    });
+
+    var shareText = displayName + ' is ' + humanAge + ' human years old — not ' + sevenxAge + ' like the old rule says. Try the calculator: wattspet.com/dog-age-calculator';
+    document.getElementById('share-text-box').textContent = shareText;
+
+    // Show results
+    var resultsSection = document.getElementById('results-section');
+    resultsSection.style.display = 'block';
+    // Force reflow then fade in
+    void resultsSection.offsetHeight;
+    resultsSection.classList.add('visible');
+
+    // Smooth scroll to results
+    setTimeout(function() {
+      resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 50);
+  });
+
+  function showEdgeCaseResult(displayName) {
+    document.getElementById('result-human-age').textContent = '<1';
+    document.getElementById('result-stage-badge').textContent = 'Newborn';
+    document.getElementById('result-headline').textContent = displayName + ' is less than 1 human year old — in the most rapid development phase of their life.';
+    document.getElementById('result-vs-text').textContent = 'At this age, the epigenetic clock shows your puppy\'s DNA is changing faster than at any other point in their life.';
+    document.getElementById('result-stage-title').textContent = lifeStageData.puppy.title;
+    document.getElementById('result-stage-desc').textContent = lifeStageData.puppy.description;
+    var prioritiesList = document.getElementById('result-priorities');
+    prioritiesList.innerHTML = '';
+    lifeStageData.puppy.priorities.forEach(function(p) {
+      var li = document.createElement('li');
+      li.textContent = p;
+      prioritiesList.appendChild(li);
+    });
+    document.getElementById('share-text-box').textContent = displayName + ' is still a newborn puppy — biologically in the most intense development phase of their life. Try the calculator: wattspet.com/dog-age-calculator';
+
+    var resultsSection = document.getElementById('results-section');
+    resultsSection.style.display = 'block';
+    void resultsSection.offsetHeight;
+    resultsSection.classList.add('visible');
+    setTimeout(function() {
+      resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 50);
+  }
+
+  // ===== COPY TO CLIPBOARD =====
+  document.getElementById('copy-btn').addEventListener('click', function() {
+    var text = document.getElementById('share-text-box').textContent;
+    var btn = this;
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function() {
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(function() {
+          btn.textContent = 'Copy to clipboard';
+          btn.classList.remove('copied');
+        }, 2000);
+      }).catch(function() {
+        fallbackCopy(text, btn);
+      });
+    } else {
+      fallbackCopy(text, btn);
+    }
+  });
+
+  function fallbackCopy(text, btn) {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try {
+      document.execCommand('copy');
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+      setTimeout(function() {
+        btn.textContent = 'Copy to clipboard';
+        btn.classList.remove('copied');
+      }, 2000);
+    } catch (err) {}
+    document.body.removeChild(ta);
+  }
+
+  // ===== RESULTS EMAIL FORM =====
+  (function() {
+    var form = document.getElementById('results-email-form');
+    var successMsg = document.getElementById('results-email-success');
+    if (!form) return;
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function(res) {
+        if (res.ok) {
+          form.style.display = 'none';
+          successMsg.style.display = 'block';
+          localStorage.setItem('watts-subscribed', '1');
+        } else {
+          form.submit();
+        }
+      }).catch(function() {
+        form.submit();
+      });
+    });
+  })();
+
+  // ===== STICKY EMAIL CTA =====
+  (function() {
+    var cta = document.getElementById('sticky-email-cta');
+    var closeBtn = document.getElementById('sticky-cta-close');
+    var form = document.getElementById('sticky-cta-form');
+    var successMsg = document.getElementById('sticky-cta-success');
+    if (!cta) return;
+    if (localStorage.getItem('watts-cta-dismissed') || localStorage.getItem('watts-subscribed')) return;
+
+    var shown = false;
+    function showCta() {
+      if (shown) return;
+      shown = true;
+      cta.style.display = 'block';
+      void cta.offsetHeight;
+      cta.classList.add('visible');
+      cta.setAttribute('aria-hidden', 'false');
+    }
+
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 300) showCta();
+    }, { passive: true });
+
+    closeBtn.addEventListener('click', function() {
+      cta.classList.remove('visible');
+      cta.setAttribute('aria-hidden', 'true');
+      localStorage.setItem('watts-cta-dismissed', '1');
+      setTimeout(function() { cta.style.display = 'none'; }, 350);
+    });
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function(res) {
+        if (res.ok) {
+          form.style.display = 'none';
+          successMsg.style.display = 'block';
+          localStorage.setItem('watts-subscribed', '1');
+          setTimeout(function() {
+            cta.classList.remove('visible');
+            setTimeout(function() { cta.style.display = 'none'; }, 350);
+          }, 2500);
+        } else {
+          form.submit();
+        }
+      }).catch(function() {
+        form.submit();
+      });
+    });
+  })();
+  </script>
+</body>
+</html>
