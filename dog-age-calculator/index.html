@@ -1192,7 +1192,7 @@
         "name": "Why does breed size matter?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Larger dogs have shorter lifespans than smaller dogs. A 7-year-old Great Dane is biologically much older than a 7-year-old Chihuahua. The calculator adjusts for this by scaling the chronological age before applying the formula."
+          "text": "Breed size affects when dogs enter each life stage, not the rate of epigenetic aging itself. A 2022 PNAS study (Horvath et al.) across 93 breeds found no significant difference in epigenetic aging rate by size. However, larger breeds have shorter lifespans — Giant breeds average 9.5 years vs. 13.5 years for small breeds (Montoya et al. 2023, n=13M dogs). So a 7-year-old Great Dane is closer to their senior years than a 7-year-old Chihuahua. This calculator uses breed size to determine life stage thresholds, not to scale the biological age number."
         }
       },
       {
@@ -1239,7 +1239,7 @@
       <!-- ===== INTRO SECTION ===== -->
       <div class="page-intro">
         <h1>Dog Age Calculator</h1>
-        <p class="intro-subheading">The "multiply by 7" rule has been debunked. Dogs age logarithmically — they develop rapidly in their first year and slow down as they get older. This calculator uses the 2020 epigenetic clock research from UC San Diego to give you your dog's real biological age.</p>
+        <p class="intro-subheading">The "multiply by 7" rule has been debunked. Dogs age logarithmically — they develop extremely rapidly in early life and slow down as they get older. This calculator uses the formula from the 2020 epigenetic clock study by Wang et al. (UC San Diego, <em>Cell Systems</em>) to estimate biological age. Breed size determines your dog's life stage — larger breeds reach senior years earlier despite having the same epigenetic aging rate.</p>
 
         <div class="callout">
           <div class="callout-content">
@@ -1468,7 +1468,7 @@
 
         <div class="faq-item">
           <h3>Why does breed size matter?</h3>
-          <p>Larger dogs have shorter lifespans than smaller dogs. A 7-year-old Great Dane is biologically much older than a 7-year-old Chihuahua. The calculator adjusts for this by scaling the chronological age before applying the formula.</p>
+          <p>Breed size affects when dogs enter each life stage, not the rate of epigenetic aging itself. A 2022 PNAS study (Horvath et al.) across 93 breeds found no significant difference in epigenetic aging rate by size — so the biological age number is the same formula for all sizes. However, larger breeds have shorter lifespans (Giant breeds average 9.5 years vs. 13.5 years for small breeds, per Montoya et al. 2023), so a 7-year-old Great Dane is much closer to their senior years than a 7-year-old Chihuahua. This calculator uses size to set life stage thresholds, not to alter the age calculation.</p>
         </div>
 
         <div class="faq-item">
@@ -1643,12 +1643,14 @@
   }
 
   function calculateHumanAge(totalYears, size, bodyCondition, activityLevel) {
-    var sizeScale = { small: 0.80, medium: 1.0, large: 1.09, giant: 1.33 };
-    var scaledAge = totalYears * sizeScale[size];
+    if (totalYears < 0.1) return null; // very young puppy edge case
 
-    if (scaledAge < 0.1) return null; // very young puppy edge case
-
-    var humanAge = Math.round(16 * Math.log(scaledAge) + 31);
+    // Formula: Wang et al. 2020, Cell Systems (DOI: 10.1016/j.cels.2020.06.006)
+    // Derived from Labrador Retrievers. A 2022 PNAS study (Horvath et al.) across
+    // 93 breeds found the epigenetic aging rate does not significantly differ by
+    // breed size — so no size scaling is applied to the core formula.
+    // Size is used only for life stage thresholds below.
+    var humanAge = Math.round(16 * Math.log(totalYears) + 31);
 
     // Body condition modifier
     var bodyMod = { lean: -1, ideal: 0, overweight: 3 };
