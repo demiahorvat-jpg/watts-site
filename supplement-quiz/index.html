@@ -1368,6 +1368,7 @@
     radio.addEventListener('change', function() {
       state.size = this.value;
       document.getElementById('step2-next').disabled = false;
+      setTimeout(function() { showStep(3); }, 250);
     });
   });
   document.getElementById('step2-next').addEventListener('click', function() {
@@ -1379,6 +1380,7 @@
     radio.addEventListener('change', function() {
       state.stage = this.value;
       document.getElementById('step3-next').disabled = false;
+      setTimeout(function() { showStep(4); }, 250);
     });
   });
   document.getElementById('step3-next').addEventListener('click', function() {
@@ -1426,6 +1428,7 @@
     radio.addEventListener('change', function() {
       state.diet = this.value;
       document.getElementById('step5-next').disabled = false;
+      setTimeout(function() { showResults(); }, 250);
     });
   });
   document.getElementById('step5-next').addEventListener('click', function() {
