@@ -1211,6 +1211,14 @@
       },
       {
         "@type": "Question",
+        "name": "Does spaying or neutering affect how long a dog lives?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. A large study (Hoffman et al. 2013, PLOS ONE) found neutered males lived a median 13.8 years vs. 11.1 years for intact males, and spayed females 13.6 years vs. 11.3 years. The benefit is mainly from eliminating reproductive cancers. However, large and giant breeds may face higher rates of certain other cancers after early neutering (Hart et al. 2020). Overall longevity data favors altered status for most dogs, though timing and breed size matter."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Does my dog's weight affect their biological age?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -1392,12 +1400,21 @@
                 </div>
               </div>
 
-              <div class="form-group" style="margin-bottom:0;">
+              <div class="form-group" style="margin-bottom:20px;">
                 <label class="form-label">Activity level</label>
                 <div class="btn-group" role="group" aria-label="Activity level">
                   <button type="button" class="btn-option" data-group="activity" data-value="low">Low</button>
                   <button type="button" class="btn-option active" data-group="activity" data-value="moderate">Moderate</button>
                   <button type="button" class="btn-option" data-group="activity" data-value="high">High</button>
+                </div>
+              </div>
+
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label">Spay / Neuter status</label>
+                <div class="btn-group" role="group" aria-label="Spay neuter status">
+                  <button type="button" class="btn-option active" data-group="neuter" data-value="unknown">Not sure</button>
+                  <button type="button" class="btn-option" data-group="neuter" data-value="altered">Spayed / Neutered</button>
+                  <button type="button" class="btn-option" data-group="neuter" data-value="intact">Intact</button>
                 </div>
               </div>
 
@@ -1442,6 +1459,9 @@
             <h3>Nutritional priorities at this stage</h3>
             <ul id="result-priorities"></ul>
           </div>
+
+          <!-- Spay/neuter note (shown only when a status is selected) -->
+          <div id="neuter-note" style="display:none; margin: 0 0 32px; padding: 16px 20px; background: var(--bg-light); border-left: 4px solid var(--brand-orange); border-radius: 0 8px 8px 0; font-size: 15px; line-height: 1.6; color: var(--text-dark);"></div>
 
           <!-- Share section -->
           <div class="share-section">
@@ -1489,6 +1509,11 @@
         <div class="faq-item">
           <h3>What should I do differently based on my dog's life stage?</h3>
           <p>Different life stages have different nutritional priorities. Puppies need DHA and complete nutrition for development. Adults benefit from omega-3 and probiotics. Seniors need joint support, higher omega-3, and antioxidants. The calculator shows specific priorities for your dog's current stage.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Does spaying or neutering affect how long a dog lives?</h3>
+          <p>Yes, and the data is fairly consistent. A large study by Hoffman et al. (2013, PLOS ONE) found that neutered males lived a median 13.8 years vs. 11.1 years for intact males, and spayed females 13.6 years vs. 11.3 years. The lifespan benefit is thought to come primarily from eliminating reproductive cancers (mammary tumors in females, testicular cancer in males) and — to some degree — reduced roaming behavior that leads to accidents. However, the picture is more nuanced in large and giant breeds: research including the Hart et al. 2020 study across 35 breeds found that early neuter increased rates of certain joint disorders and cancers (osteosarcoma, hemangiosarcoma, lymphoma) in breeds like Rottweilers and Golden Retrievers. The overall longevity data still favors altered status for most dogs, but the timing of the procedure and breed size matter. This calculator doesn't modify the calculated age based on neuter status — there's no validated formula for that — but it shows context based on what you report.</p>
         </div>
 
         <div class="faq-item">
@@ -1762,6 +1787,23 @@
       }
       prioritiesList.appendChild(li);
     });
+
+    // Spay/neuter note
+    var activeNeuterBtn = document.querySelector('.btn-option[data-group="neuter"].active');
+    var neuterStatus = activeNeuterBtn ? activeNeuterBtn.getAttribute('data-value') : 'unknown';
+    var neuterNote = document.getElementById('neuter-note');
+    var neuterMessages = {
+      altered: '<strong>Spayed/neutered:</strong> Altered dogs live longer on average — a large study found neutered males lived ~2.7 years longer and spayed females ~2.3 years longer than intact dogs (Hoffman et al. 2013, PLOS ONE). The mechanism involves elimination of reproductive cancers, though some studies note increased risk of certain other cancers in large breeds. Overall, the longevity data favors altered status.',
+      intact: '<strong>Intact:</strong> Intact dogs have higher risks of reproductive cancers (mammary tumors, testicular cancer) and statistically shorter lifespans on average. That said, research on large and giant breeds suggests intact dogs may have lower rates of some other cancers (osteosarcoma, hemangiosarcoma). The risk/benefit calculus is breed- and size-dependent — worth a conversation with your vet.',
+      unknown: null
+    };
+    var msg = neuterMessages[neuterStatus];
+    if (msg) {
+      neuterNote.innerHTML = msg;
+      neuterNote.style.display = 'block';
+    } else {
+      neuterNote.style.display = 'none';
+    }
 
     var shareText = displayName + ' is ' + humanAge + ' human years old — not ' + sevenxAge + ' like the old rule says. Try the calculator: wattspet.com/dog-age-calculator';
     document.getElementById('share-text-box').textContent = shareText;
