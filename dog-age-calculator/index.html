@@ -769,6 +769,12 @@
       margin-bottom: 10px;
     }
     .priorities-section li:last-child { margin-bottom: 0; }
+    .priorities-section li a {
+      color: var(--brand-orange);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .priorities-section li a:hover { opacity: 0.8; }
     @media (min-width: 768px) {
       .priorities-section li { font-size: 17px; }
     }
@@ -1577,10 +1583,10 @@
       badge: 'Puppy',
       description: 'More biological change happens in your dog\'s first year than any other period of their life. By 7 weeks, a puppy\'s DNA methylation pattern already resembles a 35-year-old human. This phase is about establishing a foundation — nutrition, socialization, and healthy growth matter enormously.',
       priorities: [
-        'Complete and balanced puppy nutrition',
-        'DHA for brain and eye development',
-        'Appropriate protein for muscle growth',
-        'Avoid over-supplementing — excess can disrupt growth'
+        { text: 'Complete and balanced puppy nutrition', url: '/blog/puppy-vitamins.html' },
+        { text: 'DHA for brain and eye development', url: '/blog/omega-3-fish-oil-for-dogs.html' },
+        { text: 'Appropriate protein for muscle growth', url: '/blog/protein-for-dogs.html' },
+        { text: 'Avoid over-supplementing — excess can disrupt growth', url: null }
       ]
     },
     adolescent: {
@@ -1588,10 +1594,10 @@
       badge: 'Adolescent',
       description: 'Most physical development is complete. Biologically, your dog is now in their 30s or 40s — a fully developed adult in all but social maturity. Energy is high and joints are being stressed by activity.',
       priorities: [
-        'Omega-3 fatty acids for inflammation management',
-        'Joint health foundation before problems develop',
-        'Probiotics to establish a healthy gut microbiome',
-        'Maintain lean body condition — weight issues compound over time'
+        { text: 'Omega-3 fatty acids for inflammation management', url: '/blog/omega-3-fish-oil-for-dogs.html' },
+        { text: 'Joint health foundation before problems develop', url: '/blog/joint-supplements-for-dogs.html' },
+        { text: 'Probiotics to establish a healthy gut microbiome', url: '/blog/probiotics-for-dogs.html' },
+        { text: 'Maintain lean body condition — weight issues compound over time', url: null }
       ]
     },
     adult: {
@@ -1599,10 +1605,10 @@
       badge: 'Adult',
       description: 'The stable years. Health outcomes in this phase are largely determined by the habits established now — body weight, exercise consistency, and nutritional quality. This is the time to build the reserve your dog will draw on in their senior years.',
       priorities: [
-        'Omega-3 for coat, inflammation, and cardiovascular health',
-        'Probiotics for digestive and immune health',
-        'Maintain ideal body weight — even mild obesity shortens lifespan',
-        'Annual vet checks to catch issues early'
+        { text: 'Omega-3 for coat, inflammation, and cardiovascular health', url: '/blog/omega-3-fish-oil-for-dogs.html' },
+        { text: 'Probiotics for digestive and immune health', url: '/blog/probiotics-for-dogs.html' },
+        { text: 'Organ-based nutrition for micronutrient density', url: '/blog/organ-based-nutrition-for-dogs.html' },
+        { text: 'Annual vet checks to catch issues early', url: null }
       ]
     },
     senior: {
@@ -1610,11 +1616,11 @@
       badge: 'Senior',
       description: 'Metabolism is slowing, joints are accumulating wear, and the risk of cognitive changes is rising. Dog cognitive dysfunction syndrome affects roughly 28% of dogs aged 11–12. This phase requires more active management of nutrition and supplementation.',
       priorities: [
-        'Joint support becomes important — glucosamine, green-lipped mussel',
-        'Omega-3 at higher doses for inflammation and brain health',
-        'Antioxidants to combat oxidative stress (vitamin E, CoQ10)',
-        'Digestive enzyme support as gut efficiency decreases',
-        'Watch for cognitive changes — confusion, disrupted sleep, disorientation'
+        { text: 'Joint support — glucosamine, green-lipped mussel', url: '/blog/green-lipped-mussel-for-dogs.html' },
+        { text: 'Omega-3 at higher doses for inflammation and brain health', url: '/blog/omega-3-fish-oil-for-dogs.html' },
+        { text: 'Antioxidants to combat oxidative stress (vitamin E, CoQ10)', url: '/blog/antioxidants-for-dogs.html' },
+        { text: 'Digestive enzyme support as gut efficiency decreases', url: '/blog/digestive-enzymes-for-dogs.html' },
+        { text: 'Watch for cognitive changes — confusion, disrupted sleep, disorientation', url: null }
       ]
     },
     geriatric: {
@@ -1622,11 +1628,11 @@
       badge: 'Geriatric',
       description: 'Your dog is in the final chapter, and quality of life is the priority. Muscle mass loss (sarcopenia), joint pain, cognitive decline, and reduced organ efficiency are the main challenges. Every supplement and nutrition decision should be weighed against its impact on how your dog feels day to day.',
       priorities: [
-        'All senior priorities apply, plus:',
-        'Protein quality matters more (muscle preservation)',
-        'Easy-to-digest formats',
-        'Regular vet monitoring of organ function',
-        'Quality of life over quantity of interventions'
+        { text: 'All senior priorities apply, plus:', url: null },
+        { text: 'Protein quality matters more — muscle preservation', url: '/blog/protein-for-dogs.html' },
+        { text: 'What science says extends dog lifespan', url: '/blog/what-extends-dog-lifespan.html' },
+        { text: 'Regular vet monitoring of organ function', url: null },
+        { text: 'Quality of life over quantity of interventions', url: null }
       ]
     }
   };
@@ -1732,7 +1738,14 @@
     prioritiesList.innerHTML = '';
     stageData.priorities.forEach(function(p) {
       var li = document.createElement('li');
-      li.textContent = p;
+      if (p.url) {
+        var a = document.createElement('a');
+        a.href = p.url;
+        a.textContent = p.text;
+        li.appendChild(a);
+      } else {
+        li.textContent = p.text;
+      }
       prioritiesList.appendChild(li);
     });
 
@@ -1763,7 +1776,14 @@
     prioritiesList.innerHTML = '';
     lifeStageData.puppy.priorities.forEach(function(p) {
       var li = document.createElement('li');
-      li.textContent = p;
+      if (p.url) {
+        var a = document.createElement('a');
+        a.href = p.url;
+        a.textContent = p.text;
+        li.appendChild(a);
+      } else {
+        li.textContent = p.text;
+      }
       prioritiesList.appendChild(li);
     });
     document.getElementById('share-text-box').textContent = displayName + ' is still a newborn puppy — biologically in the most intense development phase of their life. Try the calculator: wattspet.com/dog-age-calculator';
