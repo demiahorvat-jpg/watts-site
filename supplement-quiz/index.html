@@ -989,28 +989,42 @@
               <input type="radio" name="quiz-diet" value="raw">
               <div class="diet-card-inner">
                 <span class="diet-card-name">Raw or home-cooked</span>
-                <span class="diet-card-desc">Whole food diet, minimal processing</span>
+                <span class="diet-card-desc">Whole food, unprocessed or minimally processed</span>
               </div>
             </label>
             <label class="diet-card-label">
-              <input type="radio" name="quiz-diet" value="premium">
+              <input type="radio" name="quiz-diet" value="fresh">
               <div class="diet-card-inner">
-                <span class="diet-card-name">Premium kibble or wet food</span>
-                <span class="diet-card-desc">Named brands, quality ingredient lists</span>
+                <span class="diet-card-name">Fresh or frozen</span>
+                <span class="diet-card-desc">Lightly cooked, refrigerated or frozen (e.g. The Farmer's Dog, Nom Nom)</span>
+              </div>
+            </label>
+            <label class="diet-card-label">
+              <input type="radio" name="quiz-diet" value="wet">
+              <div class="diet-card-inner">
+                <span class="diet-card-name">Wet / canned food</span>
+                <span class="diet-card-desc">High moisture, more processing than fresh</span>
+              </div>
+            </label>
+            <label class="diet-card-label">
+              <input type="radio" name="quiz-diet" value="premium-kibble">
+              <div class="diet-card-inner">
+                <span class="diet-card-name">Premium dry kibble</span>
+                <span class="diet-card-desc">Named brands with quality ingredient lists</span>
               </div>
             </label>
             <label class="diet-card-label">
               <input type="radio" name="quiz-diet" value="standard">
               <div class="diet-card-inner">
-                <span class="diet-card-name">Standard kibble</span>
-                <span class="diet-card-desc">Grocery store brands, less transparency</span>
+                <span class="diet-card-name">Standard dry kibble</span>
+                <span class="diet-card-desc">Grocery store brands, less ingredient transparency</span>
               </div>
             </label>
             <label class="diet-card-label">
               <input type="radio" name="quiz-diet" value="mixed">
               <div class="diet-card-inner">
                 <span class="diet-card-name">Mixed</span>
-                <span class="diet-card-desc">Kibble with toppers, rotating proteins, etc.</span>
+                <span class="diet-card-desc">Rotating between types, toppers, or combination feeding</span>
               </div>
             </label>
           </div>
@@ -1190,10 +1204,12 @@
   };
 
   var dietScores = {
-    raw:     { organ: -1 },
-    premium: {},
-    standard: { organ: 2, probiotics: 1 },
-    mixed:   {}
+    raw:            { organ: -1 },                      // enzymes intact, often high organ content already
+    fresh:          {},                                  // lightly cooked, close to raw — minimal gaps
+    wet:            { probiotics: 1 },                  // processed but better than kibble
+    'premium-kibble': { organ: 1, probiotics: 1 },      // heat-processed, better ingredients but still gaps
+    standard:       { organ: 2, probiotics: 1 },        // biggest nutritional gaps
+    mixed:          {}
   };
 
   function calculateScores(state) {
@@ -1267,7 +1283,7 @@
       },
       organ: function() {
         if (has('energy')) return n + '\'s energy concern is often a micronutrient gap issue. Organ meats — liver, kidney, heart — are the most nutrient-dense whole foods available: concentrated B vitamins (B12, folate, riboflavin), CoQ10, iron, zinc, and fat-soluble vitamins. Most commercial dog foods contain inadequate organ content. This is the most efficient way to close nutritional gaps.';
-        if (state.diet === 'standard') return 'Standard kibble often contains minimal organ content despite regulations permitting "meat and bone meal." Beef liver and kidney are extraordinarily rich in B12, iron, folate, and fat-soluble vitamins that are systematically underrepresented in ' + n + '\'s likely current diet.';
+        if (state.diet === 'standard' || state.diet === 'premium-kibble') return 'Dry kibble — even premium brands — often contains inadequate organ content. High-heat processing also degrades fat-soluble vitamins. Beef liver and kidney are extraordinarily rich in B12, iron, folate, CoQ10, and fat-soluble vitamins that are underrepresented in ' + n + '\'s likely current diet.';
         return 'Organ-based nutrition delivers bioavailable micronutrients that synthetic supplements can\'t fully replicate — B vitamins, CoQ10, iron, and fat-soluble vitamins in their natural food matrix. A foundational gap-filler for any dog on commercial food.';
       },
       calming: function() {
