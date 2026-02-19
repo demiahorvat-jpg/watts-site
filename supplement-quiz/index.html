@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Supplement Quiz — Personalized Recommendations | Watts</title>
+  <meta name="description" content="Answer 4 quick questions and get personalized supplement recommendations based on your dog's size, age, and health concerns. Science-backed, no fluff.">
+  <link rel="canonical" href="https://wattspet.com/supplement-quiz/">
+  <meta property="og:title" content="Dog Supplement Quiz — Find the Right Supplements | Watts">
+  <meta property="og:description" content="Personalized supplement recommendations based on your dog's size, age, and health concerns.">
+  <meta property="og:url" content="https://wattspet.com/supplement-quiz/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <script src="https://analytics.ahrefs.com/analytics.js" data-key="22KmtuYXO77ED5o6fe6z1w" async></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C6KV5WBGK5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C6KV5WBGK5');
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Dog Supplement Quiz — Personalized Recommendations",
+    "description": "Answer 4 quick questions and get personalized supplement recommendations based on your dog's size, age, and health concerns.",
+    "url": "https://wattspet.com/supplement-quiz/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Watts Pet",
+      "url": "https://wattspet.com"
+    }
+  }
+  </script>
+
+  <style>
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Semibold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Degular';
+      src: url('/fonts/Degular-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      --brand-orange: #c03800;
+      --bg-light: #f1f1f1;
+      --text-dark: #191919;
+      --white: #ffffff;
+      --text-muted: #666666;
+      --border-light: rgba(25, 25, 25, 0.1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { min-height: 100%; }
+
+    body {
+      background: #191919;
+      color: var(--text-dark);
+      font-family: 'Degular', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* ===== HEADER ===== */
+    .header-wrapper {
+      background: #191919;
+      padding: 12px 12px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header {
+      background: var(--brand-orange);
+      padding: 7px 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .header-logo {
+      height: 32px;
+      width: auto;
+      flex-shrink: 0;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 4px;
+      align-items: center;
+    }
+    nav ul a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 8px;
+      transition: background 0.15s;
+    }
+    nav ul a:hover { background: rgba(255,255,255,0.15); }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+      transition: all 0.2s;
+    }
+    @media (max-width: 640px) {
+      .hamburger { display: flex; }
+      nav ul {
+        display: none;
+        position: absolute;
+        top: calc(100% + 8px);
+        right: 12px;
+        background: var(--brand-orange);
+        border-radius: 12px;
+        padding: 8px;
+        flex-direction: column;
+        gap: 2px;
+        min-width: 160px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      }
+      nav ul.active { display: flex; }
+      nav ul a { padding: 10px 14px; display: block; width: 100%; }
+    }
+
+    /* ===== MAIN LAYOUT ===== */
+    main {
+      background: var(--white);
+      min-height: calc(100vh - 80px);
+    }
+    .page-wrapper {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+
+    /* ===== INTRO ===== */
+    .quiz-intro {
+      text-align: center;
+      padding: 24px 0 40px;
+    }
+    .quiz-intro-label {
+      display: inline-block;
+      background: var(--brand-orange);
+      color: var(--white);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    .quiz-intro h1 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      .quiz-intro h1 { font-size: 40px; }
+    }
+    .quiz-intro p {
+      font-size: 17px;
+      color: var(--text-muted);
+      max-width: 480px;
+      margin: 0 auto 32px;
+      line-height: 1.6;
+    }
+    .start-btn {
+      background: var(--brand-orange);
+      color: var(--white);
+      border: none;
+      border-radius: 10px;
+      padding: 16px 40px;
+      font-size: 18px;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      transition: opacity 0.15s;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    .start-btn:hover { opacity: 0.88; }
+    .intro-disclaimer {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* ===== PROGRESS ===== */
+    .progress-wrap {
+      margin-bottom: 40px;
+    }
+    .progress-label {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+    .progress-track {
+      height: 4px;
+      background: var(--bg-light);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--brand-orange);
+      border-radius: 4px;
+      transition: width 0.35s ease;
+    }
+
+    /* ===== QUIZ STEPS ===== */
+    .quiz-step {
+      animation: stepIn 0.25s ease;
+    }
+    @keyframes stepIn {
+      from { opacity: 0; transform: translateX(16px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    .step-heading {
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 8px;
+      color: var(--text-dark);
+    }
+    @media (min-width: 768px) {
+      .step-heading { font-size: 30px; }
+    }
+    .step-sub {
+      font-size: 15px;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+    }
+
+    /* Name input */
+    .name-input {
+      width: 100%;
+      padding: 14px 18px;
+      font-size: 18px;
+      font-family: inherit;
+      font-weight: 500;
+      border: 2px solid var(--border-light);
+      border-radius: 10px;
+      outline: none;
+      color: var(--text-dark);
+      background: var(--white);
+      transition: border-color 0.15s;
+      margin-bottom: 28px;
+    }
+    .name-input:focus { border-color: var(--brand-orange); }
+
+    /* Size cards */
+    .size-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+    @media (min-width: 480px) {
+      .size-grid { grid-template-columns: repeat(4, 1fr); }
+    }
+    .size-card-label { cursor: pointer; }
+    .size-card-label input { display: none; }
+    .size-card-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 16px 10px;
+      border: 2px solid var(--border-light);
+      border-radius: 12px;
+      background: var(--white);
+      transition: all 0.15s;
+      gap: 4px;
+    }
+    .size-card-label input:checked + .size-card-inner {
+      border-color: var(--brand-orange);
+      background: #fff5f0;
+    }
+    .size-card-inner:hover { border-color: rgba(192,56,0,0.4); }
+    .size-card-name { font-size: 16px; font-weight: 700; color: var(--text-dark); }
+    .size-card-weight { font-size: 12px; font-weight: 600; color: var(--brand-orange); }
+    .size-card-breeds { font-size: 11px; color: var(--text-muted); line-height: 1.4; }
+
+    /* Stage cards */
+    .stage-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+    @media (min-width: 480px) {
+      .stage-grid { flex-direction: row; flex-wrap: wrap; }
+      .stage-card-label { flex: 1; min-width: 100px; }
+    }
+    .stage-card-label { cursor: pointer; }
+    .stage-card-label input { display: none; }
+    .stage-card-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 14px 10px;
+      border: 2px solid var(--border-light);
+      border-radius: 12px;
+      background: var(--white);
+      transition: all 0.15s;
+      gap: 2px;
+      height: 100%;
+    }
+    .stage-card-label input:checked + .stage-card-inner {
+      border-color: var(--brand-orange);
+      background: #fff5f0;
+    }
+    .stage-card-inner:hover { border-color: rgba(192,56,0,0.4); }
+    .stage-card-name { font-size: 15px; font-weight: 700; color: var(--text-dark); }
+    .stage-card-age { font-size: 12px; color: var(--text-muted); }
+
+    /* Concern cards (multi-select) */
+    .concerns-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+    @media (min-width: 480px) {
+      .concerns-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    .concern-card {
+      cursor: pointer;
+      padding: 14px 12px;
+      border: 2px solid var(--border-light);
+      border-radius: 12px;
+      background: var(--white);
+      transition: all 0.15s;
+      text-align: center;
+      user-select: none;
+    }
+    .concern-card:hover { border-color: rgba(192,56,0,0.4); }
+    .concern-card.selected {
+      border-color: var(--brand-orange);
+      background: #fff5f0;
+    }
+    .concern-card.at-limit {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+    .concern-card.at-limit:hover { border-color: var(--border-light); }
+    .concern-card.selected.at-limit {
+      opacity: 1;
+      cursor: pointer;
+    }
+    .concern-name { font-size: 14px; font-weight: 600; color: var(--text-dark); line-height: 1.3; }
+    .concern-check {
+      display: none;
+      width: 18px;
+      height: 18px;
+      background: var(--brand-orange);
+      border-radius: 50%;
+      margin: 0 auto 6px;
+      align-items: center;
+      justify-content: center;
+    }
+    .concern-card.selected .concern-check { display: flex; }
+    .concern-check::after {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 10px;
+      border-right: 2px solid var(--white);
+      border-bottom: 2px solid var(--white);
+      transform: rotate(45deg) translate(-1px, -1px);
+    }
+
+    /* Diet cards */
+    .diet-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+    .diet-card-label { cursor: pointer; }
+    .diet-card-label input { display: none; }
+    .diet-card-inner {
+      display: flex;
+      flex-direction: column;
+      padding: 14px 18px;
+      border: 2px solid var(--border-light);
+      border-radius: 12px;
+      background: var(--white);
+      transition: all 0.15s;
+    }
+    .diet-card-label input:checked + .diet-card-inner {
+      border-color: var(--brand-orange);
+      background: #fff5f0;
+    }
+    .diet-card-inner:hover { border-color: rgba(192,56,0,0.4); }
+    .diet-card-name { font-size: 15px; font-weight: 700; color: var(--text-dark); }
+    .diet-card-desc { font-size: 13px; color: var(--text-muted); }
+
+    /* Step nav */
+    .step-nav {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .next-btn {
+      background: var(--brand-orange);
+      color: var(--white);
+      border: none;
+      border-radius: 10px;
+      padding: 14px 32px;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+    .next-btn:hover:not(:disabled) { opacity: 0.88; }
+    .next-btn:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+    }
+    .back-btn {
+      background: none;
+      color: var(--text-muted);
+      border: 2px solid var(--border-light);
+      border-radius: 10px;
+      padding: 12px 20px;
+      font-size: 15px;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .back-btn:hover { border-color: var(--text-dark); color: var(--text-dark); }
+    .skip-btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      padding: 4px;
+    }
+    .skip-btn:hover { color: var(--text-dark); }
+
+    /* ===== RESULTS ===== */
+    .results-section {
+      animation: stepIn 0.3s ease;
+    }
+    .results-header {
+      margin-bottom: 32px;
+    }
+    .results-label {
+      display: inline-block;
+      background: var(--brand-orange);
+      color: var(--white);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+    .results-heading {
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+    @media (min-width: 768px) {
+      .results-heading { font-size: 30px; }
+    }
+    .results-sub {
+      font-size: 16px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Rec cards */
+    .rec-cards { margin-bottom: 40px; }
+    .rec-card {
+      border-radius: 12px;
+      background: var(--bg-light);
+      margin-bottom: 16px;
+      overflow: hidden;
+    }
+    .rec-card-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 20px 12px;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .rec-rank {
+      width: 28px;
+      height: 28px;
+      background: var(--brand-orange);
+      color: var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .rec-title-wrap { flex: 1; }
+    .rec-name { font-size: 17px; font-weight: 700; color: var(--text-dark); }
+    .rec-tagline { font-size: 13px; color: var(--brand-orange); font-weight: 600; }
+    .rec-body { padding: 16px 20px; }
+    .rec-why { font-size: 15px; line-height: 1.65; color: var(--text-dark); margin-bottom: 16px; }
+    .rec-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .rec-link {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    .rec-link:hover { opacity: 0.8; }
+    .rec-link-blog {
+      background: var(--brand-orange);
+      color: var(--white);
+    }
+    .rec-link-ingredient {
+      background: var(--white);
+      color: var(--text-dark);
+      border: 1.5px solid var(--border-light);
+    }
+
+    /* Disclaimer */
+    .results-disclaimer {
+      background: var(--bg-light);
+      border-radius: 10px;
+      padding: 14px 18px;
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 32px;
+    }
+
+    /* Share + retake */
+    .results-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .share-btn {
+      background: var(--brand-orange);
+      color: var(--white);
+      border: none;
+      border-radius: 10px;
+      padding: 12px 24px;
+      font-size: 15px;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+    .share-btn:hover { opacity: 0.88; }
+    .retake-btn {
+      background: none;
+      border: 2px solid var(--border-light);
+      border-radius: 10px;
+      padding: 10px 20px;
+      font-size: 15px;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      color: var(--text-muted);
+      transition: all 0.15s;
+    }
+    .retake-btn:hover { border-color: var(--text-dark); color: var(--text-dark); }
+
+    /* Email CTA */
+    .email-cta-box {
+      background: var(--brand-orange);
+      border-radius: 4px;
+      padding: 8px;
+      margin-bottom: 32px;
+    }
+    .email-cta-inner {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 24px 28px;
+    }
+    .email-cta-inner h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .email-cta-inner p {
+      font-size: 15px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    .email-cta-form {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .email-cta-form input[type="email"] {
+      flex: 1;
+      min-width: 200px;
+      padding: 12px 16px;
+      border: 1.5px solid var(--border-light);
+      border-radius: 8px;
+      font-size: 15px;
+      font-family: inherit;
+      outline: none;
+      color: var(--text-dark);
+    }
+    .email-cta-form input[type="email"]:focus { border-color: var(--brand-orange); }
+    .email-cta-form button {
+      background: var(--brand-orange);
+      color: var(--white);
+      border: none;
+      border-radius: 8px;
+      padding: 12px 20px;
+      font-size: 15px;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .email-cta-form button:hover { opacity: 0.88; }
+    .email-success {
+      display: none;
+      font-size: 15px;
+      color: var(--brand-orange);
+      font-weight: 600;
+      margin-top: 8px;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer-wrapper {
+      background: #191919;
+      padding: 0 12px 12px;
+    }
+    footer {
+      background: #191919;
+      padding: 32px 20px;
+    }
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 12px;
+    }
+    .footer-right-text { text-align: right; }
+    .footer-right-text p { font-size: 13px; color: rgba(255,255,255,0.5); }
+    .footer-right-text a { color: rgba(255,255,255,0.7); text-decoration: none; }
+    .footer-right-text a:hover { color: var(--white); }
+    .footer-logo { height: 32px; width: auto; margin-top: 8px; }
+
+    /* ===== STICKY EMAIL CTA (mobile) ===== */
+    .sticky-email-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--brand-orange);
+      padding: 16px 20px 24px;
+      z-index: 500;
+      border-radius: 16px 16px 0 0;
+      transform: translateY(100%);
+      transition: transform 0.35s ease;
+    }
+    .sticky-email-cta.visible { transform: translateY(0); }
+    @media (min-width: 768px) { .sticky-email-cta { display: none !important; } }
+    .sticky-cta-close {
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      background: none;
+      border: none;
+      color: var(--white);
+      font-size: 18px;
+      cursor: pointer;
+      line-height: 1;
+      opacity: 0.8;
+    }
+    .sticky-cta-close:hover { opacity: 1; }
+    .sticky-cta-heading {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+    .sticky-cta-form {
+      display: flex;
+      gap: 8px;
+    }
+    .sticky-cta-form input[type="email"] {
+      flex: 1;
+      padding: 10px 14px;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      font-family: inherit;
+      outline: none;
+    }
+    .sticky-cta-form button {
+      background: var(--text-dark);
+      color: var(--white);
+      border: none;
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .sticky-cta-success { display: none; color: var(--white); font-size: 15px; font-weight: 600; }
+  </style>
+</head>
+<body>
+
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <a href="/"><img src="/watts-logo-white.svg" alt="Watts" class="header-logo"></a>
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav>
+          <ul>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
+            <li><a href="/dog-age-calculator/">Age Calculator</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <main>
+    <div class="page-wrapper">
+
+      <!-- ===== INTRO ===== -->
+      <div id="quiz-intro">
+        <div class="quiz-intro" style="padding-bottom: 0;">
+          <div class="quiz-intro-label">Quiz</div>
+          <h1>Find the right supplements for your dog</h1>
+          <p>Answer 4 quick questions. Get personalized recommendations based on your dog's size, age, and health priorities. No fluff — just the supplements that make sense for your dog.</p>
+          <button class="start-btn" id="start-btn">Start quiz</button>
+          <p class="intro-disclaimer">General information only — not a substitute for veterinary advice.</p>
+        </div>
+      </div>
+
+      <!-- ===== QUIZ CONTAINER ===== -->
+      <div id="quiz-container" style="display: none;">
+
+        <!-- Progress bar -->
+        <div class="progress-wrap">
+          <div class="progress-label" id="progress-label">Question 1 of 5</div>
+          <div class="progress-track">
+            <div class="progress-fill" id="progress-fill" style="width: 20%;"></div>
+          </div>
+        </div>
+
+        <!-- Step 1: Name -->
+        <div class="quiz-step" id="step-1">
+          <h2 class="step-heading">What's your dog's name?</h2>
+          <p class="step-sub">Optional — we use it to personalize your results.</p>
+          <input type="text" id="dog-name-input" class="name-input" placeholder="e.g. Bella" autocomplete="off" maxlength="30">
+          <div class="step-nav">
+            <button class="next-btn" id="step1-next">Continue</button>
+            <button class="skip-btn" id="step1-skip">Skip</button>
+          </div>
+        </div>
+
+        <!-- Step 2: Size -->
+        <div class="quiz-step" id="step-2" style="display: none;">
+          <h2 class="step-heading">How big is <span class="name-inline">your dog</span>?</h2>
+          <p class="step-sub">Size affects life stage thresholds and supplement dosing.</p>
+          <div class="size-grid" role="radiogroup" aria-label="Dog size">
+            <label class="size-card-label">
+              <input type="radio" name="quiz-size" value="small">
+              <div class="size-card-inner">
+                <span class="size-card-name">Small</span>
+                <span class="size-card-weight">Under 20 lbs</span>
+                <span class="size-card-breeds">Chihuahua, Pug, Shih Tzu</span>
+              </div>
+            </label>
+            <label class="size-card-label">
+              <input type="radio" name="quiz-size" value="medium">
+              <div class="size-card-inner">
+                <span class="size-card-name">Medium</span>
+                <span class="size-card-weight">20–50 lbs</span>
+                <span class="size-card-breeds">Beagle, Bulldog, Cocker Spaniel</span>
+              </div>
+            </label>
+            <label class="size-card-label">
+              <input type="radio" name="quiz-size" value="large">
+              <div class="size-card-inner">
+                <span class="size-card-name">Large</span>
+                <span class="size-card-weight">50–100 lbs</span>
+                <span class="size-card-breeds">Labrador, Husky, Boxer</span>
+              </div>
+            </label>
+            <label class="size-card-label">
+              <input type="radio" name="quiz-size" value="giant">
+              <div class="size-card-inner">
+                <span class="size-card-name">Giant</span>
+                <span class="size-card-weight">100+ lbs</span>
+                <span class="size-card-breeds">Great Dane, Mastiff, Saint Bernard</span>
+              </div>
+            </label>
+          </div>
+          <div class="step-nav">
+            <button class="back-btn" data-goto="1">Back</button>
+            <button class="next-btn" id="step2-next" disabled>Continue</button>
+          </div>
+        </div>
+
+        <!-- Step 3: Life stage -->
+        <div class="quiz-step" id="step-3" style="display: none;">
+          <h2 class="step-heading">How old is <span class="name-inline">your dog</span>?</h2>
+          <p class="step-sub">Pick the range that best fits.</p>
+          <div class="stage-grid" role="radiogroup" aria-label="Dog life stage">
+            <label class="stage-card-label">
+              <input type="radio" name="quiz-stage" value="puppy">
+              <div class="stage-card-inner">
+                <span class="stage-card-name">Puppy</span>
+                <span class="stage-card-age">Under 1 year</span>
+              </div>
+            </label>
+            <label class="stage-card-label">
+              <input type="radio" name="quiz-stage" value="young-adult">
+              <div class="stage-card-inner">
+                <span class="stage-card-name">Young Adult</span>
+                <span class="stage-card-age">1–3 years</span>
+              </div>
+            </label>
+            <label class="stage-card-label">
+              <input type="radio" name="quiz-stage" value="adult">
+              <div class="stage-card-inner">
+                <span class="stage-card-name">Adult</span>
+                <span class="stage-card-age">3–7 years</span>
+              </div>
+            </label>
+            <label class="stage-card-label">
+              <input type="radio" name="quiz-stage" value="senior">
+              <div class="stage-card-inner">
+                <span class="stage-card-name">Senior</span>
+                <span class="stage-card-age">7–11 years</span>
+              </div>
+            </label>
+            <label class="stage-card-label">
+              <input type="radio" name="quiz-stage" value="geriatric">
+              <div class="stage-card-inner">
+                <span class="stage-card-name">Geriatric</span>
+                <span class="stage-card-age">11+ years</span>
+              </div>
+            </label>
+          </div>
+          <div class="step-nav">
+            <button class="back-btn" data-goto="2">Back</button>
+            <button class="next-btn" id="step3-next" disabled>Continue</button>
+          </div>
+        </div>
+
+        <!-- Step 4: Concerns -->
+        <div class="quiz-step" id="step-4" style="display: none;">
+          <h2 class="step-heading">What are your main concerns?</h2>
+          <p class="step-sub">Pick up to 3.</p>
+          <div class="concerns-grid" id="concerns-grid">
+            <div class="concern-card" data-concern="joint">
+              <div class="concern-check"></div>
+              <div class="concern-name">Joint health &amp; mobility</div>
+            </div>
+            <div class="concern-card" data-concern="digestion">
+              <div class="concern-check"></div>
+              <div class="concern-name">Digestion &amp; gut health</div>
+            </div>
+            <div class="concern-card" data-concern="skin">
+              <div class="concern-check"></div>
+              <div class="concern-name">Skin &amp; coat</div>
+            </div>
+            <div class="concern-card" data-concern="energy">
+              <div class="concern-check"></div>
+              <div class="concern-name">Energy &amp; vitality</div>
+            </div>
+            <div class="concern-card" data-concern="anxiety">
+              <div class="concern-check"></div>
+              <div class="concern-name">Anxiety &amp; stress</div>
+            </div>
+            <div class="concern-card" data-concern="immune">
+              <div class="concern-check"></div>
+              <div class="concern-name">Immune support</div>
+            </div>
+            <div class="concern-card" data-concern="weight">
+              <div class="concern-check"></div>
+              <div class="concern-name">Weight management</div>
+            </div>
+            <div class="concern-card" data-concern="cognitive">
+              <div class="concern-check"></div>
+              <div class="concern-name">Cognitive health</div>
+            </div>
+            <div class="concern-card" data-concern="general">
+              <div class="concern-check"></div>
+              <div class="concern-name">General wellness</div>
+            </div>
+          </div>
+          <div class="step-nav">
+            <button class="back-btn" data-goto="3">Back</button>
+            <button class="next-btn" id="step4-next" disabled>Continue</button>
+          </div>
+        </div>
+
+        <!-- Step 5: Diet -->
+        <div class="quiz-step" id="step-5" style="display: none;">
+          <h2 class="step-heading">What does <span class="name-inline">your dog</span> eat?</h2>
+          <p class="step-sub">Helps us account for nutritional gaps in the diet.</p>
+          <div class="diet-grid" role="radiogroup" aria-label="Diet type">
+            <label class="diet-card-label">
+              <input type="radio" name="quiz-diet" value="raw">
+              <div class="diet-card-inner">
+                <span class="diet-card-name">Raw or home-cooked</span>
+                <span class="diet-card-desc">Whole food diet, minimal processing</span>
+              </div>
+            </label>
+            <label class="diet-card-label">
+              <input type="radio" name="quiz-diet" value="premium">
+              <div class="diet-card-inner">
+                <span class="diet-card-name">Premium kibble or wet food</span>
+                <span class="diet-card-desc">Named brands, quality ingredient lists</span>
+              </div>
+            </label>
+            <label class="diet-card-label">
+              <input type="radio" name="quiz-diet" value="standard">
+              <div class="diet-card-inner">
+                <span class="diet-card-name">Standard kibble</span>
+                <span class="diet-card-desc">Grocery store brands, less transparency</span>
+              </div>
+            </label>
+            <label class="diet-card-label">
+              <input type="radio" name="quiz-diet" value="mixed">
+              <div class="diet-card-inner">
+                <span class="diet-card-name">Mixed</span>
+                <span class="diet-card-desc">Kibble with toppers, rotating proteins, etc.</span>
+              </div>
+            </label>
+          </div>
+          <div class="step-nav">
+            <button class="back-btn" data-goto="4">Back</button>
+            <button class="next-btn" id="step5-next" disabled>See results</button>
+            <button class="skip-btn" id="step5-skip">Skip</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ===== RESULTS ===== -->
+      <div id="results-section" class="results-section" style="display: none;">
+
+        <div class="results-header">
+          <div class="results-label">Your results</div>
+          <h2 class="results-heading" id="results-heading"></h2>
+          <p class="results-sub" id="results-sub"></p>
+        </div>
+
+        <div class="rec-cards" id="rec-cards"></div>
+
+        <div class="results-disclaimer">
+          This quiz provides general nutritional guidance based on published research — it is not a substitute for veterinary advice. Always consult your vet before starting a new supplement regimen, especially if your dog has an existing health condition.
+        </div>
+
+        <div class="email-cta-box">
+          <div class="email-cta-inner">
+            <h3>Stay in the loop</h3>
+            <p>Get updates from Watts — dog nutrition, supplement guides, and tools like this one.</p>
+            <form class="email-cta-form" id="results-email-form" action="https://formspree.io/f/mjkalgwj" method="POST" novalidate>
+              <input type="email" name="email" placeholder="Your email" required autocomplete="email">
+              <button type="submit">Notify me</button>
+            </form>
+            <p class="email-success" id="email-success">Thanks — we'll be in touch!</p>
+          </div>
+        </div>
+
+        <div class="results-actions">
+          <button class="share-btn" id="share-btn">Share results</button>
+          <button class="retake-btn" id="retake-btn">Retake quiz</button>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left"></div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Sticky email CTA (mobile) -->
+  <div id="sticky-email-cta" class="sticky-email-cta" aria-hidden="true">
+    <button class="sticky-cta-close" id="sticky-cta-close" aria-label="Close">&#x2715;</button>
+    <p class="sticky-cta-heading">Stay in the loop</p>
+    <form class="sticky-cta-form" id="sticky-cta-form" action="https://formspree.io/f/mjkalgwj" method="POST" novalidate>
+      <input type="email" name="email" placeholder="Your email" required autocomplete="email">
+      <button type="submit">Notify me</button>
+    </form>
+    <p class="sticky-cta-success" id="sticky-cta-success">Thanks — we'll be in touch!</p>
+  </div>
+
+  <script>
+  // ===== HAMBURGER =====
+  (function() {
+    var hamburger = document.querySelector('.hamburger');
+    var navMenu = document.querySelector('nav ul');
+    if (!hamburger || !navMenu) return;
+    hamburger.addEventListener('click', function() {
+      navMenu.classList.toggle('active');
+    });
+    document.addEventListener('click', function(e) {
+      if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+        navMenu.classList.remove('active');
+      }
+    });
+  })();
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // ===== SUPPLEMENT DATABASE =====
+  var supplements = {
+    omega3: {
+      name: 'Omega-3 / Fish Oil',
+      tagline: 'Anti-inflammatory foundation',
+      blog: '/blog/omega-3-fish-oil-for-dogs.html',
+      ingredient: '/ingredient-analyzer/ingredients/fish-oil/'
+    },
+    probiotics: {
+      name: 'Probiotics',
+      tagline: 'Gut and immune health',
+      blog: '/blog/probiotics-for-dogs.html',
+      ingredient: '/ingredient-analyzer/ingredients/lactobacillus-acidophilus/'
+    },
+    joint: {
+      name: 'Green-Lipped Mussel',
+      tagline: 'Comprehensive joint support',
+      blog: '/blog/green-lipped-mussel-for-dogs.html',
+      ingredient: '/ingredient-analyzer/ingredients/green-lipped-mussel/'
+    },
+    glucosamine: {
+      name: 'Glucosamine',
+      tagline: 'Cartilage and joint structure',
+      blog: '/blog/joint-supplements-for-dogs.html',
+      ingredient: '/ingredient-analyzer/ingredients/glucosamine/'
+    },
+    enzymes: {
+      name: 'Digestive Enzymes',
+      tagline: 'Nutrient breakdown and absorption',
+      blog: '/blog/digestive-enzymes-for-dogs.html',
+      ingredient: '/ingredient-analyzer/ingredients/digestive-enzymes/'
+    },
+    antioxidants: {
+      name: 'Antioxidants',
+      tagline: 'Oxidative stress protection',
+      blog: '/blog/antioxidants-for-dogs.html',
+      ingredient: '/ingredient-analyzer/ingredients/vitamin-e-supplement/'
+    },
+    organ: {
+      name: 'Organ-Based Nutrition',
+      tagline: 'Micronutrient density from whole food',
+      blog: '/blog/organ-based-nutrition-for-dogs.html',
+      ingredient: '/ingredient-analyzer/ingredients/beef-liver/'
+    },
+    calming: {
+      name: 'Calming Support',
+      tagline: 'Anxiety and stress management',
+      blog: '/blog/calming-supplements-for-dogs.html',
+      ingredient: '/ingredient-analyzer/ingredients/l-theanine/'
+    },
+    collagen: {
+      name: 'Collagen',
+      tagline: 'Joints, skin, and connective tissue',
+      blog: '/blog/collagen-for-dogs-benefits.html',
+      ingredient: '/ingredient-analyzer/ingredients/collagen/'
+    },
+    boswellia: {
+      name: 'Boswellia',
+      tagline: 'Botanical anti-inflammatory',
+      blog: '/blog/boswellia-for-dogs.html',
+      ingredient: '/ingredient-analyzer/ingredients/boswellia/'
+    }
+  };
+
+  // ===== SCORING =====
+  var concernScores = {
+    joint:     { joint: 5, glucosamine: 4, omega3: 3, boswellia: 3, collagen: 3 },
+    digestion: { probiotics: 5, enzymes: 4, organ: 2 },
+    skin:      { omega3: 5, collagen: 3 },
+    energy:    { organ: 5, probiotics: 2, omega3: 1 },
+    anxiety:   { calming: 5, omega3: 1 },
+    immune:    { antioxidants: 4, probiotics: 3, organ: 2 },
+    weight:    { probiotics: 3, omega3: 2 },
+    cognitive: { omega3: 4, antioxidants: 3 },
+    general:   { omega3: 3, probiotics: 3, organ: 2 }
+  };
+
+  var stageScores = {
+    puppy:       { omega3: 3, organ: 1, probiotics: 1 },
+    'young-adult': { omega3: 1, probiotics: 1 },
+    adult:       { omega3: 1, probiotics: 1 },
+    senior:      { joint: 2, antioxidants: 2, enzymes: 2, omega3: 1 },
+    geriatric:   { joint: 3, glucosamine: 2, antioxidants: 3, enzymes: 3, omega3: 2, collagen: 1 }
+  };
+
+  var dietScores = {
+    raw:     { organ: -1 },
+    premium: {},
+    standard: { organ: 2, probiotics: 1 },
+    mixed:   {}
+  };
+
+  function calculateScores(state) {
+    var scores = {};
+    Object.keys(supplements).forEach(function(k) { scores[k] = 0; });
+
+    state.concerns.forEach(function(c) {
+      var map = concernScores[c] || {};
+      Object.keys(map).forEach(function(k) { scores[k] = (scores[k] || 0) + map[k]; });
+    });
+
+    var sm = stageScores[state.stage] || {};
+    Object.keys(sm).forEach(function(k) { scores[k] = (scores[k] || 0) + sm[k]; });
+
+    if (state.diet) {
+      var dm = dietScores[state.diet] || {};
+      Object.keys(dm).forEach(function(k) { scores[k] = (scores[k] || 0) + dm[k]; });
+    }
+
+    return scores;
+  }
+
+  function getTopRecs(scores, n) {
+    return Object.keys(scores)
+      .filter(function(k) { return scores[k] >= 2; })
+      .sort(function(a, b) { return scores[b] - scores[a]; })
+      .slice(0, n);
+  }
+
+  // ===== PERSONALIZED WHY TEXT =====
+  function getWhyText(key, state) {
+    var n = state.name || 'Your dog';
+    var concerns = state.concerns;
+    var stage = state.stage;
+
+    var has = function(c) { return concerns.indexOf(c) >= 0; };
+
+    var texts = {
+      omega3: function() {
+        if (has('joint')) return n + '\'s joint concern is directly tied to inflammation. Omega-3 fatty acids — specifically EPA and DHA from fish oil — are the most rigorously studied natural anti-inflammatory for dogs. Multiple controlled trials show meaningful reduction in joint pain and stiffness at therapeutic doses.';
+        if (has('skin')) return 'Skin and coat issues are most commonly driven by omega-3 deficiency. EPA and DHA reduce the inflammatory response in skin tissue. Most kibble-fed dogs are significantly underdosed — supplementing fish oil is one of the fastest ways to see coat improvement.';
+        if (has('cognitive')) return 'DHA is the primary structural fat in the brain, making up roughly 15% of the cerebral cortex. For ' + (stage === 'senior' || stage === 'geriatric' ? 'senior dogs like ' + n : n) + ', higher omega-3 intake is associated with slower cognitive decline and better neurotransmitter function.';
+        if (has('weight')) return 'Omega-3 supports weight management indirectly — EPA reduces the inflammatory signaling linked to insulin resistance. It also helps maintain lean muscle mass, which keeps metabolic rate active as dogs age.';
+        if (stage === 'puppy') return 'DHA is critical for brain and retinal development in the first year. Many puppy diets are underdosed on omega-3 — direct fish oil supplementation is one of the highest-value interventions at this stage.';
+        return 'Omega-3 (EPA/DHA from fish oil) is the most broadly supported supplement in veterinary nutrition — anti-inflammatory, cardiovascular, coat, immune, and brain benefits documented across all life stages. If ' + n + ' takes one supplement, this is it.';
+      },
+      probiotics: function() {
+        if (has('digestion')) return n + '\'s digestive concerns are the clearest indication for probiotics. The canine gut microbiome regulates digestion, nutrient absorption, and stool consistency. Lactobacillus and Bifidobacterium strains have been shown to reduce loose stools, bloating, and digestive irregularity in clinical studies.';
+        if (has('immune')) return '70% of the canine immune system is housed in the gut. Probiotic supplementation directly supports immune regulation — particularly valuable for dogs prone to infections, allergies, or slow recovery from illness.';
+        if (has('weight')) return 'Gut microbiome composition influences metabolic efficiency. Probiotic supplementation can shift the microbiome toward strains associated with healthier weight maintenance, particularly in combination with diet management.';
+        if (stage === 'puppy') return 'Establishing a healthy gut microbiome early has lasting effects on immunity and digestion. Puppies are especially responsive to probiotic supplementation during the high-growth phase.';
+        return 'Most commercial dog food is heat-processed, which kills beneficial bacteria. Probiotic supplementation replaces what ' + n + '\'s diet lacks — supporting digestion, immune function, and stool consistency.';
+      },
+      joint: function() {
+        return 'Green-lipped mussel (GLM) is one of the best-studied joint supplements in veterinary medicine. It contains a unique combination of omega-3 fatty acids (including ETA, not found in regular fish oil), glycosaminoglycans, and chondroitin — all working together to reduce inflammation and support cartilage. For ' + (stage === 'senior' || stage === 'geriatric' ? 'senior dogs like ' + n : n) + ', GLM is a top-tier joint support option with strong evidence behind it.';
+      },
+      glucosamine: function() {
+        var sizeNote = (state.size === 'large' || state.size === 'giant') ? ' Large and giant breeds place higher mechanical load on cartilage — this becomes especially important at ' + n + '\'s size.' : '';
+        return 'Glucosamine is a structural building block of cartilage — it supports the physical integrity of joints rather than just reducing inflammation. Works best combined with chondroitin sulfate. Most beneficial for dogs with stiffness on rising or early signs of cartilage wear.' + sizeNote;
+      },
+      enzymes: function() {
+        if (has('digestion')) return n + '\'s digestive issues often trace back to insufficient enzyme production or depleted enzyme activity in food. Commercial kibble is cooked at high heat, destroying natural enzymes — supplementing restores what processing removes. Digestive enzyme blends (amylase, protease, lipase) directly improve breakdown and absorption.';
+        if (stage === 'geriatric' || stage === 'senior') return 'Digestive enzyme production declines with age. Senior dogs often struggle to fully absorb nutrients even from a quality diet. Enzyme supplementation is one of the most underrated interventions for older dogs — it can meaningfully improve energy and coat by restoring nutrient uptake.';
+        return 'Digestive enzymes help ' + n + ' fully break down and absorb nutrients from food. Particularly valuable for dogs on commercial kibble, which loses natural enzymes during processing.';
+      },
+      antioxidants: function() {
+        if (has('immune')) return 'Antioxidants (vitamin E, CoQ10, vitamin C) neutralize free radicals that damage immune cells and accelerate cellular aging. ' + n + '\'s immune support concern is directly addressed here, particularly when paired with omega-3 to reduce the inflammatory load the immune system has to manage.';
+        if (stage === 'geriatric' || stage === 'senior') return 'Oxidative stress accumulates with age, contributing to joint inflammation, cognitive decline, and elevated cancer risk. For ' + (stage === 'geriatric' ? 'geriatric' : 'senior') + ' dogs, antioxidants are a core part of aging management — particularly vitamin E, CoQ10, and whole-food antioxidant sources.';
+        if (has('cognitive')) return 'The aging brain is especially vulnerable to oxidative damage. Antioxidant supplementation — particularly vitamin E and CoQ10 — has been shown to slow cognitive dysfunction syndrome progression in dogs. Pairs well with omega-3 as a cognitive support stack.';
+        return 'Antioxidants combat the oxidative stress that accumulates from normal metabolism. For ' + n + ', a quality vitamin E or whole-food antioxidant source reduces cellular aging and supports immune resilience.';
+      },
+      organ: function() {
+        if (has('energy')) return n + '\'s energy concern is often a micronutrient gap issue. Organ meats — liver, kidney, heart — are the most nutrient-dense whole foods available: concentrated B vitamins (B12, folate, riboflavin), CoQ10, iron, zinc, and fat-soluble vitamins. Most commercial dog foods contain inadequate organ content. This is the most efficient way to close nutritional gaps.';
+        if (state.diet === 'standard') return 'Standard kibble often contains minimal organ content despite regulations permitting "meat and bone meal." Beef liver and kidney are extraordinarily rich in B12, iron, folate, and fat-soluble vitamins that are systematically underrepresented in ' + n + '\'s likely current diet.';
+        return 'Organ-based nutrition delivers bioavailable micronutrients that synthetic supplements can\'t fully replicate — B vitamins, CoQ10, iron, and fat-soluble vitamins in their natural food matrix. A foundational gap-filler for any dog on commercial food.';
+      },
+      calming: function() {
+        return 'For ' + n + '\'s anxiety, the most evidence-supported ingredients are L-theanine (studied in both dogs and humans for promoting calm without sedation) and melatonin (supports sleep regulation and reduces situational anxiety). These work on the nervous system\'s inhibitory pathways without the side effects of pharmaceutical options. Best used consistently rather than only in acute situations.';
+      },
+      collagen: function() {
+        if (has('joint')) return 'Collagen makes up 60–70% of joint cartilage — it\'s the structural scaffold that cushions bones. Type II collagen supplementation has been shown to reduce joint pain and improve mobility by providing raw building blocks for cartilage repair. For ' + n + ', it complements green-lipped mussel and glucosamine by addressing the structural side rather than just inflammation.';
+        if (has('skin')) return 'Collagen is the main structural protein in skin — supporting elasticity, hydration, and the barrier that prevents allergen penetration. For ' + n + '\'s skin concerns, collagen works alongside omega-3 to address both the inflammatory and structural aspects of skin health.';
+        return 'Collagen supports joint structure, skin integrity, and gut lining health. A broad connective-tissue support that pairs well with other joint or skin supplements for ' + n + '.';
+      },
+      boswellia: function() {
+        return 'Boswellia serrata is a botanical anti-inflammatory with strong evidence in both veterinary and human medicine. It inhibits 5-lipoxygenase (5-LOX), which produces inflammatory leukotrienes — a different pathway than omega-3. This means boswellia and omega-3 are complementary, not redundant. For ' + n + '\'s joint concern, combining both targets inflammation through two distinct mechanisms.';
+      }
+    };
+
+    return texts[key] ? texts[key]() : supplements[key].tagline;
+  }
+
+  // ===== QUIZ STATE =====
+  var state = {
+    name: '',
+    size: null,
+    stage: null,
+    concerns: [],
+    diet: null
+  };
+
+  var currentStep = 0; // 0 = intro not started
+
+  function showStep(n) {
+    var steps = [1, 2, 3, 4, 5];
+    steps.forEach(function(s) {
+      var el = document.getElementById('step-' + s);
+      if (el) el.style.display = s === n ? 'block' : 'none';
+    });
+    currentStep = n;
+
+    // Update progress
+    var pct = (n / 5) * 100;
+    document.getElementById('progress-fill').style.width = pct + '%';
+    document.getElementById('progress-label').textContent = 'Question ' + n + ' of 5';
+
+    // Update name placeholders
+    var placeholders = document.querySelectorAll('.name-inline');
+    placeholders.forEach(function(el) {
+      el.textContent = state.name || 'your dog';
+    });
+
+    // Scroll to top of quiz
+    document.getElementById('quiz-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function goBack(targetStep) {
+    showStep(targetStep);
+  }
+
+  // ===== START =====
+  document.getElementById('start-btn').addEventListener('click', function() {
+    document.getElementById('quiz-intro').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+    showStep(1);
+  });
+
+  // ===== STEP 1: NAME =====
+  document.getElementById('step1-next').addEventListener('click', function() {
+    state.name = document.getElementById('dog-name-input').value.trim();
+    showStep(2);
+  });
+  document.getElementById('step1-skip').addEventListener('click', function() {
+    state.name = '';
+    showStep(2);
+  });
+  document.getElementById('dog-name-input').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') {
+      state.name = this.value.trim();
+      showStep(2);
+    }
+  });
+
+  // ===== STEP 2: SIZE =====
+  document.querySelectorAll('input[name="quiz-size"]').forEach(function(radio) {
+    radio.addEventListener('change', function() {
+      state.size = this.value;
+      document.getElementById('step2-next').disabled = false;
+    });
+  });
+  document.getElementById('step2-next').addEventListener('click', function() {
+    if (state.size) showStep(3);
+  });
+
+  // ===== STEP 3: STAGE =====
+  document.querySelectorAll('input[name="quiz-stage"]').forEach(function(radio) {
+    radio.addEventListener('change', function() {
+      state.stage = this.value;
+      document.getElementById('step3-next').disabled = false;
+    });
+  });
+  document.getElementById('step3-next').addEventListener('click', function() {
+    if (state.stage) showStep(4);
+  });
+
+  // ===== STEP 4: CONCERNS (multi-select, max 3) =====
+  var CONCERN_LIMIT = 3;
+
+  document.querySelectorAll('.concern-card').forEach(function(card) {
+    card.addEventListener('click', function() {
+      var concern = this.getAttribute('data-concern');
+      var isSelected = this.classList.contains('selected');
+
+      if (isSelected) {
+        // Deselect
+        this.classList.remove('selected');
+        state.concerns = state.concerns.filter(function(c) { return c !== concern; });
+      } else {
+        // Select (if under limit)
+        if (state.concerns.length >= CONCERN_LIMIT) return;
+        this.classList.add('selected');
+        state.concerns.push(concern);
+      }
+
+      // Toggle at-limit class on unselected cards
+      var atLimit = state.concerns.length >= CONCERN_LIMIT;
+      document.querySelectorAll('.concern-card').forEach(function(c) {
+        if (!c.classList.contains('selected')) {
+          c.classList.toggle('at-limit', atLimit);
+        }
+      });
+
+      // Enable next when at least 1 selected
+      document.getElementById('step4-next').disabled = state.concerns.length === 0;
+    });
+  });
+
+  document.getElementById('step4-next').addEventListener('click', function() {
+    if (state.concerns.length > 0) showStep(5);
+  });
+
+  // ===== STEP 5: DIET =====
+  document.querySelectorAll('input[name="quiz-diet"]').forEach(function(radio) {
+    radio.addEventListener('change', function() {
+      state.diet = this.value;
+      document.getElementById('step5-next').disabled = false;
+    });
+  });
+  document.getElementById('step5-next').addEventListener('click', function() {
+    if (state.diet) showResults();
+  });
+  document.getElementById('step5-skip').addEventListener('click', function() {
+    state.diet = null;
+    showResults();
+  });
+
+  // ===== BACK BUTTONS =====
+  document.querySelectorAll('.back-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      goBack(parseInt(this.getAttribute('data-goto')));
+    });
+  });
+
+  // ===== RESULTS =====
+  function showResults() {
+    document.getElementById('quiz-container').style.display = 'none';
+
+    var scores = calculateScores(state);
+    var topKeys = getTopRecs(scores, 4);
+
+    var n = state.name || 'Your dog';
+    var stageLabels = {
+      puppy: 'puppy', 'young-adult': 'young adult',
+      adult: 'adult', senior: 'senior', geriatric: 'geriatric'
+    };
+
+    document.getElementById('results-heading').textContent = n + '\'s personalized supplement recommendations';
+    document.getElementById('results-sub').textContent =
+      'Based on ' + n + '\'s profile: ' +
+      (state.size || '') + ' breed, ' +
+      (stageLabels[state.stage] || state.stage) + ' life stage, ' +
+      'with priority concerns around ' +
+      (state.concerns.length > 0 ? state.concerns.join(', ').replace(/-/g, ' ') : 'general wellness') + '.';
+
+    var cardsContainer = document.getElementById('rec-cards');
+    cardsContainer.innerHTML = '';
+
+    if (topKeys.length === 0) {
+      cardsContainer.innerHTML = '<p style="color: var(--text-muted); font-size: 16px;">No strong recommendations — this usually means the concern combination doesn\'t strongly favor any one supplement category. A general omega-3 and probiotic baseline is a good starting point.</p>';
+    } else {
+      topKeys.forEach(function(key, i) {
+        var sup = supplements[key];
+        var card = document.createElement('div');
+        card.className = 'rec-card';
+        card.innerHTML =
+          '<div class="rec-card-header">' +
+            '<div class="rec-rank">' + (i + 1) + '</div>' +
+            '<div class="rec-title-wrap">' +
+              '<div class="rec-name">' + sup.name + '</div>' +
+              '<div class="rec-tagline">' + sup.tagline + '</div>' +
+            '</div>' +
+          '</div>' +
+          '<div class="rec-body">' +
+            '<p class="rec-why">' + getWhyText(key, state) + '</p>' +
+            '<div class="rec-links">' +
+              '<a href="' + sup.blog + '" class="rec-link rec-link-blog">Read the guide</a>' +
+              '<a href="' + sup.ingredient + '" class="rec-link rec-link-ingredient">See ingredient</a>' +
+            '</div>' +
+          '</div>';
+        cardsContainer.appendChild(card);
+      });
+    }
+
+    var resultsSection = document.getElementById('results-section');
+    resultsSection.style.display = 'block';
+    resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // ===== SHARE =====
+  document.getElementById('share-btn').addEventListener('click', function() {
+    var n = state.name || 'My dog';
+    var text = n + '\'s personalized supplement quiz results from Watts — based on size, life stage, and health concerns. Try it: wattspet.com/supplement-quiz/';
+    if (navigator.share) {
+      navigator.share({ title: n + '\'s supplement recommendations', text: text, url: 'https://wattspet.com/supplement-quiz/' }).catch(function() {});
+    } else if (navigator.clipboard) {
+      navigator.clipboard.writeText(text).then(function() {
+        var btn = document.getElementById('share-btn');
+        btn.textContent = 'Copied!';
+        setTimeout(function() { btn.textContent = 'Share results'; }, 2000);
+      });
+    }
+  });
+
+  // ===== RETAKE =====
+  document.getElementById('retake-btn').addEventListener('click', function() {
+    state = { name: '', size: null, stage: null, concerns: [], diet: null };
+    document.getElementById('results-section').style.display = 'none';
+    document.getElementById('quiz-intro').style.display = 'block';
+
+    // Reset form inputs
+    document.getElementById('dog-name-input').value = '';
+    document.querySelectorAll('input[name="quiz-size"]').forEach(function(r) { r.checked = false; });
+    document.querySelectorAll('input[name="quiz-stage"]').forEach(function(r) { r.checked = false; });
+    document.querySelectorAll('input[name="quiz-diet"]').forEach(function(r) { r.checked = false; });
+    document.querySelectorAll('.concern-card').forEach(function(c) { c.classList.remove('selected', 'at-limit'); });
+    document.getElementById('step2-next').disabled = true;
+    document.getElementById('step3-next').disabled = true;
+    document.getElementById('step4-next').disabled = true;
+    document.getElementById('step5-next').disabled = true;
+
+    document.getElementById('quiz-intro').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  // ===== EMAIL FORM (results) =====
+  document.getElementById('results-email-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var form = this;
+    var email = form.querySelector('input[type="email"]').value.trim();
+    if (!email) return;
+    fetch(form.action, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({ email: email })
+    }).then(function(r) {
+      if (r.ok) {
+        form.style.display = 'none';
+        document.getElementById('email-success').style.display = 'block';
+        try { localStorage.setItem('watts-subscribed', '1'); } catch(e) {}
+      }
+    }).catch(function() {});
+  });
+
+  // ===== STICKY EMAIL CTA =====
+  (function() {
+    var cta = document.getElementById('sticky-email-cta');
+    var closeBtn = document.getElementById('sticky-cta-close');
+    var form = document.getElementById('sticky-cta-form');
+    var success = document.getElementById('sticky-cta-success');
+
+    try {
+      if (localStorage.getItem('watts-cta-dismissed') || localStorage.getItem('watts-subscribed')) return;
+    } catch(e) {}
+
+    var shown = false;
+    window.addEventListener('scroll', function() {
+      if (shown) return;
+      if (window.scrollY > 300) {
+        shown = true;
+        cta.style.display = 'block';
+        void cta.offsetHeight;
+        cta.classList.add('visible');
+      }
+    }, { passive: true });
+
+    closeBtn.addEventListener('click', function() {
+      cta.classList.remove('visible');
+      setTimeout(function() { cta.style.display = 'none'; }, 350);
+      try { localStorage.setItem('watts-cta-dismissed', '1'); } catch(e) {}
+    });
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var email = form.querySelector('input[type="email"]').value.trim();
+      if (!email) return;
+      fetch(form.action, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({ email: email })
+      }).then(function(r) {
+        if (r.ok) {
+          form.style.display = 'none';
+          success.style.display = 'block';
+          try { localStorage.setItem('watts-subscribed', '1'); } catch(e) {}
+          setTimeout(function() {
+            cta.classList.remove('visible');
+            setTimeout(function() { cta.style.display = 'none'; }, 350);
+          }, 2500);
+        }
+      }).catch(function() {});
+    });
+  })();
+  </script>
+
+</body>
+</html>
