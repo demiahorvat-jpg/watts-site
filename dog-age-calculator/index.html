@@ -1440,6 +1440,7 @@
             <h3>Share your result</h3>
             <div class="share-text-box" id="share-text-box"></div>
             <button type="button" class="copy-btn" id="copy-btn">Copy to clipboard</button>
+          <script>if (navigator.share) { document.getElementById('copy-btn').textContent = 'Share result'; }</script>
           </div>
 
           <!-- Email CTA -->
@@ -1797,10 +1798,23 @@
     }, 50);
   }
 
-  // ===== COPY TO CLIPBOARD =====
+  // ===== SHARE / COPY =====
   document.getElementById('copy-btn').addEventListener('click', function() {
     var text = document.getElementById('share-text-box').textContent;
     var btn = this;
+
+    if (navigator.share) {
+      navigator.share({
+        title: "My dog's real biological age",
+        text: text,
+        url: 'https://wattspet.com/dog-age-calculator/'
+      }).catch(function() {
+        // User cancelled or share failed — silently ignore
+      });
+      return;
+    }
+
+    // Clipboard fallback for browsers without Web Share API
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(function() {
         btn.textContent = 'Copied!';
