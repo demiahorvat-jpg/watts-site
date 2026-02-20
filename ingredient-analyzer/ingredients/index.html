@@ -2779,9 +2779,14 @@
           </a>
           
           <a href="/ingredient-analyzer/ingredients/butternut-squash/" class="ingredient-card" data-category="vegetable" data-position="good">
-            <div class="ingredient-name">Butternut Squash</div>
+            <div class="ingredient-card-header">
+              <h2>Butternut Squash</h2>
+              <div class="position-badge badge-good">Good</div>
+            </div>
             <div class="ingredient-category">Vegetable</div>
-          </a><a href="/ingredient-analyzer/ingredients/pumpkin/" class="ingredient-card" data-category="produce" data-position="good">
+            <p class="ingredient-description">Winter squash variety with sweet, nutty-flavored orange flesh. Rich in beta-carotene, vitamins, and minerals....</p>
+          </a>
+          <a href="/ingredient-analyzer/ingredients/pumpkin/" class="ingredient-card" data-category="produce" data-position="good">
             <div class="ingredient-card-header">
               <h2>Pumpkin</h2>
               <div class="position-badge badge-good">Good</div>
@@ -2790,8 +2795,12 @@
             <p class="ingredient-description">Squash rich in fiber, beta-carotene, and nutrients....</p>
           </a>
           <a href="/ingredient-analyzer/ingredients/squash/" class="ingredient-card" data-category="vegetable" data-position="good">
-            <div class="ingredient-name">Squash</div>
+            <div class="ingredient-card-header">
+              <h2>Squash</h2>
+              <div class="position-badge badge-good">Good</div>
+            </div>
             <div class="ingredient-category">Vegetable</div>
+            <p class="ingredient-description">Winter squash varieties (excluding pumpkin and zucchini) used in pet foods. Typically acorn, butternut, or kabocha squash....</p>
           </a>
           <a href="/ingredient-analyzer/ingredients/pumpkin-seed/" class="ingredient-card" data-category="seed" data-position="good">
             <div class="ingredient-card-header">
@@ -3652,8 +3661,12 @@
       let visibleCount = 0;
 
       cards.forEach(card => {
-        const name = card.querySelector('h2').textContent.toLowerCase();
-        const description = card.querySelector('.ingredient-description').textContent.toLowerCase();
+        // Safely get name and description with fallbacks
+        const nameElement = card.querySelector('h2');
+        const descriptionElement = card.querySelector('.ingredient-description');
+
+        const name = nameElement ? nameElement.textContent.toLowerCase() : '';
+        const description = descriptionElement ? descriptionElement.textContent.toLowerCase() : '';
         const category = card.getAttribute('data-category');
 
         const matchesSearch = searchTerm === '' || name.includes(searchTerm) || description.includes(searchTerm);
