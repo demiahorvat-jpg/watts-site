@@ -1110,14 +1110,25 @@
     // Filter tab handlers
     document.querySelectorAll('.filter-tab').forEach(function(tab) {
       tab.addEventListener('click', function() {
-        // Update active tab
-        document.querySelectorAll('.filter-tab').forEach(function(t) {
-          t.classList.remove('active');
-        });
-        tab.classList.add('active');
+        var clickedFilter = tab.getAttribute('data-content-type');
 
-        // Update filter and run filter
-        currentFilter = tab.getAttribute('data-content-type');
+        // If clicking the currently active filter (and it's not "All"), deselect it and go back to "All"
+        if (tab.classList.contains('active') && clickedFilter !== 'all') {
+          // Reset to "All"
+          document.querySelectorAll('.filter-tab').forEach(function(t) {
+            t.classList.remove('active');
+          });
+          document.querySelector('.filter-tab[data-content-type="all"]').classList.add('active');
+          currentFilter = 'all';
+        } else {
+          // Normal selection
+          document.querySelectorAll('.filter-tab').forEach(function(t) {
+            t.classList.remove('active');
+          });
+          tab.classList.add('active');
+          currentFilter = clickedFilter;
+        }
+
         filterContent();
       });
     });
