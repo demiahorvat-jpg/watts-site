@@ -432,8 +432,14 @@
       border-color: var(--brand-orange);
     }
 
-    .hidden {
-      display: none !important;
+    .dimmed {
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+    .highlighted {
+      border-color: var(--brand-orange);
+      box-shadow: 0 0 0 3px rgba(192, 56, 0, 0.1);
     }
 
     /* FOOTER */
@@ -1139,25 +1145,7 @@
     function filterContent() {
       var query = searchInput.value.trim().toLowerCase();
       var visibleCount = 0;
-
-      // Show/hide section headings based on filter
-      if (currentFilter === 'all' || currentFilter === 'guide') {
-        guidesSection.classList.remove('hidden');
-      } else {
-        guidesSection.classList.add('hidden');
-      }
-
-      if (currentFilter === 'all' || currentFilter === 'tool') {
-        toolsSection.classList.remove('hidden');
-      } else {
-        toolsSection.classList.add('hidden');
-      }
-
-      if (currentFilter === 'all' || currentFilter === 'article') {
-        articlesHeading.classList.remove('hidden');
-      } else {
-        articlesHeading.classList.add('hidden');
-      }
+      var isSearching = query !== '';
 
       // Filter all items
       allItems.forEach(function(item) {
@@ -1167,16 +1155,30 @@
         var matchesFilter = currentFilter === 'all' || contentType === currentFilter;
         var matchesSearch = query === '' || text.indexOf(query) >= 0;
 
-        if (matchesFilter && matchesSearch) {
-          item.classList.remove('hidden');
-          visibleCount++;
+        // Remove all classes first
+        item.classList.remove('dimmed', 'highlighted');
+        item.style.display = '';
+
+        if (isSearching) {
+          // When searching, hide non-matching items (original behavior)
+          if (matchesSearch) {
+            visibleCount++;
+          } else {
+            item.style.display = 'none';
+          }
         } else {
-          item.classList.add('hidden');
+          // When filtering (no search), dim non-matching and highlight matching
+          if (matchesFilter) {
+            item.classList.add('highlighted');
+            visibleCount++;
+          } else {
+            item.classList.add('dimmed');
+          }
         }
       });
 
-      // Show/hide no results message
-      noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      // Show/hide no results message (only for search)
+      noResults.style.display = isSearching && visibleCount === 0 ? 'block' : 'none';
     }
   })();
   </script>
