@@ -1332,8 +1332,8 @@
       el.textContent = state.name || 'your dog';
     });
 
-    // Scroll to top of quiz
-    document.getElementById('quiz-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // Scroll to quiz only if not in view
+    document.getElementById('quiz-container').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
 
   function goBack(targetStep) {
