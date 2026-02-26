@@ -1129,24 +1129,13 @@
     function filterContent() {
       var query = searchInput.value.trim().toLowerCase();
       var visibleCount = 0;
+      var hasSearch = query !== '';
 
-      // Show/hide section headings based on filter
-      if (currentFilter === 'all' || currentFilter === 'guide') {
+      // Always show all sections when not searching
+      if (!hasSearch) {
         guidesSection.classList.remove('hidden');
-      } else {
-        guidesSection.classList.add('hidden');
-      }
-
-      if (currentFilter === 'all' || currentFilter === 'tool') {
         toolsSection.classList.remove('hidden');
-      } else {
-        toolsSection.classList.add('hidden');
-      }
-
-      if (currentFilter === 'all' || currentFilter === 'article') {
         articlesHeading.classList.remove('hidden');
-      } else {
-        articlesHeading.classList.add('hidden');
       }
 
       // Filter all items
@@ -1157,11 +1146,22 @@
         var matchesFilter = currentFilter === 'all' || contentType === currentFilter;
         var matchesSearch = query === '' || text.indexOf(query) >= 0;
 
-        if (matchesFilter && matchesSearch) {
-          item.classList.remove('hidden');
-          visibleCount++;
+        if (hasSearch) {
+          // When searching, hide non-matching items
+          if (matchesSearch) {
+            item.classList.remove('hidden');
+            visibleCount++;
+          } else {
+            item.classList.add('hidden');
+          }
         } else {
-          item.classList.add('hidden');
+          // When filtering (no search), only hide if doesn't match filter
+          if (matchesFilter) {
+            item.classList.remove('hidden');
+            visibleCount++;
+          } else {
+            item.classList.add('hidden');
+          }
         }
       });
 
