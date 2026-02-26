@@ -432,14 +432,8 @@
       border-color: var(--brand-orange);
     }
 
-    .dimmed {
-      opacity: 0.3;
-      pointer-events: none;
-    }
-
-    .highlighted {
-      border-color: var(--brand-orange);
-      box-shadow: 0 0 0 3px rgba(192, 56, 0, 0.1);
+    .hidden {
+      display: none !important;
     }
 
     /* FOOTER */
@@ -1118,22 +1112,12 @@
       tab.addEventListener('click', function() {
         var clickedFilter = tab.getAttribute('data-content-type');
 
-        // If clicking the currently active filter (and it's not "All"), deselect it and go back to "All"
-        if (tab.classList.contains('active') && clickedFilter !== 'all') {
-          // Reset to "All"
-          document.querySelectorAll('.filter-tab').forEach(function(t) {
-            t.classList.remove('active');
-          });
-          document.querySelector('.filter-tab[data-content-type="all"]').classList.add('active');
-          currentFilter = 'all';
-        } else {
-          // Normal selection
-          document.querySelectorAll('.filter-tab').forEach(function(t) {
-            t.classList.remove('active');
-          });
-          tab.classList.add('active');
-          currentFilter = clickedFilter;
-        }
+        // Update active tab
+        document.querySelectorAll('.filter-tab').forEach(function(t) {
+          t.classList.remove('active');
+        });
+        tab.classList.add('active');
+        currentFilter = clickedFilter;
 
         filterContent();
       });
@@ -1145,7 +1129,25 @@
     function filterContent() {
       var query = searchInput.value.trim().toLowerCase();
       var visibleCount = 0;
-      var isSearching = query !== '';
+
+      // Show/hide section headings based on filter
+      if (currentFilter === 'all' || currentFilter === 'guide') {
+        guidesSection.classList.remove('hidden');
+      } else {
+        guidesSection.classList.add('hidden');
+      }
+
+      if (currentFilter === 'all' || currentFilter === 'tool') {
+        toolsSection.classList.remove('hidden');
+      } else {
+        toolsSection.classList.add('hidden');
+      }
+
+      if (currentFilter === 'all' || currentFilter === 'article') {
+        articlesHeading.classList.remove('hidden');
+      } else {
+        articlesHeading.classList.add('hidden');
+      }
 
       // Filter all items
       allItems.forEach(function(item) {
@@ -1155,30 +1157,16 @@
         var matchesFilter = currentFilter === 'all' || contentType === currentFilter;
         var matchesSearch = query === '' || text.indexOf(query) >= 0;
 
-        // Remove all classes first
-        item.classList.remove('dimmed', 'highlighted');
-        item.style.display = '';
-
-        if (isSearching) {
-          // When searching, hide non-matching items (original behavior)
-          if (matchesSearch) {
-            visibleCount++;
-          } else {
-            item.style.display = 'none';
-          }
+        if (matchesFilter && matchesSearch) {
+          item.classList.remove('hidden');
+          visibleCount++;
         } else {
-          // When filtering (no search), dim non-matching and highlight matching
-          if (matchesFilter) {
-            item.classList.add('highlighted');
-            visibleCount++;
-          } else {
-            item.classList.add('dimmed');
-          }
+          item.classList.add('hidden');
         }
       });
 
-      // Show/hide no results message (only for search)
-      noResults.style.display = isSearching && visibleCount === 0 ? 'block' : 'none';
+      // Show/hide no results message
+      noResults.style.display = visibleCount === 0 ? 'block' : 'none';
     }
   })();
   </script>
