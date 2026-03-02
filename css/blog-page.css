@@ -66,6 +66,10 @@
       min-height: 100%;
     }
 
+    html {
+      scroll-padding-top: 100px; /* Offset for sticky header */
+    }
+
     body {
       background: #191919;
       color: var(--text-dark);
