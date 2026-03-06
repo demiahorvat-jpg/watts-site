@@ -37,19 +37,17 @@ Blog posts serve as comprehensive educational content for pet owners, focusing o
 
 ### Visual Indicators
 
-**Dog posts** (default):
+**All posts** (dogs and cats use identical format):
 ```html
-<div class="article-meta">Published January 22, 2026</div>
-<!-- OR -->
-<div class="article-meta">January 22, 2026</div>
+<div class="article-meta">Last Updated March 6, 2026</div>
 ```
 
-**Cat posts**:
-```html
-<div class="article-meta">March 6, 2026 • For Cats</div>
-```
+**Differentiation happens through**:
+- URL structure (`/blog/topic-for-dogs.html` vs `/blog/topic-for-cats.html`)
+- Blog index filter (users select dog/cat content)
+- Article title and content (clearly states pet type)
 
-The "• For Cats" designation clearly identifies cat-specific content. Dog content does not need a "For Dogs" label since it's the default.
+No visual badge or "For Cats/Dogs" label is needed in the article meta.
 
 ### URL Conventions
 
@@ -315,10 +313,8 @@ The "• For Cats" designation clearly identifies cat-specific content. Dog cont
   <!-- H1: Main headline -->
   <h1>Topic for Dogs/Cats: Specific Benefit or Key Information</h1>
 
-  <!-- Article meta: date and pet type -->
-  <div class="article-meta">Published January 22, 2026</div>
-  <!-- OR for cats: -->
-  <div class="article-meta">March 6, 2026 • For Cats</div>
+  <!-- Article meta: last updated date -->
+  <div class="article-meta">Last Updated March 6, 2026</div>
 
   <!-- REQUIRED: Quick Facts Box -->
   <div class="quick-facts">
@@ -477,7 +473,7 @@ If the blog post is part of a comprehensive guide series, add this callout **eit
 **Body text** (automatically styled):
 - `<p>`: Standard paragraphs (17-18px, weight 500)
 - `.article-intro`: Intro paragraph after quick facts (19-21px, weight 500, muted color)
-- `.article-meta`: Date/pet indicator (14px, weight 500, muted color)
+- `.article-meta`: Last updated date (14px, weight 500, muted color)
 
 **Emphasis**:
 - `<strong>`: Bold text (weight 600) for emphasis
@@ -986,7 +982,7 @@ If the blog post is part of a comprehensive guide series, add this callout **eit
 
       <div class="article-header">
         <h1>Article Title: Specific Benefit</h1>
-        <div class="article-meta">March 6, 2026 • For Cats</div>
+        <div class="article-meta">Last Updated March 6, 2026</div>
 
         <div class="quick-facts">
           <div class="quick-facts-content">
