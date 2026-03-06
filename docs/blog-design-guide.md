@@ -319,8 +319,8 @@ No visual badge or "For Cats/Dogs" label is needed in the article meta.
   <!-- REQUIRED: Callout Box (Quick Answer) with orange border -->
   <div class="callout">
     <div class="callout-content">
-      <h2>Quick Answer: What's the Main Question?</h2>
-      <p style="margin-bottom: 16px; font-size: 18px; font-weight: 600; color: var(--text-dark);"><strong>Direct, bold answer in 1-2 sentences with the most important actionable information.</strong></p>
+      <p style="margin: 0; font-size: 18px;"><strong>Quick Answer: What's the Main Question?</strong></p>
+      <p style="margin-top: 12px; margin-bottom: 16px; font-size: 18px; font-weight: 600; color: var(--text-dark);">Direct, bold answer in 1-2 sentences with the most important actionable information.</p>
       <p style="margin-bottom: 12px; font-size: 15px;"><strong>Key point 1:</strong> Specific detail with numbers if applicable</p>
       <p style="margin-bottom: 12px; font-size: 15px;"><strong>Key point 2:</strong> Specific detail</p>
       <p style="margin-bottom: 0; font-size: 15px;"><strong>Key point 3:</strong> Specific detail or recommendation</p>
@@ -335,10 +335,11 @@ No visual badge or "For Cats/Dogs" label is needed in the article meta.
 **Callout Box Requirements**:
 - Use `<div class="callout">` wrapper with orange border styling
 - Inner div is `<div class="callout-content">` (white background)
-- H2 question should directly address main user query
-- First paragraph is bold answer with `<strong>` tags
-- 2-3 supporting bullet points with inline styles as shown
-- All inline styles are required for proper formatting
+- First paragraph: "Quick Answer:" label with question (`margin: 0`)
+- Second paragraph: Bold answer text (`margin-top: 12px`)
+- Following paragraphs: 2-3 supporting bullet points with inline styles
+- All inline styles are required for proper formatting and spacing
+- **DO NOT use** H2 tags (creates extra top spacing)
 - **DO NOT use** `<div class="quick-facts">` - this class is unstyled (see Styling Classes section for details)
 
 ### Optional: Guide Reference Callout
@@ -489,8 +490,8 @@ If the blog post is part of a comprehensive guide series, add this callout **eit
 ```html
 <div class="callout">
   <div class="callout-content">
-    <h2>Quick Answer: Main Question?</h2>
-    <p style="margin-bottom: 16px; font-size: 18px; font-weight: 600; color: var(--text-dark);"><strong>Direct answer in 1-2 sentences.</strong></p>
+    <p style="margin: 0; font-size: 18px;"><strong>Quick Answer: Main Question?</strong></p>
+    <p style="margin-top: 12px; margin-bottom: 16px; font-size: 18px; font-weight: 600; color: var(--text-dark);">Direct answer in 1-2 sentences.</p>
     <p style="margin-bottom: 12px; font-size: 15px;"><strong>Key point:</strong> Specific detail</p>
     <p style="margin-bottom: 12px; font-size: 15px;"><strong>Key point:</strong> Specific detail</p>
     <p style="margin-bottom: 0; font-size: 15px;"><strong>Key point:</strong> Specific detail</p>
