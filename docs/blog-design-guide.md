@@ -316,9 +316,9 @@ No visual badge or "For Cats/Dogs" label is needed in the article meta.
   <!-- Article meta: last updated date -->
   <div class="article-meta">Last Updated March 6, 2026</div>
 
-  <!-- REQUIRED: Quick Facts Box -->
-  <div class="quick-facts">
-    <div class="quick-facts-content">
+  <!-- REQUIRED: Callout Box (Quick Answer) with orange border -->
+  <div class="callout">
+    <div class="callout-content">
       <h2>Quick Answer: What's the Main Question?</h2>
       <p style="margin-bottom: 16px; font-size: 18px; font-weight: 600; color: var(--text-dark);"><strong>Direct, bold answer in 1-2 sentences with the most important actionable information.</strong></p>
       <p style="margin-bottom: 12px; font-size: 15px;"><strong>Key point 1:</strong> Specific detail with numbers if applicable</p>
@@ -332,13 +332,14 @@ No visual badge or "For Cats/Dogs" label is needed in the article meta.
 </div>
 ```
 
-**Quick Facts Box Requirements**:
-- Use `<div class="quick-facts">` wrapper (NOT "callout")
-- Inner div is `<div class="quick-facts-content">`
+**Callout Box Requirements**:
+- Use `<div class="callout">` wrapper with orange border styling
+- Inner div is `<div class="callout-content">` (white background)
 - H2 question should directly address main user query
 - First paragraph is bold answer with `<strong>` tags
 - 2-3 supporting bullet points with inline styles as shown
 - All inline styles are required for proper formatting
+- **DO NOT use** `<div class="quick-facts">` - this class is unstyled (see Styling Classes section for details)
 
 ### Optional: Guide Reference Callout
 
@@ -481,34 +482,59 @@ If the blog post is part of a comprehensive guide series, add this callout **eit
 
 ### Component Classes
 
-#### 1. Quick Facts Box (Quick Answer)
+#### 1. Callout Box (Quick Answer) - REQUIRED
+
+**IMPORTANT**: Always use `.callout` class for the orange-bordered quick answer box at the top of every article.
 
 ```html
-<div class="quick-facts">
-  <div class="quick-facts-content">
+<div class="callout">
+  <div class="callout-content">
     <h2>Quick Answer: Main Question?</h2>
-    <p style="margin-bottom: 16px; font-size: 18px; font-weight: 600; color: var(--text-dark);"><strong>Direct answer</strong></p>
-    <p style="margin-bottom: 12px; font-size: 15px;"><strong>Key point:</strong> Detail</p>
-    <p style="margin-bottom: 0; font-size: 15px;"><strong>Key point:</strong> Detail</p>
+    <p style="margin-bottom: 16px; font-size: 18px; font-weight: 600; color: var(--text-dark);"><strong>Direct answer in 1-2 sentences.</strong></p>
+    <p style="margin-bottom: 12px; font-size: 15px;"><strong>Key point:</strong> Specific detail</p>
+    <p style="margin-bottom: 12px; font-size: 15px;"><strong>Key point:</strong> Specific detail</p>
+    <p style="margin-bottom: 0; font-size: 15px;"><strong>Key point:</strong> Specific detail</p>
   </div>
 </div>
 ```
 
+**CSS Styling** (defined in blog-page.css):
+```css
+.callout {
+  position: relative;
+  background: var(--brand-orange);  /* Orange outer border */
+  border-radius: 4px;
+  padding: 8px;
+  margin: 48px 0;
+}
+
+.callout-content {
+  background: var(--white);  /* White inner box */
+  color: var(--text-dark);
+  border-radius: 12px;
+  padding: 24px 28px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+```
+
 **Rendered appearance**:
-- White box with rounded corners
+- Orange outer border/frame (8px padding creates border effect)
+- White inner box with rounded corners
 - Shadow for depth
-- Bold H2 question at top
+- H2 question or "Quick Answer:" label at top
 - Large bold answer paragraph
-- 2-3 smaller supporting points
+- 2-3 smaller supporting points with inline styling
 
 **When to use**:
 - REQUIRED on every blog post
-- Place immediately after article-meta, before article-intro
+- Place immediately after H1 and article-meta, before article-intro
 - Provides immediate value and improves engagement
+- See example: yeast-beta-glucan-for-dogs.html
 
 **DO NOT use**:
-- `<div class="callout">` (wrong class name)
-- Different inline styles (required for consistent formatting)
+- `<div class="quick-facts">` - This class has NO CSS styling and is a mistake in some older posts (e.g., digestive-enzymes-for-dogs.html). Use `.callout` instead.
+- Different outer wrapper classes
+- Omit inline styles on inner paragraphs (required for consistent formatting)
 
 #### 2. FAQ Items
 
@@ -984,8 +1010,8 @@ If the blog post is part of a comprehensive guide series, add this callout **eit
         <h1>Article Title: Specific Benefit</h1>
         <div class="article-meta">Last Updated March 6, 2026</div>
 
-        <div class="quick-facts">
-          <div class="quick-facts-content">
+        <div class="callout">
+          <div class="callout-content">
             <h2>Quick Answer: Main Question?</h2>
             <p style="margin-bottom: 16px; font-size: 18px; font-weight: 600; color: var(--text-dark);"><strong>Direct answer in 1-2 sentences.</strong></p>
             <p style="margin-bottom: 12px; font-size: 15px;"><strong>Key point:</strong> Detail</p>
