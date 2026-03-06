@@ -520,7 +520,6 @@
       padding: 28px;
       background: var(--bg-light);
       border-radius: 12px;
-      border-left: 4px solid var(--brand-orange);
     }
 
     .faq-item h3 {
