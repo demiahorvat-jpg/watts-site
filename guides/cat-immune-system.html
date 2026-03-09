@@ -109,6 +109,7 @@
       padding: 7px 20px;
       border-radius: 16px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      position: relative;
     }
 
     .header-container {
@@ -140,6 +141,45 @@
 
     nav a:hover {
       opacity: 0.8;
+    }
+
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 24px;
+      height: 20px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      z-index: 10;
+    }
+
+    .hamburger span {
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px);
     }
 
     /* MAIN CONTENT */
@@ -372,8 +412,32 @@
         font-size: 28px;
       }
 
+      .hamburger {
+        display: flex;
+      }
+
       nav ul {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--brand-orange);
+        flex-direction: column;
+        padding: 20px;
+        gap: 16px;
+        border-radius: 0 0 16px 16px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      .logo-container {
+        position: static;
+        transform: none;
+        margin-left: auto;
       }
 
       .supporting-grid {
@@ -386,16 +450,24 @@
   <div class="header-wrapper">
     <header>
       <div class="header-container">
-        <a href="/">
-          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
-        </a>
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <nav>
           <ul>
-            <li><a href="/ingredient-analyzer/">Analyzer</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
             <li><a href="/blog/">Blog</a></li>
-            <li><a href="/supplement-quiz/">Quiz</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
           </ul>
         </nav>
+        <div class="logo-container">
+          <a href="/" aria-label="Watts home">
+            <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+          </a>
+        </div>
       </div>
     </header>
   </div>
@@ -1014,6 +1086,37 @@
       }
     ]
   }
+  </script>
+
+  <script>
+    // Mobile menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('header nav ul');
+
+    if (hamburger && navMenu) {
+      hamburger.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+        this.classList.toggle('active');
+      });
+
+      const navLinks = navMenu.querySelectorAll('a');
+      navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          navMenu.classList.remove('active');
+          hamburger.classList.remove('active');
+        });
+      });
+
+      document.addEventListener('click', function(event) {
+        const isClickInsideNav = navMenu.contains(event.target);
+        const isClickOnHamburger = hamburger.contains(event.target);
+
+        if (!isClickInsideNav && !isClickOnHamburger && navMenu.classList.contains('active')) {
+          navMenu.classList.remove('active');
+          hamburger.classList.remove('active');
+        }
+      });
+    }
   </script>
 
 </body>
