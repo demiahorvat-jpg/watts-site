@@ -32,3 +32,17 @@ When fixing broken links, common mappings:
 - `beta-glucan` → `yeast-beta-glucans`
 
 If no equivalent page exists, remove the link but keep the descriptive text.
+
+## Meta Description Best Practices
+
+**Target length: 120-155 characters** (optimal for SEO, avoids truncation in search results)
+
+Guidelines:
+- **Minimum:** 120 characters (under 100 is too short, hurts SEO)
+- **Maximum:** 155 characters (over 160 gets truncated in Google)
+- **Sweet spot:** 130-150 characters
+- Include primary keyword naturally
+- Write compelling copy that encourages clicks
+- Each page needs a unique meta description
+- Start with the most important information
+- Use active voice when possible
