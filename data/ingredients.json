@@ -8821,47 +8821,6 @@
       }
     },
     {
-      "name": "Dried Yeast",
-      "aliases": [
-        "bakers yeast"
-      ],
-      "category": "active",
-      "whatItIs": "Deactivated yeast cells. Source of B vitamins and protein.",
-      "whyUsed": [
-        "B vitamin source",
-        "Palatability enhancer",
-        "Protein content"
-      ],
-      "nutritionValue": "high",
-      "qualityNote": "Similar to brewers yeast. Good B vitamin source.",
-      "wattsPosition": "good",
-      "wattsTake": "Beneficial ingredient for B vitamins and palatability.",
-      "citations": [
-        {
-          "title": "AAFCO Official Publication",
-          "url": "https://www.aafco.org/",
-          "publisher": "AAFCO"
-        }
-      ],
-      "whatItIsExpanded": {
-        "compareToSimilar": [
-          {
-            "ingredient": "nutritional-yeast",
-            "difference": "Dried yeast is inactive baker's or brewer's yeast, while nutritional yeast is specifically grown and fortified with B vitamins for nutrition."
-          },
-          {
-            "ingredient": "brewers-dried-yeast",
-            "difference": "Both are dried inactive yeast. Brewer's yeast is a by-product of beer brewing, while dried yeast may be purpose-grown or from baking."
-          },
-          {
-            "ingredient": "autolyzed-yeast",
-            "difference": "Dried yeast is whole deactivated yeast cells, while yeast extract is a concentrated paste of yeast cell contents (glutamates, nucleotides)."
-          }
-        ]
-      },
-      "lastUpdated": "February 11, 2026"
-    },
-    {
       "name": "Duck",
       "aliases": [
         "fresh duck",
@@ -15837,62 +15796,6 @@
         "metaDescription": "Is pea protein bad for dogs? Learn about protein manipulation concerns, incomplete plant protein profile, DCM risks & comparison to animal protein sources. Expert guide."
       },
       "lastUpdated": "February 10, 2026"
-    },
-    {
-      "name": "Pea Protein Concentrate",
-      "aliases": [
-        "pea protein isolate",
-        "yellow pea protein"
-      ],
-      "category": "protein",
-      "whatItIs": "Isolated protein from peas (80-85% protein), used to boost protein percentages in grain-free foods.",
-      "whyUsed": [
-        "Boosts protein without meat",
-        "Grain-free protein source",
-        "Cheaper than animal protein"
-      ],
-      "nutritionValue": "low",
-      "qualityNote": "Concerning in grain-free diets - linked to DCM (heart disease) when used heavily. Incomplete amino acid profile compared to meat. Used to inflate protein numbers without animal protein. Better than wheat gluten but still inferior to meat.",
-      "wattsPosition": "caution",
-      "wattsTake": "Concerning plant protein tied to grain-free DCM cases. Used to boost protein cheaply in grain-free formulas without adding meat. Incomplete amino acids. Dogs need animal protein primarily. Acceptable as supplement, problematic as primary protein.",
-      "citations": [
-        {
-          "title": "FDA DCM Investigation",
-          "url": "https://www.fda.gov/",
-          "publisher": "FDA"
-        }
-      ],
-      "compareToSimilar": [
-        {
-          "ingredient": "pea-protein",
-          "difference": "Pea protein concentrate has slightly lower protein content (80-85%) compared to pea protein isolate (85-90%), with more residual carbohydrates and fiber."
-        },
-        {
-          "ingredient": "pea-starch",
-          "difference": "Pea starch is the extracted carbohydrate portion used for binding, while pea protein concentrate is the extracted protein portion used to boost protein levels."
-        },
-        {
-          "ingredient": "chicken-meal",
-          "difference": "Chicken meal provides complete animal protein with all essential amino acids dogs need, while pea protein concentrate is incomplete plant protein lacking methionine and taurine."
-        }
-      ],
-      "lastUpdated": "February 11, 2026",
-      "whatItIsExpanded": {
-        "compareToSimilar": [
-          {
-            "ingredient": "pea-protein-concentrate",
-            "difference": "Pea protein concentrate is 60-80% protein (some starch remains), while pea protein isolate is 85-90%+ protein (more processed, more pure)."
-          },
-          {
-            "ingredient": "pea-flour",
-            "difference": "Pea protein concentrate is isolated protein (60-80% protein), while pea flour is whole ground peas with starch, fiber, and protein together."
-          },
-          {
-            "ingredient": "soy-protein-concentrate",
-            "difference": "Both are plant protein concentrates. Pea protein is allergen-friendly and lower in phytoestrogens than soy protein."
-          }
-        ]
-      }
     },
     {
       "name": "Pea Starch",
