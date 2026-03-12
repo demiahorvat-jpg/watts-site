@@ -8646,100 +8646,6 @@
       "lastUpdated": "February 11, 2026"
     },
     {
-      "name": "Dried Egg Product",
-      "aliases": [
-        "dried eggs",
-        "dehydrated egg"
-      ],
-      "category": "protein",
-      "whatItIs": "Whole eggs that have been dried, including both whites and yolks. Concentrated protein source.",
-      "whyUsed": [
-        "Highly digestible complete protein",
-        "Contains all essential amino acids",
-        "Shelf-stable egg nutrition"
-      ],
-      "nutritionValue": "high",
-      "qualityNote": "One of the most biologically complete proteins available, with excellent amino acid profile.",
-      "wattsPosition": "good",
-      "wattsTake": "Excellent protein source with complete amino acid profile and high digestibility.",
-      "citations": [
-        {
-          "title": "AAFCO Official Publication",
-          "url": "https://www.aafco.org/",
-          "publisher": "AAFCO"
-        }
-      ],
-      "whatItIsExpanded": {
-        "overview": "Dried egg product is dehydrated whole eggs providing complete protein in dog food, identical in nutrition to 'egg product.' Whole eggs (before drying) contain approximately 75% moisture, 13g protein, 11g fat per 100g. Once dried, egg product becomes concentrated with approximately 45-50% protein, 40-45% fat. Eggs provide the most complete and bioavailable protein available—biological value of 100 (gold standard), containing all essential amino acids in optimal ratios. Rich in vitamins A, D, E, B-complex (especially B12, riboflavin, folate, biotin), minerals (iron, selenium, zinc), choline (brain health), and lutein/zeaxanthin (eye health). Highly digestible (95%+) and hypoallergenic (egg allergies rare). Premium ingredient signaling quality.",
-        "compareToSimilar": [
-          {
-            "ingredient": "egg-product",
-            "difference": "Dried egg product and egg product are identical—both are dried whole eggs with same nutrition (45-50% protein, 40-45% fat, biological value 100). 'Dried egg product' specifies drying process; 'egg product' assumes drying (eggs always dried in kibble). Both are premium complete protein. No nutritional difference."
-          }
-        ]
-      },
-      "whyUsedExpanded": "Dried egg product appears in dog food as premium complete protein with highest biological value. Provides all essential amino acids in optimal ratios. Highly digestible (95%+), hypoallergenic, and nutrient-dense with vitamins, minerals, and choline. Premium positioning ingredient signaling quality and completeness. Supports muscle maintenance, cognitive function, eye health. More expensive than most proteins, limiting use to premium formulas. Often combined with meat proteins for variety.",
-      "nutritionalProfile": {
-        "protein": "45-50g per 100g dried, complete with optimal amino acid ratios",
-        "fat": "40-45g per 100g dried",
-        "biologicalValue": "100—gold standard, most complete protein available",
-        "micronutrients": {
-          "vitaminA": "Excellent source",
-          "vitaminD": "Good source",
-          "vitaminE": "Present",
-          "bVitamins": "Exceptional—B12, riboflavin, folate, biotin",
-          "choline": "Excellent for brain health",
-          "selenium": "Good source",
-          "iron": "Present",
-          "zinc": "Present",
-          "lutein": "Eye health support"
-        },
-        "bioavailability": "Exceptional—highest digestibility (95%+) and biological value among proteins"
-      },
-      "qualityConsiderations": {
-        "expanded": "Dried egg product is premium quality ingredient signaling high-grade formulation. Eggs in top 10 ingredients indicate protein quality focus. As dried ingredient, already concentrated—doesn't lose weight like fresh meat. Dried whole eggs preferable to egg whites (yolks contain valuable nutrients and fat). Combined with meat proteins provides excellent amino acid diversity. More expensive than most proteins—presence indicates premium positioning.",
-        "redFlags": [
-          "None significant—dried egg product is quality ingredient"
-        ],
-        "greenFlags": [
-          "Dried egg product in top 10 ingredients",
-          "Whole eggs specified (not just whites)",
-          "Combined with meat proteins for diversity",
-          "Indicates premium quality formulation"
-        ]
-      },
-      "concernsExpanded": {
-        "detailed": "Dried egg product is remarkably safe. Egg allergies exist but are rare in dogs compared to chicken, beef, or dairy. Some dogs with chicken allergies tolerate eggs (different proteins), though cross-reactivity possible. High fat content (40-45% dried) benefits most dogs but could concern dogs prone to pancreatitis or requiring very low-fat diets. Otherwise, eggs are one of safest, most beneficial proteins. Highly digestible and hypoallergenic.",
-        "contraindications": [
-          "Dogs with rare egg allergies should avoid",
-          "Dogs prone to pancreatitis may need high-fat ingredients monitored (though food amounts typically safe)"
-        ],
-        "lifeStageConsiderations": "Exceptional for all life stages. Puppies benefit from complete amino acids for growth. Adults benefit for muscle maintenance. Seniors benefit for digestibility and choline (cognitive support)."
-      },
-      "scientificEvidence": {
-        "summary": "Eggs provide the most complete, bioavailable protein (biological value 100). Exceptional digestibility (95%+). Rich micronutrient profile. Safe and hypoallergenic.",
-        "keyStudies": [],
-        "evidenceLevel": "Very strong regarding protein quality, bioavailability, digestibility, and nutritional completeness."
-      },
-      "faqs": [
-        {
-          "question": "Is dried egg product the same as egg product?",
-          "answer": "Yes, dried egg product and egg product are nutritionally identical—both are dried whole eggs. The terms are used interchangeably in dog food. All eggs in kibble are dried during processing, whether labeled 'dried egg product' or simply 'egg product.' Both provide complete protein with biological value of 100 (gold standard), approximately 45-50% protein and 40-45% fat when dried, exceptional digestibility (95%+), and rich vitamins, minerals, and choline. 'Dried egg product' simply specifies the drying process more explicitly. Either indicates premium quality complete protein in dog food.",
-          "answerShort": "Yes, identical. Both are dried whole eggs with same nutrition (biological value 100, 45-50% protein). Terms used interchangeably. Premium complete protein.",
-          "priority": 1
-        }
-      ],
-      "seoMetadata": {
-        "focusKeyword": "dried egg product dog food",
-        "secondaryKeywords": [
-          "dried egg product vs egg product",
-          "dried eggs dog food"
-        ],
-        "metaDescription": "Is dried egg product good for dogs? Learn about gold standard complete protein, biological value of 100, exceptional digestibility & premium quality nutritional benefits."
-      },
-      "lastUpdated": "February 10, 2026"
-    },
-    {
       "name": "Dried Kelp",
       "aliases": [
         "kelp",
@@ -8836,48 +8742,6 @@
           {
             "ingredient": "egg-product",
             "difference": "Both provide proteins and antibodies. Plasma offers blood immunoglobulins for gut immunity, while eggs provide avidin and lysozyme with different immune benefits."
-          }
-        ]
-      },
-      "lastUpdated": "February 11, 2026"
-    },
-    {
-      "name": "Dried Sweet Potatoes",
-      "aliases": [
-        "dehydrated sweet potatoes",
-        "sweet potato"
-      ],
-      "category": "carbohydrate",
-      "whatItIs": "Sweet potatoes that have been dehydrated to remove moisture, providing digestible carbohydrates and fiber.",
-      "whyUsed": [
-        "Digestible carbohydrate source",
-        "High in fiber and beta-carotene",
-        "Grain-free carbohydrate option"
-      ],
-      "nutritionValue": "moderate",
-      "qualityNote": "Nutritious carbohydrate source with vitamins and fiber. Better than simple starches.",
-      "wattsPosition": "good",
-      "wattsTake": "Quality carbohydrate source with added nutritional benefits from fiber and beta-carotene.",
-      "citations": [
-        {
-          "title": "AAFCO Official Publication",
-          "url": "https://www.aafco.org/",
-          "publisher": "AAFCO"
-        }
-      ],
-      "whatItIsExpanded": {
-        "compareToSimilar": [
-          {
-            "ingredient": "dried-sweet-potatoes",
-            "difference": "Dried sweet potatoes are dehydrated for storage, while fresh sweet potato has higher moisture. Both provide the same nutrients when rehydrated."
-          },
-          {
-            "ingredient": "pumpkin",
-            "difference": "Both are orange root vegetables. Sweet potatoes are higher in carbohydrates and calories, while pumpkin is mostly water with fewer calories."
-          },
-          {
-            "ingredient": "potatoes",
-            "difference": "Sweet potatoes have more fiber, beta-carotene, and lower glycemic index than white potatoes, which are higher in starch and potassium."
           }
         ]
       },
@@ -9433,7 +9297,8 @@
         "dried egg",
         "whole egg",
         "egg powder",
-        "dehydrated egg"
+        "dehydrated egg",
+        "dried egg product"
       ],
       "category": "protein",
       "whatItIs": "Dried whole eggs. Complete protein with all essential amino acids.",
@@ -21269,7 +21134,10 @@
       "name": "Sweet Potatoes",
       "aliases": [
         "sweet potato",
-        "yams"
+        "yams",
+        "dried sweet potatoes",
+        "dehydrated sweet potatoes",
+        "dried sweet potato"
       ],
       "category": "carbohydrate",
       "whatItIs": "Whole sweet potatoes. Nutrient-dense, fiber-rich carbohydrate.",
