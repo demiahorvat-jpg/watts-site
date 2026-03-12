@@ -1093,12 +1093,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wattspet.com/ingredient-analyzer/ingredients/dried-egg-product/</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/dried-kelp/</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -1111,25 +1105,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wattspet.com/ingredient-analyzer/ingredients/dried-sweet-potatoes/</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/dried-tomato-pomace/</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wattspet.com/ingredient-analyzer/ingredients/dried-whey/</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wattspet.com/ingredient-analyzer/ingredients/dried-yeast/</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1873,12 +1849,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wattspet.com/ingredient-analyzer/ingredients/pea-protein-concentrate/</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/pea-starch/</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -2401,12 +2371,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wattspet.com/ingredient-analyzer/ingredients/thiamine-hydrochloride/</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/thiamine-mononitrate/</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -2491,12 +2455,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wattspet.com/ingredient-analyzer/ingredients/vitamin-a-acetate/</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/vitamin-a-supplement/</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -2516,18 +2474,6 @@
   </url>
   <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/vitamin-d3-supplement/</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wattspet.com/ingredient-analyzer/ingredients/vitamin-e-acetate/</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wattspet.com/ingredient-analyzer/ingredients/vitamin-e-succinate/</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
