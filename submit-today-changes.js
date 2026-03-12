@@ -5,29 +5,13 @@ const fs = require('fs');
 
 // URLs we modified today
 const urls = [
-  // Life Stage cluster
-  'https://wattspet.com/guides/dog-life-stage-health.html',
-  'https://wattspet.com/blog/puppy-vitamins.html',
-  'https://wattspet.com/blog/large-breed-puppy-nutrition.html',
-  'https://wattspet.com/blog/pregnant-nursing-dog-nutrition.html',
-  'https://wattspet.com/blog/senior-dog-formula-kibble.html',
-  'https://wattspet.com/blog/active-working-dog-nutrition.html',
-
-  // Supplement Quality cluster
-  'https://wattspet.com/guides/choosing-dog-supplements.html',
-  'https://wattspet.com/blog/dog-supplement-formats-compared.html',
-  'https://wattspet.com/blog/how-to-read-dog-supplement-labels.html',
-  'https://wattspet.com/blog/fillers-in-dog-supplements.html',
-  'https://wattspet.com/blog/how-pet-supplements-are-made.html',
-  'https://wattspet.com/blog/whole-food-vs-synthetic-nutrients.html',
-  'https://wattspet.com/blog/can-dogs-take-human-supplements.html',
-
-  // Nutritional Science cluster
-  'https://wattspet.com/guides/dog-nutrition-science.html',
-  'https://wattspet.com/blog/dog-vs-human-nutrition.html',
-  'https://wattspet.com/blog/protein-for-dogs.html',
-  'https://wattspet.com/blog/why-dogs-need-supplements.html',
-  'https://wattspet.com/blog/what-extends-dog-lifespan.html'
+  // March 12, 2026
+  'https://wattspet.com/blog/uc-ii-for-dogs.html',
+  'https://wattspet.com/blog/uc-ii-for-cats.html',
+  'https://wattspet.com/blog/uc-ii-vs-glucosamine-for-dogs.html',
+  'https://wattspet.com/blog/antioxidants-for-cats.html',
+  'https://wattspet.com/blog/astaxanthin-for-dogs.html',
+  'https://wattspet.com/blog/astaxanthin-for-cats.html'
 ];
 
 console.log('Submitting today\'s changes to IndexNow...\n');
