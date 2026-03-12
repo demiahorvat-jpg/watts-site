@@ -13,7 +13,8 @@ const urls = [
   'https://wattspet.com/blog/astaxanthin-for-dogs.html',
   'https://wattspet.com/blog/astaxanthin-for-cats.html',
   'https://wattspet.com/blog/epicor-for-dogs.html',
-  'https://wattspet.com/blog/epicor-for-cats.html'
+  'https://wattspet.com/blog/epicor-for-cats.html',
+  'https://wattspet.com/blog/spirulina-for-cats.html'
 ];
 
 console.log('Submitting today\'s changes to IndexNow...\n');
