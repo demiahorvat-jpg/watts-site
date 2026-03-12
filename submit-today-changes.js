@@ -11,7 +11,9 @@ const urls = [
   'https://wattspet.com/blog/uc-ii-vs-glucosamine-for-dogs.html',
   'https://wattspet.com/blog/antioxidants-for-cats.html',
   'https://wattspet.com/blog/astaxanthin-for-dogs.html',
-  'https://wattspet.com/blog/astaxanthin-for-cats.html'
+  'https://wattspet.com/blog/astaxanthin-for-cats.html',
+  'https://wattspet.com/blog/epicor-for-dogs.html',
+  'https://wattspet.com/blog/epicor-for-cats.html'
 ];
 
 console.log('Submitting today\'s changes to IndexNow...\n');
