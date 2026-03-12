@@ -3,10 +3,35 @@
 const https = require('https');
 const fs = require('fs');
 
-// Pages changed in this session
+// Pages changed in this session - ingredient consolidation
 const changedUrls = [
-  // About page updates - new copy and visual design
-  'https://wattspet.com/about.html'
+  // Pages with merged content from consolidated redirects
+  'https://wattspet.com/ingredient-analyzer/ingredients/vitamin-a-supplement/',
+  'https://wattspet.com/ingredient-analyzer/ingredients/vitamin-e-supplement/',
+  'https://wattspet.com/ingredient-analyzer/ingredients/thiamine-mononitrate/',
+
+  // Target pages of redirects (may have alias updates)
+  'https://wattspet.com/ingredient-analyzer/ingredients/brewers-dried-yeast/',
+  'https://wattspet.com/ingredient-analyzer/ingredients/pea-protein/',
+  'https://wattspet.com/ingredient-analyzer/ingredients/sweet-potatoes/',
+  'https://wattspet.com/ingredient-analyzer/ingredients/egg-product/',
+  'https://wattspet.com/ingredient-analyzer/ingredients/whey-powder/',
+  'https://wattspet.com/ingredient-analyzer/ingredients/banana/',
+  'https://wattspet.com/ingredient-analyzer/ingredients/glutamine/',
+  'https://wattspet.com/ingredient-analyzer/ingredients/l-lysine/',
+
+  // Pages with updated internal links
+  'https://wattspet.com/blog/immune-support-for-dogs.html',
+  'https://wattspet.com/ingredient-analyzer/ingredients/peas/',
+  'https://wattspet.com/ingredient-analyzer/ingredients/pea-flour/',
+  'https://wattspet.com/ingredient-analyzer/ingredients/nutritional-yeast/',
+  'https://wattspet.com/ingredient-analyzer/ingredients/yeast-fermentate/',
+  'https://wattspet.com/ingredient-analyzer/ingredients/hydrolyzed-yeast/',
+  'https://wattspet.com/ingredient-analyzer/ingredients/yeast-beta-glucans/',
+  'https://wattspet.com/ingredient-analyzer/ingredients/mos/',
+
+  // Index page (cards removed)
+  'https://wattspet.com/ingredient-analyzer/ingredients/'
 ];
 
 // Remove duplicates
