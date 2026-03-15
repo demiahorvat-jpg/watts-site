@@ -322,6 +322,7 @@
       .table-of-contents a {
         color: var(--fg);
         text-decoration: none;
+        font-weight: 500;
       }
 
       .table-of-contents a:hover {
