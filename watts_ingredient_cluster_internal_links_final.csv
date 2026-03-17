@@ -124,7 +124,7 @@ docosahexaenoic-acid,omega3_marine_lipids,eicosapentaenoic-acid,sardine-oil,salm
 dried-bacon-fat,animal_fats,poultry-fat,pork-fat,lamb-fat,vegetable-oil,dog-skin-coat-supplements,all-natural-dog-supplements
 dried-chicory-root,prebiotics,resistant-starch,psyllium-husk,prebiotics,wheat-bran,best-prebiotic-foods-for-dogs,prebiotics-for-cats
 dried-egg-product,other_functional_binders,egg-product,dried-whey,dried-plasma,wheat-bran,how-to-read-dog-supplement-labels,why-dogs-need-supplements
-dried-kelp,vegetables,dried-tomato-pomace,dried-sweet-potatoes,zucchini,zeaxanthin,all-natural-dog-supplements,senior-cat-nutrition
+dried-kelp,vegetables,dried-tomato-pomace,pumpkin,zucchini,zeaxanthin,all-natural-dog-supplements,senior-cat-nutrition
 dried-plasma,other_functional_binders,dried-whey,dried-egg-product,yucca-schidigera-extract,wheat-bran,how-to-read-dog-supplement-labels,why-dogs-need-supplements
 dried-sweet-potatoes,vegetables,sweet-potatoes,dried-tomato-pomace,dried-kelp,zeaxanthin,all-natural-dog-supplements,senior-cat-nutrition
 dried-tomato-pomace,vegetables,dried-sweet-potatoes,dried-kelp,zucchini,zeaxanthin,all-natural-dog-supplements,senior-cat-nutrition
@@ -142,7 +142,7 @@ enterococcus-faecium,probiotics,yogurt,sauerkraut,probiotics,resistant-starch,pr
 ethoxyquin,preservatives,sorbic-acid,sodium-propionate,sodium-benzoate,yellow-6,how-to-read-dog-supplement-labels,fillers-in-dog-supplements
 euphausia-superba,marine_proteins,whole-antarctic-krill-meal,whitefish-meal,whitefish,sardine-oil,protein-for-dogs,dog-skin-coat-supplements
 fermented-ingredients,yeast_fermentation_immune,yeast-fermentate,yeast-beta-glucans,selenium-yeast,yogurt,yeast-beta-glucan-for-dogs,beta-glucans-for-cats
-ferrous-sulfate,minerals,zinc-sulfate,manganese-sulfate,iron-sulfate,vitamin-k1-supplement,zinc-for-dogs,dog-vitamins-deficiency
+ferrous-sulfate,minerals,zinc-sulfate,manganese-sulfate,iron-proteinate,vitamin-k1-supplement,zinc-for-dogs,dog-vitamins-deficiency
 fish-digest,flavors_palatable_digests,poultry-digest,liver-digest,animal-digest,turkey-meal,how-to-read-dog-supplement-labels,how-pet-supplements-are-made
 fish-meal,marine_proteins,whole-antarctic-krill-meal,whitefish-meal,shrimp-meal,fish-oil,protein-for-dogs,dog-skin-coat-supplements
 fish-oil,omega3_marine_lipids,salmon-oil,krill-oil,omega-3-fatty-acids,mixed-tocopherols,omega-3-fish-oil-for-dogs,omega-3-for-cats
@@ -341,7 +341,7 @@ squash,vegetables,butternut-squash,zucchini,tomatoes,zeaxanthin,all-natural-dog-
 sunflower-lecithin,seeds_plant_oils,sunflower-oil,lecithin,vegetable-oil,sardine-oil,dog-skin-coat-supplements,all-natural-dog-supplements
 sunflower-oil,seeds_plant_oils,sunflower-lecithin,vegetable-oil,soybean-oil,sardine-oil,dog-skin-coat-supplements,all-natural-dog-supplements
 sweet-potato-fiber,fibers_stool_support,pea-hull-fiber,pea-fiber,oat-fiber,resistant-starch,dog-anal-gland-diet,fillers-in-dog-supplements
-sweet-potatoes,vegetables,dried-sweet-potatoes,zucchini,tomatoes,zeaxanthin,all-natural-dog-supplements,senior-cat-nutrition
+sweet-potatoes,vegetables,pumpkin,zucchini,tomatoes,zeaxanthin,all-natural-dog-supplements,senior-cat-nutrition
 tapioca,starches,tapioca-starch,potatoes,potato-starch,wheat-gluten,fillers-in-dog-supplements,dog-vs-human-nutrition
 tapioca-starch,starches,tapioca,potato-starch,modified-food-starch,rice-starch,fillers-in-dog-supplements,dog-vs-human-nutrition
 taurine,amino_acids,choline-chloride,l-carnitine,fish-oil,vitamin-a-supplement,taurine-for-cats,choline-for-dogs
