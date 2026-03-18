@@ -171,7 +171,7 @@
         <h1>Immune Support for Cats: What Works & What Doesn't</h1>
         <div class="article-meta">Last Updated March 9, 2026</div>
 
-        <p class="article-intro">Search for "immune support for cats" and you'll find endless supplements promising to "boost" your cat's immunity. The problem? An overactive immune system is just as problematic as a weak one—allergies, autoimmune disease, and chronic inflammation all stem from immune dysregulation, not underactivity. This guide cuts through the marketing to explain what actually supports balanced feline immunity, which supplements have research backing, and when your cat actually needs help.</p>
+        <p class="article-intro">Effective feline immune support modulates rather than "boosts"—overactive immunity causes allergies and autoimmune disease. Research-backed approaches include omega-3 fatty acids (EPA/DHA), beta-glucans (bind Dectin-1 receptors for trained immunity), zinc from animal sources, and vitamin D (cats cannot synthesize from sunlight). 70% of immune cells reside in the gut, making gut health foundational to immune function.</p>
 
         <div style="margin: 32px 0; padding: 24px 28px; background: #f7f7f7; border-radius: 8px;">
           <p style="font-size: 13px; font-weight: 600; color: var(--brand-orange); margin: 0 0 14px 0; text-transform: uppercase; letter-spacing: 0.5px;">In This Article</p>
@@ -203,6 +203,29 @@
         <h2 id="what-supports-immunity">What Actually Supports Feline Immunity</h2>
 
         <p>Not all immune support is equal. Here's what has research backing versus what's mostly marketing.</p>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 32px 0;">
+          <div>
+            <p style="font-weight: 600; color: #2e7d32; margin-bottom: 12px;">Evidence-Based Support</p>
+            <ul style="margin: 0; font-size: 15px;">
+              <li><strong>Omega-3s (EPA/DHA)</strong> — reduces inflammatory cytokines</li>
+              <li><strong>Beta-glucans</strong> — primes innate immune cells</li>
+              <li><strong>Zinc (animal sources)</strong> — T cell development</li>
+              <li><strong>Vitamin D3</strong> — activates antimicrobial peptides</li>
+              <li><strong>Gut health support</strong> — 70% of immune cells in gut</li>
+            </ul>
+          </div>
+          <div>
+            <p style="font-weight: 600; color: #d32f2f; margin-bottom: 12px;">Avoid / Insufficient Evidence</p>
+            <ul style="margin: 0; font-size: 15px;">
+              <li><strong>Echinacea</strong> — can worsen allergies/autoimmune</li>
+              <li><strong>High-dose Vitamin C</strong> — cats synthesize their own</li>
+              <li><strong>L-Lysine</strong> — clinical studies inconsistent</li>
+              <li><strong>Colloidal silver</strong> — no benefit, real risks</li>
+              <li><strong>Generic "immune boosters"</strong> — cause overreaction</li>
+            </ul>
+          </div>
+        </div>
 
         <h3>1. Nutrition: The Foundation</h3>
 
@@ -450,18 +473,23 @@
     </article>
   </main>
 
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2026 Watts Pet Nutrition</p>
-      <nav class="footer-nav">
-        <a href="/">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/blog/">Blog</a>
-        <a href="mailto:info@wattspet.com">Contact</a>
-      </nav>
-    </div>
-  </footer>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
+      </div>
+    </footer>
+  </div>
 
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   <script>
     // Hamburger menu toggle
     document.addEventListener('DOMContentLoaded', function() {
