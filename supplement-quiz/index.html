@@ -108,7 +108,11 @@
       justify-content: space-between;
       gap: 16px;
     }
-    .header-logo {
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
       height: 32px;
       width: auto;
       flex-shrink: 0;
@@ -787,23 +791,30 @@
 </head>
 <body>
 
-  <div class="header-wrapper">
-    <header>
-      <div class="header-container">
-        <a href="/"><img src="/watts-logo-white.svg" alt="Watts" class="header-logo"></a>
-        <button class="hamburger" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
-        </button>
-        <nav>
-          <ul>
-            <li><a href="/blog/">Blog</a></li>
-            <li><a href="/ingredient-analyzer/">Ingredients</a></li>
-            <li><a href="/dog-age-calculator/">Age Calculator</a></li>
-          </ul>
-        </nav>
+<div class="header-wrapper">
+  <header>
+    <div class="header-container">
+      <button class="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
+        </ul>
+      </nav>
+      <div class="logo-container">
+          <a href="/" aria-label="Watts home">
+            <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+          </a>
+        </div>
       </div>
     </header>
-  </div>
+</div>
 
   <main>
     <div class="page-wrapper">
