@@ -639,6 +639,33 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+/* Social links */
+.social-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  transition: background 0.2s;
+}
+.social-links a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+.social-links svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--white);
+}
+
 /* Mobile footer fixes */
 @media (max-width: 767px) {
   footer {
