@@ -499,12 +499,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wattspet.com/ingredient-analyzer/ingredients/bananas/</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/barley/</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -1405,19 +1399,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wattspet.com/ingredient-analyzer/ingredients/l-glutamine/</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://wattspet.com/ingredient-analyzer/ingredients/l-lysine/</loc>
-    <lastmod>2026-02-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wattspet.com/ingredient-analyzer/ingredients/l-lysine-monohydrochloride/</loc>
     <lastmod>2026-02-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
