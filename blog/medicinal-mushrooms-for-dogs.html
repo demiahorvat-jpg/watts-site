@@ -134,26 +134,39 @@
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="header-content">
-      <a href="/" class="logo" aria-label="Home">
-        <img src="/watts-logo.svg" alt="Watts" width="90" height="32">
-      </a>
-      <nav class="nav-links" aria-label="Main navigation">
-        <a href="/ingredient-analyzer/">Ingredient Analyzer</a>
-        <a href="/blog/">Blog</a>
-      </nav>
-    </div>
-  </header>
+  <div class="header-wrapper">
+    <header>
+      <div class="header-container">
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
+          </ul>
+        </nav>
+        <div class="logo-container">
+          <a href="/" aria-label="Watts home">
+            <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+          </a>
+        </div>
+      </div>
+    </header>
+  </div>
 
-  <main class="blog-post">
+  <main>
     <article>
-      <header class="post-header">
+      <div class="article-header">
+        <div class="article-meta">March 30, 2026</div>
         <h1>Medicinal Mushrooms for Dogs: Which Ones Actually Work</h1>
-        <p class="subtitle">Turkey tail, reishi, lion's mane, chaga, and cordyceps—what the research shows, proper dosing, and how to avoid products that are mostly filler.</p>
-      </header>
+      </div>
 
-      <div class="post-body">
+      <p class="article-intro">Turkey tail, reishi, lion's mane, chaga, and cordyceps—what the research shows, proper dosing, and how to avoid products that are mostly filler. Most mushroom supplements for dogs are low-quality grain filler, but the right products can provide real benefits.</p>
 
     <p>Most mushroom supplements for dogs are a scam.</p>
 
@@ -280,7 +293,7 @@
 
     <h2>Which Mushroom for Which Condition</h2>
 
-    <table>
+    <div class="table-scroll"><table>
         <thead>
             <tr>
                 <th>Condition</th>
@@ -345,7 +358,7 @@
                 <td>Highest antioxidant content; avoid with kidney issues</td>
             </tr>
         </tbody>
-    </table>
+    </table></div>
 
     <h2>The Quality Problem: Fruiting Body vs. Mycelium on Grain</h2>
 
@@ -396,7 +409,7 @@
 
     <h3>Concentrated Extracts (standardized to polysaccharides)</h3>
 
-    <table>
+    <div class="table-scroll"><table>
         <thead>
             <tr>
                 <th>Dog Size</th>
@@ -426,7 +439,7 @@
                 <td>600-1000 mg</td>
             </tr>
         </tbody>
-    </table>
+    </table></div>
 
     <h3>Whole Mushroom Powder (non-extracted)</h3>
 
@@ -499,9 +512,7 @@
 
     <p>For most dogs, the priority should be <a href="/blog/gut-health-for-dogs.html">optimizing gut health</a> and ensuring adequate <a href="/blog/immune-support-for-dogs.html">core immune nutrients</a> (vitamin D, zinc, omega-3s) before adding mushrooms. Once the basics are covered, mushrooms can provide additional targeted support.</p>
 
-      </div>
-
-      <section class="faq-section">
+      <div class="faq-section">
         <h2>Frequently Asked Questions</h2>
 
         <div class="faq-item">
@@ -540,30 +551,47 @@
             <p>For cognitive support (lion's mane), some owners report improvements within 2-3 weeks, but research suggests 8-12 weeks for meaningful nerve regeneration effects. Be patient and consistent.</p>
         </div>
 
-      </section>
+      </div>
 
-    </article>
-
-    <aside class="related-links">
-        <h2>Related Articles</h2>
+      <div class="related-articles">
+        <h3>Related Articles</h3>
         <ul>
           <li><a href="/blog/immune-support-for-dogs.html">Best Immune Support for Dogs: What Works</a></li>
           <li><a href="/blog/yeast-beta-glucan-for-dogs.html">Yeast Beta-Glucan for Dogs: Immune Support Guide</a></li>
           <li><a href="/blog/gut-health-for-dogs.html">Gut Health for Dogs: Complete Guide</a></li>
           <li><a href="/blog/antioxidants-for-dogs.html">Antioxidants for Dogs: What to Know</a></li>
         </ul>
-      </aside>
+      </div>
+    </article>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-content">
-      <p>&copy; 2025 Watts. All rights reserved.</p>
-      <nav class="footer-nav" aria-label="Footer navigation">
-        <a href="/privacy.html">Privacy</a>
-        <a href="/terms.html">Terms</a>
-        <a href="/contact.html">Contact</a>
-      </nav>
-    </div>
-  </footer>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left"></div>
+        <div class="footer-right">
+          <div class="footer-right-text">
+            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
+            <p style="margin-top: 12px;">&copy; <span id="year"></span> Watts Pet</p>
+          </div>
+          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('nav ul');
+    if (hamburger && navMenu) {
+      hamburger.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+        this.classList.toggle('active');
+      });
+    }
+  });
+  </script>
 </body>
 </html>
