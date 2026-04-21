@@ -74,7 +74,7 @@ body {
 }
 
 /* ORANGE HEADER - Rounded like Shopify site */
-header {
+.blog-content header {
   background: var(--brand-orange);
   padding: 7px 20px;
   border-radius: 16px;
@@ -563,7 +563,7 @@ tbody tr:hover {
 }
 
 /* FOOTER - Orange with asymmetric rounded shape like Shopify */
-footer {
+.blog-content footer {
   background: var(--brand-orange);
   color: var(--white);
   padding: 45px 40px 20px;
@@ -574,7 +574,7 @@ footer {
   min-height: 144px;
 }
 @media (min-width: 768px) {
-  footer {
+  .blog-content footer {
     padding: 63px 60px 24px;
     min-height: 207px;
     border-radius: 300px 16px 16px 300px;
@@ -624,19 +624,19 @@ footer {
   }
 }
 
-footer p {
+.blog-content footer p {
   color: var(--white);
   font-size: 15px;
   font-weight: 500;
   margin-bottom: 12px;
 }
 
-footer a {
+.blog-content footer a {
   color: var(--white);
   text-decoration: none;
   font-weight: 500;
 }
-footer a:hover {
+.blog-content footer a:hover {
   text-decoration: underline;
 }
 
@@ -669,7 +669,7 @@ footer a:hover {
 
 /* Mobile footer fixes */
 @media (max-width: 767px) {
-  footer {
+  .blog-content footer {
     padding: 32px 20px 16px !important;
     border-radius: 100px 16px 16px 100px !important;
     min-height: auto !important;
@@ -698,7 +698,7 @@ footer a:hover {
     margin-top: 0 !important;
   }
 
-  footer p {
+  .blog-content footer p {
     font-size: 14px !important;
     margin-bottom: 8px !important;
   }
