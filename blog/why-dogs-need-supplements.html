@@ -275,6 +275,14 @@
       justify-content: unset;
     }
 
+    /* Reset blog-page.css footer overrides */
+    .site-footer footer,
+    .site-footer .footer-pill {
+      min-height: 0 !important;
+      align-items: stretch !important;
+      justify-content: unset !important;
+    }
+
     .footer-pill {
       display: flex;
       flex-direction: column;
@@ -293,6 +301,7 @@
     .footer-top {
       display: flex;
       flex-direction: row;
+      flex-wrap: nowrap;
       align-items: flex-start;
       justify-content: space-between;
       gap: 60px;
@@ -837,7 +846,7 @@
             <li><a href="/ingredient-analyzer">Ingredient Analyzer</a></li>
           </ul>
           <ul class="footer-nav-list">
-            <p class="footer-nav-title">Help</p>
+            <p class="footer-nav-title">Help &amp; Supports</p>
             <li><a href="/pages/contact">Contact Us</a></li>
             <li><a href="/pages/faq">FAQ</a></li>
             <li><a href="/policies/privacy-policy">Privacy Policy</a></li>
@@ -846,7 +855,7 @@
 
         <div class="footer-connect">
           <div class="footer-email-capture">
-            <p class="footer-email-heading">Get the latest updates from Watts.</p>
+            <p class="footer-email-heading">Get the latest from Watts.</p>
             <form class="footer-email-form" onsubmit="event.preventDefault();">
               <div class="footer-email-field">
                 <input type="email" placeholder="Email Address" required autocomplete="email">
