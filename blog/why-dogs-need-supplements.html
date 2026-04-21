@@ -29,7 +29,8 @@
   <meta property="og:site_name" content="Watts Pet">
   <meta property="og:image" content="https://wattspet.com/assets/hero.jpg">
 
-  <link rel="stylesheet" href="../css/blog-page.css">
+  <!-- blog-page.css loaded into a low-priority CSS layer so inline styles always win -->
+  <style>@import url('../css/blog-page.css') layer(legacy);</style>
 
   <style>
     /* ── Fonts — Shopify CDN (works on live site) ── */
@@ -68,12 +69,6 @@
       z-index: 110;
       padding: 8px min(2.5vw, 16px);
       background: #000;
-      display: block;
-      border-radius: 0;
-      min-height: 0;
-      align-items: unset;
-      justify-content: unset;
-      box-shadow: none;
     }
 
     /* g-header  f-h f-a-c: flex row, space-between, align center, padding 20px 26px */
@@ -109,10 +104,10 @@
       margin: 0;
     }
     .g-header__linklist__item a {
-      font-family: "Degular", sans-serif !important;
-      font-size: 14px !important;
-      font-weight: 600 !important;
-      line-height: 1 !important;
+      font-family: "Degular", sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1;
       text-transform: uppercase;
       letter-spacing: 0.04em;
       color: #f1f1f1;
@@ -268,19 +263,6 @@
       padding: 8px min(2.5vw, 16px);
       background: #000;
       margin-top: 80px;
-      display: block;
-      border-radius: 0;
-      min-height: 0;
-      align-items: unset;
-      justify-content: unset;
-    }
-
-    /* Reset blog-page.css footer overrides */
-    .site-footer footer,
-    .site-footer .footer-pill {
-      min-height: 0 !important;
-      align-items: stretch !important;
-      justify-content: unset !important;
     }
 
     .footer-pill {
