@@ -142,13 +142,13 @@ article a {
   font: var(--t-l-2);
 }
 
-/* Static-render compensation: lottie-player fills its box with no intrinsic
-   aspect ratio; our SVG preserves 200:46 and renders width-constrained at 120px.
-   Shopify computed container height: 55.3984px. Lottie height-constrained in
-   120x55.4px box renders wordmark at ~28px tall. Match that with explicit height.
-   bottom:auto cancels main.min.css bottom:4px which bottom-anchors a short element. */
+/* Static-render compensation: lottie-player fills its box; our SVG preserves 200:46
+   and is width-constrained. Reduce container to 108px (10% smaller than Shopify's 120px)
+   to shrink the wordmark. bottom:auto cancels main.min.css bottom:4px anchoring. */
+.g-header .g-header__logo {
+  width: 108px;
+}
 .g-header .g-header__logo__lottie {
-  height: 24.84px;
   top: 50%;
   bottom: auto;
   transform: translateY(-50%);
