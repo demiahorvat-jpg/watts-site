@@ -325,7 +325,7 @@ h3 {
   }
 }
 
-p {
+article p {
   font-size: 17px;
   font-weight: 500;
   line-height: 1.7;
@@ -333,7 +333,7 @@ p {
   color: var(--text-dark);
 }
 @media (min-width: 768px) {
-  p {
+  article p {
     font-size: 18px;
     margin-bottom: 24px;
   }
@@ -347,7 +347,7 @@ a {
   color: var(--accent-navy);
   transition: opacity 0.2s ease;
 }
-a:hover {
+article a:hover {
   opacity: 0.7;
 }
 
