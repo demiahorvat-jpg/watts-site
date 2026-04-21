@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Do Dogs Need Supplements? | Watts</title>
   <meta name="description" content="AAFCO-approved food meets minimum requirements, but optimal health requires more. Learn why whole-food supplements bridge the nutritional gap for longevity.">
-  <meta name="keywords" content="dog supplements, AAFCO, optimal nutrition for dogs, whole food nutrients for dogs, why do dogs need supplements, minimum vs optimal nutrition, bioavailability, gut health for dogs, omega-3 for dogs, probiotics for dogs, dog longevity, complete and balanced dog food">
   <link rel="canonical" href="https://wattspet.com/blog/why-dogs-need-supplements.html">
 
   <!-- Favicon -->
@@ -19,10 +18,8 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-C6KV5WBGK5');
   </script>
-
 
   <!-- Open Graph -->
   <meta property="og:title" content="Why Dogs Need Supplements Even with 'Complete & Balanced' Food">
@@ -32,7 +29,463 @@
   <meta property="og:site_name" content="Watts Pet">
   <meta property="og:image" content="https://wattspet.com/assets/hero.jpg">
 
-    <link rel="stylesheet" href="/css/blog-page.css">
+  <link rel="stylesheet" href="../css/blog-page.css">
+
+  <style>
+    /* ── Fonts — Shopify CDN (works on live site) ── */
+    @font-face {
+      font-family: "Degular";
+      src: url("/cdn/shop/t/7/assets/font-degular-regular.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Degular";
+      src: url("/cdn/shop/t/7/assets/font-degular-semibold.woff2") format("woff2");
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Degular";
+      src: url("/cdn/shop/t/7/assets/font-degular-bold.woff2") format("woff2");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* ── Global ── */
+    body { background: #000; margin: 0; -webkit-font-smoothing: antialiased; }
+
+    /* ══════════════════════════════
+       SITE HEADER  (mirrors _g-header.scss)
+       ══════════════════════════════ */
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 110;
+      padding: 8px min(2.5vw, 16px);
+      background: #000;
+      display: block;
+      border-radius: 0;
+      min-height: 0;
+      align-items: unset;
+      justify-content: unset;
+      box-shadow: none;
+    }
+
+    /* g-header  f-h f-a-c: flex row, space-between, align center, padding 20px 26px */
+    .g-header {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 26px;
+      color: #f1f1f1;
+    }
+
+    /* Orange pill via ::before (--br = 16px desktop) */
+    .g-header::before {
+      content: "";
+      position: absolute;
+      top: 0; right: 0; left: 0; bottom: 0;
+      height: 100%;
+      background: #c03800;
+      border-radius: 16px;
+      z-index: -1;
+    }
+
+    .g-header__nav { display: flex; }
+    .g-header__linklist {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .g-header__linklist__item a {
+      font-family: "Degular", sans-serif !important;
+      font-size: 14px !important;
+      font-weight: 600 !important;
+      line-height: 1 !important;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #f1f1f1;
+      text-decoration: none;
+    }
+
+    /* g-header__logo  p-center  width:120px */
+    .g-header__logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f1f1f1;
+      text-decoration: none;
+      z-index: 1;
+    }
+    .g-header__logo .g-header__logo-full   { display: block; height: 20px; width: auto; }
+    .g-header__logo .g-header__logo-simple { display: none;  height: 18px; width: auto; }
+
+    /* g-header__actions  f-h gap-md t-l-2 */
+    .g-header__actions {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .g-header__actions a,
+    .g-header__actions button {
+      font-family: "Degular", sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #f1f1f1;
+      text-decoration: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      margin: 0;
+      white-space: nowrap;
+    }
+    .g-header__cart-text {
+      display: inline-block;
+      height: 1.1em;
+      border-bottom: 1px solid;
+    }
+
+    /* Corner decorations */
+    .g-header__corner {
+      position: absolute;
+      width: 25px;
+      bottom: 1px;
+      transform: translateY(100%);
+      z-index: -2;
+      color: #000;
+      display: block;
+      line-height: 0;
+    }
+    .g-header__corner--left  { left:  calc(min(2.5vw, 16px) - 1px); }
+    .g-header__corner--right { right: calc(min(2.5vw, 16px) - 1px); }
+    .g-header__corner svg { width: 100%; display: block; }
+
+    /* Mobile burger */
+    .g-header__mobile-menu-toggle {
+      --size: 24px;
+      display: none;
+      position: relative;
+      width: var(--size);
+      height: calc(var(--size) * 0.86);
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+    }
+    .g-header__mobile-menu-toggle::before,
+    .g-header__mobile-menu-toggle::after,
+    .g-header__mobile-menu-toggle hr {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 1px;
+      width: var(--size);
+      margin: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 0;
+      background: #f1f1f1;
+    }
+    .g-header__mobile-menu-toggle::before { top: 6%; }
+    .g-header__mobile-menu-toggle::after  { top: 94%; }
+
+    /* Mobile menu */
+    .g-header__mobile-menu {
+      display: none;
+      position: fixed;
+      top: calc(8px * 2 + 62px);
+      left: min(2.5vw, 16px);
+      right: min(2.5vw, 16px);
+      bottom: 8px;
+      background: #c03800;
+      border-radius: 16px;
+      z-index: 105;
+      padding: 24px;
+      box-sizing: border-box;
+      flex-direction: column;
+    }
+    .g-header__mobile-menu.is-open { display: flex; }
+    .g-header__mobile-menu__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .g-header__mobile-menu__item {
+      display: block;
+      font-family: "Degular", sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: #000;
+      text-decoration: none;
+      background: #f1f1f1;
+      border-radius: 18px;
+      padding: 14px 24px;
+    }
+    .g-header__mobile-menu__item--dark {
+      background: #191919;
+      color: #f1f1f1;
+    }
+
+    @media (max-width: 1024px) {
+      .g-header::before { border-radius: 24px; }
+      .g-header__nav { display: none; }
+      .g-header__account-link { display: none !important; }
+      .g-header__mobile-menu-toggle { display: block; }
+      .g-header__logo .g-header__logo-full   { display: none; }
+      .g-header__logo .g-header__logo-simple { display: block; }
+      .g-header__logo { width: 40px; }
+    }
+
+    /* ══════════════════════════════
+       SITE FOOTER  (mirrors _g-footer.scss)
+       ══════════════════════════════ */
+
+    .site-footer {
+      padding: 8px min(2.5vw, 16px);
+      background: #000;
+      margin-top: 80px;
+      display: block;
+      border-radius: 0;
+      min-height: 0;
+      align-items: unset;
+      justify-content: unset;
+    }
+
+    .footer-pill {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: space-between;
+      gap: 60px;
+      padding: 72px 58px 32px 10.5vw;
+      border-radius: 30vw 38px 38px 30vw;
+      background: #c03800;
+      color: #f1f1f1;
+      overflow: hidden;
+      position: relative;
+      box-sizing: border-box;
+    }
+
+    .footer-top {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 60px;
+      z-index: 1;
+    }
+
+    .footer-brand {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      max-width: 320px;
+    }
+
+    .footer-nav-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+      align-items: start;
+    }
+
+    .footer-connect {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+      flex-basis: 35%;
+      width: 100%;
+      min-width: 280px;
+      max-width: 450px;
+    }
+
+    .site-footer p { font-size: inherit; color: #f1f1f1; margin-bottom: 0; }
+    .site-footer li { font-size: inherit; margin-bottom: 0; }
+
+    .site-footer .footer-tagline {
+      font-family: "Degular", sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1;
+      margin: 0;
+    }
+
+    .site-footer .footer-copyright {
+      font-family: "Degular", sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.2;
+    }
+    .footer-copyright a { color: #f1f1f1; }
+
+    .footer-nav-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .site-footer .footer-nav-title {
+      font-family: "Degular", sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      line-height: 1;
+      white-space: nowrap;
+      margin: 0 0 8px 0;
+    }
+
+    .footer-nav-list a {
+      font-family: "Degular", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.2;
+      color: #f1f1f1;
+      text-decoration: none;
+    }
+    .footer-nav-list a:hover { text-decoration: underline; }
+
+    .footer-email-capture {
+      width: 100%;
+      padding-right: 60px;
+    }
+
+    .site-footer .footer-email-heading {
+      font-family: "Degular", sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      line-height: 1;
+      margin: 0 0 16px 0;
+    }
+
+    .footer-email-form {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 15px 10px;
+    }
+
+    .footer-email-field { grid-column: 1 / -1; }
+
+    .footer-email-form input {
+      display: block;
+      width: 100%;
+      height: 42px;
+      background: transparent;
+      border: 1px solid #f1f1f1;
+      border-radius: 8px;
+      padding: 0 16px;
+      font-family: "Degular", sans-serif;
+      font-size: 14px;
+      line-height: 1.2;
+      color: #f1f1f1;
+      outline: none;
+      box-sizing: border-box;
+    }
+    .footer-email-form input::placeholder { color: rgba(241,241,241,0.5); }
+
+    .footer-email-form button {
+      position: absolute;
+      right: -20px;
+      top: 0;
+      height: 42px;
+      display: inline-flex;
+      align-items: center;
+      background: #f1f1f1;
+      color: #191919;
+      border: none;
+      border-radius: 100vw;
+      padding: 0 24px;
+      font-family: "Degular", sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .footer-social-section {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .footer-social {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-social a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 24px;
+      background: rgba(25, 25, 25, 0.1);
+      color: #f1f1f1;
+      text-decoration: none;
+    }
+    .footer-social svg { width: 20px; height: 20px; display: block; }
+
+    .footer-wordmark {
+      align-self: flex-end;
+      width: 70%;
+      line-height: 0;
+    }
+    .footer-wordmark svg { width: 100%; height: auto; color: #f1f1f1; display: block; }
+
+    @media (max-width: 1024px) {
+      .footer-pill { padding: 72px 58px 32px 200px; border-radius: 80vw 38px 38px 80vw; }
+      .footer-top { flex-direction: column; }
+      .footer-brand { max-width: unset; }
+      .footer-connect { min-width: unset; }
+      .footer-wordmark { width: 80%; }
+    }
+
+    @media (max-width: 600px) {
+      .footer-pill { padding: 180px 32px 14px; border-radius: 100vw 100vw 38px 38px; gap: 48px; }
+      .footer-wordmark { width: 100%; }
+    }
+  </style>
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -141,31 +594,66 @@
   </script>
 </head>
 
-<body>
-  <div class="header-wrapper">
-    <header>
-      <div class="header-container">
-        <button class="hamburger" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/blog/">Blog</a></li>
-            <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
-          </ul>
-        </nav>
-        <div class="logo-container">
-          <a href="/" aria-label="Watts home">
-            <img src="/watts-logo-white.svg" alt="Watts" class="logo">
-          </a>
-        </div>
+<body style="background-color: #000;">
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="g-header">
+
+      <button
+        type="button"
+        class="g-header__mobile-menu-toggle"
+        aria-label="Open menu"
+        id="header-burger-btn"
+      ><hr></button>
+
+      <nav class="g-header__nav" aria-label="Main navigation">
+        <ul class="g-header__linklist">
+          <li class="g-header__linklist__item"><a href="/products/better-dailies">Shop</a></li>
+          <li class="g-header__linklist__item"><a href="/blog">Blog</a></li>
+          <li class="g-header__linklist__item"><a href="/ingredient-analyzer">Ingredient Analyzer</a></li>
+        </ul>
+      </nav>
+
+      <a class="g-header__logo" href="/" aria-label="Watts Pet">
+        <svg class="g-header__logo-full" viewBox="0 0 200 46" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M0 9.662h15.584l1.512 11.476c.288 1.966 1.8 2.982 3.392 2.982s3.176-1.024 3.464-2.982l1.512-11.476h13.488l1.512 11.476c.288 1.966 1.88 2.982 3.464 2.982s3.176-1.024 3.464-2.982l1.512-11.476h15.584l-7.72 36.33h-20.2l-.864-7.334c-.288-2.111-1.88-3.127-3.464-3.127s-3.176 1.023-3.464 3.127l-.864 7.334H7.72zm63.566 18.174c0-10.034 8.08-18.165 18.032-18.165h22.936v36.337H81.598c-9.96 0-18.032-8.14-18.032-18.172m26.256 0c0-4.143-3.392-7.705-7.504-7.705s-7.504 3.562-7.504 7.705c0 4.142 3.392 7.704 7.504 7.704s7.504-3.562 7.504-7.704m35.033-8.221v9.663c0 3.634 3.096 6.761 6.712 6.761h3.176v9.953h-11.392c-8.368 0-15.152-6.761-15.152-15.183V0h16.664v9.663h9.88v9.952zm29.289 0v9.663c0 3.634 3.096 6.761 6.712 6.761h3.176v9.953H152.64c-8.368 0-15.152-6.761-15.152-15.183V0h16.664v9.663h9.88v9.952zm32.872 2.7c0 1.676 1.232 2.683 2.88 2.683 6.928 0 10.096 4.65 10.096 10.469S195.448 46 187.872 46h-20.2v-9.953h8.944c1.664 0 2.88-1.023 2.88-2.683s-1.08-2.684-2.88-2.684c-6.928 0-10.096-5.013-10.096-10.823s4.544-10.17 12.12-10.17h20.2v9.952h-8.944c-1.664 0-2.88 1.024-2.88 2.684z" fill="currentColor"/>
+        </svg>
+        <svg class="g-header__logo-simple" viewBox="0 0 40 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M0 0h9.666l.938 6.95c.179 1.19 1.117 1.805 2.104 1.805s1.97-.62 2.149-1.806L15.795 0h8.366l.938 6.95c.178 1.19 1.166 1.805 2.148 1.805s1.97-.62 2.149-1.806L30.334 0H40l-4.788 22h-12.53l-.536-4.441c-.178-1.279-1.166-1.894-2.149-1.894-.982 0-1.97.62-2.148 1.894L17.313 22H4.788z" fill="currentColor"/>
+        </svg>
+      </a>
+
+      <div class="g-header__actions">
+        <a href="/account" class="g-header__account-link">My Account</a>
+        <button type="button">
+          <span class="g-header__cart-text">Cart</span>
+          (0)
+        </button>
       </div>
-    </header>
-  </div>
+
+    </div>
+
+    <span class="g-header__corner g-header__corner--left" aria-hidden="true">
+      <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M25 1C11.7452 1 1 11.7452 1 25H0V0H25V1Z" fill="currentColor"/>
+      </svg>
+    </span>
+    <span class="g-header__corner g-header__corner--right" aria-hidden="true">
+      <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 1C13.2548 1 24 11.7452 24 25H25V0H0V1Z" fill="currentColor"/>
+      </svg>
+    </span>
+
+    <div class="g-header__mobile-menu" id="header-mobile-menu" aria-hidden="true">
+      <ul class="g-header__mobile-menu__list">
+        <li><a class="g-header__mobile-menu__item" href="/products/better-dailies">Shop</a></li>
+        <li><a class="g-header__mobile-menu__item" href="/blog">Blog</a></li>
+        <li><a class="g-header__mobile-menu__item" href="/ingredient-analyzer">Ingredient Analyzer</a></li>
+        <li><a class="g-header__mobile-menu__item g-header__mobile-menu__item--dark" href="/account">My Account</a></li>
+      </ul>
+    </div>
+  </header>
 
   <main>
     <article>
@@ -282,17 +770,14 @@
         <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Whole Food vs Synthetic Vitamins</h3>
         <p style="font-size: 15px; color: var(--text-muted); margin: 0;">Why bioavailability matters more than what's listed on the label</p>
       </a>
-
       <a href="/blog/how-to-read-dog-supplement-labels.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
         <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">How to Read Dog Supplement Labels</h3>
         <p style="font-size: 15px; color: var(--text-muted); margin: 0;">What to look for and what to avoid when choosing supplements</p>
       </a>
-
       <a href="/blog/dog-vitamins-deficiency.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
         <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">Dog Vitamin Deficiency: Signs & Solutions</h3>
         <p style="font-size: 15px; color: var(--text-muted); margin: 0;">How to identify and address nutritional gaps in your dog's diet</p>
       </a>
-
       <a href="/blog/what-extends-dog-lifespan.html" style="display: block; padding: 16px 20px; border: 3px solid var(--brand-orange); background: var(--white); border-radius: 12px; text-decoration: none; color: var(--text-dark); transition: background 0.15s;">
         <h3 style="font-size: 18px; font-weight: 600; margin: 0 0 8px 0;">What Actually Extends a Dog's Lifespan</h3>
         <p style="font-size: 15px; color: var(--text-muted); margin: 0;">The role of nutrition in supporting long-term health and longevity</p>
@@ -326,73 +811,98 @@
       <div class="faq-item">
         <h3>Can you over-supplement a dog?</h3>
         <p>Yes. Over-supplementation with certain nutrients — especially fat-soluble vitamins (A, D, E, K) and minerals like calcium or iron — can cause toxicity. This is why whole-food supplements are generally safer than synthetic, high-dose products: they provide nutrients in naturally balanced amounts that are harder to over-consume. Always follow dosing guidelines and work with your vet if combining multiple supplements.</p>
-    </div>
+      </div>
     </div>
     </article>
   </main>
 
-  <div class="footer-wrapper">
-    <footer>
-      <div class="footer-content">
-        <div class="footer-left">
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="footer-pill">
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <p class="footer-tagline">Fueling happier, healthier dogs. One watt at a time!</p>
+          <p class="footer-copyright">
+            &copy; 2026 Watts Pet<br>
+            Site &amp; Brand by <a href="http://view-source.com/?ref=watts" rel="noopener" target="_blank">View Source</a>
+          </p>
         </div>
-        <div class="footer-right">
-          <div class="footer-right-text">
-            <div class="social-links">
-              <a href="https://www.instagram.com/watts.pet/" target="_blank" rel="noopener" aria-label="Instagram">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-              </a>
-              <a href="https://www.tiktok.com/@wattspet" target="_blank" rel="noopener" aria-label="TikTok">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
-              </a>
-              <a href="https://www.facebook.com/people/Watts-Pet/61587116105627/" target="_blank" rel="noopener" aria-label="Facebook">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-              </a>
-            </div>
-            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
-            <p style="margin-top: 12px;">© <span id="year"></span> Watts Pet. All rights reserved.</p>
+
+        <nav class="footer-nav-grid" aria-label="Footer">
+          <ul class="footer-nav-list">
+            <p class="footer-nav-title">Navigation</p>
+            <li><a href="/products/better-dailies">Shop</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/ingredient-analyzer">Ingredient Analyzer</a></li>
+          </ul>
+          <ul class="footer-nav-list">
+            <p class="footer-nav-title">Help</p>
+            <li><a href="/pages/contact">Contact Us</a></li>
+            <li><a href="/pages/faq">FAQ</a></li>
+            <li><a href="/policies/privacy-policy">Privacy Policy</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-connect">
+          <div class="footer-email-capture">
+            <p class="footer-email-heading">Get the latest updates from Watts.</p>
+            <form class="footer-email-form" onsubmit="event.preventDefault();">
+              <div class="footer-email-field">
+                <input type="email" placeholder="Email Address" required autocomplete="email">
+              </div>
+              <button type="submit">Subscribe</button>
+            </form>
           </div>
-          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
+
+          <div class="footer-social-section">
+            <p class="footer-nav-title">Follow us</p>
+            <ul class="footer-social">
+              <li>
+                <a href="https://www.instagram.com/watts.pet/" aria-label="Instagram" rel="noopener" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.76 22.76"><path d="M22.68 16.07a6.78 6.78 0 01-1.84 4.77 6.76 6.76 0 01-4.76 1.84c-1.88.1-7.51.1-9.39 0a6.77 6.77 0 01-4.77-1.84 6.74 6.74 0 01-1.84-4.77C0 14.19 0 8.56.08 6.68a6.74 6.74 0 011.84-4.77A6.78 6.78 0 016.69.08C8.57 0 14.2 0 16.08.08a6.76 6.76 0 014.76 1.84 6.68 6.68 0 011.84 4.77c.11 1.88.11 7.5 0 9.38zm-2-4.69c0-1.66.14-5.21-.45-6.71a3.84 3.84 0 00-2.17-2.16c-1.49-.59-5.05-.46-6.71-.46s-5.21-.14-6.7.46a3.84 3.84 0 00-2.14 2.16c-.59 1.49-.45 5.05-.45 6.71s-.14 5.21.45 6.71a3.84 3.84 0 002.17 2.16c1.49.59 5.05.46 6.7.46s5.21.13 6.71-.46a3.87 3.87 0 002.17-2.16c.59-1.5.45-5.09.45-6.71zm-3.49 0a5.84 5.84 0 11-5.84-5.84 5.83 5.83 0 015.87 5.84zm-2 0a3.8 3.8 0 10-3.8 3.79 3.8 3.8 0 003.79-3.79zm2.28-4.71a1.37 1.37 0 111.36-1.36 1.36 1.36 0 01-1.37 1.36z" fill="currentColor"/></svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/@wattspet" aria-label="TikTok" rel="noopener" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M12.1302 4.56637C12.0445 4.52451 11.9611 4.47862 11.8803 4.42888C11.6453 4.282 11.4299 4.10893 11.2386 3.9134C10.7601 3.39568 10.5813 2.87046 10.5155 2.50272H10.5181C10.4631 2.19749 10.4859 2 10.4893 2H8.30962V9.9691C8.30962 10.0761 8.30962 10.1818 8.30486 10.2863C8.30486 10.2993 8.30354 10.3113 8.30275 10.3253C8.30275 10.3311 8.30275 10.3371 8.30143 10.3431C8.30143 10.3446 8.30143 10.3461 8.30143 10.3476C8.27845 10.6335 8.18151 10.9097 8.01913 11.1519C7.85676 11.3941 7.63392 11.5949 7.37022 11.7365C7.09539 11.8843 6.78455 11.9619 6.46836 11.9615C5.45281 11.9615 4.62975 11.1785 4.62975 10.2116C4.62975 9.24464 5.45281 8.46168 6.46836 8.46168C6.6606 8.46151 6.85166 8.49011 7.03444 8.54642L7.03708 6.44803C6.48221 6.38026 5.9185 6.42195 5.38153 6.57048C4.84455 6.71901 4.34595 6.97115 3.9172 7.31099C3.54151 7.61962 3.22566 7.98788 2.98388 8.39918C2.89187 8.54917 2.54471 9.15189 2.50267 10.1301C2.47623 10.6853 2.65259 11.2605 2.73666 11.4983V11.5033C2.78954 11.6433 2.99445 12.121 3.32839 12.5237C3.59766 12.8468 3.91579 13.1306 4.27255 13.3659V13.3609L4.27783 13.3659C5.33304 14.0439 6.503 13.9994 6.503 13.9994C6.70553 13.9917 7.38397 13.9994 8.15442 13.6542C9.00895 13.2714 9.49544 12.7012 9.49544 12.7012C9.80624 12.3605 10.0534 11.9722 10.2262 11.553C10.4235 11.0628 10.4893 10.4748 10.4893 10.2398V6.01205C10.5158 6.02705 10.8679 6.24729 10.8679 6.24729C10.8679 6.24729 11.3753 6.55477 12.1669 6.75501C12.7348 6.89751 13.5 6.9275 13.5 6.9275V4.88161C13.2319 4.9091 12.6875 4.82911 12.1302 4.56637Z" fill="currentColor"/></svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/people/Watts-Pet/61587116105627/" aria-label="Facebook" rel="noopener" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M9.12266 4.24766H11V2H9.12266C7.68359 2 6.50469 3.17891 6.50469 4.61797V5.75234H5V8H6.50469V14H8.75234V8H10.6063L10.9766 5.75234H8.72891V4.61797C8.73125 4.42109 8.90469 4.24766 9.12266 4.24766Z" fill="currentColor"/></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </footer>
-  </div>
+
+      <div class="footer-wordmark" aria-hidden="true">
+        <svg viewBox="0 0 200 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 9.662h15.584l1.512 11.476c.288 1.966 1.8 2.982 3.392 2.982s3.176-1.024 3.464-2.982l1.512-11.476h13.488l1.512 11.476c.288 1.966 1.88 2.982 3.464 2.982s3.176-1.024 3.464-2.982l1.512-11.476h15.584l-7.72 36.33h-20.2l-.864-7.334c-.288-2.111-1.88-3.127-3.464-3.127s-3.176 1.023-3.464 3.127l-.864 7.334H7.72zm63.566 18.174c0-10.034 8.08-18.165 18.032-18.165h22.936v36.337H81.598c-9.96 0-18.032-8.14-18.032-18.172m26.256 0c0-4.143-3.392-7.705-7.504-7.705s-7.504 3.562-7.504 7.705c0 4.142 3.392 7.704 7.504 7.704s7.504-3.562 7.504-7.704m35.033-8.221v9.663c0 3.634 3.096 6.761 6.712 6.761h3.176v9.953h-11.392c-8.368 0-15.152-6.761-15.152-15.183V0h16.664v9.663h9.88v9.952zm29.289 0v9.663c0 3.634 3.096 6.761 6.712 6.761h3.176v9.953H152.64c-8.368 0-15.152-6.761-15.152-15.183V0h16.664v9.663h9.88v9.952zm32.872 2.7c0 1.676 1.232 2.683 2.88 2.683 6.928 0 10.096 4.65 10.096 10.469S195.448 46 187.872 46h-20.2v-9.953h8.944c1.664 0 2.88-1.023 2.88-2.683s-1.08-2.684-2.88-2.684c-6.928 0-10.096-5.013-10.096-10.823s4.544-10.17 12.12-10.17h20.2v9.952h-8.944c-1.664 0-2.88 1.024-2.88 2.684z" fill="currentColor"/></svg>
+      </div>
+    </div>
+  </footer>
 
   <script>
-  // Hamburger menu toggle
-  document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('nav ul');
-
-    if (hamburger && navMenu) {
-      hamburger.addEventListener('click', function() {
-        navMenu.classList.toggle('active');
-        this.classList.toggle('active');
+  document.addEventListener('DOMContentLoaded', function () {
+    const burgerBtn = document.getElementById('header-burger-btn');
+    const mobileMenu = document.getElementById('header-mobile-menu');
+    if (burgerBtn && mobileMenu) {
+      burgerBtn.addEventListener('click', function () {
+        const isOpen = mobileMenu.classList.toggle('is-open');
+        mobileMenu.setAttribute('aria-hidden', String(!isOpen));
+        burgerBtn.setAttribute('aria-expanded', String(isOpen));
       });
-
-      // Close menu when clicking a link
-      const navLinks = navMenu.querySelectorAll('a');
-      navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-          navMenu.classList.remove('active');
-          hamburger.classList.remove('active');
-        });
-      });
-
-      // Close menu when clicking outside
-      document.addEventListener('click', function(event) {
-        const isClickInsideNav = navMenu.contains(event.target);
-        const isClickOnHamburger = hamburger.contains(event.target);
-
-        if (!isClickInsideNav && !isClickOnHamburger && navMenu.classList.contains('active')) {
-          navMenu.classList.remove('active');
-          hamburger.classList.remove('active');
+      document.addEventListener('click', function (e) {
+        if (!mobileMenu.contains(e.target) && !burgerBtn.contains(e.target)) {
+          mobileMenu.classList.remove('is-open');
+          mobileMenu.setAttribute('aria-hidden', 'true');
+          burgerBtn.setAttribute('aria-expanded', 'false');
         }
       });
     }
   });
-
-  document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 
   <!-- Sticky email CTA (mobile) -->
@@ -418,7 +928,6 @@
         if (shown) return;
         shown = true;
         cta.style.display = 'block';
-        // force reflow so transition fires
         void cta.offsetHeight;
         cta.classList.add('visible');
         cta.setAttribute('aria-hidden', 'false');
