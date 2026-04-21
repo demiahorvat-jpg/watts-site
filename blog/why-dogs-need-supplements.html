@@ -142,6 +142,13 @@ article a {
   font: var(--t-l-2);
 }
 
+/* Static-render compensation: lottie-player fills its box with no intrinsic
+   aspect ratio; our SVG preserves 200:46 and fills full width at 120px.
+   height:20px matches the measured live Shopify wordmark height. */
+.g-header .g-header__logo__lottie {
+  height: 20px;
+}
+
 .g-footer__nav {
   order: 0;
 }
