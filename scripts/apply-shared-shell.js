@@ -41,8 +41,13 @@ const FILE_ARG = (() => {
   return i !== -1 ? process.argv[i + 1] : null;
 })();
 
+const DIR_ARG = (() => {
+  const i = process.argv.indexOf('--dir');
+  return i !== -1 ? process.argv[i + 1] : null;
+})();
+
 const ROOT       = path.join(__dirname, '..');
-const BLOG_DIR   = path.join(ROOT, 'blog');
+const BLOG_DIR   = path.join(ROOT, DIR_ARG || 'blog');
 const SHELL_DIR  = path.join(ROOT, 'shell');
 
 // ---------------------------------------------------------------------------
