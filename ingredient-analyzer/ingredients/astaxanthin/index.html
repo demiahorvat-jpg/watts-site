@@ -25,8 +25,6 @@
       gtag('config', 'G-C6KV5WBGK5');
     </script>
 
-    <link rel="stylesheet" href="/css/ingredient-page.css">
-
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -122,6 +120,8 @@
 
   <link rel="stylesheet" href="/css/shopify-preload.min.css">
   <link rel="stylesheet" href="/css/shopify-main.min.css">
+  <!-- ingredient-page.css loads after Shopify CSS so its rules win -->
+  <link rel="stylesheet" href="/css/ingredient-page.css">
   <style>body { opacity: 1; }</style>
   <style>
 /* un-layered — overrides Shopify reset */
@@ -165,7 +165,7 @@
   margin-top: var(--s-gap-sm);
 }
   </style>
-  <!-- SHARED_HEAD_END -->
+<!-- SHARED_HEAD_END -->
 </head>
 <body>
     <!-- SHARED_HEADER_START -->
@@ -272,7 +272,7 @@
       </svg>
     </span>
   </header>
-  <!-- SHARED_HEADER_END -->
+<!-- SHARED_HEADER_END -->
   <main>
     <div class="breadcrumbs">
       <a href="/">Home</a>
@@ -574,7 +574,7 @@
       </div>
     </div>
   </footer>
-  <!-- SHARED_FOOTER_END -->
+<!-- SHARED_FOOTER_END -->
   <script>
     // Hamburger menu toggle
     document.addEventListener('DOMContentLoaded', function() {

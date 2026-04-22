@@ -130,12 +130,15 @@ function migrateHead(html) {
   let r = removeFirst(html, OLD_FAVICON_SVG);
   if (r.found) { html = r.html; notes.push('removed old favicon (/favicon.svg)'); }
 
-  // Remove old CSS link
-  const OLD_CSS = '<link rel="stylesheet" href="/css/blog-page.css">';
+  // Remove old CSS link (blog-page.css for blog/guides; ingredient-page.css
+  // for ingredient pages — it gets re-added after Shopify CSS in the shared head)
+  const OLD_CSS = RECURSIVE
+    ? '<link rel="stylesheet" href="/css/ingredient-page.css">'
+    : '<link rel="stylesheet" href="/css/blog-page.css">';
   r = removeFirst(html, OLD_CSS);
   if (r.found) {
     html = r.html;
-    notes.push('removed old CSS link (blog-page.css)');
+    notes.push(`removed old CSS link (${RECURSIVE ? 'ingredient-page.css' : 'blog-page.css'})`);
   } else {
     // Already migrated or different path — not fatal, warn
     notes.push('WARN: old CSS link not found — may already be migrated or use different path');
