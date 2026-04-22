@@ -128,6 +128,13 @@
 /* ingredient-page.css handles body background, main centering, and all
    content styles; this block only fixes header/footer rendering. */
 
+/* ingredient-page.css sets a global a{color:#191919} — restore header colors */
+.g-header a,
+.g-header button {
+  color: inherit;
+  text-decoration: none;
+}
+
 .g-header li {
   margin-top: 0;
 }

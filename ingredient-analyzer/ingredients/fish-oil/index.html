@@ -137,6 +137,13 @@
 /* ingredient-page.css handles body background, main centering, and all
    content styles; this block only fixes header/footer rendering. */
 
+/* ingredient-page.css sets a global a{color:#191919} — restore header colors */
+.g-header a,
+.g-header button {
+  color: inherit;
+  text-decoration: none;
+}
+
 .g-header li {
   margin-top: 0;
 }
@@ -174,7 +181,7 @@
   margin-top: var(--s-gap-sm);
 }
   </style>
-  <!-- SHARED_HEAD_END -->
+<!-- SHARED_HEAD_END -->
 </head>
 <body>
     <!-- SHARED_HEADER_START -->
@@ -281,7 +288,7 @@
       </svg>
     </span>
   </header>
-  <!-- SHARED_HEADER_END -->
+<!-- SHARED_HEADER_END -->
   <main>
     <div class="breadcrumbs">
       <a href="/">Home</a>
@@ -597,7 +604,7 @@
       </div>
     </div>
   </footer>
-  <!-- SHARED_FOOTER_END -->
+<!-- SHARED_FOOTER_END -->
   <script>
     // Hamburger menu toggle
     document.addEventListener('DOMContentLoaded', function() {
