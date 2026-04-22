@@ -37,6 +37,13 @@
   <style>
 /* un-layered — overrides Shopify reset */
 
+/* Main layout — explicit so un-layered * resets in old pages can't block centering */
+main {
+  max-width: 900px;
+  margin: 16px auto 40px;
+  padding: 0 20px;
+}
+
 /* Article-only restoration */
 article {
   color: var(--text-dark);
