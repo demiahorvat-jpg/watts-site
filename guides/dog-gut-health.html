@@ -589,12 +589,13 @@
 
   <link rel="stylesheet" href="/css/shopify-preload.min.css">
   <link rel="stylesheet" href="/css/shopify-main.min.css">
-  <style>@import url('../css/blog-page.css') layer(legacy);</style>
-  <style>body { background-color: #000; opacity: 1; }</style>
+  <style>body { opacity: 1; }</style>
   <style>
 /* un-layered — overrides Shopify reset */
+/* Note: blog-page.css NOT imported — guides define their own variables and
+   article layout; importing it would add an unwanted white article box. */
 
-/* Main layout — explicit so un-layered * resets in old pages can't block centering */
+/* Main layout — explicit so un-layered * resets can't block centering */
 main {
   max-width: 900px;
   margin: 16px auto 40px;
@@ -736,7 +737,7 @@ article a {
   margin-top: var(--s-gap-sm);
 }
   </style>
-  <!-- SHARED_HEAD_END -->
+<!-- SHARED_HEAD_END -->
 </head>
 <body>
   <!-- SHARED_HEADER_START -->
@@ -843,7 +844,7 @@ article a {
       </svg>
     </span>
   </header>
-  <!-- SHARED_HEADER_END -->
+<!-- SHARED_HEADER_END -->
   <main>
     <article class="guide-container">
       <span class="guide-badge">Comprehensive Guide</span>
@@ -1588,7 +1589,7 @@ article a {
       </div>
     </div>
   </footer>
-  <!-- SHARED_FOOTER_END -->
+<!-- SHARED_FOOTER_END -->
 <script>
   // Hamburger menu toggle
   document.addEventListener('DOMContentLoaded', function() {

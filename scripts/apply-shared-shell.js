@@ -54,10 +54,12 @@ const SHELL_DIR  = path.join(ROOT, 'shell');
 // Load shell content
 // ---------------------------------------------------------------------------
 
+const HEAD_FILE = DIR_ARG === 'guides' ? 'head-shared-guides.html' : 'head-shared.html';
+
 const SHELL = {
-  head:   fs.readFileSync(path.join(SHELL_DIR, 'head-shared.html'), 'utf8'),
-  header: fs.readFileSync(path.join(SHELL_DIR, 'header.html'),      'utf8'),
-  footer: fs.readFileSync(path.join(SHELL_DIR, 'footer.html'),      'utf8'),
+  head:   fs.readFileSync(path.join(SHELL_DIR, HEAD_FILE),     'utf8'),
+  header: fs.readFileSync(path.join(SHELL_DIR, 'header.html'), 'utf8'),
+  footer: fs.readFileSync(path.join(SHELL_DIR, 'footer.html'), 'utf8'),
 };
 
 // Trim trailing newline from shell files so insertion is clean
