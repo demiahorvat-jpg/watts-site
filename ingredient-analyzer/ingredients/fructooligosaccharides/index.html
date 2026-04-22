@@ -14,8 +14,7 @@
     <meta property="og:type" content="article">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-
+    
     <!-- Analytics -->
     <script src="https://analytics.ahrefs.com/analytics.js" data-key="22KmtuYXO77ED5o6fe6z1w" async></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-C6KV5WBGK5"></script>
@@ -26,8 +25,7 @@
       gtag('config', 'G-C6KV5WBGK5');
     </script>
 
-    <link rel="stylesheet" href="/css/ingredient-page.css">
-
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -116,33 +114,166 @@
   ]
 }
     </script>
+
+  <!-- SHARED_HEAD_START -->
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+
+  <link rel="stylesheet" href="/css/shopify-preload.min.css">
+  <link rel="stylesheet" href="/css/shopify-main.min.css">
+  <!-- ingredient-page.css loads after Shopify CSS so its rules win -->
+  <link rel="stylesheet" href="/css/ingredient-page.css">
+  <style>body { opacity: 1; }</style>
+  <style>
+/* un-layered — overrides Shopify reset */
+/* ingredient-page.css handles body background, main centering, and all
+   content styles; this block only fixes header/footer rendering. */
+
+.g-header li {
+  margin-top: 0;
+}
+
+.g-header__nav a {
+  font: var(--t-l-2);
+}
+
+/* Static-render compensation: lottie-player fills its box; our SVG preserves 200:46
+   and is width-constrained. Reduce container to 84px to shrink the wordmark.
+   bottom:auto cancels main.min.css bottom:4px anchoring. */
+.g-header .g-header__logo {
+  width: 84px;
+  height: 60.6328px;
+}
+.g-header .g-header__logo__lottie {
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+}
+
+.g-footer__nav {
+  order: 0;
+}
+
+.g-footer__nav a {
+  font-weight: 400;
+}
+
+.g-footer li {
+  margin-top: 0;
+}
+
+.c-email-capture-shopify .c-form__fields {
+  margin-top: var(--s-gap-sm);
+}
+  </style>
+  <!-- SHARED_HEAD_END -->
 </head>
 <body>
-  <div class="header-wrapper">
-    <header>
-      <div class="header-container">
-        <button class="hamburger" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/blog/">Blog</a></li>
-            <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
-          </ul>
-        </nav>
-        <div class="logo-container">
-          <a href="/" aria-label="Watts home">
-            <img src="/watts-logo-white.svg" alt="Watts" class="logo">
-          </a>
-        </div>
-      </div>
-    </header>
-  </div>
+    <!-- SHARED_HEADER_START -->
+  <!-- ========== HEADER ========== -->
+  <header class="px-contain bg-black js-header">
+    <div class="g-header f-h f-a-c cr-silver">
 
+      <button
+        type="button"
+        class="g-header__mobile-menu-toggle tablet-down-only js-mobile-menu-toggle"
+        aria-label="Trigger mobile menu"
+      ><hr></button>
+
+      <button
+        type="button"
+        class="g-header__mobile-menu-toggle__close tablet-down-only js-mobile-menu-toggle"
+        aria-label="Close mobile menu"
+      >
+        <svg class="svg-close" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:10px">
+          <path d="M1 1L9 9M1 9L9 1" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+      </button>
+
+      <nav class="g-header__nav tablet-up-only">
+        <ul class="g-header__linklist f-h gap-md">
+          <li class="g-header__linklist__item btn-underline t-l-2">
+            <a href="/">Shop</a><!-- TEMP: update when Shopify pages go live -->
+          </li>
+          <li class="g-header__linklist__item btn-underline t-l-2">
+            <a href="/blog">Blog</a>
+          </li>
+          <li class="g-header__linklist__item btn-underline t-l-2">
+            <a href="/ingredient-analyzer">Ingredient Analyzer</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a
+        class="g-header__logo p-center"
+        href="/"
+        aria-label="Watts Pet logo"
+      >
+        <svg class="g-header__logo__lottie mobile-up-only" viewBox="0 0 200 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 9.662h15.584l1.512 11.476c.288 1.966 1.8 2.982 3.392 2.982s3.176-1.024 3.464-2.982l1.512-11.476h13.488l1.512 11.476c.288 1.966 1.88 2.982 3.464 2.982s3.176-1.024 3.464-2.982l1.512-11.476h15.584l-7.72 36.33h-20.2l-.864-7.334c-.288-2.111-1.88-3.127-3.464-3.127s-3.176 1.023-3.464 3.127l-.864 7.334H7.72zm63.566 18.174c0-10.034 8.08-18.165 18.032-18.165h22.936v36.337H81.598c-9.96 0-18.032-8.14-18.032-18.172m26.256 0c0-4.143-3.392-7.705-7.504-7.705s-7.504 3.562-7.504 7.705c0 4.142 3.392 7.704 7.504 7.704s7.504-3.562 7.504-7.704m35.033-8.221v9.663c0 3.634 3.096 6.761 6.712 6.761h3.176v9.953h-11.392c-8.368 0-15.152-6.761-15.152-15.183V0h16.664v9.663h9.88v9.952zm29.289 0v9.663c0 3.634 3.096 6.761 6.712 6.761h3.176v9.953H152.64c-8.368 0-15.152-6.761-15.152-15.183V0h16.664v9.663h9.88v9.952zm32.872 2.7c0 1.676 1.232 2.683 2.88 2.683 6.928 0 10.096 4.65 10.096 10.469S195.448 46 187.872 46h-20.2v-9.953h8.944c1.664 0 2.88-1.023 2.88-2.683s-1.08-2.684-2.88-2.684c-6.928 0-10.096-5.013-10.096-10.823s4.544-10.17 12.12-10.17h20.2v9.952h-8.944c-1.664 0-2.88 1.024-2.88 2.684z" fill="currentColor"/>
+        </svg>
+        <svg class="svg-logo-simple p-center mobile-down-only" viewBox="0 0 40 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h9.666l.938 6.95c.179 1.19 1.117 1.805 2.104 1.805s1.97-.62 2.149-1.806L15.795 0h8.366l.938 6.95c.178 1.19 1.166 1.805 2.148 1.805s1.97-.62 2.149-1.806L30.334 0H40l-4.788 22h-12.53l-.536-4.441c-.178-1.279-1.166-1.894-2.149-1.894-.982 0-1.97.62-2.148 1.894L17.313 22H4.788z" fill="currentColor"/>
+        </svg>
+      </a>
+
+      <div class="g-header__actions f-h gap-md t-l-2">
+        <a
+          class="btn-underline t-l-2 tablet-up-only"
+          href="/account"
+        >My Account</a>
+
+        <button type="button" class="js-minicart-toggle">
+          <span class="g-header__cart-text">Cart</span>
+          (<span class="js-cart-item-count">0</span>)
+        </button>
+      </div>
+
+    </div>
+
+    <div class="g-header__mobile-menu tablet-down-only">
+      <div class="g-header__mobile-menu__content f-v f-a-s gap-sm">
+        <ul class="g-header__mobile-menu__list f-v f-a-s">
+          <li class="g-header__mobile-menu__list__item">
+            <a class="g-header__mobile-menu__item t-l-1" href="/"><!-- TEMP: update when Shopify pages go live -->
+              <span class="g-header__mobile-menu__item__active-deco"></span>
+              <span>Shop</span>
+            </a>
+          </li>
+          <li class="g-header__mobile-menu__list__item">
+            <a class="g-header__mobile-menu__item t-l-1" href="/blog">
+              <span class="g-header__mobile-menu__item__active-deco"></span>
+              <span>Blog</span>
+            </a>
+          </li>
+          <li class="g-header__mobile-menu__list__item">
+            <a class="g-header__mobile-menu__item t-l-1" href="/ingredient-analyzer">
+              <span class="g-header__mobile-menu__item__active-deco"></span>
+              <span>Ingredient Analyzer</span>
+            </a>
+          </li>
+          <a class="g-header__mobile-menu__item g-header__mobile-menu__item--dark t-l-1" href="/account">My Account</a>
+        </ul>
+        <a class="g-header__mobile-menu__logo" href="/" aria-label="Watts Pet logo">
+          <svg class="svg-logo" viewBox="0 0 200 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 9.662h15.584l1.512 11.476c.288 1.966 1.8 2.982 3.392 2.982s3.176-1.024 3.464-2.982l1.512-11.476h13.488l1.512 11.476c.288 1.966 1.88 2.982 3.464 2.982s3.176-1.024 3.464-2.982l1.512-11.476h15.584l-7.72 36.33h-20.2l-.864-7.334c-.288-2.111-1.88-3.127-3.464-3.127s-3.176 1.023-3.464 3.127l-.864 7.334H7.72zm63.566 18.174c0-10.034 8.08-18.165 18.032-18.165h22.936v36.337H81.598c-9.96 0-18.032-8.14-18.032-18.172m26.256 0c0-4.143-3.392-7.705-7.504-7.705s-7.504 3.562-7.504 7.705c0 4.142 3.392 7.704 7.504 7.704s7.504-3.562 7.504-7.704m35.033-8.221v9.663c0 3.634 3.096 6.761 6.712 6.761h3.176v9.953h-11.392c-8.368 0-15.152-6.761-15.152-15.183V0h16.664v9.663h9.88v9.952zm29.289 0v9.663c0 3.634 3.096 6.761 6.712 6.761h3.176v9.953H152.64c-8.368 0-15.152-6.761-15.152-15.183V0h16.664v9.663h9.88v9.952zm32.872 2.7c0 1.676 1.232 2.683 2.88 2.683 6.928 0 10.096 4.65 10.096 10.469S195.448 46 187.872 46h-20.2v-9.953h8.944c1.664 0 2.88-1.023 2.88-2.683s-1.08-2.684-2.88-2.684c-6.928 0-10.096-5.013-10.096-10.823s4.544-10.17 12.12-10.17h20.2v9.952h-8.944c-1.664 0-2.88 1.024-2.88 2.684z" fill="currentColor"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <span class="g-header__corner g-header__corner--left cr-black" aria-hidden="true">
+      <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M25 1C11.7452 1 1 11.7452 1 25H0V0H25V1Z" fill="currentColor"/>
+      </svg>
+    </span>
+    <span class="g-header__corner g-header__corner--right cr-black" aria-hidden="true">
+      <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 1C13.2548 1 24 11.7452 24 25H25V0H0V1Z" fill="currentColor"/>
+      </svg>
+    </span>
+  </header>
+  <!-- SHARED_HEADER_END -->
   <main>
     <div class="breadcrumbs">
       <a href="/">Home</a>
@@ -362,20 +493,92 @@
     </div>
   </main>
 
-  <div class="footer-wrapper">
-    <footer>
-      <div class="footer-content">
-        <div class="footer-left"></div>
-        <div class="footer-right">
-          <div class="footer-right-text">
-            <p><a href="mailto:info@wattspet.com">info@wattspet.com</a></p>
-          </div>
-          <img src="/watts-logo-white.svg" alt="Watts" class="footer-logo">
-        </div>
-      </div>
-    </footer>
-  </div>
+    <!-- SHARED_FOOTER_START -->
+  <!-- ========== FOOTER ========== -->
+  <footer class="g-footer px-contain">
+    <div class="g-footer__bg-orange f-v f-a-s cr-silver bg-orange js-footer">
+      <div class="g-footer__container f-h">
 
+        <div class="g-footer__content f-v">
+          <p class="g-footer__title t-h-4">Fueling happier, healthier dogs. One watt at a time!</p>
+          <p class="t-b-3">
+            &copy; 2026 Watts Pet<br>
+            Site &amp; Brand by
+            <a href="http://view-source.com/?ref=watts" aria-label="Link to View Source's website" rel="noopener" target="_blank">View Source</a>
+          </p>
+        </div>
+
+        <nav class="g-footer__nav g g-2">
+          <ul class="g-footer__linklist f-v gap-xs">
+            <p class="g-footer__linklist__title t-l-2">Navigation</p>
+            <li class="g-footer__linklist__item btn-underline"><a href="/">Shop</a><!-- TEMP: update when Shopify pages go live --></li>
+            <li class="g-footer__linklist__item btn-underline"><a href="/">FAQ</a><!-- TEMP: update when Shopify pages go live --></li>
+            <li class="g-footer__linklist__item btn-underline"><a href="/about.html">About Us</a><!-- TEMP: update when Shopify pages go live --></li>
+          </ul>
+          <ul class="g-footer__linklist f-v gap-xs">
+            <p class="g-footer__linklist__title t-l-2">Support</p>
+            <li class="g-footer__linklist__item btn-underline"><a href="/">Contact Us</a><!-- TEMP: update when Shopify pages go live --></li>
+            <li class="g-footer__linklist__item btn-underline"><a href="/">Shipping &amp; Returns</a><!-- TEMP: update when Shopify pages go live --></li>
+            <li class="g-footer__linklist__item btn-underline"><a href="/">Customer Support</a><!-- TEMP: update when Shopify pages go live --></li>
+            <li class="g-footer__linklist__item btn-underline"><a href="/">Wholesale</a><!-- TEMP: update when Shopify pages go live --></li>
+            <li class="g-footer__linklist__item btn-underline"><a href="/policies/privacy-policy">Privacy Policy</a></li>
+          </ul>
+        </nav>
+
+        <div class="g-footer__connect f-v gap-md js-footer-sticker-restricted-area">
+          <div class="g-footer__email-capture">
+            <div class="c-email-capture-shopify c-form">
+              <p class="c-email-capture-shopify__title t-l-2">Get the latest from Watts.</p>
+              <div class="c-form__fields">
+                <div class="c-field">
+                  <input
+                    type="email"
+                    placeholder="Email Address"
+                    required
+                    autocorrect="off"
+                    autocapitalize="off"
+                    autocomplete="email"
+                  >
+                </div>
+                <button type="button" class="c-email-capture-shopify__submit btn btn--white">
+                  <span data-text="Subscribe">Subscribe</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="f-v gap-xs">
+            <p class="t-l-2">Follow us</p>
+            <ul class="g-footer__social f-h gap-xs">
+              <li>
+                <a href="https://www.instagram.com/watts.pet/" aria-label="Instagram" class="btn-icon" rel="noopener" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.76 22.76"><path d="M22.68 16.07a6.78 6.78 0 01-1.84 4.77 6.76 6.76 0 01-4.76 1.84c-1.88.1-7.51.1-9.39 0a6.77 6.77 0 01-4.77-1.84 6.74 6.74 0 01-1.84-4.77C0 14.19 0 8.56.08 6.68a6.74 6.74 0 011.84-4.77A6.78 6.78 0 016.69.08C8.57 0 14.2 0 16.08.08a6.76 6.76 0 014.76 1.84 6.68 6.68 0 011.84 4.77c.11 1.88.11 7.5 0 9.38zm-2-4.69c0-1.66.14-5.21-.45-6.71a3.84 3.84 0 00-2.17-2.16c-1.49-.59-5.05-.46-6.71-.46s-5.21-.14-6.7.46a3.84 3.84 0 00-2.14 2.16c-.59 1.49-.45 5.05-.45 6.71s-.14 5.21.45 6.71a3.84 3.84 0 002.17 2.16c1.49.59 5.05.46 6.7.46s5.21.13 6.71-.46a3.87 3.87 0 002.17-2.16c.59-1.5.45-5.09.45-6.71zm-3.49 0a5.84 5.84 0 11-5.84-5.84 5.83 5.83 0 015.87 5.84zm-2 0a3.8 3.8 0 10-3.8 3.79 3.8 3.8 0 003.79-3.79zm2.28-4.71a1.37 1.37 0 111.36-1.36 1.36 1.36 0 01-1.37 1.36z" fill="currentColor"/></svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/@wattspet" aria-label="TikTok" class="btn-icon" rel="noopener" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M12.1302 4.56637C12.0445 4.52451 11.9611 4.47862 11.8803 4.42888C11.6453 4.282 11.4299 4.10893 11.2386 3.9134C10.7601 3.39568 10.5813 2.87046 10.5155 2.50272H10.5181C10.4631 2.19749 10.4859 2 10.4893 2H8.30962V9.9691C8.30962 10.0761 8.30962 10.1818 8.30486 10.2863C8.30486 10.2993 8.30354 10.3113 8.30275 10.3253C8.30275 10.3311 8.30275 10.3371 8.30143 10.3431C8.30143 10.3446 8.30143 10.3461 8.30143 10.3476C8.27845 10.6335 8.18151 10.9097 8.01913 11.1519C7.85676 11.3941 7.63392 11.5949 7.37022 11.7365C7.09539 11.8843 6.78455 11.9619 6.46836 11.9615C5.45281 11.9615 4.62975 11.1785 4.62975 10.2116C4.62975 9.24464 5.45281 8.46168 6.46836 8.46168C6.6606 8.46151 6.85166 8.49011 7.03444 8.54642L7.03708 6.44803C6.48221 6.38026 5.9185 6.42195 5.38153 6.57048C4.84455 6.71901 4.34595 6.97115 3.9172 7.31099C3.54151 7.61962 3.22566 7.98788 2.98388 8.39918C2.89187 8.54917 2.54471 9.15189 2.50267 10.1301C2.47623 10.6853 2.65259 11.2605 2.73666 11.4983V11.5033C2.78954 11.6433 2.99445 12.121 3.32839 12.5237C3.59766 12.8468 3.91579 13.1306 4.27255 13.3659V13.3609L4.27783 13.3659C5.33304 14.0439 6.503 13.9994 6.503 13.9994C6.70553 13.9917 7.38397 13.9994 8.15442 13.6542C9.00895 13.2714 9.49544 12.7012 9.49544 12.7012C9.80624 12.3605 10.0534 11.9722 10.2262 11.553C10.4235 11.0628 10.4893 10.4748 10.4893 10.2398V6.01205C10.5158 6.02705 10.8679 6.24729 10.8679 6.24729C10.8679 6.24729 11.3753 6.55477 12.1669 6.75501C12.7348 6.89751 13.5 6.9275 13.5 6.9275V4.88161C13.2319 4.9091 12.6875 4.82911 12.1302 4.56637Z" fill="currentColor"/></svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/people/Watts-Pet/61587116105627/" aria-label="Facebook" class="btn-icon" rel="noopener" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M9.12266 4.24766H11V2H9.12266C7.68359 2 6.50469 3.17891 6.50469 4.61797V5.75234H5V8H6.50469V14H8.75234V8H10.6063L10.9766 5.75234H8.72891V4.61797C8.73125 4.42109 8.90469 4.24766 9.12266 4.24766Z" fill="currentColor"/></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="g-footer__logo">
+        <svg class="svg-logo" viewBox="0 0 200 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 9.662h15.584l1.512 11.476c.288 1.966 1.8 2.982 3.392 2.982s3.176-1.024 3.464-2.982l1.512-11.476h13.488l1.512 11.476c.288 1.966 1.88 2.982 3.464 2.982s3.176-1.024 3.464-2.982l1.512-11.476h15.584l-7.72 36.33h-20.2l-.864-7.334c-.288-2.111-1.88-3.127-3.464-3.127s-3.176 1.023-3.464 3.127l-.864 7.334H7.72zm63.566 18.174c0-10.034 8.08-18.165 18.032-18.165h22.936v36.337H81.598c-9.96 0-18.032-8.14-18.032-18.172m26.256 0c0-4.143-3.392-7.705-7.504-7.705s-7.504 3.562-7.504 7.705c0 4.142 3.392 7.704 7.504 7.704s7.504-3.562 7.504-7.704m35.033-8.221v9.663c0 3.634 3.096 6.761 6.712 6.761h3.176v9.953h-11.392c-8.368 0-15.152-6.761-15.152-15.183V0h16.664v9.663h9.88v9.952zm29.289 0v9.663c0 3.634 3.096 6.761 6.712 6.761h3.176v9.953H152.64c-8.368 0-15.152-6.761-15.152-15.183V0h16.664v9.663h9.88v9.952zm32.872 2.7c0 1.676 1.232 2.683 2.88 2.683 6.928 0 10.096 4.65 10.096 10.469S195.448 46 187.872 46h-20.2v-9.953h8.944c1.664 0 2.88-1.023 2.88-2.683s-1.08-2.684-2.88-2.684c-6.928 0-10.096-5.013-10.096-10.823s4.544-10.17 12.12-10.17h20.2v9.952h-8.944c-1.664 0-2.88 1.024-2.88 2.684z" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+  </footer>
+  <!-- SHARED_FOOTER_END -->
   <script>
     // Hamburger menu toggle
     document.addEventListener('DOMContentLoaded', function() {
