@@ -46,6 +46,8 @@ const DIR_ARG = (() => {
   return i !== -1 ? process.argv[i + 1] : null;
 })();
 
+const RECURSIVE = process.argv.includes('--recursive');
+
 const ROOT       = path.join(__dirname, '..');
 const BLOG_DIR   = path.join(ROOT, DIR_ARG || 'blog');
 const SHELL_DIR  = path.join(ROOT, 'shell');
@@ -54,7 +56,11 @@ const SHELL_DIR  = path.join(ROOT, 'shell');
 // Load shell content
 // ---------------------------------------------------------------------------
 
-const HEAD_FILE = DIR_ARG === 'guides' ? 'head-shared-guides.html' : 'head-shared.html';
+const HEAD_FILE = (() => {
+  if (DIR_ARG === 'guides') return 'head-shared-guides.html';
+  if (RECURSIVE)            return 'head-shared-ingredients.html';
+  return 'head-shared.html';
+})();
 
 const SHELL = {
   head:   fs.readFileSync(path.join(SHELL_DIR, HEAD_FILE),     'utf8'),
@@ -218,11 +224,23 @@ function migrateFooter(html) {
 // Main
 // ---------------------------------------------------------------------------
 
+// In recursive mode, collect index.html from each immediate subdirectory.
+// Files are stored as relative paths like "astaxanthin/index.html".
+function collectRecursive(dir) {
+  return fs.readdirSync(dir)
+    .filter(entry => fs.statSync(path.join(dir, entry)).isDirectory())
+    .sort()
+    .filter(entry => fs.existsSync(path.join(dir, entry, 'index.html')))
+    .map(entry => path.join(entry, 'index.html'));
+}
+
 const files = FILE_ARG
   ? [FILE_ARG]
-  : fs.readdirSync(BLOG_DIR).filter(f => f.endsWith('.html')).sort();
+  : RECURSIVE
+    ? collectRecursive(BLOG_DIR)
+    : fs.readdirSync(BLOG_DIR).filter(f => f.endsWith('.html')).sort();
 
-const SKIP_FILES   = new Set(['index.html']);
+const SKIP_FILES   = RECURSIVE ? new Set() : new Set(['index.html']);
 const SKIP_PREFIX  = 'preview-';
 
 const report = {
@@ -241,7 +259,7 @@ for (const file of files) {
   const filePath = path.join(BLOG_DIR, file);
   let html = fs.readFileSync(filePath, 'utf8');
 
-  if (!html.includes('<article')) {
+  if (!RECURSIVE && !html.includes('<article')) {
     report.skipped.push({ file, reason: 'no <article> element found' });
     continue;
   }

@@ -1,0 +1,48 @@
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+
+  <link rel="stylesheet" href="/css/shopify-preload.min.css">
+  <link rel="stylesheet" href="/css/shopify-main.min.css">
+  <style>body { opacity: 1; }</style>
+  <style>
+/* un-layered — overrides Shopify reset */
+/* ingredient-page.css handles body background, main centering, and all
+   content styles; this block only fixes header/footer rendering. */
+
+.g-header li {
+  margin-top: 0;
+}
+
+.g-header__nav a {
+  font: var(--t-l-2);
+}
+
+/* Static-render compensation: lottie-player fills its box; our SVG preserves 200:46
+   and is width-constrained. Reduce container to 84px to shrink the wordmark.
+   bottom:auto cancels main.min.css bottom:4px anchoring. */
+.g-header .g-header__logo {
+  width: 84px;
+  height: 60.6328px;
+}
+.g-header .g-header__logo__lottie {
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+}
+
+.g-footer__nav {
+  order: 0;
+}
+
+.g-footer__nav a {
+  font-weight: 400;
+}
+
+.g-footer li {
+  margin-top: 0;
+}
+
+.c-email-capture-shopify .c-form__fields {
+  margin-top: var(--s-gap-sm);
+}
+  </style>
