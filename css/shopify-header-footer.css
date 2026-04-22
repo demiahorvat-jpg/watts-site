@@ -1,0 +1,838 @@
+/* ==========================================================================
+   Shopify Header & Footer Design System
+   For standalone blog pages matching the Watts Shopify store
+
+   NOTE: This file is loaded alongside blog-page.css which has generic
+   selectors like `header { }`, `nav a { }`, etc. We use high-specificity
+   selectors (e.g. header.g-header, .g-header__nav a) to override those.
+   ========================================================================== */
+
+
+/* ==========================================================================
+   1. Design Tokens
+   ========================================================================== */
+
+:root {
+  /* Colors */
+  --cr-black: #000000;
+  --cr-dark: #191919;
+  --cr-white: #ffffff;
+  --cr-silver: #f1f1f1;
+  --cr-gray: #d9d9d9;
+  --cr-orange-light: #ff4a00;
+  --cr-orange: #c03800;
+  --cr-orange-dark: #641d00;
+  --cr-accent: var(--cr-orange);
+
+  /* Typography */
+  --t-h-1: 700 80px/1 "Degular", sans-serif;
+  --t-h-2: 700 48px/1 "Degular", sans-serif;
+  --t-h-3: 700 32px/1 "Degular", sans-serif;
+  --t-h-4: 700 24px/1 "Degular", sans-serif;
+  --t-b-1: 400 16px/1.2 "Degular", sans-serif;
+  --t-b-2: 400 14px/1.2 "Degular", sans-serif;
+  --t-b-3: 400 12px/1.2 "Degular", sans-serif;
+  --t-l-1: 600 16px/1 "Degular", sans-serif;
+  --t-l-2: 600 14px/1 "Degular", sans-serif;
+
+  /* Spacing */
+  --s-contain: Min(2.5vw, 16px);
+  --s-gap-xxs: 4px;
+  --s-gap-xs: 8px;
+  --s-gap-sm: 16px;
+  --s-gap-md: 24px;
+  --s-gap-lg: 32px;
+
+  /* Border Radius */
+  --br-xs: 4px;
+  --br-sm: 8px;
+  --br: 16px;
+  --br-md: 24px;
+  --br-lg: 38px;
+  --br-rounded: 100vw;
+
+  /* Z-index */
+  --z-header: 110;
+  --z-footer: 80;
+  --z-overlay: 100;
+}
+
+/* Responsive typography: tablet (max 1024px) */
+@media screen and (max-width: 1024px) {
+  :root {
+    --t-h-1: 700 64px/1 "Degular", sans-serif;
+    --t-h-2: 700 40px/1 "Degular", sans-serif;
+    --t-h-3: 700 28px/1 "Degular", sans-serif;
+    --t-h-4: 700 20px/1 "Degular", sans-serif;
+  }
+}
+
+/* Responsive typography: mobile (max 600px) */
+@media screen and (max-width: 600px) {
+  :root {
+    --s-contain: 8px;
+    --t-h-1: 700 48px/1 "Degular", sans-serif;
+    --t-h-2: 700 32px/1 "Degular", sans-serif;
+    --t-h-3: 700 24px/1 "Degular", sans-serif;
+    --t-h-4: 700 16px/1 "Degular", sans-serif;
+    --t-b-1: 400 14px/1.2 "Degular", sans-serif;
+    --t-b-2: 400 12px/1.2 "Degular", sans-serif;
+    --t-b-3: 400 10px/1.2 "Degular", sans-serif;
+    --t-l-1: 600 14px/1 "Degular", sans-serif;
+    --t-l-2: 600 12px/1 "Degular", sans-serif;
+  }
+}
+
+/* Responsive typography: large screens (min 1920px) */
+@media screen and (min-width: 1920px) {
+  :root {
+    --t-h-1: 700 100px/1 "Degular", sans-serif;
+    --t-h-2: 700 80px/1 "Degular", sans-serif;
+    --t-h-3: 700 40px/1 "Degular", sans-serif;
+    --t-h-4: 700 30px/1 "Degular", sans-serif;
+    --t-b-1: 400 20px/1.2 "Degular", sans-serif;
+    --t-b-2: 400 16px/1.2 "Degular", sans-serif;
+    --t-b-3: 400 14px/1.2 "Degular", sans-serif;
+    --t-l-1: 600 18px/1 "Degular", sans-serif;
+    --t-l-2: 600 16px/1 "Degular", sans-serif;
+  }
+}
+
+
+/* ==========================================================================
+   2. Utility Classes
+   ========================================================================== */
+
+/* Flex layout */
+.f-h {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.f-v {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.f-a-c { align-items: center; }
+.f-a-s { align-items: flex-start; }
+.f-a-e { align-items: flex-end; }
+.f-j-s { justify-content: flex-start; }
+.f-j-c { justify-content: center; }
+
+/* Gaps */
+.gap-xs { gap: var(--s-gap-xs); }
+.gap-sm { gap: var(--s-gap-sm); }
+.gap-md { gap: var(--s-gap-md); }
+
+/* Padding / Positioning */
+.px-contain {
+  padding-left: var(--s-contain);
+  padding-right: var(--s-contain);
+}
+.p-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+.p-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Backgrounds & Colors */
+.bg-black  { background-color: var(--cr-black); }
+.bg-orange { background-color: var(--cr-orange); }
+.cr-silver { color: var(--cr-silver); }
+.cr-black  { color: var(--cr-black); }
+.cr-dark   { color: var(--cr-dark); }
+.cr-white  { color: var(--cr-white); }
+
+/* Typography */
+.t-l-1 {
+  font: var(--t-l-1);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.t-l-2 {
+  font: var(--t-l-2);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.t-h-4 { font: var(--t-h-4); }
+.t-b-1 { font: var(--t-b-1); }
+.t-b-3 { font: var(--t-b-3); }
+
+/* Grid */
+.g-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--s-gap-lg);
+}
+
+/* Border Radius */
+.br-sm {
+  border-radius: var(--br-sm);
+  overflow: hidden;
+}
+.br-md {
+  border-radius: var(--br-md);
+  overflow: hidden;
+}
+.br-lg {
+  border-radius: var(--br-lg);
+  overflow: hidden;
+}
+
+/* Screen Reader */
+.screen-reader-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Responsive Visibility */
+.tablet-up-only   { display: flex; }
+.tablet-down-only { display: none; }
+.mobile-up-only   { display: flex; }
+.mobile-down-only { display: none; }
+
+@media screen and (max-width: 1024px) {
+  .tablet-up-only   { display: none !important; }
+  .tablet-down-only { display: flex; }
+}
+@media screen and (min-width: 1025px) {
+  .tablet-down-only { display: none !important; }
+}
+@media screen and (max-width: 600px) {
+  .mobile-up-only   { display: none !important; }
+  .mobile-down-only { display: flex; }
+}
+@media screen and (min-width: 601px) {
+  .mobile-down-only { display: none !important; }
+}
+
+
+/* ==========================================================================
+   3. Buttons
+   ========================================================================== */
+
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-gap-xs);
+  padding: 0 24px;
+  height: 42px;
+  border: none;
+  border-radius: 100vw;
+  overflow: hidden;
+  z-index: 1;
+  color: var(--cr-silver);
+  background-color: var(--cr-orange);
+  font: var(--t-l-2);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--cr-dark);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.35s ease;
+  z-index: -1;
+}
+@media (hover: hover) {
+  .btn:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+.btn--white {
+  color: var(--cr-dark);
+  background-color: var(--cr-white);
+}
+
+.btn-underline {
+  display: inline-flex;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 0;
+  font: var(--t-b-2);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  position: relative;
+}
+.btn-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+@media (hover: hover) {
+  .btn-underline:hover::after {
+    width: 100%;
+  }
+}
+
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--btn-icon-size, 48px);
+  height: var(--btn-icon-size, 48px);
+  border-radius: var(--br-md);
+  border: none;
+  background-color: var(--cr-white);
+  color: var(--cr-dark);
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  text-decoration: none;
+}
+@media (hover: hover) {
+  .btn-icon:hover {
+    background-color: var(--cr-dark);
+    color: var(--cr-white);
+  }
+}
+
+
+/* ==========================================================================
+   4. Email Field
+   ========================================================================== */
+
+.c-field input[type="email"] {
+  height: 42px;
+  padding: 0 var(--s-gap-sm);
+  font: var(--t-b-1);
+  border: 1px solid;
+  border-radius: var(--br-sm);
+  color: inherit;
+  background: transparent;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+}
+.c-field input[type="email"]::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.c-field input[type="email"]:focus {
+  border-color: var(--cr-white);
+}
+
+
+/* ==========================================================================
+   5. Header Component (.g-header)
+
+   HTML structure (from preview):
+     <header class="g-header js-header">          -- outer: black bg, sticky
+       <div class="g-header__inner">               -- inner bar: orange via ::before
+         <nav class="g-header__nav">               -- left nav links
+         <a class="g-header__logo">                -- centered logo
+         <div class="g-header__actions">           -- right side
+       </div>
+       <span class="g-header__corner--left">       -- corner cutout
+       <span class="g-header__corner--right">      -- corner cutout
+       <div class="g-header__mobile-menu">         -- mobile panel
+     </header>
+   ========================================================================== */
+
+/* Override blog-page.css generic `header { }` and `nav a { }` */
+header.g-header {
+  position: sticky;
+  top: 0;
+  padding-block: var(--s-gap-xs);
+  padding-left: var(--s-contain);
+  padding-right: var(--s-contain);
+  z-index: var(--z-header);
+  background-color: var(--cr-black);
+  /* Reset anything blog-page.css sets on bare header */
+  border-radius: 0;
+  margin: 0;
+  display: block;
+}
+
+/* Inner bar — the orange rounded bar */
+header.g-header .g-header__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 26px;
+  color: var(--cr-silver);
+}
+
+/* Orange background via ::before (matches Shopify) */
+header.g-header .g-header__inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--cr-orange);
+  border-radius: var(--br);
+  z-index: -1;
+}
+
+@media screen and (max-width: 1024px) {
+  header.g-header .g-header__inner::before {
+    border-radius: var(--br-md);
+  }
+}
+
+/* Nav links (left side) */
+header.g-header .g-header__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--s-gap-md);
+  z-index: 1;
+}
+
+/* Override blog-page.css `nav a { color: white; }` etc. */
+header.g-header .g-header__nav .btn-underline,
+header.g-header .g-header__link {
+  color: var(--cr-silver);
+  text-decoration: none;
+  font: var(--t-l-2);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  position: relative;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+header.g-header .g-header__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+@media (hover: hover) {
+  header.g-header .g-header__link:hover::after {
+    width: 100%;
+  }
+  header.g-header .g-header__link:hover {
+    opacity: 1;
+  }
+}
+
+/* Centered logo (uses .p-center for absolute positioning) */
+header.g-header .g-header__logo {
+  width: 110px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--cr-silver);
+}
+.g-header__logo-full {
+  width: 120px;
+  height: auto;
+}
+.g-header__logo-mobile {
+  width: 30px;
+  height: auto;
+}
+
+/* Right-side actions */
+header.g-header .g-header__actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--s-gap-md);
+  z-index: 1;
+}
+
+/* Cart text underline */
+.g-header__cart-text {
+  display: inline-block;
+  height: 1.1em;
+  border-bottom: 1px solid;
+}
+
+/* Corner cutouts */
+header.g-header .g-header__corner--left,
+header.g-header .g-header__corner--right {
+  position: absolute;
+  width: 25px;
+  bottom: 1px;
+  transform: translateY(100%);
+  z-index: -2;
+  color: var(--cr-black);
+  pointer-events: none;
+  display: block;
+}
+header.g-header .g-header__corner--left {
+  left: calc(var(--s-contain) - 1px);
+}
+header.g-header .g-header__corner--right {
+  right: calc(var(--s-contain) - 1px);
+}
+header.g-header .g-header__corner--left svg,
+header.g-header .g-header__corner--right svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Mobile hamburger toggle */
+.g-header__hamburger {
+  --size: 24px;
+  position: relative;
+  width: var(--size);
+  height: calc(var(--size) * 0.86);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.g-header__hamburger::before,
+.g-header__hamburger::after,
+.g-header__hamburger hr {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 1px;
+  width: var(--size);
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  border: 0;
+  background-color: var(--cr-silver);
+}
+.g-header__hamburger::before { top: 6%; }
+.g-header__hamburger::after  { top: 94%; }
+
+@media screen and (max-width: 600px) {
+  .g-header__hamburger { --size: 16px; }
+}
+
+/* Mobile close button */
+.g-header__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  color: var(--cr-silver);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile menu panel */
+header.g-header .g-header__mobile-menu {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--cr-black);
+  z-index: calc(var(--z-header) + 1);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+header.g-header.is-menu-open .g-header__mobile-menu {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.g-header__mobile-menu__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+  min-height: 54px;
+  box-sizing: border-box;
+}
+
+.g-header__mobile-menu__links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-gap-lg);
+  padding: 40px 24px;
+}
+/* Override blog-page.css nav a styles inside mobile menu */
+header.g-header .g-header__mobile-menu__links a {
+  color: var(--cr-silver);
+  text-decoration: none;
+  font: var(--t-h-3);
+  opacity: 1;
+}
+@media (hover: hover) {
+  header.g-header .g-header__mobile-menu__links a:hover {
+    color: var(--cr-white);
+  }
+}
+
+/* SVG sizing helpers */
+.svg-close {
+  width: 14px;
+  height: 14px;
+}
+.svg-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+/* ==========================================================================
+   6. Footer Component (.g-footer)
+
+   HTML structure (from preview):
+     <div class="g-footer px-contain">
+       <div class="g-footer__bg-orange">
+         <div class="g-footer__container">
+           <div class="g-footer__content">...</div>
+           <div class="g-footer__nav">...</div>
+           <div class="g-footer__connect">...</div>
+         </div>
+         <div class="g-footer__logo">...</div>
+       </div>
+     </div>
+   ========================================================================== */
+
+.g-footer {
+  --gap: 60px;
+  position: relative;
+  padding-top: var(--s-gap-xs);
+  padding-bottom: var(--s-gap-xs);
+  z-index: var(--z-footer);
+}
+
+.g-footer__bg-orange {
+  position: relative;
+  gap: var(--gap);
+  padding: 72px 58px 32px 10.5vw;
+  border-radius: 30vw var(--br-lg) var(--br-lg) 30vw;
+  overflow: hidden;
+  background-color: var(--cr-orange);
+  color: var(--cr-silver);
+}
+
+.g-footer__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--gap);
+  z-index: 1;
+}
+
+/* Left: brand content */
+.g-footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 320px;
+}
+
+/* Center: navigation columns */
+.g-footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: start;
+}
+
+.g-footer__linklist {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-gap-sm);
+}
+.g-footer__linklist__title {
+  font: var(--t-l-2);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--cr-white);
+  text-wrap: nowrap;
+  margin-bottom: var(--s-gap-xs);
+}
+.g-footer__linklist__item a {
+  color: var(--cr-silver);
+  text-decoration: none;
+  font: var(--t-b-3);
+  transition: color 0.2s ease;
+}
+@media (hover: hover) {
+  .g-footer__linklist__item a:hover {
+    color: var(--cr-white);
+  }
+}
+
+/* Right: email capture + social */
+.g-footer__connect {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-gap-md);
+  flex-basis: 35%;
+  width: 100%;
+  min-width: 280px;
+  max-width: 450px;
+}
+
+/* Email capture */
+.g-footer__email-capture {
+  width: 100%;
+  padding-right: var(--gap);
+}
+.c-email-capture-shopify__title {
+  font: var(--t-l-2);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--cr-white);
+  margin-bottom: var(--s-gap-xs);
+}
+.c-email-capture-shopify .c-form__fields {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: var(--s-gap-xs);
+}
+.c-email-capture-shopify__submit {
+  position: absolute;
+  right: -20px;
+}
+.c-email-capture-shopify__message {
+  display: none;
+  font: var(--t-b-3);
+  color: var(--cr-white);
+}
+
+/* Social icons */
+.g-footer__social {
+  display: flex;
+  flex-direction: row;
+  gap: var(--s-gap-xs);
+}
+.g-footer__social .btn-icon {
+  --btn-icon-size: 38px;
+  color: var(--cr-white);
+  background-color: rgba(25, 25, 25, 0.1);
+}
+.g-footer__social .btn-icon svg {
+  height: 20px;
+  width: auto;
+}
+@media (hover: hover) {
+  .g-footer__social .btn-icon:hover {
+    background-color: var(--cr-dark);
+  }
+}
+
+/* Large logo at bottom */
+.g-footer__logo {
+  align-self: flex-end;
+  position: relative;
+  width: 70%;
+  padding: 24px 0;
+}
+.g-footer__logo svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+/* Footer bottom bar (if present) */
+.g-footer__bottom {
+  background-color: var(--cr-black);
+  padding: 16px 0;
+  text-align: center;
+}
+
+
+/* ==========================================================================
+   7. Responsive Footer
+   ========================================================================== */
+
+@media screen and (max-width: 1024px) {
+  .g-footer__bg-orange {
+    padding: 72px 58px 32px 200px;
+    border-radius: 80vw var(--br-lg) var(--br-lg) 80vw;
+  }
+  .g-footer__container {
+    flex-direction: column;
+  }
+  .g-footer__content {
+    max-width: unset;
+  }
+  .g-footer__connect {
+    min-width: unset;
+  }
+  .g-footer__email-capture {
+    padding-right: 20px;
+  }
+  .g-footer__logo {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .g-footer {
+    --gap: 48px;
+  }
+  .g-footer__bg-orange {
+    padding: 180px 32px 14px;
+    border-radius: var(--br-rounded) var(--br-rounded) var(--br-lg) var(--br-lg);
+  }
+  .g-footer__logo {
+    width: 100%;
+  }
+  .c-email-capture-shopify .c-form__fields {
+    flex-direction: column;
+  }
+  .c-field input[type="email"] {
+    min-width: auto;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .g-footer__bg-orange {
+    padding-top: 112px;
+  }
+}
