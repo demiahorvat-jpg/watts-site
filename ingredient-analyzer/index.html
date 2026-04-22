@@ -52,6 +52,7 @@
         --fg: #191919;
         --muted: #3a3a3a;
         --border: #191919;
+        --border-light: rgba(25,25,25,0.2);
         --good: #2d5016;
         --caution: #b45309;
         --avoid: #991b1b;
@@ -704,6 +705,17 @@
   <link rel="stylesheet" href="/css/shopify-main.min.css">
   <style>body { opacity: 1; }</style>
   <style>
+/* Restore textarea border reset by Shopify CSS */
+textarea {
+  border: 1.5px solid var(--border-light) !important;
+  border-radius: 8px;
+  background: var(--white);
+}
+textarea:focus {
+  outline: none;
+  border-color: var(--brand-orange) !important;
+}
+
 /* Restore content typography reset by shopify-preload */
 h1 { font-size: 32px; font-weight: 700; line-height: 1.2; margin-bottom: 16px; letter-spacing: -0.02em; }
 h2 { font-size: 26px; font-weight: 700; line-height: 1.3; margin: 48px 0 20px; letter-spacing: -0.01em; }
