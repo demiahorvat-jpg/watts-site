@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="/css/shopify-preload.min.css">
   <link rel="stylesheet" href="/css/shopify-main.min.css">
   <style>@import url('../css/blog-page.css') layer(legacy);</style>
-  <style>body { background-color: #000; }</style>
+  <style>body { background-color: #000; opacity: 1; }</style>
   <style>
 /* un-layered — overrides Shopify reset */
 
@@ -144,8 +144,8 @@ article a {
 }
 
 /* Static-render compensation: lottie-player fills its box; our SVG preserves 200:46
-   and is width-constrained. Reduce container to 108px (10% smaller than Shopify's 120px)
-   to shrink the wordmark. bottom:auto cancels main.min.css bottom:4px anchoring. */
+   and is width-constrained. Reduce container to 84px to shrink the wordmark.
+   bottom:auto cancels main.min.css bottom:4px anchoring. */
 .g-header .g-header__logo {
   width: 84px;
   height: 60.6328px;
@@ -172,7 +172,7 @@ article a {
   margin-top: var(--s-gap-sm);
 }
   </style>
-  <!-- SHARED_HEAD_END -->
+<!-- SHARED_HEAD_END -->
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -387,7 +387,7 @@ article a {
       </svg>
     </span>
   </header>
-  <!-- SHARED_HEADER_END -->
+<!-- SHARED_HEADER_END -->
 
   <main>
     <article>
@@ -635,7 +635,7 @@ article a {
       </div>
     </div>
   </footer>
-  <!-- SHARED_FOOTER_END -->
+<!-- SHARED_FOOTER_END -->
 
   <script>
   document.addEventListener('DOMContentLoaded', function () {
