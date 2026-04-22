@@ -422,12 +422,16 @@
       }
 
       ul {
-        list-style: disc;
         margin: 20px 0 20px 24px;
       }
       ol {
-        list-style: decimal;
         margin: 20px 0 20px 24px;
+      }
+      main ul {
+        list-style: disc;
+      }
+      main ol {
+        list-style: decimal;
       }
       @media (min-width: 768px) {
         ul { margin: 24px 0 24px 32px; }
