@@ -20,16 +20,30 @@ li { margin-bottom: 12px; }
   ul, ol { margin: 24px 0 24px 32px; }
 }
 
-/* ingredient-page.css global a{color:#191919} — restore header colors */
-.g-header a,
-.g-header button {
-  color: inherit;
-  text-decoration: none;
+/* Cancel page inline ul/li/button styles leaking into header */
+.g-header ul,
+.g-header ol {
+  margin: 0;
+  padding: 0;
 }
 
 .g-header li {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.g-header button {
+  padding: unset;
+  background: transparent;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  border-radius: unset;
+}
+
+.g-header a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .g-header__nav a {
