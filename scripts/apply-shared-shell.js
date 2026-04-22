@@ -48,6 +48,16 @@ const DIR_ARG = (() => {
 
 const RECURSIVE = process.argv.includes('--recursive');
 
+const OFFSET_ARG = (() => {
+  const i = process.argv.indexOf('--offset');
+  return i !== -1 ? parseInt(process.argv[i + 1], 10) : 0;
+})();
+
+const LIMIT_ARG = (() => {
+  const i = process.argv.indexOf('--limit');
+  return i !== -1 ? parseInt(process.argv[i + 1], 10) : Infinity;
+})();
+
 const ROOT       = path.join(__dirname, '..');
 const BLOG_DIR   = path.join(ROOT, DIR_ARG || 'blog');
 const SHELL_DIR  = path.join(ROOT, 'shell');
@@ -237,11 +247,14 @@ function collectRecursive(dir) {
     .map(entry => path.join(entry, 'index.html'));
 }
 
-const files = FILE_ARG
-  ? [FILE_ARG]
-  : RECURSIVE
-    ? collectRecursive(BLOG_DIR)
-    : fs.readdirSync(BLOG_DIR).filter(f => f.endsWith('.html')).sort();
+const files = (() => {
+  const all = FILE_ARG
+    ? [FILE_ARG]
+    : RECURSIVE
+      ? collectRecursive(BLOG_DIR)
+      : fs.readdirSync(BLOG_DIR).filter(f => f.endsWith('.html')).sort();
+  return all.slice(OFFSET_ARG, OFFSET_ARG + LIMIT_ARG);
+})();
 
 const SKIP_FILES   = RECURSIVE ? new Set() : new Set(['index.html']);
 const SKIP_PREFIX  = 'preview-';
@@ -261,6 +274,11 @@ for (const file of files) {
 
   const filePath = path.join(BLOG_DIR, file);
   let html = fs.readFileSync(filePath, 'utf8');
+
+  if (html.includes('http-equiv="refresh"')) {
+    report.skipped.push({ file, reason: 'redirect page' });
+    continue;
+  }
 
   if (!RECURSIVE && !html.includes('<article')) {
     report.skipped.push({ file, reason: 'no <article> element found' });
