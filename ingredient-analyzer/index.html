@@ -710,6 +710,7 @@ textarea {
   border: 1.5px solid var(--border-light) !important;
   border-radius: 8px;
   background: var(--white);
+  padding: 16px;
 }
 textarea:focus {
   outline: none;
@@ -722,6 +723,8 @@ h2 { font-size: 26px; font-weight: 700; line-height: 1.3; margin: 48px 0 20px; l
 h3 { font-size: 21px; font-weight: 600; line-height: 1.4; margin: 32px 0 16px; }
 p { margin-bottom: 20px; font-size: 17px; line-height: 1.7; }
 ul, ol { margin: 20px 0 20px 24px; }
+ul { list-style: disc; }
+ol { list-style: decimal; }
 li { margin-bottom: 12px; }
 @media (min-width: 768px) {
   h1 { font-size: 42px; margin-bottom: 20px; }
@@ -729,6 +732,24 @@ li { margin-bottom: 12px; }
   h3 { font-size: 24px; margin: 36px 0 20px; }
   p { font-size: 18px; line-height: 1.8; margin-bottom: 24px; }
   ul, ol { margin: 24px 0 24px 32px; }
+}
+
+/* Restore button styles reset by Shopify CSS */
+main button {
+  padding: 14px 32px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  background: var(--brand-orange);
+  color: var(--white);
+  cursor: pointer;
+  border-radius: 8px;
+}
+main button.secondary {
+  background: transparent;
+  color: var(--text-dark);
+  border: 1.5px solid rgba(25,25,25,0.2);
 }
 
 /* Cancel page inline ul/li/button styles leaking into header */
