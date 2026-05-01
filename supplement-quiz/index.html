@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dog Supplement Quiz — Personalized Recommendations | Watts</title>
   <meta name="description" content="Answer 4 quick questions and get personalized supplement recommendations based on your dog's size, age, and health concerns. Science-backed, no fluff.">
-  <link rel="canonical" href="https://learn.learn.wattspet.com/supplement-quiz/">
+  <link rel="canonical" href="https://learn.wattspet.com/supplement-quiz/">
   <meta property="og:title" content="Dog Supplement Quiz — Find the Right Supplements | Watts">
   <meta property="og:description" content="Personalized supplement recommendations based on your dog's size, age, and health concerns.">
-  <meta property="og:url" content="https://learn.learn.wattspet.com/supplement-quiz/">
+  <meta property="og:url" content="https://learn.wattspet.com/supplement-quiz/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
   <link rel="icon" type="image/png" href="/assets/favicon.png">
@@ -27,7 +27,7 @@
     "@type": "WebPage",
     "name": "Dog Supplement Quiz — Personalized Recommendations",
     "description": "Answer 4 quick questions and get personalized supplement recommendations based on your dog's size, age, and health concerns.",
-    "url": "https://learn.learn.wattspet.com/supplement-quiz/",
+    "url": "https://learn.wattspet.com/supplement-quiz/",
     "publisher": {
       "@type": "Organization",
       "name": "Watts Pet",
@@ -1517,7 +1517,7 @@
     var n = state.name || 'My dog';
     var text = n + '\'s personalized supplement quiz results from Watts — based on size, life stage, and health concerns. Try it: learn.wattspet.com/supplement-quiz/';
     if (navigator.share) {
-      navigator.share({ title: n + '\'s supplement recommendations', text: text, url: 'https://learn.learn.wattspet.com/supplement-quiz/' }).catch(function() {});
+      navigator.share({ title: n + '\'s supplement recommendations', text: text, url: 'https://learn.wattspet.com/supplement-quiz/' }).catch(function() {});
     } else if (navigator.clipboard) {
       navigator.clipboard.writeText(text).then(function() {
         var btn = document.getElementById('share-btn');

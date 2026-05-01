@@ -628,12 +628,12 @@ function generateIngredientPage(ingredient, allIngredients) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${pageTitle}</title>
     <meta name="description" content="${metaDescription}">
-    <link rel="canonical" href="https://wattspet.com/ingredient-analyzer/ingredients/${slug}/">
+    <link rel="canonical" href="https://learn.wattspet.com/ingredient-analyzer/ingredients/${slug}/">
 
     <!-- Open Graph -->
     <meta property="og:title" content="${ingredient.name} in Dog Food: Complete Guide | Watts Pet">
     <meta property="og:description" content="${whatItIsText.substring(0, 150)}">
-    <meta property="og:url" content="https://wattspet.com/ingredient-analyzer/ingredients/${slug}/">
+    <meta property="og:url" content="https://learn.wattspet.com/ingredient-analyzer/ingredients/${slug}/">
     <meta property="og:type" content="article">
 
     <!-- Degular Font -->
@@ -1281,7 +1281,7 @@ function generateIngredientPage(ingredient, allIngredients) {
         "name": "Watts Pet",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://wattspet.com/favicon.svg"
+          "url": "https://learn.wattspet.com/assets/favicon.png"
         }
       },
       "datePublished": "${ingredient.lastUpdated || '2026-01-25'}",
@@ -1298,25 +1298,25 @@ function generateIngredientPage(ingredient, allIngredients) {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://wattspet.com/"
+          "item": "https://www.wattspet.com/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Ingredient Analyzer",
-          "item": "https://wattspet.com/ingredient-analyzer/"
+          "item": "https://learn.wattspet.com/ingredient-analyzer/"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Ingredients",
-          "item": "https://wattspet.com/ingredient-analyzer/ingredients/"
+          "item": "https://learn.wattspet.com/ingredient-analyzer/ingredients/"
         },
         {
           "@type": "ListItem",
           "position": 4,
           "name": "${ingredient.name}",
-          "item": "https://wattspet.com/ingredient-analyzer/ingredients/${slug}/"
+          "item": "https://learn.wattspet.com/ingredient-analyzer/ingredients/${slug}/"
         }
       ]
     }

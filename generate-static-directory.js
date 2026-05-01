@@ -55,7 +55,7 @@ const html = `<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dog Food Ingredient Encyclopedia | 200+ Ingredients Explained | Watts Pet</title>
     <meta name="description" content="Comprehensive encyclopedia of 200+ dog food, treat, and supplement ingredients. Learn what each ingredient is, why it's used, and whether it's good for your dog.">
-    <link rel="canonical" href="https://wattspet.com/ingredient-analyzer/ingredients/">
+    <link rel="canonical" href="https://learn.wattspet.com/ingredient-analyzer/ingredients/">
 
     <style>
       :root {
@@ -333,7 +333,7 @@ const html = `<!DOCTYPE html>
       "@type": "CollectionPage",
       "name": "Dog Food Ingredient Encyclopedia",
       "description": "Comprehensive encyclopedia of 200+ dog food, treat, and supplement ingredients",
-      "url": "https://wattspet.com/ingredient-analyzer/ingredients/",
+      "url": "https://learn.wattspet.com/ingredient-analyzer/ingredients/",
       "publisher": {
         "@type": "Organization",
         "name": "Watts Pet"
