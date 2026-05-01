@@ -5,11 +5,11 @@ const fs = require('fs');
 
 // Pages changed - internal link audit fixes
 const changedUrls = [
-  'https://wattspet.com/blog/why-dogs-need-supplements.html',
-  'https://wattspet.com/blog/active-working-dog-nutrition.html',
-  'https://wattspet.com/blog/leaky-gut-in-dogs.html',
-  'https://wattspet.com/blog/immune-support-for-dogs.html',
-  'https://wattspet.com/blog/red-dye-40-dog-food.html'
+  'https://learn.wattspet.com/blog/why-dogs-need-supplements.html',
+  'https://learn.wattspet.com/blog/active-working-dog-nutrition.html',
+  'https://learn.wattspet.com/blog/leaky-gut-in-dogs.html',
+  'https://learn.wattspet.com/blog/immune-support-for-dogs.html',
+  'https://learn.wattspet.com/blog/red-dye-40-dog-food.html'
 ];
 
 // Remove duplicates
@@ -21,9 +21,9 @@ console.log(`Total URLs to submit: ${uniqueUrls.length}`);
 const keyContent = fs.readFileSync('c3d5e8f1a4b7c9d2e5f8a1b4c7d9e2f5.txt', 'utf8').trim();
 
 const payload = {
-  host: 'wattspet.com',
+  host: 'learn.wattspet.com',
   key: keyContent,
-  keyLocation: 'https://wattspet.com/c3d5e8f1a4b7c9d2e5f8a1b4c7d9e2f5.txt',
+  keyLocation: 'https://learn.wattspet.com/c3d5e8f1a4b7c9d2e5f8a1b4c7d9e2f5.txt',
   urlList: uniqueUrls
 };
 

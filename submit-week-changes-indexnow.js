@@ -12,7 +12,7 @@ const changedUrls = changedFiles
   .split('\n')
   .filter(file => file.trim())
   .map(file => {
-    let url = 'https://wattspet.com/' + file;
+    let url = 'https://learn.wattspet.com/' + file;
     // Convert /index.html to /
     url = url.replace(/\/index\.html$/, '/');
     return url;
@@ -30,9 +30,9 @@ console.log('  ...\n');
 const keyContent = fs.readFileSync('c3d5e8f1a4b7c9d2e5f8a1b4c7d9e2f5.txt', 'utf8').trim();
 
 const payload = {
-  host: 'wattspet.com',
+  host: 'learn.wattspet.com',
   key: keyContent,
-  keyLocation: 'https://wattspet.com/c3d5e8f1a4b7c9d2e5f8a1b4c7d9e2f5.txt',
+  keyLocation: 'https://learn.wattspet.com/c3d5e8f1a4b7c9d2e5f8a1b4c7d9e2f5.txt',
   urlList: uniqueUrls
 };
 

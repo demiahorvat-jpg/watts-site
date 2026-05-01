@@ -15,7 +15,7 @@ const urls = urlMatches.map(match => match.replace(/<\/?loc>/g, ''));
 console.log(`Found ${urls.length} URLs in sitemap`);
 
 // IndexNow API configuration
-const host = 'wattspet.com';
+const host = 'learn.wattspet.com';
 const key = 'c3d5e8f1a4b7c9d2e5f8a1b4c7d9e2f5';
 const keyLocation = `https://${host}/${key}.txt`;
 

@@ -23,7 +23,7 @@ function extractMeta(content, filePath) {
   const canonicalMatch = content.match(/<link\s+rel=["']canonical["']\s+href=["']([^"']+)["']/i);
   
   // Convert file path to URL
-  let url = filePath.replace('/Users/demihorvat/Projects/watts-site', 'https://wattspet.com');
+  let url = filePath.replace('/Users/demihorvat/Projects/watts-site', 'https://learn.wattspet.com');
   if (url.endsWith('/index.html')) {
     url = url.replace('/index.html', '/');
   }

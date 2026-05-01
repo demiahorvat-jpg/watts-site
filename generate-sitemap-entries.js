@@ -14,7 +14,7 @@ let entries = [];
 
 // Add main ingredient analyzer page
 entries.push(`  <url>
-    <loc>https://wattspet.com/ingredient-analyzer/</loc>
+    <loc>https://learn.wattspet.com/ingredient-analyzer/</loc>
     <lastmod>${today}T09:00:00-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -22,7 +22,7 @@ entries.push(`  <url>
 
 // Add ingredient directory index
 entries.push(`  <url>
-    <loc>https://wattspet.com/ingredient-analyzer/ingredients/</loc>
+    <loc>https://learn.wattspet.com/ingredient-analyzer/ingredients/</loc>
     <lastmod>${today}T09:00:00-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -46,7 +46,7 @@ const redirectPages = [
 const slugs = Object.values(slugMap).sort().filter(slug => !redirectPages.includes(slug));
 slugs.forEach(slug => {
   entries.push(`  <url>
-    <loc>https://wattspet.com/ingredient-analyzer/ingredients/${slug}/</loc>
+    <loc>https://learn.wattspet.com/ingredient-analyzer/ingredients/${slug}/</loc>
     <lastmod>${today}T09:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

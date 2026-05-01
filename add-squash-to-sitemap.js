@@ -11,11 +11,11 @@ let sitemap = fs.readFileSync('sitemap.xml', 'utf8');
 const today = new Date().toISOString().split('T')[0];
 
 const sitemapEntries = `  <url>
-    <loc>https://wattspet.com/ingredient-analyzer/ingredients/squash/</loc>
+    <loc>https://learn.wattspet.com/ingredient-analyzer/ingredients/squash/</loc>
     <lastmod>${today}</lastmod>
   </url>
   <url>
-    <loc>https://wattspet.com/ingredient-analyzer/ingredients/butternut-squash/</loc>
+    <loc>https://learn.wattspet.com/ingredient-analyzer/ingredients/butternut-squash/</loc>
     <lastmod>${today}</lastmod>
   </url>
 `;
