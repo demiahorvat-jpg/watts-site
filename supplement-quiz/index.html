@@ -435,7 +435,7 @@
           <div class="email-cta-inner">
             <h3>Stay in the loop</h3>
             <p>Get updates from Watts — dog nutrition, supplement guides, and tools like this one.</p>
-            <form class="email-cta-form" id="results-email-form" action="https://formspree.io/f/mjkalgwj" method="POST" novalidate>
+            <form class="email-cta-form" id="results-email-form" novalidate>
               <input type="email" name="email" placeholder="Your email" required autocomplete="email">
               <button type="submit">Notify me</button>
             </form>
@@ -539,517 +539,93 @@
   <div id="sticky-email-cta" class="sticky-email-cta" aria-hidden="true">
     <button class="sticky-cta-close" id="sticky-cta-close" aria-label="Close">&#x2715;</button>
     <p class="sticky-cta-heading">Stay in the loop</p>
-    <form class="sticky-cta-form" id="sticky-cta-form" action="https://formspree.io/f/mjkalgwj" method="POST" novalidate>
+    <form class="sticky-cta-form" id="sticky-cta-form" novalidate>
       <input type="email" name="email" placeholder="Your email" required autocomplete="email">
-      <button type="submit">Notify me</button>
+      <button type="submit">Subscribe</button>
     </form>
     <p class="sticky-cta-success" id="sticky-cta-success">Thanks — we'll be in touch!</p>
   </div>
-
   <script>
-  // ===== HAMBURGER =====
-  (function() {
-    var hamburger = document.querySelector('.hamburger');
-    var navMenu = document.querySelector('nav ul');
-    if (!hamburger || !navMenu) return;
-    hamburger.addEventListener('click', function() {
-      navMenu.classList.toggle('active');
-    });
-    document.addEventListener('click', function(e) {
-      if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
-        navMenu.classList.remove('active');
-      }
-    });
-  })();
-
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  // ===== SUPPLEMENT DATABASE =====
-  var supplements = {
-    omega3: {
-      name: 'Omega-3 / Fish Oil',
-      tagline: 'Anti-inflammatory foundation',
-      blog: '/blog/omega-3-fish-oil-for-dogs.html',
-      ingredient: '/ingredient-analyzer/ingredients/fish-oil/'
-    },
-    probiotics: {
-      name: 'Probiotics',
-      tagline: 'Gut and immune health',
-      blog: '/blog/probiotics-for-dogs.html',
-      ingredient: '/ingredient-analyzer/ingredients/lactobacillus-acidophilus/'
-    },
-    joint: {
-      name: 'Green-Lipped Mussel',
-      tagline: 'Comprehensive joint support',
-      blog: '/blog/green-lipped-mussel-for-dogs.html',
-      ingredient: '/ingredient-analyzer/ingredients/green-lipped-mussel/'
-    },
-    glucosamine: {
-      name: 'Glucosamine',
-      tagline: 'Cartilage and joint structure',
-      blog: '/blog/joint-supplements-for-dogs.html',
-      ingredient: '/ingredient-analyzer/ingredients/glucosamine/'
-    },
-    enzymes: {
-      name: 'Digestive Enzymes',
-      tagline: 'Nutrient breakdown and absorption',
-      blog: '/blog/digestive-enzymes-for-dogs.html',
-      ingredient: '/ingredient-analyzer/ingredients/digestive-enzymes/'
-    },
-    antioxidants: {
-      name: 'Antioxidants',
-      tagline: 'Oxidative stress protection',
-      blog: '/blog/antioxidants-for-dogs.html',
-      ingredient: '/ingredient-analyzer/ingredients/vitamin-e-supplement/'
-    },
-    organ: {
-      name: 'Organ-Based Nutrition',
-      tagline: 'Micronutrient density from whole food',
-      blog: '/blog/organ-based-nutrition-for-dogs.html',
-      ingredient: '/ingredient-analyzer/ingredients/beef-liver/'
-    },
-    calming: {
-      name: 'Calming Support',
-      tagline: 'Anxiety and stress management',
-      blog: '/blog/calming-supplements-for-dogs.html',
-      ingredient: '/ingredient-analyzer/ingredients/l-theanine/'
-    },
-    collagen: {
-      name: 'Collagen',
-      tagline: 'Joints, skin, and connective tissue',
-      blog: '/blog/collagen-for-dogs-benefits.html',
-      ingredient: '/ingredient-analyzer/ingredients/collagen/'
-    },
-    boswellia: {
-      name: 'Boswellia',
-      tagline: 'Botanical anti-inflammatory',
-      blog: '/blog/boswellia-for-dogs.html',
-      ingredient: '/ingredient-analyzer/ingredients/boswellia/'
-    }
-  };
-
-  // ===== SCORING =====
-  var concernScores = {
-    joint:     { joint: 5, glucosamine: 4, omega3: 3, boswellia: 3, collagen: 3 },
-    digestion: { probiotics: 5, enzymes: 4, organ: 2 },
-    skin:      { omega3: 5, collagen: 3 },
-    energy:    { organ: 5, probiotics: 2, omega3: 1 },
-    anxiety:   { calming: 5, omega3: 1 },
-    immune:    { antioxidants: 4, probiotics: 3, organ: 2 },
-    weight:    { probiotics: 3, omega3: 2 },
-    cognitive: { omega3: 4, antioxidants: 3 },
-    general:   { omega3: 3, probiotics: 3, organ: 2 }
-  };
-
-  var stageScores = {
-    puppy:       { omega3: 3, organ: 1, probiotics: 1 },
-    'young-adult': { omega3: 1, probiotics: 1 },
-    adult:       { omega3: 1, probiotics: 1 },
-    senior:      { joint: 2, antioxidants: 2, enzymes: 2, omega3: 1 },
-    geriatric:   { joint: 3, glucosamine: 2, antioxidants: 3, enzymes: 3, omega3: 2, collagen: 1 }
-  };
-
-  var dietScores = {
-    raw:            { organ: -1 },                      // enzymes intact, often high organ content already
-    fresh:          {},                                  // lightly cooked, close to raw — minimal gaps
-    wet:            { probiotics: 1 },                  // processed but better than kibble
-    'premium-kibble': { organ: 1, probiotics: 1 },      // heat-processed, better ingredients but still gaps
-    standard:       { organ: 2, probiotics: 1 },        // biggest nutritional gaps
-    mixed:          {}
-  };
-
-  function calculateScores(state) {
-    var scores = {};
-    Object.keys(supplements).forEach(function(k) { scores[k] = 0; });
-
-    state.concerns.forEach(function(c) {
-      var map = concernScores[c] || {};
-      Object.keys(map).forEach(function(k) { scores[k] = (scores[k] || 0) + map[k]; });
-    });
-
-    var sm = stageScores[state.stage] || {};
-    Object.keys(sm).forEach(function(k) { scores[k] = (scores[k] || 0) + sm[k]; });
-
-    if (state.diet) {
-      var dm = dietScores[state.diet] || {};
-      Object.keys(dm).forEach(function(k) { scores[k] = (scores[k] || 0) + dm[k]; });
-    }
-
-    return scores;
-  }
-
-  function getTopRecs(scores, n) {
-    return Object.keys(scores)
-      .filter(function(k) { return scores[k] >= 2; })
-      .sort(function(a, b) { return scores[b] - scores[a]; })
-      .slice(0, n);
-  }
-
-  // ===== PERSONALIZED WHY TEXT =====
-  function getWhyText(key, state) {
-    var n = state.name || 'Your dog';
-    var concerns = state.concerns;
-    var stage = state.stage;
-
-    var has = function(c) { return concerns.indexOf(c) >= 0; };
-
-    var texts = {
-      omega3: function() {
-        if (has('joint')) return n + '\'s joint concern is directly tied to inflammation. Omega-3 fatty acids — specifically EPA and DHA from fish oil — are the most rigorously studied natural anti-inflammatory for dogs. Multiple controlled trials show meaningful reduction in joint pain and stiffness at therapeutic doses.';
-        if (has('skin')) return 'Skin and coat issues are most commonly driven by omega-3 deficiency. EPA and DHA reduce the inflammatory response in skin tissue. Most kibble-fed dogs are significantly underdosed — supplementing fish oil is one of the fastest ways to see coat improvement.';
-        if (has('cognitive')) return 'DHA is the primary structural fat in the brain, making up roughly 15% of the cerebral cortex. For ' + (stage === 'senior' || stage === 'geriatric' ? 'senior dogs like ' + n : n) + ', higher omega-3 intake is associated with slower cognitive decline and better neurotransmitter function.';
-        if (has('weight')) return 'Omega-3 supports weight management indirectly — EPA reduces the inflammatory signaling linked to insulin resistance. It also helps maintain lean muscle mass, which keeps metabolic rate active as dogs age.';
-        if (stage === 'puppy') return 'DHA is critical for brain and retinal development in the first year. Many puppy diets are underdosed on omega-3 — direct fish oil supplementation is one of the highest-value interventions at this stage.';
-        return 'Omega-3 (EPA/DHA from fish oil) is the most broadly supported supplement in veterinary nutrition — anti-inflammatory, cardiovascular, coat, immune, and brain benefits documented across all life stages. If ' + n + ' takes one supplement, this is it.';
-      },
-      probiotics: function() {
-        if (has('digestion')) return n + '\'s digestive concerns are the clearest indication for probiotics. The canine gut microbiome regulates digestion, nutrient absorption, and stool consistency. Lactobacillus and Bifidobacterium strains have been shown to reduce loose stools, bloating, and digestive irregularity in clinical studies.';
-        if (has('immune')) return '70% of the canine immune system is housed in the gut. Probiotic supplementation directly supports immune regulation — particularly valuable for dogs prone to infections, allergies, or slow recovery from illness.';
-        if (has('weight')) return 'Gut microbiome composition influences metabolic efficiency. Probiotic supplementation can shift the microbiome toward strains associated with healthier weight maintenance, particularly in combination with diet management.';
-        if (stage === 'puppy') return 'Establishing a healthy gut microbiome early has lasting effects on immunity and digestion. Puppies are especially responsive to probiotic supplementation during the high-growth phase.';
-        return 'Most commercial dog food is heat-processed, which kills beneficial bacteria. Probiotic supplementation replaces what ' + n + '\'s diet lacks — supporting digestion, immune function, and stool consistency.';
-      },
-      joint: function() {
-        return 'Green-lipped mussel (GLM) is one of the best-studied joint supplements in veterinary medicine. It contains a unique combination of omega-3 fatty acids (including ETA, not found in regular fish oil), glycosaminoglycans, and chondroitin — all working together to reduce inflammation and support cartilage. For ' + (stage === 'senior' || stage === 'geriatric' ? 'senior dogs like ' + n : n) + ', GLM is a top-tier joint support option with strong evidence behind it.';
-      },
-      glucosamine: function() {
-        var sizeNote = (state.size === 'large' || state.size === 'giant') ? ' Large and giant breeds place higher mechanical load on cartilage — this becomes especially important at ' + n + '\'s size.' : '';
-        return 'Glucosamine is a structural building block of cartilage — it supports the physical integrity of joints rather than just reducing inflammation. Works best combined with chondroitin sulfate. Most beneficial for dogs with stiffness on rising or early signs of cartilage wear.' + sizeNote;
-      },
-      enzymes: function() {
-        if (has('digestion')) return n + '\'s digestive issues often trace back to insufficient enzyme production or depleted enzyme activity in food. Commercial kibble is cooked at high heat, destroying natural enzymes — supplementing restores what processing removes. Digestive enzyme blends (amylase, protease, lipase) directly improve breakdown and absorption.';
-        if (stage === 'geriatric' || stage === 'senior') return 'Digestive enzyme production declines with age. Senior dogs often struggle to fully absorb nutrients even from a quality diet. Enzyme supplementation is one of the most underrated interventions for older dogs — it can meaningfully improve energy and coat by restoring nutrient uptake.';
-        return 'Digestive enzymes help ' + n + ' fully break down and absorb nutrients from food. Particularly valuable for dogs on commercial kibble, which loses natural enzymes during processing.';
-      },
-      antioxidants: function() {
-        if (has('immune')) return 'Antioxidants (vitamin E, CoQ10, vitamin C) neutralize free radicals that damage immune cells and accelerate cellular aging. ' + n + '\'s immune support concern is directly addressed here, particularly when paired with omega-3 to reduce the inflammatory load the immune system has to manage.';
-        if (stage === 'geriatric' || stage === 'senior') return 'Oxidative stress accumulates with age, contributing to joint inflammation, cognitive decline, and elevated cancer risk. For ' + (stage === 'geriatric' ? 'geriatric' : 'senior') + ' dogs, antioxidants are a core part of aging management — particularly vitamin E, CoQ10, and whole-food antioxidant sources.';
-        if (has('cognitive')) return 'The aging brain is especially vulnerable to oxidative damage. Antioxidant supplementation — particularly vitamin E and CoQ10 — has been shown to slow cognitive dysfunction syndrome progression in dogs. Pairs well with omega-3 as a cognitive support stack.';
-        return 'Antioxidants combat the oxidative stress that accumulates from normal metabolism. For ' + n + ', a quality vitamin E or whole-food antioxidant source reduces cellular aging and supports immune resilience.';
-      },
-      organ: function() {
-        if (has('energy')) return n + '\'s energy concern is often a micronutrient gap issue. Organ meats — liver, kidney, heart — are the most nutrient-dense whole foods available: concentrated B vitamins (B12, folate, riboflavin), CoQ10, iron, zinc, and fat-soluble vitamins. Most commercial dog foods contain inadequate organ content. This is the most efficient way to close nutritional gaps.';
-        if (state.diet === 'standard' || state.diet === 'premium-kibble') return 'Dry kibble — even premium brands — often contains inadequate organ content. High-heat processing also degrades fat-soluble vitamins. Beef liver and kidney are extraordinarily rich in B12, iron, folate, CoQ10, and fat-soluble vitamins that are underrepresented in ' + n + '\'s likely current diet.';
-        return 'Organ-based nutrition delivers bioavailable micronutrients that synthetic supplements can\'t fully replicate — B vitamins, CoQ10, iron, and fat-soluble vitamins in their natural food matrix. A foundational gap-filler for any dog on commercial food.';
-      },
-      calming: function() {
-        return 'For ' + n + '\'s anxiety, the most evidence-supported ingredients are L-theanine (studied in both dogs and humans for promoting calm without sedation) and melatonin (supports sleep regulation and reduces situational anxiety). These work on the nervous system\'s inhibitory pathways without the side effects of pharmaceutical options. Best used consistently rather than only in acute situations.';
-      },
-      collagen: function() {
-        if (has('joint')) return 'Collagen makes up 60–70% of joint cartilage — it\'s the structural scaffold that cushions bones. Type II collagen supplementation has been shown to reduce joint pain and improve mobility by providing raw building blocks for cartilage repair. For ' + n + ', it complements green-lipped mussel and glucosamine by addressing the structural side rather than just inflammation.';
-        if (has('skin')) return 'Collagen is the main structural protein in skin — supporting elasticity, hydration, and the barrier that prevents allergen penetration. For ' + n + '\'s skin concerns, collagen works alongside omega-3 to address both the inflammatory and structural aspects of skin health.';
-        return 'Collagen supports joint structure, skin integrity, and gut lining health. A broad connective-tissue support that pairs well with other joint or skin supplements for ' + n + '.';
-      },
-      boswellia: function() {
-        return 'Boswellia serrata is a botanical anti-inflammatory with strong evidence in both veterinary and human medicine. It inhibits 5-lipoxygenase (5-LOX), which produces inflammatory leukotrienes — a different pathway than omega-3. This means boswellia and omega-3 are complementary, not redundant. For ' + n + '\'s joint concern, combining both targets inflammation through two distinct mechanisms.';
-      }
-    };
-
-    return texts[key] ? texts[key]() : supplements[key].tagline;
-  }
-
-  // ===== QUIZ STATE =====
-  var state = {
-    name: '',
-    size: null,
-    stage: null,
-    concerns: [],
-    diet: null
-  };
-
-  var currentStep = 0; // 0 = intro not started
-
-  function showStep(n) {
-    var steps = [1, 2, 3, 4, 5];
-    steps.forEach(function(s) {
-      var el = document.getElementById('step-' + s);
-      if (el) el.style.display = s === n ? 'block' : 'none';
-    });
-    currentStep = n;
-
-    // Update progress
-    var pct = (n / 5) * 100;
-    document.getElementById('progress-fill').style.width = pct + '%';
-    document.getElementById('progress-label').textContent = 'Question ' + n + ' of 5';
-
-    // Update name placeholders
-    var placeholders = document.querySelectorAll('.name-inline');
-    placeholders.forEach(function(el) {
-      el.textContent = state.name || 'your dog';
-    });
-
-    // Scroll to quiz only if not in view
-    document.getElementById('quiz-container').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-  }
-
-  function goBack(targetStep) {
-    showStep(targetStep);
-  }
-
-  // ===== START =====
-  document.getElementById('start-btn').addEventListener('click', function() {
-    document.getElementById('quiz-intro').style.display = 'none';
-    document.getElementById('quiz-container').style.display = 'block';
-    showStep(1);
-  });
-
-  // ===== STEP 1: NAME =====
-  document.getElementById('step1-next').addEventListener('click', function() {
-    state.name = document.getElementById('dog-name-input').value.trim();
-    showStep(2);
-  });
-  document.getElementById('step1-skip').addEventListener('click', function() {
-    state.name = '';
-    showStep(2);
-  });
-  document.getElementById('dog-name-input').addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') {
-      state.name = this.value.trim();
-      showStep(2);
-    }
-  });
-
-  // ===== STEP 2: SIZE =====
-  document.querySelectorAll('input[name="quiz-size"]').forEach(function(radio) {
-    radio.addEventListener('change', function() {
-      state.size = this.value;
-      document.getElementById('step2-next').disabled = false;
-      setTimeout(function() { showStep(3); }, 250);
-    });
-  });
-  document.getElementById('step2-next').addEventListener('click', function() {
-    if (state.size) showStep(3);
-  });
-
-  // ===== STEP 3: STAGE =====
-  document.querySelectorAll('input[name="quiz-stage"]').forEach(function(radio) {
-    radio.addEventListener('change', function() {
-      state.stage = this.value;
-      document.getElementById('step3-next').disabled = false;
-      setTimeout(function() { showStep(4); }, 250);
-    });
-  });
-  document.getElementById('step3-next').addEventListener('click', function() {
-    if (state.stage) showStep(4);
-  });
-
-  // ===== STEP 4: CONCERNS (multi-select, max 3) =====
-  var CONCERN_LIMIT = 3;
-
-  document.querySelectorAll('.concern-card').forEach(function(card) {
-    card.addEventListener('click', function() {
-      var concern = this.getAttribute('data-concern');
-      var isSelected = this.classList.contains('selected');
-
-      if (isSelected) {
-        // Deselect
-        this.classList.remove('selected');
-        state.concerns = state.concerns.filter(function(c) { return c !== concern; });
-      } else {
-        // Select (if under limit)
-        if (state.concerns.length >= CONCERN_LIMIT) return;
-        this.classList.add('selected');
-        state.concerns.push(concern);
-      }
-
-      // Toggle at-limit class on unselected cards
-      var atLimit = state.concerns.length >= CONCERN_LIMIT;
-      document.querySelectorAll('.concern-card').forEach(function(c) {
-        if (!c.classList.contains('selected')) {
-          c.classList.toggle('at-limit', atLimit);
-        }
-      });
-
-      // Enable next when at least 1 selected
-      document.getElementById('step4-next').disabled = state.concerns.length === 0;
-    });
-  });
-
-  document.getElementById('step4-next').addEventListener('click', function() {
-    if (state.concerns.length > 0) showStep(5);
-  });
-
-  // ===== STEP 5: DIET =====
-  document.querySelectorAll('input[name="quiz-diet"]').forEach(function(radio) {
-    radio.addEventListener('change', function() {
-      state.diet = this.value;
-      document.getElementById('step5-next').disabled = false;
-      setTimeout(function() { showResults(); }, 250);
-    });
-  });
-  document.getElementById('step5-next').addEventListener('click', function() {
-    if (state.diet) showResults();
-  });
-  document.getElementById('step5-skip').addEventListener('click', function() {
-    state.diet = null;
-    showResults();
-  });
-
-  // ===== BACK BUTTONS =====
-  document.querySelectorAll('.back-btn').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      goBack(parseInt(this.getAttribute('data-goto')));
-    });
-  });
-
-  // ===== RESULTS =====
-  function showResults() {
-    document.getElementById('quiz-container').style.display = 'none';
-
-    var scores = calculateScores(state);
-    var topKeys = getTopRecs(scores, 4);
-
-    var n = state.name || 'Your dog';
-    var stageLabels = {
-      puppy: 'puppy', 'young-adult': 'young adult',
-      adult: 'adult', senior: 'senior', geriatric: 'geriatric'
-    };
-
-    document.getElementById('results-heading').textContent = n + '\'s personalized supplement recommendations';
-    document.getElementById('results-sub').textContent =
-      'Based on ' + n + '\'s profile: ' +
-      (state.size || '') + ' breed, ' +
-      (stageLabels[state.stage] || state.stage) + ' life stage, ' +
-      'with priority concerns around ' +
-      (state.concerns.length > 0 ? state.concerns.join(', ').replace(/-/g, ' ') : 'general wellness') + '.';
-
-    var cardsContainer = document.getElementById('rec-cards');
-    cardsContainer.innerHTML = '';
-
-    if (topKeys.length === 0) {
-      cardsContainer.innerHTML = '<p style="color: var(--text-muted); font-size: 16px;">No strong recommendations — this usually means the concern combination doesn\'t strongly favor any one supplement category. A general omega-3 and probiotic baseline is a good starting point.</p>';
-    } else {
-      topKeys.forEach(function(key, i) {
-        var sup = supplements[key];
-        var card = document.createElement('div');
-        card.className = 'rec-card';
-        card.innerHTML =
-          '<div class="rec-card-header">' +
-            '<div class="rec-rank">' + (i + 1) + '</div>' +
-            '<div class="rec-title-wrap">' +
-              '<div class="rec-name">' + sup.name + '</div>' +
-              '<div class="rec-tagline">' + sup.tagline + '</div>' +
-            '</div>' +
-          '</div>' +
-          '<div class="rec-body">' +
-            '<p class="rec-why">' + getWhyText(key, state) + '</p>' +
-            '<div class="rec-links">' +
-              '<a href="' + sup.blog + '" class="rec-link rec-link-blog">Read the guide</a>' +
-              '<a href="' + sup.ingredient + '" class="rec-link rec-link-ingredient">See ingredient</a>' +
-            '</div>' +
-          '</div>';
-        cardsContainer.appendChild(card);
-      });
-    }
-
-    var resultsSection = document.getElementById('results-section');
-    resultsSection.style.display = 'block';
-    resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-
-  // ===== SHARE =====
-  document.getElementById('share-btn').addEventListener('click', function() {
-    var n = state.name || 'My dog';
-    var text = n + '\'s personalized supplement quiz results from Watts — based on size, life stage, and health concerns. Try it: learn.wattspet.com/supplement-quiz/';
-    if (navigator.share) {
-      navigator.share({ title: n + '\'s supplement recommendations', text: text, url: 'https://learn.wattspet.com/supplement-quiz/' }).catch(function() {});
-    } else if (navigator.clipboard) {
-      navigator.clipboard.writeText(text).then(function() {
-        var btn = document.getElementById('share-btn');
-        btn.textContent = 'Copied!';
-        setTimeout(function() { btn.textContent = 'Share results'; }, 2000);
-      });
-    }
-  });
-
-  // ===== RETAKE =====
-  document.getElementById('retake-btn').addEventListener('click', function() {
-    state = { name: '', size: null, stage: null, concerns: [], diet: null };
-    document.getElementById('results-section').style.display = 'none';
-    document.getElementById('quiz-intro').style.display = 'block';
-
-    // Reset form inputs
-    document.getElementById('dog-name-input').value = '';
-    document.querySelectorAll('input[name="quiz-size"]').forEach(function(r) { r.checked = false; });
-    document.querySelectorAll('input[name="quiz-stage"]').forEach(function(r) { r.checked = false; });
-    document.querySelectorAll('input[name="quiz-diet"]').forEach(function(r) { r.checked = false; });
-    document.querySelectorAll('.concern-card').forEach(function(c) { c.classList.remove('selected', 'at-limit'); });
-    document.getElementById('step2-next').disabled = true;
-    document.getElementById('step3-next').disabled = true;
-    document.getElementById('step4-next').disabled = true;
-    document.getElementById('step5-next').disabled = true;
-
-    document.getElementById('quiz-intro').scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
-
-  // ===== EMAIL FORM (results) =====
-  document.getElementById('results-email-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    var form = this;
-    var email = form.querySelector('input[type="email"]').value.trim();
-    if (!email) return;
-    fetch(form.action, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify({ email: email })
-    }).then(function(r) {
-      if (r.ok) {
-        form.style.display = 'none';
-        document.getElementById('email-success').style.display = 'block';
-        try { localStorage.setItem('watts-subscribed', '1'); } catch(e) {}
-      }
-    }).catch(function() {});
-  });
-
-  // ===== STICKY EMAIL CTA =====
-  (function() {
-    var cta = document.getElementById('sticky-email-cta');
-    var closeBtn = document.getElementById('sticky-cta-close');
-    var form = document.getElementById('sticky-cta-form');
-    var success = document.getElementById('sticky-cta-success');
-
-    try {
-      if (localStorage.getItem('watts-cta-dismissed') || localStorage.getItem('watts-subscribed')) return;
-    } catch(e) {}
-
-    var shown = false;
-    window.addEventListener('scroll', function() {
-      if (shown) return;
-      if (window.scrollY > 300) {
+    (function() {
+      var cta = document.getElementById('sticky-email-cta');
+      var closeBtn = document.getElementById('sticky-cta-close');
+      var form = document.getElementById('sticky-cta-form');
+      var successMsg = document.getElementById('sticky-cta-success');
+      if (!cta) return;
+      try { if (localStorage.getItem('watts-cta-dismissed') || localStorage.getItem('watts-subscribed')) return; } catch(e) {}
+      var shown = false;
+      function showCta() {
+        if (shown) return;
         shown = true;
         cta.style.display = 'block';
         void cta.offsetHeight;
         cta.classList.add('visible');
+        cta.setAttribute('aria-hidden', 'false');
       }
-    }, { passive: true });
-
-    closeBtn.addEventListener('click', function() {
-      cta.classList.remove('visible');
-      setTimeout(function() { cta.style.display = 'none'; }, 350);
-      try { localStorage.setItem('watts-cta-dismissed', '1'); } catch(e) {}
-    });
-
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      var email = form.querySelector('input[type="email"]').value.trim();
-      if (!email) return;
-      fetch(form.action, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify({ email: email })
-      }).then(function(r) {
-        if (r.ok) {
-          form.style.display = 'none';
-          success.style.display = 'block';
-          try { localStorage.setItem('watts-subscribed', '1'); } catch(e) {}
-          setTimeout(function() {
-            cta.classList.remove('visible');
-            setTimeout(function() { cta.style.display = 'none'; }, 350);
-          }, 2500);
-        }
-      }).catch(function() {});
-    });
-  })();
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) showCta();
+      }, { passive: true });
+      closeBtn.addEventListener('click', function() {
+        cta.classList.remove('visible');
+        cta.setAttribute('aria-hidden', 'true');
+        try { localStorage.setItem('watts-cta-dismissed', '1'); } catch(e) {}
+        setTimeout(function() { cta.style.display = 'none'; }, 350);
+      });
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var email = form.querySelector('input[type="email"]').value.trim();
+        if (!email) return;
+        var btn = form.querySelector('button[type="submit"]');
+        btn.disabled = true;
+        fetch('https://a.klaviyo.com/client/subscriptions/?company_id=SXFMie', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json', 'revision': '2023-02-22' },
+          body: JSON.stringify({
+            data: {
+              type: 'subscription',
+              attributes: { list_id: 'WLb5bq', email: email }
+            }
+          })
+        }).then(function(res) {
+          if (res.ok || res.status === 202) {
+            form.style.display = 'none';
+            successMsg.style.display = 'block';
+            try { localStorage.setItem('watts-subscribed', '1'); } catch(e) {}
+            setTimeout(function() {
+              cta.classList.remove('visible');
+              setTimeout(function() { cta.style.display = 'none'; }, 350);
+            }, 2500);
+          } else {
+            btn.disabled = false;
+          }
+        }).catch(function() { btn.disabled = false; });
+      });
+    })();
+  </script>
+  <script>
+    (function() {
+      var form = document.getElementById('results-email-form');
+      var successMsg = document.getElementById('email-success');
+      if (!form) return;
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var email = form.querySelector('input[type="email"]').value.trim();
+        if (!email) return;
+        var btn = form.querySelector('button[type="submit"]');
+        btn.disabled = true;
+        fetch('https://a.klaviyo.com/client/subscriptions/?company_id=SXFMie', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json', 'revision': '2023-02-22' },
+          body: JSON.stringify({ data: { type: 'subscription', attributes: { list_id: 'WLb5bq', email: email } } })
+        }).then(function(res) {
+          if (res.ok || res.status === 202) {
+            form.style.display = 'none';
+            successMsg.style.display = 'block';
+            try { localStorage.setItem('watts-subscribed', '1'); } catch(e) {}
+          } else { btn.disabled = false; }
+        }).catch(function() { btn.disabled = false; });
+      });
+    })();
   </script>
 
 </body>
