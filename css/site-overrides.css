@@ -29,7 +29,16 @@ html[data-mobile-menu-open] .g-header__mobile-menu {
 }
 
 /* Shopify-native approach: toggle html.is-mobile-menu-active class */
-/* Shopify CSS handles opacity/visibility/pointer-events; we just unblock display */
 html.is-mobile-menu-active .g-header__mobile-menu {
   display: block !important;
+  position: fixed !important;
+  top: 71px !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: calc(100vh - 71px) !important;
+  background-color: var(--cr-orange) !important;
+  z-index: 1000 !important;
+  overflow-y: auto !important;
 }
