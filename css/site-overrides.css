@@ -28,6 +28,11 @@ html[data-mobile-menu-open] .g-header__mobile-menu {
   visibility: visible !important;
 }
 
+/* Prevent Shopify's orange pill from expanding to full-screen when menu opens */
+html.is-mobile-menu-active .g-header::before {
+  height: 100% !important;
+}
+
 /* Shopify-native approach: toggle html.is-mobile-menu-active class */
 /* Shopify CSS already handles opacity/visibility/pointer-events for all child elements */
 html.is-mobile-menu-active .g-header__mobile-menu {
