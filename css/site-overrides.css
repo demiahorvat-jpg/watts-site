@@ -8,3 +8,8 @@
 
 /* Shopify CSS hides menu via opacity/visibility — no display:none needed.
    The only thing we need to set is --s-header so --s-nav resolves correctly. */
+
+/* Logo SVG uses fill:currentColor; it sits outside .g-header cr-silver div so needs explicit color */
+.g-header__mobile-menu__logo {
+  color: var(--cr-silver);
+}

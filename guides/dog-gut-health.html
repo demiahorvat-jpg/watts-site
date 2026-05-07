@@ -753,14 +753,14 @@ article a {
         type="button"
         class="g-header__mobile-menu-toggle tablet-down-only js-mobile-menu-toggle"
         aria-label="Trigger mobile menu"
-        onclick="var m=document.getElementById('watts-mobile-menu');m.style.display=m.style.display==='block'?'none':'block'"
+        onclick="document.documentElement.classList.add('is-mobile-menu-active')"
       ><hr></button>
 
       <button
         type="button"
         class="g-header__mobile-menu-toggle__close tablet-down-only js-mobile-menu-toggle"
         aria-label="Close mobile menu"
-        onclick="document.getElementById('watts-mobile-menu').style.display='none'"
+        onclick="document.documentElement.classList.remove('is-mobile-menu-active')"
       >
         <svg class="svg-close" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:10px">
           <path d="M1 1L9 9M1 9L9 1" stroke="currentColor" stroke-width="1.5"/>
@@ -808,7 +808,7 @@ article a {
 
     </div>
 
-    <div id="watts-mobile-menu" class="g-header__mobile-menu tablet-down-only" style="display:none;position:fixed;top:71px;left:0;right:0;bottom:0;background:#191919;z-index:9999;overflow-y:auto;">
+    <div id="watts-mobile-menu" class="g-header__mobile-menu tablet-down-only">
       <div class="g-header__mobile-menu__content f-v f-a-s gap-sm">
         <ul class="g-header__mobile-menu__list f-v f-a-s">
           <li class="g-header__mobile-menu__list__item">
@@ -850,6 +850,7 @@ article a {
       </svg>
     </span>
   </header>
+  <button class="g-overlay" aria-label="Close overlay" onclick="document.documentElement.classList.remove('is-mobile-menu-active')"></button>
 <!-- SHARED_HEADER_END -->
   <main>
     <article class="guide-container">
@@ -1071,22 +1072,7 @@ article a {
         <p><strong>Better Dailies</strong> is built on a foundation of <strong>EpiCor yeast fermentate</strong>—not live probiotics—because postbiotics offer consistent, heat-stable, immediate benefits without the limitations of live bacteria.</p>
         <p>Combined with <strong>Wellmune <a href="/ingredient-analyzer/ingredients/yeast-beta-glucans/">yeast beta-glucans</a></strong> for immune support and <strong>Zanthin <a href="/ingredient-analyzer/ingredients/astaxanthin/">astaxanthin</a></strong> for cellular protection, all embedded in air-dried grass-fed <a href="/ingredient-analyzer/ingredients/beef/">beef</a> organs, Better Dailies delivers comprehensive daily support that works from day one.</p>
 
-        <div class="launch-badge">🚀 Coming Soon</div>
-        <p style="margin-bottom: 16px;">Get notified when we launch and receive an exclusive promo code:</p>
-
-        <form class="waitlist-form" action="https://formspree.io/f/mjkalgwj" method="POST" novalidate>
-          <div class="form-field">
-            <input name="name" type="text" placeholder="Your name" autocomplete="name" required>
-          </div>
-          <div class="form-field">
-            <input name="email" type="email" placeholder="Your email" autocomplete="email" required>
-          </div>
-          <div class="form-field">
-            <input name="dog_name" type="text" placeholder="Dog's name (optional)" autocomplete="off">
-          </div>
-          <button type="submit">Join Waitlist</button>
-          <p class="small">We'll send you a promo code when we launch.</p>
-        </form>
+        <a href="https://www.wattspet.com/products/better-dailies" style="display:inline-block;background:#c03800;color:#fff;padding:14px 28px;border-radius:8px;font-weight:700;text-decoration:none;font-size:16px;margin-top:8px;">Shop Better Dailies →</a>
       </div>
 
       <h2 id="enzymes"><a href="/ingredient-analyzer/ingredients/digestive-enzymes/">Digestive Enzymes</a>: When and Why</h2>
@@ -1320,22 +1306,7 @@ article a {
         </ul>
         <p>Unlike probiotics that require daily dosing and careful storage, Better Dailies works immediately and remains stable at room temperature. Perfect for long-term daily support.</p>
 
-        <div class="launch-badge">🚀 Coming Soon</div>
-        <p style="margin-bottom: 16px;">Get notified when we launch and receive an exclusive promo code:</p>
-
-        <form class="waitlist-form" action="https://formspree.io/f/mjkalgwj" method="POST" novalidate>
-          <div class="form-field">
-            <input name="name" type="text" placeholder="Your name" autocomplete="name" required>
-          </div>
-          <div class="form-field">
-            <input name="email" type="email" placeholder="Your email" autocomplete="email" required>
-          </div>
-          <div class="form-field">
-            <input name="dog_name" type="text" placeholder="Dog's name (optional)" autocomplete="off">
-          </div>
-          <button type="submit">Join Waitlist</button>
-          <p class="small">We'll send you a promo code when we launch.</p>
-        </form>
+        <a href="https://www.wattspet.com/products/better-dailies" style="display:inline-block;background:#c03800;color:#fff;padding:14px 28px;border-radius:8px;font-weight:700;text-decoration:none;font-size:16px;margin-top:8px;">Shop Better Dailies →</a>
       </div>
 
       <h2>Related Guides & Articles</h2>
