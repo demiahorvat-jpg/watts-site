@@ -6,39 +6,5 @@
   --s-header: 71px;
 }
 
-/* Mobile menu hidden by default — JS drives display directly via watts-menu-open attr */
-.g-header__mobile-menu {
-  display: none !important;
-}
-
-/* When menu is open, show it with fully explicit positioning */
-html[data-mobile-menu-open] .g-header__mobile-menu {
-  display: block !important;
-  position: fixed !important;
-  top: 71px !important;
-  left: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-  width: 100% !important;
-  height: calc(100vh - 71px) !important;
-  background-color: #191919 !important;
-  z-index: 1000 !important;
-  overflow-y: auto !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-
-/* Shopify-native approach: toggle html.is-mobile-menu-active class */
-html.is-mobile-menu-active .g-header__mobile-menu {
-  display: block !important;
-  position: fixed !important;
-  top: 71px !important;
-  left: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-  width: 100% !important;
-  height: calc(100vh - 71px) !important;
-  background-color: var(--cr-orange) !important;
-  z-index: 1000 !important;
-  overflow-y: auto !important;
-}
+/* Shopify CSS hides menu via opacity/visibility — no display:none needed.
+   The only thing we need to set is --s-header so --s-nav resolves correctly. */
