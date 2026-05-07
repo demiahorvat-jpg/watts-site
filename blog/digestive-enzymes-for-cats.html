@@ -988,9 +988,9 @@ article a {
   <div id="sticky-email-cta" class="sticky-email-cta" aria-hidden="true">
     <button class="sticky-cta-close" id="sticky-cta-close" aria-label="Close">&#x2715;</button>
     <p class="sticky-cta-heading">Stay in the loop</p>
-    <form class="sticky-cta-form" id="sticky-cta-form" action="https://formspree.io/f/mjkalgwj" method="POST" novalidate>
+    <form class="sticky-cta-form" id="sticky-cta-form" novalidate>
       <input type="email" name="email" placeholder="Your email" required autocomplete="email">
-      <button type="submit">Notify me</button>
+      <button type="submit">Subscribe</button>
     </form>
     <p class="sticky-cta-success" id="sticky-cta-success">Thanks — we'll be in touch!</p>
   </div>
@@ -1001,10 +1001,56 @@ article a {
       var form = document.getElementById('sticky-cta-form');
       var successMsg = document.getElementById('sticky-cta-success');
       if (!cta) return;
+      if (localStorage.getItem('watts-cta-dismissed') || localStorage.getItem('watts-subscribed')) return;
       var shown = false;
-      window.addEventListener('scroll', function() { if (!shown && window.scrollY > 600) { shown = true; cta.removeAttribute('aria-hidden'); cta.classList.add('sticky-email-cta--visible'); } }, { passive: true });
-      closeBtn.addEventListener('click', function() { cta.classList.remove('sticky-email-cta--visible'); cta.setAttribute('aria-hidden', 'true'); });
-      form.addEventListener('submit', function(e) { e.preventDefault(); fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } }).then(function(r) { if (r.ok) { form.style.display = 'none'; successMsg.style.display = 'block'; } }); });
+      function showCta() {
+        if (shown) return;
+        shown = true;
+        cta.style.display = 'block';
+        void cta.offsetHeight;
+        cta.classList.add('visible');
+        cta.setAttribute('aria-hidden', 'false');
+      }
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) showCta();
+      }, { passive: true });
+      closeBtn.addEventListener('click', function() {
+        cta.classList.remove('visible');
+        cta.setAttribute('aria-hidden', 'true');
+        localStorage.setItem('watts-cta-dismissed', '1');
+        setTimeout(function() { cta.style.display = 'none'; }, 350);
+      });
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var email = form.querySelector('input[type="email"]').value.trim();
+        if (!email) return;
+        var btn = form.querySelector('button[type="submit"]');
+        btn.disabled = true;
+        fetch('https://a.klaviyo.com/client/subscriptions/?company_id=SXFMie', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json', 'revision': '2023-02-22' },
+          body: JSON.stringify({
+            data: {
+              type: 'subscription',
+              attributes: { list_id: 'WLb5bq', email: email }
+            }
+          })
+        }).then(function(res) {
+          if (res.ok || res.status === 202) {
+            form.style.display = 'none';
+            successMsg.style.display = 'block';
+            localStorage.setItem('watts-subscribed', '1');
+            setTimeout(function() {
+              cta.classList.remove('visible');
+              setTimeout(function() { cta.style.display = 'none'; }, 350);
+            }, 2500);
+          } else {
+            btn.disabled = false;
+          }
+        }).catch(function() {
+          btn.disabled = false;
+        });
+      });
     })();
   </script>
 </body>

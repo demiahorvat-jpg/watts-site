@@ -475,99 +475,8 @@
       text-decoration: none;
     }
 
-    /* WAITLIST FORM */
-    .waitlist-form {
-      margin-top: 24px;
-    }
 
-    .waitlist-form .form-field {
-      margin-bottom: 12px;
-    }
-
-    .waitlist-form input {
-      width: 100%;
-      padding: 14px 16px;
-      border: 2px solid var(--border-light);
-      border-radius: 6px;
-      font-size: 16px;
-      font-family: inherit;
-      transition: border-color 0.2s;
-    }
-
-    .waitlist-form input:focus {
-      outline: none;
-      border-color: var(--brand-orange);
-    }
-
-    .waitlist-form button[type="submit"] {
-      width: 100%;
-      background: var(--brand-orange);
-      color: var(--white);
-      padding: 16px 32px;
-      border: none;
-      border-radius: 8px;
-      font-weight: 600;
-      font-size: 17px;
-      cursor: pointer;
-      transition: transform 0.2s, box-shadow 0.2s;
-      font-family: inherit;
-    }
-
-    .waitlist-form button[type="submit"]:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(192, 56, 0, 0.3);
-    }
-
-    .waitlist-form .small {
-      font-size: 14px;
-      color: var(--text-muted);
-      margin-top: 8px;
-      margin-bottom: 0;
-    }
-
-    .waitlist-form .thanks {
-      background: #f0f9f4;
-      color: var(--good);
-      padding: 16px;
-      border-radius: 6px;
-      text-align: center;
-      font-weight: 600;
-    }
-
-    .launch-badge {
-      display: inline-block;
-      background: var(--brand-orange);
-      color: var(--white);
-      padding: 6px 16px;
-      border-radius: 20px;
-      font-size: 14px;
-      font-weight: 600;
-      margin-bottom: 16px;
-    }
-
-    /* FOOTER */
-    .footer-wrapper {
-      background: #191919;
-      padding: 40px 20px;
-    }
-
-    footer {
-      max-width: 1200px;
-      margin: 0 auto;
-      text-align: center;
-      color: var(--white);
-    }
-
-    footer p {
-      font-size: 15px;
-    }
-
-    footer a {
-      color: var(--white);
-    }
-
-    @media (max-width: 768px) {
-      h1 {
+    /* FOOTER */    h1 {
         font-size: 36px;
       }
 
@@ -1460,22 +1369,7 @@ article a {
         <h2 style="margin-top: 0;">Start Supporting Your Dog's Gut Health Today</h2>
         <p style="font-size: 18px; margin-bottom: 8px;">Better Dailies combines EpiCor postbiotic, Wellmune beta-glucans, and antioxidants in one daily chew.</p>
 
-        <div class="launch-badge">🚀 Coming Soon</div>
-        <p style="margin-bottom: 24px;">Get notified when we launch and receive an exclusive promo code:</p>
-
-        <form class="waitlist-form" action="https://formspree.io/f/mjkalgwj" method="POST" novalidate style="max-width: 400px; margin: 0 auto;">
-          <div class="form-field">
-            <input name="name" type="text" placeholder="Your name" autocomplete="name" required>
-          </div>
-          <div class="form-field">
-            <input name="email" type="email" placeholder="Your email" autocomplete="email" required>
-          </div>
-          <div class="form-field">
-            <input name="dog_name" type="text" placeholder="Dog's name (optional)" autocomplete="off">
-          </div>
-          <button type="submit">Join Waitlist</button>
-          <p class="small">We'll send you a promo code when we launch.</p>
-        </form>
+        <a href="https://www.wattspet.com/products/better-dailies" style="display:inline-block;background:var(--brand-orange);color:#fff;padding:16px 40px;border-radius:8px;font-weight:600;font-size:17px;text-decoration:none;">Shop Better Dailies →</a>
       </div>
 
     </article>
@@ -1749,48 +1643,6 @@ article a {
   }
   </script>
 
-  <script>
-    // Handle waitlist form submissions
-    document.addEventListener('DOMContentLoaded', function() {
-      const forms = document.querySelectorAll('.waitlist-form');
-
-      forms.forEach(form => {
-        form.addEventListener('submit', async function(e) {
-          e.preventDefault();
-
-          const formData = new FormData(form);
-          const submitButton = form.querySelector('button[type="submit"]');
-          const originalText = submitButton.textContent;
-
-          // Show loading state
-          submitButton.textContent = 'Joining...';
-          submitButton.disabled = true;
-
-          try {
-            const response = await fetch(form.action, {
-              method: 'POST',
-              body: formData,
-              headers: {
-                'Accept': 'application/json'
-              }
-            });
-
-            if (response.ok) {
-              // Show success message
-              form.innerHTML = '<div class="thanks">Thanks! You\'re on the list ✅<br>We\'ll email you when Better Dailies launches.</div>';
-            } else {
-              throw new Error('Form submission failed');
-            }
-          } catch (error) {
-            // Reset button on error
-            submitButton.textContent = originalText;
-            submitButton.disabled = false;
-            alert('Oops! There was a problem. Please try again.');
-          }
-        });
-      });
-    });
-  </script>
 
 </body>
 </html>
