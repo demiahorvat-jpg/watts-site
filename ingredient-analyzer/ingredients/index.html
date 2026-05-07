@@ -7,7 +7,47 @@
     <meta name="description" content="200+ dog food ingredients explained. Learn what each ingredient does, why it's used, and if it's good for your dog. Quick, accurate, unbiased info.">
     <link rel="icon" type="image/png" href="/assets/favicon.png">
     <link rel="canonical" href="https://learn.wattspet.com/ingredient-analyzer/ingredients/">
-    <link rel="stylesheet" href="/css/shopify-header-footer.css">
+    <link rel="stylesheet" href="/css/shopify-preload.min.css">
+    <link rel="stylesheet" href="/css/shopify-main.min.css">
+    <style>body { opacity: 1; }</style>
+    <style>
+/* un-layered — overrides Shopify reset */
+.g-header a,
+.g-header button {
+  color: inherit;
+  text-decoration: none;
+}
+.g-header li {
+  margin-top: 0;
+}
+.g-header__nav a {
+  font: var(--t-l-2);
+}
+.g-header .g-header__logo {
+  width: 84px;
+  height: 60.6328px;
+}
+.g-header .g-header__logo__lottie {
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+}
+.g-footer {
+  padding-top: 48px;
+}
+.g-footer__nav {
+  order: 0;
+}
+.g-footer__nav a {
+  font-weight: 400;
+}
+.g-footer li {
+  margin-top: 0;
+}
+.c-email-capture-shopify .c-form__fields {
+  margin-top: var(--s-gap-sm);
+}
+    </style>
     <link rel="stylesheet" href="/css/site-overrides.css">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Dog Food Ingredient Encyclopedia | 200+ Ingredients Explained | Watts Pet">
@@ -76,200 +116,6 @@
         font-weight: 400;
         line-height: 1.6;
         overflow-x: hidden;
-      }
-
-      /* Navigation */
-      
-      /* HEADER WRAPPER - Black background */
-      .header-wrapper {
-        background: #191919;
-        padding: 12px 12px 0;
-        position: sticky;
-        top: 0;
-        z-index: 100;
-      }
-
-      /* ORANGE HEADER - Rounded like Shopify site */
-      header {
-        background: var(--brand-orange);
-        padding: 7px 20px;
-        border-radius: 16px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-      }
-
-      .header-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
-        min-height: 40px;
-      }
-
-      header nav {
-        order: -1;
-        display: flex;
-        align-items: center;
-      }
-
-      header nav ul {
-        list-style: none;
-        display: flex;
-        gap: 16px;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-      }
-      @media (min-width: 768px) {
-        header nav ul { gap: 24px; }
-      }
-
-      header nav li {
-        display: flex;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-      }
-
-      header nav a {
-        color: var(--white);
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: 500;
-        transition: opacity 0.15s;
-      }
-      @media (min-width: 768px) {
-        header nav a { font-size: 15px; }
-      }
-      header nav a:hover {
-        opacity: 0.8;
-      }
-    /* Hamburger menu for mobile */
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 4px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 8px;
-      z-index: 1000;
-    }
-
-    .hamburger span {
-      display: block;
-      width: 22px;
-      height: 2px;
-      background: var(--white);
-      transition: all 0.3s ease;
-    }
-
-    @media (max-width: 767px) {
-      .hamburger {
-        display: flex;
-      }
-
-      nav ul {
-        position: fixed;
-        top: 64px;
-        left: 0;
-        right: 0;
-        background: var(--brand-orange);
-        flex-direction: column;
-        gap: 0;
-        padding: 20px;
-        margin: 0;
-        transform: translateX(-100%);
-        transition: transform 0.3s ease;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        max-height: calc(100vh - 64px);
-        overflow-y: auto;
-      }
-
-      nav ul.active {
-        transform: translateX(0);
-      }
-
-      nav li {
-        width: 100%;
-        padding: 12px 0;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
-      }
-
-      nav li:last-child {
-        border-bottom: none;
-      }
-
-      nav a {
-        font-size: 16px;
-        display: block;
-        width: 100%;
-      }
-
-      /* Keep logo centered */
-      .logo-container {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-    }
-    
-
-      .logo-link {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        align-items: center;
-      }
-
-      .logo {
-        height: 32px;
-        width: auto;
-      }
-      @media (min-width: 768px) {
-        .logo { height: 40px; }
-      }
-
-      nav.nav {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding: 20px 20px;
-        border-bottom: 2.5px solid var(--border);
-      }
-      @media (min-width: 768px) {
-        nav.nav {
-          padding: 24px 20px;
-        }
-      }
-      nav.nav ul {
-        list-style: none;
-        display: flex;
-        gap: 24px;
-        align-items: center;
-      }
-      @media (min-width: 768px) {
-        nav.nav ul {
-          gap: 32px;
-        }
-      }
-      nav.nav a {
-        color: var(--fg);
-        text-decoration: none;
-        font-size: 15px;
-        font-weight: 500;
-        transition: opacity 0.15s;
-        position: relative;
-      }
-      @media (min-width: 768px) {
-        nav.nav a {
-          font-size: 16px;
-        }
-      }
-      nav.nav a:hover {
-        opacity: 0.7;
       }
 
       /* Main container */
@@ -498,28 +344,114 @@
   </script>
 </head>
 <body>
-    <div class="header-wrapper">
-    <header>
-      <div class="header-container">
-        <button class="hamburger" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <nav>
-          <ul>
-            <li><a href="https://www.wattspet.com/">Home</a></li>
-            <li><a href="https://www.wattspet.com/pages/about">About</a></li>
-            <li><a href="/blog/">Blog</a></li>
-            <li><a href="/ingredient-analyzer/">Ingredient Analyzer</a></li>
-          </ul>
-        </nav>
-        <a href="https://www.wattspet.com/" class="logo-link">
-          <img src="/watts-logo-white.svg" alt="Watts" class="logo">
+    <!-- SHARED_HEADER_START -->
+  <!-- ========== HEADER ========== -->
+  <header class="px-contain bg-black js-header">
+    <div class="g-header f-h f-a-c cr-silver">
+
+      <button
+        type="button"
+        class="g-header__mobile-menu-toggle tablet-down-only js-mobile-menu-toggle"
+        aria-label="Trigger mobile menu"
+        onclick="document.documentElement.classList.add('is-mobile-menu-active')"
+      ><hr></button>
+
+      <button
+        type="button"
+        class="g-header__mobile-menu-toggle__close tablet-down-only js-mobile-menu-toggle"
+        aria-label="Close mobile menu"
+        onclick="document.documentElement.classList.remove('is-mobile-menu-active')"
+      >
+        <svg class="svg-close" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:10px">
+          <path d="M1 1L9 9M1 9L9 1" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+      </button>
+
+      <nav class="g-header__nav tablet-up-only">
+        <ul class="g-header__linklist f-h gap-md">
+          <li class="g-header__linklist__item btn-underline t-l-2">
+            <a href="https://www.wattspet.com/products/better-dailies">Shop</a>
+          </li>
+          <li class="g-header__linklist__item btn-underline t-l-2">
+            <a href="/blog">Blog</a>
+          </li>
+          <li class="g-header__linklist__item btn-underline t-l-2">
+            <a href="/ingredient-analyzer">Ingredient Analyzer</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a
+        class="g-header__logo p-center"
+        href="https://www.wattspet.com/"
+        aria-label="Watts Pet logo"
+      >
+        <svg class="g-header__logo__lottie mobile-up-only" viewBox="0 0 200 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 9.662h15.584l1.512 11.476c.288 1.966 1.8 2.982 3.392 2.982s3.176-1.024 3.464-2.982l1.512-11.476h13.488l1.512 11.476c.288 1.966 1.88 2.982 3.464 2.982s3.176-1.024 3.464-2.982l1.512-11.476h15.584l-7.72 36.33h-20.2l-.864-7.334c-.288-2.111-1.88-3.127-3.464-3.127s-3.176 1.023-3.464 3.127l-.864 7.334H7.72zm63.566 18.174c0-10.034 8.08-18.165 18.032-18.165h22.936v36.337H81.598c-9.96 0-18.032-8.14-18.032-18.172m26.256 0c0-4.143-3.392-7.705-7.504-7.705s-7.504 3.562-7.504 7.705c0 4.142 3.392 7.704 7.504 7.704s7.504-3.562 7.504-7.704m35.033-8.221v9.663c0 3.634 3.096 6.761 6.712 6.761h3.176v9.953h-11.392c-8.368 0-15.152-6.761-15.152-15.183V0h16.664v9.663h9.88v9.952zm29.289 0v9.663c0 3.634 3.096 6.761 6.712 6.761h3.176v9.953H152.64c-8.368 0-15.152-6.761-15.152-15.183V0h16.664v9.663h9.88v9.952zm32.872 2.7c0 1.676 1.232 2.683 2.88 2.683 6.928 0 10.096 4.65 10.096 10.469S195.448 46 187.872 46h-20.2v-9.953h8.944c1.664 0 2.88-1.023 2.88-2.683s-1.08-2.684-2.88-2.684c-6.928 0-10.096-5.013-10.096-10.823s4.544-10.17 12.12-10.17h20.2v9.952h-8.944c-1.664 0-2.88 1.024-2.88 2.684z" fill="currentColor"/>
+        </svg>
+        <svg class="svg-logo-simple p-center mobile-down-only" viewBox="0 0 40 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h9.666l.938 6.95c.179 1.19 1.117 1.805 2.104 1.805s1.97-.62 2.149-1.806L15.795 0h8.366l.938 6.95c.178 1.19 1.166 1.805 2.148 1.805s1.97-.62 2.149-1.806L30.334 0H40l-4.788 22h-12.53l-.536-4.441c-.178-1.279-1.166-1.894-2.149-1.894-.982 0-1.97.62-2.148 1.894L17.313 22H4.788z" fill="currentColor"/>
+        </svg>
+      </a>
+
+      <div class="g-header__actions f-h gap-md t-l-2">
+        <a
+          class="btn-underline t-l-2 tablet-up-only"
+          href="https://www.wattspet.com/account"
+        >My Account</a>
+
+        <button type="button" class="js-minicart-toggle">
+          <span class="g-header__cart-text">Cart</span>
+          (<span class="js-cart-item-count">0</span>)
+        </button>
+      </div>
+
+    </div>
+
+    <div id="watts-mobile-menu" class="g-header__mobile-menu tablet-down-only">
+      <div class="g-header__mobile-menu__content f-v f-a-s gap-sm">
+        <ul class="g-header__mobile-menu__list f-v f-a-s">
+          <li class="g-header__mobile-menu__list__item">
+            <a class="g-header__mobile-menu__item t-l-1" href="https://www.wattspet.com/products/better-dailies">
+              <span class="g-header__mobile-menu__item__active-deco"></span>
+              <span>Shop</span>
+            </a>
+          </li>
+          <li class="g-header__mobile-menu__list__item">
+            <a class="g-header__mobile-menu__item t-l-1" href="/blog">
+              <span class="g-header__mobile-menu__item__active-deco"></span>
+              <span>Blog</span>
+            </a>
+          </li>
+          <li class="g-header__mobile-menu__list__item">
+            <a class="g-header__mobile-menu__item t-l-1" href="/ingredient-analyzer">
+              <span class="g-header__mobile-menu__item__active-deco"></span>
+              <span>Ingredient Analyzer</span>
+            </a>
+          </li>
+          <a class="g-header__mobile-menu__item g-header__mobile-menu__item--dark t-l-1" href="https://www.wattspet.com/account">My Account</a>
+        </ul>
+        <a class="g-header__mobile-menu__logo" href="https://www.wattspet.com/" aria-label="Watts Pet logo">
+          <svg class="svg-logo" viewBox="0 0 200 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 9.662h15.584l1.512 11.476c.288 1.966 1.8 2.982 3.392 2.982s3.176-1.024 3.464-2.982l1.512-11.476h13.488l1.512 11.476c.288 1.966 1.88 2.982 3.464 2.982s3.176-1.024 3.464-2.982l1.512-11.476h15.584l-7.72 36.33h-20.2l-.864-7.334c-.288-2.111-1.88-3.127-3.464-3.127s-3.176 1.023-3.464 3.127l-.864 7.334H7.72zm63.566 18.174c0-10.034 8.08-18.165 18.032-18.165h22.936v36.337H81.598c-9.96 0-18.032-8.14-18.032-18.172m26.256 0c0-4.143-3.392-7.705-7.504-7.705s-7.504 3.562-7.504 7.705c0 4.142 3.392 7.704 7.504 7.704s7.504-3.562 7.504-7.704m35.033-8.221v9.663c0 3.634 3.096 6.761 6.712 6.761h3.176v9.953h-11.392c-8.368 0-15.152-6.761-15.152-15.183V0h16.664v9.663h9.88v9.952zm29.289 0v9.663c0 3.634 3.096 6.761 6.712 6.761h3.176v9.953H152.64c-8.368 0-15.152-6.761-15.152-15.183V0h16.664v9.663h9.88v9.952zm32.872 2.7c0 1.676 1.232 2.683 2.88 2.683 6.928 0 10.096 4.65 10.096 10.469S195.448 46 187.872 46h-20.2v-9.953h8.944c1.664 0 2.88-1.023 2.88-2.683s-1.08-2.684-2.88-2.684c-6.928 0-10.096-5.013-10.096-10.823s4.544-10.17 12.12-10.17h20.2v9.952h-8.944c-1.664 0-2.88 1.024-2.88 2.684z" fill="currentColor"/>
+          </svg>
         </a>
       </div>
-    </header>
-  </div>
+    </div>
+
+    <span class="g-header__corner g-header__corner--left cr-black" aria-hidden="true">
+      <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M25 1C11.7452 1 1 11.7452 1 25H0V0H25V1Z" fill="currentColor"/>
+      </svg>
+    </span>
+    <span class="g-header__corner g-header__corner--right cr-black" aria-hidden="true">
+      <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 1C13.2548 1 24 11.7452 24 25H25V0H0V1Z" fill="currentColor"/>
+      </svg>
+    </span>
+  </header>
+  <button class="g-overlay" aria-label="Close overlay" onclick="document.documentElement.classList.remove('is-mobile-menu-active')"></button>
+<!-- SHARED_HEADER_END -->
 
   <main>
     <h1>Dog Food Ingredient Encyclopedia</h1>
@@ -3743,40 +3675,6 @@
         noResults.classList.add('hidden');
       }
     }
-  </script>
-  <script>
-  // Hamburger menu toggle
-  document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('nav ul');
-
-    if (hamburger && navMenu) {
-      hamburger.addEventListener('click', function() {
-        navMenu.classList.toggle('active');
-        this.classList.toggle('active');
-      });
-
-      // Close menu when clicking a link
-      const navLinks = navMenu.querySelectorAll('a');
-      navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-          navMenu.classList.remove('active');
-          hamburger.classList.remove('active');
-        });
-      });
-
-      // Close menu when clicking outside
-      document.addEventListener('click', function(event) {
-        const isClickInsideNav = navMenu.contains(event.target);
-        const isClickOnHamburger = hamburger.contains(event.target);
-
-        if (!isClickInsideNav && !isClickOnHamburger && navMenu.classList.contains('active')) {
-          navMenu.classList.remove('active');
-          hamburger.classList.remove('active');
-        }
-      });
-    }
-  });
   </script>
 </body>
 </html>
