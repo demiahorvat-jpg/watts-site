@@ -20,6 +20,63 @@
   display: none;
 }
 
+/* Shared product CTA block — used on ingredient pages and blog posts. */
+.watts-product-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: rgba(192, 56, 0, 0.05);
+  border-left: 4px solid #c03800;
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin: 32px 0;
+}
+
+.watts-product-cta__label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #c03800;
+  margin-bottom: 6px;
+}
+
+.watts-product-cta__text p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.watts-product-cta__btn {
+  flex-shrink: 0;
+  display: inline-block;
+  background: #c03800;
+  color: #fff !important;
+  text-decoration: none !important;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 8px;
+  white-space: nowrap;
+  transition: opacity 0.15s;
+}
+
+.watts-product-cta__btn:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 640px) {
+  .watts-product-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .watts-product-cta__btn {
+    align-self: flex-start;
+  }
+}
+
 /* Standardize breathing room between content and footer.
    g-footer pill has border-radius:30vw/80vw so needs generous space below main.
    !important ensures this overrides any inline page style that sets padding shorthand. */
