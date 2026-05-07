@@ -1,0 +1,17 @@
+/*
+ * Static-site overrides for styles that normally require Shopify's theme JS.
+ * Loaded un-layered after shopify-main.min.css on all pages.
+ */
+
+/* Shopify JS normally sets --s-header via ResizeObserver; we hard-code the known value. */
+:root {
+  --s-header: 71px;
+}
+
+/* Mobile menu: needs explicit background and z-index without Shopify JS */
+.g-header__mobile-menu {
+  background-color: #191919;
+  z-index: 200;
+  left: 0 !important;
+  width: 100% !important;
+}
