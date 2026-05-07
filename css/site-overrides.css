@@ -21,7 +21,8 @@
 }
 
 /* Standardize breathing room between content and footer.
-   g-footer pill has border-radius:30vw/80vw so needs generous space below main. */
+   g-footer pill has border-radius:30vw/80vw so needs generous space below main.
+   !important ensures this overrides any inline page style that sets padding shorthand. */
 main {
-  padding-bottom: 80px;
+  padding-bottom: 120px !important;
 }
