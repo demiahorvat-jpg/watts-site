@@ -19,3 +19,9 @@
 .g-header__corner {
   display: none;
 }
+
+/* Standardize breathing room between content and footer.
+   g-footer pill has border-radius:30vw/80vw so needs generous space below main. */
+main {
+  padding-bottom: 80px;
+}
