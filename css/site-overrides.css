@@ -27,3 +27,19 @@ html[data-mobile-menu-open] .g-header__mobile-menu {
   opacity: 1 !important;
   visibility: visible !important;
 }
+
+/* Shopify-native approach: toggle html.is-mobile-menu-active class */
+/* Shopify CSS already handles opacity/visibility/pointer-events for all child elements */
+html.is-mobile-menu-active .g-header__mobile-menu {
+  display: block !important;
+  position: fixed !important;
+  top: 71px !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: calc(100vh - 71px) !important;
+  background-color: #191919 !important;
+  z-index: 1000 !important;
+  overflow-y: auto !important;
+}

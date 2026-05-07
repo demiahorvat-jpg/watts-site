@@ -342,14 +342,14 @@ article a {
         type="button"
         class="g-header__mobile-menu-toggle tablet-down-only js-mobile-menu-toggle"
         aria-label="Trigger mobile menu"
-        onclick="var m=document.getElementById('watts-mobile-menu');m.style.display=m.style.display==='block'?'none':'block'"
+        onclick="document.documentElement.classList.add('is-mobile-menu-active')"
       ><hr></button>
 
       <button
         type="button"
         class="g-header__mobile-menu-toggle__close tablet-down-only js-mobile-menu-toggle"
         aria-label="Close mobile menu"
-        onclick="document.getElementById('watts-mobile-menu').style.display='none'"
+        onclick="document.documentElement.classList.remove('is-mobile-menu-active')"
       >
         <svg class="svg-close" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:10px">
           <path d="M1 1L9 9M1 9L9 1" stroke="currentColor" stroke-width="1.5"/>
