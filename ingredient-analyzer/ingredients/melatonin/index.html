@@ -213,12 +213,14 @@
         type="button"
         class="g-header__mobile-menu-toggle tablet-down-only js-mobile-menu-toggle"
         aria-label="Trigger mobile menu"
+        onclick="var m=document.getElementById('watts-mobile-menu');m.style.display=m.style.display==='block'?'none':'block'"
       ><hr></button>
 
       <button
         type="button"
         class="g-header__mobile-menu-toggle__close tablet-down-only js-mobile-menu-toggle"
         aria-label="Close mobile menu"
+        onclick="document.getElementById('watts-mobile-menu').style.display='none'"
       >
         <svg class="svg-close" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:10px">
           <path d="M1 1L9 9M1 9L9 1" stroke="currentColor" stroke-width="1.5"/>
@@ -266,7 +268,7 @@
 
     </div>
 
-    <div class="g-header__mobile-menu tablet-down-only">
+    <div id="watts-mobile-menu" class="g-header__mobile-menu tablet-down-only" style="display:none;position:fixed;top:71px;left:0;right:0;bottom:0;background:#191919;z-index:9999;overflow-y:auto;">
       <div class="g-header__mobile-menu__content f-v f-a-s gap-sm">
         <ul class="g-header__mobile-menu__list f-v f-a-s">
           <li class="g-header__mobile-menu__list__item">
