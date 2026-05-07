@@ -577,11 +577,17 @@
   <script>
     // Mobile menu toggle
     document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('.js-mobile-menu-toggle').forEach(function(btn) {
-        btn.addEventListener('click', function() {
-          document.documentElement.classList.toggle('is-mobile-menu-active');
-        });
+      var _menuOpen = false;
+    document.querySelectorAll('.js-mobile-menu-toggle').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        _menuOpen = !_menuOpen;
+        if (_menuOpen) {
+          document.documentElement.setAttribute('data-mobile-menu-open', '');
+        } else {
+          document.documentElement.removeAttribute('data-mobile-menu-open');
+        }
       });
+    });
     });
   </script>
 

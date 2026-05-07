@@ -1,17 +1,29 @@
 /*
- * Static-site overrides for styles that normally require Shopify's theme JS.
- * Loaded un-layered after shopify-main.min.css on all pages.
+ * Static-site overrides — bypass Shopify JS dependencies for mobile menu.
  */
 
-/* Shopify JS normally sets --s-header via ResizeObserver; we hard-code the known value. */
 :root {
   --s-header: 71px;
 }
 
-/* Mobile menu: needs explicit background and z-index without Shopify JS */
+/* Mobile menu hidden by default — JS drives display directly via watts-menu-open attr */
 .g-header__mobile-menu {
-  background-color: #191919;
-  z-index: 200;
+  display: none !important;
+}
+
+/* When menu is open, show it with fully explicit positioning */
+html[data-mobile-menu-open] .g-header__mobile-menu {
+  display: block !important;
+  position: fixed !important;
+  top: 71px !important;
   left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
   width: 100% !important;
+  height: calc(100vh - 71px) !important;
+  background-color: #191919 !important;
+  z-index: 1000 !important;
+  overflow-y: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
