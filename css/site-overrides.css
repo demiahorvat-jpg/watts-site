@@ -13,3 +13,9 @@
 .g-header__mobile-menu__logo {
   color: var(--cr-silver);
 }
+
+/* Corners are decorative inverse-radius elements designed for Shopify's black-background pages.
+   On our light-background static pages they appear as black spikes below the header. */
+.g-header__corner {
+  display: none;
+}
