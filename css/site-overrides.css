@@ -77,6 +77,14 @@
   }
 }
 
+/* Announcement bar p tags inherit page-level styles (e.g. ingredient-page.css sets
+   p { font-size: 18px; margin-bottom: 20px }) — reset to match Shopify's intent. */
+.g-announcement__blocks__item p {
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
 /* Standardize breathing room between content and footer.
    g-footer pill has border-radius:30vw/80vw so needs generous space below main.
    !important ensures this overrides any inline page style that sets padding shorthand. */
