@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /data/
 
 # Sitemap
 Sitemap: https://learn.wattspet.com/sitemap.xml
