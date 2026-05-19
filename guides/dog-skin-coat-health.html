@@ -838,6 +838,42 @@ article a {
 .c-email-capture-shopify .c-form__fields {
   margin-top: var(--s-gap-sm);
 }
+
+/* Undo global p/a/li color rules that bleed into the footer */
+.g-footer__bg-orange p,
+.g-footer__bg-orange li,
+.g-footer__bg-orange h2,
+.g-footer__bg-orange h3 {
+  color: var(--cr-silver);
+}
+.g-footer__bg-orange a {
+  color: var(--cr-silver);
+}
+
+/* Undo mobile nav-menu CSS that hides footer nav lists off-screen */
+@media (max-width: 767px) {
+  .g-footer nav ul {
+    position: static;
+    transform: none;
+    background: transparent;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    max-height: none;
+    overflow: visible;
+    box-shadow: none;
+  }
+  .g-footer nav li {
+    width: auto;
+    padding: 0;
+    border-bottom: none;
+  }
+  .g-footer nav a {
+    font-size: 14px;
+    display: inline;
+    width: auto;
+  }
+}
   </style>
   <link rel="stylesheet" href="/css/site-overrides.css">
 <!-- SHARED_HEAD_END -->
