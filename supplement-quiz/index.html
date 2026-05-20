@@ -659,5 +659,261 @@
     })();
   </script>
 
+  <script>
+  (function() {
+    var state = { name: '', size: '', stage: '', concerns: [], diet: '' };
+
+    var elIntro     = document.getElementById('quiz-intro');
+    var elContainer = document.getElementById('quiz-container');
+    var elResults   = document.getElementById('results-section');
+    var elProgress  = document.getElementById('progress-fill');
+    var elProgLabel = document.getElementById('progress-label');
+
+    // ── Start ──────────────────────────────────────────────────────────────
+    document.getElementById('start-btn').addEventListener('click', function() {
+      elIntro.style.display = 'none';
+      elContainer.style.display = 'block';
+      showStep(1);
+    });
+
+    function showStep(n) {
+      for (var i = 1; i <= 5; i++) {
+        var el = document.getElementById('step-' + i);
+        if (el) el.style.display = (i === n) ? 'block' : 'none';
+      }
+      elProgLabel.textContent = 'Question ' + n + ' of 5';
+      elProgress.style.width = (n * 20) + '%';
+      document.querySelectorAll('.name-inline').forEach(function(s) {
+        s.textContent = state.name || 'your dog';
+      });
+    }
+
+    // ── Back buttons ───────────────────────────────────────────────────────
+    document.querySelectorAll('.back-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() { showStep(parseInt(this.dataset.goto)); });
+    });
+
+    // ── Step 1: Name ───────────────────────────────────────────────────────
+    document.getElementById('step1-next').addEventListener('click', function() {
+      state.name = document.getElementById('dog-name-input').value.trim();
+      showStep(2);
+    });
+    document.getElementById('step1-skip').addEventListener('click', function() {
+      state.name = '';
+      showStep(2);
+    });
+
+    // ── Step 2: Size ───────────────────────────────────────────────────────
+    document.querySelectorAll('input[name="quiz-size"]').forEach(function(r) {
+      r.addEventListener('change', function() {
+        state.size = this.value;
+        document.getElementById('step2-next').disabled = false;
+      });
+    });
+    document.getElementById('step2-next').addEventListener('click', function() { showStep(3); });
+
+    // ── Step 3: Life stage ─────────────────────────────────────────────────
+    document.querySelectorAll('input[name="quiz-stage"]').forEach(function(r) {
+      r.addEventListener('change', function() {
+        state.stage = this.value;
+        document.getElementById('step3-next').disabled = false;
+      });
+    });
+    document.getElementById('step3-next').addEventListener('click', function() { showStep(4); });
+
+    // ── Step 4: Concerns (multi-select, max 3) ─────────────────────────────
+    document.querySelectorAll('.concern-card').forEach(function(card) {
+      card.addEventListener('click', function() {
+        var concern = this.dataset.concern;
+        var idx = state.concerns.indexOf(concern);
+        if (idx >= 0) {
+          state.concerns.splice(idx, 1);
+          this.classList.remove('selected');
+        } else if (state.concerns.length < 3) {
+          state.concerns.push(concern);
+          this.classList.add('selected');
+        }
+        var atLimit = state.concerns.length >= 3;
+        document.querySelectorAll('.concern-card').forEach(function(c) {
+          if (!c.classList.contains('selected')) {
+            c.classList.toggle('at-limit', atLimit);
+          }
+        });
+        document.getElementById('step4-next').disabled = state.concerns.length === 0;
+      });
+    });
+    document.getElementById('step4-next').addEventListener('click', function() { showStep(5); });
+
+    // ── Step 5: Diet ───────────────────────────────────────────────────────
+    document.querySelectorAll('input[name="quiz-diet"]').forEach(function(r) {
+      r.addEventListener('change', function() {
+        state.diet = this.value;
+        document.getElementById('step5-next').disabled = false;
+      });
+    });
+    document.getElementById('step5-next').addEventListener('click', function() { showResults(); });
+    document.getElementById('step5-skip').addEventListener('click', function() {
+      state.diet = '';
+      showResults();
+    });
+
+    // ── Results ────────────────────────────────────────────────────────────
+    function showResults() {
+      elContainer.style.display = 'none';
+      elResults.style.display = 'block';
+
+      var dogName = state.name || 'your dog';
+      document.getElementById('results-heading').textContent = 'Here\'s what we recommend for ' + dogName;
+      document.getElementById('results-sub').textContent = buildSub();
+      document.getElementById('rec-cards').innerHTML = buildCards();
+
+      document.getElementById('share-btn').addEventListener('click', function() {
+        var url = 'https://learn.wattspet.com/supplement-quiz/';
+        var text = 'I just got personalized dog supplement recommendations from Watts. Find out what your dog needs: ' + url;
+        if (navigator.share) {
+          navigator.share({ title: 'Dog Supplement Quiz', text: text, url: url });
+        } else {
+          navigator.clipboard && navigator.clipboard.writeText(url).then(function() {
+            document.getElementById('share-btn').textContent = 'Link copied!';
+          });
+        }
+      });
+
+      document.getElementById('retake-btn').addEventListener('click', function() {
+        state.name = ''; state.size = ''; state.stage = ''; state.concerns = []; state.diet = '';
+        document.getElementById('dog-name-input').value = '';
+        ['quiz-size','quiz-stage','quiz-diet'].forEach(function(n) {
+          document.querySelectorAll('input[name="' + n + '"]').forEach(function(r) { r.checked = false; });
+        });
+        document.querySelectorAll('.concern-card').forEach(function(c) { c.classList.remove('selected','at-limit'); });
+        ['step2-next','step3-next','step4-next','step5-next'].forEach(function(id) {
+          document.getElementById(id).disabled = true;
+        });
+        elResults.style.display = 'none';
+        elIntro.style.display = 'block';
+      });
+    }
+
+    function buildSub() {
+      var parts = [];
+      var stageMsg = {
+        'puppy':       'Puppies need targeted support for brain development, immune function, and growth.',
+        'young-adult': 'Young adult dogs benefit most from building a strong nutritional foundation now.',
+        'adult':       'Adult dogs benefit from consistent daily nutrition and managing low-grade inflammation.',
+        'senior':      'Senior dogs have higher needs for joint support, antioxidants, and omega-3s.',
+        'geriatric':   'Geriatric dogs benefit significantly from targeted nutritional support for aging systems.'
+      };
+      if (stageMsg[state.stage]) parts.push(stageMsg[state.stage]);
+      if (state.diet === 'standard' || state.diet === 'premium-kibble') {
+        parts.push('Kibble-fed dogs have the most to gain from supplementation to offset processing losses.');
+      } else if (state.diet === 'raw' || state.diet === 'fresh') {
+        parts.push('Fresh-fed dogs have a strong nutritional base — targeted supplements fill specific gaps.');
+      }
+      return parts.join(' ');
+    }
+
+    var CONCERN_DATA = {
+      'joint': {
+        tagline: 'Joint health & mobility',
+        why: 'Omega-3 fatty acids (EPA and DHA) reduce the inflammation that drives joint degeneration — the most evidence-backed intervention for canine joint health. Glucosamine supports cartilage structure and is well-studied in dogs.',
+        links: [{ href: '/blog/glucosamine-for-dogs.html', text: 'Glucosamine for dogs', cls: 'rec-link-blog' }]
+      },
+      'digestion': {
+        tagline: 'Digestion & gut health',
+        why: 'A healthy gut microbiome affects digestion, immune function, and even mood. Probiotics add beneficial bacteria; prebiotics feed them. Both are well-studied in dogs and especially relevant for dogs on processed diets.',
+        links: [{ href: '/blog/gut-health-for-dogs.html', text: 'Gut health for dogs', cls: 'rec-link-blog' }]
+      },
+      'skin': {
+        tagline: 'Skin & coat',
+        why: 'EPA and DHA from marine sources are incorporated into skin cells and reduce inflammatory skin conditions. Zinc and biotin support coat quality and skin barrier function.',
+        links: [{ href: '/blog/dog-skin-coat-supplements.html', text: 'Skin & coat supplements', cls: 'rec-link-blog' }]
+      },
+      'energy': {
+        tagline: 'Energy & vitality',
+        why: 'B vitamins — especially B12, B6, and riboflavin — are directly involved in cellular energy production. They\'re heat-sensitive and can be significantly depleted in processed dog foods.',
+        links: [{ href: '/blog/b-vitamins-for-dogs.html', text: 'B vitamins for dogs', cls: 'rec-link-blog' }]
+      },
+      'anxiety': {
+        tagline: 'Anxiety & stress',
+        why: 'Several supplements have reasonable evidence for reducing anxiety in dogs, including L-theanine, ashwagandha, and certain calming herbs. Magnesium also plays a role in nervous system regulation.',
+        links: [{ href: '/blog/calming-supplements-for-dogs.html', text: 'Calming supplements for dogs', cls: 'rec-link-blog' }]
+      },
+      'immune': {
+        tagline: 'Immune support',
+        why: 'Vitamin E, selenium, zinc, and beta-glucans are the best-studied immune-supporting nutrients in dogs. They work as direct antioxidants and as modulators of immune response.',
+        links: [{ href: '/blog/antioxidants-for-dogs.html', text: 'Antioxidants for dogs', cls: 'rec-link-blog' }]
+      },
+      'cognitive': {
+        tagline: 'Cognitive health',
+        why: 'DHA is the primary structural fat in brain tissue and is critical for cognitive function throughout life. Antioxidants protect brain cells from oxidative damage that accumulates with age.',
+        links: [{ href: '/blog/antioxidants-for-dogs.html', text: 'Antioxidants for dogs', cls: 'rec-link-blog' }]
+      },
+      'weight': {
+        tagline: 'Weight management',
+        why: 'Weight management in dogs is primarily dietary — caloric restriction with adequate protein. Omega-3s help maintain lean mass during weight loss and reduce the inflammation associated with obesity.',
+        links: [{ href: '/blog/why-dogs-need-supplements.html', text: 'Why dogs need supplements', cls: 'rec-link-blog' }]
+      },
+      'general': {
+        tagline: 'General wellness',
+        why: 'The most impactful thing for overall wellness is consistent daily nutrition — filling the gaps that food alone doesn\'t reliably cover, particularly omega-3s, zinc, and B vitamins.',
+        links: [{ href: '/blog/why-dogs-need-supplements.html', text: 'Why dogs need supplements', cls: 'rec-link-blog' }]
+      }
+    };
+
+    function primaryWhy() {
+      if (state.stage === 'puppy') {
+        return 'Better Dailies provides the foundational micronutrients hardest to get consistently from food — zinc, B vitamins, vitamin E, and omega-3s — all especially important during development.';
+      }
+      if (state.stage === 'senior' || state.stage === 'geriatric') {
+        return 'Better Dailies covers the supplements most relevant to aging dogs: omega-3s for inflammation and joint health, antioxidants for cellular aging, and B vitamins for energy and nerve function.';
+      }
+      if (state.concerns.indexOf('joint') >= 0) {
+        return 'Better Dailies includes omega-3s (EPA and DHA) for anti-inflammatory support — one of the most evidence-backed interventions for joint health — along with zinc, B vitamins, and antioxidants.';
+      }
+      return 'Better Dailies covers the nutritional gaps hardest to fill consistently from food: omega-3s, B vitamins, zinc, vitamin E, and antioxidants — all from whole-food and chelated sources.';
+    }
+
+    function buildCards() {
+      var cards = [];
+
+      // Primary: Better Dailies
+      cards.push(buildCard(1, 'Better Dailies', 'Daily supplement', primaryWhy(), [
+        { href: 'https://www.wattspet.com/products/better-dailies', text: 'Shop Better Dailies', cls: 'rec-link-blog', external: true }
+      ]));
+
+      // Up to 2 concern-specific cards
+      var added = 0;
+      state.concerns.forEach(function(concern) {
+        if (added >= 2) return;
+        var d = CONCERN_DATA[concern];
+        if (d) { cards.push(buildCard(cards.length + 1, d.tagline, 'Based on your concerns', d.why, d.links)); added++; }
+      });
+
+      return cards.join('');
+    }
+
+    function buildCard(rank, name, tagline, why, links) {
+      var linkHtml = links.map(function(l) {
+        return '<a href="' + l.href + '" class="rec-link ' + l.cls + '"' +
+          (l.external ? ' target="_blank" rel="noopener"' : '') + '>' + l.text + '</a>';
+      }).join('');
+      return '<div class="rec-card">' +
+        '<div class="rec-card-header">' +
+          '<div class="rec-rank">' + rank + '</div>' +
+          '<div class="rec-title-wrap">' +
+            '<div class="rec-name">' + name + '</div>' +
+            '<div class="rec-tagline">' + tagline + '</div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="rec-body">' +
+          '<p class="rec-why">' + why + '</p>' +
+          '<div class="rec-links">' + linkHtml + '</div>' +
+        '</div>' +
+      '</div>';
+    }
+
+  })();
+  </script>
+
 </body>
 </html>
