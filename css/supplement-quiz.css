@@ -58,6 +58,26 @@
       padding: 48px 20px 80px;
     }
 
+    /* ===== EMAIL GATE ===== */
+    .email-gate-wrap {
+      animation: stepIn 0.25s ease;
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 24px 0 40px;
+    }
+    .gate-consent {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 12px;
+      line-height: 1.5;
+    }
+    .gate-error {
+      font-size: 13px;
+      color: #c03800;
+      min-height: 18px;
+      margin-bottom: 4px;
+    }
+
     /* ===== INTRO ===== */
     .quiz-intro {
       text-align: center;

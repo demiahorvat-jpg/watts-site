@@ -447,6 +447,22 @@
 
       </div>
 
+      <!-- ===== EMAIL GATE ===== -->
+      <div id="email-gate" style="display: none;">
+        <div class="email-gate-wrap">
+          <div class="results-label">Almost there</div>
+          <h2 class="step-heading" id="gate-heading">Where should we send your results?</h2>
+          <p class="step-sub">Get your personalized recommendations plus dog nutrition tips from Watts.</p>
+          <form id="gate-form" novalidate>
+            <input type="email" id="gate-email" class="name-input" placeholder="Your email address" required autocomplete="email">
+            <div id="gate-error" class="gate-error"></div>
+            <button type="submit" class="start-btn" style="width:100%;margin-top:4px;">See my results</button>
+          </form>
+          <p class="gate-consent">By continuing you agree to receive emails from Watts. Unsubscribe anytime.</p>
+          <button type="button" id="gate-skip" class="skip-btn" style="display:block;margin-top:16px;">Skip and see results</button>
+        </div>
+      </div>
+
       <!-- ===== RESULTS ===== -->
       <div id="results-section" class="results-section" style="display: none;">
 
@@ -460,18 +476,6 @@
 
         <div class="results-disclaimer">
           This quiz provides general nutritional guidance based on published research — it is not a substitute for veterinary advice. Always consult your vet before starting a new supplement regimen, especially if your dog has an existing health condition.
-        </div>
-
-        <div class="email-cta-box">
-          <div class="email-cta-inner">
-            <h3>Stay in the loop</h3>
-            <p>Get updates from Watts — dog nutrition, supplement guides, and tools like this one.</p>
-            <form class="email-cta-form" id="results-email-form" novalidate>
-              <input type="email" name="email" placeholder="Your email" required autocomplete="email">
-              <button type="submit">Notify me</button>
-            </form>
-            <p class="email-success" id="email-success">Thanks — we'll be in touch!</p>
-          </div>
         </div>
 
         <div class="results-actions">
@@ -634,37 +638,12 @@
     })();
   </script>
   <script>
-    (function() {
-      var form = document.getElementById('results-email-form');
-      var successMsg = document.getElementById('email-success');
-      if (!form) return;
-      form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        var email = form.querySelector('input[type="email"]').value.trim();
-        if (!email) return;
-        var btn = form.querySelector('button[type="submit"]');
-        btn.disabled = true;
-        fetch('https://a.klaviyo.com/client/subscriptions/?company_id=SXFMie', {
-          method: 'POST',
-          headers: { 'content-type': 'application/json', 'revision': '2023-02-22' },
-          body: JSON.stringify({ data: { type: 'subscription', attributes: { list_id: 'WLb5bq', email: email } } })
-        }).then(function(res) {
-          if (res.ok || res.status === 202) {
-            form.style.display = 'none';
-            successMsg.style.display = 'block';
-            try { localStorage.setItem('watts-subscribed', '1'); } catch(e) {}
-          } else { btn.disabled = false; }
-        }).catch(function() { btn.disabled = false; });
-      });
-    })();
-  </script>
-
-  <script>
   (function() {
     var state = { name: '', size: '', stage: '', concerns: [], diet: '' };
 
     var elIntro     = document.getElementById('quiz-intro');
     var elContainer = document.getElementById('quiz-container');
+    var elGate      = document.getElementById('email-gate');
     var elResults   = document.getElementById('results-section');
     var elProgress  = document.getElementById('progress-fill');
     var elProgLabel = document.getElementById('progress-label');
@@ -751,11 +730,54 @@
         document.getElementById('step5-next').disabled = false;
       });
     });
-    document.getElementById('step5-next').addEventListener('click', function() { showResults(); });
+    document.getElementById('step5-next').addEventListener('click', function() { showGate(); });
     document.getElementById('step5-skip').addEventListener('click', function() {
       state.diet = '';
-      showResults();
+      showGate();
     });
+
+    // ── Email gate ─────────────────────────────────────────────────────────
+    function showGate() {
+      elContainer.style.display = 'none';
+      elGate.style.display = 'block';
+      var gateHeading = document.getElementById('gate-heading');
+      if (state.name) gateHeading.textContent = 'Where should we send ' + state.name + '\'s results?';
+
+      document.getElementById('gate-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var email = document.getElementById('gate-email').value.trim();
+        var errorEl = document.getElementById('gate-error');
+        if (!email || !email.includes('@')) { errorEl.textContent = 'Please enter a valid email address.'; return; }
+        errorEl.textContent = '';
+        var btn = this.querySelector('button[type="submit"]');
+        btn.disabled = true;
+        btn.textContent = 'Loading...';
+        subscribeToKlaviyo(email, function(ok) {
+          elGate.style.display = 'none';
+          showResults();
+        });
+      });
+
+      document.getElementById('gate-skip').addEventListener('click', function() {
+        elGate.style.display = 'none';
+        showResults();
+      });
+    }
+
+    function subscribeToKlaviyo(email, callback) {
+      fetch('https://a.klaviyo.com/client/subscriptions/?company_id=SXFMie', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json', 'revision': '2023-02-22' },
+        body: JSON.stringify({ data: { type: 'subscription', attributes: {
+          list_id: 'WLb5bq',
+          email: email,
+          custom_source: 'Dog Supplement Quiz'
+        }}})
+      }).then(function(res) {
+        try { localStorage.setItem('watts-subscribed', '1'); } catch(e) {}
+        callback(res.ok || res.status === 202);
+      }).catch(function() { callback(false); });
+    }
 
     // ── Results ────────────────────────────────────────────────────────────
     function showResults() {
@@ -782,6 +804,8 @@
       document.getElementById('retake-btn').addEventListener('click', function() {
         state.name = ''; state.size = ''; state.stage = ''; state.concerns = []; state.diet = '';
         document.getElementById('dog-name-input').value = '';
+        document.getElementById('gate-email').value = '';
+        document.getElementById('gate-error').textContent = '';
         ['quiz-size','quiz-stage','quiz-diet'].forEach(function(n) {
           document.querySelectorAll('input[name="' + n + '"]').forEach(function(r) { r.checked = false; });
         });
@@ -790,6 +814,7 @@
           document.getElementById(id).disabled = true;
         });
         elResults.style.display = 'none';
+        elGate.style.display = 'none';
         elIntro.style.display = 'block';
       });
     }
