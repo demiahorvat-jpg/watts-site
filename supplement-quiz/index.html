@@ -805,7 +805,7 @@
       };
       if (stageMsg[state.stage]) parts.push(stageMsg[state.stage]);
       if (state.diet === 'standard' || state.diet === 'premium-kibble') {
-        parts.push('Kibble-fed dogs have the most to gain from supplementation to offset processing losses.');
+        parts.push('Kibble-fed dogs typically have the most to gain from supplementation, particularly gut health and antioxidant support.');
       } else if (state.diet === 'raw' || state.diet === 'fresh') {
         parts.push('Fresh-fed dogs have a strong nutritional base — targeted supplements fill specific gaps.');
       }
@@ -861,23 +861,26 @@
     };
 
     function primaryWhy() {
-      if (state.stage === 'puppy') {
-        return 'Better Dailies provides the foundational micronutrients hardest to get consistently from food — zinc, B vitamins, vitamin E, and omega-3s — all especially important during development.';
+      var digestOrImmune = state.concerns.indexOf('digestion') >= 0 || state.concerns.indexOf('immune') >= 0;
+      var antioxOrCog = state.concerns.indexOf('cognitive') >= 0 || state.concerns.indexOf('general') >= 0;
+
+      if (digestOrImmune) {
+        return 'Better Dailies is well-matched to your priorities: EpiCor® postbiotic supports gut health and microbial balance, while Wellmune® beta-glucan is one of the best-studied immune modulators in companion animal nutrition. Astaxanthin and NutriFusion® plant antioxidants round out the formula, in a grass-fed beef and organ base.';
       }
       if (state.stage === 'senior' || state.stage === 'geriatric') {
-        return 'Better Dailies covers the supplements most relevant to aging dogs: omega-3s for inflammation and joint health, antioxidants for cellular aging, and B vitamins for energy and nerve function.';
+        return 'As dogs age, antioxidant capacity declines and gut function tends to shift. Better Dailies addresses both: astaxanthin (Zanthin®) and NutriFusion® plant concentrates for cellular protection, plus EpiCor® postbiotic for gut health. The grass-fed beef liver base provides naturally occurring whole-food nutrients.';
       }
-      if (state.concerns.indexOf('joint') >= 0) {
-        return 'Better Dailies includes omega-3s (EPA and DHA) for anti-inflammatory support — one of the most evidence-backed interventions for joint health — along with zinc, B vitamins, and antioxidants.';
+      if (state.stage === 'puppy') {
+        return 'Better Dailies provides immune and gut support through Wellmune® beta-glucan and EpiCor® postbiotic — both relevant during early development. The grass-fed beef liver base delivers naturally occurring B vitamins, iron, and vitamin A in their most bioavailable forms.';
       }
-      return 'Better Dailies covers the nutritional gaps hardest to fill consistently from food: omega-3s, B vitamins, zinc, vitamin E, and antioxidants — all from whole-food and chelated sources.';
+      return 'Better Dailies combines EpiCor® postbiotic (gut health), Wellmune® beta-glucan (immune support), and an antioxidant stack — astaxanthin and NutriFusion® plant concentrates — in a grass-fed beef, liver, and heart base. It\'s a daily foundational supplement, not a single-targeted product.';
     }
 
     function buildCards() {
       var cards = [];
 
       // Primary: Better Dailies
-      cards.push(buildCard(1, 'Better Dailies', 'Daily supplement', primaryWhy(), [
+      cards.push(buildCard(1, 'Better Dailies', 'Daily foundational supplement', primaryWhy(), [
         { href: 'https://www.wattspet.com/products/better-dailies', text: 'Shop Better Dailies', cls: 'rec-link-blog', external: true }
       ]));
 
