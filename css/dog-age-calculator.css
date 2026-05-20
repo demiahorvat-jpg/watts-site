@@ -778,6 +778,57 @@
     @media (min-width: 768px) {
       .faq-item p { font-size: 17px; }
     }
+/* ===== LONGEVITY SECTION ===== */
+    .longevity-section {
+      margin-top: 48px;
+      padding-top: 48px;
+      border-top: 2px solid var(--border-light);
+    }
+
+    .longevity-section h2 {
+      margin-bottom: 8px;
+    }
+
+    .longevity-intro {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+    }
+    @media (min-width: 768px) {
+      .longevity-intro { font-size: 17px; }
+    }
+
+    .longevity-item {
+      margin-bottom: 24px;
+      padding: 24px 28px;
+      background: var(--bg-light);
+      border-radius: 12px;
+      border-left: 4px solid var(--accent-navy);
+    }
+
+    .longevity-item h3 {
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--accent-navy);
+    }
+    @media (min-width: 768px) {
+      .longevity-item h3 { font-size: 19px; }
+    }
+
+    .longevity-item p {
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+    @media (min-width: 768px) {
+      .longevity-item p { font-size: 17px; }
+    }
+
+    .longevity-item a {
+      color: var(--brand-orange);
+      text-decoration: underline;
+    }
+
 /* ===== STICKY EMAIL CTA (mobile only) ===== */
     .sticky-email-cta {
       display: none;
