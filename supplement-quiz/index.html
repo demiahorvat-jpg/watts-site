@@ -815,82 +815,80 @@
     var CONCERN_DATA = {
       'joint': {
         tagline: 'Joint health & mobility',
-        why: 'Omega-3 fatty acids (EPA and DHA) reduce the inflammation that drives joint degeneration — the most evidence-backed intervention for canine joint health. Glucosamine supports cartilage structure and is well-studied in dogs.',
+        why: 'Omega-3 fatty acids (EPA and DHA) reduce the inflammation that drives joint degeneration — the most evidence-backed nutritional intervention for canine joint health. Glucosamine supports cartilage structure and is well-studied in dogs with early-to-moderate osteoarthritis.',
         links: [{ href: '/blog/glucosamine-for-dogs.html', text: 'Glucosamine for dogs', cls: 'rec-link-blog' }]
       },
       'digestion': {
         tagline: 'Digestion & gut health',
-        why: 'A healthy gut microbiome affects digestion, immune function, and even mood. Probiotics add beneficial bacteria; prebiotics feed them. Both are well-studied in dogs and especially relevant for dogs on processed diets.',
+        why: 'Postbiotics, probiotics, and prebiotics each work differently on gut health. Postbiotics like EpiCor® are fermentation-derived compounds that modulate the gut microbiome without adding live bacteria — well-suited to sensitive dogs. Probiotics add live beneficial strains; prebiotics feed them.',
         links: [{ href: '/blog/gut-health-for-dogs.html', text: 'Gut health for dogs', cls: 'rec-link-blog' }]
       },
       'skin': {
         tagline: 'Skin & coat',
-        why: 'EPA and DHA from marine sources are incorporated into skin cells and reduce inflammatory skin conditions. Zinc and biotin support coat quality and skin barrier function.',
+        why: 'EPA and DHA from marine sources are incorporated into skin cells and reduce inflammatory skin conditions. Zinc and biotin support coat quality and skin barrier function. Fish oil is the most direct lever for coat shine and reduced shedding.',
         links: [{ href: '/blog/dog-skin-coat-supplements.html', text: 'Skin & coat supplements', cls: 'rec-link-blog' }]
       },
       'energy': {
         tagline: 'Energy & vitality',
-        why: 'B vitamins — especially B12, B6, and riboflavin — are directly involved in cellular energy production. They\'re heat-sensitive and can be significantly depleted in processed dog foods.',
+        why: 'B vitamins — especially B12, B6, and riboflavin — are directly involved in cellular energy production. They\'re heat-sensitive and can be significantly depleted in processed dog foods. Organ meats like liver are the most bioavailable natural source.',
         links: [{ href: '/blog/b-vitamins-for-dogs.html', text: 'B vitamins for dogs', cls: 'rec-link-blog' }]
       },
       'anxiety': {
         tagline: 'Anxiety & stress',
-        why: 'Several supplements have reasonable evidence for reducing anxiety in dogs, including L-theanine, ashwagandha, and certain calming herbs. Magnesium also plays a role in nervous system regulation.',
+        why: 'Several supplements have reasonable evidence for reducing anxiety in dogs, including L-theanine, ashwagandha, and certain calming herbs. Effects are modest but real — most useful for mild situational anxiety rather than severe cases.',
         links: [{ href: '/blog/calming-supplements-for-dogs.html', text: 'Calming supplements for dogs', cls: 'rec-link-blog' }]
       },
       'immune': {
         tagline: 'Immune support',
-        why: 'Vitamin E, selenium, zinc, and beta-glucans are the best-studied immune-supporting nutrients in dogs. They work as direct antioxidants and as modulators of immune response.',
+        why: 'Beta-glucans derived from yeast are among the most studied immune-modulating ingredients in companion animal nutrition. They prime immune cells without overstimulating — particularly relevant for dogs with recurring infections or those on processed diets.',
         links: [{ href: '/blog/antioxidants-for-dogs.html', text: 'Antioxidants for dogs', cls: 'rec-link-blog' }]
       },
       'cognitive': {
         tagline: 'Cognitive health',
-        why: 'DHA is the primary structural fat in brain tissue and is critical for cognitive function throughout life. Antioxidants protect brain cells from oxidative damage that accumulates with age.',
+        why: 'Oxidative stress is the primary driver of cognitive decline in aging dogs. Antioxidants — particularly astaxanthin and DHA — protect brain cells from the free radical accumulation that accelerates cognitive aging. Most relevant for dogs 7 and older.',
         links: [{ href: '/blog/antioxidants-for-dogs.html', text: 'Antioxidants for dogs', cls: 'rec-link-blog' }]
       },
       'weight': {
         tagline: 'Weight management',
-        why: 'Weight management in dogs is primarily dietary — caloric restriction with adequate protein. Omega-3s help maintain lean mass during weight loss and reduce the inflammation associated with obesity.',
+        why: 'Weight management in dogs is primarily dietary — caloric restriction with adequate protein to preserve lean mass. Supplements play a supporting role; lean body condition is the single strongest modifiable factor for lifespan and joint health.',
         links: [{ href: '/blog/why-dogs-need-supplements.html', text: 'Why dogs need supplements', cls: 'rec-link-blog' }]
       },
       'general': {
         tagline: 'General wellness',
-        why: 'The most impactful thing for overall wellness is consistent daily nutrition — filling the gaps that food alone doesn\'t reliably cover, particularly omega-3s, zinc, and B vitamins.',
+        why: 'The most impactful daily supplements cover gut health, immune function, and antioxidant protection — the three areas where commercial diets most consistently fall short and where the evidence for supplementation is strongest.',
         links: [{ href: '/blog/why-dogs-need-supplements.html', text: 'Why dogs need supplements', cls: 'rec-link-blog' }]
       }
     };
 
-    function primaryWhy() {
-      var digestOrImmune = state.concerns.indexOf('digestion') >= 0 || state.concerns.indexOf('immune') >= 0;
-      var antioxOrCog = state.concerns.indexOf('cognitive') >= 0 || state.concerns.indexOf('general') >= 0;
+    // Maps which concerns Better Dailies directly addresses, and how
+    var BD_MATCH = {
+      'digestion': 'Better Dailies contains EpiCor® postbiotic (dried yeast fermentate) — a well-studied postbiotic that supports gut health and microbial balance. Unlike probiotics, it doesn\'t require refrigeration and is stable in processed treats.',
+      'immune': 'Better Dailies contains Wellmune® beta-glucan, one of the most studied immune-modulating ingredients in companion animal nutrition. It primes immune cells without overstimulating — and has specific research in dogs.',
+      'cognitive': 'Better Dailies contains astaxanthin (Zanthin®), a potent antioxidant with evidence for neuroprotective effects, alongside NutriFusion® plant concentrates. Reducing oxidative stress is the strongest nutritional lever for cognitive aging.',
+      'general': 'Better Dailies covers the four areas with the strongest daily supplement case: gut health (EpiCor® postbiotic), immune support (Wellmune® beta-glucan), cellular protection (astaxanthin + NutriFusion® antioxidants), and whole-food nutrition from grass-fed beef, liver, and heart.'
+    };
 
-      if (digestOrImmune) {
-        return 'Better Dailies is well-matched to your priorities: EpiCor® postbiotic supports gut health and microbial balance, while Wellmune® beta-glucan is one of the best-studied immune modulators in companion animal nutrition. Astaxanthin and NutriFusion® plant antioxidants round out the formula, in a grass-fed beef and organ base.';
-      }
-      if (state.stage === 'senior' || state.stage === 'geriatric') {
-        return 'As dogs age, antioxidant capacity declines and gut function tends to shift. Better Dailies addresses both: astaxanthin (Zanthin®) and NutriFusion® plant concentrates for cellular protection, plus EpiCor® postbiotic for gut health. The grass-fed beef liver base provides naturally occurring whole-food nutrients.';
-      }
-      if (state.stage === 'puppy') {
-        return 'Better Dailies provides immune and gut support through Wellmune® beta-glucan and EpiCor® postbiotic — both relevant during early development. The grass-fed beef liver base delivers naturally occurring B vitamins, iron, and vitamin A in their most bioavailable forms.';
-      }
-      return 'Better Dailies combines EpiCor® postbiotic (gut health), Wellmune® beta-glucan (immune support), and an antioxidant stack — astaxanthin and NutriFusion® plant concentrates — in a grass-fed beef, liver, and heart base. It\'s a daily foundational supplement, not a single-targeted product.';
-    }
+    var BD_DEFAULT = 'Better Dailies is a daily foundational chew — gut health (EpiCor® postbiotic), immune support (Wellmune® beta-glucan), and antioxidants (astaxanthin + NutriFusion® plant concentrates) — in a grass-fed beef, liver, and heart base. It doesn\'t replace targeted supplements for your specific concerns, but provides a useful daily base alongside them.';
 
     function buildCards() {
       var cards = [];
 
-      // Primary: Better Dailies
-      cards.push(buildCard(1, 'Better Dailies', 'Daily foundational supplement', primaryWhy(), [
-        { href: 'https://www.wattspet.com/products/better-dailies', text: 'Shop Better Dailies', cls: 'rec-link-blog', external: true }
-      ]));
-
-      // Up to 2 concern-specific cards
+      // 1. Concern-specific educational cards first (up to 2)
       var added = 0;
       state.concerns.forEach(function(concern) {
         if (added >= 2) return;
         var d = CONCERN_DATA[concern];
-        if (d) { cards.push(buildCard(cards.length + 1, d.tagline, 'Based on your concerns', d.why, d.links)); added++; }
+        if (d) { cards.push(buildCard(cards.length + 1, d.tagline, 'For your concern', d.why, d.links)); added++; }
       });
+
+      // 2. Better Dailies — surface only the relevant ingredient(s), or honest foundational copy
+      var bdWhy = BD_DEFAULT;
+      for (var i = 0; i < state.concerns.length; i++) {
+        if (BD_MATCH[state.concerns[i]]) { bdWhy = BD_MATCH[state.concerns[i]]; break; }
+      }
+      cards.push(buildCard(cards.length + 1, 'Better Dailies', 'Daily foundational supplement', bdWhy, [
+        { href: 'https://www.wattspet.com/products/better-dailies', text: 'Shop Better Dailies', cls: 'rec-link-blog', external: true }
+      ]));
 
       return cards.join('');
     }
