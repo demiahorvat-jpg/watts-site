@@ -542,6 +542,41 @@
       <p>Your dog eats this every day. Shouldn't you know exactly what else is in there?</p>
       <a href="/ingredient-analyzer/" class="cta-button">Analyze the Full Ingredient List</a>
     </div>
+<div class="ingredient-email-cta" id="ingredient-email-cta" style="display:none;">
+  <p class="ingredient-email-label">We write about ingredients like this.</p>
+  <form class="ingredient-email-form" id="ingredient-email-form" novalidate>
+    <input type="email" id="ingredient-email-input" placeholder="Your email" required autocomplete="email">
+    <button type="submit">Get updates</button>
+  </form>
+  <p class="ingredient-email-success" id="ingredient-email-success" style="display:none;">Thanks — you're in.</p>
+</div>
+<script>
+(function(){
+  try { if(localStorage.getItem('watts-subscribed')) return; } catch(e){}
+  var wrap = document.getElementById('ingredient-email-cta');
+  if(wrap) wrap.style.display = 'flex';
+  var form = document.getElementById('ingredient-email-form');
+  if(!form) return;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var email = document.getElementById('ingredient-email-input').value.trim();
+    if(!email) return;
+    var btn = form.querySelector('button');
+    btn.disabled = true;
+    fetch('https://a.klaviyo.com/client/subscriptions/?company_id=SXFMie',{
+      method:'POST',
+      headers:{'content-type':'application/json','revision':'2023-02-22'},
+      body:JSON.stringify({data:{type:'subscription',attributes:{list_id:'WLb5bq',email:email,custom_source:'Ingredient Analyzer'}}})
+    }).then(function(r){
+      if(r.ok||r.status===202){
+        form.style.display='none';
+        document.getElementById('ingredient-email-success').style.display='block';
+        try{localStorage.setItem('watts-subscribed','1');}catch(e){}
+      } else { btn.disabled=false; }
+    }).catch(function(){ btn.disabled=false; });
+  });
+})();
+</script>
   </main>
 
     <!-- SHARED_FOOTER_START -->
