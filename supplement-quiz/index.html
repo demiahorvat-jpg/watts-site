@@ -451,8 +451,8 @@
       <div id="email-gate" style="display: none;">
         <div class="email-gate-wrap">
           <div class="results-label">Almost there</div>
-          <h2 class="step-heading" id="gate-heading">Where should we send your results?</h2>
-          <p class="step-sub">Get your personalized recommendations plus dog nutrition tips from Watts.</p>
+          <h2 class="step-heading" id="gate-heading">See your results</h2>
+          <p class="step-sub">Enter your email to view your personalized recommendations. We'll also send occasional dog nutrition tips from Watts.</p>
           <form id="gate-form" novalidate>
             <input type="email" id="gate-email" class="name-input" placeholder="Your email address" required autocomplete="email">
             <div id="gate-error" class="gate-error"></div>
@@ -741,7 +741,7 @@
       elContainer.style.display = 'none';
       elGate.style.display = 'block';
       var gateHeading = document.getElementById('gate-heading');
-      if (state.name) gateHeading.textContent = 'Where should we send ' + state.name + '\'s results?';
+      if (state.name) gateHeading.textContent = 'See ' + state.name + '\'s results';
 
       document.getElementById('gate-form').addEventListener('submit', function(e) {
         e.preventDefault();
