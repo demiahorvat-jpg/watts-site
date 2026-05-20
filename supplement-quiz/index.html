@@ -687,6 +687,7 @@
       r.addEventListener('change', function() {
         state.size = this.value;
         document.getElementById('step2-next').disabled = false;
+        setTimeout(function() { showStep(3); }, 320);
       });
     });
     document.getElementById('step2-next').addEventListener('click', function() { showStep(3); });
@@ -696,6 +697,7 @@
       r.addEventListener('change', function() {
         state.stage = this.value;
         document.getElementById('step3-next').disabled = false;
+        setTimeout(function() { showStep(4); }, 320);
       });
     });
     document.getElementById('step3-next').addEventListener('click', function() { showStep(4); });
@@ -728,6 +730,7 @@
       r.addEventListener('change', function() {
         state.diet = this.value;
         document.getElementById('step5-next').disabled = false;
+        setTimeout(function() { showGate(); }, 320);
       });
     });
     document.getElementById('step5-next').addEventListener('click', function() { showGate(); });
