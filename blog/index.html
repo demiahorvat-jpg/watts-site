@@ -441,10 +441,9 @@
     .pinned-card {
       display: block;
       background: var(--brand-orange);
-      border-radius: 12px;
-      padding: 24px;
+      border-radius: 4px;
+      padding: 8px;
       text-decoration: none;
-      color: var(--white);
       transition: opacity 0.15s;
     }
 
@@ -452,12 +451,18 @@
       opacity: 0.9;
     }
 
+    .pinned-card-inner {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 24px;
+    }
+
     .pinned-card-tag {
       font-size: 12px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.06em;
-      opacity: 0.75;
+      color: var(--brand-orange);
       margin-bottom: 10px;
     }
 
@@ -466,7 +471,7 @@
       font-weight: 700;
       line-height: 1.3;
       margin-bottom: 10px;
-      color: var(--white);
+      color: var(--text-dark);
     }
 
     @media (min-width: 768px) {
@@ -479,14 +484,14 @@
       font-size: 14px;
       font-weight: 500;
       line-height: 1.5;
-      opacity: 0.85;
+      color: var(--text-muted);
       margin-bottom: 16px;
     }
 
     .pinned-card-cta {
       font-size: 14px;
       font-weight: 700;
-      color: var(--white);
+      color: var(--brand-orange);
     }
 
     /* FILTER TABS */
@@ -831,23 +836,29 @@ article a {
     <div class="pinned-section">
       <p class="pinned-label">Start here</p>
       <div class="pinned-grid">
+        <a href="/blog/why-we-built-better-dailies.html" class="pinned-card">
+          <div class="pinned-card-inner">
+            <div class="pinned-card-tag">Behind the formula</div>
+            <h2>Why We Built Better Dailies the Way We Did</h2>
+            <p>Every ingredient, every decision, and what we left out — the full story behind the formula.</p>
+            <span class="pinned-card-cta">Read article →</span>
+          </div>
+        </a>
         <a href="/blog/why-dogs-need-supplements.html" class="pinned-card">
-          <div class="pinned-card-tag">Foundation</div>
-          <h2>Why Supplements, Even With a Complete and Balanced Diet</h2>
-          <p>AAFCO standards prevent deficiency — but optimal health is a higher bar. What the label doesn't tell you.</p>
-          <span class="pinned-card-cta">Read article →</span>
+          <div class="pinned-card-inner">
+            <div class="pinned-card-tag">Foundation</div>
+            <h2>Why Supplements, Even With a Complete and Balanced Diet</h2>
+            <p>AAFCO standards prevent deficiency — but optimal health is a higher bar. What the label doesn't tell you.</p>
+            <span class="pinned-card-cta">Read article →</span>
+          </div>
         </a>
         <a href="/blog/how-to-read-dog-supplement-labels.html" class="pinned-card">
-          <div class="pinned-card-tag">Buyer's guide</div>
-          <h2>How to Read a Dog Supplement Label (And What to Ignore)</h2>
-          <p>Five quality signals that actually matter — and the marketing language that means nothing.</p>
-          <span class="pinned-card-cta">Read article →</span>
-        </a>
-        <a href="/blog/why-we-built-better-dailies.html" class="pinned-card">
-          <div class="pinned-card-tag">Behind the formula</div>
-          <h2>Why We Built Better Dailies the Way We Did</h2>
-          <p>Every ingredient, every decision, and what we left out — the full story behind the formula.</p>
-          <span class="pinned-card-cta">Read article →</span>
+          <div class="pinned-card-inner">
+            <div class="pinned-card-tag">Buyer's guide</div>
+            <h2>How to Read a Dog Supplement Label (And What to Ignore)</h2>
+            <p>Five quality signals that actually matter — and the marketing language that means nothing.</p>
+            <span class="pinned-card-cta">Read article →</span>
+          </div>
         </a>
       </div>
     </div>
