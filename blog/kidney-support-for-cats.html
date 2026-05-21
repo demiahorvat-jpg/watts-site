@@ -156,6 +156,14 @@
             "@type": "Answer",
             "text": "Chronic kidney disease cannot be reversed because it involves permanent loss of functional kidney tissue. However, CKD progression can often be significantly slowed with proper management, and cats can maintain good quality of life for months to years after diagnosis. Acute kidney injury (from toxins, infection, or obstruction) may be partially reversible if treated promptly. The goal of CKD management is to slow progression, manage symptoms, maintain quality of life, and extend comfortable survival time. Cats diagnosed early (Stage 1-2) with good dietary management often live 2-4+ years after diagnosis."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Do cats with kidney disease get high blood pressure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — hypertension affects approximately 60–65% of cats with CKD, making it one of the most common complications. High blood pressure accelerates kidney damage, can cause sudden blindness from retinal detachment, and increases stroke risk. Many cats show no obvious symptoms until serious damage has occurred, which is why blood pressure should be checked at every CKD monitoring visit. Treatment typically involves amlodipine (first-line for feline hypertension) or telmisartan (Semintra), which also reduces proteinuria and may independently slow CKD progression. Sudden blindness or persistently dilated pupils in a CKD cat is a hypertensive emergency requiring immediate veterinary attention."
+          }
         }
       ]
     }
@@ -747,6 +755,28 @@ article a {
 
         <p>Most prescription kidney diets include added antioxidants. Supplementation beyond this should be discussed with your vet.</p>
 
+        <h2 id="hypertension">Blood Pressure Management</h2>
+
+        <p>Hypertension (high blood pressure) affects an estimated 60–65% of cats with CKD, making it one of the most common—and most under-recognized—complications. Elevated blood pressure accelerates kidney damage, causes retinal detachment (sudden blindness), and increases stroke risk. Many cats show no obvious symptoms until damage is already done, which is why blood pressure should be checked at every CKD monitoring visit, not just when symptoms appear.</p>
+
+        <p><strong>Target:</strong> systolic blood pressure below 160 mmHg. Readings consistently above 160–180 mmHg typically warrant treatment regardless of whether the cat is showing symptoms.</p>
+
+        <h3>Signs of Hypertension in Cats</h3>
+
+        <ul>
+          <li><strong>Sudden blindness or persistently dilated pupils</strong> — retinal hemorrhage or detachment is the most dramatic presentation</li>
+          <li>Disorientation, circling, or head pressing</li>
+          <li>Sudden behavior changes or increased vocalizing</li>
+          <li>Nosebleeds</li>
+          <li>Seizures (uncommon but possible in severe cases)</li>
+        </ul>
+
+        <p>Sudden blindness in a CKD cat is a hypertensive emergency. Get to a vet immediately — if treated within hours, some vision can sometimes be restored.</p>
+
+        <h3>Treatment Options</h3>
+
+        <p><strong>Amlodipine</strong> is the first-line medication for feline hypertension. It works well in cats, is well-tolerated, and is inexpensive. <strong>Telmisartan (Semintra)</strong> is increasingly preferred for CKD cats specifically because it reduces proteinuria in addition to lowering blood pressure — and proteinuria independently accelerates kidney disease progression. Many cats with Stage 3–4 CKD end up on both. Blood pressure medications don't replace dietary management; they work alongside it.</p>
+
         <h2 id="diet-choices">Prescription vs Commercial Diets</h2>
 
         <h3>Prescription Kidney Diets</h3>
@@ -919,6 +949,11 @@ article a {
           <p>Chronic kidney disease cannot be reversed because it involves permanent loss of functional kidney tissue. However, CKD progression can often be significantly slowed with proper management, and cats can maintain good quality of life for months to years after diagnosis. Acute kidney injury (from toxins, infection, or obstruction) may be partially reversible if treated promptly. The goal of CKD management is to slow progression, manage symptoms, maintain quality of life, and extend comfortable survival time. Cats diagnosed early (Stage 1-2) with good dietary management often live 2-4+ years after diagnosis.</p>
         </div>
 
+        <div class="faq-item">
+          <h3>Do cats with kidney disease get high blood pressure?</h3>
+          <p>Yes — hypertension affects approximately 60–65% of cats with CKD, making it one of the most common complications. High blood pressure accelerates kidney damage, can cause sudden blindness from retinal detachment, and increases stroke risk. Many cats show no obvious symptoms until serious damage has occurred, which is why blood pressure should be checked at every CKD monitoring visit. Treatment typically involves amlodipine (first-line for feline hypertension) or telmisartan (Semintra), which also reduces proteinuria and may independently slow CKD progression. Sudden blindness or persistently dilated pupils in a CKD cat is a hypertensive emergency requiring immediate veterinary attention.</p>
+        </div>
+
       </div>
     </article>
   </main>
@@ -1015,7 +1050,8 @@ article a {
       });
     }
 
-    document.getElementById('year').textContent = new Date().getFullYear();
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
