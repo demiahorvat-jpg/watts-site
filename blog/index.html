@@ -411,6 +411,84 @@
       font-size: 17px;
     }
 
+    /* Pinned / featured section */
+    .pinned-section {
+      margin-bottom: 48px;
+    }
+
+    .pinned-label {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--brand-orange);
+      margin-bottom: 16px;
+    }
+
+    .pinned-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    @media (min-width: 768px) {
+      .pinned-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+    }
+
+    .pinned-card {
+      display: block;
+      background: var(--brand-orange);
+      border-radius: 12px;
+      padding: 24px;
+      text-decoration: none;
+      color: var(--white);
+      transition: opacity 0.15s;
+    }
+
+    .pinned-card:hover {
+      opacity: 0.9;
+    }
+
+    .pinned-card-tag {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      opacity: 0.75;
+      margin-bottom: 10px;
+    }
+
+    .pinned-card h2 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 10px;
+      color: var(--white);
+    }
+
+    @media (min-width: 768px) {
+      .pinned-card h2 {
+        font-size: 20px;
+      }
+    }
+
+    .pinned-card p {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.5;
+      opacity: 0.85;
+      margin-bottom: 16px;
+    }
+
+    .pinned-card-cta {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--white);
+    }
+
     /* FILTER TABS */
     .filter-tabs {
       display: flex;
@@ -750,6 +828,30 @@ article a {
       <p class="page-description">Evidence-based insights on dog and cat nutrition, health, and extending your pet's healthspan.</p>
     </div>
 
+    <div class="pinned-section">
+      <p class="pinned-label">Start here</p>
+      <div class="pinned-grid">
+        <a href="/blog/why-dogs-need-supplements.html" class="pinned-card">
+          <div class="pinned-card-tag">Foundation</div>
+          <h2>Why Supplements, Even With a Complete and Balanced Diet</h2>
+          <p>AAFCO standards prevent deficiency — but optimal health is a higher bar. What the label doesn't tell you.</p>
+          <span class="pinned-card-cta">Read article →</span>
+        </a>
+        <a href="/blog/how-to-read-dog-supplement-labels.html" class="pinned-card">
+          <div class="pinned-card-tag">Buyer's guide</div>
+          <h2>How to Read a Dog Supplement Label (And What to Ignore)</h2>
+          <p>Five quality signals that actually matter — and the marketing language that means nothing.</p>
+          <span class="pinned-card-cta">Read article →</span>
+        </a>
+        <a href="/blog/why-we-built-better-dailies.html" class="pinned-card">
+          <div class="pinned-card-tag">Behind the formula</div>
+          <h2>Why We Built Better Dailies the Way We Did</h2>
+          <p>Every ingredient, every decision, and what we left out — the full story behind the formula.</p>
+          <span class="pinned-card-cta">Read article →</span>
+        </a>
+      </div>
+    </div>
+
     <div class="blog-search-wrap">
       <input type="search" id="blog-search" class="blog-search-input" placeholder="Search..." autocomplete="off" aria-label="Search content">
     </div>
@@ -841,6 +943,12 @@ article a {
 
     <div id="articles-heading" class="content-section"><h2 style="font-size: 20px; font-weight: 700; margin-bottom: 16px; color: var(--text-dark);">Articles</h2></div>
     <div class="blog-posts" id="blog-posts">
+      <a href="/blog/why-we-built-better-dailies.html" class="blog-post" data-content-type="article" data-pet="dog">
+        <div class="blog-post-date">May 21, 2026</div>
+        <h2>Why We Built Better Dailies the Way We Did</h2>
+        <p class="blog-post-excerpt">Every ingredient in Watts Better Dailies has a specific reason for being there — from the grass-fed organ base to EpiCor®, Wellmune®, and Zanthin® astaxanthin. The full story behind the formula.</p>
+        <span class="read-more">Read more →</span>
+      </a>
       <a href="/blog/why-dogs-need-supplements.html" class="blog-post" data-content-type="article" data-pet="dog">
         <div class="blog-post-date">April 29, 2026</div>
         <h2>Why Supplements Can Make Sense for Dogs — Even If You Feed "Complete & Balanced" Food</h2>
