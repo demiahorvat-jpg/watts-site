@@ -60,6 +60,46 @@
   opacity: 0.85;
 }
 
+/* Related articles card grid — shared across blog posts and ingredient pages. */
+.related-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 24px 0 32px;
+}
+@media (min-width: 640px) {
+  .related-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+  .related-grid { grid-template-columns: repeat(3, 1fr); }
+}
+.related-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  background: #f7f5f2;
+  padding: 20px;
+  text-decoration: none !important;
+  color: inherit;
+  transition: all 0.15s;
+  display: block;
+}
+.related-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  transform: translateY(-2px);
+}
+.related-card h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+.related-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 1.45;
+}
+
 /* Announcement bar p tags inherit page-level styles (e.g. ingredient-page.css sets
    p { font-size: 18px; margin-bottom: 20px }) — reset to match Shopify's intent. */
 .g-announcement__blocks__item p {
