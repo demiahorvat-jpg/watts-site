@@ -22,59 +22,42 @@
 
 /* Shared product CTA block — used on ingredient pages and blog posts. */
 .watts-product-cta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  background: rgba(192, 56, 0, 0.05);
-  border-left: 4px solid #c03800;
-  border-radius: 8px;
-  padding: 20px 24px;
-  margin: 32px 0;
+  border-top: 1px solid #e0e0e0;
+  padding: 20px 0 0;
+  margin: 40px 0 24px;
 }
 
 .watts-product-cta__label {
   display: block;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #c03800;
-  margin-bottom: 6px;
+  color: #999;
+  margin-bottom: 8px;
 }
 
 .watts-product-cta__text p {
-  margin: 0;
-  font-size: 16px;
+  margin: 0 0 14px;
+  font-size: 15px;
   line-height: 1.5;
 }
 
 .watts-product-cta__btn {
-  flex-shrink: 0;
   display: inline-block;
   background: #c03800;
   color: #fff !important;
   text-decoration: none !important;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
-  padding: 12px 20px;
-  border-radius: 8px;
+  padding: 10px 18px;
+  border-radius: 6px;
   white-space: nowrap;
   transition: opacity 0.15s;
 }
 
 .watts-product-cta__btn:hover {
   opacity: 0.85;
-}
-
-@media (max-width: 640px) {
-  .watts-product-cta {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .watts-product-cta__btn {
-    align-self: flex-start;
-  }
 }
 
 /* Announcement bar p tags inherit page-level styles (e.g. ingredient-page.css sets
