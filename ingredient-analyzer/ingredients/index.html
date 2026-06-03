@@ -486,6 +486,49 @@
 
     <p class="intro">Explore our comprehensive database of 200+ dog food, treat, and supplement ingredients. Learn what each ingredient really is, why manufacturers use it, and whether it provides real nutrition or just cheap filler.</p>
 
+    <style>
+      .bd-feature { background: rgba(192,56,0,0.05); border-left: 4px solid #c03800; border-radius: 8px; padding: 20px 24px; margin: 24px 0 32px; }
+      .bd-feature__header { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 16px; }
+      .bd-feature__label { display: block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #c03800; margin-bottom: 4px; }
+      .bd-feature__meta p { margin: 0; font-size: 15px; line-height: 1.4; }
+      .bd-feature__ingredients { display: flex; flex-wrap: wrap; gap: 10px; }
+      .bd-ingredient { display: flex; flex-direction: column; background: #fff; border: 1px solid rgba(192,56,0,0.2); border-radius: 6px; padding: 10px 14px; text-decoration: none !important; color: inherit !important; flex: 1; min-width: 150px; transition: border-color 0.15s; }
+      .bd-ingredient:hover { border-color: #c03800; }
+      .bd-ingredient strong { font-size: 14px; font-weight: 700; color: #1a1a1a; }
+      .bd-ingredient__detail { font-size: 12px; color: #666; margin-top: 3px; }
+      .bd-ingredient--static { cursor: default; }
+      .bd-ingredient--static:hover { border-color: rgba(192,56,0,0.2); }
+      @media (max-width: 640px) { .bd-feature__header { flex-direction: column; align-items: flex-start; } }
+    </style>
+
+    <div class="bd-feature">
+      <div class="bd-feature__header">
+        <div class="bd-feature__meta">
+          <span class="bd-feature__label">Watts Better Dailies</span>
+          <p>Our beef-based daily dog supplement — four premium active ingredients, fully transparent.</p>
+        </div>
+        <a href="https://www.wattspet.com/products/better-dailies" class="watts-product-cta__btn">Shop Better Dailies →</a>
+      </div>
+      <div class="bd-feature__ingredients">
+        <a href="/ingredient-analyzer/ingredients/astaxanthin/" class="bd-ingredient">
+          <strong>Astaxanthin</strong>
+          <span class="bd-ingredient__detail">Zanthin® · 5mg · Antioxidant</span>
+        </a>
+        <a href="/ingredient-analyzer/ingredients/yeast-beta-glucans/" class="bd-ingredient">
+          <strong>Yeast Beta-Glucan</strong>
+          <span class="bd-ingredient__detail">Wellmune® · 100mg · Immune Support</span>
+        </a>
+        <a href="/ingredient-analyzer/ingredients/yeast-fermentate/" class="bd-ingredient">
+          <strong>Yeast Fermentate</strong>
+          <span class="bd-ingredient__detail">EpiCor® Pets · 100mg · Gut Health</span>
+        </a>
+        <div class="bd-ingredient bd-ingredient--static">
+          <strong>Antioxidant Blend</strong>
+          <span class="bd-ingredient__detail">NutriFusion® · 50mg · 12 Plant Concentrates</span>
+        </div>
+      </div>
+    </div>
+
     <div class="controls">
       <input
         type="text"
