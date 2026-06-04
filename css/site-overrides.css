@@ -100,7 +100,10 @@
   line-height: 1.45;
 }
 
-/* Ingredient page sets a global li rule — reset footer lists so bullets don't appear beside social icons. */
+/* Ingredient page sets global a/li rules — reset footer so they don't bleed in. */
+.g-footer a {
+  text-decoration: none;
+}
 .g-footer li {
   list-style: none;
   margin-top: 0;
