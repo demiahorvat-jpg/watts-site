@@ -100,13 +100,24 @@
   line-height: 1.45;
 }
 
-/* Ingredient page sets global a/li rules — reset footer so they don't bleed in. */
+/* Ingredient page sets global a/p/ul/li rules — reset footer so they don't bleed in. */
 .g-footer a {
   text-decoration: none;
+}
+.g-footer p {
+  font-size: inherit;
+  line-height: inherit;
+  margin-bottom: 0;
+}
+.g-footer ul {
+  margin: 0;
 }
 .g-footer li {
   list-style: none;
   margin-top: 0;
+  margin-bottom: 0;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 /* Announcement bar p tags inherit page-level styles (e.g. ingredient-page.css sets
