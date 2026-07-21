@@ -486,8 +486,6 @@ article a {
 
     <p>This intact structure is critical because UC-II doesn't work by providing building materials for cartilage. Instead, it works through a sophisticated immune mechanism called <strong>oral tolerance</strong>.</p>
 
-      <a href="https://www.wattspet.com/products/better-dailies" class="watts-product-cta__btn">Shop Better Dailies →</a>
-    </div>
 
     <h2 id="oral-tolerance">The Oral Tolerance Mechanism</h2>
 
@@ -753,6 +751,46 @@ article a {
     </ul>
 
     <p>The science behind UC-II is solid, the safety profile is excellent, and it offers something that other joint supplements can't: a way to address the immune-driven component of cartilage breakdown. For dogs with joint issues, it's a valuable tool—especially as part of a comprehensive joint support strategy.</p>
+
+
+    <div class="watts-joint-waitlist">
+      <span class="watts-joint-waitlist__label">Coming soon from Watts</span>
+      <p class="watts-joint-waitlist__heading">A hip &amp; joint formula for dogs is in the works</p>
+      <p class="watts-joint-waitlist__text">We’re developing a daily hip &amp; joint chew built on grass-fed beef and organs — with UC-II, hyaluronic acid, boswellia, and curcumin. Join our list to be the first to know when it launches.</p>
+      <form class="watts-joint-waitlist__form" id="jw-uciifordogs" novalidate>
+        <input type="email" name="email" placeholder="Your email" required autocomplete="email" aria-label="Email address">
+        <button type="submit">Notify me &rarr;</button>
+      </form>
+      <p class="watts-joint-waitlist__success">Thanks — you’re on the list. We’ll email you the moment it launches.</p>
+      <p class="watts-joint-waitlist__error">Something went wrong. Please try again.</p>
+    </div>
+    <script>
+    (function(){
+      var f=document.getElementById('jw-uciifordogs');
+      if(!f||f.dataset.wired)return; f.dataset.wired='1';
+      f.addEventListener('submit',function(e){
+        e.preventDefault();
+        var box=f.parentNode,
+            email=(f.querySelector('input[type=email]').value||'').trim(),
+            btn=f.querySelector('button'),
+            ok=box.querySelector('.watts-joint-waitlist__success'),
+            err=box.querySelector('.watts-joint-waitlist__error');
+        if(!email)return;
+        btn.disabled=true; err.style.display='none';
+        fetch('https://a.klaviyo.com/client/subscriptions/?company_id=SXFMie',{
+          method:'POST',
+          headers:{'content-type':'application/json','revision':'2023-02-22'},
+          body:JSON.stringify({data:{type:'subscription',attributes:{
+            list_id:'WLb5bq',email:email,
+            properties:{joint_waitlist:true,waitlist_source:'joint-blog'}
+          }}})
+        }).then(function(res){
+          if(res.ok||res.status===202){f.style.display='none';ok.style.display='block';}
+          else{btn.disabled=false;err.style.display='block';}
+        }).catch(function(){btn.disabled=false;err.style.display='block';});
+      });
+    })();
+    </script>
 
     <h2 style="margin-top: 56px; padding-top: 40px; border-top: 2px solid var(--border-light);">Related Articles</h2>
 

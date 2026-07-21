@@ -559,8 +559,6 @@ article a {
 
     <p>This combination of nutrients in <strong>natural, bioavailable forms</strong> is why <a href="/ingredient-analyzer/ingredients/green-lipped-mussel/">green-lipped mussel</a> is more effective than taking isolated <a href="/ingredient-analyzer/ingredients/glucosamine/">glucosamine</a> or fish oil supplements separately.</p>
 
-      <a href="https://www.wattspet.com/products/better-dailies" class="watts-product-cta__btn">Shop Better Dailies →</a>
-    </div>
 
     <h2 id="science">The Science: What Research Shows</h2>
 
@@ -939,6 +937,46 @@ article a {
     <p><strong>Best form:</strong> Freeze-dried powder (not oil)—it contains the full spectrum of nutrients. Choose products from New Zealand, processed using freeze-drying or cold-processing methods, with no fillers or additives.</p>
 
     <p>Green-lipped mussel is <strong>safe for long-term daily use</strong>, works faster than isolated glucosamine/chondroitin supplements, and provides comprehensive joint support that single-ingredient supplements can't match. For dogs with arthritis or at risk for joint problems, it's one of the most valuable additions to their diet.</p>
+
+    <div class="watts-joint-waitlist">
+      <span class="watts-joint-waitlist__label">Coming soon from Watts</span>
+      <p class="watts-joint-waitlist__heading">A hip &amp; joint formula for dogs is in the works</p>
+      <p class="watts-joint-waitlist__text">We’re developing a daily hip &amp; joint chew built on grass-fed beef and organs, with clinically studied joint actives. Join our list to be the first to know when it launches.</p>
+      <form class="watts-joint-waitlist__form" id="jw-greenlippedmusselfordogs" novalidate>
+        <input type="email" name="email" placeholder="Your email" required autocomplete="email" aria-label="Email address">
+        <button type="submit">Notify me &rarr;</button>
+      </form>
+      <p class="watts-joint-waitlist__success">Thanks — you’re on the list. We’ll email you the moment it launches.</p>
+      <p class="watts-joint-waitlist__error">Something went wrong. Please try again.</p>
+    </div>
+    <script>
+    (function(){
+      var f=document.getElementById('jw-greenlippedmusselfordogs');
+      if(!f||f.dataset.wired)return; f.dataset.wired='1';
+      f.addEventListener('submit',function(e){
+        e.preventDefault();
+        var box=f.parentNode,
+            email=(f.querySelector('input[type=email]').value||'').trim(),
+            btn=f.querySelector('button'),
+            ok=box.querySelector('.watts-joint-waitlist__success'),
+            err=box.querySelector('.watts-joint-waitlist__error');
+        if(!email)return;
+        btn.disabled=true; err.style.display='none';
+        fetch('https://a.klaviyo.com/client/subscriptions/?company_id=SXFMie',{
+          method:'POST',
+          headers:{'content-type':'application/json','revision':'2023-02-22'},
+          body:JSON.stringify({data:{type:'subscription',attributes:{
+            list_id:'WLb5bq',email:email,
+            properties:{joint_waitlist:true,waitlist_source:'joint-blog'}
+          }}})
+        }).then(function(res){
+          if(res.ok||res.status===202){f.style.display='none';ok.style.display='block';}
+          else{btn.disabled=false;err.style.display='block';}
+        }).catch(function(){btn.disabled=false;err.style.display='block';});
+      });
+    })();
+    </script>
+
     <h2 id="related">Related Articles</h2>
     <div class="related-grid">
       <a href="/blog/green-lipped-mussel-vs-fish-oil.html" class="related-card">
