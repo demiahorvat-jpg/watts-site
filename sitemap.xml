@@ -2545,6 +2545,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://learn.wattspet.com/guides/</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://learn.wattspet.com/guides/cat-gut-health.html</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>weekly</changefreq>
