@@ -962,6 +962,14 @@ main button.secondary {
         id="ingredientInput"
         placeholder="Example: Chicken, chicken liver, sweet potato, chicken fat (preserved with mixed tocopherols), fish oil, pumpkin..."
       ></textarea>
+      <div class="analyzer-inputs" style="display:flex;gap:20px;flex-wrap:wrap;margin:12px 0;">
+        <label style="font-weight:600;">Pet:
+          <select id="petType"><option value="dog">Dog</option><option value="cat">Cat</option></select>
+        </label>
+        <label style="font-weight:600;">Analyzing a:
+          <select id="productType"><option value="food">Food</option><option value="treat">Treat</option><option value="supplement">Supplement</option></select>
+        </label>
+      </div>
       <div class="button-group">
         <button id="analyzeBtn">Analyze Ingredients</button>
         <button id="clearBtn" class="secondary">Clear</button>
@@ -976,6 +984,8 @@ main button.secondary {
       </div>
       <div id="ingredientResults"></div>
     </div>
+
+    <div id="reportCapture" class="hidden" style="margin-top:24px;"></div>
 
     <h2>What This Tool Does</h2>
     <p>We built this tool to give you ingredient literacy. Pet food labels are confusing, filled with vague terms like "meat by-products" and "natural flavor." Marketing makes everything sound healthy, even when it's not.</p>
@@ -1475,6 +1485,10 @@ main button.secondary {
 
       // Scroll to results
       document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+
+      document.dispatchEvent(new CustomEvent('watts:analysis', {
+        detail: { matched: results.filter(r => r.data).map(r => r.data) }
+      }));
     }
 
     // Apply filter to ingredient cards
@@ -1648,5 +1662,53 @@ main button.secondary {
       });
     })();
   </script>
+<script type="module">
+  import { buildReportPayload } from './js/report-generator.js';
+  import { submitCapture } from './js/klaviyo-capture.js';
+
+  const box = document.getElementById('reportCapture');
+
+  document.addEventListener('watts:analysis', (e) => {
+    const matched = e.detail.matched || [];
+    if (matched.length === 0) { box.classList.add('hidden'); return; }
+    const pets = document.getElementById('petType').value;
+    const productType = document.getElementById('productType').value;
+    const payload = buildReportPayload(matched, { productType, pets });
+    renderCapture(payload);
+  });
+
+  function renderCapture(payload) {
+    box.dataset.payload = JSON.stringify(payload);
+    const missingBit = payload.product_type === 'food' ? ", what's missing," : '';
+    box.innerHTML = `
+      <div style="border:1px solid var(--border,#ddd);border-radius:12px;padding:20px;background:#fafafa;">
+        <h3 style="margin:0 0 6px;">${payload.recommendation.headline}</h3>
+        <p style="margin:0 0 14px;color:var(--muted,#666);">Get your ${payload.pets}'s full report — what these ingredients mean together${missingBit} and what to do next. We'll email it to you.</p>
+        <form id="reportForm" style="display:flex;gap:8px;flex-wrap:wrap;">
+          <input type="email" id="reportEmail" required placeholder="Email address" style="flex:1;min-width:220px;padding:10px;border:1px solid #ccc;border-radius:8px;">
+          <button type="submit" style="padding:10px 18px;border:0;border-radius:8px;background:var(--brand-orange,#c03800);color:#fff;font-weight:600;cursor:pointer;">Email my report</button>
+        </form>
+        <p id="reportMsg" style="margin:10px 0 0;font-size:14px;"></p>
+      </div>`;
+    box.classList.remove('hidden');
+    document.getElementById('reportForm').addEventListener('submit', onSubmit);
+  }
+
+  async function onSubmit(ev) {
+    ev.preventDefault();
+    const payload = JSON.parse(box.dataset.payload);
+    const email = document.getElementById('reportEmail').value.trim();
+    const msg = document.getElementById('reportMsg');
+    msg.textContent = 'Sending…';
+    const res = await submitCapture({
+      email, pets: payload.pets, productType: payload.product_type,
+      competitorSupplement: payload.competitor_supplement, reportPayload: payload,
+    });
+    msg.textContent = res.ok
+      ? 'Done — check your inbox for your report.'
+      : 'Something went wrong. Please try again.';
+    if (res.ok) document.getElementById('reportForm').style.display = 'none';
+  }
+</script>
 </body>
 </html>
