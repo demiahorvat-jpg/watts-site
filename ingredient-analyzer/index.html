@@ -957,19 +957,28 @@ main button.secondary {
     </div>
 
     <div class="tool-container">
+      <div class="analyzer-inputs" style="display:flex;gap:16px;flex-wrap:wrap;margin:0 0 18px;">
+        <div style="display:flex;flex-direction:column;gap:5px;">
+          <label for="petType" style="font-size:13px;font-weight:600;color:#555;">Pet</label>
+          <select id="petType" style="padding:10px 12px;border:1px solid #ccc;border-radius:8px;font-size:15px;background:#fff;min-width:150px;cursor:pointer;">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+          </select>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:5px;">
+          <label for="productType" style="font-size:13px;font-weight:600;color:#555;">Analyzing a</label>
+          <select id="productType" style="padding:10px 12px;border:1px solid #ccc;border-radius:8px;font-size:15px;background:#fff;min-width:170px;cursor:pointer;">
+            <option value="food">Food</option>
+            <option value="treat">Treat</option>
+            <option value="supplement">Supplement</option>
+          </select>
+        </div>
+      </div>
       <label for="ingredientInput">Paste Ingredient List:</label>
       <textarea
         id="ingredientInput"
         placeholder="Example: Chicken, chicken liver, sweet potato, chicken fat (preserved with mixed tocopherols), fish oil, pumpkin..."
       ></textarea>
-      <div class="analyzer-inputs" style="display:flex;gap:20px;flex-wrap:wrap;margin:12px 0;">
-        <label style="font-weight:600;">Pet:
-          <select id="petType"><option value="dog">Dog</option><option value="cat">Cat</option></select>
-        </label>
-        <label style="font-weight:600;">Analyzing a:
-          <select id="productType"><option value="food">Food</option><option value="treat">Treat</option><option value="supplement">Supplement</option></select>
-        </label>
-      </div>
       <div class="button-group">
         <button id="analyzeBtn">Analyze Ingredients</button>
         <button id="clearBtn" class="secondary">Clear</button>
@@ -982,10 +991,9 @@ main button.secondary {
         <h2>Analysis Results</h2>
         <div class="results-stats" id="stats"></div>
       </div>
+      <div id="reportCapture" class="hidden" style="margin:0 0 24px;"></div>
       <div id="ingredientResults"></div>
     </div>
-
-    <div id="reportCapture" class="hidden" style="margin-top:24px;"></div>
 
     <h2>What This Tool Does</h2>
     <p>We built this tool to give you ingredient literacy. Pet food labels are confusing, filled with vague terms like "meat by-products" and "natural flavor." Marketing makes everything sound healthy, even when it's not.</p>
