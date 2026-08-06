@@ -143,6 +143,19 @@
   </script>
 
   <!-- SHARED_HEAD_START -->
+  <!-- Meta Pixel (907906135399530) — audience building for learn.wattspet.com.
+       Script-only on purpose: Meta's stock snippet ends with a noscript image tag, which is not
+       valid inside the document head. The parser would close head at that image and push every
+       stylesheet below it into the body. The noscript fallback cannot build audiences anyway. -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '907906135399530');
+    fbq('track', 'PageView');
+  </script>
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/assets/favicon.png">
 
