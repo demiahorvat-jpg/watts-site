@@ -213,3 +213,23 @@
 main {
   padding-bottom: 120px !important;
 }
+
+/* Related Articles box — restore blog-page.css's intended tight spacing.
+   blog-page.css is pulled in with `@import ... layer(legacy)`, and unlayered
+   styles beat layered ones regardless of specificity. So each page's own
+   unlayered `article h3 { margin: 48px 0 20px }` was defeating the layered
+   `.related-articles h3 { margin: 0 0 8px }`, stacking ~128px above the
+   heading (64px box margin + 16px padding + 48px h3 margin). These rules are
+   unlayered, so they win. Affects the 14 blog pages carrying this box. */
+.related-articles h3 {
+  font-size: 20px;
+  margin: 0 0 8px 0;
+}
+@media (min-width: 768px) {
+  .related-articles h3 {
+    font-size: 23px;
+  }
+}
+.related-articles ul {
+  margin: 0;
+}
