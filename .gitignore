@@ -1,0 +1,12 @@
+
+# --- macOS junk. These were COMMITTED and served at https://learn.wattspet.com/.DS_Store,
+#     which publishes directory listings. Removed 2026-10-13.
+.DS_Store
+**/.DS_Store
+
+# --- Internal working documents do NOT belong here.
+# .nojekyll makes GitHub Pages serve this repo VERBATIM, so every file is a live URL on
+# learn.wattspet.com. 33 internal docs — SEO strategy, keyword research, site audits, the cat
+# content plan — were served at 200 from 2026-02 to 2026-10-13. They now live outside the repo
+# at ~/Projects/watts-site-notes/. Only CLAUDE.md stays, because Claude Code needs it in-repo
+# and it is link-validation rules, not business material.
