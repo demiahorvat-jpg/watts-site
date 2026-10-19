@@ -1,0 +1,35 @@
+name: IndexNow
+
+# Tell Bing (and the other IndexNow engines) about changed pages after each deploy.
+# See scripts/indexnow-submit.mjs.
+
+on:
+  push:
+    branches: [main]
+    paths: ['**.html']
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # GitHub Pages publishes the same push separately; give it time to go live so the
+      # crawler IndexNow sends doesn't fetch the old page.
+      - name: Wait for Pages to deploy
+        run: sleep 120
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Submit changed pages
+        run: |
+          BEFORE='${{ github.event.before }}'
+          if [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            echo "No previous commit to diff against; skipping."
+            exit 0
+          fi
+          node scripts/indexnow-submit.mjs "$BEFORE" "${{ github.sha }}"
