@@ -34,7 +34,18 @@ export const PILLARS = [
 ];
 
 // Signature actives that indicate a comprehensive daily like Better Dailies.
-export const BD_SIGNATURE = ['Astaxanthin', 'Autolyzed Yeast', 'Colostrum', 'UC-II', 'Beta-Glucan', 'Postbiotic'];
+export const BD_SIGNATURE = ['Astaxanthin', 'Autolyzed Yeast', 'Colostrum', 'Beta-Glucan', 'Postbiotic'];
+
+// Better Mobility's actives (UC-II, AprèsFlex boswellia, CurcuWIN turmeric, Mobilee hyaluronic acid) as the
+// ingredient DB names them. 'UC-II' isn't in the DB today; listed so it counts once it is.
+export const BM_SIGNATURE = ['UC-II', 'Collagen', 'Boswellia', 'Turmeric', 'Hyaluronic Acid'];
+
+// A supplement with two or more of these is a joint supplement, compared against Better Mobility.
+export const JOINT_MARKERS = ['Glucosamine', 'Chondroitin', 'Green-Lipped Mussel', 'UC-II', 'Collagen', 'Boswellia',
+  'Hyaluronic Acid', 'Eggshell Membrane', 'MSM'];
+
+// Which product covers each food gap. Omega-3 maps to nothing: neither daily is an omega-3 source.
+export const GAP_PRODUCT = { joint: 'better_mobility', gut: 'better_dailies', immune: 'better_dailies', antioxidant: 'better_dailies' };
 
 export function summarizeIngredients(matched) {
   const ingredients = matched.map(m => ({
@@ -66,9 +77,17 @@ export function detectAdditives(matched) {
 
 export function detectSupplementContext(matched) {
   const names = new Set(matched.map(m => String(m.name).toLowerCase()));
-  const hits = BD_SIGNATURE.filter(sig => names.has(sig.toLowerCase())).length;
-  const is_better_dailies = hits >= 3;
-  return { is_better_dailies, competitor_supplement: !is_better_dailies };
+  const count = (list) => list.filter(sig => names.has(sig.toLowerCase())).length;
+  const is_better_dailies = count(BD_SIGNATURE) >= 3;
+  const is_better_mobility = !is_better_dailies && count(BM_SIGNATURE) >= 3;
+  const is_joint_supplement = count(JOINT_MARKERS) >= 2;
+  return { is_better_dailies, is_better_mobility, is_joint_supplement,
+    competitor_supplement: !is_better_dailies && !is_better_mobility };
+}
+
+export function gapProducts(gaps) {
+  const keys = new Set((gaps || []).map(g => GAP_PRODUCT[g.pillar]).filter(Boolean));
+  return { gap_better_dailies: keys.has('better_dailies'), gap_better_mobility: keys.has('better_mobility') };
 }
 
 export function buildRecommendation({ productType, pets, gaps, additives, supplementCtx }) {
@@ -79,6 +98,12 @@ export function buildRecommendation({ productType, pets, gaps, additives, supple
   if (productType === 'supplement') {
     if (supplementCtx && supplementCtx.is_better_dailies) {
       return { headline: `Your ${species} is already on a complete daily — nice`, body_key: 'supplement_bd' };
+    }
+    if (supplementCtx && supplementCtx.is_better_mobility) {
+      return { headline: `Your ${species} is already on Better Mobility — nice`, body_key: 'supplement_bm' };
+    }
+    if (supplementCtx && supplementCtx.is_joint_supplement) {
+      return { headline: `Here's how this joint supplement stacks up for your ${species}`, body_key: 'supplement_joint' };
     }
     return { headline: `Here's how this supplement stacks up for your ${species}`, body_key: 'supplement_competitor' };
   }
@@ -100,7 +125,7 @@ export function buildReportPayload(matched, { productType, pets } = {}) {
   const flagged_gaps = type === 'food' ? detectGaps(matched) : [];
   const supplementCtx = type === 'supplement'
     ? detectSupplementContext(matched)
-    : { is_better_dailies: false, competitor_supplement: false };
+    : { is_better_dailies: false, is_better_mobility: false, is_joint_supplement: false, competitor_supplement: false };
 
   const recommendation = buildRecommendation({
     productType: type, pets: species, gaps: flagged_gaps, additives: flagged_additives, supplementCtx,
@@ -119,6 +144,9 @@ export function buildReportPayload(matched, { productType, pets } = {}) {
     flagged_additives,
     competitor_supplement: supplementCtx.competitor_supplement,
     is_better_dailies: supplementCtx.is_better_dailies,
+    is_better_mobility: supplementCtx.is_better_mobility,
+    is_joint_supplement: supplementCtx.is_joint_supplement,
+    ...gapProducts(flagged_gaps),
     recommendation,
   };
 }

@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  RATING_MAP, PILLARS, BD_SIGNATURE, normalizeRating,
+  RATING_MAP, PILLARS, BD_SIGNATURE, BM_SIGNATURE, normalizeRating, gapProducts,
   summarizeIngredients, detectGaps, detectAdditives,
   detectSupplementContext, buildRecommendation, buildReportPayload,
 } from './report-generator.js';
@@ -155,4 +155,40 @@ test('supplement payload sets competitor flag and no gaps', () => {
 test('pets defaults to dog when unspecified/invalid', () => {
   const p = buildReportPayload(FOOD, { productType: 'food', pets: 'lizard' });
   assert.equal(p.pets, 'dog');
+});
+
+// --- Better Mobility (2026-11) ---
+const BM_LABEL = [{ name: 'Beef' }, { name: 'Collagen' }, { name: 'Boswellia' }, { name: 'Turmeric' }, { name: 'Hyaluronic Acid' }];
+
+test('Better Mobility is recognized, not treated as a competitor', () => {
+  const ctx = detectSupplementContext(BM_LABEL);
+  assert.equal(ctx.is_better_mobility, true);
+  assert.equal(ctx.competitor_supplement, false);
+  assert.equal(buildReportPayload(BM_LABEL, { productType: 'supplement', pets: 'dog' }).recommendation.body_key, 'supplement_bm');
+});
+
+test('a glucosamine/chondroitin supplement is a joint competitor', () => {
+  const p = buildReportPayload([{ name: 'Glucosamine' }, { name: 'Chondroitin' }, { name: 'MSM' }], { productType: 'supplement', pets: 'dog' });
+  assert.equal(p.is_joint_supplement, true);
+  assert.equal(p.competitor_supplement, true);
+  assert.equal(p.recommendation.body_key, 'supplement_joint');
+});
+
+test('a single joint ingredient does not make a joint supplement', () => {
+  const p = buildReportPayload([{ name: 'Glucosamine' }, { name: 'Fish Oil' }], { productType: 'supplement', pets: 'dog' });
+  assert.equal(p.recommendation.body_key, 'supplement_competitor');
+});
+
+test('food gaps map to the product that covers them; omega-3 maps to neither', () => {
+  assert.deepEqual(gapProducts([{ pillar: 'joint' }]), { gap_better_dailies: false, gap_better_mobility: true });
+  assert.deepEqual(gapProducts([{ pillar: 'gut' }, { pillar: 'omega3' }]), { gap_better_dailies: true, gap_better_mobility: false });
+  assert.deepEqual(gapProducts([{ pillar: 'omega3' }]), { gap_better_dailies: false, gap_better_mobility: false });
+  const p = buildReportPayload(FOOD, { productType: 'food', pets: 'dog' });
+  assert.equal(p.gap_better_dailies, true);
+  assert.equal(p.gap_better_mobility, true);
+});
+
+test('BM actives no longer count toward the Better Dailies signature', () => {
+  assert.ok(!BD_SIGNATURE.includes('UC-II'));
+  assert.ok(BM_SIGNATURE.includes('UC-II'));
 });
