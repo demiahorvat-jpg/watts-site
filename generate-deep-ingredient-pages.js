@@ -600,7 +600,7 @@ function generateIngredientPage(ingredient, allIngredients) {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.wattspet.com/"
+          "item": "https://wattspet.com/"
         },
         {
           "@type": "ListItem",

@@ -8,22 +8,22 @@ const files = execSync(
 ).trim().split('\n').filter(Boolean);
 
 const DESKTOP_OLD = `          <li class="g-header__linklist__item btn-underline t-l-2">
-            <a href="https://www.wattspet.com/products/better-dailies">Shop</a>
+            <a href="https://wattspet.com/collections/dog-supplements">Shop</a>
           </li>
           <li class="g-header__linklist__item btn-underline t-l-2">
             <a href="/blog">Blog</a>`;
 
 const DESKTOP_NEW = `          <li class="g-header__linklist__item btn-underline t-l-2">
-            <a href="https://www.wattspet.com/products/better-dailies">Shop</a>
+            <a href="https://wattspet.com/collections/dog-supplements">Shop</a>
           </li>
           <li class="g-header__linklist__item btn-underline t-l-2">
-            <a href="https://www.wattspet.com/pages/about">About</a>
+            <a href="https://wattspet.com/pages/about">About</a>
           </li>
           <li class="g-header__linklist__item btn-underline t-l-2">
             <a href="/blog">Blog</a>`;
 
 const MOBILE_OLD = `          <li class="g-header__mobile-menu__list__item">
-            <a class="g-header__mobile-menu__item t-l-1" href="https://www.wattspet.com/products/better-dailies">
+            <a class="g-header__mobile-menu__item t-l-1" href="https://wattspet.com/collections/dog-supplements">
               <span class="g-header__mobile-menu__item__active-deco"></span>
               <span>Shop</span>
             </a>
@@ -32,13 +32,13 @@ const MOBILE_OLD = `          <li class="g-header__mobile-menu__list__item">
             <a class="g-header__mobile-menu__item t-l-1" href="/blog">`;
 
 const MOBILE_NEW = `          <li class="g-header__mobile-menu__list__item">
-            <a class="g-header__mobile-menu__item t-l-1" href="https://www.wattspet.com/products/better-dailies">
+            <a class="g-header__mobile-menu__item t-l-1" href="https://wattspet.com/collections/dog-supplements">
               <span class="g-header__mobile-menu__item__active-deco"></span>
               <span>Shop</span>
             </a>
           </li>
           <li class="g-header__mobile-menu__list__item">
-            <a class="g-header__mobile-menu__item t-l-1" href="https://www.wattspet.com/pages/about">
+            <a class="g-header__mobile-menu__item t-l-1" href="https://wattspet.com/pages/about">
               <span class="g-header__mobile-menu__item__active-deco"></span>
               <span>About</span>
             </a>
@@ -54,7 +54,7 @@ for (const file of files) {
   const fullPath = path.resolve(__dirname, file);
   let content = fs.readFileSync(fullPath, 'utf8');
 
-  if (content.includes('href="https://www.wattspet.com/pages/about">About</a>')) {
+  if (content.includes('href="https://wattspet.com/pages/about">About</a>')) {
     alreadyHas++;
     continue;
   }
